@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etymology Visualizer | 词源意境记忆卡</title>
+    <!-- 引入核心样式表 -->
+    <link rel="stylesheet" href="css/base.css">      <!-- 基础样式最先加载 -->
+    <link rel="stylesheet" href="css/layout.css">    <!-- 布局次之 -->
+    <link rel="stylesheet" href="css/components.css"> <!-- 组件样式最后加载，可能会覆盖前面的样式 -->
+</head>
+<body>
+
+<!-- 顶部导航与过滤器 -->
+<header class="app-header">
+    <h1>词源意境记忆 <span class="subtitle">Etymology Visualizer</span></h1>
+    <div class="filter-container" id="filter-container">
+        <!-- 筛选器按钮将由 JavaScript 动态生成 -->
+
+        <!-- 随机排序按钮 -->
+        <button class="shuffle-btn" id="shuffle-btn" title="随机排序当前卡片">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 3 21 3 21 8"></polyline>
+                <line x1="4" y1="20" x2="21" y2="3"></line>
+                <polyline points="21 16 21 21 16 21"></polyline>
+                <line x1="15" y1="15" x2="21" y2="21"></line>
+                <line x1="4" y1="4" x2="9" y2="9"></line>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<!-- 主内容区域：卡片网格 -->
+<main class="card-grid" id="card-grid">
+    <!-- [新增] 骨架图加载状态，数据加载后将被 JS 移除 -->
+    <div id="skeleton-loader">
+        <div class="skeleton-card">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-visual"></div>
+            <div class="skeleton-word"></div>
+            <div class="skeleton-hint"></div>
+        </div>
+        <div class="skeleton-card">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-visual"></div>
+            <div class="skeleton-word"></div>
+            <div class="skeleton-hint"></div>
+        </div>
+        <div class="skeleton-card">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-visual"></div>
+            <div class="skeleton-word"></div>
+            <div class="skeleton-hint"></div>
+        </div>
+        <div class="skeleton-card">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-visual"></div>
+            <div class="skeleton-word"></div>
+            <div class="skeleton-hint"></div>
+        </div>
+        <div class="skeleton-card">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-visual"></div>
+            <div class="skeleton-word"></div>
+            <div class="skeleton-hint"></div>
+        </div>
+        <div class="skeleton-card">
+            <div class="skeleton-badge"></div>
+            <div class="skeleton-visual"></div>
+            <div class="skeleton-word"></div>
+            <div class="skeleton-hint"></div>
+        </div>
+    </div>
+    <!-- 骨架图结束 -->
+
+    <!-- 懒加载触发器 -->
+    <!-- 这个“哨兵”元素用于 Intersection Observer API。 -->
+    <!-- 当它滚动到视口中时，JS会加载更多卡片。默认情况下它是隐藏的。 -->
+    <div id="load-more-trigger" class="load-more-trigger">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
+    </div>
+
+</main>
+
+<!-- ======================= 模板区域 (Templates) ======================= -->
+<!-- HTML模板是高效创建重复UI元素的蓝图，JS将克隆这些模板并填充数据 -->
+
+<!-- 模板 1: 单词卡片 -->
+<template id="card-template">
+    <div class="card">
+        <div class="card-inner">
+            <!-- 卡片正面：视觉意境 -->
+            <div class="card-front">
+                <!-- 左上角：前缀徽章 -->
+                <div class="prefix-badge"></div>
+
+                <!-- 右上角：切换前缀SVG可见性的按钮 -->
+                <button class="toggle-prefix-btn" title="切换前缀图像">
+                    <svg class="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    <svg class="icon-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
+                </button>
+
+                <!-- 标记为已掌握按钮 -->
+                <button class="mark-btn" title="标记为已掌握">
+                    <svg class="icon-check-empty" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <svg class="icon-check-filled" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                    </svg>
+                </button>
+
+                <!-- 中央：SVG视觉区域 -->
+                <div class="visual-area"></div>
+
+                <!-- 底部：单词与发音按钮 -->
+                <div class="word-area">
+                    <h2 class="word-text"></h2>
+                    <button class="audio-btn word-audio" title="朗读单词">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                    </button>
+                </div>
+                <p class="hint-text">点击翻转查看解析</p>
+            </div>
+
+            <!-- 卡片背面：逻辑解析 -->
+            <div class="card-back">
+                <div class="breakdown-box">
+                    <span class="part-prefix"></span> + <span class="part-root"></span>
+                </div>
+                <div class="meaning-section">
+                    <h3 class="cn-translation"></h3>
+                    <p class="imagery-text"></p>
+                </div>
+                <div class="sentence-section">
+                    <div class="sentence-en"></div>
+                    <div class="sentence-cn"></div>
+                    <button class="audio-btn sentence-audio" title="朗读例句">
+                        <span>🔊 听例句</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- 模板 2: 前缀介绍卡片 -->
+<template id="prefix-intro-template">
+    <div class="card prefix-intro-card">
+        <div class="card-inner">
+            <!-- 正面: 词根概览 -->
+            <div class="card-front">
+                <div class="visual-area"></div>
+                <div class="word-area">
+                    <h2 class="intro-title"></h2>
+                </div>
+                <p class="hint-text">点击翻转查看联想记忆</p>
+            </div>
+            <!-- 背面: 详细解析 -->
+            <div class="card-back">
+                <div class="intro-section">
+                    <h3 class="intro-section-title">核心意境</h3>
+                    <p class="intro-description"></p>
+                </div>
+                <div class="intro-section">
+                    <h3 class="intro-section-title">联想记忆</h3>
+                    <p class="intro-imagery"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- ======================= 模板区域结束 ======================= -->
+
+<!-- 页脚区域 -->
+<footer class="app-footer">
+    <p>学习资料来源：韩宇极简英语 & AI 辅助生成</p>
+    <p>Source Material: Han Yu Minimalist English & AI-assisted Generation</p>
+</footer>
+
+<!-- 脚本引入 -->
+<!-- 必须先加载数据清单，再加载使用该清单的主应用逻辑 -->
+<script src="js/data-manifest.js"></script>
+<script type="module" src="js/app.js"></script> <!-- 关键：添加 type="module" -->
+</body>
+</html>

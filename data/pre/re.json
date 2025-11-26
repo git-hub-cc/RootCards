@@ -1,0 +1,94 @@
+{
+  "prefix": "re",
+  "displayName": "re- (回/再)",
+  "themeColor": "#3b82f6",
+  "prefixVisual": "<path d='M12 4 C6 4 2 8 2 12 C2 16 6 20 12 20 C18 20 22 16 22 12' transform='rotate(-45 12 12)' /><path d='M7 12 L2 12 L7 7' />",
+  "prefixIntro": {
+    "title": "前缀 re-",
+    "description": "1. 向后 (Back)\n2. 再一次 (Again)",
+    "imagery": "联想记忆：发音时嘴角向后咧，联想“回”的动作；或者联想视频播放器上的 'Replay'（重复播放）按钮。"
+  },
+  "words": [
+    {
+      "word": "Review",
+      "rootVisual": "<circle cx='12' cy='12' r='3'/><path d='M2 12 C6 6 18 6 22 12 C18 18 6 18 2 12 Z'/>",
+      "breakdown": ["re- (向后)", "view (看)"],
+      "imagery": "回头看之前学过的东西。",
+      "translation": "复习；回顾",
+      "sentence": "You should review what you have learned last class.",
+      "sentenceTrans": "你应该回头看看（复习）上节课学的内容。"
+    },
+    {
+      "word": "Remain",
+      "rootVisual": "<path d='M12 2 L12 12 M12 2 L8 6 M12 2 L16 6 M4 22 L20 22'/>",
+      "breakdown": ["re- (向后)", "main (留/住)"],
+      "imagery": "别人都走了，你向后退一步，保持原位。",
+      "translation": "保持；剩余",
+      "sentence": "The town remains the same.",
+      "sentenceTrans": "这个城镇保留原样（没有变）。"
+    },
+    {
+      "word": "Recall",
+      "rootVisual": "<path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/>",
+      "breakdown": ["re- (向后)", "call (喊/叫)"],
+      "imagery": "把过去的记忆像喊人一样“喊回来”。",
+      "translation": "回忆；回想起",
+      "sentence": "I can't recall your name.",
+      "sentenceTrans": "我无法把你的名字喊回来（想不起你的名字）。"
+    },
+    {
+      "word": "Reflect",
+      "rootVisual": "<path d='M3 12 C6 6 9 18 12 12 S18 6 21 12'/>",
+      "breakdown": ["re- (反向)", "flect (弯曲/折射)"],
+      "imagery": "光线照过来，被折射/反射回去。",
+      "translation": "反射；反映",
+      "sentence": "White can reflect heat.",
+      "sentenceTrans": "白色可以把热量折射回去（反射热量）。"
+    },
+    {
+      "word": "Return",
+      "rootVisual": "<path d='M20 12 A8 8 0 1 1 12 4'/><polyline points='8 4 12 4 12 0'/>",
+      "breakdown": ["re- (回)", "turn (转)"],
+      "imagery": "转回去；把东西转回原处。",
+      "translation": "归还；返回",
+      "sentence": "When can you return my books?",
+      "sentenceTrans": "你什么时候能把书转回来（归还）给我？"
+    },
+    {
+      "word": "Repeat",
+      "rootVisual": "<line x1='12' y1='6' x2='12' y2='18'/><line x1='6' y1='12' x2='18' y2='12'/>",
+      "breakdown": ["re- (再)", "peat (求/冲)"],
+      "imagery": "再一次说，再一次做。",
+      "translation": "重复",
+      "sentence": "Can you repeat that?",
+      "sentenceTrans": "你能再说一次（重复）吗？"
+    },
+    {
+      "word": "Recycle",
+      "rootVisual": "<path d='M20 12 A8 8 0 1 1 12 4'/><polyline points='8 4 12 4 12 0'/><path d='M4 12 A8 8 0 1 1 12 20'/><polyline points='16 20 12 20 12 24'/>",
+      "breakdown": ["re- (再)", "cycle (循环)"],
+      "imagery": "让垃圾再次进入循环圈。",
+      "translation": "回收利用",
+      "sentence": "The company recycles beer bottles.",
+      "sentenceTrans": "这家公司回收（让...再循环）啤酒瓶。"
+    },
+    {
+      "word": "Remind",
+      "rootVisual": "<path d='M9.5 2A2.5 2.5 0 0 0 7 4.5v1a2.5 2.5 0 0 0 2.5 2.5h1A2.5 2.5 0 0 0 13 5.5v-1A2.5 2.5 0 0 0 10.5 2h-1z M10 12c-2.5 0-5-1-5-3.5a3.5 3.5 0 0 1 7 0c0 2.5-2.5 3.5-5 3.5z M10 12c2.5 0 5 1 5 3.5a3.5 3.5 0 0 1-7 0c0-2.5 2.5-3.5 5-3.5z M4.5 10.5A2.5 2.5 0 0 0 2 13v1a2.5 2.5 0 0 0 2.5 2.5h1A2.5 2.5 0 0 0 8 14v-1a2.5 2.5 0 0 0-2.5-2.5h-1z M15.5 10.5a2.5 2.5 0 0 0-2.5 2.5v1a2.5 2.5 0 0 0 2.5 2.5h1A2.5 2.5 0 0 0 22 14v-1a2.5 2.5 0 0 0-2.5-2.5h-1z' stroke-width='1.5'/>",
+      "breakdown": ["re- (再)", "mind (脑子/思维)"],
+      "imagery": "再一次进入脑子；再次使其想起。",
+      "translation": "提醒",
+      "sentence": "The picture reminds me of the days in middle school.",
+      "sentenceTrans": "这张照片让我想起了（再次进入脑海）中学的日子。"
+    },
+    {
+      "word": "Research",
+      "rootVisual": "<circle cx='11' cy='11' r='8'/><line x1='21' y1='21' x2='16.65' y2='16.65'/>",
+      "breakdown": ["re- (再)", "search (搜寻)"],
+      "imagery": "反复地找，转圈找，为了做学问而反复探究。",
+      "translation": "研究",
+      "sentence": "Do some research.",
+      "sentenceTrans": "做些研究（反复搜寻资料）。"
+    }
+  ]
+}

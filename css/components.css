@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Component Styles - 组件样式
+   ========================================================================== */
+
+/* --- 组件: 筛选器与随机按钮 --- */
+.filter-btn {
+    padding: 8px 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 50px;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    color: var(--text-sub);
+}
+.filter-btn.active { background: #333; color: white; border-color: #333; }
+.filter-btn[data-filter="learned"].active { background: var(--color-learned); border-color: var(--color-learned); }
+
+.shuffle-btn {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: 2px solid #e5e7eb;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    color: var(--text-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    transition: all 0.2s ease;
+}
+.shuffle-btn:hover {
+    background: #f9fafb;
+    border-color: #d1d5db;
+    color: var(--text-main);
+}
+.shuffle-btn svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+.shuffle-btn:active svg {
+    transform: rotate(45deg);
+}
+
+
+/* --- 组件: 加载/空状态提示 --- */
+.loading-state { grid-column: 1 / -1; text-align: center; font-size: 1.2rem; color: var(--text-sub); padding: 4rem 0; }
+
+
+/* --- 组件: 3D 翻转卡片 (核心与通用) --- */
+.card {
+    background-color: transparent;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    animation: card-fade-in 0.5s ease-out forwards;
+}
+@keyframes card-fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.card-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1); transform-style: preserve-3d; box-shadow: var(--shadow); border-radius: var(--radius-lg); }
+.card.is-flipped .card-inner { transform: rotateY(180deg); }
+.card-front, .card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: var(--radius-lg); background: white; border: 2px solid transparent; display: flex; flex-direction: column; overflow: hidden; }
+
+
+/* --- 组件: 单词卡片正面 --- */
+.card-front {
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    border-color: var(--theme-color); /* 应用主题色 */
+}
+.prefix-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    opacity: 0.8;
+    color: var(--theme-color); /* 应用主题色 */
+    background: color-mix(in srgb, var(--theme-color) 10%, transparent);
+}
+.visual-area { flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.visual-area svg { width: 120px; height: 120px; transition: transform 0.3s ease; }
+.card:hover .visual-area svg { transform: scale(1.1); }
+.visual-area .layer-root { stroke: var(--text-sub); opacity: 0.7; stroke-width: 2; }
+.visual-area .layer-prefix {
+    stroke: var(--theme-color);
+    stroke-width: 2.5;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.card.prefix-hidden .visual-area .layer-prefix {
+    opacity: 0;
+    transform: scale(0.8);
+}
+.word-area { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 0.5rem; }
+.word-text { font-size: 2rem; font-weight: 800; color: var(--theme-color); }
+.hint-text { font-size: 0.8rem; color: #9ca3af; text-align: center; }
+
+
+/* --- 组件: 单词卡片背面 --- */
+.card-back { transform: rotateY(180deg); padding: 2rem 1.5rem; text-align: left; background-color: #fafafa; }
+.breakdown-box { font-family: 'Courier New', monospace; background: #e5e7eb; padding: 0.5rem; border-radius: var(--radius-sm); text-align: center; font-weight: bold; color: #374151; margin-bottom: 1.5rem; }
+.meaning-section, .sentence-section { margin-bottom: 1.5rem; }
+.cn-translation { font-size: 1.4rem; color: #111; margin-bottom: 0.5rem; }
+.imagery-text { font-size: 0.95rem; color: #4b5563; line-height: 1.4; font-style: italic; border-left: 3px solid #ccc; padding-left: 10px; }
+.sentence-section { margin-top: auto; background: white; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid #e5e7eb; }
+.sentence-en { font-weight: 500; margin-bottom: 0.5rem; color: #1f2937; }
+.sentence-cn { font-size: 0.9rem; color: #6b7280; margin-bottom: 0.8rem; }
+
+
+/* --- 组件: 卡片上的按钮 (SVG切换, 标记, 音频) --- */
+.toggle-prefix-btn { position: absolute; top: 1rem; right: 1rem; width: 32px; height: 32px; background: none; border: none; border-radius: 50%; cursor: pointer; color: var(--text-sub); display: flex; align-items: center; justify-content: center; transition: background-color 0.2s, color 0.2s; z-index: 10; }
+.toggle-prefix-btn:hover { background-color: rgba(0,0,0,0.05); }
+.toggle-prefix-btn svg { width: 20px; height: 20px; }
+.toggle-prefix-btn .icon-eye-off { display: none; }
+.toggle-prefix-btn.is-toggled .icon-eye { display: none; }
+.toggle-prefix-btn.is-toggled .icon-eye-off { display: block; }
+.toggle-prefix-btn.is-trolled { color: var(--theme-color, var(--text-main)); }
+
+.mark-btn { position: absolute; bottom: 1rem; right: 1rem; width: 32px; height: 32px; background: none; border: none; border-radius: 50%; cursor: pointer; color: var(--text-sub); display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; z-index: 10; }
+.mark-btn:hover { background-color: rgba(0,0,0,0.05); transform: scale(1.1); }
+.mark-btn svg { width: 24px; height: 24px; }
+.mark-btn .icon-check-filled { display: none; }
+.card.is-learned .mark-btn .icon-check-empty { display: none; }
+.card.is-learned .mark-btn .icon-check-filled { display: block; color: var(--theme-color); }
+.filter-container .filter-btn[data-filter="learned"].active ~ main .card.is-learned .mark-btn .icon-check-filled { color: var(--color-learned); }
+
+.audio-btn { background: none; border: none; cursor: pointer; color: inherit; display: flex; align-items: center; justify-content: center; padding: 4px; border-radius: 50%; transition: background 0.2s; }
+.audio-btn:hover { background: rgba(0,0,0,0.05); }
+.word-audio { width: 32px; height: 32px; color: var(--text-sub); }
+.sentence-audio { width: 100%; padding: 6px; border-radius: 4px; background: #f3f4f6; font-size: 0.85rem; font-weight: 600; }
+.sentence-audio:hover { background: #e5e7eb; }
+
+
+/* --- 组件: 前缀介绍卡片 (变体样式) --- */
+.prefix-intro-card .card-front, .prefix-intro-card .card-back { background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); }
+.prefix-intro-card .intro-title { font-size: 2.2rem; font-weight: 800; letter-spacing: 1px; font-family: 'Georgia', serif; color: var(--theme-color); }
+.prefix-intro-card .card-back { display: flex; flex-direction: column; justify-content: center; gap: 2rem; }
+.prefix-intro-card .intro-section { padding: 0 1rem; }
+.prefix-intro-card .intro-section-title { font-size: 1.1rem; color: var(--text-main); margin-bottom: 0.5rem; border-bottom: 2px solid; padding-bottom: 0.3rem; font-weight: 700; border-color: var(--theme-color); }
+.prefix-intro-card .intro-description, .prefix-intro-card .intro-imagery { font-size: 1rem; color: var(--text-sub); line-height: 1.6; }
+.prefix-intro-card .intro-imagery { font-style: italic; color: #4b5563; }
+.prefix-intro-card .visual-area svg { color: var(--theme-color); }
+
+
+/* --- 组件: 加载动画 Spinner --- */
+.spinner { animation: rotate 2s linear infinite; width: 40px; height: 40px; }
+.spinner .path { stroke: var(--text-sub); stroke-linecap: round; animation: dash 1.5s ease-in-out infinite; }
+@keyframes rotate { 100% { transform: rotate(360deg); } }
+@keyframes dash {
+    0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; }
+    50% { stroke-dasharray: 90, 150; stroke-dashoffset: -35; }
+    100% { stroke-dasharray: 90, 150; stroke-dashoffset: -124; }
+}
+
+
+/* --- 状态与动画: 洗牌 --- */
+.card-grid.is-shuffling .card {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
+
+/* [新增] --- 组件: 骨架加载图 --- */
+#skeleton-loader {
+    /* 关键: 让骨架图容器也参与网格布局 */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    grid-column: 1 / -1; /* 占据父网格的所有列 */
+    transition: opacity 0.3s ease-out; /* 为平滑移除添加过渡 */
+}
+.skeleton-card {
+    height: 400px;
+    background-color: #fff;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative; /* 为动画伪元素定位 */
+}
+
+/* 骨架图内部的占位符 */
+.skeleton-badge, .skeleton-visual, .skeleton-word, .skeleton-hint {
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.skeleton-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 60px;
+    height: 20px;
+    border-radius: var(--radius-sm);
+}
+.skeleton-visual {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* 模拟圆形SVG区域 */
+    margin: auto; /* 垂直和水平居中 */
+}
+.skeleton-word {
+    width: 60%;
+    height: 36px;
+    margin: 0 auto 1rem;
+    border-radius: var(--radius-sm);
+}
+.skeleton-hint {
+    width: 40%;
+    height: 16px;
+    margin: 0 auto;
+}

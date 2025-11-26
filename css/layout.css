@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Layout Styles - 页面布局样式
+   ========================================================================== */
+
+/* --- 头部导航与筛选器 --- */
+.app-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.app-header h1 { font-size: 1.8rem; color: #333; margin-bottom: 1.5rem; }
+.subtitle { display: block; font-size: 0.9rem; color: var(--text-sub); font-weight: normal; margin-top: 0.2rem; }
+.filter-container { display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+
+/* --- 卡片网格布局 --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- 懒加载触发器布局 --- */
+.load-more-trigger {
+    grid-column: 1 / -1; /* 占据网格整行 */
+    display: none;       /* 默认隐藏 */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    min-height: 80px;
+}
+.load-more-trigger.is-visible {
+    display: flex; /* JS控制显示 */
+}
+
+/* --- 页脚样式 --- */
+.app-footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+    color: var(--text-sub);
+    font-size: 0.85rem;
+}
+.app-footer p { margin: 0.3rem 0; }

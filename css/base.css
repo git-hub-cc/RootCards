@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Base Styles - 基础与全局样式
+   ========================================================================== */
+
+/* --- 基础变量定义 --- */
+/* 使用CSS变量可以方便地统一管理颜色、尺寸等，实现一处修改，处处生效。 */
+:root {
+    /* 全局颜色 */
+    --bg-color: #f3f4f6;
+    --card-bg: #ffffff;
+    --text-main: #1f2937;
+    --text-sub: #6b7280;
+    --color-learned: #f59e0b; /* 黄色/金色：用于“已掌握”状态，代表成就 */
+
+    /* 定义一个默认的主题色，以防 JS 未能成功设置 */
+    --theme-color: #333;
+
+    /* 尺寸与阴影 */
+    --radius-lg: 16px;
+    --radius-sm: 8px;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* --- 全局重置与基础样式 --- */
+* {
+    box-sizing: border-box; /* 统一盒模型，简化布局计算 */
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth; /* 为JS触发的滚动提供平滑效果 */
+}
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.5;
+}
