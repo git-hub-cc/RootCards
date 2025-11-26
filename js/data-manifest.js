@@ -13,8 +13,6 @@
 
 const DATA_FILES = [
     'data/pre/re.json',
-    'data/pre/dis.json',
-    'data/pre/ex.json'
     // 示例：未来可以轻松扩展
     // 'data/pro.json',
     // 'data/con.json'

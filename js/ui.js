@@ -1,24 +1,22 @@
 // =================================================================================
-// UI 渲染模块 (UI Rendering Module) - v2.0 (本地音频播放版)
+// UI 渲染模块 (UI Rendering Module) - v4.1 (支持多意境, 改进高亮，处理 y变i)
 // ---------------------------------------------------------------------------------
 // 主要职责：
 // 1. (DOM元素创建) 提供创建单词卡片、介绍卡片和筛选器按钮的函数。
 // 2. (渲染逻辑) 将卡片元素批量渲染到指定的容器中。
 // 3. (UI交互) 封装与UI直接相关的交互，如卡片翻转、SVG显隐。
-// 4. (音频播放) [核心修改] 播放预先生成的本地音频文件，替换了原有的浏览器语音合成API。
-// 5. (UI状态更新) 控制加载提示、空状态消息的显示与隐藏。
+// 4. (音频播放) 播放预先生成的本地音频文件。
+// 5. (动态内容) 能够根据数据动态渲染一个或多个例句。
 // =================================================================================
 
 // --- 模块内变量 ---
 let cardTemplate;
 let prefixIntroTemplate;
-
-// [核心修改] 移除了所有与 window.speechSynthesis 相关的变量 (synth, voices)。
-// 新增一个全局的 Audio 实例用于播放音频，可以复用此对象，避免创建多个播放器，提高性能。
 const audioPlayer = new Audio();
 
 /**
  * 初始化UI模块，获取模板元素。
+ * (此函数无修改)
  * @returns {boolean} 如果所有模板都找到则返回 true，否则返回 false。
  */
 export function initUI() {
@@ -29,15 +27,13 @@ export function initUI() {
         console.error('卡片模板未在 HTML 中找到。');
         return false;
     }
-
-    // [核心修改] 移除了 populateVoiceList() 的调用，因为不再需要浏览器语音引擎。
     return true;
 }
 
 /**
- * [新增函数] 播放本地音频文件。
- * 这是一个健壮的实现，用于替代原有的 speak() 函数。
- * @param {string} filePath - 音频文件的相对路径 (例如 'audio/words/discover.mp3')。
+ * 播放本地音频文件。
+ * (此函数无修改)
+ * @param {string} filePath - 音频文件的相对路径。
  */
 function playAudioFile(filePath) {
     if (!filePath) {
@@ -46,21 +42,18 @@ function playAudioFile(filePath) {
     }
 
     try {
-        // 如果当前有音频正在播放，先暂停并重置，以避免声音重叠。
         if (!audioPlayer.paused) {
             audioPlayer.pause();
             audioPlayer.currentTime = 0;
         }
-
-        // 设置新的音频源并播放。
         audioPlayer.src = filePath;
         const playPromise = audioPlayer.play();
 
-        // 现代浏览器中，play() 返回一个Promise。处理可能的播放错误。
         if (playPromise !== undefined) {
             playPromise.catch(error => {
-                console.error(`播放音频文件 "${filePath}" 失败:`, error);
-                // 可以在这里向用户显示一个友好的提示，例如一个小的toast通知。
+                if (error.name !== 'AbortError') {
+                    console.error(`播放音频文件 "${filePath}" 失败:`, error);
+                }
             });
         }
     } catch (error) {
@@ -68,35 +61,33 @@ function playAudioFile(filePath) {
     }
 }
 
-
 /**
  * 根据数据动态生成筛选器按钮。
- * (此函数无任何修改)
- * @param {HTMLElement} filterContainer - 用于容纳按钮的容器元素。
- * @param {HTMLElement} shuffleBtn - 洗牌按钮，新按钮会插在它前面。
- * @param {Array<Object>} prefixGroups - 从JSON文件解析出的数据集数组。
+ * 【核心修改】此函数现在基于意境分组 (meaning groups) 来生成按钮。
+ * @param {HTMLElement} filterContainer - 按钮的容器元素。
+ * @param {HTMLElement} shuffleBtn - 随机按钮元素，新按钮会插在此之前。
+ * @param {Array<object>} meaningGroups - 从 state.js 传入的原始意境分组对象数组。
  */
-export function renderFilterButtons(filterContainer, shuffleBtn, prefixGroups) {
-    // 创建并插入 “全部” 按钮
+export function renderFilterButtons(filterContainer, shuffleBtn, meaningGroups) {
     const allButton = document.createElement('button');
     allButton.className = 'filter-btn active';
     allButton.dataset.filter = 'all';
     allButton.textContent = '全部 (All)';
     filterContainer.insertBefore(allButton, shuffleBtn);
 
-    // 创建并插入 “已掌握” 按钮
     const learnedButton = document.createElement('button');
     learnedButton.className = 'filter-btn';
     learnedButton.dataset.filter = 'learned';
     learnedButton.textContent = '已掌握';
     filterContainer.insertBefore(learnedButton, shuffleBtn);
 
-    // 创建并插入各个前缀按钮
-    prefixGroups.forEach(group => {
-        if (!group.prefix || !group.displayName) return;
+    // 【新】遍历意境分组来创建按钮
+    meaningGroups.forEach(group => {
+        // 鲁棒性检查
+        if (!group.meaningId || !group.displayName) return;
         const button = document.createElement('button');
         button.className = 'filter-btn';
-        button.dataset.filter = group.prefix;
+        button.dataset.filter = group.meaningId; // 使用 meaningId 作为筛选值
         button.textContent = group.displayName;
         if (group.themeColor) {
             button.dataset.themeColor = group.themeColor;
@@ -107,23 +98,16 @@ export function renderFilterButtons(filterContainer, shuffleBtn, prefixGroups) {
 
 /**
  * 更新筛选器按钮的激活状态和样式。
- * (此函数无任何修改)
- * @param {HTMLElement} filterContainer - 按钮容器。
- * @param {HTMLElement} clickedButton - 被点击的按钮元素。
+ * (此函数无修改)
  */
 export function updateActiveFilterButton(filterContainer, clickedButton) {
-    // 移除所有按钮的激活状态和自定义样式
     filterContainer.querySelectorAll('.filter-btn').forEach(btn => {
         btn.classList.remove('active');
         btn.style.backgroundColor = '';
         btn.style.borderColor = '';
         btn.style.color = '';
     });
-
-    // 激活被点击的按钮
     clickedButton.classList.add('active');
-
-    // 如果是带主题色的按钮，则应用颜色
     const themeColor = clickedButton.dataset.themeColor;
     if (themeColor) {
         clickedButton.style.backgroundColor = themeColor;
@@ -132,19 +116,15 @@ export function updateActiveFilterButton(filterContainer, clickedButton) {
     }
 }
 
-
 /**
  * 创建前缀介绍卡片DOM元素。
- * (此函数无任何修改)
- * @param {object} data - 介绍卡片的数据。
- * @returns {HTMLElement} 创建好的卡片元素。
+ * (此函数无修改)
  */
 function createIntroCard(data) {
     const cardClone = prefixIntroTemplate.content.cloneNode(true).firstElementChild;
     if (data.themeColor) {
         cardClone.style.setProperty('--theme-color', data.themeColor);
     }
-
     const visualArea = cardClone.querySelector('.visual-area');
     if (data.visual) {
         visualArea.innerHTML = `<svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">${data.visual}</svg>`;
@@ -167,45 +147,81 @@ function createWordCard(data, handlers) {
     if (data.themeColor) {
         cardClone.style.setProperty('--theme-color', data.themeColor);
     }
-
     if (data.isLearned) {
         cardClone.classList.add('is-learned');
     }
 
-    // 填充内容 (无修改)
     const visualArea = cardClone.querySelector('.visual-area');
     visualArea.innerHTML = `<svg viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <g class="layer-root">${data.rootVisual || ''}</g>
                             <g class="layer-prefix">${data.prefixVisual || ''}</g>
                         </svg>`;
-    cardClone.querySelector('.prefix-badge').textContent = `${data.type}-`;
+
+    // 【核心修改】使用 data.prefix 属性来显示徽章，而不是 data.type
+    cardClone.querySelector('.prefix-badge').textContent = `${data.prefix}-`;
+
     cardClone.querySelector('.word-text').textContent = data.word;
     cardClone.querySelector('.part-prefix').textContent = data.breakdown[0];
     cardClone.querySelector('.part-root').textContent = data.breakdown[1];
     cardClone.querySelector('.cn-translation').textContent = data.translation;
     cardClone.querySelector('.imagery-text').textContent = `“${data.imagery}”`;
-    cardClone.querySelector('.sentence-en').innerHTML = data.sentence.replace(new RegExp(`\\b(${data.word})\\b`, 'gi'), `<strong style="color: var(--theme-color, black);">$1</strong>`);
-    cardClone.querySelector('.sentence-cn').textContent = data.sentenceTrans;
 
-    // 绑定事件 (核心修改区域)
+    // ========== 改进的单词高亮逻辑 (v4.1) ==========
+    const wordLower = data.word.toLowerCase();
+
+    // 1. 标准匹配：词根 + 常见后缀 (s, es, ed, ing, d, r, st)
+    const standardVariants = wordLower + '(?:s|es|ed|ing|d|r|st)?';
+
+    // 2. 特殊匹配：处理 y 变 ied/ies (如果单词以 y 结尾且不是特殊情况)
+    let specialVariants = '';
+    if (wordLower.endsWith('y') && wordLower.length > 2) {
+        const baseWord = wordLower.slice(0, -1);
+        // 例如：reply -> repl(?:ied|ies)
+        specialVariants = `|${baseWord}(?:ied|ies)`;
+    }
+
+    // 最终匹配模式：匹配标准变体或 y变i 变体
+    const combinedPattern = new RegExp(`\\b(${standardVariants}${specialVariants})\\b`, 'gi');
+    // ==========================================
+
+    const sentenceSection = cardClone.querySelector('.sentence-section');
+    if (Array.isArray(data.sentences) && data.sentences.length > 0) {
+        data.sentences.forEach((sentence, index) => {
+            const sentenceBlock = document.createElement('div');
+            sentenceBlock.className = 'sentence-block';
+            const sentenceEn = document.createElement('div');
+            sentenceEn.className = 'sentence-en';
+
+            // 使用改进后的 combinedPattern 进行高亮替换
+            sentenceEn.innerHTML = sentence.en.replace(combinedPattern, `<strong style="color: var(--theme-color, black);">$1</strong>`);
+
+            const sentenceCn = document.createElement('div');
+            sentenceCn.className = 'sentence-cn';
+            sentenceCn.textContent = sentence.cn;
+            const audioBtn = document.createElement('button');
+            audioBtn.className = 'audio-btn sentence-audio';
+            audioBtn.title = '朗读例句';
+            audioBtn.innerHTML = `<span>🔊 听例句 ${data.sentences.length > 1 ? index + 1 : ''}</span>`;
+            audioBtn.addEventListener('click', () => {
+                const sentenceAudioPath = `audio/sentences/${data.word.toLowerCase()}_sentence_${index}.mp3`;
+                playAudioFile(sentenceAudioPath);
+            });
+            sentenceBlock.appendChild(sentenceEn);
+            sentenceBlock.appendChild(sentenceCn);
+            sentenceBlock.appendChild(audioBtn);
+            sentenceSection.appendChild(sentenceBlock);
+        });
+    }
+
     cardClone.addEventListener('click', (e) => {
         if (!e.target.closest('.audio-btn, .toggle-prefix-btn, .mark-btn')) {
             cardClone.classList.toggle('is-flipped');
         }
     });
 
-    // [核心修改] 更新音频按钮的点击事件，使其调用新的 playAudioFile 函数。
-    // 文件名约定：单词 -> word.mp3, 例句 -> word_sentence.mp3，全部小写。
-    // 您的Python脚本在生成文件时需要遵循这个命名约定。
     cardClone.querySelector('.word-audio').addEventListener('click', () => {
         const wordAudioPath = `audio/words/${data.word.toLowerCase()}.mp3`;
         playAudioFile(wordAudioPath);
-    });
-
-    cardClone.querySelector('.sentence-audio').addEventListener('click', () => {
-        // 假设例句音频的文件名与对应单词相关联，以简化查找。
-        const sentenceAudioPath = `audio/sentences/${data.word.toLowerCase()}_sentence.mp3`;
-        playAudioFile(sentenceAudioPath);
     });
 
     const togglePrefixBtn = cardClone.querySelector('.toggle-prefix-btn');
@@ -218,7 +234,6 @@ function createWordCard(data, handlers) {
     const markBtn = cardClone.querySelector('.mark-btn');
     markBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        // 调用从 app.js 传入的回调函数
         if (handlers.onMarkLearned) {
             handlers.onMarkLearned(data, cardClone);
         }
@@ -230,9 +245,6 @@ function createWordCard(data, handlers) {
 /**
  * 卡片创建的工厂函数。
  * (此函数无任何修改)
- * @param {object} data - 卡片数据。
- * @param {object} handlers - 事件处理回调函数集合。
- * @returns {HTMLElement} 创建好的卡片元素。
  */
 export function createCard(data, handlers) {
     return data.cardType === 'intro' ? createIntroCard(data) : createWordCard(data, handlers);

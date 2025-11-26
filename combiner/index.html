@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG 路径合并工具</title>
+    <!-- 引入样式表 -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 使用 type="module" 加载主JS文件，以支持模块化导入/导出 -->
+    <script type="module" src="js/main.js" defer></script>
+</head>
+<body>
+
+<!-- 页面主容器 -->
+<div class="container">
+
+    <!-- 1. 顶部标题区域 -->
+    <header class="app-header">
+        <h1>SVG 路径合并工具</h1>
+        <p class="subtitle">将多个 SVG 形状（如 rect, circle, polyline）合并为单一的 &lt;path&gt; 元素。</p>
+    </header>
+
+    <!-- 2. 主工作区，使用Flexbox或Grid布局 -->
+    <main class="workspace">
+
+        <!-- 2.1 输入区域 -->
+        <section class="panel">
+            <label for="svg-input">输入 SVG 代码:</label>
+            <textarea id="svg-input" placeholder="请在此处粘贴你的 SVG 代码..."></textarea>
+        </section>
+
+        <!-- 2.2 输出区域 -->
+        <section class="panel">
+            <label for="svg-output">输出单一路径 SVG 代码:</label>
+            <textarea id="svg-output" readonly placeholder="转换后的代码将显示在这里..."></textarea>
+            <button id="copy-btn" class="control-btn" title="点击复制输出内容">复制到剪贴板</button>
+        </section>
+
+    </main>
+
+    <!-- 3. 控制与状态区域 -->
+    <div class="controls">
+        <button id="convert-btn" class="control-btn primary">✨ 开始转换</button>
+        <p id="status-message"></p> <!-- 用于显示成功或错误信息 -->
+    </div>
+
+    <!-- 4. 实时预览区域 -->
+    <section class="preview-area">
+        <div class="preview-box">
+            <h2>转换前预览</h2>
+            <div id="preview-before" class="preview-container"></div>
+        </div>
+        <div class="preview-box">
+            <h2>转换后预览</h2>
+            <div id="preview-after" class="preview-container"></div>
+        </div>
+    </section>
+
+</div> <!-- .container 结束 -->
+</body>
+</html>

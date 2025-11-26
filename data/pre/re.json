@@ -1,94 +1,325 @@
 {
   "prefix": "re",
-  "displayName": "re- (回/再)",
-  "themeColor": "#3b82f6",
-  "prefixVisual": "<path d='M12 4 C6 4 2 8 2 12 C2 16 6 20 12 20 C18 20 22 16 22 12' transform='rotate(-45 12 12)' /><path d='M7 12 L2 12 L7 7' />",
-  "prefixIntro": {
-    "title": "前缀 re-",
-    "description": "1. 向后 (Back)\n2. 再一次 (Again)",
-    "imagery": "联想记忆：发音时嘴角向后咧，联想“回”的动作；或者联想视频播放器上的 'Replay'（重复播放）按钮。"
-  },
-  "words": [
+  "meanings": [
     {
-      "word": "Review",
-      "rootVisual": "<circle cx='12' cy='12' r='3'/><path d='M2 12 C6 6 18 6 22 12 C18 18 6 18 2 12 Z'/>",
-      "breakdown": ["re- (向后)", "view (看)"],
-      "imagery": "回头看之前学过的东西。",
-      "translation": "复习；回顾",
-      "sentence": "You should review what you have learned last class.",
-      "sentenceTrans": "你应该回头看看（复习）上节课学的内容。"
+      "meaningId": "re_back",
+      "displayName": "re- (向后/返回)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M20 18 a6 6 0 0 0-6-6H6l4-4m-4 4l4 4' />",
+      "prefixIntro": {
+        "title": "前缀 re- (意境:向后)",
+        "description": "核心意境是 **“向后” (Back)** 或 **“返回” (Return)**。\n它表示一个动作回到起点或相反的方向。",
+        "imagery": "联想发音 /ri/，像是在说“回去(Huí Qù)”，有一种强力拉回来的感觉。所有与re-相关的动作，都是朝反方向进行的。"
+      },
+      "words": [
+        {
+          "word": "Review",
+          "rootVisual": "<path d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z'></path><circle cx='12' cy='12' r='3'></circle>",
+          "breakdown": ["re- (向后)", "view (看)"],
+          "imagery": "向后回头看，就是回顾、复习。",
+          "translation": "回顾；复习",
+          "sentences": [
+            {
+              "en": "You should review what you learned last class.",
+              "cn": "你应该回顾（向后看）一下上节课学的内容。"
+            }
+          ]
+        },
+        {
+          "word": "Remain",
+          "rootVisual": "<path d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'></path><circle cx='12' cy='10' r='3'></circle>",
+          "breakdown": ["re- (向后)", "main (停留)"],
+          "imagery": "别人都向前走了，你向后退了一步，停留在了原地。",
+          "translation": "保持；停留",
+          "sentences": [
+            {
+              "en": "10 years have passed. The town remains the same.",
+              "cn": "十年过去了，这个小镇还保持着（停留在）原样。"
+            }
+          ]
+        },
+        {
+          "word": "Recall",
+          "rootVisual": "<path d='M9.5 2A2.5 2.5 0 0 0 7 4.5v1.78A5.5 5.5 0 0 0 4.5 12a5.5 5.5 0 0 0 5 5.47v1.53A2.5 2.5 0 0 0 12 21.5a2.5 2.5 0 0 0 2.5-2.5v-1.53A5.5 5.5 0 0 0 20 12a5.5 5.5 0 0 0-2.5-5.72V4.5A2.5 2.5 0 0 0 15 2z'></path>",
+          "breakdown": ["re- (向后)", "call (呼喊)"],
+          "imagery": "把已经远去的记忆，从脑海深处向后呼喊回来。",
+          "translation": "回忆；记起",
+          "sentences": [
+            {
+              "en": "I am so sorry. I can't recall your name.",
+              "cn": "非常抱歉，我想不起（呼喊不回）你的名字了。"
+            }
+          ]
+        },
+        {
+          "word": "Reflect",
+          "rootVisual": "<path d='M4 18 H20 M6 4 L12 18 L18 4' />",
+          "breakdown": ["re- (向后)", "flect (弯曲)"],
+          "imagery": "光线或声波射向一个平面，然后被向后弯曲着弹了回去。",
+          "translation": "反射；反映",
+          "sentences": [
+            {
+              "en": "White can reflect heat.",
+              "cn": "白色可以反射（向后弯曲）热量。"
+            },
+            {
+              "en": "The drop in consumer spending reflects concern about the economy.",
+              "cn": "消费者支出的下降反映了（折射出）对经济的担忧。"
+            }
+          ]
+        },
+        {
+          "word": "Relief",
+          "rootVisual": "<rect x='4' y='12' width='16' height='8' rx='2'></rect><line x1='12' y1='4' x2='12' y2='12'></line>",
+          "breakdown": ["re- (向后)", "lief (举起)"],
+          "imagery": "把压在心头的重担向后举起并扔掉，从而得到解脱。",
+          "translation": "宽慰；解脱",
+          "sentences": [
+            {
+              "en": "He laughed in relief.",
+              "cn": "他如释重负地（向后扔掉重担般地）笑了。"
+            }
+          ]
+        },
+        {
+          "word": "Relaxed",
+          "rootVisual": "<path d='M3 12 C 7 6, 10 18, 14 12 S 21 6, 21 12' />",
+          "breakdown": ["re- (向后)", "lax (松开)"],
+          "imagery": "把紧绷的弦向后松开，回到自然状态。",
+          "translation": "放松的",
+          "sentences": [
+            {
+              "en": "Please be relaxed. Your daughter will be OK.",
+              "cn": "请放松（松开来），你的女儿会没事的。"
+            }
+          ]
+        },
+        {
+          "word": "Regret",
+          "rootVisual": "<circle cx='12' cy='12' r='10' /><path d='M16 15 A 4 4 0 0 0 8 15' /><circle cx='9' cy='10' r='1.5' /><circle cx='15' cy='10' r='1.5' />",
+          "breakdown": ["re- (向后)", "gret (哭泣/悲伤)"],
+          "imagery": "回望（re-）过去犯下的错，内心感到悲伤（gret）不已。",
+          "translation": "后悔；遗憾",
+          "sentences": [
+            {
+              "en": "I regret leaving school so young.",
+              "cn": "我后悔（回望过去而悲伤）这么年轻就离开了学校。"
+            }
+          ]
+        },
+        {
+          "word": "Receive",
+          "rootVisual": "<path d='M18 10V6a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v4H4v6h14v-2z'></path>",
+          "breakdown": ["re- (向后)", "ceive (拿/抓)"],
+          "imagery": "别人递东西过来，你的手向后伸，把它拿住。",
+          "translation": "收到",
+          "sentences": [
+            {
+              "en": "I received the package this morning.",
+              "cn": "我今天早上收到了（向后拿住了）这个包裹。"
+            }
+          ]
+        },
+        {
+          "word": "Refuse",
+          "rootVisual": "<path d='M4 12 h12 m-4 -4 l4 4 l-4 4' /><line x1='18' y1='4' x2='18' y2='20' />",
+          "breakdown": ["re- (向后)", "fuse (倾倒/推)"],
+          "imagery": "别人递来一个请求，你用力地把它向后推了回去。",
+          "translation": "拒绝",
+          "sentences": [
+            {
+              "en": "The girl refused to be his girlfriend.",
+              "cn": "那个女孩拒绝（把请求推了回去）成为他的女朋友。"
+            }
+          ]
+        },
+        {
+          "word": "Reply",
+          "rootVisual": "<path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /><path d='M12 12 L9 9 m 3 3 L15 9' />",
+          "breakdown": ["re- (向后)", "ply (回应)"],
+          "imagery": "收到了信息，再向后把你的话回应过去。",
+          "translation": "回复",
+          "sentences": [
+            {
+              "en": "My friend replied that he was not at home.",
+              "cn": "我的朋友回复（向后回应）说他不在家。"
+            }
+          ]
+        },
+        {
+          "word": "Respond",
+          "rootVisual": "<path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' />",
+          "breakdown": ["re- (向后)", "spond (回应)"],
+          "imagery": "收到了信息，再向后把你的话回应过去。",
+          "translation": "回复；响应",
+          "sentences": [
+            {
+              "en": "He responded that he didn't want to see anyone.",
+              "cn": "他回应（向后响应）说他不想见任何人。"
+            }
+          ]
+        },
+        {
+          "word": "Report",
+          "rootVisual": "<path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='16' y1='13' x2='8' y2='13'></line><line x1='16' y1='17' x2='8' y2='17'></line>",
+          "breakdown": ["re- (向后)", "port (搬运)"],
+          "imagery": "把前方获得的信息，向后搬运回来给总部或公众。",
+          "translation": "报道；报告",
+          "sentences": [
+            {
+              "en": "According to recent news reports, they are under 18.",
+              "cn": "根据最近的新闻报道（向后搬运的信息），他们未满18岁。"
+            }
+          ]
+        },
+        {
+          "word": "Return",
+          "rootVisual": "<path d='M 20 14 A 8 8 0 1 1 11 6 M 8 6 L 12 6 L 9 8' />",
+          "breakdown": ["re- (向后)", "turn (转)"],
+          "imagery": "想象一个人走在路上，突然转（turn）身180度，向后（re-）走回起点。",
+          "translation": "回来；归还",
+          "sentences": [
+            {
+              "en": "When can you return my books?",
+              "cn": "你什么时候能归还（转回来）我的书？"
+            },
+            {
+              "en": "I didn't return home last weekend.",
+              "cn": "我上周末没有回家（转回家）。"
+            }
+          ]
+        }
+      ]
     },
     {
-      "word": "Remain",
-      "rootVisual": "<path d='M12 2 L12 12 M12 2 L8 6 M12 2 L16 6 M4 22 L20 22'/>",
-      "breakdown": ["re- (向后)", "main (留/住)"],
-      "imagery": "别人都走了，你向后退一步，保持原位。",
-      "translation": "保持；剩余",
-      "sentence": "The town remains the same.",
-      "sentenceTrans": "这个城镇保留原样（没有变）。"
-    },
-    {
-      "word": "Recall",
-      "rootVisual": "<path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/>",
-      "breakdown": ["re- (向后)", "call (喊/叫)"],
-      "imagery": "把过去的记忆像喊人一样“喊回来”。",
-      "translation": "回忆；回想起",
-      "sentence": "I can't recall your name.",
-      "sentenceTrans": "我无法把你的名字喊回来（想不起你的名字）。"
-    },
-    {
-      "word": "Reflect",
-      "rootVisual": "<path d='M3 12 C6 6 9 18 12 12 S18 6 21 12'/>",
-      "breakdown": ["re- (反向)", "flect (弯曲/折射)"],
-      "imagery": "光线照过来，被折射/反射回去。",
-      "translation": "反射；反映",
-      "sentence": "White can reflect heat.",
-      "sentenceTrans": "白色可以把热量折射回去（反射热量）。"
-    },
-    {
-      "word": "Return",
-      "rootVisual": "<path d='M20 12 A8 8 0 1 1 12 4'/><polyline points='8 4 12 4 12 0'/>",
-      "breakdown": ["re- (回)", "turn (转)"],
-      "imagery": "转回去；把东西转回原处。",
-      "translation": "归还；返回",
-      "sentence": "When can you return my books?",
-      "sentenceTrans": "你什么时候能把书转回来（归还）给我？"
-    },
-    {
-      "word": "Repeat",
-      "rootVisual": "<line x1='12' y1='6' x2='12' y2='18'/><line x1='6' y1='12' x2='18' y2='12'/>",
-      "breakdown": ["re- (再)", "peat (求/冲)"],
-      "imagery": "再一次说，再一次做。",
-      "translation": "重复",
-      "sentence": "Can you repeat that?",
-      "sentenceTrans": "你能再说一次（重复）吗？"
-    },
-    {
-      "word": "Recycle",
-      "rootVisual": "<path d='M20 12 A8 8 0 1 1 12 4'/><polyline points='8 4 12 4 12 0'/><path d='M4 12 A8 8 0 1 1 12 20'/><polyline points='16 20 12 20 12 24'/>",
-      "breakdown": ["re- (再)", "cycle (循环)"],
-      "imagery": "让垃圾再次进入循环圈。",
-      "translation": "回收利用",
-      "sentence": "The company recycles beer bottles.",
-      "sentenceTrans": "这家公司回收（让...再循环）啤酒瓶。"
-    },
-    {
-      "word": "Remind",
-      "rootVisual": "<path d='M9.5 2A2.5 2.5 0 0 0 7 4.5v1a2.5 2.5 0 0 0 2.5 2.5h1A2.5 2.5 0 0 0 13 5.5v-1A2.5 2.5 0 0 0 10.5 2h-1z M10 12c-2.5 0-5-1-5-3.5a3.5 3.5 0 0 1 7 0c0 2.5-2.5 3.5-5 3.5z M10 12c2.5 0 5 1 5 3.5a3.5 3.5 0 0 1-7 0c0-2.5 2.5-3.5 5-3.5z M4.5 10.5A2.5 2.5 0 0 0 2 13v1a2.5 2.5 0 0 0 2.5 2.5h1A2.5 2.5 0 0 0 8 14v-1a2.5 2.5 0 0 0-2.5-2.5h-1z M15.5 10.5a2.5 2.5 0 0 0-2.5 2.5v1a2.5 2.5 0 0 0 2.5 2.5h1A2.5 2.5 0 0 0 22 14v-1a2.5 2.5 0 0 0-2.5-2.5h-1z' stroke-width='1.5'/>",
-      "breakdown": ["re- (再)", "mind (脑子/思维)"],
-      "imagery": "再一次进入脑子；再次使其想起。",
-      "translation": "提醒",
-      "sentence": "The picture reminds me of the days in middle school.",
-      "sentenceTrans": "这张照片让我想起了（再次进入脑海）中学的日子。"
-    },
-    {
-      "word": "Research",
-      "rootVisual": "<circle cx='11' cy='11' r='8'/><line x1='21' y1='21' x2='16.65' y2='16.65'/>",
-      "breakdown": ["re- (再)", "search (搜寻)"],
-      "imagery": "反复地找，转圈找，为了做学问而反复探究。",
-      "translation": "研究",
-      "sentence": "Do some research.",
-      "sentenceTrans": "做些研究（反复搜寻资料）。"
+      "meaningId": "re_again",
+      "displayName": "re- (再一次)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M1 4v6h6M23 20v-6h-6'/><path d='M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15' />",
+      "prefixIntro": {
+        "title": "前缀 re- (意境:再一次)",
+        "description": "核心意境是 **“再一次” (Again)** 或 **“重复” (Repeat)**。\n它表示一个动作的重复执行。",
+        "imagery": "联想 “repeat” 的发音，表示动作的重复执行，周而复始。"
+      },
+      "words": [
+        {
+          "word": "Repeat",
+          "rootVisual": "<path d='M 21 7.5 a 9 9 0 1 1 -6.1 -5.5 M 23 10 L 21 7 L 19 10 M 9 12 L 12 15 L 15 9'/>",
+          "breakdown": ["re- (再一次)", "peat (做)"],
+          "imagery": "把一件事情 (`peat`) 再一次 (`re-`) 做一遍，就是重复。",
+          "translation": "重复",
+          "sentences": [
+            {
+              "en": "Sorry, I didn't follow you. Can you repeat that?",
+              "cn": "抱歉，我没跟上。你能重复（再一次做）一遍吗？"
+            }
+          ]
+        },
+        {
+          "word": "Request",
+          "rootVisual": "\"<path d=\"M 12 14 V 5 M 5 12 l 7 -7 l 7 7 M 21 16 a 2 2 0 0 0 -2 -2 H 5 a 2 2 0 0 0 -2 2 v 2 a 2 2 0 0 0 2 2 h 14 a 2 2 0 0 0 2 -2 v -2 z\"/>",
+          "breakdown": ["re- (再一次)", "quest (询问)"],
+          "imagery": "当你非常需要某样东西时，你会一遍又一遍地 (`re-`) 询问 (`quest`)，这就是请求。",
+          "translation": "请求",
+          "sentences": [
+            {
+              "en": "They have made an urgent request for international aid.",
+              "cn": "他们为获取国际援助发出了紧急请求（一再询问）。"
+            }
+          ]
+        },
+        {
+          "word": "Require",
+          "rootVisual": "<path d=\"M 12 10 V 19 M 5 12 l 7 7 l 7 -7 M 21 8 a 2 2 0 0 1 -2 2 H 5 a 2 2 0 0 1 -2 -2 V 6 a 2 2 0 0 1 2 -2 h 14 a 2 2 0 0 1 2 2 v 2 z\"/>",
+          "breakdown": ["re- (再一次)", "quire (询问)"],
+          "imagery": "规则和法律会反复地 (`re-`) 询问 (`quire`) 你是否遵守，这是一种强制性的要求。",
+          "translation": "要求；需要",
+          "sentences": [
+            {
+              "en": "The rules also require employers to provide safety training.",
+              "cn": "规则还要求（反复询问必须做到）雇主提供安全培训。"
+            }
+          ]
+        },
+        {
+          "word": "Reusable",
+          "rootVisual": "<path d=\"M6 2L3 7v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-3-5z\"/><path d=\"M11.5 10A2.5 2.5 0 0 1 14 12.5M14 12.5A2.5 2.5 0 0 1 16.5 15M9 15h2M12 10v2.5M14 12.5l-2.5 2.5\"/>",
+          "breakdown": ["re- (再一次)", "use-able (可使用的)"],
+          "imagery": "一个东西如果能够 (`able`) 被一次又一次地 (`re-`) 使用 (`use`)，它就是可重复使用的。",
+          "translation": "可重复使用的",
+          "sentences": [
+            {
+              "en": "Plastic bags are reusable.",
+              "cn": "塑料袋是可重复使用的（能够再次使用）。"
+            }
+          ]
+        },
+        {
+          "word": "Recycle",
+          "rootVisual": "<path d='M21.5 12a9.5 9.5 0 1 1-13.3-8.1' /><polyline points='22 2 12 12 12 2' />",
+          "breakdown": ["re- (再一次)", "cycle (循环)"],
+          "imagery": "让废旧物品再一次 (`re-`) 进入新的生命循环 (`cycle`)，这就是回收。",
+          "translation": "回收利用",
+          "sentences": [
+            {
+              "en": "The company recycles beer bottles.",
+              "cn": "这家公司回收（让…再次循环）啤酒瓶。"
+            }
+          ]
+        },
+        {
+          "word": "Resolution",
+          "rootVisual": "<path d='M14.5 13.5L18 10l-1.5-1.5L13 12l-1.5-1.5L8 14l1.5 1.5L13 12z' /><circle cx='6.5' cy='6.5' r='2.5' /><path d='M8.5 8.5L12 12' />",
+          "breakdown": ["re- (再一次)", "solut (解开)"],
+          "imagery": "面对一个难题，你一遍又一遍地 (`re-`) 尝试去解开 (`solut`) 它，这种坚持不懈最终形成的就是决心。",
+          "translation": "决心；决议",
+          "sentences": [
+            {
+              "en": "Carol made a resolution to work harder at school.",
+              "cn": "卡罗尔下定决心（反复破解难题后的决定）要在学校更努力地学习。"
+            }
+          ]
+        },
+        {
+          "word": "Remind",
+          "rootVisual": "<path d='M12 2a5 5 0 0 0-5 5c0 1.7.8 3.2 2 4.2V14a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.8c1.2-1 2-2.5 2-4.2a5 5 0 0 0-5-5z' /><path d='M9 18h6' />",
+          "breakdown": ["re- (再一次)", "mind (思想)"],
+          "imagery": "一段记忆或一个想法，再一次 (`re-`) 进入你的脑海 (`mind`)，这就是提醒或使你想起。",
+          "translation": "提醒；使想起",
+          "sentences": [
+            {
+              "en": "The picture reminds me of the days in middle school.",
+              "cn": "这张照片让我想起了（使记忆再次进入脑海）中学时的日子。"
+            }
+          ]
+        },
+        {
+          "word": "Repair",
+          "rootVisual": "<path d='M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z' />",
+          "breakdown": ["re- (再一次)", "pair (准备)"],
+          "imagery": "把坏掉的东西再一次 (`re-`) 准备好 (`pair`)，让它能正常使用，这就是修理。",
+          "translation": "修理；修补",
+          "sentences": [
+            {
+              "en": "My father is good at repairing furniture.",
+              "cn": "我父亲很擅长修理（再次准备好）家具。"
+            }
+          ]
+        },
+        {
+          "word": "Research",
+          "rootVisual": "<circle cx='11' cy='11' r='8' /><line x1='21' y1='21' x2='16.65' y2='16.65' />",
+          "breakdown": ["re- (再一次)", "search (寻找)"],
+          "imagery": "研究一个课题，就是一次又一次地 (`re-`) 深入地去寻找 (`search`) 信息和答案。",
+          "translation": "研究；调查",
+          "sentences": [
+            {
+              "en": "It's a good idea to do some research before you buy a house.",
+              "cn": "在买房之前做些研究（反复寻找信息）是个好主意。"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

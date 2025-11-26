@@ -1,0 +1,212 @@
+/* ==========================================================================
+   全局样式与变量
+   ========================================================================== */
+:root {
+    --bg-color: #f4f7f9;
+    --panel-bg: #ffffff;
+    --text-color: #333;
+    --subtext-color: #667;
+    --border-color: #dde4e9;
+    --primary-color: #007bff;
+    --primary-hover-color: #0056b3;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-family-code: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    --border-radius: 8px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 基础重置与页面设置 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+/* ==========================================================================
+   主要布局
+   ========================================================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--panel-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+}
+
+.app-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.app-header .subtitle {
+    font-size: 1rem;
+    color: var(--subtext-color);
+    margin-top: 0.5rem;
+}
+
+.workspace {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.panel {
+    flex: 1; /* 左右面板等宽 */
+    display: flex;
+    flex-direction: column;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.preview-area {
+    display: flex;
+    gap: 2rem;
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.preview-box {
+    flex: 1;
+    text-align: center;
+}
+
+/* ==========================================================================
+   组件样式
+   ========================================================================== */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--subtext-color);
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-family: var(--font-family-code);
+    font-size: 0.9rem;
+    resize: vertical; /* 允许用户垂直调整大小 */
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+textarea[readonly] {
+    background-color: #f9fafb;
+}
+
+.control-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+.control-btn.primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.control-btn:hover {
+    background-color: #d3d9df;
+}
+
+.control-btn.primary:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.control-btn:active {
+    transform: translateY(1px);
+}
+
+/* 输出面板的复制按钮 */
+#copy-btn {
+    margin-top: 1rem;
+    align-self: flex-end; /* 按钮靠右对齐 */
+}
+
+/* 状态信息 */
+#status-message {
+    margin-top: 1rem;
+    height: 1.5rem; /* 预留空间，防止布局跳动 */
+    font-weight: 500;
+}
+
+#status-message.success {
+    color: var(--success-color);
+}
+
+#status-message.error {
+    color: var(--error-color);
+}
+
+/* 预览容器 */
+.preview-container {
+    width: 100%;
+    height: 200px;
+    border: 1px dashed var(--border-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background: url('data:image/svg+xml;charset=UTF-8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="10" height="10" x="0" y="0" fill="%23f0f0f0"/><rect width="10" height="10" x="10" y="10" fill="%23f0f0f0"/></svg>');
+}
+
+.preview-container svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ==========================================================================
+   响应式设计
+   ========================================================================== */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    .container {
+        padding: 1rem;
+    }
+    .workspace, .preview-area {
+        flex-direction: column; /* 在小屏幕上，面板垂直堆叠 */
+    }
+}

@@ -72,7 +72,7 @@
 .card-front {
     justify-content: space-between;
     padding: 2rem 1.5rem;
-    border-color: var(--theme-color); /* 应用主题色 */
+    border-color: color-mix(in srgb, var(--theme-color) 70%, transparent);
 }
 .prefix-badge {
     position: absolute;
@@ -92,7 +92,7 @@
 .card:hover .visual-area svg { transform: scale(1.1); }
 .visual-area .layer-root { stroke: var(--text-sub); opacity: 0.7; stroke-width: 2; }
 .visual-area .layer-prefix {
-    stroke: var(--theme-color);
+    stroke: color-mix(in srgb, var(--theme-color) 70%, transparent);
     stroke-width: 2.5;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -106,12 +106,47 @@
 
 
 /* --- 组件: 单词卡片背面 --- */
-.card-back { transform: rotateY(180deg); padding: 2rem 1.5rem; text-align: left; background-color: #fafafa; }
-.breakdown-box { font-family: 'Courier New', monospace; background: #e5e7eb; padding: 0.5rem; border-radius: var(--radius-sm); text-align: center; font-weight: bold; color: #374151; margin-bottom: 1.5rem; }
-.meaning-section, .sentence-section { margin-bottom: 1.5rem; }
+/* [修改] 使用 Flexbox 进行垂直布局以支持内容滚动 */
+.card-back {
+    transform: rotateY(180deg);
+    padding: 2rem 1.5rem;
+    text-align: left;
+    background-color: #fafafa;
+    gap: 1.5rem; /* 为子元素之间提供统一的间距 */
+}
+.breakdown-box {
+    font-family: 'Courier New', monospace;
+    background: #e5e7eb;
+    padding: 0.5rem;
+    border-radius: var(--radius-sm);
+    text-align: center;
+    font-weight: bold;
+    color: #374151;
+    flex-shrink: 0;  /* Flexbox 子项不收缩，保持自身高度 */
+}
+.meaning-section {
+    flex-shrink: 0; /* Flexbox 子项不收缩，保持自身高度 */
+}
 .cn-translation { font-size: 1.4rem; color: #111; margin-bottom: 0.5rem; }
 .imagery-text { font-size: 0.95rem; color: #4b5563; line-height: 1.4; font-style: italic; border-left: 3px solid #ccc; padding-left: 10px; }
-.sentence-section { margin-top: auto; background: white; padding: 1rem; border-radius: var(--radius-sm); border: 1px solid #e5e7eb; }
+
+/* [修改] 例句区域的核心布局，使其可滚动 */
+.sentence-section {
+    flex-grow: 1;       /* 让此区域填满所有剩余的垂直空间 */
+    overflow-y: auto;   /* 当内容超出其高度时，显示垂直滚动条 */
+    min-height: 0;      /* Flexbox 布局中的一个重要技巧，确保 overflow 能正常工作 */
+    background: white;
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid #e5e7eb;
+}
+
+/* [新增] 为 JS 动态生成的例句块添加样式 */
+.sentence-block + .sentence-block {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+}
 .sentence-en { font-weight: 500; margin-bottom: 0.5rem; color: #1f2937; }
 .sentence-cn { font-size: 0.9rem; color: #6b7280; margin-bottom: 0.8rem; }
 
@@ -123,7 +158,6 @@
 .toggle-prefix-btn .icon-eye-off { display: none; }
 .toggle-prefix-btn.is-toggled .icon-eye { display: none; }
 .toggle-prefix-btn.is-toggled .icon-eye-off { display: block; }
-.toggle-prefix-btn.is-trolled { color: var(--theme-color, var(--text-main)); }
 
 .mark-btn { position: absolute; bottom: 1rem; right: 1rem; width: 32px; height: 32px; background: none; border: none; border-radius: 50%; cursor: pointer; color: var(--text-sub); display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; z-index: 10; }
 .mark-btn:hover { background-color: rgba(0,0,0,0.05); transform: scale(1.1); }
@@ -131,12 +165,11 @@
 .mark-btn .icon-check-filled { display: none; }
 .card.is-learned .mark-btn .icon-check-empty { display: none; }
 .card.is-learned .mark-btn .icon-check-filled { display: block; color: var(--theme-color); }
-.filter-container .filter-btn[data-filter="learned"].active ~ main .card.is-learned .mark-btn .icon-check-filled { color: var(--color-learned); }
 
 .audio-btn { background: none; border: none; cursor: pointer; color: inherit; display: flex; align-items: center; justify-content: center; padding: 4px; border-radius: 50%; transition: background 0.2s; }
 .audio-btn:hover { background: rgba(0,0,0,0.05); }
 .word-audio { width: 32px; height: 32px; color: var(--text-sub); }
-.sentence-audio { width: 100%; padding: 6px; border-radius: 4px; background: #f3f4f6; font-size: 0.85rem; font-weight: 600; }
+.sentence-audio { width: 100%; padding: 6px; border-radius: 4px; background: #f3f4f6; font-size: 0.85rem; font-weight: 600; justify-content: center; }
 .sentence-audio:hover { background: #e5e7eb; }
 
 
@@ -170,14 +203,13 @@
 }
 
 
-/* [新增] --- 组件: 骨架加载图 --- */
+/* --- 组件: 骨架加载图 --- */
 #skeleton-loader {
-    /* 关键: 让骨架图容器也参与网格布局 */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
-    grid-column: 1 / -1; /* 占据父网格的所有列 */
-    transition: opacity 0.3s ease-out; /* 为平滑移除添加过渡 */
+    grid-column: 1 / -1;
+    transition: opacity 0.3s ease-out;
 }
 .skeleton-card {
     height: 400px;
@@ -189,10 +221,9 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    position: relative; /* 为动画伪元素定位 */
+    position: relative;
 }
 
-/* 骨架图内部的占位符 */
 .skeleton-badge, .skeleton-visual, .skeleton-word, .skeleton-hint {
     background-color: #e5e7eb;
     border-radius: 4px;
@@ -203,28 +234,24 @@
     50% { opacity: 0.6; }
 }
 
-.skeleton-badge {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    width: 60px;
-    height: 20px;
-    border-radius: var(--radius-sm);
+.skeleton-badge { position: absolute; top: 1rem; left: 1rem; width: 60px; height: 20px; border-radius: var(--radius-sm); }
+.skeleton-visual { width: 120px; height: 120px; border-radius: 50%; margin: auto; }
+.skeleton-word { width: 60%; height: 36px; margin: 0 auto 1rem; border-radius: var(--radius-sm); }
+.skeleton-hint { width: 40%; height: 16px; margin: 0 auto; }
+
+
+/* [新增] 滚动条美化 (可选，但推荐) */
+/* 适用于 Webkit 内核浏览器，如 Chrome, Edge, Safari */
+.sentence-section::-webkit-scrollbar {
+    width: 6px;
 }
-.skeleton-visual {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; /* 模拟圆形SVG区域 */
-    margin: auto; /* 垂直和水平居中 */
+.sentence-section::-webkit-scrollbar-track {
+    background: transparent; /* 滚动条轨道背景透明 */
 }
-.skeleton-word {
-    width: 60%;
-    height: 36px;
-    margin: 0 auto 1rem;
-    border-radius: var(--radius-sm);
+.sentence-section::-webkit-scrollbar-thumb {
+    background-color: #d1d5db; /* 滚动条滑块颜色 */
+    border-radius: 10px;
 }
-.skeleton-hint {
-    width: 40%;
-    height: 16px;
-    margin: 0 auto;
+.sentence-section::-webkit-scrollbar-thumb:hover {
+    background-color: #9ca3af; /* 鼠标悬浮时滑块颜色 */
 }
