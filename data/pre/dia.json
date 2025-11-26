@@ -1,0 +1,31 @@
+{
+  "prefix": "dia",
+  "meanings": [
+    {
+      "meaningId": "dia_across",
+      "displayName": "dia- (穿过/两者之间)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<path d='M 4 16 q 8 -12 16 0 M 20 13 l 0 3 l -3 -1' stroke='currentColor' stroke-width='2' fill='none'/>",
+      "prefixIntro": {
+        "title": "前缀 dia- (意境:穿过/两者间)",
+        "description": "核心意境是 **“穿过” (Through)** 或 **“两者之间” (Between)**。\n表示横跨两端或在两者之间进行。",
+        "imagery": "联想一条直径线穿过圆心⚪，连接了两端。"
+      },
+      "words": [
+        {
+          "word": "Dialogue",
+          "rootVisual": "<path d='M4 4 h10 v8 h-2 l-2 4 l-2 -4 h-4 z' stroke='currentColor' fill='none'/><path d='M20 20 h-10 v-8 h2 l2 -4 l2 4 h4 z' stroke='currentColor' fill='none'/>",
+          "breakdown": ["dia- (两者之间)", "logue (说话)"],
+          "imagery": "在两个人之间（dia-）互相说话（logue），即对话。",
+          "translation": "对话",
+          "sentences": [
+            {
+              "en": "Practise the dialogue with your partner.",
+              "cn": "和你的搭档练习对话（两人之间的交谈）。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

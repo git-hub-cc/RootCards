@@ -1,0 +1,70 @@
+{
+  "prefix": "en",
+  "meanings": [
+    {
+      "meaningId": "en_make",
+      "displayName": "en-/em- (使.../进入)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 4'/><path d='M8 12 h8 m-2 -2 l2 2 l-2 2' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "前缀 en-/em- (意境:使役/进入)",
+        "description": "核心意境是 **“使...” (Make)** 或 **“进入” (Put Into)**。\n它通常把名词或形容词变成动词。遇到 b, p, m 开头时变为 em-。",
+        "imagery": "联想一只手把东西推进去，或者给一个空电池充电⚡，使其获得某种状态。"
+      },
+      "words": [
+        {
+          "word": "Embarrassed",
+          "rootVisual": "<path d='M4 4 h16 v16 h-16 z' fill='none' stroke='currentColor'/><path d='M4 4 l16 16 M20 4 l-16 16' stroke='currentColor' stroke-width='1'/>",
+          "breakdown": ["em- (进入)", "bar (阻碍/杆)"],
+          "imagery": "像是被关进了一个充满栅栏（bar）的笼子里，进退两难，感到尴尬。",
+          "translation": "尴尬的",
+          "sentences": [
+            {
+              "en": "Lily gets embarrassed if we ask her to sing.",
+              "cn": "如果我们叫莉莉唱歌，她会感到尴尬（像被困住一样）。"
+            }
+          ]
+        },
+        {
+          "word": "Embarrassing",
+          "rootVisual": "<path d='M4 4 h16 v16 h-16 z' fill='none' stroke='currentColor'/><path d='M4 4 l16 16 M20 4 l-16 16' stroke='currentColor' stroke-width='1'/>",
+          "breakdown": ["em- (使)", "bar (阻碍)"],
+          "imagery": "这是一个让人（em-）陷入困境（bar）的情况。",
+          "translation": "令人尴尬的",
+          "sentences": [
+            {
+              "en": "She asked me a lot of embarrassing questions.",
+              "cn": "她问了我很多令人尴尬的问题。"
+            }
+          ]
+        },
+        {
+          "word": "Encourage",
+          "rootVisual": "<path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["en- (使)", "cor (心)"],
+          "imagery": "往心里（cor）注入力量，使人内心强大，即鼓励。",
+          "translation": "鼓励",
+          "sentences": [
+            {
+              "en": "We should encourage him together.",
+              "cn": "我们应该一起鼓励（给心注入力量）他。"
+            }
+          ]
+        },
+        {
+          "word": "Endanger",
+          "rootVisual": "<path d='M12 4 L4 20 h16 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 10 v6 m0 2 v0.5' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["en- (使)", "danger (危险)"],
+          "imagery": "使某人进入一个带有警告标志（danger）的区域。",
+          "translation": "危及",
+          "sentences": [
+            {
+              "en": "Smoking endangers your health.",
+              "cn": "吸烟会危及（使进入危险）你的健康。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

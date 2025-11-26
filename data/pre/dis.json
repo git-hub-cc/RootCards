@@ -1,0 +1,96 @@
+{
+  "prefix": "dis",
+  "meanings": [
+    {
+      "meaningId": "dis_negate",
+      "displayName": "dis- (否定/去除)",
+      "themeColor": "#e11d48",
+      "prefixVisual": "<path d='M4 4 L20 20 M4 20 L20 4' />",
+      "prefixIntro": {
+        "title": "前缀 dis- (意境:否定/去除)",
+        "description": "核心意境是 **“否定” (Not)** 或 **“去除” (Removal)**。\n它表示一个状态或动作的取消、反转或移除。",
+        "imagery": "联想像是一个大大的 'X' 符号，表示否定、取消或划掉。"
+      },
+      "words": [
+        {
+          "word": "Discover",
+          "rootVisual": "<rect x='7' y='7' width='10' height='10' fill='#fff' stroke='currentColor' stroke-width='1' /><circle cx='12' cy='12' r='5' fill='none' stroke='currentColor' stroke-width='2' />",
+          "breakdown": ["dis- (去除)", "cover (盖子)"],
+          "imagery": "把盖在上面的东西拿掉，隐藏的东西就显露了，即发现。",
+          "translation": "发现",
+          "sentences": [
+            {
+              "en": "The body was discovered in a field.",
+              "cn": "尸体在田野中被发现（去除盖子，显露）。"
+            }
+          ]
+        },
+        {
+          "word": "Disappointed",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' /><path d='M8 14 c 1.5 2 7 2 8 0' fill='none' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["dis- (否定)", "appoint (指定/安排)"],
+          "imagery": "期望就像向上的箭头，但结果（dis-）把它否定了，向下重击。",
+          "translation": "失望",
+          "sentences": [
+            {
+              "en": "I am disappointed with the grade.",
+              "cn": "我对成绩感到失望（否定了期望的安排）。"
+            }
+          ]
+        },
+        {
+          "word": "Disbelief",
+          "rootVisual": "<path d='M12 4 L12 20 M4 12 L20 12' fill='none' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='5' fill='currentColor' opacity='0.5'/>",
+          "breakdown": ["dis- (否定)", "belief (相信)"],
+          "imagery": "脑中有一个“是”（√）的符号，被一个“否”（X）的符号强力撞开或取代。",
+          "translation": "不相信；怀疑",
+          "sentences": [
+            {
+              "en": "I expressed my disbelief in the story.",
+              "cn": "我表达了对这个故事的不相信（否定相信）。"
+            }
+          ]
+        },
+        {
+          "word": "Dislike",
+          "rootVisual": "<path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' fill='currentColor' opacity='0.7'/>",
+          "breakdown": ["dis- (否定)", "like (喜欢)"],
+          "imagery": "将爱心打碎或反转，表示排斥和不喜欢。",
+          "translation": "不喜欢",
+          "sentences": [
+            {
+              "en": "Why do you dislike her so much?",
+              "cn": "你为什么这么不喜欢（否定喜欢）她？"
+            }
+          ]
+        },
+        {
+          "word": "Disagree",
+          "rootVisual": "<path d='M12 6 l-6 6 l6 6' stroke='currentColor' /><path d='M12 6 l6 6 l-6 6' stroke='currentColor' />",
+          "breakdown": ["dis- (相反)", "agree (同意)"],
+          "imagery": "两个方向相反的箭头，代表两个人的意见走向不同的方向，无法汇合。",
+          "translation": "不同意",
+          "sentences": [
+            {
+              "en": "My parents disagree the marriage.",
+              "cn": "我的父母不同意（意见相反）这门婚事。"
+            }
+          ]
+        },
+        {
+          "word": "Disappear",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' stroke-dasharray='4 2' stroke-linecap='round'/>",
+          "breakdown": ["dis- (分离)", "appear (出现)"],
+          "imagery": "一个物体从场景中抽离出去，逐渐变得透明，直到消失。",
+          "translation": "消失",
+          "sentences": [
+            {
+              "en": "My keys have disappear again.",
+              "cn": "我的钥匙又消失了（从出现的范畴中分离出去）。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

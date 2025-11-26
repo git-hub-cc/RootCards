@@ -63,25 +63,28 @@ function playAudioFile(filePath) {
 
 /**
  * 根据数据动态生成筛选器按钮。
- * 【核心修改】此函数现在基于意境分组 (meaning groups) 来生成按钮。
+ * 【核心逻辑】此函数基于意境分组 (meaning groups) 来生成按钮。
+ * (此函数无需修改，因为其逻辑已经支持动态创建新意境ID的按钮)
  * @param {HTMLElement} filterContainer - 按钮的容器元素。
  * @param {HTMLElement} shuffleBtn - 随机按钮元素，新按钮会插在此之前。
  * @param {Array<object>} meaningGroups - 从 state.js 传入的原始意境分组对象数组。
  */
 export function renderFilterButtons(filterContainer, shuffleBtn, meaningGroups) {
+    // 1. 渲染“全部”按钮
     const allButton = document.createElement('button');
     allButton.className = 'filter-btn active';
     allButton.dataset.filter = 'all';
     allButton.textContent = '全部 (All)';
     filterContainer.insertBefore(allButton, shuffleBtn);
 
+    // 2. 渲染“已掌握”按钮
     const learnedButton = document.createElement('button');
     learnedButton.className = 'filter-btn';
     learnedButton.dataset.filter = 'learned';
     learnedButton.textContent = '已掌握';
     filterContainer.insertBefore(learnedButton, shuffleBtn);
 
-    // 【新】遍历意境分组来创建按钮
+    // 3. 遍历意境分组来创建按钮
     meaningGroups.forEach(group => {
         // 鲁棒性检查
         if (!group.meaningId || !group.displayName) return;
@@ -127,9 +130,11 @@ function createIntroCard(data) {
     }
     const visualArea = cardClone.querySelector('.visual-area');
     if (data.visual) {
+        // 确保 SVG 元素使用了正确的 viewBox 和 stroke 属性
         visualArea.innerHTML = `<svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">${data.visual}</svg>`;
     }
     cardClone.querySelector('.intro-title').textContent = data.title;
+    // 使用 <br> 替换 \n 以正确显示多行描述
     cardClone.querySelector('.intro-description').innerHTML = data.description.replace(/\n/g, '<br>');
     cardClone.querySelector('.intro-imagery').textContent = data.imagery;
     cardClone.addEventListener('click', () => cardClone.classList.toggle('is-flipped'));
@@ -152,15 +157,17 @@ function createWordCard(data, handlers) {
     }
 
     const visualArea = cardClone.querySelector('.visual-area');
+    // 注入词根和前缀的视觉元素
     visualArea.innerHTML = `<svg viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <g class="layer-root">${data.rootVisual || ''}</g>
                             <g class="layer-prefix">${data.prefixVisual || ''}</g>
                         </svg>`;
 
-    // 【核心修改】使用 data.prefix 属性来显示徽章，而不是 data.type
+    // 注入卡片正面的文本内容
     cardClone.querySelector('.prefix-badge').textContent = `${data.prefix}-`;
-
     cardClone.querySelector('.word-text').textContent = data.word;
+
+    // 注入卡片背面的解析内容
     cardClone.querySelector('.part-prefix').textContent = data.breakdown[0];
     cardClone.querySelector('.part-root').textContent = data.breakdown[1];
     cardClone.querySelector('.cn-translation').textContent = data.translation;
@@ -189,15 +196,19 @@ function createWordCard(data, handlers) {
         data.sentences.forEach((sentence, index) => {
             const sentenceBlock = document.createElement('div');
             sentenceBlock.className = 'sentence-block';
+
+            // 英文例句（带高亮）
             const sentenceEn = document.createElement('div');
             sentenceEn.className = 'sentence-en';
-
             // 使用改进后的 combinedPattern 进行高亮替换
             sentenceEn.innerHTML = sentence.en.replace(combinedPattern, `<strong style="color: var(--theme-color, black);">$1</strong>`);
 
+            // 中文翻译
             const sentenceCn = document.createElement('div');
             sentenceCn.className = 'sentence-cn';
             sentenceCn.textContent = sentence.cn;
+
+            // 音频按钮
             const audioBtn = document.createElement('button');
             audioBtn.className = 'audio-btn sentence-audio';
             audioBtn.title = '朗读例句';
@@ -206,6 +217,7 @@ function createWordCard(data, handlers) {
                 const sentenceAudioPath = `audio/sentences/${data.word.toLowerCase()}_sentence_${index}.mp3`;
                 playAudioFile(sentenceAudioPath);
             });
+
             sentenceBlock.appendChild(sentenceEn);
             sentenceBlock.appendChild(sentenceCn);
             sentenceBlock.appendChild(audioBtn);
@@ -213,17 +225,22 @@ function createWordCard(data, handlers) {
         });
     }
 
+    // --- 事件绑定 ---
+
+    // 翻转卡片（排除按钮点击区域）
     cardClone.addEventListener('click', (e) => {
         if (!e.target.closest('.audio-btn, .toggle-prefix-btn, .mark-btn')) {
             cardClone.classList.toggle('is-flipped');
         }
     });
 
+    // 单词音频播放
     cardClone.querySelector('.word-audio').addEventListener('click', () => {
         const wordAudioPath = `audio/words/${data.word.toLowerCase()}.mp3`;
         playAudioFile(wordAudioPath);
     });
 
+    // 切换前缀视觉元素显示
     const togglePrefixBtn = cardClone.querySelector('.toggle-prefix-btn');
     togglePrefixBtn.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -231,6 +248,7 @@ function createWordCard(data, handlers) {
         togglePrefixBtn.classList.toggle('is-toggled');
     });
 
+    // 标记为已掌握
     const markBtn = cardClone.querySelector('.mark-btn');
     markBtn.addEventListener('click', (e) => {
         e.stopPropagation();

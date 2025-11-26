@@ -72,7 +72,7 @@
 .card-front {
     justify-content: space-between;
     padding: 2rem 1.5rem;
-    border-color: color-mix(in srgb, var(--theme-color) 70%, transparent);
+    border-color: color-mix(in srgb, var(--theme-color) 50%, transparent);
 }
 .prefix-badge {
     position: absolute;
@@ -90,12 +90,23 @@
 .visual-area { flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 1rem; }
 .visual-area svg { width: 120px; height: 120px; transition: transform 0.3s ease; }
 .card:hover .visual-area svg { transform: scale(1.1); }
-.visual-area .layer-root { stroke: var(--text-sub); opacity: 0.7; stroke-width: 2; }
+
+/* [修复] 词根层：添加 color 属性以支持 stroke="currentColor" */
+.visual-area .layer-root {
+    stroke: var(--text-sub);
+    color: var(--text-sub); /* 核心修复：定义 currentColor 为灰色 */
+    opacity: 0.7;
+    stroke-width: 2;
+}
+
+/* [修复] 前缀层：添加 color 属性以支持 stroke="currentColor" */
 .visual-area .layer-prefix {
-    stroke: color-mix(in srgb, var(--theme-color) 70%, transparent);
+    stroke: color-mix(in srgb, var(--theme-color) 50%, transparent);
+    color: color-mix(in srgb, var(--theme-color) 50%, transparent); /* 核心修复：定义 currentColor 为主题色 */
     stroke-width: 2.5;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 .card.prefix-hidden .visual-area .layer-prefix {
     opacity: 0;
     transform: scale(0.8);
@@ -106,7 +117,6 @@
 
 
 /* --- 组件: 单词卡片背面 --- */
-/* [修改] 使用 Flexbox 进行垂直布局以支持内容滚动 */
 .card-back {
     transform: rotateY(180deg);
     padding: 2rem 1.5rem;
@@ -130,7 +140,7 @@
 .cn-translation { font-size: 1.4rem; color: #111; margin-bottom: 0.5rem; }
 .imagery-text { font-size: 0.95rem; color: #4b5563; line-height: 1.4; font-style: italic; border-left: 3px solid #ccc; padding-left: 10px; }
 
-/* [修改] 例句区域的核心布局，使其可滚动 */
+/* 例句区域的核心布局，使其可滚动 */
 .sentence-section {
     flex-grow: 1;       /* 让此区域填满所有剩余的垂直空间 */
     overflow-y: auto;   /* 当内容超出其高度时，显示垂直滚动条 */
@@ -141,7 +151,7 @@
     border: 1px solid #e5e7eb;
 }
 
-/* [新增] 为 JS 动态生成的例句块添加样式 */
+/* 为 JS 动态生成的例句块添加样式 */
 .sentence-block + .sentence-block {
     margin-top: 1rem;
     padding-top: 1rem;
@@ -240,8 +250,7 @@
 .skeleton-hint { width: 40%; height: 16px; margin: 0 auto; }
 
 
-/* [新增] 滚动条美化 (可选，但推荐) */
-/* 适用于 Webkit 内核浏览器，如 Chrome, Edge, Safari */
+/* 滚动条美化 */
 .sentence-section::-webkit-scrollbar {
     width: 6px;
 }

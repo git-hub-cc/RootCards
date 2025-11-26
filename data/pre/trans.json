@@ -1,0 +1,44 @@
+{
+  "prefix": "trans",
+  "meanings": [
+    {
+      "meaningId": "trans_across",
+      "displayName": "trans- (穿过/改变)",
+      "themeColor": "#d946ef",
+      "prefixVisual": "<path d='M 4 16 q 8 -12 16 0 M 20 13 l 0 3 l -3 -1' stroke='currentColor' stroke-width='2' fill='none'/>",
+      "prefixIntro": {
+        "title": "前缀 trans- (意境:穿过)",
+        "description": "核心意境是 **“穿过” (Across)** 或 **“转换” (Change)**。\n表示从一点跨越到另一点，或状态的改变。",
+        "imagery": "联想一座桥跨过河流🌉，或者变形金刚 (Transformers) 的形态转换。"
+      },
+      "words": [
+        {
+          "word": "Translator",
+          "rootVisual": "<path d='M4 6 h8 v8 h-8 z' stroke='currentColor' fill='none'/><path d='M12 14 h8 v8 h-8 z' stroke='currentColor' fill='none'/><path d='M8 10 l8 8' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["trans- (转换)", "lat (搬运)"],
+          "imagery": "把一种语言搬运（lat）并转换（trans-）成另一种语言。",
+          "translation": "翻译员",
+          "sentences": [
+            {
+              "en": "She works as a translator.",
+              "cn": "她是一名翻译员（语言搬运者）。"
+            }
+          ]
+        },
+        {
+          "word": "Transport",
+          "rootVisual": "<path d='M2 12 h20' stroke='currentColor' stroke-width='1'/><rect x='4' y='8' width='6' height='4' stroke='currentColor' fill='none'/><rect x='14' y='8' width='6' height='4' stroke='currentColor' fill='none'/><path d='M7 8 q 5 -6 10 0' stroke='currentColor' fill='none'/>",
+          "breakdown": ["trans- (穿过)", "port (拿/运)"],
+          "imagery": "把货物拿起（port），穿过（trans-）很长的距离送到另一端。",
+          "translation": "运输",
+          "sentences": [
+            {
+              "en": "The goods are transported to London.",
+              "cn": "货物被运输（跨越距离运送）到伦敦。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

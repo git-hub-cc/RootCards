@@ -1,0 +1,44 @@
+{
+  "prefix": "op",
+  "meanings": [
+    {
+      "meaningId": "op_against",
+      "displayName": "op-/ob- (相反/反对)",
+      "themeColor": "#be123c",
+      "prefixVisual": "<path d='M4 12 h6' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/><path d='M20 12 h-6' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "前缀 op-/ob- (意境:相反)",
+        "description": "核心意境是 **“相反” (Against)** 或 **“对面” (Facing)**。\n它是 ob- 在 p 字母前的变体。表示对抗、阻碍或面对面。",
+        "imagery": "联想两只公羊角力🐏，或者两个人面对面站着。"
+      },
+      "words": [
+        {
+          "word": "Oppose",
+          "rootVisual": "<path d='M16 12 l-4 0' stroke='currentColor' stroke-width='2'/><rect x='4' y='8' width='8' height='8' stroke='currentColor' fill='none'/><path d='M16 8 v8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["op- (相反)", "pos (放置)"],
+          "imagery": "把自己放在（pos）与别人相反（op-）的位置上，即反对。",
+          "translation": "反对",
+          "sentences": [
+            {
+              "en": "The president opposed the medical reform plan.",
+              "cn": "总统反对（站在相反立场）医疗改革计划。"
+            }
+          ]
+        },
+        {
+          "word": "Opposite",
+          "rootVisual": "<rect x='4' y='8' width='6' height='8' stroke='currentColor' fill='none'/><rect x='14' y='8' width='6' height='8' stroke='currentColor' fill='none'/><path d='M12 4 v16' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["op- (对面)", "pos (放置)"],
+          "imagery": "被放在（pos）正对面（op-）的位置，即对面的。",
+          "translation": "在...对面；相反的",
+          "sentences": [
+            {
+              "en": "The bank is opposite the convenience store.",
+              "cn": "银行在便利店对面（正对着的位置）。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

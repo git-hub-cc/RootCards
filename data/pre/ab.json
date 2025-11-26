@@ -1,0 +1,31 @@
+{
+  "prefix": "ab",
+  "meanings": [
+    {
+      "meaningId": "ab_away",
+      "displayName": "ab- (远离)",
+      "themeColor": "#a855f7",
+      "prefixVisual": "<circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 12 l6 -6' stroke='currentColor' stroke-width='2'/><path d='M16 4 l4 0 l0 4' stroke='currentColor' stroke-width='2' fill='none'/>",
+      "prefixIntro": {
+        "title": "前缀 ab- (意境:远离)",
+        "description": "核心意境是 **“远离” (Away)** 或 **“脱离” (Off)**。\n表示从某个源头或位置离开。",
+        "imagery": "联想一个物体飞离中心🚀，越来越远。"
+      },
+      "words": [
+        {
+          "word": "Absent",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><text x='8' y='16' font-size='10' fill='currentColor'>?</text>",
+          "breakdown": ["ab- (远离)", "sent/esse (存在)"],
+          "imagery": "不再存在于（sent）那个位置，而是远离（ab-）了，即缺席。",
+          "translation": "缺席的",
+          "sentences": [
+            {
+              "en": "He has been absent from class for two weeks.",
+              "cn": "他已经缺席（远离课堂）两周了。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

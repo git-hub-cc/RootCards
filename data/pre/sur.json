@@ -1,0 +1,31 @@
+{
+  "prefix": "sur",
+  "meanings": [
+    {
+      "meaningId": "sur_over",
+      "displayName": "sur- (向上/超过)",
+      "themeColor": "#06b6d4",
+      "prefixVisual": "<line x1='2' y1='18' x2='22' y2='18' stroke='currentColor' stroke-width='2'/><path d='M6 18 q 6 -12 12 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "前缀 sur- (意境:向上)",
+        "description": "核心意境是 **“在...之上” (Over)** 或 **“超过” (Beyond)**。\n源自法语 sur，对应拉丁语 super。",
+        "imagery": "联想水面上的波浪🌊，或者浮在表面的一层油。"
+      },
+      "words": [
+        {
+          "word": "Surface",
+          "rootVisual": "<rect x='4' y='10' width='16' height='10' fill='currentColor' opacity='0.3'/><path d='M4 10 h16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["sur- (在上面)", "face (脸/面)"],
+          "imagery": "在最上面（sur-）的那一面（face），即表面。",
+          "translation": "表面",
+          "sentences": [
+            {
+              "en": "The surface of the phone is so smooth.",
+              "cn": "这部手机的表面（最上面的一层）非常光滑。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -76,11 +76,12 @@ export function toggleLearnedStatus(wordData) {
  * @throws {Error} 如果数据清单 (DATA_FILES) 未定义或为空。
  */
 export async function loadAndProcessData() {
+    // 检查 DATA_FILES 是否存在，这是应用启动的基石
     if (typeof DATA_FILES === 'undefined' || !Array.isArray(DATA_FILES) || DATA_FILES.length === 0) {
         throw new Error("数据清单 'data-manifest.js' 未找到或为空。");
     }
 
-    let allRawMeaningGroups = []; // 【新】存储原始的意境分组对象，用于生成筛选按钮
+    let allRawMeaningGroups = []; // 存储原始的意境分组对象，用于生成筛选按钮
     allVocabularyData = []; // 重置数据
 
     for (const file of DATA_FILES) {
@@ -89,14 +90,14 @@ export async function loadAndProcessData() {
             if (!response.ok) throw new Error(`网络错误，无法加载文件: ${file}`);
             const dataFile = await response.json();
 
-            // --- 【核心修改】处理新的嵌套结构 ---
+            // --- 核心修改：处理新的嵌套结构 ---
             // 鲁棒性检查：确保文件有 prefix 和 meanings 数组
             if (!dataFile.prefix || !Array.isArray(dataFile.meanings)) {
                 console.warn(`文件 ${file} 格式不正确，已跳过。缺少 'prefix' 或 'meanings' 数组。`);
                 continue;
             }
 
-            // 【新】遍历文件中的每个意境分组
+            // 遍历文件中的每个意境分组
             for (const meaningGroup of dataFile.meanings) {
                 // 1. 将原始意境分组添加到列表中，用于之后创建筛选器
                 allRawMeaningGroups.push(meaningGroup);
@@ -138,7 +139,7 @@ export async function loadAndProcessData() {
 
 /**
  * 根据当前筛选器过滤数据，更新 currentDataSet。
- * 【无修改】此函数设计良好，无需改动即可适应新的筛选ID。
+ * (此函数无修改)
  * @returns {void}
  */
 export function filterAndPrepareDataSet() {

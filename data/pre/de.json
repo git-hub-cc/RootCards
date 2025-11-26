@@ -1,0 +1,44 @@
+{
+  "prefix": "de",
+  "meanings": [
+    {
+      "meaningId": "de_down_away",
+      "displayName": "de- (向下/去除)",
+      "themeColor": "#7c3aed",
+      "prefixVisual": "<path d='M12 4 v16' stroke='currentColor' stroke-width='2'/><path d='M8 16 l4 4 l4 -4' stroke='currentColor' stroke-width='2' fill='none'/>",
+      "prefixIntro": {
+        "title": "前缀 de- (意境:向下/去除)",
+        "description": "核心意境是 **“向下” (Down)** 或 **“去除” (Away)**。\n表示动作方向向下，或者把某物拿走、去掉。",
+        "imagery": "联想一个向下的箭头⬇️，或者橡皮擦擦除的动作。"
+      },
+      "words": [
+        {
+          "word": "Delete",
+          "rootVisual": "<path d='M4 20 l16 -16' stroke='currentColor' stroke-width='2'/><path d='M20 20 l-16 -16' stroke='currentColor' stroke-width='2'/><path d='M2 10 h20' stroke='currentColor' stroke-width='8' opacity='0.2'/>",
+          "breakdown": ["de- (去除)", "let/lin (涂抹)"],
+          "imagery": "把它涂掉（lin）去除（de-），即删除。",
+          "translation": "删除",
+          "sentences": [
+            {
+              "en": "I deleted the file by mistake.",
+              "cn": "我错误地删除了（涂掉去除了）那个文件。"
+            }
+          ]
+        },
+        {
+          "word": "Decide",
+          "rootVisual": "<path d='M12 2 v10' stroke='currentColor'/><path d='M12 12 l-6 6 M12 12 l6 6' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["de- (加强/去除)", "cid (切)"],
+          "imagery": "把其他选项都切掉（cid），只留下一个，这就是决定。",
+          "translation": "决定",
+          "sentences": [
+            {
+              "en": "I decided to learn English from Allen.",
+              "cn": "我决定（切除其他选项）跟Allen学英语。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

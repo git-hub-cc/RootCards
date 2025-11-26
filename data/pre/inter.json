@@ -1,0 +1,44 @@
+{
+  "prefix": "inter",
+  "meanings": [
+    {
+      "meaningId": "inter_between",
+      "displayName": "inter- (...之间)",
+      "themeColor": "#6366f1",
+      "prefixVisual": "<circle cx='6' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='18' cy='12' r='4' stroke='currentColor' fill='none'/><line x1='10' y1='12' x2='14' y2='12' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "前缀 inter- (意境:之间)",
+        "description": "核心意境是 **“在...之间” (Between)** 或 **“相互” (Mutual)**。\n表示在两者或多者中间，进行交互连接。",
+        "imagery": "联想两座岛屿之间的一座桥梁🌉，连接彼此。"
+      },
+      "words": [
+        {
+          "word": "International",
+          "rootVisual": "<path d='M 2 12 A 10 10 0 1 0 22 12 A 10 10 0 1 0 2 12 Z' stroke='currentColor' stroke-width='1'/>",
+          "breakdown": ["inter- (之间)", "nat (出生/国家)"],
+          "imagery": "在国家（nat）与国家之间（inter-）的事务，即国际的。",
+          "translation": "国际的",
+          "sentences": [
+            {
+              "en": "He works in international business.",
+              "cn": "他从事国际（国与国之间）商务工作。"
+            }
+          ]
+        },
+        {
+          "word": "Interpersonal",
+          "rootVisual": "<circle cx='8' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M8 11 v4' stroke='currentColor'/><circle cx='16' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M16 11 v4' stroke='currentColor'/><path d='M8 12 q 4 4 8 0' stroke='currentColor' fill='none'/>",
+          "breakdown": ["inter- (之间)", "person (人)"],
+          "imagery": "在人（person）与人之间（inter-）的关系，即人际的。",
+          "translation": "人际的",
+          "sentences": [
+            {
+              "en": "She has good interpersonal skills.",
+              "cn": "她有很好的人际（人与人之间）交往能力。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
