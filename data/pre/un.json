@@ -5,9 +5,9 @@
       "meaningId": "un_negate",
       "displayName": "un- (不/相反)",
       "themeColor": "#dc2626",
-      "prefixVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='4' stroke-linecap='round'/><path d='M12 4 v16' stroke='currentColor' stroke-width='1' stroke-dasharray='2 2'/>",
+      "prefixVisual": "<path d='M4 4 L20 20 M4 20 L20 4' />",
       "prefixIntro": {
-        "title": "前缀 un- (意境:不/相反)",
+        "title": "前缀 un-",
         "description": "核心意境是 **“不” (Not)** 或 **“相反动作” (Reverse)**。\n它是英语中最常用的否定前缀。",
         "imagery": "联想一个大大的减号➖，表示减去、拿走或否定状态。"
       },

@@ -1,0 +1,32 @@
+{
+  "prefix": "ance",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ance_noun",
+      "displayName": "-ance (性质/状态)",
+      "themeColor": "#6366f1",
+      "prefixVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' stroke-dasharray='1 3'/><path d='M12 10 v4' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "后缀 -ance",
+        "description": "名词后缀，表示某种**性质**、**状态**或**动作的过程**。",
+        "imagery": "联想一种能够包容或承载动作的容器🤲。"
+      },
+      "words": [
+        {
+          "word": "Acceptance",
+          "rootVisual": "<path d='M4 14 q 8 8 16 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 10 l-2 -2 a 2 2 0 0 1 4 0 z' fill='currentColor' transform='translate(0, 2)'/>",
+          "breakdown": ["ac- (去)", "cept (拿)", "-ance (状态)"],
+          "imagery": "一双摊开的手，接住了一颗爱心，表示接纳。",
+          "translation": "接受",
+          "sentences": [
+            {
+              "en": "She didn't accept my flowers.",
+              "cn": "她没有接受（接纳）我的花。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

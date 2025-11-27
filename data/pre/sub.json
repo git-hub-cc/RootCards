@@ -7,7 +7,7 @@
       "themeColor": "#0891b2",
       "prefixVisual": "<line x1='4' y1='8' x2='20' y2='8' stroke='currentColor' stroke-width='2'/><path d='M12 10 v10 m-3 -3 l3 3 l3 -3' stroke='currentColor' stroke-width='2'/>",
       "prefixIntro": {
-        "title": "前缀 sub-/sup- (意境:在下面)",
+        "title": "前缀 sub-/sup-",
         "description": "核心意境是 **“在下面” (Under)** 或 **“次要” (Secondary)**。\n表示位置在某物之下，或地位较低。遇到 p 开头变为 sup-。",
         "imagery": "联想潜水艇 (Submarine) 在水面之下，或者地基在房子下面。"
       },

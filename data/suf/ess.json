@@ -1,0 +1,58 @@
+{
+  "prefix": "ess",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ess_female",
+      "displayName": "-ess (女性后缀)",
+      "themeColor": "#e11d48",
+      "prefixVisual": "<circle cx='12' cy='9' r='4' stroke='currentColor' fill='none'/><path d='M12 13 v6' stroke='currentColor' stroke-width='2'/><path d='M8 16 h8' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "后缀 -ess",
+        "description": "表示**女性**的后缀。加在表示人或职业的名词后，特指女性身份。",
+        "imagery": "联想维纳斯的符号♀️，或者优雅的长裙轮廓。"
+      },
+      "words": [
+        {
+          "word": "Actress",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' rx='1' stroke='currentColor' fill='none'/><path d='M4 8 l4 -4 h12 v4' stroke='currentColor' fill='none'/><path d='M6 6 l2 2 M10 6 l2 2 M14 6 l2 2' stroke='currentColor'/>",
+          "breakdown": ["act (表演)", "-ress (女性)"],
+          "imagery": "一个打板器（场记板），代表电影拍摄和表演。",
+          "translation": "女演员",
+          "sentences": [
+            {
+              "en": "Fan Bingbing is a famous actress.",
+              "cn": "范冰冰是一位著名的女演员。"
+            }
+          ]
+        },
+        {
+          "word": "Waitress",
+          "rootVisual": "<path d='M4 14 h16' stroke='currentColor' stroke-width='2'/><path d='M10 14 v4 h4 v-4' stroke='currentColor'/><path d='M14 14 v-6 a 2 2 0 0 0 -4 0 v 6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["wait (侍候)", "-ress (女性)"],
+          "imagery": "一个托盘，上面放着一个高脚杯，正在提供服务。",
+          "translation": "女服务员",
+          "sentences": [
+            {
+              "en": "My first job was as a waitress.",
+              "cn": "我的第一份工作是做女服务员。"
+            }
+          ]
+        },
+        {
+          "word": "Goddess",
+          "rootVisual": "<path d='M12 12 a 4 4 0 0 1 -4 4 v 4 h 8 v -4 a 4 4 0 0 1 -4 -4 z' stroke='currentColor' fill='none'/><ellipse cx='12' cy='6' rx='6' ry='2' stroke='currentColor' fill='none'/>",
+          "breakdown": ["god (神)", "-dess (女性)"],
+          "imagery": "女性剪影，头顶悬浮着神圣的光环。",
+          "translation": "女神",
+          "sentences": [
+            {
+              "en": "My first love is the forever goddess in my heart.",
+              "cn": "我的初恋是我心中永远的女神。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

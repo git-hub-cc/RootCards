@@ -1,0 +1,45 @@
+{
+  "prefix": "eer",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "eer_person",
+      "displayName": "-eer (人/职业)",
+      "themeColor": "#059669",
+      "prefixVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/><path d='M4 20 c 0 -4 8 -4 8 0' stroke='currentColor' fill='none'/><path d='M20 12 l-4 8' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "后缀 -eer",
+        "description": "表示“从事某项活动的人”或“与...相关的人”。通常带有**专业性**或**先驱性**。",
+        "imagery": "联想一个拿着图纸或旗帜的领头人👷‍♂️。"
+      },
+      "words": [
+        {
+          "word": "Engineer",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 v4 M12 16 v4 M4 12 h4 M16 12 h4' stroke='currentColor'/>",
+          "breakdown": ["engine (引擎)", "-er (人)"],
+          "imagery": "一个机械齿轮，代表工程与机械。",
+          "translation": "工程师",
+          "sentences": [
+            {
+              "en": "My father is a computer engineer.",
+              "cn": "我父亲是一名电脑工程师。"
+            }
+          ]
+        },
+        {
+          "word": "Pioneer",
+          "rootVisual": "<path d='M4 20 l8 -12 l8 12' stroke='currentColor' fill='none'/><line x1='12' y1='8' x2='12' y2='2' stroke='currentColor'/><path d='M12 2 l6 3 l-6 3' fill='currentColor'/>",
+          "breakdown": ["pion (步兵)", "-eer (人)"],
+          "imagery": "攀登到山顶，并插上第一面旗帜的人。",
+          "translation": "先驱",
+          "sentences": [
+            {
+              "en": "He is a pioneer of computer science.",
+              "cn": "他是计算机科学的先驱。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

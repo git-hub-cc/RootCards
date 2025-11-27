@@ -7,7 +7,7 @@
       "themeColor": "#10b981",
       "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 4'/><path d='M8 12 h8 m-2 -2 l2 2 l-2 2' stroke='currentColor' stroke-width='2'/>",
       "prefixIntro": {
-        "title": "前缀 en-/em- (意境:使役/进入)",
+        "title": "前缀 en-/em-",
         "description": "核心意境是 **“使...” (Make)** 或 **“进入” (Put Into)**。\n它通常把名词或形容词变成动词。遇到 b, p, m 开头时变为 em-。",
         "imagery": "联想一只手把东西推进去，或者给一个空电池充电⚡，使其获得某种状态。"
       },

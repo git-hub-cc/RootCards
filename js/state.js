@@ -1,5 +1,5 @@
 // =================================================================================
-// 数据与状态管理模块 (State Management Module) - v3.0 (支持多意境)
+// 数据与状态管理模块 (State Management Module) - v3.1 (支持后缀类型)
 // ---------------------------------------------------------------------------------
 // 主要职责：
 // 1. (数据加载) 异步加载所有词汇数据文件。
@@ -71,7 +71,7 @@ export function toggleLearnedStatus(wordData) {
 
 /**
  * 异步加载并处理所有数据文件。
- * 【核心修改】此函数现在能处理新的嵌套式JSON结构。
+ * 【核心修改 v3.1】支持 affixType (前缀/后缀) 的识别与注入。
  * @returns {Promise<Array<Object>>} 返回一个 Promise，解析为所有原始意境对象的数组（用于生成筛选器）。
  * @throws {Error} 如果数据清单 (DATA_FILES) 未定义或为空。
  */
@@ -97,6 +97,9 @@ export async function loadAndProcessData() {
                 continue;
             }
 
+            // 【v3.1 新增】确定词缀类型，默认为 'prefix'
+            const affixType = dataFile.affixType || 'prefix';
+
             // 遍历文件中的每个意境分组
             for (const meaningGroup of dataFile.meanings) {
                 // 1. 将原始意境分组添加到列表中，用于之后创建筛选器
@@ -109,7 +112,8 @@ export async function loadAndProcessData() {
                         ...meaningGroup.prefixIntro,
                         cardType: 'intro',
                         type: meaningGroup.meaningId,     // 使用 meaningId 作为内部筛选类型
-                        prefix: dataFile.prefix,          // 注入顶层前缀，用于显示徽章
+                        prefix: dataFile.prefix,          // 注入顶层前缀/后缀
+                        affixType: affixType,             // 【v3.1】注入词缀类型
                         visual: meaningGroup.prefixVisual,
                         themeColor: meaningGroup.themeColor,
                     });
@@ -121,7 +125,8 @@ export async function loadAndProcessData() {
                         ...word,
                         cardType: 'word',
                         type: meaningGroup.meaningId,     // 使用 meaningId 作为内部筛选类型
-                        prefix: dataFile.prefix,          // 注入顶层前缀
+                        prefix: dataFile.prefix,          // 注入顶层前缀/后缀
+                        affixType: affixType,             // 【v3.1】注入词缀类型
                         prefixVisual: meaningGroup.prefixVisual || '',
                         themeColor: meaningGroup.themeColor,
                         isLearned: learnedWordsSet.has(word.word)

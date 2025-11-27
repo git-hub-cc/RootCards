@@ -1,5 +1,5 @@
 // =================================================================================
-// UI 渲染模块 (UI Rendering Module) - v4.1 (支持多意境, 改进高亮，处理 y变i)
+// UI 渲染模块 (UI Rendering Module) - v4.2 (支持后缀 Badge 显示)
 // ---------------------------------------------------------------------------------
 // 主要职责：
 // 1. (DOM元素创建) 提供创建单词卡片、介绍卡片和筛选器按钮的函数。
@@ -64,7 +64,7 @@ function playAudioFile(filePath) {
 /**
  * 根据数据动态生成筛选器按钮。
  * 【核心逻辑】此函数基于意境分组 (meaning groups) 来生成按钮。
- * (此函数无需修改，因为其逻辑已经支持动态创建新意境ID的按钮)
+ * (此函数无修改)
  * @param {HTMLElement} filterContainer - 按钮的容器元素。
  * @param {HTMLElement} shuffleBtn - 随机按钮元素，新按钮会插在此之前。
  * @param {Array<object>} meaningGroups - 从 state.js 传入的原始意境分组对象数组。
@@ -163,13 +163,28 @@ function createWordCard(data, handlers) {
                             <g class="layer-prefix">${data.prefixVisual || ''}</g>
                         </svg>`;
 
+    // --- 核心修改 v4.2: 根据 affixType 决定徽章显示格式 ---
+    const badgeElement = cardClone.querySelector('.prefix-badge');
+    if (data.affixType === 'suffix') {
+        badgeElement.textContent = `-${data.prefix}`; // 后缀显示为 "-tion"
+    } else {
+        badgeElement.textContent = `${data.prefix}-`; // 前缀默认显示为 "pre-"
+    }
+
     // 注入卡片正面的文本内容
-    cardClone.querySelector('.prefix-badge').textContent = `${data.prefix}-`;
     cardClone.querySelector('.word-text').textContent = data.word;
 
     // 注入卡片背面的解析内容
     cardClone.querySelector('.part-prefix').textContent = data.breakdown[0];
     cardClone.querySelector('.part-root').textContent = data.breakdown[1];
+
+    // 鲁棒性：防止 breakdown 数组长度不足导致报错
+    if (data.breakdown.length > 2) {
+        // 如果有三部分拆解（例如 前缀+词根+后缀），可以考虑追加显示，
+        // 或者保持现在的两段式结构（通常 data.breakdown 已经被设计为主要展示两部分）
+        // 目前模板只设计了两个 span，暂不修改模板结构。
+    }
+
     cardClone.querySelector('.cn-translation').textContent = data.translation;
     cardClone.querySelector('.imagery-text').textContent = `“${data.imagery}”`;
 

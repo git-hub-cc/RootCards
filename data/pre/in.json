@@ -7,7 +7,7 @@
       "themeColor": "#ef4444",
       "prefixVisual": "<path d='M4 4 L20 20 M4 20 L20 4' />",
       "prefixIntro": {
-        "title": "前缀 in-/im- (意境:否定)",
+        "title": "前缀 in-/im-",
         "description": "核心意境是 **“不” (Not)** 或 **“无” (Without)**。\n通常用于形容词前。当词根以 b, m, p 开头时，in- 会变为 im-。",
         "imagery": "联想一个红色的禁止符号🚫，表示“不允许”或“不是”。"
       },
@@ -85,7 +85,7 @@
       "themeColor": "#15803d",
       "prefixVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 0 v10 m-3 -3 l3 3 l3 -3' stroke='currentColor' stroke-width='2'/>",
       "prefixIntro": {
-        "title": "前缀 in- (意境:向内)",
+        "title": "前缀 in-",
         "description": "核心意境是 **“向内” (Into)** 或 **“在里面” (Inside)**。\n表示动作的方向是进入物体内部。",
         "imagery": "联想一个箭头射入一个盒子的内部📦。"
       },

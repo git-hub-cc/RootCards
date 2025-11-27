@@ -7,7 +7,7 @@
       "themeColor": "#d97706",
       "prefixVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' stroke-width='2'/><polyline points='10 6 4 12 10 18' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
       "prefixIntro": {
-        "title": "前缀 pre- (意境:之前)",
+        "title": "前缀 pre-",
         "description": "核心意境是 **“在...之前” (Before)**。\n可以指时间上的提前，也可以指空间位置上的靠前。",
         "imagery": "联想一条指向左边（过去/前面）的箭头⬅️，或者排队站在最前面的人。"
       },

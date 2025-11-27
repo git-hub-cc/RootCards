@@ -1,0 +1,32 @@
+{
+  "prefix": "ure",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ure_noun",
+      "displayName": "-ure (结果/行为)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M12 20 l-4 -4 h8 z' stroke='currentColor' fill='currentColor'/><line x1='12' y1='4' x2='12' y2='16' stroke='currentColor' stroke-width='2' stroke-dasharray='4 2'/>",
+      "prefixIntro": {
+        "title": "后缀 -ure",
+        "description": "名词后缀，表示**行为**、**过程**或**结果**。有时也表示状态。",
+        "imagery": "联想一个箭头指向最终的结果，或者一个被施加了力量的物体。"
+      },
+      "words": [
+        {
+          "word": "Pressure",
+          "rootVisual": "<rect x='6' y='4' width='12' height='6' fill='currentColor'/><path d='M8 12 l2 2 l4 -2 l-2 2 l2 2' stroke='currentColor' fill='none'/><rect x='6' y='18' width='12' height='2' stroke='currentColor' fill='none'/>",
+          "breakdown": ["press (压)", "-ure (行为)"],
+          "imagery": "一个沉重的方块压在弹簧上，弹簧被压得变形。",
+          "translation": "压力",
+          "sentences": [
+            {
+              "en": "He took the exam under great pressure.",
+              "cn": "他在巨大的压力下参加了考试。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

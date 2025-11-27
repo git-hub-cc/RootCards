@@ -1,0 +1,131 @@
+{
+  "prefix": "tion",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "tion_noun",
+      "displayName": "-tion/-ion (名词后缀)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<rect x='6' y='6' width='12' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2' stroke-dasharray='4 2'/><circle cx='18' cy='18' r='4' fill='currentColor' opacity='0.2'/>",
+      "prefixIntro": {
+        "title": "后缀 -tion/-ion",
+        "description": "最常见的**抽象名词后缀**。\n表示“动作的过程”或“动作的结果”。通常把动词变为名词。",
+        "imagery": "联想一个方框🔲，把流动的动作（动词）框住，定格成一个具体的概念（名词）。"
+      },
+      "words": [
+        {
+          "word": "Education",
+          "rootVisual": "<path d='M 4 8 l 8 2 l 8 -2 v 10 l -8 4 l -8 -4 z M 12 10 v 12 M 12 22 l 0 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["educ (引导/教育)", "-ation (名词)"],
+          "imagery": "像打开一本书，或者被引导向上的阶梯，代表获取知识的过程。",
+          "translation": "教育",
+          "sentences": [
+            {
+              "en": "Education is the key to a happy life.",
+              "cn": "教育是通往幸福生活的钥匙。"
+            }
+          ]
+        },
+        {
+          "word": "Graduation",
+          "rootVisual": "<path d='M4 14 h16 a2 2 0 0 1 2 2 v2 a2 2 0 0 1 -2 2 h-16 a2 2 0 0 1 -2 -2 v-2 a2 2 0 0 1 2 -2 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 14 v-4 l-2 2' stroke='currentColor'/><rect x='10' y='6' width='4' height='4' fill='currentColor'/>",
+          "breakdown": ["grad (步/级)", "-uation (名词)"],
+          "imagery": "走完学校的台阶，拿到绑着丝带的毕业证书卷轴。",
+          "translation": "毕业",
+          "sentences": [
+            {
+              "en": "He graduated from Tsinghua University.",
+              "cn": "他毕业于清华大学。"
+            }
+          ]
+        },
+        {
+          "word": "Instruction",
+          "rootVisual": "<rect x='5' y='4' width='14' height='16' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><line x1='9' y1='8' x2='15' y2='8' stroke='currentColor'/><line x1='9' y1='12' x2='15' y2='12' stroke='currentColor'/><line x1='9' y1='16' x2='13' y2='16' stroke='currentColor'/>",
+          "breakdown": ["in- (向内)", "struct (建造)", "-ion (名词)"],
+          "imagery": "按照建造的步骤列出的清单（Checklist），一步步给予指示。",
+          "translation": "指示",
+          "sentences": [
+            {
+              "en": "We should follow the instructions on the screen.",
+              "cn": "我们应该遵循屏幕上的指示。"
+            }
+          ]
+        },
+        {
+          "word": "Suggestion",
+          "rootVisual": "<path d='M4 16 h4 l4 4 l0 -4 h8 v-12 h-16 z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": ["sug- (在下)", "gest (带来)", "-ion (名词)"],
+          "imagery": "带来一个想法，就像头顶亮起灯泡，或者对话气泡中提出了点子。",
+          "translation": "建议",
+          "sentences": [
+            {
+              "en": "Lily suggested meeting for a drink after work.",
+              "cn": "莉莉建议下班后聚一聚喝一杯。"
+            },
+            {
+              "en": "Here are some suggestions for further activities.",
+              "cn": "这有一些关于后续活动的建议。"
+            }
+          ]
+        },
+        {
+          "word": "Collection",
+          "rootVisual": "<path d='M6 8 v10 c0 2 2 3 6 3 s6 -1 6 -3 v-10' stroke='currentColor' fill='none' stroke-width='2'/><ellipse cx='12' cy='8' rx='6' ry='2' stroke='currentColor' fill='none'/><circle cx='10' cy='14' r='2' fill='currentColor'/><circle cx='14' cy='12' r='2' fill='currentColor' opacity='0.7'/>",
+          "breakdown": ["col- (一起)", "lect (选择)", "-ion (名词)"],
+          "imagery": "把选中的东西放在一起，就像硬币收集在罐子里。",
+          "translation": "收集",
+          "sentences": [
+            {
+              "en": "I love collecting coins.",
+              "cn": "我喜欢收集硬币。"
+            },
+            {
+              "en": "I have a large collection of coins.",
+              "cn": "我有一大笔硬币收藏。"
+            }
+          ]
+        },
+        {
+          "word": "Communication",
+          "rootVisual": "<path d='M2 12 a 6 6 0 0 1 6 -6' stroke='currentColor' fill='none'/><path d='M2 16 a 10 10 0 0 1 10 -10' stroke='currentColor' fill='none' opacity='0.5'/><path d='M22 12 a 6 6 0 0 0 -6 -6' stroke='currentColor' fill='none'/><path d='M22 16 a 10 10 0 0 0 -10 -10' stroke='currentColor' fill='none' opacity='0.5'/>",
+          "breakdown": ["com- (共同)", "mun (公共/服务)", "-ication (名词)"],
+          "imagery": "如同无线电波一样，双向发送和接收信号。",
+          "translation": "交流",
+          "sentences": [
+            {
+              "en": "We communicated by e-mail.",
+              "cn": "我们通过电子邮件交流。"
+            }
+          ]
+        },
+        {
+          "word": "Comparison",
+          "rootVisual": "<line x1='12' y1='4' x2='12' y2='20' stroke='currentColor' stroke-width='2'/><line x1='4' y1='20' x2='20' y2='20' stroke='currentColor' stroke-width='2'/><rect x='6' y='10' width='4' height='10' stroke='currentColor' fill='none'/><rect x='14' y='6' width='4' height='14' stroke='currentColor' fill='currentColor' opacity='0.3'/>",
+          "breakdown": ["com- (共同)", "par (平等)", "-ison (名词)"],
+          "imagery": "把两个柱状图放在一起，看谁高谁低，进行对比。",
+          "translation": "比较",
+          "sentences": [
+            {
+              "en": "The customer compares iPhone with Xiaomi Phones.",
+              "cn": "顾客把iPhone和小米手机进行比较。"
+            }
+          ]
+        },
+        {
+          "word": "Congratulation",
+          "rootVisual": "<path d='M8 20 l8 0 l2 -8 l-12 0 z' stroke='currentColor' fill='none'/><path d='M10 12 q -4 -8 -8 -4' stroke='currentColor'/><path d='M14 12 q 4 -8 8 -4' stroke='currentColor'/><circle cx='6' cy='6' r='1' fill='currentColor'/><circle cx='18' cy='6' r='1' fill='currentColor'/>",
+          "breakdown": ["con- (共同)", "grat (高兴)", "-ulation (名词)"],
+          "imagery": "共同高兴的时刻，就像拉响礼花筒，彩带飞舞。",
+          "translation": "祝贺",
+          "sentences": [
+            {
+              "en": "She congratulated me on my exam results.",
+              "cn": "她祝贺我的考试成绩。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

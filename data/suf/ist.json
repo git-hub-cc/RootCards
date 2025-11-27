@@ -1,0 +1,110 @@
+{
+  "prefix": "ist",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ist_person",
+      "displayName": "-ist (人/专家)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/><path d='M4 20 c 0 -4 8 -4 8 0' stroke='currentColor' fill='none'/><path d='M20 12 l-4 8' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "后缀 -ist",
+        "description": "表示“从事某项活动的人”、“信仰某种主义的人”或“专家”。",
+        "imagery": "联想一个戴着眼镜、拿着工具的专家形象👨‍🔬。"
+      },
+      "words": [
+        {
+          "word": "Physicist",
+          "rootVisual": "<ellipse cx='12' cy='12' rx='8' ry='3' stroke='currentColor' fill='none' transform='rotate(45 12 12)'/><ellipse cx='12' cy='12' rx='8' ry='3' stroke='currentColor' fill='none' transform='rotate(-45 12 12)'/><circle cx='12' cy='12' r='1.5' fill='currentColor'/>",
+          "breakdown": ["phys (自然)", "-ist (专家)"],
+          "imagery": "原子结构图，电子围绕原子核旋转，这是物理学的标志。",
+          "translation": "物理学家",
+          "sentences": [
+            {
+              "en": "I love physics and I dream to be a physicist.",
+              "cn": "我热爱物理，梦想成为一名物理学家。"
+            }
+          ]
+        },
+        {
+          "word": "Chemist",
+          "rootVisual": "<path d='M8 6 v8 l-2 4 h12 l-2 -4 v-8 z' stroke='currentColor' fill='none'/><circle cx='14' cy='4' r='1' stroke='currentColor'/><circle cx='16' cy='2' r='1.5' stroke='currentColor'/>",
+          "breakdown": ["chem (化学)", "-ist (专家)"],
+          "imagery": "一个锥形瓶（烧瓶），里面冒着反应产生的气泡。",
+          "translation": "化学家",
+          "sentences": [
+            {
+              "en": "I love chemistry and I dream to be a chemist.",
+              "cn": "我热爱化学，梦想成为一名化学家。"
+            }
+          ]
+        },
+        {
+          "word": "Scientist",
+          "rootVisual": "<path d='M11.5,6 A2.5,2.5 0 1 0 16.5,6 A2.5,2.5 0 1 0 11.5,6 Z M14 8.5 V 14 M11 14 H 17 M14 14 C 10 14, 8 17, 8 21 M4 21 H 12' fill='none' stroke='currentColor'/>",
+          "breakdown": ["sci (知道)", "-ist (人)"],
+          "imagery": "一台显微镜，用来观察未知的微观世界。",
+          "translation": "科学家",
+          "sentences": [
+            {
+              "en": "I love science and I dream to be a scientist.",
+              "cn": "我热爱科学，梦想成为一名科学家。"
+            }
+          ]
+        },
+        {
+          "word": "Dentist",
+          "rootVisual": "<path d='M6 6 q 6 -4 12 0 v 8 q -6 8 -12 0 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 6 v4 M16 6 v4' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": ["dent (牙)", "-ist (医生)"],
+          "imagery": "一颗巨大的牙齿轮廓，代表牙科医生。",
+          "translation": "牙医",
+          "sentences": [
+            {
+              "en": "I'm going to the dentist this afternoon.",
+              "cn": "我今天下午要去看牙医。"
+            }
+          ]
+        },
+        {
+          "word": "Pianist",
+          "rootVisual": "<rect x='2' y='8' width='20' height='8' stroke='currentColor' fill='none'/><line x1='6' y1='8' x2='6' y2='16' stroke='currentColor'/><line x1='10' y1='8' x2='10' y2='16' stroke='currentColor'/><line x1='14' y1='8' x2='14' y2='16' stroke='currentColor'/><line x1='18' y1='8' x2='18' y2='16' stroke='currentColor'/><rect x='5' y='8' width='2' height='5' fill='currentColor'/><rect x='13' y='8' width='2' height='5' fill='currentColor'/>",
+          "breakdown": ["piano (钢琴)", "-ist (演奏家)"],
+          "imagery": "黑白相间的钢琴键盘。",
+          "translation": "钢琴家",
+          "sentences": [
+            {
+              "en": "I have played the piano for 10 years.",
+              "cn": "我已经弹了10年钢琴。"
+            }
+          ]
+        },
+        {
+          "word": "Violinist",
+          "rootVisual": "<path d='M9 4 c -2 2 -2 6 0 8 c -1 1 -1 3 0 4 c 2 2 4 2 6 0 c 1 -1 1 -3 0 -4 c 2 -2 2 -6 0 -8' stroke='currentColor' fill='none'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor'/>",
+          "breakdown": ["violin (小提琴)", "-ist (演奏家)"],
+          "imagery": "小提琴那优雅的葫芦形琴身和琴弦。",
+          "translation": "小提琴家",
+          "sentences": [
+            {
+              "en": "I have been playing the violin for 5 hours.",
+              "cn": "我已经拉了5个小时的小提琴。"
+            }
+          ]
+        },
+        {
+          "word": "Terrorist",
+          "rootVisual": "<circle cx='12' cy='14' r='6' fill='currentColor'/><path d='M12 8 v-4' stroke='currentColor' stroke-width='2'/><path d='M12 4 l2 -2 m-4 0 l2 2' stroke='currentColor'/>",
+          "breakdown": ["terror (恐惧)", "-ist (人)"],
+          "imagery": "一个带着引信的黑色炸弹，代表制造恐惧的人。",
+          "translation": "恐怖分子",
+          "sentences": [
+            {
+              "en": "We refuse to talk to terrorists.",
+              "cn": "我们拒绝与恐怖分子谈判。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
