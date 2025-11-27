@@ -1,0 +1,166 @@
+{
+  "prefix": "ful",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ful_adj",
+      "displayName": "-ful (充满...的)",
+      "themeColor": "#f97316",
+      "prefixVisual": "<rect x='6' y='4' width='12' height='16' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><rect x='8' y='6' width='8' height='12' fill='currentColor' opacity='0.6'/>",
+      "prefixIntro": {
+        "title": "后缀 -ful",
+        "description": "形容词后缀，表示 **“充满...的”** 或 **“具有...性质的”**。\n表示拥有大量的某种特质。",
+        "imagery": "联想一个充满电量的电池🔋，能量满满。"
+      },
+      "words": [
+        {
+          "word": "Careful",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' fill='currentColor'/>",
+          "breakdown": ["care (小心)", "-ful (充满)"],
+          "imagery": "眼睛盯着中心点，全神贯注，非常小心。",
+          "translation": "小心的",
+          "sentences": [
+            {
+              "en": "Please be careful when you cross the street.",
+              "cn": "过马路时请小心。"
+            }
+          ]
+        },
+        {
+          "word": "Helpful",
+          "rootVisual": "<path d='M12 20 l-2 -2 l-4 0 a 2 2 0 0 1 -2 -2 v -8 a 2 2 0 0 1 2 -2 h 12 a 2 2 0 0 1 2 2 v 8 a 2 2 0 0 1 -2 2 l -4 0 z' stroke='currentColor' fill='none'/><path d='M9 10 h6 M12 7 v6' stroke='currentColor'/>",
+          "breakdown": ["help (帮助)", "-ful (充满)"],
+          "imagery": "对话气泡里有一个加号，表示提供支持和帮助。",
+          "translation": "有帮助的",
+          "sentences": [
+            {
+              "en": "Reading aloud is helpful for English study.",
+              "cn": "大声朗读对英语学习很有帮助。"
+            }
+          ]
+        },
+        {
+          "word": "Truthful",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12 l3 3 l5 -5' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["truth (真相)", "-ful (充满)"],
+          "imagery": "一个大大的对钩，代表真实和正确。",
+          "translation": "真实的",
+          "sentences": [
+            {
+              "en": "Please give a truthful answer.",
+              "cn": "请给出一个真实的回答。"
+            }
+          ]
+        },
+        {
+          "word": "Awful",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 l2 -2 M16 10 l-2 -2' stroke='currentColor'/><circle cx='12' cy='16' r='2' fill='currentColor'/>",
+          "breakdown": ["awe (敬畏/恐惧)", "-ful (充满)"],
+          "imagery": "一张惊恐的脸，充满了恐惧和糟糕的感觉。",
+          "translation": "可怕的；糟糕的",
+          "sentences": [
+            {
+              "en": "The weather was awful yesterday.",
+              "cn": "昨天的天气太糟糕了。"
+            },
+            {
+              "en": "He is a pretty awful driver.",
+              "cn": "他是个很糟糕的司机。"
+            }
+          ]
+        },
+        {
+          "word": "Painful",
+          "rootVisual": "<path d='M12 2 l2 4 h4 l-3 3 l1 4 l-4 -3 l-4 3 l1 -4 l-3 -3 h4 z' stroke='currentColor' fill='none'/><path d='M4 20 l16 -16' stroke='currentColor'/>",
+          "breakdown": ["pain (疼痛)", "-ful (充满)"],
+          "imagery": "像是被尖锐的东西刺中，充满了痛感。",
+          "translation": "疼痛的",
+          "sentences": [
+            {
+              "en": "My arm is painful.",
+              "cn": "我的手臂很痛。"
+            }
+          ]
+        },
+        {
+          "word": "Harmful",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 8 l8 8 M16 8 l-8 8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["harm (伤害)", "-ful (充满)"],
+          "imagery": "一个大大的叉号，表示有毒或有害。",
+          "translation": "有害的",
+          "sentences": [
+            {
+              "en": "Smoking is harmful to your body.",
+              "cn": "吸烟对你的身体有害。"
+            }
+          ]
+        },
+        {
+          "word": "Thankful",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 12 20 m 0 -4 m -8 -4 q 8 4 6 0 m 9 0 q -7 4 -4 0 M 12 10 l -2 -2 a 2 2 0 0 1 4 0 z' stroke='currentColor'/></svg>",
+          "breakdown": ["thank (感谢)", "-ful (充满)"],
+          "imagery": "双手捧着爱心，充满了感激之情。",
+          "translation": "感谢的",
+          "sentences": [
+            {
+              "en": "I am so thankful to my dad who taught me so much.",
+              "cn": "我非常感谢我的父亲，他教会了我很多。"
+            }
+          ]
+        },
+        {
+          "word": "Wonderful",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 12 17 l -5 3 l 1 -6 l -4 -4 l 6 -1 l 3 -5 l 3 5 l 6 1 l -4 4 l 1 6 z' fill='none' stroke='currentColor'/></svg>",
+          "breakdown": ["wonder (奇迹)", "-ful (充满)"],
+          "imagery": "一颗完美的星星，充满了惊奇和美好。",
+          "translation": "精彩的",
+          "sentences": [
+            {
+              "en": "We had a wonderful time at the party.",
+              "cn": "我们在聚会上过得很愉快（精彩）。"
+            }
+          ]
+        },
+        {
+          "word": "Peaceful",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 2 v20 M12 12 l-6 6 M12 12 l6 6' stroke='currentColor'/>",
+          "breakdown": ["peace (和平)", "-ful (充满)"],
+          "imagery": "经典的和平标志，象征宁静与安详。",
+          "translation": "和平的",
+          "sentences": [
+            {
+              "en": "The park is a peaceful place to relax.",
+              "cn": "公园是一个放松的宁静之地。"
+            }
+          ]
+        },
+        {
+          "word": "Shameful",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 h2 M14 10 h2' stroke='currentColor'/><path d='M8 16 h8' stroke='currentColor'/><rect x='4' y='8' width='16' height='8' fill='currentColor' opacity='0.3'/>",
+          "breakdown": ["shame (羞耻)", "-ful (充满)"],
+          "imagery": "脸被阴影遮住，充满了羞愧，不敢见人。",
+          "translation": "耻辱的",
+          "sentences": [
+            {
+              "en": "It's shameful to treat your pets like this.",
+              "cn": "这样对待你的宠物是可耻的。"
+            }
+          ]
+        },
+        {
+          "word": "Stressful",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none'/><path d='M8 8 v8 M12 8 v8 M16 8 v8' stroke='currentColor'/><path d='M4 4 l2 2 M20 4 l-2 2' stroke='currentColor'/>",
+          "breakdown": ["stress (压力)", "-ful (充满)"],
+          "imagery": "一个被上下挤压变形的盒子，充满了压力。",
+          "translation": "充满压力的",
+          "sentences": [
+            {
+              "en": "Moving to a new city can be very stressful.",
+              "cn": "搬到一个新城市可能会非常有压力。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

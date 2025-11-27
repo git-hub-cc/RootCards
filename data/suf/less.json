@@ -1,0 +1,45 @@
+{
+  "prefix": "less",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "less_adj",
+      "displayName": "-less (无...的)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><line x1='4' y1='20' x2='20' y2='4' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "后缀 -less",
+        "description": "形容词后缀，表示 **“没有...的”** 或 **“缺失...”**。\n具有否定的含义。",
+        "imagery": "联想一个禁止符号🚫，或者空空如也的容器，表示“无”。"
+      },
+      "words": [
+        {
+          "word": "Careless",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><path d='M12 8 v4' stroke='currentColor'/><circle cx='12' cy='16' r='1' fill='currentColor'/>",
+          "breakdown": ["care (小心)", "-less (无)"],
+          "imagery": "心里空荡荡的，没有装“小心”，所以犯了错。",
+          "translation": "粗心的",
+          "sentences": [
+            {
+              "en": "He made a careless mistake on the test.",
+              "cn": "他在考试中犯了一个粗心的错误。"
+            }
+          ]
+        },
+        {
+          "word": "Meaningless",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 4 12 M 4 12 A 8 8 0 1 0 20 12 A 8 8 0 1 0 4 12 Z' stroke='currentColor' stroke-width='2'/></svg>",
+          "breakdown": ["meaning (意义)", "-less (无)"],
+          "imagery": "一个空心的圆，里面什么内容都没有，空洞无物。",
+          "translation": "无意义的",
+          "sentences": [
+            {
+              "en": "Without context, memorizing a list of words is a meaningless task.",
+              "cn": "没有语境，背单词表是一项无意义的任务。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

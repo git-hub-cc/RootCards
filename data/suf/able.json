@@ -1,0 +1,58 @@
+{
+  "prefix": "able",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "able_adj",
+      "displayName": "-able (能...的)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<path d='M16 8 l-4 4 l-4 -4' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 12 h8 v4 h-8 z' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "后缀 -able",
+        "description": "形容词后缀，表示 **“能够被...的”** 或 **“值得...的”**。\n表示具备某种能力或可能性。",
+        "imagery": "联想一块拼图🧩，形状完美契合，表示“可行的”、“匹配的”。"
+      },
+      "words": [
+        {
+          "word": "Valuable",
+          "rootVisual": "<path d='M12 2 l3 6 h6 l-5 4 l2 6 l-6 -4 l-6 4 l2 -6 l-5 -4 h6 z' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["value (价值)", "-able (能...的)"],
+          "imagery": "一颗闪闪发光的钻石，值得被珍藏。",
+          "translation": "有价值的",
+          "sentences": [
+            {
+              "en": "The painting is valuable.",
+              "cn": "这幅画很有价值（值得被估价）。"
+            }
+          ]
+        },
+        {
+          "word": "Believable",
+          "rootVisual": "<path d='M6 12 l4 4 l10 -10' stroke='currentColor' fill='none' stroke-width='2'/><rect x='2' y='2' width='20' height='20' rx='4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["believe (相信)", "-able (能...的)"],
+          "imagery": "一个被打钩的复选框，表示可以通过信任测试。",
+          "translation": "可相信的",
+          "sentences": [
+            {
+              "en": "His excuse for being late was not very believable.",
+              "cn": "他迟到的借口不太可信（不能被相信）。"
+            }
+          ]
+        },
+        {
+          "word": "Enjoyable",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 2 12 A 10 10 0 1 0 22 12 A 10 10 0 1 0 2 12 Z M 8 14 q 4 4 8 0 M 7.5 9 A 1.5 1.5 0 1 0 10.5 9 A 1.5 1.5 0 1 0 7.5 9 Z M 13.5 9 A 1.5 1.5 0 1 0 16.5 9 A 1.5 1.5 0 1 0 13.5 9 Z' fill='none' stroke='currentColor'/></svg>",
+          "breakdown": ["enjoy (享受)", "-able (能...的)"],
+          "imagery": "一张戴着耳机的笑脸，沉浸在快乐中。",
+          "translation": "令人享受的",
+          "sentences": [
+            {
+              "en": "The concert was very enjoyable.",
+              "cn": "这场音乐会非常令人享受（值得享受）。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

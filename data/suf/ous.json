@@ -1,0 +1,58 @@
+{
+  "prefix": "ous",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ous_adj",
+      "displayName": "-ous (多...的)",
+      "themeColor": "#f97316",
+      "prefixVisual": "<path d='M4 14 h16' stroke='currentColor' stroke-width='2'/><path d='M6 14 q 6 -8 12 0' stroke='currentColor' fill='none'/><path d='M12 14 v-4' stroke='currentColor'/><circle cx='12' cy='8' r='1' fill='currentColor'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='9' r='1' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "后缀 -ous",
+        "description": "形容词后缀，表示 **“充满...的”** 或 **“具有...性质的”**。\n强调某种性质的满溢和丰富。",
+        "imagery": "联想一个装得太满的容器，里面的东西向外溢出🌊。"
+      },
+      "words": [
+        {
+          "word": "Humorous",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 14 q 4 4 8 0' stroke='currentColor' stroke-width='2'/><circle cx='8' cy='9' r='1.5' fill='currentColor'/><circle cx='16' cy='9' r='1.5' fill='currentColor'/>",
+          "breakdown": ["humor (幽默)", "-ous (充满...的)"],
+          "imagery": "一张大大的笑脸，笑声仿佛要溢出来。",
+          "translation": "幽默的",
+          "sentences": [
+            {
+              "en": "You are such a humorous guy.",
+              "cn": "你真是个幽默的家伙。"
+            }
+          ]
+        },
+        {
+          "word": "Famous",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 12 2 l 3 6 h 6 l -5 4 l 2 6 l -6 -4 l -6 4 l 2 -6 l -5 -4 h 6 z' fill='none' stroke='currentColor'/></svg>",
+          "breakdown": ["fame (名声)", "-ous (充满...的)"],
+          "imagery": "一颗闪耀的星星，光芒向外辐射。",
+          "translation": "著名的",
+          "sentences": [
+            {
+              "en": "Peking University is the most famous one in China.",
+              "cn": "北京大学是中国最著名的大学。"
+            }
+          ]
+        },
+        {
+          "word": "Dangerous",
+          "rootVisual": "<path d='M12 4 L20 20 H4 Z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 10 v5' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='17' r='1' fill='currentColor'/>",
+          "breakdown": ["danger (危险)", "-ous (充满...的)"],
+          "imagery": "一个三角形的警告标志，里面充满惊叹号。",
+          "translation": "危险的",
+          "sentences": [
+            {
+              "en": "Swimming in the river is dangerous.",
+              "cn": "在河里游泳是危险的。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

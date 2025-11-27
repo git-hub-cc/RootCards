@@ -1,0 +1,60 @@
+{
+  "prefix": "ward",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ward_dir",
+      "displayName": "-ward (向...方向)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 2 l2 10 l-2 10 l-2 -10 z' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='var(--bg-color)'/>",
+      "prefixIntro": {
+        "title": "后缀 -ward",
+        "description": "方向后缀，表示 **“向...方向”**。\n可用作形容词或副词。",
+        "imagery": "联想一个指南针🧭的指针，明确地指向某一个方位。"
+      },
+      "words": [
+        {
+          "word": "Forward",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='2'/><path d='M16 8 l4 4 l-4 4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["for (前)", "-ward (向)"],
+          "imagery": "一个笔直向前的箭头，没有任何偏移。",
+          "translation": "向前的；向前地",
+          "sentences": [
+            {
+              "en": "He moved a step forward.",
+              "cn": "他向前迈了一步。"
+            },
+            {
+              "en": "It was a forward step.",
+              "cn": "这是向前的一步。"
+            }
+          ]
+        },
+        {
+          "word": "Backward",
+          "rootVisual": "<path d='M20 12 h-16' stroke='currentColor' stroke-width='2'/><path d='M8 8 l-4 4 l4 4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["back (后)", "-ward (向)"],
+          "imagery": "一个回头的箭头，指向后方。",
+          "translation": "向后的；向后地",
+          "sentences": []
+        },
+        {
+          "word": "Upward",
+          "rootVisual": "<path d='M12 20 v-16' stroke='currentColor' stroke-width='2'/><path d='M8 8 l4 -4 l4 4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["up (上)", "-ward (向)"],
+          "imagery": "一个向上的箭头，升向天空。",
+          "translation": "向上的；向上地",
+          "sentences": []
+        },
+        {
+          "word": "Downward",
+          "rootVisual": "<path d='M12 4 v16' stroke='currentColor' stroke-width='2'/><path d='M8 16 l4 4 l4 -4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["down (下)", "-ward (向)"],
+          "imagery": "一个向下的箭头，指向地面。",
+          "translation": "向下的；向下地",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

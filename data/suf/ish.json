@@ -1,0 +1,45 @@
+{
+  "prefix": "ish",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ish_adj",
+      "displayName": "-ish (像...的)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<path d='M4 12 q 4 -4 8 0 q 4 4 8 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 16 q 4 -4 8 0 q 4 4 8 0' stroke='currentColor' fill='none' stroke-width='2' opacity='0.5'/>",
+      "prefixIntro": {
+        "title": "后缀 -ish",
+        "description": "形容词后缀，表示 **“像...一样的”**、**“稍微...”** 或 **“有点儿...”**。\n通常带有一种模糊、不精确或贬义的色彩。",
+        "imagery": "联想波浪形的约等号 ≈，表示“大概”、“差不多”。"
+      },
+      "words": [
+        {
+          "word": "Childish",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12 a 4 4 0 0 0 8 0' stroke='currentColor'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='9' r='1' fill='currentColor'/><path d='M12 2 v4' stroke='currentColor'/><path d='M12 4 l-2 -2' stroke='currentColor'/>",
+          "breakdown": ["child (小孩)", "-ish (像...的)"],
+          "imagery": "一个穿着大号西装的小孩，或者一个行为幼稚的大人。",
+          "translation": "孩子气的",
+          "sentences": [
+            {
+              "en": "Stop being so childish and accept your responsibility.",
+              "cn": "别这么孩子气了，承担起你的责任吧。"
+            }
+          ]
+        },
+        {
+          "word": "Foolish",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 l2 2 l2 -2' stroke='currentColor'/><path d='M12 10 l2 2 l2 -2' stroke='currentColor'/><path d='M10 16 h4' stroke='currentColor'/>",
+          "breakdown": ["fool (傻瓜)", "-ish (像...的)"],
+          "imagery": "一顶带有铃铛的小丑帽，象征愚蠢的行为。",
+          "translation": "愚蠢的",
+          "sentences": [
+            {
+              "en": "It was foolish of me to trust him.",
+              "cn": "我竟然相信他，真是太愚蠢了。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

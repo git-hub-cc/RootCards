@@ -1,0 +1,32 @@
+{
+  "prefix": "ic",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ic_adj",
+      "displayName": "-ic (...的)",
+      "themeColor": "#06b6d4",
+      "prefixVisual": "<ellipse cx='12' cy='12' rx='10' ry='4' stroke='currentColor' fill='none' transform='rotate(45 12 12)'/><ellipse cx='12' cy='12' rx='10' ry='4' stroke='currentColor' fill='none' transform='rotate(-45 12 12)'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "后缀 -ic",
+        "description": "形容词后缀，表示 **“关于...的”** 或 **“具有...特征的”**。\n常用于科学、学术领域，表示类别归属。",
+        "imagery": "联想原子轨道模型⚛️，象征科学、严谨和分类。"
+      },
+      "words": [
+        {
+          "word": "Scientific",
+          "rootVisual": "<path d='M6 18 l4 -4 l-4 -4' stroke='currentColor' fill='none'/><circle cx='14' cy='6' r='4' stroke='currentColor' fill='none'/><path d='M14 6 l2 2' stroke='currentColor'/>",
+          "breakdown": ["science (科学)", "-ific (具有...特征的)"],
+          "imagery": "显微镜下的观察视角，严谨求实。",
+          "translation": "科学的",
+          "sentences": [
+            {
+              "en": "We need scientific evidence to support this theory.",
+              "cn": "我们需要科学证据来支持这一理论。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

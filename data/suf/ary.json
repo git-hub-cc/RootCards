@@ -1,0 +1,36 @@
+{
+  "prefix": "ary",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ary_adj",
+      "displayName": "-ary (...的)",
+      "themeColor": "#06b6d4",
+      "prefixVisual": "<path d='M4 4 h16 v16 h-16 z' stroke='currentColor' fill='none'/><path d='M4 8 h16' stroke='currentColor'/><circle cx='12' cy='14' r='4' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "后缀 -ary",
+        "description": "形容词或名词后缀。表示 **“关于...的”**，或者表示 **“地点”**、**“人”**。\n表示与某事物相关联的集合或场所。",
+        "imagery": "联想一个归档文件夹📁，里面装着所有相关的文件。"
+      },
+      "words": [
+        {
+          "word": "Documentary",
+          "rootVisual": "<rect x='5' y='4' width='14' height='16' rx='2' stroke='currentColor' fill='none'/><line x1='9' y1='8' x2='15' y2='8' stroke='currentColor'/><line x1='9' y1='12' x2='15' y2='12' stroke='currentColor'/><line x1='9' y1='16' x2='13' y2='16' stroke='currentColor'/><path d='M16 14 l4 4' stroke='currentColor'/>",
+          "breakdown": ["document (文件)", "-ary (...的)"],
+          "imagery": "一台摄像机对着一堆文件拍摄，记录真实。",
+          "translation": "纪录片；记录的",
+          "sentences": [
+            {
+              "en": "A local film crew is making a documentary about volcanoes.",
+              "cn": "当地的一个摄制组正在拍摄一部关于火山的纪录片。"
+            },
+            {
+              "en": "We need documentary evidence to prove our case.",
+              "cn": "我们需要书面（记录的）证据来证明我们的案子。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

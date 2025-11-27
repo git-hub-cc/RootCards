@@ -5,7 +5,7 @@
       "meaningId": "in_negate",
       "displayName": "in-/im- (否定)",
       "themeColor": "#ef4444",
-      "prefixVisual": "<path d='M4 4 L20 20 M4 20 L20 4' />",
+      "prefixVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none' stroke-width='2'/><line x1='5' y1='19' x2='19' y2='5' stroke='currentColor' stroke-width='2'/>",
       "prefixIntro": {
         "title": "前缀 in-/im-",
         "description": "核心意境是 **“不” (Not)** 或 **“无” (Without)**。\n通常用于形容词前。当词根以 b, m, p 开头时，in- 会变为 im-。",

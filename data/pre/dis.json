@@ -5,7 +5,7 @@
       "meaningId": "dis_negate",
       "displayName": "dis- (否定/去除)",
       "themeColor": "#e11d48",
-      "prefixVisual": "<path d='M4 4 L20 20 M4 20 L20 4' />",
+      "prefixVisual": "<path d='M5 5 L19 19 M5 19 L19 5' stroke='currentColor' stroke-width='3' stroke-linecap='round'/>",
       "prefixIntro": {
         "title": "前缀 dis-",
         "description": "核心意境是 **“否定” (Not)** 或 **“去除” (Removal)**。\n它表示一个状态或动作的取消、反转或移除。",

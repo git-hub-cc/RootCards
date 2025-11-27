@@ -1,0 +1,84 @@
+{
+  "prefix": "ly",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ly_adj",
+      "displayName": "-ly (...的)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<rect x='6' y='4' width='12' height='16' rx='2' stroke='currentColor' fill='none'/><path d='M16 8 l-8 8' stroke='currentColor' opacity='0.5'/><path d='M16 12 l-8 4' stroke='currentColor' opacity='0.5'/><path d='M12 8 l-4 4' stroke='currentColor' opacity='0.5'/>",
+      "prefixIntro": {
+        "title": "后缀 -ly",
+        "description": "通常是副词后缀，但也用于构成形容词，表示 **“具有...性质的”** 或 **“以...方式的”**。\n表示事物的呈现方式。",
+        "imagery": "联想一面镜子🪞，映照出事物所呈现出的样子或状态。"
+      },
+      "words": [
+        {
+          "word": "Lovely",
+          "rootVisual": "<path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' stroke='currentColor' fill='none'/><circle cx='7.5' cy='8.5' r='1' fill='currentColor'/><circle cx='16.5' cy='8.5' r='1' fill='currentColor'/>",
+          "breakdown": ["love (爱)", "-ly (...的)"],
+          "imagery": "一颗可爱的爱心，让人忍不住想亲近。",
+          "translation": "可爱的",
+          "sentences": [
+            {
+              "en": "What a lovely day!",
+              "cn": "多美好（可爱）的一天啊！"
+            }
+          ]
+        },
+        {
+          "word": "Lively",
+          "rootVisual": "<path d='M12 21 a 9 9 0 0 1 0 -18 a 9 9 0 0 1 0 18 z' stroke='currentColor' fill='none'/><path d='M12 2 v4' stroke='currentColor'/><path d='M12 18 v4' stroke='currentColor'/><path d='M4 12 h4' stroke='currentColor'/><path d='M16 12 h4' stroke='currentColor'/><path d='M6 6 l3 3' stroke='currentColor'/><path d='M15 15 l3 3' stroke='currentColor'/>",
+          "breakdown": ["live (活)", "-ly (...的)"],
+          "imagery": "一个跳动的光球，充满活力，向四周散发能量。",
+          "translation": "生机勃勃的",
+          "sentences": [
+            {
+              "en": "The city has a lively nightlife.",
+              "cn": "这座城市有生机勃勃的夜生活。"
+            }
+          ]
+        },
+        {
+          "word": "Ugly",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 l2 2 l2 -2' stroke='currentColor'/><path d='M14 10 l2 2 l-2 2' stroke='currentColor'/><path d='M8 16 q 4 2 8 0' stroke='currentColor'/>",
+          "breakdown": ["ug (恐惧)", "-ly (...的)"],
+          "imagery": "一张扭曲的、不协调的脸，让人想转过头去。",
+          "translation": "丑陋的",
+          "sentences": [
+            {
+              "en": "The old building was ugly.",
+              "cn": "那栋旧建筑很丑陋。"
+            }
+          ]
+        },
+        {
+          "word": "Friendly",
+          "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='3' stroke='currentColor' fill='none'/><path d='M11 12 h2' stroke='currentColor'/>",
+          "breakdown": ["friend (朋友)", "-ly (...的)"],
+          "imagery": "两个圆圈紧紧靠在一起，中间有连接线，表示友好。",
+          "translation": "友好的",
+          "sentences": [
+            {
+              "en": "She is very friendly to me.",
+              "cn": "她对我非常友好。"
+            }
+          ]
+        },
+        {
+          "word": "Likely",
+          "rootVisual": "<path d='M4 12 h12' stroke='currentColor' stroke-dasharray='4 2'/><path d='M16 12 h4' stroke='currentColor'/><path d='M18 10 l2 2 l-2 2' stroke='currentColor'/>",
+          "breakdown": ["like (像)", "-ly (...的)"],
+          "imagery": "一个虚线箭头指向终点，表示有很大可能会发生。",
+          "translation": "可能的",
+          "sentences": [
+            {
+              "en": "It is likely to rain.",
+              "cn": "很可能会下雨。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

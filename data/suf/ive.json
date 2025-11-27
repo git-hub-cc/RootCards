@@ -1,0 +1,32 @@
+{
+  "prefix": "ive",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ive_adj",
+      "displayName": "-ive (有...倾向的)",
+      "themeColor": "#f97316",
+      "prefixVisual": "<path d='M12 20 l-2 -2 l-6 0 a 2 2 0 0 1 -2 -2 v -10 a 2 2 0 0 1 2 -2 h 16 a 2 2 0 0 1 2 2 v 10 a 2 2 0 0 1 -2 2 l -6 0 z' stroke='currentColor' fill='none'/><path d='M10 10 l4 0 l-2 -3 z' fill='currentColor'/><line x1='12' y1='10' x2='12' y2='14' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "后缀 -ive",
+        "description": "形容词后缀，表示 **“有...性质的”** 或 **“有...倾向的”**。\n强调一种主动的、向外投射的趋势。",
+        "imagery": "联想一个向上的箭头⬆️，或者蓄势待发的弹簧，充满主动性。"
+      },
+      "words": [
+        {
+          "word": "Creative",
+          "rootVisual": "<path d='M9 14 l-3 6 l6 -3' stroke='currentColor' fill='none'/><circle cx='12' cy='9' r='5' stroke='currentColor' fill='none'/><path d='M12 9 l2 -2' stroke='currentColor'/>",
+          "breakdown": ["create (创造)", "-ive (有...倾向的)"],
+          "imagery": "头顶亮起一个灯泡💡，灵感向外迸发。",
+          "translation": "创造的；有创造力的",
+          "sentences": [
+            {
+              "en": "She came up with a creative solution to the problem.",
+              "cn": "她想出了一个有创造力的解决办法。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

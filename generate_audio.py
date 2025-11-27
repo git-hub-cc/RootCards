@@ -3,7 +3,7 @@
 Etymology Visualizer 音频缓存生成脚本 (v3.0 - 支持多意境)
 
 功能:
-1. 自动读取 `js/data-manifest.js` 文件，获取所有单词数据源。
+1. 自动读取 `data/manifest.js` 文件，获取所有单词数据源。
 2. 【新】解析新的JSON数据结构，能够处理单个文件内包含多个 "meanings" (意境) 数组的情况。
 3. 聚合所有唯一的单词和例句。
 4. 使用 Google Text-to-Speech (gTTS) 服务，为每个单词和例句生成对应的英文发音 MP3 文件。
@@ -27,7 +27,7 @@ from gtts import gTTS
 from mutagen.mp3 import MP3, HeaderNotFoundError
 
 # --- 配置区域 ---
-MANIFEST_PATH = Path("js/data-manifest.js")
+MANIFEST_PATH = Path("data/manifest.js")
 AUDIO_ROOT = Path("audio")
 WORDS_DIR = AUDIO_ROOT / "words"
 SENTENCES_DIR = AUDIO_ROOT / "sentences"
