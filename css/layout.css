@@ -9,9 +9,61 @@
     background: white;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
-.app-header h1 { font-size: 1.8rem; color: #333; margin-bottom: 1.5rem; }
-.subtitle { display: block; font-size: 0.9rem; color: var(--text-sub); font-weight: normal; margin-top: 0.2rem; }
-.filter-container { display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+.app-header h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem; /* 减小下边距，拉近与副标题的距离 */
+}
+
+.subtitle {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--text-sub);
+    font-weight: normal;
+    margin-top: 0.2rem;
+}
+
+/* ============ [新增] 口号区域样式 ============ */
+/* 设计理念：如同书籍扉页的引言，简洁、优雅、不喧宾夺主 */
+.app-slogan {
+    margin: 1.5rem auto;          /* 上下留白，区分标题和筛选器 */
+    max-width: 600px;             /* 限制宽度，防止在大屏上一行太长，保持阅读节奏 */
+    font-size: 0.95rem;           /* 字号适中，比正文略小 */
+    color: var(--text-sub);       /* 使用次级文本颜色（灰色） */
+    line-height: 1.6;             /* 增加行高，提升阅读舒适度 */
+    position: relative;
+    padding: 0 1rem;              /* 防止在移动端贴边 */
+}
+
+/* 装饰性细节：调整段落间距 */
+.app-slogan p {
+    margin-bottom: 0.3rem;
+}
+
+/* 关键词高亮 1：核心隐喻 */
+.app-slogan strong {
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+/* 关键词高亮 2：语法成分 */
+.app-slogan .highlight {
+    color: #4b5563;              /* 深灰色，比普通文字稍深 */
+    font-weight: 600;
+    border-bottom: 2px solid #e5e7eb; /* 底部加一条浅浅的下划线，增加层次感 */
+    padding-bottom: 1px;
+}
+/* ============ [新增结束] ============ */
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 1.5rem; /* 增加顶部间距，与口号分开 */
+}
 
 
 /* --- 卡片网格布局 --- */

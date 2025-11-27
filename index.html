@@ -3,17 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etymology Visualizer | 词源意境记忆卡</title>
+
+    <!-- ================= SEO 核心配置区域 (开始) ================= -->
+
+    <!-- 1. 网页标题：核心功能 + 品牌名 + 核心价值 -->
+    <title>英语词源意境记忆卡 | Etymology Visualizer - 词根词缀可视化学习工具</title>
+
+    <!-- 2. 网站描述：搜索结果摘要，融合了核心口号，增加点击率 -->
+    <meta name="description" content="PPMC词源意境记忆卡 (Etymology Visualizer) 是一个在线英语单词学习工具。单词不是孤岛，而是积木的组合。我们通过可视化拆解词根、词缀（前缀/后缀），结合生动的意境联想记忆法，帮助你从逻辑上高效掌握英语词汇。资料参考韩宇极简英语。">
+
+    <!-- 3. 关键词：核心词 + 长尾词 + 品牌词 -->
+    <meta name="keywords" content="英语单词记忆, 词源法, 词根词缀, Etymology, 意境记忆, 视觉化记单词, 英语前缀, 英语后缀, 联想记忆法, 在线背单词, 韩宇极简英语, ppmc club, 英语学习工具, 考研英语, 托福雅思词汇">
+
+    <!-- 4. 作者与版权 -->
+    <meta name="author" content="cc">
+    <meta name="copyright" content="PPMC Club">
+
+    <!-- 5. 规范链接：防止搜索引擎重复收录 -->
+    <link rel="canonical" href="https://ppmc.club/">
+
+    <!-- 6. 社交媒体优化 (Open Graph)：分享到微信/社交平台时的卡片效果 -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ppmc.club/">
+    <meta property="og:site_name" content="PPMC 词源意境记忆">
+    <meta property="og:title" content="拒绝死记硬背！英语词源意境记忆卡 - PPMC">
+    <meta property="og:description" content="前缀决定方向，词根承载灵魂。来试试可视化的“积木式”记单词方法吧。">
+    <!-- [建议] 制作一张 1200x630 的图片放在 images 目录下，提升分享点击率 -->
+    <meta property="og:image" content="https://ppmc.club/images/og-image.jpg">
+
+    <!-- ================= SEO 核心配置区域 (结束) ================= -->
+
     <!-- 引入核心样式表 -->
     <link rel="stylesheet" href="css/base.css">      <!-- 基础样式最先加载 -->
     <link rel="stylesheet" href="css/layout.css">    <!-- 布局次之 -->
-    <link rel="stylesheet" href="css/components.css"> <!-- 组件样式最后加载，可能会覆盖前面的样式 -->
+    <link rel="stylesheet" href="css/components.css"> <!-- 组件样式最后加载 -->
+
+    <!-- 网站图标 (建议添加 favicon.ico 到根目录) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
 <!-- 顶部导航与过滤器 -->
 <header class="app-header">
     <h1>词源意境记忆 <span class="subtitle">Etymology Visualizer</span></h1>
+
+    <!-- ============ [新增] 口号区域：匹配页面风格，强化核心理念 ============ -->
+    <div class="app-slogan">
+        <p>单词不是孤岛，而是<strong>积木</strong>的组合。</p>
+        <p>
+            <span class="highlight">前缀</span>决定方向与态度，
+            <span class="highlight">词根</span>承载核心灵魂，
+            <span class="highlight">后缀</span>标记词性身份。
+        </p>
+    </div>
+    <!-- ============ [新增结束] ============ -->
+
     <div class="filter-container" id="filter-container">
         <!-- 筛选器按钮将由 JavaScript 动态生成 -->
 
@@ -62,18 +106,14 @@
             <div class="card-front">
                 <div class="prefix-badge"></div>
                 <button class="toggle-prefix-btn" title="切换前缀图像">
-                    <!-- [优化] 添加 fill="none" 和 stroke="currentColor" 等属性，确保渲染为轮廓图标 -->
                     <svg class="icon-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                    <!-- [优化] 同上 -->
                     <svg class="icon-eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>
                 </button>
                 <button class="mark-btn" title="标记为已掌握">
-                    <!-- [优化] 同上 -->
                     <svg class="icon-check-empty" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                         <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
-                    <!-- [优化] 为实心图标明确指定 fill="currentColor" 和 stroke="none" -->
                     <svg class="icon-check-filled" viewBox="0 0 24 24" fill="currentColor" stroke="none">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
                     </svg>
@@ -97,7 +137,6 @@
                     <h3 class="cn-translation"></h3>
                     <p class="imagery-text"></p>
                 </div>
-                <!-- 例句区域现在是一个空的容器, JS会动态填充 -->
                 <div class="sentence-section">
                     <!-- 此处将由 JavaScript 动态填充 -->
                 </div>
@@ -140,7 +179,33 @@
     </p>
 </footer>
 
+<!-- 引入脚本 -->
 <script src="js/data-manifest.js"></script>
 <script type="module" src="js/app.js"></script>
+
+<!-- ================= SEO 结构化数据 (JSON-LD) ================= -->
+<!-- 帮助 Google 理解这是一个 Web 应用/教育工具 -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Etymology Visualizer",
+        "alternateName": "PPMC 英语词源意境记忆",
+        "url": "https://ppmc.club/",
+        "description": "一个基于词源学和意境记忆法的英语单词可视化学习工具，提供词根词缀拆解和视觉化联想。",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "CNY"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "cc"
+        }
+    }
+</script>
+
 </body>
 </html>
