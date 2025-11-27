@@ -1,26 +1,81 @@
 /* ==========================================================================
-   Base Styles - 基础与全局样式
+   Base Styles - 基础与全局样式 (v2.0 - 支持主题切换)
    ========================================================================== */
 
-/* --- 基础变量定义 --- */
-/* 使用CSS变量可以方便地统一管理颜色、尺寸等，实现一处修改，处处生效。 */
+/* --- 核心：主题颜色变量定义 --- */
+/*
+  这是实现主题切换的基石。我们在这里定义了一套完整的颜色和样式变量。
+  默认情况下，这些变量对应的是浅色主题。
+*/
 :root {
-    /* 全局颜色 */
-    --bg-color: #f3f4f6;
-    --card-bg: #ffffff;
-    --text-main: #1f2937;
-    --text-sub: #6b7280;
-    --color-learned: #f59e0b; /* 黄色/金色：用于“已掌握”状态，代表成就 */
+    /* 1. 背景色 */
+    --bg-color: #f3f4f6; /* 页面主背景色 (浅灰) */
+    --bg-secondary-color: #ffffff; /* 次级背景色，如 header (白色) */
+    --card-bg: #ffffff; /* 卡片背景色 */
+    --card-back-bg: #fafafa; /* 卡片背面背景色 */
+    --card-back-section-bg: #ffffff; /* 卡片背面例句区域背景 */
 
-    /* 定义一个默认的主题色，以防 JS 未能成功设置 */
-    --theme-color: #333;
+    /* 2. 文本颜色 */
+    --text-main: #1f2937; /* 主要文本颜色 (深灰) */
+    --text-sub: #6b7280; /* 次要/辅助文本颜色 (中灰) */
+    --text-inverse: #ffffff; /* 反色文本，用于深色背景上 (白色) */
+    --text-highlight: #111827; /* 高亮文本，如标题 */
+    --text-code: #374151; /* 代码/分解块文本 */
 
-    /* 尺寸与阴影 */
-    --radius-lg: 16px;
-    --radius-sm: 8px;
+    /* 3. 边框与分隔线颜色 */
+    --border-color: #e5e7eb; /* 默认边框颜色 */
+    --border-color-hover: #d1d5db; /* 悬浮时的边框颜色 */
+    --border-imagery: #ccc; /* 意境引言的左边框 */
+
+    /* 4. 特殊/状态颜色 */
+    --color-learned: #f59e0b; /* "已掌握" 状态的颜色 (金色) */
+    --theme-color-default: #333; /* 默认的主题色，用于“全部”按钮 */
+
+    /* 5. 阴影 */
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    /* 6. 尺寸 */
+    --radius-lg: 16px;
+    --radius-sm: 8px;
+
+    /* 7. 动态主题色 (JS会修改这个值) */
+    --theme-color: var(--theme-color-default);
 }
+
+/* --- 深色模式变量覆盖 --- */
+/*
+  当 <body> 标签被 JS 加上 'dark-mode' 类时，这里的变量会覆盖 :root 中的同名变量。
+  这使得整个站点的颜色可以瞬间切换到深色主题，而无需修改任何其他 CSS 规则。
+*/
+body.dark-mode {
+    /* 1. 背景色 */
+    --bg-color: #111827; /* 深蓝灰 */
+    --bg-secondary-color: #1f2937; /* 次深蓝灰 */
+    --card-bg: #1f2937;
+    --card-back-bg: #161e2b;
+    --card-back-section-bg: #1f2937;
+
+    /* 2. 文本颜色 */
+    --text-main: #e5e7eb; /* 浅灰 */
+    --text-sub: #9ca3af; /* 中灰 */
+    --text-inverse: #ffffff;
+    --text-highlight: #ffffff;
+    --text-code: #d1d5db;
+
+    /* 3. 边框与分隔线颜色 */
+    --border-color: #374151; /* 深灰 */
+    --border-color-hover: #4b5563;
+    --border-imagery: #4b5563;
+
+    /* 4. 特殊/状态颜色 */
+    --theme-color-default: #374151;
+
+    /* 5. 阴影 (深色模式下阴影通常更柔和) */
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.12);
+    --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
 
 /* --- 全局重置与基础样式 --- */
 * {
@@ -33,7 +88,10 @@ html {
 }
 body {
     font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    /* 应用变量 */
     background-color: var(--bg-color);
     color: var(--text-main);
     line-height: 1.5;
+    /* 平滑过渡：当背景色和文本颜色变化时，产生0.3秒的动画效果 */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }

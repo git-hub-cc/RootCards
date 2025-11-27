@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://ppmc.club/</loc>
+        <lastmod>2025-11-27</lastmod> <!-- 每次更新网站时，建议修改这个日期 -->
+        <priority>1.0</priority>
+    </url>
+    <!-- 如果未来增加了其他页面，比如 about.html，也可以加在这里 -->
+    <!--
+    <url>
+      <loc>https://ppmc.club/about.html</loc>
+      <lastmod>2024-05-21</lastmod>
+      <priority>0.8</priority>
+    </url>
+    -->
+</urlset>

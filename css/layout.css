@@ -1,60 +1,71 @@
 /* ==========================================================================
-   Layout Styles - 页面布局样式
+   Layout Styles - 页面布局样式 (v2.0 - 支持主题切换)
    ========================================================================== */
 
 /* --- 头部导航与筛选器 --- */
 .app-header {
     text-align: center;
     padding: 2rem 1rem;
-    background: white;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    /* 【修改】使用变量替换硬编码的颜色和阴影 */
+    background-color: var(--bg-secondary-color);
+    box-shadow: var(--shadow); /* 使用在base.css中定义的标准阴影 */
+    /* 添加过渡效果，使切换更平滑 */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .app-header h1 {
     font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 0.5rem; /* 减小下边距，拉近与副标题的距离 */
+    /* 【修改】使用变量 */
+    color: var(--text-highlight);
+    margin-bottom: 0.5rem;
+
+    /* Flexbox 布局，用于对齐 Logo 和标题 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header-logo {
+    width: 32px;
+    height: 32px;
 }
 
 .subtitle {
     display: block;
     font-size: 0.9rem;
-    color: var(--text-sub);
+    color: var(--text-sub); /* 此处已是变量，无需修改 */
     font-weight: normal;
     margin-top: 0.2rem;
 }
 
-/* ============ [新增] 口号区域样式 ============ */
-/* 设计理念：如同书籍扉页的引言，简洁、优雅、不喧宾夺主 */
+/* --- 口号区域样式 --- */
 .app-slogan {
-    margin: 1.5rem auto;          /* 上下留白，区分标题和筛选器 */
-    max-width: 600px;             /* 限制宽度，防止在大屏上一行太长，保持阅读节奏 */
-    font-size: 0.95rem;           /* 字号适中，比正文略小 */
-    color: var(--text-sub);       /* 使用次级文本颜色（灰色） */
-    line-height: 1.6;             /* 增加行高，提升阅读舒适度 */
+    margin: 1.5rem auto;
+    max-width: 600px;
+    font-size: 0.95rem;
+    color: var(--text-sub); /* 此处已是变量，无需修改 */
+    line-height: 1.6;
     position: relative;
-    padding: 0 1rem;              /* 防止在移动端贴边 */
+    padding: 0 1rem;
 }
 
-/* 装饰性细节：调整段落间距 */
 .app-slogan p {
     margin-bottom: 0.3rem;
 }
 
-/* 关键词高亮 1：核心隐喻 */
 .app-slogan strong {
-    color: var(--text-main);
+    color: var(--text-main); /* 此处已是变量，无需修改 */
     font-weight: 700;
 }
 
-/* 关键词高亮 2：语法成分 */
 .app-slogan .highlight {
-    color: #4b5563;              /* 深灰色，比普通文字稍深 */
+    /* 【修改】使用变量 */
+    color: var(--text-main);
     font-weight: 600;
-    border-bottom: 2px solid #e5e7eb; /* 底部加一条浅浅的下划线，增加层次感 */
+    border-bottom: 2px solid var(--border-color);
     padding-bottom: 1px;
 }
-/* ============ [新增结束] ============ */
 
 .filter-container {
     display: flex;
@@ -62,7 +73,7 @@
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
-    margin-top: 1.5rem; /* 增加顶部间距，与口号分开 */
+    margin-top: 1.5rem;
 }
 
 
@@ -78,15 +89,15 @@
 
 /* --- 懒加载触发器布局 --- */
 .load-more-trigger {
-    grid-column: 1 / -1; /* 占据网格整行 */
-    display: none;       /* 默认隐藏 */
+    grid-column: 1 / -1;
+    display: none;
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
     min-height: 80px;
 }
 .load-more-trigger.is-visible {
-    display: flex; /* JS控制显示 */
+    display: flex;
 }
 
 /* --- 页脚样式 --- */
@@ -94,8 +105,10 @@
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
-    border-top: 1px solid #e5e7eb;
-    color: var(--text-sub);
+    /* 【修改】使用变量 */
+    border-top: 1px solid var(--border-color);
+    color: var(--text-sub); /* 此处已是变量，无需修改 */
     font-size: 0.85rem;
+    transition: border-color 0.3s ease;
 }
 .app-footer p { margin: 0.3rem 0; }

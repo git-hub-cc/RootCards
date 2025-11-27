@@ -1,42 +1,60 @@
 /* ==========================================================================
-   Component Styles - 组件样式
+   Component Styles - 组件样式 (v2.0 - 支持主题切换)
    ========================================================================== */
 
-/* --- 组件: 筛选器与随机按钮 --- */
+/* --- 组件: 筛选器与控制按钮 --- */
 .filter-btn {
     padding: 8px 20px;
-    border: 2px solid #e5e7eb;
+    border: 2px solid var(--border-color); /* 使用变量 */
     border-radius: 50px;
-    background: white;
+    background: var(--bg-secondary-color); /* 使用变量 */
     cursor: pointer;
     font-weight: 600;
     transition: all 0.2s ease;
-    color: var(--text-sub);
+    color: var(--text-sub); /* 使用变量 */
 }
-.filter-btn.active { background: #333; color: white; border-color: #333; }
-.filter-btn[data-filter="learned"].active { background: var(--color-learned); border-color: var(--color-learned); }
+/* 激活状态：使用默认主题色 */
+.filter-btn.active {
+    background: var(--theme-color-default);
+    color: var(--text-inverse);
+    border-color: var(--theme-color-default);
+}
+/* 激活状态（已掌握）：使用特定状态色 */
+.filter-btn[data-filter="learned"].active {
+    background: var(--color-learned);
+    border-color: var(--color-learned);
+}
+/* 悬浮状态 */
+.filter-btn:not(.active):hover {
+    border-color: var(--border-color-hover);
+    color: var(--text-main);
+}
 
-.shuffle-btn {
+
+/* --- 【新增】主题切换按钮 与 随机按钮 (样式统一) --- */
+.shuffle-btn,
+.theme-toggle-btn {
     width: 38px;
     height: 38px;
     padding: 0;
-    border: 2px solid #e5e7eb;
+    border: 2px solid var(--border-color); /* 使用变量 */
     border-radius: 50%;
-    background: white;
+    background: var(--bg-secondary-color); /* 使用变量 */
     cursor: pointer;
-    color: var(--text-sub);
+    color: var(--text-sub); /* 使用变量 */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 10px;
     transition: all 0.2s ease;
 }
-.shuffle-btn:hover {
-    background: #f9fafb;
-    border-color: #d1d5db;
+.shuffle-btn:hover,
+.theme-toggle-btn:hover {
+    border-color: var(--border-color-hover);
     color: var(--text-main);
 }
-.shuffle-btn svg {
+.shuffle-btn svg,
+.theme-toggle-btn svg {
     width: 20px;
     height: 20px;
     transition: transform 0.3s ease;
@@ -44,6 +62,11 @@
 .shuffle-btn:active svg {
     transform: rotate(45deg);
 }
+
+/* 主题图标切换逻辑 */
+.theme-toggle-btn .icon-moon { display: none; } /* 默认隐藏月亮 */
+body.dark-mode .theme-toggle-btn .icon-sun { display: none; } /* 深色模式下隐藏太阳 */
+body.dark-mode .theme-toggle-btn .icon-moon { display: block; } /* 深色模式下显示月亮 */
 
 
 /* --- 组件: 加载/空状态提示 --- */
@@ -63,9 +86,9 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-.card-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1); transform-style: preserve-3d; box-shadow: var(--shadow); border-radius: var(--radius-lg); }
+.card-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1), background-color 0.3s ease, box-shadow 0.3s ease; transform-style: preserve-3d; box-shadow: var(--shadow); border-radius: var(--radius-lg); }
 .card.is-flipped .card-inner { transform: rotateY(180deg); }
-.card-front, .card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: var(--radius-lg); background: white; border: 2px solid transparent; display: flex; flex-direction: column; overflow: hidden; }
+.card-front, .card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: var(--radius-lg); background: var(--card-bg); border: 2px solid transparent; display: flex; flex-direction: column; overflow: hidden; }
 
 
 /* --- 组件: 单词卡片正面 --- */
@@ -84,36 +107,18 @@
     border-radius: 4px;
     text-transform: uppercase;
     opacity: 0.8;
-    color: var(--theme-color); /* 应用主题色 */
+    color: var(--theme-color);
     background: color-mix(in srgb, var(--theme-color) 10%, transparent);
 }
 .visual-area { flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 1rem; }
 .visual-area svg { width: 120px; height: 120px; transition: transform 0.3s ease; }
 .card:hover .visual-area svg { transform: scale(1.1); }
-
-/* [修复] 词根层：添加 color 属性以支持 stroke="currentColor" */
-.visual-area .layer-root {
-    stroke: var(--text-sub);
-    color: var(--text-sub); /* 核心修复：定义 currentColor 为灰色 */
-    opacity: 0.7;
-    stroke-width: 2;
-}
-
-/* [修复] 前缀层：添加 color 属性以支持 stroke="currentColor" */
-.visual-area .layer-prefix {
-    stroke: color-mix(in srgb, var(--theme-color) 50%, transparent);
-    color: color-mix(in srgb, var(--theme-color) 50%, transparent); /* 核心修复：定义 currentColor 为主题色 */
-    stroke-width: 2.5;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.card.prefix-hidden .visual-area .layer-prefix {
-    opacity: 0;
-    transform: scale(0.8);
-}
+.visual-area .layer-root { stroke: var(--text-sub); color: var(--text-sub); opacity: 0.7; stroke-width: 2; }
+.visual-area .layer-prefix { stroke: color-mix(in srgb, var(--theme-color) 50%, transparent); color: color-mix(in srgb, var(--theme-color) 50%, transparent); stroke-width: 2.5; transition: opacity 0.3s ease, transform 0.3s ease; }
+.card.prefix-hidden .visual-area .layer-prefix { opacity: 0; transform: scale(0.8); }
 .word-area { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 0.5rem; }
 .word-text { font-size: 2rem; font-weight: 800; color: var(--theme-color); }
-.hint-text { font-size: 0.8rem; color: #9ca3af; text-align: center; }
+.hint-text { font-size: 0.8rem; color: var(--text-sub); text-align: center; }
 
 
 /* --- 组件: 单词卡片背面 --- */
@@ -121,76 +126,73 @@
     transform: rotateY(180deg);
     padding: 2rem 1.5rem;
     text-align: left;
-    background-color: #fafafa;
-    gap: 1.5rem; /* 为子元素之间提供统一的间距 */
+    background-color: var(--card-back-bg);
+    gap: 1.5rem;
 }
 .breakdown-box {
     font-family: 'Courier New', monospace;
-    background: #e5e7eb;
+    background: var(--border-color);
     padding: 0.5rem;
     border-radius: var(--radius-sm);
     text-align: center;
     font-weight: bold;
-    color: #374151;
-    flex-shrink: 0;  /* Flexbox 子项不收缩，保持自身高度 */
+    color: var(--text-code);
+    flex-shrink: 0;
 }
-.meaning-section {
-    flex-shrink: 0; /* Flexbox 子项不收缩，保持自身高度 */
-}
-.cn-translation { font-size: 1.4rem; color: #111; margin-bottom: 0.5rem; }
-.imagery-text { font-size: 0.95rem; color: #4b5563; line-height: 1.4; font-style: italic; border-left: 3px solid #ccc; padding-left: 10px; }
-
-/* 例句区域的核心布局，使其可滚动 */
+.meaning-section { flex-shrink: 0; }
+.cn-translation { font-size: 1.4rem; color: var(--text-highlight); margin-bottom: 0.5rem; }
+.imagery-text { font-size: 0.95rem; color: var(--text-sub); line-height: 1.4; font-style: italic; border-left: 3px solid var(--border-imagery); padding-left: 10px; }
 .sentence-section {
-    flex-grow: 1;       /* 让此区域填满所有剩余的垂直空间 */
-    overflow-y: auto;   /* 当内容超出其高度时，显示垂直滚动条 */
-    min-height: 0;      /* Flexbox 布局中的一个重要技巧，确保 overflow 能正常工作 */
-    background: white;
+    flex-grow: 1;
+    overflow-y: auto;
+    min-height: 0;
+    background: var(--card-back-section-bg);
     padding: 1rem;
     border-radius: var(--radius-sm);
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--border-color);
 }
-
-/* 为 JS 动态生成的例句块添加样式 */
 .sentence-block + .sentence-block {
     margin-top: 1rem;
     padding-top: 1rem;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--border-color);
 }
-.sentence-en { font-weight: 500; margin-bottom: 0.5rem; color: #1f2937; }
-.sentence-cn { font-size: 0.9rem; color: #6b7280; margin-bottom: 0.8rem; }
+.sentence-en { font-weight: 500; margin-bottom: 0.5rem; color: var(--text-main); }
+.sentence-cn { font-size: 0.9rem; color: var(--text-sub); margin-bottom: 0.8rem; }
 
 
 /* --- 组件: 卡片上的按钮 (SVG切换, 标记, 音频) --- */
-.toggle-prefix-btn { position: absolute; top: 1rem; right: 1rem; width: 32px; height: 32px; background: none; border: none; border-radius: 50%; cursor: pointer; color: var(--text-sub); display: flex; align-items: center; justify-content: center; transition: background-color 0.2s, color 0.2s; z-index: 10; }
-.toggle-prefix-btn:hover { background-color: rgba(0,0,0,0.05); }
-.toggle-prefix-btn svg { width: 20px; height: 20px; }
+.toggle-prefix-btn, .mark-btn { position: absolute; width: 32px; height: 32px; background: none; border: none; border-radius: 50%; cursor: pointer; color: var(--text-sub); display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; z-index: 10; }
+.toggle-prefix-btn { top: 1rem; right: 1rem; }
+.mark-btn { bottom: 1rem; right: 1rem; }
+.toggle-prefix-btn:hover, .mark-btn:hover { background-color: rgba(0,0,0,0.05); }
+body.dark-mode .toggle-prefix-btn:hover, body.dark-mode .mark-btn:hover { background-color: rgba(255,255,255,0.1); }
+.mark-btn:hover { transform: scale(1.1); }
+.toggle-prefix-btn svg, .mark-btn svg { width: 20px; height: 20px; }
+.mark-btn svg { width: 24px; height: 24px; }
 .toggle-prefix-btn .icon-eye-off { display: none; }
 .toggle-prefix-btn.is-toggled .icon-eye { display: none; }
 .toggle-prefix-btn.is-toggled .icon-eye-off { display: block; }
-
-.mark-btn { position: absolute; bottom: 1rem; right: 1rem; width: 32px; height: 32px; background: none; border: none; border-radius: 50%; cursor: pointer; color: var(--text-sub); display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; z-index: 10; }
-.mark-btn:hover { background-color: rgba(0,0,0,0.05); transform: scale(1.1); }
-.mark-btn svg { width: 24px; height: 24px; }
 .mark-btn .icon-check-filled { display: none; }
 .card.is-learned .mark-btn .icon-check-empty { display: none; }
 .card.is-learned .mark-btn .icon-check-filled { display: block; color: var(--theme-color); }
-
 .audio-btn { background: none; border: none; cursor: pointer; color: inherit; display: flex; align-items: center; justify-content: center; padding: 4px; border-radius: 50%; transition: background 0.2s; }
 .audio-btn:hover { background: rgba(0,0,0,0.05); }
+body.dark-mode .audio-btn:hover { background: rgba(255,255,255,0.1); }
 .word-audio { width: 32px; height: 32px; color: var(--text-sub); }
-.sentence-audio { width: 100%; padding: 6px; border-radius: 4px; background: #f3f4f6; font-size: 0.85rem; font-weight: 600; justify-content: center; }
-.sentence-audio:hover { background: #e5e7eb; }
+.sentence-audio { width: 100%; padding: 6px; border-radius: 4px; background: var(--bg-color); font-size: 0.85rem; font-weight: 600; justify-content: center; }
+.sentence-audio:hover { background: var(--border-color); }
 
 
-/* --- 组件: 前缀介绍卡片 (变体样式) --- */
-.prefix-intro-card .card-front, .prefix-intro-card .card-back { background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); }
+/* --- 组件: 前缀介绍卡片 --- */
+.prefix-intro-card .card-front, .prefix-intro-card .card-back { background: var(--card-bg); }
+body:not(.dark-mode) .prefix-intro-card .card-front,
+body:not(.dark-mode) .prefix-intro-card .card-back { background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); }
 .prefix-intro-card .intro-title { font-size: 2.2rem; font-weight: 800; letter-spacing: 1px; font-family: 'Georgia', serif; color: var(--theme-color); }
 .prefix-intro-card .card-back { display: flex; flex-direction: column; justify-content: center; gap: 2rem; }
 .prefix-intro-card .intro-section { padding: 0 1rem; }
 .prefix-intro-card .intro-section-title { font-size: 1.1rem; color: var(--text-main); margin-bottom: 0.5rem; border-bottom: 2px solid; padding-bottom: 0.3rem; font-weight: 700; border-color: var(--theme-color); }
 .prefix-intro-card .intro-description, .prefix-intro-card .intro-imagery { font-size: 1rem; color: var(--text-sub); line-height: 1.6; }
-.prefix-intro-card .intro-imagery { font-style: italic; color: #4b5563; }
+.prefix-intro-card .intro-imagery { font-style: italic; }
 .prefix-intro-card .visual-area svg { color: var(--theme-color); }
 
 
@@ -198,69 +200,26 @@
 .spinner { animation: rotate 2s linear infinite; width: 40px; height: 40px; }
 .spinner .path { stroke: var(--text-sub); stroke-linecap: round; animation: dash 1.5s ease-in-out infinite; }
 @keyframes rotate { 100% { transform: rotate(360deg); } }
-@keyframes dash {
-    0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; }
-    50% { stroke-dasharray: 90, 150; stroke-dashoffset: -35; }
-    100% { stroke-dasharray: 90, 150; stroke-dashoffset: -124; }
-}
+@keyframes dash { 0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; } 50% { stroke-dasharray: 90, 150; stroke-dashoffset: -35; } 100% { stroke-dasharray: 90, 150; stroke-dashoffset: -124; } }
 
 
 /* --- 状态与动画: 洗牌 --- */
-.card-grid.is-shuffling .card {
-    opacity: 0;
-    transform: scale(0.95);
-    pointer-events: none;
-}
+.card-grid.is-shuffling .card { opacity: 0; transform: scale(0.95); pointer-events: none; }
 
 
 /* --- 组件: 骨架加载图 --- */
-#skeleton-loader {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    grid-column: 1 / -1;
-    transition: opacity 0.3s ease-out;
-}
-.skeleton-card {
-    height: 400px;
-    background-color: #fff;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow);
-    padding: 2rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    position: relative;
-}
-
-.skeleton-badge, .skeleton-visual, .skeleton-word, .skeleton-hint {
-    background-color: #e5e7eb;
-    border-radius: 4px;
-    animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.6; }
-}
-
+#skeleton-loader { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; grid-column: 1 / -1; transition: opacity 0.3s ease-out; }
+.skeleton-card { height: 400px; background-color: var(--card-bg); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 2rem 1.5rem; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; position: relative; }
+.skeleton-badge, .skeleton-visual, .skeleton-word, .skeleton-hint { background-color: var(--border-color); border-radius: 4px; animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
 .skeleton-badge { position: absolute; top: 1rem; left: 1rem; width: 60px; height: 20px; border-radius: var(--radius-sm); }
 .skeleton-visual { width: 120px; height: 120px; border-radius: 50%; margin: auto; }
 .skeleton-word { width: 60%; height: 36px; margin: 0 auto 1rem; border-radius: var(--radius-sm); }
 .skeleton-hint { width: 40%; height: 16px; margin: 0 auto; }
 
 
-/* 滚动条美化 */
-.sentence-section::-webkit-scrollbar {
-    width: 6px;
-}
-.sentence-section::-webkit-scrollbar-track {
-    background: transparent; /* 滚动条轨道背景透明 */
-}
-.sentence-section::-webkit-scrollbar-thumb {
-    background-color: #d1d5db; /* 滚动条滑块颜色 */
-    border-radius: 10px;
-}
-.sentence-section::-webkit-scrollbar-thumb:hover {
-    background-color: #9ca3af; /* 鼠标悬浮时滑块颜色 */
-}
+/* --- 滚动条美化 --- */
+.sentence-section::-webkit-scrollbar { width: 6px; }
+.sentence-section::-webkit-scrollbar-track { background: transparent; }
+.sentence-section::-webkit-scrollbar-thumb { background-color: var(--border-color-hover); border-radius: 10px; }
+.sentence-section::-webkit-scrollbar-thumb:hover { background-color: var(--text-sub); }

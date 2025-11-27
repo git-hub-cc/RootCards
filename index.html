@@ -29,7 +29,7 @@
     <meta property="og:title" content="拒绝死记硬背！英语词源意境记忆卡 - PPMC">
     <meta property="og:description" content="前缀决定方向，词根承载灵魂。来试试可视化的“积木式”记单词方法吧。">
     <!-- [建议] 制作一张 1200x630 的图片放在 images 目录下，提升分享点击率 -->
-    <meta property="og:image" content="https://ppmc.club/images/og-image.jpg">
+    <meta property="og:image" content="https://ppmc.club/images/og-image.png">
 
     <!-- ================= SEO 核心配置区域 (结束) ================= -->
 
@@ -38,14 +38,22 @@
     <link rel="stylesheet" href="css/layout.css">    <!-- 布局次之 -->
     <link rel="stylesheet" href="css/components.css"> <!-- 组件样式最后加载 -->
 
-    <!-- 网站图标 (建议添加 favicon.ico 到根目录) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- 网站图标 -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
 
 <!-- 顶部导航与过滤器 -->
 <header class="app-header">
-    <h1>词源意境记忆 <span class="subtitle">Etymology Visualizer</span></h1>
+    <!-- ============ [修改] H1 中加入 Logo ============ -->
+    <h1>
+        <img src="favicon.svg" alt="App Logo" class="header-logo">
+        <div>
+            词源意境记忆
+            <span class="subtitle">Etymology Visualizer</span>
+        </div>
+    </h1>
+    <!-- ============ [修改结束] ============ -->
 
     <!-- ============ [新增] 口号区域：匹配页面风格，强化核心理念 ============ -->
     <div class="app-slogan">
@@ -60,6 +68,25 @@
 
     <div class="filter-container" id="filter-container">
         <!-- 筛选器按钮将由 JavaScript 动态生成 -->
+
+        <!-- 【新增】主题切换按钮 -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="切换深色/浅色主题">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+        <!-- 【新增结束】 -->
 
         <!-- 随机排序按钮 -->
         <button class="shuffle-btn" id="shuffle-btn" title="随机排序当前卡片">
@@ -173,9 +200,11 @@
 <footer class="app-footer">
     <p>学习资料来源：韩宇极简英语 & AI 辅助生成</p>
     <p>Source Material: Han Yu Minimalist English & AI-assisted Generation</p>
-    <!-- 备案信息 -->
+    <!-- 备案信息与项目链接 -->
     <p style="margin-top: 10px;">
-        © 2024 cc | <a href="https://beian.miit.gov.cn/" target="_blank" style="color: inherit; text-decoration: none;">粤ICP备2024271251号</a>
+        © 2024 cc |
+        <a href="https://github.com/git-hub-cc/RootCards" target="_blank" style="color: inherit; text-decoration: none;">GitHub</a> |
+        <a href="https://beian.miit.gov.cn/" target="_blank" style="color: inherit; text-decoration: none;">粤ICP备2024271251号</a>
     </p>
 </footer>
 

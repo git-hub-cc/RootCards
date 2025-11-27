@@ -70,6 +70,8 @@ body {
     display: flex;
     gap: 2rem;
     margin-bottom: 1.5rem;
+    /* 【新增】确保工作区内的面板高度一致 */
+    align-items: stretch;
 }
 
 .panel {
@@ -78,21 +80,23 @@ body {
     flex-direction: column;
 }
 
+/* 【新增】为输出面板设置特定样式，使其内部项目垂直排列 */
+.panel-output {
+    gap: 1.5rem; /* 在两个输出组之间添加间距 */
+}
+
+/* 【新增】定义每个输出组的布局 */
+.output-group {
+    flex: 1; /* 让每个组平分垂直空间 */
+    display: flex;
+    flex-direction: column;
+    min-height: 0; /* 修复 flex item 在某些浏览器中的溢出问题 */
+}
+
+
 .controls {
     text-align: center;
-    margin-bottom: 2rem;
-}
-
-.preview-area {
-    display: flex;
-    gap: 2rem;
-    border-top: 1px solid var(--border-color);
-    padding-top: 1.5rem;
-}
-
-.preview-box {
-    flex: 1;
-    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 /* ==========================================================================
@@ -107,13 +111,15 @@ label {
 
 textarea {
     width: 100%;
-    height: 250px;
+    /* 【修改】移除固定高度，使用flex-grow使其填充父容器空间 */
+    flex-grow: 1;
+    min-height: 150px; /* 设置一个最小高度，防止过小 */
     padding: 1rem;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     font-family: var(--font-family-code);
     font-size: 0.9rem;
-    resize: vertical; /* 允许用户垂直调整大小 */
+    resize: vertical;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
@@ -156,10 +162,13 @@ textarea[readonly] {
     transform: translateY(1px);
 }
 
-/* 输出面板的复制按钮 */
-#copy-btn {
-    margin-top: 1rem;
+/* 【修改】将ID选择器改为类选择器，以应用于多个按钮 */
+.copy-btn {
+    margin-top: 0.75rem;
     align-self: flex-end; /* 按钮靠右对齐 */
+    /* 调整为更紧凑的样式 */
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
 }
 
 /* 状态信息 */
@@ -177,25 +186,6 @@ textarea[readonly] {
     color: var(--error-color);
 }
 
-/* 预览容器 */
-.preview-container {
-    width: 100%;
-    height: 200px;
-    border: 1px dashed var(--border-color);
-    border-radius: var(--border-radius);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    margin-top: 0.5rem;
-    background: url('data:image/svg+xml;charset=UTF-8,<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><rect width="10" height="10" x="0" y="0" fill="%23f0f0f0"/><rect width="10" height="10" x="10" y="10" fill="%23f0f0f0"/></svg>');
-}
-
-.preview-container svg {
-    max-width: 100%;
-    max-height: 100%;
-}
-
 /* ==========================================================================
    响应式设计
    ========================================================================== */
@@ -206,7 +196,7 @@ textarea[readonly] {
     .container {
         padding: 1rem;
     }
-    .workspace, .preview-area {
+    .workspace {
         flex-direction: column; /* 在小屏幕上，面板垂直堆叠 */
     }
 }
