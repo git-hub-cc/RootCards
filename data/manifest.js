@@ -64,8 +64,10 @@ const DATA_FILES = [
     'data/root/pos.json',  // pos- (放/置)
     'data/root/spir.json',  // spir- (呼吸)
 
-    // ... 现有数据 ...
     'data/category/month.json',
     'data/category/daily.json',
-    'data/category/other.json'
+    'data/category/other.json',
+
+    'data/category/places.json',
+    'data/category/weather.json'
 ];

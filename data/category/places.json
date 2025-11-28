@@ -1,0 +1,149 @@
+{
+  "prefix": "Place",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_places",
+      "displayName": "国家与地点 (Countries & Places)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 2 a15 15 0 0 1 0 20 a15 15 0 0 1 0 -20 M2 12 h20' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "国家与地点",
+        "description": "探索世界各地的国家、城市和自然景观。",
+        "imagery": "一张展开的世界地图，上面标记着不同的目的地。"
+      },
+      "words": [
+        {
+          "word": "Africa",
+          "rootVisual": "<path d='M12 2 C 16 4, 20 8, 20 12 C 20 18, 16 20, 12 22 S 4 20, 4 14 C 4 8, 8 4, 12 2 Z' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["Africa", "(非洲)"],
+          "imagery": "非洲大陆的轮廓图，广袤而充满活力。",
+          "translation": "非洲",
+          "sentences": [
+            { "en": "I have been to Africa.", "cn": "我去过非洲。" }
+          ]
+        },
+        {
+          "word": "African",
+          "rootVisual": "<path d='M12 2 C 16 4, 20 8, 20 12 C 20 18, 16 20, 12 22 S 4 20, 4 14 C 4 8, 8 4, 12 2 Z' stroke='currentColor' fill='none' stroke-width='1.5'/><circle cx='12' cy='10' r='2' fill='currentColor'/><path d='M10 13 a 2 2 0 0 1 4 0 v 3 h -4 z' fill='currentColor'/>",
+          "breakdown": ["Africa", "(非洲)", "-n", "(的/人)"],
+          "imagery": "非洲大陆的轮廓图上有一个人的图标，代表“非洲的”或“非洲人”。",
+          "translation": "非洲的；非洲人",
+          "sentences": [
+            { "en": "The African people are very friendly and welcoming.", "cn": "非洲人民非常友好和热情。" }
+          ]
+        },
+        {
+          "word": "Australia",
+          "rootVisual": "<path d='M4 14 C 8 10, 16 10, 20 14 C 18 18, 10 18, 4 14 Z' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["Australia", "(澳大利亚)"],
+          "imagery": "澳大利亚大陆的简化轮廓图，一个独立的岛屿大陆。",
+          "translation": "澳大利亚",
+          "sentences": [
+            { "en": "Australia is a big country like China.", "cn": "澳大利亚和中国一样是个大国。" }
+          ]
+        },
+        {
+          "word": "Australian",
+          "rootVisual": "<path d='M4 14 C 8 10, 16 10, 20 14 C 18 18, 10 18, 4 14 Z' stroke='currentColor' fill='none' stroke-width='1.5'/><circle cx='12' cy='12' r='1.5' fill='currentColor'/><path d='M10.5 14.5 a 1.5 1.5 0 0 1 3 0 v 2 h -3 z' fill='currentColor'/>",
+          "breakdown": ["Australia", "(澳大利亚)", "-n", "(的/人)"],
+          "imagery": "澳大利亚大陆轮廓图上有一个人的图标，代表“澳大利亚的”或“澳大利亚人”。",
+          "translation": "澳大利亚的；澳大利亚人",
+          "sentences": [
+            { "en": "Australians speak English.", "cn": "澳大利亚人说英语。" }
+          ]
+        },
+        {
+          "word": "Canada",
+          "rootVisual": "<path d='M12 2 L 8 8 H 4 L 9 11 L 6 18 L 12 14 L 18 18 L 15 11 L 20 8 H 16 L 12 2 Z' fill='currentColor'/>",
+          "breakdown": ["Canada", "(加拿大)"],
+          "imagery": "一片标志性的红色枫叶，加拿大的象征。",
+          "translation": "加拿大",
+          "sentences": [
+            { "en": "Canada is next to the USA.", "cn": "加拿大在美国旁边。" }
+          ]
+        },
+        {
+          "word": "Canadian",
+          "rootVisual": "<path d='M12 2 L 8 8 H 4 L 9 11 L 6 18 L 12 14 L 18 18 L 15 11 L 20 8 H 16 L 12 2 Z' fill='none' stroke='currentColor' stroke-width='1.5'/><circle cx='12' cy='12' r='1.5' fill='currentColor'/>",
+          "breakdown": ["Canada", "(加拿大)", "-n", "(的/人)"],
+          "imagery": "枫叶图案的中心有一个小人像，代表“加拿大的”或“加拿大人”。",
+          "translation": "加拿大的；加拿大人",
+          "sentences": [
+            { "en": "Canadians speak English.", "cn": "加拿大人说英语。" }
+          ]
+        },
+        {
+          "word": "country",
+          "rootVisual": "<path d='M4 20 L4 4 h10 l-2 4 l2 4 h-10' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["Country", "(国家)"],
+          "imagery": "一根旗杆上飘扬着一面旗帜，代表一个主权国家。",
+          "translation": "国家",
+          "sentences": [
+            { "en": "Australia is a big country like China.", "cn": "澳大利亚和中国一样是个大国。" }
+          ]
+        },
+        {
+          "word": "countryside",
+          "rootVisual": "<path d='M2 18 C 6 14, 8 14, 12 18 S 18 22, 22 18' stroke='currentColor' fill='none' stroke-width='2'/><rect x='14' y='14' width='4' height='4' stroke='currentColor' fill='none'/><path d='M16 18 v-2 h-1' stroke='currentColor' fill='none'/>",
+          "breakdown": ["Country", "(国家/乡野)", "Side", "(边)"],
+          "imagery": "连绵起伏的山丘和田野，远处有一座小房子，描绘了宁静的乡村景象。",
+          "translation": "农村",
+          "sentences": [
+            { "en": "Life in the countryside is boring.", "cn": "农村的生活很无聊。" }
+          ]
+        },
+        {
+          "word": "sea",
+          "rootVisual": "<path d='M2 12 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M2 16 q 4 4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["Sea", "(海洋)"],
+          "imagery": "几条起伏的波浪线，代表着广阔的海洋。",
+          "translation": "海洋",
+          "sentences": [
+            { "en": "I love the sea.", "cn": "我爱大海。" }
+          ]
+        },
+        {
+          "word": "seaside",
+          "rootVisual": "<path d='M2 12 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M2 18 h20' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["Sea", "(海)", "Side", "(边)"],
+          "imagery": "波浪线紧挨着一条水平线，形象地表示出海洋与陆地交接的海边。",
+          "translation": "海边",
+          "sentences": [
+            { "en": "We spent the summer at the seaside.", "cn": "我们在海边度过了夏天。" }
+          ]
+        },
+        {
+          "word": "bridge",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M2 8h20 M2 12h20 M5 12v8 M12 12v8 M19 12v8' fill='none' stroke='currentColor'/></svg>",
+          "breakdown": ["Bridge", "(桥)"],
+          "imagery": "坚固的桥墩撑起平直的桥面，构成一条跨越障碍（如河流、山谷）的通道。这个设计代表了桥梁最基本的功能——连接与通行。",
+          "translation": "桥",
+          "sentences": [
+            { "en": "The bridge is 2000 meters long.", "cn": "这座桥长2000米。" }
+          ]
+        },
+        {
+          "word": "center",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["Center", "(中心)"],
+          "imagery": "一个圆圈的正中央有一个实心点，清晰地标示出中心位置。",
+          "translation": "中心",
+          "sentences": [
+            { "en": "A spot is in the center of the circle.", "cn": "圆的中心有一个点。" }
+          ]
+        },
+        {
+          "word": "crossing",
+          "rootVisual": "<path d='M2 12 h20 M12 2 v20' stroke='currentColor' stroke-width='2' stroke-dasharray='4 2'/>",
+          "breakdown": ["Cross", "(交叉)", "-ing", "(名词)"],
+          "imagery": "两条虚线道路相互交叉，形成一个十字路口。",
+          "translation": "十字路口",
+          "sentences": [
+            { "en": "When you are at the crossing, please be careful.", "cn": "在十字路口时，请小心。" }
+          ]
+        }
+      ]
+    }
+  ]
+}
