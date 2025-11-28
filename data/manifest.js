@@ -1,5 +1,5 @@
 // =================================================================================
-// 数据清单 (Data Manifest) - v2.4 (All 04.md Suffixes Added)
+// 数据清单 (Data Manifest) - v2.5 (Added Roots from 05.md)
 // ---------------------------------------------------------------------------------
 // 这个文件是数据加载的入口点。
 // 主应用 (app.js) 将读取这个列表，并加载其中定义的所有 JSON 文件。
@@ -38,7 +38,7 @@ const DATA_FILES = [
     'data/suf/ess.json',  // -ess
     'data/suf/eer.json',  // -eer
     'data/suf/ance.json', // -ance
-    'data/suf/ure.json',   // -ure
+    'data/suf/ure.json',  // -ure
 
     // 04.md 新增数据 (形容词、动词、综合)
     'data/suf/al.json',
@@ -54,5 +54,13 @@ const DATA_FILES = [
     'data/suf/ward.json',
     'data/suf/ate.json',
     'data/suf/ish.json',
-    'data/suf/ary.json'
+    'data/suf/ary.json',
+
+    // --- Roots (词根) - 05.md 新增数据 ---
+    'data/root/rect.json', // rect- (直/正)
+    'data/root/sect.json', // sect- (切割)
+    'data/root/flu.json',  // flu- (流)
+    'data/root/tend.json', // tend- (延伸)
+    'data/root/pos.json',  // pos- (放/置)
+    'data/root/spir.json'  // spir- (呼吸)
 ];

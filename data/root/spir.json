@@ -1,0 +1,36 @@
+{
+  "prefix": "spir",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "spir_breathe",
+      "displayName": "spir- (呼吸)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<path d='M12 12 m-9 0 a 9 9 0 1 0 18 0 a 9 9 0 1 0 -18 0' stroke='currentColor' fill='none' stroke-dasharray='1 4' opacity='0.5'/><path d='M12 12 m-6 0 a 6 6 0 1 0 12 0 a 6 6 0 1 0 -12 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "词根 spir-",
+        "description": "核心意境是 **“呼吸” (Breathe)**。\n引申为精神、灵感、生命力（有呼吸才有生命）。",
+        "imagery": "联想一阵盘旋的微风🌬️，或者螺旋上升的烟雾。"
+      },
+      "words": [
+        {
+          "word": "Inspire",
+          "rootVisual": "<path d='M12 16 v-6' stroke='currentColor'/><path d='M12 10 l-3 3 M12 10 l3 3' stroke='currentColor'/><circle cx='12' cy='16' r='2' fill='currentColor'/><path d='M8 6 q 4 -4 8 0' stroke='currentColor' fill='none' stroke-dasharray='2 1'/>",
+          "breakdown": ["in- (吸入)", "spir (气/神)"],
+          "imagery": "吸入（in-）一口气（spir），精神为之一振，产生灵感。",
+          "translation": "鼓舞；赋予灵感",
+          "sentences": [
+            {
+              "en": "We need someone who can inspire the team.",
+              "cn": "我们需要一个能鼓舞（注入士气）团队的人。"
+            },
+            {
+              "en": "The book was inspired by a real person.",
+              "cn": "这本书的灵感（吸入的精神）来自一个真实的人。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
