@@ -20,7 +20,6 @@ export let learnedWordsSet = new Set(); // 使用 Set 存储已掌握的单词
 
 /**
  * 从 localStorage 加载已掌握的单词列表。
- * (此函数无修改)
  * @returns {void}
  */
 export function loadLearnedWords() {
@@ -40,7 +39,6 @@ export function loadLearnedWords() {
 
 /**
  * 将已掌握的单词列表保存到 localStorage。
- * (此函数无修改)
  * @returns {void}
  */
 export function saveLearnedWords() {
@@ -54,7 +52,6 @@ export function saveLearnedWords() {
 
 /**
  * 切换一个单词的“已掌握”状态。
- * (此函数无修改)
  * @param {object} wordData - 要操作的单词对象。
  */
 export function toggleLearnedStatus(wordData) {
@@ -144,7 +141,6 @@ export async function loadAndProcessData() {
 
 /**
  * 根据当前筛选器过滤数据，更新 currentDataSet。
- * (此函数无修改)
  * @returns {void}
  */
 export function filterAndPrepareDataSet() {
@@ -163,7 +159,6 @@ export function filterAndPrepareDataSet() {
 
 /**
  * Fisher-Yates 洗牌算法。
- * (此函数无修改)
  * @param {Array<any>} array - 需要被洗牌的数组。
  * @returns {Array<any>} 一个新的被打乱顺序的数组。
  */
@@ -178,7 +173,6 @@ function shuffleArray(array) {
 
 /**
  * 对当前数据集中的单词卡片进行洗牌。
- * (此函数无修改)
  * @returns {void}
  */
 export function shuffleCurrentDataSet() {
@@ -191,7 +185,6 @@ export function shuffleCurrentDataSet() {
 
 /**
  * 更新当前筛选器状态。
- * (此函数无修改)
  * @param {string} newFilter - 新的筛选器值。
  */
 export function setCurrentFilter(newFilter) {

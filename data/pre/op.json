@@ -5,7 +5,7 @@
       "meaningId": "op_against",
       "displayName": "op-/ob- (相反/反对)",
       "themeColor": "#be123c",
-      "prefixVisual": "<path d='M4 12 h6' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/><path d='M20 12 h-6' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor' stroke-width='2'/>",
+      "prefixVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 4 12 h 4 M 20 12 h -4 M 12 4 L 12 20' stroke='currentColor' stroke-width='2'/></svg>",
       "prefixIntro": {
         "title": "前缀 op-/ob-",
         "description": "核心意境是 **“相反” (Against)** 或 **“对面” (Facing)**。\n它是 ob- 在 p 字母前的变体。表示对抗、阻碍或面对面。",
@@ -14,7 +14,7 @@
       "words": [
         {
           "word": "Oppose",
-          "rootVisual": "<path d='M16 12 l-4 0' stroke='currentColor' stroke-width='2'/><rect x='4' y='8' width='8' height='8' stroke='currentColor' fill='none'/><path d='M16 8 v8' stroke='currentColor' stroke-width='2'/>",
+          "rootVisual": "<path d='M4,7 A3,3 0 1 0 10,7 A3,3 0 1 0 4,7 Z M4 10.4c0 1.5.6 4.6 3 5.6v4 M14,7 A3,3 0 1 0 20,7 A3,3 0 1 0 14,7 Z M20 10.4c0 1.5-.6 4.6-3 5.6v4' fill='none' stroke='currentColor'/>",
           "breakdown": ["op- (相反)", "pos (放置)"],
           "imagery": "把自己放在（pos）与别人相反（op-）的位置上，即反对。",
           "translation": "反对",

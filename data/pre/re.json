@@ -256,9 +256,9 @@
         },
         {
           "word": "Recycle",
-          "rootVisual": "<path d='M21.5 12a9.5 9.5 0 1 1-13.3-8.1' /><polyline points='22 2 12 12 12 2' />",
-          "breakdown": ["re- (再一次)", "cycle (循环)"],
-          "imagery": "让废旧物品再一次 (`re-`) 进入新的生命循环 (`cycle`)，这就是回收。",
+          "rootVisual": "<path d='M5 6h14l-1.5 15h-11L5 6z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 2v4' stroke='currentColor'/><path d='M3 6h18' stroke='currentColor' stroke-width='2'/><path d='M12 10l-2 3.5h4L12 10z' fill='currentColor'/><path d='M15 15l-1.5 2.5h3L15 15z' fill='currentColor'/><path d='M9 15l-1.5 2.5h3L9 15z' fill='currentColor'/>",
+          "breakdown": ["Re-", "(再次)", "Cycle", "(圆/循环)"],
+          "imagery": "三个箭头首尾相连，像衔尾蛇一样形成闭环。垃圾进入桶中，不再是终点，而是重生的起点。",
           "translation": "回收利用",
           "sentences": [
             {

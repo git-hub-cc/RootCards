@@ -39,7 +39,6 @@ MIN_FILE_SIZE_BYTES = 1024  # 1 KB
 def parse_manifest(manifest_path: Path) -> list[Path]:
     """
     解析 data-manifest.js 文件，提取其中 DATA_FILES 数组中的所有 JSON 文件路径。
-    (此函数无修改)
     """
     print(f"📄 正在解析数据清单: {manifest_path}")
     if not manifest_path.exists():
@@ -133,7 +132,6 @@ def aggregate_data(file_paths: list[Path]) -> tuple[set[str], dict[str, list[str
 def generate_audio_file(text: str, output_path: Path) -> bool:
     """
     为给定的文本生成音频文件，并进行缓存检查。
-    (此函数无修改)
     """
     if output_path.exists() and output_path.stat().st_size >= MIN_FILE_SIZE_BYTES:
         try:

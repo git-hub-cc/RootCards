@@ -53,10 +53,10 @@
         },
         {
           "word": "Explanation",
-          "rootVisual": "<path d='M12 4 c-4 0 -8 4 -8 8 M12 4 c4 0 8 4 8 8' stroke-width='2' stroke-dasharray='1 1' stroke-linecap='round' /><path d='M4 12 L20 12' stroke-width='2'/>",
-          "breakdown": ["ex- (向外)", "plan (平面/展开)"],
-          "imagery": "把复杂的、卷曲在一起的思绪或原因，向外平铺展开（plan），使其清晰可见。",
-          "translation": "解释",
+          "rootVisual": "<path d='M4 6v12c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2z'></path><path d='M4 6c0-1.5 1.5-3 3-3s3 1.5 3 3v0'></path><path d='M18 18c0 1.5-1.5 3-3 3s-3-1.5-3-3v0'></path><line x1='8' y1='10' x2='16' y2='10'></line><line x1='8' y1='14' x2='14' y2='14'></line>",
+          "breakdown": ["ex- (向外)", "plan (平面/展开)", "-ation (名)"],
+          "imagery": "联想一位学者缓缓展开一卷古老的羊皮纸，将原本卷曲、隐藏的知识向外(ex-)铺平成一个清晰的平面(plan)，让复杂的道理变得一目了然。",
+          "translation": "解释；说明",
           "sentences": [
             {
               "en": "Stop explaining. I don't believe your explanation any more.",

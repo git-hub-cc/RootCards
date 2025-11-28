@@ -62,5 +62,10 @@ const DATA_FILES = [
     'data/root/flu.json',  // flu- (流)
     'data/root/tend.json', // tend- (延伸)
     'data/root/pos.json',  // pos- (放/置)
-    'data/root/spir.json'  // spir- (呼吸)
+    'data/root/spir.json',  // spir- (呼吸)
+
+    // ... 现有数据 ...
+    'data/category/month.json',
+    'data/category/daily.json',
+    'data/category/other.json'
 ];

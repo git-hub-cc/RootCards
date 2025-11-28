@@ -16,7 +16,6 @@ const audioPlayer = new Audio();
 
 /**
  * 初始化UI模块，获取模板元素。
- * (此函数无修改)
  * @returns {boolean} 如果所有模板都找到则返回 true，否则返回 false。
  */
 export function initUI() {
@@ -32,7 +31,6 @@ export function initUI() {
 
 /**
  * 播放本地音频文件。
- * (此函数无修改)
  * @param {string} filePath - 音频文件的相对路径。
  */
 function playAudioFile(filePath) {
@@ -64,7 +62,6 @@ function playAudioFile(filePath) {
 /**
  * 根据数据动态生成筛选器按钮。
  * 【核心逻辑】此函数基于意境分组 (meaning groups) 来生成按钮。
- * (此函数无修改)
  * @param {HTMLElement} filterContainer - 按钮的容器元素。
  * @param {HTMLElement} shuffleBtn - 随机按钮元素，新按钮会插在此之前。
  * @param {Array<object>} meaningGroups - 从 state.js 传入的原始意境分组对象数组。
@@ -101,7 +98,6 @@ export function renderFilterButtons(filterContainer, shuffleBtn, meaningGroups) 
 
 /**
  * 更新筛选器按钮的激活状态和样式。
- * (此函数无修改)
  */
 export function updateActiveFilterButton(filterContainer, clickedButton) {
     filterContainer.querySelectorAll('.filter-btn').forEach(btn => {
@@ -121,7 +117,6 @@ export function updateActiveFilterButton(filterContainer, clickedButton) {
 
 /**
  * 创建前缀介绍卡片DOM元素。
- * (此函数无修改)
  */
 function createIntroCard(data) {
     const cardClone = prefixIntroTemplate.content.cloneNode(true).firstElementChild;

@@ -14,9 +14,9 @@
       "words": [
         {
           "word": "Discover",
-          "rootVisual": "<rect x='7' y='7' width='10' height='10' fill='#fff' stroke='currentColor' stroke-width='1' /><circle cx='12' cy='12' r='5' fill='none' stroke='currentColor' stroke-width='2' />",
+          "rootVisual": "<path d='M20 16c0 2-2 4-4 4H8c-2 0-4-2-4-4v-4h16v4z'/><path d='M5 6h14'/><path d='M12 6V4'/><path d='M8 12c0-3 2-2 2-5'/><path d='M12 12c0-3 2-2 2-5'/><path d='M16 12c0-3 2-2 2-5'/>",
           "breakdown": ["dis- (去除)", "cover (盖子)"],
-          "imagery": "把盖在上面的东西拿掉，隐藏的东西就显露了，即发现。",
+          "imagery": "联想揭开沸腾的锅盖🍲，随着蒸汽升腾，里面隐藏的美味终于**显露**了出来。",
           "translation": "发现",
           "sentences": [
             {

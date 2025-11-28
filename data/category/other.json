@@ -1,0 +1,146 @@
+{
+  "prefix": "Basic",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_other",
+      "displayName": "基础综合 (Basic Mix)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<circle cx='8' cy='8' r='2' fill='currentColor'/><rect x='14' y='6' width='4' height='4' stroke='currentColor' fill='none'/><path d='M6 18 l4 -4 l4 4' stroke='currentColor' fill='none'/><circle cx='16' cy='16' r='3' stroke='currentColor' fill='none' stroke-dasharray='2 1'/>",
+      "prefixIntro": {
+        "title": "基础综合",
+        "description": "包含描述感觉、人物关系、学科以及自然现象的基础词汇。",
+        "imagery": "五彩斑斓的拼图，组成了丰富多彩的世界。"
+      },
+      "words": [
+        {
+          "word": "Boring",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 h2 M14 10 h2' stroke='currentColor'/><line x1='9' y1='15' x2='15' y2='15' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["Bore", "(钻孔/烦扰)"],
+          "imagery": "一张面无表情的脸，嘴巴呈直线，表示毫无兴趣。",
+          "translation": "无聊的 (修饰物)",
+          "sentences": [
+            { "en": "The job was boring.", "cn": "这份工作很无聊。" }
+          ]
+        },
+        {
+          "word": "Bored",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 h2 M14 10 h2' stroke='currentColor'/><line x1='9' y1='15' x2='15' y2='15' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["Bore", "(钻孔/烦扰)"],
+          "imagery": "因为厌倦而眼神呆滞或翻白眼的样子。",
+          "translation": "感到无聊的 (修饰人)",
+          "sentences": [
+            { "en": "I am bored with the job.", "cn": "我对这份工作感到厌倦。" }
+          ]
+        },
+        {
+          "word": "Cousin",
+          "rootVisual": "<circle cx='12' cy='6' r='2' stroke='currentColor' fill='none'/><path d='M12 8 v4' stroke='currentColor'/><path d='M8 12 h8' stroke='currentColor'/><line x1='8' y1='12' x2='8' y2='16' stroke='currentColor'/><line x1='16' y1='12' x2='16' y2='16' stroke='currentColor'/><circle cx='8' cy='18' r='2' fill='currentColor'/><circle cx='16' cy='18' r='2' fill='currentColor'/>",
+          "breakdown": ["Cousin", "(堂表亲)"],
+          "imagery": "家族树的分支，连接着同辈的亲属。",
+          "translation": "堂(表)兄弟姐妹",
+          "sentences": [
+            { "en": "I have three cousins.", "cn": "我有三个堂(表)兄弟姐妹。" },
+            { "en": "My cousin lives in London.", "cn": "我的表兄住在伦敦。" }
+          ]
+        },
+        {
+          "word": "Favorite",
+          "rootVisual": "<path d='M12 2 l3 7 h7 l-5 5 l2 7 l-7 -5 l-7 5 l2 -7 l-5 -5 h7 z' fill='currentColor'/>",
+          "breakdown": ["Favor", "(偏爱)"],
+          "imagery": "一颗实心的星星，代表它是所有选项中被选中的、最好的那一个。",
+          "translation": "最喜欢的",
+          "sentences": [
+            { "en": "What's your favorite book?", "cn": "你最喜欢的书是什么？" },
+            { "en": "Red is my favorite color.", "cn": "红色是我最喜欢的颜色。" }
+          ]
+        },
+        {
+          "word": "Fun",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 20 l2 4' stroke='currentColor'/><path d='M10 24 l2 -4' stroke='currentColor'/><circle cx='10' cy='10' r='1' fill='currentColor'/><circle cx='14' cy='10' r='1' fill='currentColor'/><path d='M9 14 q 3 3 6 0' stroke='currentColor'/>",
+          "breakdown": ["Fun", "(乐趣)"],
+          "imagery": "一个漂浮的气球或笑脸，代表轻松和快乐。",
+          "translation": "有趣的 (褒义)",
+          "sentences": [
+            { "en": "My father is a fun man.", "cn": "我父亲是个风趣的人。" },
+            { "en": "We had a lot of fun at the party.", "cn": "我们在派对上玩得很开心。" }
+          ]
+        },
+        {
+          "word": "Funny",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/><path d='M8 8 l2 -2 M16 8 l-2 -2' stroke='currentColor'/>",
+          "breakdown": ["Fun", "(滑稽)"],
+          "imagery": "一个小丑的红鼻子，让人觉得滑稽可笑。",
+          "translation": "滑稽的 (中性/贬义)",
+          "sentences": [
+            { "en": "It is funny that the man wears like this.", "cn": "那个男人穿成这样真滑稽。" }
+          ]
+        },
+        {
+          "word": "Geography",
+          "rootVisual": "<path d='M2 20h20' stroke='currentColor' stroke-width='2' stroke-linecap='round'/><path d='M4 20 L9 6 L12 14 L16 4 L22 20' stroke='currentColor' fill='none' stroke-width='2' stroke-linejoin='round'/><path d='M9 6 L7 20' stroke='currentColor' stroke-width='1' opacity='0.5'/>",
+          "breakdown": ["Geo", "(大地)", "-graphy", "(描绘)"],
+          "imagery": "高耸的山峰和崎岖的地形，象征着对地球 (Geo) 面貌的记录与描绘 (Graphy)。",
+          "translation": "地理",
+          "sentences": [
+            { "en": "I love geography very much.", "cn": "我非常喜欢地理。" },
+            { "en": "I want to be a geographer.", "cn": "我想成为一名地理学家。" }
+          ]
+        },
+        {
+          "word": "Habit",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 4 12 a 8 8 0 1 1 8 8 M 12 20 l 6 1 M 12 20 l 4 -4' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
+          "breakdown": ["Habit", "(居住/拥有)"],
+          "imagery": "一个循环的箭头，表示不断重复、周而复始的行为。",
+          "translation": "习惯",
+          "sentences": [
+            { "en": "Study habits are very important.", "cn": "学习习惯非常重要。" },
+            { "en": "Smoking is a bad habit.", "cn": "吸烟是个坏习惯。" }
+          ]
+        },
+        {
+          "word": "Relax",
+          "rootVisual": "<path d='M 2 20 L 22 20 M 4.5 16 A 2.5 2.5 0 1 0 9.5 16 A 2.5 2.5 0 1 0 4.5 16 Z M 9 18 h 6 l 5 -2 M 14 18 l 2 -4' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": ["Re-", "(向后/反复)", "Lax", "(松)"],
+          "imagery": "联想一个人彻底“躺平”，双手枕在脑后，翘着二郎腿，把紧绷的神经向后（Re-）完全松开（Lax）。",
+          "translation": "放松",
+          "sentences": [
+            { "en": "You should learn to relax after a long time of work.", "cn": "工作很久后你应该学会放松。" }
+          ]
+        },
+        {
+          "word": "Beach",
+          "rootVisual": "<path d='M2 18 q 5 -3 10 0 t 10 0' stroke='currentColor' fill='none'/><circle cx='6' cy='6' r='3' stroke='currentColor' fill='none'/><path d='M6 6 l2 2 M6 6 l0 3 M6 6 l-2 2' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": ["Beach", "(海滩)"],
+          "imagery": "波浪线代表海水，圆圈代表太阳。",
+          "translation": "海滩",
+          "sentences": [
+            { "en": "Lying on the beach is very relaxing.", "cn": "躺在海滩上非常放松。" },
+            { "en": "Let's go to the beach this weekend.", "cn": "这周末我们去海滩吧。" }
+          ]
+        },
+        {
+          "word": "Subject",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y1='12' x2='16' y2='12' stroke='currentColor'/><line x1='8' y1='16' x2='12' y2='16' stroke='currentColor'/>",
+          "breakdown": ["Sub-", "(在下)", "Ject", "(投掷)"],
+          "imagery": "一本教科书或笔记本的页面，列出了要学习的项目。",
+          "translation": "科目；主题",
+          "sentences": [
+            { "en": "There are eight subjects for us to learn this term.", "cn": "这学期我们有八门科目要学。" }
+          ]
+        },
+        {
+          "word": "Sweat",
+          "rootVisual": "<path d='M14.6 2.8c-1.8 2.5-6.6 8.3-6.6 12.2c0 3.9 3.1 7 7 7s7-3.1 7-7c0-3.9-5.5-10.4-7.4-12.2z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 7 l-3 3' stroke='currentColor' stroke-width='2'/><path d='M4 13 l-2 2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["Sweat", "(汗)"],
+          "imagery": "剧烈运动时，一颗带有速度感的汗珠飞溅而出，代表身体在努力降温。",
+          "translation": "流汗；汗水",
+          "sentences": [
+            { "en": "I sweat a lot in summer.", "cn": "我夏天流很多汗。" },
+            { "en": "Running in the heat makes me sweat.", "cn": "在热天跑步让我流汗。" }
+          ]
+        }
+      ]
+    }
+  ]
+}
