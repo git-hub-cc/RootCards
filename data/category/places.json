@@ -142,6 +142,87 @@
           "sentences": [
             { "en": "When you are at the crossing, please be careful.", "cn": "在十字路口时，请小心。" }
           ]
+        },
+        {
+          "word": "Europe",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='1 4' stroke-width='4'/>",
+          "breakdown": ["Europe", "(欧洲)"],
+          "imagery": "一圈环绕的虚线点，象征欧盟旗帜上的星环，代表欧洲的联合。",
+          "translation": "欧洲",
+          "sentences": [
+            { "en": "Europe is divided into Eastern Europe and Western Europe.", "cn": "欧洲分为东欧和西欧。" },
+            { "en": "The European economy is getting worse.", "cn": "欧洲经济每况愈下。" }
+          ]
+        },
+        {
+          "word": "Forest",
+          "rootVisual": "<path d='M12 2 L16 10 H8 Z M6 10 L10 18 H2 Z M18 10 L22 18 H14 Z' stroke='currentColor' fill='none' stroke-width='1.5'/>",
+          "breakdown": ["Forest", "(森林)"],
+          "imagery": "三棵树木（三角形）聚集在一起，独木不成林。",
+          "translation": "森林",
+          "sentences": [
+            { "en": "Thousands of animals live in the forest.", "cn": "成千上万的动物生活在森林里。" }
+          ]
+        },
+        {
+          "word": "Hallway",
+          "rootVisual": "<path d='M4 4 L8 8 M20 4 L16 8 M4 20 L8 16 M20 20 L16 16' stroke='currentColor' stroke-width='2'/><rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["Hall", "(厅)", "Way", "(路)"],
+          "imagery": "透视视角下的正方形通道，线条向中心汇聚，表现出走廊的深邃。",
+          "translation": "走廊",
+          "sentences": [
+            { "en": "Your son is running in the hallway.", "cn": "你儿子正在走廊里跑。" }
+          ]
+        },
+        {
+          "word": "Hospital",
+          "rootVisual": "<path d='M4 20 V 6 L 12 2 L 20 6 V 20 H 4 Z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 9 v6 M9 12 h6' stroke='currentColor' stroke-width='3'/>",
+          "breakdown": ["Hospital", "(医院)"],
+          "imagery": "一座建筑物中间有一个显眼的十字标志，代表医疗救助场所。",
+          "translation": "医院",
+          "sentences": [
+            { "en": "My aunt works in the hospital.", "cn": "我的姑姑在医院工作。" }
+          ]
+        },
+        {
+          "word": "Hotel",
+          "rootVisual": "<rect x='4' y='6' width='16' height='14' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 14 h8 v4 h-8 z' fill='currentColor' opacity='0.3'/><circle cx='12' cy='10' r='1.5' fill='currentColor'/>",
+          "breakdown": ["Hotel", "(旅馆)"],
+          "imagery": "一个带有床位示意（窗口）的建筑，供旅人休憩。",
+          "translation": "旅馆",
+          "sentences": [
+            { "en": "I dream of staying in a five-star hotel one day.", "cn": "我梦想有一天能住进五星级酒店。" }
+          ]
+        },
+        {
+          "word": "Kitchen",
+          "rootVisual": "<path d='M2 14 h20 l-2 6 h-16 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 14 v-4 q 2 -2 4 0 t 4 0' stroke='currentColor' stroke-width='1.5'/><line x1='12' y1='14' x2='12' y2='4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["Kitchen", "(厨房)"],
+          "imagery": "一个平底锅正在冒着热气，象征烹饪食物的地方。",
+          "translation": "厨房",
+          "sentences": [
+            { "en": "My mum is making a meal in the kitchen.", "cn": "我妈妈正在厨房做饭。" }
+          ]
+        },
+        {
+          "word": "Front",
+          "rootVisual": "<rect x='8' y='4' width='10' height='10' stroke='currentColor' fill='none' opacity='0.3'/><rect x='6' y='10' width='10' height='10' stroke='currentColor' fill='currentColor' fill-opacity='0.1' stroke-width='2'/>",
+          "breakdown": ["Front", "(前面)"],
+          "imagery": "两个重叠的方块，一个明显位于另一个的前方，遮挡住了后面。",
+          "translation": "前面",
+          "sentences": [
+            { "en": "A car is in front of the house.", "cn": "一辆车在房子前面。" }
+          ]
+        },
+        {
+          "word": "Hall",
+          "rootVisual": "<rect x='2' y='6' width='20' height='14' stroke='currentColor' fill='none' stroke-width='2'/><path d='M2 6 L6 2 H18 L22 6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["Hall", "(大厅)"],
+          "imagery": "一个宽敞的建筑内部空间结构。",
+          "translation": "大厅",
+          "sentences": [
+            { "en": "They are having a meeting in the hall.", "cn": "他们正在大厅开会。" }
+          ]
         }
       ]
     }

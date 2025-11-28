@@ -452,6 +452,194 @@
           "sentences": [
             { "en": "You cook the food, and I'll wash the dishes.", "cn": "你做饭，我来洗碗。" }
           ]
+        },
+        {
+          "word": "Dragon Boat Festival",
+          "rootVisual": "<path d='M2 15c0 0 5 4 10 4s9-5 9-5' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round'/><path d='M21 14l-1-3l2-2l-3 1l-1-2l-2 3' stroke='currentColor' fill='none' stroke-width='2' stroke-linejoin='round'/><path d='M2 15l-1-3l3 2' stroke='currentColor' fill='none' stroke-width='2' stroke-linejoin='round'/><path d='M7 17l-2 4 M12 18l-2 4 M17 17l-2 4' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": ["Dragon Boat", "(龙舟)", "Festival", "(节日)"],
+          "imagery": "一艘雕刻成龙形的细长独木舟，整齐划一的船桨如同龙爪，随着鼓点在水面上飞驰。",
+          "translation": "端午节",
+          "sentences": [
+            { "en": "The Dragon Boat Festival can be dated back to the Zhou Dynasty.", "cn": "端午节可以追溯到周朝。" }
+          ]
+        },
+        {
+          "word": "Dream",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 9 14 A 3 3 0 1 0 15 14 A 3 3 0 1 0 9 14 Z M 12 17 v 5 M 8 22 h 8 M 12 2 C 9.5 2 8 4 8 5 s 1 2.5 3 3 c 0.5 0.1 1.5 0.1 2 -0.5 c 1 0.5 2 1 4 0 c 1.5 -1 2 -3 1 -4.5 C 17 2 15 2 12 2 z v 0' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
+          "breakdown": ["Dream", "(梦想)"],
+          "imagery": "一个人抬头仰望高悬的云朵，目光中充满了对未来的憧憬。",
+          "translation": "梦想",
+          "sentences": [
+            { "en": "What's your dream?", "cn": "你的梦想是什么？" },
+            { "en": "I dream of being a movie star.", "cn": "我梦想成为电影明星。" }
+          ]
+        },
+        {
+          "word": "Drum",
+          "rootVisual": "<ellipse cx='12' cy='8' rx='8' ry='3' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 8 v10 a8 3 0 0 0 16 0 v-10' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["Drum", "(鼓)"],
+          "imagery": "一个圆柱体的鼓，能够敲击出节奏。",
+          "translation": "鼓",
+          "sentences": [
+            { "en": "I love playing the drums.", "cn": "我喜欢打鼓。" }
+          ]
+        },
+        {
+          "word": "Dumpling",
+          "rootVisual": "<path d='M4 16 a 8 8 0 0 1 16 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 16 l2 -1 l2 1 l2 -1 l2 1 l2 -1 l2 1 l2 -1 l2 1' stroke='currentColor' fill='none'/>",
+          "breakdown": ["Dumpling", "(饺子)"],
+          "imagery": "半圆形的轮廓，边缘带有捏合的波浪纹，典型的饺子形状。",
+          "translation": "饺子",
+          "sentences": [
+            { "en": "Chinese people often eat dumplings when celebrating Chinese New Year.", "cn": "中国人在庆祝春节时经常吃饺子。" }
+          ]
+        },
+        {
+          "word": "Early",
+          "rootVisual": "<circle cx='12' cy='13' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 9v4l-2 2' stroke='currentColor' stroke-width='2' stroke-linecap='round'/><path d='M5 3L2 6M22 6L19 3' stroke='currentColor' stroke-linecap='round'/><path d='M6.4 18.7L4 21M17.6 18.7L20 21' stroke='currentColor' stroke-linecap='round'/>",
+          "breakdown": ["Early", "(早的)"],
+          "imagery": "The insistent ringing of an alarm clock at dawn, its hands pointing to the first hours of the day, signaling it's time to rise.",
+          "translation": "早的",
+          "sentences": [
+            { "en": "The early bird catches the worm.", "cn": "早起的鸟儿有虫吃。" }
+          ]
+        },
+        {
+          "word": "Flag",
+          "rootVisual": "<line x1='6' y1='4' x2='6' y2='22' stroke='currentColor' stroke-width='2'/><path d='M6 5 h10 l-2 4 l2 4 h-10' stroke='currentColor' fill='currentColor' fill-opacity='0.2'/>",
+          "breakdown": ["Flag", "(旗)"],
+          "imagery": "一根旗杆上飘扬着一面长方形的旗帜。",
+          "translation": "旗帜",
+          "sentences": [
+            { "en": "The flags are flying.", "cn": "旗帜在飘扬。" },
+            { "en": "We salute the national flag.", "cn": "我们向国旗敬礼。" }
+          ]
+        },
+        {
+          "word": "Gift",
+          "rootVisual": "<rect x='6' y='10' width='12' height='10' stroke='currentColor' fill='none' stroke-width='2'/><line x1='12' y1='10' x2='12' y2='20' stroke='currentColor'/><path d='M12 10 q -4 -8 -6 0 M12 10 q 4 -8 6 0' stroke='currentColor' fill='none'/>",
+          "breakdown": ["Gift", "(礼物)"],
+          "imagery": "一个方形盒子，上面打着蝴蝶结，象征惊喜和赠予。",
+          "translation": "礼物",
+          "sentences": [
+            { "en": "I bought a birthday gift for my sister.", "cn": "我给妹妹买了生日礼物。" }
+          ]
+        },
+        {
+          "word": "Giraffe",
+          "rootVisual": "<rect x='6' y='14' width='8' height='6' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M14 14v-8a2 2 0 0 1 2-2h1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 20v2 M12 20v2' stroke='currentColor' stroke-width='2'/><path d='M16 4l-1-2 M18 4l1-2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["Giraffe", "(长颈鹿)"],
+          "imagery": "由简单的几何积木搭建而成，一个垂直的长方块代表其标志性的长脖子，稳固地连接在身体上。",
+          "translation": "长颈鹿",
+          "sentences": [
+            { "en": "A giraffe's neck is very long.", "cn": "长颈鹿的脖子很长。" }
+          ]
+        },
+        {
+          "word": "Guide",
+          "rootVisual": "<circle cx='12' cy='8' r='2' fill='currentColor'/><path d='M12 10 v10' stroke='currentColor' stroke-width='2'/><path d='M12 12 l6 -2 v4 l-6 2' stroke='currentColor' fill='none'/>",
+          "breakdown": ["Guide", "(向导)"],
+          "imagery": "一个人举着一面小旗子，走在前面指引方向。",
+          "translation": "导游",
+          "sentences": [
+            { "en": "I dream of being a tour guide.", "cn": "我梦想成为一名导游。" }
+          ]
+        },
+        {
+          "word": "Guitar",
+          "rootVisual": "<path d='M7 18 c0 3 9 3 9 0 c0-2-2-3-2-5 c0-2 2-3 2-5 c0-3-9-3-9 0 c0 2 2 3 2 5 c0 2-2 3-2 5z' /><line x1='11.5' y1='3' x2='11.5' y2='13' /><circle cx='11.5' cy='16' r='2' fill='currentColor' stroke='none' />",
+          "breakdown": ["Guitar", "(吉他)"],
+          "imagery": "经典的8字形琴身轮廓，中心的共鸣孔仿佛是旋律的出口，等待着被拨动的琴弦唤醒。",
+          "translation": "吉他",
+          "sentences": [
+            { "en": "My cousin plays the guitar so well.", "cn": "我表弟吉他弹得很好。" }
+          ]
+        },
+        {
+          "word": "High",
+          "rootVisual": "<path d='M4 20 L12 4 L20 20' stroke='currentColor' fill='none' stroke-width='2'/><line x1='22' y1='4' x2='22' y2='20' stroke='currentColor' stroke-dasharray='2 2'/><path d='M18 4 h6' stroke='currentColor'/>",
+          "breakdown": ["High", "(高)"],
+          "imagery": "一座高耸的山峰，旁边有垂直的标尺线，强调其高度。",
+          "translation": "高",
+          "sentences": [
+            { "en": "The mountain is very high.", "cn": "这座山很高。" }
+          ]
+        },
+        {
+          "word": "Host",
+          "rootVisual": "<path d='M4 12 q 4 4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": ["Host", "(主人)"],
+          "imagery": "一个人张开双臂（波浪线），做出欢迎的姿势。",
+          "translation": "主人",
+          "sentences": [
+            { "en": "The host served us delicious food.", "cn": "主人招待我们吃了美味的食物。" }
+          ]
+        },
+        {
+          "word": "Ivory",
+          "rootVisual": "<path d='M4 8c0-2.2 3-4 8-4s8 1.8 8 4c0 3-2 5-2 8' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M6 16c0-3-2-5-2-8' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M12 4v10c0 2 1 4 4 4' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M9 13c-1.5 3-3 4-4 3' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M15 13c1.5 3 3 4 4 3' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>",
+          "breakdown": [
+            "Ivory",
+            "(象牙)"
+          ],
+          "imagery": "大象正面轮廓图，嘴角两侧伸出两根弯曲、洁白的长牙（Ivory），这是它们最显著的特征。",
+          "translation": "象牙",
+          "sentences": [
+            { "en": "The ivory trade is illegal in China.", "cn": "象牙贸易在中国是非法的。" }
+          ]
+        },
+        {
+          "word": "Jeans",
+          "rootVisual": "<path d='M8 4 h8 v6 l-1 10 h-2 l-1 -8 l-1 8 h-2 l-1 -10 v-6' stroke='currentColor' fill='none' stroke-width='2'/><line x1='12' y1='10' x2='12' y2='4' stroke='currentColor'/>",
+          "breakdown": ["Jeans", "(牛仔裤)"],
+          "imagery": "双腿分开的裤子形状，经典的牛仔裤轮廓。",
+          "translation": "牛仔裤",
+          "sentences": [
+            { "en": "I don't like wearing jeans because they are too tight.", "cn": "我不喜欢穿牛仔裤，因为太紧了。" }
+          ]
+        },
+        {
+          "word": "Juice",
+          "rootVisual": "<path d='M6 8 l2 12 h8 l2 -12 h-12' stroke='currentColor' fill='none' stroke-width='2'/><path d='M14 8 l4 -6' stroke='currentColor' stroke-width='2'/><circle cx='18' cy='2' r='1' fill='currentColor'/>",
+          "breakdown": ["Juice", "(果汁)"],
+          "imagery": "一个杯子插着吸管，旁边有一滴液体（水果精华）。",
+          "translation": "果汁",
+          "sentences": [
+            { "en": "Which juice do you prefer, orange juice or tomato juice?", "cn": "你喜欢哪种果汁，橙汁还是番茄汁？" }
+          ]
+        },
+        {
+          "word": "kilometer",
+          "rootVisual": "<rect x='4' y='5' width='16' height='10' rx='1' stroke='currentColor' fill='none' stroke-width='2' /><line x1='12' y1='15' x2='12' y2='22' stroke='currentColor' stroke-width='2' /><path d='M8 12V8 M11 8L8 10L11 12 M13 12V8L14.5 10L16 8V12' stroke='currentColor' fill='none' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/><path d='M4 22 h16' stroke='currentColor' opacity='0.5' />",
+          "breakdown": ["Kilo (千)", "Meter (米)"],
+          "imagery": "联想高速公路旁的路牌，清晰地标示着“KM”，这是我们在长途旅行中最常见的距离单位。",
+          "translation": "千米",
+          "sentences": [
+            { "en": "The road is 1 kilometer long.", "cn": "这条路长1千米。" }
+          ]
+        },
+        {
+          "word": "Kite",
+          "rootVisual": "<path d='M12 2 l4 6 l-4 8 l-4 -8 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 16 q 4 4 0 8' stroke='currentColor' stroke-width='1.5'/>",
+          "breakdown": ["Kite", "(风筝)"],
+          "imagery": "一个菱形风筝，拖着一条波浪形的尾巴在空中飞翔。",
+          "translation": "风筝",
+          "sentences": [
+            { "en": "People often fly kites in spring.", "cn": "人们经常在春天放风筝。" }
+          ]
+        },
+        {
+          "word": "Koala",
+          "rootVisual": "<path d='M7 6a3 3 0 1 0-4 4' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M17 6a3 3 0 1 1 4 4' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M4 10c0 4.5 3.5 9 8 9s8-4.5 8-9' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><rect x='10' y='10' width='4' height='5' rx='2' fill='currentColor'/><circle cx='8' cy='11' r='1' fill='currentColor' stroke='none'/><circle cx='16' cy='11' r='1' fill='currentColor' stroke='none'/>",
+          "breakdown": [
+            "Koala",
+            "(考拉)"
+          ],
+          "imagery": "标志性的大圆耳朵和黑色大鼻子，这张呆萌的脸庞是澳大利亚最可爱的象征。",
+          "translation": "考拉",
+          "sentences": [
+            { "en": "The koala is a symbol of Australia.", "cn": "考拉是澳大利亚的象征。" }
+          ]
         }
       ]
     }

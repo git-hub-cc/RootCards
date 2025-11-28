@@ -69,5 +69,6 @@ const DATA_FILES = [
     'data/category/other.json',
 
     'data/category/places.json',
-    'data/category/weather.json'
+    'data/category/weather.json',
+    'data/category/action.json'
 ];
