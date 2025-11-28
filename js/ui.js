@@ -272,7 +272,6 @@ function createWordCard(data, handlers) {
 
 /**
  * 卡片创建的工厂函数。
- * (此函数无任何修改)
  */
 export function createCard(data, handlers) {
     return data.cardType === 'intro' ? createIntroCard(data) : createWordCard(data, handlers);

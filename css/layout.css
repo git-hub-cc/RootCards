@@ -34,7 +34,7 @@
 .subtitle {
     display: block;
     font-size: 0.9rem;
-    color: var(--text-sub); /* 此处已是变量，无需修改 */
+    color: var(--text-sub);
     font-weight: normal;
     margin-top: 0.2rem;
 }
@@ -44,7 +44,7 @@
     margin: 1.5rem auto;
     max-width: 600px;
     font-size: 0.95rem;
-    color: var(--text-sub); /* 此处已是变量，无需修改 */
+    color: var(--text-sub);
     line-height: 1.6;
     position: relative;
     padding: 0 1rem;
@@ -55,7 +55,7 @@
 }
 
 .app-slogan strong {
-    color: var(--text-main); /* 此处已是变量，无需修改 */
+    color: var(--text-main);
     font-weight: 700;
 }
 
@@ -107,7 +107,7 @@
     margin-top: 2rem;
     /* 【修改】使用变量 */
     border-top: 1px solid var(--border-color);
-    color: var(--text-sub); /* 此处已是变量，无需修改 */
+    color: var(--text-sub);
     font-size: 0.85rem;
     transition: border-color 0.3s ease;
 }
