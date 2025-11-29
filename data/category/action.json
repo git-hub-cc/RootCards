@@ -92,6 +92,86 @@
           "sentences": [
             { "en": "I am sorry. I forgot your name.", "cn": "对不起。我忘记你的名字了。" }
           ]
+        },
+        {
+          "word": "miss",
+          "rootVisual": "<rect x='2' y='14' width='20' height='2' rx='1' /><path d='M4 16v4' /><path d='M20 16v4' /><circle cx='7' cy='8' r='2' /><path d='M7 10v4' /><g opacity='0.6' stroke-dasharray='2 2'><circle cx='17' cy='8' r='2' /><path d='M17 10v4' /><path d'M15 14q2 -2 4 0' /></g>",
+          "breakdown": ["miss", "(错过；想念)"],
+          "imagery": "On a park bench, one side is occupied, while the other holds only the faint, dashed outline of a companion—a memory of someone who is no longer there. The empty space itself represents the feeling of longing and absence.",
+          "translation": "错过；想念",
+          "sentences": [
+            { "en": "5 years ago, I missed you. Now I miss you so much.", "cn": "5年前，我错过了你。现在，我非常想念你。" }
+          ]
+        },
+        {
+          "word": "order",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 7 4 H 17 A 1 1 0 0 1 18 5 V 19 A 1 1 0 0 1 17 20 H 7 A 1 1 0 0 1 6 19 V 5 A 1 1 0 0 1 7 4 M 8 8 h 8 M 8 12 h 8 M 8 16 h 4 h 2' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
+          "breakdown": ["order", "(点菜)"],
+          "imagery": "一份菜单或清单，上面有几行文字，旁边有一支笔准备勾选。",
+          "translation": "点菜",
+          "sentences": [
+            { "en": "Excuse me. Can I take your order now?", "cn": "打扰一下，现在可以点菜了吗？" }
+          ]
+        },
+        {
+          "word": "pay",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='2' stroke='currentColor' fill='none'/>",
+          "breakdown": ["pay", "(支付)"],
+          "imagery": "一张中间带有圆形图案的钞票，是金钱和支付的通用符号。",
+          "translation": "支付",
+          "sentences": [
+            { "en": "I'll pay the bill.", "cn": "我来付账。" }
+          ]
+        },
+        {
+          "word": "payment",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='2' stroke='currentColor' fill='none'/><path d='M20 12 h4 l-2 -2 m2 2 l-2 2' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["payment", "(支付 - 名词)"],
+          "imagery": "一张钞票，旁边有一个指向前方的箭头，表示金钱的“付出”或“转移”。",
+          "translation": "支付（名词）",
+          "sentences": [
+            { "en": "He made a down payment on a new car.", "cn": "他为一辆新车付了首付。" }
+          ]
+        },
+        {
+          "word": "pick",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 12 8 L 10 12 l 2 -4 l 2 4 Z L 12 8 v -4 M 8 12 v 8 h 8 v -8' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
+          "breakdown": ["pick", "(挑选；摘)"],
+          "imagery": "一只手（或夹子）正从上方精准地抓取一个小物体，强调“拾取”的动作。",
+          "translation": "挑选；摘",
+          "sentences": [
+            { "en": "Please pick a card.", "cn": "请选一张牌。" }
+          ]
+        },
+        {
+          "word": "pick up",
+          "rootVisual": "<path d='M8 12 v8 h8 v-8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 12 l-2 -4 h4 z' stroke='currentColor' fill='currentColor' fill-opacity='0.2'/><path d='M12 8 v-4 m-2 2 l2 -2 l2 2' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["pick up", "(捡起来)"],
+          "imagery": "一只手（或夹子）抓取物体，并附加一个向上的箭头，明确表示“捡起来”的方向。",
+          "translation": "捡起来",
+          "sentences": [
+            { "en": "The little girl is picking up shells.", "cn": "小女孩正在捡贝壳。" }
+          ]
+        },
+        {
+          "word": "pour",
+          "rootVisual": "<path d='M8 6 h8 l-1 12 h-6 z' stroke='currentColor' fill='none' stroke-width='2' transform='rotate(-15 12 12)'/><path d='M16 12 q 4 -1 4 3 t-4 3' stroke='currentColor' fill='none'/>",
+          "breakdown": ["pour", "(倒)"],
+          "imagery": "一个倾斜的杯子，杯口正流出几道液体，形象地展示了“倾倒”的动作。",
+          "translation": "倒",
+          "sentences": [
+            { "en": "Pour some milk into the cup.", "cn": "往杯子里倒些牛奶。" }
+          ]
+        },
+        {
+          "word": "post",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><rect x='14' y='4' width='4' height='4' rx='1' stroke='currentColor' fill='none'/><path d='M14 6 h-4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["post", "(邮寄)"],
+          "imagery": "一张贴好邮票的信封，代表着即将被邮寄的信件。",
+          "translation": "邮寄",
+          "sentences": [
+            { "en": "I need to post this letter.", "cn": "我需要寄这封信。" }
+          ]
         }
       ]
     }

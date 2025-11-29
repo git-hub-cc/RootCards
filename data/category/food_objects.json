@@ -1,0 +1,169 @@
+{
+  "prefix": "Food & Objects",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_food_objects",
+      "displayName": "食物与物品 (Objects)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<path d='M4 14 a 8 8 0 0 0 16 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M18 6 l-4 8' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "食物与物品",
+        "description": "包含具体的食物、动植物、建筑和日常用品。",
+        "imagery": "像一个装满生活必需品的百宝箱。"
+      },
+      "words": [
+        {
+          "word": "meat",
+          "rootVisual": "<path d='M4 10 a 6 6 0 0 1 12 0 v 8 a 2 2 0 0 1 -2 2 h -2 v -4 h -4 v 4 h -2 a 2 2 0 0 1 -2 -2 z' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["meat", "(肉)"],
+          "imagery": "一块经典的带骨肉排（T骨牛排），清晰地展示了肉的形态。",
+          "translation": "肉",
+          "sentences": [
+            { "en": "To lose weight, I decided to give up eating meat and have vegetables instead.", "cn": "为了减肥，我决定不吃肉，改吃蔬菜。" }
+          ]
+        },
+        {
+          "word": "vegetable",
+          "rootVisual": "<path d='M12 20 L8 6 L16 6 Z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 6 v-4' stroke='currentColor'/><path d='M10 2 l2 -2 l2 2' stroke='currentColor' fill='none'/>",
+          "breakdown": ["vegetable", "(蔬菜)"],
+          "imagery": "一根顶端带有绿叶的胡萝卜，是蔬菜的典型代表。",
+          "translation": "蔬菜",
+          "sentences": [
+            { "en": "You should eat more fresh vegetables every day.", "cn": "你每天应该多吃新鲜蔬菜。" }
+          ]
+        },
+        {
+          "word": "mouse",
+          "rootVisual": "<path d='M12 10a5 5 0 0 1 5 5v2a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2v-2a5 5 0 0 1 5 -5z' /><path d='M6 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0' /><path d='M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0' /><path d='M9 13l-2 -1' /><path d='M15 13l2 -1' /><path d='M12 15v.01' />",
+          "breakdown": ["mouse", "(老鼠)"],
+          "imagery": "标志性的大圆耳朵和圆润的脸庞，构成了老鼠最经典、最容易识别的卡通形象。",
+          "translation": "老鼠",
+          "sentences": [
+            { "en": "Most people don't like mice.", "cn": "大多数人不喜欢老鼠。" }
+          ]
+        },
+        {
+          "word": "mountain",
+          "rootVisual": "<path d='M2 20 l6-12 5 6 4-8 5 14' />",
+          "breakdown": ["mountain", "(高山)"],
+          "imagery": "一条连绵起伏的锯齿状线条勾勒出山脉雄伟的天际线，捕捉了山峰与山谷的起伏韵律。这是大地伸向天空的原始签名.",
+          "translation": "高山",
+          "sentences": [
+            { "en": "There are so many mountains in Shanxi Province.", "cn": "山西省有很多山。" }
+          ]
+        },
+        {
+          "word": "museum",
+          "rootVisual": "<path d='M4 20 h16 M6 18 V 8 l6 -4 l6 4 v10' stroke='currentColor' fill='none' stroke-width='2'/><path d='M10 18 v-6 M14 18 v-6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["museum", "(博物馆)"],
+          "imagery": "一座有台阶和宏伟立柱的建筑，象征着庄严的知识殿堂。",
+          "translation": "博物馆",
+          "sentences": [
+            { "en": "The museum has a large collection of photographs.", "cn": "这个博物馆收藏了大量的照片。" }
+          ]
+        },
+        {
+          "word": "noodle",
+          "rootVisual": "<path d='M4 14 a 8 8 0 0 0 16 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M7 10 q 2.5 -3 5 0 t 5 0' stroke='currentColor' fill='none'/><path d='M7 12 q 2.5 -3 5 0 t 5 0' stroke='currentColor' fill='none' opacity='0.7'/>",
+          "breakdown": ["noodle", "(面条)"],
+          "imagery": "一个半圆形的碗里盛着几条弯曲的波浪线，形象地代表了面条。",
+          "translation": "面条",
+          "sentences": [
+            { "en": "People from the northern part of China like to have noodles.", "cn": "中国北方人喜欢吃面条。" }
+          ]
+        },
+        {
+          "word": "onion",
+          "rootVisual": "<path d='M12 20a7 7 0 0 0 7-7c0-4-7-9-7-9S5 9 5 13a7 7 0 0 0 7 7z'/><path d='M12 4V2'/><path d='M9 22l1-2 M14 22l-1-2'/><path d='M12 4c0 0 3 4 3 9'/><path d='M12 4c0 0-3 4-3 9'/>",
+          "breakdown": ["onion", "(洋葱)"],
+          "imagery": "一个泪滴状的球茎，顶部长出嫩芽，底部生出细根，内部的线条暗示着它层层包裹的结构。",
+          "translation": "洋葱",
+          "sentences": [
+            { "en": "Fry the onion with meat.", "cn": "把洋葱和肉一起炒。" }
+          ]
+        },
+        {
+          "word": "pet",
+          "rootVisual": "<path d='M12 17.5c-2.5 0-4.5-1.5-4.5-3.5c0-1.5 1-2.5 2.5-2.5c1 0 1.5.5 2 1.5c.5-1 1-1.5 2-1.5c1.5 0 2.5 1 2.5 2.5c0 2-2 3.5-4.5 3.5z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='8' cy='6' r='2' fill='currentColor'/><circle cx='12' cy='5' r='2' fill='currentColor'/><circle cx='16' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": ["pet", "(宠物)"],
+          "imagery": "一个简单的爪印，是毛茸茸的朋友在我们生命中留下印记的通用符号。",
+          "translation": "宠物",
+          "sentences": [
+            { "en": "I raised two pets, a dog and a cat.", "cn": "我养了两只宠物，一只狗和一只猫。" }
+          ]
+        },
+        {
+          "word": "piano",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 12 h2 M10 12 h2 M14 12 h2 M18 12 h2' stroke='currentColor'/><path d='M8 8 v4 M12 8 v4 M16 8 v4' stroke='currentColor' fill='currentColor' stroke-width='2'/>",
+          "breakdown": ["piano", "(钢琴)"],
+          "imagery": "一段标志性的黑白琴键排列，直观地代表了钢琴。",
+          "translation": "钢琴",
+          "sentences": [
+            { "en": "I like playing the piano.", "cn": "我喜欢弹钢琴。" }
+          ]
+        },
+        {
+          "word": "pool",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 10 q 4 -2 8 0 t 8 0 M6 14 q 4 -2 8 0 t 8 0' stroke='currentColor' fill='none'/>",
+          "breakdown": ["pool", "(水池)"],
+          "imagery": "一个矩形的水池，水面泛着粼粼的波光。",
+          "translation": "水池",
+          "sentences": [
+            { "en": "It is normal to have a swimming pool in the yard in Malaysia.", "cn": "在马来西亚，院子里有游泳池是很正常的。" }
+          ]
+        },
+        {
+          "word": "porridge",
+          "rootVisual": "<path d='M4 12 a 8 8 0 0 0 16 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='10' cy='10' r='1' fill='currentColor'/><circle cx='14' cy='10' r='0.5' fill='currentColor' opacity='0.7'/><circle cx='12' cy='13' r='0.5' fill='currentColor' opacity='0.7'/>",
+          "breakdown": ["porridge", "(粥)"],
+          "imagery": "一个碗里装着粘稠的液体，上面点缀着几颗米粒，代表着粥。",
+          "translation": "粥",
+          "sentences": [
+            { "en": "My mum often cooks porridge for us in the morning.", "cn": "我妈妈早上经常为我们煮粥。" }
+          ]
+        },
+        {
+          "word": "post office",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 8 l8 -4 l8 4' stroke='currentColor' fill='none'/><path d='M10 12 h4 v4 h-4 z' fill='currentColor' opacity='0.3'/>",
+          "breakdown": ["post office", "(邮局)"],
+          "imagery": "一个信封的图标叠加在一个房子的轮廓上，清晰地表达了邮局的含义。",
+          "translation": "邮局",
+          "sentences": [
+            { "en": "Is there a post office near here?", "cn": "这附近有邮局吗？" }
+          ]
+        },
+        {
+          "word": "potato",
+          "rootVisual": "<ellipse cx='12' cy='14' rx='8' ry='5' stroke='currentColor' fill='none' stroke-width='2'/><path d='M10 12 l-1 -2 M14 12 l1 -1 M12 15 l-1 1' stroke='currentColor' fill='none'/>",
+          "breakdown": ["potato", "(土豆)"],
+          "imagery": "一个不规则的椭圆形，上面有几个小点，代表土豆发芽的“眼睛”。",
+          "translation": "土豆",
+          "sentences": [
+            { "en": "Do you like having potato chips?", "cn": "你喜欢吃薯片吗？" }
+          ]
+        },
+        {
+          "word": "robot",
+          "rootVisual": "<rect x='8' y='8' width='8' height='8' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><rect x='6' y='16' width='12' height='4' rx='1' stroke='currentColor' fill='none'/><circle cx='10' cy='12' r='1' fill='currentColor'/><circle cx='14' cy='12' r='1' fill='currentColor'/><line x1='12' y1='8' x2='14' y2='4' stroke='currentColor'/>",
+          "breakdown": ["robot", "(机器人)"],
+          "imagery": "一个由方块和圆形组成的经典机器人形象，方头方脑，头顶还有天线。",
+          "translation": "机器人",
+          "sentences": [
+            { "en": "There will be a robot in each family in the near future.", "cn": "在不久的将来，每个家庭都会有一个机器人。" }
+          ]
+        },
+        {
+          "word": "rope",
+          "rootVisual": "<path d='M8 4 a4 4 0 1 1 0 8 a4 4 0 1 0 0 8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M16 4 a4 4 0 1 0 0 8 a4 4 0 1 1 0 8' stroke='currentColor' fill='none' stroke-width='2' opacity='0.5'/>",
+          "breakdown": ["rope", "(绳子)"],
+          "imagery": "两条相互缠绕的螺旋线，形成了麻花状，直观地表现出绳子的结构。",
+          "translation": "绳子",
+          "sentences": [
+            { "en": "The rope is very strong.", "cn": "这根绳子很结实。" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -70,5 +70,8 @@ const DATA_FILES = [
 
     'data/category/places.json',
     'data/category/weather.json',
-    'data/category/action.json'
+    'data/category/action.json',
+
+    'data/category/food_objects.json',
+    'data/category/concepts_states.json',
 ];

@@ -1,0 +1,215 @@
+{
+  "prefix": "Concepts & States",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_concepts_states",
+      "displayName": "概念与状态 (Concepts)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<circle cx='12' cy='8' r='3' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 11 v4' stroke='currentColor' stroke-width='2'/><path d='M9 18 a 4 4 0 0 1 6 0' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "概念与状态",
+        "description": "包含抽象概念、逻辑思维、主观感受和客观状态的词汇。",
+        "imagery": "像一个正在思考的大脑，充满了逻辑与情感的火花。"
+      },
+      "words": [
+        {
+          "word": "language",
+          "rootVisual": "<path d='M6 8 a 4 4 0 0 1 4 -4 h4 a 4 4 0 0 1 4 4 v8 a 4 4 0 0 1 -4 4 h-2 l-4 4 v-4 h-2 a 4 4 0 0 1 -4 -4 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M10 10 h4' stroke='currentColor'/><path d='M10 14 h2' stroke='currentColor'/>",
+          "breakdown": ["language", "(语言)"],
+          "imagery": "一个对话气泡，象征着沟通和交流，是语言最核心的功能。",
+          "translation": "语言",
+          "sentences": [
+            { "en": "What language do you speak?", "cn": "你说什么语言？" }
+          ]
+        },
+        {
+          "word": "lazy",
+          "rootVisual": "<circle cx='12' cy='12' r='9'></circle><path d='M8 12a2 2 0 0 1 4 0'></path><path d='M14 12a2 2 0 0 1 4 0'></path><path d='M16 2 L18 2 L16 5 L18 5'></path><path d='M20 6 L22 6 L20 10 L22 10'></path>",
+          "breakdown": ["lazy", "(懒的)"],
+          "imagery": "一张昏昏欲睡的脸庞，眼皮沉重得只想闭上，连思绪都化作了 Zzz 飘走，象征着一种无心行动、只想休息的状态。",
+          "translation": "懒的",
+          "sentences": [
+            { "en": "My dad is lazy.", "cn": "我爸爸很懒。" }
+          ]
+        },
+        {
+          "word": "laziness",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 20 v-8 h-4 l4 -4 l4 4 h-4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["laziness", "(懒惰)"],
+          "imagery": "一个沉重的向下箭头，压在一个人的图标上，象征着懒惰是阻碍前进的负担。",
+          "translation": "懒惰",
+          "sentences": [
+            { "en": "His laziness is a big problem.", "cn": "他的懒惰是个大问题。" }
+          ]
+        },
+        {
+          "word": "lovely",
+          "rootVisual": "<path d='M12 20 l-8 -8 a 5 5 0 1 1 8 -7 a 5 5 0 1 1 8 7 z' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["lovely", "(可爱的)"],
+          "imagery": "一颗简单而饱满的爱心，是“可爱”和“喜爱”最直接的视觉表达。",
+          "translation": "可爱的",
+          "sentences": [
+            { "en": "The little girl is so lovely.", "cn": "这个小女孩真可爱。" }
+          ]
+        },
+        {
+          "word": "luck",
+          "rootVisual": "<path d='M12 12 C 12 12, 8 7, 8 5 A 3 3 0 0 1 12 3 A 3 3 0 0 1 16 5 C 16 7, 12 12, 12 12 Z'/><path d='M12 12 C 12 12, 17 8, 19 8 A 3 3 0 0 1 21 12 A 3 3 0 0 1 19 16 C 17 16, 12 12, 12 12 Z'/><path d='M12 12 C 12 12, 16 17, 16 19 A 3 3 0 0 1 12 21 A 3 3 0 0 1 8 19 C 8 17, 12 12, 12 12 Z'/><path d='M12 12 C 12 12, 7 16, 5 16 A 3 3 0 0 1 3 12 A 3 3 0 0 1 5 8 C 7 8, 12 12, 12 12 Z'/><path d='M12 12 q 0 6 4 10' stroke-width='2' opacity='0.6'/>",
+          "breakdown": ["luck", "(运气)"],
+          "imagery": "一株稀有的四叶草，每一片叶子都像一颗饱满的心，从中心伸展而出。纤细的茎秆连接着这份来之不易的幸运。",
+          "translation": "运气",
+          "sentences": [
+            { "en": "Good luck.", "cn": "祝你好运。" }
+          ]
+        },
+        {
+          "word": "medium",
+          "rootVisual": "<path d='M4 18 v-6' stroke='currentColor' stroke-width='4'/><path d='M12 18 v-12' stroke='currentColor' fill='currentColor' stroke-width='4'/><path d='M20 18 v-3' stroke='currentColor' stroke-width='4'/>",
+          "breakdown": ["medium", "(中等)"],
+          "imagery": "三个高低不同的柱状图，中间那个被高亮显示，清晰地表达了“中等”的概念。",
+          "translation": "中等",
+          "sentences": [
+            { "en": "My father is of medium height.", "cn": "我父亲中等身高。" }
+          ]
+        },
+        {
+          "word": "message",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 7 l8 5 l8 -5' stroke='currentColor' fill='none'/>",
+          "breakdown": ["message", "(信息)"],
+          "imagery": "一个紧闭的信封图标，代表着待传递或已接收的信息。",
+          "translation": "信息",
+          "sentences": [
+            { "en": "When I get up every morning, there are so many messages to read.", "cn": "每天早上起床时，都有很多信息要读。" }
+          ]
+        },
+        {
+          "word": "music",
+          "rootVisual": "<path d='M9 18V5l12-2v13'></path><circle cx='6' cy='18' r='3' fill='currentColor'></circle><circle cx='18' cy='16' r='3' fill='currentColor'></circle>",
+          "breakdown": ["music", "(音乐)"],
+          "imagery": "两个音符通过横梁连接在一起，构成了流动的旋律。音乐就是这样，将声音组织起来，表达情感。",
+          "translation": "音乐",
+          "sentences": [
+            { "en": "The music she plays is so nice.", "cn": "她演奏的音乐非常动听。" }
+          ]
+        },
+        {
+          "word": "nature",
+          "rootVisual": "<path d='M3 20 l 9 -15 l 9 15 h -18 z' stroke='currentColor' fill='none'/><path d='M9 10 l 4 7' stroke='currentColor'/><circle cx='17' cy='6' r='3' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "nature",
+            "(自然)"
+          ],
+          "imagery": "巍峨的山脉（大地）与天边的太阳（天空）共同构成了“自然”这个宏大的概念。",
+          "translation": "自然",
+          "sentences": [
+            { "en": "The student should develop some skills to live in nature.", "cn": "学生应该培养一些在自然界中生存的技能。" }
+          ]
+        },
+        {
+          "word": "noise",
+          "rootVisual": "<path d='M6 9 v6' stroke='currentColor' stroke-width='2'/><path d='M11 5 v14' stroke='currentColor' stroke-width='2'/><path d='M16 10 v4' stroke='currentColor' stroke-width='2'/><path d='M21 7 v10' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["noise", "(噪音)"],
+          "imagery": "混乱无序的声波线条，高低错落，象征着刺耳、不和谐的声音。",
+          "translation": "噪音",
+          "sentences": [
+            { "en": "There is so much noise outside. It's too noisy.", "cn": "外面噪音很大。太吵了。" }
+          ]
+        },
+        {
+          "word": "popular",
+          "rootVisual": "<path d='M12 2 l3 7 h7 l-5 5 l2 7 l-7 -5 l-7 5 l2 -7 l-5 -5 h7 z' stroke='currentColor' fill='currentColor' fill-opacity='0.2' stroke-width='2'/>",
+          "breakdown": ["popular", "(受欢迎的)"],
+          "imagery": "一颗闪亮的星星，代表着明星、焦点和被众人追捧的状态。",
+          "translation": "受欢迎的",
+          "sentences": [
+            { "en": "The Avengers are very popular in America.", "cn": "《复仇者联盟》在美国非常受欢迎。" }
+          ]
+        },
+        {
+          "word": "practice",
+          "rootVisual": "<path d='M 21 7.5 a 9 9 0 1 1 -6.1 -5.5 M 23 10 L 21 7 L 19 10 L 19 10' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["practice", "(练习)"],
+          "imagery": "一个循环箭头，表示不断重复、周而复始的行为，直到熟练。",
+          "translation": "练习",
+          "sentences": [
+            { "en": "Practice makes perfect.", "cn": "熟能生巧。" }
+          ]
+        },
+        {
+          "word": "problem",
+          "rootVisual": "<path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><line x1='12' y1='17' x2='12.01' y2='17' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>",
+          "breakdown": [
+            "problem",
+            "(困难)"
+          ],
+          "imagery": "一个悬而未决的问号，象征着阻碍前行的难题或需要寻找答案的困惑。",
+          "translation": "困难；问题",
+          "sentences": [
+            { "en": "Do you have any problems?", "cn": "你有什么问题吗？" }
+          ]
+        },
+        {
+          "word": "quarter",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 v8 h8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 a 8 8 0 0 0 -8 8 h8 z' fill='currentColor' opacity='0.2'/>",
+          "breakdown": ["quarter", "(四分之一)"],
+          "imagery": "一个饼图被分成了四份，其中一份被高亮显示，直观地表达了四分之一的概念。",
+          "translation": "四分之一",
+          "sentences": [
+            { "en": "A quarter of the students have problems in pronunciation.", "cn": "四分之一的学生在发音方面有问题。" }
+          ]
+        },
+        {
+          "word": "quiet",
+          "rootVisual": "<path d='M10 16 q -2 -2 -2 -4 a 4 4 0 0 1 8 0 q 0 2 -2 4 L 12 20 Z' stroke='currentColor' fill='none' stroke-width='2'/><line x1='6' y1='6' x2='18' y2='18' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["quiet", "(安静的)"],
+          "imagery": "一个喇叭图标被打上了一条斜线，是通用的“静音”符号。",
+          "translation": "安静的",
+          "sentences": [
+            { "en": "Please keep quiet. My mum is sleeping.", "cn": "请保持安静。我妈妈正在睡觉。" }
+          ]
+        },
+        {
+          "word": "quite",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 6 6 H 18 A 2 2 0 0 1 20 8 V 10 A 2 2 0 0 1 18 12 H 6 A 2 2 0 0 1 4 10 V 8 A 2 2 0 0 1 6 6 M 4 9 h 12' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
+          "breakdown": ["quite", "(相当)"],
+          "imagery": "一个进度条被填充了大约75%，表示“还不错”、“相当”的程度，但未满。",
+          "translation": "相当",
+          "sentences": [
+            { "en": "The movie is quite amazing.", "cn": "这部电影相当精彩。" }
+          ]
+        },
+        {
+          "word": "race",
+          "rootVisual": "<rect x='4' y='6' width='4' height='4' stroke='currentColor' fill='currentColor'/><rect x='8' y='10' width='4' height='4' stroke='currentColor' fill='currentColor'/><rect x='12' y='6' width='4' height='4' stroke='currentColor' fill='currentColor'/><rect x='16' y='10' width='4' height='4' stroke='currentColor' fill='currentColor'/><path d='M4 6 h16' stroke='currentColor' fill='none'/><path d='M4 14 h16' stroke='currentColor' fill='none'/>",
+          "breakdown": ["race", "(竞赛)"],
+          "imagery": "一面方格旗（赛车终点旗），是所有竞赛运动中最具代表性的符号。",
+          "translation": "竞赛",
+          "sentences": [
+            { "en": "Do you like watching horse racing?", "cn": "你喜欢看赛马吗？" }
+          ]
+        },
+        {
+          "word": "rule",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 10 h8 M8 14 h6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["rule", "(规则)"],
+          "imagery": "一张清单前面带有编号（1, 2, 3），象征着必须遵守的条目和规则。",
+          "translation": "规则",
+          "sentences": [
+            { "en": "You must obey the rules of the game.", "cn": "你必须遵守游戏规则。" }
+          ]
+        },
+        {
+          "word": "Russia",
+          "rootVisual": "<path d='M12 2 c -3 0 -5 2.5 -5 5.5 c 0 2 1.5 3.5 3 4.5 c -2 1 -4 3 -4 6 c 0 3.3 2.7 6 6 6 s 6 -2.7 6 -6 c 0 -3 -2 -5 -4 -6 c 1.5 -1 3 -2.5 3 -4.5 C 17 4.5 15 2 12 2 z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='7' r='2.5' stroke='currentColor' fill='none' stroke-width='1.5'/><path d='M9 16 q 3 3 6 0' stroke='currentColor' fill='none' stroke-width='1.5'/>",
+          "breakdown": ["Russia", "(俄罗斯)"],
+          "imagery": "The iconic Matryoshka doll (套娃), a symbol of Russian folk art that represents the nation's rich, layered culture.",
+          "translation": "俄罗斯",
+          "sentences": [
+            { "en": "Russian people are not afraid of the cold.", "cn": "俄罗斯人不怕冷。" }
+          ]
+        }
+      ]
+    }
+  ]
+}
