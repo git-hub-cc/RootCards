@@ -1,0 +1,119 @@
+{
+  "prefix": "Objects & Concepts",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_objects_concepts_nature",
+      "displayName": "物体与概念 (Objects & Concepts)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<rect x='4' y='14' width='16' height='6' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 2 v20 M2 12 h20 M5 5 l14 14 M5 19 L19 5' stroke='currentColor' stroke-width='1.5' opacity='0.5'/>",
+      "prefixIntro": {
+        "title": "物体与概念",
+        "description": "包含具体的自然事物、人造物品以及抽象的状态和度量衡。",
+        "imagery": "既有看得见摸得着的实体（盒子），也有需要思考才能理解的抽象概念（雪花/几何）。"
+      },
+      "words": [
+        {
+          "word": "snow",
+          "rootVisual": "<path d='M12 2 v20 M2 12 h20 M5 5 l14 14 M5 19 L19 5' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": ["snow / snowy / snowman", "(雪/下雪的/雪人)"],
+          "imagery": "一片经典的六角形雪花，代表着冬日与纯洁。",
+          "translation": "雪；下雪的；雪人",
+          "sentences": [
+            { "en": "Children are making a snowman outside.", "cn": "孩子们正在外面堆雪人。" }
+          ]
+        },
+        {
+          "word": "soup",
+          "rootVisual": "<path d='M4 14 a 8 8 0 0 0 16 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 8 q 2 -2 4 0' stroke='currentColor' fill='none' stroke-linecap='round'/><path d='M11 10 q 2 -2 4 0' stroke='currentColor' fill='none' stroke-linecap='round' opacity='0.7'/>",
+          "breakdown": ["soup", "(汤)"],
+          "imagery": "一个盛满液体的碗，上方飘着两缕热气，温暖而滋养。",
+          "translation": "汤",
+          "sentences": [
+            { "en": "Cantonese are good at making soup.", "cn": "广东人擅长煲汤。" }
+          ]
+        },
+        {
+          "word": "tent",
+          "rootVisual": "<path d='M2 18 l10 -14 l10 14 h-20' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 v14' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["tent", "(帐篷)"],
+          "imagery": "一个简洁的三角形帐篷，是户外露营的标志。",
+          "translation": "帐篷",
+          "sentences": [
+            { "en": "This tent can hold 4 people.", "cn": "这个帐篷可以容纳4人。" }
+          ]
+        },
+        {
+          "word": "tooth",
+          "rootVisual": "<path d='M6 18 v-8 a 4 4 0 0 1 8 0 v8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 18 a 2 2 0 0 0 4 0 a 2 2 0 0 0 4 0' stroke='currentColor' fill='none'/><line x1='6' y1='10' x2='14' y2='10' stroke='currentColor'/>",
+          "breakdown": ["tooth / teeth", "(牙齿)"],
+          "imagery": "一颗洁白健康的臼齿，上面平整，下面有两个牙根。",
+          "translation": "牙齿",
+          "sentences": [
+            { "en": "Many people ask me why my teeth are so white.", "cn": "很多人问我为什么我的牙齿这么白。" }
+          ]
+        },
+        {
+          "word": "size",
+          "rootVisual": "<rect x='4' y='12' width='6' height='6' stroke='currentColor' fill='none' stroke-width='2'/><rect x='12' y='6' width='12' height='12' stroke='currentColor' fill='currentColor' fill-opacity='0.1' stroke-width='2'/>",
+          "breakdown": ["size", "(大小)"],
+          "imagery": "一个大正方形与一个小正方形并排，通过鲜明对比来传达“大小”的概念。",
+          "translation": "大小",
+          "sentences": [
+            { "en": "What size shoes do you wear?", "cn": "你穿多大尺码的鞋？" }
+          ]
+        },
+        {
+          "word": "straight",
+          "rootVisual": "<line x1='2' y1='12' x2='22' y2='12' stroke='currentColor' stroke-width='3'/><path d='M2 18 q 10 -8 20 0' stroke='currentColor' stroke-width='2' opacity='0.3' stroke-dasharray='3 2'/>",
+          "breakdown": ["straight", "(直的)"],
+          "imagery": "一条笔直的粗线，与下方弯曲的虚线形成对比，强调其“直”的特性。",
+          "translation": "直的",
+          "sentences": [
+            { "en": "I prefer straight hair to curly hair.", "cn": "比起卷发，我更喜欢直发。" }
+          ]
+        },
+        {
+          "word": "symbol",
+          "rootVisual": "<path d='M12 20 l-8 -8 a 5 5 0 1 1 8 -7 a 5 5 0 1 1 8 7 z' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["symbol", "(象征)"],
+          "imagery": "一颗饱满的爱心，是“爱”与“和平”最通用的象征符号之一。",
+          "translation": "象征",
+          "sentences": [
+            { "en": "The dove is the symbol of peace.", "cn": "鸽子是和平的象征。" }
+          ]
+        },
+        {
+          "word": "state",
+          "rootVisual": "<path d='M4 4 h16 v16 h-16 z' stroke='currentColor' fill='none' stroke-width='2' opacity='0.3'/><path d='M8 8 v8 h8' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["state", "(州)"],
+          "imagery": "一张地图的局部，其中一个行政区（州）被高亮显示。",
+          "translation": "州",
+          "sentences": [
+            { "en": "There are 50 states in America.", "cn": "美国有50个州。" }
+          ]
+        },
+        {
+          "word": "soon",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 8 v4 h-3' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": ["soon", "(不久)"],
+          "imagery": "一个时钟，时针和分针即将重合在12点，表示“很快就到”。",
+          "translation": "不久",
+          "sentences": [
+            { "en": "I'll be there soon.", "cn": "我很快就到。" }
+          ]
+        },
+        {
+          "word": "still",
+          "rootVisual": "<line x1='2' y1='12' x2='8' y2='12' stroke='currentColor' stroke-width='2'/><path d='M8 12 l2 -4 l2 8 l2 -8 l2 4' stroke='currentColor' fill='none'/><line x1='16' y1='12' x2='22' y2='12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["still", "(仍然)"],
+          "imagery": "一条心电图线，前半段和后半段都是平直的（静止），中间虽有波动，但最终“仍然”恢复平静。",
+          "translation": "仍然",
+          "sentences": [
+            { "en": "It's midnight, and he is still working.", "cn": "已经半夜了，他还在工作。" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "prefix": "Human Feelings",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_human_feelings_traits",
+      "displayName": "情感与特质 (Feelings & Traits)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 10 a 1.5 1.5 0 0 1 3 0 a 1.5 1.5 0 0 1 -3 0' fill='currentColor' /><path d='M9.5 14 q 2.5 2.5 5 0' stroke='currentColor' fill='none' stroke-linecap='round' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "情感与特质",
+        "description": "包含描述内心感受、性格特征以及主观判断的词汇，这些词都与“人”的内在属性紧密相关。",
+        "imagery": "像一张表情丰富的面具，揭示内心的喜怒哀乐。"
+      },
+      "words": [
+        {
+          "word": "scare",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='9' cy='10' r='1.5' fill='currentColor'/><circle cx='15' cy='10' r='1.5' fill='currentColor'/><path d='M8 15 q 1 -1 2 -1 t 2 1 t 2 -1 t 2 1' stroke='currentColor' fill='none'/>",
+          "breakdown": ["scare", "(惊吓)"],
+          "imagery": "一张睁大眼睛、嘴巴呈波浪形的惊恐脸庞，魂飞魄散的样子。",
+          "translation": "吓坏；害怕的；吓人的",
+          "sentences": [
+            { "en": "You really scared me.", "cn": "你真的吓到我了。" },
+            { "en": "The movie is so scary.", "cn": "这部电影太吓人了。" },
+            { "en": "I am scared of the dark.", "cn": "我害怕黑暗。" }
+          ]
+        },
+        {
+          "word": "shy",
+          "rootVisual": "<line x1='16' y1='4' x2='16' y2='20' stroke='currentColor' stroke-width='2'/><path d='M16 12 a 6 6 0 0 1 -6 6 h -2 a 6 6 0 0 1 -6 -6 a 6 6 0 0 1 6 -6 h 2 a 6 6 0 0 1 6 6 z' stroke='currentColor' fill='none' stroke-width='2' opacity='0.7' />",
+          "breakdown": ["shy", "(害羞的)"],
+          "imagery": "一张脸躲在墙后，只悄悄露出一半，不敢完全面对。",
+          "translation": "害羞的",
+          "sentences": [
+            { "en": "She is quite shy with strangers.", "cn": "她在陌生人面前很害羞。" }
+          ]
+        },
+        {
+          "word": "smart",
+          "rootVisual": "<path d='M12 2 a 5 5 0 0 1 5 5 c 0 3 -5 6 -5 10 v 2 h -2 v -2 c 0 -4 -5 -7 -5 -10 a 5 5 0 0 1 5 -5 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 20 h 6' stroke='currentColor' fill='none'/><path d='M4 12 h2 M18 12 h2 M12 2 v-2 M12 22 v2' stroke='currentColor' stroke-linecap='round'/>",
+          "breakdown": ["smart / clever / bright", "(聪明的)"],
+          "imagery": "大脑像灯泡一样被点亮，迸发出智慧的火花。",
+          "translation": "聪明的",
+          "sentences": [
+            { "en": "You are a smart girl.", "cn": "你是个聪明的女孩。" }
+          ]
+        },
+        {
+          "word": "strict",
+          "rootVisual": "<rect x='4' y='10' width='16' height='4' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='9' r='1' fill='currentColor'/>",
+          "breakdown": ["strict", "(严格的)"],
+          "imagery": "一张严肃的脸，嘴巴紧闭成一条直线，不容商量，像一把精准的尺子。",
+          "translation": "严格的",
+          "sentences": [
+            { "en": "Our English teacher is very strict with us.", "cn": "我们的英语老师对我们很严格。" }
+          ]
+        },
+        {
+          "word": "tired",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><rect x='6' y='10' width='3' height='4' fill='currentColor'/><rect x='18' y='8' width='2' height='8' rx='1' fill='currentColor'/>",
+          "breakdown": ["tired / tiring", "(疲劳的)"],
+          "imagery": "一块电量几乎耗尽的电池，只剩下最后一格红色能量。",
+          "translation": "疲劳的；令人疲劳的",
+          "sentences": [
+            { "en": "I am very tired after a day of work.", "cn": "工作一天后我非常累。" },
+            { "en": "Studying for 4 hours is very tiring.", "cn": "连续学习4个小时非常累人。" }
+          ]
+        },
+        {
+          "word": "true",
+          "rootVisual": "<path d='M20 6 L9 17 l-5 -5' stroke='currentColor' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M4 6 l16 12 M4 18 l16 -12' stroke='currentColor' stroke-width='2' opacity='0.2'/>",
+          "breakdown": ["true / false", "(真的/假的)"],
+          "imagery": "一个巨大而清晰的对勾代表“真”，背景中用虚线画出一个“X”代表“假”作为对比。",
+          "translation": "真的；假的",
+          "sentences": [
+            { "en": "Is it true that you're moving?", "cn": "你要搬家是真的吗？" },
+            { "en": "My answer is true and yours is false.", "cn": "我的答案是真的，而你的是假的。" }
+          ]
+        }
+      ]
+    }
+  ]
+}
