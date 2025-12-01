@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Layout Styles - 页面布局样式 (v3.1 - 统一筛选器宽度)
+   Layout Styles - 页面布局样式 (v3.5 - 优化工具栏布局)
    ========================================================================== */
 
 /* --- 头部导航与筛选器 --- */
@@ -62,26 +62,26 @@
 }
 
 
-/* --- 【改动】所有筛选器容器布局 --- */
-.grade-filter-container,
-.content-type-filter-container, /* 【新增】将内容类型容器也包含进来 */
-.filter-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem; /* 统一使用 gap */
-    flex-wrap: wrap;
-}
-
-/* --- 【新增】为所有筛选器容器设置最大宽度并居中，与 main 区域对齐 --- */
+/* --- 所有筛选器容器布局，实现左对齐 --- */
 .grade-filter-container,
 .content-type-filter-container,
 .filter-container {
-    max-width: 1200px; /* 与 .card-grid 的 max-width 保持一致 */
-    margin-left: auto;  /* 实现水平居中 */
-    margin-right: auto; /* 实现水平居中 */
-    padding-left: 1rem;  /* 在窄屏幕上增加一些内边距 */
-    padding-right: 1rem; /* 在窄屏幕上增加一些内边距 */
+    display: flex;
+    justify-content: flex-start; /* 保持内部元素（筛选按钮和工具组）从左开始排列 */
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* --- 为所有筛选器容器设置最大宽度并居中，与 main 区域对齐 --- */
+.grade-filter-container,
+.content-type-filter-container,
+.filter-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .grade-filter-container {
@@ -91,9 +91,83 @@
     transition: border-color 0.3s ease;
 }
 
-/* 【新增】为内容类型筛选器增加一些底部间距 */
 .content-type-filter-container {
     margin-bottom: 1.5rem;
+}
+
+/* --- 【新增】工具栏容器样式 --- */
+/*
+  这个新容器包裹了所有图标按钮和搜索框。
+  它的作用是作为一个整体，被推到 filter-container 的最右侧。
+*/
+.tool-group {
+    display: flex;          /* 使其内部的按钮和搜索框水平排列 */
+    align-items: center;    /* 垂直居中对齐 */
+    gap: 0.75rem;             /* 设置内部元素之间的间距，比筛选按钮稍小，更紧凑 */
+    margin-left: auto;      /* 这是实现右对齐的核心！它会占据所有可用的左侧空间，从而将自身推到最右边 */
+}
+
+/* --- 【核心改动】搜索框样式，适配新的布局 --- */
+.search-container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+
+    /*
+     * 【重要】移除了 'margin-left: auto;'。
+     * 因为推至右侧的责任现在由其父容器 '.tool-group' 承担。
+     * 如果保留此行，会导致布局错误。
+    */
+}
+
+.search-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--text-sub);
+    pointer-events: none;
+}
+
+.search-input {
+    width: 100%;
+    height: 48px;
+    padding: 10px 20px 10px 48px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid var(--border-color);
+    border-radius: 50px;
+    background-color: var(--bg-secondary-color);
+    color: var(--text-main);
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-input:focus {
+    border-color: var(--theme-color);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--theme-color) 20%, transparent);
+}
+
+.search-input::placeholder {
+    color: var(--text-sub);
+    opacity: 0.8;
+}
+
+/* 浏览器原生“清除”按钮的美化 (适用于 WebKit 内核浏览器) */
+.search-input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%239ca3af'><path d='M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z'/></svg>");
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+.search-input:focus::-webkit-search-cancel-button {
+    opacity: 1;
 }
 
 

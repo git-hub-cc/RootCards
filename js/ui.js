@@ -1,22 +1,24 @@
 // =================================================================================
-// UI 渲染模块 (UI Rendering Module) - v8.1 (统一类别按钮为英文)
+// UI 渲染模块 (UI Rendering Module) - v8.2 (新增打字模式渲染)
 // ---------------------------------------------------------------------------------
 // 主要职责：
 // 1. (DOM元素创建) 提供创建单词卡片、介绍卡片和各类筛选按钮的函数。
 // 2. (渲染逻辑) 将卡片元素批量渲染到指定的容器中。
 // 3. (UI交互) 封装与UI直接相关的交互。
 // 4. (音频播放) 播放本地音频文件。
-// 5. (动态内容) 【改动】类别按钮统一使用 state 模块提供的英文名。
-// 6. (模态框管理) 处理无图模式切换和听力模态框。
+// 5. (模态框管理) 处理无图模式切换、听力模态框，以及【新增】打字模态框的渲染。
 // =================================================================================
+
+import * as State from './state.js'; // 引入 State 模块以使用 getMaskedSentence
 
 // --- 模块内变量 ---
 let cardTemplate;
 let prefixIntroTemplate;
 const audioPlayer = new Audio();
 
-// --- 听力模式相关 DOM 引用缓存 ---
+// --- 听力/打字模式相关 DOM 引用缓存 ---
 let listeningModalElements = null;
+let typingModalElements = null;
 
 let handleEscKeydown = null;
 
@@ -180,7 +182,7 @@ export function updateActiveContentTypeButton(container, clickedButton) {
 }
 
 /**
- * 【核心改动】动态生成类别筛选器按钮，统一使用英文名。
+ * 动态生成类别筛选器按钮，统一使用英文名。
  */
 export function renderFilterButtons(filterContainer, insertBeforeElement, categories) {
     filterContainer.querySelectorAll('.filter-btn').forEach(btn => btn.remove());
@@ -204,7 +206,7 @@ export function renderFilterButtons(filterContainer, insertBeforeElement, catego
         button.className = 'filter-btn';
         button.dataset.filter = category.meaningId;
 
-        // 【智能文本】根据内容类型决定按钮文本
+        // 智能文本：根据内容类型决定按钮文本
         let buttonText;
         if (category.contentType === 'pre') {
             buttonText = `${category.prefix}-`;
@@ -213,7 +215,6 @@ export function renderFilterButtons(filterContainer, insertBeforeElement, catego
         } else if (category.contentType === 'root') {
             buttonText = `-${category.prefix}-`;
         } else {
-            // 对于普通类别，使用 state 层处理好的纯英文名
             buttonText = category.englishDisplayName;
         }
         button.textContent = buttonText;
@@ -442,4 +443,122 @@ export function setAudioWaveAnimation(isPlaying) {
     } else {
         listeningModalElements.waves.classList.remove('is-playing');
     }
+}
+
+
+// =================================================================================
+// 【新增】打字拼写模式模态框函数 (Typing Mode Functions)
+// =================================================================================
+
+export function showTypingModal() {
+    const modal = document.getElementById('typing-modal');
+    if (modal) {
+        modal.style.display = 'flex';
+        // 缓存 DOM 引用，提高后续操作性能
+        if (!typingModalElements) {
+            typingModalElements = {
+                modal: modal,
+                progressCurrent: document.getElementById('typing-progress-current'),
+                progressTotal: document.getElementById('typing-progress-total'),
+                meaning: document.getElementById('typing-meaning'),
+                sentence: document.getElementById('typing-sentence'),
+                input: document.getElementById('typing-input'),
+                feedbackIcon: document.getElementById('typing-feedback-icon'),
+                resultArea: document.getElementById('typing-result-area'),
+                correctAnswer: document.getElementById('typing-correct-answer'),
+                submitBtn: document.getElementById('typing-submit-btn'),
+                nextBtn: document.getElementById('typing-next-btn')
+            };
+        }
+        // 复用 ESC 关闭逻辑
+        handleEscKeydown = (event) => { if (event.key === 'Escape') hideTypingModal(); };
+        document.addEventListener('keydown', handleEscKeydown);
+    }
+}
+
+export function hideTypingModal() {
+    const modal = document.getElementById('typing-modal');
+    if (modal && modal.style.display !== 'none') {
+        modal.style.display = 'none';
+        stopAudio();
+        if (handleEscKeydown) {
+            document.removeEventListener('keydown', handleEscKeydown);
+            handleEscKeydown = null;
+        }
+    }
+}
+
+/**
+ * 渲染打字题卡片。
+ * @param {object} data - 单词数据对象
+ * @param {number} current - 当前题号
+ * @param {number} total - 总题数
+ */
+export function renderTypingCard(data, current, total) {
+    if (!typingModalElements) return;
+    const els = typingModalElements;
+
+    // 1. 更新进度
+    els.progressCurrent.textContent = current;
+    els.progressTotal.textContent = total;
+
+    // 2. 更新内容
+    els.meaning.textContent = data.translation;
+
+    // 生成挖空例句：随机选一句，如果没有则提示
+    if (data.sentences && data.sentences.length > 0) {
+        const randomIdx = Math.floor(Math.random() * data.sentences.length);
+        const sentenceText = data.sentences[randomIdx].en;
+        els.sentence.innerHTML = State.getMaskedSentence(sentenceText, data.word);
+    } else {
+        els.sentence.innerHTML = '<span class="masked-word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> (No example sentence available)';
+    }
+
+    // 3. 重置输入框状态
+    resetTypingInput();
+
+    // 4. 自动聚焦输入框 (延迟一点以确保DOM更新)
+    setTimeout(() => els.input.focus(), 100);
+}
+
+/**
+ * 重置打字输入框及按钮状态到“未提交”模式。
+ */
+export function resetTypingInput() {
+    if (!typingModalElements) return;
+    const els = typingModalElements;
+
+    els.input.value = '';
+    els.input.disabled = false;
+    els.input.className = 'typing-input'; // 移除 success/error 类
+    els.resultArea.style.display = 'none';
+    els.submitBtn.style.display = 'block';
+    els.nextBtn.style.display = 'none';
+}
+
+/**
+ * 显示拼写检查反馈。
+ * @param {boolean} isCorrect - 拼写是否正确
+ * @param {string} correctWord - 正确的单词
+ */
+export function showTypingFeedback(isCorrect, correctWord) {
+    if (!typingModalElements) return;
+    const els = typingModalElements;
+
+    els.input.disabled = true; // 禁止再次修改
+
+    if (isCorrect) {
+        els.input.classList.add('success');
+    } else {
+        els.input.classList.add('error');
+        // 只有错误时才显示“正确答案”区域，正确时输入框变绿即可
+        els.correctAnswer.textContent = correctWord;
+        els.resultArea.style.display = 'block';
+    }
+
+    // 切换按钮状态
+    els.submitBtn.style.display = 'none';
+    els.nextBtn.style.display = 'block';
+    // 聚焦下一个按钮，方便回车
+    els.nextBtn.focus();
 }

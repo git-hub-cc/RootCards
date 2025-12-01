@@ -8,7 +8,7 @@
       "themeColor": "#10b981",
       "prefixVisual": "<path d='M4 20 V 4 H 20' stroke='currentColor' stroke-width='3' stroke-linecap='square' fill='none'/><path d='M4 4 L20 20' stroke='currentColor' stroke-width='1' stroke-dasharray='4 2'/>",
       "prefixIntro": {
-        "title": "词根 rect-",
+        "title": "词根 -rect-",
         "description": "核心意境是 **“直” (Straight)** 或 **“正” (Right)**。\n源自拉丁语 *regere* (引导、统治)。表示变直、纠正或指引方向。",
         "imagery": "联想一把L形的直角尺📏，或者一条笔直的标线。"
       },
