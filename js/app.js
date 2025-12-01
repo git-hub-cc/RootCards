@@ -1,5 +1,5 @@
 // =================================================================================
-// 主应用逻辑 (Main Application Logic) - v6.3 (优化听力模式交互)
+// 主应用逻辑 (Main Application Logic) - v6.4 (修复听力模式音频路径)
 // ---------------------------------------------------------------------------------
 // 这个文件是整个应用的控制器，负责协调 state 和 ui 模块。
 // 主要职责：
@@ -12,6 +12,7 @@
 // =================================================================================
 
 import * as State from './state.js';
+// 【核心修改】从 ui.js 中导入 sanitizeForFilename 函数
 import * as UI from './ui.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,10 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const listeningModal = document.getElementById('listening-modal');
     const listeningCloseBtn = document.getElementById('listening-close-btn');
     const listeningReplayBtn = document.getElementById('listening-replay-btn');
-    const listeningVisualArea = document.querySelector('.listening-visual'); // 点击声波也可重播
+    const listeningVisualArea = document.querySelector('.listening-visual');
     const listeningRevealBtn = document.getElementById('listening-reveal-btn');
     const listeningNextBtn = document.getElementById('listening-next-btn');
-    // 【新增】获取音频源切换开关
     const audioSourceToggle = document.getElementById('audio-source-toggle');
 
 
@@ -46,9 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let isShuffling = false;
 
     // --- 听力模式状态 ---
-    let listeningPlaylist = [];     // 存储当前听力练习的随机索引队列
-    let currentListeningData = null; // 【新增】存储当前正在播放的单词数据对象，使重播更稳健
-    let currentSentenceIndex = 0;   // 当前播放的例句索引
+    let listeningPlaylist = [];
+    let currentListeningData = null;
+    let currentSentenceIndex = 0;
 
     // --- 主题管理常量 ---
     const THEME_KEY = 'etymology-visualizer-theme';
@@ -114,21 +114,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateEmptyStateMessage() {
-        if (cardGrid.children.length <= 1) { // 只有 loadMoreTrigger
+        // -1 是因为 loadMoreTrigger 元素还在 cardGrid 中
+        if (cardGrid.children.length <= 1) {
             let message = '太棒了，当前分类下没有更多要学习的单词了！';
             if (State.currentFilter === 'learned' && State.allVocabularyData.some(d => d.cardType === 'word')) {
                 message = '还没有标记任何单词为“已掌握”。';
             } else if (State.allVocabularyData.length === 0) {
                 message = '正在加载数据...';
             }
+            // 清空 cardGrid 并插入消息，避免保留 loadMoreTrigger
             cardGrid.innerHTML = `<div class="loading-state">${message}</div>`;
         }
     }
 
     function startNewRenderFlow() {
-        cardGrid.innerHTML = '';
+        cardGrid.innerHTML = ''; // 彻底清空
         renderIndex = 0;
-        loadMoreTrigger.remove();
+        // 把 trigger 重新加回去，为渲染做准备
         cardGrid.appendChild(loadMoreTrigger);
         renderMoreCards();
     }
@@ -166,19 +168,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. 听力模式逻辑
     // ============================================================================
 
-    /**
-     * 开始听力会话：初始化播放列表，并播放第一个。
-     */
     function startListeningSession() {
-        // 筛选出当前可用的单词数据（排除介绍卡片）
         const wordItems = State.currentDataSet.filter(item => item.cardType === 'word');
-
         if (wordItems.length === 0) {
             alert('当前列表没有单词可供练习。');
             return;
         }
 
-        // 生成随机索引列表 (Fisher-Yates Shuffle)
         listeningPlaylist = Array.from({ length: wordItems.length }, (_, i) => i);
         for (let i = listeningPlaylist.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -189,12 +185,9 @@ document.addEventListener('DOMContentLoaded', () => {
         playNextListeningItem();
     }
 
-    /**
-     * 播放下一个条目
-     */
     function playNextListeningItem() {
         if (listeningPlaylist.length === 0) {
-            currentListeningData = null; // 清空当前数据
+            currentListeningData = null;
             if (confirm('🎉 本组单词练习完毕！是否重新开始？')) {
                 startListeningSession();
             } else {
@@ -209,10 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!data) return;
 
-        // 【核心修改】将当前数据对象存起来，方便重播
         currentListeningData = data;
-
-        // 随机选择一个例句索引 (如果存在例句)
         currentSentenceIndex = 0;
         if (data.sentences && data.sentences.length > 0) {
             currentSentenceIndex = Math.floor(Math.random() * data.sentences.length);
@@ -222,26 +212,30 @@ document.addEventListener('DOMContentLoaded', () => {
         playCurrentAudio();
     }
 
-    /**
-     * 【重构】播放当前选中项的音频，现在它依赖于 currentListeningData
-     */
     function playCurrentAudio() {
-        // 鲁棒性检查：确保有数据可以播放
         if (!currentListeningData) return;
 
         const isSentenceMode = UI.isPlaySentenceMode();
         let audioPath = '';
 
+        // 检查是否选择了例句模式，并且当前单词确实有例句
         if (isSentenceMode && currentListeningData.sentences && currentListeningData.sentences.length > 0) {
-            audioPath = `audio/sentences/${currentListeningData.word.toLowerCase()}_sentence_${currentSentenceIndex}.mp3`;
+            // 获取当前例句的文本
+            const sentenceText = currentListeningData.sentences[currentSentenceIndex].en;
+
+            // --- 【核心修改】调用从 ui.js 导入的函数来生成正确的文件名 ---
+            const sentenceSlug = UI.sanitizeForFilename(sentenceText);
+            audioPath = `audio/sentences/${currentListeningData.word.toLowerCase()}_${sentenceSlug}.mp3`;
+            // -------------------------------------------------------------
+
         } else {
-            // 降级：如果选了例句模式但没有例句，或者选了单词模式，都播单词
+            // 如果不满足上述条件（例如选了单词模式，或该词无例句），则播放单词音频
             audioPath = `audio/words/${currentListeningData.word.toLowerCase()}.mp3`;
         }
 
         UI.setAudioWaveAnimation(true);
         UI.playAudioFile(audioPath, () => {
-            UI.setAudioWaveAnimation(false); // 播放结束回调
+            UI.setAudioWaveAnimation(false);
         });
     }
 
@@ -249,7 +243,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // 4. 事件绑定
     // ============================================================================
 
-    // 筛选器点击
     filterContainer.addEventListener('click', (e) => {
         const targetButton = e.target.closest('.filter-btn');
         if (targetButton && !targetButton.classList.contains('active')) {
@@ -260,7 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 随机排序按钮
     shuffleBtn.addEventListener('click', () => {
         if (isShuffling || State.currentDataSet.length === 0 || State.currentFilter === 'learned') return;
         isShuffling = true;
@@ -276,59 +268,45 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 300);
     });
 
-    // 主题切换
     themeToggleBtn.addEventListener('click', () => {
         const isDarkMode = document.body.classList.contains('dark-mode');
         applyTheme(isDarkMode ? 'light' : 'dark');
     });
 
-    // 无图模式切换
     noVisualBtn.addEventListener('click', () => {
         UI.toggleNoVisualMode(noVisualBtn);
     });
 
-    // 听力模式入口
     listeningBtn.addEventListener('click', startListeningSession);
 
-    // --- 【新增】听力模态框内部交互 ---
-
-    // 关闭按钮
     listeningCloseBtn.addEventListener('click', UI.hideListeningModal);
 
-    // 【新增】点击遮罩层退出
     listeningModal.addEventListener('click', (event) => {
-        // 确保点击的是遮罩层本身，而不是其内部的任何子元素
         if (event.target === listeningModal) {
             UI.hideListeningModal();
         }
     });
 
-    // 揭晓
     listeningRevealBtn.addEventListener('click', UI.revealListeningAnswer);
 
-    // 下一个
     listeningNextBtn.addEventListener('click', playNextListeningItem);
 
-    // 重播 (使用统一的 playCurrentAudio 函数)
     const handleReplay = () => {
         playCurrentAudio();
     };
     listeningReplayBtn.addEventListener('click', handleReplay);
     listeningVisualArea.addEventListener('click', handleReplay);
 
-    // 【新增】音频源切换开关的事件监听
     audioSourceToggle.addEventListener('change', () => {
-        // 当用户切换时，立即重播对应的音频
         handleReplay();
     });
-
 
     // ============================================================================
     // 5. 应用初始化
     // ============================================================================
 
     async function init() {
-        initializeTheme(); // 立即应用主题
+        initializeTheme();
 
         try {
             State.loadLearnedWords();
@@ -339,9 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => skeletonLoader.remove(), 300);
             }
 
-            // 渲染筛选按钮
             UI.renderFilterButtons(filterContainer, listeningBtn, rawDataSets);
-
             State.filterAndPrepareDataSet();
             startNewRenderFlow();
             setupIntersectionObserver();
@@ -354,6 +330,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 启动应用
     init();
 });

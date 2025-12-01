@@ -1,5 +1,5 @@
 // =================================================================================
-// UI 渲染模块 (UI Rendering Module) - v5.1 (优化模态框交互)
+// UI 渲染模块 (UI Rendering Module) - v5.2 (修复例句音频路径)
 // ---------------------------------------------------------------------------------
 // 主要职责：
 // 1. (DOM元素创建) 提供创建单词卡片、介绍卡片和筛选器按钮的函数。
@@ -18,8 +18,46 @@ const audioPlayer = new Audio(); // 全局共用一个 Audio 对象
 // --- 听力模式相关 DOM 引用缓存 ---
 let listeningModalElements = null;
 
-// 【新增】用于处理 Esc 键退出的函数引用，方便添加和移除事件监听
+// 用于处理 Esc 键退出的函数引用，方便添加和移除事件监听
 let handleEscKeydown = null;
+
+// =================================================================================
+// 【核心修改】新增与 Python 脚本同步的文件名处理函数
+// =================================================================================
+
+const MAX_FILENAME_SLUG_LENGTH = 60; // 必须与 Python 脚本中的配置保持一致
+
+/**
+ * 将文本转换为一个对文件名安全、唯一的“slug”。
+ * 这个函数的功能必须与 Python 后端脚本中的 `sanitize_for_filename` 完全一致。
+ * @param {string} text - 原始文本，通常是例句。
+ * @returns {string} - 处理后适合用作文件名的字符串。
+ * @export
+ */
+export function sanitizeForFilename(text) {
+    if (typeof text !== 'string' || !text) {
+        return '';
+    }
+    // 1. 转换为小写
+    let slug = text.toLowerCase();
+    // 2. 将所有非字母和非数字的字符替换为下划线
+    //    正则表达式 /[^a-z0-9]+/g 中：
+    //    [^a-z0-9] 匹配任何不是小写字母或数字的字符。
+    //    +          匹配一个或多个连续的此类字符。
+    //    g          全局匹配，确保替换所有匹配项，而不仅仅是第一个。
+    slug = slug.replace(/[^a-z0-9]+/g, '_');
+    // 3. 截断以避免文件名过长
+    if (slug.length > MAX_FILENAME_SLUG_LENGTH) {
+        slug = slug.slice(0, MAX_FILENAME_SLUG_LENGTH);
+    }
+    // 4. 清理可能出现在开头或结尾的下划线
+    //    正则表达式 /^_+|_+$/g 中：
+    //    ^_+  匹配字符串开头的一个或多个下划线。
+    //    |    或者
+    //    _+$  匹配字符串结尾的一个或多个下划线。
+    slug = slug.replace(/^_+|_+$/g, '');
+    return slug;
+}
 
 
 /**
@@ -45,6 +83,7 @@ export function initUI() {
 export function playAudioFile(filePath, onEnded = null) {
     if (!filePath) {
         console.warn('尝试播放一个空的音频文件路径。');
+        if (onEnded) onEnded();
         return;
     }
 
@@ -55,20 +94,16 @@ export function playAudioFile(filePath, onEnded = null) {
         }
         audioPlayer.src = filePath;
 
-        // 移除旧的监听器，防止重复绑定
         if (typeof audioPlayer._handleEnded === 'function') {
             audioPlayer.removeEventListener('ended', audioPlayer._handleEnded);
         }
 
-        // 创建新的处理函数
         const handleEnded = () => {
             if (onEnded) onEnded();
-            // 任务完成后自我移除
             audioPlayer.removeEventListener('ended', handleEnded);
             delete audioPlayer._handleEnded;
         };
 
-        // 存储引用以便移除
         audioPlayer._handleEnded = handleEnded;
         audioPlayer.addEventListener('ended', handleEnded);
 
@@ -76,10 +111,8 @@ export function playAudioFile(filePath, onEnded = null) {
 
         if (playPromise !== undefined) {
             playPromise.catch(error => {
-                // 用户中止播放是正常行为，不应报错
                 if (error.name !== 'AbortError') {
-                    console.error(`播放音频文件 "${filePath}" 失败:`, error);
-                    // 即使失败也调用回调并移除监听器
+                    console.error(`播放音频文件 "${filePath}" 失败 (文件可能不存在或损坏):`, error);
                     if (typeof audioPlayer._handleEnded === 'function') {
                         audioPlayer.removeEventListener('ended', audioPlayer._handleEnded);
                         delete audioPlayer._handleEnded;
@@ -110,21 +143,18 @@ export function stopAudio() {
  * @param {Array<object>} meaningGroups - 从 state.js 传入的原始意境分组对象数组。
  */
 export function renderFilterButtons(filterContainer, insertBeforeElement, meaningGroups) {
-    // 渲染“全部”按钮
     const allButton = document.createElement('button');
     allButton.className = 'filter-btn active';
     allButton.dataset.filter = 'all';
     allButton.textContent = '全部 (All)';
     filterContainer.insertBefore(allButton, insertBeforeElement);
 
-    // 渲染“已掌握”按钮
     const learnedButton = document.createElement('button');
     learnedButton.className = 'filter-btn';
     learnedButton.dataset.filter = 'learned';
     learnedButton.textContent = '已掌握';
     filterContainer.insertBefore(learnedButton, insertBeforeElement);
 
-    // 遍历意境分组来创建按钮
     meaningGroups.forEach(group => {
         if (!group.meaningId || !group.displayName) return;
         const button = document.createElement('button');
@@ -236,7 +266,12 @@ function createWordCard(data, handlers) {
             audioBtn.innerHTML = `<span>🔊 听例句 ${data.sentences.length > 1 ? index + 1 : ''}</span>`;
             audioBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
-                const sentenceAudioPath = `audio/sentences/${data.word.toLowerCase()}_sentence_${index}.mp3`;
+
+                // --- 【核心修改】使用新的函数生成正确的音频文件名 ---
+                const sentenceSlug = sanitizeForFilename(sentence.en);
+                const sentenceAudioPath = `audio/sentences/${data.word.toLowerCase()}_${sentenceSlug}.mp3`;
+                // ---------------------------------------------------
+
                 playAudioFile(sentenceAudioPath);
             });
 
@@ -326,14 +361,11 @@ export function showListeningModal() {
             };
         }
 
-        // 【新增】为 Esc 键退出创建并绑定事件
-        // 定义事件处理函数
         handleEscKeydown = (event) => {
             if (event.key === 'Escape') {
                 hideListeningModal();
             }
         };
-        // 绑定到 document
         document.addEventListener('keydown', handleEscKeydown);
     }
 }
@@ -345,12 +377,11 @@ export function hideListeningModal() {
     const modal = document.getElementById('listening-modal');
     if (modal && modal.style.display !== 'none') {
         modal.style.display = 'none';
-        stopAudio(); // 停止可能正在播放的音频
+        stopAudio();
 
-        // 【新增】移除 Esc 键事件监听器，避免内存泄漏
         if (handleEscKeydown) {
             document.removeEventListener('keydown', handleEscKeydown);
-            handleEscKeydown = null; // 清理引用
+            handleEscKeydown = null;
         }
     }
 }
@@ -365,11 +396,9 @@ export function updateListeningCard(data, sentenceIndex) {
 
     const els = listeningModalElements;
 
-    // 重置为隐藏状态
     els.placeholder.style.display = 'block';
     els.revealedContent.style.display = 'none';
 
-    // 填充内容
     els.word.textContent = data.word;
     els.meaning.textContent = data.translation;
 
@@ -396,7 +425,7 @@ export function revealListeningAnswer() {
  * @returns {boolean} true 表示播放例句, false 表示播放单词
  */
 export function isPlaySentenceMode() {
-    if (!listeningModalElements) return true; // 默认例句
+    if (!listeningModalElements) return true;
     return listeningModalElements.sourceToggle.checked;
 }
 

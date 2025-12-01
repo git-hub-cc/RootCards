@@ -78,4 +78,6 @@ const DATA_FILES = [
     'data/category/action_life.json',
     'data/category/human_feelings.json',
     'data/category/objects_concepts.json',
+
+    'data/category/topic_cognition_action.json',
 ];

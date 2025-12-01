@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-Etymology Visualizer 音频缓存生成脚本 (v3.0 - 支持多意境)
+Etymology Visualizer 音频缓存生成脚本 (v3.1 - 优化文件名)
 
 功能:
 1. 自动读取 `data/manifest.js` 文件，获取所有单词数据源。
-2. 【新】解析新的JSON数据结构，能够处理单个文件内包含多个 "meanings" (意境) 数组的情况。
+2. 解析新的JSON数据结构，能够处理单个文件内包含多个 "meanings" (意境) 数组的情况。
 3. 聚合所有唯一的单词和例句。
 4. 使用 Google Text-to-Speech (gTTS) 服务，为每个单词和例句生成对应的英文发音 MP3 文件。
-5. 将生成的音频文件保存到 `audio/words` 和 `audio/sentences` 目录中。
-6. 具有缓存检查功能：如果音频文件已存在且有效，则会跳过。
+5. 【优化】为例句生成基于其内容的文件名，避免因顺序变化或内容相似导致的重复或冲突。
+6. 将生成的音频文件保存到 `audio/words` 和 `audio/sentences` 目录中。
+7. 具有缓存检查功能：如果音频文件已存在且有效，则会跳过。
 
 使用方法:
 1. 确保已安装 Python 3 和必要的库:
@@ -33,6 +34,7 @@ WORDS_DIR = AUDIO_ROOT / "words"
 SENTENCES_DIR = AUDIO_ROOT / "sentences"
 REQUEST_DELAY = 0.5
 MIN_FILE_SIZE_BYTES = 1024  # 1 KB
+MAX_FILENAME_SLUG_LENGTH = 60 # <--- 优化点: 新增配置，限制例句文件名片段的最大长度
 
 # --- 脚本核心逻辑 ---
 
@@ -87,15 +89,11 @@ def aggregate_data(file_paths: list[Path]) -> tuple[set[str], dict[str, list[str
             with open(file_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
 
-                # --- 【核心修改】处理新的数据结构 ---
-                # 鲁棒性检查：确保 'meanings' 键存在且为列表
                 if "meanings" not in data or not isinstance(data["meanings"], list):
                     print(f"   - [警告] 文件 '{file_path}' 缺少 'meanings' 数组，已跳过。")
                     continue
 
-                # 【新】遍历每个意境分组
                 for meaning_group in data["meanings"]:
-                    # 鲁棒性检查：确保 'words' 键存在且为列表
                     if "words" not in meaning_group or not isinstance(meaning_group["words"], list):
                         continue
 
@@ -113,8 +111,8 @@ def aggregate_data(file_paths: list[Path]) -> tuple[set[str], dict[str, list[str
 
                                 for sentence_obj in sentences_list:
                                     if isinstance(sentence_obj, dict) and 'en' in sentence_obj:
-                                        sentence_en = sentence_obj['en']
-                                        if sentence_en not in unique_sentences[word_lower]:
+                                        sentence_en = sentence_obj['en'].strip()
+                                        if sentence_en and sentence_en not in unique_sentences[word_lower]:
                                             unique_sentences[word_lower].append(sentence_en)
                                             total_sentence_count += 1
 
@@ -129,6 +127,29 @@ def aggregate_data(file_paths: list[Path]) -> tuple[set[str], dict[str, list[str
     return unique_words, unique_sentences
 
 
+# <--- 优化点: 新增辅助函数，用于将句子转换为安全的文件名 "slug"
+def sanitize_for_filename(text: str, max_length: int = MAX_FILENAME_SLUG_LENGTH) -> str:
+    """
+    将文本转换为一个对文件名安全、唯一的“slug”。
+
+    1. 转换为小写。
+    2. 将所有非字母数字字符替换为下划线。
+    3. 压缩连续的下划线为一个。
+    4. 截断到最大长度。
+    5. 清理首尾的下划线。
+    """
+    # 转换为小写
+    slug = text.lower()
+    # 将所有非字母和非数字的字符替换为下划线
+    slug = re.sub(r'[^a-z0-9]+', '_', slug)
+    # 截断以避免文件名过长
+    if len(slug) > max_length:
+        slug = slug[:max_length]
+    # 清理可能出现在开头或结尾的下划线
+    slug = slug.strip('_')
+    return slug
+
+
 def generate_audio_file(text: str, output_path: Path) -> bool:
     """
     为给定的文本生成音频文件，并进行缓存检查。
@@ -136,6 +157,7 @@ def generate_audio_file(text: str, output_path: Path) -> bool:
     if output_path.exists() and output_path.stat().st_size >= MIN_FILE_SIZE_BYTES:
         try:
             MP3(output_path)
+            # 文件存在且有效，跳过
             return True
         except HeaderNotFoundError:
             print(f"  [警告] '{output_path.name}' 已存在但文件损坏，将重新生成。")
@@ -154,7 +176,7 @@ def generate_audio_file(text: str, output_path: Path) -> bool:
     except Exception as e:
         print(f"  [严重错误] 生成 '{output_path.name}' 失败: {e}")
         if output_path.exists():
-            output_path.unlink()
+            output_path.unlink() # 删除生成失败的空文件或损坏文件
         return False
 
 
@@ -202,8 +224,13 @@ def main():
         sentence_list = sentences_map[word_key]
         for index, sentence in enumerate(sentence_list):
             processed_count += 1
-            filename = f"{word_key}_sentence_{index}.mp3"
-            print(f"进度: {processed_count}/{total_sentences} - 例句 {index + 1}/{len(sentence_list)} for '{word_key}'")
+            print(f"进度: {processed_count}/{total_sentences} - 单词 '{word_key}' 的例句 {index + 1}/{len(sentence_list)}")
+
+            # <--- 优化点: 使用新的函数生成基于内容的文件名
+            sentence_slug = sanitize_for_filename(sentence)
+            filename = f"{word_key}_{sentence_slug}.mp3"
+            # --->
+
             file_path = SENTENCES_DIR / filename
             if generate_audio_file(sentence, file_path):
                 success_sentences += 1

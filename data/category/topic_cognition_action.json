@@ -1,0 +1,382 @@
+{
+  "prefix": "Unit 10",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_cognition_action",
+      "displayName": "认知、动作与抽象 (Cognition, Action & Abstract)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 8 v4 l3 3' stroke='currentColor'/><circle cx='12' cy='4' r='1' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "思维与时空",
+        "description": "这一类包含动词、状态变化、心理活动及时间概念。它们构成了抽象思维的骨架。",
+        "imagery": "冷静的蓝色，如同思考时的脑波和流逝的时间。"
+      },
+      "words": [
+        {
+          "word": "wish",
+          "rootVisual": "<path d='M12 21 s-6-4.5-6-10a6 6 0 0 1 12 0c0 5.5-6 10-6 10z' stroke='currentColor' fill='none'/><path d='M12 7 l1 3 h3 l-2.5 2 l1 3 l-2.5 -2 l-2.5 2 l1 -3 l-2.5 -2 h3 z' fill='currentColor'/>",
+          "breakdown": ["wish", "(愿望)"],
+          "imagery": "心中的一颗星星，代表难以实现的愿望。",
+          "translation": "希望（难实现）",
+          "sentences": [{"en": "I wish I could go to Tsinghua University.", "cn": "我希望我能上清华大学。"}]
+        },
+        {
+          "word": "hope",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none'/><path d='M8 12 l3 3 l5 -5' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["hope", "(期盼)"],
+          "imagery": "一个肯定的对勾，代表更有可能实现的期盼。",
+          "translation": "希望",
+          "sentences": [{"en": "I hope so.", "cn": "我也希望如此。"}]
+        },
+        {
+          "word": "chance",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='1' fill='currentColor'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='15' r='1' fill='currentColor'/>",
+          "breakdown": ["cadere", "(掉落/发生)"],
+          "imagery": "一颗骰子的形状，象征随机性和机会。",
+          "translation": "机会",
+          "sentences": [{"en": "He seized the last chance.", "cn": "他抓住了最后的机会。"}]
+        },
+        {
+          "word": "choice",
+          "rootVisual": "<path d='M12 18 v-6' stroke='currentColor' stroke-width='2'/><path d='M12 12 l-4 -6' stroke='currentColor' stroke-width='2'/><path d='M12 12 l4 -6' stroke='currentColor' stroke-width='2'/><circle cx='8' cy='6' r='1' fill='currentColor'/><circle cx='16' cy='6' r='1' fill='currentColor'/>",
+          "breakdown": ["choisir", "(选择)"],
+          "imagery": "一个 Y 形的分岔路口，面临两个选项。",
+          "translation": "选择 (名词)",
+          "sentences": [{"en": "He has to make some important choices.", "cn": "他必须做出一些重要的选择。"}]
+        },
+        {
+          "word": "choose",
+          "rootVisual": "<path d='M12 18 v-6' stroke='currentColor' stroke-width='2'/><path d='M12 12 l-4 -6' stroke='currentColor' stroke-width='2'/><path d='M12 12 l4 -6' stroke='currentColor' stroke-width='2' opacity='0.3'/><circle cx='8' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": ["ceosan", "(挑选)"],
+          "imagery": "在分岔路口中，高亮选中了其中一条路。",
+          "translation": "选择 (动词)",
+          "sentences": [{"en": "Choose your favorite way to learn English.", "cn": "选择你最喜欢的英语学习方式。"}]
+        },
+        {
+          "word": "create",
+          "rootVisual": "<path d='M12 12 m-8 0 a 8 8 0 1 0 16 0 a 8 8 0 1 0 -16 0' stroke='currentColor' fill='none' stroke-dasharray='4 4'/><path d='M12 8 v8 M8 12 h8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["creare", "(产生)"],
+          "imagery": "虚线圆圈中出现一个实心的加号，代表从无到有的创造。",
+          "translation": "创造",
+          "sentences": [{"en": "Most westerners believe that God created the world.", "cn": "大多数西方人相信上帝创造了世界。"}]
+        },
+        {
+          "word": "increase",
+          "rootVisual": "<polyline points='4 16 10 12 16 8 20 4' stroke='currentColor' stroke-width='2' fill='none'/><path d='M16 4 h4 v4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["in-", "(进入)", "crescere", "(生长)"],
+          "imagery": "一条向右上角攀升的折线图。",
+          "translation": "增长",
+          "sentences": [{"en": "The population continues to increase.", "cn": "人口持续增长。"}]
+        },
+        {
+          "word": "decrease",
+          "rootVisual": "<polyline points='4 4 10 8 16 12 20 16' stroke='currentColor' stroke-width='2' fill='none'/><path d='M16 16 h4 v-4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["de-", "(向下)", "crescere", "(生长)"],
+          "imagery": "一条向右下角下降的折线图。",
+          "translation": "降低",
+          "sentences": [{"en": "The number of students in this school is decreasing every year.", "cn": "这所学校的学生人数逐年减少。"}]
+        },
+        {
+          "word": "silence",
+          "rootVisual": "<path d='M11 5 L6 9 H2 V15 H6 L11 19 V5 Z' stroke='currentColor' fill='none'/><line x1='16' y1='9' x2='20' y2='15' stroke='currentColor'/><line x1='20' y1='9' x2='16' y2='15' stroke='currentColor'/>",
+          "breakdown": ["silentium", "(寂静)"],
+          "imagery": "扬声器旁一个大大的叉号，表示没有声音。",
+          "translation": "沉默 (名词)",
+          "sentences": [{"en": "There was a brief silence before anyone answered.", "cn": "在有人回答之前，有一阵短暂的沉默。"}]
+        },
+        {
+          "word": "silent",
+          "rootVisual": "<path d='M11 5 L6 9 H2 V15 H6 L11 19 V5 Z' stroke='currentColor' fill='none'/><circle cx='18' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": ["silere", "(安静)"],
+          "imagery": "扬声器旁只有一个小点，表示状态是安静的。",
+          "translation": "沉默的 (形容词)",
+          "sentences": [{"en": "The crowd kept silent when the president appeared.", "cn": "当总统出现时，人群保持沉默。"}]
+        },
+        {
+          "word": "hunt",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='1' fill='currentColor'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor' opacity='0.5'/><line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": ["hunta", "(追捕)"],
+          "imagery": "一个瞄准镜的十字准星，锁定目标。",
+          "translation": "捕猎",
+          "sentences": [{"en": "In ancient times, people hunted for a living.", "cn": "在古代，人们以捕猎为生。"}]
+        },
+        {
+          "word": "haunt",
+          "rootVisual": "<path d='M12 4 c-4 0 -6 3 -6 6 v6 h12 v-6 c0 -3 -2 -6 -6 -6 z' stroke='currentColor' fill='none'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='9' r='1' fill='currentColor'/><path d='M6 16 l2 4 l2 -4 l2 4 l2 -4 l2 4 l2 -4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["hanter", "(常去)"],
+          "imagery": "一个飘忽不定的幽灵形状，象征萦绕不去。",
+          "translation": "萦绕",
+          "sentences": [{"en": "She is haunted by the fear that her husband has an affair.", "cn": "她被丈夫有外遇的恐惧所萦绕。"}]
+        },
+        {
+          "word": "wear",
+          "rootVisual": "<path d='M16 4 l-4 2 l-4 -2 l-2 4 v10 h12 v-10 z' stroke='currentColor' fill='none'/><path d='M12 6 v14' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": ["werian", "(覆盖)"],
+          "imagery": "一件简单的T恤衫轮廓。",
+          "translation": "穿",
+          "sentences": [{"en": "What should I wear tomorrow?", "cn": "我明天该穿什么？"}]
+        },
+        {
+          "word": "right now",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none'/><line x1='12' y1='12' x2='12' y2='5' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": ["right", "(正)", "now", "(现在)"],
+          "imagery": "时钟的指针垂直指向正上方，表示“正是此刻”。",
+          "translation": "立刻",
+          "sentences": [{"en": "You should go to bed right now.", "cn": "你应该立刻去睡觉。"}]
+        },
+        {
+          "word": "right away",
+          "rootVisual": "<path d='M4 12 h12' stroke='currentColor' stroke-width='2'/><path d='M13 9 l3 3 l-3 3' stroke='currentColor' stroke-width='2'/><path d='M20 5 v14' stroke='currentColor'/>",
+          "breakdown": ["away", "(离开)"],
+          "imagery": "一个箭头直接冲向终点线，表示毫无延迟。",
+          "translation": "立刻",
+          "sentences": [{"en": "You should go to bed right away.", "cn": "你应该立刻去睡觉。"}]
+        },
+        {
+          "word": "yet",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none' opacity='0.5'/><path d='M12 12 l4 4' stroke='currentColor'/><path d='M12 12 l0 -6' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["giet", "(仍旧)"],
+          "imagery": "时钟的一半是虚线，表示动作尚未完成。",
+          "translation": "还 (用于否定句)",
+          "sentences": [{"en": "I haven't had dinner yet.", "cn": "我还没吃晚饭。"}]
+        },
+        {
+          "word": "a few",
+          "rootVisual": "<circle cx='8' cy='12' r='2' fill='currentColor'/><circle cx='16' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='8' r='2' fill='currentColor'/>",
+          "breakdown": ["few", "(少)"],
+          "imagery": "三个实心点，表示虽然少，但还有一些（肯定含义）。",
+          "translation": "少量 (肯定)",
+          "sentences": [{"en": "I have a few friends in this city.", "cn": "我在这个城市有几个朋友。"}]
+        },
+        {
+          "word": "few",
+          "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor' opacity='0.3'/><circle cx='8' cy='12' r='2' stroke='currentColor' fill='none' opacity='0.3'/>",
+          "breakdown": ["few", "(少)"],
+          "imagery": "只有一个淡淡的点，表示几乎没有（否定含义）。",
+          "translation": "几乎没有 (否定)",
+          "sentences": [{"en": "He has few friends, so he often feels lonely.", "cn": "他几乎没有朋友，所以经常感到孤独。"}]
+        }
+      ]
+    },
+    {
+      "meaningId": "topic_nature_food",
+      "displayName": "自然、食物与天气 (Nature, Food & Weather)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<path d='M12 20 q -8 -10 -4 -16 q 4 2 4 8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 20 q 8 -10 4 -16 q -4 2 -4 8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='8' r='2' fill='currentColor' opacity='0.6'/>",
+      "prefixIntro": {
+        "title": "生机与自然",
+        "description": "这一类包含自然界的现象、植物以及由原材料制成的食物。它们带有生长、有机和环境的属性。",
+        "imagery": "清新的绿色，象征着从泥土中生长出的生命和自然的变化。"
+      },
+      "words": [
+        {
+          "word": "strawberry",
+          "rootVisual": "<path d='M12 21 C 7 14 6 9 9 6 C 11 4 13 4 15 6 C 18 9 17 14 12 21 Z' stroke='currentColor' fill='none'/><path d='M9 6 l3 -3 l3 3' stroke='currentColor' fill='currentColor'/><circle cx='10' cy='12' r='0.5' fill='currentColor'/><circle cx='14' cy='12' r='0.5' fill='currentColor'/><circle cx='12' cy='16' r='0.5' fill='currentColor'/>",
+          "breakdown": ["straw", "(干草)", "berry", "(浆果)"],
+          "imagery": "一颗布满籽的草莓，据说因种在干草覆盖的土上而得名。",
+          "translation": "草莓",
+          "sentences": [{"en": "Most girls like eating strawberries.", "cn": "大多数女孩喜欢吃草莓。"}]
+        },
+        {
+          "word": "straw",
+          "rootVisual": "<line x1='8' y1='20' x2='10' y2='4' stroke='currentColor' stroke-width='2'/><line x1='16' y1='20' x2='14' y2='4' stroke='currentColor' stroke-width='2'/><path d='M10 4 l-2 -2 M14 4 l2 -2' stroke='currentColor'/>",
+          "breakdown": ["streaw", "(散落)"],
+          "imagery": "几根细长的干草茎。",
+          "translation": "干草 / 吸管",
+          "sentences": [{"en": "The floor was covered with straw.", "cn": "地板上铺满了干草。"}]
+        },
+        {
+          "word": "berry",
+          "rootVisual": "<circle cx='8' cy='14' r='3' stroke='currentColor' fill='none'/><circle cx='16' cy='14' r='3' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M12 8 l0 -4' stroke='currentColor'/>",
+          "breakdown": ["berie", "(浆果)"],
+          "imagery": "一簇饱满的小果实。",
+          "translation": "浆果",
+          "sentences": [{"en": "This bush is full of berries.", "cn": "这丛灌木结满了浆果。"}]
+        },
+        {
+          "word": "pancake",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' opacity='0.6'/><line x1='12' y1='20' x2='12' y2='24' stroke='currentColor' stroke-width='2'/><path d='M10 8 l0 -2 M14 8 l0 -2' stroke='currentColor' opacity='0.4'/>",
+          "breakdown": ["pan", "(锅)", "cake", "(蛋糕)"],
+          "imagery": "平底锅里正在冒热气的圆饼。",
+          "translation": "烙饼 / 煎饼",
+          "sentences": [{"en": "Pans can be used to make pancakes.", "cn": "平底锅可以用来做烙饼。"}]
+        },
+        {
+          "word": "pan",
+          "rootVisual": "<circle cx='10' cy='12' r='7' stroke='currentColor' fill='none' stroke-width='2'/><line x1='16' y1='12' x2='22' y2='12' stroke='currentColor' stroke-width='3' stroke-linecap='round'/>",
+          "breakdown": ["panne", "(平底容器)"],
+          "imagery": "一个带长柄的圆形平底锅。",
+          "translation": "平底锅",
+          "sentences": [{"en": "He fried eggs in a pan.", "cn": "他用平底锅煎蛋。"}]
+        },
+        {
+          "word": "warm",
+          "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='currentColor'/><path d='M12 4 v-2 M12 20 v2 M4 12 h-2 M20 12 h2 M6 6 l-2 -2 M18 18 l2 2 M6 18 l-2 2 M18 6 l2 -2' stroke='currentColor' opacity='0.6'/>",
+          "breakdown": ["wearm", "(热)"],
+          "imagery": "散发着柔和光芒的太阳。",
+          "translation": "温暖",
+          "sentences": [{"en": "I like the warm weather in spring the most.", "cn": "我最喜欢春天温暖的天气。"}]
+        },
+        {
+          "word": "weather",
+          "rootVisual": "<circle cx='8' cy='8' r='3' fill='currentColor' opacity='0.5'/><path d='M18 12 a 3 3 0 0 0 -3 -3 a 4 4 0 0 0 -7 2 a 3 3 0 0 0 3 5 h 6 a 3 3 0 0 0 1 -4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["weder", "(气候)"],
+          "imagery": "太阳躲在云层后面，代表天气变化。",
+          "translation": "天气",
+          "sentences": [{"en": "What's the weather like today?", "cn": "今天天气怎么样？"}]
+        },
+        {
+          "word": "wind",
+          "rootVisual": "<path d='M4 8 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/><path d='M6 16 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/>",
+          "breakdown": ["wind", "(风)"],
+          "imagery": "两条平行的波浪线，表示气流。",
+          "translation": "风",
+          "sentences": [{"en": "There is no wind today.", "cn": "今天没有风。"}]
+        },
+        {
+          "word": "windy",
+          "rootVisual": "<path d='M4 8 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/><path d='M6 12 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/><path d='M4 16 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/><path d='M20 8 a 2 2 0 0 1 2 2' stroke='currentColor' fill='none' opacity='0.5'/>",
+          "breakdown": ["-y", "(多...的)"],
+          "imagery": "密集的波浪线，甚至卷起了漩涡，表示风很大。",
+          "translation": "刮风的",
+          "sentences": [{"en": "It's too windy today.", "cn": "今天风太大了。"}]
+        }
+      ]
+    },
+    {
+      "meaningId": "topic_city_life",
+      "displayName": "城市、生活与物品 (City, Life & Objects)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<rect x='4' y='8' width='6' height='12' stroke='currentColor' fill='none'/><rect x='14' y='4' width='6' height='16' stroke='currentColor' fill='none'/><line x1='4' y1='20' x2='20' y2='20' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "社会与生活",
+        "description": "这一类包含具体的场所、职业、日常用品以及娱乐相关的名词。它们构成了日常生活的核心场景。",
+        "imagery": "温暖的琥珀色，象征着城市的灯光和生活的烟火气。"
+      },
+      "words": [
+        {
+          "word": "village",
+          "rootVisual": "<path d='M2 14 L7 8 L12 14 V20 H2 Z' stroke='currentColor' fill='none'/><path d='M12 14 L17 8 L22 14 V20 H12 Z' stroke='currentColor' fill='none'/>",
+          "breakdown": ["villa", "(别墅/农舍)"],
+          "imagery": "两座并排的小房子，代表乡村聚落。",
+          "translation": "村庄",
+          "sentences": [{"en": "There are 800 villagers in the village.", "cn": "村里有800名村民。"}]
+        },
+        {
+          "word": "villager",
+          "rootVisual": "<path d='M4 14 L9 8 L14 14 V20 H4 Z' stroke='currentColor' fill='none' opacity='0.5'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M16 16 h4 v4' stroke='currentColor'/>",
+          "breakdown": ["-er", "(人)"],
+          "imagery": "房子旁边站着一个人。",
+          "translation": "村民",
+          "sentences": [{"en": "The villagers are very friendly.", "cn": "村民们非常友好。"}]
+        },
+        {
+          "word": "zoo",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='4' x2='8' y2='20' stroke='currentColor'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor'/><line x1='16' y1='4' x2='16' y2='20' stroke='currentColor'/>",
+          "breakdown": ["zoion", "(动物)"],
+          "imagery": "栅栏的形状，代表关动物的地方。",
+          "translation": "动物园",
+          "sentences": [{"en": "There are 50 kinds of animals in the zoo.", "cn": "动物园里有50种动物。"}]
+        },
+        {
+          "word": "uniform",
+          "rootVisual": "<path d='M16 4 l-4 2 l-4 -2 l-2 4 v10 h12 v-10 z' stroke='currentColor' fill='none'/><path d='M12 6 v14' stroke='currentColor'/><circle cx='10' cy='10' r='0.5' fill='currentColor'/><circle cx='10' cy='14' r='0.5' fill='currentColor'/><path d='M16 4 l-4 2 l-4 -2' stroke='currentColor' fill='none' opacity='0.5' transform='translate(4,4) scale(0.5)'/>",
+          "breakdown": ["uni", "(统一)", "form", "(形式)"],
+          "imagery": "一件带有扣子的制式衬衫。",
+          "translation": "制服",
+          "sentences": [{"en": "Most primary school students go to school in uniform.", "cn": "大多数小学生穿着校服上学。"}]
+        },
+        {
+          "word": "violin",
+          "rootVisual": "<path d='M12 2 v6 c-2 0 -3 1 -3 3 s 1 3 3 3 c-2 0 -3 2 -3 4 s 2 4 3 4 s 3 -2 3 -4 s -1 -4 -3 -4 c 2 0 3 -2 3 -3 s -1 -3 -3 -3 z' stroke='currentColor' fill='none'/><line x1='12' y1='2' x2='12' y2='22' stroke='currentColor'/>",
+          "breakdown": ["viola", "(弦乐器)"],
+          "imagery": "小提琴独特的葫芦状琴身。",
+          "translation": "小提琴",
+          "sentences": [{"en": "Few people can play the violin.", "cn": "很少有人会拉小提琴。"}]
+        },
+        {
+          "word": "stuff",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none'/><path d='M8 8 l-2 -4 h12 l-2 4' stroke='currentColor' fill='none'/><circle cx='10' cy='14' r='1' fill='currentColor'/><rect x='13' y='12' width='3' height='3' fill='currentColor'/>",
+          "breakdown": ["estoffe", "(材料)"],
+          "imagery": "一个装满各种形状杂物的箱子。",
+          "translation": "东西",
+          "sentences": [{"en": "I like my stuff.", "cn": "我喜欢我的东西。"}]
+        },
+        {
+          "word": "staff",
+          "rootVisual": "<circle cx='8' cy='8' r='2' fill='currentColor'/><path d='M6 12 h4 v6' stroke='currentColor'/><circle cx='16' cy='8' r='2' fill='currentColor'/><path d='M14 12 h4 v6' stroke='currentColor'/>",
+          "breakdown": ["staf", "(职员)"],
+          "imagery": "一组站立的人，代表全体员工。",
+          "translation": "员工",
+          "sentences": [{"en": "This entire staff has done an outstanding job this year.", "cn": "今年全体员工都做得非常出色。"}]
+        },
+        {
+          "word": "cartoon",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M8 18 l-2 4 h12 l-2 -4' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' stroke='currentColor'/><path d='M11 11 a 1 1 0 0 1 2 0' stroke='currentColor'/>",
+          "breakdown": ["carton", "(草图/纸板)"],
+          "imagery": "电视机屏幕上的一张笑脸。",
+          "translation": "卡通片",
+          "sentences": [{"en": "I like watching cartoons very much.", "cn": "我非常喜欢看卡通片。"}]
+        },
+        {
+          "word": "vacation",
+          "rootVisual": "<circle cx='4' cy='4' r='2' fill='currentColor'/><path d='M2 20 h20' stroke='currentColor'/><path d='M10 20 q 2 -10 4 -15 q 2 5 4 15' stroke='currentColor' fill='none'/><path d='M10 5 l8 0' stroke='currentColor' stroke-width='3' stroke-linecap='round' opacity='0.5'/>",
+          "breakdown": ["vacare", "(空闲)"],
+          "imagery": "太阳、海滩和遮阳伞下的休闲时光。",
+          "translation": "假期",
+          "sentences": [{"en": "I hope to go to the seaside during the summer vacation.", "cn": "我希望暑假去海边。"}]
+        },
+        {
+          "word": "bookcase",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><line x1='6' y1='9' x2='18' y2='9' stroke='currentColor'/><line x1='6' y1='15' x2='18' y2='15' stroke='currentColor'/><rect x='8' y='10' width='2' height='4' fill='currentColor'/><rect x='11' y='10' width='2' height='4' fill='currentColor'/>",
+          "breakdown": ["book", "(书)", "case", "(箱子)"],
+          "imagery": "有分层的架子，上面摆着几本书。",
+          "translation": "书架",
+          "sentences": [{"en": "He took a book from the bookcase.", "cn": "他从书架上拿了一本书。"}]
+        },
+        {
+          "word": "notebook",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M6 6 h-2 a 1 1 0 0 1 0 2 h 2' stroke='currentColor' fill='none'/><path d='M6 10 h-2 a 1 1 0 0 1 0 2 h 2' stroke='currentColor' fill='none'/><path d='M6 14 h-2 a 1 1 0 0 1 0 2 h 2' stroke='currentColor' fill='none'/><line x1='10' y1='8' x2='16' y2='8' stroke='currentColor' opacity='0.5'/><line x1='10' y1='12' x2='16' y2='12' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": ["note", "(笔记)", "book", "(本子)"],
+          "imagery": "侧面带有螺旋线圈的笔记本。",
+          "translation": "笔记本",
+          "sentences": [{"en": "You can take notes in a notebook.", "cn": "你可以在笔记本上记笔记。"}]
+        },
+        {
+          "word": "note",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y1='12' x2='16' y2='12' stroke='currentColor'/><line x1='8' y1='16' x2='14' y2='16' stroke='currentColor'/>",
+          "breakdown": ["nota", "(标记)"],
+          "imagery": "一张简单的写有文字的纸。",
+          "translation": "笔记",
+          "sentences": [{"en": "Make a note of this.", "cn": "把这个记下来。"}]
+        },
+        {
+          "word": "subway",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><rect x='8' y='8' width='8' height='8' rx='2' stroke='currentColor' fill='none'/><line x1='8' y1='16' x2='6' y2='20' stroke='currentColor'/><line x1='16' y1='16' x2='18' y2='20' stroke='currentColor'/>",
+          "breakdown": ["sub", "(在下)", "way", "(路)"],
+          "imagery": "隧道（圆形）中的列车车头。",
+          "translation": "地铁",
+          "sentences": [{"en": "The subway is very crowded in Guangzhou.", "cn": "广州的地铁非常拥挤。"}]
+        },
+        {
+          "word": "supermarket",
+          "rootVisual": "<path d='M4 8 h16 l-2 8 h-12 z' stroke='currentColor' fill='none'/><circle cx='7' cy='19' r='2' stroke='currentColor'/><circle cx='17' cy='19' r='2' stroke='currentColor'/><path d='M14 8 v-4 h-4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["super", "(超级)", "market", "(市场)"],
+          "imagery": "一辆装满商品的购物车。",
+          "translation": "超市",
+          "sentences": [{"en": "She went to the supermarket with her mother.", "cn": "她和妈妈去了超市。"}]
+        },
+        {
+          "word": "market",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor'/><path d='M4 12 l2 -6 h12 l2 6' stroke='currentColor' fill='none'/><rect x='6' y='12' width='12' height='6' stroke='currentColor' fill='none'/><line x1='12' y1='12' x2='12' y2='18' stroke='currentColor'/>",
+          "breakdown": ["mercatus", "(贸易)"],
+          "imagery": "一个有遮阳棚的简单摊位。",
+          "translation": "市场",
+          "sentences": [{"en": "She went to the market.", "cn": "她去了市场。"}]
+        }
+      ]
+    }
+
+  ]
+}
