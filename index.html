@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ================= SEO 核心配置区域 (开始) ================= -->
 
-    <!-- 1. 网页标题：核心功能 + 品牌名 + 核心价值 -->
+    <!-- 1. 网页标题 -->
     <title>英语词源意境记忆卡 | Etymology Visualizer - 词根词缀可视化学习工具</title>
 
-    <!-- 2. 网站描述：搜索结果摘要，融合了核心口号，增加点击率 -->
+    <!-- 2. 网站描述 -->
     <meta name="description" content="PPMC词源意境记忆卡 (Etymology Visualizer) 是一个在线英语单词学习工具。单词不是孤岛，而是积木的组合。我们通过可视化拆解词根、词缀（前缀/后缀），结合生动的意境联想记忆法，帮助你从逻辑上高效掌握英语词汇。资料参考韩宇极简英语。">
 
-    <!-- 3. 关键词：核心词 + 长尾词 + 品牌词 -->
+    <!-- 3. 关键词 -->
     <meta name="keywords" content="英语单词记忆, 词源法, 词根词缀, Etymology, 意境记忆, 视觉化记单词, 英语前缀, 英语后缀, 联想记忆法, 在线背单词, 韩宇极简英语, ppmc club, 英语学习工具, 考研英语, 托福雅思词汇">
 
     <!-- 4. 作者与版权 -->
     <meta name="author" content="cc">
     <meta name="copyright" content="PPMC Club">
 
-    <!-- 5. 规范链接：防止搜索引擎重复收录 -->
+    <!-- 5. 规范链接 -->
     <link rel="canonical" href="https://ppmc.club/">
 
-    <!-- 6. 社交媒体优化 (Open Graph)：分享到微信/社交平台时的卡片效果 -->
+    <!-- 6. 社交媒体优化 (Open Graph) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ppmc.club/">
     <meta property="og:site_name" content="PPMC 词源意境记忆">
     <meta property="og:title" content="拒绝死记硬背！英语词源意境记忆卡 - PPMC">
     <meta property="og:description" content="前缀决定方向，词根承载灵魂。来试试可视化的“积木式”记单词方法吧。">
-    <!-- [建议] 制作一张 1200x630 的图片放在 images 目录下，提升分享点击率 -->
     <meta property="og:image" content="https://ppmc.club/images/og-image.png">
 
     <!-- ================= SEO 核心配置区域 (结束) ================= -->
@@ -45,7 +44,6 @@
 
 <!-- 顶部导航与过滤器 -->
 <header class="app-header">
-    <!-- ============ [修改] H1 中加入 Logo ============ -->
     <h1>
         <img src="favicon.svg" alt="App Logo" class="header-logo">
         <div>
@@ -53,9 +51,7 @@
             <span class="subtitle">Etymology Visualizer</span>
         </div>
     </h1>
-    <!-- ============ [修改结束] ============ -->
 
-    <!-- ============ [新增] 口号区域：匹配页面风格，强化核心理念 ============ -->
     <div class="app-slogan">
         <p>单词不是孤岛，而是<strong>积木</strong>的组合。</p>
         <p>
@@ -64,13 +60,32 @@
             <span class="highlight">后缀</span>标记词性身份。
         </p>
     </div>
-    <!-- ============ [新增结束] ============ -->
 
     <div class="filter-container" id="filter-container">
-        <!-- 筛选器按钮将由 JavaScript 动态生成 -->
+        <!-- 筛选器按钮将由 JavaScript 动态生成并插入在这里 -->
 
-        <!-- 【新增】主题切换按钮 -->
-        <button class="theme-toggle-btn" id="theme-toggle-btn" title="切换深色/浅色主题">
+        <!-- 【新增】听力磨耳朵模式按钮 -->
+        <button class="icon-btn" id="listening-mode-btn" title="听力磨耳朵模式 (Listening Mode)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+            </svg>
+        </button>
+
+        <!-- 【新增】无图自测模式按钮 -->
+        <button class="icon-btn" id="no-visual-btn" title="开启无图自测模式 (Hide Visuals)">
+            <svg class="icon-eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+            <svg class="icon-eye-slash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+            </svg>
+        </button>
+
+        <!-- 主题切换按钮 -->
+        <button class="theme-toggle-btn icon-btn" id="theme-toggle-btn" title="切换深色/浅色主题">
             <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="5"></circle>
                 <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -86,10 +101,9 @@
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
         </button>
-        <!-- 【新增结束】 -->
 
         <!-- 随机排序按钮 -->
-        <button class="shuffle-btn" id="shuffle-btn" title="随机排序当前卡片">
+        <button class="shuffle-btn icon-btn" id="shuffle-btn" title="随机排序当前卡片">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="16 3 21 3 21 8"></polyline>
                 <line x1="4" y1="20" x2="21" y2="3"></line>
@@ -120,8 +134,62 @@
             <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
         </svg>
     </div>
-
 </main>
+
+<!-- ======================= 【新增】听力模式模态框 ======================= -->
+<div id="listening-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content">
+        <button class="modal-close-btn" id="listening-close-btn" title="退出听力模式">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+
+        <div class="listening-header">
+            <h3 class="listening-mode-title">👂 听力磨耳朵</h3>
+            <div class="listening-toggle-wrapper">
+                <label for="audio-source-toggle" class="listening-label">单词</label>
+                <div class="toggle-switch">
+                    <label for="audio-source-toggle">
+                    <input type="checkbox" id="audio-source-toggle" checked> <!-- 默认 checked 为例句 -->
+                    <span class="slider"></span>
+                    </label>
+                </div>
+                <label for="audio-source-toggle" class="listening-label">例句</label>
+            </div>
+        </div>
+
+        <!-- 播放动画区域 -->
+        <div class="listening-visual">
+            <div class="audio-waves" id="audio-waves">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <button id="listening-replay-btn" class="listening-replay-btn" title="重播音频">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+            </button>
+        </div>
+
+        <!-- 答案揭晓区域 -->
+        <div class="listening-answer-area" id="listening-answer-area">
+            <div class="listening-hidden-placeholder">点击下方“揭晓”查看内容</div>
+            <div class="listening-revealed-content" style="display: none;">
+                <h2 class="listening-word"></h2>
+                <div class="listening-meaning"></div>
+                <div class="listening-sentence-en"></div>
+                <div class="listening-sentence-cn"></div>
+            </div>
+        </div>
+
+        <!-- 控制按钮 -->
+        <div class="listening-controls">
+            <button id="listening-reveal-btn" class="control-btn btn-reveal">👀 揭晓答案</button>
+            <button id="listening-next-btn" class="control-btn btn-next">⏭ 下一个</button>
+        </div>
+    </div>
+</div>
 
 <!-- ======================= 模板区域 (Templates) ======================= -->
 
@@ -213,7 +281,6 @@
 <script type="module" src="js/app.js"></script>
 
 <!-- ================= SEO 结构化数据 (JSON-LD) ================= -->
-<!-- 帮助 Google 理解这是一个 Web 应用/教育工具 -->
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
