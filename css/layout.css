@@ -1,25 +1,20 @@
 /* ==========================================================================
-   Layout Styles - 页面布局样式 (v2.0 - 支持主题切换)
+   Layout Styles - 页面布局样式 (v3.1 - 统一筛选器宽度)
    ========================================================================== */
 
 /* --- 头部导航与筛选器 --- */
 .app-header {
     text-align: center;
     padding: 2rem 1rem;
-    /* 【修改】使用变量替换硬编码的颜色和阴影 */
     background-color: var(--bg-secondary-color);
-    box-shadow: var(--shadow); /* 使用在base.css中定义的标准阴影 */
-    /* 添加过渡效果，使切换更平滑 */
+    box-shadow: var(--shadow);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .app-header h1 {
     font-size: 1.8rem;
-    /* 【修改】使用变量 */
     color: var(--text-highlight);
     margin-bottom: 0.5rem;
-
-    /* Flexbox 布局，用于对齐 Logo 和标题 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,20 +55,45 @@
 }
 
 .app-slogan .highlight {
-    /* 【修改】使用变量 */
     color: var(--text-main);
     font-weight: 600;
     border-bottom: 2px solid var(--border-color);
     padding-bottom: 1px;
 }
 
+
+/* --- 【改动】所有筛选器容器布局 --- */
+.grade-filter-container,
+.content-type-filter-container, /* 【新增】将内容类型容器也包含进来 */
 .filter-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem; /* 统一使用 gap */
     flex-wrap: wrap;
-    margin-top: 1.5rem;
+}
+
+/* --- 【新增】为所有筛选器容器设置最大宽度并居中，与 main 区域对齐 --- */
+.grade-filter-container,
+.content-type-filter-container,
+.filter-container {
+    max-width: 1200px; /* 与 .card-grid 的 max-width 保持一致 */
+    margin-left: auto;  /* 实现水平居中 */
+    margin-right: auto; /* 实现水平居中 */
+    padding-left: 1rem;  /* 在窄屏幕上增加一些内边距 */
+    padding-right: 1rem; /* 在窄屏幕上增加一些内边距 */
+}
+
+.grade-filter-container {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: border-color 0.3s ease;
+}
+
+/* 【新增】为内容类型筛选器增加一些底部间距 */
+.content-type-filter-container {
+    margin-bottom: 1.5rem;
 }
 
 
@@ -105,7 +125,6 @@
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
-    /* 【修改】使用变量 */
     border-top: 1px solid var(--border-color);
     color: var(--text-sub);
     font-size: 0.85rem;

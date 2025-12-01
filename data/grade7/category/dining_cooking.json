@@ -1,0 +1,145 @@
+{
+  "prefix": "Dining",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_dining_cooking",
+      "displayName": "餐饮烹饪 (Dining & Cooking)",
+      "themeColor": "#f97316",
+      "prefixVisual": "<path d='M4 14 a 8 8 0 0 0 16 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M16 4 v10 M18 4 v10' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "餐饮烹饪",
+        "description": "从厨房里的锅碗瓢盆，到餐桌上的美味佳肴，探索与吃相关的一切。",
+        "imagery": "一张摆满了美食的餐桌，热气腾腾，香气四溢。"
+      },
+      "words": [
+        {
+          "word": "Kitchen",
+          "rootVisual": "<path d='M2 14 h20 l-2 6 h-16 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 14 v-4 q 2 -2 4 0 t 4 0' stroke='currentColor' stroke-width='1.5'/><line x1='12' y1='14' x2='12' y2='4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["Kitchen", "(厨房)"],
+          "imagery": "一个平底锅正在冒着热气，象征烹饪食物的地方。",
+          "translation": "厨房",
+          "sentences": [
+            { "en": "My mum is making a meal in the kitchen.", "cn": "我妈妈正在厨房做饭。" }
+          ]
+        },
+        {
+          "word": "pan",
+          "rootVisual": "<circle cx='10' cy='12' r='7' stroke='currentColor' fill='none' stroke-width='2'/><line x1='16' y1='12' x2='22' y2='12' stroke='currentColor' stroke-width='3' stroke-linecap='round'/>",
+          "breakdown": ["panne", "(平底容器)"],
+          "imagery": "一个带长柄的圆形平底锅。",
+          "translation": "平底锅",
+          "sentences": [{"en": "He fried eggs in a pan.", "cn": "他用平底锅煎蛋。"}]
+        },
+        {
+          "word": "pancake",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' opacity='0.3'/><circle cx='9' cy='10' r='1' fill='currentColor'/><circle cx='15' cy='11' r='1' fill='currentColor'/><circle cx='11' cy='15' r='1' fill='currentColor'/>",
+          "breakdown": ["pan", "(锅)", "cake", "(蛋糕)"],
+          "imagery": "俯视视角下的圆形面饼，表面散布着受热产生的气孔，展示了它在锅中受热的样子。",
+          "translation": "烙饼 / 煎饼",
+          "sentences": [{"en": "Pans can be used to make pancakes.", "cn": "平底锅可以用来做烙饼。"}]
+        },
+        {
+          "word": "porridge",
+          "rootVisual": "<path d='M4 12 a 8 8 0 0 0 16 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='10' cy='10' r='1' fill='currentColor'/><circle cx='14' cy='10' r='0.5' fill='currentColor' opacity='0.7'/><circle cx='12' cy='13' r='0.5' fill='currentColor' opacity='0.7'/>",
+          "breakdown": ["porridge", "(粥)"],
+          "imagery": "一个碗里装着粘稠的液体，上面点缀着几颗米粒，代表着粥。",
+          "translation": "粥",
+          "sentences": [
+            { "en": "My mum often cooks porridge for us in the morning.", "cn": "我妈妈早上经常为我们煮粥。" }
+          ]
+        },
+        {
+          "word": "soup",
+          "rootVisual": "<path d='M4 14 a 8 8 0 0 0 16 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 8 q 2 -2 4 0' stroke='currentColor' fill='none' stroke-linecap='round'/><path d='M11 10 q 2 -2 4 0' stroke='currentColor' fill='none' stroke-linecap='round' opacity='0.7'/>",
+          "breakdown": ["soup", "(汤)"],
+          "imagery": "一个盛满液体的碗，上方飘着两缕热气，温暖而滋养。",
+          "translation": "汤",
+          "sentences": [
+            { "en": "Cantonese are good at making soup.", "cn": "广东人擅长煲汤。" }
+          ]
+        },
+        {
+          "word": "bowl",
+          "rootVisual": "<path d='M 21 8 h -17 a 8 8 0 0 0 17 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["Bowl", "(碗)"],
+          "imagery": "一个半圆形的碗的侧面轮廓。",
+          "translation": "碗",
+          "sentences": [
+            { "en": "A bowl of noodles is my favorite when I am hungry.", "cn": "饿的时候，我最喜欢一碗面条。" }
+          ]
+        },
+        {
+          "word": "dish",
+          "rootVisual": "<path d='M4 12 h16 a 8 8 0 0 0 -16 0 M4 14 h16 M4 16 h16' stroke='currentColor' fill='none' stroke-width='2' opacity='0.7'/>",
+          "breakdown": ["Dish", "(盘子)"],
+          "imagery": "一叠堆放整齐的盘子。",
+          "translation": "盘子",
+          "sentences": [
+            { "en": "You cook the food, and I'll wash the dishes.", "cn": "你做饭，我来洗碗。" }
+          ]
+        },
+        {
+          "word": "order",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 7 4 H 17 A 1 1 0 0 1 18 5 V 19 A 1 1 0 0 1 17 20 H 7 A 1 1 0 0 1 6 19 V 5 A 1 1 0 0 1 7 4 M 8 8 h 8 M 8 12 h 8 M 8 16 h 4 h 2' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
+          "breakdown": ["order", "(点菜)"],
+          "imagery": "一份菜单或清单，上面有几行文字，旁边有一支笔准备勾选。",
+          "translation": "点菜",
+          "sentences": [
+            { "en": "Excuse me. Can I take your order now?", "cn": "打扰一下，现在可以点菜了吗？" }
+          ]
+        },
+        {
+          "word": "taste",
+          "rootVisual": "<path d='M6 14 q 6 -8 12 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='8' r='1.5' fill='currentColor'/><path d='M12 9.5 v-4' stroke='currentColor' stroke-dasharray='1 1'/>",
+          "breakdown": ["taste", "(尝)"],
+          "imagery": "伸出的舌头正在品尝一颗美味的食物，感受它的味道。",
+          "translation": "尝；味道",
+          "sentences": [
+            { "en": "The strawberries taste good.", "cn": "这些草莓尝起来味道很好。" }
+          ]
+        },
+        {
+          "word": "delicious",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='9' cy='10' r='1' fill='currentColor'/><circle cx='15' cy='10' r='1' fill='currentColor'/><path d='M9 14 q 3 4 6 0 v2 q -3 4 -6 0 z' fill='currentColor'/>",
+          "breakdown": ["Delicious", "(可口的)"],
+          "imagery": "一个笑脸正在舔嘴唇，表示食物非常美味。",
+          "translation": "可口的",
+          "sentences": [
+            { "en": "The food is delicious.", "cn": "这食物很美味。" }
+          ]
+        },
+        {
+          "word": "dine",
+          "rootVisual": "<path d='M8 2 v20 M16 2 v20' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["Dine", "(进餐)"],
+          "imagery": "一个盘子旁边放着刀和叉，代表正式的进餐。",
+          "translation": "进餐",
+          "sentences": [
+            { "en": "200 people can dine at the same time in the dining hall.", "cn": "餐厅可同时容纳200人就餐。" }
+          ]
+        },
+        {
+          "word": "pour",
+          "rootVisual": "<path d='M8 6 h8 l-1 12 h-6 z' stroke='currentColor' fill='none' stroke-width='2' transform='rotate(-15 12 12)'/><path d='M16 12 q 4 -1 4 3 t-4 3' stroke='currentColor' fill='none'/>",
+          "breakdown": ["pour", "(倒)"],
+          "imagery": "一个倾斜的杯子，杯口正流出几道液体，形象地展示了“倾倒”的动作。",
+          "translation": "倒",
+          "sentences": [
+            { "en": "Pour some milk into the cup.", "cn": "往杯子里倒些牛奶。" }
+          ]
+        },
+        {
+          "word": "Feed",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 4 14 a 8 8 0 0 0 16 0 M 10 8 A 2 2 0 1 0 14 8 A 2 2 0 1 0 10 8 Z' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
+          "breakdown": ["Feed", "(喂养)"],
+          "imagery": "食物（圆点）落入碗（半圆）中，代表喂食的动作。",
+          "translation": "喂养",
+          "sentences": [
+            { "en": "I like feeding the pigeons. It is so much fun.", "cn": "我喜欢喂鸽子。这很有趣。" }
+          ]
+        }
+      ]
+    }
+  ]
+}

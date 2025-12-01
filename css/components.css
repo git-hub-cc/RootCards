@@ -1,38 +1,71 @@
 /* ==========================================================================
-   Component Styles - 组件样式 (v3.0 - 支持主题切换 & 新功能模式)
+   Component Styles - 组件样式 (v4.0 - 新增年级按钮样式)
    ========================================================================== */
 
-/* --- 组件: 筛选器与控制按钮 --- */
+/* --- 【新增】组件: 年级筛选器按钮 --- */
+.grade-filter-btn {
+    padding: 10px 24px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-secondary-color);
+    cursor: pointer;
+    font-weight: 700; /* 更粗的字体 */
+    font-size: 1rem;   /* 更大的字号 */
+    transition: all 0.2s ease;
+    color: var(--text-sub);
+}
+
+.grade-filter-btn:hover {
+    border-color: var(--border-color-hover);
+    color: var(--text-main);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+/* 年级按钮的激活状态 */
+.grade-filter-btn.active {
+    background: var(--theme-color-default); /* 使用一个较为中性的主题色 */
+    color: var(--text-inverse);
+    border-color: var(--theme-color-default);
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* 深色模式下的激活状态，颜色更深一些 */
+body.dark-mode .grade-filter-btn.active {
+    background-color: #4b5563; /* 一个较深的灰色 */
+    border-color: #4b5563;
+}
+
+
+/* --- 组件: 类别筛选器与控制按钮 --- */
 .filter-btn {
     padding: 8px 20px;
-    border: 2px solid var(--border-color); /* 使用变量 */
+    border: 2px solid var(--border-color);
     border-radius: 50px;
-    background: var(--bg-secondary-color); /* 使用变量 */
+    background: var(--bg-secondary-color);
     cursor: pointer;
     font-weight: 600;
     transition: all 0.2s ease;
-    color: var(--text-sub); /* 使用变量 */
+    color: var(--text-sub);
 }
-/* 激活状态：使用默认主题色 */
 .filter-btn.active {
     background: var(--theme-color-default);
     color: var(--text-inverse);
     border-color: var(--theme-color-default);
 }
-/* 激活状态（已掌握）：使用特定状态色 */
 .filter-btn[data-filter="learned"].active {
     background: var(--color-learned);
     border-color: var(--color-learned);
 }
-/* 悬浮状态 */
 .filter-btn:not(.active):hover {
     border-color: var(--border-color-hover);
     color: var(--text-main);
 }
 
+/* (后续样式保持不变) */
 
 /* --- 【新增】顶部工具栏按钮统一化 --- */
-/* 为了让新增的按钮和原有的按钮风格一致，我们定义一个通用类 .icon-btn */
 .icon-btn {
     width: 38px;
     height: 38px;
@@ -52,7 +85,7 @@
     border-color: var(--border-color-hover);
     color: var(--text-main);
     background: var(--bg-color);
-    transform: translateY(-1px); /* 轻微上浮 */
+    transform: translateY(-1px);
 }
 .icon-btn:active {
     transform: translateY(1px);
@@ -62,23 +95,18 @@
     height: 20px;
     transition: transform 0.3s ease;
 }
-
-/* 激活状态（例如无图模式开启时） */
 .icon-btn.active {
     background-color: var(--theme-color);
     border-color: var(--theme-color);
     color: var(--text-inverse);
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
-
-/* 主题与随机按钮复用 .icon-btn 样式，但保留特定的 hover 逻辑如果需要 */
 .shuffle-btn:active svg {
     transform: rotate(45deg);
 }
-/* 主题图标切换逻辑 */
-.theme-toggle-btn .icon-moon { display: none; } /* 默认隐藏月亮 */
-body.dark-mode .theme-toggle-btn .icon-sun { display: none; } /* 深色模式下隐藏太阳 */
-body.dark-mode .theme-toggle-btn .icon-moon { display: block; } /* 深色模式下显示月亮 */
+.theme-toggle-btn .icon-moon { display: none; }
+body.dark-mode .theme-toggle-btn .icon-sun { display: none; }
+body.dark-mode .theme-toggle-btn .icon-moon { display: block; }
 
 
 /* --- 组件: 加载/空状态提示 --- */
@@ -238,21 +266,17 @@ body:not(.dark-mode) .prefix-intro-card .card-back { background: linear-gradient
 
 
 /* ==========================================================================
-   新增功能样式 (Feature Styles - v3.0)
+   新增功能样式 (Feature Styles)
    ========================================================================== */
 
-/* --- 2. 无图自测模式 (No Visual Mode) --- */
-/* 当 body 拥有 .mode-no-visual 类时生效 */
+/* --- 无图自测模式 --- */
 body.mode-no-visual .card-front .visual-area svg {
-    opacity: 0; /* 隐藏 SVG */
+    opacity: 0;
     transition: opacity 0.3s ease;
 }
-
 body.mode-no-visual .card-front .visual-area {
     position: relative;
 }
-
-/* 显示一个大问号作为占位符 */
 body.mode-no-visual .card-front .visual-area::after {
     content: "?";
     position: absolute;
@@ -267,65 +291,31 @@ body.mode-no-visual .card-front .visual-area::after {
     pointer-events: none;
 }
 
-/* --- 3. 听力模式模态框 (Listening Modal) --- */
+/* --- 听力模式模态框 --- */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* 半透明遮罩 */
-    backdrop-filter: blur(5px); /* 毛玻璃效果 */
-    z-index: 2000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    animation: fadeIn 0.3s forwards;
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 2000; display: flex; align-items: center; justify-content: center;
+    opacity: 0; animation: fadeIn 0.3s forwards;
 }
 @keyframes fadeIn { to { opacity: 1; } }
-
 .modal-content {
-    background: var(--card-bg);
-    width: 90%;
-    max-width: 400px;
-    border-radius: 20px;
-    padding: 2rem;
-    box-shadow: var(--shadow-hover);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid var(--border-color);
+    background: var(--card-bg); width: 90%; max-width: 400px;
+    border-radius: 20px; padding: 2rem; box-shadow: var(--shadow-hover);
+    position: relative; display: flex; flex-direction: column; align-items: center;
+    text-align: center; border: 1px solid var(--border-color);
 }
-
-/* 关闭按钮 */
 .modal-close-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--text-sub);
-    padding: 5px;
-    border-radius: 50%;
+    position: absolute; top: 15px; right: 15px; background: none; border: none;
+    cursor: pointer; color: var(--text-sub); padding: 5px; border-radius: 50%;
 }
 .modal-close-btn:hover { background-color: var(--border-color); color: var(--text-main); }
-
-/* 模态框头部与开关 */
 .listening-header {
-    width: 100%;
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    width: 100%; margin-bottom: 1.5rem; display: flex; flex-direction: column;
+    align-items: center; gap: 10px;
 }
 .listening-mode-title { font-size: 1.2rem; color: var(--text-highlight); }
-
-/* iOS风格切换开关 */
 .listening-toggle-wrapper { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--text-sub); }
 .toggle-switch { position: relative; width: 44px; height: 24px; }
 .toggle-switch input { opacity: 0; width: 0; height: 0; }
@@ -339,48 +329,28 @@ body.mode-no-visual .card-front .visual-area::after {
 }
 input:checked + .slider { background-color: var(--theme-color); }
 input:checked + .slider:before { transform: translateX(20px); }
-
-/* 音频可视化区域 */
 .listening-visual {
-    width: 120px;
-    height: 120px;
-    background: var(--bg-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-    position: relative;
-    cursor: pointer;
-    border: 4px solid var(--border-color);
-    transition: border-color 0.3s;
+    width: 120px; height: 120px; background: var(--bg-color); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1.5rem; position: relative; cursor: pointer;
+    border: 4px solid var(--border-color); transition: border-color 0.3s;
 }
 .listening-visual:hover { border-color: var(--theme-color); }
-
-/* 声波动画 */
 .audio-waves { display: flex; align-items: center; gap: 4px; height: 40px; }
 .audio-waves span {
     display: block; width: 4px; height: 100%;
     background: var(--theme-color); border-radius: 2px;
     animation: wave 1s infinite ease-in-out;
-    opacity: 0.3; /* 默认静止 */
-    transform: scaleY(0.2);
+    opacity: 0.3; transform: scaleY(0.2);
 }
 .audio-waves.is-playing span { opacity: 1; animation-play-state: running; }
 .audio-waves:not(.is-playing) span { animation-play-state: paused; }
-
 .audio-waves span:nth-child(1) { animation-delay: 0.0s; }
 .audio-waves span:nth-child(2) { animation-delay: 0.1s; }
 .audio-waves span:nth-child(3) { animation-delay: 0.2s; }
 .audio-waves span:nth-child(4) { animation-delay: 0.3s; }
 .audio-waves span:nth-child(5) { animation-delay: 0.4s; }
-
-@keyframes wave {
-    0%, 100% { transform: scaleY(0.2); }
-    50% { transform: scaleY(1); }
-}
-
-/* 重播按钮 (叠加在声波上，或者是点击区域) */
+@keyframes wave { 0%, 100% { transform: scaleY(0.2); } 50% { transform: scaleY(1); } }
 .listening-replay-btn {
     position: absolute; inset: 0; width: 100%; height: 100%;
     background: transparent; border: none; cursor: pointer;
@@ -388,31 +358,19 @@ input:checked + .slider:before { transform: translateX(20px); }
     display: flex; align-items: center; justify-content: center;
 }
 .listening-replay-btn svg { width: 40px; height: 40px; }
-.listening-visual:hover .listening-replay-btn { opacity: 0.2; } /* 悬浮时暗示可点击 */
-
-/* 答案揭晓区域 */
+.listening-visual:hover .listening-replay-btn { opacity: 0.2; }
 .listening-answer-area {
-    min-height: 120px;
-    width: 100%;
-    background: var(--bg-secondary-color);
-    border-radius: 12px;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px dashed var(--border-color);
+    min-height: 120px; width: 100%; background: var(--bg-secondary-color);
+    border-radius: 12px; padding: 1rem; margin-bottom: 1.5rem; display: flex;
+    flex-direction: column; justify-content: center; border: 1px dashed var(--border-color);
 }
 .listening-hidden-placeholder { color: var(--text-sub); font-size: 0.9rem; font-style: italic; }
 .listening-revealed-content { animation: fadeInUp 0.3s forwards; text-align: left; }
 @keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-
 .listening-word { font-size: 1.6rem; color: var(--theme-color); margin-bottom: 0.2rem; text-align: center; }
 .listening-meaning { color: var(--text-sub); font-size: 0.9rem; margin-bottom: 0.8rem; text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
 .listening-sentence-en { font-weight: 600; color: var(--text-main); margin-bottom: 0.4rem; font-size: 1rem; line-height: 1.4; }
 .listening-sentence-cn { font-size: 0.85rem; color: var(--text-sub); }
-
-/* 控制按钮组 */
 .listening-controls { display: flex; gap: 1rem; width: 100%; }
 .control-btn {
     flex: 1; padding: 12px; border: none; border-radius: 50px;

@@ -1,24 +1,21 @@
 // =================================================================================
-// 主应用逻辑 (Main Application Logic) - v6.4 (修复听力模式音频路径)
+// 主应用逻辑 (Main Application Logic) - v9.1 (调整默认选中项)
 // ---------------------------------------------------------------------------------
 // 这个文件是整个应用的控制器，负责协调 state 和 ui 模块。
-// 主要职责：
-// 1. (初始化) 启动应用，获取DOM元素，加载初始数据。
-// 2. (事件绑定) 为筛选器、洗牌按钮、主题切换、以及听力/无图按钮设置事件监听器。
-// 3. (逻辑协调) 响应用户交互，调用 state 模块更新数据，然后调用 ui 模块更新视图。
-// 4. (懒加载) 设置并管理 Intersection Observer，实现无限滚动效果。
-// 5. (主题管理) 处理深色/浅色主题的切换、持久化和初始化。
-// 6. (听力模式) 实现听力练习模式的随机播放、即时切换和多种退出方式。
+// 【核心改动】:
+// 1. 修改 `init` 函数，使其在启动时直接应用新的默认状态（内容类型为“前缀”）。
+// 2. 初始化流程不再依赖模拟点击，改为更明确的状态设置和UI更新调用。
 // =================================================================================
 
 import * as State from './state.js';
-// 【核心修改】从 ui.js 中导入 sanitizeForFilename 函数
 import * as UI from './ui.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- DOM 元素获取 ---
     const cardGrid = document.getElementById('card-grid');
+    const gradeFilterContainer = document.getElementById('grade-filter-container');
+    const contentTypeFilterContainer = document.getElementById('content-type-filter-container');
     const filterContainer = document.getElementById('filter-container');
     const shuffleBtn = document.getElementById('shuffle-btn');
     const themeToggleBtn = document.getElementById('theme-toggle-btn');
@@ -38,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const listeningNextBtn = document.getElementById('listening-next-btn');
     const audioSourceToggle = document.getElementById('audio-source-toggle');
 
-
     // --- 懒加载与渲染状态 ---
     let renderIndex = 0;
     const CARDS_PER_PAGE = 12;
@@ -54,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const THEME_KEY = 'etymology-visualizer-theme';
 
     // --- 鲁棒性检查 ---
-    if (!cardGrid || !filterContainer || !shuffleBtn || !themeToggleBtn || !listeningModal || !audioSourceToggle) {
+    if (!cardGrid || !gradeFilterContainer || !contentTypeFilterContainer || !filterContainer || !shuffleBtn || !themeToggleBtn || !listeningModal || !audioSourceToggle) {
         console.error('关键的 DOM 元素未找到，应用无法启动。');
         return;
     }
@@ -90,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ============================================================================
-    // 2. 核心渲染逻辑 (懒加载)
+    // 2. 核心渲染与UI更新逻辑
     // ============================================================================
 
     function renderMoreCards() {
@@ -114,26 +110,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateEmptyStateMessage() {
-        // -1 是因为 loadMoreTrigger 元素还在 cardGrid 中
-        if (cardGrid.children.length <= 1) {
-            let message = '太棒了，当前分类下没有更多要学习的单词了！';
-            if (State.currentFilter === 'learned' && State.allVocabularyData.some(d => d.cardType === 'word')) {
+        const cardCount = cardGrid.querySelectorAll('.card').length;
+        if (cardCount === 0) {
+            let message = '太棒了，当前筛选条件下没有更多要学习的单词了！';
+            if (State.currentFilter === 'learned') {
                 message = '还没有标记任何单词为“已掌握”。';
             } else if (State.allVocabularyData.length === 0) {
                 message = '正在加载数据...';
             }
-            // 清空 cardGrid 并插入消息，避免保留 loadMoreTrigger
-            cardGrid.innerHTML = `<div class="loading-state">${message}</div>`;
+            if (!cardGrid.querySelector('.loading-state')) {
+                cardGrid.insertAdjacentHTML('afterbegin', `<div class="loading-state">${message}</div>`);
+            }
+        } else {
+            const emptyState = cardGrid.querySelector('.loading-state');
+            if (emptyState) emptyState.remove();
         }
     }
 
     function startNewRenderFlow() {
-        cardGrid.innerHTML = ''; // 彻底清空
+        cardGrid.innerHTML = '';
         renderIndex = 0;
-        // 把 trigger 重新加回去，为渲染做准备
         cardGrid.appendChild(loadMoreTrigger);
         renderMoreCards();
     }
+
+    function updateCategoryFilters() {
+        const availableCategories = State.getAvailableCategories();
+        UI.renderFilterButtons(filterContainer, listeningBtn, availableCategories);
+    }
+
+    // ============================================================================
+    // 3. 事件处理器
+    // ============================================================================
 
     function handleMarkAsLearned(data, cardElement) {
         State.toggleLearnedStatus(data);
@@ -142,10 +150,10 @@ document.addEventListener('DOMContentLoaded', () => {
         cardElement.style.transform = 'scale(0.95)';
         setTimeout(() => {
             cardElement.remove();
-            State.filterAndPrepareDataSet(); // 重新过滤数据
+            State.filterAndPrepareDataSet();
             const cardsOnScreen = cardGrid.querySelectorAll('.card').length;
             if (cardsOnScreen < CARDS_PER_PAGE && renderIndex < State.currentDataSet.length) {
-                renderMoreCards(); // 补充卡片
+                renderMoreCards();
             }
             updateEmptyStateMessage();
         }, 300);
@@ -164,84 +172,73 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(loadMoreTrigger);
     }
 
-    // ============================================================================
-    // 3. 听力模式逻辑
-    // ============================================================================
-
     function startListeningSession() {
         const wordItems = State.currentDataSet.filter(item => item.cardType === 'word');
         if (wordItems.length === 0) {
-            alert('当前列表没有单词可供练习。');
-            return;
+            alert('当前列表没有单词可供练习。'); return;
         }
-
-        listeningPlaylist = Array.from({ length: wordItems.length }, (_, i) => i);
-        for (let i = listeningPlaylist.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [listeningPlaylist[i], listeningPlaylist[j]] = [listeningPlaylist[j], listeningPlaylist[i]];
-        }
-
+        listeningPlaylist = [...Array(wordItems.length).keys()].sort(() => Math.random() - 0.5);
         UI.showListeningModal();
         playNextListeningItem();
     }
-
     function playNextListeningItem() {
         if (listeningPlaylist.length === 0) {
             currentListeningData = null;
-            if (confirm('🎉 本组单词练习完毕！是否重新开始？')) {
-                startListeningSession();
-            } else {
-                UI.hideListeningModal();
-            }
+            if (confirm('🎉 本组单词练习完毕！是否重新开始？')) { startListeningSession(); } else { UI.hideListeningModal(); }
             return;
         }
-
-        const localIndex = listeningPlaylist.pop();
         const wordItems = State.currentDataSet.filter(item => item.cardType === 'word');
-        const data = wordItems[localIndex];
-
-        if (!data) return;
-
-        currentListeningData = data;
-        currentSentenceIndex = 0;
-        if (data.sentences && data.sentences.length > 0) {
-            currentSentenceIndex = Math.floor(Math.random() * data.sentences.length);
-        }
-
-        UI.updateListeningCard(data, currentSentenceIndex);
+        currentListeningData = wordItems[listeningPlaylist.pop()];
+        if (!currentListeningData) return;
+        currentSentenceIndex = (currentListeningData.sentences?.length) ? Math.floor(Math.random() * currentListeningData.sentences.length) : 0;
+        UI.updateListeningCard(currentListeningData, currentSentenceIndex);
         playCurrentAudio();
     }
-
     function playCurrentAudio() {
         if (!currentListeningData) return;
-
         const isSentenceMode = UI.isPlaySentenceMode();
         let audioPath = '';
-
-        // 检查是否选择了例句模式，并且当前单词确实有例句
-        if (isSentenceMode && currentListeningData.sentences && currentListeningData.sentences.length > 0) {
-            // 获取当前例句的文本
+        if (isSentenceMode && currentListeningData.sentences?.[currentSentenceIndex]) {
             const sentenceText = currentListeningData.sentences[currentSentenceIndex].en;
-
-            // --- 【核心修改】调用从 ui.js 导入的函数来生成正确的文件名 ---
             const sentenceSlug = UI.sanitizeForFilename(sentenceText);
             audioPath = `audio/sentences/${currentListeningData.word.toLowerCase()}_${sentenceSlug}.mp3`;
-            // -------------------------------------------------------------
-
         } else {
-            // 如果不满足上述条件（例如选了单词模式，或该词无例句），则播放单词音频
             audioPath = `audio/words/${currentListeningData.word.toLowerCase()}.mp3`;
         }
-
         UI.setAudioWaveAnimation(true);
-        UI.playAudioFile(audioPath, () => {
-            UI.setAudioWaveAnimation(false);
-        });
+        UI.playAudioFile(audioPath, () => UI.setAudioWaveAnimation(false));
     }
 
     // ============================================================================
     // 4. 事件绑定
     // ============================================================================
+
+    gradeFilterContainer.addEventListener('click', (e) => {
+        const targetButton = e.target.closest('.grade-filter-btn');
+        if (targetButton && !targetButton.classList.contains('active')) {
+            UI.updateActiveGradeButton(gradeFilterContainer, targetButton);
+            State.setCurrentGrade(targetButton.dataset.grade);
+            State.setCurrentContentType('all');
+            const allContentTypeBtn = contentTypeFilterContainer.querySelector('.content-type-btn[data-type="all"]');
+            if(allContentTypeBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, allContentTypeBtn);
+            State.setCurrentFilter('all');
+            updateCategoryFilters();
+            State.filterAndPrepareDataSet();
+            startNewRenderFlow();
+        }
+    });
+
+    contentTypeFilterContainer.addEventListener('click', (e) => {
+        const targetButton = e.target.closest('.content-type-btn');
+        if (targetButton && !targetButton.classList.contains('active')) {
+            UI.updateActiveContentTypeButton(contentTypeFilterContainer, targetButton);
+            State.setCurrentContentType(targetButton.dataset.type);
+            State.setCurrentFilter('all');
+            updateCategoryFilters();
+            State.filterAndPrepareDataSet();
+            startNewRenderFlow();
+        }
+    });
 
     filterContainer.addEventListener('click', (e) => {
         const targetButton = e.target.closest('.filter-btn');
@@ -272,34 +269,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const isDarkMode = document.body.classList.contains('dark-mode');
         applyTheme(isDarkMode ? 'light' : 'dark');
     });
-
-    noVisualBtn.addEventListener('click', () => {
-        UI.toggleNoVisualMode(noVisualBtn);
-    });
-
+    noVisualBtn.addEventListener('click', () => UI.toggleNoVisualMode(noVisualBtn));
     listeningBtn.addEventListener('click', startListeningSession);
-
     listeningCloseBtn.addEventListener('click', UI.hideListeningModal);
-
-    listeningModal.addEventListener('click', (event) => {
-        if (event.target === listeningModal) {
-            UI.hideListeningModal();
-        }
-    });
-
+    listeningModal.addEventListener('click', (event) => { if (event.target === listeningModal) UI.hideListeningModal(); });
     listeningRevealBtn.addEventListener('click', UI.revealListeningAnswer);
-
     listeningNextBtn.addEventListener('click', playNextListeningItem);
-
-    const handleReplay = () => {
-        playCurrentAudio();
-    };
+    const handleReplay = () => playCurrentAudio();
     listeningReplayBtn.addEventListener('click', handleReplay);
     listeningVisualArea.addEventListener('click', handleReplay);
-
-    audioSourceToggle.addEventListener('change', () => {
-        handleReplay();
-    });
+    audioSourceToggle.addEventListener('change', handleReplay);
 
     // ============================================================================
     // 5. 应用初始化
@@ -310,21 +289,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             State.loadLearnedWords();
-            const rawDataSets = await State.loadAndProcessData();
+            const { grades } = await State.loadAndProcessData();
 
             if (skeletonLoader) {
                 skeletonLoader.style.opacity = '0';
                 setTimeout(() => skeletonLoader.remove(), 300);
             }
 
-            UI.renderFilterButtons(filterContainer, listeningBtn, rawDataSets);
+            // 1. 渲染筛选器
+            UI.renderGradeButtons(gradeFilterContainer, grades);
+            UI.renderContentTypeButtons(contentTypeFilterContainer);
+
+            // 2. 【核心改动】显式设置并更新UI到默认状态
+            // 更新年级UI
+            const defaultGradeBtn = gradeFilterContainer.querySelector(`[data-grade="${State.currentGrade}"]`);
+            if (defaultGradeBtn) {
+                UI.updateActiveGradeButton(gradeFilterContainer, defaultGradeBtn);
+            }
+            // 更新内容类型UI (新的默认项是'pre')
+            const defaultContentTypeBtn = contentTypeFilterContainer.querySelector(`[data-type="${State.currentContentType}"]`);
+            if (defaultContentTypeBtn) {
+                UI.updateActiveContentTypeButton(contentTypeFilterContainer, defaultContentTypeBtn);
+            }
+
+            // 3. 根据默认状态，动态渲染类别筛选器
+            updateCategoryFilters();
+
+            // 4. 根据默认状态，筛选数据并渲染第一批卡片
             State.filterAndPrepareDataSet();
             startNewRenderFlow();
+
+            // 5. 启动懒加载监听
             setupIntersectionObserver();
 
         } catch (error) {
             console.error('初始化应用时发生严重错误:', error);
-            skeletonLoader?.remove();
+            if (skeletonLoader) skeletonLoader.remove();
             cardGrid.innerHTML = `<div class="loading-state" style="color: #ef4444;">${error.message}</div>`;
             shuffleBtn.style.display = 'none';
         }

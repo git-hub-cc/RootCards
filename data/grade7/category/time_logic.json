@@ -1,0 +1,124 @@
+{
+  "prefix": "Concepts",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_time_logic",
+      "displayName": "时间与逻辑 (Time & Logic)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 8 v4 l3 3' stroke='currentColor'/><circle cx='12' cy='4' r='1' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "时间与逻辑",
+        "description": "掌握描述时间点的副词和表达抽象逻辑、规则与机会的名词。",
+        "imagery": "一个精密的时钟齿轮与一个发光的灯泡（代表思想）相结合，象征着时间流逝中的逻辑思考。"
+      },
+      "words": [
+        {
+          "word": "Early",
+          "rootVisual": "<circle cx='12' cy='13' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 9v4l-2 2' stroke='currentColor' stroke-width='2' stroke-linecap='round'/><path d='M5 3L2 6M22 6L19 3' stroke='currentColor' stroke-linecap='round'/><path d='M6.4 18.7L4 21M17.6 18.7L20 21' stroke='currentColor' stroke-linecap='round'/>",
+          "breakdown": ["Early", "(早的)"],
+          "imagery": "The insistent ringing of an alarm clock at dawn, its hands pointing to the first hours of the day, signaling it's time to rise.",
+          "translation": "早的",
+          "sentences": [
+            { "en": "The early bird catches the worm.", "cn": "早起的鸟儿有虫吃。" }
+          ]
+        },
+        {
+          "word": "soon",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 8 v4 h-3' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": ["soon", "(不久)"],
+          "imagery": "一个时钟，时针和分针即将重合在12点，表示“很快就到”。",
+          "translation": "不久",
+          "sentences": [
+            { "en": "I'll be there soon.", "cn": "我很快就到。" }
+          ]
+        },
+        {
+          "word": "still",
+          "rootVisual": "<line x1='2' y1='12' x2='8' y2='12' stroke='currentColor' stroke-width='2'/><path d='M8 12 l2 -4 l2 8 l2 -8 l2 4' stroke='currentColor' fill='none'/><line x1='16' y1='12' x2='22' y2='12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["still", "(仍然)"],
+          "imagery": "一条心电图线，前半段和后半段都是平直的（静止），中间虽有波动，但最终“仍然”恢复平静。",
+          "translation": "仍然",
+          "sentences": [
+            { "en": "It's midnight, and he is still working.", "cn": "已经半夜了，他还在工作。" }
+          ]
+        },
+        {
+          "word": "yet",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none' opacity='0.5'/><path d='M12 12 l4 4' stroke='currentColor'/><path d='M12 12 l0 -6' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["giet", "(仍旧)"],
+          "imagery": "时钟的一半是虚线，表示动作尚未完成。",
+          "translation": "还 (用于否定句)",
+          "sentences": [{"en": "I haven't had dinner yet.", "cn": "我还没吃晚饭。"}]
+        },
+        {
+          "word": "right now",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none'/><line x1='12' y1='12' x2='12' y2='5' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": ["right", "(正)", "now", "(现在)"],
+          "imagery": "时钟的指针垂直指向正上方，表示“正是此刻”。",
+          "translation": "立刻",
+          "sentences": [{"en": "You should go to bed right now.", "cn": "你应该立刻去睡觉。"}]
+        },
+        {
+          "word": "right away",
+          "rootVisual": "<path d='M4 12 h12' stroke='currentColor' stroke-width='2'/><path d='M13 9 l3 3 l-3 3' stroke='currentColor' stroke-width='2'/><path d='M20 5 v14' stroke='currentColor'/>",
+          "breakdown": ["away", "(离开)"],
+          "imagery": "一个箭头直接冲向终点线，表示毫无延迟。",
+          "translation": "立刻",
+          "sentences": [{"en": "You should go to bed right away.", "cn": "你应该立刻去睡觉。"}]
+        },
+        {
+          "word": "problem",
+          "rootVisual": "<path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><line x1='12' y1='17' x2='12.01' y2='17' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>",
+          "breakdown": [
+            "problem",
+            "(困难)"
+          ],
+          "imagery": "一个悬而未决的问号，象征着阻碍前行的难题或需要寻找答案的困惑。",
+          "translation": "困难；问题",
+          "sentences": [
+            { "en": "Do you have any problems?", "cn": "你有什么问题吗？" }
+          ]
+        },
+        {
+          "word": "rule",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 10 h8 M8 14 h6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["rule", "(规则)"],
+          "imagery": "一张清单前面带有编号（1, 2, 3），象征着必须遵守的条目和规则。",
+          "translation": "规则",
+          "sentences": [
+            { "en": "You must obey the rules of the game.", "cn": "你必须遵守游戏规则。" }
+          ]
+        },
+        {
+          "word": "practice",
+          "rootVisual": "<path d='M 21 7.5 a 9 9 0 1 1 -6.1 -5.5 M 23 10 L 21 7 L 19 10 L 19 10' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["practice", "(练习)"],
+          "imagery": "一个循环箭头，表示不断重复、周而复始的行为，直到熟练。",
+          "translation": "练习",
+          "sentences": [
+            { "en": "Practice makes perfect.", "cn": "熟能生巧。" }
+          ]
+        },
+        {
+          "word": "chance",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='1' fill='currentColor'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='15' r='1' fill='currentColor'/>",
+          "breakdown": ["cadere", "(掉落/发生)"],
+          "imagery": "一颗骰子的形状，象征随机性和机会。",
+          "translation": "机会",
+          "sentences": [{"en": "He seized the last chance.", "cn": "他抓住了最后的机会。"}]
+        },
+        {
+          "word": "symbol",
+          "rootVisual": "<path d='M12 20 l-8 -8 a 5 5 0 1 1 8 -7 a 5 5 0 1 1 8 7 z' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["symbol", "(象征)"],
+          "imagery": "一颗饱满的爱心，是“爱”与“和平”最通用的象征符号之一。",
+          "translation": "象征",
+          "sentences": [
+            { "en": "The dove is the symbol of peace.", "cn": "鸽子是和平的象征。" }
+          ]
+        }
+      ]
+    }
+  ]
+}

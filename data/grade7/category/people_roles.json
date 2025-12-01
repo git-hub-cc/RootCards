@@ -1,0 +1,106 @@
+{
+  "prefix": "People",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_people_roles",
+      "displayName": "人物与角色 (People & Roles)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<circle cx='12' cy='7' r='3' stroke='currentColor' fill='none'/><path d='M12 10 v4'/><path d='M8 18 a 4 4 0 0 1 8 0' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "人物与角色",
+        "description": "认识生活中的各种人物身份，包括家庭成员、职业和社会角色。",
+        "imagery": "舞台上，聚光灯下站着不同职业、不同身份的人们。"
+      },
+      "words": [
+        {
+          "word": "Cousin",
+          "rootVisual": "<circle cx='12' cy='6' r='2' stroke='currentColor' fill='none'/><path d='M12 8 v4' stroke='currentColor'/><path d='M8 12 h8' stroke='currentColor'/><line x1='8' y1='12' x2='8' y2='16' stroke='currentColor'/><line x1='16' y1='12' x2='16' y2='16' stroke='currentColor'/><circle cx='8' cy='18' r='2' fill='currentColor'/><circle cx='16' cy='18' r='2' fill='currentColor'/>",
+          "breakdown": ["Cousin", "(堂表亲)"],
+          "imagery": "家族树的分支，连接着同辈的亲属。",
+          "translation": "堂(表)兄弟姐妹",
+          "sentences": [
+            { "en": "I have three cousins.", "cn": "我有三个堂(表)兄弟姐妹。" },
+            { "en": "My cousin lives in London.", "cn": "我的表兄住在伦敦。" }
+          ]
+        },
+        {
+          "word": "actor",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='9' cy='10' r='1' fill='currentColor'/><circle cx='15' cy='10' r='1' fill='currentColor'/><path d='M9 14 q 3 3 6 0' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["Act", "(表演)", "-or", "(…的人)"],
+          "imagery": "一张戏剧中的笑脸面具，代表喜剧和表演。",
+          "translation": "演员",
+          "sentences": [
+            { "en": "Robert Downey Jr. is a very successful actor.", "cn": "小罗伯特·唐尼是一位非常成功的演员。" }
+          ]
+        },
+        {
+          "word": "actress",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='9' cy='10' r='1' fill='currentColor'/><circle cx='15' cy='10' r='1' fill='currentColor'/><path d='M9 15 q 3 -3 6 0' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["Act", "(表演)", "-ress", "(女性)"],
+          "imagery": "一张戏剧中的悲伤面具，代表戏剧表演的多样性。",
+          "translation": "女演员",
+          "sentences": [
+            { "en": "This actress has a great figure.", "cn": "这位女演员身材很好。" }
+          ]
+        },
+        {
+          "word": "Guide",
+          "rootVisual": "<circle cx='12' cy='8' r='2' fill='currentColor'/><path d='M12 10 v10' stroke='currentColor' stroke-width='2'/><path d='M12 12 l6 -2 v4 l-6 2' stroke='currentColor' fill='none'/>",
+          "breakdown": ["Guide", "(向导)"],
+          "imagery": "一个人举着一面小旗子，走在前面指引方向。",
+          "translation": "导游",
+          "sentences": [
+            { "en": "I dream of being a tour guide.", "cn": "我梦想成为一名导游。" }
+          ]
+        },
+        {
+          "word": "Host",
+          "rootVisual": "<path d='M4 12 q 4 4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": ["Host", "(主人)"],
+          "imagery": "一个人张开双臂（波浪线），做出欢迎的姿势。",
+          "translation": "主人",
+          "sentences": [
+            { "en": "The host served us delicious food.", "cn": "主人招待我们吃了美味的食物。" }
+          ]
+        },
+        {
+          "word": "criminal",
+          "rootVisual": "<circle cx='12' cy='8' r='3' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 11 v8 h6 v-8' stroke='currentColor' fill='none' stroke-width='2'/><rect x='8' y='6' width='8' height='2' fill='currentColor'/>",
+          "breakdown": ["Crime", "(犯罪)", "-al", "(…的人)"],
+          "imagery": "一个简笔画小人，眼睛被一条黑带遮住，代表罪犯。",
+          "translation": "罪犯",
+          "sentences": [
+            { "en": "The criminal was arrested by the police.", "cn": "罪犯被警察逮捕了。" }
+          ]
+        },
+        {
+          "word": "robot",
+          "rootVisual": "<rect x='8' y='8' width='8' height='8' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><rect x='6' y='16' width='12' height='4' rx='1' stroke='currentColor' fill='none'/><circle cx='10' cy='12' r='1' fill='currentColor'/><circle cx='14' cy='12' r='1' fill='currentColor'/><line x1='12' y1='8' x2='14' y2='4' stroke='currentColor'/>",
+          "breakdown": ["robot", "(机器人)"],
+          "imagery": "一个由方块和圆形组成的经典机器人形象，方头方脑，头顶还有天线。",
+          "translation": "机器人",
+          "sentences": [
+            { "en": "There will be a robot in each family in the near future.", "cn": "在不久的将来，每个家庭都会有一个机器人。" }
+          ]
+        },
+        {
+          "word": "staff",
+          "rootVisual": "<circle cx='8' cy='8' r='2' fill='currentColor'/><path d='M6 12 h4 v6' stroke='currentColor'/><circle cx='16' cy='8' r='2' fill='currentColor'/><path d='M14 12 h4 v6' stroke='currentColor'/>",
+          "breakdown": ["staf", "(职员)"],
+          "imagery": "一组站立的人，代表全体员工。",
+          "translation": "员工",
+          "sentences": [{"en": "This entire staff has done an outstanding job this year.", "cn": "今年全体员工都做得非常出色。"}]
+        },
+        {
+          "word": "villager",
+          "rootVisual": "<path d='M4 14 L9 8 L14 14 V20 H4 Z' stroke='currentColor' fill='none' opacity='0.5'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M16 16 h4 v4' stroke='currentColor'/>",
+          "breakdown": ["-er", "(人)"],
+          "imagery": "房子旁边站着一个人。",
+          "translation": "村民",
+          "sentences": [{"en": "The villagers are very friendly.", "cn": "村民们非常友好。"}]
+        }
+      ]
+    }
+  ]
+}

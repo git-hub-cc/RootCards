@@ -1,60 +1,43 @@
 // =================================================================================
-// UI 渲染模块 (UI Rendering Module) - v5.2 (修复例句音频路径)
+// UI 渲染模块 (UI Rendering Module) - v8.1 (统一类别按钮为英文)
 // ---------------------------------------------------------------------------------
 // 主要职责：
-// 1. (DOM元素创建) 提供创建单词卡片、介绍卡片和筛选器按钮的函数。
+// 1. (DOM元素创建) 提供创建单词卡片、介绍卡片和各类筛选按钮的函数。
 // 2. (渲染逻辑) 将卡片元素批量渲染到指定的容器中。
-// 3. (UI交互) 封装与UI直接相关的交互，如卡片翻转、SVG显隐。
-// 4. (音频播放) 播放预先生成的本地音频文件。
-// 5. (动态内容) 能够根据数据动态渲染一个或多个例句。
-// 6. (模态框管理) 处理无图模式切换和听力模态框的显示、隐藏及相关事件绑定。
+// 3. (UI交互) 封装与UI直接相关的交互。
+// 4. (音频播放) 播放本地音频文件。
+// 5. (动态内容) 【改动】类别按钮统一使用 state 模块提供的英文名。
+// 6. (模态框管理) 处理无图模式切换和听力模态框。
 // =================================================================================
 
 // --- 模块内变量 ---
 let cardTemplate;
 let prefixIntroTemplate;
-const audioPlayer = new Audio(); // 全局共用一个 Audio 对象
+const audioPlayer = new Audio();
 
 // --- 听力模式相关 DOM 引用缓存 ---
 let listeningModalElements = null;
 
-// 用于处理 Esc 键退出的函数引用，方便添加和移除事件监听
 let handleEscKeydown = null;
 
 // =================================================================================
-// 【核心修改】新增与 Python 脚本同步的文件名处理函数
+// 文件名处理函数
 // =================================================================================
 
-const MAX_FILENAME_SLUG_LENGTH = 60; // 必须与 Python 脚本中的配置保持一致
+const MAX_FILENAME_SLUG_LENGTH = 60;
 
 /**
- * 将文本转换为一个对文件名安全、唯一的“slug”。
- * 这个函数的功能必须与 Python 后端脚本中的 `sanitize_for_filename` 完全一致。
- * @param {string} text - 原始文本，通常是例句。
- * @returns {string} - 处理后适合用作文件名的字符串。
- * @export
+ * 将文本转换为对文件名安全的“slug”。
  */
 export function sanitizeForFilename(text) {
     if (typeof text !== 'string' || !text) {
         return '';
     }
-    // 1. 转换为小写
     let slug = text.toLowerCase();
-    // 2. 将所有非字母和非数字的字符替换为下划线
-    //    正则表达式 /[^a-z0-9]+/g 中：
-    //    [^a-z0-9] 匹配任何不是小写字母或数字的字符。
-    //    +          匹配一个或多个连续的此类字符。
-    //    g          全局匹配，确保替换所有匹配项，而不仅仅是第一个。
     slug = slug.replace(/[^a-z0-9]+/g, '_');
-    // 3. 截断以避免文件名过长
     if (slug.length > MAX_FILENAME_SLUG_LENGTH) {
         slug = slug.slice(0, MAX_FILENAME_SLUG_LENGTH);
     }
-    // 4. 清理可能出现在开头或结尾的下划线
-    //    正则表达式 /^_+|_+$/g 中：
-    //    ^_+  匹配字符串开头的一个或多个下划线。
-    //    |    或者
-    //    _+$  匹配字符串结尾的一个或多个下划线。
     slug = slug.replace(/^_+|_+$/g, '');
     return slug;
 }
@@ -62,12 +45,10 @@ export function sanitizeForFilename(text) {
 
 /**
  * 初始化UI模块，获取模板元素。
- * @returns {boolean} 如果所有模板都找到则返回 true，否则返回 false。
  */
 export function initUI() {
     cardTemplate = document.getElementById('card-template');
     prefixIntroTemplate = document.getElementById('prefix-intro-template');
-
     if (!cardTemplate || !prefixIntroTemplate) {
         console.error('卡片模板未在 HTML 中找到。');
         return false;
@@ -77,8 +58,6 @@ export function initUI() {
 
 /**
  * 播放本地音频文件。
- * @param {string} filePath - 音频文件的相对路径。
- * @param {function} onEnded - 播放结束后的回调函数（可选）。
  */
 export function playAudioFile(filePath, onEnded = null) {
     if (!filePath) {
@@ -126,6 +105,7 @@ export function playAudioFile(filePath, onEnded = null) {
     }
 }
 
+
 /**
  * 停止当前正在播放的音频。
  */
@@ -136,40 +116,118 @@ export function stopAudio() {
     }
 }
 
+// =================================================================================
+// 筛选器 UI 函数
+// =================================================================================
+
 /**
- * 根据数据动态生成筛选器按钮。
- * @param {HTMLElement} filterContainer - 按钮的容器元素。
- * @param {HTMLElement} insertBeforeElement - 新按钮会插在此元素之前。
- * @param {Array<object>} meaningGroups - 从 state.js 传入的原始意境分组对象数组。
+ * 动态生成年级筛选器按钮。
  */
-export function renderFilterButtons(filterContainer, insertBeforeElement, meaningGroups) {
+export function renderGradeButtons(container, grades) {
+    container.innerHTML = '';
+    const gradeMap = { 'grade7': 'Grade 7', 'grade8': 'Grade 8', 'grade9': 'Grade 9' };
+
+    const allButton = document.createElement('button');
+    allButton.className = 'grade-filter-btn';
+    allButton.dataset.grade = 'all';
+    allButton.textContent = 'All Grades';
+    container.appendChild(allButton);
+
+    grades.forEach(gradeId => {
+        const button = document.createElement('button');
+        button.className = 'grade-filter-btn';
+        button.dataset.grade = gradeId;
+        button.textContent = gradeMap[gradeId] || gradeId;
+        container.appendChild(button);
+    });
+}
+
+/**
+ * 更新年级筛选器按钮的激活状态。
+ */
+export function updateActiveGradeButton(container, clickedButton) {
+    container.querySelectorAll('.grade-filter-btn').forEach(btn => btn.classList.remove('active'));
+    clickedButton.classList.add('active');
+}
+
+/**
+ * 渲染固定的内容类型筛选器按钮。
+ */
+export function renderContentTypeButtons(container) {
+    container.innerHTML = '';
+    const types = [
+        { type: 'all', text: 'All Types' },
+        { type: 'pre', text: 'Prefix' },
+        { type: 'suf', text: 'Suffix' },
+        { type: 'root', text: 'Root' },
+        { type: 'category', text: 'General' }
+    ];
+    types.forEach(({ type, text }) => {
+        const button = document.createElement('button');
+        button.className = 'grade-filter-btn content-type-btn';
+        button.dataset.type = type;
+        button.textContent = text;
+        container.appendChild(button);
+    });
+}
+
+/**
+ * 更新内容类型筛选器按钮的激活状态。
+ */
+export function updateActiveContentTypeButton(container, clickedButton) {
+    container.querySelectorAll('.content-type-btn').forEach(btn => btn.classList.remove('active'));
+    clickedButton.classList.add('active');
+}
+
+/**
+ * 【核心改动】动态生成类别筛选器按钮，统一使用英文名。
+ */
+export function renderFilterButtons(filterContainer, insertBeforeElement, categories) {
+    filterContainer.querySelectorAll('.filter-btn').forEach(btn => btn.remove());
+
     const allButton = document.createElement('button');
     allButton.className = 'filter-btn active';
     allButton.dataset.filter = 'all';
-    allButton.textContent = '全部 (All)';
+    allButton.textContent = 'All';
     filterContainer.insertBefore(allButton, insertBeforeElement);
 
     const learnedButton = document.createElement('button');
     learnedButton.className = 'filter-btn';
     learnedButton.dataset.filter = 'learned';
-    learnedButton.textContent = '已掌握';
+    learnedButton.textContent = 'Learned';
     filterContainer.insertBefore(learnedButton, insertBeforeElement);
 
-    meaningGroups.forEach(group => {
-        if (!group.meaningId || !group.displayName) return;
+    categories.forEach(category => {
+        if (!category.meaningId) return;
+
         const button = document.createElement('button');
         button.className = 'filter-btn';
-        button.dataset.filter = group.meaningId;
-        button.textContent = group.displayName;
-        if (group.themeColor) {
-            button.dataset.themeColor = group.themeColor;
+        button.dataset.filter = category.meaningId;
+
+        // 【智能文本】根据内容类型决定按钮文本
+        let buttonText;
+        if (category.contentType === 'pre') {
+            buttonText = `${category.prefix}-`;
+        } else if (category.contentType === 'suf') {
+            buttonText = `-${category.prefix}`;
+        } else if (category.contentType === 'root') {
+            buttonText = `-${category.prefix}-`;
+        } else {
+            // 对于普通类别，使用 state 层处理好的纯英文名
+            buttonText = category.englishDisplayName;
+        }
+        button.textContent = buttonText;
+
+        if (category.themeColor) {
+            button.dataset.themeColor = category.themeColor;
         }
         filterContainer.insertBefore(button, insertBeforeElement);
     });
 }
 
+
 /**
- * 更新筛选器按钮的激活状态和样式。
+ * 更新类别筛选器按钮的激活状态和样式。
  */
 export function updateActiveFilterButton(filterContainer, clickedButton) {
     filterContainer.querySelectorAll('.filter-btn').forEach(btn => {
@@ -187,9 +245,10 @@ export function updateActiveFilterButton(filterContainer, clickedButton) {
     }
 }
 
-/**
- * 创建前缀介绍卡片DOM元素。
- */
+// =================================================================================
+// 卡片创建与交互函数
+// =================================================================================
+
 function createIntroCard(data) {
     const cardClone = prefixIntroTemplate.content.cloneNode(true).firstElementChild;
     if (data.themeColor) {
@@ -206,9 +265,6 @@ function createIntroCard(data) {
     return cardClone;
 }
 
-/**
- * 创建单词卡片DOM元素。
- */
 function createWordCard(data, handlers) {
     const cardClone = cardTemplate.content.cloneNode(true).firstElementChild;
     if (data.themeColor) {
@@ -225,8 +281,10 @@ function createWordCard(data, handlers) {
                         </svg>`;
 
     const badgeElement = cardClone.querySelector('.prefix-badge');
-    if (data.affixType === 'suffix') {
+    if (data.contentType === 'suf') {
         badgeElement.textContent = `-${data.prefix}`;
+    } else if (data.contentType === 'root') {
+        badgeElement.textContent = `-${data.prefix}-`;
     } else {
         badgeElement.textContent = `${data.prefix}-`;
     }
@@ -251,30 +309,22 @@ function createWordCard(data, handlers) {
         data.sentences.forEach((sentence, index) => {
             const sentenceBlock = document.createElement('div');
             sentenceBlock.className = 'sentence-block';
-
             const sentenceEn = document.createElement('div');
             sentenceEn.className = 'sentence-en';
             sentenceEn.innerHTML = sentence.en.replace(combinedPattern, `<strong style="color: var(--theme-color, black);">$1</strong>`);
-
             const sentenceCn = document.createElement('div');
             sentenceCn.className = 'sentence-cn';
             sentenceCn.textContent = sentence.cn;
-
             const audioBtn = document.createElement('button');
             audioBtn.className = 'audio-btn sentence-audio';
             audioBtn.title = '朗读例句';
-            audioBtn.innerHTML = `<span>🔊 听例句 ${data.sentences.length > 1 ? index + 1 : ''}</span>`;
+            audioBtn.innerHTML = `<span>🔊 Listen ${data.sentences.length > 1 ? index + 1 : ''}</span>`;
             audioBtn.addEventListener('click', (e) => {
                 e.stopPropagation();
-
-                // --- 【核心修改】使用新的函数生成正确的音频文件名 ---
                 const sentenceSlug = sanitizeForFilename(sentence.en);
                 const sentenceAudioPath = `audio/sentences/${data.word.toLowerCase()}_${sentenceSlug}.mp3`;
-                // ---------------------------------------------------
-
                 playAudioFile(sentenceAudioPath);
             });
-
             sentenceBlock.appendChild(sentenceEn);
             sentenceBlock.appendChild(sentenceCn);
             sentenceBlock.appendChild(audioBtn);
@@ -282,7 +332,6 @@ function createWordCard(data, handlers) {
         });
     }
 
-    // 事件绑定
     cardClone.addEventListener('click', (e) => {
         if (!e.target.closest('.audio-btn, .toggle-prefix-btn, .mark-btn')) {
             cardClone.classList.toggle('is-flipped');
@@ -317,68 +366,41 @@ export function createCard(data, handlers) {
     return data.cardType === 'intro' ? createIntroCard(data) : createWordCard(data, handlers);
 }
 
-
-// =================================================================================
-// 【功能 UI 逻辑】
-// =================================================================================
-
-/**
- * 切换无图自测模式 (Toggle No-Visual Mode)
- * @param {HTMLElement} btnElement - 触发该操作的按钮元素
- */
 export function toggleNoVisualMode(btnElement) {
     const isEnabled = document.body.classList.toggle('mode-no-visual');
     btnElement.classList.toggle('active', isEnabled);
-
     const eyeOpen = btnElement.querySelector('.icon-eye-open');
     const eyeSlash = btnElement.querySelector('.icon-eye-slash');
     if (eyeOpen && eyeSlash) {
         eyeOpen.style.display = isEnabled ? 'none' : 'block';
         eyeSlash.style.display = isEnabled ? 'block' : 'none';
     }
-    btnElement.title = isEnabled ? "关闭无图自测模式" : "开启无图自测模式";
+    btnElement.title = isEnabled ? "Hide Visuals" : "Show Visuals";
 }
 
-/**
- * 显示听力模式模态框
- */
+// =================================================================================
+// 听力模式模态框函数
+// =================================================================================
+
 export function showListeningModal() {
     const modal = document.getElementById('listening-modal');
     if (modal) {
         modal.style.display = 'flex';
-        // 缓存 DOM 引用，提高性能
         if (!listeningModalElements) {
             listeningModalElements = {
-                modal: modal,
-                word: modal.querySelector('.listening-word'),
-                meaning: modal.querySelector('.listening-meaning'),
-                sentenceEn: modal.querySelector('.listening-sentence-en'),
-                sentenceCn: modal.querySelector('.listening-sentence-cn'),
-                placeholder: modal.querySelector('.listening-hidden-placeholder'),
-                revealedContent: modal.querySelector('.listening-revealed-content'),
-                waves: document.getElementById('audio-waves'),
-                sourceToggle: document.getElementById('audio-source-toggle')
+                modal: modal, word: modal.querySelector('.listening-word'), meaning: modal.querySelector('.listening-meaning'), sentenceEn: modal.querySelector('.listening-sentence-en'), sentenceCn: modal.querySelector('.listening-sentence-cn'), placeholder: modal.querySelector('.listening-hidden-placeholder'), revealedContent: modal.querySelector('.listening-revealed-content'), waves: document.getElementById('audio-waves'), sourceToggle: document.getElementById('audio-source-toggle')
             };
         }
-
-        handleEscKeydown = (event) => {
-            if (event.key === 'Escape') {
-                hideListeningModal();
-            }
-        };
+        handleEscKeydown = (event) => { if (event.key === 'Escape') hideListeningModal(); };
         document.addEventListener('keydown', handleEscKeydown);
     }
 }
 
-/**
- * 隐藏听力模式模态框并重置状态
- */
 export function hideListeningModal() {
     const modal = document.getElementById('listening-modal');
     if (modal && modal.style.display !== 'none') {
         modal.style.display = 'none';
         stopAudio();
-
         if (handleEscKeydown) {
             document.removeEventListener('keydown', handleEscKeydown);
             handleEscKeydown = null;
@@ -386,53 +408,33 @@ export function hideListeningModal() {
     }
 }
 
-/**
- * 更新听力模态框的内容
- * @param {object} data - 单词数据对象
- * @param {number} sentenceIndex - 要使用的例句索引
- */
 export function updateListeningCard(data, sentenceIndex) {
     if (!listeningModalElements) return;
-
     const els = listeningModalElements;
-
     els.placeholder.style.display = 'block';
     els.revealedContent.style.display = 'none';
-
     els.word.textContent = data.word;
     els.meaning.textContent = data.translation;
-
     if (data.sentences && data.sentences[sentenceIndex]) {
         els.sentenceEn.innerHTML = data.sentences[sentenceIndex].en;
         els.sentenceCn.textContent = data.sentences[sentenceIndex].cn;
     } else {
-        els.sentenceEn.textContent = "（暂无例句）";
+        els.sentenceEn.textContent = "（No example sentence）";
         els.sentenceCn.textContent = "";
     }
 }
 
-/**
- * 揭晓听力答案
- */
 export function revealListeningAnswer() {
     if (!listeningModalElements) return;
     listeningModalElements.placeholder.style.display = 'none';
     listeningModalElements.revealedContent.style.display = 'block';
 }
 
-/**
- * 获取当前听力模式是播放单词还是例句
- * @returns {boolean} true 表示播放例句, false 表示播放单词
- */
 export function isPlaySentenceMode() {
     if (!listeningModalElements) return true;
     return listeningModalElements.sourceToggle.checked;
 }
 
-/**
- * 设置声波动画状态
- * @param {boolean} isPlaying
- */
 export function setAudioWaveAnimation(isPlaying) {
     if (!listeningModalElements || !listeningModalElements.waves) return;
     if (isPlaying) {

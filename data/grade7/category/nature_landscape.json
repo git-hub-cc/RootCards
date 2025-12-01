@@ -1,0 +1,103 @@
+{
+  "prefix": "Nature",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_nature_landscape",
+      "displayName": "自然景观 (Natural Landscapes)",
+      "themeColor": "#22c55e",
+      "prefixVisual": "<path d='M3 20 l 6-12 5 6 4-8 5 14' stroke='currentColor' fill='none'/><circle cx='18' cy='5' r='3' fill='currentColor' opacity='0.2'/>",
+      "prefixIntro": {
+        "title": "自然景观",
+        "description": "从高山到大海，从森林到田野，感受大自然的壮丽与宁静。",
+        "imagery": "一幅展开的山水画卷，描绘着连绵的山脉和广阔的海洋。"
+      },
+      "words": [
+        {
+          "word": "mountain",
+          "rootVisual": "<path d='M2 20 l6-12 5 6 4-8 5 14' />",
+          "breakdown": ["mountain", "(高山)"],
+          "imagery": "一条连绵起伏的锯齿状线条勾勒出山脉雄伟的天际线，捕捉了山峰与山谷的起伏韵律。这是大地伸向天空的原始签名.",
+          "translation": "高山",
+          "sentences": [
+            { "en": "There are so many mountains in Shanxi Province.", "cn": "山西省有很多山。" }
+          ]
+        },
+        {
+          "word": "Forest",
+          "rootVisual": "<path d='M12 2 L16 10 H8 Z M6 10 L10 18 H2 Z M18 10 L22 18 H14 Z' stroke='currentColor' fill='none' stroke-width='1.5'/>",
+          "breakdown": ["Forest", "(森林)"],
+          "imagery": "三棵树木（三角形）聚集在一起，独木不成林。",
+          "translation": "森林",
+          "sentences": [
+            { "en": "Thousands of animals live in the forest.", "cn": "成千上万的动物生活在森林里。" }
+          ]
+        },
+        {
+          "word": "sea",
+          "rootVisual": "<path d='M2 12 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M2 16 q 4 4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["Sea", "(海洋)"],
+          "imagery": "几条起伏的波浪线，代表着广阔的海洋。",
+          "translation": "海洋",
+          "sentences": [
+            { "en": "I love the sea.", "cn": "我爱大海。" }
+          ]
+        },
+        {
+          "word": "seaside",
+          "rootVisual": "<path d='M2 12 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M2 18 h20' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["Sea", "(海)", "Side", "(边)"],
+          "imagery": "波浪线紧挨着一条水平线，形象地表示出海洋与陆地交接的海边。",
+          "translation": "海边",
+          "sentences": [
+            { "en": "We spent the summer at the seaside.", "cn": "我们在海边度过了夏天。" }
+          ]
+        },
+        {
+          "word": "Beach",
+          "rootVisual": "<path d='M2 18 q 5 -3 10 0 t 10 0' stroke='currentColor' fill='none'/><circle cx='6' cy='6' r='3' stroke='currentColor' fill='none'/><path d='M6 6 l2 2 M6 6 l0 3 M6 6 l-2 2' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": ["Beach", "(海滩)"],
+          "imagery": "波浪线代表海水，圆圈代表太阳。",
+          "translation": "海滩",
+          "sentences": [
+            { "en": "Lying on the beach is very relaxing.", "cn": "躺在海滩上非常放松。" },
+            { "en": "Let's go to the beach this weekend.", "cn": "这周末我们去海滩吧。" }
+          ]
+        },
+        {
+          "word": "nature",
+          "rootVisual": "<path d='M3 20 l 9 -15 l 9 15 h -18 z' stroke='currentColor' fill='none'/><path d='M9 10 l 4 7' stroke='currentColor'/><circle cx='17' cy='6' r='3' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "nature",
+            "(自然)"
+          ],
+          "imagery": "巍峨的山脉（大地）与天边的太阳（天空）共同构成了“自然”这个宏大的概念。",
+          "translation": "自然",
+          "sentences": [
+            { "en": "The student should develop some skills to live in nature.", "cn": "学生应该培养一些在自然界中生存的技能。" }
+          ]
+        },
+        {
+          "word": "wild",
+          "rootVisual": "<path d='M12 2 v20 M12 6 l-6 4 M12 12 l6 4 M12 18 l-6 4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["Wild", "(野生的)"],
+          "imagery": "一株带刺的、自由生长的植物，象征着不受驯服的野生状态。",
+          "translation": "野生的",
+          "sentences": [
+            { "en": "I love the wild horses in the picture. They are so lovely.", "cn": "我喜欢照片里的野马。它们太可爱了。" }
+          ]
+        },
+        {
+          "word": "countryside",
+          "rootVisual": "<path d='M2 18 C 6 14, 8 14, 12 18 S 18 22, 22 18' stroke='currentColor' fill='none' stroke-width='2'/><rect x='14' y='14' width='4' height='4' stroke='currentColor' fill='none'/><path d='M16 18 v-2 h-1' stroke='currentColor' fill='none'/>",
+          "breakdown": ["Country", "(国家/乡野)", "Side", "(边)"],
+          "imagery": "连绵起伏的山丘和田野，远处有一座小房子，描绘了宁静的乡村景象。",
+          "translation": "农村",
+          "sentences": [
+            { "en": "Life in the countryside is boring.", "cn": "农村的生活很无聊。" }
+          ]
+        }
+      ]
+    }
+  ]
+}

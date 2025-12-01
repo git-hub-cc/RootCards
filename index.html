@@ -61,10 +61,22 @@
         </p>
     </div>
 
+    <!-- 年级筛选器容器 -->
+    <div class="grade-filter-container" id="grade-filter-container">
+        <!-- 年级按钮将由 JavaScript 动态生成并插入在这里 -->
+    </div>
+
+    <!-- ==================== 【新增】内容类型筛选器容器 ==================== -->
+    <div class="content-type-filter-container" id="content-type-filter-container">
+        <!-- 内容类型按钮 (前缀/后缀/词根/普通) 将由 JavaScript 生成并插入在这里 -->
+    </div>
+    <!-- ==================== 新增容器结束 ==================== -->
+
+    <!-- 类别筛选器容器 -->
     <div class="filter-container" id="filter-container">
         <!-- 筛选器按钮将由 JavaScript 动态生成并插入在这里 -->
 
-        <!-- 【新增】听力磨耳朵模式按钮 -->
+        <!-- 听力磨耳朵模式按钮 -->
         <button class="icon-btn" id="listening-mode-btn" title="听力磨耳朵模式 (Listening Mode)">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
@@ -72,7 +84,7 @@
             </svg>
         </button>
 
-        <!-- 【新增】无图自测模式按钮 -->
+        <!-- 无图自测模式按钮 -->
         <button class="icon-btn" id="no-visual-btn" title="开启无图自测模式 (Hide Visuals)">
             <svg class="icon-eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
@@ -136,7 +148,7 @@
     </div>
 </main>
 
-<!-- ======================= 【新增】听力模式模态框 ======================= -->
+<!-- ======================= 听力模式模态框 ======================= -->
 <div id="listening-modal" class="modal-overlay" style="display: none;">
     <div class="modal-content">
         <button class="modal-close-btn" id="listening-close-btn" title="退出听力模式">
@@ -152,8 +164,8 @@
                 <label for="audio-source-toggle" class="listening-label">单词</label>
                 <div class="toggle-switch">
                     <label for="audio-source-toggle">
-                    <input type="checkbox" id="audio-source-toggle" checked> <!-- 默认 checked 为例句 -->
-                    <span class="slider"></span>
+                        <input type="checkbox" id="audio-source-toggle" checked> <!-- 默认 checked 为例句 -->
+                        <span class="slider"></span>
                     </label>
                 </div>
                 <label for="audio-source-toggle" class="listening-label">例句</label>

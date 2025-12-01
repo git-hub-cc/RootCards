@@ -1,0 +1,187 @@
+{
+  "prefix": "Interaction",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_interaction_communication",
+      "displayName": "互动与交流 (Interaction & Communication)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M6 8 a 4 4 0 0 1 4 -4 h4 a 4 4 0 0 1 4 4 v8 a 4 4 0 0 1 -4 4 h-2 l-4 4 v-4 h-2 a 4 4 0 0 1 -4 -4 z' stroke='currentColor' fill='none' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "互动与交流",
+        "description": "涵盖人与人之间的沟通、社交行为以及与物品的互动。",
+        "imagery": "两个对话气泡相互交叠，象征着思想和信息的顺畅交流。"
+      },
+      "words": [
+        {
+          "word": "shout",
+          "rootVisual": "<path d='M4 8 h4 l4 8 h-4 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 8 h2 M12 12 h4 M12 16 h2' stroke='currentColor' stroke-linecap='round'/>",
+          "breakdown": ["shout", "(喊叫)"],
+          "imagery": "声音像从扩音器中爆发出来，音量极大，向外扩散。",
+          "translation": "喊叫",
+          "sentences": [
+            { "en": "My mum used to shout to me, \"Bill, come home for dinner!\"", "cn": "我妈妈过去常对我喊：‘比尔，回家吃饭了！’" },
+            { "en": "My father never shouts at my mum.", "cn": "我爸爸从不朝我妈妈大喊大叫。" }
+          ]
+        },
+        {
+          "word": "sing",
+          "rootVisual": "<circle cx='6' cy='14' r='2' fill='currentColor'/><path d='M8 14 q 4 -8 8 0' stroke='currentColor' fill='none' stroke-width='2' /><path d='M16 14 v-8 l4 2' stroke='currentColor' fill='none' stroke-width='2' />",
+          "breakdown": ["sing / singer", "(唱/歌手)"],
+          "imagery": "优美的旋律化作音符，从口中轻快地飘出。",
+          "translation": "唱；歌手",
+          "sentences": [
+            { "en": "The singer is singing the famous song \"Take Me to Your Heart\".", "cn": "那位歌手正在演唱著名歌曲《带我入心》。" }
+          ]
+        },
+        {
+          "word": "describe",
+          "rootVisual": "<path d='M4 4 h16 v12 h-8 l-4 4 v-4 h-4 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 8 h8 M8 12 h4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["De-", "(向下)", "Scribe", "(写)"],
+          "imagery": "一个对话框，里面有几行文字，表示用语言进行描述。",
+          "translation": "描述",
+          "sentences": [
+            { "en": "Can you describe the phone?", "cn": "你能描述一下这部手机吗？" }
+          ]
+        },
+        {
+          "word": "description",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 8 h8 M8 12 h8 M8 16 h4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["Describe", "(描述)", "-tion", "(名词)"],
+          "imagery": "一张写满文字的纸，代表详细的文字描述。",
+          "translation": "描述",
+          "sentences": [
+            { "en": "This is the description of the phone.", "cn": "这是这部手机的描述。" }
+          ]
+        },
+        {
+          "word": "message",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 7 l8 5 l8 -5' stroke='currentColor' fill='none'/>",
+          "breakdown": ["message", "(信息)"],
+          "imagery": "一个紧闭的信封图标，代表着待传递或已接收的信息。",
+          "translation": "信息",
+          "sentences": [
+            { "en": "When I get up every morning, there are so many messages to read.", "cn": "每天早上起床时，都有很多信息要读。" }
+          ]
+        },
+        {
+          "word": "take a message",
+          "rootVisual": "<path d='M4 4 h16 v12 h-8 l-4 4 v-4 h-4 z' stroke='currentColor' fill='none' stroke-width='2' opacity='0.5'/><rect x='6' y='6' width='12' height='8' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 9 h8 M8 12 h5' stroke='currentColor'/>",
+          "breakdown": ["take a message", "(捎口信)"],
+          "imagery": "将口头的话语（对话气泡）转录到一张便签纸上，以便传递。",
+          "translation": "捎口信",
+          "sentences": [
+            { "en": "I am afraid he's not here today. Can I take a message?", "cn": "恐怕他今天不在这里。我能帮您捎个口信吗？" }
+          ]
+        },
+        {
+          "word": "language",
+          "rootVisual": "<path d='M6 8 a 4 4 0 0 1 4 -4 h4 a 4 4 0 0 1 4 4 v8 a 4 4 0 0 1 -4 4 h-2 l-4 4 v-4 h-2 a 4 4 0 0 1 -4 -4 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M10 10 h4' stroke='currentColor'/><path d='M10 14 h2' stroke='currentColor'/>",
+          "breakdown": ["language", "(语言)"],
+          "imagery": "一个对话气泡，象征着沟通和交流，是语言最核心的功能。",
+          "translation": "语言",
+          "sentences": [
+            { "en": "What language do you speak?", "cn": "你说什么语言？" }
+          ]
+        },
+        {
+          "word": "silence",
+          "rootVisual": "<path d='M11 5 L6 9 H2 V15 H6 L11 19 V5 Z' stroke='currentColor' fill='none'/><line x1='16' y1='9' x2='20' y2='15' stroke='currentColor'/><line x1='20' y1='9' x2='16' y2='15' stroke='currentColor'/>",
+          "breakdown": ["silentium", "(寂静)"],
+          "imagery": "扬声器旁一个大大的叉号，表示没有声音。",
+          "translation": "沉默 (名词)",
+          "sentences": [{"en": "There was a brief silence before anyone answered.", "cn": "在有人回答之前，有一阵短暂的沉默。"}]
+        },
+        {
+          "word": "silent",
+          "rootVisual": "<path d='M11 5 L6 9 H2 V15 H6 L11 19 V5 Z' stroke='currentColor' fill='none'/><circle cx='18' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": ["silere", "(安静)"],
+          "imagery": "扬声器旁只有一个小点，表示状态是安静的。",
+          "translation": "沉默的 (形容词)",
+          "sentences": [{"en": "The crowd kept silent when the president appeared.", "cn": "当总统出现时，人群保持沉默。"}]
+        },
+        {
+          "word": "noise",
+          "rootVisual": "<path d='M6 9 v6' stroke='currentColor' stroke-width='2'/><path d='M11 5 v14' stroke='currentColor' stroke-width='2'/><path d='M16 10 v4' stroke='currentColor' stroke-width='2'/><path d='M21 7 v10' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["noise", "(噪音)"],
+          "imagery": "混乱无序的声波线条，高低错落，象征着刺耳、不和谐的声音。",
+          "translation": "噪音",
+          "sentences": [
+            { "en": "There is so much noise outside. It's too noisy.", "cn": "外面噪音很大。太吵了。" }
+          ]
+        },
+        {
+          "word": "Fight",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M18.5 7a6.5 6.5 0 0 0-11.6-4 4 4 0 0 0-1.4 7v6a3 3 0 0 0 3 3h7a3 3 0 0 0 3-3V7z M6 9a2 2 0 1 0 0 4h2 M8,19 H16 A1,1 0 0 1 17,20 V21 A1,1 0 0 1 16,22 H8 A1,1 0 0 1 7,21 V20 A1,1 0 0 1 8,19' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
+          "breakdown": ["Fight", "(打架/战斗)"],
+          "imagery": "戴上厚重的拳击手套，站在擂台上准备迎接激烈的交锋。",
+          "translation": "打架；战斗",
+          "sentences": [
+            { "en": "The two men are fighting over a girl.", "cn": "这两个男人为了一个女孩在打架。" }
+          ]
+        },
+        {
+          "word": "pick",
+          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 12 8 L 10 12 l 2 -4 l 2 4 Z L 12 8 v -4 M 8 12 v 8 h 8 v -8' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
+          "breakdown": ["pick", "(挑选；摘)"],
+          "imagery": "一只手（或夹子）正从上方精准地抓取一个小物体，强调“拾取”的动作。",
+          "translation": "挑选；摘",
+          "sentences": [
+            { "en": "Please pick a card.", "cn": "请选一张牌。" }
+          ]
+        },
+        {
+          "word": "pick up",
+          "rootVisual": "<path d='M8 12 v8 h8 v-8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 12 l-2 -4 h4 z' stroke='currentColor' fill='currentColor' fill-opacity='0.2'/><path d='M12 8 v-4 m-2 2 l2 -2 l2 2' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["pick up", "(捡起来)"],
+          "imagery": "一只手（或夹子）抓取物体，并附加一个向上的箭头，明确表示“捡起来”的方向。",
+          "translation": "捡起来",
+          "sentences": [
+            { "en": "The little girl is picking up shells.", "cn": "小女孩正在捡贝壳。" }
+          ]
+        },
+        {
+          "word": "pay",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='2' stroke='currentColor' fill='none'/>",
+          "breakdown": ["pay", "(支付)"],
+          "imagery": "一张中间带有圆形图案的钞票，是金钱和支付的通用符号。",
+          "translation": "支付",
+          "sentences": [
+            { "en": "I'll pay the bill.", "cn": "我来付账。" }
+          ]
+        },
+        {
+          "word": "payment",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='2' stroke='currentColor' fill='none'/><path d='M20 12 h4 l-2 -2 m2 2 l-2 2' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["payment", "(支付 - 名词)"],
+          "imagery": "一张钞票，旁边有一个指向前方的箭头，表示金钱的“付出”或“转移”。",
+          "translation": "支付（名词）",
+          "sentences": [
+            { "en": "He made a down payment on a new car.", "cn": "他为一辆新车付了首付。" }
+          ]
+        },
+        {
+          "word": "spend",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2' stroke-dasharray='3 2'/><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M12 8 v8 M8 12 h8' stroke='currentColor' fill='none'/><path d='M18 6 l4 -4 M18 6 h3 v-3' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["spend / cost / take", "(花费)"],
+          "imagery": "一枚钱币或时间（钟表）长出了翅膀，从手中飞走，表示“花费”。",
+          "translation": "花费",
+          "sentences": [
+            { "en": "I spend a lot of money on makeup every year.", "cn": "我每年花很多钱在化妆品上。" },
+            { "en": "My car cost me 200,000 yuan.", "cn": "我的车花了我20万元。" }
+          ]
+        },
+        {
+          "word": "post",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><rect x='14' y='4' width='4' height='4' rx='1' stroke='currentColor' fill='none'/><path d='M14 6 h-4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["post", "(邮寄)"],
+          "imagery": "一张贴好邮票的信封，代表着即将被邮寄的信件。",
+          "translation": "邮寄",
+          "sentences": [
+            { "en": "I need to post this letter.", "cn": "我需要寄这封信。" }
+          ]
+        }
+      ]
+    }
+  ]
+}
