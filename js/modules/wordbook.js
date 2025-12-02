@@ -1,15 +1,16 @@
 // =================================================================================
-// 单词本管理模块 (Wordbook Management Module) - v2.1 (集成撤销删除)
+// 单词本管理模块 (Wordbook Management Module) - v2.2 (集成通知管理器)
 // ---------------------------------------------------------------------------------
 // 职责:
 // 1. 管理“管理单词本”模态框的所有UI交互和视图切换。
-// 2. 实现单词本的 CRUD 逻辑，删除操作现在支持撤销。
+// 2. 实现单词本的 CRUD 逻辑，删除操作支持撤销。
 // 3. 使用 compromise.js (nlp) 库提取单词。
 // =================================================================================
 
 import * as State from '../state.js';
-// 【新增】导入 UndoManager 以使用撤销功能
 import * as UndoManager from './undoManager.js';
+// 【新增】导入新的通知管理器
+import * as NotificationManager from './notificationManager.js';
 
 // --- 模块内部状态 ---
 const state = {
@@ -61,7 +62,7 @@ function cacheElements() {
 }
 
 // =================================================================================
-// 通用逻辑函数 (保持不变)
+// 通用逻辑函数
 // =================================================================================
 
 function extractWordsFromText(text) {
@@ -111,7 +112,6 @@ function renderWordbookList() {
     wordbooks.forEach(wb => {
         const row = document.createElement('div');
         row.className = 'wordbook-item-row';
-        // 使用 dataset 存储名称，方便后续操作获取
         row.dataset.wordbookName = wb.name;
 
         if (State.currentFilter === wb.name) {
@@ -141,7 +141,7 @@ function renderWordbookList() {
 }
 
 // =================================================================================
-// 编辑器视图 (Editor) 逻辑 (保持不变)
+// 编辑器视图 (Editor) 逻辑
 // =================================================================================
 function renderEditorWords() {
     elements.wordsListContainer.innerHTML = '';
@@ -241,6 +241,10 @@ function handleExtract() {
         state.isExtracting = false;
     }, 50);
 }
+/**
+ * 处理保存操作。
+ * @param {function} onDataChange - 数据变更后的回调函数。
+ */
 function handleSave(onDataChange) {
     const newName = elements.nameInput.value.trim();
     const finalWords = state.wordsList
@@ -256,7 +260,8 @@ function handleSave(onDataChange) {
         }
         switchView('list');
     } catch (e) {
-        alert(e.message);
+        // 【修改】使用Toast通知代替alert
+        NotificationManager.show({ type: 'error', message: e.message });
     }
 }
 
@@ -294,27 +299,21 @@ export function init(startBtn, optionsMenu, onDataChange) {
         if (action === 'edit') {
             initEditMode(name);
         } else if (action === 'delete') {
-            // 【核心修改】替换 confirm 弹窗为撤销逻辑
             const rowElement = elements.listContainer.querySelector(`.wordbook-item-row[data-wordbook-name="${name}"]`);
             if (!rowElement) return;
 
-            // 1. 立即进行视觉标记
             rowElement.classList.add('is-pending-removal');
 
-            // 2. 定义确认和撤销操作
             const onConfirm = () => {
                 State.deleteWordbook(name);
-                // 真实删除后，只需移除该行即可，无需重新渲染整个列表，性能更好
                 rowElement.remove();
                 if (onDataChange) onDataChange('delete', null, name);
             };
 
             const onUndo = () => {
-                // 恢复视觉状态
                 rowElement.classList.remove('is-pending-removal');
             };
 
-            // 3. 显示撤销通知
             UndoManager.show({
                 message: `单词本 "${name}" 已删除。`,
                 onConfirm: onConfirm,

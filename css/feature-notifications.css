@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Feature: Notification Toast Styles - 全局通知样式 (v1.0)
+   --------------------------------------------------------------------------
+   职责:
+   - 定义全局通知栏（Toast）的样式。
+   - 支持成功 (success)、错误 (error)、信息 (info) 三种类型。
+   - 自动适应明暗主题。
+   ========================================================================== */
+
+/* --- 容器基础样式 --- */
+.notification-toast {
+    position: fixed;
+    /* 位置设定在顶部中央，比右下角更醒目 */
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    min-width: 280px;
+    max-width: 400px;
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-hover);
+    border: 1px solid var(--border-color);
+    border-left-width: 5px; /* 左侧的彩色边框，用于区分类型 */
+    z-index: 10000; /* 确保在最顶层 */
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    /* 默认隐藏，通过 is-visible 类来显示 */
+    visibility: hidden;
+    opacity: 0;
+    /* 动画效果：从上方滑入 */
+    transform: translate(-50%, -20px);
+    transition: visibility 0.3s, opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* --- 可见状态 --- */
+.notification-toast.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+/* --- 内部元素 --- */
+.notification-icon {
+    flex-shrink: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.notification-message {
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* --- 通知类型修饰符 --- */
+
+/* 1. 成功 (Success) */
+.toast--success {
+    border-left-color: #10b981; /* 绿色 */
+}
+.toast--success .notification-icon {
+    color: #10b981;
+}
+
+/* 2. 错误 (Error) */
+.toast--error {
+    border-left-color: #ef4444; /* 红色 */
+}
+.toast--error .notification-icon {
+    color: #ef4444;
+}
+
+/* 3. 信息 (Info) */
+.toast--info {
+    border-left-color: #3b82f6; /* 蓝色 */
+}
+.toast--info .notification-icon {
+    color: #3b82f6;
+}
+
+
+/* --- 响应式调整 --- */
+@media (max-width: 600px) {
+    .notification-toast {
+        /* 在小屏幕上，宽度几乎占满，并保留左右边距 */
+        left: 1rem;
+        right: 1rem;
+        width: auto;
+        transform: none; /* 移除 translateX(-50%) */
+        /* 动画调整 */
+        transform: translateY(-20px);
+    }
+    .notification-toast.is-visible {
+        transform: translateY(0);
+    }
+}

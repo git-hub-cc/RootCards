@@ -1,12 +1,15 @@
 // =================================================================================
-// 数据管理模块 (Data Management Module) - v1.0
+// 数据管理模块 (Data Management Module) - v1.1 (集成通知管理器)
 // ---------------------------------------------------------------------------------
 // 职责:
 // 1. 封装数据的导入和导出功能。
 // 2. 提供一个统一的初始化入口来绑定相关UI事件。
+// 3. 使用非阻塞的Toast通知提供操作反馈。
 // =================================================================================
 
 import * as State from '../state.js';
+// 【新增】导入新的通知管理器
+import * as NotificationManager from './notificationManager.js';
 
 // --- 内部变量 ---
 // 缓存DOM元素引用，避免在事件处理中重复查询
@@ -35,7 +38,11 @@ function triggerJsonDownload(dataObject, filename) {
         URL.revokeObjectURL(url);
     } catch (error) {
         console.error('创建下载文件时出错:', error);
-        alert('抱歉，创建下载文件时发生错误，请检查控制台获取详细信息。');
+        // 【修改】使用Toast通知代替alert
+        NotificationManager.show({
+            type: 'error',
+            message: '创建下载文件时发生错误，请检查控制台。'
+        });
     }
 }
 
@@ -52,7 +59,11 @@ function handleExport(type) {
         dataToExport = State.getLearnedWordsArray();
         filename = `rootcards-learned-words-${timestamp}.json`;
         if (dataToExport.length === 0) {
-            alert('您还没有标记任何单词为“已掌握”，无需导出。');
+            // 【修改】使用Toast通知代替alert
+            NotificationManager.show({
+                type: 'info',
+                message: '您还没有标记任何单词为“已掌握”，无需导出。'
+            });
             return;
         }
     } else if (type === 'current') {
@@ -61,7 +72,11 @@ function handleExport(type) {
             .map(item => item.word);
         filename = `rootcards-current-view-${timestamp}.json`;
         if (dataToExport.length === 0) {
-            alert('当前视图中没有单词可供导出。');
+            // 【修改】使用Toast通知代替alert
+            NotificationManager.show({
+                type: 'info',
+                message: '当前视图中没有单词可供导出。'
+            });
             return;
         }
     } else {
@@ -97,17 +112,30 @@ function handleImport(event, onImported) {
                 onImported();
             }
 
-            alert(`✅ 导入成功！\n新增了 ${newCount} 个“已掌握”的单词。`);
+            // 【修改】使用Toast通知代替alert
+            NotificationManager.show({
+                type: 'success',
+                message: `导入成功！新增了 ${newCount} 个“已掌握”的单词。`
+            });
+
         } catch (error) {
             console.error('导入失败:', error);
-            alert(`❌ 导入失败！\n错误信息: ${error.message}`);
+            // 【修改】使用Toast通知代替alert
+            NotificationManager.show({
+                type: 'error',
+                message: `导入失败！${error.message}`
+            });
         } finally {
             // 无论成功与否，都重置 input 的值，以便用户可以再次选择同一个文件
             event.target.value = null;
         }
     };
     reader.onerror = () => {
-        alert('❌ 读取文件时发生错误，请重试。');
+        // 【修改】使用Toast通知代替alert
+        NotificationManager.show({
+            type: 'error',
+            message: '读取文件时发生错误，请重试。'
+        });
         event.target.value = null;
     };
     reader.readAsText(file);

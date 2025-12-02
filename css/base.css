@@ -29,7 +29,7 @@
 
     /* 4. 特殊/状态颜色 */
     --color-learned: #f59e0b; /* "已掌握" 状态的颜色 (金色) */
-    --theme-color-default: #333; /* 默认的主题色，用于“全部”按钮 */
+    --theme-color-default: #999; /* 默认的主题色，用于“全部”按钮 */
 
     /* 5. 阴影 */
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);

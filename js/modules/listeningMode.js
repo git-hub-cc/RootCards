@@ -1,29 +1,31 @@
 // =================================================================================
-// 听力模式模块 (Listening Mode Module) - v1.0
+// 听力模式模块 (Listening Mode Module) - v1.1 (集成通知/新UI流程)
 // ---------------------------------------------------------------------------------
 // 职责:
 // 1. 管理“听力磨耳朵”模态框的所有UI交互和状态。
 // 2. 处理播放列表的生成和音频播放逻辑。
-// 3. 完全封装，仅通过 init 方法暴露启动入口。
+// 3. 采用非阻塞的Toast通知和动态UI来处理练习结束流程。
 // =================================================================================
 
 import * as State from '../state.js';
 import { playAudioFile, stopAudio, sanitizeForFilename } from '../ui.js';
+// 【新增】导入新的通知管理器
+import * as NotificationManager from './notificationManager.js';
 
 // --- 模块内部状态 ---
 const state = {
     playlist: [],           // 当前播放列表（单词索引数组）
     currentData: null,      // 当前正在练习的单词数据
-    currentSentenceIndex: 0 // 当前例句的索引
+    currentSentenceIndex: 0,// 当前例句的索引
+    // 【新增】用于标记会话是否已结束
+    isSessionEnded: false,
 };
 
 // --- 模块内部DOM元素缓存 ---
 const elements = {};
 
-// --- 内部函数 ---
-
 /**
- * 缓存所有与听力模式相关的DOM元素，提高性能并增强鲁棒性。
+ * 缓存所有与听力模式相关的DOM元素。
  * @returns {boolean} - 如果所有元素都找到则返回 true，否则返回 false。
  */
 function cacheElements() {
@@ -106,16 +108,42 @@ function updateCardUI() {
 }
 
 /**
+ * 显示答案。
+ */
+function revealAnswer() {
+    elements.placeholder.classList.add('is-hidden');
+    elements.revealedContent.classList.remove('is-hidden');
+}
+
+/**
+ * 【核心修改】处理“下一个/重新开始”按钮的点击事件。
+ */
+function handleNextOrRestart() {
+    // 如果会话已结束，此按钮的功能是“重新开始”
+    if (state.isSessionEnded) {
+        startSession(); // 直接开始新一轮
+    } else {
+        playNextItem(); // 否则，播放下一个项目
+    }
+}
+
+/**
  * 播放列表中的下一个项目。
  */
 function playNextItem() {
     if (state.playlist.length === 0) {
         state.currentData = null;
-        if (confirm('🎉 本组单词练习完毕！是否重新开始？')) {
-            startSession();
-        } else {
-            hideModal();
-        }
+        state.isSessionEnded = true;
+
+        // 【修改】移除 confirm，改用 Toast + UI变更
+        NotificationManager.show({
+            type: 'success',
+            message: '🎉 本组单词练习完毕！'
+        });
+
+        // 动态修改按钮的文本和功能，并将“揭晓答案”按钮隐藏
+        elements.nextBtn.textContent = '🔁 重新开始';
+        elements.revealBtn.style.display = 'none';
         return;
     }
 
@@ -131,14 +159,6 @@ function playNextItem() {
 
     updateCardUI();
     playCurrentAudio();
-}
-
-/**
- * 显示答案。
- */
-function revealAnswer() {
-    elements.placeholder.classList.add('is-hidden');
-    elements.revealedContent.classList.remove('is-hidden');
 }
 
 /**
@@ -174,11 +194,22 @@ function handleEscKey(event) {
 function startSession() {
     const wordItems = State.currentDataSet.filter(item => item.cardType === 'word');
     if (wordItems.length === 0) {
-        alert('当前列表没有单词可供练习。');
+        // 【修改】使用Toast通知代替alert
+        NotificationManager.show({
+            type: 'info',
+            message: '当前列表没有单词可供练习。'
+        });
         return;
     }
-    // 生成一个被打乱的索引数组作为播放列表
+
+    // 重置状态
+    state.isSessionEnded = false;
     state.playlist = [...Array(wordItems.length).keys()].sort(() => Math.random() - 0.5);
+
+    // 恢复UI到初始状态
+    elements.nextBtn.textContent = '⏭ 下一个';
+    elements.revealBtn.style.display = 'flex'; // 确保“揭晓”按钮可见（用flex以匹配css）
+
     showModal();
     playNextItem();
 }
@@ -209,7 +240,8 @@ export function init(startBtn) {
         }
     });
     elements.revealBtn.addEventListener('click', revealAnswer);
-    elements.nextBtn.addEventListener('click', playNextItem);
+    // 【修改】“下一个”按钮现在由一个统一的处理器来管理
+    elements.nextBtn.addEventListener('click', handleNextOrRestart);
     elements.replayBtn.addEventListener('click', playCurrentAudio);
     elements.visualArea.addEventListener('click', playCurrentAudio);
     elements.audioSourceToggle.addEventListener('change', playCurrentAudio);

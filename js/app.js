@@ -1,5 +1,5 @@
 // =================================================================================
-// 应用协调器 (Application Orchestrator) - v12.2 (优化“标记掌握”的即时反馈)
+// 应用协调器 (Application Orchestrator) - v12.4 (集成通知管理器)
 // ---------------------------------------------------------------------------------
 // 职责:
 // 1. 初始化并协调各个模块。
@@ -15,6 +15,8 @@ import * as ListeningMode from './modules/listeningMode.js';
 import * as TypingMode from './modules/typingMode.js';
 import * as Wordbook from './modules/wordbook.js';
 import * as UndoManager from './modules/undoManager.js';
+// 【新增】导入新的通知管理器
+import * as NotificationManager from './modules/notificationManager.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -42,9 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let isShuffling = false;
 
     // --- 模块初始化检查 ---
+    // 确保核心UI模板存在，否则终止应用执行以避免后续错误
     if (!UI.init()) {
         console.error("应用启动失败：UI模块初始化未能成功。");
-        return; // 如果核心UI模板缺失，则终止应用执行
+        return;
     }
 
     // ============================================================================
@@ -84,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardCount = cardGrid.querySelectorAll('.card:not(.is-pending-removal)').length;
         const existingMessage = cardGrid.querySelector('.loading-state');
 
+        // 如果网格中没有卡片且没有提示信息，则创建并插入一个
         if (cardCount === 0 && !existingMessage) {
             let message = '太棒了，当前条件下没有更多要学习的单词了！';
             if (State.currentSearchQuery) {
@@ -95,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             cardGrid.insertAdjacentHTML('afterbegin', `<div class="loading-state">${message}</div>`);
         } else if (cardCount > 0 && existingMessage) {
+            // 如果网格中有卡片但仍存在提示信息，则移除它
             existingMessage.remove();
         }
     }
@@ -152,22 +157,16 @@ document.addEventListener('DOMContentLoaded', () => {
      * @param {HTMLElement} cardElement - 对应的卡片DOM元素。
      */
     function handleMarkAsLearned(data, cardElement) {
-        // --- 【核心优化】步骤 1: 立即更新UI，提供即时反馈 ---
-        // a. 添加 .is-pending-removal 类，触发淡出动画。
-        // b. 添加 .is-learned 类，立即将对勾图标变为“已掌握”的实心样式。
+        // 步骤 1: 立即更新UI，提供即时反馈
         cardElement.classList.add('is-pending-removal');
         cardElement.classList.add('is-learned');
 
-        // --- 步骤 2: 定义“确认”和“撤销”两种最终操作 ---
-
-        // `onConfirm`：当5秒倒计时结束或用户执行新操作时触发。
+        // 步骤 2: 定义“确认”和“撤销”两种最终操作
         const onConfirm = () => {
-            // a. 真实地更新数据状态并持久化到 localStorage。
-            State.toggleLearnedStatus(data);
-            // b. 从DOM中彻底移除卡片元素。
-            cardElement.remove();
+            State.toggleLearnedStatus(data); // 真实地更新数据状态
+            cardElement.remove(); // 从DOM中彻底移除卡片元素
 
-            // c. 检查是否需要加载新卡片来填补空位，保持页面内容充实。
+            // 检查是否需要加载新卡片来填补空位
             State.filterAndPrepareDataSet();
             const cardsOnScreen = cardGrid.querySelectorAll('.card:not(.is-pending-removal)').length;
             if (cardsOnScreen < CARDS_PER_PAGE && renderIndex < State.currentDataSet.length) {
@@ -176,15 +175,13 @@ document.addEventListener('DOMContentLoaded', () => {
             updateEmptyStateMessage();
         };
 
-        // `onUndo`：当用户点击“撤销”按钮时触发。
         const onUndo = () => {
-            // a. 移除 .is-pending-removal 类，取消淡出效果，使卡片恢复原位。
-            // b. 移除 .is-learned 类，将图标恢复为“未掌握”的空心样式。
+            // 恢复卡片原状
             cardElement.classList.remove('is-pending-removal');
             cardElement.classList.remove('is-learned');
         };
 
-        // --- 步骤 3: 调用全局撤销管理器，显示通知并开始倒计时 ---
+        // 步骤 3: 调用全局撤销管理器
         UndoManager.show({
             message: `单词 "${data.word}" 已标记为掌握。`,
             onConfirm: onConfirm,
@@ -192,42 +189,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
     /**
      * 处理单词本数据变更后的全局联动。
      * @param {'create'|'update'|'delete'|'study'} type - 变更类型
-     * @param {string|null} newName - 新名称 (用于 create, update, study)
-     * @param {string|null} oldName - 旧名称 (用于 update, delete)
+     * @param {string|null} newName - 新名称
+     * @param {string|null} oldName - 旧名称
      */
     function handleWordbookChange(type, newName, oldName) {
-        // 无论何种操作，都先刷新顶部的过滤器按钮列表
-        updateCategoryFilters();
+        updateCategoryFilters(); // 刷新顶部的过滤器按钮列表
 
-        // 根据操作类型决定是否需要跳转筛选器或刷新视图
         if (type === 'create' || type === 'study') {
             State.setCurrentFilter(newName);
             const newBtn = filterContainer.querySelector(`.filter-btn[data-filter="${newName}"]`);
             if (newBtn) UI.updateActiveFilterButton(filterContainer, newBtn);
             State.filterAndPrepareDataSet();
             startNewRenderFlow();
-        } else if (type === 'update') {
-            // 如果更新的是当前正在查看的单词本，则同步更新筛选器状态
-            if (State.currentFilter === oldName) {
-                State.setCurrentFilter(newName);
-                const newBtn = filterContainer.querySelector(`.filter-btn[data-filter="${newName}"]`);
-                if (newBtn) UI.updateActiveFilterButton(filterContainer, newBtn);
-                State.filterAndPrepareDataSet();
-                startNewRenderFlow();
-            }
-        } else if (type === 'delete') {
-            // 如果删除的是当前正在查看的单词本，回退到 'all' 视图
-            if (State.currentFilter === oldName) {
-                State.setCurrentFilter('all');
-                const allBtn = filterContainer.querySelector('.filter-btn[data-filter="all"]');
-                if (allBtn) UI.updateActiveFilterButton(filterContainer, allBtn);
-                State.filterAndPrepareDataSet();
-                startNewRenderFlow();
-            }
+        } else if (type === 'update' && State.currentFilter === oldName) {
+            State.setCurrentFilter(newName);
+            const newBtn = filterContainer.querySelector(`.filter-btn[data-filter="${newName}"]`);
+            if (newBtn) UI.updateActiveFilterButton(filterContainer, newBtn);
+            State.filterAndPrepareDataSet();
+            startNewRenderFlow();
+        } else if (type === 'delete' && State.currentFilter === oldName) {
+            State.setCurrentFilter('all');
+            const allBtn = filterContainer.querySelector('.filter-btn[data-filter="all"]');
+            if (allBtn) UI.updateActiveFilterButton(filterContainer, allBtn);
+            State.filterAndPrepareDataSet();
+            startNewRenderFlow();
         }
     }
 
@@ -237,7 +225,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function setupIntersectionObserver() {
         if (observer) observer.disconnect();
         observer = new IntersectionObserver((entries) => {
-            // 当触发器进入视口且可见时，加载更多卡片
             if (entries[0].isIntersecting && loadMoreTrigger.classList.contains('is-visible')) {
                 renderMoreCards();
             }
@@ -253,10 +240,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (btn && !btn.classList.contains('active')) {
             UI.updateActiveGradeButton(gradeFilterContainer, btn);
             State.setCurrentGrade(btn.dataset.grade);
-            State.setCurrentContentType('all'); // 切换年级时重置内容类型
+            State.setCurrentContentType('all');
             const allContentTypeBtn = contentTypeFilterContainer.querySelector('.content-type-btn[data-type="all"]');
-            if(allContentTypeBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, allContentTypeBtn);
-            State.setCurrentFilter('all'); // 重置类别筛选
+            if (allContentTypeBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, allContentTypeBtn);
+            State.setCurrentFilter('all');
             updateCategoryFilters();
             State.filterAndPrepareDataSet();
             startNewRenderFlow();
@@ -268,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (btn && !btn.classList.contains('active')) {
             UI.updateActiveContentTypeButton(contentTypeFilterContainer, btn);
             State.setCurrentContentType(btn.dataset.type);
-            State.setCurrentFilter('all'); // 切换内容类型时重置类别筛选
+            State.setCurrentFilter('all');
             updateCategoryFilters();
             State.filterAndPrepareDataSet();
             startNewRenderFlow();
@@ -323,9 +310,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // 应用初始化
     // ============================================================================
     async function init() {
-        // 模块初始化顺序：先初始化无依赖或提供基础服务的模块
+        // 【修改】将通知管理器的初始化提前，确保其他模块可以使用
         ThemeManager.init();
-        UndoManager.init(); // 初始化撤销管理器
+        UndoManager.init();
+        NotificationManager.init(); // <-- 初始化通知管理器
 
         // 初始化数据导入/导出模块
         const dataManagerDeps = {
@@ -346,7 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
         Wordbook.init(
             document.getElementById('manage-wordbook-btn'),
             optionsMenu,
-            handleWordbookChange // 传入回调函数，解耦
+            handleWordbookChange // 传入回调函数，实现模块间解耦
         );
 
         // 绑定主题切换按钮
@@ -376,9 +364,12 @@ document.addEventListener('DOMContentLoaded', () => {
             UI.renderGradeButtons(gradeFilterContainer, grades);
             UI.renderContentTypeButtons(contentTypeFilterContainer);
 
-            // 设置默认激活的筛选按钮
+            // UI状态同步
             const defaultGradeBtn = gradeFilterContainer.querySelector(`[data-grade="${State.currentGrade}"]`);
             if (defaultGradeBtn) UI.updateActiveGradeButton(gradeFilterContainer, defaultGradeBtn);
+
+            const defaultContentTypeBtn = contentTypeFilterContainer.querySelector(`[data-type="${State.currentContentType}"]`);
+            if (defaultContentTypeBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, defaultContentTypeBtn);
 
             // 渲染类别筛选器并准备首次数据展示
             updateCategoryFilters();

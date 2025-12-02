@@ -28,8 +28,9 @@
     <link rel="stylesheet" href="css/feature-listening.css">
     <link rel="stylesheet" href="css/feature-typing.css">
     <link rel="stylesheet" href="css/feature-wordbook.css">
-    <!-- 【新增】引入撤销功能的专属样式 -->
     <link rel="stylesheet" href="css/feature-undo.css">
+    <!-- 【新增】引入新通知系统的专属样式 -->
+    <link rel="stylesheet" href="css/feature-notifications.css">
 
     <!-- 网站图标 -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -360,7 +361,7 @@
     <p class="footer-meta">© 2024 cc | <a href="https://github.com/git-hub-cc/RootCards" target="_blank">GitHub</a> | <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024271251号</a></p>
 </footer>
 
-<!-- 【新增】全局撤销操作的 UI 组件 -->
+<!-- 全局撤销操作的 UI 组件 -->
 <div id="undo-toast" class="undo-toast">
     <span id="undo-message" class="undo-message">操作已完成</span>
     <button id="undo-action-btn" class="undo-action-btn">撤销</button>
@@ -368,6 +369,13 @@
         <div id="undo-progress-bar" class="undo-progress-bar"></div>
     </div>
 </div>
+
+<!-- 全局通知 (Toast) UI 组件 -->
+<div id="notification-toast" class="notification-toast">
+    <span id="notification-icon" class="notification-icon"></span>
+    <span id="notification-message" class="notification-message"></span>
+</div>
+
 
 <input type="file" id="import-file-input" accept=".json" style="display: none;">
 <script src="lib/compromise.js"></script>

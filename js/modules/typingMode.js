@@ -1,5 +1,5 @@
 // =================================================================================
-// 打字模式模块 (Typing Mode Module) - v1.0
+// 打字模式模块 (Typing Mode Module) - v1.1 (集成通知管理器)
 // ---------------------------------------------------------------------------------
 // 职责:
 // 1. 管理“拼写打字”模态框的所有UI交互和状态。
@@ -9,6 +9,8 @@
 
 import * as State from '../state.js';
 import { playAudioFile, stopAudio } from '../ui.js';
+// 【新增】导入新的通知管理器
+import * as NotificationManager from './notificationManager.js';
 
 // --- 模块内部状态 ---
 const state = {
@@ -20,8 +22,6 @@ const state = {
 
 // --- 模块内部DOM元素缓存 ---
 const elements = {};
-
-// --- 内部函数 ---
 
 /**
  * 缓存所有与打字模式相关的DOM元素。
@@ -145,7 +145,11 @@ function handleSubmit() {
 function nextItem() {
     state.currentIndex++;
     if (state.currentIndex >= state.playlist.length) {
-        alert('🎉 恭喜你，本组单词已全部练习完毕！');
+        // 【修改】使用Toast通知代替alert
+        NotificationManager.show({
+            type: 'success',
+            message: '🎉 恭喜你，本组单词已全部练习完毕！'
+        });
         hideModal();
         return;
     }
@@ -237,7 +241,11 @@ function handleEscKey(event) {
 function startSession() {
     const wordItems = State.currentDataSet.filter(item => item.cardType === 'word');
     if (wordItems.length === 0) {
-        alert('当前列表没有单词可供练习。');
+        // 【修改】使用Toast通知代替alert
+        NotificationManager.show({
+            type: 'info',
+            message: '当前列表没有单词可供练习。'
+        });
         return;
     }
 
