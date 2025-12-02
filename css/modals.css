@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Modal Styles - 模态框通用样式模块
+   --------------------------------------------------------------------------
+   职责:
+   - 定义所有模态框（听力、打字、单词本等）共享的通用基础样式。
+   - 包括：遮罩层、内容容器、关闭按钮、通用控制按钮等。
+   - 具体的、功能性的样式被分离到各自的 `feature-*.css` 文件中。
+   ========================================================================== */
+
+/* --- 模态框: 遮罩层 (通用) --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+
+/* --- 模态框: 内容容器 (通用) --- */
+.modal-content {
+    background: var(--card-bg);
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: var(--shadow-hover);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* --- 模态框: 通用元素 --- */
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-sub);
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s, color 0.2s;
+}
+.modal-close-btn:hover {
+    background-color: var(--border-color);
+    color: var(--text-main);
+}
+
+
+/* --- 模态框: 控制按钮 (通用) --- */
+.control-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s, opacity 0.2s;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.control-btn:active {
+    transform: scale(0.98);
+}
+
+/* 按钮中的SVG图标样式 */
+.control-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* "揭晓" 类按钮 (通常是次要操作) */
+.btn-reveal {
+    background: var(--bg-secondary-color);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+}
+.btn-reveal:hover {
+    background: var(--border-color);
+}
+
+/* "下一个" 或 "提交" 类按钮 (通常是主要操作) */
+.btn-next,
+.btn-submit {
+    background: var(--theme-color);
+    color: var(--text-inverse);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.btn-next:hover,
+.btn-submit:hover {
+    opacity: 0.9;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* 按钮禁用状态 */
+.control-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+.control-btn:disabled:hover {
+    opacity: 0.5;
+}

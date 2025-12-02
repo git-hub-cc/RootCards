@@ -8,15 +8,12 @@
 // 4. (数据操作) 提供导入/导出“已掌握”单词列表的功能。
 // 5. (状态持久化) 负责从 localStorage 读取和保存用户学习进度及自定义单词本。
 // 6. (文本处理) 提供用于生成挖空例句的正则处理函数。
-// 【核心改动】:
-//  - 新增了对用户自定义单词本的加载、保存和筛选逻辑。
-//  - 扩展了 `localStorage` 的使用，增加了 `USER_WORDBOOKS_KEY`。
-//  - 修改了 `getAvailableCategories` 和 `filterAndPrepareDataSet` 以兼容新功能。
+// 【注】: 此文件在本次重构中几乎没有逻辑变化，保持其核心职责。
 // =================================================================================
 
 // --- 模块内常量 ---
 const LEARNED_WORDS_KEY = 'etymologyLearnedWords';
-const USER_WORDBOOKS_KEY = 'etymologyUserWordbooks'; // 【新增】用于存储用户单词本的 key
+const USER_WORDBOOKS_KEY = 'etymologyUserWordbooks';
 
 // --- 导出的状态变量 (供其他模块读取和修改) ---
 export let allVocabularyData = [];      // 存储所有已加载和处理过的数据
@@ -26,7 +23,7 @@ export let currentGrade = 'grade7';     // 当前年级筛选器状态
 export let currentContentType = 'pre';  // 当前内容类型筛选器状态 (pre, suf, root, etc.)
 export let learnedWordsSet = new Set(); // 存储所有已掌握单词的 Set 集合，用于快速查找
 export let currentSearchQuery = '';     // 当前搜索框中的关键词
-export let userWordbooks = [];          // 【新增】存储所有用户创建的单词本，结构为 [{ name: string, words: string[] }]
+export let userWordbooks = [];          // 存储所有用户创建的单词本，结构为 [{ name: string, words: string[] }]
 
 /**
  * 从 localStorage 加载已掌握的单词列表。
@@ -61,7 +58,7 @@ function saveLearnedWords() {
 }
 
 /**
- * 【新增】从 localStorage 加载用户创建的单词本。
+ * 从 localStorage 加载用户创建的单词本。
  */
 export function loadUserWordbooks() {
     try {
@@ -83,7 +80,7 @@ export function loadUserWordbooks() {
 }
 
 /**
- * 【新增】保存用户创建的所有单词本到 localStorage。
+ * 保存用户创建的所有单词本到 localStorage。
  */
 function saveUserWordbooks() {
     try {
@@ -94,7 +91,7 @@ function saveUserWordbooks() {
 }
 
 /**
- * 【新增】添加或更新一个单词本，并保存。
+ * 添加或更新一个单词本，并保存。
  * @param {string} name - 单词本的名称。
  * @param {string[]} words - 单词本包含的单词列表。
  * @returns {boolean} - 如果是新创建的单词本返回 true，如果是更新返回 false。
@@ -149,13 +146,13 @@ export function importLearnedWords(wordsArray) {
     const originalSize = learnedWordsSet.size;
     wordsArray.forEach(word => {
         if (typeof word === 'string' && word.trim()) {
-            learnedWordsSet.add(word.trim());
+            learnedWordsSet.add(word.trim().toLowerCase()); // 统一转换为小写
         }
     });
 
     // 将 isLearned 状态同步到 allVocabularyData 中
     allVocabularyData.forEach(item => {
-        if (item.cardType === 'word' && learnedWordsSet.has(item.word)) {
+        if (item.cardType === 'word' && learnedWordsSet.has(item.word.toLowerCase())) {
             item.isLearned = true;
         }
     });
@@ -163,7 +160,6 @@ export function importLearnedWords(wordsArray) {
     saveLearnedWords();
     return learnedWordsSet.size - originalSize; // 返回新增单词的数量
 }
-
 
 /**
  * 从文件路径中解析出年级信息。
@@ -252,7 +248,7 @@ export async function loadAndProcessData(onProgress) {
                     themeColor: meaningGroup.themeColor,
                     grade: grade,
                     contentType: contentType,
-                    isLearned: cardType === 'word' ? learnedWordsSet.has(item.word) : false,
+                    isLearned: cardType === 'word' ? learnedWordsSet.has(item.word.toLowerCase()) : false,
                     ...(cardType === 'intro' && { visual: meaningGroup.prefixVisual }),
                     ...(cardType === 'word' && { prefixVisual: meaningGroup.prefixVisual || '' })
                 });
@@ -288,7 +284,6 @@ export async function loadAndProcessData(onProgress) {
     return { grades: Array.from(grades).sort() };
 }
 
-
 /**
  * 【核心函数】根据当前所有筛选条件和搜索查询，更新 currentDataSet。
  */
@@ -310,18 +305,16 @@ export function filterAndPrepareDataSet() {
         );
     }
 
-    // --- 【修改】阶段 2: 类别筛选 (All, Learned, 特定词根/前缀, 或用户自定义单词本) ---
+    // --- 阶段 2: 类别筛选 (All, Learned, 特定词根/前缀, 或用户自定义单词本) ---
     const userWordbook = userWordbooks.find(wb => wb.name === currentFilter);
 
     if (currentFilter === 'learned') {
         filteredData = filteredData.filter(item => item.cardType === 'word' && item.isLearned);
     } else if (userWordbook) {
-        // 【新增逻辑】如果筛选条件是一个自定义单词本
-        const wordbookSet = new Set(userWordbook.words);
+        const wordbookSet = new Set(userWordbook.words.map(w => w.toLowerCase()));
         filteredData = filteredData.filter(item =>
             item.cardType === 'word' && wordbookSet.has(item.word.toLowerCase())
         );
-        // 自定义单词本视图下，不考虑 "isLearned" 状态，全部显示
     } else if (currentFilter === 'all') {
         filteredData = filteredData.filter(item => item.cardType === 'intro' || !item.isLearned);
     } else {
@@ -379,22 +372,13 @@ export function shuffleCurrentDataSet() {
 }
 
 // --- 状态更新函数 (setter functions) ---
-
-export function setCurrentFilter(newFilter) {
-    currentFilter = newFilter;
-}
-export function setCurrentGrade(newGrade) {
-    currentGrade = newGrade;
-}
-export function setCurrentContentType(newType) {
-    currentContentType = newType;
-}
-export function setSearchQuery(query) {
-    currentSearchQuery = query.trim().toLowerCase();
-}
+export function setCurrentFilter(newFilter) { currentFilter = newFilter; }
+export function setCurrentGrade(newGrade) { currentGrade = newGrade; }
+export function setCurrentContentType(newType) { currentContentType = newType; }
+export function setSearchQuery(query) { currentSearchQuery = query.trim().toLowerCase(); }
 
 /**
- * 【修改】获取可用的筛选类别，包括预设类别和用户自定义单词本。
+ * 获取可用的筛选类别，包括预设类别和用户自定义单词本。
  */
 export function getAvailableCategories() {
     let gradeFilteredData;
@@ -415,22 +399,17 @@ export function getAvailableCategories() {
         finalFilteredData = gradeFilteredData;
     }
 
-    // 1. 提取预设的类别
     const categoryMap = new Map();
     finalFilteredData.forEach(item => {
         if (!categoryMap.has(item.type)) {
             const originalDisplayName = item.displayName;
             let englishDisplayName = originalDisplayName;
-
             if (item.contentType === 'category') {
                 const match = originalDisplayName.match(/\(([^)]+)\)/);
-                if (match && match[1]) {
-                    englishDisplayName = match[1];
-                }
+                if (match && match[1]) englishDisplayName = match[1];
             }
-
             categoryMap.set(item.type, {
-                filterType: 'pre-defined', // 标记为预设类别
+                filterType: 'pre-defined',
                 meaningId: item.type,
                 displayName: originalDisplayName,
                 englishDisplayName: englishDisplayName,
@@ -441,18 +420,19 @@ export function getAvailableCategories() {
         }
     });
 
-    // 2. 【新增】整合用户自定义的单词本
     const userWordbookCategories = userWordbooks.map(wb => ({
-        filterType: 'user-wordbook', // 标记为用户单词本
-        meaningId: wb.name,         // 使用单词本名称作为唯一标识
-        displayName: wb.name,       // 显示名称也是单词本名称
+        filterType: 'user-wordbook',
+        meaningId: wb.name,
+        displayName: wb.name,
         englishDisplayName: wb.name,
     }));
 
-    // 3. 合并并返回
     return [...Array.from(categoryMap.values()), ...userWordbookCategories];
 }
 
+/**
+ * 为打字模式生成带有挖空占位符的例句HTML。
+ */
 export function getMaskedSentence(sentence, targetWord) {
     if (!sentence || !targetWord) return '';
     const regex = new RegExp(`\\b${targetWord}[a-z]*\\b`, 'gi');

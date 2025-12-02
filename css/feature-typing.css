@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Feature: Typing Mode Styles - 打字模式样式
+   --------------------------------------------------------------------------
+   职责:
+   - 定义所有与“拼写打字”模态框相关的专属样式。
+   - 依赖于 modals.css 中定义的通用模态框样式。
+   ========================================================================== */
+
+/* --- 打字模式: 特殊内容区布局 --- */
+.typing-content {
+    /* 如果有特定于打字模式的布局调整，可在此处添加 */
+}
+
+/* --- 打字模式: 头部 --- */
+.typing-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.typing-progress-text {
+    font-size: 0.95rem;
+    color: var(--text-sub);
+    font-weight: 600;
+}
+
+/* --- 打字模式: 提示区域 --- */
+.typing-prompt {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.typing-prompt-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+.typing-audio-btn, .typing-hint-btn {
+    width: 44px;
+    height: 44px;
+    background: var(--bg-color);
+    border-color: var(--border-color);
+}
+.typing-audio-btn svg, .typing-hint-btn svg {
+    width: 24px;
+    height: 24px;
+    color: var(--theme-color);
+}
+.typing-hint-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: var(--border-color);
+    border-color: var(--border-color);
+}
+.typing-hint-btn:disabled:hover {
+    transform: none;
+}
+.typing-meaning {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.typing-sentence {
+    font-size: 1rem;
+    color: var(--text-sub);
+    line-height: 1.6;
+    padding: 1rem;
+    background: var(--bg-secondary-color);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+.masked-word {
+    display: inline-block;
+    min-width: 60px;
+    border-bottom: 2px solid var(--text-sub);
+    color: transparent;
+    margin: 0 4px;
+    vertical-align: bottom;
+}
+
+/* --- 打字模式: 输入区域 --- */
+.typing-input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.typing-input {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid var(--border-color);
+    background: transparent;
+    color: var(--text-main);
+    padding: 10px;
+    border-radius: 0;
+    outline: none;
+    transition: border-color 0.3s, color 0.3s;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+}
+.typing-input::placeholder {
+    color: var(--border-color-hover);
+    font-weight: normal;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+.typing-input:focus {
+    border-bottom-color: var(--theme-color);
+}
+.typing-input.error {
+    border-bottom-color: #ef4444;
+    color: #ef4444;
+    animation: shake 0.4s ease-in-out;
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+}
+.typing-input.success {
+    border-bottom-color: #10b981;
+    color: #10b981;
+}
+.typing-feedback-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.typing-input.success + .typing-feedback-icon::after { content: "✅"; }
+.typing-input.error + .typing-feedback-icon::after { content: "❌"; }
+.typing-input.success + .typing-feedback-icon,
+.typing-input.error + .typing-feedback-icon {
+    opacity: 1;
+}
+
+/* --- 打字模式: 结果区域 --- */
+.typing-result-area {
+    width: 100%;
+    padding: 1rem;
+    background: var(--bg-secondary-color);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    animation: fadeInUp 0.3s forwards;
+}
+.correct-answer-label {
+    font-size: 0.85rem;
+    color: var(--text-sub);
+    margin-bottom: 0.3rem;
+}
+.correct-answer-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #10b981;
+    letter-spacing: 1px;
+}
+
+/* --- 打字模式: 控制按钮容器 --- */
+.typing-controls {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}

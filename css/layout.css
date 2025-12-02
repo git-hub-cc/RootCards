@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Layout Styles - 页面布局样式 (v3.5 - 优化工具栏布局)
+   Layout Styles - 页面布局样式 (v3.6 - 样式迁移)
    ========================================================================== */
 
 /* --- 头部导航与筛选器 --- */
@@ -184,14 +184,20 @@
 /* --- 懒加载触发器布局 --- */
 .load-more-trigger {
     grid-column: 1 / -1;
-    display: none;
+    display: flex; /* 默认设为 flex，由 JS 通过 is-visible 类控制 */
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
     min-height: 80px;
+    /* 初始时不可见，由JS添加 is-visible 类来显示 */
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.2s, opacity 0.2s ease-in-out;
 }
 .load-more-trigger.is-visible {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
 }
 
 /* --- 页脚样式 --- */
@@ -205,3 +211,12 @@
     transition: border-color 0.3s ease;
 }
 .app-footer p { margin: 0.3rem 0; }
+
+/* 【重构】从 index.html 迁移过来的页脚元信息样式 */
+.footer-meta {
+    margin-top: 10px;
+}
+.footer-meta a {
+    color: inherit;
+    text-decoration: none;
+}

@@ -1,0 +1,201 @@
+/* ==========================================================================
+   Feature: Listening Mode Styles - 听力模式样式
+   --------------------------------------------------------------------------
+   职责:
+   - 定义所有与“听力磨耳朵”模态框相关的专属样式。
+   - 依赖于 modals.css 中定义的通用模态框样式。
+   ========================================================================== */
+
+/* --- 听力模式: 头部 --- */
+.listening-header {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.listening-mode-title {
+    font-size: 1.2rem;
+    color: var(--text-highlight);
+}
+.listening-toggle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--text-sub);
+}
+
+/* --- 听力模式: 音源切换开关 --- */
+.toggle-switch {
+    position: relative;
+    width: 44px;
+    height: 24px;
+}
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--border-color);
+    transition: .4s;
+    border-radius: 24px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: var(--theme-color);
+}
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* --- 听力模式: 视觉播放区 --- */
+.listening-visual {
+    width: 120px;
+    height: 120px;
+    background: var(--bg-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    cursor: pointer;
+    border: 4px solid var(--border-color);
+    transition: border-color 0.3s;
+}
+.listening-visual:hover {
+    border-color: var(--theme-color);
+}
+
+/* --- 听力模式: 音波动画 --- */
+.audio-waves {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 40px;
+}
+.audio-waves span {
+    display: block;
+    width: 4px;
+    height: 100%;
+    background: var(--theme-color);
+    border-radius: 2px;
+    animation: wave 1s infinite ease-in-out;
+    opacity: 0.3;
+    transform: scaleY(0.2);
+}
+.audio-waves.is-playing span {
+    opacity: 1;
+    animation-play-state: running;
+}
+.audio-waves:not(.is-playing) span {
+    animation-play-state: paused;
+}
+.audio-waves span:nth-child(1) { animation-delay: 0.0s; }
+.audio-waves span:nth-child(2) { animation-delay: 0.1s; }
+.audio-waves span:nth-child(3) { animation-delay: 0.2s; }
+.audio-waves span:nth-child(4) { animation-delay: 0.3s; }
+.audio-waves span:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes wave {
+    0%, 100% { transform: scaleY(0.2); }
+    50% { transform: scaleY(1); }
+}
+
+/* --- 听力模式: 重播按钮 --- */
+.listening-replay-btn {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--theme-color);
+    opacity: 0;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.listening-replay-btn svg {
+    width: 40px;
+    height: 40px;
+}
+.listening-visual:hover .listening-replay-btn {
+    opacity: 0.2;
+}
+
+/* --- 听力模式: 答案区域 --- */
+.listening-answer-area {
+    min-height: 120px;
+    width: 100%;
+    background: var(--bg-secondary-color);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px dashed var(--border-color);
+}
+.listening-hidden-placeholder {
+    color: var(--text-sub);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+.listening-revealed-content {
+    animation: fadeInUp 0.3s forwards;
+    text-align: left;
+}
+.listening-word {
+    font-size: 1.6rem;
+    color: var(--theme-color);
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+.listening-meaning {
+    color: var(--text-sub);
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+.listening-sentence-en {
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+.listening-sentence-cn {
+    font-size: 0.85rem;
+    color: var(--text-sub);
+}
+
+/* --- 听力模式: 控制按钮容器 --- */
+.listening-controls {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}

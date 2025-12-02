@@ -1,6 +1,20 @@
 /* ==========================================================================
-   Component Styles - 组件样式 (v4.3 - 新增打字提示功能)
+   Component Styles - 通用组件样式 (v5.0 - 重构版)
+   --------------------------------------------------------------------------
+   职责:
+   - 定义全站通用的、与特定功能模块（如卡片、模态框）无关的组件样式。
+   - 包括：筛选器按钮、工具栏图标、下拉菜单、加载指示器等。
    ========================================================================== */
+
+/* --- 核心辅助类: 用于控制元素的可见性 --- */
+/*
+  这是一个全局的、高优先级的类，用于隐藏元素。
+  JS 将通过添加/移除这个类来控制元素的显示与隐藏。
+  【注】: “无图模式”按钮的图标切换正是利用了这个类，由 js/ui.js 动态控制。
+*/
+.is-hidden {
+    display: none !important;
+}
 
 /* --- 组件: 年级筛选器按钮 --- */
 .grade-filter-btn {
@@ -53,7 +67,7 @@ body.dark-mode .grade-filter-btn.active {
     background: var(--color-learned);
     border-color: var(--color-learned);
 }
-/* 【新增样式】用户自定义单词本的按钮样式 */
+/* 用户自定义单词本的按钮样式 */
 .filter-btn[data-filter-type="user-wordbook"].active {
     background: #0891b2; /* 青色，用于区分 */
     border-color: #0891b2;
@@ -68,7 +82,7 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
 }
 
 
-/* --- 顶部工具栏按钮统一化 --- */
+/* --- 组件: 顶部工具栏图标按钮 (通用) --- */
 .icon-btn {
     width: 38px;
     height: 38px;
@@ -103,440 +117,145 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
     color: var(--text-inverse);
     box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
+/* 洗牌按钮的特殊交互 */
 .shuffle-btn:active svg {
     transform: rotate(45deg);
 }
 
 
 /* --- 组件: 加载/空状态提示 --- */
-.loading-state { grid-column: 1 / -1; text-align: center; font-size: 1.2rem; color: var(--text-sub); padding: 4rem 0; }
-
-
-/* --- 组件: 3D 翻转卡片 (核心与通用) --- */
-.card {
-    background-color: transparent;
-    height: 400px;
-    perspective: 1000px;
-    cursor: pointer;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    animation: card-fade-in 0.5s ease-out forwards;
-}
-@keyframes card-fade-in {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-.card-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1), background-color 0.3s ease, box-shadow 0.3s ease; transform-style: preserve-3d; box-shadow: var(--shadow); border-radius: var(--radius-lg); }
-.card.is-flipped .card-inner { transform: rotateY(180deg); }
-.card-front, .card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: var(--radius-lg); background: var(--card-bg); border: 2px solid transparent; display: flex; flex-direction: column; overflow: hidden; }
-
-
-/* --- 组件: 单词卡片正面 --- */
-.card-front {
-    justify-content: space-between;
-    padding: 2rem 1.5rem;
-    border-color: color-mix(in srgb, var(--theme-color) 40%, transparent);
-}
-.prefix-badge {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding: 2px 8px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    opacity: 0.8;
-    color: var(--theme-color);
-    background: color-mix(in srgb, var(--theme-color) 10%, transparent);
-}
-.visual-area { flex-grow: 1; display: flex; align-items: center; justify-content: center; padding: 1rem; }
-.visual-area svg { width: 120px; height: 120px; transition: transform 0.3s ease; }
-.card:hover .visual-area svg { transform: scale(1.1); }
-.visual-area .layer-root { stroke: var(--text-sub); color: var(--text-sub); opacity: 0.7; stroke-width: 2; }
-.visual-area .layer-prefix { stroke: color-mix(in srgb, var(--theme-color) 40%, transparent); color: color-mix(in srgb, var(--theme-color) 40%, transparent); stroke-width: 2.5; transition: opacity 0.3s ease, transform 0.3s ease; }
-.card.prefix-hidden .visual-area .layer-prefix { opacity: 0; transform: scale(0.8); }
-.word-area { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 0.5rem; }
-.word-text { font-size: 2rem; font-weight: 800; color: var(--theme-color); }
-.hint-text { font-size: 0.8rem; color: var(--text-sub); text-align: center; }
-
-
-/* --- 组件: 单词卡片背面 --- */
-.card-back {
-    transform: rotateY(180deg);
-    padding: 2rem 1.5rem;
-    text-align: left;
-    background-color: var(--card-back-bg);
-    gap: 1.5rem;
-}
-.breakdown-box {
-    font-family: 'Courier New', monospace;
-    background: var(--border-color);
-    padding: 0.5rem;
-    border-radius: var(--radius-sm);
+.loading-state {
+    grid-column: 1 / -1; /* 占据网格所有列 */
     text-align: center;
-    font-weight: bold;
-    color: var(--text-code);
-    flex-shrink: 0;
+    font-size: 1.2rem;
+    color: var(--text-sub);
+    padding: 4rem 0;
 }
-.meaning-section { flex-shrink: 0; }
-.cn-translation { font-size: 1.4rem; color: var(--text-highlight); margin-bottom: 0.5rem; }
-.imagery-text { font-size: 0.95rem; color: var(--text-sub); line-height: 1.4; font-style: italic; border-left: 3px solid var(--border-imagery); padding-left: 10px; }
-.sentence-section {
-    flex-grow: 1;
-    overflow-y: auto;
-    min-height: 0;
-    background: var(--card-back-section-bg);
-    padding: 1rem;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--border-color);
+#loading-progress-text {
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
-.sentence-block + .sentence-block {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border-color);
+#loading-progress-bar {
+    width: 200px;
 }
-.sentence-en { font-weight: 500; margin-bottom: 0.5rem; color: var(--text-main); }
-.sentence-cn { font-size: 0.9rem; color: var(--text-sub); margin-bottom: 0.8rem; }
-
-
-/* --- 组件: 卡片上的按钮 (SVG切换, 标记, 音频) --- */
-.toggle-prefix-btn, .mark-btn { position: absolute; width: 32px; height: 32px; background: none; border: none; border-radius: 50%; cursor: pointer; color: var(--text-sub); display: flex; align-items: center; justify-content: center; transition: all 0.2s ease; z-index: 10; }
-.toggle-prefix-btn { top: 1rem; right: 1rem; }
-.mark-btn { bottom: 1rem; right: 1rem; }
-.toggle-prefix-btn:hover, .mark-btn:hover { background-color: rgba(0,0,0,0.05); }
-body.dark-mode .toggle-prefix-btn:hover, body.dark-mode .mark-btn:hover { background-color: rgba(255,255,255,0.1); }
-.mark-btn:hover { transform: scale(1.1); }
-.toggle-prefix-btn svg, .mark-btn svg { width: 20px; height: 20px; }
-.mark-btn svg { width: 24px; height: 24px; }
-.toggle-prefix-btn .icon-eye-off { display: none; }
-.toggle-prefix-btn.is-toggled .icon-eye { display: none; }
-.toggle-prefix-btn.is-toggled .icon-eye-off { display: block; }
-.mark-btn .icon-check-filled { display: none; }
-.card.is-learned .mark-btn .icon-check-empty { display: none; }
-.card.is-learned .mark-btn .icon-check-filled { display: block; color: var(--theme-color); }
-.audio-btn { background: none; border: none; cursor: pointer; color: inherit; display: flex; align-items: center; justify-content: center; padding: 4px; border-radius: 50%; transition: background 0.2s; }
-.audio-btn:hover { background: rgba(0,0,0,0.05); }
-body.dark-mode .audio-btn:hover { background: rgba(255,255,255,0.1); }
-.word-audio { width: 32px; height: 32px; color: var(--text-sub); }
-.sentence-audio { width: 100%; padding: 6px; border-radius: 4px; background: var(--bg-color); font-size: 0.85rem; font-weight: 600; justify-content: center; }
-.sentence-audio:hover { background: var(--border-color); }
-
-
-/* --- 组件: 前缀介绍卡片 --- */
-.prefix-intro-card .card-front, .prefix-intro-card .card-back { background: var(--card-bg); }
-body:not(.dark-mode) .prefix-intro-card .card-front,
-body:not(.dark-mode) .prefix-intro-card .card-back { background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); }
-.prefix-intro-card .intro-title { font-size: 2.2rem; font-weight: 800; letter-spacing: 1px; font-family: 'Georgia', serif; color: var(--theme-color); }
-.prefix-intro-card .card-back { display: flex; flex-direction: column; justify-content: center; gap: 2rem; }
-.prefix-intro-card .intro-section { padding: 0 1rem; }
-.prefix-intro-card .intro-section-title { font-size: 1.1rem; color: var(--text-main); margin-bottom: 0.5rem; border-bottom: 2px solid; padding-bottom: 0.3rem; font-weight: 700; border-color: var(--theme-color); }
-.prefix-intro-card .intro-description, .prefix-intro-card .intro-imagery { font-size: 1rem; color: var(--text-sub); line-height: 1.6; }
-.prefix-intro-card .intro-imagery { font-style: italic; }
-.prefix-intro-card .visual-area svg { color: var(--theme-color); }
-
 
 /* --- 组件: 加载动画 Spinner --- */
-.spinner { animation: rotate 2s linear infinite; width: 40px; height: 40px; }
-.spinner .path { stroke: var(--text-sub); stroke-linecap: round; animation: dash 1.5s ease-in-out infinite; }
-@keyframes rotate { 100% { transform: rotate(360deg); } }
-@keyframes dash { 0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; } 50% { stroke-dasharray: 90, 150; stroke-dashoffset: -35; } 100% { stroke-dasharray: 90, 150; stroke-dashoffset: -124; } }
-
-
-/* --- 状态与动画: 洗牌 --- */
-.card-grid.is-shuffling .card { opacity: 0; transform: scale(0.95); pointer-events: none; }
-
-
-/* --- 组件: 骨架加载图 --- */
-#skeleton-loader { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; grid-column: 1 / -1; transition: opacity 0.3s ease-out; }
-.skeleton-card { height: 400px; background-color: var(--card-bg); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 2rem 1.5rem; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; position: relative; }
-.skeleton-badge, .skeleton-visual, .skeleton-word, .skeleton-hint { background-color: var(--border-color); border-radius: 4px; animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
-@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
-.skeleton-badge { position: absolute; top: 1rem; left: 1rem; width: 60px; height: 20px; border-radius: var(--radius-sm); }
-.skeleton-visual { width: 120px; height: 120px; border-radius: 50%; margin: auto; }
-.skeleton-word { width: 60%; height: 36px; margin: 0 auto 1rem; border-radius: var(--radius-sm); }
-.skeleton-hint { width: 40%; height: 16px; margin: 0 auto; }
-
-
-/* --- 滚动条美化 --- */
-.sentence-section::-webkit-scrollbar { width: 6px; }
-.sentence-section::-webkit-scrollbar-track { background: transparent; }
-.sentence-section::-webkit-scrollbar-thumb { background-color: var(--border-color-hover); border-radius: 10px; }
-.sentence-section::-webkit-scrollbar-thumb:hover { background-color: var(--text-sub); }
-
-
-/* ==========================================================================
-   新增功能样式 (Feature Styles)
-   ========================================================================== */
-
-/* --- 无图自测模式 --- */
-body.mode-no-visual .card-front .visual-area svg { opacity: 0; transition: opacity 0.3s ease; }
-body.mode-no-visual .card-front .visual-area { position: relative; }
-body.mode-no-visual .card-front .visual-area::after { content: "?"; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 5rem; font-weight: 800; color: var(--border-color); opacity: 0.5; font-family: 'Courier New', monospace; pointer-events: none; }
-
-/* --- 听力模式模态框 --- */
-.modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; animation: fadeIn 0.3s forwards; }
-@keyframes fadeIn { to { opacity: 1; } }
-.modal-content { background: var(--card-bg); width: 90%; max-width: 400px; border-radius: 20px; padding: 2rem; box-shadow: var(--shadow-hover); position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; border: 1px solid var(--border-color); }
-.modal-close-btn { position: absolute; top: 15px; right: 15px; background: none; border: none; cursor: pointer; color: var(--text-sub); padding: 5px; border-radius: 50%; }
-.modal-close-btn:hover { background-color: var(--border-color); color: var(--text-main); }
-.listening-header { width: 100%; margin-bottom: 1.5rem; display: flex; flex-direction: column; align-items: center; gap: 10px; }
-.listening-mode-title { font-size: 1.2rem; color: var(--text-highlight); }
-.listening-toggle-wrapper { display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: var(--text-sub); }
-.toggle-switch { position: relative; width: 44px; height: 24px; }
-.toggle-switch input { opacity: 0; width: 0; height: 0; }
-.slider { position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--border-color); transition: .4s; border-radius: 24px; }
-.slider:before { position: absolute; content: ""; height: 18px; width: 18px; left: 3px; bottom: 3px; background-color: white; transition: .4s; border-radius: 50%; }
-input:checked + .slider { background-color: var(--theme-color); }
-input:checked + .slider:before { transform: translateX(20px); }
-.listening-visual { width: 120px; height: 120px; background: var(--bg-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; position: relative; cursor: pointer; border: 4px solid var(--border-color); transition: border-color 0.3s; }
-.listening-visual:hover { border-color: var(--theme-color); }
-.audio-waves { display: flex; align-items: center; gap: 4px; height: 40px; }
-.audio-waves span { display: block; width: 4px; height: 100%; background: var(--theme-color); border-radius: 2px; animation: wave 1s infinite ease-in-out; opacity: 0.3; transform: scaleY(0.2); }
-.audio-waves.is-playing span { opacity: 1; animation-play-state: running; }
-.audio-waves:not(.is-playing) span { animation-play-state: paused; }
-.audio-waves span:nth-child(1) { animation-delay: 0.0s; }
-.audio-waves span:nth-child(2) { animation-delay: 0.1s; }
-.audio-waves span:nth-child(3) { animation-delay: 0.2s; }
-.audio-waves span:nth-child(4) { animation-delay: 0.3s; }
-.audio-waves span:nth-child(5) { animation-delay: 0.4s; }
-@keyframes wave { 0%, 100% { transform: scaleY(0.2); } 50% { transform: scaleY(1); } }
-.listening-replay-btn { position: absolute; inset: 0; width: 100%; height: 100%; background: transparent; border: none; cursor: pointer; color: var(--theme-color); opacity: 0; transition: opacity 0.2s; display: flex; align-items: center; justify-content: center; }
-.listening-replay-btn svg { width: 40px; height: 40px; }
-.listening-visual:hover .listening-replay-btn { opacity: 0.2; }
-.listening-answer-area { min-height: 120px; width: 100%; background: var(--bg-secondary-color); border-radius: 12px; padding: 1rem; margin-bottom: 1.5rem; display: flex; flex-direction: column; justify-content: center; border: 1px dashed var(--border-color); }
-.listening-hidden-placeholder { color: var(--text-sub); font-size: 0.9rem; font-style: italic; }
-.listening-revealed-content { animation: fadeInUp 0.3s forwards; text-align: left; }
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-.listening-word { font-size: 1.6rem; color: var(--theme-color); margin-bottom: 0.2rem; text-align: center; }
-.listening-meaning { color: var(--text-sub); font-size: 0.9rem; margin-bottom: 0.8rem; text-align: center; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
-.listening-sentence-en { font-weight: 600; color: var(--text-main); margin-bottom: 0.4rem; font-size: 1rem; line-height: 1.4; }
-.listening-sentence-cn { font-size: 0.85rem; color: var(--text-sub); }
-.listening-controls { display: flex; gap: 1rem; width: 100%; }
-.control-btn { flex: 1; padding: 12px; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; transition: transform 0.1s; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 5px; }
-.control-btn:active { transform: scale(0.98); }
-.btn-reveal { background: var(--bg-secondary-color); color: var(--text-main); border: 1px solid var(--border-color); }
-.btn-reveal:hover { background: var(--border-color); }
-.btn-next { background: var(--theme-color); color: var(--text-inverse); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-.btn-next:hover { opacity: 0.9; box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
-
-
-/* --- 打字模式样式 (Typing Mode Styles) --- */
-.typing-header { width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
-.typing-progress-text { font-size: 0.95rem; color: var(--text-sub); font-weight: 600; }
-.typing-prompt { width: 100%; text-align: center; margin-bottom: 2rem; position: relative; }
-.typing-prompt-controls { display: flex; justify-content: center; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
-.typing-audio-btn, .typing-hint-btn { width: 44px; height: 44px; background: var(--bg-color); border-color: var(--border-color); }
-.typing-audio-btn svg, .typing-hint-btn svg { width: 24px; height: 24px; color: var(--theme-color); }
-.typing-hint-btn:disabled { opacity: 0.5; cursor: not-allowed; background-color: var(--border-color); border-color: var(--border-color); }
-.typing-hint-btn:disabled:hover { transform: none; }
-.typing-meaning { font-size: 1.1rem; color: var(--text-main); font-weight: 600; margin-bottom: 1rem; }
-.typing-sentence { font-size: 1rem; color: var(--text-sub); line-height: 1.6; padding: 1rem; background: var(--bg-secondary-color); border-radius: 12px; border: 1px solid var(--border-color); }
-.masked-word { display: inline-block; min-width: 60px; border-bottom: 2px solid var(--text-sub); color: transparent; margin: 0 4px; vertical-align: bottom; }
-.typing-input-container { position: relative; width: 100%; margin-bottom: 2rem; display: flex; justify-content: center; }
-.typing-input { width: 100%; font-size: 2rem; text-align: center; border: none; border-bottom: 3px solid var(--border-color); background: transparent; color: var(--text-main); padding: 10px; border-radius: 0; outline: none; transition: border-color 0.3s, color 0.3s; font-family: 'Courier New', monospace; font-weight: 700; }
-.typing-input::placeholder { color: var(--border-color-hover); font-weight: normal; font-size: 1.5rem; letter-spacing: 2px; }
-.typing-input:focus { border-bottom-color: var(--theme-color); }
-.typing-input.error { border-bottom-color: #ef4444; color: #ef4444; animation: shake 0.4s ease-in-out; }
-@keyframes shake { 0%, 100% { transform: translateX(0); } 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }
-.typing-input.success { border-bottom-color: #10b981; color: #10b981; }
-.typing-feedback-icon { position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 1.5rem; opacity: 0; transition: opacity 0.3s; }
-.typing-input.success + .typing-feedback-icon::after { content: "✅"; }
-.typing-input.error + .typing-feedback-icon::after { content: "❌"; }
-.typing-input.success + .typing-feedback-icon, .typing-input.error + .typing-feedback-icon { opacity: 1; }
-.typing-result-area { width: 100%; padding: 1rem; background: var(--bg-secondary-color); border-radius: 12px; margin-bottom: 1.5rem; text-align: center; border: 1px solid var(--border-color); animation: fadeInUp 0.3s forwards; }
-.correct-answer-label { font-size: 0.85rem; color: var(--text-sub); margin-bottom: 0.3rem; }
-.correct-answer-text { font-size: 1.5rem; font-weight: 800; color: #10b981; letter-spacing: 1px; }
-.typing-controls { display: flex; gap: 1rem; width: 100%; }
-.btn-submit { background: var(--theme-color); color: var(--text-inverse); box-shadow: var(--shadow); }
-.btn-submit:hover { opacity: 0.9; transform: translateY(-1px); }
-
-
-/* --- 更多操作下拉菜单 (More Options Dropdown) --- */
-.options-menu-container { position: relative; display: flex; }
-.options-dropdown-menu {
-    position: absolute; top: calc(100% + 10px); right: 0; width: 200px;
-    background-color: var(--card-bg); border-radius: var(--radius-sm); box-shadow: var(--shadow-hover);
-    border: 1px solid var(--border-color); padding: 0.5rem 0; z-index: 100; list-style: none; overflow: hidden;
-    opacity: 0; transform: translateY(-10px) scale(0.95); transition: opacity 0.2s ease-out, transform 0.2s ease-out;
-    pointer-events: none; transform-origin: top right;
+.spinner {
+    animation: rotate 2s linear infinite;
+    width: 40px;
+    height: 40px;
 }
-.options-dropdown-menu.is-open { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+.spinner .path {
+    stroke: var(--text-sub);
+    stroke-linecap: round;
+    animation: dash 1.5s ease-in-out infinite;
+}
+@keyframes rotate { 100% { transform: rotate(360deg); } }
+@keyframes dash {
+    0% { stroke-dasharray: 1, 150; stroke-dashoffset: 0; }
+    50% { stroke-dasharray: 90, 150; stroke-dashoffset: -35; }
+    100% { stroke-dasharray: 90, 150; stroke-dashoffset: -124; }
+}
+
+
+/* --- 组件: 更多操作下拉菜单 --- */
+.options-menu-container {
+    position: relative;
+    display: flex;
+}
+.options-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 200px;
+    background-color: var(--card-bg);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-hover);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 0;
+    z-index: 100;
+    list-style: none;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    pointer-events: none;
+    transform-origin: top right;
+}
+.options-dropdown-menu.is-open {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
 .menu-item {
-    display: flex; align-items: center; gap: 0.75rem; width: 100%;
-    padding: 0.75rem 1rem; border: none; background: none; text-align: left;
-    font-size: 0.95rem; font-weight: 500; color: var(--text-main); cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
     transition: background-color 0.2s ease;
 }
-.menu-item:hover { background-color: var(--bg-color); }
-.menu-divider { height: 1px; background-color: var(--border-color); margin: 0.5rem 0; }
-
-/* ==========================================================================
-   【新增】创建单词本模态框样式 (Wordbook Creation Modal Styles)
-   ========================================================================== */
-
-/* 1. 模态框内容区定制 */
-.wordbook-content {
-    max-width: 600px; /* 更宽，以容纳更多内容 */
-    max-height: 90vh; /* 限制最大高度 */
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem; /* 步骤之间的间距 */
-    text-align: left; /* 内容左对齐 */
-}
-
-/* 2. 模态框头部 */
-.wordbook-header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border-color);
-}
-.wordbook-header h3 {
-    font-size: 1.25rem;
-    color: var(--text-highlight);
-}
-
-/* 3. 步骤通用样式 */
-.wordbook-step {
-    width: 100%;
-}
-.wordbook-step-label {
-    display: block;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.75rem;
-    color: var(--text-main);
-}
-.wordbook-step-actions {
-    display: flex;
-    justify-content: flex-end; /* 按钮靠右 */
-    margin-top: 1rem;
-}
-
-/* 4. 步骤一: 文本输入区 */
-#wordbook-text-input {
-    width: 100%;
-    min-height: 120px;
-    padding: 1rem;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--border-color);
+.menu-item:hover {
     background-color: var(--bg-color);
-    color: var(--text-main);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    resize: vertical; /* 只允许垂直方向缩放 */
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
 }
-#wordbook-text-input:focus {
-    border-color: var(--theme-color);
-    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color) 20%, transparent);
-}
-.wordbook-status-text {
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    color: var(--text-sub);
-    min-height: 1.2em; /* 预留空间，防止布局跳动 */
-}
-
-/* 5. 步骤二: 单词列表 */
-.wordbook-filter-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5rem;
-    padding: 0 0.5rem;
-}
-#wordbook-word-count {
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: var(--text-sub);
-}
-.wordbook-control-link {
-    background: none;
-    border: none;
-    color: var(--theme-color);
-    cursor: pointer;
-    font-size: 0.9rem;
-    margin-left: 1rem;
-    text-decoration: underline;
-}
-.wordbook-list {
-    max-height: 200px; /* 列表最大高度 */
-    overflow-y: auto; /* 超出则滚动 */
-    padding: 0.75rem;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--border-color);
-    background-color: var(--bg-secondary-color);
-    display: flex;
-    flex-wrap: wrap; /* 单词自动换行 */
-    gap: 0.75rem; /* 单词之间的间距 */
-}
-.wordbook-list-placeholder {
-    width: 100%;
-    text-align: center;
-    color: var(--text-sub);
-    font-style: italic;
-    padding: 2rem 0;
-}
-/* 单个单词项 */
-.wordbook-item {
-    display: flex;
-    align-items: center;
-    background-color: var(--bg-color);
-    padding: 6px 12px;
-    border-radius: 50px; /* 胶囊形状 */
-    cursor: pointer;
-    transition: background-color 0.2s;
-    border: 1px solid transparent;
-}
-.wordbook-item:hover {
+.menu-divider {
+    height: 1px;
     background-color: var(--border-color);
-}
-.wordbook-item input[type="checkbox"] {
-    margin-right: 8px;
-    width: 16px;
-    height: 16px;
-    accent-color: var(--theme-color); /* 复选框颜色跟随主题 */
-}
-.wordbook-item label {
-    font-weight: 500;
-    color: var(--text-main);
-    cursor: pointer;
-}
-/* 已掌握的单词特殊样式 */
-.wordbook-item.is-learned label {
-    color: var(--text-sub);
-    text-decoration: line-through; /* 添加删除线 */
+    margin: 0.5rem 0;
 }
 
-/* 6. 步骤三: 命名 */
-.wordbook-name-input {
-    width: 100%;
-    height: 48px;
-    padding: 0 1rem;
-    font-size: 1rem;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-sm);
-    background-color: var(--bg-color);
-    color: var(--text-main);
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
-}
-.wordbook-name-input:focus {
-    border-color: var(--theme-color);
-    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color) 20%, transparent);
+
+/* --- 全局状态与动画 --- */
+
+/* 洗牌动画状态 */
+.card-grid.is-shuffling .card {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
 }
 
-/* 7. 按钮禁用状态 */
-.control-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
+/* 无图自测模式: 应用于 body 的全局类 */
+body.mode-no-visual .card-front .visual-area svg {
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
-.control-btn:disabled:hover {
+body.mode-no-visual .card-front .visual-area {
+    position: relative;
+}
+body.mode-no-visual .card-front .visual-area::after {
+    content: "?";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    font-weight: 800;
+    color: var(--border-color);
     opacity: 0.5;
+    font-family: 'Courier New', monospace;
+    pointer-events: none;
+}
+
+
+/* --- 通用美化: 滚动条 --- */
+/* 此处定义的滚动条样式将应用于所有需要它的地方（例如卡片背面） */
+.sentence-section::-webkit-scrollbar {
+    width: 6px;
+}
+.sentence-section::-webkit-scrollbar-track {
+    background: transparent;
+}
+.sentence-section::-webkit-scrollbar-thumb {
+    background-color: var(--border-color-hover);
+    border-radius: 10px;
+}
+.sentence-section::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-sub);
 }

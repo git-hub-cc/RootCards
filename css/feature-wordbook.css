@@ -1,0 +1,163 @@
+/* ==========================================================================
+   Feature: Wordbook Creation Styles - 单词本创建样式
+   --------------------------------------------------------------------------
+   职责:
+   - 定义所有与“创建单词本”模态框相关的专属样式。
+   - 依赖于 modals.css 中定义的通用模态框样式。
+   ========================================================================== */
+
+/* --- 单词本: 模态框内容区定制 --- */
+.wordbook-content {
+    max-width: 600px; /* 更宽，以容纳更多内容 */
+    max-height: 90vh; /* 限制最大高度 */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* 步骤之间的间距 */
+    text-align: left; /* 内容左对齐 */
+}
+
+/* --- 单词本: 头部 --- */
+.wordbook-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.wordbook-header h3 {
+    font-size: 1.25rem;
+    color: var(--text-highlight);
+}
+
+/* --- 单词本: 步骤通用样式 --- */
+.wordbook-step {
+    width: 100%;
+}
+.wordbook-step-label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-main);
+}
+.wordbook-step-actions {
+    display: flex;
+    justify-content: flex-end; /* 按钮靠右 */
+    margin-top: 1rem;
+}
+
+/* --- 单词本: (步骤一) 文本输入区 --- */
+#wordbook-text-input {
+    width: 100%;
+    min-height: 120px;
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    resize: vertical; /* 只允许垂直方向缩放 */
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+#wordbook-text-input:focus {
+    border-color: var(--theme-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color) 20%, transparent);
+}
+.wordbook-status-text {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-sub);
+    min-height: 1.2em; /* 预留空间，防止布局跳动 */
+}
+
+/* --- 单词本: (步骤二) 单词列表 --- */
+.wordbook-filter-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+}
+#wordbook-word-count {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-sub);
+}
+.wordbook-control-link {
+    background: none;
+    border: none;
+    color: var(--theme-color);
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    text-decoration: underline;
+}
+.wordbook-list {
+    max-height: 200px; /* 列表最大高度 */
+    overflow-y: auto; /* 超出则滚动 */
+    padding: 0.75rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-secondary-color);
+    display: flex;
+    flex-wrap: wrap; /* 单词自动换行 */
+    gap: 0.75rem; /* 单词之间的间距 */
+}
+.wordbook-list-placeholder {
+    width: 100%;
+    text-align: center;
+    color: var(--text-sub);
+    font-style: italic;
+    padding: 2rem 0;
+}
+/* 单个单词项 */
+.wordbook-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 6px 12px;
+    border-radius: 50px; /* 胶囊形状 */
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: 1px solid transparent;
+}
+.wordbook-item:hover {
+    background-color: var(--border-color);
+}
+.wordbook-item input[type="checkbox"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--theme-color); /* 复选框颜色跟随主题 */
+}
+.wordbook-item label {
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+}
+/* 已掌握的单词特殊样式 */
+.wordbook-item.is-learned label {
+    color: var(--text-sub);
+    text-decoration: line-through; /* 添加删除线 */
+}
+
+/* --- 单词本: (步骤三) 命名 --- */
+.wordbook-name-input {
+    width: 100%;
+    height: 48px;
+    padding: 0 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.wordbook-name-input:focus {
+    border-color: var(--theme-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color) 20%, transparent);
+}
