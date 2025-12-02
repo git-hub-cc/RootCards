@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Component Styles - 组件样式 (v4.2 - 新增打字模式)
+   Component Styles - 组件样式 (v4.3 - 新增打字提示功能)
    ========================================================================== */
 
 /* --- 组件: 年级筛选器按钮 --- */
@@ -53,6 +53,15 @@ body.dark-mode .grade-filter-btn.active {
     background: var(--color-learned);
     border-color: var(--color-learned);
 }
+/* 【新增样式】用户自定义单词本的按钮样式 */
+.filter-btn[data-filter-type="user-wordbook"].active {
+    background: #0891b2; /* 青色，用于区分 */
+    border-color: #0891b2;
+}
+body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
+    background: #0e7490;
+    border-color: #0e7490;
+}
 .filter-btn:not(.active):hover {
     border-color: var(--border-color-hover);
     color: var(--text-main);
@@ -97,9 +106,6 @@ body.dark-mode .grade-filter-btn.active {
 .shuffle-btn:active svg {
     transform: rotate(45deg);
 }
-.theme-toggle-btn .icon-moon { display: none; }
-body.dark-mode .theme-toggle-btn .icon-sun { display: none; }
-body.dark-mode .theme-toggle-btn .icon-moon { display: block; }
 
 
 /* --- 组件: 加载/空状态提示 --- */
@@ -314,47 +320,223 @@ input:checked + .slider:before { transform: translateX(20px); }
 .btn-next:hover { opacity: 0.9; box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
 
 
-/* ==========================================================================
-   【新增】打字模式样式 (Typing Mode Styles)
-   ========================================================================== */
-
-/* 1. 模态框头部: 进度条 */
+/* --- 打字模式样式 (Typing Mode Styles) --- */
 .typing-header { width: 100%; display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
 .typing-progress-text { font-size: 0.95rem; color: var(--text-sub); font-weight: 600; }
-.typing-progress-text span { font-weight: 800; }
-
-/* 2. 提示区: 释义与例句 */
 .typing-prompt { width: 100%; text-align: center; margin-bottom: 2rem; position: relative; }
-.typing-audio-btn { width: 44px; height: 44px; margin: 0 auto 10px; background: var(--bg-color); border-color: var(--border-color); }
-.typing-audio-btn svg { width: 24px; height: 24px; color: var(--theme-color); }
+.typing-prompt-controls { display: flex; justify-content: center; align-items: center; gap: 0.75rem; margin-bottom: 1rem; }
+.typing-audio-btn, .typing-hint-btn { width: 44px; height: 44px; background: var(--bg-color); border-color: var(--border-color); }
+.typing-audio-btn svg, .typing-hint-btn svg { width: 24px; height: 24px; color: var(--theme-color); }
+.typing-hint-btn:disabled { opacity: 0.5; cursor: not-allowed; background-color: var(--border-color); border-color: var(--border-color); }
+.typing-hint-btn:disabled:hover { transform: none; }
 .typing-meaning { font-size: 1.1rem; color: var(--text-main); font-weight: 600; margin-bottom: 1rem; }
 .typing-sentence { font-size: 1rem; color: var(--text-sub); line-height: 1.6; padding: 1rem; background: var(--bg-secondary-color); border-radius: 12px; border: 1px solid var(--border-color); }
-/* 挖空部分样式 */
 .masked-word { display: inline-block; min-width: 60px; border-bottom: 2px solid var(--text-sub); color: transparent; margin: 0 4px; vertical-align: bottom; }
-
-/* 3. 输入区 */
 .typing-input-container { position: relative; width: 100%; margin-bottom: 2rem; display: flex; justify-content: center; }
 .typing-input { width: 100%; font-size: 2rem; text-align: center; border: none; border-bottom: 3px solid var(--border-color); background: transparent; color: var(--text-main); padding: 10px; border-radius: 0; outline: none; transition: border-color 0.3s, color 0.3s; font-family: 'Courier New', monospace; font-weight: 700; }
-.typing-input::placeholder { color: var(--border-color); font-weight: normal; font-size: 1.5rem; }
+.typing-input::placeholder { color: var(--border-color-hover); font-weight: normal; font-size: 1.5rem; letter-spacing: 2px; }
 .typing-input:focus { border-bottom-color: var(--theme-color); }
-/* 错误状态：红色 + 晃动 */
 .typing-input.error { border-bottom-color: #ef4444; color: #ef4444; animation: shake 0.4s ease-in-out; }
 @keyframes shake { 0%, 100% { transform: translateX(0); } 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }
-/* 正确状态：绿色 */
 .typing-input.success { border-bottom-color: #10b981; color: #10b981; }
-
-/* 反馈图标 (对号/叉号) */
 .typing-feedback-icon { position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 1.5rem; opacity: 0; transition: opacity 0.3s; }
 .typing-input.success + .typing-feedback-icon::after { content: "✅"; }
 .typing-input.error + .typing-feedback-icon::after { content: "❌"; }
 .typing-input.success + .typing-feedback-icon, .typing-input.error + .typing-feedback-icon { opacity: 1; }
-
-/* 4. 结果反馈区 */
 .typing-result-area { width: 100%; padding: 1rem; background: var(--bg-secondary-color); border-radius: 12px; margin-bottom: 1.5rem; text-align: center; border: 1px solid var(--border-color); animation: fadeInUp 0.3s forwards; }
 .correct-answer-label { font-size: 0.85rem; color: var(--text-sub); margin-bottom: 0.3rem; }
 .correct-answer-text { font-size: 1.5rem; font-weight: 800; color: #10b981; letter-spacing: 1px; }
-
-/* 5. 控制按钮 */
 .typing-controls { display: flex; gap: 1rem; width: 100%; }
 .btn-submit { background: var(--theme-color); color: var(--text-inverse); box-shadow: var(--shadow); }
 .btn-submit:hover { opacity: 0.9; transform: translateY(-1px); }
+
+
+/* --- 更多操作下拉菜单 (More Options Dropdown) --- */
+.options-menu-container { position: relative; display: flex; }
+.options-dropdown-menu {
+    position: absolute; top: calc(100% + 10px); right: 0; width: 200px;
+    background-color: var(--card-bg); border-radius: var(--radius-sm); box-shadow: var(--shadow-hover);
+    border: 1px solid var(--border-color); padding: 0.5rem 0; z-index: 100; list-style: none; overflow: hidden;
+    opacity: 0; transform: translateY(-10px) scale(0.95); transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    pointer-events: none; transform-origin: top right;
+}
+.options-dropdown-menu.is-open { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+.menu-item {
+    display: flex; align-items: center; gap: 0.75rem; width: 100%;
+    padding: 0.75rem 1rem; border: none; background: none; text-align: left;
+    font-size: 0.95rem; font-weight: 500; color: var(--text-main); cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.menu-item:hover { background-color: var(--bg-color); }
+.menu-divider { height: 1px; background-color: var(--border-color); margin: 0.5rem 0; }
+
+/* ==========================================================================
+   【新增】创建单词本模态框样式 (Wordbook Creation Modal Styles)
+   ========================================================================== */
+
+/* 1. 模态框内容区定制 */
+.wordbook-content {
+    max-width: 600px; /* 更宽，以容纳更多内容 */
+    max-height: 90vh; /* 限制最大高度 */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* 步骤之间的间距 */
+    text-align: left; /* 内容左对齐 */
+}
+
+/* 2. 模态框头部 */
+.wordbook-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.wordbook-header h3 {
+    font-size: 1.25rem;
+    color: var(--text-highlight);
+}
+
+/* 3. 步骤通用样式 */
+.wordbook-step {
+    width: 100%;
+}
+.wordbook-step-label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-main);
+}
+.wordbook-step-actions {
+    display: flex;
+    justify-content: flex-end; /* 按钮靠右 */
+    margin-top: 1rem;
+}
+
+/* 4. 步骤一: 文本输入区 */
+#wordbook-text-input {
+    width: 100%;
+    min-height: 120px;
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    resize: vertical; /* 只允许垂直方向缩放 */
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+#wordbook-text-input:focus {
+    border-color: var(--theme-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color) 20%, transparent);
+}
+.wordbook-status-text {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--text-sub);
+    min-height: 1.2em; /* 预留空间，防止布局跳动 */
+}
+
+/* 5. 步骤二: 单词列表 */
+.wordbook-filter-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0 0.5rem;
+}
+#wordbook-word-count {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-sub);
+}
+.wordbook-control-link {
+    background: none;
+    border: none;
+    color: var(--theme-color);
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    text-decoration: underline;
+}
+.wordbook-list {
+    max-height: 200px; /* 列表最大高度 */
+    overflow-y: auto; /* 超出则滚动 */
+    padding: 0.75rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-secondary-color);
+    display: flex;
+    flex-wrap: wrap; /* 单词自动换行 */
+    gap: 0.75rem; /* 单词之间的间距 */
+}
+.wordbook-list-placeholder {
+    width: 100%;
+    text-align: center;
+    color: var(--text-sub);
+    font-style: italic;
+    padding: 2rem 0;
+}
+/* 单个单词项 */
+.wordbook-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 6px 12px;
+    border-radius: 50px; /* 胶囊形状 */
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: 1px solid transparent;
+}
+.wordbook-item:hover {
+    background-color: var(--border-color);
+}
+.wordbook-item input[type="checkbox"] {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--theme-color); /* 复选框颜色跟随主题 */
+}
+.wordbook-item label {
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+}
+/* 已掌握的单词特殊样式 */
+.wordbook-item.is-learned label {
+    color: var(--text-sub);
+    text-decoration: line-through; /* 添加删除线 */
+}
+
+/* 6. 步骤三: 命名 */
+.wordbook-name-input {
+    width: 100%;
+    height: 48px;
+    padding: 0 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.wordbook-name-input:focus {
+    border-color: var(--theme-color);
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color) 20%, transparent);
+}
+
+/* 7. 按钮禁用状态 */
+.control-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+.control-btn:disabled:hover {
+    opacity: 0.5;
+}

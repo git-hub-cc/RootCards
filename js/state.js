@@ -1,28 +1,32 @@
-// = a/s/t/a/t/e/./j/s
-
 // =================================================================================
-// 数据与状态管理模块 (State Management Module) - v6.6 (优化搜索逻辑)
+// 数据与状态管理模块 (State Management Module) - v7.0 (新增自定义单词本)
 // ---------------------------------------------------------------------------------
 // 主要职责：
-// 1. (数据加载) 异步加载所有词汇数据文件。
+// 1. (数据加载) 异步加载所有词汇数据文件，加载时提供进度回调。
 // 2. (数据处理) 将原始数据处理成应用所需的格式。
 // 3. (状态管理) 维护全局数据和当前筛选状态，包括搜索查询状态。
-// 4. (数据操作) 在准备类别数据时，解析出纯英文的显示名。
-// 5. (状态持久化) 负责从 localStorage 读取和保存用户学习进度。
+// 4. (数据操作) 提供导入/导出“已掌握”单词列表的功能。
+// 5. (状态持久化) 负责从 localStorage 读取和保存用户学习进度及自定义单词本。
 // 6. (文本处理) 提供用于生成挖空例句的正则处理函数。
+// 【核心改动】:
+//  - 新增了对用户自定义单词本的加载、保存和筛选逻辑。
+//  - 扩展了 `localStorage` 的使用，增加了 `USER_WORDBOOKS_KEY`。
+//  - 修改了 `getAvailableCategories` 和 `filterAndPrepareDataSet` 以兼容新功能。
 // =================================================================================
 
 // --- 模块内常量 ---
 const LEARNED_WORDS_KEY = 'etymologyLearnedWords';
+const USER_WORDBOOKS_KEY = 'etymologyUserWordbooks'; // 【新增】用于存储用户单词本的 key
 
 // --- 导出的状态变量 (供其他模块读取和修改) ---
 export let allVocabularyData = [];      // 存储所有已加载和处理过的数据
 export let currentDataSet = [];         // 当前经过筛选后，需要被渲染的数据集
-export let currentFilter = 'all';       // 当前类别筛选器状态 (e.g., 'all', 'learned', 're')
+export let currentFilter = 'all';       // 当前类别筛选器状态 (e.g., 'all', 'learned', 're', 或自定义单词本名称)
 export let currentGrade = 'grade7';     // 当前年级筛选器状态
 export let currentContentType = 'pre';  // 当前内容类型筛选器状态 (pre, suf, root, etc.)
 export let learnedWordsSet = new Set(); // 存储所有已掌握单词的 Set 集合，用于快速查找
 export let currentSearchQuery = '';     // 当前搜索框中的关键词
+export let userWordbooks = [];          // 【新增】存储所有用户创建的单词本，结构为 [{ name: string, words: string[] }]
 
 /**
  * 从 localStorage 加载已掌握的单词列表。
@@ -47,12 +51,66 @@ export function loadLearnedWords() {
 /**
  * 将已掌握的单词列表保存到 localStorage。
  */
-export function saveLearnedWords() {
+function saveLearnedWords() {
     try {
         const wordsArray = Array.from(learnedWordsSet);
         localStorage.setItem(LEARNED_WORDS_KEY, JSON.stringify(wordsArray));
     } catch (error) {
         console.error('无法保存学习进度到 localStorage:', error);
+    }
+}
+
+/**
+ * 【新增】从 localStorage 加载用户创建的单词本。
+ */
+export function loadUserWordbooks() {
+    try {
+        const storedWordbooks = localStorage.getItem(USER_WORDBOOKS_KEY);
+        if (storedWordbooks) {
+            const parsedData = JSON.parse(storedWordbooks);
+            // 验证数据结构是否正确
+            if (Array.isArray(parsedData) && parsedData.every(wb => typeof wb.name === 'string' && Array.isArray(wb.words))) {
+                userWordbooks = parsedData;
+            } else {
+                console.warn('localStorage 中的单词本数据格式不正确，已忽略。');
+                userWordbooks = [];
+            }
+        }
+    } catch (error) {
+        console.error('无法从 localStorage 加载用户单词本:', error);
+        userWordbooks = [];
+    }
+}
+
+/**
+ * 【新增】保存用户创建的所有单词本到 localStorage。
+ */
+function saveUserWordbooks() {
+    try {
+        localStorage.setItem(USER_WORDBOOKS_KEY, JSON.stringify(userWordbooks));
+    } catch (error) {
+        console.error('无法保存用户单词本到 localStorage:', error);
+    }
+}
+
+/**
+ * 【新增】添加或更新一个单词本，并保存。
+ * @param {string} name - 单词本的名称。
+ * @param {string[]} words - 单词本包含的单词列表。
+ * @returns {boolean} - 如果是新创建的单词本返回 true，如果是更新返回 false。
+ */
+export function addOrUpdateWordbook(name, words) {
+    const existingIndex = userWordbooks.findIndex(wb => wb.name === name);
+    if (existingIndex > -1) {
+        // 更新现有的单词本
+        userWordbooks[existingIndex].words = words;
+        saveUserWordbooks();
+        return false;
+    } else {
+        // 添加新的单词本
+        userWordbooks.push({ name, words });
+        saveUserWordbooks();
+        return true;
     }
 }
 
@@ -69,6 +127,43 @@ export function toggleLearnedStatus(wordData) {
     }
     saveLearnedWords();
 }
+
+/**
+ * 获取“已掌握”单词的数组形式，用于导出。
+ * @returns {string[]} 一个包含所有已掌握单词的数组。
+ */
+export function getLearnedWordsArray() {
+    return Array.from(learnedWordsSet).sort(); // 排序后导出，更规范
+}
+
+/**
+ * 从一个数组导入“已掌握”的单词。
+ * @param {string[]} wordsArray - 从文件中读取的单词数组。
+ * @returns {number} 本次操作实际新增的单词数量。
+ */
+export function importLearnedWords(wordsArray) {
+    if (!Array.isArray(wordsArray)) {
+        console.error('导入数据格式错误，需要一个数组。');
+        return 0;
+    }
+    const originalSize = learnedWordsSet.size;
+    wordsArray.forEach(word => {
+        if (typeof word === 'string' && word.trim()) {
+            learnedWordsSet.add(word.trim());
+        }
+    });
+
+    // 将 isLearned 状态同步到 allVocabularyData 中
+    allVocabularyData.forEach(item => {
+        if (item.cardType === 'word' && learnedWordsSet.has(item.word)) {
+            item.isLearned = true;
+        }
+    });
+
+    saveLearnedWords();
+    return learnedWordsSet.size - originalSize; // 返回新增单词的数量
+}
+
 
 /**
  * 从文件路径中解析出年级信息。
@@ -109,9 +204,9 @@ function getContentTypeFromFilePath(filePath) {
 /**
  * 异步加载并处理所有数据文件。
  * 这是应用初始化的核心数据入口。
+ * @param {function(number, number): void} [onProgress] - 一个可选的回调函数，用于报告加载进度。
  */
-export async function loadAndProcessData() {
-    // 鲁棒性检查：确保全局变量 DATA_FILES 存在且格式正确
+export async function loadAndProcessData(onProgress) {
     if (typeof DATA_FILES === 'undefined' || !Array.isArray(DATA_FILES) || DATA_FILES.length === 0) {
         throw new Error("数据清单 'data/manifest.js' 未找到、格式错误或为空。");
     }
@@ -119,14 +214,19 @@ export async function loadAndProcessData() {
     const grades = new Set();
     allVocabularyData = [];
 
-    // 使用 Promise.allSettled 并行加载所有 JSON 文件，提高启动速度
+    const totalFiles = DATA_FILES.length;
+    let loadedFiles = 0;
+
+    if (typeof onProgress === 'function') {
+        onProgress(loadedFiles, totalFiles);
+    }
+
     const promises = DATA_FILES.map(async (file) => {
         try {
             const response = await fetch(file);
             if (!response.ok) throw new Error(`网络错误 (状态 ${response.status})，无法加载文件: ${file}`);
             const dataFile = await response.json();
 
-            // 格式校验，确保文件包含必要字段
             if (!dataFile.prefix || !Array.isArray(dataFile.meanings)) {
                 console.warn(`文件 ${file} 格式不正确，已跳过。`);
                 return null;
@@ -142,7 +242,6 @@ export async function loadAndProcessData() {
             const processedItems = [];
 
             for (const meaningGroup of dataFile.meanings) {
-                // 这是一个通用的处理函数，用于将公共属性附加到每个卡片数据上
                 const processItem = (item, cardType) => ({
                     ...item,
                     cardType, // 'intro' 或 'word'
@@ -158,12 +257,9 @@ export async function loadAndProcessData() {
                     ...(cardType === 'word' && { prefixVisual: meaningGroup.prefixVisual || '' })
                 });
 
-                // 处理介绍卡片
                 if (meaningGroup.prefixIntro) {
                     processedItems.push(processItem(meaningGroup.prefixIntro, 'intro'));
                 }
-
-                // 处理单词卡片
                 if (Array.isArray(meaningGroup.words)) {
                     const wordsData = meaningGroup.words.map(word => processItem(word, 'word'));
                     processedItems.push(...wordsData);
@@ -173,13 +269,17 @@ export async function loadAndProcessData() {
 
         } catch (fileError) {
             console.error(`加载或处理文件 ${file} 时出错:`, fileError);
-            return null; // 返回 null 表示此文件处理失败，Promise.allSettled 会记录下来
+            return null;
+        } finally {
+            loadedFiles++;
+            if (typeof onProgress === 'function') {
+                onProgress(loadedFiles, totalFiles);
+            }
         }
     });
 
     const results = await Promise.allSettled(promises);
     results.forEach(result => {
-        // 只将成功加载并处理好的数据添加到总数据集中
         if (result.status === 'fulfilled' && result.value) {
             allVocabularyData.push(...result.value);
         }
@@ -188,9 +288,9 @@ export async function loadAndProcessData() {
     return { grades: Array.from(grades).sort() };
 }
 
+
 /**
  * 【核心函数】根据当前所有筛选条件和搜索查询，更新 currentDataSet。
- * 这是所有筛选逻辑的汇集点。
  */
 export function filterAndPrepareDataSet() {
     let filteredData;
@@ -210,56 +310,55 @@ export function filterAndPrepareDataSet() {
         );
     }
 
-    // --- 阶段 2: 类别筛选 (All, Learned, 或特定词根/前缀) ---
+    // --- 【修改】阶段 2: 类别筛选 (All, Learned, 特定词根/前缀, 或用户自定义单词本) ---
+    const userWordbook = userWordbooks.find(wb => wb.name === currentFilter);
+
     if (currentFilter === 'learned') {
         filteredData = filteredData.filter(item => item.cardType === 'word' && item.isLearned);
+    } else if (userWordbook) {
+        // 【新增逻辑】如果筛选条件是一个自定义单词本
+        const wordbookSet = new Set(userWordbook.words);
+        filteredData = filteredData.filter(item =>
+            item.cardType === 'word' && wordbookSet.has(item.word.toLowerCase())
+        );
+        // 自定义单词本视图下，不考虑 "isLearned" 状态，全部显示
     } else if (currentFilter === 'all') {
-        // 'All' 类别下，显示所有介绍卡片和未掌握的单词卡片
         filteredData = filteredData.filter(item => item.cardType === 'intro' || !item.isLearned);
     } else {
-        // 特定类别下，显示该类别的介绍卡片和该类别下未掌握的单词卡片
+        // 默认的按词根/前缀筛选
         filteredData = filteredData.filter(item =>
             item.type === currentFilter && (item.cardType === 'intro' || !item.isLearned)
         );
     }
 
-    // --- 阶段 3: 搜索查询过滤 (最关键的改动) ---
+    // --- 阶段 3: 搜索查询过滤 ---
     if (currentSearchQuery) {
-        // 步骤 1: 从当前已筛选的结果中，只找出能匹配搜索词的【单词卡片】
         const matchingWordCards = filteredData.filter(item =>
             item.cardType === 'word' &&
             item.word &&
             item.word.toLowerCase().includes(currentSearchQuery)
         );
 
-        // 步骤 2: 从这些匹配到的单词中，提取它们所属的所有唯一类别 ID
-        // 使用 Set 集合可以自动去重，并且后续查找效率高
         const relevantCategoryIds = new Set(matchingWordCards.map(item => item.type));
 
-        // 步骤 3: 如果有匹配的单词，则找出与这些单词相关的【介绍卡片】
         if (relevantCategoryIds.size > 0) {
             const relevantIntroCards = filteredData.filter(item =>
                 item.cardType === 'intro' && relevantCategoryIds.has(item.type)
             );
-            // 步骤 4: 合并相关的介绍卡片和匹配的单词卡片，作为最终的搜索结果
             currentDataSet = [...relevantIntroCards, ...matchingWordCards];
         } else {
-            // 如果没有匹配到任何单词，则搜索结果为空
             currentDataSet = [];
         }
     } else {
-        // 如果没有搜索查询，则直接使用前几个阶段的筛选结果
         currentDataSet = filteredData;
     }
 }
 
 /**
  * Fisher-Yates 洗牌算法的高效实现。
- * @param {Array} array - 需要被洗牌的数组
- * @returns {Array} - 一个新的、被打乱顺序的数组
  */
 function shuffleArray(array) {
-    const newArray = [...array]; // 创建副本，避免修改原数组
+    const newArray = [...array];
     for (let i = newArray.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
@@ -269,7 +368,6 @@ function shuffleArray(array) {
 
 /**
  * 对当前数据集进行洗牌。
- * 会智能地将介绍卡片（如果有）固定在顶部，只洗牌单词卡片。
  */
 export function shuffleCurrentDataSet() {
     const introCard = currentDataSet.find(item => item.cardType === 'intro');
@@ -277,7 +375,6 @@ export function shuffleCurrentDataSet() {
 
     const shuffledWords = shuffleArray(wordCards);
 
-    // 如果存在介绍卡片，则将其放在打乱后的单词列表前面
     currentDataSet = introCard ? [introCard, ...shuffledWords] : shuffledWords;
 }
 
@@ -292,19 +389,12 @@ export function setCurrentGrade(newGrade) {
 export function setCurrentContentType(newType) {
     currentContentType = newType;
 }
-
-/**
- * 更新搜索查询状态。
- * @param {string} query - 来自搜索输入框的原始查询字符串
- */
 export function setSearchQuery(query) {
-    // 标准化输入：去除首尾空格并转为小写，以便进行不区分大小写的匹配
     currentSearchQuery = query.trim().toLowerCase();
 }
 
 /**
- * 根据当前筛选动态获取可用的类别列表，并为每个类别生成纯英文的显示名。
- * 用于动态生成筛选器按钮。
+ * 【修改】获取可用的筛选类别，包括预设类别和用户自定义单词本。
  */
 export function getAvailableCategories() {
     let gradeFilteredData;
@@ -325,13 +415,13 @@ export function getAvailableCategories() {
         finalFilteredData = gradeFilteredData;
     }
 
+    // 1. 提取预设的类别
     const categoryMap = new Map();
     finalFilteredData.forEach(item => {
         if (!categoryMap.has(item.type)) {
             const originalDisplayName = item.displayName;
             let englishDisplayName = originalDisplayName;
 
-            // 尝试从显示名中提取括号内的英文部分作为按钮文本
             if (item.contentType === 'category') {
                 const match = originalDisplayName.match(/\(([^)]+)\)/);
                 if (match && match[1]) {
@@ -340,6 +430,7 @@ export function getAvailableCategories() {
             }
 
             categoryMap.set(item.type, {
+                filterType: 'pre-defined', // 标记为预设类别
                 meaningId: item.type,
                 displayName: originalDisplayName,
                 englishDisplayName: englishDisplayName,
@@ -350,21 +441,20 @@ export function getAvailableCategories() {
         }
     });
 
-    return Array.from(categoryMap.values());
+    // 2. 【新增】整合用户自定义的单词本
+    const userWordbookCategories = userWordbooks.map(wb => ({
+        filterType: 'user-wordbook', // 标记为用户单词本
+        meaningId: wb.name,         // 使用单词本名称作为唯一标识
+        displayName: wb.name,       // 显示名称也是单词本名称
+        englishDisplayName: wb.name,
+    }));
+
+    // 3. 合并并返回
+    return [...Array.from(categoryMap.values()), ...userWordbookCategories];
 }
 
-/**
- * 处理例句，将目标单词及其变体替换为挖空占位符。
- * @param {string} sentence - 原始例句 (英文)
- * @param {string} targetWord - 需要挖空的目标单词
- * @returns {string} - 处理后的 HTML 字符串
- */
 export function getMaskedSentence(sentence, targetWord) {
     if (!sentence || !targetWord) return '';
-
-    // 构造正则表达式，用于匹配目标单词及其简单变体 (如 -s, -ed, -ing 等)
-    // \b 表示单词边界，确保不会匹配到单词的一部分 (e.g., 'he' 不会匹配 'the')
     const regex = new RegExp(`\\b${targetWord}[a-z]*\\b`, 'gi');
-
     return sentence.replace(regex, '<span class="masked-word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>');
 }

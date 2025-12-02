@@ -1,12 +1,12 @@
 // =================================================================================
-// UI 渲染模块 (UI Rendering Module) - v8.3 (新增双语速播放)
+// UI 渲染模块 (UI Rendering Module) - v9.0 (新增单词本创建UI)
 // ---------------------------------------------------------------------------------
 // 主要职责：
 // 1. (DOM元素创建) 提供创建单词卡片、介绍卡片和各类筛选按钮的函数。
 // 2. (渲染逻辑) 将卡片元素批量渲染到指定的容器中。
-// 3. (UI交互) 封装与UI直接相关的交互，包括【新增】单词双语速播放逻辑。
+// 3. (UI交互) 提供通用的JSON文件下载辅助函数。
 // 4. (音频播放) 播放本地音频文件。
-// 5. (模态框管理) 处理无图模式切换、听力模态框和打字模态框的渲染。
+// 5. (模态框管理) 处理无图模式切换、听力、打字以及新增的“单词本创建”模态框。
 // =================================================================================
 
 import * as State from './state.js'; // 引入 State 模块以使用 getMaskedSentence
@@ -16,20 +16,21 @@ let cardTemplate;
 let prefixIntroTemplate;
 const audioPlayer = new Audio();
 
-// --- 听力/打字模式相关 DOM 引用缓存 ---
+// --- 模态框相关 DOM 引用缓存 ---
 let listeningModalElements = null;
 let typingModalElements = null;
+let wordbookModalElements = null; // 【新增】单词本模态框元素缓存
 
 let handleEscKeydown = null;
 
-// 【新增】用于追踪双语速播放状态的状态机
+// 用于追踪双语速播放状态的状态机
 let lastClickedWordAudio = {
     element: null, // 存储最后点击的单词发音按钮的 DOM 元素
     isSlow: false  // 标记下一次播放是否应为慢速
 };
 
 // =================================================================================
-// 文件名处理函数
+// 文件名处理与下载辅助函数
 // =================================================================================
 
 const MAX_FILENAME_SLUG_LENGTH = 60;
@@ -48,6 +49,29 @@ export function sanitizeForFilename(text) {
     }
     slug = slug.replace(/^_+|_+$/g, '');
     return slug;
+}
+
+/**
+ * 触发一个 JSON 文件的下载。
+ * @param {object} dataObject - 需要被序列化并下载的 JavaScript 对象或数组。
+ * @param {string} filename - 下载文件的默认名称。
+ */
+export function triggerJsonDownload(dataObject, filename) {
+    try {
+        const jsonString = JSON.stringify(dataObject, null, 2);
+        const blob = new Blob([jsonString], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    } catch (error) {
+        console.error('创建下载文件时出错:', error);
+        alert('抱歉，创建下载文件时发生错误，请检查控制台。');
+    }
 }
 
 
@@ -188,7 +212,7 @@ export function updateActiveContentTypeButton(container, clickedButton) {
 }
 
 /**
- * 动态生成类别筛选器按钮，统一使用英文名。
+ * 动态生成类别筛选器按钮，现在支持用户自定义单词本。
  */
 export function renderFilterButtons(filterContainer, insertBeforeElement, categories) {
     filterContainer.querySelectorAll('.filter-btn').forEach(btn => btn.remove());
@@ -211,9 +235,12 @@ export function renderFilterButtons(filterContainer, insertBeforeElement, catego
         const button = document.createElement('button');
         button.className = 'filter-btn';
         button.dataset.filter = category.meaningId;
+        button.dataset.filterType = category.filterType;
 
         let buttonText;
-        if (category.contentType === 'pre') {
+        if (category.filterType === 'user-wordbook') {
+            buttonText = `📝 ${category.displayName}`;
+        } else if (category.contentType === 'pre') {
             buttonText = `${category.prefix}-`;
         } else if (category.contentType === 'suf') {
             buttonText = `-${category.prefix}`;
@@ -243,8 +270,9 @@ export function updateActiveFilterButton(filterContainer, clickedButton) {
         btn.style.color = '';
     });
     clickedButton.classList.add('active');
-    const themeColor = clickedButton.dataset.themeColor;
-    if (themeColor) {
+
+    if (clickedButton.dataset.filterType !== 'user-wordbook' && clickedButton.dataset.themeColor) {
+        const themeColor = clickedButton.dataset.themeColor;
         clickedButton.style.backgroundColor = themeColor;
         clickedButton.style.borderColor = themeColor;
         clickedButton.style.color = 'white';
@@ -344,43 +372,29 @@ function createWordCard(data, handlers) {
         }
     });
 
-    // --- 【核心修改】重构单词音频播放逻辑以支持双语速切换 ---
     cardClone.querySelector('.word-audio').addEventListener('click', (e) => {
         e.stopPropagation();
         const currentButton = e.currentTarget;
         const wordLower = data.word.toLowerCase();
-
-        // 1. 判断用户点击的是否是同一个单词按钮
         if (lastClickedWordAudio.element !== currentButton) {
-            // 如果是新按钮，重置状态机
             if (lastClickedWordAudio.element) {
-                // 移除上一个按钮的慢速提示样式（如果有）
                 lastClickedWordAudio.element.classList.remove('slow-playback-mode');
                 lastClickedWordAudio.element.title = '朗读单词';
             }
             lastClickedWordAudio.element = currentButton;
-            lastClickedWordAudio.isSlow = false; // 首次点击总是播放正常速度
+            lastClickedWordAudio.isSlow = false;
         } else {
-            // 如果是同一个按钮，切换速度状态
             lastClickedWordAudio.isSlow = !lastClickedWordAudio.isSlow;
         }
-
-        // 2. 根据状态构建音频文件路径
         const audioSuffix = lastClickedWordAudio.isSlow ? '_slow.mp3' : '.mp3';
         const audioPath = `audio/words/${wordLower}${audioSuffix}`;
-
-        // 3. 更新UI提示（CSS类和title属性）
         if (lastClickedWordAudio.isSlow) {
-            // 提示用户下一次点击将恢复常速
             currentButton.classList.add('slow-playback-mode');
             currentButton.title = '朗读单词 (慢速) - 再点恢复常速';
         } else {
-            // 提示用户下一次点击将播放慢速
             currentButton.classList.remove('slow-playback-mode');
             currentButton.title = '朗读单词 (常速) - 再点可慢放';
         }
-
-        // 4. 播放音频
         playAudioFile(audioPath);
     });
 
@@ -486,14 +500,13 @@ export function setAudioWaveAnimation(isPlaying) {
 
 
 // =================================================================================
-// 【新增】打字拼写模式模态框函数 (Typing Mode Functions)
+// 打字拼写模式模态框函数
 // =================================================================================
 
 export function showTypingModal() {
     const modal = document.getElementById('typing-modal');
     if (modal) {
         modal.style.display = 'flex';
-        // 缓存 DOM 引用，提高后续操作性能
         if (!typingModalElements) {
             typingModalElements = {
                 modal: modal,
@@ -506,10 +519,10 @@ export function showTypingModal() {
                 resultArea: document.getElementById('typing-result-area'),
                 correctAnswer: document.getElementById('typing-correct-answer'),
                 submitBtn: document.getElementById('typing-submit-btn'),
-                nextBtn: document.getElementById('typing-next-btn')
+                nextBtn: document.getElementById('typing-next-btn'),
+                hintBtn: document.getElementById('typing-hint-btn')
             };
         }
-        // 复用 ESC 关闭逻辑
         handleEscKeydown = (event) => { if (event.key === 'Escape') hideTypingModal(); };
         document.addEventListener('keydown', handleEscKeydown);
     }
@@ -527,24 +540,15 @@ export function hideTypingModal() {
     }
 }
 
-/**
- * 渲染打字题卡片。
- * @param {object} data - 单词数据对象
- * @param {number} current - 当前题号
- * @param {number} total - 总题数
- */
 export function renderTypingCard(data, current, total) {
     if (!typingModalElements) return;
     const els = typingModalElements;
 
-    // 1. 更新进度
     els.progressCurrent.textContent = current;
     els.progressTotal.textContent = total;
 
-    // 2. 更新内容
     els.meaning.textContent = data.translation;
 
-    // 生成挖空例句：随机选一句，如果没有则提示
     if (data.sentences && data.sentences.length > 0) {
         const randomIdx = Math.floor(Math.random() * data.sentences.length);
         const sentenceText = data.sentences[randomIdx].en;
@@ -553,51 +557,234 @@ export function renderTypingCard(data, current, total) {
         els.sentence.innerHTML = '<span class="masked-word">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> (No example sentence available)';
     }
 
-    // 3. 重置输入框状态
     resetTypingInput();
 
-    // 4. 自动聚焦输入框 (延迟一点以确保DOM更新)
     setTimeout(() => els.input.focus(), 100);
 }
 
-/**
- * 重置打字输入框及按钮状态到“未提交”模式。
- */
 export function resetTypingInput() {
     if (!typingModalElements) return;
     const els = typingModalElements;
 
     els.input.value = '';
     els.input.disabled = false;
-    els.input.className = 'typing-input'; // 移除 success/error 类
+    els.input.className = 'typing-input';
+    els.input.placeholder = '输入单词...';
+    els.hintBtn.disabled = false;
+
     els.resultArea.style.display = 'none';
     els.submitBtn.style.display = 'block';
     els.nextBtn.style.display = 'none';
 }
 
-/**
- * 显示拼写检查反馈。
- * @param {boolean} isCorrect - 拼写是否正确
- * @param {string} correctWord - 正确的单词
- */
 export function showTypingFeedback(isCorrect, correctWord) {
     if (!typingModalElements) return;
     const els = typingModalElements;
 
-    els.input.disabled = true; // 禁止再次修改
+    els.input.disabled = true;
 
     if (isCorrect) {
         els.input.classList.add('success');
     } else {
         els.input.classList.add('error');
-        // 只有错误时才显示“正确答案”区域，正确时输入框变绿即可
         els.correctAnswer.textContent = correctWord;
         els.resultArea.style.display = 'block';
     }
 
-    // 切换按钮状态
     els.submitBtn.style.display = 'none';
     els.nextBtn.style.display = 'block';
-    // 聚焦下一个按钮，方便回车
     els.nextBtn.focus();
+}
+
+export function showTypingHint(word, level) {
+    if (!typingModalElements || !word || word.length === 0 || level < 1 || level > 3) {
+        return;
+    }
+    const els = typingModalElements;
+    let hintText = '';
+
+    switch (level) {
+        case 1:
+            if (word.length <= 2) {
+                hintText = '_'.repeat(word.length);
+            } else {
+                hintText = word[0] + '_'.repeat(word.length - 2) + word[word.length - 1];
+            }
+            break;
+
+        case 2:
+            const chars = word.split('');
+            let revealed = Array(word.length).fill('_');
+            if (word.length > 0) revealed[0] = chars[0];
+            if (word.length > 1) revealed[revealed.length - 1] = chars[chars.length - 1];
+            const hiddenIndices = [];
+            for (let i = 1; i < word.length - 1; i++) {
+                hiddenIndices.push(i);
+            }
+            const revealCount = Math.max(0, Math.floor(word.length / 2) - 2);
+            for (let i = hiddenIndices.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [hiddenIndices[i], hiddenIndices[j]] = [hiddenIndices[j], hiddenIndices[i]];
+            }
+            for (let i = 0; i < revealCount && i < hiddenIndices.length; i++) {
+                const indexToShow = hiddenIndices[i];
+                revealed[indexToShow] = chars[indexToShow];
+            }
+            hintText = revealed.join('');
+            break;
+
+        case 3:
+            hintText = word;
+            els.hintBtn.disabled = true;
+            break;
+    }
+
+    els.input.placeholder = hintText;
+}
+
+// =================================================================================
+// 创建单词本模态框 UI 函数
+// =================================================================================
+
+/**
+ * 缓存单词本模态框的所有 DOM 元素引用，提高性能。
+ */
+function cacheWordbookModalElements() {
+    if (wordbookModalElements) return true;
+    const modal = document.getElementById('wordbook-modal');
+    if (!modal) return false;
+
+    wordbookModalElements = {
+        modal,
+        closeBtn: document.getElementById('wordbook-close-btn'),
+        textInput: document.getElementById('wordbook-text-input'),
+        extractBtn: document.getElementById('wordbook-extract-btn'),
+        extractStatus: document.getElementById('wordbook-extract-status'),
+        wordCount: document.getElementById('wordbook-word-count'),
+        selectAllBtn: document.getElementById('wordbook-select-all-btn'),
+        deselectAllBtn: document.getElementById('wordbook-deselect-all-btn'),
+        wordList: document.getElementById('wordbook-list'),
+        nameInput: document.getElementById('wordbook-name-input'),
+        createBtn: document.getElementById('wordbook-create-btn'),
+    };
+    return true;
+}
+
+/**
+ * 显示创建单词本模态框。
+ */
+export function showWordbookModal() {
+    if (!cacheWordbookModalElements()) return;
+    const { modal } = wordbookModalElements;
+    modal.style.display = 'flex';
+    handleEscKeydown = (event) => { if (event.key === 'Escape') hideWordbookModal(); };
+    document.addEventListener('keydown', handleEscKeydown);
+}
+
+/**
+ * 隐藏创建单词本模态框，并重置其状态。
+ */
+export function hideWordbookModal() {
+    if (!cacheWordbookModalElements()) return;
+    const { modal } = wordbookModalElements;
+    if (modal.style.display !== 'none') {
+        modal.style.display = 'none';
+        resetWordbookModal(); // 关闭时重置
+        if (handleEscKeydown) {
+            document.removeEventListener('keydown', handleEscKeydown);
+            handleEscKeydown = null;
+        }
+    }
+}
+
+/**
+ * 重置单词本模态框到初始状态。
+ */
+export function resetWordbookModal() {
+    if (!cacheWordbookModalElements()) return;
+    const {
+        textInput, extractStatus, wordCount, wordList, nameInput, createBtn, extractBtn
+    } = wordbookModalElements;
+
+    textInput.value = '';
+    nameInput.value = '';
+    extractStatus.textContent = '';
+    wordCount.textContent = '';
+    wordList.innerHTML = '<p class="wordbook-list-placeholder">提取后，单词将显示在这里</p>';
+    createBtn.disabled = true;
+    extractBtn.disabled = false;
+    textInput.disabled = false;
+}
+
+/**
+ * 更新单词提取过程中的状态文本。
+ * @param {string} text - 要显示的状态信息。
+ * @param {boolean} isProcessing - 是否正在处理中。
+ */
+export function updateWordbookStatus(text, isProcessing = false) {
+    if (!cacheWordbookModalElements()) return;
+    const { extractStatus, extractBtn, textInput } = wordbookModalElements;
+    extractStatus.textContent = text;
+    extractBtn.disabled = isProcessing;
+    textInput.disabled = isProcessing;
+    if (isProcessing) {
+        extractBtn.innerHTML = '<svg class="spinner" viewBox="0 0 50 50" style="width:20px;height:20px;stroke:white;"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg> 处理中...';
+    } else {
+        extractBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg> 提取单词';
+    }
+}
+
+/**
+ * 将提取并处理后的单词列表渲染到模态框中。
+ * @param {Array<Object>} wordsData - 包含单词信息的对象数组，格式: [{word: string, isLearned: boolean}]
+ */
+export function renderExtractedWords(wordsData) {
+    if (!cacheWordbookModalElements()) return;
+    const { wordList, wordCount, createBtn } = wordbookModalElements;
+    wordList.innerHTML = ''; // 清空旧内容
+
+    if (wordsData.length === 0) {
+        wordList.innerHTML = '<p class="wordbook-list-placeholder">未提取到有效单词</p>';
+        wordCount.textContent = '共 0 个单词';
+        createBtn.disabled = true;
+        return;
+    }
+
+    const fragment = document.createDocumentFragment();
+    wordsData.forEach(({ word, isLearned }) => {
+        const item = document.createElement('div');
+        item.className = 'wordbook-item';
+        if (isLearned) {
+            item.classList.add('is-learned');
+        }
+
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.id = `wb-word-${word}`;
+        checkbox.dataset.word = word;
+        checkbox.checked = true; // 默认全部选中
+
+        const label = document.createElement('label');
+        label.setAttribute('for', `wb-word-${word}`);
+        label.textContent = word;
+
+        item.appendChild(checkbox);
+        item.appendChild(label);
+        fragment.appendChild(item);
+    });
+    wordList.appendChild(fragment);
+
+    wordCount.textContent = `共 ${wordsData.length} 个单词`;
+    updateCreateButtonState();
+}
+
+/**
+ * 根据当前选择状态，更新“创建”按钮的可用性。
+ */
+export function updateCreateButtonState() {
+    if (!cacheWordbookModalElements()) return;
+    const { nameInput, createBtn, wordList } = wordbookModalElements;
+    const selectedCount = wordList.querySelectorAll('input[type="checkbox"]:checked').length;
+    const hasName = nameInput.value.trim().length > 0;
+    createBtn.disabled = !(selectedCount > 0 && hasName);
 }
