@@ -1,12 +1,12 @@
 // =================================================================================
-// UI 渲染模块 (UI Rendering Module) - v8.2 (新增打字模式渲染)
+// UI 渲染模块 (UI Rendering Module) - v8.3 (新增双语速播放)
 // ---------------------------------------------------------------------------------
 // 主要职责：
 // 1. (DOM元素创建) 提供创建单词卡片、介绍卡片和各类筛选按钮的函数。
 // 2. (渲染逻辑) 将卡片元素批量渲染到指定的容器中。
-// 3. (UI交互) 封装与UI直接相关的交互。
+// 3. (UI交互) 封装与UI直接相关的交互，包括【新增】单词双语速播放逻辑。
 // 4. (音频播放) 播放本地音频文件。
-// 5. (模态框管理) 处理无图模式切换、听力模态框，以及【新增】打字模态框的渲染。
+// 5. (模态框管理) 处理无图模式切换、听力模态框和打字模态框的渲染。
 // =================================================================================
 
 import * as State from './state.js'; // 引入 State 模块以使用 getMaskedSentence
@@ -21,6 +21,12 @@ let listeningModalElements = null;
 let typingModalElements = null;
 
 let handleEscKeydown = null;
+
+// 【新增】用于追踪双语速播放状态的状态机
+let lastClickedWordAudio = {
+    element: null, // 存储最后点击的单词发音按钮的 DOM 元素
+    isSlow: false  // 标记下一次播放是否应为慢速
+};
 
 // =================================================================================
 // 文件名处理函数
@@ -206,7 +212,6 @@ export function renderFilterButtons(filterContainer, insertBeforeElement, catego
         button.className = 'filter-btn';
         button.dataset.filter = category.meaningId;
 
-        // 智能文本：根据内容类型决定按钮文本
         let buttonText;
         if (category.contentType === 'pre') {
             buttonText = `${category.prefix}-`;
@@ -339,10 +344,44 @@ function createWordCard(data, handlers) {
         }
     });
 
+    // --- 【核心修改】重构单词音频播放逻辑以支持双语速切换 ---
     cardClone.querySelector('.word-audio').addEventListener('click', (e) => {
         e.stopPropagation();
-        const wordAudioPath = `audio/words/${data.word.toLowerCase()}.mp3`;
-        playAudioFile(wordAudioPath);
+        const currentButton = e.currentTarget;
+        const wordLower = data.word.toLowerCase();
+
+        // 1. 判断用户点击的是否是同一个单词按钮
+        if (lastClickedWordAudio.element !== currentButton) {
+            // 如果是新按钮，重置状态机
+            if (lastClickedWordAudio.element) {
+                // 移除上一个按钮的慢速提示样式（如果有）
+                lastClickedWordAudio.element.classList.remove('slow-playback-mode');
+                lastClickedWordAudio.element.title = '朗读单词';
+            }
+            lastClickedWordAudio.element = currentButton;
+            lastClickedWordAudio.isSlow = false; // 首次点击总是播放正常速度
+        } else {
+            // 如果是同一个按钮，切换速度状态
+            lastClickedWordAudio.isSlow = !lastClickedWordAudio.isSlow;
+        }
+
+        // 2. 根据状态构建音频文件路径
+        const audioSuffix = lastClickedWordAudio.isSlow ? '_slow.mp3' : '.mp3';
+        const audioPath = `audio/words/${wordLower}${audioSuffix}`;
+
+        // 3. 更新UI提示（CSS类和title属性）
+        if (lastClickedWordAudio.isSlow) {
+            // 提示用户下一次点击将恢复常速
+            currentButton.classList.add('slow-playback-mode');
+            currentButton.title = '朗读单词 (慢速) - 再点恢复常速';
+        } else {
+            // 提示用户下一次点击将播放慢速
+            currentButton.classList.remove('slow-playback-mode');
+            currentButton.title = '朗读单词 (常速) - 再点可慢放';
+        }
+
+        // 4. 播放音频
+        playAudioFile(audioPath);
     });
 
     const togglePrefixBtn = cardClone.querySelector('.toggle-prefix-btn');

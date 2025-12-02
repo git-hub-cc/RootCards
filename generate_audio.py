@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 """
-Etymology Visualizer 音频缓存生成脚本 (v3.1 - 优化文件名)
+Etymology Visualizer 音频缓存生成脚本 (v3.2 - 新增慢速音频)
 
 功能:
 1. 自动读取 `data/manifest.js` 文件，获取所有单词数据源。
 2. 解析新的JSON数据结构，能够处理单个文件内包含多个 "meanings" (意境) 数组的情况。
 3. 聚合所有唯一的单词和例句。
 4. 使用 Google Text-to-Speech (gTTS) 服务，为每个单词和例句生成对应的英文发音 MP3 文件。
-5. 【优化】为例句生成基于其内容的文件名，避免因顺序变化或内容相似导致的重复或冲突。
-6. 将生成的音频文件保存到 `audio/words` 和 `audio/sentences` 目录中。
-7. 具有缓存检查功能：如果音频文件已存在且有效，则会跳过。
+5. 【新增功能】为每个单词额外生成一个慢速版本的发音文件 (文件名以 _slow.mp3 结尾)。
+6. 为例句生成基于其内容的文件名，避免因顺序变化或内容相似导致的重复或冲突。
+7. 将生成的音频文件保存到 `audio/words` 和 `audio/sentences` 目录中。
+8. 具有缓存检查功能：如果音频文件已存在且有效，则会跳过。
 
 使用方法:
 1. 确保已安装 Python 3 和必要的库:
@@ -34,7 +35,7 @@ WORDS_DIR = AUDIO_ROOT / "words"
 SENTENCES_DIR = AUDIO_ROOT / "sentences"
 REQUEST_DELAY = 0.5
 MIN_FILE_SIZE_BYTES = 1024  # 1 KB
-MAX_FILENAME_SLUG_LENGTH = 60 # <--- 优化点: 新增配置，限制例句文件名片段的最大长度
+MAX_FILENAME_SLUG_LENGTH = 60
 
 # --- 脚本核心逻辑 ---
 
@@ -69,15 +70,6 @@ def parse_manifest(manifest_path: Path) -> list[Path]:
 def aggregate_data(file_paths: list[Path]) -> tuple[set[str], dict[str, list[str]]]:
     """
     遍历所有数据文件，聚合所有唯一的单词和例句。
-    【核心修改】现在会处理新的嵌套式JSON结构。
-
-    Args:
-        file_paths: 数据文件的路径列表。
-
-    Returns:
-        一个元组，包含:
-        - unique_words (set): 所有唯一单词的小写集合。
-        - unique_sentences (dict): {单词: [例句1, 例句2, ...]} 的字典。
     """
     unique_words = set()
     unique_sentences = {}
@@ -127,47 +119,49 @@ def aggregate_data(file_paths: list[Path]) -> tuple[set[str], dict[str, list[str
     return unique_words, unique_sentences
 
 
-# <--- 优化点: 新增辅助函数，用于将句子转换为安全的文件名 "slug"
 def sanitize_for_filename(text: str, max_length: int = MAX_FILENAME_SLUG_LENGTH) -> str:
     """
     将文本转换为一个对文件名安全、唯一的“slug”。
-
-    1. 转换为小写。
-    2. 将所有非字母数字字符替换为下划线。
-    3. 压缩连续的下划线为一个。
-    4. 截断到最大长度。
-    5. 清理首尾的下划线。
     """
-    # 转换为小写
     slug = text.lower()
-    # 将所有非字母和非数字的字符替换为下划线
     slug = re.sub(r'[^a-z0-9]+', '_', slug)
-    # 截断以避免文件名过长
     if len(slug) > max_length:
         slug = slug[:max_length]
-    # 清理可能出现在开头或结尾的下划线
     slug = slug.strip('_')
     return slug
 
 
-def generate_audio_file(text: str, output_path: Path) -> bool:
+# 【核心修改】函数签名增加 is_slow 参数
+def generate_audio_file(text: str, output_path: Path, is_slow: bool = False) -> bool:
     """
     为给定的文本生成音频文件，并进行缓存检查。
+
+    :param text: 要转换为语音的文本。
+    :param output_path: 音频文件的输出路径。
+    :param is_slow: 是否生成慢速版本的音频。
+    :return: 生成成功返回 True，否则返回 False。
     """
+    # 1. 缓存检查：如果文件已存在且有效，则跳过
     if output_path.exists() and output_path.stat().st_size >= MIN_FILE_SIZE_BYTES:
         try:
             MP3(output_path)
-            # 文件存在且有效，跳过
+            # 文件有效，直接返回成功
             return True
         except HeaderNotFoundError:
             print(f"  [警告] '{output_path.name}' 已存在但文件损坏，将重新生成。")
         except Exception as e:
             print(f"  [警告] 检查 '{output_path.name}' 时出错 ({e})，将重新生成。")
 
+    # 2. 文件生成
     try:
-        print(f"  [生成] 正在请求 '{output_path.name}'...")
-        tts = gTTS(text=text, lang='en', slow=False)
+        speed_str = "慢速" if is_slow else "正常"
+        print(f"  [生成] 正在请求 '{output_path.name}' ({speed_str})...")
+
+        # 【核心修改】根据 is_slow 参数决定 gTTS 的 slow 属性
+        tts = gTTS(text=text, lang='en', slow=is_slow)
         tts.save(str(output_path))
+
+        # 在每次请求后稍作延迟，避免对API造成过大压力
         time.sleep(REQUEST_DELAY)
         return True
     except AssertionError:
@@ -175,8 +169,9 @@ def generate_audio_file(text: str, output_path: Path) -> bool:
         return False
     except Exception as e:
         print(f"  [严重错误] 生成 '{output_path.name}' 失败: {e}")
+        # 如果生成失败，删除可能已创建的空文件或损坏文件，确保下次能重新生成
         if output_path.exists():
-            output_path.unlink() # 删除生成失败的空文件或损坏文件
+            output_path.unlink()
         return False
 
 
@@ -186,6 +181,7 @@ def main():
     print("🚀 开始执行 Etymology Visualizer 音频缓存生成脚本 🚀")
     print("=" * 50)
 
+    # 确保输出目录存在
     WORDS_DIR.mkdir(parents=True, exist_ok=True)
     SENTENCES_DIR.mkdir(parents=True, exist_ok=True)
     print(f"✅ 输出目录已准备就绪:\n   - 单词: {WORDS_DIR}\n   - 例句: {SENTENCES_DIR}")
@@ -202,18 +198,35 @@ def main():
 
     # --- 开始生成单词音频 ---
     print("\n" + "-" * 20)
-    print(f"🎤 开始处理 {len(words)} 个单词音频...")
+    print(f"🎤 开始处理 {len(words)} 个单词音频 (每词2种速度)...")
     print("-" * 20)
     success_words, failed_words = 0, 0
+    total_word_audios = len(words) * 2  # 每个单词生成两种速度
+    processed_word_audios = 0
+
     for i, word in enumerate(sorted(list(words)), 1):
         print(f"进度: {i}/{len(words)} - 单词: '{word}'")
-        file_path = WORDS_DIR / f"{word}.mp3"
-        if generate_audio_file(word, file_path):
+
+        # --- 【核心修改】为每个单词生成两种速度的音频 ---
+        # 1. 生成正常速度音频
+        normal_path = WORDS_DIR / f"{word}.mp3"
+        processed_word_audios += 1
+        print(f"   ({processed_word_audios}/{total_word_audios})", end="")
+        if generate_audio_file(word, normal_path, is_slow=False):
             success_words += 1
         else:
             failed_words += 1
 
-    # --- 开始生成例句音频 ---
+        # 2. 生成慢速音频
+        slow_path = WORDS_DIR / f"{word}_slow.mp3"
+        processed_word_audios += 1
+        print(f"   ({processed_word_audios}/{total_word_audios})", end="")
+        if generate_audio_file(word, slow_path, is_slow=True):
+            success_words += 1
+        else:
+            failed_words += 1
+
+    # --- 开始生成例句音频 (例句通常只需正常速度) ---
     total_sentences = sum(len(s) for s in sentences_map.values())
     print("\n" + "-" * 20)
     print(f"🎧 开始处理 {total_sentences} 条例句音频...")
@@ -226,13 +239,12 @@ def main():
             processed_count += 1
             print(f"进度: {processed_count}/{total_sentences} - 单词 '{word_key}' 的例句 {index + 1}/{len(sentence_list)}")
 
-            # <--- 优化点: 使用新的函数生成基于内容的文件名
             sentence_slug = sanitize_for_filename(sentence)
             filename = f"{word_key}_{sentence_slug}.mp3"
-            # --->
-
             file_path = SENTENCES_DIR / filename
-            if generate_audio_file(sentence, file_path):
+
+            # 例句默认使用正常速度
+            if generate_audio_file(sentence, file_path, is_slow=False):
                 success_sentences += 1
             else:
                 failed_sentences += 1
@@ -242,7 +254,7 @@ def main():
     print("🎉🎉🎉 所有任务执行完毕！🎉🎉🎉")
     print("=" * 50)
     print("📊 生成报告:")
-    print(f"  - 单词音频: {success_words} 个成功, {failed_words} 个失败。")
+    print(f"  - 单词音频: {success_words} 个成功, {failed_words} 个失败。 (共计 {total_word_audios} 个文件)")
     print(f"  - 例句音频: {success_sentences} 个成功, {failed_sentences} 个失败。")
     print("\n现在您的 'audio' 文件夹已是最新状态。")
     print("=" * 50)
