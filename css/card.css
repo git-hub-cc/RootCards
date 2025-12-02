@@ -16,10 +16,11 @@
     animation: card-fade-in 0.5s ease-out forwards;
 }
 
-/* 卡片移除时的淡出动画 */
-.card.is-removing {
+/* 【新增】定义卡片在“待删除”状态下的样式 */
+.card.is-pending-removal {
     opacity: 0;
-    transform: scale(0.95);
+    transform: scale(0.9) translateY(20px);
+    pointer-events: none; /* 防止在隐藏过程中被再次点击 */
 }
 
 @keyframes card-fade-in {
@@ -230,19 +231,13 @@ body.dark-mode .toggle-prefix-btn:hover, body.dark-mode .mark-btn:hover {
     height: 24px;
 }
 
-/* --- 【新增】“切换前缀”按钮的图标状态控制 --- */
-/* 默认显示睁开的眼睛，隐藏闭上的眼睛 */
 .toggle-prefix-btn .icon-eye { display: block; }
 .toggle-prefix-btn .icon-eye-off { display: none; }
-/* 当卡片具有 .prefix-hidden 类时，反转显示状态 */
 .card.prefix-hidden .toggle-prefix-btn .icon-eye { display: none; }
 .card.prefix-hidden .toggle-prefix-btn .icon-eye-off { display: block; }
 
-/* --- 【核心】“标记已掌握”按钮的图标状态控制 --- */
-/* 默认显示空心图标，隐藏实心图标 */
 .mark-btn .icon-check-empty { display: block; }
 .mark-btn .icon-check-filled { display: none; }
-/* 当卡片具有 .is-learned 类时，反转显示状态 */
 .card.is-learned .mark-btn .icon-check-empty { display: none; }
 .card.is-learned .mark-btn .icon-check-filled {
     display: block;
@@ -286,7 +281,7 @@ body.dark-mode .audio-btn:hover {
 }
 
 
-/* --- 组件: 前缀介绍卡片 --- */
+/* --- 组件: 前缀介绍卡片 (保持不变) --- */
 .prefix-intro-card .card-front,
 .prefix-intro-card .card-back {
     background: var(--card-bg);
@@ -334,7 +329,7 @@ body:not(.dark-mode) .prefix-intro-card .card-back {
 }
 
 
-/* --- 组件: 骨架加载图 --- */
+/* --- 组件: 骨架加载图 (保持不变) --- */
 #skeleton-loader {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

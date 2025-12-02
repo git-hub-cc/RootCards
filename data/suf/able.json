@@ -41,7 +41,7 @@
         },
         {
           "word": "Enjoyable",
-          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 2 12 A 10 10 0 1 0 22 12 A 10 10 0 1 0 2 12 Z M 8 14 q 4 4 8 0 M 7.5 9 A 1.5 1.5 0 1 0 10.5 9 A 1.5 1.5 0 1 0 7.5 9 Z M 13.5 9 A 1.5 1.5 0 1 0 16.5 9 A 1.5 1.5 0 1 0 13.5 9 Z' fill='none' stroke='currentColor'/></svg>",
+          "rootVisual": "<g transform='translate(0, 0)'><circle cx='12' cy='12' r='10' fill='none' stroke='currentColor' stroke-width='2'/><path d='M 8 14 q 4 4 8 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='8' cy='9' r='1.5' fill='currentColor'/><circle cx='16' cy='9' r='1.5' fill='currentColor'/></g>",
           "breakdown": ["enjoy (享受)", "-able (能...的)"],
           "imagery": "一张戴着耳机的笑脸，沉浸在快乐中。",
           "translation": "令人享受的",

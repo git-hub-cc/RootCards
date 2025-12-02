@@ -82,7 +82,7 @@
         },
         {
           "word": "blonde",
-          "rootVisual": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 8 a 8 8 0 0 1 16 0'/><path d='M4 8 C 2 12, 6 16, 4 20'/><path d='M20 8 C 22 12, 18 16, 20 20'/><path d='M12 8 C 10 13, 14 13, 12 21'/></svg>",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M4 12 a 8 8 0 0 1 16 0' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round'/><path d='M4 12 q 4 6 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round'/><path d='M7 8 q 2 -3 5 0' stroke='currentColor' fill='none' stroke-width='1.5'/><path d='M15 7 q 2 -3 4 0' stroke='currentColor' fill='none' stroke-width='1.5'/></g>",
           "breakdown": ["Blonde", "(金黄色)"],
           "imagery": "柔和的波浪线条勾勒出富有动感的短发轮廓，象征着浅色头发特有的轻盈与光泽感。",
           "translation": "金黄色的",

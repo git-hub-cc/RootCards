@@ -6,7 +6,7 @@
       "meaningId": "less_adj",
       "displayName": "-less (无...的)",
       "themeColor": "#ef4444",
-      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><line x1='4' y1='20' x2='20' y2='4' stroke='currentColor' stroke-width='2'/>",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><line x1='4' y='20' x2='20' y2='4' stroke='currentColor' stroke-width='2'/>",
       "prefixIntro": {
         "title": "后缀 -less",
         "description": "形容词后缀，表示 **“没有...的”** 或 **“缺失...”**。\n具有否定的含义。",
@@ -28,7 +28,7 @@
         },
         {
           "word": "Meaningless",
-          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 4 12 M 4 12 A 8 8 0 1 0 20 12 A 8 8 0 1 0 4 12 Z' stroke='currentColor' stroke-width='2'/></svg>",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' stroke-width='2' fill='none'/>",
           "breakdown": ["meaning (意义)", "-less (无)"],
           "imagery": "一个空心的圆，里面什么内容都没有，空洞无物。",
           "translation": "无意义的",

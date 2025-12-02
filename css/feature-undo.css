@@ -1,0 +1,116 @@
+/* ==========================================================================
+   Feature: Undo Toast Styles - 撤销通知样式 (v1.1 - 优化按钮外观)
+   --------------------------------------------------------------------------
+   职责:
+   - 定义全局“撤销”操作通知栏（Toast/Snackbar）的样式。
+   - 包括其布局、动画、进度条和主题切换支持。
+   ========================================================================== */
+
+/* --- 容器样式 --- */
+.undo-toast {
+    position: fixed;
+    bottom: 2rem; /* 距离底部 */
+    right: 2rem;  /* 距离右侧 */
+    width: 320px;
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-hover);
+    border: 1px solid var(--border-color);
+    z-index: 9999; /* 确保在最顶层 */
+
+    /* 默认隐藏，通过 is-visible 类来显示 */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: visibility 0.3s, opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* --- 可见状态 --- */
+.undo-toast.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- 内部元素布局 --- */
+.undo-message {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-right: 1.5rem; /* 与按钮保持距离 */
+}
+
+.undo-action-btn {
+    position: absolute;
+    top: 50%;
+    right: 1.25rem;
+    transform: translateY(-50%);
+
+    /* --- 【核心修改】为按钮添加醒目的外观 --- */
+    background-color: var(--theme-color); /* 1. 使用主题色作为背景，保证视觉统一且醒目。 */
+    color: var(--text-inverse);           /* 2. 文字使用反色（通常为白色），确保在深色背景上的可读性。 */
+    /* --- 修改结束 --- */
+
+    border: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+    /* 【核心修改】更新 transition 属性，以平滑地处理透明度变化，而不是背景色。 */
+    transition: opacity 0.2s;
+}
+
+.undo-action-btn:hover {
+    /* 【核心修改】鼠标悬浮时，通过降低透明度提供反馈，而不是改变背景色。 */
+    opacity: 0.9;
+}
+
+/* --- 进度条 --- */
+.undo-progress-bar-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--border-color);
+    border-bottom-left-radius: var(--radius-sm);
+    border-bottom-right-radius: var(--radius-sm);
+    overflow: hidden; /* 确保进度条不出界 */
+}
+
+.undo-progress-bar {
+    height: 100%;
+    width: 100%;
+    background-color: var(--theme-color);
+    transition: width 5s linear; /* 默认过渡，但会被动画覆盖 */
+}
+
+/*
+  通过添加/移除 `is-running` 类来控制动画的启动和重置。
+  这样可以确保每次显示通知时，动画都从头开始。
+*/
+.undo-progress-bar.is-running {
+    width: 0; /* 动画结束后停在 0% */
+    animation: shrink-width 5s linear forwards;
+}
+
+@keyframes shrink-width {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+/* --- 响应式调整 --- */
+@media (max-width: 600px) {
+    .undo-toast {
+        left: 1rem;
+        right: 1rem;
+        bottom: 1rem;
+        width: auto; /* 宽度自适应 */
+    }
+}

@@ -6,7 +6,7 @@
       "meaningId": "ize_verb",
       "displayName": "-ize (...化)",
       "themeColor": "#8b5cf6",
-      "prefixVisual": "<rect x='4' y='8' width='6' height='8' stroke='currentColor' fill='none'/><path d='M12 12 h4' stroke='currentColor' marker-end='url(#arrow)'/><circle cx='20' cy='12' r='4' stroke='currentColor' fill='none'/>",
+      "prefixVisual": "<g transform='translate(0, 0)'><rect x='2' y='8' width='6' height='8' stroke='currentColor' fill='none' stroke-width='2' rx='1'/><path d='M10 12 h4' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/><circle cx='18' cy='12' r='4' stroke='currentColor' fill='none' stroke-width='2'/></g>",
       "prefixIntro": {
         "title": "后缀 -ize",
         "description": "动词后缀，表示 **“使...化”** 或 **“变成...”**。\n表示转化的过程。",
@@ -16,7 +16,10 @@
         {
           "word": "Memorize",
           "rootVisual": "<path d='M6 6 h12 v12 h-12 z' stroke='currentColor' fill='none'/><path d='M9 10 h6 M9 14 h4' stroke='currentColor'/><path d='M12 2 v4' stroke='currentColor' marker-end='url(#arrow)'/>",
-          "breakdown": ["memory (记忆)", "-ize (...化)"],
+          "breakdown": [
+            "memory (记忆)",
+            "-ize (...化)"
+          ],
           "imagery": "把信息像文件一样存入大脑的抽屉里。",
           "translation": "记忆",
           "sentences": [

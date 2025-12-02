@@ -28,7 +28,7 @@
         },
         {
           "word": "Famous",
-          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 12 2 l 3 6 h 6 l -5 4 l 2 6 l -6 -4 l -6 4 l 2 -6 l -5 -4 h 6 z' fill='none' stroke='currentColor'/></svg>",
+          "rootVisual": "<path d='M12 2 L15.09 8.26 L22 9.27 L17 14.14 L18.18 21.02 L12 17.77 L5.82 21.02 L7 14.14 L2 9.27 L8.91 8.26 Z' fill='none' stroke='currentColor' stroke-width='2' stroke-linejoin='round'/>",
           "breakdown": ["fame (名声)", "-ous (充满...的)"],
           "imagery": "一颗闪耀的星星，光芒向外辐射。",
           "translation": "著名的",

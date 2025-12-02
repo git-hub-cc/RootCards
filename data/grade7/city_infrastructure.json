@@ -31,7 +31,7 @@
         },
         {
           "word": "bridge",
-          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M2 8h20 M2 12h20 M5 12v8 M12 12v8 M19 12v8' fill='none' stroke='currentColor'/></svg>",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M2 10 h20 M2 14 h20 M5 14 v6 M12 14 v6 M19 14 v6' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='square'/></g>",
           "breakdown": ["Bridge", "(桥)"],
           "imagery": "坚固的桥墩撑起平直的桥面，构成一条跨越障碍（如河流、山谷）的通道。这个设计代表了桥梁最基本的功能——连接与通行。",
           "translation": "桥",

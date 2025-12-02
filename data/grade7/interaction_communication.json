@@ -26,9 +26,12 @@
         },
         {
           "word": "sing",
-          "rootVisual": "<circle cx='6' cy='14' r='2' fill='currentColor'/><path d='M8 14 q 4 -8 8 0' stroke='currentColor' fill='none' stroke-width='2' /><path d='M16 14 v-8 l4 2' stroke='currentColor' fill='none' stroke-width='2' />",
-          "breakdown": ["sing / singer", "(唱/歌手)"],
-          "imagery": "优美的旋律化作音符，从口中轻快地飘出。",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M9 13 a 4 4 0 1 0 0 -8 a 4 4 0 0 0 0 8 Z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 13 v 9' stroke='currentColor' stroke-width='2'/><path d='M5 22 h 8' stroke='currentColor' stroke-width='2'/><path d='M13 10 q 4 -2 6 -5' stroke='currentColor' fill='none'/><path d='M13 12 q 4 0 6 3' stroke='currentColor' fill='none'/><circle cx='18' cy='5' r='1.5' fill='currentColor' stroke='none'/></g>",
+          "breakdown": [
+            "sing / singer",
+            "(唱/歌手)"
+          ],
+          "imagery": "侧面的人像张开嘴，优美的旋律化作音符，从口中轻快地飘出。",
           "translation": "唱；歌手",
           "sentences": [
             { "en": "The singer is singing the famous song \"Take Me to Your Heart\".", "cn": "那位歌手正在演唱著名歌曲《带我入心》。" }
@@ -112,7 +115,7 @@
         },
         {
           "word": "Fight",
-          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M18.5 7a6.5 6.5 0 0 0-11.6-4 4 4 0 0 0-1.4 7v6a3 3 0 0 0 3 3h7a3 3 0 0 0 3-3V7z M6 9a2 2 0 1 0 0 4h2 M8,19 H16 A1,1 0 0 1 17,20 V21 A1,1 0 0 1 16,22 H8 A1,1 0 0 1 7,21 V20 A1,1 0 0 1 8,19' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M 18.5 7 a 6.5 6.5 0 0 0 -11.6 -4 a 4 4 0 0 0 -1.4 7 v 6 a 3 3 0 0 0 3 3 h 7 a 3 3 0 0 0 3 -3 V 7 z M 6 9 a 2 2 0 1 0 0 4 h 2 M 8 19 H 16 A 1 1 0 0 1 17 20 V 21 A 1 1 0 0 1 16 22 H 8 A 1 1 0 0 1 7 21 V 20 A 1 1 0 0 1 8 19' fill='none' stroke='currentColor' stroke-width='2'/></g>",
           "breakdown": ["Fight", "(打架/战斗)"],
           "imagery": "戴上厚重的拳击手套，站在擂台上准备迎接激烈的交锋。",
           "translation": "打架；战斗",
@@ -122,7 +125,7 @@
         },
         {
           "word": "pick",
-          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 12 8 L 10 12 l 2 -4 l 2 4 Z L 12 8 v -4 M 8 12 v 8 h 8 v -8' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M 12 8 L 10 12 l 2 -4 l 2 4 Z L 12 8 v -4 M 8 12 v 8 h 8 v -8' fill='none' stroke='currentColor' stroke-width='2'/></g>",
           "breakdown": ["pick", "(挑选；摘)"],
           "imagery": "一只手（或夹子）正从上方精准地抓取一个小物体，强调“拾取”的动作。",
           "translation": "挑选；摘",

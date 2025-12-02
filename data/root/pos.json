@@ -6,7 +6,7 @@
       "meaningId": "pos_put",
       "displayName": "pos- (放/置)",
       "themeColor": "#3b82f6",
-      "prefixVisual": "<line x1='2' y1='20' x2='22' y2='20' stroke='currentColor' stroke-width='2'/><rect x='8' y='12' width='8' height='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 v6' stroke='currentColor' stroke-dasharray='2 2'/><path d='M10 8 l2 2 l2 -2' stroke='currentColor'/>",
+      "prefixVisual": "<g transform='translate(0, 0)'><line x1='2' y1='20' x2='22' y2='20' stroke='currentColor' stroke-width='2' stroke-linecap='round'/><rect x='8' y='12' width='8' height='8' stroke='currentColor' fill='none' stroke-width='2' rx='1'/><path d='M12 3 v7' stroke='currentColor' stroke-width='2' stroke-dasharray='2 2'/><path d='M9 7 l3 3 l3 -3' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></g>",
       "prefixIntro": {
         "title": "词根 -pos-",
         "description": "核心意境是 **“放” (Put)** 或 **“位置” (Place)**。\n表示放置的动作或所处的位置。",
@@ -15,7 +15,7 @@
       "words": [
         {
           "word": "Pose",
-          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M9.5,4 A2.5,2.5 0 1 0 14.5,4 A2.5,2.5 0 1 0 9.5,4 Z M12,6.5 L15,12 M15,12 L11,18 M15,12 L19,15 M12,7 L8,10 M8,10 L6,8,8,8' fill='none' stroke='currentColor'/></svg>",
+          "rootVisual": "<g transform='translate(0, 0)'><circle cx='12' cy='5' r='2.5' fill='none' stroke='currentColor' stroke-width='2'/><path d='M12 7.5 L12 14 M12 14 L9 20 M12 14 L15 19 M12 9 L8 11 M12 9 L16 8' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></g>",
           "breakdown": ["pos (放)", "e (动词后缀)"],
           "imagery": "把身体摆放（pos）成某种特定的样子。",
           "translation": "姿势；摆姿势",
@@ -29,7 +29,10 @@
         {
           "word": "Position",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/><line x1='12' y1='8' x2='12' y2='16' stroke='currentColor'/><line x1='8' y1='12' x2='16' y2='12' stroke='currentColor'/>",
-          "breakdown": ["pos (放)", "-ition (名)"],
+          "breakdown": [
+            "pos (放)",
+            "-ition (名)"
+          ],
           "imagery": "被放置（pos）的具体地点。",
           "translation": "位置；姿势",
           "sentences": [

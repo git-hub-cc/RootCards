@@ -35,7 +35,7 @@
         },
         {
           "word": "Dream",
-          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 9 14 A 3 3 0 1 0 15 14 A 3 3 0 1 0 9 14 Z M 12 17 v 5 M 8 22 h 8 M 12 2 C 9.5 2 8 4 8 5 s 1 2.5 3 3 c 0.5 0.1 1.5 0.1 2 -0.5 c 1 0.5 2 1 4 0 c 1.5 -1 2 -3 1 -4.5 C 17 2 15 2 12 2 z v 0' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
+          "rootVisual": "<g transform='translate(0, 0)'><circle cx='12' cy='18' r='3' fill='none' stroke='currentColor' stroke-width='2'/><path d='M12 21 v3' stroke='currentColor' stroke-width='2'/><path d='M10 24 h4' stroke='currentColor' stroke-width='2'/><path d='M12 14 a 1 1 0 0 1 0 -2 a 2 2 0 0 1 0 -4 a 3 3 0 0 1 6 0 a 2 2 0 0 1 0 4 a 1 1 0 0 1 0 2 z' fill='none' stroke='currentColor' stroke-width='1.5' stroke-dasharray='2 2'/><circle cx='15' cy='10' r='1' fill='currentColor' opacity='0.5'/></g>",
           "breakdown": ["Dream", "(梦想)"],
           "imagery": "一个人抬头仰望高悬的云朵，目光中充满了对未来的憧憬。",
           "translation": "梦想；做梦",

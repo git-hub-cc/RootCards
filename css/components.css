@@ -129,7 +129,6 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
     text-align: center;
     font-size: 1.2rem;
     color: var(--text-sub);
-    padding: 4rem 0;
 }
 #loading-progress-text {
     margin-bottom: 1rem;
@@ -188,9 +187,10 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
     pointer-events: auto;
 }
 .menu-item {
+    /* 【核心修改】display:flex 确保图标和文本对齐 */
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.75rem; /* 图标与文本的间距 */
     width: 100%;
     padding: 0.75rem 1rem;
     border: none;
@@ -204,6 +204,13 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
 }
 .menu-item:hover {
     background-color: var(--bg-color);
+}
+/* 【核心修改】为菜单项内的 SVG 图标定义样式 */
+.menu-item svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0; /* 防止图标在 flex 布局中被压缩 */
+    color: currentColor; /* 继承父元素文本颜色，自动适应主题和悬浮状态 */
 }
 .menu-divider {
     height: 1px;

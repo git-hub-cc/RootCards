@@ -97,7 +97,7 @@
         },
         {
           "word": "Thankful",
-          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 12 20 m 0 -4 m -8 -4 q 8 4 6 0 m 9 0 q -7 4 -4 0 M 12 10 l -2 -2 a 2 2 0 0 1 4 0 z' stroke='currentColor'/></svg>",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M 12 20 m 0 -4 m -8 -4 q 8 4 6 0 m 9 0 q -7 4 -4 0 M 12 10 l -2 -2 a 2 2 0 0 1 4 0 z' stroke='currentColor' fill='none' stroke-width='1.5'/></g>",
           "breakdown": ["thank (感谢)", "-ful (充满)"],
           "imagery": "双手捧着爱心，充满了感激之情。",
           "translation": "感谢的",
@@ -110,7 +110,7 @@
         },
         {
           "word": "Wonderful",
-          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M 12 17 l -5 3 l 1 -6 l -4 -4 l 6 -1 l 3 -5 l 3 5 l 6 1 l -4 4 l 1 6 z' fill='none' stroke='currentColor'/></svg>",
+          "rootVisual": "<path d='M12 2 L15.09 8.26 L22 9.27 L17 14.14 L18.18 21.02 L12 17.77 L5.82 21.02 L7 14.14 L2 9.27 L8.91 8.26 Z' fill='none' stroke='currentColor' stroke-width='1.5'/>",
           "breakdown": ["wonder (奇迹)", "-ful (充满)"],
           "imagery": "一颗完美的星星，充满了惊奇和美好。",
           "translation": "精彩的",

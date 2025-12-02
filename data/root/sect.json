@@ -6,7 +6,7 @@
       "meaningId": "sect_cut",
       "displayName": "sect- (切割)",
       "themeColor": "#ef4444",
-      "prefixVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w.org/2000/svg'><path d='M5 2 L20 20 M4 2 L19 20 M6 2 L21 20 M4 2 L7 5 L5 8 L8 11 L6 14 L9 17 L7 20' fill='none' stroke='currentColor'/></svg>",
+      "prefixVisual": "<g transform='translate(0, 0)'><path d='M6 2 L18 22 M5 2 L17 22 M7 2 L19 22' stroke='currentColor' fill='none' stroke-opacity='0.5' /><path d='M6 2 L9 5 L7 8 L10 11 L8 14 L11 17 L9 22' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></g>",
       "prefixIntro": {
         "title": "词根 -sect-",
         "description": "核心意境是 **“切割” (Cut)** 或 **“部分” (Part)**。\n表示将一个整体，用外力强行分离或断裂成若干部分。",
@@ -16,7 +16,10 @@
         {
           "word": "Insect",
           "rootVisual": "<ellipse cx='12' cy='12' rx='3' ry='8' stroke='currentColor' fill='none'/><path d='M12 4 c0 0 -4 2 -4 6 c0 4 4 6 4 6' stroke='currentColor' fill='none'/><path d='M12 4 c0 0 4 2 4 6 c0 4 -4 6 -4 6' stroke='currentColor' fill='none'/><line x1='12' y1='8' x2='12' y2='16' stroke='currentColor' stroke-dasharray='2 1'/>",
-          "breakdown": ["in- (向内)", "sect (切)"],
+          "breakdown": [
+            "in- (向内)",
+            "sect (切)"
+          ],
           "imagery": "昆虫的身体看起来像是一节一节被“切开”的（头、胸、腹）。",
           "translation": "昆虫",
           "sentences": [

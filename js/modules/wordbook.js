@@ -1,48 +1,55 @@
 // =================================================================================
-// 单词本创建模块 (Wordbook Creation Module) - v1.0
+// 单词本管理模块 (Wordbook Management Module) - v2.1 (集成撤销删除)
 // ---------------------------------------------------------------------------------
 // 职责:
-// 1. 管理“创建单词本”模态框的所有UI交互和状态。
-// 2. 使用 compromise.js (nlp) 库从用户输入的文本中提取单词。
-// 3. 处理单词本的创建和保存逻辑。
+// 1. 管理“管理单词本”模态框的所有UI交互和视图切换。
+// 2. 实现单词本的 CRUD 逻辑，删除操作现在支持撤销。
+// 3. 使用 compromise.js (nlp) 库提取单词。
 // =================================================================================
 
 import * as State from '../state.js';
+// 【新增】导入 UndoManager 以使用撤销功能
+import * as UndoManager from './undoManager.js';
 
 // --- 模块内部状态 ---
 const state = {
-    isExtracting: false // 防止重复点击提取按钮
+    currentView: 'list',
+    editorMode: 'create',
+    editingId: null,
+    isExtracting: false,
+    wordsList: []
 };
 
 // --- 模块内部DOM元素缓存 ---
 const elements = {};
 
-// --- 内部函数 ---
-
 /**
- * 缓存所有与单词本创建相关的DOM元素。
- * @returns {boolean} - 如果所有元素都找到则返回 true，否则返回 false。
+ * 缓存所有相关的DOM元素。
+ * @returns {boolean} - 成功返回 true。
  */
 function cacheElements() {
     if (elements.modal) return true;
 
     const modal = document.getElementById('wordbook-modal');
-    if (!modal) {
-        console.error('单词本模块初始化失败：未找到 #wordbook-modal 元素。');
-        return false;
-    }
+    if (!modal) return false;
 
     elements.modal = modal;
     elements.closeBtn = document.getElementById('wordbook-close-btn');
-    elements.extractBtn = document.getElementById('wordbook-extract-btn');
-    elements.textInput = document.getElementById('wordbook-text-input');
-    elements.list = document.getElementById('wordbook-list');
+    elements.viewList = document.getElementById('wordbook-view-list');
+    elements.viewEditor = document.getElementById('wordbook-view-editor');
+    elements.newBtn = document.getElementById('wordbook-new-btn');
+    elements.listContainer = document.getElementById('wordbook-list-container');
+    elements.backBtn = document.getElementById('wordbook-back-btn');
+    elements.editorTitle = document.getElementById('wordbook-editor-title');
     elements.nameInput = document.getElementById('wordbook-name-input');
-    elements.createBtn = document.getElementById('wordbook-create-btn');
+    elements.textInput = document.getElementById('wordbook-text-input');
+    elements.extractBtn = document.getElementById('wordbook-extract-btn');
+    elements.extractStatus = document.getElementById('wordbook-extract-status');
+    elements.wordsListContainer = document.getElementById('wordbook-words-list');
+    elements.wordCount = document.getElementById('wordbook-word-count');
+    elements.saveBtn = document.getElementById('wordbook-save-btn');
     elements.selectAllBtn = document.getElementById('wordbook-select-all-btn');
     elements.deselectAllBtn = document.getElementById('wordbook-deselect-all-btn');
-    elements.extractStatus = document.getElementById('wordbook-extract-status');
-    elements.wordCount = document.getElementById('wordbook-word-count');
 
     for (const key in elements) {
         if (!elements[key]) {
@@ -53,231 +60,283 @@ function cacheElements() {
     return true;
 }
 
-/**
- * 更新“创建并学习”按钮的启用/禁用状态。
- */
-function updateCreateButtonState() {
-    const selectedCount = elements.list.querySelectorAll('input[type="checkbox"]:checked').length;
-    const hasName = elements.nameInput.value.trim().length > 0;
-    elements.createBtn.disabled = !(selectedCount > 0 && hasName);
-}
+// =================================================================================
+// 通用逻辑函数 (保持不变)
+// =================================================================================
 
-/**
- * 更新状态文本和提取按钮的UI，以反馈处理进度。
- * @param {string} text - 要显示的状态文本。
- * @param {boolean} isProcessing - 是否正在处理中。
- */
-function updateStatusUI(text, isProcessing = false) {
-    elements.extractStatus.textContent = text;
-    elements.extractBtn.disabled = isProcessing;
-    elements.textInput.disabled = isProcessing;
+function extractWordsFromText(text) {
+    if (!text.trim() || typeof nlp === 'undefined') return [];
+    try {
+        const doc = nlp(text);
+        const lemmas = doc.verbs().toInfinitive().out('array')
+            .concat(doc.nouns().toSingular().out('array'));
+        const allTerms = doc.terms().out('array');
 
-    if (isProcessing) {
-        elements.extractBtn.innerHTML = '<svg class="spinner" viewBox="0 0 50 50" style="width:20px;height:20px;stroke:white;"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg> 处理中...';
-    } else {
-        // 恢复按钮的原始图标和文本
-        elements.extractBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg> 提取单词';
+        return [...new Set([...lemmas, ...allTerms])]
+            .map(w => w.toLowerCase().trim())
+            .filter(w => /^[a-z]{3,}$/.test(w))
+            .sort();
+    } catch (e) {
+        console.error("NLP 提取失败:", e);
+        return [];
     }
 }
 
-/**
- * 将提取出的单词渲染到列表中。
- * @param {{word: string, isLearned: boolean}[]} wordsData - 单词数据数组。
- */
-function renderWordList(wordsData) {
-    elements.list.innerHTML = ''; // 清空现有列表
+function switchView(viewName) {
+    state.currentView = viewName;
+    if (viewName === 'list') {
+        elements.viewList.classList.remove('is-hidden');
+        elements.viewEditor.classList.add('is-hidden');
+        renderWordbookList();
+    } else {
+        elements.viewList.classList.add('is-hidden');
+        elements.viewEditor.classList.remove('is-hidden');
+    }
+}
 
-    if (wordsData.length === 0) {
-        elements.list.innerHTML = '<p class="wordbook-list-placeholder">未提取到有效单词</p>';
-        elements.wordCount.textContent = '共 0 个单词';
-        updateCreateButtonState();
+// =================================================================================
+// 列表视图 (Dashboard) 逻辑
+// =================================================================================
+
+function renderWordbookList() {
+    elements.listContainer.innerHTML = '';
+    const wordbooks = State.userWordbooks;
+
+    if (wordbooks.length === 0) {
+        elements.listContainer.innerHTML = '<p class="wordbook-empty-hint">暂无单词本，点击右上方“新建”开始创建。</p>';
         return;
     }
 
     const fragment = document.createDocumentFragment();
-    wordsData.forEach(({ word, isLearned }) => {
-        const item = document.createElement('div');
-        item.className = 'wordbook-item';
-        item.classList.toggle('is-learned', isLearned);
+    wordbooks.forEach(wb => {
+        const row = document.createElement('div');
+        row.className = 'wordbook-item-row';
+        // 使用 dataset 存储名称，方便后续操作获取
+        row.dataset.wordbookName = wb.name;
 
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.id = `wb-word-${word}`;
-        checkbox.dataset.word = word;
-        checkbox.checked = true; // 默认全选
+        if (State.currentFilter === wb.name) {
+            row.classList.add('active-studying');
+        }
 
-        const label = document.createElement('label');
-        label.setAttribute('for', `wb-word-${word}`);
-        label.textContent = word;
-
-        item.appendChild(checkbox);
-        item.appendChild(label);
-        fragment.appendChild(item);
+        row.innerHTML = `
+            <div class="wb-info">
+                <span class="wb-name">${wb.name}</span>
+                <span class="wb-count">${wb.words.length} words</span>
+            </div>
+            <div class="wb-actions">
+                <button class="wb-icon-btn btn-play" title="开始学习" data-action="study" data-name="${wb.name}">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                </button>
+                <button class="wb-icon-btn" title="编辑" data-action="edit" data-name="${wb.name}">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                </button>
+                <button class="wb-icon-btn btn-delete" title="删除" data-action="delete" data-name="${wb.name}">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                </button>
+            </div>
+        `;
+        fragment.appendChild(row);
     });
-
-    elements.list.appendChild(fragment);
-    elements.wordCount.textContent = `共 ${wordsData.length} 个单词`;
-    updateCreateButtonState();
+    elements.listContainer.appendChild(fragment);
 }
 
-/**
- * 从文本输入框中提取单词。
- */
-async function handleExtract() {
-    if (state.isExtracting) return;
-    state.isExtracting = true;
-    updateStatusUI('正在准备环境...', true);
+// =================================================================================
+// 编辑器视图 (Editor) 逻辑 (保持不变)
+// =================================================================================
+function renderEditorWords() {
+    elements.wordsListContainer.innerHTML = '';
+    const fragment = document.createDocumentFragment();
 
+    state.wordsList.forEach((item, index) => {
+        const tag = document.createElement('div');
+        tag.className = 'wordbook-tag-item';
+        if (item.isSelected) tag.classList.add('is-selected');
+
+        tag.innerHTML = `
+            <input type="checkbox" ${item.isSelected ? 'checked' : ''}>
+            <span>${item.word}</span>
+        `;
+        tag.addEventListener('click', (e) => {
+            if (e.target.tagName !== 'INPUT') {
+                item.isSelected = !item.isSelected;
+                tag.classList.toggle('is-selected', item.isSelected);
+                tag.querySelector('input').checked = item.isSelected;
+                updateSaveButtonState();
+            }
+        });
+        tag.querySelector('input').addEventListener('change', (e) => {
+            item.isSelected = e.target.checked;
+            tag.classList.toggle('is-selected', item.isSelected);
+            updateSaveButtonState();
+        });
+        fragment.appendChild(tag);
+    });
+
+    elements.wordsListContainer.appendChild(fragment);
+    elements.wordCount.textContent = state.wordsList.length;
+    updateSaveButtonState();
+}
+function updateSaveButtonState() {
+    const hasName = elements.nameInput.value.trim().length > 0;
+    const hasSelection = state.wordsList.some(item => item.isSelected);
+    elements.saveBtn.disabled = !(hasName && hasSelection);
+}
+function initCreateMode() {
+    state.editorMode = 'create';
+    state.editingId = null;
+    state.wordsList = [];
+    elements.editorTitle.textContent = '新建单词本';
+    elements.nameInput.value = '';
+    elements.textInput.value = '';
+    elements.saveBtn.textContent = '创建';
+    renderEditorWords();
+    switchView('editor');
+}
+function initEditMode(name) {
+    const wb = State.getWordbook(name);
+    if (!wb) return;
+    state.editorMode = 'edit';
+    state.editingId = name;
+    state.wordsList = wb.words.map(w => ({
+        word: w,
+        isLearned: State.learnedWordsSet.has(w),
+        isSelected: true
+    }));
+    elements.editorTitle.textContent = '编辑单词本';
+    elements.nameInput.value = wb.name;
+    elements.textInput.value = '';
+    elements.saveBtn.textContent = '保存修改';
+    renderEditorWords();
+    switchView('editor');
+}
+function handleExtract() {
+    if (state.isExtracting) return;
     const text = elements.textInput.value;
     if (!text.trim()) {
-        updateStatusUI('请输入文本内容。', false);
-        state.isExtracting = false;
+        elements.extractStatus.textContent = '请先输入或粘贴文本';
         return;
     }
-
-    // 使用 setTimeout 延迟处理，让UI有机会更新（显示加载状态）
+    state.isExtracting = true;
+    elements.extractBtn.disabled = true;
+    elements.extractBtn.textContent = '处理中...';
     setTimeout(() => {
-        try {
-            updateStatusUI('正在提取和词形还原...', true);
-            const doc = nlp(text);
-            // 提取动词和名词的原形
-            const lemmas = doc.verbs().toInfinitive().out('array')
-                .concat(doc.nouns().toSingular().out('array'));
-            // 提取所有词项
-            const allTerms = doc.terms().out('array');
-
-            // 合并、清洗和去重
-            const combinedWords = [...lemmas, ...allTerms]
-                .map(word => word.toLowerCase().trim())
-                .filter(word => /^[a-z]{3,}$/.test(word)); // 只保留3个字母以上的纯英文单词
-            const uniqueWords = Array.from(new Set(combinedWords)).sort();
-
-            // 准备渲染数据，标记出已掌握的单词
-            const wordsData = uniqueWords.map(word => ({
-                word: word,
-                isLearned: State.learnedWordsSet.has(word)
-            }));
-
-            renderWordList(wordsData);
-            updateStatusUI(`提取完成！共找到 ${uniqueWords.length} 个不重复单词。`, false);
-        } catch (error) {
-            console.error("提取单词时出错:", error);
-            updateStatusUI('处理出错，请检查文本或刷新页面重试。', false);
-        } finally {
-            state.isExtracting = false;
-        }
+        const newWords = extractWordsFromText(text);
+        const existingSet = new Set(state.wordsList.map(item => item.word));
+        let addedCount = 0;
+        newWords.forEach(w => {
+            if (!existingSet.has(w)) {
+                state.wordsList.push({
+                    word: w,
+                    isLearned: State.learnedWordsSet.has(w),
+                    isSelected: true
+                });
+                addedCount++;
+            }
+        });
+        renderEditorWords();
+        elements.extractStatus.textContent = `成功追加 ${addedCount} 个新单词`;
+        elements.textInput.value = '';
+        elements.extractBtn.disabled = false;
+        elements.extractBtn.textContent = '提取并追加';
+        state.isExtracting = false;
     }, 50);
 }
-
-/**
- * 处理创建单词本的逻辑。
- * @param {function} onCreated - 单词本创建成功后的回调函数。
- */
-function handleCreate(onCreated) {
-    const name = elements.nameInput.value.trim();
-    if (!name) {
-        alert('请输入单词本名称！');
-        return;
-    }
-
-    const selectedCheckboxes = elements.list.querySelectorAll('input[type="checkbox"]:checked');
-    if (selectedCheckboxes.length === 0) {
-        alert('请至少选择一个单词！');
-        return;
-    }
-
-    const words = Array.from(selectedCheckboxes).map(cb => cb.dataset.word);
-    State.addOrUpdateWordbook(name, words);
-
-    hideModal();
-    alert(`单词本 "${name}" 创建成功！`);
-
-    if (typeof onCreated === 'function') {
-        onCreated(name); // 将新创建的单词本名称传递给回调
+function handleSave(onDataChange) {
+    const newName = elements.nameInput.value.trim();
+    const finalWords = state.wordsList
+        .filter(item => item.isSelected)
+        .map(item => item.word);
+    try {
+        if (state.editorMode === 'create') {
+            State.addOrUpdateWordbook(null, newName, finalWords);
+            if (onDataChange) onDataChange('create', newName);
+        } else {
+            State.addOrUpdateWordbook(state.editingId, newName, finalWords);
+            if (onDataChange) onDataChange('update', newName, state.editingId);
+        }
+        switchView('list');
+    } catch (e) {
+        alert(e.message);
     }
 }
 
-/**
- * 重置模态框到初始状态。
- */
-function resetModal() {
-    elements.textInput.value = '';
-    elements.nameInput.value = '';
-    elements.extractStatus.textContent = '';
-    elements.wordCount.textContent = '';
-    elements.list.innerHTML = '<p class="wordbook-list-placeholder">提取后，单词将显示在这里</p>';
-    updateCreateButtonState();
-}
-
-function showModal() {
-    elements.modal.classList.remove('is-hidden');
-    document.addEventListener('keydown', handleEscKey);
-}
-
-function hideModal() {
-    elements.modal.classList.add('is-hidden');
-    resetModal();
-    document.removeEventListener('keydown', handleEscKey);
-}
-
-function handleEscKey(event) {
-    if (event.key === 'Escape') {
-        hideModal();
-    }
-}
-
-/**
- * 初始化单词本模块。
- * @param {HTMLElement} startBtn - 启动单词本创建模态框的按钮。
- * @param {HTMLElement} optionsMenu - “更多操作”下拉菜单，操作后需关闭。
- * @param {function} onCreated - 单词本创建成功后的回调，用于刷新UI。
- */
-export function init(startBtn, optionsMenu, onCreated) {
-    // 检查 compromise.js 是否已加载
+// =================================================================================
+// 交互事件绑定与初始化
+// =================================================================================
+export function init(startBtn, optionsMenu, onDataChange) {
     if (typeof nlp === 'undefined') {
-        console.error('单词本模块初始化失败：compromise.js (nlp) 库未加载。');
+        console.error('Wordbook Init Failed: compromise.js missing.');
         startBtn.disabled = true;
-        startBtn.title = "单词本功能加载失败";
         return;
     }
+    if (!cacheElements()) return;
 
-    if (!startBtn || !optionsMenu) {
-        console.error('单词本模块初始化失败：未提供启动按钮或菜单元素。');
-        return;
-    }
-
-    if (!cacheElements()) {
-        startBtn.disabled = true;
-        startBtn.title = "单词本功能加载失败，请检查页面HTML结构";
-        return;
-    }
-
-    // --- 绑定事件监听器 ---
     startBtn.addEventListener('click', () => {
-        showModal();
-        optionsMenu.classList.remove('is-open'); // 关闭“更多操作”菜单
+        optionsMenu.classList.remove('is-open');
+        switchView('list');
+        elements.modal.classList.remove('is-hidden');
     });
 
-    elements.closeBtn.addEventListener('click', hideModal);
-    elements.modal.addEventListener('click', (event) => {
-        if (event.target === elements.modal) hideModal();
+    const closeModal = () => elements.modal.classList.add('is-hidden');
+    elements.closeBtn.addEventListener('click', closeModal);
+    elements.modal.addEventListener('click', (e) => {
+        if (e.target === elements.modal) closeModal();
     });
+
+    elements.newBtn.addEventListener('click', initCreateMode);
+
+    elements.listContainer.addEventListener('click', (e) => {
+        const btn = e.target.closest('button');
+        if (!btn) return;
+        const action = btn.dataset.action;
+        const name = btn.dataset.name;
+
+        if (action === 'edit') {
+            initEditMode(name);
+        } else if (action === 'delete') {
+            // 【核心修改】替换 confirm 弹窗为撤销逻辑
+            const rowElement = elements.listContainer.querySelector(`.wordbook-item-row[data-wordbook-name="${name}"]`);
+            if (!rowElement) return;
+
+            // 1. 立即进行视觉标记
+            rowElement.classList.add('is-pending-removal');
+
+            // 2. 定义确认和撤销操作
+            const onConfirm = () => {
+                State.deleteWordbook(name);
+                // 真实删除后，只需移除该行即可，无需重新渲染整个列表，性能更好
+                rowElement.remove();
+                if (onDataChange) onDataChange('delete', null, name);
+            };
+
+            const onUndo = () => {
+                // 恢复视觉状态
+                rowElement.classList.remove('is-pending-removal');
+            };
+
+            // 3. 显示撤销通知
+            UndoManager.show({
+                message: `单词本 "${name}" 已删除。`,
+                onConfirm: onConfirm,
+                onUndo: onUndo,
+            });
+
+        } else if (action === 'study') {
+            if (onDataChange) onDataChange('study', name);
+            closeModal();
+        }
+    });
+
+    elements.backBtn.addEventListener('click', () => switchView('list'));
     elements.extractBtn.addEventListener('click', handleExtract);
-    elements.createBtn.addEventListener('click', () => handleCreate(onCreated));
-
+    elements.saveBtn.addEventListener('click', () => handleSave(onDataChange));
+    elements.nameInput.addEventListener('input', updateSaveButtonState);
     elements.selectAllBtn.addEventListener('click', () => {
-        elements.list.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = true);
-        updateCreateButtonState();
+        state.wordsList.forEach(i => i.isSelected = true);
+        renderEditorWords();
     });
-
     elements.deselectAllBtn.addEventListener('click', () => {
-        elements.list.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
-        updateCreateButtonState();
+        state.wordsList.forEach(i => i.isSelected = false);
+        renderEditorWords();
     });
-
-    // 监听列表和名称输入框的变化，实时更新创建按钮状态
-    elements.list.addEventListener('change', (e) => {
-        if (e.target.type === 'checkbox') updateCreateButtonState();
-    });
-    elements.nameInput.addEventListener('input', updateCreateButtonState);
 }
