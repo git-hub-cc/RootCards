@@ -146,8 +146,8 @@
 }
 
 .search-input:focus {
-    border-color: var(--theme-color);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--theme-color) 20%, transparent);
+    /* border-color: var(--theme-color); */ /* <-- 【改动】注释掉此行，以移除选中时的边框颜色变化 */
+    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color) 20%, transparent);
 }
 
 .search-input::placeholder {

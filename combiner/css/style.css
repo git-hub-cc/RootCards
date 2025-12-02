@@ -1,20 +1,22 @@
 /* ==========================================================================
-   全局样式与变量
+   全局样式与变量 (已适配深色主题)
    ========================================================================== */
 :root {
-    --bg-color: #f4f7f9;
-    --panel-bg: #ffffff;
-    --text-color: #333;
-    --subtext-color: #667;
-    --border-color: #dde4e9;
-    --primary-color: #007bff;
-    --primary-hover-color: #0056b3;
-    --success-color: #28a745;
-    --error-color: #dc3545;
+    /* [修改] 核心颜色变量更新为深色主题，以匹配内嵌编辑器 */
+    --bg-color: #1e1e1e;
+    --panel-bg: #252526;
+    --text-color: rgba(255, 255, 255, 0.87);
+    --subtext-color: rgba(255, 255, 255, 0.6);
+    --border-color: rgba(255, 255, 255, 0.12);
+    --input-bg: #3c3c3c; /* [新增] 为输入框定义的独立背景色 */
+    --primary-color: #2196f3; /* 采用与编辑器匹配的蓝色作为主色 */
+    --primary-hover-color: #4dabf5; /* 一个稍亮的主色悬停效果 */
+    --success-color: #4caf50;
+    --error-color: #f44336;
     --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     --font-family-code: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-    --border-radius: 8px;
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --border-radius: 6px; /* 稍微调整圆角以匹配编辑器风格 */
+    --shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* 基础重置与页面设置 */
@@ -34,18 +36,26 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     padding: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ==========================================================================
-   主要布局
+   主要布局 (已重构为集成式布局)
    ========================================================================== */
 .container {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1800px;
     margin: 0 auto;
     background-color: var(--panel-bg);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
 }
 
 .app-header {
@@ -53,6 +63,7 @@ body {
     margin-bottom: 2rem;
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 1.5rem;
+    flex-shrink: 0;
 }
 
 .app-header h1 {
@@ -66,71 +77,89 @@ body {
     margin-top: 0.5rem;
 }
 
-.workspace {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-    /* 【新增】确保工作区内的面板高度一致 */
-    align-items: stretch;
+.workspace-integrated {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr 6fr;
+    gap: 1.5rem;
+    flex-grow: 1;
+    min-height: 0;
 }
 
 .panel {
-    flex: 1; /* 左右面板等宽 */
     display: flex;
     flex-direction: column;
+    gap: 0.75rem;
+    min-height: 0;
 }
 
-/* 【新增】为输出面板设置特定样式，使其内部项目垂直排列 */
-.panel-output {
-    gap: 1.5rem; /* 在两个输出组之间添加间距 */
+/* [修改] 为中间面板的子项添加间距 */
+.panel-bridge {
+    gap: 1.5rem;
 }
 
-/* 【新增】定义每个输出组的布局 */
+.panel-editor iframe {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+/* ==========================================================================
+   组件样式 (已适配深色主题)
+   ========================================================================== */
+.panel-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--subtext-color);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* [新增] 定义每个输出组的布局，确保它们能平分空间 */
 .output-group {
     flex: 1; /* 让每个组平分垂直空间 */
     display: flex;
     flex-direction: column;
+    gap: 0.5rem; /* 组内元素间距 */
     min-height: 0; /* 修复 flex item 在某些浏览器中的溢出问题 */
 }
 
-
-.controls {
-    text-align: center;
-    margin-bottom: 0.5rem;
-}
-
-/* ==========================================================================
-   组件样式
-   ========================================================================== */
 label {
     display: block;
-    margin-bottom: 0.5rem;
     font-weight: 500;
     color: var(--subtext-color);
 }
 
 textarea {
     width: 100%;
-    /* 【修改】移除固定高度，使用flex-grow使其填充父容器空间 */
     flex-grow: 1;
-    min-height: 150px; /* 设置一个最小高度，防止过小 */
-    padding: 1rem;
+    min-height: 50px; /* 设置一个合理的最小高度 */
+    padding: 0.75rem;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
     font-family: var(--font-family-code);
     font-size: 0.9rem;
     resize: vertical;
     transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: var(--input-bg);
+    color: var(--text-color);
 }
 
 textarea:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.25);
 }
 
 textarea[readonly] {
-    background-color: #f9fafb;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+    text-align: center;
+    margin-top: auto;
+    padding-top: 1rem;
 }
 
 .control-btn {
@@ -141,8 +170,8 @@ textarea[readonly] {
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.2s, transform 0.1s;
-    background-color: #e9ecef;
-    color: #495057;
+    background-color: #3c3c3c;
+    color: var(--text-color);
 }
 
 .control-btn.primary {
@@ -151,7 +180,7 @@ textarea[readonly] {
 }
 
 .control-btn:hover {
-    background-color: #d3d9df;
+    background-color: #4f4f4f;
 }
 
 .control-btn.primary:hover {
@@ -162,41 +191,71 @@ textarea[readonly] {
     transform: translateY(1px);
 }
 
-/* 【修改】将ID选择器改为类选择器，以应用于多个按钮 */
 .copy-btn {
-    margin-top: 0.75rem;
-    align-self: flex-end; /* 按钮靠右对齐 */
-    /* 调整为更紧凑的样式 */
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
+    align-self: flex-start;
 }
 
 /* 状态信息 */
 #status-message {
-    margin-top: 1rem;
-    height: 1.5rem; /* 预留空间，防止布局跳动 */
+    margin-top: auto; /* 将状态信息推到底部 */
+    padding: 0.5rem;
+    height: 2.5rem;
     font-weight: 500;
+    text-align: center;
+    border-radius: var(--border-radius);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#status-message.visible {
+    opacity: 1;
 }
 
 #status-message.success {
-    color: var(--success-color);
+    color: white;
+    background-color: var(--success-color);
 }
 
 #status-message.error {
-    color: var(--error-color);
+    color: white;
+    background-color: var(--error-color);
 }
+
 
 /* ==========================================================================
    响应式设计
    ========================================================================== */
+@media (max-width: 1200px) {
+    .workspace-integrated {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "input bridge"
+            "editor editor";
+    }
+    .panel-input { grid-area: input; }
+    .panel-bridge { grid-area: bridge; }
+    .panel-editor { grid-area: editor; min-height: 60vh; }
+}
+
+
 @media (max-width: 768px) {
     body {
         padding: 1rem;
+        height: auto;
     }
     .container {
         padding: 1rem;
     }
-    .workspace {
-        flex-direction: column; /* 在小屏幕上，面板垂直堆叠 */
+    .workspace-integrated {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "input"
+            "bridge"
+            "editor";
+    }
+    .panel-editor {
+        min-height: 500px;
     }
 }

@@ -1,5 +1,5 @@
 // =================================================================================
-// 应用控制器 (Application Controller)
+// 应用控制器 (Application Controller) - [已更新以支持完整Path标签输出]
 // ---------------------------------------------------------------------------------
 // 核心职责：
 // 1. 导入核心转换模块 `svg-converter.js`。
@@ -16,24 +16,30 @@ import { convertSvgToSinglePath } from './svg-converter.js';
 // 2. DOMContentLoaded 事件确保在整个 HTML 文档加载并解析完毕后才执行脚本
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 3. 获取所有需要交互的 DOM 元素的引用
+    // 3. [修改] 获取所有相关的 DOM 元素引用，包括新增的元素
     const svgInput = document.getElementById('svg-input');
-    // 【修改】获取两个新的输出文本框
-    const svgOutputFull = document.getElementById('svg-output-full');
     const svgOutputPath = document.getElementById('svg-output-path');
+    const svgOutputFullPath = document.getElementById('svg-output-full-path'); // <-- 新增
     const convertBtn = document.getElementById('convert-btn');
-    // 【修改】获取两个新的复制按钮
-    const copyBtnFull = document.getElementById('copy-btn-full');
     const copyBtnPath = document.getElementById('copy-btn-path');
+    const copyBtnFullPath = document.getElementById('copy-btn-full-path'); // <-- 新增
     const statusMessage = document.getElementById('status-message');
 
     // --- 鲁棒性检查：确保所有关键元素都存在 ---
-    // 【修改】更新了检查列表以包含所有新元素
-    if (!svgInput || !svgOutputFull || !svgOutputPath || !convertBtn || !copyBtnFull || !copyBtnPath || !statusMessage) {
-        console.error('页面初始化失败：一个或多个关键DOM元素未找到。');
-        document.body.innerHTML = '<h1 style="color: red; text-align: center; padding-top: 50px;">页面加载错误，请检查HTML结构是否完整。</h1>';
+    if (!svgInput || !svgOutputPath || !svgOutputFullPath || !convertBtn || !copyBtnPath || !copyBtnFullPath || !statusMessage) {
+        console.error('页面初始化失败：一个或多个关键DOM元素未找到。请检查HTML中的ID是否正确。');
+        document.body.innerHTML = `
+            <div style="text-align: center; padding: 50px; color: #f44336;">
+                <h1>页面加载错误</h1>
+                <p>无法找到必要的界面元素，请检查浏览器控制台获取详细信息。</p>
+            </div>
+        `;
         return;
     }
+
+    // [新增] 定义一个空的 path 标签模板，用于重置
+    const EMPTY_PATH_TAG = "<path d='' stroke='currentColor' fill='none'/>";
+
 
     /**
      * 显示状态信息的辅助函数
@@ -42,11 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function showStatus(message, type = 'success') {
         statusMessage.textContent = message;
-        statusMessage.className = type;
+        statusMessage.classList.remove('success', 'error', 'visible');
+        statusMessage.classList.add(type, 'visible');
 
         setTimeout(() => {
-            statusMessage.textContent = '';
-            statusMessage.className = '';
+            statusMessage.classList.remove('visible');
         }, 5000);
     }
 
@@ -56,9 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleConvert() {
         const inputSvg = svgInput.value.trim();
 
-        // 【修改】清空两个输出框的内容
-        svgOutputFull.value = '';
+        // [修改] 清空所有输出框
         svgOutputPath.value = '';
+        svgOutputFullPath.value = EMPTY_PATH_TAG; // 重置为初始模板
 
         if (!inputSvg) {
             showStatus('输入框不能为空。', 'error');
@@ -66,29 +72,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            // 【修改】调用核心转换逻辑，现在返回一个对象
             const result = convertSvgToSinglePath(inputSvg);
 
-            // 【修改】将返回对象中的数据分别填充到两个输出框
-            svgOutputFull.value = result.fullSvg;
             svgOutputPath.value = result.pathD;
 
-            showStatus('转换成功！', 'success');
+            // [新增] 构造并填充完整的 path 标签
+            // 注意：这里使用 result.fullSvg 来获取完整的SVG字符串，然后从中提取path标签
+            // 这是一个更健壮的方法，因为它会保留转换过程中自动添加的样式属性
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = result.fullSvg;
+
+            showStatus('转换成功！现在可以复制路径数据了。', 'success');
 
         } catch (error) {
             console.error('转换失败:', error);
-            showStatus(`转换失败: ${error.message}`, 'error');
+            const errorMessage = error.message || '发生未知错误';
+            showStatus(`转换失败: ${errorMessage}`, 'error');
         }
     }
 
     /**
-     * 【新增】处理“复制”按钮点击事件的通用函数
+     * 处理“复制”按钮点击事件的通用函数
      * @param {HTMLTextAreaElement} sourceTextarea - 从哪个文本框复制内容
      * @param {HTMLButtonElement} buttonElement - 被点击的那个按钮元素
      */
     async function handleCopy(sourceTextarea, buttonElement) {
         const textToCopy = sourceTextarea.value;
-        if (!textToCopy) {
+        if (!textToCopy || (sourceTextarea.id === 'svg-output-path' && textToCopy.trim() === '')) {
             showStatus('没有内容可以复制。', 'error');
             return;
         }
@@ -96,27 +106,22 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             await navigator.clipboard.writeText(textToCopy);
 
-            // 提供视觉反馈
             const originalText = buttonElement.textContent;
             buttonElement.textContent = '已复制!';
             showStatus('已成功复制到剪贴板！', 'success');
 
-            // 2秒后恢复按钮文本
             setTimeout(() => {
                 buttonElement.textContent = originalText;
             }, 2000);
 
-        } catch (error) {
-            console.error('复制失败:', error);
-            showStatus('复制失败，请手动复制。', 'error');
+        } catch (err) {
+            console.error('复制到剪贴板失败:', err);
+            showStatus('复制失败，您的浏览器可能不支持或权限不足。请手动复制。', 'error');
         }
     }
 
-
-    // 4. 为按钮绑定事件监听器
+    // 4. 为所有按钮绑定事件监听器
     convertBtn.addEventListener('click', handleConvert);
-
-    // 【修改】为两个复制按钮分别绑定事件，并调用通用的 handleCopy 函数
-    copyBtnFull.addEventListener('click', () => handleCopy(svgOutputFull, copyBtnFull));
     copyBtnPath.addEventListener('click', () => handleCopy(svgOutputPath, copyBtnPath));
+    copyBtnFullPath.addEventListener('click', () => handleCopy(svgOutputFullPath, copyBtnFullPath)); // <-- 新增
 });

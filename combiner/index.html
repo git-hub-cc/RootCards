@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVG 路径合并工具</title>
+    <title>SVG 路径转换与编辑工具</title>
     <!-- 引入样式表 -->
     <link rel="stylesheet" href="css/style.css">
     <!-- 使用 type="module" 加载主JS文件，以支持模块化导入/导出 -->
@@ -18,43 +18,58 @@
 
     <!-- 1. 顶部标题区域 -->
     <header class="app-header">
-        <h1>SVG 路径合并工具</h1>
-        <p class="subtitle">将多个 SVG 形状（如 rect, circle, polyline）合并为单一的 &lt;path&gt; 元素。</p>
+        <h1>SVG 路径转换与编辑工具</h1>
+        <p class="subtitle">将多个 SVG 形状合并为单一路径，并直接在内嵌编辑器中进行精细调整。</p>
     </header>
 
-    <!-- 2. 主工作区，使用Flexbox布局 -->
-    <main class="workspace">
+    <!-- 2. 集成式工作区 -->
+    <main class="workspace-integrated">
 
-        <!-- 2.1 输入区域 -->
-        <section class="panel">
-            <label for="svg-input">输入 SVG 代码:</label>
-            <textarea id="svg-input" placeholder="请在此处粘贴你的 SVG 代码..."></textarea>
+        <!-- 2.1 转换工具区域 (步骤 1) -->
+        <section class="panel panel-input">
+            <!-- [修改] 标题更新 -->
+            <h2 class="panel-title">步骤 1: 转换 SVG 形状</h2>
+            <label for="svg-input">粘贴你的 SVG 代码:</label>
+            <textarea id="svg-input" placeholder="请在此处粘贴包含 <rect>, <circle> 等形状的 SVG 代码..."></textarea>
+            <div class="controls">
+                <button id="convert-btn" class="control-btn primary">✨ 开始转换</button>
+            </div>
         </section>
 
-        <!-- 2.2 输出区域 (已重构) -->
-        <section class="panel panel-output">
-            <!-- 2.2.1 完整 SVG 代码输出 -->
-            <div class="output-group">
-                <label for="svg-output-full">输出单一路径 SVG 代码:</label>
-                <textarea id="svg-output-full" placeholder="完整的 <svg> 代码将显示在这里..."></textarea>
-                <button id="copy-btn-full" class="control-btn copy-btn" title="点击复制 SVG 代码">复制 SVG</button>
-            </div>
+        <!-- 2.2 结果与桥梁区域 (步骤 2 & 4) -->
+        <section class="panel panel-bridge">
+            <!-- [修改] 标题更新 -->
+            <h2 class="panel-title">步骤 2 & 4: 获取路径数据，复用path模板</h2>
 
-            <!-- 2.2.2 Path d 属性值输出 -->
             <div class="output-group">
-                <label for="svg-output-path">输出 Path 'd' 属性:</label>
-                <textarea id="svg-output-path" readonly placeholder="<path> 元素的 'd' 属性值将显示在这里..."></textarea>
+                <label for="svg-output-path">2. 输出 Path 'd' 属性:</label>
+                <textarea id="svg-output-path" readonly placeholder="合并后的 'd' 属性值将显示在这里..."></textarea>
                 <button id="copy-btn-path" class="control-btn copy-btn" title="点击复制 'd' 属性值">复制 Path Data</button>
             </div>
+
+            <div class="output-group">
+                <label for="svg-output-full-path">4. 复用path模板:</label>
+                <!-- 初始状态为一个空的 path 标签 -->
+                <textarea id="svg-output-full-path" placeholder="完整的 <path> 标签将显示在这里..."><path d='' stroke='currentColor' fill='none'/></textarea>
+                <button id="copy-btn-full-path" class="control-btn copy-btn" title="点击复制完整的 <path> 标签">复制 Path 标签</button>
+            </div>
+
+            <!-- 状态信息显示区域 -->
+            <p id="status-message"></p>
+        </section>
+
+        <!-- 2.3 内嵌编辑器区域 (步骤 3) -->
+        <section class="panel panel-editor">
+            <!-- [修改] 标题更新 -->
+            <h2 class="panel-title">步骤 3: 粘贴并编辑路径</h2>
+            <iframe src="https://yqnn.github.io/svg-path-editor/"
+                    title="SVG Path Editor"
+                    frameborder="0"
+                    loading="lazy">
+            </iframe>
         </section>
 
     </main>
-
-    <!-- 3. 控制与状态区域 -->
-    <div class="controls">
-        <button id="convert-btn" class="control-btn primary">✨ 开始转换</button>
-        <p id="status-message"></p> <!-- 用于显示成功或错误信息 -->
-    </div>
 
 </div> <!-- .container 结束 -->
 </body>
