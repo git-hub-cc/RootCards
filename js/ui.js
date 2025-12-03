@@ -1,7 +1,10 @@
 // =================================================================================
-// 通用 UI 渲染模块 (Generic UI Rendering Module) - v11.0 (新增音效支持)
+// 通用 UI 渲染模块 (Generic UI Rendering Module) - v12.0 (集成笔记功能)
 // ---------------------------------------------------------------------------------
 // =================================================================================
+
+import * as State from './state.js'; // 【新增】引入 State 以访问笔记数据
+import * as NotificationManager from './modules/notificationManager.js'; // 【新增】引入通知管理器
 
 let cardTemplate;
 let prefixIntroTemplate;
@@ -237,6 +240,7 @@ function createWordCard(data, handlers) {
     card.querySelector('.cn-translation').textContent = data.translation;
     card.querySelector('.imagery-text').textContent = `“${data.imagery}”`;
 
+    // --- 渲染例句 ---
     const sentenceSection = card.querySelector('.sentence-section');
     if (data.sentences?.length) {
         data.sentences.forEach((s, i) => {
@@ -256,8 +260,17 @@ function createWordCard(data, handlers) {
         });
     }
 
-    card.addEventListener('click', e => !e.target.closest('.audio-btn, .toggle-prefix-btn, .mark-btn') && card.classList.toggle('is-flipped'));
+    // --- 核心交互逻辑 ---
+    // 只有点击非交互区域才翻转
+    // 【修改】添加 .note-btn 到阻断列表，防止点击笔记按钮时翻转
+    // 【修改】添加 .card-note-overlay, .note-input, .note-action-btn 到阻断列表，防止操作笔记时翻转
+    card.addEventListener('click', e => {
+        if (!e.target.closest('.audio-btn, .toggle-prefix-btn, .mark-btn, .note-btn, .card-note-overlay')) {
+            card.classList.toggle('is-flipped');
+        }
+    });
 
+    // --- 单词发音 ---
     card.querySelector('.word-audio').addEventListener('click', e => {
         e.stopPropagation();
         const btn = e.currentTarget;
@@ -268,13 +281,68 @@ function createWordCard(data, handlers) {
         btn.title = lastClickedWordAudio.isSlow ? '切换为常速朗读' : '切换为慢速朗读';
     });
 
+    // --- 切换前缀显隐 ---
     card.querySelector('.toggle-prefix-btn').addEventListener('click', e => { e.stopPropagation(); card.classList.toggle('prefix-hidden'); });
 
-    // 标记按钮事件：委托给外部处理器 (app.js)
+    // --- 标记为已掌握 ---
     card.querySelector('.mark-btn').addEventListener('click', e => {
         e.stopPropagation();
         handlers.onMarkLearned(data, card);
     });
+
+    // --- 【新增】笔记功能交互 ---
+    const noteBtn = card.querySelector('.note-btn');
+    const noteOverlay = card.querySelector('.card-note-overlay');
+    const noteInput = card.querySelector('.note-input');
+    const noteSaveBtn = card.querySelector('.btn-save');
+    const noteCancelBtn = card.querySelector('.btn-cancel');
+
+    // 1. 初始化笔记按钮状态
+    const existingNote = State.getUserNote(data.word);
+    if (existingNote) {
+        noteBtn.classList.add('has-note');
+    }
+
+    // 2. 点击笔记按钮：显示浮层并填充内容
+    noteBtn.addEventListener('click', e => {
+        e.stopPropagation(); // 阻止翻转
+
+        // 获取最新的笔记内容 (State 中是最权威的)
+        noteInput.value = State.getUserNote(data.word);
+        noteOverlay.classList.remove('is-hidden');
+
+        // 自动聚焦
+        setTimeout(() => noteInput.focus(), 100);
+    });
+
+    // 3. 点击保存按钮
+    noteSaveBtn.addEventListener('click', e => {
+        e.stopPropagation(); // 阻止翻转
+
+        const text = noteInput.value.trim();
+        State.saveUserNote(data.word, text);
+
+        // 更新按钮 UI 状态
+        if (text) {
+            noteBtn.classList.add('has-note');
+            NotificationManager.show({ type: 'success', message: '笔记已保存' });
+        } else {
+            noteBtn.classList.remove('has-note');
+            NotificationManager.show({ type: 'info', message: '笔记已清空' });
+        }
+
+        noteOverlay.classList.add('is-hidden');
+    });
+
+    // 4. 点击取消按钮
+    noteCancelBtn.addEventListener('click', e => {
+        e.stopPropagation(); // 阻止翻转
+        noteOverlay.classList.add('is-hidden');
+    });
+
+    // 5. 点击输入框本身：阻止冒泡，防止点击文字输入区域触发卡片翻转
+    // (虽然上面的 card click listener 已经排除了 .card-note-overlay，但加上这个更保险)
+    noteInput.addEventListener('click', e => e.stopPropagation());
 
     return card;
 }
