@@ -1,5 +1,5 @@
 // =================================================================================
-// 应用协调器 (Application Orchestrator) - v13.1 (优化音效触发逻辑)
+// 应用协调器 (Application Orchestrator) - v13.2 (集成笔记功能)
 // ---------------------------------------------------------------------------------
 // =================================================================================
 
@@ -382,8 +382,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         try {
+            // 【修改】在初始化链中加入 loadUserNotes
             State.loadLearnedWords();
             State.loadUserWordbooks();
+            State.loadUserNotes(); // 加载用户笔记
 
             const { grades } = await State.loadAndProcessData(updateLoadingProgress);
 

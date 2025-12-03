@@ -189,7 +189,7 @@
 }
 
 
-/* --- 组件: 卡片上的按钮 (SVG切换, 标记, 音频) --- */
+/* --- 组件: 卡片上的按钮 (SVG切换, 标记, 音频, 笔记) --- */
 .toggle-prefix-btn, .mark-btn {
     position: absolute;
     width: 32px;
@@ -267,6 +267,36 @@ body.dark-mode .audio-btn:hover {
     height: 32px;
     color: var(--text-sub);
 }
+
+/* --- 【修改】笔记按钮样式 --- */
+.note-btn {
+    width: 32px;
+    height: 32px;
+    color: var(--text-sub);
+}
+.note-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/*
+   核心修复：明确定义两种图标在不同状态下的显隐
+   不再依赖 HTML 中的 is-hidden 类，而是完全由父级 .has-note 类控制
+*/
+
+/* 1. 默认状态 (无笔记)：显示空心，隐藏实心 */
+.note-btn .icon-note-empty { display: block; }
+.note-btn .icon-note-filled { display: none; }
+
+/* 2. 有笔记状态 (has-note)：隐藏空心，显示实心 */
+.note-btn.has-note .icon-note-empty { display: none; }
+.note-btn.has-note .icon-note-filled { display: block; }
+
+/* 当有笔记时，按钮颜色使用主题色高亮 */
+.note-btn.has-note {
+    color: var(--theme-color);
+}
+
 .sentence-audio {
     width: 100%;
     padding: 6px;
@@ -278,6 +308,79 @@ body.dark-mode .audio-btn:hover {
 }
 .sentence-audio:hover {
     background: var(--border-color);
+}
+
+/* --- 【新增】卡片笔记浮层 (Card Note Overlay) --- */
+.card-note-overlay {
+    position: absolute;
+    inset: 0; /* 占满整个 .card-front */
+    background-color: var(--card-bg); /* 与卡片背景一致，覆盖下方内容 */
+    z-index: 20; /* 高于卡片内其他元素 */
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    /* 简单的淡入动画 */
+    animation: fadeIn 0.2s ease-out;
+}
+
+.card-note-overlay.is-hidden {
+    display: none;
+}
+
+.note-input {
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: transparent;
+    /* 类似于信纸的行高和字体 */
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-main);
+    resize: none; /* 禁止拖动调整大小 */
+    outline: none;
+    background-image: linear-gradient(transparent 96%, var(--border-color) 96%);
+    background-size: 100% 1.6rem;
+    background-attachment: local; /* 内容滚动时背景行线跟随 */
+}
+
+.note-input::placeholder {
+    color: var(--text-sub);
+    font-style: italic;
+}
+
+.note-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.note-action-btn {
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary-color);
+    color: var(--text-main);
+    transition: all 0.2s ease;
+}
+
+.note-action-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.btn-save {
+    background-color: var(--theme-color);
+    color: var(--text-inverse);
+    border-color: var(--theme-color);
+}
+.btn-save:hover {
+    opacity: 0.9;
 }
 
 

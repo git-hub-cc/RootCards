@@ -1,17 +1,18 @@
 // =================================================================================
-// 数据与状态管理模块 (State Management Module) - v8.1 (新增清空已掌握功能)
+// 数据与状态管理模块 (State Management Module) - v8.2 (新增用户笔记功能)
 // ---------------------------------------------------------------------------------
 // 主要职责：
 // 1. (数据加载) 异步加载所有词汇数据文件。
 // 2. (数据处理) 将原始数据处理成应用所需的格式。
 // 3. (状态管理) 维护全局数据和当前筛选状态。
-// 4. (用户数据) 管理“已掌握”单词和“自定义单词本”的增删改查。
+// 4. (用户数据) 管理“已掌握”单词、“自定义单词本”以及【新增】“用户笔记”的增删改查。
 // 5. (持久化) 负责 localStorage 的读写。
 // =================================================================================
 
 // --- 模块内常量 ---
 const LEARNED_WORDS_KEY = 'etymologyLearnedWords';
 const USER_WORDBOOKS_KEY = 'etymologyUserWordbooks';
+const USER_NOTES_KEY = 'etymologyUserNotes'; // 【新增】笔记存储 Key
 
 // --- 导出的状态变量 (供其他模块读取和修改) ---
 export let allVocabularyData = [];      // 存储所有已加载和处理过的数据
@@ -21,7 +22,8 @@ export let currentGrade = 'grade7';     // 当前年级筛选器状态
 export let currentContentType = 'pre';  // 当前内容类型筛选器状态
 export let learnedWordsSet = new Set(); // 存储所有已掌握单词的 Set 集合
 export let currentSearchQuery = '';     // 当前搜索框中的关键词
-export let userWordbooks = [];          // 存储所有用户创建的单词本 [{ name: string, words: string[] }]
+export let userWordbooks = [];          // 存储所有用户创建的单词本
+export let userNotes = new Map();       // 【新增】存储用户笔记 Map<word, text>
 
 /**
  * 从 localStorage 加载已掌握的单词列表。
@@ -51,6 +53,65 @@ function saveLearnedWords() {
     } catch (error) {
         console.error('无法保存学习进度到 localStorage:', error);
     }
+}
+
+/**
+ * 【新增】从 localStorage 加载用户笔记。
+ */
+export function loadUserNotes() {
+    try {
+        const storedNotes = localStorage.getItem(USER_NOTES_KEY);
+        if (storedNotes) {
+            const notesObj = JSON.parse(storedNotes);
+            // 将普通对象转换为 Map，方便操作
+            userNotes = new Map(Object.entries(notesObj));
+        }
+    } catch (error) {
+        console.error('无法从 localStorage 加载用户笔记:', error);
+        userNotes = new Map();
+    }
+}
+
+/**
+ * 【新增】保存用户笔记到 localStorage。
+ */
+function saveUserNotes() {
+    try {
+        // 将 Map 转换为普通对象进行 JSON 序列化
+        const notesObj = Object.fromEntries(userNotes);
+        localStorage.setItem(USER_NOTES_KEY, JSON.stringify(notesObj));
+    } catch (error) {
+        console.error('无法保存用户笔记到 localStorage:', error);
+    }
+}
+
+/**
+ * 【新增】获取指定单词的笔记内容。
+ * @param {string} word - 单词文本
+ * @returns {string} - 笔记内容，如果没有则返回空字符串
+ */
+export function getUserNote(word) {
+    if (!word) return '';
+    return userNotes.get(word.toLowerCase()) || '';
+}
+
+/**
+ * 【新增】保存或更新指定单词的笔记。
+ * 如果 text 为空，则删除该条笔记。
+ * @param {string} word - 单词文本
+ * @param {string} text - 笔记内容
+ */
+export function saveUserNote(word, text) {
+    if (!word) return;
+    const key = word.toLowerCase();
+    const trimmedText = text ? text.trim() : '';
+
+    if (trimmedText) {
+        userNotes.set(key, trimmedText);
+    } else {
+        userNotes.delete(key);
+    }
+    saveUserNotes();
 }
 
 /**
@@ -190,7 +251,7 @@ export function importLearnedWords(wordsArray) {
 }
 
 /**
- * 【新增】清空所有“已掌握”的单词记录。
+ * 清空所有“已掌握”的单词记录。
  * 这是一个破坏性操作，会重置用户的学习进度。
  */
 export function clearLearnedWords() {
