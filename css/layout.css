@@ -1,14 +1,24 @@
 /* ==========================================================================
-   Layout Styles - 页面布局样式 (v3.6 - 样式迁移)
+   Layout Styles - 页面布局样式 (v5.1 - 微信/Safari Flexbox 修复)
    ========================================================================== */
 
-/* --- 头部导航与筛选器 --- */
+/* --- PC端默认样式 --- */
 .app-header {
     text-align: center;
     padding: 2rem 1rem;
     background-color: var(--bg-secondary-color);
     box-shadow: var(--shadow);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    position: relative;
+    z-index: 100;
+}
+
+body.mode-immersive .app-header {
+    transform: translateY(-100%);
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
 }
 
 .app-header h1 {
@@ -34,7 +44,6 @@
     margin-top: 0.2rem;
 }
 
-/* --- 口号区域样式 --- */
 .app-slogan {
     margin: 1.5rem auto;
     max-width: 600px;
@@ -45,38 +54,18 @@
     padding: 0 1rem;
 }
 
-.app-slogan p {
-    margin-bottom: 0.3rem;
-}
+.app-slogan p { margin-bottom: 0.3rem; }
+.app-slogan strong { color: var(--text-main); font-weight: 700; }
+.app-slogan .highlight { color: var(--text-main); font-weight: 600; border-bottom: 2px solid var(--border-color); padding-bottom: 1px; }
 
-.app-slogan strong {
-    color: var(--text-main);
-    font-weight: 700;
-}
-
-.app-slogan .highlight {
-    color: var(--text-main);
-    font-weight: 600;
-    border-bottom: 2px solid var(--border-color);
-    padding-bottom: 1px;
-}
-
-
-/* --- 所有筛选器容器布局，实现左对齐 --- */
 .grade-filter-container,
 .content-type-filter-container,
 .filter-container {
     display: flex;
-    justify-content: flex-start; /* 保持内部元素（筛选按钮和工具组）从左开始排列 */
+    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
-}
-
-/* --- 为所有筛选器容器设置最大宽度并居中，与 main 区域对齐 --- */
-.grade-filter-container,
-.content-type-filter-container,
-.filter-container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -91,33 +80,19 @@
     transition: border-color 0.3s ease;
 }
 
-.content-type-filter-container {
-    margin-bottom: 1.5rem;
-}
+.content-type-filter-container { margin-bottom: 1.5rem; }
 
-/* --- 【新增】工具栏容器样式 --- */
-/*
-  这个新容器包裹了所有图标按钮和搜索框。
-  它的作用是作为一个整体，被推到 filter-container 的最右侧。
-*/
 .tool-group {
-    display: flex;          /* 使其内部的按钮和搜索框水平排列 */
-    align-items: center;    /* 垂直居中对齐 */
-    gap: 0.75rem;             /* 设置内部元素之间的间距，比筛选按钮稍小，更紧凑 */
-    margin-left: auto;      /* 这是实现右对齐的核心！它会占据所有可用的左侧空间，从而将自身推到最右边 */
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: auto;
 }
 
-/* --- 【核心改动】搜索框样式，适配新的布局 --- */
 .search-container {
     position: relative;
     max-width: 400px;
     width: 100%;
-
-    /*
-     * 【重要】移除了 'margin-left: auto;'。
-     * 因为推至右侧的责任现在由其父容器 '.tool-group' 承担。
-     * 如果保留此行，会导致布局错误。
-    */
 }
 
 .search-icon {
@@ -145,17 +120,8 @@
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.search-input:focus {
-    /* border-color: var(--theme-color); */ /* <-- 【改动】注释掉此行，以移除选中时的边框颜色变化 */
-    box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color) 20%, transparent);
-}
-
-.search-input::placeholder {
-    color: var(--text-sub);
-    opacity: 0.8;
-}
-
-/* 浏览器原生“清除”按钮的美化 (适用于 WebKit 内核浏览器) */
+.search-input:focus { box-shadow: 0 0 0 2px color-mix(in srgb, var(--theme-color) 20%, transparent); }
+.search-input::placeholder { color: var(--text-sub); opacity: 0.8; }
 .search-input::-webkit-search-cancel-button {
     -webkit-appearance: none;
     height: 18px;
@@ -164,14 +130,9 @@
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%239ca3af'><path d='M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z'/></svg>");
     cursor: pointer;
     opacity: 0.6;
-    transition: opacity 0.2s;
 }
-.search-input:focus::-webkit-search-cancel-button {
-    opacity: 1;
-}
+.search-input:focus::-webkit-search-cancel-button { opacity: 1; }
 
-
-/* --- 卡片网格布局 --- */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -179,28 +140,23 @@
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 4rem;
+    transition: padding-top 0.3s ease;
 }
 
-/* --- 懒加载触发器布局 --- */
 .load-more-trigger {
     grid-column: 1 / -1;
-    display: flex; /* 默认设为 flex，由 JS 通过 is-visible 类控制 */
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
     min-height: 80px;
-    /* 初始时不可见，由JS添加 is-visible 类来显示 */
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 0.2s, opacity 0.2s ease-in-out;
 }
-.load-more-trigger.is-visible {
-    visibility: visible;
-    opacity: 1;
-    transition-delay: 0s;
-}
+.load-more-trigger.is-visible { visibility: visible; opacity: 1; transition-delay: 0s; }
 
-/* --- 页脚样式 --- */
 .app-footer {
     text-align: center;
     padding: 2rem 1rem;
@@ -208,15 +164,104 @@
     border-top: 1px solid var(--border-color);
     color: var(--text-sub);
     font-size: 0.85rem;
-    transition: border-color 0.3s ease;
+    margin-bottom: 80px;
 }
 .app-footer p { margin: 0.3rem 0; }
+.footer-meta { margin-top: 10px; }
+.footer-meta a { color: inherit; text-decoration: none; }
+body.mode-immersive .app-footer { display: none; }
 
-/* 【重构】从 index.html 迁移过来的页脚元信息样式 */
-.footer-meta {
-    margin-top: 10px;
-}
-.footer-meta a {
-    color: inherit;
-    text-decoration: none;
+/* ==========================================================================
+   移动端响应式适配 (Breakpoint: 768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+
+    /* 1. Body 转为 Flex Column */
+    body {
+        display: flex;
+        flex-direction: column;
+        /* 高度已在 base.css 中被固定为 100% fixed */
+        height: 100%;
+        overflow: hidden;
+    }
+
+    /* 2. Header 适配 */
+    .app-header {
+        padding: 0.5rem 0.8rem;
+        flex-shrink: 0; /* 防止被挤压 */
+    }
+    .app-header h1 { font-size: 1.1rem; margin-bottom: 0; justify-content: flex-start; }
+    .header-logo { width: 22px; height: 22px; }
+    .subtitle, .app-slogan { display: none; }
+
+    /* 3. 筛选器适配 */
+    .grade-filter-container,
+    .content-type-filter-container,
+    .filter-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 0;
+        margin-bottom: 0.5rem;
+        gap: 0.5rem;
+        flex-shrink: 0; /* 防止被挤压 */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE */
+    }
+    .grade-filter-container::-webkit-scrollbar,
+    .content-type-filter-container::-webkit-scrollbar,
+    .filter-container::-webkit-scrollbar { display: none; }
+
+    .grade-filter-container { margin-bottom: 0.5rem; padding-bottom: 0.5rem; }
+
+    /* 4. 搜索框适配 */
+    .tool-group { width: 100%; margin-top: 0.2rem; }
+    .search-container { max-width: 100%; margin: 0; }
+    .search-input { height: 36px; font-size: 0.9rem; min-width: 250px;}
+
+    /* 5. 卡片网格 (Flexbox 撑满剩余空间) */
+    .card-grid {
+        /* 核心修复：min-height: 0 允许 flex 子项在需要时收缩，防止溢出 */
+        flex: 1 1 auto;
+        min-height: 0;
+
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+
+        overflow-x: auto; /* 水平滚动 */
+        overflow-y: hidden; /* 禁止垂直滚动 */
+
+        padding: 0 1rem;
+        gap: 1rem;
+        margin: 0;
+
+        /* 底部留白：适配固定在底部的导航栏 (60px) + 安全区域 */
+        /* 使用 margin-bottom 而不是 padding-bottom，防止计算误差 */
+        padding-bottom: calc(60px + env(safe-area-inset-bottom) + 10px);
+
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+
+        align-items: center; /* 垂直居中卡片 */
+    }
+
+    /* 沉浸模式下，头部消失，网格自动占据更多空间 */
+    body.mode-immersive .card-grid {
+        padding-top: 1rem;
+    }
+
+    /* 6. 移除页脚 */
+    .app-footer {
+        display: none !important;
+    }
+
+    /* 7. 加载触发器 */
+    .load-more-trigger {
+        min-width: 60px;
+        height: 100%;
+        margin: 0;
+        scroll-snap-align: end;
+        flex-shrink: 0;
+    }
 }

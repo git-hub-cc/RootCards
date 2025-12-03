@@ -1,22 +1,15 @@
 <!DOCTYPE html>
-<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- ================= SEO 核心配置区域 (开始) ================= -->
-    <title>英语词源意境记忆卡 | Etymology Visualizer - 词根词缀可视化学习工具</title>
-    <meta name="description" content="PPMC词源意境记忆卡 (Etymology Visualizer) 是一个在线英语单词学习工具。单词不是孤岛，而是积木的组合。我们通过可视化拆解词根、词缀（前缀/后缀），结合生动的意境联想记忆法，帮助你从逻辑上高效掌握英语词汇。资料参考韩宇极简英语。">
-    <meta name="keywords" content="英语单词记忆, 词源法, 词根词缀, Etymology, 意境记忆, 视觉化记单词, 英语前缀, 英语后缀, 联想记忆法, 在线背单词, 韩宇极简英语, ppmc club, 英语学习工具, 考研英语, 托福雅思词汇">
+    <title>英语词源意境记忆卡 | Etymology Visualizer</title>
+    <meta name="description" content="PPMC词源意境记忆卡 (Etymology Visualizer) 是一个在线英语单词学习工具。">
+    <meta name="keywords" content="英语单词记忆, 词源法, 词根词缀, 意境记忆, PPMC">
     <meta name="author" content="cc">
-    <meta name="copyright" content="PPMC Club">
     <link rel="canonical" href="https://ppmc.club/">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ppmc.club/">
-    <meta property="og:site_name" content="PPMC 词源意境记忆">
-    <meta property="og:title" content="拒绝死记硬背！英语词源意境记忆卡 - PPMC">
-    <meta property="og:description" content="前缀决定方向，词根承载灵魂。来试试可视化的“积木式”记单词方法吧。">
-    <meta property="og:image" content="https://ppmc.club/images/og-image.png">
     <!-- ================= SEO 核心配置区域 (结束) ================= -->
 
     <!-- CSS 资源引入 -->
@@ -36,16 +29,59 @@
 </head>
 <body>
 
+<!-- 【新增】全屏启动页 (Splash Screen) -->
+<!-- 用于在数据加载期间遮盖未渲染的 DOM，提供原生 App 般的加载体验 -->
+<div id="app-splash-screen" class="app-splash-screen">
+    <div class="splash-content">
+        <div class="splash-logo-wrapper">
+            <img src="favicon.svg" alt="Logo" class="splash-logo">
+            <div class="splash-ripple"></div>
+        </div>
+        <h2 class="splash-title">词源意境记忆</h2>
+        <p class="splash-subtitle">Etymology Visualizer</p>
+
+        <div class="splash-loading-area">
+            <p id="loading-progress-text" class="splash-status-text">正在解析词源数据...</p>
+            <div class="splash-progress-track">
+                <div id="loading-progress-bar" class="splash-progress-fill"></div>
+            </div>
+        </div>
+
+        <div class="splash-quote">
+            <p>“单词不是孤岛，而是积木的组合”</p>
+        </div>
+    </div>
+</div>
+
+<!-- 沉浸模式开关按钮 (移动端右上角悬浮) -->
+<button id="immersive-mode-btn" class="floating-action-btn" title="切换沉浸模式">
+    <!-- 进入沉浸模式图标 (扩大) -->
+    <svg class="icon-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 3 21 3 21 9"></polyline>
+        <polyline points="9 21 3 21 3 15"></polyline>
+        <line x1="21" y1="3" x2="14" y2="10"></line>
+        <line x1="3" y1="21" x2="10" y2="14"></line>
+    </svg>
+    <!-- 退出沉浸模式图标 (收缩) -->
+    <svg class="icon-compress is-hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="4 14 10 14 10 20"></polyline>
+        <polyline points="20 10 14 10 14 4"></polyline>
+        <line x1="14" y1="10" x2="21" y2="3"></line>
+        <line x1="3" y1="21" x2="10" y2="14"></line>
+    </svg>
+</button>
+
 <!-- 顶部导航与过滤器 -->
 <header class="app-header">
     <h1>
         <img src="favicon.svg" alt="App Logo" class="header-logo">
-        <div>
+        <div class="header-title-text">
             词源意境记忆
             <span class="subtitle">Etymology Visualizer</span>
         </div>
     </h1>
 
+    <!-- 移动端通过 CSS 隐藏此区域 -->
     <div class="app-slogan">
         <p>单词不是孤岛，而是<strong>积木</strong>的组合。</p>
         <p>
@@ -55,16 +91,16 @@
         </p>
     </div>
 
-    <!-- 年级筛选器容器 -->
+    <!-- 筛选器区域：移动端将转为水平滑动 -->
+    <!-- 预置一些空的占位符，防止 JS 加载前高度塌陷（虽然有 Splash Screen，但这是双重保险） -->
     <div class="grade-filter-container" id="grade-filter-container"></div>
-
-    <!-- 内容类型筛选器容器 -->
     <div class="content-type-filter-container" id="content-type-filter-container"></div>
 
     <!-- 类别筛选器与工具容器 -->
     <div class="filter-container" id="filter-container">
         <!-- 筛选器按钮将由 JavaScript 动态生成并插入在这里 -->
 
+        <!-- 工具组：在移动端，JS会将内部按钮搬运到底部导航栏 -->
         <div class="tool-group" id="tool-group">
             <!-- 拼写打字模式按钮 -->
             <button class="icon-btn" id="typing-mode-btn" title="拼写打字模式 (Typing Mode)">
@@ -120,6 +156,7 @@
                         <circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle>
                     </svg>
                 </button>
+                <!-- 下拉菜单结构保持不变 -->
                 <div class="options-dropdown-menu" id="options-menu">
                     <button class="menu-item" id="import-learned-btn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
@@ -157,26 +194,24 @@
                 <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                 </svg>
-                <input type="search" id="search-input" class="search-input" placeholder="搜索单词 (e.g., 'review')" autocomplete="off">
+                <input type="search" id="search-input" class="search-input" placeholder="搜索 (Search)..." autocomplete="off">
             </div>
         </div>
     </div>
 </header>
 
 <!-- 主内容区域：卡片网格 -->
+<!-- 在移动端，这里将通过 CSS 变为水平滑动的单页视图 -->
 <main class="card-grid" id="card-grid">
-    <!-- 加载进度反馈UI -->
-    <div id="loading-feedback-container" class="loading-state">
-        <p id="loading-progress-text">正在准备数据...</p>
-        <progress id="loading-progress-bar" value="0" max="100"></progress>
-    </div>
-
-    <!-- 骨架图加载状态 -->
+    <!--
+      旧的 #loading-feedback-container 已被顶部的 #app-splash-screen 替代
+      但保留 #skeleton-loader 作为数据渲染前的占位，以防万一
+    -->
     <div id="skeleton-loader">
         <div class="skeleton-card"><div class="skeleton-badge"></div><div class="skeleton-visual"></div><div class="skeleton-word"></div><div class="skeleton-hint"></div></div>
         <div class="skeleton-card"><div class="skeleton-badge"></div><div class="skeleton-visual"></div><div class="skeleton-word"></div><div class="skeleton-hint"></div></div>
-        <div class="skeleton-card"><div class="skeleton-badge"></div><div class="skeleton-visual"></div><div class="skeleton-word"></div><div class="skeleton-hint"></div></div>
     </div>
+
     <!-- 懒加载触发器 -->
     <div id="load-more-trigger" class="load-more-trigger">
         <svg class="spinner" viewBox="0 0 50 50">
@@ -185,7 +220,11 @@
     </div>
 </main>
 
-<!-- ======================= 听力模式模态框 ======================= -->
+<!-- 【新增】移动端底部固定导航栏容器 -->
+<!-- JS 会在移动端模式下将工具按钮搬运至此 -->
+<nav id="mobile-bottom-bar" class="mobile-bottom-bar"></nav>
+
+<!-- 模态框与模板区域保持原样，具体样式在 modals.css 中适配 -->
 <div id="listening-modal" class="modal-overlay is-hidden">
     <div class="modal-content">
         <button class="modal-close-btn" id="listening-close-btn" title="退出听力模式">
@@ -218,7 +257,6 @@
     </div>
 </div>
 
-<!-- ======================= 拼写打字模式模态框 ======================= -->
 <div id="typing-modal" class="modal-overlay is-hidden">
     <div class="modal-content typing-content">
         <div class="typing-header">
@@ -250,14 +288,8 @@
     </div>
 </div>
 
-<!-- ======================= 管理单词本模态框 ======================= -->
 <div id="wordbook-modal" class="modal-overlay is-hidden">
     <div class="modal-content wordbook-content">
-        <button class="modal-close-btn" id="wordbook-close-btn" title="关闭">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </button>
-
-        <!-- 视图 1: 单词本列表 (Dashboard) -->
         <div id="wordbook-view-list" class="wordbook-view-list">
             <div class="wordbook-header">
                 <h3>📚 我的单词本</h3>
@@ -269,8 +301,6 @@
                 <p class="wordbook-empty-hint">暂无单词本，点击右上方“新建”开始创建。</p>
             </div>
         </div>
-
-        <!-- 视图 2: 编辑/新建视图 (Editor) -->
         <div id="wordbook-view-editor" class="wordbook-view-editor is-hidden">
             <div class="wordbook-header">
                 <button id="wordbook-back-btn" class="icon-btn" title="返回列表">
@@ -314,7 +344,6 @@
     </div>
 </div>
 
-<!-- 模板 1: 单词卡片 -->
 <template id="card-template">
     <div class="card">
         <div class="card-inner">
@@ -331,31 +360,20 @@
                 <div class="visual-area"></div>
                 <div class="word-area">
                     <h2 class="word-text"></h2>
-                    <!-- 音频按钮 -->
-                    <button class="audio-btn word-audio" title="朗读单词 (常速)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
-                    <!-- 【新增】笔记按钮 -->
+                    <button class="audio-btn word-audio" title="朗读单词"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
                     <button class="audio-btn note-btn" title="添加/查看笔记">
-                        <!-- 空白笔记（未编辑） -->
                         <svg class="icon-note-empty" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
                         </svg>
-
-                        <!-- 【修正】已编辑笔记（添加了纸上的横线，笔改为空心） -->
                         <svg class="icon-note-filled" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <!-- 纸张轮廓 -->
                             <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
-                            <!-- 笔（空心，同上） -->
                             <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
-                            <!-- 新增：纸上的横线（代表已编辑/有内容） -->
-                            <path d="M8 13h5"></path>
-                            <path d="M8 17h8"></path>
+                            <path d="M8 13h5"></path><path d="M8 17h8"></path>
                         </svg>
                     </button>
                 </div>
                 <p class="hint-text">点击翻转查看解析</p>
-
-                <!-- 【新增】笔记输入浮层 -->
                 <div class="card-note-overlay is-hidden">
                     <textarea class="note-input" placeholder="输入你的联想笔记..."></textarea>
                     <div class="note-actions">
@@ -373,7 +391,6 @@
     </div>
 </template>
 
-<!-- 模板 2: 前缀介绍卡片 -->
 <template id="prefix-intro-template">
     <div class="card prefix-intro-card">
         <div class="card-inner">
@@ -390,11 +407,10 @@
 
 <footer class="app-footer">
     <p>学习资料来源：韩宇极简英语 & AI 辅助生成</p>
-    <p>Source Material: Han Yu Minimalist English & AI-assisted Generation</p>
-    <p class="footer-meta">© 2024 cc | <a href="https://github.com/git-hub-cc/RootCards" target="_blank">GitHub</a> | <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024271251号</a></p>
+    <p class="footer-meta">© 2024 cc | <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024271251号</a> | <a href="https://github.com/git-hub-cc/RootCards" target="_blank">GitHub</a></p>
 </footer>
 
-<!-- 全局撤销操作的 UI 组件 -->
+<!-- 全局 UI 组件 -->
 <div id="undo-toast" class="undo-toast">
     <span id="undo-message" class="undo-message">操作已完成</span>
     <button id="undo-action-btn" class="undo-action-btn">撤销</button>
@@ -403,12 +419,10 @@
     </div>
 </div>
 
-<!-- 全局通知 (Toast) UI 组件 -->
 <div id="notification-toast" class="notification-toast">
     <span id="notification-icon" class="notification-icon"></span>
     <span id="notification-message" class="notification-message"></span>
 </div>
-
 
 <input type="file" id="import-file-input" accept=".json" style="display: none;">
 <script src="lib/compromise.js"></script>

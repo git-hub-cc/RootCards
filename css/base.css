@@ -1,35 +1,30 @@
 /* ==========================================================================
-   Base Styles - 基础与全局样式 (v2.0 - 支持主题切换)
+   Base Styles - 基础与全局样式 (v2.2 - 移动端真机兼容性修复)
    ========================================================================== */
 
-/* --- 核心：主题颜色变量定义 --- */
-/*
-  这是实现主题切换的基石。我们在这里定义了一套完整的颜色和样式变量。
-  默认情况下，这些变量对应的是浅色主题。
-*/
 :root {
     /* 1. 背景色 */
-    --bg-color: #f3f4f6; /* 页面主背景色 (浅灰) */
-    --bg-secondary-color: #ffffff; /* 次级背景色，如 header (白色) */
-    --card-bg: #ffffff; /* 卡片背景色 */
-    --card-back-bg: #fafafa; /* 卡片背面背景色 */
-    --card-back-section-bg: #ffffff; /* 卡片背面例句区域背景 */
+    --bg-color: #f3f4f6;
+    --bg-secondary-color: #ffffff;
+    --card-bg: #ffffff;
+    --card-back-bg: #fafafa;
+    --card-back-section-bg: #ffffff;
 
     /* 2. 文本颜色 */
-    --text-main: #1f2937; /* 主要文本颜色 (深灰) */
-    --text-sub: #6b7280; /* 次要/辅助文本颜色 (中灰) */
-    --text-inverse: #ffffff; /* 反色文本，用于深色背景上 (白色) */
-    --text-highlight: #111827; /* 高亮文本，如标题 */
-    --text-code: #374151; /* 代码/分解块文本 */
+    --text-main: #1f2937;
+    --text-sub: #6b7280;
+    --text-inverse: #ffffff;
+    --text-highlight: #111827;
+    --text-code: #374151;
 
     /* 3. 边框与分隔线颜色 */
-    --border-color: #e5e7eb; /* 默认边框颜色 */
-    --border-color-hover: #d1d5db; /* 悬浮时的边框颜色 */
-    --border-imagery: #ccc; /* 意境引言的左边框 */
+    --border-color: #e5e7eb;
+    --border-color-hover: #d1d5db;
+    --border-imagery: #ccc;
 
     /* 4. 特殊/状态颜色 */
-    --color-learned: #f59e0b; /* "已掌握" 状态的颜色 (金色) */
-    --theme-color-default: #999; /* 默认的主题色，用于“全部”按钮 */
+    --color-learned: #f59e0b;
+    --theme-color-default: #999;
 
     /* 5. 阴影 */
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -39,59 +34,81 @@
     --radius-lg: 16px;
     --radius-sm: 8px;
 
-    /* 7. 动态主题色 (JS会修改这个值) */
+    /* 7. 动态主题色 */
     --theme-color: var(--theme-color-default);
 }
 
-/* --- 深色模式变量覆盖 --- */
-/*
-  当 <body> 标签被 JS 加上 'dark-mode' 类时，这里的变量会覆盖 :root 中的同名变量。
-  这使得整个站点的颜色可以瞬间切换到深色主题，而无需修改任何其他 CSS 规则。
-*/
 body.dark-mode {
-    /* 1. 背景色 */
-    --bg-color: #111827; /* 深蓝灰 */
-    --bg-secondary-color: #1f2937; /* 次深蓝灰 */
+    --bg-color: #111827;
+    --bg-secondary-color: #1f2937;
     --card-bg: #1f2937;
     --card-back-bg: #161e2b;
     --card-back-section-bg: #1f2937;
-
-    /* 2. 文本颜色 */
-    --text-main: #e5e7eb; /* 浅灰 */
-    --text-sub: #9ca3af; /* 中灰 */
+    --text-main: #e5e7eb;
+    --text-sub: #9ca3af;
     --text-inverse: #ffffff;
     --text-highlight: #ffffff;
     --text-code: #d1d5db;
-
-    /* 3. 边框与分隔线颜色 */
-    --border-color: #374151; /* 深灰 */
+    --border-color: #374151;
     --border-color-hover: #4b5563;
     --border-imagery: #4b5563;
-
-    /* 4. 特殊/状态颜色 */
     --theme-color-default: #374151;
-
-    /* 5. 阴影 (深色模式下阴影通常更柔和) */
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.12);
     --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
 }
 
-
-/* --- 全局重置与基础样式 --- */
 * {
-    box-sizing: border-box; /* 统一盒模型，简化布局计算 */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* 禁止 iOS/Android 长按选中文本/图片，防止弹出系统菜单干扰 */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* 禁止移动端点击高亮 */
+    -webkit-tap-highlight-color: transparent;
 }
+
+input, textarea {
+    -webkit-user-select: auto;
+    user-select: auto;
+}
+
 html {
-    scroll-behavior: smooth; /* 为JS触发的滚动提供平滑效果 */
+    scroll-behavior: smooth;
+    /* 默认 PC 端高度 */
+    height: 100%;
 }
+
 body {
     font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    /* 应用变量 */
     background-color: var(--bg-color);
     color: var(--text-main);
     line-height: 1.5;
-    /* 平滑过渡：当背景色和文本颜色变化时，产生0.3秒的动画效果 */
     transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+    min-height: 100%;
+}
+
+/*
+   【核心修复】移动端真机适配：
+   使用 position: fixed 强制锁定视口，解决 Safari/微信 底部工具栏上浮导致的高度计算错误。
+   这会让网页的表现完全像一个原生 App，不会有整体的橡皮筋回弹效果。
+*/
+@media screen and (max-width: 768px) {
+    html, body {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* 禁止任何层级的 body 滚动 */
+        overscroll-behavior: none; /* 禁止下拉刷新等浏览器行为 */
+
+        /* 启用 iOS 硬件加速，防止闪烁 */
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+    }
 }

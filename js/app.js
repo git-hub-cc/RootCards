@@ -1,5 +1,5 @@
 // =================================================================================
-// 应用协调器 (Application Orchestrator) - v13.2 (集成笔记功能)
+// 应用协调器 (Application Orchestrator) - v14.2 (Splash Screen & 启动优化)
 // ---------------------------------------------------------------------------------
 // =================================================================================
 
@@ -24,14 +24,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadMoreTrigger = document.getElementById('load-more-trigger');
     const searchInput = document.getElementById('search-input');
     const toolGroup = document.getElementById('tool-group');
-    const loadingFeedbackContainer = document.getElementById('loading-feedback-container');
+    // 【修改】这三个旧的加载相关元素可以移除了，或者保留作为备用
+    // const loadingFeedbackContainer = document.getElementById('loading-feedback-container');
     const skeletonLoader = document.getElementById('skeleton-loader');
-    const loadingProgressText = document.getElementById('loading-progress-text');
-    const loadingProgressBar = document.getElementById('loading-progress-bar');
+    // const loadingProgressText = document.getElementById('loading-progress-text');
+    // const loadingProgressBar = document.getElementById('loading-progress-bar');
+
+    // 【新增】启动页相关元素
+    const splashScreen = document.getElementById('app-splash-screen');
+    const splashProgressText = document.getElementById('loading-progress-text'); // 复用了ID
+    const splashProgressBar = document.getElementById('loading-progress-bar');   // 复用了ID
+
     const noVisualBtn = document.getElementById('no-visual-btn');
     const moreOptionsBtn = document.getElementById('more-options-btn');
     const optionsMenu = document.getElementById('options-menu');
     const clearLearnedBtn = document.getElementById('clear-learned-btn');
+    const immersiveModeBtn = document.getElementById('immersive-mode-btn');
 
     // 模式启动按钮
     const typingModeBtn = document.getElementById('typing-mode-btn');
@@ -60,12 +68,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const fragment = document.createDocumentFragment();
         const endIndex = Math.min(renderIndex + CARDS_PER_PAGE, State.currentDataSet.length);
 
-        // 定义传递给卡片创建函数的回调处理器
         const handlers = { onMarkLearned: handleMarkAsLearned };
 
         for (let i = renderIndex; i < endIndex; i++) {
-            fragment.appendChild(UI.createCard(State.currentDataSet[i], handlers));
+            const card = UI.createCard(State.currentDataSet[i], handlers);
+            fragment.appendChild(card);
+
+            // 【新增】移动端 Scroll Snap 懒加载埋点
+            // 给每批次的倒数第二张卡片添加特定类，用于水平滚动的观察
+            if (i === endIndex - 2) {
+                card.classList.add('mobile-scroll-trigger');
+            }
         }
+
+        // 将新卡片插入到加载触发器之前
         cardGrid.insertBefore(fragment, loadMoreTrigger);
         renderIndex = endIndex;
 
@@ -73,7 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const hasMore = renderIndex < State.currentDataSet.length;
         loadMoreTrigger.classList.toggle('is-visible', hasMore);
 
-        // 如果没有更多卡片，检查是否需要显示空状态消息
+        // 如果是移动端，需要重新绑定水平滚动的 Observer
+        if (window.innerWidth <= 768) {
+            setupMobileIntersectionObserver();
+        }
+
         if (!hasMore) {
             updateEmptyStateMessage();
         }
@@ -95,20 +115,24 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (State.getWordbook(State.currentFilter)) {
                 message = `单词本 "${State.currentFilter}" 为空或其中单词未在数据库中找到。`;
             }
-            cardGrid.insertAdjacentHTML('afterbegin', `<div class="loading-state">${message}</div>`);
+            // 在 Flex 容器中，确保消息占据 100% 宽度并居中
+            cardGrid.insertAdjacentHTML('afterbegin', `<div class="loading-state" style="margin: auto;">${message}</div>`);
         } else if (cardCount > 0 && existingMessage) {
             existingMessage.remove();
         }
     }
 
     /**
-     * 清空并重新开始渲染流程，通常在筛选条件变化后调用。
+     * 清空并重新开始渲染流程。
      */
     function startNewRenderFlow() {
-        cardGrid.innerHTML = ''; // 清空现有卡片
-        cardGrid.appendChild(loadMoreTrigger); // 重新插入加载触发器
+        cardGrid.innerHTML = '';
+        cardGrid.appendChild(loadMoreTrigger);
         renderIndex = 0;
         renderMoreCards();
+
+        // 渲染重置后，滚动到最左侧/最顶部
+        cardGrid.scrollTo({ left: 0, top: 0 });
     }
 
     /**
@@ -116,13 +140,17 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function updateCategoryFilters() {
         const availableCategories = State.getAvailableCategories();
+        // 注意：UI.renderFilterButtons 内部会处理移动端的样式类
         UI.renderFilterButtons(filterContainer, toolGroup, availableCategories);
 
         const currentBtn = filterContainer.querySelector(`.filter-btn[data-filter="${State.currentFilter}"]`);
         if (currentBtn) {
             UI.updateActiveFilterButton(filterContainer, currentBtn);
+            // 移动端：自动滚动使选中按钮可见
+            if (window.innerWidth <= 768) {
+                currentBtn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            }
         } else {
-            // 如果当前筛选器无效（例如单词本被删除），则回退到“全部”
             const allBtn = filterContainer.querySelector('.filter-btn[data-filter="all"]');
             if (allBtn) {
                 UI.updateActiveFilterButton(filterContainer, allBtn);
@@ -133,49 +161,71 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /**
      * 更新数据加载进度条的显示。
+     * 【修改】现在更新启动页中的进度条
      */
     function updateLoadingProgress(loaded, total) {
-        if (total > 0) {
-            loadingProgressBar.max = total;
-            loadingProgressBar.value = loaded;
-            loadingProgressText.textContent = `正在加载数据文件: ${loaded} / ${total}`;
+        if (total > 0 && splashProgressBar) {
+            const percentage = Math.round((loaded / total) * 100);
+            splashProgressBar.style.width = `${percentage}%`;
+            splashProgressText.textContent = `正在解析数据文件 (${loaded}/${total})...`;
         }
+    }
+
+    /**
+     * 【新增】隐藏启动页并显示主界面
+     */
+    function hideSplashScreen() {
+        if (splashScreen) {
+            // 确保进度条跑满
+            if (splashProgressBar) splashProgressBar.style.width = '100%';
+            if (splashProgressText) splashProgressText.textContent = '准备就绪，开始学习！';
+
+            // 稍微延迟一点，让用户看到100%的状态
+            setTimeout(() => {
+                splashScreen.classList.add('is-hidden');
+                // 启动页淡出后，可以将其从 DOM 中移除以节省内存（可选）
+                setTimeout(() => splashScreen.remove(), 600);
+            }, 500);
+        }
+        // 移除骨架屏
+        if (skeletonLoader) skeletonLoader.remove();
     }
 
     // ============================================================================
     // 事件回调处理 (Action Handlers)
     // ============================================================================
 
-    /**
-     * 处理单词“标记为掌握”的操作，集成了撤销功能、即时视觉反馈和音效。
-     * @param {object} data - 单词数据对象。
-     * @param {HTMLElement} cardElement - 对应的卡片DOM元素。
-     */
     function handleMarkAsLearned(data, cardElement) {
-        // --- 音效触发逻辑 ---
-        // 检查当前卡片是否已是“已掌握”状态（通过类名判断，比数据状态更即时）
         const isCurrentlyLearned = cardElement.classList.contains('is-learned');
 
         if (isCurrentlyLearned) {
-            // 如果已经是已掌握，现在要取消掌握
             UI.playUiSound('uncomplete');
         } else {
-            // 如果还没掌握，现在标记为掌握
             UI.playUiSound('complete');
         }
 
-        // 步骤 1: 立即更新UI，提供即时反馈
         cardElement.classList.add('is-pending-removal');
         cardElement.classList.add('is-learned');
 
-        // 步骤 2: 定义“确认”和“撤销”两种最终操作
-        const onConfirm = () => {
-            State.toggleLearnedStatus(data); // 真实地更新数据状态
-            cardElement.remove(); // 从DOM中彻底移除卡片元素
+        // 在移动端单页视图下，标记删除后自动滑向下一张卡片
+        if (window.innerWidth <= 768) {
+            const nextCard = cardElement.nextElementSibling;
+            if (nextCard && nextCard.classList.contains('card')) {
+                // 延迟一点让动画先播放
+                setTimeout(() => {
+                    nextCard.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+                }, 300);
+            }
+        }
 
-            // 检查是否需要加载新卡片来填补空位
+        const onConfirm = () => {
+            State.toggleLearnedStatus(data);
+            cardElement.remove();
+
             State.filterAndPrepareDataSet();
             const cardsOnScreen = cardGrid.querySelectorAll('.card:not(.is-pending-removal)').length;
+
+            // 检查是否需要补充卡片
             if (cardsOnScreen < CARDS_PER_PAGE && renderIndex < State.currentDataSet.length) {
                 renderMoreCards();
             }
@@ -183,27 +233,25 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const onUndo = () => {
-            // 恢复卡片原状
             cardElement.classList.remove('is-pending-removal');
             if (!isCurrentlyLearned) {
-                // 如果原来是未掌握状态，撤销时应移除 is-learned 类
                 cardElement.classList.remove('is-learned');
+            }
+            // 撤销时，如果卡片不在视图中，滚回来
+            if (window.innerWidth <= 768) {
+                cardElement.scrollIntoView({ behavior: 'smooth', inline: 'center' });
             }
         };
 
-        // 步骤 3: 调用全局撤销管理器
         UndoManager.show({
-            message: `单词 "${data.word}" 已标记为掌握。`,
+            message: `单词 "${data.word}" 已标记。`,
             onConfirm: onConfirm,
             onUndo: onUndo
         });
     }
 
-    /**
-     * 处理单词本数据变更后的全局联动。
-     */
     function handleWordbookChange(type, newName, oldName) {
-        updateCategoryFilters(); // 刷新顶部的过滤器按钮列表
+        updateCategoryFilters();
 
         if (type === 'create' || type === 'study') {
             State.setCurrentFilter(newName);
@@ -227,9 +275,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * 设置 IntersectionObserver 以实现无限滚动加载。
+     * 设置 IntersectionObserver (PC端垂直滚动)
      */
     function setupIntersectionObserver() {
+        // 如果是移动端，不使用这个逻辑
+        if (window.innerWidth <= 768) return;
+
         if (observer) observer.disconnect();
         observer = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting && loadMoreTrigger.classList.contains('is-visible')) {
@@ -239,10 +290,40 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(loadMoreTrigger);
     }
 
+    /**
+     * 【新增】设置移动端水平滚动的 Observer
+     * 监听倒数第2张卡片滑入视口时触发加载
+     */
+    function setupMobileIntersectionObserver() {
+        // 先断开旧的
+        if (observer) observer.disconnect();
+
+        // 找到所有的触发点
+        const triggers = cardGrid.querySelectorAll('.mobile-scroll-trigger');
+        if (triggers.length === 0) return;
+
+        // 只监听最后一个（最新一批的触发点）
+        const lastTrigger = triggers[triggers.length - 1];
+
+        observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                // 移除触发类，防止重复触发
+                lastTrigger.classList.remove('mobile-scroll-trigger');
+                // 加载更多
+                renderMoreCards();
+            }
+        }, {
+            root: cardGrid, // 以水平滚动的容器为视窗
+            rootMargin: '0px 200px 0px 0px', // 提前 200px 加载
+            threshold: 0.1
+        });
+
+        observer.observe(lastTrigger);
+    }
+
     // ============================================================================
     // 全局事件绑定
     // ============================================================================
-
 
     gradeFilterContainer.addEventListener('click', (e) => {
         const btn = e.target.closest('.grade-filter-btn');
@@ -289,24 +370,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     shuffleBtn.addEventListener('click', () => {
         if (isShuffling || State.currentDataSet.length === 0) return;
-
-        // 播放随机洗牌激活音效
         UI.playUiSound('activate');
 
-        isShuffling = true;
-        cardGrid.classList.add('is-shuffling');
-        setTimeout(() => {
+        // 移动端单页视图下，无需播放复杂的缩放动画，直接刷新体验更好
+        const isMobile = window.innerWidth <= 768;
+
+        if (isMobile) {
             State.shuffleCurrentDataSet();
             startNewRenderFlow();
-            document.querySelector('.app-header').scrollIntoView({ behavior: 'smooth' });
+            // 在移动端用简单的 Toast 提示
+            NotificationManager.show({ type: 'success', message: '🔀 卡片已随机打乱' });
+        } else {
+            // PC端保留动画
+            isShuffling = true;
+            cardGrid.classList.add('is-shuffling');
             setTimeout(() => {
-                cardGrid.classList.remove('is-shuffling');
-                isShuffling = false;
-            }, 150);
-        }, 300);
+                State.shuffleCurrentDataSet();
+                startNewRenderFlow();
+                document.querySelector('.app-header').scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => {
+                    cardGrid.classList.remove('is-shuffling');
+                    isShuffling = false;
+                }, 150);
+            }, 300);
+        }
     });
 
     noVisualBtn.addEventListener('click', () => UI.toggleNoVisualMode(noVisualBtn));
+
+    // 【新增】沉浸模式按钮事件绑定
+    if (immersiveModeBtn) {
+        immersiveModeBtn.addEventListener('click', () => UI.toggleImmersiveMode(immersiveModeBtn));
+    }
 
     moreOptionsBtn.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -323,23 +418,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 message: '所有已掌握记录已成功清空。'
             });
         };
-
         const onUndo = () => {
             NotificationManager.show({
                 type: 'info',
                 message: '清空操作已取消。'
             });
         };
-
         UndoManager.show({
             message: '即将清空所有已掌握记录...',
             onConfirm: onConfirm,
             onUndo: onUndo
         });
-
         optionsMenu.classList.remove('is-open');
     });
-
 
     window.addEventListener('click', (e) => {
         if (optionsMenu.classList.contains('is-open') && !moreOptionsBtn.contains(e.target)) {
@@ -382,19 +473,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         try {
-            // 【修改】在初始化链中加入 loadUserNotes
             State.loadLearnedWords();
             State.loadUserWordbooks();
-            State.loadUserNotes(); // 加载用户笔记
+            State.loadUserNotes();
 
+            // 加载数据，并通过 updateLoadingProgress 回调更新启动页进度条
             const { grades } = await State.loadAndProcessData(updateLoadingProgress);
 
-            loadingFeedbackContainer.classList.add('is-fading-out');
-            skeletonLoader.classList.add('is-fading-out');
-            skeletonLoader.addEventListener('transitionend', () => {
-                loadingFeedbackContainer.remove();
-                skeletonLoader.remove();
-            }, { once: true });
+            // 【修改】数据加载完毕，调用平滑过渡函数隐藏 Splash Screen
+            hideSplashScreen();
 
             UI.renderGradeButtons(gradeFilterContainer, grades);
             UI.renderContentTypeButtons(contentTypeFilterContainer);
@@ -408,16 +495,24 @@ document.addEventListener('DOMContentLoaded', () => {
             updateCategoryFilters();
             State.filterAndPrepareDataSet();
             startNewRenderFlow();
-            setupIntersectionObserver();
+
+            // 根据设备类型绑定不同的加载监听器
+            if (window.innerWidth <= 768) {
+                setupMobileIntersectionObserver();
+            } else {
+                setupIntersectionObserver();
+            }
 
         } catch (error) {
             console.error('初始化应用时发生严重错误:', error);
-            if (loadingFeedbackContainer) loadingFeedbackContainer.remove();
+            if (splashScreen) {
+                splashProgressText.textContent = '❌ 加载失败，请刷新重试';
+                splashProgressText.style.color = '#ef4444';
+            }
             if (skeletonLoader) skeletonLoader.remove();
-            cardGrid.innerHTML = `<div class="loading-state" style="color: #ef4444; padding: 2rem;">加载应用失败，请检查网络连接或浏览器控制台获取错误信息。<br><br>错误: ${error.message}</div>`;
+            cardGrid.innerHTML = `<div class="loading-state" style="color: #ef4444; padding: 2rem;">应用启动失败，请检查网络或控制台日志。<br><br>错误: ${error.message}</div>`;
         }
     }
 
-    // 启动应用
     init();
 });

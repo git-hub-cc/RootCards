@@ -1,9 +1,5 @@
 /* ==========================================================================
-   Card Styles - 卡片样式模块
-   --------------------------------------------------------------------------
-   职责:
-   - 定义所有与卡片相关的样式。
-   - 包括：3D翻转核心、单词卡片正反面、前缀介绍卡片、骨架加载图。
+   Card Styles - 卡片样式模块 (v4.3 - 触摸交互优化)
    ========================================================================== */
 
 /* --- 组件: 3D 翻转卡片 (核心与通用) --- */
@@ -14,13 +10,16 @@
     cursor: pointer;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     animation: card-fade-in 0.5s ease-out forwards;
+
+    /* 触摸优化：明确告知浏览器只处理水平平移，防止垂直滚动干扰 */
+    touch-action: pan-x;
+    -webkit-tap-highlight-color: transparent;
 }
 
-/* 【新增】定义卡片在“待删除”状态下的样式 */
 .card.is-pending-removal {
     opacity: 0;
     transform: scale(0.9) translateY(20px);
-    pointer-events: none; /* 防止在隐藏过程中被再次点击 */
+    pointer-events: none;
 }
 
 @keyframes card-fade-in {
@@ -87,25 +86,15 @@
     height: 120px;
     transition: transform 0.3s ease;
 }
-.card:hover .visual-area svg {
-    transform: scale(1.1);
-}
-.visual-area .layer-root {
-    stroke: var(--text-sub);
-    color: var(--text-sub);
-    opacity: 0.7;
-    stroke-width: 2;
-}
+.card:hover .visual-area svg { transform: scale(1.1); }
+.visual-area .layer-root { stroke: var(--text-sub); color: var(--text-sub); opacity: 0.7; stroke-width: 2; }
 .visual-area .layer-prefix {
     stroke: color-mix(in srgb, var(--theme-color) 40%, transparent);
     color: color-mix(in srgb, var(--theme-color) 40%, transparent);
     stroke-width: 2.5;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.card.prefix-hidden .visual-area .layer-prefix {
-    opacity: 0;
-    transform: scale(0.8);
-}
+.card.prefix-hidden .visual-area .layer-prefix { opacity: 0; transform: scale(0.8); }
 
 .word-area {
     display: flex;
@@ -114,16 +103,8 @@
     gap: 10px;
     margin-bottom: 0.5rem;
 }
-.word-text {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--theme-color);
-}
-.hint-text {
-    font-size: 0.8rem;
-    color: var(--text-sub);
-    text-align: center;
-}
+.word-text { font-size: 2rem; font-weight: 800; color: var(--theme-color); }
+.hint-text { font-size: 0.8rem; color: var(--text-sub); text-align: center; }
 
 
 /* --- 组件: 单词卡片背面 --- */
@@ -133,7 +114,9 @@
     text-align: left;
     background-color: var(--card-back-bg);
     gap: 1.5rem;
+    transition: justify-content 0.3s ease;
 }
+body.mode-immersive .card-back { justify-content: center; }
 
 .breakdown-box {
     font-family: 'Courier New', monospace;
@@ -145,15 +128,10 @@
     color: var(--text-code);
     flex-shrink: 0;
 }
+body.mode-immersive .breakdown-box { display: none; }
 
-.meaning-section {
-    flex-shrink: 0;
-}
-.cn-translation {
-    font-size: 1.4rem;
-    color: var(--text-highlight);
-    margin-bottom: 0.5rem;
-}
+.meaning-section { flex-shrink: 0; }
+.cn-translation { font-size: 1.4rem; color: var(--text-highlight); margin-bottom: 0.5rem; }
 .imagery-text {
     font-size: 0.95rem;
     color: var(--text-sub);
@@ -171,25 +149,21 @@
     padding: 1rem;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-color);
+    /* 允许内部滚动 */
+    -webkit-overflow-scrolling: touch;
+    /* 阻止滚动事件冒泡，防止触发外层卡片滑动 */
+    overscroll-behavior: contain;
 }
 .sentence-block + .sentence-block {
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid var(--border-color);
 }
-.sentence-en {
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    color: var(--text-main);
-}
-.sentence-cn {
-    font-size: 0.9rem;
-    color: var(--text-sub);
-    margin-bottom: 0.8rem;
-}
+.sentence-en { font-weight: 500; margin-bottom: 0.5rem; color: var(--text-main); }
+.sentence-cn { font-size: 0.9rem; color: var(--text-sub); margin-bottom: 0.8rem; }
 
 
-/* --- 组件: 卡片上的按钮 (SVG切换, 标记, 音频, 笔记) --- */
+/* --- 组件: 按钮与图标 (保持不变) --- */
 .toggle-prefix-btn, .mark-btn {
     position: absolute;
     width: 32px;
@@ -205,44 +179,21 @@
     transition: all 0.2s ease;
     z-index: 10;
 }
-.toggle-prefix-btn {
-    top: 1rem;
-    right: 1rem;
-}
-.mark-btn {
-    bottom: 1rem;
-    right: 1rem;
-}
-.toggle-prefix-btn:hover, .mark-btn:hover {
-    background-color: rgba(0,0,0,0.05);
-}
-body.dark-mode .toggle-prefix-btn:hover, body.dark-mode .mark-btn:hover {
-    background-color: rgba(255,255,255,0.1);
-}
-.mark-btn:hover {
-    transform: scale(1.1);
-}
-.toggle-prefix-btn svg, .mark-btn svg {
-    width: 20px;
-    height: 20px;
-}
-.mark-btn svg {
-    width: 24px;
-    height: 24px;
-}
-
+.toggle-prefix-btn { top: 1rem; right: 1rem; }
+.mark-btn { bottom: 1rem; right: 1rem; }
+.toggle-prefix-btn:hover, .mark-btn:hover { background-color: rgba(0,0,0,0.05); }
+body.dark-mode .toggle-prefix-btn:hover, body.dark-mode .mark-btn:hover { background-color: rgba(255,255,255,0.1); }
+.mark-btn:hover { transform: scale(1.1); }
+.toggle-prefix-btn svg, .mark-btn svg { width: 20px; height: 20px; }
+.mark-btn svg { width: 24px; height: 24px; }
 .toggle-prefix-btn .icon-eye { display: block; }
 .toggle-prefix-btn .icon-eye-off { display: none; }
 .card.prefix-hidden .toggle-prefix-btn .icon-eye { display: none; }
 .card.prefix-hidden .toggle-prefix-btn .icon-eye-off { display: block; }
-
 .mark-btn .icon-check-empty { display: block; }
 .mark-btn .icon-check-filled { display: none; }
 .card.is-learned .mark-btn .icon-check-empty { display: none; }
-.card.is-learned .mark-btn .icon-check-filled {
-    display: block;
-    color: var(--theme-color);
-}
+.card.is-learned .mark-btn .icon-check-filled { display: block; color: var(--theme-color); }
 
 .audio-btn {
     background: none;
@@ -256,46 +207,17 @@ body.dark-mode .toggle-prefix-btn:hover, body.dark-mode .mark-btn:hover {
     border-radius: 50%;
     transition: background 0.2s;
 }
-.audio-btn:hover {
-    background: rgba(0,0,0,0.05);
-}
-body.dark-mode .audio-btn:hover {
-    background: rgba(255,255,255,0.1);
-}
-.word-audio {
-    width: 32px;
-    height: 32px;
-    color: var(--text-sub);
-}
+.audio-btn:hover { background: rgba(0,0,0,0.05); }
+body.dark-mode .audio-btn:hover { background: rgba(255,255,255,0.1); }
+.word-audio { width: 32px; height: 32px; color: var(--text-sub); }
 
-/* --- 【修改】笔记按钮样式 --- */
-.note-btn {
-    width: 32px;
-    height: 32px;
-    color: var(--text-sub);
-}
-.note-btn svg {
-    width: 20px;
-    height: 20px;
-}
-
-/*
-   核心修复：明确定义两种图标在不同状态下的显隐
-   不再依赖 HTML 中的 is-hidden 类，而是完全由父级 .has-note 类控制
-*/
-
-/* 1. 默认状态 (无笔记)：显示空心，隐藏实心 */
+.note-btn { width: 32px; height: 32px; color: var(--text-sub); }
+.note-btn svg { width: 20px; height: 20px; }
 .note-btn .icon-note-empty { display: block; }
 .note-btn .icon-note-filled { display: none; }
-
-/* 2. 有笔记状态 (has-note)：隐藏空心，显示实心 */
 .note-btn.has-note .icon-note-empty { display: none; }
 .note-btn.has-note .icon-note-filled { display: block; }
-
-/* 当有笔记时，按钮颜色使用主题色高亮 */
-.note-btn.has-note {
-    color: var(--theme-color);
-}
+.note-btn.has-note { color: var(--theme-color); }
 
 .sentence-audio {
     width: 100%;
@@ -306,57 +228,39 @@ body.dark-mode .audio-btn:hover {
     font-weight: 600;
     justify-content: center;
 }
-.sentence-audio:hover {
-    background: var(--border-color);
-}
+.sentence-audio:hover { background: var(--border-color); }
 
-/* --- 【新增】卡片笔记浮层 (Card Note Overlay) --- */
+/* --- 卡片笔记浮层 --- */
 .card-note-overlay {
     position: absolute;
-    inset: 0; /* 占满整个 .card-front */
-    background-color: var(--card-bg); /* 与卡片背景一致，覆盖下方内容 */
-    z-index: 20; /* 高于卡片内其他元素 */
+    inset: 0;
+    background-color: var(--card-bg);
+    z-index: 20;
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
     border-radius: var(--radius-lg);
-    /* 简单的淡入动画 */
     animation: fadeIn 0.2s ease-out;
 }
-
-.card-note-overlay.is-hidden {
-    display: none;
-}
-
+.card-note-overlay.is-hidden { display: none; }
 .note-input {
     flex-grow: 1;
     width: 100%;
     margin-bottom: 1rem;
     border: none;
     background-color: transparent;
-    /* 类似于信纸的行高和字体 */
     font-family: inherit;
     font-size: 1rem;
     line-height: 1.6;
     color: var(--text-main);
-    resize: none; /* 禁止拖动调整大小 */
+    resize: none;
     outline: none;
     background-image: linear-gradient(transparent 96%, var(--border-color) 96%);
     background-size: 100% 1.6rem;
-    background-attachment: local; /* 内容滚动时背景行线跟随 */
+    background-attachment: local;
 }
-
-.note-input::placeholder {
-    color: var(--text-sub);
-    font-style: italic;
-}
-
-.note-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.5rem;
-}
-
+.note-input::placeholder { color: var(--text-sub); font-style: italic; }
+.note-actions { display: flex; justify-content: flex-end; gap: 0.5rem; }
 .note-action-btn {
     padding: 6px 16px;
     border-radius: 4px;
@@ -368,31 +272,12 @@ body.dark-mode .audio-btn:hover {
     color: var(--text-main);
     transition: all 0.2s ease;
 }
+.btn-save { background-color: var(--theme-color); color: var(--text-inverse); border-color: var(--theme-color); }
 
-.note-action-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.btn-save {
-    background-color: var(--theme-color);
-    color: var(--text-inverse);
-    border-color: var(--theme-color);
-}
-.btn-save:hover {
-    opacity: 0.9;
-}
-
-
-/* --- 组件: 前缀介绍卡片 (保持不变) --- */
-.prefix-intro-card .card-front,
-.prefix-intro-card .card-back {
-    background: var(--card-bg);
-}
+/* --- 组件: 前缀介绍卡片 --- */
+.prefix-intro-card .card-front, .prefix-intro-card .card-back { background: var(--card-bg); }
 body:not(.dark-mode) .prefix-intro-card .card-front,
-body:not(.dark-mode) .prefix-intro-card .card-back {
-    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-}
+body:not(.dark-mode) .prefix-intro-card .card-back { background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%); }
 .prefix-intro-card .intro-title {
     font-size: 2.2rem;
     font-weight: 800;
@@ -400,15 +285,8 @@ body:not(.dark-mode) .prefix-intro-card .card-back {
     font-family: 'Georgia', serif;
     color: var(--theme-color);
 }
-.prefix-intro-card .card-back {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-}
-.prefix-intro-card .intro-section {
-    padding: 0 1rem;
-}
+.prefix-intro-card .card-back { display: flex; flex-direction: column; justify-content: center; gap: 2rem; }
+.prefix-intro-card .intro-section { padding: 0 1rem; }
 .prefix-intro-card .intro-section-title {
     font-size: 1.1rem;
     color: var(--text-main);
@@ -418,21 +296,11 @@ body:not(.dark-mode) .prefix-intro-card .card-back {
     font-weight: 700;
     border-color: var(--theme-color);
 }
-.prefix-intro-card .intro-description,
-.prefix-intro-card .intro-imagery {
-    font-size: 1rem;
-    color: var(--text-sub);
-    line-height: 1.6;
-}
-.prefix-intro-card .intro-imagery {
-    font-style: italic;
-}
-.prefix-intro-card .visual-area svg {
-    color: var(--theme-color);
-}
+.prefix-intro-card .intro-description, .prefix-intro-card .intro-imagery { font-size: 1rem; color: var(--text-sub); line-height: 1.6; }
+.prefix-intro-card .intro-imagery { font-style: italic; }
+.prefix-intro-card .visual-area svg { color: var(--theme-color); }
 
-
-/* --- 组件: 骨架加载图 (保持不变) --- */
+/* --- 组件: 骨架加载图 --- */
 #skeleton-loader {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -452,10 +320,7 @@ body:not(.dark-mode) .prefix-intro-card .card-back {
     overflow: hidden;
     position: relative;
 }
-.skeleton-badge,
-.skeleton-visual,
-.skeleton-word,
-.skeleton-hint {
+.skeleton-badge, .skeleton-visual, .skeleton-word, .skeleton-hint {
     background-color: var(--border-color);
     border-radius: 4px;
     animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -464,28 +329,44 @@ body:not(.dark-mode) .prefix-intro-card .card-back {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.6; }
 }
-.skeleton-badge {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    width: 60px;
-    height: 20px;
-    border-radius: var(--radius-sm);
-}
-.skeleton-visual {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin: auto;
-}
-.skeleton-word {
-    width: 60%;
-    height: 36px;
-    margin: 0 auto 1rem;
-    border-radius: var(--radius-sm);
-}
-.skeleton-hint {
-    width: 40%;
-    height: 16px;
-    margin: 0 auto;
+.skeleton-badge { position: absolute; top: 1rem; left: 1rem; width: 60px; height: 20px; border-radius: var(--radius-sm); }
+.skeleton-visual { width: 120px; height: 120px; border-radius: 50%; margin: auto; }
+.skeleton-word { width: 60%; height: 36px; margin: 0 auto 1rem; border-radius: var(--radius-sm); }
+.skeleton-hint { width: 40%; height: 16px; margin: 0 auto; }
+
+
+/* ==========================================================================
+   移动端响应式适配 (Breakpoint: 768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    /* 核心逻辑：卡片尺寸适配 Flex 容器 */
+    .card {
+        height: 100%; /* 占满 card-grid 分配的高度 */
+        min-width: 90vw;
+        max-width: 95vw;
+        scroll-snap-align: center;
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+    #skeleton-loader {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        height: 100%;
+        min-height: auto;
+        padding: 0;
+        flex-grow: 1;
+    }
+    .skeleton-card {
+        min-width: 90vw;
+        height: 100%;
+        margin: 0;
+    }
+
+    .card-front, .card-back { padding: 1.5rem 1rem; }
+    .word-text { font-size: 1.8rem; }
+    .visual-area svg { width: 100px; height: 100px; }
+    .cn-translation { font-size: 1.3rem; }
+    .sentence-en { font-size: 0.95rem; }
 }

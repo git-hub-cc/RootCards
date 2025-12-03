@@ -1,10 +1,9 @@
 /* ==========================================================================
-   Modal Styles - 模态框通用样式模块
+   Modal Styles - 模态框通用样式模块 (v4.0 - 移动端全屏适配)
    --------------------------------------------------------------------------
    职责:
    - 定义所有模态框（听力、打字、单词本等）共享的通用基础样式。
-   - 包括：遮罩层、内容容器、关闭按钮、通用控制按钮等。
-   - 具体的、功能性的样式被分离到各自的 `feature-*.css` 文件中。
+   - 移动端适配：手机屏幕上强制全屏显示。
    ========================================================================== */
 
 /* --- 模态框: 遮罩层 (通用) --- */
@@ -21,6 +20,7 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
+    /* 默认淡入效果 */
     animation: fadeIn 0.3s forwards;
 }
 
@@ -29,7 +29,7 @@
 }
 
 
-/* --- 模态框: 内容容器 (通用) --- */
+/* --- 模态框: 内容容器 (通用 / PC端) --- */
 .modal-content {
     background: var(--card-bg);
     width: 90%;
@@ -43,6 +43,9 @@
     align-items: center;
     text-align: center;
     border: 1px solid var(--border-color);
+
+    /* PC端进入动画：向上浮现 */
+    animation: fadeInUp 0.3s forwards;
 }
 
 @keyframes fadeInUp {
@@ -63,6 +66,7 @@
     padding: 5px;
     border-radius: 50%;
     transition: background-color 0.2s, color 0.2s;
+    z-index: 10; /* 确保在最上层 */
 }
 .modal-close-btn:hover {
     background-color: var(--border-color);
@@ -90,13 +94,11 @@
     transform: scale(0.98);
 }
 
-/* 按钮中的SVG图标样式 */
 .control-btn svg {
     width: 18px;
     height: 18px;
 }
 
-/* "揭晓" 类按钮 (通常是次要操作) */
 .btn-reveal {
     background: var(--bg-secondary-color);
     color: var(--text-main);
@@ -106,7 +108,6 @@
     background: var(--border-color);
 }
 
-/* "下一个" 或 "提交" 类按钮 (通常是主要操作) */
 .btn-next,
 .btn-submit {
     background: var(--theme-color);
@@ -119,7 +120,6 @@
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-/* 按钮禁用状态 */
 .control-btn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
@@ -128,4 +128,53 @@
 }
 .control-btn:disabled:hover {
     opacity: 0.5;
+}
+
+
+/* ==========================================================================
+   移动端响应式适配 (Breakpoint: 768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    /*
+       移动端全屏模态框：
+       就像原生 App 的新页面一样覆盖全屏
+    */
+    .modal-content {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+
+        /* 增加内边距适配刘海屏等 */
+        padding: 2rem 1.5rem;
+        padding-top: calc(2rem + env(safe-area-inset-top));
+
+        /* 移动端进入动画：从底部滑入 */
+        animation: slideInUp 0.3s forwards;
+    }
+
+    @keyframes slideInUp {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+    }
+
+    /* 调整关闭按钮位置，更易触达 */
+    .modal-close-btn {
+        top: calc(15px + env(safe-area-inset-top));
+        right: 15px;
+        padding: 10px; /* 增大点击热区 */
+    }
+    .modal-close-btn svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* 针对特定模态框的内容滚动优化 */
+    .wordbook-content, .typing-content {
+        overflow-y: auto;
+    }
 }

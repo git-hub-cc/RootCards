@@ -35,7 +35,8 @@ function cacheElements() {
     if (!modal) return false;
 
     elements.modal = modal;
-    elements.closeBtn = document.getElementById('wordbook-close-btn');
+    // 【修改】移除对关闭按钮的缓存
+    // elements.closeBtn = document.getElementById('wordbook-close-btn');
     elements.viewList = document.getElementById('wordbook-view-list');
     elements.viewEditor = document.getElementById('wordbook-view-editor');
     elements.newBtn = document.getElementById('wordbook-new-btn');
@@ -283,7 +284,8 @@ export function init(startBtn, optionsMenu, onDataChange) {
     });
 
     const closeModal = () => elements.modal.classList.add('is-hidden');
-    elements.closeBtn.addEventListener('click', closeModal);
+    // 【修改】移除对关闭按钮的事件绑定
+    // elements.closeBtn.addEventListener('click', closeModal);
     elements.modal.addEventListener('click', (e) => {
         if (e.target === elements.modal) closeModal();
     });
