@@ -1,5 +1,5 @@
 // =================================================================================
-// 数据与状态管理模块 (State Management Module) - v8.0 (增强 CRUD 能力)
+// 数据与状态管理模块 (State Management Module) - v8.1 (新增清空已掌握功能)
 // ---------------------------------------------------------------------------------
 // 主要职责：
 // 1. (数据加载) 异步加载所有词汇数据文件。
@@ -188,6 +188,27 @@ export function importLearnedWords(wordsArray) {
     saveLearnedWords();
     return learnedWordsSet.size - originalSize;
 }
+
+/**
+ * 【新增】清空所有“已掌握”的单词记录。
+ * 这是一个破坏性操作，会重置用户的学习进度。
+ */
+export function clearLearnedWords() {
+    // 1. 清空内存中的 Set 集合
+    learnedWordsSet.clear();
+
+    // 2. 遍历所有数据，将每个单词的 isLearned 状态重置为 false
+    //    这是确保 UI 能够正确、即时地反映变化的关键步骤。
+    allVocabularyData.forEach(item => {
+        if (item.cardType === 'word') {
+            item.isLearned = false;
+        }
+    });
+
+    // 3. 将空的 Set 保存到 localStorage，完成持久化清空
+    saveLearnedWords();
+}
+
 
 // ... (辅助函数 getGradeFromFilePath, getContentTypeFromFilePath 保持不变，此处省略以节省篇幅) ...
 function getGradeFromFilePath(filePath) {

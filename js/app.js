@@ -1,10 +1,6 @@
 // =================================================================================
-// 应用协调器 (Application Orchestrator) - v12.4 (集成通知管理器)
+// 应用协调器 (Application Orchestrator) - v13.1 (优化音效触发逻辑)
 // ---------------------------------------------------------------------------------
-// 职责:
-// 1. 初始化并协调各个模块。
-// 2. 处理全局事件（筛选、搜索）。
-// 3. 响应数据变更事件（特别是单词本的增删改），更新UI。
 // =================================================================================
 
 import * as State from './state.js';
@@ -15,12 +11,11 @@ import * as ListeningMode from './modules/listeningMode.js';
 import * as TypingMode from './modules/typingMode.js';
 import * as Wordbook from './modules/wordbook.js';
 import * as UndoManager from './modules/undoManager.js';
-// 【新增】导入新的通知管理器
 import * as NotificationManager from './modules/notificationManager.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- DOM 元素获取 (鲁棒性检查在 UI.init 中进行) ---
+    // --- DOM 元素获取 ---
     const cardGrid = document.getElementById('card-grid');
     const gradeFilterContainer = document.getElementById('grade-filter-container');
     const contentTypeFilterContainer = document.getElementById('content-type-filter-container');
@@ -36,6 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const noVisualBtn = document.getElementById('no-visual-btn');
     const moreOptionsBtn = document.getElementById('more-options-btn');
     const optionsMenu = document.getElementById('options-menu');
+    const clearLearnedBtn = document.getElementById('clear-learned-btn');
+
+    // 模式启动按钮
+    const typingModeBtn = document.getElementById('typing-mode-btn');
+    const listeningModeBtn = document.getElementById('listening-mode-btn');
 
     // --- 状态变量 ---
     let renderIndex = 0;
@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let isShuffling = false;
 
     // --- 模块初始化检查 ---
-    // 确保核心UI模板存在，否则终止应用执行以避免后续错误
     if (!UI.init()) {
         console.error("应用启动失败：UI模块初始化未能成功。");
         return;
@@ -87,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardCount = cardGrid.querySelectorAll('.card:not(.is-pending-removal)').length;
         const existingMessage = cardGrid.querySelector('.loading-state');
 
-        // 如果网格中没有卡片且没有提示信息，则创建并插入一个
         if (cardCount === 0 && !existingMessage) {
             let message = '太棒了，当前条件下没有更多要学习的单词了！';
             if (State.currentSearchQuery) {
@@ -99,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             cardGrid.insertAdjacentHTML('afterbegin', `<div class="loading-state">${message}</div>`);
         } else if (cardCount > 0 && existingMessage) {
-            // 如果网格中有卡片但仍存在提示信息，则移除它
             existingMessage.remove();
         }
     }
@@ -136,8 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /**
      * 更新数据加载进度条的显示。
-     * @param {number} loaded - 已加载的文件数。
-     * @param {number} total - 总文件数。
      */
     function updateLoadingProgress(loaded, total) {
         if (total > 0) {
@@ -152,11 +147,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================================================
 
     /**
-     * 处理单词“标记为掌握”的操作，集成了撤销功能和即时视觉反馈。
+     * 处理单词“标记为掌握”的操作，集成了撤销功能、即时视觉反馈和音效。
      * @param {object} data - 单词数据对象。
      * @param {HTMLElement} cardElement - 对应的卡片DOM元素。
      */
     function handleMarkAsLearned(data, cardElement) {
+        // --- 音效触发逻辑 ---
+        // 检查当前卡片是否已是“已掌握”状态（通过类名判断，比数据状态更即时）
+        const isCurrentlyLearned = cardElement.classList.contains('is-learned');
+
+        if (isCurrentlyLearned) {
+            // 如果已经是已掌握，现在要取消掌握
+            UI.playUiSound('uncomplete');
+        } else {
+            // 如果还没掌握，现在标记为掌握
+            UI.playUiSound('complete');
+        }
+
         // 步骤 1: 立即更新UI，提供即时反馈
         cardElement.classList.add('is-pending-removal');
         cardElement.classList.add('is-learned');
@@ -178,7 +185,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const onUndo = () => {
             // 恢复卡片原状
             cardElement.classList.remove('is-pending-removal');
-            cardElement.classList.remove('is-learned');
+            if (!isCurrentlyLearned) {
+                // 如果原来是未掌握状态，撤销时应移除 is-learned 类
+                cardElement.classList.remove('is-learned');
+            }
         };
 
         // 步骤 3: 调用全局撤销管理器
@@ -191,9 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /**
      * 处理单词本数据变更后的全局联动。
-     * @param {'create'|'update'|'delete'|'study'} type - 变更类型
-     * @param {string|null} newName - 新名称
-     * @param {string|null} oldName - 旧名称
      */
     function handleWordbookChange(type, newName, oldName) {
         updateCategoryFilters(); // 刷新顶部的过滤器按钮列表
@@ -235,6 +242,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================================================
     // 全局事件绑定
     // ============================================================================
+
+
     gradeFilterContainer.addEventListener('click', (e) => {
         const btn = e.target.closest('.grade-filter-btn');
         if (btn && !btn.classList.contains('active')) {
@@ -280,6 +289,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     shuffleBtn.addEventListener('click', () => {
         if (isShuffling || State.currentDataSet.length === 0) return;
+
+        // 播放随机洗牌激活音效
+        UI.playUiSound('activate');
+
         isShuffling = true;
         cardGrid.classList.add('is-shuffling');
         setTimeout(() => {
@@ -300,6 +313,34 @@ document.addEventListener('DOMContentLoaded', () => {
         optionsMenu.classList.toggle('is-open');
     });
 
+    clearLearnedBtn.addEventListener('click', () => {
+        const onConfirm = () => {
+            State.clearLearnedWords();
+            State.filterAndPrepareDataSet();
+            startNewRenderFlow();
+            NotificationManager.show({
+                type: 'success',
+                message: '所有已掌握记录已成功清空。'
+            });
+        };
+
+        const onUndo = () => {
+            NotificationManager.show({
+                type: 'info',
+                message: '清空操作已取消。'
+            });
+        };
+
+        UndoManager.show({
+            message: '即将清空所有已掌握记录...',
+            onConfirm: onConfirm,
+            onUndo: onUndo
+        });
+
+        optionsMenu.classList.remove('is-open');
+    });
+
+
     window.addEventListener('click', (e) => {
         if (optionsMenu.classList.contains('is-open') && !moreOptionsBtn.contains(e.target)) {
             optionsMenu.classList.remove('is-open');
@@ -310,12 +351,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // 应用初始化
     // ============================================================================
     async function init() {
-        // 【修改】将通知管理器的初始化提前，确保其他模块可以使用
         ThemeManager.init();
         UndoManager.init();
-        NotificationManager.init(); // <-- 初始化通知管理器
+        NotificationManager.init();
 
-        // 初始化数据导入/导出模块
         const dataManagerDeps = {
             importLearnedBtn: document.getElementById('import-learned-btn'),
             exportLearnedBtn: document.getElementById('export-learned-btn'),
@@ -328,16 +367,14 @@ document.addEventListener('DOMContentLoaded', () => {
             startNewRenderFlow();
         });
 
-        // 初始化功能性模态框模块
-        ListeningMode.init(document.getElementById('listening-mode-btn'));
-        TypingMode.init(document.getElementById('typing-mode-btn'));
+        ListeningMode.init(listeningModeBtn);
+        TypingMode.init(typingModeBtn);
         Wordbook.init(
             document.getElementById('manage-wordbook-btn'),
             optionsMenu,
-            handleWordbookChange // 传入回调函数，实现模块间解耦
+            handleWordbookChange
         );
 
-        // 绑定主题切换按钮
         document.getElementById('theme-toggle-menu-btn').addEventListener('click', () => {
             const isDarkMode = document.body.classList.contains('dark-mode');
             ThemeManager.applyTheme(isDarkMode ? 'light' : 'dark');
@@ -345,14 +382,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         try {
-            // 加载用户本地数据
             State.loadLearnedWords();
             State.loadUserWordbooks();
 
-            // 异步加载所有词汇数据
             const { grades } = await State.loadAndProcessData(updateLoadingProgress);
 
-            // 数据加载成功后，移除加载状态UI
             loadingFeedbackContainer.classList.add('is-fading-out');
             skeletonLoader.classList.add('is-fading-out');
             skeletonLoader.addEventListener('transitionend', () => {
@@ -360,18 +394,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 skeletonLoader.remove();
             }, { once: true });
 
-            // 渲染动态UI组件
             UI.renderGradeButtons(gradeFilterContainer, grades);
             UI.renderContentTypeButtons(contentTypeFilterContainer);
 
-            // UI状态同步
             const defaultGradeBtn = gradeFilterContainer.querySelector(`[data-grade="${State.currentGrade}"]`);
             if (defaultGradeBtn) UI.updateActiveGradeButton(gradeFilterContainer, defaultGradeBtn);
 
             const defaultContentTypeBtn = contentTypeFilterContainer.querySelector(`[data-type="${State.currentContentType}"]`);
             if (defaultContentTypeBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, defaultContentTypeBtn);
 
-            // 渲染类别筛选器并准备首次数据展示
             updateCategoryFilters();
             State.filterAndPrepareDataSet();
             startNewRenderFlow();

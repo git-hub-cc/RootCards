@@ -1,22 +1,82 @@
 // =================================================================================
-// 通用 UI 渲染模块 (Generic UI Rendering Module) - v10.3 (适配新筛选逻辑)
+// 通用 UI 渲染模块 (Generic UI Rendering Module) - v11.0 (新增音效支持)
 // ---------------------------------------------------------------------------------
 // =================================================================================
 
 let cardTemplate;
 let prefixIntroTemplate;
+
+// --- 音频播放器实例 ---
+// audioPlayer 用于播放单词和例句的长音频
 const audioPlayer = new Audio();
 let lastClickedWordAudio = { element: null, isSlow: false };
 const MAX_FILENAME_SLUG_LENGTH = 60;
 
+// --- UI 音效管理器配置 ---
+// 用于存储短促的 UI 提示音效
+const uiSounds = {
+    complete: null,   // 掌握单词
+    uncomplete: null, // 取消掌握
+    undo: null,       // 撤销操作
+    activate: null    // 模式激活/切换
+};
+
+// 音效文件路径映射
+const UI_SOUND_PATHS = {
+    complete: 'audio/ui/Complete.mp3',
+    uncomplete: 'audio/ui/UnComplete.mp3',
+    undo: 'audio/ui/Undo.mp3',
+    activate: 'audio/ui/Activate.mp3'
+};
+
+/**
+ * 初始化模块
+ * 获取模板元素并预加载音效资源
+ */
 export function init() {
     cardTemplate = document.getElementById('card-template');
     prefixIntroTemplate = document.getElementById('prefix-intro-template');
+
     if (!cardTemplate || !prefixIntroTemplate) {
         console.error('关键的卡片模板元素未在 HTML 中找到。');
         return false;
     }
+
+    // --- 预加载 UI 音效 ---
+    // 提前加载音频对象，确保点击时能零延迟播放
+    for (const [key, path] of Object.entries(UI_SOUND_PATHS)) {
+        try {
+            const audio = new Audio(path);
+            audio.preload = 'auto'; // 自动预加载
+            audio.volume = 0.6;     // 设置音效音量，避免过于刺耳 (0.0 - 1.0)
+            uiSounds[key] = audio;
+        } catch (e) {
+            console.warn(`无法加载音效资源: ${path}`, e);
+        }
+    }
+
     return true;
+}
+
+/**
+ * 播放指定的 UI 音效
+ * 支持并发播放（每次通过 cloneNode 创建新实例），防止快速点击时音效被截断
+ * @param {'complete'|'uncomplete'|'undo'|'activate'} type - 音效类型
+ */
+export function playUiSound(type) {
+    const originalAudio = uiSounds[type];
+    if (originalAudio) {
+        // 使用 cloneNode() 可以让同一个音效叠加播放，
+        // 例如快速标记多个单词时，不会因为上一个没播完而被切断。
+        const clone = originalAudio.cloneNode();
+        clone.volume = originalAudio.volume;
+        clone.play().catch(e => {
+            // 忽略因用户未交互导致的自动播放限制错误
+            if (e.name !== 'NotAllowedError') {
+                console.warn(`播放 UI 音效 (${type}) 失败`, e);
+            }
+        });
+    }
 }
 
 export function sanitizeForFilename(text) {
@@ -33,6 +93,7 @@ export function playAudioFile(filePath, onEnded = null) {
         if (onEnded) onEnded();
         return;
     }
+    // 播放新的长音频（单词/例句）时，打断旧的
     if (!audioPlayer.paused) {
         audioPlayer.pause();
         audioPlayer.currentTime = 0;
@@ -208,7 +269,12 @@ function createWordCard(data, handlers) {
     });
 
     card.querySelector('.toggle-prefix-btn').addEventListener('click', e => { e.stopPropagation(); card.classList.toggle('prefix-hidden'); });
-    card.querySelector('.mark-btn').addEventListener('click', e => { e.stopPropagation(); handlers.onMarkLearned(data, card); });
+
+    // 标记按钮事件：委托给外部处理器 (app.js)
+    card.querySelector('.mark-btn').addEventListener('click', e => {
+        e.stopPropagation();
+        handlers.onMarkLearned(data, card);
+    });
 
     return card;
 }
@@ -227,4 +293,9 @@ export function toggleNoVisualMode(btnElement) {
         eyeSlash.classList.toggle('is-hidden', !isEnabled);
     }
     btnElement.title = isEnabled ? "关闭无图模式" : "开启无图自测模式";
+
+    // 如果启用了无图模式，播放激活音效
+    if (isEnabled) {
+        playUiSound('activate');
+    }
 }
