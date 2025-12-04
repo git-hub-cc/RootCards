@@ -293,9 +293,9 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
         align-items: center;
         justify-content: center;
         position: fixed;
-        /* 固定在右上角 */
-        top: 1rem;
-        right: 1rem;
+        /* 固定在左上角 */
+        top: 0.2rem;
+        right: 0.2rem;
         /* 高层级，确保在所有卡片之上 */
         z-index: 1100;
         width: 44px;

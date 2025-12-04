@@ -1,12 +1,14 @@
 /* ==========================================================================
-   Feature: Wordbook Management Styles - 单词本管理样式 (v2.2 - 集成撤销删除)
+   Feature: Wordbook Management Styles - 单词本管理样式 (v2.5 - 统一布局)
    --------------------------------------------------------------------------
    职责:
    - 定义“管理单词本”模态框的所有专属样式。
    - 支持列表视图和编辑视图的切换。
+   - 适配移动端全屏模式及头部布局调整（左侧新增，右侧关闭）。
    ========================================================================== */
 
 /* --- 模态框容器调整 --- */
+/* 注意：这里的固定尺寸用于 PC 端，移动端将在底部媒体查询中重置 */
 .wordbook-content {
     max-width: 600px;
     width: 95%;
@@ -45,11 +47,30 @@
     border-bottom: 1px solid var(--border-color);
     flex-shrink: 0;
 }
+
+/*
+   【修改】标题样式
+   由于左侧是新增按钮，右侧是关闭按钮，中间的标题需要占据剩余空间并居中。
+*/
 .wordbook-header h3 {
     font-size: 1.25rem;
     color: var(--text-highlight);
     margin: 0;
+    text-align: center;
+    flex-grow: 1;
 }
+
+/*
+   【修改】统一关闭按钮样式
+   使用 .wordbook-close-style 类来覆盖默认的 modal-close-btn 定位，
+   使其成为 Flex 布局的一部分，而不是绝对定位。
+*/
+.wordbook-close-style {
+    position: static !important; /* 覆盖 modal-close-btn 的 absolute */
+    margin: 0 !important;
+    transform: none !important;
+}
+
 
 /* --- 视图 1: 列表视图样式 --- */
 .wordbook-list-container {
@@ -91,7 +112,6 @@
 /*
  * 【核心优化】乐观 UI (Optimistic UI) 的隐藏动画
  * 当用户点击“删除”时，列表项会立即播放此动画并“消失”，让下面的项补位。
- * 这取代了旧的半透明+删除线样式，提供了更即时、流畅的反馈。
 */
 .wordbook-item-row.is-pending-removal {
     opacity: 0;
@@ -161,7 +181,7 @@
 }
 
 
-/* --- 视图 2: 编辑视图样式 (保持不变) --- */
+/* --- 视图 2: 编辑视图样式 --- */
 .wordbook-section {
     margin-bottom: 1.5rem;
 }
@@ -307,4 +327,32 @@
     padding-top: 1rem;
     display: flex;
     justify-content: flex-end;
+}
+
+
+/* ==========================================================================
+   移动端响应式适配 (Breakpoint: 768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    /*
+     * 强制重置容器尺寸为全屏，覆盖 PC 端设定的固定宽高 (height: 600px等)。
+     * 这样可以提供类似原生 App 页面的沉浸式体验。
+     */
+    .wordbook-content {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 0;
+        border: none;
+
+        /* 适配刘海屏，增加顶部内边距，确保标题不被遮挡 */
+        padding-top: calc(1rem + env(safe-area-inset-top));
+    }
+
+    /* 优化内部视图的内边距，利用屏幕空间 */
+    .wordbook-view-list,
+    .wordbook-view-editor {
+        padding: 1rem;
+    }
 }

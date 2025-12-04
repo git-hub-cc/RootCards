@@ -1,5 +1,5 @@
 // =================================================================================
-// 单词本管理模块 (Wordbook Management Module) - v2.2 (集成通知管理器)
+// 单词本管理模块 (Wordbook Management Module) - v2.3 (支持左上角关闭按钮)
 // ---------------------------------------------------------------------------------
 // 职责:
 // 1. 管理“管理单词本”模态框的所有UI交互和视图切换。
@@ -36,6 +36,8 @@ function cacheElements() {
     elements.modal = modal;
     elements.viewList = document.getElementById('wordbook-view-list');
     elements.viewEditor = document.getElementById('wordbook-view-editor');
+    // 【修改】新增：左上角的关闭按钮引用
+    elements.closeBtn = document.getElementById('wordbook-close-btn');
     elements.newBtn = document.getElementById('wordbook-new-btn');
     elements.listContainer = document.getElementById('wordbook-list-container');
     elements.backBtn = document.getElementById('wordbook-back-btn');
@@ -283,6 +285,9 @@ export function init(startBtn, optionsMenu, onDataChange) {
     elements.modal.addEventListener('click', (e) => {
         if (e.target === elements.modal) closeModal();
     });
+
+    // 【修改】绑定左上角关闭按钮的点击事件
+    elements.closeBtn.addEventListener('click', closeModal);
 
     elements.newBtn.addEventListener('click', initCreateMode);
 
