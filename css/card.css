@@ -8,7 +8,8 @@
     height: 400px;
     perspective: 1000px;
     cursor: pointer;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /* 【核心优化】将 transition 移到这里，以便 is-pending-removal 动画能平滑应用 */
+    transition: all 0.35s ease-in-out;
     animation: card-fade-in 0.5s ease-out forwards;
 
     /* 触摸优化：明确告知浏览器只处理水平平移，防止垂直滚动干扰 */
@@ -16,11 +17,23 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+/*
+ * 【核心优化】乐观 UI (Optimistic UI) 的隐藏动画
+ * 当用户点击“掌握”时，卡片会立即播放此动画并“消失”，让后面的卡片补位。
+ * 这样做可以提供即时反馈，极大提升用户体验。
+*/
 .card.is-pending-removal {
-    opacity: 0;
-    transform: scale(0.9) translateY(20px);
-    pointer-events: none;
+    transform: scale(0.9);      /* 缩小 */
+    opacity: 0;                 /* 淡出 */
+    max-height: 0;              /* 核心：将垂直空间收缩为0 */
+    padding-top: 0;             /* 移除垂直内边距 */
+    padding-bottom: 0;
+    margin-bottom: -2rem;       /* 抵消原有的 gap，让补位更平滑 */
+    display: none;              /* 确保内容在收缩时不会溢出 */
+    border-width: 0;            /* 边框也收缩 */
+    pointer-events: none;       /* 移除交互 */
 }
+
 
 @keyframes card-fade-in {
     from { opacity: 0; transform: translateY(20px); }
@@ -348,6 +361,14 @@ body:not(.dark-mode) .prefix-intro-card .card-back { background: linear-gradient
         flex-shrink: 0;
         margin: 0;
     }
+
+    /* 【核心优化】移动端补位动画调整 */
+    .card.is-pending-removal {
+        /* 在 Flex 布局中，通过设置 min-width 为 0 来收缩水平空间 */
+        min-width: 0;
+        margin-right: -1rem; /* 抵消 gap */
+    }
+
 
     #skeleton-loader {
         display: flex;

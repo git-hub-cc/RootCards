@@ -24,11 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadMoreTrigger = document.getElementById('load-more-trigger');
     const searchInput = document.getElementById('search-input');
     const toolGroup = document.getElementById('tool-group');
-    // 【修改】这三个旧的加载相关元素可以移除了，或者保留作为备用
-    // const loadingFeedbackContainer = document.getElementById('loading-feedback-container');
     const skeletonLoader = document.getElementById('skeleton-loader');
-    // const loadingProgressText = document.getElementById('loading-progress-text');
-    // const loadingProgressBar = document.getElementById('loading-progress-bar');
 
     // 【新增】启动页相关元素
     const splashScreen = document.getElementById('app-splash-screen');
@@ -161,7 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /**
      * 更新数据加载进度条的显示。
-     * 【修改】现在更新启动页中的进度条
      */
     function updateLoadingProgress(loaded, total) {
         if (total > 0 && splashProgressBar) {
@@ -172,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-     * 【新增】隐藏启动页并显示主界面
+     * 隐藏启动页并显示主界面
      */
     function hideSplashScreen() {
         if (splashScreen) {
@@ -195,37 +190,41 @@ document.addEventListener('DOMContentLoaded', () => {
     // 事件回调处理 (Action Handlers)
     // ============================================================================
 
+    /**
+     * 【核心优化】处理标记/取消标记为“已掌握”的逻辑。
+     * 采用“乐观 UI”模式：立即隐藏卡片，延迟处理数据。
+     * @param {object} data - 单词数据对象
+     * @param {HTMLElement} cardElement - 卡片的 DOM 元素
+     */
     function handleMarkAsLearned(data, cardElement) {
+        // 1. 播放 UI 音效
         const isCurrentlyLearned = cardElement.classList.contains('is-learned');
+        UI.playUiSound(isCurrentlyLearned ? 'uncomplete' : 'complete');
 
-        if (isCurrentlyLearned) {
-            UI.playUiSound('uncomplete');
-        } else {
-            UI.playUiSound('complete');
-        }
+        // 2. 【乐观 UI】立即在界面上隐藏卡片
+        // is-learned 状态立即切换，以防撤销时状态不一致
+        cardElement.classList.toggle('is-learned');
+        cardElement.classList.add('is-pending-removal'); // 这个类现在会触发隐藏动画
 
-        cardElement.classList.add('is-pending-removal');
-        cardElement.classList.add('is-learned');
-
-        // 在移动端单页视图下，标记删除后自动滑向下一张卡片
+        // 3. 在移动端单页视图下，自动滑向下一张卡片
         if (window.innerWidth <= 768) {
             const nextCard = cardElement.nextElementSibling;
             if (nextCard && nextCard.classList.contains('card')) {
-                // 延迟一点让动画先播放
+                // 延迟一点让隐藏动画先播放
                 setTimeout(() => {
                     nextCard.scrollIntoView({ behavior: 'smooth', inline: 'center' });
-                }, 300);
+                }, 350); // 动画时间是 350ms
             }
         }
 
+        // 4. 定义“确认”和“撤销”操作
         const onConfirm = () => {
-            State.toggleLearnedStatus(data);
-            cardElement.remove();
-
-            State.filterAndPrepareDataSet();
-            const cardsOnScreen = cardGrid.querySelectorAll('.card:not(.is-pending-removal)').length;
+            // 这是 5 秒后执行的“真实操作”
+            State.toggleLearnedStatus(data); // 此时才更新数据状态和 localStorage
+            cardElement.remove(); // 从 DOM 中彻底移除元素
 
             // 检查是否需要补充卡片
+            const cardsOnScreen = cardGrid.querySelectorAll('.card:not(.is-pending-removal)').length;
             if (cardsOnScreen < CARDS_PER_PAGE && renderIndex < State.currentDataSet.length) {
                 renderMoreCards();
             }
@@ -233,22 +232,23 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const onUndo = () => {
+            // 撤销操作非常简单：只需恢复 UI 状态
+            cardElement.classList.toggle('is-learned');
             cardElement.classList.remove('is-pending-removal');
-            if (!isCurrentlyLearned) {
-                cardElement.classList.remove('is-learned');
-            }
-            // 撤销时，如果卡片不在视图中，滚回来
+            // 在移动端，如果撤销，需要将卡片滚回视图
             if (window.innerWidth <= 768) {
                 cardElement.scrollIntoView({ behavior: 'smooth', inline: 'center' });
             }
         };
 
+        // 5. 显示撤销通知
         UndoManager.show({
             message: `单词 "${data.word}" 已标记。`,
             onConfirm: onConfirm,
             onUndo: onUndo
         });
     }
+
 
     function handleWordbookChange(type, newName, oldName) {
         updateCategoryFilters();

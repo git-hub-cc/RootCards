@@ -9,7 +9,6 @@
 
 import * as State from '../state.js';
 import * as UndoManager from './undoManager.js';
-// 【新增】导入新的通知管理器
 import * as NotificationManager from './notificationManager.js';
 
 // --- 模块内部状态 ---
@@ -35,8 +34,6 @@ function cacheElements() {
     if (!modal) return false;
 
     elements.modal = modal;
-    // 【修改】移除对关闭按钮的缓存
-    // elements.closeBtn = document.getElementById('wordbook-close-btn');
     elements.viewList = document.getElementById('wordbook-view-list');
     elements.viewEditor = document.getElementById('wordbook-view-editor');
     elements.newBtn = document.getElementById('wordbook-new-btn');
@@ -261,7 +258,6 @@ function handleSave(onDataChange) {
         }
         switchView('list');
     } catch (e) {
-        // 【修改】使用Toast通知代替alert
         NotificationManager.show({ type: 'error', message: e.message });
     }
 }
@@ -284,8 +280,6 @@ export function init(startBtn, optionsMenu, onDataChange) {
     });
 
     const closeModal = () => elements.modal.classList.add('is-hidden');
-    // 【修改】移除对关闭按钮的事件绑定
-    // elements.closeBtn.addEventListener('click', closeModal);
     elements.modal.addEventListener('click', (e) => {
         if (e.target === elements.modal) closeModal();
     });
@@ -304,15 +298,18 @@ export function init(startBtn, optionsMenu, onDataChange) {
             const rowElement = elements.listContainer.querySelector(`.wordbook-item-row[data-wordbook-name="${name}"]`);
             if (!rowElement) return;
 
+            // 【核心优化】乐观 UI：立即隐藏列表项
             rowElement.classList.add('is-pending-removal');
 
             const onConfirm = () => {
+                // 5秒后执行“真实删除”
                 State.deleteWordbook(name);
-                rowElement.remove();
+                rowElement.remove(); // 从 DOM 中彻底移除
                 if (onDataChange) onDataChange('delete', null, name);
             };
 
             const onUndo = () => {
+                // 撤销操作：恢复 UI
                 rowElement.classList.remove('is-pending-removal');
             };
 

@@ -75,7 +75,9 @@
     border-radius: var(--radius-sm);
     margin-bottom: 0.8rem;
     border: 1px solid var(--border-color);
-    transition: all 0.3s ease; /* 动画过渡时间稍长，效果更好 */
+    /* 【核心优化】为所有属性添加过渡，以便 is-pending-removal 动画平滑应用 */
+    transition: all 0.35s ease-in-out;
+    overflow: hidden; /* 配合动画，防止内容溢出 */
 }
 .wordbook-item-row:hover {
     border-color: var(--theme-color);
@@ -86,16 +88,19 @@
     background-color: color-mix(in srgb, var(--theme-color) 5%, transparent);
 }
 
-/* 【新增】单词本列表项在“待删除”状态下的样式 */
+/*
+ * 【核心优化】乐观 UI (Optimistic UI) 的隐藏动画
+ * 当用户点击“删除”时，列表项会立即播放此动画并“消失”，让下面的项补位。
+ * 这取代了旧的半透明+删除线样式，提供了更即时、流畅的反馈。
+*/
 .wordbook-item-row.is-pending-removal {
-    opacity: 0.5;
-    text-decoration: line-through; /* 添加删除线 */
-    background-color: var(--border-color);
-    pointer-events: none; /* 防止在待删除时进行其他操作 */
-}
-/* 【新增】深色模式下的特殊优化 */
-body.dark-mode .wordbook-item-row.is-pending-removal {
-    background-color: #374151; /* 使用更深的背景色 */
+    opacity: 0;
+    max-height: 0;              /* 核心：将垂直空间收缩为0 */
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;           /* 移除外边距，让补位更平滑 */
+    border-width: 0;
+    pointer-events: none;
 }
 
 
