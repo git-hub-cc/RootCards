@@ -1,5 +1,5 @@
 // =================================================================================
-// 通用 UI 渲染模块 (Generic UI Rendering Module) - v14.2 (移动端底部5按钮布局优化)
+// 通用 UI 渲染模块 (Generic UI Rendering Module) - v14.3 (新增例句焦点模式)
 // ---------------------------------------------------------------------------------
 // =================================================================================
 
@@ -51,61 +51,40 @@ export function init() {
         }
     }
 
-    // --- 【新增】移动端布局初始化 ---
     initMobileLayout();
 
     return true;
 }
 
 /**
- * 【新增】移动端布局适配逻辑
- * 将工具栏按钮从顶部移动到底部固定栏，实现 5 个按钮等宽排列
+ * 移动端布局适配逻辑
+ * 将工具栏按钮从顶部移动到底部固定栏
  */
 function initMobileLayout() {
-    // 简单的移动端检测 (768px 是我们 CSS 中定义的断点)
     const isMobile = window.innerWidth <= 768;
 
     if (isMobile) {
         const bottomBar = document.getElementById('mobile-bottom-bar');
-
-        // 需要移动的按钮ID列表，按底部从左到右的顺序排列
-        // 1. 听力 (Listening)
-        // 2. 拼写 (Typing)
-        // 3. 随机 (Shuffle)
-        // 4. 无图 (No Visual)
-        // 5. 更多 (More Options)
         const buttonsToMove = [
-            'listening-mode-btn',
-            'typing-mode-btn',
-            'shuffle-btn',
-            'no-visual-btn',
-            'more-options-btn'
+            'listening-mode-btn', 'typing-mode-btn', 'shuffle-btn',
+            'no-visual-btn', 'more-options-btn'
         ];
 
-        // 移动逻辑：只移动存在的按钮
         buttonsToMove.forEach(id => {
             const btn = document.getElementById(id);
             if (btn && bottomBar) {
-                // 将按钮移动到底部导航栏
-                // 注意：这里使用的是 appendChild，它会将 DOM 元素从原位置“剪切”并粘贴到新位置
-
-                // 更多菜单的容器特殊处理，因为它包含了下拉菜单
                 if (id === 'more-options-btn') {
                     const container = document.querySelector('.options-menu-container');
                     if (container) {
                         bottomBar.appendChild(container);
-                        // 在移动端底部栏中，容器也需要参与 Flex 均分
                         container.classList.add('mobile-nav-item');
                     }
                 } else {
                     bottomBar.appendChild(btn);
-                    // 标记为底部导航项，方便 CSS 统一处理
                     btn.classList.add('mobile-nav-item');
                 }
             }
         });
-
-        console.log('Mobile layout initialized: 5 Tool buttons moved to bottom bar.');
     }
 }
 
@@ -158,7 +137,7 @@ export function stopAudio() {
 }
 
 // =================================================================================
-// 筛选器 UI 函数 (保持不变)
+// 筛选器 UI 函数
 // =================================================================================
 
 export function renderGradeButtons(container, grades) {
@@ -260,10 +239,7 @@ function createIntroCard(data) {
     card.querySelector('.intro-title').textContent = data.title;
     card.querySelector('.intro-description').innerHTML = data.description.replace(/\n/g, '<br>');
     card.querySelector('.intro-imagery').textContent = data.imagery;
-
-    // Intro 卡片也可以应用防误触逻辑
     addCardInteraction(card);
-
     return card;
 }
 
@@ -300,10 +276,66 @@ function createWordCard(data, handlers) {
         });
     }
 
-    // --- 核心交互逻辑 (防误触优化) ---
+    // --- 【新增】例句焦点模式交互逻辑 ---
+    // 1. 动态创建并预置关闭按钮，默认隐藏
+    const closeFocusBtn = document.createElement('button');
+    closeFocusBtn.className = 'close-focus-btn';
+    closeFocusBtn.innerHTML = '&times;'; // 使用 HTML 实体叉号
+    closeFocusBtn.title = '关闭焦点模式';
+    sentenceSection.prepend(closeFocusBtn); // 将按钮添加到容器顶部
+
+    // 2. 使用 requestAnimationFrame 确保在下一帧检查尺寸，此时 DOM 已完全渲染
+    requestAnimationFrame(() => {
+        const isScrollable = sentenceSection.scrollHeight > sentenceSection.clientHeight;
+
+        // 3. 只有当内容确实溢出时，才启用焦点模式功能
+        if (isScrollable) {
+            let isExpanded = false; // 为每个卡片实例创建独立的状态变量
+
+            // 动态添加滚动提示，增强可发现性
+            const hint = document.createElement('div');
+            hint.className = 'scroll-hint';
+            sentenceSection.appendChild(hint);
+
+            // 封装进入和退出逻辑，提高代码可读性
+            const enterFocusMode = () => {
+                if (isExpanded) return;
+                isExpanded = true;
+                card.classList.add('sentence-focus-active');
+                sentenceSection.classList.add('is-expanded');
+                // 自动将滚动条置顶，方便从头阅读
+                sentenceSection.scrollTop = 0;
+                hint.style.display = 'none'; // 展开后隐藏滚动提示
+            };
+
+            const exitFocusMode = () => {
+                if (!isExpanded) return;
+                isExpanded = false;
+                card.classList.remove('sentence-focus-active');
+                sentenceSection.classList.remove('is-expanded');
+                hint.style.display = 'flex'; // 恢复滚动提示
+            };
+
+            // 4. 监听滚动事件以触发焦点模式
+            sentenceSection.addEventListener('scroll', () => {
+                // 当用户向下滚动超过一个微小阈值 (10px) 时，自动进入焦点模式
+                if (!isExpanded && sentenceSection.scrollTop > 10) {
+                    enterFocusMode();
+                }
+            }, { passive: true }); // 使用 passive 提升滚动性能
+
+            // 5. 为关闭按钮绑定点击事件以退出焦点模式
+            closeFocusBtn.addEventListener('click', (e) => {
+                e.stopPropagation(); // 关键：防止事件冒泡到卡片上导致翻转
+                exitFocusMode();
+            });
+        }
+    });
+    // --- 【新增】例句焦点模式逻辑结束 ---
+
+
     addCardInteraction(card);
 
-    // --- 按钮事件绑定 ---
     card.querySelector('.word-audio').addEventListener('click', e => {
         e.stopPropagation();
         const btn = e.currentTarget;
@@ -327,8 +359,7 @@ function createWordCard(data, handlers) {
     const noteSaveBtn = card.querySelector('.btn-save');
     const noteCancelBtn = card.querySelector('.btn-cancel');
 
-    const existingNote = State.getUserNote(data.word);
-    if (existingNote) {
+    if (State.getUserNote(data.word)) {
         noteBtn.classList.add('has-note');
     }
 
@@ -343,13 +374,8 @@ function createWordCard(data, handlers) {
         e.stopPropagation();
         const text = noteInput.value.trim();
         State.saveUserNote(data.word, text);
-        if (text) {
-            noteBtn.classList.add('has-note');
-            NotificationManager.show({ type: 'success', message: '笔记已保存' });
-        } else {
-            noteBtn.classList.remove('has-note');
-            NotificationManager.show({ type: 'info', message: '笔记已清空' });
-        }
+        noteBtn.classList.toggle('has-note', !!text);
+        NotificationManager.show({ type: text ? 'success' : 'info', message: text ? '笔记已保存' : '笔记已清空' });
         noteOverlay.classList.add('is-hidden');
     });
 
@@ -363,52 +389,31 @@ function createWordCard(data, handlers) {
     return card;
 }
 
-/**
- * 【新增】通用的卡片交互处理器
- * 处理点击翻转，并增加对移动端滑动的判断，防止误触
- */
-function addCardInteraction(card) {
-    let startX = 0;
-    let startY = 0;
-    let isSwiping = false;
 
-    // 触摸开始：记录坐标
+function addCardInteraction(card) {
+    let startX = 0, startY = 0, isSwiping = false;
+
     card.addEventListener('touchstart', (e) => {
         startX = e.touches[0].clientX;
         startY = e.touches[0].clientY;
         isSwiping = false;
     }, { passive: true });
 
-    // 触摸移动：检测是否在滑动
     card.addEventListener('touchmove', (e) => {
-        const moveX = e.touches[0].clientX;
-        const moveY = e.touches[0].clientY;
-
-        // 计算水平和垂直移动距离
-        const diffX = Math.abs(moveX - startX);
-        const diffY = Math.abs(moveY - startY);
-
-        // 如果移动超过 10px，视为滑动，不应该触发翻转
-        if (diffX > 10 || diffY > 10) {
-            isSwiping = true;
-        }
+        const diffX = Math.abs(e.touches[0].clientX - startX);
+        const diffY = Math.abs(e.touches[0].clientY - startY);
+        if (diffX > 10 || diffY > 10) isSwiping = true;
     }, { passive: true });
 
-    // 触摸结束：如果没有滑动，且未点击到功能区，则翻转
     card.addEventListener('touchend', (e) => {
-        if (!isSwiping) {
-            // 检查是否点击了内部的可交互按钮（虽然stopPropagation了，但加一层保险）
-            if (!e.target.closest('.audio-btn, .toggle-prefix-btn, .mark-btn, .note-btn, .card-note-overlay')) {
-                // 延迟一点点触发，避免与滚动冲突
-                setTimeout(() => card.classList.toggle('is-flipped'), 50);
-            }
+        if (!isSwiping && !e.target.closest('.audio-btn, .toggle-prefix-btn, .mark-btn, .note-btn, .card-note-overlay, .close-focus-btn')) {
+            setTimeout(() => card.classList.toggle('is-flipped'), 50);
         }
     });
 
-    // PC端点击事件（保留兼容性）
     card.addEventListener('click', e => {
-        if (window.matchMedia("(hover: hover)").matches) { // 仅在支持悬停的设备（通常是PC）响应click
-            if (!e.target.closest('.audio-btn, .toggle-prefix-btn, .mark-btn, .note-btn, .card-note-overlay')) {
+        if (window.matchMedia("(hover: hover)").matches) {
+            if (!e.target.closest('.audio-btn, .toggle-prefix-btn, .mark-btn, .note-btn, .card-note-overlay, .close-focus-btn')) {
                 card.classList.toggle('is-flipped');
             }
         }
@@ -430,18 +435,11 @@ export function toggleNoVisualMode(btnElement) {
         eyeSlash.classList.toggle('is-hidden', !isEnabled);
     }
     btnElement.title = isEnabled ? "关闭无图模式" : "开启无图自测模式";
-    if (isEnabled) {
-        playUiSound('activate');
-    }
+    if (isEnabled) playUiSound('activate');
 }
 
-/**
- * 【新增】切换沉浸模式
- */
 export function toggleImmersiveMode(btnElement) {
     const isImmersive = document.body.classList.toggle('mode-immersive');
-
-    // 切换按钮图标
     const iconExpand = btnElement.querySelector('.icon-expand');
     const iconCompress = btnElement.querySelector('.icon-compress');
 
@@ -450,13 +448,9 @@ export function toggleImmersiveMode(btnElement) {
         iconCompress.classList.toggle('is-hidden', !isImmersive);
     }
 
-    // 播放音效
     playUiSound('activate');
-
-    // 显示通知
-    if (isImmersive) {
-        NotificationManager.show({ type: 'success', message: '🔕 已进入沉浸模式' });
-    } else {
-        NotificationManager.show({ type: 'info', message: '🔔 已退出沉浸模式' });
-    }
+    NotificationManager.show({
+        type: isImmersive ? 'success' : 'info',
+        message: isImmersive ? '🔕 已进入沉浸模式' : '🔔 已退出沉浸模式'
+    });
 }

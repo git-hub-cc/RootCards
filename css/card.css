@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Card Styles - 卡片样式模块 (v4.5 - 滚动条样式统一化)
+   Card Styles - 卡片样式模块 (v4.6 - 新增例句焦点模式)
    ========================================================================== */
 
 /* --- 组件: 3D 翻转卡片 (核心与通用) --- */
@@ -8,32 +8,23 @@
     height: 400px;
     perspective: 1000px;
     cursor: pointer;
-    /* 【核心优化】将 transition 移到这里，以便 is-pending-removal 动画能平滑应用 */
     transition: all 0.35s ease-in-out;
     animation: card-fade-in 0.5s ease-out forwards;
-
-    /* 触摸优化：明确告知浏览器只处理水平平移，防止垂直滚动干扰 */
     touch-action: pan-x;
     -webkit-tap-highlight-color: transparent;
 }
 
-/*
- * 【核心优化】乐观 UI (Optimistic UI) 的隐藏动画
- * 当用户点击“掌握”时，卡片会立即播放此动画并“消失”，让后面的卡片补位。
- * 这样做可以提供即时反馈，极大提升用户体验。
-*/
 .card.is-pending-removal {
-    transform: scale(0.9);      /* 缩小 */
-    opacity: 0;                 /* 淡出 */
-    max-height: 0;              /* 核心：将垂直空间收缩为0 */
-    padding-top: 0;             /* 移除垂直内边距 */
+    transform: scale(0.9);
+    opacity: 0;
+    max-height: 0;
+    padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: -2rem;       /* 抵消原有的 gap，让补位更平滑 */
-    display: none;              /* 确保内容在收缩时不会溢出 */
-    border-width: 0;            /* 边框也收缩 */
-    pointer-events: none;       /* 移除交互 */
+    margin-bottom: -2rem;
+    display: none;
+    border-width: 0;
+    pointer-events: none;
 }
-
 
 @keyframes card-fade-in {
     from { opacity: 0; transform: translateY(20px); }
@@ -56,7 +47,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* 隐藏翻转到背后的元素 */
+    backface-visibility: hidden;
     border-radius: var(--radius-lg);
     background: var(--card-bg);
     border: 2px solid transparent;
@@ -120,10 +111,7 @@
     font-size: 2rem;
     font-weight: 800;
     color: var(--theme-color);
-    /* --- 【核心修复】长单词布局优化 --- */
-    /* 允许 flex 项收缩，防止超长单词挤压旁边的按钮 */
     min-width: 0;
-    /* 强制超长单词在容器内断行 */
     word-break: break-all;
 }
 .hint-text { font-size: 0.8rem; color: var(--text-sub); text-align: center; }
@@ -149,10 +137,14 @@ body.mode-immersive .card-back { justify-content: center; }
     font-weight: bold;
     color: var(--text-code);
     flex-shrink: 0;
+    transition: opacity 0.3s ease-in-out; /* 为焦点模式淡出添加过渡 */
 }
 body.mode-immersive .breakdown-box { display: none; }
 
-.meaning-section { flex-shrink: 0; }
+.meaning-section {
+    flex-shrink: 0;
+    transition: opacity 0.3s ease-in-out; /* 为焦点模式淡出添加过渡 */
+}
 .cn-translation { font-size: 1.4rem; color: var(--text-highlight); margin-bottom: 0.5rem; }
 .imagery-text {
     font-size: 0.95rem;
@@ -164,6 +156,7 @@ body.mode-immersive .breakdown-box { display: none; }
 }
 
 .sentence-section {
+    position: relative; /* 为内部绝对定位的元素提供参照 */
     flex-grow: 1;
     overflow-y: auto;
     min-height: 0;
@@ -171,10 +164,10 @@ body.mode-immersive .breakdown-box { display: none; }
     padding: 1rem;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-color);
-    /* 允许内部滚动 (iOS 优化) */
     -webkit-overflow-scrolling: touch;
-    /* 阻止滚动事件冒泡，防止触发外层卡片滑动 */
     overscroll-behavior: contain;
+    /* 为焦点模式的 expand-in 动画添加过渡 */
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease;
 }
 .sentence-block + .sentence-block {
     margin-top: 1rem;
@@ -183,6 +176,110 @@ body.mode-immersive .breakdown-box { display: none; }
 }
 .sentence-en { font-weight: 500; margin-bottom: 0.5rem; color: var(--text-main); }
 .sentence-cn { font-size: 0.9rem; color: var(--text-sub); margin-bottom: 0.8rem; }
+
+
+/* --- 【新增】例句焦点模式 --- */
+/* 当卡片进入例句焦点模式时，模糊其他内容 */
+.card.sentence-focus-active .breakdown-box,
+.card.sentence-focus-active .meaning-section {
+    opacity: 0.1;
+    pointer-events: none; /* 防止交互 */
+}
+
+/* 焦点模式下的例句容器 */
+.sentence-section.is-expanded {
+    position: absolute;
+    /* inset: 0 占满整个卡片背面，提供最大阅读空间 */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50; /* 确保在最顶层 */
+    background-color: var(--card-back-bg); /* 使用卡片背面背景色，保持视觉一致 */
+    border-radius: var(--radius-lg); /* 保持圆角 */
+    padding: 2rem 1.5rem 1.5rem; /* 调整内边距以适应更大的空间 */
+    border: none;
+    animation: expand-in 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* 焦点模式的进入动画 */
+@keyframes expand-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* 关闭焦点模式的按钮 */
+.close-focus-btn {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: rgba(0,0,0,0.08);
+    color: var(--text-sub);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 55; /* 在滚动内容之上 */
+    display: flex; /* 使用 flex 居中叉号 */
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* 默认不可见 */
+    pointer-events: none; /* 默认不可交互 */
+    transition: opacity 0.3s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.sentence-section.is-expanded .close-focus-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.close-focus-btn:hover {
+    background: rgba(0,0,0,0.15);
+    color: var(--text-main);
+    transform: scale(1.1);
+}
+
+body.dark-mode .close-focus-btn { background: rgba(255,255,255,0.1); }
+body.dark-mode .close-focus-btn:hover { background: rgba(255,255,255,0.2); }
+
+/* 【新增】滚动提示，告知用户此处可滚动 */
+.scroll-hint {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px; /* 提示区域的高度 */
+    background: linear-gradient(to top, var(--card-back-section-bg) 60%, transparent);
+    pointer-events: none; /* 不干扰滚动 */
+    border-bottom-left-radius: var(--radius-sm);
+    border-bottom-right-radius: var(--radius-sm);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2px;
+    opacity: 0.8;
+}
+
+.scroll-hint::after {
+    content: '⌄';
+    font-size: 1.5rem;
+    color: var(--text-sub);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-5px); }
+    60% { transform: translateY(-3px); }
+}
 
 
 /* --- 组件: 按钮与图标 --- */
@@ -277,7 +374,6 @@ body.dark-mode .audio-btn:hover { background: rgba(255,255,255,0.1); }
     color: var(--text-main);
     resize: none;
     outline: none;
-    /* 模拟信纸横线效果 */
     background-image: linear-gradient(transparent 96%, var(--border-color) 96%);
     background-size: 100% 1.6rem;
     background-attachment: local;
@@ -362,23 +458,19 @@ body:not(.dark-mode) .prefix-intro-card .card-back { background: linear-gradient
    移动端响应式适配 (Breakpoint: 768px)
    ========================================================================== */
 @media screen and (max-width: 768px) {
-    /* 核心逻辑：卡片尺寸适配 Flex 容器 */
     .card {
-        height: 100%; /* 占满 card-grid 分配的高度 */
+        height: 100%;
         min-width: 90vw;
         max-width: 95vw;
-        scroll-snap-align: center; /* 水平滚动时居中对齐 */
-        flex-shrink: 0; /* 防止被 flex 容器压缩 */
+        scroll-snap-align: center;
+        flex-shrink: 0;
         margin: 0;
     }
 
-    /* 【核心优化】移动端补位动画调整 */
     .card.is-pending-removal {
-        /* 在 Flex 布局中，通过设置 min-width 为 0 来收缩水平空间 */
         min-width: 0;
-        margin-right: -1rem; /* 抵消 gap */
+        margin-right: -1rem;
     }
-
 
     #skeleton-loader {
         display: flex;
@@ -400,4 +492,13 @@ body:not(.dark-mode) .prefix-intro-card .card-back { background: linear-gradient
     .visual-area svg { width: 100px; height: 100px; }
     .cn-translation { font-size: 1.3rem; }
     .sentence-en { font-size: 0.95rem; }
+
+    /* 【新增】移动端焦点模式样式调整 */
+    .sentence-section.is-expanded {
+        padding: 1.5rem 1rem 1rem;
+    }
+    .close-focus-btn {
+        top: 0.5rem;
+        right: 0.5rem;
+    }
 }

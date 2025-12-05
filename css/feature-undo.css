@@ -84,7 +84,7 @@
     height: 100%;
     width: 100%;
     background-color: var(--theme-color);
-    transition: width 5s linear; /* 默认过渡，但会被动画覆盖 */
+    transition: width 3s linear; /* 默认过渡，但会被动画覆盖 */
 }
 
 /*
@@ -93,7 +93,7 @@
 */
 .undo-progress-bar.is-running {
     width: 0; /* 动画结束后停在 0% */
-    animation: shrink-width 5s linear forwards;
+    animation: shrink-width 3s linear forwards;
 }
 
 @keyframes shrink-width {

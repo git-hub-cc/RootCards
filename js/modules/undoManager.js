@@ -3,7 +3,7 @@
 // ---------------------------------------------------------------------------------
 // 职责:
 // 1. 提供一个全局的、单例的“撤销”操作通知UI。
-// 2. 管理5秒倒计时，并在时间结束后执行确认操作。
+// 2. 管理倒计时，并在时间结束后执行确认操作。
 // 3. 处理用户点击“撤销”的逻辑，并触发音效。
 // =================================================================================
 
@@ -58,7 +58,7 @@ function handleUndo() {
     // 1. 播放撤销音效
     UI.playUiSound('undo');
 
-    // 2. 清除即将执行的“真实删除”计时器
+    // 2. 清除即将执行的“确认”计时器
     if (state.timeoutId) {
         clearTimeout(state.timeoutId);
         state.timeoutId = null;
@@ -81,8 +81,8 @@ function handleUndo() {
  * 显示并启动撤销通知。
  * @param {object} options - 配置对象
  * @param {string} options.message - 显示在通知中的文本信息。
- * @param {function} options.onConfirm - 5秒倒计时结束后执行的回调函数（例如，执行真实删除）。
- * @param {function} options.onUndo - 用户点击“撤销”时执行的回调函数（例如，恢复UI）。
+ * @param {function} options.onConfirm - 倒计时结束后执行的回调函数。
+ * @param {function} options.onUndo - 用户点击“撤销”时执行的回调函数。
  */
 export function show({ message, onConfirm, onUndo }) {
     if (!elements.toast) {
@@ -93,7 +93,7 @@ export function show({ message, onConfirm, onUndo }) {
     }
 
     // **核心鲁棒性**: 如果上一个撤销操作还在倒计时，立即清除它并执行其确认操作。
-    // 这能防止用户快速连续删除时，只有最后一个操作被记住，而之前的操作被“遗忘”在待删除状态。
+    // 这能防止用户快速连续操作时，只有最后一个操作被记住，而之前的操作被“遗忘”。
     if (state.timeoutId) {
         clearTimeout(state.timeoutId);
         if (typeof state.onConfirmCallback === 'function') {
@@ -121,7 +121,7 @@ export function show({ message, onConfirm, onUndo }) {
     elements.progressBar.classList.add('is-running');
 
 
-    // 4. 设置5秒后执行的“真实删除”操作
+    // 4. 设置倒计时结束后执行的“确认”操作
     state.timeoutId = setTimeout(() => {
         if (typeof state.onConfirmCallback === 'function') {
             try {
@@ -132,7 +132,7 @@ export function show({ message, onConfirm, onUndo }) {
         }
         hide();
         state.timeoutId = null; // 清理ID
-    }, 5000);
+    }, 3000); // <-- 【核心修改】将超时时间从 5000ms 改为 3000ms
 }
 
 /**
