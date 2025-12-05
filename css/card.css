@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Card Styles - 卡片样式模块 (v4.3 - 触摸交互优化)
+   Card Styles - 卡片样式模块 (v4.5 - 滚动条样式统一化)
    ========================================================================== */
 
 /* --- 组件: 3D 翻转卡片 (核心与通用) --- */
@@ -56,7 +56,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
+    backface-visibility: hidden; /* 隐藏翻转到背后的元素 */
     border-radius: var(--radius-lg);
     background: var(--card-bg);
     border: 2px solid transparent;
@@ -116,7 +116,16 @@
     gap: 10px;
     margin-bottom: 0.5rem;
 }
-.word-text { font-size: 2rem; font-weight: 800; color: var(--theme-color); }
+.word-text {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--theme-color);
+    /* --- 【核心修复】长单词布局优化 --- */
+    /* 允许 flex 项收缩，防止超长单词挤压旁边的按钮 */
+    min-width: 0;
+    /* 强制超长单词在容器内断行 */
+    word-break: break-all;
+}
 .hint-text { font-size: 0.8rem; color: var(--text-sub); text-align: center; }
 
 
@@ -162,7 +171,7 @@ body.mode-immersive .breakdown-box { display: none; }
     padding: 1rem;
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-color);
-    /* 允许内部滚动 */
+    /* 允许内部滚动 (iOS 优化) */
     -webkit-overflow-scrolling: touch;
     /* 阻止滚动事件冒泡，防止触发外层卡片滑动 */
     overscroll-behavior: contain;
@@ -176,7 +185,7 @@ body.mode-immersive .breakdown-box { display: none; }
 .sentence-cn { font-size: 0.9rem; color: var(--text-sub); margin-bottom: 0.8rem; }
 
 
-/* --- 组件: 按钮与图标 (保持不变) --- */
+/* --- 组件: 按钮与图标 --- */
 .toggle-prefix-btn, .mark-btn {
     position: absolute;
     width: 32px;
@@ -268,6 +277,7 @@ body.dark-mode .audio-btn:hover { background: rgba(255,255,255,0.1); }
     color: var(--text-main);
     resize: none;
     outline: none;
+    /* 模拟信纸横线效果 */
     background-image: linear-gradient(transparent 96%, var(--border-color) 96%);
     background-size: 100% 1.6rem;
     background-attachment: local;
@@ -357,8 +367,8 @@ body:not(.dark-mode) .prefix-intro-card .card-back { background: linear-gradient
         height: 100%; /* 占满 card-grid 分配的高度 */
         min-width: 90vw;
         max-width: 95vw;
-        scroll-snap-align: center;
-        flex-shrink: 0;
+        scroll-snap-align: center; /* 水平滚动时居中对齐 */
+        flex-shrink: 0; /* 防止被 flex 容器压缩 */
         margin: 0;
     }
 
