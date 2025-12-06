@@ -406,7 +406,7 @@
 
 <footer class="app-footer">
     <p>学习资料来源：韩宇极简英语 & AI 辅助生成</p>
-    <p class="footer-meta">© 2024 cc | <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024271251号</a> | <a href="https://github.com/git-hub-cc/RootCards" target="_blank">GitHub</a></p>
+    <p class="footer-meta">© 2024 cc | <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024271251号</a> | <a href="./combiner" target="_blank">SVG 编辑</a> | <a href="https://github.com/git-hub-cc/RootCards" target="_blank">GitHub</a></p>
 </footer>
 
 <div id="undo-toast" class="undo-toast">
@@ -423,7 +423,8 @@
 </div>
 
 <input type="file" id="import-file-input" accept=".json" style="display: none;">
-<!-- 注意：移除了主线程的 compromise.js 引用，转由 Worker 内部加载 -->
+<!-- 【核心修改】取消注释，在主线程加载 NLP 库以实现即时搜索 -->
+<script src="lib/compromise.js"></script>
 <script src="data/manifest.js"></script>
 <script type="module" src="js/app.js"></script>
 

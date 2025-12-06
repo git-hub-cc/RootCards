@@ -126,7 +126,7 @@
     // --- 【改动】Grade 7 (初一) ---
     'data/grade7/geo_world.json',
     'data/grade7/nature_landscape.json',
-    ...
+
     // --- 未来可以添加 Grade 8 的数据文件 ---
     // 'data/grade8/some_topic.json',
     ];
@@ -136,15 +136,14 @@
 
 ## 📅 未来计划
 
-- [ ] 新增更多词根数据，并支持按词根筛选。
+- [ ] 新增更多单词，GRE TOEFL。
 - [ ] 引入游戏化学习元素（如学习统计、成就徽章）。
-- [ ] 支持用户自定义单词列表。
-- [ ] 进一步优化移动端交互体验。
 
 ## 🙏 致谢
 
 *   学习资料来源：韩宇极简英语。
-*   部分内容由 AI 辅助生成。
+*   部分内容由 AI 辅助生成，gemini,gTTS。
+*   GRE TOFEL来自 [english-wordlists](https://github.com/mahavivo/english-wordlists)
 
 ## 📜 许可证
 

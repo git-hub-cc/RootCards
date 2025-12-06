@@ -429,9 +429,41 @@ export function filterAndPrepareDataSet() {
 
     // 阶段 4: 搜索查询
     if (currentSearchQuery) {
-        const matchingWordCards = filteredData.filter(item =>
-            item.cardType === 'word' && item.word && item.word.toLowerCase().includes(currentSearchQuery)
-        );
+        // 1. 准备匹配关键词列表，默认包含原始输入
+        let searchTerms = [currentSearchQuery];
+
+        // 【核心修改】利用主线程加载的 NLP 库进行词形还原
+        // 检查 window.nlp 是否可用
+        if (typeof window.nlp === 'function') {
+            try {
+                const doc = window.nlp(currentSearchQuery);
+                // 计算 root (词根/原型)，例如: "remains" -> "remain", "studied" -> "study"
+                doc.compute('root');
+                const rootForm = doc.text('root'); // 获取处理后的词根文本
+
+                // 如果算出了不一样的词根，加入匹配列表
+                if (rootForm && rootForm !== currentSearchQuery) {
+                    searchTerms.push(rootForm);
+                }
+            } catch (e) {
+                // 即使 NLP 失败也不影响基础搜索
+                console.warn('NLP processing failed in search:', e);
+            }
+        }
+
+        const matchingWordCards = filteredData.filter(item => {
+            if (item.cardType !== 'word' || !item.word) return false;
+            const dbWord = item.word.toLowerCase();
+
+            // 【核心逻辑】只要原始输入 OR 词根其中之一能匹配上数据库单词，即算成功
+            // 1. dbWord.includes(term): 正向模糊匹配 (输入 "rem" -> 搜到 "remain")
+            // 2. term === dbWord: 精确词根匹配 (NLP还原后 "remains" -> "remain" == "remain")
+            // 3. term.startsWith(dbWord): 反向容错匹配 (输入 "remaining" -> 包含 "remain")
+            return searchTerms.some(term =>
+                dbWord.includes(term) || term.startsWith(dbWord)
+            );
+        });
+
         const relevantCategoryIds = new Set(matchingWordCards.map(item => item.type));
 
         if (relevantCategoryIds.size > 0) {
