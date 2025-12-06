@@ -406,7 +406,7 @@
 
 <footer class="app-footer">
     <p>学习资料来源：韩宇极简英语 & AI 辅助生成</p>
-    <p class="footer-meta">© 2024 cc | <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024271251号</a> | <a href="./combiner" target="_blank">SVG 编辑</a> | <a href="https://github.com/git-hub-cc/RootCards" target="_blank">GitHub</a></p>
+    <p class="footer-meta">© 2024 cc | <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024271251号</a> | <a href="./combiner" target="_blank">SVG 编辑</a> | <a href="javascript:void(0)" id="dsnr-trigger">DSNR</a> | <a href="https://github.com/git-hub-cc/RootCards" target="_blank">GitHub</a></p>
 </footer>
 
 <div id="undo-toast" class="undo-toast">
@@ -427,6 +427,32 @@
 <script src="lib/compromise.js"></script>
 <script src="data/manifest.js"></script>
 <script type="module" src="js/app.js"></script>
+
+<!-- DSNR Audio Trigger Script -->
+<script>
+    (function() {
+        let dsnrAudio = null;
+        const trigger = document.getElementById('dsnr-trigger');
+
+        if (trigger) {
+            trigger.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                if (!dsnrAudio) {
+                    dsnrAudio = new Audio('audio/ui/DSNR.opus');
+                }
+
+                if (dsnrAudio.paused) {
+                    dsnrAudio.play().catch(err => {
+                        console.error('DSNR Audio playback failed:', err);
+                    });
+                } else {
+                    dsnrAudio.pause();
+                }
+            });
+        }
+    })();
+</script>
 
 </body>
 </html>

@@ -144,6 +144,7 @@
 *   学习资料来源：韩宇极简英语。
 *   部分内容由 AI 辅助生成，gemini,gTTS。
 *   GRE TOFEL来自 [english-wordlists](https://github.com/mahavivo/english-wordlists)
+*   NSDR来自 [ZoeLanguages](https://www.bilibili.com/video/BV1X2NZesE2J/)
 
 ## 📜 许可证
 
