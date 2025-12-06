@@ -1,0 +1,53 @@
+{
+  "prefix": "bat",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "bat_beat",
+      "displayName": "bat (打)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M18 4 L6 16 L4 20 L8 18 L20 6 Z' stroke='currentColor' fill='currentColor' />",
+      "prefixIntro": {
+        "title": "词根 bat",
+        "description": "核心意境是 **“打” (Beat)** 或 **“击” (Strike)**。\n源于球棒 (bat) 或战斗。",
+        "imagery": "联想一根棒球棒⚾，或者拳击手套🥊。"
+      },
+      "words": [
+        {
+          "word": "Batter",
+          "rootVisual": "<path d='M16 6 L8 14 M14 4 L6 12' stroke='currentColor' stroke-width='2' />",
+          "breakdown": ["bat (打)", "-ter (重复)"],
+          "imagery": "连续猛击。",
+          "translation": "连续猛击；炮击",
+          "sentences": [
+            {
+              "en": "He was battered with a bat.",
+              "cn": "他被球棒猛击。"
+            }
+          ]
+        },
+        {
+          "word": "Battery",
+          "rootVisual": "<rect x='6' y='8' width='12' height='8' stroke='currentColor' fill='none' /><path d='M18 10 V 14' stroke='currentColor' stroke-width='2' /><path d='M20 12 H 4' stroke='currentColor' opacity='0' />",
+          "breakdown": ["bat (打)", "-ery"],
+          "imagery": "放电时产生火花，像打击一样。",
+          "translation": "电池；炮组",
+          "sentences": []
+        },
+        {
+          "word": "Combat",
+          "rootVisual": "<path d='M6 12 L10 12 M14 12 L18 12' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)' marker-start='url(#arrow)' />",
+          "breakdown": ["com (共同)", "bat (打)"],
+          "imagery": "聚在一起互相打斗。",
+          "translation": "战斗；搏斗",
+          "sentences": [
+            {
+              "en": "Killed in combat.",
+              "cn": "在战斗中阵亡。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

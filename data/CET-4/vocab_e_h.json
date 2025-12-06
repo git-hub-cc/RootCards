@@ -1,0 +1,926 @@
+{
+  "prefix": "Vocab E-H",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_e",
+      "displayName": "Vocabulary E",
+      "themeColor": "#ef4444",
+      "prefixIntro": {
+        "title": "E 开头核心词",
+        "description": "大学四级 E 开头的高频混合词汇。E 常作为 ex- (向外) 的前缀缩写。",
+        "imagery": "字母 E 像向外张开的手指或梳子。"
+      },
+      "words": [
+        {
+          "word": "Eagle",
+          "rootVisual": "<path d='M4 12 L12 4 L20 12 L12 16 Z' stroke='currentColor' fill='none' />",
+          "breakdown": ["eagle (鹰)"],
+          "imagery": "易走（谐音）的鸟。",
+          "translation": "鹰",
+          "sentences": []
+        },
+        {
+          "word": "Eccentric",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><circle cx='16' cy='8' r='2' fill='currentColor' />",
+          "breakdown": ["ec- (外)", "centr (中心)", "-ic"],
+          "imagery": "偏离中心的，古怪的。",
+          "translation": "古怪的",
+          "sentences": [
+            {
+              "en": "His eccentric behavior.",
+              "cn": "他古怪的行为。"
+            }
+          ]
+        },
+        {
+          "word": "Ecology",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 14 L12 10 L16 14' stroke='currentColor' />",
+          "breakdown": ["eco (家/环境)", "-logy (学)"],
+          "imagery": "研究共同家园的学科。",
+          "translation": "生态学",
+          "sentences": []
+        },
+        {
+          "word": "Elevation",
+          "rootVisual": "<path d='M4 18 L12 6 L20 18' stroke='currentColor' fill='none' /><line x1='12' y1='6' x2='12' y2='18' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["e- (出)", "lev (举)", "-ation"],
+          "imagery": "被举起的高度。",
+          "translation": "海拔；提升",
+          "sentences": [
+            {
+              "en": "At an elevation of 2000 meters.",
+              "cn": "在海拔2000米处。"
+            }
+          ]
+        },
+        {
+          "word": "Eligible",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><path d='M8 12 L10 14 L16 8' stroke='currentColor' />",
+          "breakdown": ["e- (出)", "lig (选)", "-ible"],
+          "imagery": "能被选出来的。",
+          "translation": "有资格的",
+          "sentences": [
+            {
+              "en": "Eligible to vote.",
+              "cn": "有资格投票。"
+            }
+          ]
+        },
+        {
+          "word": "Elite",
+          "rootVisual": "<circle cx='12' cy='6' r='2' fill='currentColor' color='#f59e0b' /><circle cx='8' cy='16' r='2' fill='currentColor' opacity='0.3' /><circle cx='16' cy='16' r='2' fill='currentColor' opacity='0.3' />",
+          "breakdown": ["e- (出)", "lite (选)"],
+          "imagery": "选出来的精华人物。",
+          "translation": "精英",
+          "sentences": []
+        },
+        {
+          "word": "Eloquent",
+          "rootVisual": "<path d='M8 12 Q 12 18 16 12' stroke='currentColor' fill='none' /><path d='M16 8 L20 4' stroke='currentColor' />",
+          "breakdown": ["e- (出)", "loqu (说)", "-ent"],
+          "imagery": "话能说出来的，口才好的。",
+          "translation": "雄辩的；有口才的",
+          "sentences": [
+            {
+              "en": "An eloquent speech.",
+              "cn": "一场雄辩的演讲。"
+            }
+          ]
+        },
+        {
+          "word": "Embargo",
+          "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' stroke-width='4' color='#ef4444' />",
+          "breakdown": ["em- (入)", "bar (拦)", "go"],
+          "imagery": "进去被拦住不让走，禁运。",
+          "translation": "禁运",
+          "sentences": []
+        },
+        {
+          "word": "Embody",
+          "rootVisual": "<circle cx='12' cy='8' r='4' fill='currentColor' /><path d='M12 12 V 20' stroke='currentColor' stroke-width='2' />",
+          "breakdown": ["em- (使)", "body"],
+          "imagery": "使有形体，体现。",
+          "translation": "体现；包含",
+          "sentences": [
+            {
+              "en": "She embodied the values.",
+              "cn": "她体现了这些价值观。"
+            }
+          ]
+        },
+        {
+          "word": "Embrace",
+          "rootVisual": "<path d='M8 12 Q 12 12 16 12' stroke='currentColor' /><path d='M4 12 Q 12 20 20 12' stroke='currentColor' fill='none' />",
+          "breakdown": ["em- (入)", "brace (臂)"],
+          "imagery": "拥入怀中。",
+          "translation": "拥抱；欣然接受",
+          "sentences": [
+            {
+              "en": "An opportunity he would embrace.",
+              "cn": "他会欣然接受的机会。"
+            }
+          ]
+        },
+        {
+          "word": "Emit",
+          "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor' /><path d='M12 6 L12 2 M18 12 L22 12 M12 18 L12 22 M6 12 L2 12' stroke='currentColor' />",
+          "breakdown": ["e- (出)", "mit (送)"],
+          "imagery": "向外送出。",
+          "translation": "发出；散发",
+          "sentences": [
+            {
+              "en": "Emit a strange odor.",
+              "cn": "散发出奇怪的气味。"
+            }
+          ]
+        },
+        {
+          "word": "Endeavor",
+          "rootVisual": "<path d='M4 18 L12 8 L20 18' stroke='currentColor' /><path d='M12 14 V 4' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["en- (使)", "deavor (责任)"],
+          "imagery": "使自己尽责，努力。",
+          "translation": "努力；尽力",
+          "sentences": [
+            {
+              "en": "Endeavoring to locate the source.",
+              "cn": "努力找出源头。"
+            }
+          ]
+        },
+        {
+          "word": "Endorse",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none' /><path d='M12 12 L14 14 L18 10' stroke='currentColor' />",
+          "breakdown": ["en- (上)", "dorse (背)"],
+          "imagery": "在背面签名支持。",
+          "translation": "赞同；背书",
+          "sentences": [
+            {
+              "en": "Endorse his remarks.",
+              "cn": "赞同他的话。"
+            }
+          ]
+        },
+        {
+          "word": "Enlighten",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' /><path d='M12 6 V 2 M 12 18 V 22' stroke='currentColor' />",
+          "breakdown": ["en- (使)", "light (光)", "-en"],
+          "imagery": "使有光，启发。",
+          "translation": "启发；启迪",
+          "sentences": [
+            {
+              "en": "Could you enlighten me?",
+              "cn": "你能启发我吗？"
+            }
+          ]
+        },
+        {
+          "word": "Enroll",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><path d='M8 8 H 16' stroke='currentColor' />",
+          "breakdown": ["en- (入)", "roll (名单)"],
+          "imagery": "进入名单，注册。",
+          "translation": "登记；注册",
+          "sentences": [
+            {
+              "en": "Enroll at the college.",
+              "cn": "在大学注册。"
+            }
+          ]
+        },
+        {
+          "word": "Epidemic",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 8 L16 16 M16 8 L8 16' stroke='currentColor' />",
+          "breakdown": ["epi- (间)", "dem (人)", "-ic"],
+          "imagery": "在人群之间传播的。",
+          "translation": "流行病",
+          "sentences": [
+            {
+              "en": "A flu epidemic.",
+              "cn": "流感疫情。"
+            }
+          ]
+        },
+        {
+          "word": "Episode",
+          "rootVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' /><circle cx='12' cy='12' r='2' fill='currentColor' />",
+          "breakdown": ["epi- (上)", "sode (路)"],
+          "imagery": "路上的一段经历；剧集的一集。",
+          "translation": "一集；一段经历",
+          "sentences": [
+            {
+              "en": "The first episode.",
+              "cn": "第一集。"
+            }
+          ]
+        },
+        {
+          "word": "Epoch",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' /><path d='M4 12 H 20' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["epoch (新时代)"],
+          "imagery": "走出门廊(porch)开启新时代。",
+          "translation": "时代；纪元",
+          "sentences": [
+            {
+              "en": "A new epoch.",
+              "cn": "一个新时代。"
+            }
+          ]
+        },
+        {
+          "word": "Erosion",
+          "rootVisual": "<path d='M4 16 Q 12 12 20 16' stroke='currentColor' fill='none' stroke-dasharray='2 2' />",
+          "breakdown": ["e- (外)", "ros (咬)", "-ion"],
+          "imagery": "一点点咬掉，侵蚀。",
+          "translation": "侵蚀；腐蚀",
+          "sentences": [
+            {
+              "en": "Erosion of the coastline.",
+              "cn": "海岸线的侵蚀。"
+            }
+          ]
+        },
+        {
+          "word": "Errand",
+          "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' stroke-dasharray='2 2' marker-end='url(#arrow)' />",
+          "breakdown": ["err (跑)", "-and"],
+          "imagery": "跑来跑去的差事。",
+          "translation": "差事；跑腿",
+          "sentences": [
+            {
+              "en": "Run errands.",
+              "cn": "跑腿。"
+            }
+          ]
+        },
+        {
+          "word": "Escort",
+          "rootVisual": "<circle cx='8' cy='12' r='2' fill='currentColor' /><circle cx='16' cy='12' r='2' fill='currentColor' /><path d='M10 12 H 14' stroke='currentColor' />",
+          "breakdown": ["es- (出)", "cort (法庭/护送)"],
+          "imagery": "护送某人出去。",
+          "translation": "护送；陪同",
+          "sentences": [
+            {
+              "en": "Escorted the president.",
+              "cn": "护送总统。"
+            }
+          ]
+        },
+        {
+          "word": "Essence",
+          "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor' />",
+          "breakdown": ["ess (存在)", "-ence"],
+          "imagery": "存在的核心，本质。",
+          "translation": "本质；精髓",
+          "sentences": [
+            {
+              "en": "The essence of his argument.",
+              "cn": "他论点的核心。"
+            }
+          ]
+        },
+        {
+          "word": "Eternal",
+          "rootVisual": "<path d='M4 12 A 4 4 0 1 1 12 12 A 4 4 0 1 1 20 12' stroke='currentColor' fill='none' />",
+          "breakdown": ["e- (一直)", "tern (转)", "-al"],
+          "imagery": "一直转下去永不停止（无穷符号）。",
+          "translation": "永恒的",
+          "sentences": [
+            {
+              "en": "Eternal love.",
+              "cn": "永恒的爱。"
+            }
+          ]
+        },
+        {
+          "word": "Ethics",
+          "rootVisual": "<path d='M8 12 L12 16 L16 8' stroke='currentColor' />",
+          "breakdown": ["ethic", "-s"],
+          "imagery": "道德规范。",
+          "translation": "伦理学；道德",
+          "sentences": []
+        },
+        {
+          "word": "Exaggerate",
+          "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='none' /><circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='2 2' />",
+          "breakdown": ["ex- (外)", "agger (堆)", "-ate"],
+          "imagery": "向外堆积夸大。",
+          "translation": "夸大",
+          "sentences": [
+            {
+              "en": "Greatly exaggerated.",
+              "cn": "被极大地夸大了。"
+            }
+          ]
+        },
+        {
+          "word": "Exceed",
+          "rootVisual": "<path d='M4 12 H 16' stroke='currentColor' /><path d='M18 12 H 22' stroke='currentColor' stroke-dasharray='2 2' marker-end='url(#arrow)' />",
+          "breakdown": ["ex- (外)", "ceed (走)"],
+          "imagery": "走出界限，超过。",
+          "translation": "超过",
+          "sentences": [
+            {
+              "en": "Not exceed $5,000.",
+              "cn": "不超过5000美元。"
+            }
+          ]
+        },
+        {
+          "word": "Execute",
+          "rootVisual": "<path d='M4 4 L20 20 M20 4 L4 20' stroke='currentColor' color='#ef4444' />",
+          "breakdown": ["ex- (完)", "secute (跟随)"],
+          "imagery": "跟随命令执行到底；执行死刑。",
+          "translation": "执行；处决",
+          "sentences": [
+            {
+              "en": "Executed for murder.",
+              "cn": "因谋杀被处决。"
+            }
+          ]
+        },
+        {
+          "word": "Exemplify",
+          "rootVisual": "<rect x='4' y='8' width='4' height='8' stroke='currentColor' fill='none' /><rect x='10' y='6' width='4' height='12' fill='currentColor' /><rect x='16' y='8' width='4' height='8' stroke='currentColor' fill='none' />",
+          "breakdown": ["ex- (外)", "empl (拿)", "-ify"],
+          "imagery": "拿出来做榜样。",
+          "translation": "是...的典范",
+          "sentences": [
+            {
+              "en": "Exemplifies the best.",
+              "cn": "是最好的典范。"
+            }
+          ]
+        },
+        {
+          "word": "Exempt",
+          "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' stroke-dasharray='2 2' /><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none' />",
+          "breakdown": ["ex- (外)", "empt (拿)"],
+          "imagery": "拿出去免除义务。",
+          "translation": "免除；豁免",
+          "sentences": [
+            {
+              "en": "Exempted from tax.",
+              "cn": "免税。"
+            }
+          ]
+        },
+        {
+          "word": "Exhaust",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' /><path d='M4 20 L20 4' stroke='currentColor' opacity='0.3' />",
+          "breakdown": ["ex- (外)", "haust (抽)"],
+          "imagery": "抽光了，耗尽。",
+          "translation": "耗尽；废气",
+          "sentences": [
+            {
+              "en": "Exhausted the children.",
+              "cn": "使孩子们筋疲力尽。"
+            }
+          ]
+        },
+        {
+          "word": "Exotic",
+          "rootVisual": "<path d='M12 2 L14 8 L20 8 L15 12 L17 18 L12 14 L7 18 L9 12 L4 8 L10 8 Z' stroke='currentColor' fill='none' color='#a855f7' />",
+          "breakdown": ["exo- (外)", "-tic"],
+          "imagery": "来自外部的，异国情调的。",
+          "translation": "异国情调的",
+          "sentences": [
+            {
+              "en": "Exotic birds.",
+              "cn": "珍奇鸟类。"
+            }
+          ]
+        },
+        {
+          "word": "Expedition",
+          "rootVisual": "<path d='M4 16 L12 8 L20 16' stroke='currentColor' fill='none' /><path d='M12 8 V 4' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["ex- (外)", "ped (脚)", "-ition"],
+          "imagery": "走出去，远征。",
+          "translation": "远征；探险",
+          "sentences": [
+            {
+              "en": "Expedition to the South Pole.",
+              "cn": "南极探险。"
+            }
+          ]
+        },
+        {
+          "word": "Expire",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='10'>END</text>",
+          "breakdown": ["ex- (出)", "spire (气)"],
+          "imagery": "最后一口气呼出，期满。",
+          "translation": "期满；终止",
+          "sentences": [
+            {
+              "en": "Passport will expire.",
+              "cn": "护照将过期。"
+            }
+          ]
+        },
+        {
+          "word": "Explicit",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><path d='M8 12 L10 14 L16 8' stroke='currentColor' />",
+          "breakdown": ["ex- (外)", "plic (折)"],
+          "imagery": "展开折叠，清楚明确。",
+          "translation": "明确的；直言的",
+          "sentences": [
+            {
+              "en": "Explicit instructions.",
+              "cn": "明确的指示。"
+            }
+          ]
+        },
+        {
+          "word": "Exploit",
+          "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' stroke-width='2' /><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none' />",
+          "breakdown": ["ex- (外)", "ploit (折)"],
+          "imagery": "展开利用，开发；过度开发即剥削。",
+          "translation": "剥削；开发",
+          "sentences": [
+            {
+              "en": "Exploiting the potential.",
+              "cn": "开发潜力。"
+            }
+          ]
+        },
+        {
+          "word": "Extinct",
+          "rootVisual": "<path d='M4 4 L20 20 M20 4 L4 20' stroke='currentColor' />",
+          "breakdown": ["ex- (外)", "stinct (刺)"],
+          "imagery": "把刺拔掉，生命结束。",
+          "translation": "灭绝的",
+          "sentences": [
+            {
+              "en": "Become extinct.",
+              "cn": "灭绝。"
+            }
+          ]
+        },
+        {
+          "word": "Extract",
+          "rootVisual": "<rect x='6' y='8' width='12' height='12' stroke='currentColor' fill='none' /><path d='M12 12 V 4' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["ex- (外)", "tract (拉)"],
+          "imagery": "向外拉出，提取。",
+          "translation": "提取；摘录",
+          "sentences": [
+            {
+              "en": "Oil extracted from olives.",
+              "cn": "从橄榄中提取的油。"
+            }
+          ]
+        },
+        {
+          "word": "Extravagant",
+          "rootVisual": "<path d='M12 12 L20 4' stroke='currentColor' marker-end='url(#arrow)' /><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2' />",
+          "breakdown": ["extra- (超)", "vag (走)", "-ant"],
+          "imagery": "走得太远超出范围，奢侈。",
+          "translation": "奢侈的；过度的",
+          "sentences": [
+            {
+              "en": "Very extravagant.",
+              "cn": "非常奢侈。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_f",
+      "displayName": "Vocabulary F-H",
+      "themeColor": "#f97316",
+      "prefixIntro": {
+        "title": "F-H 开头核心词",
+        "description": "大学四级 F, G, H 开头的高频混合词汇。",
+        "imagery": "F 像旗帜，G 像漩涡，H 像梯子。"
+      },
+      "words": [
+        {
+          "word": "Fabric",
+          "rootVisual": "<path d='M4 4 H 20 V 20 H 4 Z' stroke='currentColor' fill='none' /><path d='M4 8 H 20 M 4 12 H 20 M 4 16 H 20 M 8 4 V 20 M 12 4 V 20 M 16 4 V 20' stroke='currentColor' opacity='0.3' />",
+          "breakdown": ["fabric (纤维/布)"],
+          "imagery": "纤维编织成布料。",
+          "translation": "布料；结构",
+          "sentences": [
+            {
+              "en": "Cotton fabric.",
+              "cn": "棉织物。"
+            }
+          ]
+        },
+        {
+          "word": "Fabricate",
+          "rootVisual": "<path d='M4 12 Q 12 4 20 12 T 4 12' stroke='currentColor' fill='none' stroke-dasharray='2 2' />",
+          "breakdown": ["fabric", "-ate"],
+          "imagery": "编织（谎言），捏造。",
+          "translation": "捏造；制造",
+          "sentences": [
+            {
+              "en": "Fabricated an excuse.",
+              "cn": "捏造了一个借口。"
+            }
+          ]
+        },
+        {
+          "word": "Facilitate",
+          "rootVisual": "<path d='M4 18 L 20 6' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["facil (易)", "-itate"],
+          "imagery": "使变容易，促进。",
+          "translation": "促进；使便利",
+          "sentences": [
+            {
+              "en": "Facilitate the development.",
+              "cn": "促进发展。"
+            }
+          ]
+        },
+        {
+          "word": "Faculty",
+          "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none' /><path d='M8 20 L12 14 L16 20' stroke='currentColor' />",
+          "breakdown": ["fac (做)", "-ulty"],
+          "imagery": "做这种事的人员；做这种事的能力。",
+          "translation": "全体教员；能力",
+          "sentences": [
+            {
+              "en": "Faculty and students.",
+              "cn": "师生。"
+            }
+          ]
+        },
+        {
+          "word": "Faint",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' opacity='0.2' />",
+          "breakdown": ["faint (废)"],
+          "imagery": "人废了（昏倒）；声音废了（微弱）。",
+          "translation": "昏厥；微弱的",
+          "sentences": [
+            {
+              "en": "Faint smell.",
+              "cn": "淡淡的气味。"
+            }
+          ]
+        },
+        {
+          "word": "Fatal",
+          "rootVisual": "<path d='M4 4 L20 20 M20 4 L4 20' stroke='currentColor' color='#ef4444' />",
+          "breakdown": ["fat (命)", "-al"],
+          "imagery": "决定命运的，致命的。",
+          "translation": "致命的",
+          "sentences": [
+            {
+              "en": "A fatal disease.",
+              "cn": "一种致命的疾病。"
+            }
+          ]
+        },
+        {
+          "word": "Fatality",
+          "rootVisual": "<path d='M12 4 V 16 M 8 8 H 16' stroke='currentColor' color='#000' />",
+          "breakdown": ["fatal", "-ity"],
+          "imagery": "致命的后果，死亡。",
+          "translation": "死亡；宿命",
+          "sentences": [
+            {
+              "en": "Traffic fatalities.",
+              "cn": "交通事故死亡人数。"
+            }
+          ]
+        },
+        {
+          "word": "Fatigue",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 14 Q 12 12 16 14' stroke='currentColor' />",
+          "breakdown": ["fat (说/累)", "-igue"],
+          "imagery": "说太多话累了，疲劳。",
+          "translation": "疲劳",
+          "sentences": [
+            {
+              "en": "Mental fatigue.",
+              "cn": "精神疲惫。"
+            }
+          ]
+        },
+        {
+          "word": "Flaw",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M12 12 L16 16' stroke='currentColor' />",
+          "breakdown": ["flaw (花/裂缝)"],
+          "imagery": "花(flower)虽美也有瑕疵(flaw)。",
+          "translation": "瑕疵；缺陷",
+          "sentences": [
+            {
+              "en": "A fatal flaw.",
+              "cn": "一个致命的缺陷。"
+            }
+          ]
+        },
+        {
+          "word": "Fluctuate",
+          "rootVisual": "<path d='M2 12 Q 6 4 10 12 T 18 12' stroke='currentColor' fill='none' />",
+          "breakdown": ["flu (流)", "-ctuate"],
+          "imagery": "像波浪一样流动起伏。",
+          "translation": "波动",
+          "sentences": [
+            {
+              "en": "Prices fluctuate.",
+              "cn": "价格波动。"
+            }
+          ]
+        },
+        {
+          "word": "Fluid",
+          "rootVisual": "<path d='M6 18 Q 12 22 18 18' stroke='currentColor' fill='none' />",
+          "breakdown": ["flu (流)", "-id"],
+          "imagery": "能流动的东西。",
+          "translation": "液体；流动的",
+          "sentences": [
+            {
+              "en": "Drink plenty of fluids.",
+              "cn": "多喝流质。"
+            }
+          ]
+        },
+        {
+          "word": "Forum",
+          "rootVisual": "<rect x='4' y='12' width='16' height='8' stroke='currentColor' fill='none' /><path d='M8 12 V 8 H 16 V 12' stroke='currentColor' />",
+          "breakdown": ["for (门外)", "-um"],
+          "imagery": "古罗马门外公开讨论的地方。",
+          "translation": "论坛；讨论会",
+          "sentences": [
+            {
+              "en": "A forum for debate.",
+              "cn": "辩论的平台。"
+            }
+          ]
+        },
+        {
+          "word": "Fossil",
+          "rootVisual": "<path d='M8 8 L16 16 M16 8 L8 16' stroke='currentColor' />",
+          "breakdown": ["foss (挖)", "-il"],
+          "imagery": "挖出来的东西。",
+          "translation": "化石",
+          "sentences": [
+            {
+              "en": "Dinosaur fossils.",
+              "cn": "恐龙化石。"
+            }
+          ]
+        },
+        {
+          "word": "Foster",
+          "rootVisual": "<path d='M12 14 L 8 10 H 16 Z' fill='currentColor' /><circle cx='12' cy='6' r='2' stroke='currentColor' />",
+          "breakdown": ["food", "-ster"],
+          "imagery": "给食物养大，扶持（谐音：扶上头）。",
+          "translation": "培养；促进",
+          "sentences": [
+            {
+              "en": "Foster better relations.",
+              "cn": "促进更好的关系。"
+            }
+          ]
+        },
+        {
+          "word": "Frequent",
+          "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["fre (摩擦/数)", "-quent"],
+          "imagery": "频繁摩擦。",
+          "translation": "频繁的",
+          "sentences": [
+            {
+              "en": "Frequent salt bath.",
+              "cn": "频繁盐浴。"
+            }
+          ]
+        },
+        {
+          "word": "Frown",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 10 L12 12 L16 10' stroke='currentColor' /><path d='M10 16 H 14' stroke='currentColor' />",
+          "breakdown": ["row (排)", "frown"],
+          "imagery": "额头上皱起一排排皱纹。",
+          "translation": "皱眉",
+          "sentences": [
+            {
+              "en": "Frowned at being interrupted.",
+              "cn": "因被打断而皱眉。"
+            }
+          ]
+        },
+        {
+          "word": "Fulfill",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><path d='M6 18 H 18 V 12 H 6 Z' fill='currentColor' />",
+          "breakdown": ["ful (满)", "fill (填)"],
+          "imagery": "填满了，满足。",
+          "translation": "满足；实现",
+          "sentences": [
+            {
+              "en": "Fulfill the needs.",
+              "cn": "满足需求。"
+            }
+          ]
+        },
+        {
+          "word": "Garbage",
+          "rootVisual": "<path d='M6 6 L8 18 H 16 L 18 6' stroke='currentColor' /><path d='M4 6 H 20' stroke='currentColor' />",
+          "breakdown": ["garb (抓)", "-age"],
+          "imagery": "抓剩下不要的东西。",
+          "translation": "垃圾",
+          "sentences": [
+            {
+              "en": "Take out the garbage.",
+              "cn": "倒垃圾。"
+            }
+          ]
+        },
+        {
+          "word": "Garlic",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' /><path d='M12 6 V 4' stroke='currentColor' />",
+          "breakdown": ["garlic"],
+          "imagery": "味道够立刻（谐音）。",
+          "translation": "大蒜",
+          "sentences": []
+        },
+        {
+          "word": "Gaze",
+          "rootVisual": "<circle cx='12' cy='12' r='3' fill='currentColor' /><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' />",
+          "breakdown": ["gaze"],
+          "imagery": "带有情感地凝视。",
+          "translation": "凝视",
+          "sentences": [
+            {
+              "en": "Gazed at himself.",
+              "cn": "凝视他自己。"
+            }
+          ]
+        },
+        {
+          "word": "Given",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='10'>IF</text>",
+          "breakdown": ["give"],
+          "imagery": "被给予了条件，考虑到。",
+          "translation": "考虑到；鉴于",
+          "sentences": [
+            {
+              "en": "Given the circumstances.",
+              "cn": "考虑到这些情况。"
+            }
+          ]
+        },
+        {
+          "word": "Gossip",
+          "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor' fill='none' /><circle cx='16' cy='12' r='3' stroke='currentColor' fill='none' /><text x='12' y='18' text-anchor='middle'>💬</text>",
+          "breakdown": ["go", "sip (喝)"],
+          "imagery": "去喝东西聊天，闲聊。",
+          "translation": "闲聊；流言蜚语",
+          "sentences": [
+            {
+              "en": "Don't believe the gossip.",
+              "cn": "别信那些流言。"
+            }
+          ]
+        },
+        {
+          "word": "Grave",
+          "rootVisual": "<path d='M12 18 V 6' stroke='currentColor' /><path d='M8 10 H 16' stroke='currentColor' />",
+          "breakdown": ["grav (重)", "e"],
+          "imagery": "沉重的地方（坟墓）；沉重的事情（严重的）。",
+          "translation": "坟墓；严重的",
+          "sentences": [
+            {
+              "en": "In grave danger.",
+              "cn": "处于极度危险中。"
+            }
+          ]
+        },
+        {
+          "word": "Gravity",
+          "rootVisual": "<circle cx='12' cy='8' r='4' fill='currentColor' /><path d='M12 12 V 20' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["grav (重)", "-ity"],
+          "imagery": "地球的重力。",
+          "translation": "重力；严重性",
+          "sentences": []
+        },
+        {
+          "word": "Aggravate",
+          "rootVisual": "<path d='M4 18 L 20 6' stroke='currentColor' marker-end='url(#arrow)' color='#ef4444' />",
+          "breakdown": ["ag- (加)", "grav (重)", "-ate"],
+          "imagery": "加重负担，恶化。",
+          "translation": "加重；恶化",
+          "sentences": []
+        },
+        {
+          "word": "Greed",
+          "rootVisual": "<text x='12' y='16' text-anchor='middle' font-size='14'>$$$</text>",
+          "breakdown": ["greed (great变体)"],
+          "imagery": "想要更大的（great），贪婪。",
+          "translation": "贪婪",
+          "sentences": [
+            {
+              "en": "Greed was on his face.",
+              "cn": "脸上写着贪婪。"
+            }
+          ]
+        },
+        {
+          "word": "Groan",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>😫</text>",
+          "breakdown": ["groan (拟声)"],
+          "imagery": "痛苦的呻吟声。",
+          "translation": "呻吟；抱怨",
+          "sentences": [
+            {
+              "en": "Groans in pain.",
+              "cn": "痛苦地呻吟。"
+            }
+          ]
+        },
+        {
+          "word": "Handicap",
+          "rootVisual": "<rect x='8' y='4' width='8' height='8' stroke='currentColor' fill='none' /><circle cx='12' cy='16' r='3' fill='currentColor' />",
+          "breakdown": ["hand", "in", "cap (帽)"],
+          "imagery": "手放在帽子里（抽签劣势），障碍。",
+          "translation": "障碍；不利条件",
+          "sentences": [
+            {
+              "en": "A handicap.",
+              "cn": "一个障碍。"
+            }
+          ]
+        },
+        {
+          "word": "Hardy",
+          "rootVisual": "<rect x='8' y='6' width='8' height='12' stroke='currentColor' stroke-width='2' />",
+          "breakdown": ["hard", "-y"],
+          "imagery": "坚硬的，能吃苦的。",
+          "translation": "强壮的；能吃苦的",
+          "sentences": [
+            {
+              "en": "Hardy athletes.",
+              "cn": "强壮的运动员。"
+            }
+          ]
+        },
+        {
+          "word": "Haste",
+          "rootVisual": "<path d='M2 12 H 18' stroke='currentColor' marker-end='url(#arrow)' /><path d='M4 12 H 10' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["haste"],
+          "imagery": "匆忙。",
+          "translation": "匆忙",
+          "sentences": [
+            {
+              "en": "In a haste to leave.",
+              "cn": "匆忙离开。"
+            }
+          ]
+        },
+        {
+          "word": "Hesitate",
+          "rootVisual": "<path d='M8 12 H 16' stroke='currentColor' stroke-dasharray='4 2' /><text x='12' y='18' text-anchor='middle'>?</text>",
+          "breakdown": ["he", "sit", "ate"],
+          "imagery": "他坐着吃了又吃（谐音联想），不走，犹豫。",
+          "translation": "犹豫",
+          "sentences": [
+            {
+              "en": "Hesitating over whether to leave.",
+              "cn": "犹豫是否要离开。"
+            }
+          ]
+        },
+        {
+          "word": "Highlight",
+          "rootVisual": "<rect x='4' y='12' width='16' height='4' fill='currentColor' color='#f59e0b' />",
+          "breakdown": ["high", "light"],
+          "imagery": "高光，突出。",
+          "translation": "突出；强调",
+          "sentences": [
+            {
+              "en": "Highlights the problems.",
+              "cn": "突出了问题。"
+            }
+          ]
+        },
+        {
+          "word": "Hostage",
+          "rootVisual": "<rect x='8' y='8' width='8' height='12' stroke='currentColor' fill='none' /><path d='M8 12 H 16' stroke='currentColor' />",
+          "breakdown": ["host (主人/抓)", "-age"],
+          "imagery": "被当做主人看管起来的人，人质。",
+          "translation": "人质",
+          "sentences": [
+            {
+              "en": "Kept as a hostage.",
+              "cn": "被扣为人质。"
+            }
+          ]
+        },
+        {
+          "word": "Hostile",
+          "rootVisual": "<path d='M6 6 L18 18 M6 18 L18 6' stroke='currentColor' stroke-width='2' color='#ef4444' />",
+          "breakdown": ["host (敌)", "-ile"],
+          "imagery": "敌对的。",
+          "translation": "敌对的",
+          "sentences": [
+            {
+              "en": "Hostile forces.",
+              "cn": "敌对势力。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

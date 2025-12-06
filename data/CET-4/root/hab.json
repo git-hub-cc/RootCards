@@ -1,0 +1,51 @@
+{
+  "prefix": "hab",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "hab_dwell",
+      "displayName": "hab (居/习)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<path d='M4 20 V 10 L 12 4 L 20 10 V 20 H 4 Z' stroke='currentColor' fill='none' /><rect x='10' y='14' width='4' height='6' fill='currentColor' opacity='0.3' />",
+      "prefixIntro": {
+        "title": "词根 hab/hibit",
+        "description": "核心意境是 **“居住” (Dwell)**、**“拥有” (Have)** 或 **“保持” (Hold)**。\n住久了就成了习惯 (habit)。",
+        "imagery": "联想一所房子🏠，或者日常生活习惯。"
+      },
+      "words": [
+        {
+          "word": "Inhabit",
+          "rootVisual": "<rect x='6' y='8' width='12' height='12' stroke='currentColor' fill='none' /><circle cx='12' cy='14' r='2' fill='currentColor' />",
+          "breakdown": ["in- (入)", "habit (居)"],
+          "imagery": "在里面居住。",
+          "translation": "居住于；栖息于",
+          "sentences": []
+        },
+        {
+          "word": "Inhabitant",
+          "rootVisual": "<circle cx='12' cy='8' r='3' fill='currentColor' /><path d='M12 11 V 18 M 8 18 H 16' stroke='currentColor' />",
+          "breakdown": ["inhabit (居住)", "-ant (人)"],
+          "imagery": "居住者。",
+          "translation": "居民；住户",
+          "sentences": []
+        },
+        {
+          "word": "Habitation",
+          "rootVisual": "<path d='M2 20 H 22 M 4 20 V 10 L 12 4 L 20 10 V 20' stroke='currentColor' fill='none' />",
+          "breakdown": ["habit (居)", "-ation"],
+          "imagery": "居住的行为或场所。",
+          "translation": "居住；住所",
+          "sentences": []
+        },
+        {
+          "word": "Habit",
+          "rootVisual": "<path d='M12 4 V 20 M 8 12 H 16' stroke='currentColor' stroke-dasharray='4 2' />",
+          "breakdown": ["hab (拥有/保持)", "-it"],
+          "imagery": "长期保持的行为，即习惯。",
+          "translation": "习惯",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

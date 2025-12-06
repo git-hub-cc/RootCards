@@ -1,0 +1,32 @@
+{
+  "prefix": "auto",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "auto_self",
+      "displayName": "auto (自己)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none' /><path d='M6 20 C 6 12 18 12 18 20' stroke='currentColor' fill='none' />",
+      "prefixIntro": {
+        "title": "词根 auto-",
+        "description": "核心意境是 **“自己” (Self)**。\n表示自动、自身。",
+        "imagery": "联想一个人指着自己🙋‍♂️。"
+      },
+      "words": [
+        {
+          "word": "Autobiography",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><path d='M8 8 H16 M8 12 H16' stroke='currentColor' />",
+          "breakdown": ["auto (自己)", "bio (生命)", "graph (写)", "y"],
+          "imagery": "自己写自己的生平。",
+          "translation": "自传",
+          "sentences": [
+            {
+              "en": "Based on the autobiography of the famous writer.",
+              "cn": "基于那位著名作家的自传。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

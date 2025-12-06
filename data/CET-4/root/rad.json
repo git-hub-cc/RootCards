@@ -1,0 +1,71 @@
+{
+  "prefix": "rad",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "rad_root",
+      "displayName": "rad (根/射)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<path d='M12 12 l-4 8 M12 12 l4 8 M12 12 v-8' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -rad-/-root-",
+        "description": "核心意境是 **“根” (Root)** 或 **“辐射” (Radiate)**。\n源于 root。表示根基、半径或射线。",
+        "imagery": "联想树根扎入地下🌳，或者太阳光芒四射🌞。"
+      },
+      "words": [
+        {
+          "word": "Eradicate",
+          "rootVisual": "<path d='M12 16 L8 22 M12 16 L16 22' stroke='currentColor' opacity='0.3' /><path d='M4 4 L20 20 M20 4 L4 20' stroke='currentColor' stroke-width='2' color='#ef4444' />",
+          "breakdown": ["e- (出)", "rad (根)", "-icate"],
+          "imagery": "把根拔出来，根除。",
+          "translation": "根除；消灭",
+          "sentences": [
+            {
+              "en": "This problem has been eradicated.",
+              "cn": "这个问题已经被根除了。"
+            }
+          ]
+        },
+        {
+          "word": "Radiate",
+          "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor' color='#f59e0b' /><path d='M12 4 V 2 M 12 20 V 22 M 4 12 H 2 M 20 12 H 22' stroke='currentColor' />",
+          "breakdown": ["rad (射)", "-iate"],
+          "imagery": "像光线一样向外发散。",
+          "translation": "辐射；流露",
+          "sentences": [
+            {
+              "en": "A stove that radiates warmth.",
+              "cn": "散发温暖的炉子。"
+            }
+          ]
+        },
+        {
+          "word": "Radical",
+          "rootVisual": "<path d='M12 20 V 10' stroke='currentColor' stroke-width='2' /><circle cx='12' cy='20' r='2' fill='currentColor' />",
+          "breakdown": ["rad (根)", "-ical"],
+          "imagery": "从根部开始的，根本的；激进的（想从根上改变）。",
+          "translation": "根本的；激进的",
+          "sentences": [
+            {
+              "en": "Radical differences.",
+              "cn": "根本性的差异。"
+            }
+          ]
+        },
+        {
+          "word": "Radioactive",
+          "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor' /><path d='M12 8 L16 4 M12 8 L8 4 M16 16 L20 20' stroke='currentColor' stroke-width='2' />",
+          "breakdown": ["radio (辐射)", "active (活跃)"],
+          "imagery": "活跃地向外辐射能量。",
+          "translation": "放射性的",
+          "sentences": [
+            {
+              "en": "Radioactive particles.",
+              "cn": "放射性粒子。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "prefix": "fus",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "fus_pour",
+      "displayName": "fus (流/泻)",
+      "themeColor": "#0ea5e9",
+      "prefixVisual": "<path d='M12 4 V 16 Q 12 20 16 20' stroke='currentColor' stroke-width='2' fill='none' />",
+      "prefixIntro": {
+        "title": "词根 fus/fund",
+        "description": "核心意境是 **“流” (Flow)**、**“倾倒” (Pour)** 或 **“熔化” (Melt)**。\n表示液体流动或资金流动。",
+        "imagery": "联想倒水的动作🫗，或者资金流💸。"
+      },
+      "words": [
+        {
+          "word": "Refuse",
+          "rootVisual": "<path d='M12 12 L8 8' stroke='currentColor' marker-end='url(#arrow)' /><path d='M16 16 L12 12' stroke='currentColor' />",
+          "breakdown": ["re- (回)", "fuse (流)"],
+          "imagery": "流回去，不接受。",
+          "translation": "拒绝",
+          "sentences": []
+        },
+        {
+          "word": "Refute",
+          "rootVisual": "<path d='M4 18 L10 12 L4 6' stroke='currentColor' stroke-width='2' /><line x1='10' y1='12' x2='20' y2='12' stroke='currentColor' />",
+          "breakdown": ["re- (回)", "fute (流)"],
+          "imagery": "把观点打回去，驳斥。",
+          "translation": "驳斥；反驳",
+          "sentences": [
+            {
+              "en": "Refute some ideas.",
+              "cn": "驳斥一些观点。"
+            }
+          ]
+        },
+        {
+          "word": "Refund",
+          "rootVisual": "<path d='M16 8 L12 12 L16 16' stroke='currentColor' marker-end='url(#arrow)' /><text x='8' y='14' font-size='10' fill='currentColor'>$</text>",
+          "breakdown": ["re- (回)", "fund (资金)"],
+          "imagery": "资金流回。",
+          "translation": "退款",
+          "sentences": [
+            {
+              "en": "The shop refunded his money.",
+              "cn": "商店把钱退给了他。"
+            }
+          ]
+        },
+        {
+          "word": "Fund",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><text x='12' y='16' text-anchor='middle' font-size='12' fill='currentColor'>$</text>",
+          "breakdown": ["fund (资金)"],
+          "imagery": "资金储备。",
+          "translation": "资金；基金",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

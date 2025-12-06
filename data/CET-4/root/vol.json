@@ -1,0 +1,90 @@
+{
+  "prefix": "vol",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "vol_will",
+      "displayName": "vol (意愿)",
+      "themeColor": "#f97316",
+      "prefixVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M8 14 Q 12 18 16 14' stroke='currentColor' />",
+      "prefixIntro": {
+        "title": "词根 vol",
+        "description": "核心意境是 **“意愿” (Will)**。\n源于 volo (我愿意)。",
+        "imagery": "联想一颗心❤️，或者举手志愿者🙋‍♀️。"
+      },
+      "words": [
+        {
+          "word": "Volunteer",
+          "rootVisual": "<path d='M12 14 L 8 10 H 16 Z' fill='currentColor' /><circle cx='12' cy='6' r='2' stroke='currentColor' />",
+          "breakdown": ["vol (意愿)", "-unteer"],
+          "imagery": "自愿做的人。",
+          "translation": "志愿者；自愿",
+          "sentences": [
+            {
+              "en": "Relief work was done by volunteers.",
+              "cn": "救援工作由志愿者完成。"
+            }
+          ]
+        },
+        {
+          "word": "Voluntary",
+          "rootVisual": "<path d='M4 12 H 10' stroke='currentColor' marker-end='url(#arrow)' /><text x='16' y='14' font-size='10'>YES</text>",
+          "breakdown": ["vol (意愿)", "-untary"],
+          "imagery": "出于自愿的。",
+          "translation": "自愿的；志愿的",
+          "sentences": []
+        },
+        {
+          "word": "Benevolent",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 14 Q 12 18 16 14' stroke='currentColor' />",
+          "breakdown": ["bene (好)", "vol (意愿)", "-ent"],
+          "imagery": "心怀善意的。",
+          "translation": "仁慈的",
+          "sentences": []
+        }
+      ]
+    },
+    {
+      "meaningId": "vol_roll",
+      "displayName": "vol/volv (卷/转)",
+      "themeColor": "#0ea5e9",
+      "prefixVisual": "<path d='M12 4 a 8 8 0 1 1 0 16 a 8 8 0 1 1 0 -16' stroke='currentColor' fill='none' stroke-dasharray='4 2' />",
+      "prefixIntro": {
+        "title": "词根 vol/volv",
+        "description": "核心意境是 **“滚动” (Roll)** 或 **“旋转” (Turn)**。\n源于 volvere。",
+        "imagery": "联想卷轴📜，或者漩涡🌀。"
+      },
+      "words": [
+        {
+          "word": "Volume",
+          "rootVisual": "<path d='M4 20 V 4 H 20' stroke='currentColor' fill='none' /><path d='M4 20 L 20 4' stroke='currentColor' />",
+          "breakdown": ["vol (卷)", "-ume"],
+          "imagery": "古代书写在卷轴上（一卷书）；引申为容积、音量。",
+          "translation": "容积；音量；卷",
+          "sentences": [
+            {
+              "en": "Turn the volume up.",
+              "cn": "把音量调大。"
+            }
+          ]
+        },
+        {
+          "word": "Evolve",
+          "rootVisual": "<path d='M4 18 Q 12 6 20 12' stroke='currentColor' fill='none' marker-end='url(#arrow)' />",
+          "breakdown": ["e- (出)", "volv (转)"],
+          "imagery": "向外转出来，演变。",
+          "translation": "进化；发展",
+          "sentences": []
+        },
+        {
+          "word": "Revolve",
+          "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor' /><path d='M12 4 A 8 8 0 1 1 4 12' stroke='currentColor' fill='none' stroke-dasharray='4 2' />",
+          "breakdown": ["re- (再)", "volv (转)"],
+          "imagery": "围绕中心转。",
+          "translation": "旋转",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

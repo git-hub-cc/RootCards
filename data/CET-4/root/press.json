@@ -1,0 +1,40 @@
+{
+  "prefix": "press",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "press_squeeze",
+      "displayName": "press (压)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<rect x='4' y='14' width='16' height='4' fill='currentColor'/><path d='M12 4 v10' stroke='currentColor' stroke-width='4' marker-end='url(#arrow)'/>",
+      "prefixIntro": {
+        "title": "词根 -press-",
+        "description": "核心意境是 **“按压” (Squeeze/Push)**。\n表示施加压力、挤压。",
+        "imagery": "联想一只手用力按按钮🔴，或者被重物压住。"
+      },
+      "words": [
+        {
+          "word": "Suppress",
+          "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' /><path d='M12 4 V 12' stroke='currentColor' stroke-width='3' marker-end='url(#arrow)' />",
+          "breakdown": ["sup- (下)", "press (压)"],
+          "imagery": "向下压制，镇压。",
+          "translation": "镇压；压制",
+          "sentences": [
+            {
+              "en": "The rebellion was suppressed.",
+              "cn": "叛乱被镇压了。"
+            }
+          ]
+        },
+        {
+          "word": "Suppression",
+          "rootVisual": "<rect x='6' y='14' width='12' height='4' fill='currentColor' /><path d='M12 4 V 14' stroke='currentColor' stroke-width='2' />",
+          "breakdown": ["suppress", "-ion"],
+          "imagery": "镇压的行为。",
+          "translation": "镇压",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

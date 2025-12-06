@@ -1,0 +1,152 @@
+{
+  "prefix": "cept",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "cept_take",
+      "displayName": "cept/ceive (拿/抓)",
+      "themeColor": "#f97316",
+      "prefixVisual": "<path d='M16 8 l-4 4 l-4 -4' stroke='currentColor' stroke-width='2'/><path d='M8 12 h8 v4 h-8 z' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "词根 -cept-/-ceive-",
+        "description": "核心意境是 **“拿” (Take)** 或 **“抓” (Seize)**。\n源于字母 C 的象形含义（手抓）。",
+        "imagery": "联想一只手伸出去抓住东西✊。"
+      },
+      "words": [
+        {
+          "word": "Accept",
+          "rootVisual": "<path d='M4 12 h10 m-3 -3 l3 3 l-3 3' stroke='currentColor'/>",
+          "breakdown": ["ac- (去)", "cept (拿)"],
+          "imagery": "主动去拿，引申为心理上的接受。",
+          "translation": "接受",
+          "sentences": [
+            {
+              "en": "She didn't accept me.",
+              "cn": "她没有接受我。"
+            }
+          ]
+        },
+        {
+          "word": "Receive",
+          "rootVisual": "<path d='M20 12 h-10 m3 -3 l-3 3 l3 3' stroke='currentColor'/>",
+          "breakdown": ["re- (回)", "ceive (拿)"],
+          "imagery": "拿回来，客观上的收到。",
+          "translation": "收到",
+          "sentences": [
+            {
+              "en": "I received the package.",
+              "cn": "我收到了包裹。"
+            }
+          ]
+        },
+        {
+          "word": "Except",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='18' cy='4' r='3' fill='currentColor' />",
+          "breakdown": ["ex- (向外)", "cept (拿)"],
+          "imagery": "拿到外面去，排除在外。",
+          "translation": "除了",
+          "sentences": [
+            {
+              "en": "Everyone passed the exam except me.",
+              "cn": "除了我，大家都通过了考试。"
+            }
+          ]
+        },
+        {
+          "word": "Exception",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='20' cy='4' r='2' fill='currentColor' color='#ef4444' />",
+          "breakdown": ["ex- (外)", "cept (拿)", "-ion"],
+          "imagery": "被拿出去的那个特例。",
+          "translation": "例外",
+          "sentences": [
+            {
+              "en": "There are exceptions to every rule.",
+              "cn": "每条规则都有例外。"
+            }
+          ]
+        },
+        {
+          "word": "Concept",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["con- (全部)", "cept (拿)"],
+          "imagery": "把所有特征都拿过来，抽象概括出的想法。",
+          "translation": "概念",
+          "sentences": []
+        },
+        {
+          "word": "Conceive",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><circle cx='12' cy='12' r='3' fill='currentColor' />",
+          "breakdown": ["con- (全/共)", "ceive (拿)"],
+          "imagery": "把想法全拿过来（构想）；把生命拿进体内（怀孕）。",
+          "translation": "构想；怀孕",
+          "sentences": [
+            {
+              "en": "She is unable to conceive.",
+              "cn": "她无法怀孕。"
+            }
+          ]
+        },
+        {
+          "word": "Deceive",
+          "rootVisual": "<path d='M12 4 v16' stroke='currentColor'/><path d='M8 16 l4 4 l4 -4' stroke='currentColor'/>",
+          "breakdown": ["de- (向下)", "ceive (拿)"],
+          "imagery": "把人拿到下面去，使其看不到真相。",
+          "translation": "欺骗",
+          "sentences": [
+            {
+              "en": "Those who are willing to believe are easy to deceive.",
+              "cn": "那些愿意相信的人容易被欺骗。"
+            }
+          ]
+        },
+        {
+          "word": "Perceive",
+          "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' stroke-dasharray='2 2' /><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' />",
+          "breakdown": ["per- (穿过)", "ceive (拿)"],
+          "imagery": "透过现象拿到本质，洞察。",
+          "translation": "察觉；理解；感知",
+          "sentences": []
+        },
+        {
+          "word": "Intercept",
+          "rootVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' stroke-dasharray='4 2'/><rect x='10' y='10' width='4' height='4' fill='currentColor'/>",
+          "breakdown": ["inter- (中间)", "cept (拿)"],
+          "imagery": "在中间拿下来，即拦截。",
+          "translation": "拦截",
+          "sentences": [
+            {
+              "en": "The missile was intercepted.",
+              "cn": "导弹被拦截了。"
+            }
+          ]
+        },
+        {
+          "word": "Susceptible",
+          "rootVisual": "<path d='M12 4 V 16' stroke='currentColor' marker-end='url(#arrow)' /><path d='M8 20 H 16' stroke='currentColor' />",
+          "breakdown": ["sus- (下)", "cept (拿)", "-ible"],
+          "imagery": "容易被拿到下面的，易受影响的。",
+          "translation": "易受影响的",
+          "sentences": [
+            {
+              "en": "Be susceptible to colds.",
+              "cn": "易患感冒。"
+            }
+          ]
+        },
+        {
+          "word": "Excerpt",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' /><path d='M6 8 H 18 M 6 12 H 12' stroke='currentColor' stroke-dasharray='2 2' /><rect x='6' y='8' width='12' height='4' fill='currentColor' opacity='0.3' />",
+          "breakdown": ["ex- (出)", "cerpt (拿)"],
+          "imagery": "从文章中拿出来的一段。",
+          "translation": "摘录；节选",
+          "sentences": [
+            {
+              "en": "An excerpt of his speech.",
+              "cn": "他演讲的节选。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

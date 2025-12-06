@@ -1,0 +1,127 @@
+{
+  "prefix": "du",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "du_two",
+      "displayName": "du/bi/di (二)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<circle cx='8' cy='12' r='4' fill='currentColor'/><circle cx='16' cy='12' r='4' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 du/bi/di",
+        "description": "核心意境是 **“二” (Two)** 或 **“双” (Double)**。\n表示成对、两倍或分开。",
+        "imagery": "联想数字 2，或者一对双胞胎👯。"
+      },
+      "words": [
+        {
+          "word": "Double",
+          "rootVisual": "<circle cx='8' cy='12' r='4'/><circle cx='16' cy='12' r='4'/>",
+          "breakdown": ["dou (二)", "-ble (倍)"],
+          "imagery": "两个一样的东西。",
+          "translation": "双倍的",
+          "sentences": []
+        },
+        {
+          "word": "Dual",
+          "rootVisual": "<path d='M8 4 v16' stroke='currentColor'/><path d='M16 4 v16' stroke='currentColor'/>",
+          "breakdown": ["du (二)", "-al (形)"],
+          "imagery": "具有双重性质的。",
+          "translation": "双重的",
+          "sentences": [
+            {
+              "en": "He has dual nationalities.",
+              "cn": "他有双重国籍。"
+            }
+          ]
+        },
+        {
+          "word": "Doubt",
+          "rootVisual": "<path d='M4 18 l8 -14 l8 14' stroke='currentColor' fill='none'/><path d='M12 18 v-6' stroke='currentColor'/>",
+          "breakdown": ["dou (二)", "bt"],
+          "imagery": "有二心，在两者之间摇摆不定。",
+          "translation": "怀疑",
+          "sentences": [
+            {
+              "en": "There is no doubt.",
+              "cn": "毫无疑问。"
+            }
+          ]
+        },
+        {
+          "word": "Duplicate",
+          "rootVisual": "<rect x='6' y='6' width='10' height='12' stroke='currentColor' fill='none' /><rect x='9' y='9' width='10' height='12' stroke='currentColor' fill='none' stroke-dasharray='2 2' />",
+          "breakdown": ["du (二)", "plic (折叠)", "-ate"],
+          "imagery": "折叠一下变两个，复制。",
+          "translation": "复制；副本",
+          "sentences": []
+        },
+        {
+          "word": "Duet",
+          "rootVisual": "<text x='8' y='16' font-size='12'>🎵</text><text x='16' y='16' font-size='12'>🎵</text>",
+          "breakdown": ["du (二)", "-et (小)"],
+          "imagery": "两个人一起唱。",
+          "translation": "二重唱",
+          "sentences": []
+        },
+        {
+          "word": "Dilemma",
+          "rootVisual": "<path d='M12 12 L6 4 M12 12 L18 4' stroke='currentColor' /><text x='12' y='20' text-anchor='middle'>?</text>",
+          "breakdown": ["di (二)", "lemma (争论)"],
+          "imagery": "面临两个争论点，进退两难。",
+          "translation": "困境；进退两难",
+          "sentences": []
+        },
+        {
+          "word": "Divorce",
+          "rootVisual": "<path d='M12 12 L6 20 M12 12 L18 20' stroke='currentColor' stroke-dasharray='2 2' /><path d='M12 4 V 12' stroke='currentColor' />",
+          "breakdown": ["di (分)", "vorce (转)"],
+          "imagery": "两个人转向不同的方向。",
+          "translation": "离婚",
+          "sentences": [
+            {
+              "en": "One in three marriages ends in divorce.",
+              "cn": "三分之一的婚姻以离婚告终。"
+            }
+          ]
+        },
+        {
+          "word": "Dilute",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><circle cx='12' cy='12' r='2' fill='currentColor' opacity='0.3' />",
+          "breakdown": ["di (分)", "lute (冲洗)"],
+          "imagery": "冲散，使变淡。",
+          "translation": "稀释；冲淡",
+          "sentences": []
+        },
+        {
+          "word": "Bicycle",
+          "rootVisual": "<circle cx='6' cy='16' r='4' stroke='currentColor' fill='none' /><circle cx='18' cy='16' r='4' stroke='currentColor' fill='none' /><path d='M6 16 L12 8 L18 16' stroke='currentColor' />",
+          "breakdown": ["bi (二)", "cycle (轮/圈)"],
+          "imagery": "两个轮子的车。",
+          "translation": "自行车",
+          "sentences": []
+        },
+        {
+          "word": "Bilingual",
+          "rootVisual": "<text x='6' y='14' font-size='10'>A</text><text x='18' y='14' font-size='10'>文</text>",
+          "breakdown": ["bi (二)", "lingu (舌/语言)", "-al"],
+          "imagery": "会两种语言的。",
+          "translation": "双语的",
+          "sentences": []
+        },
+        {
+          "word": "Dubious",
+          "rootVisual": "<text x='12' y='16' text-anchor='middle' font-size='14'>??</text>",
+          "breakdown": ["du (二)", "-bious"],
+          "imagery": "有两种可能性，不确定。",
+          "translation": "可疑的；不确定的",
+          "sentences": [
+            {
+              "en": "The story seemed a bit dubious.",
+              "cn": "这个故事看起来有点可疑。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

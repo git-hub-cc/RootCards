@@ -1,0 +1,32 @@
+{
+  "prefix": "sat",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "sat_full",
+      "displayName": "sat (满/足)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<path d='M4 16 H 20 V 20 H 4 Z' stroke='currentColor' fill='none' /><rect x='4' y='10' width='16' height='6' fill='currentColor' opacity='0.6' />",
+      "prefixIntro": {
+        "title": "词根 sat",
+        "description": "核心意境是 **“满” (Full)** 或 **“足够” (Enough)**。\n源于 satis (足够)。",
+        "imagery": "联想一个装满水的杯子🥛。"
+      },
+      "words": [
+        {
+          "word": "Saturate",
+          "rootVisual": "<rect x='6' y='8' width='12' height='12' stroke='currentColor' fill='none' /><path d='M6 18 H 18' stroke='currentColor' stroke-width='4' color='#3b82f6' />",
+          "breakdown": ["sat (满)", "-urate"],
+          "imagery": "使充满水分，浸透。",
+          "translation": "浸透；使饱和",
+          "sentences": [
+            {
+              "en": "The rain had saturated the soil.",
+              "cn": "雨水浸透了土壤。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 // =================================================================================
-// 通用 UI 渲染模块 (Generic UI Rendering Module) - v14.3 (新增例句焦点模式)
+// 通用 UI 渲染模块 (Generic UI Rendering Module) - v14.4 (统一阶段标识符)
 // ---------------------------------------------------------------------------------
 // =================================================================================
 
@@ -39,7 +39,6 @@ export function init() {
         return false;
     }
 
-    // 预加载 UI 音效
     for (const [key, path] of Object.entries(UI_SOUND_PATHS)) {
         try {
             const audio = new Audio(path);
@@ -58,7 +57,6 @@ export function init() {
 
 /**
  * 移动端布局适配逻辑
- * 将工具栏按钮从顶部移动到底部固定栏
  */
 function initMobileLayout() {
     const isMobile = window.innerWidth <= 768;
@@ -142,16 +140,16 @@ export function stopAudio() {
 
 export function renderGradeButtons(container, grades) {
     container.innerHTML = '';
-    // 【核心修改】更新 gradeMap 以包含对 'grade7' (初中) 的中文显示
+    // 【修改】更新 gradeMap 以使用 'middle' 标识符
     const gradeMap = {
-        'grade7': '初中',
-        'high': '高中'
+        'middle': '初中',
+        'high': '高中',
+        'CET-4': 'CET-4'
     };
     ['all', ...grades].forEach(gradeId => {
         const button = document.createElement('button');
         button.className = 'grade-filter-btn';
         button.dataset.grade = gradeId;
-        // 使用 gradeMap 查找显示文本，如果找不到则使用 gradeId 作为备用
         button.textContent = gradeMap[gradeId] || (gradeId === 'all' ? '全部阶段' : gradeId);
         container.appendChild(button);
     });
@@ -282,36 +280,29 @@ function createWordCard(data, handlers) {
         });
     }
 
-    // --- 【新增】例句焦点模式交互逻辑 ---
-    // 1. 动态创建并预置关闭按钮，默认隐藏
     const closeFocusBtn = document.createElement('button');
     closeFocusBtn.className = 'close-focus-btn';
-    closeFocusBtn.innerHTML = '&times;'; // 使用 HTML 实体叉号
+    closeFocusBtn.innerHTML = '&times;';
     closeFocusBtn.title = '关闭焦点模式';
-    sentenceSection.prepend(closeFocusBtn); // 将按钮添加到容器顶部
+    sentenceSection.prepend(closeFocusBtn);
 
-    // 2. 使用 requestAnimationFrame 确保在下一帧检查尺寸，此时 DOM 已完全渲染
     requestAnimationFrame(() => {
         const isScrollable = sentenceSection.scrollHeight > sentenceSection.clientHeight;
 
-        // 3. 只有当内容确实溢出时，才启用焦点模式功能
         if (isScrollable) {
-            let isExpanded = false; // 为每个卡片实例创建独立的状态变量
+            let isExpanded = false;
 
-            // 动态添加滚动提示，增强可发现性
             const hint = document.createElement('div');
             hint.className = 'scroll-hint';
             sentenceSection.appendChild(hint);
 
-            // 封装进入和退出逻辑，提高代码可读性
             const enterFocusMode = () => {
                 if (isExpanded) return;
                 isExpanded = true;
                 card.classList.add('sentence-focus-active');
                 sentenceSection.classList.add('is-expanded');
-                // 自动将滚动条置顶，方便从头阅读
                 sentenceSection.scrollTop = 0;
-                hint.style.display = 'none'; // 展开后隐藏滚动提示
+                hint.style.display = 'none';
             };
 
             const exitFocusMode = () => {
@@ -319,26 +310,21 @@ function createWordCard(data, handlers) {
                 isExpanded = false;
                 card.classList.remove('sentence-focus-active');
                 sentenceSection.classList.remove('is-expanded');
-                hint.style.display = 'flex'; // 恢复滚动提示
+                hint.style.display = 'flex';
             };
 
-            // 4. 监听滚动事件以触发焦点模式
             sentenceSection.addEventListener('scroll', () => {
-                // 当用户向下滚动超过一个微小阈值 (10px) 时，自动进入焦点模式
                 if (!isExpanded && sentenceSection.scrollTop > 10) {
                     enterFocusMode();
                 }
-            }, { passive: true }); // 使用 passive 提升滚动性能
+            }, { passive: true });
 
-            // 5. 为关闭按钮绑定点击事件以退出焦点模式
             closeFocusBtn.addEventListener('click', (e) => {
-                e.stopPropagation(); // 关键：防止事件冒泡到卡片上导致翻转
+                e.stopPropagation();
                 exitFocusMode();
             });
         }
     });
-    // --- 【新增】例句焦点模式逻辑结束 ---
-
 
     addCardInteraction(card);
 

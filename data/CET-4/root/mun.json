@@ -1,0 +1,66 @@
+{
+  "prefix": "mun",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "mun_service",
+      "displayName": "mun (公共/服务)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<circle cx='8' cy='10' r='3' fill='currentColor' /><circle cx='16' cy='10' r='3' fill='currentColor' /><path d='M8 14 Q 12 20 16 14' stroke='currentColor' fill='none' />",
+      "prefixIntro": {
+        "title": "词根 mun",
+        "description": "核心意境是 **“公共” (Common)** 或 **“服务” (Service)**。\n源于 munus (职责、礼物)。",
+        "imagery": "联想一群人手拉手🤝，或者市政厅🏛️。"
+      },
+      "words": [
+        {
+          "word": "Municipal",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none' /><path d='M12 8 V 4 L 16 2 L 8 2 L 12 4' fill='currentColor' />",
+          "breakdown": ["muni (公共)", "cip (拿)", "-al"],
+          "imagery": "承担公共职责的，市政的。",
+          "translation": "市政的；市的",
+          "sentences": [
+            {
+              "en": "Municipal project.",
+              "cn": "市政工程。"
+            }
+          ]
+        },
+        {
+          "word": "Immune",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 12 L16 12 M 16 12 L 14 10 M 16 12 L 14 14' stroke='currentColor' stroke-width='2' />",
+          "breakdown": ["im- (不)", "mune (公共/服务)"],
+          "imagery": "免除公共义务的；免除（病毒）的。",
+          "translation": "免疫的；免除的",
+          "sentences": [
+            {
+              "en": "Be immune to colds.",
+              "cn": "对感冒免疫。"
+            }
+          ]
+        },
+        {
+          "word": "Community",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='4 2' /><circle cx='8' cy='12' r='2' fill='currentColor' /><circle cx='16' cy='12' r='2' fill='currentColor' />",
+          "breakdown": ["com- (共)", "mun (公共)", "-ity"],
+          "imagery": "大家共同生活的地方。",
+          "translation": "社区；社会",
+          "sentences": []
+        },
+        {
+          "word": "Mutual",
+          "rootVisual": "<path d='M6 12 L18 12' stroke='currentColor' marker-end='url(#arrow)' marker-start='url(#arrow)' />",
+          "breakdown": ["mut (交换)", "-ual"],
+          "imagery": "相互交换的，共同的。",
+          "translation": "相互的；共同的",
+          "sentences": [
+            {
+              "en": "Mutual interest.",
+              "cn": "共同的兴趣。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

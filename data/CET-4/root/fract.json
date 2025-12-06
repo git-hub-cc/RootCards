@@ -1,0 +1,66 @@
+{
+  "prefix": "fract",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "fract_break",
+      "displayName": "fract/frag (破)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M4 12 L10 8 L14 16 L20 12' stroke='currentColor' stroke-width='2' />",
+      "prefixIntro": {
+        "title": "词根 fract/frag",
+        "description": "核心意境是 **“打破” (Break)**。\n表示破裂、碎片。",
+        "imagery": "联想破碎的玻璃🪟，或者裂缝⚡。"
+      },
+      "words": [
+        {
+          "word": "Break",
+          "rootVisual": "<path d='M4 12 L10 4 M14 20 L20 12' stroke='currentColor' stroke-width='2' />",
+          "breakdown": ["break (破)"],
+          "imagery": "打破。",
+          "translation": "打破",
+          "sentences": []
+        },
+        {
+          "word": "Fraction",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M12 12 L12 4' stroke='currentColor' /><path d='M12 12 L20 12' stroke='currentColor' />",
+          "breakdown": ["fract (破)", "-ion"],
+          "imagery": "打破后的一小部分。",
+          "translation": "部分；分数",
+          "sentences": [
+            {
+              "en": "At a fraction of the cost.",
+              "cn": "以极小的成本。"
+            }
+          ]
+        },
+        {
+          "word": "Fracture",
+          "rootVisual": "<rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none' /><path d='M8 12 L16 14' stroke='currentColor' />",
+          "breakdown": ["fract (破)", "-ure"],
+          "imagery": "骨头折断。",
+          "translation": "骨折；断裂",
+          "sentences": [
+            {
+              "en": "His wrist has fractured.",
+              "cn": "他的手腕骨折了。"
+            }
+          ]
+        },
+        {
+          "word": "Friction",
+          "rootVisual": "<path d='M4 10 L20 10 M4 14 L20 14' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["fric (摩擦)", "-tion"],
+          "imagery": "摩擦（导致破损），引申为矛盾。",
+          "translation": "摩擦；矛盾",
+          "sentences": [
+            {
+              "en": "Reduce the friction.",
+              "cn": "减少摩擦。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

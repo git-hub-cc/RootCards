@@ -1,0 +1,58 @@
+{
+  "prefix": "sequ",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "sequ_follow",
+      "displayName": "sequ/secu (跟随)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M8 12 h2 M14 12 h2' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -sequ-/-secu-",
+        "description": "核心意境是 **“跟随” (Follow)**。\n表示顺序、结果或追随。",
+        "imagery": "联想一排排队的小鸭子🦆，或者多米诺骨牌。"
+      },
+      "words": [
+        {
+          "word": "Consecutive",
+          "rootVisual": "<rect x='2' y='10' width='4' height='4' fill='currentColor' /><rect x='8' y='10' width='4' height='4' fill='currentColor' /><rect x='14' y='10' width='4' height='4' fill='currentColor' /><rect x='20' y='10' width='4' height='4' fill='currentColor' />",
+          "breakdown": ["con- (共)", "secu (随)", "-tive"],
+          "imagery": "一个接一个跟着来的，连续的。",
+          "translation": "连续的；连贯的",
+          "sentences": [
+            {
+              "en": "For five consecutive days.",
+              "cn": "连续五天。"
+            }
+          ]
+        },
+        {
+          "word": "Sequence",
+          "rootVisual": "<text x='4' y='14' font-size='10'>1</text><text x='10' y='14' font-size='10'>2</text><text x='16' y='14' font-size='10'>3</text>",
+          "breakdown": ["sequ (跟随)", "-ence"],
+          "imagery": "跟随的次序。",
+          "translation": "顺序；次序",
+          "sentences": [
+            {
+              "en": "The sequence of events.",
+              "cn": "事件的顺序。"
+            }
+          ]
+        },
+        {
+          "word": "Subsequent",
+          "rootVisual": "<circle cx='6' cy='12' r='2' stroke='currentColor' fill='none' /><path d='M10 12 H 14' stroke='currentColor' marker-end='url(#arrow)' /><circle cx='18' cy='12' r='2' fill='currentColor' />",
+          "breakdown": ["sub- (后)", "sequ (随)", "-ent"],
+          "imagery": "在后面跟着的，随后的。",
+          "translation": "随后的；后来的",
+          "sentences": [
+            {
+              "en": "Subsequent investigations.",
+              "cn": "随后的调查。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

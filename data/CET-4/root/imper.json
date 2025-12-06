@@ -1,0 +1,61 @@
+{
+  "prefix": "imper",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "imper_command",
+      "displayName": "imper (命令/帝)",
+      "themeColor": "#78350f",
+      "prefixVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none' /><path d='M8 4 L16 4 L12 2 Z' fill='currentColor' color='#f59e0b' />",
+      "prefixIntro": {
+        "title": "词根 imper",
+        "description": "核心意境是 **“命令” (Command)** 或 **“统治” (Rule)**。\n源于拉丁语 imperare。",
+        "imagery": "联想皇冠👑，或者发号施令的权杖。"
+      },
+      "words": [
+        {
+          "word": "Empire",
+          "rootVisual": "<rect x='4' y='12' width='16' height='8' stroke='currentColor' fill='none' /><path d='M4 12 L12 6 L20 12' stroke='currentColor' />",
+          "breakdown": ["em- (in)", "pire (权/命令)"],
+          "imagery": "拥有统治权的领土。",
+          "translation": "帝国",
+          "sentences": []
+        },
+        {
+          "word": "Emperor",
+          "rootVisual": "<circle cx='12' cy='8' r='4' fill='currentColor' /><path d='M8 20 L16 20' stroke='currentColor' stroke-width='3' />",
+          "breakdown": ["emperor (皇帝)"],
+          "imagery": "帝国的统治者。",
+          "translation": "皇帝",
+          "sentences": []
+        },
+        {
+          "word": "Imperial",
+          "rootVisual": "<path d='M12 4 V 20 M 8 8 H 16' stroke='currentColor' />",
+          "breakdown": ["imper (帝)", "-ial"],
+          "imagery": "属于皇帝或帝国的。",
+          "translation": "帝国的；皇帝的",
+          "sentences": [
+            {
+              "en": "Imperial expansion.",
+              "cn": "帝国扩张。"
+            }
+          ]
+        },
+        {
+          "word": "Imperative",
+          "rootVisual": "<text x='12' y='16' text-anchor='middle' font-size='16' fill='currentColor'>!</text>",
+          "breakdown": ["imper (命令)", "-ative"],
+          "imagery": "像命令一样紧急且重要的。",
+          "translation": "紧急的；必要的；命令",
+          "sentences": [
+            {
+              "en": "It is imperative to act now.",
+              "cn": "现在采取行动是当务之急。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

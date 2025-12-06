@@ -1,0 +1,675 @@
+{
+  "prefix": "Vocab A-D",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_a",
+      "displayName": "Vocabulary A",
+      "themeColor": "#6366f1",
+      "prefixIntro": {
+        "title": "A 开头核心词",
+        "description": "大学四级 A 开头的高频混合词汇。",
+        "imagery": "字母 A 像一座山峰，代表起点和高度。"
+      },
+      "words": [
+        {
+          "word": "abandon",
+          "rootVisual": "<path d='M4 20h4l-2-6zm12 0h4l-2-6z' stroke='currentColor' fill='none'/><path d='M12 4l-4 12h8z' stroke='currentColor' fill='none'/><text x='12' y='18' text-anchor='middle' font-size='8' fill='currentColor'>X</text>",
+          "breakdown": ["a-", "(否定/去)", "band", "(控制/绑)"],
+          "imagery": "不再控制，松绑扔掉 -> 放弃。谐音记忆：一个笨蛋(abandon)所以被放弃。",
+          "translation": "放弃",
+          "sentences": [{"en": "They abandoned the sinking ship.", "cn": "他们放弃了沉船。"}]
+        },
+        {
+          "word": "abolish",
+          "rootVisual": "<path d='M4 18l16-16M4 2l16 16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["ab-", "(远离)", "olish", "(生长)"],
+          "imagery": "使停止生长，废止制度。谐音：遏(a)不(bo)利(lish) -> 废除。",
+          "translation": "废除；废止",
+          "sentences": [{"en": "Slavery was abolished in the US.", "cn": "美国废除了奴隶制。"}]
+        },
+        {
+          "word": "abortion",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><path d='M8 12h8' stroke='currentColor'/>",
+          "breakdown": ["ab-", "(否定)", "ort", "(升起/诞生)"],
+          "imagery": "未能诞生，流产。",
+          "translation": "流产；堕胎",
+          "sentences": [{"en": "They are opposed to abortion.", "cn": "他们反对堕胎。"}]
+        },
+        {
+          "word": "academy",
+          "rootVisual": "<path d='M2 12l10-10 10 10v10h-20z' stroke='currentColor' fill='none'/><rect x='8' y='14' width='8' height='8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["academy", "(柏拉图讲学地)"],
+          "imagery": "学术殿堂。谐音：开导我(academy)的地方 -> 学院。",
+          "translation": "学院；研究院",
+          "sentences": [{"en": "An academic success.", "cn": "学术上的成功。"}]
+        },
+        {
+          "word": "admire",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M7 9l5 5 5-5' stroke='currentColor' fill='none'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='9' r='1' fill='currentColor'/>",
+          "breakdown": ["ad-", "(去)", "mire", "(惊奇)"],
+          "imagery": "看着感到惊奇和赞叹。谐音：我的妈呀(admire) -> 钦佩。",
+          "translation": "钦佩；赞赏",
+          "sentences": [{"en": "I admire your courage.", "cn": "我钦佩你的勇气。"}]
+        },
+        {
+          "word": "ambulance",
+          "rootVisual": "<rect x='2' y='6' width='20' height='10' stroke='currentColor' fill='none'/><circle cx='6' cy='16' r='2' stroke='currentColor'/><circle cx='18' cy='16' r='2' stroke='currentColor'/><path d='M10 9h4v4h-4z' fill='currentColor'/>",
+          "breakdown": ["ambul", "(走)", "-ance"],
+          "imagery": "谐音：俺不能死(ambulance) -> 救护车。",
+          "translation": "救护车",
+          "sentences": [{"en": "The ambulance sped to the hospital.", "cn": "救护车疾驰向医院。"}]
+        },
+        {
+          "word": "ambition",
+          "rootVisual": "<path d='M2 20 l10 -18 l10 18' stroke='currentColor' fill='none'/><circle cx='12' cy='2' r='2' fill='currentColor' opacity='0.5'/>",
+          "breakdown": ["amb", "(走)", "it", "(走)", "ion"],
+          "imagery": "四处走动去拉选票 -> 野心，雄心壮志。",
+          "translation": "雄心壮志；野心",
+          "sentences": [{"en": "He has the ambition to be a pilot.", "cn": "他有当飞行员的雄心壮志。"}]
+        },
+        {
+          "word": "Arrogant",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 16 Q 12 12 16 16' stroke='currentColor' />",
+          "breakdown": ["ar- (加强)", "rog (问/要求)"],
+          "imagery": "像狗一样狂吠（ro-ro），指手画脚，傲慢。",
+          "translation": "傲慢的；自大的",
+          "sentences": [
+            {
+              "en": "An arrogant guy.",
+              "cn": "一个傲慢的家伙。"
+            }
+          ]
+        },
+        {
+          "word": "Assassinate",
+          "rootVisual": "<path d='M12 4 L8 20 H16 Z' fill='currentColor' color='#000' />",
+          "breakdown": ["ass-ass-in-ate"],
+          "imagery": "（趣味记忆）从屁股(ass)后面进入(in)动手，暗杀。",
+          "translation": "暗杀",
+          "sentences": [
+            {
+              "en": "The assassination of the president.",
+              "cn": "总统遇刺。"
+            }
+          ]
+        },
+        {
+          "word": "Auxiliary",
+          "rootVisual": "<rect x='6' y='8' width='12' height='8' stroke='currentColor' fill='none' /><text x='12' y='14' font-size='8' text-anchor='middle'>AUX</text>",
+          "breakdown": ["aux (增加)", "-iliary"],
+          "imagery": "（联想）AUX空调是家庭的辅助设备。",
+          "translation": "辅助的；备用的",
+          "sentences": []
+        },
+        {
+          "word": "Absurd",
+          "rootVisual": "<text x='12' y='16' font-size='16' text-anchor='middle'>🤪</text>",
+          "breakdown": ["ab- (离)", "surd (合理的)"],
+          "imagery": "远离合理的，荒谬的。",
+          "translation": "荒谬的；可笑的",
+          "sentences": []
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_b",
+      "displayName": "Vocabulary B",
+      "themeColor": "#3b82f6",
+      "prefixIntro": {
+        "title": "B 开头核心词",
+        "description": "大学四级 B 开头的高频混合词汇。B 字母常有“板、棒、鼓起”的象形含义。",
+        "imagery": "字母 B 像一个孕妇或两块木板。"
+      },
+      "words": [
+        {
+          "word": "ballet",
+          "rootVisual": "<path d='M12 14l-4 8M12 14l4 8M12 14v-6' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' stroke='currentColor'/>",
+          "breakdown": ["ballet", "(音译)"],
+          "imagery": "脚尖点地跳舞。谐音：芭蕾。",
+          "translation": "芭蕾舞",
+          "sentences": [{"en": "The ballet dancer is graceful.", "cn": "芭蕾舞者很优雅。"}]
+        },
+        {
+          "word": "beard",
+          "rootVisual": "<path d='M8 12q4 4 8 0v4q-4 4-8 0z' fill='currentColor' opacity='0.6'/><circle cx='12' cy='10' r='6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["beard", "(胡须)"],
+          "imagery": "下巴上的一丛毛，指络腮胡。",
+          "translation": "胡须 (络腮胡)",
+          "sentences": [{"en": "Santa Claus has a white beard.", "cn": "圣诞老人有白胡子。"}]
+        },
+        {
+          "word": "bid",
+          "rootVisual": "<rect x='8' y='4' width='8' height='10' stroke='currentColor' fill='none'/><line x1='12' y1='14' x2='12' y2='20' stroke='currentColor'/>",
+          "breakdown": ["bid", "(叫价)"],
+          "imagery": "拍卖会上举起的牌子。",
+          "translation": "出价；投标",
+          "sentences": [{"en": "I bid $100 for the painting.", "cn": "我出价100美元买这幅画。"}]
+        },
+        {
+          "word": "bomb",
+          "rootVisual": "<circle cx='12' cy='14' r='6' fill='currentColor'/><path d='M12 8v-4' stroke='currentColor'/><path d='M10 2l2 2 2-2' stroke='currentColor'/>",
+          "breakdown": ["bomb", "(拟声)"],
+          "imagery": "爆炸的声音 BOOM！",
+          "translation": "炸弹；爆炸",
+          "sentences": [{"en": "The bomb exploded.", "cn": "炸弹爆炸了。"}]
+        },
+        {
+          "word": "Boom",
+          "rootVisual": "<path d='M4 18 L8 12 L12 16 L16 8 L20 14' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)' />",
+          "breakdown": ["boom (拟声)"],
+          "imagery": "轰鸣声；经济起飞的声音。",
+          "translation": "繁荣；轰鸣",
+          "sentences": [
+            {
+              "en": "The boom has created jobs.",
+              "cn": "繁荣创造了就业机会。"
+            }
+          ]
+        },
+        {
+          "word": "Bud",
+          "rootVisual": "<path d='M12 20 V 10' stroke='currentColor' /><circle cx='10' cy='8' r='3' fill='currentColor' color='#10b981' /><circle cx='14' cy='8' r='3' fill='currentColor' color='#10b981' />",
+          "breakdown": ["bud (花蕾)"],
+          "imagery": "像字母 b-u-d 的形状（花苞）。",
+          "translation": "芽；发芽",
+          "sentences": [
+            {
+              "en": "Began to bud.",
+              "cn": "开始发芽。"
+            }
+          ]
+        },
+        {
+          "word": "burst",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' stroke-dasharray='2 2'/><path d='M12 12l6 6M12 12l-6-6M12 12l6-6M12 12l-6 6' stroke='currentColor'/>",
+          "breakdown": ["burst", "(拟声)"],
+          "imagery": "东西炸裂的声音。",
+          "translation": "爆裂；爆发",
+          "sentences": [{"en": "She burst into tears.", "cn": "她突然大哭起来。"}]
+        },
+        {
+          "word": "Breakdown",
+          "rootVisual": "<path d='M12 4 L12 12 M4 20 L20 20' stroke='currentColor' /><path d='M12 12 L8 20 M12 12 L16 20' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["break (破)", "down (下)"],
+          "imagery": "向下碎裂，崩溃。",
+          "translation": "崩溃；故障；分解",
+          "sentences": [
+            {
+              "en": "The breakdown of his marriage.",
+              "cn": "他婚姻的破裂。"
+            }
+          ]
+        },
+        {
+          "word": "Bypass",
+          "rootVisual": "<rect x='8' y='8' width='8' height='8' fill='currentColor' /><path d='M4 12 Q 4 4 12 4 T 20 12' stroke='currentColor' fill='none' marker-end='url(#arrow)' />",
+          "breakdown": ["by (旁)", "pass (过)"],
+          "imagery": "从旁边经过，绕过。",
+          "translation": "绕过；避开",
+          "sentences": [
+            {
+              "en": "Bypassed the entrance.",
+              "cn": "绕过入口。"
+            }
+          ]
+        },
+        {
+          "word": "Bass",
+          "rootVisual": "<path d='M8 4 Q 4 12 8 20 Q 12 12 16 20 Q 20 12 16 4' stroke='currentColor' fill='none' />",
+          "breakdown": ["bass (低)"],
+          "imagery": "低音乐器。",
+          "translation": "贝斯；低音",
+          "sentences": []
+        },
+        {
+          "word": "Beam",
+          "rootVisual": "<rect x='2' y='10' width='20' height='4' fill='currentColor' />",
+          "breakdown": ["beam (木)"],
+          "imagery": "像房梁一样直的光束。",
+          "translation": "光束；房梁",
+          "sentences": [
+            {
+              "en": "A beam of flashlight.",
+              "cn": "一束手电筒光。"
+            }
+          ]
+        },
+        {
+          "word": "Blink",
+          "rootVisual": "<path d='M4 12 Q 12 4 20 12' stroke='currentColor' fill='none' /><path d='M12 12 V 16' stroke='currentColor' />",
+          "breakdown": ["blink (拟声)"],
+          "imagery": "眨眼的声音/动作。",
+          "translation": "眨眼；闪烁",
+          "sentences": [
+            {
+              "en": "Blinking her eyes.",
+              "cn": "眨眼睛。"
+            }
+          ]
+        },
+        {
+          "word": "Budget",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><text x='12' y='14' text-anchor='middle' font-size='10'>$</text>",
+          "breakdown": ["bud (芽/皮包)", "-get"],
+          "imagery": "有了预算，项目才能发芽。",
+          "translation": "预算",
+          "sentences": []
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_c",
+      "displayName": "Vocabulary C",
+      "themeColor": "#10b981",
+      "prefixIntro": {
+        "title": "C 开头核心词",
+        "description": "大学四级 C 开头的高频混合词汇。C 字母常有“抓、包围”的象形含义。",
+        "imagery": "字母 C 像一只手做抓取的动作。"
+      },
+      "words": [
+        {
+          "word": "cabbage",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none'/><path d='M12 12q4 4 0 8M12 12q-4-4 0-8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["cab", "(头)", "age"],
+          "imagery": "长得像头一样的蔬菜 -> 卷心菜。谐音：大头菜(cabbage)。",
+          "translation": "卷心菜；大头菜",
+          "sentences": [{"en": "I like fried cabbage.", "cn": "我喜欢炒卷心菜。"}]
+        },
+        {
+          "word": "campaign",
+          "rootVisual": "<path d='M2 18l10-10 10 10' stroke='currentColor' fill='none'/><path d='M12 8v12' stroke='currentColor'/>",
+          "breakdown": ["camp", "(营地)", "pain", "(痛苦)"],
+          "imagery": "在营地里很痛苦 -> 打仗/战役。",
+          "translation": "战役；运动",
+          "sentences": [{"en": "An advertising campaign.", "cn": "广告宣传活动。"}]
+        },
+        {
+          "word": "capture",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><circle cx='12' cy='12' r='4' fill='currentColor'/>",
+          "breakdown": ["capt", "(抓)", "ure"],
+          "imagery": "用网或者笼子抓住。",
+          "translation": "俘获；捕获",
+          "sentences": [{"en": "They captured the thief.", "cn": "他们抓住了小偷。"}]
+        },
+        {
+          "word": "cart",
+          "rootVisual": "<rect x='4' y='10' width='12' height='6' stroke='currentColor' fill='none'/><circle cx='6' cy='18' r='2' stroke='currentColor'/><circle cx='14' cy='18' r='2' stroke='currentColor'/><line x1='16' y1='10' x2='20' y2='8' stroke='currentColor'/>",
+          "breakdown": ["car", "(车)", "t", "(推)"],
+          "imagery": "用手推的车 -> 手推车/马车。",
+          "translation": "手推车；马车",
+          "sentences": [{"en": "A horse cart.", "cn": "一辆马车。"}]
+        },
+        {
+          "word": "cell",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["cell", "(小室)"],
+          "imagery": "一个小隔间。可以是细胞、电池或牢房。",
+          "translation": "细胞；电池；牢房",
+          "sentences": [{"en": "Red blood cells.", "cn": "红细胞。"}]
+        },
+        {
+          "word": "chaos",
+          "rootVisual": "<path d='M4 4l16 16M4 20l16-16M12 2l4 20M2 10h20' stroke='currentColor' stroke-width='1'/>",
+          "breakdown": ["chaos", "(混沌)"],
+          "imagery": "一团乱麻。be in chaos (处于混乱中)。",
+          "translation": "混乱",
+          "sentences": [{"en": "The room is in chaos.", "cn": "房间一片混乱。"}]
+        },
+        {
+          "word": "clone",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='4' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
+          "breakdown": ["clone", "(音译)"],
+          "imagery": "复制一个一模一样的。谐音：克隆。",
+          "translation": "克隆",
+          "sentences": [{"en": "Dolly the sheep was a clone.", "cn": "多利羊是个克隆体。"}]
+        },
+        {
+          "word": "Censor",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M6 6 L18 18 M6 18 L18 6' stroke='currentColor' color='#ef4444' />",
+          "breakdown": ["cens (评/审)", "-or"],
+          "imagery": "审查员（谐音：审查）。",
+          "translation": "审查员；审查",
+          "sentences": [
+            {
+              "en": "Banned by the censor.",
+              "cn": "被审查员禁止。"
+            }
+          ]
+        },
+        {
+          "word": "Census",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><path d='M8 8 H16 M8 12 H16' stroke='currentColor' />",
+          "breakdown": ["cens (评/数)", "-us"],
+          "imagery": "人口普查（谐音：申诉）。",
+          "translation": "人口普查",
+          "sentences": []
+        },
+        {
+          "word": "Cocaine",
+          "rootVisual": "<path d='M8 12 H16' stroke='currentColor' stroke-width='4' color='#fff' opacity='0.5' />",
+          "breakdown": ["cocaine"],
+          "imagery": "白色粉末。",
+          "translation": "可卡因",
+          "sentences": []
+        },
+        {
+          "word": "Colony",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none' /><circle cx='16' cy='12' r='4' stroke='currentColor' fill='none' stroke-dasharray='2 2' />",
+          "breakdown": ["col (耕种/住)", "-ony"],
+          "imagery": "像克隆(clone)一样复制宗主国的制度。",
+          "translation": "殖民地",
+          "sentences": []
+        },
+        {
+          "word": "Confiscate",
+          "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' marker-end='url(#arrow)' /><rect x='10' y='8' width='4' height='8' fill='currentColor' />",
+          "breakdown": ["con- (共)", "fisc (钱袋)", "-ate"],
+          "imagery": "没收充公，变成大家的钱。",
+          "translation": "没收；充公",
+          "sentences": [
+            {
+              "en": "Confiscated the pistol.",
+              "cn": "没收了手枪。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_d",
+      "displayName": "Vocabulary D",
+      "themeColor": "#f59e0b",
+      "prefixIntro": {
+        "title": "D 开头核心词",
+        "description": "大学四级 D 开头的高频混合词汇。D 字母常有“向下 (Down)”的前缀含义，或“大坝 (Dam)、圆顶 (Dome)”的象形。",
+        "imagery": "字母 D 像一个大肚子或弓。"
+      },
+      "words": [
+        {
+          "word": "dam",
+          "rootVisual": "<path d='M4 20v-16h4v16z' fill='currentColor'/><path d='M8 10h12' stroke='currentColor' stroke-width='2' stroke-dasharray='2 2'/>",
+          "breakdown": ["dam", "(坝)"],
+          "imagery": "D 的形状像一个大坝挡住水。",
+          "translation": "水坝",
+          "sentences": [{"en": "The Three Gorges Dam.", "cn": "三峡大坝。"}]
+        },
+        {
+          "word": "damage",
+          "rootVisual": "<path d='M4 20v-16h4v16z' fill='currentColor' opacity='0.5'/><path d='M4 10l4 4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["dam", "(坝)", "age", "(老)"],
+          "imagery": "大坝老了(age)就会损坏 -> 损害。",
+          "translation": "损害；损坏",
+          "sentences": [{"en": "Smoking damages your health.", "cn": "吸烟损害你的健康。"}]
+        },
+        {
+          "word": "damp",
+          "rootVisual": "<path d='M4 20v-16h4v16z' fill='currentColor' opacity='0.5'/><path d='M10 18l2-4 2 4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["dam", "(坝)", "p"],
+          "imagery": "大坝旁边总是湿漉漉的 -> 潮湿的。",
+          "translation": "潮湿的",
+          "sentences": [{"en": "A damp towel.", "cn": "一条湿毛巾。"}]
+        },
+        {
+          "word": "dazzling",
+          "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor'/><path d='M12 2v4M12 18v4M2 12h4M18 12h4' stroke='currentColor'/>",
+          "breakdown": ["dazzle", "(目眩)", "ing"],
+          "imagery": "光芒太强让人头晕 (dizzy)。",
+          "translation": "令人目眩的；耀眼的",
+          "sentences": [{"en": "A dazzling smile.", "cn": "灿烂的笑容。"}]
+        },
+        {
+          "word": "domestic",
+          "rootVisual": "<path d='M2 12l10-8 10 8v10h-20z' stroke='currentColor' fill='none'/><circle cx='12' cy='14' r='4' stroke='currentColor'/>",
+          "breakdown": ["dom", "(家/圆顶)", "estic"],
+          "imagery": "圆屋顶下的 -> 家里的 -> 国内的。",
+          "translation": "家庭的；国内的",
+          "sentences": [{"en": "Domestic flights.", "cn": "国内航班。"}]
+        },
+        {
+          "word": "Dormant",
+          "rootVisual": "<text x='12' y='14' font-size='12' text-anchor='middle'>Zzz</text>",
+          "breakdown": ["dorm (睡)", "-ant"],
+          "imagery": "睡觉的状态。",
+          "translation": "休眠的",
+          "sentences": [
+            {
+              "en": "Dormant seeds.",
+              "cn": "休眠的种子。"
+            }
+          ]
+        },
+        {
+          "word": "dwell",
+          "rootVisual": "<rect x='6' y='8' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 8l6-6 6 6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["dwell", "(住)"],
+          "imagery": "谐音：对井(dwell)而居 -> 居住。",
+          "translation": "居住",
+          "sentences": [{"en": "They dwell in the forest.", "cn": "他们居住在森林里。"}]
+        },
+        {
+          "word": "Deteriorate",
+          "rootVisual": "<path d='M4 4 L12 12 L20 20' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["de- (下)", "-terior (比较级)", "-ate"],
+          "imagery": "情况越来越向下（更坏）。",
+          "translation": "恶化",
+          "sentences": [
+            {
+              "en": "Air quality is deteriorating.",
+              "cn": "空气质量正在恶化。"
+            }
+          ]
+        },
+        {
+          "word": "Diesel",
+          "rootVisual": "<rect x='4' y='8' width='16' height='10' stroke='currentColor' fill='none' /><text x='12' y='14' text-anchor='middle' font-size='8'>OIL</text>",
+          "breakdown": ["diesel"],
+          "imagery": "大型车辆使用的燃油。",
+          "translation": "柴油",
+          "sentences": []
+        },
+        {
+          "word": "Dignity",
+          "rootVisual": "<rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none' /><circle cx='12' cy='8' r='2' fill='currentColor' />",
+          "breakdown": ["dign (高贵)", "-ity"],
+          "imagery": "高贵端庄的样子。",
+          "translation": "尊严；高贵",
+          "sentences": [
+            {
+              "en": "A man of dignity.",
+              "cn": "一个有尊严的人。"
+            }
+          ]
+        },
+        {
+          "word": "Diploma",
+          "rootVisual": "<path d='M4 6 H 20 V 18 H 4 Z' stroke='currentColor' fill='none' /><path d='M12 6 V 18' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["di- (二)", "ploma (折叠)"],
+          "imagery": "折叠成两半的证书。",
+          "translation": "文凭；毕业证书",
+          "sentences": [
+            {
+              "en": "A diploma in business.",
+              "cn": "商科文凭。"
+            }
+          ]
+        },
+        {
+          "word": "Discard",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><path d='M6 6 L18 18 M6 18 L18 6' stroke='currentColor' />",
+          "breakdown": ["dis- (不)", "card (卡片)"],
+          "imagery": "不要的牌丢掉。",
+          "translation": "丢弃；抛弃",
+          "sentences": [
+            {
+              "en": "Discarded food.",
+              "cn": "被丢弃的食物。"
+            }
+          ]
+        },
+        {
+          "word": "Disclose",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none' /><path d='M12 6 L4 18 M12 6 L20 18' stroke='currentColor' fill='none' />",
+          "breakdown": ["dis- (不)", "close (关)"],
+          "imagery": "打开，不再关闭。",
+          "translation": "揭露；透露",
+          "sentences": [
+            {
+              "en": "Disclose the name.",
+              "cn": "透露姓名。"
+            }
+          ]
+        },
+        {
+          "word": "Discern",
+          "rootVisual": "<circle cx='8' cy='12' r='2' fill='currentColor' /><circle cx='16' cy='12' r='2' stroke='currentColor' fill='none' />",
+          "breakdown": ["dis- (分)", "cern (筛)"],
+          "imagery": "筛选分开，辨别清楚。",
+          "translation": "辨别；识别",
+          "sentences": [
+            {
+              "en": "Discern the truth.",
+              "cn": "辨别真相。"
+            }
+          ]
+        },
+        {
+          "word": "Discourse",
+          "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' stroke-width='2' /><circle cx='4' cy='12' r='2' fill='currentColor' /><circle cx='20' cy='12' r='2' fill='currentColor' />",
+          "breakdown": ["dis- (分)", "course (跑/过程)"],
+          "imagery": "把话题分开跑一遍，详细论述。",
+          "translation": "论述；演说",
+          "sentences": []
+        },
+        {
+          "word": "Dismay",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 16 Q 12 12 16 16' stroke='currentColor' />",
+          "breakdown": ["dis- (不)", "may (可以)"],
+          "imagery": "不可以了，没办法了，感到沮丧。",
+          "translation": "使沮丧；使惊慌",
+          "sentences": [
+            {
+              "en": "Dismayed by the lack of progress.",
+              "cn": "因缺乏进展而感到沮丧。"
+            }
+          ]
+        },
+        {
+          "word": "Distress",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 10 L16 14 M8 14 L16 10' stroke='currentColor' />",
+          "breakdown": ["dis- (分)", "stress (压力)"],
+          "imagery": "压力大到让人分裂，极度痛苦。",
+          "translation": "痛苦；悲伤",
+          "sentences": [
+            {
+              "en": "His distress is obvious.",
+              "cn": "他的痛苦显而易见。"
+            }
+          ]
+        },
+        {
+          "word": "Doctrine",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><path d='M8 8 H16 M8 12 H16' stroke='currentColor' />",
+          "breakdown": ["doctr (教)", "-ine"],
+          "imagery": "博士（doctor）研究的学说。",
+          "translation": "教条；学说",
+          "sentences": []
+        },
+        {
+          "word": "Dominant",
+          "rootVisual": "<path d='M2 12 L12 2 L22 12' stroke='currentColor' fill='none' /><rect x='6' y='12' width='12' height='8' stroke='currentColor' fill='none' />",
+          "breakdown": ["domin (屋顶/统治)", "-ant"],
+          "imagery": "像屋顶一样居高临下的。",
+          "translation": "占主导地位的",
+          "sentences": []
+        },
+        {
+          "word": "Donate",
+          "rootVisual": "<path d='M4 12 H 12 L 10 10 M 12 12 L 10 14' stroke='currentColor' marker-end='url(#arrow)' /><rect x='14' y='8' width='6' height='8' fill='currentColor' />",
+          "breakdown": ["don (给)", "-ate"],
+          "imagery": "给予出去。",
+          "translation": "捐赠",
+          "sentences": [
+            {
+              "en": "Donate to charity.",
+              "cn": "捐给慈善机构。"
+            }
+          ]
+        },
+        {
+          "word": "Doom",
+          "rootVisual": "<circle cx='12' cy='12' r='10' fill='currentColor' color='#000' />",
+          "breakdown": ["doom (判决/拟声)"],
+          "imagery": "重物落地的声音，完蛋了。",
+          "translation": "厄运；注定",
+          "sentences": [
+            {
+              "en": "Doomed from the start.",
+              "cn": "从一开始就注定了。"
+            }
+          ]
+        },
+        {
+          "word": "Dormitory",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none' /><path d='M6 14 H 10 M 14 14 H 18' stroke='currentColor' />",
+          "breakdown": ["dorm (睡)", "-itory (场所)"],
+          "imagery": "睡觉的地方。",
+          "translation": "宿舍",
+          "sentences": []
+        },
+        {
+          "word": "Doze",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M8 12 H16' stroke='currentColor' />",
+          "breakdown": ["doze (打盹)"],
+          "imagery": "打瞌睡。",
+          "translation": "打瞌睡",
+          "sentences": [
+            {
+              "en": "Doze off at my desk.",
+              "cn": "在桌上打瞌睡。"
+            }
+          ]
+        },
+        {
+          "word": "Drift",
+          "rootVisual": "<path d='M4 12 Q 8 8 12 12 T 20 12' stroke='currentColor' fill='none' stroke-dasharray='2 2' />",
+          "breakdown": ["drift (漂)"],
+          "imagery": "不驾驶(drive)的时候就在漂流。",
+          "translation": "漂流",
+          "sentences": [
+            {
+              "en": "Drifted out to sea.",
+              "cn": "漂向大海。"
+            }
+          ]
+        },
+        {
+          "word": "Dump",
+          "rootVisual": "<path d='M4 4 L8 16 H16 L20 4' stroke='currentColor' fill='none' /><path d='M12 4 V 12' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["dump (拟声)"],
+          "imagery": "倒垃圾的声音。",
+          "translation": "倾倒；垃圾场",
+          "sentences": [
+            {
+              "en": "Dumped at sea.",
+              "cn": "倾倒在海里。"
+            }
+          ]
+        },
+        {
+          "word": "Dynamic",
+          "rootVisual": "<path d='M12 4 L8 20 L20 8 L4 8 L16 20 L12 4' stroke='currentColor' fill='none' />",
+          "breakdown": ["dynam (力)", "-ic"],
+          "imagery": "充满力量的（谐音：带拿）。",
+          "translation": "充满活力的",
+          "sentences": [
+            {
+              "en": "A dynamic person.",
+              "cn": "一个充满活力的人。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "prefix": "pro",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "pro_forward",
+      "displayName": "pro (前)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M4 12 H 16' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)' /><circle cx='12' cy='12' r='2' fill='currentColor' />",
+      "prefixIntro": {
+        "title": "前缀 pro-",
+        "description": "核心意境是 **“向前” (Forward)** 或 **“赞同” (For)**。\n表示前进、公开或支持。",
+        "imagery": "联想一个向前的箭头➡️。"
+      },
+      "words": [
+        {
+          "word": "Profile",
+          "rootVisual": "<path d='M8 4 Q 14 4 14 10 Q 14 16 8 16' stroke='currentColor' fill='none' />",
+          "breakdown": ["pro- (前)", "file (线条/文件)"],
+          "imagery": "勾勒出的侧面轮廓；放在前面的简介文件。",
+          "translation": "简介；轮廓",
+          "sentences": [
+            {
+              "en": "A short profile of the actor.",
+              "cn": "这位演员的简介。"
+            }
+          ]
+        },
+        {
+          "word": "Profound",
+          "rootVisual": "<path d='M4 18 H 20' stroke='currentColor' /><rect x='8' y='8' width='8' height='10' fill='currentColor' opacity='0.3' />",
+          "breakdown": ["pro- (前)", "found (建立/底)"],
+          "imagery": "为了长远未来建立的基础，意义深远。",
+          "translation": "深远的；深刻的",
+          "sentences": []
+        },
+        {
+          "word": "Prolong",
+          "rootVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' stroke-width='2' /><path d='M16 8 L20 12 L16 16' stroke='currentColor' />",
+          "breakdown": ["pro- (前)", "long (长)"],
+          "imagery": "向前拉长，延长。",
+          "translation": "延长；拖延",
+          "sentences": [
+            {
+              "en": "Prolong his life.",
+              "cn": "延长他的生命。"
+            }
+          ]
+        },
+        {
+          "word": "Protein",
+          "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor' /><path d='M11 12 H 13' stroke='currentColor' /><circle cx='16' cy='12' r='3' stroke='currentColor' />",
+          "breakdown": ["prote (首要)", "-in"],
+          "imagery": "生命首要的物质。（pro也有首要之意）",
+          "translation": "蛋白质",
+          "sentences": []
+        },
+        {
+          "word": "Protest",
+          "rootVisual": "<rect x='8' y='6' width='8' height='10' stroke='currentColor' fill='none' /><text x='12' y='12' text-anchor='middle' font-size='8'>NO</text>",
+          "breakdown": ["pro- (前)", "test (证/测)"],
+          "imagery": "在测试/证实之前就站出来反对。",
+          "translation": "抗议；反对",
+          "sentences": [
+            {
+              "en": "I protest against the war.",
+              "cn": "我抗议这场战争。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

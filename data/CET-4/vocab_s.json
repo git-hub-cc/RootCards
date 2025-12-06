@@ -1,0 +1,951 @@
+{
+  "prefix": "Vocab S",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_s",
+      "displayName": "Vocabulary S",
+      "themeColor": "#d946ef",
+      "prefixIntro": {
+        "title": "S 开头核心词",
+        "description": "大学四级 S 开头的高频混合词汇。",
+        "imagery": "字母 S 像一条蜿蜒的蛇或河流，代表流动和变化。"
+      },
+      "words": [
+        {
+          "word": "Safeguard",
+          "rootVisual": "<path d='M6 4 H 18 V 12 L 12 18 L 6 12 Z' stroke='currentColor' fill='none' />",
+          "breakdown": ["safe", "guard"],
+          "imagery": "为了安全而看守。",
+          "translation": "保护；捍卫",
+          "sentences": [
+            {
+              "en": "Safeguard children's rights.",
+              "cn": "保护儿童的权利。"
+            }
+          ]
+        },
+        {
+          "word": "Sake",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='10'>FOR</text>",
+          "breakdown": ["sake"],
+          "imagery": "为了...的缘故。",
+          "translation": "缘故；目的",
+          "sentences": [
+            {
+              "en": "For the sake of the children.",
+              "cn": "为了孩子。"
+            }
+          ]
+        },
+        {
+          "word": "Scandal",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>📰</text>",
+          "breakdown": ["scandal"],
+          "imagery": "丑闻。",
+          "translation": "丑闻",
+          "sentences": [
+            {
+              "en": "Sex scandals.",
+              "cn": "性丑闻。"
+            }
+          ]
+        },
+        {
+          "word": "Scheme",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none' /><path d='M6 10 H 14' stroke='currentColor' />",
+          "breakdown": ["scheme (计划)"],
+          "imagery": "使计谋（谐音）。",
+          "translation": "计划；计谋",
+          "sentences": [
+            {
+              "en": "A pension scheme.",
+              "cn": "养老金计划。"
+            }
+          ]
+        },
+        {
+          "word": "Semester",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2' />",
+          "breakdown": ["sem (六)", "-ester (月)"],
+          "imagery": "六个月的学期。",
+          "translation": "学期",
+          "sentences": [
+            {
+              "en": "Two semesters in one year.",
+              "cn": "一年两个学期。"
+            }
+          ]
+        },
+        {
+          "word": "Setback",
+          "rootVisual": "<path d='M12 12 L 6 12' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["set", "back"],
+          "imagery": "向后退步，挫折。",
+          "translation": "挫折",
+          "sentences": [
+            {
+              "en": "Since that setback.",
+              "cn": "自从那次挫折。"
+            }
+          ]
+        },
+        {
+          "word": "Showcase",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none' />",
+          "breakdown": ["show", "case"],
+          "imagery": "展示柜。",
+          "translation": "展示",
+          "sentences": []
+        },
+        {
+          "word": "Sip",
+          "rootVisual": "<path d='M12 12 Q 12 16 16 12' stroke='currentColor' fill='none' />",
+          "breakdown": ["sip"],
+          "imagery": "小口喝。",
+          "translation": "小口喝；抿",
+          "sentences": [
+            {
+              "en": "Sipping her coffee.",
+              "cn": "抿着咖啡。"
+            }
+          ]
+        },
+        {
+          "word": "Skip",
+          "rootVisual": "<path d='M4 18 Q 8 12 12 18 T 20 18' stroke='currentColor' fill='none' />",
+          "breakdown": ["skip"],
+          "imagery": "跳过。",
+          "translation": "跳；跳过",
+          "sentences": [
+            {
+              "en": "Skip the first chapter.",
+              "cn": "跳过第一章。"
+            }
+          ]
+        },
+        {
+          "word": "Smack",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>👋</text>",
+          "breakdown": ["smack"],
+          "imagery": "掌击。",
+          "translation": "掌击",
+          "sentences": [
+            {
+              "en": "Smack children.",
+              "cn": "打孩子。"
+            }
+          ]
+        },
+        {
+          "word": "Smash",
+          "rootVisual": "<path d='M4 4 L 20 20 M 20 4 L 4 20' stroke='currentColor' />",
+          "breakdown": ["smash"],
+          "imagery": "打碎。",
+          "translation": "打碎",
+          "sentences": [
+            {
+              "en": "Windows had been smashed.",
+              "cn": "窗户被打碎了。"
+            }
+          ]
+        },
+        {
+          "word": "Smuggle",
+          "rootVisual": "<rect x='4' y='10' width='8' height='6' fill='currentColor' opacity='0.5' />",
+          "breakdown": ["smuggle"],
+          "imagery": "偷偷运送，走私。",
+          "translation": "走私",
+          "sentences": [
+            {
+              "en": "Smuggle a gun.",
+              "cn": "走私枪支。"
+            }
+          ]
+        },
+        {
+          "word": "Snap",
+          "rootVisual": "<path d='M8 12 L 16 12' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["snap"],
+          "imagery": "啪地折断；打响指。",
+          "translation": "折断；打响指",
+          "sentences": [
+            {
+              "en": "Snap your finger.",
+              "cn": "打响指。"
+            }
+          ]
+        },
+        {
+          "word": "Snatch",
+          "rootVisual": "<path d='M12 12 L 16 8' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["snatch"],
+          "imagery": "突然夺取。",
+          "translation": "夺取；抢",
+          "sentences": [
+            {
+              "en": "Snatched her purse.",
+              "cn": "抢了她的钱包。"
+            }
+          ]
+        },
+        {
+          "word": "Soar",
+          "rootVisual": "<path d='M4 18 L 18 4' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["soar (嗖)"],
+          "imagery": "嗖地一下飞上去，猛增。",
+          "translation": "猛增；高飞",
+          "sentences": [
+            {
+              "en": "Prices soared.",
+              "cn": "价格猛增。"
+            }
+          ]
+        },
+        {
+          "word": "Sob",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>😢</text>",
+          "breakdown": ["sob"],
+          "imagery": "呜咽。",
+          "translation": "呜咽；抽泣",
+          "sentences": [
+            {
+              "en": "Sob even harder.",
+              "cn": "哭得更厉害。"
+            }
+          ]
+        },
+        {
+          "word": "Sour",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>🍋</text>",
+          "breakdown": ["sour"],
+          "imagery": "酸的，馊了。",
+          "translation": "酸的；馊的",
+          "sentences": [
+            {
+              "en": "Turned sour.",
+              "cn": "变馊了。"
+            }
+          ]
+        },
+        {
+          "word": "Spine",
+          "rootVisual": "<path d='M12 4 Q 16 12 12 20' stroke='currentColor' fill='none' stroke-width='2' />",
+          "breakdown": ["spine (刺)"],
+          "imagery": "脊柱。",
+          "translation": "脊柱",
+          "sentences": [
+            {
+              "en": "A healthy spine.",
+              "cn": "健康的脊柱。"
+            }
+          ]
+        },
+        {
+          "word": "Spiral",
+          "rootVisual": "<path d='M12 12 m -8 0 a 8 8 0 1 0 16 0 a 8 8 0 1 0 -16 0' stroke='currentColor' fill='none' />",
+          "breakdown": ["spir (盘旋)", "-al"],
+          "imagery": "螺旋上升。",
+          "translation": "螺旋；盘旋上升",
+          "sentences": [
+            {
+              "en": "Spiraling cost.",
+              "cn": "急剧上升的成本。"
+            }
+          ]
+        },
+        {
+          "word": "Spoil",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>🗑️</text>",
+          "breakdown": ["spoil"],
+          "imagery": "破坏，宠坏。",
+          "translation": "破坏；溺爱",
+          "sentences": [
+            {
+              "en": "Spoiled by litter.",
+              "cn": "被垃圾破坏。"
+            }
+          ]
+        },
+        {
+          "word": "Spotlight",
+          "rootVisual": "<path d='M12 2 L 4 20 H 20 L 12 2 Z' fill='currentColor' opacity='0.3' />",
+          "breakdown": ["spot (点)", "light"],
+          "imagery": "聚光灯。",
+          "translation": "聚光灯；关注点",
+          "sentences": [
+            {
+              "en": "Under the spotlight.",
+              "cn": "处于聚光灯下。"
+            }
+          ]
+        },
+        {
+          "word": "Spouse",
+          "rootVisual": "<text x='8' y='14' font-size='10'>🚹</text><text x='16' y='14' font-size='10'>🚺</text>",
+          "breakdown": ["spouse"],
+          "imagery": "配偶。",
+          "translation": "配偶",
+          "sentences": []
+        },
+        {
+          "word": "Spy",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>🕵️</text>",
+          "breakdown": ["spy (看)"],
+          "imagery": "间谍。",
+          "translation": "间谍",
+          "sentences": [
+            {
+              "en": "Spied for his government.",
+              "cn": "为政府做间谍。"
+            }
+          ]
+        },
+        {
+          "word": "Stab",
+          "rootVisual": "<path d='M4 20 L 12 12' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["stab"],
+          "imagery": "刺，扎。",
+          "translation": "刺；扎",
+          "sentences": [
+            {
+              "en": "Stabbed him.",
+              "cn": "刺伤了他。"
+            }
+          ]
+        },
+        {
+          "word": "Startle",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>❗</text>",
+          "breakdown": ["startle"],
+          "imagery": "死打头（谐音），惊吓。",
+          "translation": "惊吓",
+          "sentences": []
+        },
+        {
+          "word": "Stern",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>😠</text>",
+          "breakdown": ["stern"],
+          "imagery": "死瞪（谐音），严厉的。",
+          "translation": "严厉的",
+          "sentences": [
+            {
+              "en": "Sternest voice.",
+              "cn": "最严厉的声音。"
+            }
+          ]
+        },
+        {
+          "word": "Sting",
+          "rootVisual": "<path d='M4 12 H 16' stroke='currentColor' /><circle cx='18' cy='12' r='2' fill='currentColor' color='#ef4444' />",
+          "breakdown": ["sting (刺)"],
+          "imagery": "刺，蜇。",
+          "translation": "刺；蜇",
+          "sentences": []
+        },
+        {
+          "word": "Stream",
+          "rootVisual": "<path d='M4 10 Q 8 14 12 10 T 20 10' stroke='currentColor' />",
+          "breakdown": ["stream"],
+          "imagery": "像蒸汽一样流动，小溪。",
+          "translation": "小溪；流",
+          "sentences": [
+            {
+              "en": "A stream of traffic.",
+              "cn": "车流。"
+            }
+          ]
+        },
+        {
+          "word": "Streamline",
+          "rootVisual": "<path d='M2 12 H 22' stroke='currentColor' />",
+          "breakdown": ["stream", "line"],
+          "imagery": "流线型，精简。",
+          "translation": "精简；使成流线型",
+          "sentences": [
+            {
+              "en": "Streamline government.",
+              "cn": "精简政府。"
+            }
+          ]
+        },
+        {
+          "word": "Stubborn",
+          "rootVisual": "<circle cx='12' cy='12' r='10' fill='currentColor' color='#4b5563' />",
+          "breakdown": ["stub (树桩)", "-born"],
+          "imagery": "像石头一样固执（死大笨）。",
+          "translation": "固执的",
+          "sentences": [
+            {
+              "en": "Stubborn as a stone.",
+              "cn": "像石头一样固执。"
+            }
+          ]
+        },
+        {
+          "word": "Surge",
+          "rootVisual": "<path d='M4 18 Q 12 4 20 18' stroke='currentColor' />",
+          "breakdown": ["surge (升起)"],
+          "imagery": "像浪潮涌动，猛增。",
+          "translation": "汹涌；猛增",
+          "sentences": [
+            {
+              "en": "Surge above market growth.",
+              "cn": "飙升超过市场增长。"
+            }
+          ]
+        },
+        {
+          "word": "Surveillance",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><circle cx='12' cy='12' r='2' fill='currentColor' />",
+          "breakdown": ["sur- (上)", "veil (看)", "-ance"],
+          "imagery": "从上面监视。",
+          "translation": "监视",
+          "sentences": [
+            {
+              "en": "24-hour surveillance.",
+              "cn": "24小时监视。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_t",
+      "displayName": "Vocabulary T",
+      "themeColor": "#ec4899",
+      "prefixIntro": {
+        "title": "T 开头核心词",
+        "description": "大学四级 T 开头的高频混合词汇。",
+        "imagery": "字母 T 像一个十字架或锤子。"
+      },
+      "words": [
+        {
+          "word": "Tan",
+          "rootVisual": "<circle cx='12' cy='12' r='10' fill='currentColor' color='#d97706' />",
+          "breakdown": ["tan"],
+          "imagery": "晒成棕褐色。",
+          "translation": "晒黑；棕褐色",
+          "sentences": [
+            {
+              "en": "Tanned quickly.",
+              "cn": "很快晒黑了。"
+            }
+          ]
+        },
+        {
+          "word": "Tease",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>😜</text>",
+          "breakdown": ["tease"],
+          "imagery": "取笑。",
+          "translation": "取笑；戏弄",
+          "sentences": [
+            {
+              "en": "Tease me.",
+              "cn": "取笑我。"
+            }
+          ]
+        },
+        {
+          "word": "Terminate",
+          "rootVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' /><rect x='18' y='8' width='4' height='8' fill='currentColor' color='#ef4444' />",
+          "breakdown": ["term (界限)", "-inate"],
+          "imagery": "到达终点，终止。",
+          "translation": "终止；结束",
+          "sentences": [
+            {
+              "en": "Contract must be terminated.",
+              "cn": "合同必须终止。"
+            }
+          ]
+        },
+        {
+          "word": "Thesis",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><path d='M8 8 H 16 M 8 12 H 16' stroke='currentColor' />",
+          "breakdown": ["thes (放)", "-is"],
+          "imagery": "放下的观点，论文。",
+          "translation": "论文；论点",
+          "sentences": [
+            {
+              "en": "Working on her thesis.",
+              "cn": "写她的论文。"
+            }
+          ]
+        },
+        {
+          "word": "Throne",
+          "rootVisual": "<rect x='6' y='10' width='12' height='10' stroke='currentColor' fill='none' /><path d='M6 10 L 12 4 L 18 10' stroke='currentColor' />",
+          "breakdown": ["throne"],
+          "imagery": "王位。",
+          "translation": "王位；宝座",
+          "sentences": [
+            {
+              "en": "Came to the throne.",
+              "cn": "登基。"
+            }
+          ]
+        },
+        {
+          "word": "Tile",
+          "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none' />",
+          "breakdown": ["tile"],
+          "imagery": "瓷砖。",
+          "translation": "瓷砖",
+          "sentences": [
+            {
+              "en": "Bathroom tiles.",
+              "cn": "浴室瓷砖。"
+            }
+          ]
+        },
+        {
+          "word": "Timid",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' />",
+          "breakdown": ["timid (怕)"],
+          "imagery": "胆小的。（谐音：不敢说他妈的）",
+          "translation": "胆小的",
+          "sentences": []
+        },
+        {
+          "word": "Intimidate",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 12 H 16' stroke='currentColor' />",
+          "breakdown": ["in- (使)", "timid (怕)", "-ate"],
+          "imagery": "使人害怕，恐吓。",
+          "translation": "恐吓；威胁",
+          "sentences": [
+            {
+              "en": "Intimidate the witness.",
+              "cn": "恐吓证人。"
+            }
+          ]
+        },
+        {
+          "word": "Token",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' /><text x='12' y='16' text-anchor='middle' font-size='10'>🎫</text>",
+          "breakdown": ["token"],
+          "imagery": "代金券，象征。",
+          "translation": "象征；代金券",
+          "sentences": [
+            {
+              "en": "A token of appreciation.",
+              "cn": "感激的象征。"
+            }
+          ]
+        },
+        {
+          "word": "Tolerate",
+          "rootVisual": "<path d='M4 18 H 20' stroke='currentColor' /><rect x='10' y='10' width='4' height='8' fill='currentColor' />",
+          "breakdown": ["toler (忍受)", "-ate"],
+          "imagery": "承受重担，容忍。",
+          "translation": "容忍；忍受",
+          "sentences": [
+            {
+              "en": "Couldn't tolerate the hours.",
+              "cn": "无法忍受长时间工作。"
+            }
+          ]
+        },
+        {
+          "word": "Tomb",
+          "rootVisual": "<path d='M6 18 V 6 A 6 6 0 0 1 18 6 V 18 Z' stroke='currentColor' fill='none' />",
+          "breakdown": ["tomb"],
+          "imagery": "坟墓（谐音：土）。",
+          "translation": "坟墓",
+          "sentences": []
+        },
+        {
+          "word": "Trademark",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>™</text>",
+          "breakdown": ["trade", "mark"],
+          "imagery": "商业标记。",
+          "translation": "商标；特征",
+          "sentences": [
+            {
+              "en": "The director's trademark.",
+              "cn": "导演的特征。"
+            }
+          ]
+        },
+        {
+          "word": "Tragedy",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>🎭</text>",
+          "breakdown": ["trag (羊)", "edy (歌)"],
+          "imagery": "山羊之歌，悲剧。",
+          "translation": "悲剧",
+          "sentences": [
+            {
+              "en": "Killed in a tragic accident.",
+              "cn": "死于悲惨事故。"
+            }
+          ]
+        },
+        {
+          "word": "Treason",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>🔫</text>",
+          "breakdown": ["trea (交给)", "-son"],
+          "imagery": "把国家交给敌人，叛国。",
+          "translation": "叛国罪",
+          "sentences": [
+            {
+              "en": "The penalty for treason.",
+              "cn": "叛国罪的惩罚。"
+            }
+          ]
+        },
+        {
+          "word": "Tremble",
+          "rootVisual": "<path d='M8 4 L 12 20 L 16 4' stroke='currentColor' stroke-dasharray='1 1' />",
+          "breakdown": ["tremble"],
+          "imagery": "大幅度颤抖。",
+          "translation": "颤抖",
+          "sentences": [
+            {
+              "en": "My legs were trembling.",
+              "cn": "我的腿在颤抖。"
+            }
+          ]
+        },
+        {
+          "word": "Trillion",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>10¹²</text>",
+          "breakdown": ["tri (三)", "-illion"],
+          "imagery": "万亿。",
+          "translation": "万亿",
+          "sentences": []
+        },
+        {
+          "word": "Tropic",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M2 12 H 22' stroke='currentColor' />",
+          "breakdown": ["trop (转)", "-ic"],
+          "imagery": "太阳回归线，热带。",
+          "translation": "热带",
+          "sentences": [
+            {
+              "en": "Tropical countries.",
+              "cn": "热带国家。"
+            }
+          ]
+        },
+        {
+          "word": "Tunnel",
+          "rootVisual": "<path d='M2 18 A 10 10 0 0 1 22 18' stroke='currentColor' fill='none' />",
+          "breakdown": ["tunnel"],
+          "imagery": "隧道。",
+          "translation": "隧道",
+          "sentences": [
+            {
+              "en": "A tunnel below the lake.",
+              "cn": "湖下的隧道。"
+            }
+          ]
+        },
+        {
+          "word": "Turtle",
+          "rootVisual": "<path d='M6 14 A 6 6 0 0 1 18 14' stroke='currentColor' fill='none' /><circle cx='20' cy='14' r='2' fill='currentColor' />",
+          "breakdown": ["tur (转)", "-tle"],
+          "imagery": "头可以转来转去的龟。",
+          "translation": "龟",
+          "sentences": [
+            {
+              "en": "Turtle population.",
+              "cn": "海龟数量。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_u_z",
+      "displayName": "Vocabulary U-Z",
+      "themeColor": "#f43f5e",
+      "prefixIntro": {
+        "title": "U-Z 开头核心词",
+        "description": "大学四级 U-Z 开头的高频混合词汇。",
+        "imagery": "U像杯子, V像胜利手势, W像波浪, X代表未知, Y像分叉路, Z像闪电。"
+      },
+      "words": [
+        {
+          "word": "Ultimate",
+          "rootVisual": "<path d='M4 12 H 18' stroke='currentColor' marker-end='url(#arrow)' /><rect x='18' y='8' width='2' height='8' fill='currentColor' />",
+          "breakdown": ["ultim (最远)", "-ate"],
+          "imagery": "走到最尽头，最终的。",
+          "translation": "最终的",
+          "sentences": [
+            {
+              "en": "Ultimate destination.",
+              "cn": "最终目的地。"
+            }
+          ]
+        },
+        {
+          "word": "Underestimate",
+          "rootVisual": "<rect x='4' y='12' width='8' height='4' stroke='currentColor' fill='none' /><path d='M14 8 L 18 16' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["under", "estimate"],
+          "imagery": "估计得比实际低。",
+          "translation": "低估",
+          "sentences": []
+        },
+        {
+          "word": "Undergo",
+          "rootVisual": "<path d='M4 16 H 20' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["under", "go"],
+          "imagery": "在下面走过，经历。",
+          "translation": "经历；经受",
+          "sentences": [
+            {
+              "en": "Undergo surgery.",
+              "cn": "接受手术。"
+            }
+          ]
+        },
+        {
+          "word": "Undermine",
+          "rootVisual": "<rect x='4' y='4' width='16' height='12' stroke='currentColor' fill='none' /><path d='M4 20 H 12' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["under", "mine (挖)"],
+          "imagery": "在底下挖墙脚，暗中破坏。",
+          "translation": "暗中破坏",
+          "sentences": [
+            {
+              "en": "Undermine the system.",
+              "cn": "破坏系统。"
+            }
+          ]
+        },
+        {
+          "word": "Uninstall",
+          "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none' /><line x1='8' y1='8' x2='16' y2='16' stroke='currentColor' /><line x1='16' y1='8' x2='8' y2='16' stroke='currentColor' />",
+          "breakdown": ["un- (不)", "install"],
+          "imagery": "卸载。",
+          "translation": "卸载",
+          "sentences": []
+        },
+        {
+          "word": "Update",
+          "rootVisual": "<path d='M12 4 V 12' stroke='currentColor' marker-start='url(#arrow)' />",
+          "breakdown": ["up", "date"],
+          "imagery": "日期向上更新。",
+          "translation": "更新",
+          "sentences": []
+        },
+        {
+          "word": "Upgrade",
+          "rootVisual": "<path d='M4 16 L 12 8 L 20 16' stroke='currentColor' />",
+          "breakdown": ["up", "grade"],
+          "imagery": "等级向上。",
+          "translation": "升级",
+          "sentences": []
+        },
+        {
+          "word": "Uphold",
+          "rootVisual": "<path d='M4 16 H 20' stroke='currentColor' /><path d='M12 16 V 8' stroke='currentColor' />",
+          "breakdown": ["up", "hold"],
+          "imagery": "向上托举，支持。",
+          "translation": "支持；维护",
+          "sentences": []
+        },
+        {
+          "word": "Uprising",
+          "rootVisual": "<path d='M4 18 L 8 10 L 12 16 L 16 8' stroke='currentColor' />",
+          "breakdown": ["up", "rising"],
+          "imagery": "向上升起反抗。",
+          "translation": "起义；暴动",
+          "sentences": []
+        },
+        {
+          "word": "Upright",
+          "rootVisual": "<path d='M12 4 V 20' stroke='currentColor' stroke-width='2' />",
+          "breakdown": ["up", "right"],
+          "imagery": "笔直向上，正直。",
+          "translation": "垂直的；正直的",
+          "sentences": []
+        },
+        {
+          "word": "Utmost",
+          "rootVisual": "<path d='M4 18 H 20' stroke='currentColor' stroke-width='4' />",
+          "breakdown": ["ut (外)", "most"],
+          "imagery": "最外面的，极度的。",
+          "translation": "极度的；最大可能",
+          "sentences": [
+            {
+              "en": "Do my utmost.",
+              "cn": "尽我最大努力。"
+            }
+          ]
+        },
+        {
+          "word": "Van",
+          "rootVisual": "<rect x='2' y='8' width='16' height='10' stroke='currentColor' fill='none' /><circle cx='6' cy='18' r='2' fill='currentColor' /><circle cx='14' cy='18' r='2' fill='currentColor' />",
+          "breakdown": ["van"],
+          "imagery": "像空盒子一样的车，厢式货车。",
+          "translation": "厢式货车",
+          "sentences": []
+        },
+        {
+          "word": "Vase",
+          "rootVisual": "<path d='M8 4 Q 4 12 8 18 H 16 Q 20 12 16 4' stroke='currentColor' fill='none' />",
+          "breakdown": ["vase"],
+          "imagery": "花瓶（像V字形）。",
+          "translation": "花瓶",
+          "sentences": []
+        },
+        {
+          "word": "Veil",
+          "rootVisual": "<path d='M6 6 H 18' stroke='currentColor' /><path d='M6 6 L 8 18 M 18 6 L 16 18' stroke='currentColor' stroke-dasharray='1 1' />",
+          "breakdown": ["veil"],
+          "imagery": "面纱。",
+          "translation": "面纱；掩饰",
+          "sentences": []
+        },
+        {
+          "word": "Unveil",
+          "rootVisual": "<path d='M6 18 L 18 6' stroke='currentColor' />",
+          "breakdown": ["un- (去)", "veil"],
+          "imagery": "揭开面纱。",
+          "translation": "揭露；公布",
+          "sentences": [
+            {
+              "en": "Unveil a strategy.",
+              "cn": "公布一项战略。"
+            }
+          ]
+        },
+        {
+          "word": "Vein",
+          "rootVisual": "<path d='M12 4 Q 8 12 12 20' stroke='currentColor' fill='none' />",
+          "breakdown": ["vein"],
+          "imagery": "血管（中空的管子）。",
+          "translation": "静脉；血管",
+          "sentences": []
+        },
+        {
+          "word": "Velocity",
+          "rootVisual": "<path d='M4 18 L 20 6' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["veloc (快)", "-ity"],
+          "imagery": "速度。",
+          "translation": "速度",
+          "sentences": [
+            {
+              "en": "Reached a velocity of 120 mph.",
+              "cn": "达到120英里的速度。"
+            }
+          ]
+        },
+        {
+          "word": "Versus",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>VS</text>",
+          "breakdown": ["vers (转)", "-us"],
+          "imagery": "对抗。",
+          "translation": "对；对抗",
+          "sentences": []
+        },
+        {
+          "word": "Vibrate",
+          "rootVisual": "<path d='M8 8 L 16 8 M 8 12 L 16 12 M 8 16 L 16 16' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["vibr (震)", "-ate"],
+          "imagery": "震动。",
+          "translation": "震动",
+          "sentences": [
+            {
+              "en": "The phone vibrates.",
+              "cn": "电话在震动。"
+            }
+          ]
+        },
+        {
+          "word": "Vigorous",
+          "rootVisual": "<path d='M12 4 L 4 20 H 20 Z' fill='currentColor' color='#ef4444' />",
+          "breakdown": ["vigor (力)", "-ous"],
+          "imagery": "精力充沛的。",
+          "translation": "精力充沛的",
+          "sentences": [
+            {
+              "en": "Vigorous efforts.",
+              "cn": "强有力的努力。"
+            }
+          ]
+        },
+        {
+          "word": "Vow",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>🤝</text>",
+          "breakdown": ["vow"],
+          "imagery": "发誓。",
+          "translation": "誓言；发誓",
+          "sentences": [
+            {
+              "en": "I vowed to work harder.",
+              "cn": "我发誓要更努力工作。"
+            }
+          ]
+        },
+        {
+          "word": "Warranty",
+          "rootVisual": "<rect x='6' y='6' width='12' height='14' stroke='currentColor' fill='none' /><path d='M8 10 L 10 12 L 14 8' stroke='currentColor' />",
+          "breakdown": ["warrant", "-y"],
+          "imagery": "书面保证书。",
+          "translation": "保修单；保证书",
+          "sentences": [
+            {
+              "en": "Beyond the warranty.",
+              "cn": "过了保修期。"
+            }
+          ]
+        },
+        {
+          "word": "Watt",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>💡</text>",
+          "breakdown": ["watt"],
+          "imagery": "瓦特（功率单位）。",
+          "translation": "瓦特",
+          "sentences": [
+            {
+              "en": "A 100-watt bulb.",
+              "cn": "100瓦灯泡。"
+            }
+          ]
+        },
+        {
+          "word": "Weapon",
+          "rootVisual": "<path d='M4 18 L 18 4' stroke='currentColor' stroke-width='2' />",
+          "breakdown": ["weapon"],
+          "imagery": "武器。",
+          "translation": "武器",
+          "sentences": []
+        },
+        {
+          "word": "Weird",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>👽</text>",
+          "breakdown": ["weird"],
+          "imagery": "离奇的，古怪的。",
+          "translation": "奇怪的；离奇的",
+          "sentences": [
+            {
+              "en": "A really weird thing.",
+              "cn": "一件很奇怪的事。"
+            }
+          ]
+        },
+        {
+          "word": "Wholesale",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' /><path d='M4 12 H 20 M 12 4 V 20' stroke='currentColor' />",
+          "breakdown": ["whole (整)", "sale (卖)"],
+          "imagery": "整个一起卖，批发。",
+          "translation": "批发",
+          "sentences": [
+            {
+              "en": "Buy wholesale.",
+              "cn": "批发购买。"
+            }
+          ]
+        },
+        {
+          "word": "Womb",
+          "rootVisual": "<path d='M12 6 Q 6 12 12 20 Q 18 12 12 6' stroke='currentColor' fill='none' />",
+          "breakdown": ["womb"],
+          "imagery": "子宫。",
+          "translation": "子宫",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

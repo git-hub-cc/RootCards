@@ -1,0 +1,35 @@
+{
+  "prefix": "port",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "port_carry",
+      "displayName": "port (运/港)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M2 12 q 5 3 10 0 t 10 0' stroke='currentColor' fill='none'/><rect x='8' y='6' width='8' height='6' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -port-",
+        "description": "核心意境是 **“搬运” (Carry)** 或 **“港口” (Port)**。\n港口是货物进出的地方。源于 pore (孔/口)。",
+        "imagery": "联想一艘货船🚢，或者搬运工扛箱子📦。"
+      },
+      "words": [
+        {
+          "word": "Portray",
+          "rootVisual": "<rect x='4' y='4' width='16' height='12' stroke='currentColor' fill='none' /><circle cx='12' cy='10' r='3' stroke='currentColor' />",
+          "breakdown": ["por (port携带)", "tray (托盘)"],
+          "imagery": "带着调色盘（托盘）作画，描绘。",
+          "translation": "描绘；扮演",
+          "sentences": []
+        },
+        {
+          "word": "Portrait",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><circle cx='12' cy='10' r='4' stroke='currentColor' />",
+          "breakdown": ["portra (描绘)", "-it"],
+          "imagery": "描绘出来的人像。",
+          "translation": "肖像；画像",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "prefix": "soph",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "soph_wisdom",
+      "displayName": "soph (智慧)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M12 12 L16 8' stroke='currentColor' />",
+      "prefixIntro": {
+        "title": "词根 soph",
+        "description": "核心意境是 **“智慧” (Wisdom)**。\n源于希腊语 sophia。",
+        "imagery": "联想猫头鹰🦉（智慧象征），或者思考者雕像。"
+      },
+      "words": [
+        {
+          "word": "Sophomore",
+          "rootVisual": "<text x='8' y='14' font-size='10'>1</text><text x='16' y='14' font-size='10' font-weight='bold'>2</text>",
+          "breakdown": ["soph (智)", "more (愚/多)"],
+          "imagery": "比大一更有智慧了，大二学生。",
+          "translation": "大二学生",
+          "sentences": []
+        },
+        {
+          "word": "Sophisticated",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><path d='M6 6 L18 18 M6 18 L18 6' stroke='currentColor' opacity='0.5' />",
+          "breakdown": ["soph (智)", "-isticated"],
+          "imagery": "充满智慧和经验的，老练的；（结构）复杂的。",
+          "translation": "老练的；复杂的",
+          "sentences": [
+            {
+              "en": "Smart and sophisticated.",
+              "cn": "聪明且老练。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+{
+  "prefix": "Vocab N-P",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_n",
+      "displayName": "Vocabulary N",
+      "themeColor": "#06b6d4",
+      "prefixIntro": {
+        "title": "N 开头核心词",
+        "description": "大学四级 N 开头的高频混合词汇。N 常有否定 (negative) 的含义。",
+        "imagery": "字母 N 像一道闪电或起伏的折线。"
+      },
+      "words": [
+        {
+          "word": "Naive",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><circle cx='8' cy='10' r='1' fill='currentColor' /><circle cx='16' cy='10' r='1' fill='currentColor' /><path d='M10 16 H 14' stroke='currentColor' />",
+          "breakdown": ["na (生)", "-ive"],
+          "imagery": "刚出生的，天真的。（Too young, too naive）",
+          "translation": "幼稚的；天真的",
+          "sentences": []
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_o",
+      "displayName": "Vocabulary O",
+      "themeColor": "#3b82f6",
+      "prefixIntro": {
+        "title": "O 开头核心词",
+        "description": "大学四级 O 开头的高频混合词汇。",
+        "imagery": "字母 O 像一个圆圈，代表完整、包围或嘴巴。"
+      },
+      "words": [
+        {
+          "word": "Objective",
+          "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none' />",
+          "breakdown": ["ob- (对)", "ject (投)", "-ive"],
+          "imagery": "投在对面的物体，客观存在的。",
+          "translation": "客观的；目标",
+          "sentences": [
+            {
+              "en": "Difficult to be objective.",
+              "cn": "很难保持客观。"
+            }
+          ]
+        },
+        {
+          "word": "Offset",
+          "rootVisual": "<path d='M4 12 H 12' stroke='currentColor' /><path d='M12 12 H 20' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["off", "set"],
+          "imagery": "设置一些东西来抵消掉。",
+          "translation": "抵消；补偿",
+          "sentences": [
+            {
+              "en": "Offset the increased cost.",
+              "cn": "抵消增加的成本。"
+            }
+          ]
+        },
+        {
+          "word": "Oil",
+          "rootVisual": "<path d='M12 2 C 12 2 6 10 6 14 A 6 6 0 0 0 18 14 C 18 10 12 2 12 2' fill='currentColor' />",
+          "breakdown": ["oil"],
+          "imagery": "一滴油。",
+          "translation": "油",
+          "sentences": []
+        },
+        {
+          "word": "Olive",
+          "rootVisual": "<ellipse cx='12' cy='12' rx='6' ry='8' fill='currentColor' color='#10b981' />",
+          "breakdown": ["olive"],
+          "imagery": "橄榄。",
+          "translation": "橄榄",
+          "sentences": [
+            {
+              "en": "Olive oil.",
+              "cn": "橄榄油。"
+            }
+          ]
+        },
+        {
+          "word": "Orient",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M16 12 L12 8 M16 12 L12 16 M2 12 H 22' stroke='currentColor' />",
+          "breakdown": ["ori (升起)", "-ent"],
+          "imagery": "太阳升起的地方，东方。",
+          "translation": "东方；定位",
+          "sentences": [
+            {
+              "en": "Oriented towards the needs.",
+              "cn": "面向需求。"
+            }
+          ]
+        },
+        {
+          "word": "Outset",
+          "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' marker-end='url(#arrow)' /><circle cx='4' cy='12' r='2' fill='currentColor' />",
+          "breakdown": ["out", "set"],
+          "imagery": "出发点，开始。",
+          "translation": "开始；开端",
+          "sentences": [
+            {
+              "en": "From the outset.",
+              "cn": "从一开始。"
+            }
+          ]
+        },
+        {
+          "word": "Overhear",
+          "rootVisual": "<path d='M4 4 H 20' stroke='currentColor' /><path d='M12 4 V 12' stroke='currentColor' stroke-dasharray='2 2' /><text x='12' y='16' text-anchor='middle'>👂</text>",
+          "breakdown": ["over", "hear"],
+          "imagery": "在上面听到下面的话，偷听。",
+          "translation": "无意中听到；偷听",
+          "sentences": [
+            {
+              "en": "Overhear a conversation.",
+              "cn": "无意中听到谈话。"
+            }
+          ]
+        },
+        {
+          "word": "Overwhelm",
+          "rootVisual": "<path d='M4 20 H 20 V 4 H 4 Z' stroke='currentColor' fill='none' /><path d='M4 8 H 20 V 20 H 4 Z' fill='currentColor' opacity='0.5' />",
+          "breakdown": ["over", "whelm (淹)"],
+          "imagery": "大水漫过，淹没，压倒。",
+          "translation": "淹没；压倒",
+          "sentences": [
+            {
+              "en": "Overwhelmed by homesickness.",
+              "cn": "被思乡之情淹没。"
+            }
+          ]
+        },
+        {
+          "word": "Owl",
+          "rootVisual": "<circle cx='8' cy='10' r='3' stroke='currentColor' fill='none' /><circle cx='16' cy='10' r='3' stroke='currentColor' fill='none' />",
+          "breakdown": ["owl"],
+          "imagery": "大眼睛的鸟，猫头鹰。",
+          "translation": "猫头鹰",
+          "sentences": []
+        },
+        {
+          "word": "Ozone",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='10'>O₃</text>",
+          "breakdown": ["o", "zone"],
+          "imagery": "O3，臭氧。",
+          "translation": "臭氧",
+          "sentences": []
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_p",
+      "displayName": "Vocabulary P",
+      "themeColor": "#6366f1",
+      "prefixIntro": {
+        "title": "P 开头核心词",
+        "description": "大学四级 P 开头的高频混合词汇。",
+        "imagery": "字母 P 像一面旗帜或一个站立的人。"
+      },
+      "words": [
+        {
+          "word": "Pain",
+          "rootVisual": "<path d='M8 8 L16 16 M16 8 L8 16' stroke='currentColor' color='#ef4444' />",
+          "breakdown": ["pain"],
+          "imagery": "疼痛。",
+          "translation": "疼痛",
+          "sentences": []
+        },
+        {
+          "word": "Palm",
+          "rootVisual": "<path d='M8 18 V 10 Q 8 4 14 4 Q 20 4 20 10 V 14' stroke='currentColor' fill='none' />",
+          "breakdown": ["palm"],
+          "imagery": "像字母 P 形状的手掌。",
+          "translation": "手掌；棕榈树",
+          "sentences": []
+        },
+        {
+          "word": "Pamphlet",
+          "rootVisual": "<rect x='8' y='6' width='8' height='12' stroke='currentColor' fill='none' />",
+          "breakdown": ["pam (palm)", "-let (小)"],
+          "imagery": "手掌大小的小册子。",
+          "translation": "小册子",
+          "sentences": []
+        },
+        {
+          "word": "Pave",
+          "rootVisual": "<rect x='2' y='14' width='4' height='4' fill='currentColor' /><rect x='6' y='14' width='4' height='4' fill='currentColor' /><rect x='10' y='14' width='4' height='4' fill='currentColor' /><rect x='14' y='14' width='4' height='4' fill='currentColor' /><rect x='18' y='14' width='4' height='4' fill='currentColor' />",
+          "breakdown": ["pave"],
+          "imagery": "铺路。",
+          "translation": "铺设",
+          "sentences": [
+            {
+              "en": "Pave the way.",
+              "cn": "铺平道路。"
+            }
+          ]
+        },
+        {
+          "word": "Peak",
+          "rootVisual": "<path d='M12 4 L4 20 H 20 Z' stroke='currentColor' fill='none' />",
+          "breakdown": ["peak"],
+          "imagery": "山顶。",
+          "translation": "顶峰；山顶",
+          "sentences": [
+            {
+              "en": "Business has peaked.",
+              "cn": "生意已达顶峰。"
+            }
+          ]
+        },
+        {
+          "word": "Pearl",
+          "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='none' />",
+          "breakdown": ["pearl"],
+          "imagery": "珍珠。",
+          "translation": "珍珠",
+          "sentences": []
+        },
+        {
+          "word": "Peel",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M12 4 Q 16 8 18 12' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": ["peel"],
+          "imagery": "剥皮（谐音：皮哦）。",
+          "translation": "削皮；皮",
+          "sentences": [
+            {
+              "en": "Peel the bananas.",
+              "cn": "剥香蕉。"
+            }
+          ]
+        },
+        {
+          "word": "Peep",
+          "rootVisual": "<rect x='4' y='8' width='6' height='8' fill='currentColor' /><rect x='14' y='8' width='6' height='8' fill='currentColor' /><circle cx='12' cy='12' r='2' stroke='currentColor' fill='none' />",
+          "breakdown": ["p (手)", "ee (眼)", "p"],
+          "imagery": "两手捂眼从指缝看，偷窥。",
+          "translation": "偷看；窥视",
+          "sentences": []
+        },
+        {
+          "word": "Penalty",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>⚠️</text>",
+          "breakdown": ["penal (惩罚)", "-ty"],
+          "imagery": "官方的处罚。",
+          "translation": "处罚；罚款",
+          "sentences": [
+            {
+              "en": "The penalty for treason.",
+              "cn": "叛国罪的处罚。"
+            }
+          ]
+        },
+        {
+          "word": "Penguin",
+          "rootVisual": "<ellipse cx='12' cy='12' rx='6' ry='8' stroke='currentColor' fill='none' />",
+          "breakdown": ["pen (白/头)", "guin"],
+          "imagery": "企鹅。",
+          "translation": "企鹅",
+          "sentences": []
+        },
+        {
+          "word": "Peninsula",
+          "rootVisual": "<path d='M4 4 V 20 H 12 V 12 A 4 4 0 1 1 12 4 Z' stroke='currentColor' fill='none' />",
+          "breakdown": ["pen (半)", "insula (岛)"],
+          "imagery": "几乎是岛（半岛）。",
+          "translation": "半岛",
+          "sentences": []
+        },
+        {
+          "word": "Period",
+          "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor' />",
+          "breakdown": ["peri (周)", "od (路)"],
+          "imagery": "走一圈，周期；句号。",
+          "translation": "时期；句号",
+          "sentences": [
+            {
+              "en": "I'm on my period.",
+              "cn": "我来例假了。"
+            }
+          ]
+        },
+        {
+          "word": "Pest",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>🐛</text>",
+          "breakdown": ["pest"],
+          "imagery": "拍死它（谐音），害虫。",
+          "translation": "害虫",
+          "sentences": []
+        },
+        {
+          "word": "Pharmacy",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='10'>Rx</text>",
+          "breakdown": ["pharm", "-acy"],
+          "imagery": "药房。",
+          "translation": "药房",
+          "sentences": []
+        },
+        {
+          "word": "Pile",
+          "rootVisual": "<rect x='8' y='16' width='8' height='2' stroke='currentColor' /><rect x='8' y='13' width='8' height='2' stroke='currentColor' /><rect x='8' y='10' width='8' height='2' stroke='currentColor' />",
+          "breakdown": ["pile (堆)"],
+          "imagery": "一堆东西。",
+          "translation": "堆；叠",
+          "sentences": [
+            {
+              "en": "A pile of books.",
+              "cn": "一堆书。"
+            }
+          ]
+        },
+        {
+          "word": "Pirate",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>🏴‍☠️</text>",
+          "breakdown": ["pirate"],
+          "imagery": "海盗。",
+          "translation": "海盗；盗版",
+          "sentences": [
+            {
+              "en": "Pirating software.",
+              "cn": "盗版软件。"
+            }
+          ]
+        },
+        {
+          "word": "Pistol",
+          "rootVisual": "<path d='M6 12 H 14 L 14 16 H 10 L 10 12' stroke='currentColor' fill='none' />",
+          "breakdown": ["pistol"],
+          "imagery": "手枪。",
+          "translation": "手枪",
+          "sentences": []
+        },
+        {
+          "word": "Plateau",
+          "rootVisual": "<path d='M2 18 L 6 10 H 18 L 22 18' stroke='currentColor' fill='none' />",
+          "breakdown": ["plat (平)", "-eau"],
+          "imagery": "高处的平地，高原。",
+          "translation": "高原",
+          "sentences": [
+            {
+              "en": "Tibetan plateau.",
+              "cn": "青藏高原。"
+            }
+          ]
+        },
+        {
+          "word": "Plaza",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' />",
+          "breakdown": ["plaza"],
+          "imagery": "购物广场。",
+          "translation": "广场",
+          "sentences": [
+            {
+              "en": "Designed by a first-rate architect.",
+              "cn": "由一流建筑师设计。"
+            }
+          ]
+        },
+        {
+          "word": "Pledge",
+          "rootVisual": "<path d='M12 4 V 16 M 8 8 H 16' stroke='currentColor' />",
+          "breakdown": ["pledge"],
+          "imagery": "发誓。",
+          "translation": "发誓；保证",
+          "sentences": [
+            {
+              "en": "Pledge my eternal love.",
+              "cn": "发誓永远爱你。"
+            }
+          ]
+        },
+        {
+          "word": "Poll",
+          "rootVisual": "<rect x='4' y='10' width='4' height='8' fill='currentColor' opacity='0.3' /><rect x='10' y='6' width='4' height='12' fill='currentColor' opacity='0.6' /><rect x='16' y='4' width='4' height='14' fill='currentColor' />",
+          "breakdown": ["p (掌)", "all"],
+          "imagery": "所有人举手投票。",
+          "translation": "民意调查；投票",
+          "sentences": [
+            {
+              "en": "Approval rating.",
+              "cn": "支持率。"
+            }
+          ]
+        },
+        {
+          "word": "Ponder",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle'>🤔</text>",
+          "breakdown": ["pond (磅/重)", "-er"],
+          "imagery": "掂量重量，仔细考虑。",
+          "translation": "沉思；衡量",
+          "sentences": [
+            {
+              "en": "Ponder the problem.",
+              "cn": "思考这个问题。"
+            }
+          ]
+        },
+        {
+          "word": "Pound",
+          "rootVisual": "<rect x='6' y='10' width='12' height='8' stroke='currentColor' fill='none' /><text x='12' y='15' text-anchor='middle' font-size='8'>LB</text>",
+          "breakdown": ["pound"],
+          "imagery": "重量单位磅；猛击。",
+          "translation": "磅；猛击",
+          "sentences": []
+        },
+        {
+          "word": "Pray",
+          "rootVisual": "<path d='M10 8 L 14 8' stroke='currentColor' /><path d='M12 8 V 16' stroke='currentColor' />",
+          "breakdown": ["pray"],
+          "imagery": "祈祷。",
+          "translation": "祈祷",
+          "sentences": [
+            {
+              "en": "Praying for rain.",
+              "cn": "祈求下雨。"
+            }
+          ]
+        },
+        {
+          "word": "Premier",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='12'>1st</text>",
+          "breakdown": ["prem (前)", "-ier"],
+          "imagery": "首要的，最好的。",
+          "translation": "首要的；总理",
+          "sentences": [
+            {
+              "en": "Premier hotels.",
+              "cn": "一流酒店。"
+            }
+          ]
+        },
+        {
+          "word": "Premium",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='12'>⭐</text>",
+          "breakdown": ["prem (前)", "-ium"],
+          "imagery": "优质的，高级的。",
+          "translation": "优质的；保险费",
+          "sentences": [
+            {
+              "en": "Premium quality.",
+              "cn": "优质。"
+            }
+          ]
+        },
+        {
+          "word": "Priest",
+          "rootVisual": "<path d='M12 4 V 16 M 8 8 H 16' stroke='currentColor' />",
+          "breakdown": ["pri (前)", "-est"],
+          "imagery": "站在前面祈祷的人，牧师。",
+          "translation": "牧师；神父",
+          "sentences": []
+        },
+        {
+          "word": "Prime",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='12'>#1</text>",
+          "breakdown": ["prim (一)"],
+          "imagery": "首要的。",
+          "translation": "首要的；最好的",
+          "sentences": [
+            {
+              "en": "Prime Minister.",
+              "cn": "首相。"
+            }
+          ]
+        },
+        {
+          "word": "Principal",
+          "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none' /><path d='M8 20 L 12 14 L 16 20' stroke='currentColor' />",
+          "breakdown": ["prin (一)", "cip (拿)", "-al"],
+          "imagery": "拿第一主意的人，校长。",
+          "translation": "校长；主要的",
+          "sentences": [
+            {
+              "en": "The principal of the business.",
+              "cn": "企业负责人。"
+            }
+          ]
+        },
+        {
+          "word": "Principle",
+          "rootVisual": "<path d='M6 8 H 18 M 6 12 H 18 M 6 16 H 18' stroke='currentColor' />",
+          "breakdown": ["prin (一)", "cip (拿)", "-le"],
+          "imagery": "第一准则。",
+          "translation": "原则；原理",
+          "sentences": [
+            {
+              "en": "A man of principle.",
+              "cn": "有原则的人。"
+            }
+          ]
+        },
+        {
+          "word": "Priority",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='12'>🔝</text>",
+          "breakdown": ["pri (前)", "-ority"],
+          "imagery": "优先权。",
+          "translation": "优先权",
+          "sentences": [
+            {
+              "en": "Top priority.",
+              "cn": "当务之急。"
+            }
+          ]
+        },
+        {
+          "word": "Property",
+          "rootVisual": "<path d='M4 14 L 12 6 L 20 14 V 20 H 4 Z' stroke='currentColor' fill='none' />",
+          "breakdown": ["proper (自己的)", "-ty"],
+          "imagery": "属于自己的东西，房产。",
+          "translation": "财产；房产",
+          "sentences": [
+            {
+              "en": "The property market.",
+              "cn": "房地产市场。"
+            }
+          ]
+        },
+        {
+          "word": "Punish",
+          "rootVisual": "<path d='M4 4 L 20 20 M 20 4 L 4 20' stroke='currentColor' color='#ef4444' />",
+          "breakdown": ["pun (罚/痛)", "-ish"],
+          "imagery": "让人感到疼痛（pain）。",
+          "translation": "惩罚",
+          "sentences": []
+        },
+        {
+          "word": "Pursue",
+          "rootVisual": "<path d='M4 12 H 16' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["pur (向前)", "sue (随)"],
+          "imagery": "向前跟随，追求。",
+          "translation": "追求；追赶",
+          "sentences": [
+            {
+              "en": "Pursue a medical career.",
+              "cn": "追求医学事业。"
+            }
+          ]
+        },
+        {
+          "word": "Pursuit",
+          "rootVisual": "<circle cx='16' cy='12' r='2' fill='currentColor' /><path d='M4 12 H 12' stroke='currentColor' marker-end='url(#arrow)' />",
+          "breakdown": ["pursue", "-it"],
+          "imagery": "追求的过程。",
+          "translation": "追求",
+          "sentences": [
+            {
+              "en": "In pursuit of her dreams.",
+              "cn": "追求她的梦想。"
+            }
+          ]
+        },
+        {
+          "word": "Pyramid",
+          "rootVisual": "<path d='M12 4 L 4 18 H 20 Z' stroke='currentColor' fill='none' />",
+          "breakdown": ["pyramid"],
+          "imagery": "金字塔。",
+          "translation": "金字塔",
+          "sentences": [
+            {
+              "en": "The pyramids of Egypt.",
+              "cn": "埃及金字塔。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_q_r",
+      "displayName": "Vocabulary Q",
+      "themeColor": "#8b5cf6",
+      "prefixIntro": {
+        "title": "Q 开头核心词",
+        "description": "大学四级 Q 开头的高频混合词汇。",
+        "imagery": "字母 Q 像一个带尾巴的圆，常与问题 (question) 或数量 (quantity) 相关。"
+      },
+      "words": [
+        {
+          "word": "Quota",
+          "rootVisual": "<path d='M12 12 L 12 4' stroke='currentColor' /><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' />",
+          "breakdown": ["quot (多少)", "-a"],
+          "imagery": "分配好的数量，配额。",
+          "translation": "配额；定额",
+          "sentences": [
+            {
+              "en": "Production quotas.",
+              "cn": "生产配额。"
+            }
+          ]
+        },
+        {
+          "word": "Quantity",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='10'>123</text>",
+          "breakdown": ["quant (量)", "-ity"],
+          "imagery": "数量。",
+          "translation": "数量",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}
