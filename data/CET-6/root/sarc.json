@@ -16,12 +16,12 @@
       "words": [
         {
           "word": "Sarcasm",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>😏</text>",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12h2' stroke='currentColor'/><path d='M14 12h2' stroke='currentColor'/><path d='M9 16c2-1 4-1 6 0' stroke='currentColor'/>",
           "breakdown": [
             "sarc (肉/讽刺)",
             "-asm"
           ],
-          "imagery": "像撕肉一样伤人的话（谐音：傻）。",
+          "imagery": "一张带有讽刺意味的笑脸（嘴角上扬但眼神冷漠）。",
           "translation": "讽刺；挖苦",
           "sentences": [
             {
@@ -32,12 +32,12 @@
         },
         {
           "word": "Sarcastic",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🙄</text>",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='8' cy='9' r='1' fill='currentColor'/><circle cx='16' cy='9' r='1' fill='currentColor'/><path d='M8 15h8' stroke='currentColor'/>",
           "breakdown": [
             "sarcasm",
             "-tic"
           ],
-          "imagery": "讽刺的。",
+          "imagery": "翻白眼的表情，表示无语和讽刺。",
           "translation": "讽刺的；挖苦的",
           "sentences": [
             {

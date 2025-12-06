@@ -16,12 +16,12 @@
       "words": [
         {
           "word": "Assume",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤔</text>",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='1.5' fill='currentColor'/><circle cx='16' cy='10' r='1.5' fill='currentColor'/><path d='M12 16h4' stroke='currentColor' stroke-width='2'/><path d='M14 14v4' stroke='currentColor' stroke-width='2' transform='rotate(20 14 16)'/>",
           "breakdown": [
             "as- (去)",
             "sume (拿)"
           ],
-          "imagery": "拿取观点（往往指缺乏证据的推测）。",
+          "imagery": "用手指着下巴思考的样子，表示假设。",
           "translation": "假设；假定（无足够证据）",
           "sentences": [
             {
@@ -32,12 +32,12 @@
         },
         {
           "word": "Presume",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🧐</text>",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M14 9q1-2 2 0' stroke='currentColor'/><circle cx='8' cy='10' r='1.5' fill='currentColor'/><circle cx='16' cy='10' r='1.5' fill='currentColor'/><path d='M10 16h4' stroke='currentColor'/>",
           "breakdown": [
             "pre- (前)",
             "sume (拿)"
           ],
-          "imagery": "提前拿取观点（推测），通常基于一定依据。",
+          "imagery": "戴着单片眼镜仔细审视，表示基于证据的推测。",
           "translation": "假设；推定（有一定依据）",
           "sentences": [
             {

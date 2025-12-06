@@ -15,23 +15,23 @@
       "words": [
         {
           "word": "Prose",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📄</text>",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><line x1='6' y1='8' x2='18' y2='8' stroke='currentColor'/><line x1='6' y1='12' x2='18' y2='12' stroke='currentColor'/><line x1='6' y1='16' x2='14' y2='16' stroke='currentColor'/>",
           "breakdown": [
             "pro- (向前)",
             "se (turn)"
           ],
-          "imagery": "文字不断向前延伸，直到段落结束，不像诗歌那样频繁换行。",
+          "imagery": "一页写满文字的纸，代表散文。",
           "translation": "散文",
           "sentences": []
         },
         {
           "word": "Probe",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🕵️</text>",
+          "rootVisual": "<circle cx='10' cy='10' r='6' stroke='currentColor' fill='none' stroke-width='2'/><line x1='14' y1='14' x2='20' y2='20' stroke='currentColor' stroke-width='2'/><path d='M10 12v4' stroke='currentColor'/><circle cx='10' cy='14' r='1' fill='currentColor'/>",
           "breakdown": [
             "pro- (向前)",
             "be (exist)"
           ],
-          "imagery": "不断向前深入地探查。",
+          "imagery": "一个放大镜正在探查细节。",
           "translation": "调查；探查",
           "sentences": [
             {
@@ -42,12 +42,12 @@
         },
         {
           "word": "Prone",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🙇</text>",
+          "rootVisual": "<circle cx='18' cy='6' r='3' stroke='currentColor' fill='none'/><path d='M16 8l-6 6-4 4' stroke='currentColor' stroke-width='2'/><path d='M10 14l-4 4' stroke='currentColor'/><path d='M2 20h20' stroke='currentColor'/>",
           "breakdown": [
             "pro- (向前)",
             "ne"
           ],
-          "imagery": "身体向前倾，表示一种趋势或倾向。",
+          "imagery": "一个人身体向前倾斜甚至趴下的姿势。",
           "translation": "倾向于...的；易于...的",
           "sentences": [
             {
@@ -58,12 +58,12 @@
         },
         {
           "word": "Prop",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🪵</text>",
+          "rootVisual": "<path d='M12 20l-4-16h8z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 20h8' stroke='currentColor'/>",
           "breakdown": [
             "pro- (向前/上)",
             "p"
           ],
-          "imagery": "向前或向上支撑物体。",
+          "imagery": "一个三角形的支架或支撑物。",
           "translation": "支撑物；支撑",
           "sentences": [
             {
@@ -74,13 +74,13 @@
         },
         {
           "word": "Propagate",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📢</text>",
+          "rootVisual": "<path d='M4 12 l8 -6 l8 6 l-8 6 z' stroke='currentColor' fill='none'/><path d='M4 12 h-2 M20 12 h2 M12 6 v-2 M12 18 v2' stroke='currentColor'/>",
           "breakdown": [
             "pro- (向前)",
             "pag (fasten)",
             "-ate"
           ],
-          "imagery": "将思想向前传播（宣传）；或物种代代向前延续（繁殖）。",
+          "imagery": "一个向四周扩散信号的广播塔，或者植物播种。",
           "translation": "宣传；繁殖",
           "sentences": [
             {
@@ -95,12 +95,12 @@
         },
         {
           "word": "Propaganda",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🗣️</text>",
+          "rootVisual": "<path d='M4 4h12v10h-2l4 6h-4l-4-6h-6z' stroke='currentColor' fill='none'/><path d='M10 8h2' stroke='currentColor'/>",
           "breakdown": [
             "propagate",
             "-a (名)"
           ],
-          "imagery": "向前传播的信息（通常指政治宣传）。",
+          "imagery": "一个扩音器，象征宣传。",
           "translation": "宣传",
           "sentences": [
             {
@@ -111,12 +111,12 @@
         },
         {
           "word": "Protocol",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📜</text>",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y1='12' x2='12' y2='12' stroke='currentColor'/><path d='M14 16l4 4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": [
             "proto (pro-向前/第一)",
             "col (glue)"
           ],
-          "imagery": "为未来的行动制定的第一份草案或规则（原指粘在卷轴第一页的目录）。",
+          "imagery": "一份正式的卷轴或签署的文件。",
           "translation": "草案；协议；礼仪",
           "sentences": [
             {
@@ -127,12 +127,12 @@
         },
         {
           "word": "Prototype",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🚗</text>",
+          "rootVisual": "<path d='M2 14l4-4 8 0 4 4' stroke='currentColor' fill='none'/><circle cx='6' cy='14' r='2' stroke='currentColor'/><circle cx='18' cy='14' r='2' stroke='currentColor'/>",
           "breakdown": [
             "proto (pro-向前)",
             "type (类型)"
           ],
-          "imagery": "为未来准备的第一种类型（原型）。",
+          "imagery": "一辆概念车的轮廓线。",
           "translation": "原型；雏形",
           "sentences": [
             {

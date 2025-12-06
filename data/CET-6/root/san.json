@@ -15,12 +15,12 @@
       "words": [
         {
           "word": "Sanitary",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🚽</text>",
+          "rootVisual": "<path d='M6 4h12l-2 10a4 4 0 0 1-8 0z' stroke='currentColor' fill='none'/><path d='M12 18v4' stroke='currentColor'/><path d='M8 22h8' stroke='currentColor'/>",
           "breakdown": [
             "san (健康/卫生)",
             "-itary"
           ],
-          "imagery": "与健康卫生相关的。",
+          "imagery": "一个洁净的马桶形状，代表卫生设施。",
           "translation": "卫生的；清洁的",
           "sentences": [
             {
@@ -31,12 +31,12 @@
         },
         {
           "word": "Sanitation",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🧹</text>",
+          "rootVisual": "<path d='M4 20h16' stroke='currentColor'/><rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y1='12' x2='16' y2='12' stroke='currentColor'/>",
           "breakdown": [
             "sanit (卫生)",
             "-ation"
           ],
-          "imagery": "维护健康卫生的系统或设施。",
+          "imagery": "一把扫帚，象征清扫和卫生。",
           "translation": "环境卫生；卫生设施",
           "sentences": []
         }

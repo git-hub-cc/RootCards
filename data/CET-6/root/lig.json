@@ -15,13 +15,13 @@
       "words": [
         {
           "word": "Obliged",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🙏</text>",
+          "rootVisual": "<path d='M12 20s-2-4-2-8a2 2 0 0 1 2-2 2 2 0 0 1 2 2c0 4-2 8-2 8z' stroke='currentColor' fill='none'/><path d='M8 10l4 4 4-4' stroke='currentColor'/>",
           "breakdown": [
             "ob- (to)",
             "lig (绑)",
             "-ed"
           ],
-          "imagery": "被责任或道义绑住的。",
+          "imagery": "双手合十，表示感谢或受恩惠束缚。",
           "translation": "有责任的；有义务的；感激的",
           "sentences": [
             {
@@ -32,13 +32,13 @@
         },
         {
           "word": "Obligation",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📋</text>",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y1='12' x2='16' y2='12' stroke='currentColor'/><line x1='8' y1='16' x2='12' y2='16' stroke='currentColor'/>",
           "breakdown": [
             "ob-",
             "lig (绑)",
             "-ation"
           ],
-          "imagery": "捆绑在身上的责任。",
+          "imagery": "一份写满条款的清单，代表责任。",
           "translation": "义务；责任",
           "sentences": [
             {

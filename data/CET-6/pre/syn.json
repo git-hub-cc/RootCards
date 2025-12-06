@@ -15,12 +15,12 @@
       "words": [
         {
           "word": "Syndrome",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤒</text>",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12l2 2 4-4' stroke='currentColor' stroke-width='2'/><path d='M16 8v-2M18 10h2M16 16v2M6 10H4' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": [
             "syn- (共同)",
             "drome (run)"
           ],
-          "imagery": "多种症状“共同跑出来”的病症。",
+          "imagery": "多种症状共同跑出来，形成综合征。",
           "translation": "综合征",
           "sentences": [
             {

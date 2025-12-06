@@ -15,12 +15,12 @@
       "words": [
         {
           "word": "Parole",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>⛓️</text>",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><path d='M18 12 h-6 m-2 0 h-6' stroke='currentColor' opacity='0.3'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": [
             "par (部分)",
             "ole (role角色)"
           ],
-          "imagery": "获得“部分的”社会角色/身份，还不是完全的自由人（假释）。",
+          "imagery": "断开的锁链，象征有条件的自由。",
           "translation": "假释",
           "sentences": [
             {

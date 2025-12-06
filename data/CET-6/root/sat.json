@@ -16,12 +16,12 @@
       "words": [
         {
           "word": "Satire",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🎭</text>",
+          "rootVisual": "<path d='M4 18l8-14 8 14H4z' stroke='currentColor' fill='none'/><circle cx='8' cy='14' r='1.5' fill='currentColor'/><circle cx='16' cy='14' r='1.5' fill='currentColor'/><path d='M12 18c-2-2-2-4 0-6' stroke='currentColor' fill='none'/>",
           "breakdown": [
             "sat (杂盘/满)",
             "-ire"
           ],
-          "imagery": "原指装满各种杂果的盘子，引申为杂烩式的讽刺文学。（谐音：傻太）。",
+          "imagery": "一张戴着面具的脸，代表戏剧和讽刺。",
           "translation": "讽刺；讽刺文学",
           "sentences": [
             {

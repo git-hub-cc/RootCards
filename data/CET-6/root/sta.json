@@ -15,12 +15,12 @@
       "words": [
         {
           "word": "Stout",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🏋️</text>",
+          "rootVisual": "<circle cx='12' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M12 11v8' stroke='currentColor' stroke-width='4'/><path d='M8 13h8' stroke='currentColor' stroke-width='4'/><path d='M10 19l-2 4' stroke='currentColor' stroke-width='2'/><path d='M14 19l2 4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": [
             "st- (站)",
             "out (外)"
           ],
-          "imagery": "向外站开，显得身体横向发展，矮胖且结实。",
+          "imagery": "一个身体宽大、结实的人形。",
           "translation": "矮胖的；结实的",
           "sentences": [
             {
@@ -31,12 +31,12 @@
         },
         {
           "word": "Stroll",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🚶</text>",
+          "rootVisual": "<circle cx='12' cy='6' r='2' fill='currentColor'/><path d='M12 8v6l-2 4' stroke='currentColor'/><path d='M12 14l2 4' stroke='currentColor'/><path d='M12 10l-3 2' stroke='currentColor'/><path d='M12 10l3 2' stroke='currentColor'/>",
           "breakdown": [
             "st- (站)",
             "roll (滚)"
           ],
-          "imagery": "站着并像轮子一样慢慢向前滚动（慢慢走）。",
+          "imagery": "一个正在悠闲散步的小人。",
           "translation": "散步；闲逛",
           "sentences": [
             {

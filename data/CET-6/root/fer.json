@@ -15,13 +15,13 @@
       "words": [
         {
           "word": "Referendum",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🗳️</text>",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M8 8l4 4 8-8' stroke='currentColor' fill='none'/><rect x='8' y='14' width='8' height='2' fill='currentColor'/>",
           "breakdown": [
             "re- (回)",
             "fer (带)",
             "-dum"
           ],
-          "imagery": "将问题带回去给人民投票，作为参考。",
+          "imagery": "一个投票箱，正在投入选票，将问题带回去参考。",
           "translation": "全民公投",
           "sentences": []
         }

@@ -14,22 +14,22 @@
       "words": [
         {
           "word": "Ruth",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🥺</text>",
+          "rootVisual": "<path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' stroke='currentColor' fill='none'/><path d='M12 12l2 4' stroke='currentColor'/>",
           "breakdown": [
             "ruth (怜悯)"
           ],
-          "imagery": "古英语中指怜悯或同情。",
+          "imagery": "一颗心流下一滴泪，象征怜悯。",
           "translation": "怜悯；悲哀",
           "sentences": []
         },
         {
           "word": "Ruthless",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>👿</text>",
+          "rootVisual": "<path d='M14.5 4l-5 16' stroke='currentColor' stroke-width='2'/><path d='M12 2l3 3l-3 3' stroke='currentColor' fill='none'/><path d='M8 20h8' stroke='currentColor'/>",
           "breakdown": [
             "ruth (怜悯)",
             "-less (无)"
           ],
-          "imagery": "没有怜悯之心的，无情的。",
+          "imagery": "一把锋利的剑，象征无情和决绝。",
           "translation": "无情的；残忍的；坚定的",
           "sentences": [
             {
@@ -52,12 +52,12 @@
       "words": [
         {
           "word": "Savage",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🍖</text>",
+          "rootVisual": "<path d='M7 20l5-10 5 10' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M15 14l4-4' stroke='currentColor' stroke-width='2'/><path d='M9 14l-4-4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": [
             "sav (森林)",
             "-age"
           ],
-          "imagery": "生活在森林里的，未开化的。",
+          "imagery": "一个原始人手持工具的形象。",
           "translation": "野蛮的；凶猛的；原始的",
           "sentences": [
             {
@@ -68,11 +68,11 @@
         },
         {
           "word": "Scorn",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>😤</text>",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 15s1.5-1 4-1 4 1 4 1' stroke='currentColor'/><path d='M9 9h2' stroke='currentColor'/><path d='M15 9h-2' stroke='currentColor'/>",
           "breakdown": [
             "scorn"
           ],
-          "imagery": "强烈的轻视。",
+          "imagery": "一张带有轻蔑眼神和嘴角的脸。",
           "translation": "蔑视；鄙视",
           "sentences": [
             {
@@ -83,11 +83,11 @@
         },
         {
           "word": "Scramble",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🧗</text>",
+          "rootVisual": "<path d='M4 20l6-12 6 12' stroke='currentColor' fill='none'/><circle cx='10' cy='8' r='2' fill='currentColor'/><path d='M10 10l-2 4' stroke='currentColor'/><path d='M10 10l4 2' stroke='currentColor'/>",
           "breakdown": [
             "scramble (爬/抢)"
           ],
-          "imagery": "手脚并用地向上爬，或者争抢。",
+          "imagery": "手脚并用向上攀爬的动作。",
           "translation": "攀爬；争夺",
           "sentences": [
             {
@@ -102,11 +102,11 @@
         },
         {
           "word": "Scrap",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📄</text>",
+          "rootVisual": "<path d='M14 3v4a1 1 0 0 0 1 1h4' stroke='currentColor' fill='none'/><path d='M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z' stroke='currentColor' fill='none'/><path d='M12 11l-3 3' stroke='currentColor'/><path d='M9 11l3 3' stroke='currentColor'/>",
           "breakdown": [
             "scrap"
           ],
-          "imagery": "撕下来的小碎片。",
+          "imagery": "一张被撕坏或废弃的纸。",
           "translation": "碎片；废料",
           "sentences": [
             {
@@ -117,11 +117,11 @@
         },
         {
           "word": "Seam",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🧵</text>",
+          "rootVisual": "<path d='M4 12h16' stroke='currentColor' stroke-dasharray='2 2'/><path d='M4 8l2 2 2-2 2 2 2-2 2 2 2-2 2 2' stroke='currentColor' fill='none'/>",
           "breakdown": [
             "seam (缝)"
           ],
-          "imagery": "布料间细密的缝合处（谐音：细密）；地质层。",
+          "imagery": "像缝纫针脚一样的波浪线和虚线。",
           "translation": "缝；接缝；煤层",
           "sentences": [
             {
@@ -132,11 +132,11 @@
         },
         {
           "word": "Shrug",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤷</text>",
+          "rootVisual": "<path d='M8 12c0-2 2-4 4-4s4 2 4 4' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' fill='currentColor'/><path d='M6 14l2-2' stroke='currentColor'/><path d='M18 14l-2-2' stroke='currentColor'/>",
           "breakdown": [
             "shrug"
           ],
-          "imagery": "向两边展开的动作（耸肩）；或者向两边生长的灌木。",
+          "imagery": "肩膀向上耸起的线条动作。",
           "translation": "耸肩；灌木",
           "sentences": [
             {
@@ -147,12 +147,12 @@
         },
         {
           "word": "Skeptical",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤨</text>",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10h3' stroke='currentColor'/><path d='M14 9q1-2 2 0' stroke='currentColor'/><path d='M10 16h4' stroke='currentColor'/>",
           "breakdown": [
             "skept (看)",
             "-ical"
           ],
-          "imagery": "带着审视的眼光看，怀疑。",
+          "imagery": "一张脸上扬起一根眉毛，表示怀疑。",
           "translation": "怀疑的",
           "sentences": [
             {
@@ -163,11 +163,11 @@
         },
         {
           "word": "Stray",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🐈</text>",
+          "rootVisual": "<path d='M4 18l4-4 2 2 4-6 2 2 4-8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><circle cx='4' cy='18' r='2' fill='currentColor'/>",
           "breakdown": [
             "stray (街/迷路)"
           ],
-          "imagery": "在街上(street)迷路，流浪。",
+          "imagery": "一条曲折的虚线路径，表示迷路或偏离。",
           "translation": "流浪的；走失的",
           "sentences": [
             {
@@ -178,12 +178,12 @@
         },
         {
           "word": "Stroke",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>⚡</text>",
+          "rootVisual": "<path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z' stroke='currentColor' fill='none' stroke-width='2'/>",
           "breakdown": [
             "strik (击)",
             "stroke"
           ],
-          "imagery": "突然的一击（strike），如中风、钟声、闪电。",
+          "imagery": "一道闪电，代表突然的一击。",
           "translation": "中风；钟声；一笔；抚摸",
           "sentences": [
             {
@@ -198,12 +198,12 @@
         },
         {
           "word": "Subtle",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤏</text>",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
           "breakdown": [
             "sub- (下)",
             "tle (web/textile)"
           ],
-          "imagery": "藏在下面的细微纹理，不仔细看发现不了。",
+          "imagery": "放大镜下看一个极小的点，表示细微。",
           "translation": "微妙的；细微的；精巧的",
           "sentences": [
             {

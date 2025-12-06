@@ -15,12 +15,12 @@
       "words": [
         {
           "word": "Deplore",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>👎</text>",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='1.5' fill='currentColor'/><circle cx='16' cy='10' r='1.5' fill='currentColor'/><path d='M16 16q-4-4-8 0' stroke='currentColor' fill='none'/><path d='M12 18l2 2' stroke='currentColor' fill='none'/>",
           "breakdown": [
             "de- (否定/向下)",
             "plore (cry)"
           ],
-          "imagery": "对某事感到悲痛并强烈反对（向下喊叫）。",
+          "imagery": "一张悲伤哭泣并表示反对的脸。",
           "translation": "公开谴责；强烈反对",
           "sentences": [
             {

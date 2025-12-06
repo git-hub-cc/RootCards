@@ -15,23 +15,23 @@
       "words": [
         {
           "word": "Psychology",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🧠</text>",
+          "rootVisual": "<path d='M12 4 c -6 0 -6 8 0 8 c 6 0 6 -8 0 -8 z M 12 12 v 8' stroke='currentColor' fill='none' stroke-width='2'/>",
           "breakdown": [
             "psych (心理)",
             "-ology (学)"
           ],
-          "imagery": "研究普遍心理活动的学科。",
+          "imagery": "大脑的轮廓，代表心理学。",
           "translation": "心理学",
           "sentences": []
         },
         {
           "word": "Psychiatry",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🩺</text>",
+          "rootVisual": "<path d='M12 4 c -6 0 -6 8 0 8 c 6 0 6 -8 0 -8 z M 12 12 v 8' stroke='currentColor' fill='none' stroke-width='1.5'/><path d='M16 16l4 4m-4 0l4-4' stroke='currentColor' stroke-width='2' color='#ef4444'/>",
           "breakdown": [
             "psych (心理)",
             "-iatry (治疗)"
           ],
-          "imagery": "专注于精神疾病治疗的医学分支。",
+          "imagery": "心理符号加上医疗标志，代表精神病治疗。",
           "translation": "精神病学",
           "sentences": []
         }

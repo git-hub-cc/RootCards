@@ -6,7 +6,7 @@
       "meaningId": "verb_word",
       "displayName": "verb (词/动词)",
       "themeColor": "#8b5cf6",
-      "prefixVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🔤</text>",
+      "prefixVisual": "<path d='M4 16h4l2-10 2 10h4' stroke='currentColor' fill='none' stroke-width='2'/>",
       "prefixIntro": {
         "title": "词根 -verb-",
         "description": "核心意境是 **“词” (Word)**。\n虽然 verb 意思是动词，但作为词根泛指语言或词汇。",
@@ -15,12 +15,12 @@
       "words": [
         {
           "word": "Verbal",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>👄</text>",
+          "rootVisual": "<path d='M12 16c4 0 6-4 6-8s-4-6-6-6s-6 2-6 6s2 8 6 8z' stroke='currentColor' fill='none'/><path d='M4 12h16' stroke='currentColor'/><path d='M12 4v16' stroke='currentColor' opacity='0.3'/>",
           "breakdown": [
             "verb (词)",
             "-al"
           ],
-          "imagery": "用语言表达的（相对于非语言的）。",
+          "imagery": "一张张开的嘴巴，代表口头语言。",
           "translation": "口头的；语言的",
           "sentences": []
         }

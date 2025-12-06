@@ -15,12 +15,12 @@
       "words": [
         {
           "word": "Subtle",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤏</text>",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
           "breakdown": [
             "sub- (下)",
             "tle (web/textile)"
           ],
-          "imagery": "藏在下面的细微纹理，不仔细看发现不了。",
+          "imagery": "用放大镜看极小的细节，表示细微。",
           "translation": "微妙的；细微的；精巧的",
           "sentences": [
             {
