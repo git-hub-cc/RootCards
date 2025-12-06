@@ -1,0 +1,147 @@
+{
+  "prefix": "pro",
+  "affixType": "prefix",
+  "meanings": [
+    {
+      "meaningId": "pro_forward",
+      "displayName": "pro- (向前)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M4 12 H 16' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)' /><circle cx='12' cy='12' r='2' fill='currentColor' />",
+      "prefixIntro": {
+        "title": "前缀 pro-",
+        "description": "核心意境是 **“向前” (Forward)**。\n表示向前方推进、展示或倾向。",
+        "imagery": "联想一个向前的箭头➡️，或者一个人身体前倾。"
+      },
+      "words": [
+        {
+          "word": "Prose",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📄</text>",
+          "breakdown": [
+            "pro- (向前)",
+            "se (turn)"
+          ],
+          "imagery": "文字不断向前延伸，直到段落结束，不像诗歌那样频繁换行。",
+          "translation": "散文",
+          "sentences": []
+        },
+        {
+          "word": "Probe",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🕵️</text>",
+          "breakdown": [
+            "pro- (向前)",
+            "be (exist)"
+          ],
+          "imagery": "不断向前深入地探查。",
+          "translation": "调查；探查",
+          "sentences": [
+            {
+              "en": "I don't want to probe into your personal affairs.",
+              "cn": "我不想探究你的私事。"
+            }
+          ]
+        },
+        {
+          "word": "Prone",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🙇</text>",
+          "breakdown": [
+            "pro- (向前)",
+            "ne"
+          ],
+          "imagery": "身体向前倾，表示一种趋势或倾向。",
+          "translation": "倾向于...的；易于...的",
+          "sentences": [
+            {
+              "en": "Kids are all prone to eat junk food.",
+              "cn": "孩子们都倾向于吃垃圾食品。"
+            }
+          ]
+        },
+        {
+          "word": "Prop",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🪵</text>",
+          "breakdown": [
+            "pro- (向前/上)",
+            "p"
+          ],
+          "imagery": "向前或向上支撑物体。",
+          "translation": "支撑物；支撑",
+          "sentences": [
+            {
+              "en": "She propped herself up on one elbow.",
+              "cn": "她用一只胳膊肘把自己撑起来。"
+            }
+          ]
+        },
+        {
+          "word": "Propagate",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📢</text>",
+          "breakdown": [
+            "pro- (向前)",
+            "pag (fasten)",
+            "-ate"
+          ],
+          "imagery": "将思想向前传播（宣传）；或物种代代向前延续（繁殖）。",
+          "translation": "宣传；繁殖",
+          "sentences": [
+            {
+              "en": "A group launched a website to propagate its ideas.",
+              "cn": "一个团体建立了一个网站来宣传它的思想。"
+            },
+            {
+              "en": "Plants won't propagate in these conditions.",
+              "cn": "植物在这些条件下无法繁殖。"
+            }
+          ]
+        },
+        {
+          "word": "Propaganda",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🗣️</text>",
+          "breakdown": [
+            "propagate",
+            "-a (名)"
+          ],
+          "imagery": "向前传播的信息（通常指政治宣传）。",
+          "translation": "宣传",
+          "sentences": [
+            {
+              "en": "Political propaganda.",
+              "cn": "政治宣传。"
+            }
+          ]
+        },
+        {
+          "word": "Protocol",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📜</text>",
+          "breakdown": [
+            "proto (pro-向前/第一)",
+            "col (glue)"
+          ],
+          "imagery": "为未来的行动制定的第一份草案或规则（原指粘在卷轴第一页的目录）。",
+          "translation": "草案；协议；礼仪",
+          "sentences": [
+            {
+              "en": "The protocols became briefer and more efficient.",
+              "cn": "协议变得更简洁、更高效。"
+            }
+          ]
+        },
+        {
+          "word": "Prototype",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🚗</text>",
+          "breakdown": [
+            "proto (pro-向前)",
+            "type (类型)"
+          ],
+          "imagery": "为未来准备的第一种类型（原型）。",
+          "translation": "原型；雏形",
+          "sentences": [
+            {
+              "en": "I like the car prototype.",
+              "cn": "我喜欢这辆概念车（原型车）。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

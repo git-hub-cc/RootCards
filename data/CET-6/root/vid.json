@@ -1,0 +1,68 @@
+{
+  "prefix": "vid",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "vid_see",
+      "displayName": "vid/vis (看)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><circle cx='12' cy='12' r='3' fill='currentColor' />",
+      "prefixIntro": {
+        "title": "词根 -vid-/-vis-",
+        "description": "核心意境是 **“看” (See)**。\n表示视觉、预见或供应（预见需求并满足）。",
+        "imagery": "联想一只眼睛👁️。"
+      },
+      "words": [
+        {
+          "word": "Provide",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤲</text>",
+          "breakdown": [
+            "pro- (前)",
+            "vid (看)"
+          ],
+          "imagery": "提前看到（需求）并准备好，即提供。",
+          "translation": "提供；供应",
+          "sentences": [
+            {
+              "en": "food and water provision",
+              "cn": "食物和水的供应"
+            }
+          ]
+        },
+        {
+          "word": "Provision",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📦</text>",
+          "breakdown": [
+            "pro-",
+            "vis (看)",
+            "-ion"
+          ],
+          "imagery": "提供的物资；或者为了未来（向前看）制定的条款。",
+          "translation": "供应；条款；规定",
+          "sentences": [
+            {
+              "en": "the provisions of the act",
+              "cn": "法案的条款"
+            }
+          ]
+        },
+        {
+          "word": "Provided",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>❓</text>",
+          "breakdown": [
+            "provide",
+            "-ed"
+          ],
+          "imagery": "在提供某种条件的情况下（倘若）。",
+          "translation": "倘若；假如",
+          "sentences": [
+            {
+              "en": "Provided you will come today, I will stay at home.",
+              "cn": "如果你今天来，我就待在家里。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "prefix": "Vocab T-Z",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_t",
+      "displayName": "Vocabulary T",
+      "themeColor": "#3b82f6",
+      "prefixIntro": {
+        "title": "T 开头核心词",
+        "description": "CET-6 T 开头的高频混合词汇。",
+        "imagery": "字母 T 像一个锤子或支撑物。"
+      },
+      "words": [
+        {
+          "word": "Tariff",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🧾</text>",
+          "breakdown": [
+            "tariff"
+          ],
+          "imagery": "关税。",
+          "translation": "关税",
+          "sentences": [
+            {
+              "en": "The government may impose tariffs on imports.",
+              "cn": "政府可能会对进口商品征收关税。"
+            }
+          ]
+        },
+        {
+          "word": "Topple",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🏢</text>",
+          "breakdown": [
+            "top (顶)",
+            "-le"
+          ],
+          "imagery": "从顶部开始倒塌。",
+          "translation": "倒塌；推翻",
+          "sentences": [
+            {
+              "en": "The pile of books toppled over.",
+              "cn": "那堆书倒了。"
+            }
+          ]
+        },
+        {
+          "word": "Toll",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🛣️</text>",
+          "breakdown": [
+            "toll (总数)"
+          ],
+          "imagery": "发音像 all (全部)，表示总数或费用。",
+          "translation": "通行费；伤亡人数；钟声",
+          "sentences": [
+            {
+              "en": "The death toll has risen to 83.",
+              "cn": "死亡人数已升至83人。"
+            }
+          ]
+        },
+        {
+          "word": "Tug",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>⚓</text>",
+          "breakdown": [
+            "tug"
+          ],
+          "imagery": "猛地拉，如拔河 (tug of war)。",
+          "translation": "拖；拽；拉",
+          "sentences": []
+        },
+        {
+          "word": "Tow",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🚛</text>",
+          "breakdown": [
+            "tow"
+          ],
+          "imagery": "持续平稳地拖动，如拖车。",
+          "translation": "拖；拉；牵引",
+          "sentences": [
+            {
+              "en": "You might have it towed away by the police.",
+              "cn": "你可能会被警察把车拖走。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_u",
+      "displayName": "Vocabulary U",
+      "themeColor": "#10b981",
+      "prefixIntro": {
+        "title": "U 开头核心词",
+        "description": "CET-6 U 开头的高频混合词汇。",
+        "imagery": "字母 U 像一个容器。"
+      },
+      "words": [
+        {
+          "word": "Urine",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🚽</text>",
+          "breakdown": [
+            "ur (水)",
+            "-ine"
+          ],
+          "imagery": "ur 像 U 型槽，rain 像雨水，构成小便的画面。",
+          "translation": "尿",
+          "sentences": [
+            {
+              "en": "The doctor took a urine sample.",
+              "cn": "医生取了尿样。"
+            }
+          ]
+        },
+        {
+          "word": "Urinal",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🚹</text>",
+          "breakdown": [
+            "urin (尿)",
+            "-al"
+          ],
+          "imagery": "小便的地方。",
+          "translation": "小便池",
+          "sentences": []
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_v",
+      "displayName": "Vocabulary V",
+      "themeColor": "#fbbf24",
+      "prefixIntro": {
+        "title": "V 开头核心词",
+        "description": "CET-6 V 开头的高频混合词汇。",
+        "imagery": "字母 V 像山谷或胜利手势。"
+      },
+      "words": [
+        {
+          "word": "Verge",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'> cliff </text>",
+          "breakdown": [
+            "verge (转/边)"
+          ],
+          "imagery": "边缘，濒临。",
+          "translation": "边缘",
+          "sentences": [
+            {
+              "en": "Mountain gorillas are on the verge of extinction.",
+              "cn": "山地大猩猩濒临灭绝。"
+            }
+          ]
+        },
+        {
+          "word": "Vicinity",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📍</text>",
+          "breakdown": [
+            "vicin (邻近)",
+            "-ity"
+          ],
+          "imagery": "邻近的区域。",
+          "translation": "附近；邻近",
+          "sentences": [
+            {
+              "en": "The stolen car was found in the vicinity of the station.",
+              "cn": "被盗车辆是在车站附近发现的。"
+            }
+          ]
+        },
+        {
+          "word": "Virtual",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>👓</text>",
+          "breakdown": [
+            "virtu (真/力)",
+            "-al"
+          ],
+          "imagery": "在功能或效果上是真实的（实际上的）；或计算机生成的（虚拟的）。",
+          "translation": "实际上的；虚拟的",
+          "sentences": [
+            {
+              "en": "a state of virtual slavery",
+              "cn": "实质上的奴役状态"
+            },
+            {
+              "en": "a virtual world",
+              "cn": "虚拟世界"
+            }
+          ]
+        },
+        {
+          "word": "Vulnerable",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🛡️</text>",
+          "breakdown": [
+            "vuln (伤)",
+            "-erable (能)"
+          ],
+          "imagery": "能够被伤害的，脆弱的。",
+          "translation": "易受伤害的；脆弱的",
+          "sentences": [
+            {
+              "en": "She looked very vulnerable standing there on her own.",
+              "cn": "她独自站在那里，看起来很脆弱。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_w",
+      "displayName": "Vocabulary W",
+      "themeColor": "#a855f7",
+      "prefixIntro": {
+        "title": "W 开头核心词",
+        "description": "CET-6 W 开头的高频混合词汇。",
+        "imagery": "字母 W 像波浪。"
+      },
+      "words": [
+        {
+          "word": "Weary",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>😫</text>",
+          "breakdown": [
+            "wear (穿/磨损)",
+            "-y"
+          ],
+          "imagery": "像被磨损了一样，或者联想为了穿什么衣服而烦恼，很疲惫。",
+          "translation": "疲劳的；令人厌烦的",
+          "sentences": [
+            {
+              "en": "I felt weary after work.",
+              "cn": "下班后我感到很疲倦。"
+            }
+          ]
+        },
+        {
+          "word": "Wharf",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>⚓</text>",
+          "breakdown": [
+            "wharf"
+          ],
+          "imagery": "码头。",
+          "translation": "码头",
+          "sentences": []
+        },
+        {
+          "word": "Whereas",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>⚖️</text>",
+          "breakdown": [
+            "where",
+            "as"
+          ],
+          "imagery": "连接两个对比的句子。",
+          "translation": "然而；鉴于",
+          "sentences": [
+            {
+              "en": "The old system was complicated, whereas the new system is simple.",
+              "cn": "旧系统很复杂，而新系统很简单。"
+            }
+          ]
+        },
+        {
+          "word": "Whereby",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🔗</text>",
+          "breakdown": [
+            "where",
+            "by"
+          ],
+          "imagery": "凭借该方式 (by which)。",
+          "translation": "凭借；通过",
+          "sentences": [
+            {
+              "en": "There is a way whereby Nicholas can be saved.",
+              "cn": "有一种方法可以救尼古拉斯。"
+            }
+          ]
+        },
+        {
+          "word": "Wholesome",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🥗</text>",
+          "breakdown": [
+            "whole (整体)",
+            "-some (形)"
+          ],
+          "imagery": "对整体身体有益的。",
+          "translation": "有益健康的",
+          "sentences": [
+            {
+              "en": "a wholesome breakfast",
+              "cn": "有益健康的早餐"
+            }
+          ]
+        },
+        {
+          "word": "Wink",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>😉</text>",
+          "breakdown": [
+            "wink"
+          ],
+          "imagery": "眨一只眼示意。",
+          "translation": "眨眼；使眼色",
+          "sentences": [
+            {
+              "en": "He winked an eye at his companion.",
+              "cn": "他向同伴眨了眨眼。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_y_z",
+      "displayName": "Vocabulary Y-Z",
+      "themeColor": "#f43f5e",
+      "prefixIntro": {
+        "title": "Y-Z 开头核心词",
+        "description": "CET-6 Y-Z 开头的高频混合词汇。",
+        "imagery": "Y 像分叉路，Z 像闪电。"
+      },
+      "words": [
+        {
+          "word": "Yield",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🌾</text>",
+          "breakdown": [
+            "yield (给/产)"
+          ],
+          "imagery": "田地生产出作物；或者把权利交出去（屈服）。",
+          "translation": "生产；屈服；产量",
+          "sentences": [
+            {
+              "en": "The tree yields fruits.",
+              "cn": "这棵树结出了果实。"
+            },
+            {
+              "en": "Jimmy began to yield to her persuasion.",
+              "cn": "吉米开始屈服于她的劝说。"
+            }
+          ]
+        },
+        {
+          "word": "Zeal",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🔥</text>",
+          "breakdown": [
+            "zeal (热)"
+          ],
+          "imagery": "像火一样的热情。",
+          "translation": "热情；激情",
+          "sentences": [
+            {
+              "en": "Mr. Smith appreciates your zeal for work.",
+              "cn": "史密斯先生欣赏你的工作热情。"
+            }
+          ]
+        },
+        {
+          "word": "Zealous",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤩</text>",
+          "breakdown": [
+            "zeal",
+            "-ous"
+          ],
+          "imagery": "充满热情的。",
+          "translation": "热情的；狂热的",
+          "sentences": [
+            {
+              "en": "No one was more zealous than Neil in supporting the proposal.",
+              "cn": "在支持这项提议方面，没有人比尼尔更热情。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

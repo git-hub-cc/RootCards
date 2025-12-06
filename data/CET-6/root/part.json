@@ -1,0 +1,35 @@
+{
+  "prefix": "part",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "part_divide",
+      "displayName": "part (部分/分)",
+      "themeColor": "#f97316",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M12 12 L12 2' stroke='currentColor' /><path d='M12 12 L20 16' stroke='currentColor' />",
+      "prefixIntro": {
+        "title": "词根 -part-",
+        "description": "核心意境是 **“部分” (Part)** 或 **“分开” (Divide)**。\n表示分割、参与或离开。",
+        "imagery": "联想一块切开的披萨🍕。"
+      },
+      "words": [
+        {
+          "word": "Parole",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>⛓️</text>",
+          "breakdown": [
+            "par (部分)",
+            "ole (role角色)"
+          ],
+          "imagery": "获得“部分的”社会角色/身份，还不是完全的自由人（假释）。",
+          "translation": "假释",
+          "sentences": [
+            {
+              "en": "He was released on parole after serving two years.",
+              "cn": "服刑两年后，他获准假释出狱。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

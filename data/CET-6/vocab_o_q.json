@@ -1,0 +1,164 @@
+{
+  "prefix": "Vocab O-Q",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_o",
+      "displayName": "Vocabulary O",
+      "themeColor": "#f97316",
+      "prefixIntro": {
+        "title": "O 开头核心词",
+        "description": "CET-6 O 开头的高频混合词汇。",
+        "imagery": "字母 O 像一个圆圈、矿石或嘴巴。"
+      },
+      "words": [
+        {
+          "word": "Ore",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🪨</text>",
+          "breakdown": [
+            "ore (矿石)"
+          ],
+          "imagery": "字母“o”像一块圆形的矿石。",
+          "translation": "矿石",
+          "sentences": [
+            {
+              "en": "iron ore",
+              "cn": "铁矿石"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_p",
+      "displayName": "Vocabulary P",
+      "themeColor": "#06b6d4",
+      "prefixIntro": {
+        "title": "P 开头核心词",
+        "description": "CET-6 P 开头的高频混合词汇。",
+        "imagery": "字母 P 像一面旗帜或握紧的拳头。"
+      },
+      "words": [
+        {
+          "word": "Peculiar",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤪</text>",
+          "breakdown": [
+            "pecul (私有)",
+            "-iar"
+          ],
+          "imagery": "私有的东西通常与众不同，引申为奇怪的。",
+          "translation": "奇怪的；古怪的；特有的",
+          "sentences": [
+            {
+              "en": "There was something peculiar in the way he smiled.",
+              "cn": "他微笑的方式有些奇怪。"
+            }
+          ]
+        },
+        {
+          "word": "Phase",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🌒</text>",
+          "breakdown": [
+            "pha (显现)",
+            "se"
+          ],
+          "imagery": "月亮展现出的不同样子（月相），即阶段。",
+          "translation": "阶段；时期",
+          "sentences": [
+            {
+              "en": "a new drug that is in the experimental phase",
+              "cn": "一种处于实验阶段的新药"
+            }
+          ]
+        },
+        {
+          "word": "Plague",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🦗</text>",
+          "breakdown": [
+            "plague"
+          ],
+          "imagery": "发音像“玩赖哥”，老天在玩赖（降下灾祸）。",
+          "translation": "瘟疫；灾祸",
+          "sentences": []
+        },
+        {
+          "word": "Plumber",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🔧</text>",
+          "breakdown": [
+            "plumb (铅)",
+            "-er"
+          ],
+          "imagery": "古罗马的水管多用铅制成，修铅管的人即水管工。",
+          "translation": "水管工",
+          "sentences": [
+            {
+              "en": "The plumber made a careful check of the pipes.",
+              "cn": "水管工仔细检查了管道。"
+            }
+          ]
+        },
+        {
+          "word": "Preach",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>✝️</text>",
+          "breakdown": [
+            "preach"
+          ],
+          "imagery": "站在众人面前宣讲教义。",
+          "translation": "讲道；说教",
+          "sentences": [
+            {
+              "en": "Christ began preaching to large crowds.",
+              "cn": "基督开始向大群人讲道。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_q",
+      "displayName": "Vocabulary Q",
+      "themeColor": "#8b5cf6",
+      "prefixIntro": {
+        "title": "Q 开头核心词",
+        "description": "CET-6 Q 开头的高频混合词汇。",
+        "imagery": "字母 Q 像一个带尾巴的圆。"
+      },
+      "words": [
+        {
+          "word": "Queer",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🌈</text>",
+          "breakdown": [
+            "queer"
+          ],
+          "imagery": "与常理不同的，奇怪的。",
+          "translation": "奇怪的；古怪的",
+          "sentences": [
+            {
+              "en": "a queer look",
+              "cn": "奇怪的表情"
+            }
+          ]
+        },
+        {
+          "word": "Quench",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🧯</text>",
+          "breakdown": [
+            "quench"
+          ],
+          "imagery": "扑灭火或解渴（解决问题）。",
+          "translation": "熄灭；解（渴）",
+          "sentences": [
+            {
+              "en": "quench the flames",
+              "cn": "熄灭火焰"
+            },
+            {
+              "en": "quench his thirst",
+              "cn": "解渴"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

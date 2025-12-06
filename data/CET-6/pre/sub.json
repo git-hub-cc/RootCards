@@ -1,0 +1,39 @@
+{
+  "prefix": "sub",
+  "affixType": "prefix",
+  "meanings": [
+    {
+      "meaningId": "sub_under",
+      "displayName": "sub- (在...下)",
+      "themeColor": "#0ea5e9",
+      "prefixVisual": "<line x1='4' y1='8' x2='20' y2='8' stroke='currentColor' stroke-width='2' /><circle cx='12' cy='16' r='3' fill='currentColor' />",
+      "prefixIntro": {
+        "title": "前缀 sub-",
+        "description": "核心意境是 **“在下面” (Under)** 或 **“次级” (Secondary)**。\n表示位置在下、程度较轻或从属关系。",
+        "imagery": "联想潜水艇🚢在水面下，或者地铁🚇在地下。"
+      },
+      "words": [
+        {
+          "word": "Subtle",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤏</text>",
+          "breakdown": [
+            "sub- (下)",
+            "tle (web/textile)"
+          ],
+          "imagery": "藏在下面的细微纹理，不仔细看发现不了。",
+          "translation": "微妙的；细微的；精巧的",
+          "sentences": [
+            {
+              "en": "There are subtle differences between them.",
+              "cn": "它们之间有细微的差别。"
+            },
+            {
+              "en": "a subtle form of racism",
+              "cn": "一种隐性的种族主义"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "prefix": "san",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "san_health",
+      "displayName": "san (健康)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<path d='M12 2 L14 8 L20 8 L16 12 L18 18 L12 14 L6 18 L8 12 L4 8 L10 8 Z' stroke='currentColor' fill='none' stroke-width='2' />",
+      "prefixIntro": {
+        "title": "词根 -san-",
+        "description": "核心意境是 **“健康” (Health)** 或 **“神智正常” (Sane)**。\n表示清洁、卫生或理智。",
+        "imagery": "联想红十字🏥，或者清洁的双手🧼。"
+      },
+      "words": [
+        {
+          "word": "Sanitary",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🚽</text>",
+          "breakdown": [
+            "san (健康/卫生)",
+            "-itary"
+          ],
+          "imagery": "与健康卫生相关的。",
+          "translation": "卫生的；清洁的",
+          "sentences": [
+            {
+              "en": "The new houses were more sanitary than the old ones had been.",
+              "cn": "新房子比旧房子更卫生。"
+            }
+          ]
+        },
+        {
+          "word": "Sanitation",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🧹</text>",
+          "breakdown": [
+            "sanit (卫生)",
+            "-ation"
+          ],
+          "imagery": "维护健康卫生的系统或设施。",
+          "translation": "环境卫生；卫生设施",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

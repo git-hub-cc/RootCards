@@ -1,0 +1,35 @@
+{
+  "prefix": "pot",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "pot_power",
+      "displayName": "pot (力/能)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M12 4 v16 M4 8 h16 M6 12 l6 6 l6 -6' stroke='currentColor' stroke-width='2' />",
+      "prefixIntro": {
+        "title": "词根 -pot-",
+        "description": "核心意境是 **“力量” (Power)** 或 **“能力” (Ability)**。\n表示强有力、潜在或可能。",
+        "imagery": "联想一个充满能量的电池🔋，或者大力士💪。"
+      },
+      "words": [
+        {
+          "word": "Potent",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>💊</text>",
+          "breakdown": [
+            "pot (力)",
+            "-ent"
+          ],
+          "imagery": "有力量的，有效的（常指药效或影响力）。",
+          "translation": "强有力的；有效的",
+          "sentences": [
+            {
+              "en": "Body language is a potent form of non-verbal communication.",
+              "cn": "肢体语言是一种强有力的非语言交流形式。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

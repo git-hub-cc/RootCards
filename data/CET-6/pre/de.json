@@ -1,0 +1,35 @@
+{
+  "prefix": "de",
+  "affixType": "prefix",
+  "meanings": [
+    {
+      "meaningId": "de_down_away",
+      "displayName": "de- (向下/否定)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M12 4 V 16' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)' /><path d='M8 20 H 16' stroke='currentColor' />",
+      "prefixIntro": {
+        "title": "前缀 de-",
+        "description": "核心意境是 **“向下” (Down)**、**“离开” (Away)** 或 **“否定” (Not)**。\n表示下降、去除或相反的动作。",
+        "imagery": "联想一个向下的箭头⬇️，或者被删掉的线。"
+      },
+      "words": [
+        {
+          "word": "Deplore",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>👎</text>",
+          "breakdown": [
+            "de- (否定/向下)",
+            "plore (cry)"
+          ],
+          "imagery": "对某事感到悲痛并强烈反对（向下喊叫）。",
+          "translation": "公开谴责；强烈反对",
+          "sentences": [
+            {
+              "en": "One must deplore this violent behavior.",
+              "cn": "人们必须强烈谴责这种暴力行为。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

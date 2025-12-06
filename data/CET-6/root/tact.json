@@ -1,0 +1,61 @@
+{
+  "prefix": "tact",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "tact_touch",
+      "displayName": "tact/tag (触/接触)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<path d='M8 12 L12 8 M12 16 L16 12' stroke='currentColor' stroke-width='2' /><circle cx='12' cy='12' r='2' fill='currentColor' />",
+      "prefixIntro": {
+        "title": "词根 -tact-/-tag-",
+        "description": "核心意境是 **“接触” (Touch)**。\n表示触碰、处理或策略。",
+        "imagery": "联想手指触碰屏幕👆，或者拼图🧩。"
+      },
+      "words": [
+        {
+          "word": "Tackle",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤼</text>",
+          "breakdown": [
+            "tack (钉住/接触)",
+            "-le (反复)"
+          ],
+          "imagery": "抓住问题并解决它（像橄榄球中的擒抱）。",
+          "translation": "处理；解决；擒抱",
+          "sentences": [
+            {
+              "en": "There is more than one way to tackle the problem.",
+              "cn": "解决这个问题不止一种方法。"
+            }
+          ]
+        },
+        {
+          "word": "Tact",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤝</text>",
+          "breakdown": [
+            "tact (接触)"
+          ],
+          "imagery": "懂得如何得体地与人“接触”，即机智、圆滑。",
+          "translation": "机智；圆滑；手腕",
+          "sentences": [
+            {
+              "en": "The leader possessed great tact.",
+              "cn": "这位领导人拥有极高的机智（手腕）。"
+            }
+          ]
+        },
+        {
+          "word": "Tactic",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>♟️</text>",
+          "breakdown": [
+            "tact (接触/排列)",
+            "-ic"
+          ],
+          "imagery": "具体的行动方案或策略。",
+          "translation": "策略；战术",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

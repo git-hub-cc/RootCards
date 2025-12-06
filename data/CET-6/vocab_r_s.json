@@ -1,0 +1,218 @@
+{
+  "prefix": "Vocab R-S",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_r",
+      "displayName": "Vocabulary R",
+      "themeColor": "#ef4444",
+      "prefixIntro": {
+        "title": "R 开头核心词",
+        "description": "CET-6 R 开头的高频混合词汇。",
+        "imagery": "字母 R 像一个迈步走路的人。"
+      },
+      "words": [
+        {
+          "word": "Ruth",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🥺</text>",
+          "breakdown": [
+            "ruth (怜悯)"
+          ],
+          "imagery": "古英语中指怜悯或同情。",
+          "translation": "怜悯；悲哀",
+          "sentences": []
+        },
+        {
+          "word": "Ruthless",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>👿</text>",
+          "breakdown": [
+            "ruth (怜悯)",
+            "-less (无)"
+          ],
+          "imagery": "没有怜悯之心的，无情的。",
+          "translation": "无情的；残忍的；坚定的",
+          "sentences": [
+            {
+              "en": "He has a ruthless determination to succeed.",
+              "cn": "他有获得成功的坚定（毫不留情）的决心。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_s",
+      "displayName": "Vocabulary S",
+      "themeColor": "#f59e0b",
+      "prefixIntro": {
+        "title": "S 开头核心词",
+        "description": "CET-6 S 开头的高频混合词汇。",
+        "imagery": "字母 S 像一条蛇或弯曲的道路。"
+      },
+      "words": [
+        {
+          "word": "Savage",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🍖</text>",
+          "breakdown": [
+            "sav (森林)",
+            "-age"
+          ],
+          "imagery": "生活在森林里的，未开化的。",
+          "translation": "野蛮的；凶猛的；原始的",
+          "sentences": [
+            {
+              "en": "savage people",
+              "cn": "野蛮人"
+            }
+          ]
+        },
+        {
+          "word": "Scorn",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>😤</text>",
+          "breakdown": [
+            "scorn"
+          ],
+          "imagery": "强烈的轻视。",
+          "translation": "蔑视；鄙视",
+          "sentences": [
+            {
+              "en": "Rachel looked at me with scorn.",
+              "cn": "瑞秋轻蔑地看着我。"
+            }
+          ]
+        },
+        {
+          "word": "Scramble",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🧗</text>",
+          "breakdown": [
+            "scramble (爬/抢)"
+          ],
+          "imagery": "手脚并用地向上爬，或者争抢。",
+          "translation": "攀爬；争夺",
+          "sentences": [
+            {
+              "en": "She managed to scramble over the wall.",
+              "cn": "她设法爬过了墙。"
+            },
+            {
+              "en": "Thousands of people will be scrambling for tickets.",
+              "cn": "成千上万的人将争抢门票。"
+            }
+          ]
+        },
+        {
+          "word": "Scrap",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📄</text>",
+          "breakdown": [
+            "scrap"
+          ],
+          "imagery": "撕下来的小碎片。",
+          "translation": "碎片；废料",
+          "sentences": [
+            {
+              "en": "a scrap of paper",
+              "cn": "一张纸片"
+            }
+          ]
+        },
+        {
+          "word": "Seam",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🧵</text>",
+          "breakdown": [
+            "seam (缝)"
+          ],
+          "imagery": "布料间细密的缝合处（谐音：细密）；地质层。",
+          "translation": "缝；接缝；煤层",
+          "sentences": [
+            {
+              "en": "The seam of his coat is pulled.",
+              "cn": "他外套的接缝裂开了。"
+            }
+          ]
+        },
+        {
+          "word": "Shrug",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤷</text>",
+          "breakdown": [
+            "shrug"
+          ],
+          "imagery": "向两边展开的动作（耸肩）；或者向两边生长的灌木。",
+          "translation": "耸肩；灌木",
+          "sentences": [
+            {
+              "en": "I shrug and change the subject.",
+              "cn": "我耸耸肩，换了个话题。"
+            }
+          ]
+        },
+        {
+          "word": "Skeptical",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤨</text>",
+          "breakdown": [
+            "skept (看)",
+            "-ical"
+          ],
+          "imagery": "带着审视的眼光看，怀疑。",
+          "translation": "怀疑的",
+          "sentences": [
+            {
+              "en": "I'm extremely skeptical about what I read in the press.",
+              "cn": "我对我在报刊上读到的东西极表怀疑。"
+            }
+          ]
+        },
+        {
+          "word": "Stray",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🐈</text>",
+          "breakdown": [
+            "stray (街/迷路)"
+          ],
+          "imagery": "在街上(street)迷路，流浪。",
+          "translation": "流浪的；走失的",
+          "sentences": [
+            {
+              "en": "I found a stray cat crying at the door.",
+              "cn": "我发现一只流浪猫在门口叫。"
+            }
+          ]
+        },
+        {
+          "word": "Stroke",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>⚡</text>",
+          "breakdown": [
+            "strik (击)",
+            "stroke"
+          ],
+          "imagery": "突然的一击（strike），如中风、钟声、闪电。",
+          "translation": "中风；钟声；一笔；抚摸",
+          "sentences": [
+            {
+              "en": "He had a stroke.",
+              "cn": "他中风了。"
+            },
+            {
+              "en": "at the stroke of midnight",
+              "cn": "在午夜钟声敲响时"
+            }
+          ]
+        },
+        {
+          "word": "Subtle",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤏</text>",
+          "breakdown": [
+            "sub- (下)",
+            "tle (web/textile)"
+          ],
+          "imagery": "藏在下面的细微纹理，不仔细看发现不了。",
+          "translation": "微妙的；细微的；精巧的",
+          "sentences": [
+            {
+              "en": "There are subtle differences between them.",
+              "cn": "它们之间有细微的差别。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

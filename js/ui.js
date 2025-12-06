@@ -144,7 +144,8 @@ export function renderGradeButtons(container, grades) {
     const gradeMap = {
         'middle': '初中',
         'high': '高中',
-        'CET-4': 'CET-4'
+        'CET-4': 'CET-4',
+        'CET-6': 'CET-6'
     };
     ['all', ...grades].forEach(gradeId => {
         const button = document.createElement('button');

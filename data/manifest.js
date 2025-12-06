@@ -235,4 +235,32 @@ const DATA_FILES = [
     'data/CET-4/vocab_n_p.json',
     'data/CET-4/vocab_q_r.json',
     'data/CET-4/vocab_s.json',
+
+    // --- CET-6 (大学英语六级) ---
+    // Prefixes (前缀)
+    'data/CET-6/pre/de.json',
+    'data/CET-6/pre/pro.json',
+    'data/CET-6/pre/re.json',
+    'data/CET-6/pre/sub.json',
+    'data/CET-6/pre/syn.json',
+    // Roots (词根)
+    'data/CET-6/root/fer.json',
+    'data/CET-6/root/lig.json',
+    'data/CET-6/root/part.json',
+    'data/CET-6/root/pot.json',
+    'data/CET-6/root/psych.json',
+    'data/CET-6/root/san.json',
+    'data/CET-6/root/sarc.json',
+    'data/CET-6/root/sat.json',
+    'data/CET-6/root/sta.json',
+    'data/CET-6/root/sume.json',
+    'data/CET-6/root/tact.json',
+    'data/CET-6/root/val.json',
+    'data/CET-6/root/verb.json',
+    'data/CET-6/root/vert.json',
+    'data/CET-6/root/vid.json',
+    // Vocabulary (词汇)
+    'data/CET-6/vocab_o_q.json',
+    'data/CET-6/vocab_r_s.json',
+    'data/CET-6/vocab_t_z.json',
 ];

@@ -1,0 +1,52 @@
+{
+  "prefix": "sarc",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "sarc_flesh",
+      "displayName": "sarc (肉)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M8 8 l8 8 m-8 0 l8 -8' stroke='currentColor' stroke-width='3' />",
+      "prefixIntro": {
+        "title": "词根 -sarc-",
+        "description": "核心意境是 **“肉” (Flesh)**。\n引申为撕咬肉，即讽刺、挖苦。",
+        "imagery": "联想狗咬骨头🦴，或者带有攻击性的言语。",
+        "visual": "<path d='M8 8 l8 8 m-8 0 l8 -8' stroke='currentColor' stroke-width='3' />"
+      },
+      "words": [
+        {
+          "word": "Sarcasm",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>😏</text>",
+          "breakdown": [
+            "sarc (肉/讽刺)",
+            "-asm"
+          ],
+          "imagery": "像撕肉一样伤人的话（谐音：傻）。",
+          "translation": "讽刺；挖苦",
+          "sentences": [
+            {
+              "en": "His sarcasm hurt her feelings.",
+              "cn": "他的讽刺伤了她的感情。"
+            }
+          ]
+        },
+        {
+          "word": "Sarcastic",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🙄</text>",
+          "breakdown": [
+            "sarcasm",
+            "-tic"
+          ],
+          "imagery": "讽刺的。",
+          "translation": "讽刺的；挖苦的",
+          "sentences": [
+            {
+              "en": "He can't help making sarcastic comments.",
+              "cn": "他忍不住发表讽刺性的评论。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

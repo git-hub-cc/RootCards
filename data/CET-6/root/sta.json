@@ -1,0 +1,51 @@
+{
+  "prefix": "sta",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "sta_stand",
+      "displayName": "sta/st (站)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<rect x='10' y='6' width='4' height='12' fill='currentColor' /><path d='M8 18 h8' stroke='currentColor' stroke-width='2' />",
+      "prefixIntro": {
+        "title": "词根 -sta-/-st-",
+        "description": "核心意境是 **“站立” (Stand)**。\n表示停止、稳固或建立。",
+        "imagery": "联想一个人站得笔直🧍，或者一个底座。"
+      },
+      "words": [
+        {
+          "word": "Stout",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🏋️</text>",
+          "breakdown": [
+            "st- (站)",
+            "out (外)"
+          ],
+          "imagery": "向外站开，显得身体横向发展，矮胖且结实。",
+          "translation": "矮胖的；结实的",
+          "sentences": [
+            {
+              "en": "a short, stout man",
+              "cn": "一个矮胖结实的男人"
+            }
+          ]
+        },
+        {
+          "word": "Stroll",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🚶</text>",
+          "breakdown": [
+            "st- (站)",
+            "roll (滚)"
+          ],
+          "imagery": "站着并像轮子一样慢慢向前滚动（慢慢走）。",
+          "translation": "散步；闲逛",
+          "sentences": [
+            {
+              "en": "They went for a stroll in the park.",
+              "cn": "他们去公园散步了。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

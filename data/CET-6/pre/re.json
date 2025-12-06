@@ -1,0 +1,88 @@
+{
+  "prefix": "re",
+  "affixType": "prefix",
+  "meanings": [
+    {
+      "meaningId": "re_back_again",
+      "displayName": "re- (回/再)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<path d='M18 8 A 6 6 0 1 1 12 2' stroke='currentColor' stroke-width='2' fill='none' stroke-dasharray='4 2' marker-start='url(#arrow)' />",
+      "prefixIntro": {
+        "title": "前缀 re-",
+        "description": "核心意境是 **“向后/回” (Back)** 或 **“再次” (Again)**。\n表示返回、重复或反对。",
+        "imagery": "联想一个回旋镖🪃，或者刷新图标🔄。"
+      },
+      "words": [
+        {
+          "word": "Referendum",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🗳️</text>",
+          "breakdown": [
+            "refer (参考)",
+            "-dum (名)"
+          ],
+          "imagery": "将问题带回去（refer）给人民投票，作为决策参考。",
+          "translation": "全民公投",
+          "sentences": []
+        },
+        {
+          "word": "Rehabilitate",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🏥</text>",
+          "breakdown": [
+            "re- (回)",
+            "habilit (ability)",
+            "-ate"
+          ],
+          "imagery": "使回到有能力的状态（恢复健康/名誉）。",
+          "translation": "使恢复；使康复",
+          "sentences": [
+            {
+              "en": "Many of the older houses now have been rehabilitated.",
+              "cn": "许多老房子现在已经修复了。"
+            },
+            {
+              "en": "They can start the rehabilitation immediately.",
+              "cn": "他们可以立即开始康复治疗。"
+            }
+          ]
+        },
+        {
+          "word": "Retaliate",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🥊</text>",
+          "breakdown": [
+            "re- (回)",
+            "tali (talion, 以牙还牙)",
+            "-ate"
+          ],
+          "imagery": "打回去，以牙还牙。",
+          "translation": "报复；反击",
+          "sentences": [
+            {
+              "en": "His sister retaliated by kicking him.",
+              "cn": "他妹妹踢了他一脚作为报复。"
+            },
+            {
+              "en": "This action was in retaliation for last week's bomb attack.",
+              "cn": "这次行动是对上周炸弹袭击的报复。"
+            }
+          ]
+        },
+        {
+          "word": "Retard",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🐌</text>",
+          "breakdown": [
+            "re- (向后)",
+            "tard (slow)"
+          ],
+          "imagery": "向后拉，使速度变慢。",
+          "translation": "妨碍；减速；推迟",
+          "sentences": [
+            {
+              "en": "Continuing violence will retard negotiations over the country's future.",
+              "cn": "持续的暴力将阻碍关于该国未来的谈判。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

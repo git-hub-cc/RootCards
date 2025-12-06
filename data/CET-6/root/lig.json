@@ -1,0 +1,53 @@
+{
+  "prefix": "lig",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "lig_bind",
+      "displayName": "lig (绑)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M8 12 h8' stroke='currentColor' stroke-width='4' stroke-linecap='round' />",
+      "prefixIntro": {
+        "title": "词根 -lig-",
+        "description": "核心意境是 **“捆绑” (Bind)**。\n表示连接、束缚或义务。",
+        "imagery": "联想一根绳子🪢，或者韧带 (ligament)。"
+      },
+      "words": [
+        {
+          "word": "Obliged",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🙏</text>",
+          "breakdown": [
+            "ob- (to)",
+            "lig (绑)",
+            "-ed"
+          ],
+          "imagery": "被责任或道义绑住的。",
+          "translation": "有责任的；有义务的；感激的",
+          "sentences": [
+            {
+              "en": "Many parents feel obliged to pay for at least part of the wedding.",
+              "cn": "许多父母觉得有义务支付至少一部分婚礼费用。"
+            }
+          ]
+        },
+        {
+          "word": "Obligation",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📋</text>",
+          "breakdown": [
+            "ob-",
+            "lig (绑)",
+            "-ation"
+          ],
+          "imagery": "捆绑在身上的责任。",
+          "translation": "义务；责任",
+          "sentences": [
+            {
+              "en": "Answering the students' questions is a teacher's obligation.",
+              "cn": "回答学生的问题是老师的义务。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

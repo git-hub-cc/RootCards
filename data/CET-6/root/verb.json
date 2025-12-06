@@ -1,0 +1,30 @@
+{
+  "prefix": "verb",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "verb_word",
+      "displayName": "verb (词/动词)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🔤</text>",
+      "prefixIntro": {
+        "title": "词根 -verb-",
+        "description": "核心意境是 **“词” (Word)**。\n虽然 verb 意思是动词，但作为词根泛指语言或词汇。",
+        "imagery": "联想一个对话气泡💬。"
+      },
+      "words": [
+        {
+          "word": "Verbal",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>👄</text>",
+          "breakdown": [
+            "verb (词)",
+            "-al"
+          ],
+          "imagery": "用语言表达的（相对于非语言的）。",
+          "translation": "口头的；语言的",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

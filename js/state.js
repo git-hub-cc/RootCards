@@ -263,11 +263,14 @@ export function clearLearnedWords() {
 /**
  * 根据文件路径判断其所属学习阶段。
  * @param {string} filePath - 文件的相对路径
- * @returns {string} - 学习阶段标识符 (e.g., 'middle', 'high', 'cet4')
+ * @returns {string} - 学习阶段标识符 (e.g., 'middle', 'high', 'cet4', 'cet6')
  */
 function getGradeFromFilePath(filePath) {
     if (filePath.includes('/CET-4/')) {
         return 'CET-4';
+    }
+    if (filePath.includes('/CET-6/')) {
+        return 'CET-6';
     }
     // 【修改】将 'middle' (初中) 目录映射为 'middle' 标识符
     if (filePath.includes('/middle/')) {
@@ -275,11 +278,6 @@ function getGradeFromFilePath(filePath) {
     }
     if (filePath.includes('/high/')) {
         return 'high';
-    }
-    // 保留对旧 gradeX 格式的兼容
-    const gradeMatch = filePath.match(/\/grade(\d+)\//);
-    if (gradeMatch && gradeMatch[1]) {
-        return `grade${gradeMatch[1]}`;
     }
     return 'unknown';
 }

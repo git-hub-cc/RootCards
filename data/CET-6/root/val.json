@@ -1,0 +1,52 @@
+{
+  "prefix": "val",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "val_strong",
+      "displayName": "val (强/价值)",
+      "themeColor": "#fbbf24",
+      "prefixVisual": "<path d='M12 2 l3 6 h6 l-5 4 l2 6 l-6 -4 l-6 4 l2 -6 l-5 -4 h6 z' stroke='currentColor' fill='none' />",
+      "prefixIntro": {
+        "title": "词根 -val-",
+        "description": "核心意境是 **“强壮” (Strong)** 或 **“价值” (Value)**。\n表示力量、有效或有价值。",
+        "imagery": "联想强壮的手臂💪，或者一枚金币💰。"
+      },
+      "words": [
+        {
+          "word": "Prevail",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🏆</text>",
+          "breakdown": [
+            "pre- (前)",
+            "vail (强)"
+          ],
+          "imagery": "力量在前面，胜过别人，获胜；获胜的东西就会流行。",
+          "translation": "获胜；流行；盛行",
+          "sentences": [
+            {
+              "en": "Justice will prevail.",
+              "cn": "正义终将战胜邪恶。"
+            }
+          ]
+        },
+        {
+          "word": "Prevalent",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>😷</text>",
+          "breakdown": [
+            "pre- (前)",
+            "val (强)",
+            "-ent"
+          ],
+          "imagery": "势头很强的，到处都是的。",
+          "translation": "流行的；普遍的",
+          "sentences": [
+            {
+              "en": "Flu is prevalent during the winter months.",
+              "cn": "流感在冬季很流行。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

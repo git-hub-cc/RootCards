@@ -1,0 +1,30 @@
+{
+  "prefix": "vert",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "vert_turn",
+      "displayName": "vert/vers (转)",
+      "themeColor": "#06b6d4",
+      "prefixVisual": "<path d='M12 4 a 8 8 0 1 1 0 16 a 8 8 0 1 1 0 -16' stroke='currentColor' fill='none' stroke-dasharray='4 2' /><path d='M12 4 l2 2 l-2 2' stroke='currentColor' />",
+      "prefixIntro": {
+        "title": "词根 -vert-/-vers-",
+        "description": "核心意境是 **“转” (Turn)**。\n表示旋转、转变或方向改变。",
+        "imagery": "联想一个旋转的箭头🔄，或者车轮🛞。"
+      },
+      "words": [
+        {
+          "word": "Verse",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>📜</text>",
+          "breakdown": [
+            "vers (转)",
+            "e"
+          ],
+          "imagery": "句子写到一定长度就要“转”到下一行，形成韵律（诗歌）。",
+          "translation": "诗歌；韵文",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

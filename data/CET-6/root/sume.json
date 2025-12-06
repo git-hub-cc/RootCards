@@ -1,0 +1,52 @@
+{
+  "prefix": "sume",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "sume_take",
+      "displayName": "sume (拿/取)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<path d='M12 4 v8' stroke='currentColor' stroke-width='2' /><path d='M8 12 l4 -4 l4 4' stroke='currentColor' />",
+      "prefixIntro": {
+        "title": "词根 -sume-",
+        "description": "核心意境是 **“拿” (Take)**。\n表示获取、承担或推测。",
+        "imagery": "联想一只手把东西拿起来✊。",
+        "visual": "<path d='M12 4 v8' stroke='currentColor' stroke-width='2' /><path d='M8 12 l4 -4 l4 4' stroke='currentColor' />"
+      },
+      "words": [
+        {
+          "word": "Assume",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🤔</text>",
+          "breakdown": [
+            "as- (去)",
+            "sume (拿)"
+          ],
+          "imagery": "拿取观点（往往指缺乏证据的推测）。",
+          "translation": "假设；假定（无足够证据）",
+          "sentences": [
+            {
+              "en": "It seems reasonable to assume that the book was written around 70 A.D.",
+              "cn": "假设这本书写于公元70年左右似乎是合理的。"
+            }
+          ]
+        },
+        {
+          "word": "Presume",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🧐</text>",
+          "breakdown": [
+            "pre- (前)",
+            "sume (拿)"
+          ],
+          "imagery": "提前拿取观点（推测），通常基于一定依据。",
+          "translation": "假设；推定（有一定依据）",
+          "sentences": [
+            {
+              "en": "I presume we'll be there by 6 o'clock.",
+              "cn": "我推测我们6点前能到那里。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

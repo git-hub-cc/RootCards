@@ -1,0 +1,36 @@
+{
+  "prefix": "sat",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "sat_full",
+      "displayName": "sat (满/足)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<path d='M4 16 H 20 V 20 H 4 Z' stroke='currentColor' fill='none' /><rect x='4' y='10' width='16' height='6' fill='currentColor' opacity='0.6' />",
+      "prefixIntro": {
+        "title": "词根 -sat-",
+        "description": "核心意境是 **“满” (Full)** 或 **“足够” (Enough)**。\n也与神话人物萨堤尔 (Satyr) 有关，引申为讽刺。",
+        "imagery": "联想一个装满水的杯子🥛，或者讽刺文学。",
+        "visual": "<path d='M4 16 H 20 V 20 H 4 Z' stroke='currentColor' fill='none' /><rect x='4' y='10' width='16' height='6' fill='currentColor' opacity='0.6' />"
+      },
+      "words": [
+        {
+          "word": "Satire",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='16'>🎭</text>",
+          "breakdown": [
+            "sat (杂盘/满)",
+            "-ire"
+          ],
+          "imagery": "原指装满各种杂果的盘子，引申为杂烩式的讽刺文学。（谐音：傻太）。",
+          "translation": "讽刺；讽刺文学",
+          "sentences": [
+            {
+              "en": "The novel is a satire on American politics.",
+              "cn": "这部小说是对美国政治的讽刺。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
