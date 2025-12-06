@@ -1,0 +1,121 @@
+{
+  "prefix": "ate",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ate_adj_verb",
+      "displayName": "-ate (动词/形容词后缀)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<path d='M12 2 a 6 6 0 0 1 6 6 c 0 4 -6 10 -6 10 s -6 -6 -6 -10 a 6 6 0 0 1 6 -6 z' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='2' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "后缀 -ate",
+        "description": "多功能后缀。作动词时表示 **“使...”** 或 **“做...”**；作形容词时表示 **“具有...性质的”**。",
+        "imagery": "联想地图上的一个定位点📍，或者是盖章定格的动作。"
+      },
+      "words": [
+        {
+          "word": "Private",
+          "rootVisual": "<rect x='6' y='10' width='12' height='10' stroke='currentColor' fill='none'/><path d='M12 10 v-4 a 4 4 0 0 1 4 4' stroke='currentColor' fill='none'/><path d='M12 10 v-4 a 4 4 0 0 0 -4 4' stroke='currentColor' fill='none'/><circle cx='12' cy='15' r='1.5' fill='currentColor'/>",
+          "breakdown": ["priv (单独)", "-ate (...的)"],
+          "imagery": "一把锁锁住了门，只有持钥匙者（私人）能进入。",
+          "translation": "私人的",
+          "sentences": [
+            {
+              "en": "This is a private conversation.",
+              "cn": "这是一次私人谈话。"
+            }
+          ]
+        },
+        {
+          "word": "Accurate",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 2 v4 M12 22 v-4 M2 12 h4 M22 12 h-4' stroke='currentColor'/>",
+          "breakdown": ["ac- (去)", "cur (关心)", "-ate (...的)"],
+          "imagery": "用心去做，做到精准。",
+          "translation": "准确的",
+          "sentences": []
+        },
+        {
+          "word": "Celebrate",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l-4 -4 m8 0 l-4 4 m0 0 v 6' stroke='currentColor'/>",
+          "breakdown": ["celebr (名望/拥挤)", "-ate (动词后缀)"],
+          "imagery": "很多人聚在一起庆祝。",
+          "translation": "庆祝",
+          "sentences": [
+            {
+              "en": "We had a tea party to celebrate our parents’ silver wedding.",
+              "cn": "我们开了个茶话会庆祝父母的银婚。"
+            }
+          ]
+        },
+        {
+          "word": "Create",
+          "rootVisual": "<path d='M12 8 l-4 8 h8 z' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": ["cre (生长)", "-ate (动词后缀)"],
+          "imagery": "使某物生长出来，即创造。",
+          "translation": "创造",
+          "sentences": [
+            {
+              "en": "The new factory is expected to create more than 400 new jobs.",
+              "cn": "新工厂预计将创造400多个新工作岗位。"
+            }
+          ]
+        },
+        {
+          "word": "Graduate",
+          "rootVisual": "<path d='M4 14 h16 a2 2 0 0 1 2 2 v2 a2 2 0 0 1 -2 2 h-16 a2 2 0 0 1 -2 -2 v-2 a2 2 0 0 1 2 -2 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 14 v-4 l-2 2' stroke='currentColor'/><rect x='10' y='6' width='4' height='4' fill='currentColor'/>",
+          "breakdown": ["grad (步/级)", "-ate (动词后缀)"],
+          "imagery": "完成学业的阶梯，获得学位。",
+          "translation": "毕业",
+          "sentences": [
+            {
+              "en": "He graduated from Tsinghua University.",
+              "cn": "他毕业于清华大学。"
+            }
+          ]
+        },
+        {
+          "word": "Appropriate",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 6 l12 12 M18 6 l-12 12' stroke='currentColor' opacity='0.3'/><circle cx='12' cy='12' r='4' fill='currentColor' opacity='0.3'/>",
+          "breakdown": ["ap- (去)", "propri (拥有)", "-ate (...的)"],
+          "imagery": "使之成为自己的，或适合某种场合的。",
+          "translation": "恰当的；合适的",
+          "sentences": [
+            {
+              "en": "You should wear appropriate clothes for a job interview.",
+              "cn": "面试时你应该穿得体的衣服。"
+            }
+          ]
+        },
+        {
+          "word": "Estimate",
+          "rootVisual": "<path d='M4 18 h16' stroke='currentColor'/><rect x='6' y='10' width='2' height='8' fill='currentColor'/><rect x='10' y='6' width='2' height='12' fill='currentColor'/><rect x='14' y='12' width='2' height='6' fill='currentColor'/>",
+          "breakdown": ["estim (价值)", "-ate (动词后缀)"],
+          "imagery": "评估价值或数量。",
+          "translation": "估计；估价",
+          "sentences": []
+        },
+        {
+          "word": "Calculate",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8 M8 16 h4' stroke='currentColor'/>",
+          "breakdown": ["calc (石头)", "-ulate (动词后缀)"],
+          "imagery": "用小石头（古老的计算工具）来计算。",
+          "translation": "计算",
+          "sentences": [
+            {
+              "en": "He couldn't calculate the distance.",
+              "cn": "他无法计算距离。"
+            }
+          ]
+        },
+        {
+          "word": "Educate",
+          "rootVisual": "<path d='M 4 8 l 8 2 l 8 -2 v 10 l -8 4 l -8 -4 z M 12 10 v 12' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["e- (出)", "duc (引导)", "-ate (动词后缀)"],
+          "imagery": "把人的潜能引导出来，即教育。",
+          "translation": "教育",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

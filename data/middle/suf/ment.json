@@ -1,0 +1,95 @@
+{
+  "prefix": "ment",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ment_noun",
+      "displayName": "-ment (名词后缀)",
+      "themeColor": "#a855f7",
+      "prefixVisual": "<rect x='5' y='4' width='14' height='16' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><line x1='8' y='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y='12' x2='16' y2='12' stroke='currentColor'/><path d='M18 17 L10 17 L10 21 L18 21 Z' stroke='currentColor' fill='currentColor' opacity='0.5'/><path d='M12 18 l2 2 l4 -4' stroke='white' stroke-width='1.5' fill='none'/>",
+      "prefixIntro": {
+        "title": "后缀 -ment",
+        "description": "常见名词后缀，加在动词后，表示**动作的结果**、**工具**或**状态**。",
+        "imagery": "联想一个盖章的文件📑，把动作落实成白纸黑字的结果。"
+      },
+      "words": [
+        {
+          "word": "Agreement",
+          "rootVisual": "<path d='M4 12 l6 4 l10 -10' stroke='currentColor' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/>",
+          "breakdown": ["agree (同意)", "-ment (结果)"],
+          "imagery": "一个大大的对钩，或者两只手握在一起，表示达成一致。",
+          "translation": "同意；协议",
+          "sentences": [
+            {
+              "en": "I agree with what you said.",
+              "cn": "我同意你所说的。"
+            }
+          ]
+        },
+        {
+          "word": "Equipment",
+          "rootVisual": "<path d='M6 18 h12 v-10 l-6 -4 l-6 4 z' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["equip (装备)", "-ment (东西)"],
+          "imagery": "一套完整的工具或装备。",
+          "translation": "装备；设备",
+          "sentences": [
+            {
+              "en": "All video equipment is on sale.",
+              "cn": "所有录像设备都在打折。"
+            }
+          ]
+        },
+        {
+          "word": "Movement",
+          "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 12 l6 -6' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["move (移动)", "-ment (过程)"],
+          "imagery": "物体从一点移动到另一点。",
+          "translation": "移动；运动",
+          "sentences": []
+        },
+        {
+          "word": "Segment",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l6 6' stroke='currentColor'/><path d='M12 12 l6 -6' stroke='currentColor'/><path d='M12 12 h-8' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": ["seg (切)", "-ment (部分)"],
+          "imagery": "切下来的一部分，如橘子瓣。",
+          "translation": "部分；片段",
+          "sentences": []
+        },
+        {
+          "word": "Statement",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><line x1='8' y1='10' x2='16' y2='10' stroke='currentColor'/><line x1='8' y1='14' x2='12' y2='14' stroke='currentColor'/>",
+          "breakdown": ["state (陈述)", "-ment (结果)"],
+          "imagery": "正式的声明文件。",
+          "translation": "声明；陈述",
+          "sentences": []
+        },
+        {
+          "word": "Treatment",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none'/><path d='M12 4 v16' stroke='currentColor' stroke-width='2'/><path d='M4 12 h16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["treat (治疗)", "-ment (过程)"],
+          "imagery": "医疗处理的过程。",
+          "translation": "治疗；对待",
+          "sentences": [
+            {
+              "en": "Scientists have made a major breakthrough in the treatment of cancer.",
+              "cn": "科学家在癌症治疗方面取得了重大突破。"
+            }
+          ]
+        },
+        {
+          "word": "Advertisement",
+          "rootVisual": "<rect x='4' y='4' width='16' height='12' stroke='currentColor' fill='none'/><text x='12' y='12' font-size='6' text-anchor='middle' fill='currentColor'>AD</text>",
+          "breakdown": ["advertise (做广告)", "-ment (结果)"],
+          "imagery": "展示出来的广告牌。",
+          "translation": "广告",
+          "sentences": [
+            {
+              "en": "placed an advertisement",
+              "cn": "刊登了一则广告"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "prefix": "sequ",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "sequ_follow",
+      "displayName": "sequ/secu (跟随)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M8 12 h2 M14 12 h2' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -sequ-/-secu-",
+        "description": "核心意境是 **“跟随” (Follow)**。\n表示顺序、结果或追随。",
+        "imagery": "联想一排排队的小鸭子🦆，或者多米诺骨牌。",
+        "visual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M8 12 h2 M14 12 h2' stroke='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Consequent",
+          "rootVisual": "<path d='M4 12 h4 m2 0 h4 m2 0 h4' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["con- (共)", "sequ (随)", "-ent"],
+          "imagery": "随之发生的。",
+          "translation": "随之发生的",
+          "sentences": []
+        },
+        {
+          "word": "Consequence",
+          "rootVisual": "<rect x='14' y='8' width='6' height='8' stroke='currentColor' fill='none'/><path d='M4 12 h8' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["con- (共)", "sequ (随)", "-ence"],
+          "imagery": "跟随在后面的事情，结果。",
+          "translation": "结果；后果",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

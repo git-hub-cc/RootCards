@@ -1,0 +1,53 @@
+{
+  "prefix": "liber",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "liber_free",
+      "displayName": "liber (自由)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M12 18 l-6 -6 l6 -6 l6 6 z' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -liber-",
+        "description": "核心意境是 **“自由” (Free)**。\n表示无拘无束。",
+        "imagery": "联想一只飞出笼子的小鸟🐦，或者自由女神像🗽。"
+      },
+      "words": [
+        {
+          "word": "Liberty",
+          "rootVisual": "<rect x='8' y='16' width='8' height='4' fill='currentColor'/><path d='M12 16 v-8' stroke='currentColor'/><path d='M12 4 l2 2 l-2 2 l-2 -2 z' fill='currentColor'/>",
+          "breakdown": ["liber (自由)", "-ty (名)"],
+          "imagery": "自由女神像 (Statue of Liberty)。",
+          "translation": "自由",
+          "sentences": []
+        },
+        {
+          "word": "Liberate",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["liber (自由)", "-ate (动)"],
+          "imagery": "使获得自由。",
+          "translation": "解放",
+          "sentences": [
+            {
+              "en": "Paris was liberated in 1944.",
+              "cn": "巴黎于1944年解放。"
+            }
+          ]
+        },
+        {
+          "word": "Liberal",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor'/>",
+          "breakdown": ["liber (自由)", "-al (形)"],
+          "imagery": "思想开放的，自由的。",
+          "translation": "自由的；开明的",
+          "sentences": [
+            {
+              "en": "Liberal arts.",
+              "cn": "文科（自由艺术）。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

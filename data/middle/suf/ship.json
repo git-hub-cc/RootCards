@@ -1,0 +1,66 @@
+{
+  "prefix": "ship",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ship_noun",
+      "displayName": "-ship (关系/状态)",
+      "themeColor": "#f97316",
+      "prefixVisual": "<circle cx='7' cy='12' r='3' stroke='currentColor' fill='none'/><circle cx='17' cy='12' r='3' stroke='currentColor' fill='none'/><path d='M10 12 h4' stroke='currentColor' stroke-width='2' stroke-dasharray='2 1'/>",
+      "prefixIntro": {
+        "title": "后缀 -ship",
+        "description": "通常用于构成抽象名词，表示某种**关系**、**状态**、身份或技能。",
+        "imagery": "联想一条纽带🎗️，连接着两端，形成稳固的关系。"
+      },
+      "words": [
+        {
+          "word": "Friendship",
+          "rootVisual": "<circle cx='8' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M8 11 v6' stroke='currentColor'/><circle cx='16' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M16 11 v6' stroke='currentColor'/><path d='M8 14 c 2 2 6 2 8 0' stroke='currentColor' fill='none'/>",
+          "breakdown": ["friend (朋友)", "-ship (关系)"],
+          "imagery": "两个人手拉手，心中有连接，这就是友谊。",
+          "translation": "友谊",
+          "sentences": [
+            {
+              "en": "A lifelong friendship.",
+              "cn": "一生的友谊。"
+            }
+          ]
+        },
+        {
+          "word": "Relationship",
+          "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M8 12 h8' stroke='currentColor' stroke-width='2'/><rect x='10' y='10' width='4' height='4' fill='currentColor' opacity='0.5' transform='rotate(45 12 12)'/>",
+          "breakdown": ["relation (关系)", "-ship (状态)"],
+          "imagery": "两点之间建立的链条，彼此关联，无法分割。",
+          "translation": "关系(爱情，亲情)",
+          "sentences": [
+            {
+              "en": "Are you in a relationship?",
+              "cn": "你们在谈恋爱吗？"
+            }
+          ]
+        },
+        {
+          "word": "Scholarship",
+          "rootVisual": "<rect x='6' y='6' width='12' height='8' stroke='currentColor' fill='none'/><path d='M6 6 l6 -4 l6 4' stroke='currentColor'/><text x='12' y='12' font-size='6' text-anchor='middle' fill='currentColor'>$</text>",
+          "breakdown": ["scholar (学者)", "-ship (身份/金钱)"],
+          "imagery": "给学者的资助金。",
+          "translation": "奖学金",
+          "sentences": [
+            {
+              "en": "He attended the college on a scholarship.",
+              "cn": "他靠奖学金上了大学。"
+            }
+          ]
+        },
+        {
+          "word": "Guardianship",
+          "rootVisual": "<path d='M12 4 l-6 4 v6 c0 5 6 8 6 8 s6 -3 6 -8 v-6 z' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": ["guardian (监护人)", "-ship (身份)"],
+          "imagery": "监护人的身份和责任。",
+          "translation": "监护权",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

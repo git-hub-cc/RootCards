@@ -1,0 +1,56 @@
+{
+  "prefix": "fer",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "fer_carry",
+      "displayName": "fer (拿/带)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12 h8' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "词根 -fer-",
+        "description": "核心意境是 **“携带” (Carry)** 或 **“拿” (Bear)**。\n表示运送、持有或产生。",
+        "imagery": "联想一只手托着东西🤲，或者一艘渡轮⛴️ (ferry)。"
+      },
+      "words": [
+        {
+          "word": "Refer",
+          "rootVisual": "<path d='M12 12 l-4 -4' stroke='currentColor' marker-end='url(#arrow)'/><rect x='4' y='4' width='4' height='4' fill='currentColor'/>",
+          "breakdown": ["re- (回)", "fer (带)"],
+          "imagery": "回头带东西（参考资料），提到某事。",
+          "translation": "参考；提及",
+          "sentences": [
+            {
+              "en": "Refer to the map.",
+              "cn": "参考地图。"
+            }
+          ]
+        },
+        {
+          "word": "Confer",
+          "rootVisual": "<circle cx='8' cy='12' r='2' fill='currentColor'/><circle cx='16' cy='12' r='2' fill='currentColor'/><path d='M10 12 h4' stroke='currentColor' stroke-dasharray='2 1'/>",
+          "breakdown": ["con- (共同)", "fer (带)"],
+          "imagery": "把意见带到一起来交换（协商）；把荣誉带给某人（授予）。",
+          "translation": "协商；授予",
+          "sentences": []
+        },
+        {
+          "word": "Conference",
+          "rootVisual": "<rect x='2' y='8' width='20' height='8' stroke='currentColor' fill='none'/><circle cx='6' cy='12' r='1' fill='currentColor'/><circle cx='10' cy='12' r='1' fill='currentColor'/><circle cx='14' cy='12' r='1' fill='currentColor'/><circle cx='18' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": ["con- (共同)", "fer (带)", "-ence (名)"],
+          "imagery": "大家带着意见聚在一起的地方。",
+          "translation": "会议",
+          "sentences": []
+        },
+        {
+          "word": "Prefer",
+          "rootVisual": "<circle cx='8' cy='12' r='3' fill='currentColor'/><circle cx='16' cy='12' r='3' stroke='currentColor' fill='none'/>",
+          "breakdown": ["pre- (前)", "fer (带)"],
+          "imagery": "把喜欢的东西带到前面优先选择。",
+          "translation": "更喜欢",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

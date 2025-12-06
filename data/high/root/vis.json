@@ -1,0 +1,68 @@
+{
+  "prefix": "vis",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "vis_see",
+      "displayName": "vis/vid (看)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -vis-/-vid-",
+        "description": "核心意境是 **“看” (See)**。\n表示视觉、观察或拜访。",
+        "imagery": "联想一只眼睛👁️，或者眼镜👓。",
+        "visual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Visit",
+          "rootVisual": "<path d='M4 18 l4 -4' stroke='currentColor' stroke-width='2'/><circle cx='16' cy='8' r='4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["vis (看)", "-it (走)"],
+          "imagery": "边走边看，参观；拜访。",
+          "translation": "参观；拜访",
+          "sentences": []
+        },
+        {
+          "word": "Visual",
+          "rootVisual": "<path d='M2 12 q 10 -8 20 0' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/>",
+          "breakdown": ["vis (看)", "-al (形)"],
+          "imagery": "视觉的，看得见的。",
+          "translation": "视觉的",
+          "sentences": []
+        },
+        {
+          "word": "Evident",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["e- (出)", "vid (看)", "-ent"],
+          "imagery": "看出来的，明显的。",
+          "translation": "明显的；明白的",
+          "sentences": []
+        },
+        {
+          "word": "Video",
+          "rootVisual": "<rect x='4' y='6' width='12' height='12' fill='currentColor'/><path d='M16 12 l4 -3 v6 l-4 -3' fill='currentColor'/>",
+          "breakdown": ["vid (看)", "-eo"],
+          "imagery": "用来看的（图像）。",
+          "translation": "视频",
+          "sentences": []
+        },
+        {
+          "word": "Visa",
+          "rootVisual": "<rect x='4' y='8' width='16' height='10' stroke='currentColor' fill='none'/><circle cx='8' cy='13' r='2' fill='currentColor' opacity='0.5'/>",
+          "breakdown": ["vis (看)", "-a"],
+          "imagery": "被查看过的文件（允许通过）。",
+          "translation": "签证",
+          "sentences": []
+        },
+        {
+          "word": "Supervise",
+          "rootVisual": "<path d='M12 4 v4' stroke='currentColor'/><path d='M2 16 h20' stroke='currentColor'/>",
+          "breakdown": ["super- (上)", "vise (看)"],
+          "imagery": "在上面看（盯着），监督。",
+          "translation": "监督；管理",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

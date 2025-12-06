@@ -1,0 +1,67 @@
+{
+  "prefix": "bind",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "bind_tie",
+      "displayName": "bind (绑/带)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<rect x='4' y='10' width='16' height='4' rx='2' fill='currentColor'/><path d='M8 10 v-4 a 4 4 0 0 1 8 0 v 4' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "词根 bind/band",
+        "description": "核心意境是 **“捆绑” (Tie)** 或 **“带子” (Strip)**。\n表示连接、束缚或条状物。",
+        "imagery": "联想一根绳子🪢把东西捆在一起，或者一条丝带🎗️。"
+      },
+      "words": [
+        {
+          "word": "Bind",
+          "rootVisual": "<path d='M6 12 h12' stroke='currentColor' stroke-width='4'/><rect x='10' y='8' width='4' height='8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["bind (绑)"],
+          "imagery": "用绳子系紧。",
+          "translation": "绑；装订",
+          "sentences": []
+        },
+        {
+          "word": "Bond",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor'/><circle cx='16' cy='12' r='4' stroke='currentColor'/><line x1='12' y1='12' x2='12' y2='12' stroke='currentColor' stroke-width='4'/>",
+          "breakdown": ["bond (绑)"],
+          "imagery": "连接两者的纽带。",
+          "translation": "纽带；债券",
+          "sentences": []
+        },
+        {
+          "word": "Band",
+          "rootVisual": "<rect x='2' y='10' width='20' height='4' fill='currentColor'/>",
+          "breakdown": ["band (带)"],
+          "imagery": "一条扁平的带子。",
+          "translation": "带子；乐队",
+          "sentences": []
+        },
+        {
+          "word": "Bandage",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='4' stroke-dasharray='4 2'/>",
+          "breakdown": ["band (带)", "-age (名)"],
+          "imagery": "用来包扎伤口的带子。",
+          "translation": "绷带",
+          "sentences": []
+        },
+        {
+          "word": "Bunch",
+          "rootVisual": "<circle cx='10' cy='14' r='3'/><circle cx='14' cy='14' r='3'/><circle cx='12' cy='10' r='3'/><path d='M12 10 v-6' stroke='currentColor'/>",
+          "breakdown": ["bunch (捆)"],
+          "imagery": "绑在一起的一束东西（如花、葡萄）。",
+          "translation": "一束；一串",
+          "sentences": []
+        },
+        {
+          "word": "Boundary",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
+          "breakdown": ["bound (限/绑)", "-ary (名)"],
+          "imagery": "把一个区域“绑”起来的界线。",
+          "translation": "边界；分界线",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

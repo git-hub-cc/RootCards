@@ -1,0 +1,71 @@
+{
+  "prefix": "gl",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "gl_light",
+      "displayName": "gl (光/滑)",
+      "themeColor": "#fbbf24",
+      "prefixVisual": "<circle cx='12' cy='12' r='6' fill='currentColor' opacity='0.5'/><path d='M12 2 v4 M12 18 v4 M2 12 h4 M18 12 h4' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 gl-",
+        "description": "核心意境是 **“光” (Light)** 或 **“滑” (Smooth)**。\n很多以 gl 开头的单词都与光亮或滑动有关。",
+        "imagery": "联想闪闪发光的宝石💎，或者光滑的冰面🧊。"
+      },
+      "words": [
+        {
+          "word": "Glory",
+          "rootVisual": "<path d='M12 12 l4 -8 l2 8 z' fill='currentColor' color='#fbbf24'/>",
+          "breakdown": ["gl (光)"],
+          "imagery": "光辉，荣耀。",
+          "translation": "光荣；荣誉",
+          "sentences": [
+            {
+              "en": "The glory of the sunset.",
+              "cn": "日落的光辉。"
+            }
+          ]
+        },
+        {
+          "word": "Glare",
+          "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor'/><path d='M12 2 L12 6 M12 18 L12 22 M2 12 L6 12 M18 12 L22 12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["gl (光)"],
+          "imagery": "发出强光；怒目而视（目光如炬）。",
+          "translation": "强光；怒视",
+          "sentences": [
+            {
+              "en": "He glared at her.",
+              "cn": "他怒视着她。"
+            }
+          ]
+        },
+        {
+          "word": "Glow",
+          "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor' opacity='0.6'/>",
+          "breakdown": ["gl (光)"],
+          "imagery": "发出柔和的、持续的光（热）。",
+          "translation": "发光；发热",
+          "sentences": [
+            {
+              "en": "A cigarette end glowed in the dark.",
+              "cn": "烟头在黑暗中发红光。"
+            }
+          ]
+        },
+        {
+          "word": "Glance",
+          "rootVisual": "<path d='M4 12 q 8 -6 16 0' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": ["gl (光/滑)"],
+          "imagery": "目光滑过，匆匆一瞥。",
+          "translation": "瞥见；扫视",
+          "sentences": [
+            {
+              "en": "He glanced nervously at me.",
+              "cn": "他紧张地瞥了我一眼。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

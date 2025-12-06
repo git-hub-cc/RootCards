@@ -1,0 +1,91 @@
+{
+  "prefix": "pend",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "pend_hang",
+      "displayName": "pend/pens (挂/钱)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<path d='M12 2 v8' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='14' r='4' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -pend-/-pens-",
+        "description": "核心意境是 **“悬挂” (Hang)** 或 **“称重” (Weigh)**。\n古人称重用天平（悬挂），引申为 **“支付/钱” (Pay)**。",
+        "imagery": "联想一个吊坠🏅，或者天平⚖️。"
+      },
+      "words": [
+        {
+          "word": "Depend",
+          "rootVisual": "<path d='M12 2 v8' stroke='currentColor'/><rect x='8' y='10' width='8' height='8' fill='currentColor'/>",
+          "breakdown": ["de- (下)", "pend (挂)"],
+          "imagery": "挂在下面，依靠。",
+          "translation": "依靠；依赖",
+          "sentences": []
+        },
+        {
+          "word": "Independent",
+          "rootVisual": "<path d='M8 14 h8' stroke='currentColor' stroke-width='2'/><path d='M12 14 v6' stroke='currentColor'/>",
+          "breakdown": ["in- (不)", "depend (依靠)"],
+          "imagery": "不依靠别人的。",
+          "translation": "独立的",
+          "sentences": []
+        },
+        {
+          "word": "Suspend",
+          "rootVisual": "<line x1='4' y1='4' x2='20' y2='4' stroke='currentColor'/><line x1='12' y1='4' x2='12' y2='12' stroke='currentColor'/><circle cx='12' cy='16' r='4' fill='none' stroke='currentColor'/>",
+          "breakdown": ["sus- (下)", "pend (挂)"],
+          "imagery": "悬挂在下面，悬而未决（暂停）。",
+          "translation": "暂停；悬挂",
+          "sentences": []
+        },
+        {
+          "word": "Spend",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><text x='12' y='16' font-size='10' text-anchor='middle' fill='currentColor'>$</text>",
+          "breakdown": ["s- (ex出)", "pend (钱)"],
+          "imagery": "把钱拿出去（称重支付）。",
+          "translation": "花费",
+          "sentences": []
+        },
+        {
+          "word": "Expense",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M8 12 h8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["ex- (出)", "pens (钱)"],
+          "imagery": "拿出去的钱。",
+          "translation": "费用；花费",
+          "sentences": []
+        },
+        {
+          "word": "Compensate",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor'/><circle cx='4' cy='12' r='2' fill='currentColor'/><circle cx='20' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["com- (全)", "pens (钱/偿)"],
+          "imagery": "全部偿还，平衡损失。",
+          "translation": "赔偿；补偿",
+          "sentences": []
+        },
+        {
+          "word": "Pension",
+          "rootVisual": "<rect x='6' y='8' width='12' height='8' stroke='currentColor' fill='none'/><text x='12' y='14' font-size='8' text-anchor='middle' fill='currentColor'>Old</text>",
+          "breakdown": ["pens (钱)", "-ion"],
+          "imagery": "定期支付的钱（养老金）。",
+          "translation": "养老金",
+          "sentences": []
+        },
+        {
+          "word": "Append",
+          "rootVisual": "<rect x='6' y='4' width='12' height='12' stroke='currentColor' fill='none'/><path d='M12 16 v4' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["ap- (去)", "pend (挂)"],
+          "imagery": "去挂在后面，附加。",
+          "translation": "附加；增补",
+          "sentences": []
+        },
+        {
+          "word": "Appendix",
+          "rootVisual": "<rect x='6' y='4' width='12' height='12' stroke='currentColor' fill='none'/><text x='12' y='12' font-size='8' text-anchor='middle' fill='currentColor'>...</text>",
+          "breakdown": ["append (附加)", "-ix"],
+          "imagery": "附录；阑尾（多余的附属物）。",
+          "translation": "附录；阑尾",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

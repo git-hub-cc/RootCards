@@ -1,0 +1,48 @@
+{
+  "prefix": "cru",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "cru_cross",
+      "displayName": "cru (交叉)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M4 4 l16 16 M20 4 l-16 16' stroke='currentColor' stroke-width='3'/>",
+      "prefixIntro": {
+        "title": "词根 -cru-",
+        "description": "核心意境是 **“交叉” (Cross)**。\n表示十字形或关键点。",
+        "imagery": "联想一个十字架✝️，或者两条路交叉的路口✖️。"
+      },
+      "words": [
+        {
+          "word": "Cross",
+          "rootVisual": "<path d='M12 4 v16 M4 12 h16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["cross (交叉)"],
+          "imagery": "十字形；穿过。",
+          "translation": "交叉；穿过",
+          "sentences": []
+        },
+        {
+          "word": "Crucial",
+          "rootVisual": "<path d='M4 12 h16 M12 4 v16' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["cruc (十字)", "-ial (形)"],
+          "imagery": "像站在十字路口一样，面临重大选择，所以是关键的。",
+          "translation": "关键的",
+          "sentences": [
+            {
+              "en": "Education is very crucial to one's development.",
+              "cn": "教育对一个人的发展至关重要。"
+            }
+          ]
+        },
+        {
+          "word": "Cruciform",
+          "rootVisual": "<path d='M12 2 v20 M2 8 h20' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["cruci (十字)", "form (形状)"],
+          "imagery": "十字形状的。",
+          "translation": "十字形的",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "prefix": "mit",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "mit_send",
+      "displayName": "mit/miss (送)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<path d='M2 12 h16' stroke='currentColor' marker-end='url(#arrow)'/><rect x='2' y='8' width='6' height='8' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -mit-/-miss-",
+        "description": "核心意境是 **“传送” (Send)** 或 **“投掷” (Throw)**。\n表示发送、允许或放行。",
+        "imagery": "联想邮递员送信✉️，或者发射火箭🚀。"
+      },
+      "words": [
+        {
+          "word": "Mission",
+          "rootVisual": "<path d='M12 4 l4 4 l-4 4' stroke='currentColor' fill='none'/><path d='M4 8 h12' stroke='currentColor'/>",
+          "breakdown": ["miss (送)", "-ion (名)"],
+          "imagery": "被派去执行的任务。",
+          "translation": "任务；使命",
+          "sentences": []
+        },
+        {
+          "word": "Message",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M4 8 l8 6 l8 -6' stroke='currentColor'/>",
+          "breakdown": ["mess (送)", "-age (名)"],
+          "imagery": "传送的信息。",
+          "translation": "信息",
+          "sentences": []
+        },
+        {
+          "word": "Missile",
+          "rootVisual": "<path d='M4 12 h12 l4 0' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/><path d='M6 12 l-2 -2 l2 2 l-2 2' stroke='currentColor'/>",
+          "breakdown": ["miss (送)", "-ile (物)"],
+          "imagery": "可投掷/发射的武器。",
+          "translation": "导弹",
+          "sentences": []
+        },
+        {
+          "word": "Submit",
+          "rootVisual": "<path d='M12 4 v12' stroke='currentColor' marker-end='url(#arrow)'/><path d='M8 16 h8' stroke='currentColor'/>",
+          "breakdown": ["sub- (下)", "mit (送)"],
+          "imagery": "从下往上送（提交）；低下头送出（屈服）。",
+          "translation": "提交；屈服",
+          "sentences": [
+            {
+              "en": "Submit to adversity.",
+              "cn": "屈服于逆境。"
+            }
+          ]
+        },
+        {
+          "word": "Permit",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='20' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["per- (通)", "mit (送)"],
+          "imagery": "允许通过，放行。",
+          "translation": "允许；许可证",
+          "sentences": []
+        },
+        {
+          "word": "Admit",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M6 4 l4 4' stroke='currentColor'/>",
+          "breakdown": ["ad- (去)", "mit (送)"],
+          "imagery": "送进去（准许进入）；说出来（承认）。",
+          "translation": "承认；准许进入",
+          "sentences": [
+            {
+              "en": "Only ticket holders will be admitted.",
+              "cn": "只有持票者准许进入。"
+            }
+          ]
+        },
+        {
+          "word": "Commit",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["com- (全)", "mit (送)"],
+          "imagery": "把全部精力送进去（投入）；把自己送进去（承诺/犯罪）。",
+          "translation": "承诺；犯罪；投入",
+          "sentences": [
+            {
+              "en": "Commit a crime.",
+              "cn": "犯罪。"
+            }
+          ]
+        },
+        {
+          "word": "Promise",
+          "rootVisual": "<path d='M8 12 h8' stroke='currentColor' marker-end='url(#arrow)'/><circle cx='4' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["pro- (前)", "mise (送)"],
+          "imagery": "把话说到前面，即承诺。",
+          "translation": "承诺；保证",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

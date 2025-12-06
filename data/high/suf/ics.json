@@ -1,0 +1,59 @@
+{
+  "prefix": "ics",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ics_subject",
+      "displayName": "-ics (学科/学术)",
+      "themeColor": "#059669",
+      "prefixVisual": "<path d='M4 4 h16 v16 h-16 z' stroke='currentColor' fill='none'/><path d='M8 8 l8 8 M16 8 l-8 8' stroke='currentColor' opacity='0.5'/><circle cx='12' cy='12' r='4' fill='currentColor' opacity='0.2'/>",
+      "prefixIntro": {
+        "title": "后缀 -ics",
+        "description": "名词后缀，表示 **“...学”** 或 **“...术”**。\n通常指一门学科或技艺。",
+        "imagery": "联想一本厚厚的教科书📚，封面写着学科名称。"
+      },
+      "words": [
+        {
+          "word": "Physics",
+          "rootVisual": "<path d='M6 18 l4 -4 l-4 -4' stroke='currentColor' fill='none'/><circle cx='14' cy='6' r='4' stroke='currentColor' fill='none'/><path d='M14 6 l2 2' stroke='currentColor'/>",
+          "breakdown": ["phys (自然)", "-ics (学科)"],
+          "imagery": "研究自然物质规律的学科。",
+          "translation": "物理学",
+          "sentences": []
+        },
+        {
+          "word": "Politics",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M12 4 v16' stroke='currentColor'/><path d='M4 12 h16' stroke='currentColor'/>",
+          "breakdown": ["polit (城市/公民)", "-ics (学科)"],
+          "imagery": "关于城市治理和公民事务的学问。",
+          "translation": "政治学",
+          "sentences": []
+        },
+        {
+          "word": "Economics",
+          "rootVisual": "<path d='M4 18 h16' stroke='currentColor'/><rect x='6' y='10' width='2' height='8' fill='currentColor'/><rect x='10' y='6' width='2' height='12' fill='currentColor'/><rect x='14' y='12' width='2' height='6' fill='currentColor'/><path d='M6 10 l4 -4 l4 6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["eco (家/环境)", "nom (管理)", "-ics (学科)"],
+          "imagery": "管理家庭（引申为国家）财产的学问。",
+          "translation": "经济学",
+          "sentences": []
+        },
+        {
+          "word": "Electronics",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 4 v4 M12 16 v4' stroke='currentColor'/>",
+          "breakdown": ["electron (电子)", "-ics (学科)"],
+          "imagery": "研究电子运动和应用的学科。",
+          "translation": "电子学",
+          "sentences": []
+        },
+        {
+          "word": "Mechanics",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><path d='M12 6 v12 M6 12 h12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["mechan (机器)", "-ics (学科)"],
+          "imagery": "研究机器运作和力学原理的学科。",
+          "translation": "机械学；力学",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

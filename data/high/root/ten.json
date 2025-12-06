@@ -1,0 +1,60 @@
+{
+  "prefix": "ten",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "ten_hold",
+      "displayName": "ten/tain (拿/保持)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<path d='M6 12 h12' stroke='currentColor' stroke-width='4'/><path d='M4 8 v8 M20 8 v8' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -ten-/-tain-",
+        "description": "核心意境是 **“拿” (Hold)** 或 **“保持” (Keep)**。\n表示持有、维持或包含。",
+        "imagery": "联想双手紧握✊，或者一个容器📦。",
+        "visual": "<path d='M6 12 h12' stroke='currentColor' stroke-width='4'/><path d='M4 8 v8 M20 8 v8' stroke='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Maintain",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["main (手)", "tain (拿)"],
+          "imagery": "用手拿着不放，维持。",
+          "translation": "维持；保持",
+          "sentences": []
+        },
+        {
+          "word": "Contain",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/>",
+          "breakdown": ["con- (全)", "tain (拿)"],
+          "imagery": "全部拿在里面，包含。",
+          "translation": "包含；容纳",
+          "sentences": []
+        },
+        {
+          "word": "Obtain",
+          "rootVisual": "<path d='M12 4 v8' stroke='currentColor' marker-end='url(#arrow)'/><rect x='8' y='12' width='8' height='8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["ob- (去)", "tain (拿)"],
+          "imagery": "去拿到手，获得。",
+          "translation": "获得",
+          "sentences": []
+        },
+        {
+          "word": "Entertain",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 14 q 4 4 8 0' stroke='currentColor'/>",
+          "breakdown": ["enter (间)", "tain (拿)"],
+          "imagery": "在中间拿住（大家），招待，娱乐。",
+          "translation": "娱乐；招待",
+          "sentences": []
+        },
+        {
+          "word": "Content",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 6 l12 12 M18 6 l-12 12' stroke='currentColor' opacity='0.2'/>",
+          "breakdown": ["con- (全)", "tent (拿)"],
+          "imagery": "包含的东西（内容）；全都拿到了（满足）。",
+          "translation": "内容；满意的",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

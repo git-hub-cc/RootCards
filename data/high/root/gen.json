@@ -1,0 +1,72 @@
+{
+  "prefix": "gen",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "gen_birth",
+      "displayName": "gen (生/产)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -gen-",
+        "description": "核心意境是 **“出生” (Birth)**、**“产生” (Produce)** 或 **“种类” (Kind)**。\n表示起源、生成或类别。",
+        "imagery": "联想一颗发芽的种子🌱，或者家族树🌳。"
+      },
+      "words": [
+        {
+          "word": "Generate",
+          "rootVisual": "<path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["gen (生)", "-ate (动)"],
+          "imagery": "产生出东西。",
+          "translation": "产生；发电",
+          "sentences": []
+        },
+        {
+          "word": "Generation",
+          "rootVisual": "<circle cx='12' cy='6' r='2' fill='currentColor'/><circle cx='8' cy='16' r='2' fill='currentColor'/><circle cx='16' cy='16' r='2' fill='currentColor'/><path d='M12 8 l-4 6 M12 8 l4 6' stroke='currentColor'/>",
+          "breakdown": ["gen (生)", "-ation (名)"],
+          "imagery": "一代人，繁衍的一代。",
+          "translation": "一代",
+          "sentences": []
+        },
+        {
+          "word": "Generator",
+          "rootVisual": "<rect x='4' y='8' width='16' height='10' stroke='currentColor' fill='none'/><path d='M12 8 v-3 m-2 0 l4 0' stroke='currentColor'/>",
+          "breakdown": ["generate", "-or (物)"],
+          "imagery": "生产（电）的机器。",
+          "translation": "发电机",
+          "sentences": []
+        },
+        {
+          "word": "Pregnant",
+          "rootVisual": "<path d='M12 4 a 6 6 0 0 1 0 12 a 8 8 0 0 1 0 8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["pre- (前)", "gnant (gen生)"],
+          "imagery": "在生产之前的状态，即怀孕。",
+          "translation": "怀孕的",
+          "sentences": []
+        },
+        {
+          "word": "Generous",
+          "rootVisual": "<path d='M12 14 l-2 2 h4 z' fill='currentColor'/><path d='M8 10 h8' stroke='currentColor'/>",
+          "breakdown": ["gen (生/种族)", "-ous (多)"],
+          "imagery": "出身高贵的（引申为大方的），或产出很多的。",
+          "translation": "慷慨的；大量的",
+          "sentences": [
+            {
+              "en": "She is generous to the kids.",
+              "cn": "她对孩子们很慷慨。"
+            }
+          ]
+        },
+        {
+          "word": "Hydrogen",
+          "rootVisual": "<text x='12' y='16' font-size='14' text-anchor='middle' fill='currentColor'>H</text>",
+          "breakdown": ["hydro (水)", "gen (生)"],
+          "imagery": "燃烧后产生水的元素。",
+          "translation": "氢",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "prefix": "curs",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "curs_curse",
+      "displayName": "curs/cuse (诅咒)",
+      "themeColor": "#713f12",
+      "prefixVisual": "<path d='M8 8 l8 8 m-8 0 l8 -8' stroke='currentColor' stroke-width='3'/><path d='M12 2 v4' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -curs-/-cuse-",
+        "description": "核心意境是 **“诅咒” (Curse)** 或 **“指责” (Blame)**。\n表示言语上的攻击或控诉。",
+        "imagery": "联想一张愤怒的嘴👄，喷出指责的话语。"
+      },
+      "words": [
+        {
+          "word": "Curse",
+          "rootVisual": "<path d='M8 12 h8' stroke='currentColor' stroke-width='4'/><path d='M12 8 v8' stroke='currentColor' stroke-width='1'/>",
+          "breakdown": ["curse (诅咒)"],
+          "imagery": "恶毒的言语。",
+          "translation": "诅咒；咒骂",
+          "sentences": []
+        },
+        {
+          "word": "Accuse",
+          "rootVisual": "<path d='M6 12 h12' stroke='currentColor' marker-end='url(#arrow)'/><circle cx='4' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["ac- (去)", "cuse (诅咒)"],
+          "imagery": "去诅咒别人，即指责、控告。",
+          "translation": "指责；控告",
+          "sentences": [
+            {
+              "en": "He was accused of murder.",
+              "cn": "他被指控谋杀。"
+            }
+          ]
+        },
+        {
+          "word": "Excuse",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12 l3 3 l5 -5' stroke='currentColor'/>",
+          "breakdown": ["ex- (出)", "cuse (诅咒)"],
+          "imagery": "从咒骂/指责中解脱出来，即原谅。",
+          "translation": "原谅；借口",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

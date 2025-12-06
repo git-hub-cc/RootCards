@@ -1,0 +1,52 @@
+{
+  "prefix": "spect",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "spect_look",
+      "displayName": "spect (看)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<path d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='3' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -spect-",
+        "description": "核心意境是 **“看” (Look)**。\n表示观察、注视或景象。",
+        "imagery": "联想一只大眼睛👁️，或者望远镜🔭。",
+        "visual": "<path d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='3' fill='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Expect",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["ex- (外)", "spect (看)"],
+          "imagery": "向外看，盼望。",
+          "translation": "期望；盼望",
+          "sentences": []
+        },
+        {
+          "word": "Inspect",
+          "rootVisual": "<circle cx='10' cy='10' r='6' stroke='currentColor' fill='none'/><path d='M14 14 l6 6' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["in- (内)", "spect (看)"],
+          "imagery": "往里面看，检查。",
+          "translation": "检查；视察",
+          "sentences": []
+        },
+        {
+          "word": "Suspect",
+          "rootVisual": "<path d='M12 12 l4 4' stroke='currentColor' stroke-dasharray='2 2'/><text x='8' y='14' font-size='12' fill='currentColor'>?</text>",
+          "breakdown": ["su- (下)", "spect (看)"],
+          "imagery": "在下面偷偷看，怀疑。",
+          "translation": "怀疑；嫌疑犯",
+          "sentences": []
+        },
+        {
+          "word": "Aspect",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 6 h6 v6' fill='currentColor' opacity='0.3'/>",
+          "breakdown": ["a- (去)", "spect (看)"],
+          "imagery": "看过去的一个面。",
+          "translation": "方面；外观",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

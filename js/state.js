@@ -270,22 +270,49 @@ export function clearLearnedWords() {
     saveLearnedWords();
 }
 
-
-// ... (辅助函数 getGradeFromFilePath, getContentTypeFromFilePath 保持不变，此处省略以节省篇幅) ...
+// =================================================================================
+// 【核心修改区域】
+// =================================================================================
+/**
+ * 根据文件路径判断其所属学习阶段。
+ * @param {string} filePath - 文件的相对路径
+ * @returns {string} - 学习阶段标识符 (e.g., 'grade7', 'high', 'common')
+ */
 function getGradeFromFilePath(filePath) {
+    // 【新增】优先检查新的 'middle' (初中) 目录，并将其映射为 'grade7' 以保持内部逻辑兼容
+    if (filePath.includes('/middle/')) {
+        return 'grade7';
+    }
+    if (filePath.includes('/high/')) {
+        return 'high';
+    }
+    // 保留对旧 gradeX 格式的兼容，以防万一
     const gradeMatch = filePath.match(/\/grade(\d+)\//);
-    if (gradeMatch && gradeMatch[1]) return `grade${gradeMatch[1]}`;
-    if (filePath.includes('/pre/') || filePath.includes('/suf/') || filePath.includes('/root/')) return 'common';
+    if (gradeMatch && gradeMatch[1]) {
+        return `grade${gradeMatch[1]}`;
+    }
+    // 词根词缀等通用资源，根据目录结构判断为 'common'
+    // 注意：这里的判断逻辑依赖于 manifest.js 中的新目录结构
+    // 新结构下，词根词缀已按 middle/high 划分，理论上不会走到这里
+    // 但为保持鲁棒性，保留此逻辑
+    const commonPathMatch = filePath.match(/\/(pre|suf|root)\//);
+    if (commonPathMatch) {
+        return 'common';
+    }
     return 'unknown';
 }
+// =================================================================================
+
 
 function getContentTypeFromFilePath(filePath) {
+    // 这个函数根据新目录结构进行了简化和增强
     if (filePath.includes('/pre/')) return 'pre';
     if (filePath.includes('/suf/')) return 'suf';
     if (filePath.includes('/root/')) return 'root';
-    if (filePath.includes('/category/')) return 'category';
+    // 对于不在 pre/suf/root 目录下的词汇文件，统一归为 'category'
     return 'category';
 }
+
 
 /**
  * 异步加载并处理所有数据文件。
@@ -317,7 +344,10 @@ export async function loadAndProcessData(onProgress) {
             }
 
             const grade = getGradeFromFilePath(file);
-            if (grade.startsWith('grade')) grades.add(grade);
+            // 将 'high' 和 'grade7' (代表初中) 加入年级列表
+            if (grade === 'high' || grade.startsWith('grade')) {
+                grades.add(grade);
+            }
             const contentType = getContentTypeFromFilePath(file);
             const affixType = dataFile.affixType || 'prefix';
 
@@ -367,7 +397,14 @@ export async function loadAndProcessData(onProgress) {
         }
     });
 
-    return { grades: Array.from(grades).sort() };
+    // 对年级进行排序，让 'high' 出现在 'grade7' 之后
+    const sortedGrades = Array.from(grades).sort((a, b) => {
+        if (a === 'high') return 1;
+        if (b === 'high') return -1;
+        return a.localeCompare(b, undefined, { numeric: true });
+    });
+
+    return { grades: sortedGrades };
 }
 
 /**
@@ -376,18 +413,23 @@ export async function loadAndProcessData(onProgress) {
 export function filterAndPrepareDataSet() {
     let filteredData;
 
-    // 阶段 1: 基础筛选
+    // 阶段 1: 年级筛选
+    // 注意：这里不再需要 'common' 的特殊处理，因为词根词缀已归入 middle/high
     if (currentGrade === 'all') {
         filteredData = allVocabularyData;
     } else {
-        filteredData = allVocabularyData.filter(item => item.grade === currentGrade || item.grade === 'common');
+        // 'grade7' (初中) 会包含 middle 目录下的所有内容
+        // 'high' (高中) 会包含 high 目录下的所有内容
+        filteredData = allVocabularyData.filter(item => item.grade === currentGrade);
     }
 
+
+    // 阶段 2: 内容类型筛选
     if (currentContentType !== 'all') {
         filteredData = filteredData.filter(item => item.contentType === currentContentType);
     }
 
-    // 阶段 2: 类别筛选
+    // 阶段 3: 类别筛选
     const userWordbook = userWordbooks.find(wb => wb.name === currentFilter);
 
     if (currentFilter === 'learned') {
@@ -406,7 +448,7 @@ export function filterAndPrepareDataSet() {
         );
     }
 
-    // 阶段 3: 搜索查询
+    // 阶段 4: 搜索查询
     if (currentSearchQuery) {
         const matchingWordCards = filteredData.filter(item =>
             item.cardType === 'word' && item.word && item.word.toLowerCase().includes(currentSearchQuery)
@@ -452,7 +494,7 @@ export function getAvailableCategories() {
     if (currentGrade === 'all') {
         gradeFilteredData = allVocabularyData;
     } else {
-        gradeFilteredData = allVocabularyData.filter(item => item.grade === currentGrade || item.grade === 'common');
+        gradeFilteredData = allVocabularyData.filter(item => item.grade === currentGrade);
     }
 
     let finalFilteredData;

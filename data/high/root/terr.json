@@ -1,0 +1,52 @@
+{
+  "prefix": "terr",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "terr_fear",
+      "displayName": "terr (恐惧)",
+      "themeColor": "#000000",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='1' fill='currentColor'/><circle cx='16' cy='10' r='1' fill='currentColor'/><circle cx='12' cy='16' r='3' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "词根 -terr- (Fear)",
+        "description": "核心意境是 **“恐惧” (Fear)**。\n源于 terror。表示惊吓、可怕。",
+        "imagery": "联想一张惊恐尖叫的脸😱。",
+        "visual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='1' fill='currentColor'/><circle cx='16' cy='10' r='1' fill='currentColor'/><circle cx='12' cy='16' r='3' stroke='currentColor' fill='none'/>"
+      },
+      "words": [
+        {
+          "word": "Terror",
+          "rootVisual": "<path d='M12 20 q -4 -10 0 -14 q 4 4 0 14' fill='currentColor' opacity='0.8'/>",
+          "breakdown": ["terr (恐)"],
+          "imagery": "极度恐惧。",
+          "translation": "恐惧；恐怖",
+          "sentences": []
+        },
+        {
+          "word": "Terrible",
+          "rootVisual": "<path d='M4 4 l16 16 M20 4 l-16 16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["terr (恐)", "-ible (能)"],
+          "imagery": "能引起恐惧的，可怕的。",
+          "translation": "可怕的；糟糕的",
+          "sentences": []
+        },
+        {
+          "word": "Terrify",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 8 l2 2 M16 8 l-2 2' stroke='currentColor'/>",
+          "breakdown": ["terr (恐)", "-ify (使)"],
+          "imagery": "使害怕。",
+          "translation": "使害怕；恐吓",
+          "sentences": []
+        },
+        {
+          "word": "Terrorist",
+          "rootVisual": "<circle cx='12' cy='14' r='6' fill='currentColor'/><path d='M12 8 v-4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["terror", "-ist (人)"],
+          "imagery": "制造恐怖的人（如炸弹）。",
+          "translation": "恐怖分子",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

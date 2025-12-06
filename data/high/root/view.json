@@ -1,0 +1,52 @@
+{
+  "prefix": "view",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "view_look",
+      "displayName": "view (看)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M2 12 q 10 -8 20 0' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -view-",
+        "description": "核心意境是 **“看” (Look/See)**。\n表示观看、视野或观点。",
+        "imagery": "联想一只眼睛👁️，或者风景画🖼️。",
+        "visual": "<path d='M2 12 q 10 -8 20 0' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "View",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M4 14 l4 -4 l4 4 l4 -4 l4 4' stroke='currentColor'/>",
+          "breakdown": ["view (看)"],
+          "imagery": "看到的景色；看法。",
+          "translation": "风景；看法；观看",
+          "sentences": []
+        },
+        {
+          "word": "Interview",
+          "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='3' stroke='currentColor' fill='none'/><path d='M11 12 h2' stroke='currentColor' stroke-dasharray='1 1'/>",
+          "breakdown": ["inter- (互)", "view (看)"],
+          "imagery": "互相看，面对面交谈（面试/采访）。",
+          "translation": "面试；采访",
+          "sentences": []
+        },
+        {
+          "word": "Review",
+          "rootVisual": "<path d='M4 12 q 8 -6 16 0' stroke='currentColor' fill='none'/><path d='M20 12 l-2 -2' stroke='currentColor'/><circle cx='12' cy='14' r='2' fill='currentColor'/>",
+          "breakdown": ["re- (再)", "view (看)"],
+          "imagery": "再看一遍，复习，回顾。",
+          "translation": "复习；回顾；评论",
+          "sentences": []
+        },
+        {
+          "word": "Preview",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor' opacity='0.3'/><circle cx='8' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["pre- (前)", "view (看)"],
+          "imagery": "提前看，预习。",
+          "translation": "预习；预演",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

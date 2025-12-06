@@ -1,0 +1,42 @@
+{
+  "prefix": "anti",
+  "meanings": [
+    {
+      "meaningId": "anti_against",
+      "displayName": "anti- (反/对抗)",
+      "themeColor": "#be123c",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><line x1='4' y1='20' x2='20' y2='4' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "前缀 anti-",
+        "description": "核心意境是 **“反” (Against)** 或 **“对抗” (Opposite)**。\n表示反对、抵抗或位于相反位置。变体有 ant-。",
+        "imagery": "联想两个拳头碰撞👊，或者一面盾牌挡住攻击。"
+      },
+      "words": [
+        {
+          "word": "Anti-war",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12 l2 4 l4 -8' stroke='currentColor' opacity='0.5'/><path d='M6 6 l12 12 M18 6 l-12 12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["anti- (反)", "war (战争)"],
+          "imagery": "反对战争。",
+          "translation": "反战的",
+          "sentences": []
+        },
+        {
+          "word": "Anti-corruption",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 6 l12 12 M18 6 l-12 12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["anti- (反)", "corruption (腐败)"],
+          "imagery": "反对腐败。",
+          "translation": "反腐的",
+          "sentences": []
+        },
+        {
+          "word": "Antarctic",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 22 v-4' stroke='currentColor'/>",
+          "breakdown": ["ant- (反)", "arctic (北极)"],
+          "imagery": "与北极相反的地方，即南极。",
+          "translation": "南极的",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

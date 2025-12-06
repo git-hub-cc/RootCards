@@ -1,0 +1,120 @@
+{
+  "prefix": "pre",
+  "meanings": [
+    {
+      "meaningId": "pre_before",
+      "displayName": "pre- (在...之前)",
+      "themeColor": "#d97706",
+      "prefixVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' stroke-width='2'/><polyline points='10 6 4 12 10 18' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "前缀 pre-",
+        "description": "核心意境是 **“在...之前” (Before)**。\n可以指时间上的提前，也可以指空间位置上的靠前。",
+        "imagery": "联想一条指向左边（过去/前面）的箭头⬅️，或者排队站在最前面的人。"
+      },
+      "words": [
+        {
+          "word": "Prefer",
+          "rootVisual": "<path d='M8 14 q 4 4 8 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='10' r='6' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": ["pre- (前)", "fer (拿/带)"],
+          "imagery": "把喜欢的东西拿（fer）到所有人前面（pre-），这就是偏爱。",
+          "translation": "更喜欢",
+          "sentences": [
+            {
+              "en": "I prefer staying at home to going out during such hot days.",
+              "cn": "在这么热的天，我更喜欢（优先选择）待在家里而不是出门。"
+            }
+          ]
+        },
+        {
+          "word": "President",
+          "rootVisual": "<path d='M7 20 v-8 h10 v8' stroke='currentColor' fill='none'/><path d='M7 16 h10' stroke='currentColor'/><circle cx='12' cy='8' r='3' stroke='currentColor' fill='none'/>",
+          "breakdown": ["pre- (前)", "sid (坐)"],
+          "imagery": "坐在（sid）最前面（pre-）位置的人，即总统或主席。",
+          "translation": "总统；主席",
+          "sentences": [
+            {
+              "en": "Mr. President, you have to make the call.",
+              "cn": "总统先生（坐在前面的人），你必须做决定。"
+            }
+          ]
+        },
+        {
+          "word": "Predict",
+          "rootVisual": "<path d='M4 4 h12 v10 h-8 l-4 4 v-4 h-2 z' stroke='currentColor' fill='none' stroke-width='2'/><text x='7' y='11' font-size='6' fill='currentColor'>?!</text>",
+          "breakdown": ["pre- (前)", "dict (说)"],
+          "imagery": "在事情发生之前（pre-）就先说（dict）了出来，即预测。",
+          "translation": "预测",
+          "sentences": [
+            {
+              "en": "Newspapers predicted that Trump would be re-elected.",
+              "cn": "报纸预测（预先说）特朗普将再次当选。"
+            }
+          ]
+        },
+        {
+          "word": "Prepare",
+          "rootVisual": "<path d='M5 4 h14 v16 h-14 z' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8 M8 16 h5' stroke='currentColor'/>",
+          "breakdown": ["pre- (前)", "par (准备/排列)"],
+          "imagery": "在行动之前（pre-）先把东西排列好（par），即准备。",
+          "translation": "准备",
+          "sentences": [
+            {
+              "en": "The students are busy preparing for the final exam.",
+              "cn": "学生们正忙着为期末考试做准备（提前排列知识）。"
+            }
+          ]
+        },
+        {
+          "word": "Preschool",
+          "rootVisual": "<path d='M4 14 h4 l2 -4 h4 l2 4 h4' stroke='currentColor' fill='none'/><rect x='8' y='14' width='8' height='6' stroke='currentColor' fill='none'/><path d='M12 14 v6' stroke='currentColor'/>",
+          "breakdown": ["pre- (前)", "school (学校)"],
+          "imagery": "在上正式学校之前（pre-）去的地方。",
+          "translation": "幼儿园",
+          "sentences": []
+        },
+        {
+          "word": "Prehistory",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor'/><rect x='6' y='8' width='2' height='8' fill='currentColor'/><rect x='16' y='8' width='2' height='8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["pre- (前)", "history (历史)"],
+          "imagery": "在有文字记载的历史之前（pre-）的时期。",
+          "translation": "史前历史",
+          "sentences": []
+        },
+        {
+          "word": "Prefix",
+          "rootVisual": "<rect x='8' y='8' width='12' height='8' stroke='currentColor' fill='none'/><rect x='4' y='8' width='4' height='8' fill='currentColor'/>",
+          "breakdown": ["pre- (前)", "fix (固定)"],
+          "imagery": "固定（fix）在单词前面（pre-）的部分。",
+          "translation": "前缀",
+          "sentences": []
+        },
+        {
+          "word": "Preview",
+          "rootVisual": "<path d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z' stroke='currentColor' fill='none'/><path d='M8 12 l-4 -4 m0 8 l4 -4' stroke='currentColor'/>",
+          "breakdown": ["pre- (前)", "view (看)"],
+          "imagery": "在正式观看或学习之前（pre-）先看（view）一遍。",
+          "translation": "预习；预演",
+          "sentences": [
+            {
+              "en": "He had gone to see the preview of the play.",
+              "cn": "他去看了这部戏的预演（提前看）。"
+            }
+          ]
+        },
+        {
+          "word": "Precise",
+          "rootVisual": "<line x1='2' y1='10' x2='22' y2='10' stroke='currentColor'/><line x1='12' y1='6' x2='12' y2='14' stroke='currentColor'/><circle cx='12' cy='10' r='1' fill='currentColor'/>",
+          "breakdown": ["pre- (前)", "cis (切)"],
+          "imagery": "在测量之前（pre-）就已经切割（cis）好了刻度，所以结果是精确的。",
+          "translation": "精确的",
+          "sentences": [
+            {
+              "en": "Can you give us a more precise definition?",
+              "cn": "你能给我们一个更精确（提前切好刻度的）定义吗？"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

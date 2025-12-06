@@ -1,0 +1,60 @@
+{
+  "prefix": "vert",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "vert_turn",
+      "displayName": "vert/vers (转)",
+      "themeColor": "#06b6d4",
+      "prefixVisual": "<path d='M12 4 a 8 8 0 1 1 0 16 a 8 8 0 1 1 0 -16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><path d='M12 4 l2 2 l-2 2' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -vert-/-vers-",
+        "description": "核心意境是 **“转” (Turn)**。\n表示旋转、转变或方向改变。",
+        "imagery": "联想一个旋转的箭头🔄，或者漩涡🌀。",
+        "visual": "<path d='M12 4 a 8 8 0 1 1 0 16 a 8 8 0 1 1 0 -16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><path d='M12 4 l2 2 l-2 2' stroke='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Universe",
+          "rootVisual": "<circle cx='12' cy='12' r='10' fill='currentColor' color='#000'/>",
+          "breakdown": ["uni (一)", "vers (转)"],
+          "imagery": "在一个空间里转动（万物归一），宇宙。",
+          "translation": "宇宙",
+          "sentences": []
+        },
+        {
+          "word": "Diverse",
+          "rootVisual": "<path d='M12 12 l-6 -6 M12 12 l6 -6 M12 12 l0 8' stroke='currentColor'/>",
+          "breakdown": ["di- (分)", "vers (转)"],
+          "imagery": "分开转动，多种多样的。",
+          "translation": "多样的；不同的",
+          "sentences": []
+        },
+        {
+          "word": "Conversation",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M12 12 l0 4 q 2 -2 0 -4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["con- (共)", "vers (转)"],
+          "imagery": "大家围着一个话题转，对话。",
+          "translation": "对话",
+          "sentences": []
+        },
+        {
+          "word": "Advertise",
+          "rootVisual": "<path d='M12 12 l4 -4' stroke='currentColor'/><path d='M8 12 h8' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": ["ad- (去)", "vert (转)"],
+          "imagery": "到处转着喊（广而告之）。",
+          "translation": "做广告",
+          "sentences": []
+        },
+        {
+          "word": "Version",
+          "rootVisual": "<path d='M4 4 h12 v16 h-12 z' stroke='currentColor' fill='none'/><text x='10' y='14' font-size='10' fill='currentColor'>V2</text>",
+          "breakdown": ["vers (转)", "-ion"],
+          "imagery": "转一下出来的新形式，版本。",
+          "translation": "版本",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

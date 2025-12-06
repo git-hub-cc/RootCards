@@ -1,0 +1,36 @@
+{
+  "prefix": "reg",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "reg_rule",
+      "displayName": "reg (规则/直)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M4 10 h16 M4 14 h16' stroke='currentColor' stroke-width='2'/><path d='M6 8 v8 M12 8 v8 M18 8 v8' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -reg-/-rect-",
+        "description": "核心意境是 **“规则” (Rule)** 或 **“直” (Straight)**。\n表示管理、统治或正规。",
+        "imagery": "联想一把直尺📏，或者国王的权杖👑。",
+        "visual": "<path d='M4 10 h16 M4 14 h16' stroke='currentColor' stroke-width='2'/><path d='M6 8 v8 M12 8 v8 M18 8 v8' stroke='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Regular",
+          "rootVisual": "<path d='M2 12 h20' stroke='currentColor' stroke-dasharray='4 2'/><rect x='2' y='8' width='2' height='8' fill='currentColor'/><rect x='8' y='8' width='2' height='8' fill='currentColor'/><rect x='14' y='8' width='2' height='8' fill='currentColor'/><rect x='20' y='8' width='2' height='8' fill='currentColor'/>",
+          "breakdown": ["reg (直/规则)", "-ular (形)"],
+          "imagery": "像尺子上的刻度一样，间隔均匀，直且正。",
+          "translation": "有规律的",
+          "sentences": []
+        },
+        {
+          "word": "Regulate",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><path d='M8 8 h8' stroke='currentColor'/><path d='M8 12 h8' stroke='currentColor'/><path d='M8 16 h5' stroke='currentColor'/>",
+          "breakdown": ["reg (规则)", "-ulate (动)"],
+          "imagery": "通过制定一条条规则来管理。",
+          "translation": "管理；规定",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

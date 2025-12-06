@@ -1,0 +1,69 @@
+{
+  "prefix": "man",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "man_hand",
+      "displayName": "man (手)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<path d='M8 12 h8 v6 h-8 z' fill='currentColor'/><path d='M8 12 v-2 a 2 2 0 0 1 2 -2 h 4 a 2 2 0 0 1 2 2 v 2' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "词根 -man-",
+        "description": "核心意境是 **“手” (Hand)**。\n表示用手操作、控制。",
+        "imagery": "联想一只张开的手掌✋，或者正在操作机器的手。"
+      },
+      "words": [
+        {
+          "word": "Manual",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8' stroke='currentColor'/>",
+          "breakdown": ["manu (手)", "-al (形/名)"],
+          "imagery": "手工的；使用手册。",
+          "translation": "手工的；手册",
+          "sentences": []
+        },
+        {
+          "word": "Manufacture",
+          "rootVisual": "<path d='M4 18 h16 v-6 h-16 z' stroke='currentColor' fill='none'/><path d='M4 12 l4 -4 l4 4 l4 -4 l4 4' stroke='currentColor'/>",
+          "breakdown": ["manu (手)", "fact (做)"],
+          "imagery": "用手做（早期），即制造。",
+          "translation": "制造；生产",
+          "sentences": []
+        },
+        {
+          "word": "Manuscript",
+          "rootVisual": "<path d='M6 4 h12 v16 h-12 z' stroke='currentColor' fill='none'/><path d='M8 8 h8' stroke='currentColor' stroke-dasharray='2 1'/>",
+          "breakdown": ["manu (手)", "script (写)"],
+          "imagery": "手写的东西，手稿。",
+          "translation": "手稿",
+          "sentences": [
+            {
+              "en": "Read his novel in manuscript.",
+              "cn": "阅读他小说的手稿。"
+            }
+          ]
+        },
+        {
+          "word": "Command",
+          "rootVisual": "<path d='M12 4 v4' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["com- (加强)", "mand (手/命令)"],
+          "imagery": "用手势发号施令，控制。",
+          "translation": "命令；控制",
+          "sentences": []
+        },
+        {
+          "word": "Demand",
+          "rootVisual": "<path d='M12 8 v8' stroke='currentColor' marker-end='url(#arrow)'/><path d='M8 16 h8' stroke='currentColor'/>",
+          "breakdown": ["de- (下)", "mand (命令)"],
+          "imagery": "强烈的要求。",
+          "translation": "要求；需求",
+          "sentences": [
+            {
+              "en": "The demand for housing.",
+              "cn": "对住房的需求。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

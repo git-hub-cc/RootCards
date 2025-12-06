@@ -1,0 +1,53 @@
+{
+  "prefix": "do",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "do_act",
+      "displayName": "do/deed (做)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M9 12 l2 2 l4 -4' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "词根 do/deed",
+        "description": "核心意境是 **“做” (Do)** 或 **“行动” (Act)**。\n表示执行或完成某事。",
+        "imagery": "联想一只正在工作的手✋，或者一个完成的勾✅。"
+      },
+      "words": [
+        {
+          "word": "Do",
+          "rootVisual": "<path d='M8 12 h8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["do (做)"],
+          "imagery": "最基础的动作。",
+          "translation": "做",
+          "sentences": []
+        },
+        {
+          "word": "Deed",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M9 12 l2 2 l4 -4' stroke='currentColor'/>",
+          "breakdown": ["deed (行为)"],
+          "imagery": "做出来的事情，即行为。",
+          "translation": "行为；契约",
+          "sentences": [
+            {
+              "en": "Evil deeds.",
+              "cn": "罪恶行径。"
+            }
+          ]
+        },
+        {
+          "word": "Indeed",
+          "rootVisual": "<path d='M12 4 v16' stroke='currentColor' stroke-width='2'/><path d='M8 16 l4 4 l4 -4' stroke='currentColor'/>",
+          "breakdown": ["in- (加强)", "deed (做/实)"],
+          "imagery": "用行动证实的，确实如此。",
+          "translation": "确实；当然",
+          "sentences": [
+            {
+              "en": "A friend in need is a friend indeed.",
+              "cn": "患难见真情。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

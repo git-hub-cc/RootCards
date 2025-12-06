@@ -1,0 +1,52 @@
+{
+  "prefix": "rad",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "rad_root",
+      "displayName": "rad (根/射)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<path d='M12 12 l-4 8 M12 12 l4 8 M12 12 v-8' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -rad-/-root-",
+        "description": "核心意境是 **“根” (Root)** 或 **“辐射” (Radiate)**。\n源于 root。表示根基、半径或射线。",
+        "imagery": "联想树根扎入地下🌳，或者太阳光芒四射🌞。",
+        "visual": "<path d='M12 12 l-4 8 M12 12 l4 8 M12 12 v-8' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Root",
+          "rootVisual": "<path d='M12 10 v10 m-3 -4 l3 4 l3 -4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["root (根)"],
+          "imagery": "植物的根。",
+          "translation": "根",
+          "sentences": []
+        },
+        {
+          "word": "Radio",
+          "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 12 l6 -6 m-12 0 l6 6 m0 0 v-8' stroke='currentColor'/>",
+          "breakdown": ["rad (射线)", "-io"],
+          "imagery": "通过无线电波（射线）传播。",
+          "translation": "收音机；无线电",
+          "sentences": []
+        },
+        {
+          "word": "Radius",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l8 0' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["rad (根/辐)", "-ius"],
+          "imagery": "车轮的辐条，圆的半径。",
+          "translation": "半径",
+          "sentences": []
+        },
+        {
+          "word": "Radar",
+          "rootVisual": "<path d='M12 20 a 16 16 0 0 1 0 -16' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><path d='M12 20 l6 -10' stroke='currentColor'/>",
+          "breakdown": ["ra (radio)", "d (detect)", "a (and)", "r (ranging)"],
+          "imagery": "无线电探测和测距。",
+          "translation": "雷达",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

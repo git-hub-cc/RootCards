@@ -1,0 +1,226 @@
+{
+  "prefix": "in",
+  "meanings": [
+    {
+      "meaningId": "in_negate",
+      "displayName": "in-/im- (否定)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none' stroke-width='2'/><line x1='5' y1='19' x2='19' y2='5' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "前缀 in-/im-",
+        "description": "核心意境是 **“不” (Not)** 或 **“无” (Without)**。\n通常用于形容词前。当词根以 b, m, p 开头时，in- 会变为 im-；以 l 开头变 il-；以 r 开头变 ir-。",
+        "imagery": "联想一个红色的禁止符号🚫，表示“不允许”或“不是”。"
+      },
+      "words": [
+        {
+          "word": "Inexpensive",
+          "rootVisual": "<path d='M12 5v4 M4 9h16 M4 9l2 4h-4z M20 9l-2 4h4z' fill='none' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='16' r='2' />",
+          "breakdown": ["in- (不)", "pens (花费/称重)"],
+          "imagery": "不用放在天平上斤斤计较（pens），也不需要花费很多金币。",
+          "translation": "不昂贵的；便宜的",
+          "sentences": [
+            {
+              "en": "The watch is inexpensive.",
+              "cn": "这块手表不贵（不需要花费很多）。"
+            }
+          ]
+        },
+        {
+          "word": "Inconvenient",
+          "rootVisual": "<line x1='4' y1='8' x2='20' y2='8'/><line x1='4' y1='16' x2='20' y2='16'/><line x1='8' y1='4' x2='8' y2='20'/><line x1='16' y1='4' x2='16' y2='20'/><circle cx='8' cy='8' r='1.5' fill='currentColor'/><circle cx='16' cy='8' r='1.5' fill='currentColor'/><circle cx='8' cy='16' r='1.5' fill='currentColor'/><circle cx='16' cy='16' r='1.5' fill='currentColor'/>",
+          "breakdown": ["in- (不)", "ven (来/走)"],
+          "imagery": "本应四通八达的交通网格 (ven - 走) 出现了断裂，导致你无法直接到达，只能选择一条费时费力的路线。这种 '走不通' 的感觉，就是不方便。",
+          "translation": "不方便的",
+          "sentences": [
+            {
+              "en": "It is inconvenient to get there without a car.",
+              "cn": "没有车去那里很不方便（路不好走）。"
+            }
+          ]
+        },
+        {
+          "word": "Independent",
+          "rootVisual": "<path d='M12 2 v10' stroke='currentColor' stroke-width='2'/><path d='M12 12 q 0 4 4 4' fill='none' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='20' r='2' fill='currentColor'/>",
+          "breakdown": ["in- (不)", "pend (悬挂/依靠)"],
+          "imagery": "不再像钩子（pend）一样挂在别人身上，而是自己站立。",
+          "translation": "独立的",
+          "sentences": [
+            {
+              "en": "She is an independent woman.",
+              "cn": "她是一个独立的（不依靠他人的）女性。"
+            }
+          ]
+        },
+        {
+          "word": "Impolite",
+          "rootVisual": "<path d='M12 4 L16 14 L8 14 Z' fill='none' stroke='currentColor' stroke-width='2' /><path d='M4 20 h16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["im- (不)", "pol (修饰/城市)"],
+          "imagery": "言行举止没有经过打磨（pol）和修饰，显得粗糙无礼。",
+          "translation": "不礼貌的",
+          "sentences": [
+            {
+              "en": "It is impolite to ask girls' ages directly.",
+              "cn": "直接问女孩年龄是不礼貌的（没有修饰过的行为）。"
+            }
+          ]
+        },
+        {
+          "word": "Impossible",
+          "rootVisual": "<path d='M6 14 h4 l2 -4 h4 v4 h-2 l-2 4 h-6 z' fill='none' stroke='currentColor' stroke-width='2' />",
+          "breakdown": ["im- (不)", "poss (能力)"],
+          "imagery": "像手臂肌肉（poss）一样的力量都不足以完成，即没有能力做到。",
+          "translation": "不可能的",
+          "sentences": [
+            {
+              "en": "Nothing is impossible.",
+              "cn": "没有什么是不可能的（没有什么是能力达不到的）。"
+            }
+          ]
+        },
+        {
+          "word": "Invincible",
+          "rootVisual": "<path d='M12 2 l2 4 h4 l-3 3 l1 4 l-4 -3 l-4 3 l1 -4 l-3 -3 h4 z' stroke='currentColor' fill='none'/><path d='M4 20 l16 -16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["in- (不)", "vinc (赢)"],
+          "imagery": "无论怎么挑战，都赢不了（vinc）他，即不可战胜的。",
+          "translation": "不可战胜的",
+          "sentences": [
+            {
+              "en": "The team seemed invincible.",
+              "cn": "这支队伍似乎是不可战胜的。"
+            }
+          ]
+        },
+        {
+          "word": "Illiterate",
+          "rootVisual": "<path d='M6 6 h12 v12 h-12 z' stroke='currentColor' fill='none'/><path d='M8 10 h8 M8 14 h4' stroke='currentColor'/><line x1='6' y1='6' x2='18' y2='18' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["il- (不)", "liter (文字)"],
+          "imagery": "看不懂文字，无法阅读，即文盲。",
+          "translation": "文盲的",
+          "sentences": [
+            {
+              "en": "Over one quarter of the adult population are not fully literate.",
+              "cn": "超过四分之一的成年人口并非完全识字（相对文盲）。"
+            }
+          ]
+        },
+        {
+          "word": "Inflexible",
+          "rootVisual": "<line x1='12' y1='4' x2='12' y2='20' stroke='currentColor' stroke-width='4'/>",
+          "breakdown": ["in- (不)", "flex (弯曲)"],
+          "imagery": "像钢筋一样直挺挺的，不能弯曲，即僵硬的。",
+          "translation": "僵硬的；不灵活的",
+          "sentences": [
+            {
+              "en": "An inflexible attitude.",
+              "cn": "一种僵硬（不知变通）的态度。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "in_into",
+      "displayName": "in- (向内/进入)",
+      "themeColor": "#15803d",
+      "prefixVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 0 v10 m-3 -3 l3 3 l3 -3' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "前缀 in-",
+        "description": "核心意境是 **“向内” (Into)** 或 **“在里面” (Inside)**。\n表示动作的方向是进入物体内部。",
+        "imagery": "联想一个箭头射入一个盒子的内部📦。"
+      },
+      "words": [
+        {
+          "word": "Include",
+          "rootVisual": "<rect x='6' y='6' width='12' height='14' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='15' cy='13' r='1' fill='currentColor'/>",
+          "breakdown": ["in- (向内)", "clud (关闭)"],
+          "imagery": "把东西放进去，然后关上（clud）门，就包含了在里面。",
+          "translation": "包括",
+          "sentences": [
+            {
+              "en": "The price includes the postage.",
+              "cn": "价格包括（关在里面）邮费。"
+            }
+          ]
+        },
+        {
+          "word": "Introduce",
+          "rootVisual": "<path d='M4 12 h10 m-3 -3 l3 3 l-3 3' stroke='currentColor' stroke-width='2'/><circle cx='20' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["intro- (向内)", "duc (引导)"],
+          "imagery": "用手势引导（duc）某人进入（intro）一个新的圈子。",
+          "translation": "介绍",
+          "sentences": [
+            {
+              "en": "Let me introduce myself first.",
+              "cn": "让我先自我介绍（引导进入）一下。"
+            }
+          ]
+        },
+        {
+          "word": "Inject",
+          "rootVisual": "<path d='M12 4 v10' stroke='currentColor' marker-end='url(#arrow)'/><rect x='8' y='14' width='8' height='6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["in- (向内)", "ject (投/射)"],
+          "imagery": "用针管把药液射入（ject）体内（in-）。",
+          "translation": "注射",
+          "sentences": [
+            {
+              "en": "The nurse injected the patient with antibiotics.",
+              "cn": "护士给病人注射了抗生素。"
+            }
+          ]
+        },
+        {
+          "word": "Inspect",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><path d='M16 16 l4 4' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["in- (向内)", "spect (看)"],
+          "imagery": "拿着放大镜往里面（in-）仔细看（spect），检查细节。",
+          "translation": "检查",
+          "sentences": [
+            {
+              "en": "The customs officer inspected my passport suspiciously.",
+              "cn": "海关官员怀疑地检查了我的护照。"
+            }
+          ]
+        },
+        {
+          "word": "Inspire",
+          "rootVisual": "<path d='M12 16 v-6' stroke='currentColor'/><path d='M12 10 l-3 3 M12 10 l3 3' stroke='currentColor'/><circle cx='12' cy='16' r='2' fill='currentColor'/><path d='M8 6 q 4 -4 8 0' stroke='currentColor' fill='none' stroke-dasharray='2 1'/>",
+          "breakdown": ["in- (吸入)", "spir (气/神)"],
+          "imagery": "吸入（in-）一口气（spir），精神为之一振，产生灵感。",
+          "translation": "鼓舞；赋予灵感",
+          "sentences": [
+            {
+              "en": "We need someone who can inspire the team.",
+              "cn": "我们需要一个能鼓舞（注入士气）团队的人。"
+            }
+          ]
+        },
+        {
+          "word": "Incident",
+          "rootVisual": "<path d='M12 0 v12' stroke='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["in- (在里)", "cid (落/发生)"],
+          "imagery": "事情落在（cid）了里面（in-），通常指有内幕或人为策划的事件。",
+          "translation": "事件",
+          "sentences": [
+            {
+              "en": "The incident happened at midnight.",
+              "cn": "这起事件发生在午夜。"
+            }
+          ]
+        },
+        {
+          "word": "Innovate",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 8 v8 M8 12 h8' stroke='currentColor'/><path d='M16 8 l2 -2' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": ["in- (在里)", "nov (新)"],
+          "imagery": "在内部（in-）进行更新（nov），使其焕然一新。",
+          "translation": "创新",
+          "sentences": [
+            {
+              "en": "We need to innovate to stay ahead.",
+              "cn": "我们需要创新（内部更新）以保持领先。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

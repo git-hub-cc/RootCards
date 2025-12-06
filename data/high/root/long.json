@@ -1,0 +1,40 @@
+{
+  "prefix": "long",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "long_length",
+      "displayName": "long (长)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<line x1='2' y1='12' x2='22' y2='12' stroke='currentColor' stroke-width='4'/>",
+      "prefixIntro": {
+        "title": "词根 -long-",
+        "description": "核心意境是 **“长” (Long)**。\n表示长度、时间久。",
+        "imagery": "联想一条长长的线📏，或者长颈鹿的脖子🦒。"
+      },
+      "words": [
+        {
+          "word": "Long",
+          "rootVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["long (长)"],
+          "imagery": "长的。",
+          "translation": "长的",
+          "sentences": []
+        },
+        {
+          "word": "Length",
+          "rootVisual": "<line x1='2' y1='10' x2='22' y2='10' stroke='currentColor'/><line x1='2' y1='8' x2='2' y2='12' stroke='currentColor'/><line x1='22' y1='8' x2='22' y2='12' stroke='currentColor'/>",
+          "breakdown": ["leng (long变体)", "-th (名)"],
+          "imagery": "长度的概念。",
+          "translation": "长度",
+          "sentences": [
+            {
+              "en": "Measure the length.",
+              "cn": "测量长度。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

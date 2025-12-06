@@ -1,0 +1,48 @@
+{
+  "prefix": "mens",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "mens_measure",
+      "displayName": "mens/meter (测量)",
+      "themeColor": "#0ea5e9",
+      "prefixVisual": "<path d='M2 18 h20' stroke='currentColor' stroke-width='2'/><path d='M4 18 v-4 M8 18 v-4 M12 18 v-4 M16 18 v-4 M20 18 v-4' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -mens-/-meter-",
+        "description": "核心意境是 **“测量” (Measure)**。\n表示度量、尺寸。",
+        "imagery": "联想一把刻度尺📏，或者卷尺。"
+      },
+      "words": [
+        {
+          "word": "Meter",
+          "rootVisual": "<path d='M4 14 h16' stroke='currentColor' stroke-width='2'/><path d='M4 12 v4 M20 12 v4' stroke='currentColor'/>",
+          "breakdown": ["meter (测量单位)"],
+          "imagery": "基本的长度单位。",
+          "translation": "米",
+          "sentences": []
+        },
+        {
+          "word": "Measure",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none'/><path d='M4 12 h16' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["meas (测量)"],
+          "imagery": "测量的动作或方法。",
+          "translation": "测量；措施",
+          "sentences": [
+            {
+              "en": "Take measures.",
+              "cn": "采取措施。"
+            }
+          ]
+        },
+        {
+          "word": "Dimension",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 6 l4 4' stroke='currentColor'/><path d='M18 6 l4 4' stroke='currentColor'/>",
+          "breakdown": ["di- (分)", "mens (测量)", "-ion"],
+          "imagery": "测量出来的长宽高，维度。",
+          "translation": "尺寸；维度",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

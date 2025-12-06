@@ -1,0 +1,138 @@
+{
+  "prefix": "Vocab S",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_s",
+      "displayName": "Vocabulary S",
+      "themeColor": "#f59e0b",
+      "prefixIntro": {
+        "title": "S 开头核心词",
+        "description": "高中阶段 S 开头的高频混合词汇。S 字母常有“看 (See)、站立 (Stand)、相同 (Same)”的含义。",
+        "imagery": "字母 S 像一条蛇或弯曲的道路。"
+      },
+      "words": [
+        {
+          "word": "sacrifice",
+          "rootVisual": "<path d='M12 4v16M4 12h16' stroke='currentColor'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
+          "breakdown": ["sacr", "(神圣)", "fic", "(做)"],
+          "imagery": "为神做的事 -> 牺牲/祭祀。",
+          "translation": "牺牲；献祭",
+          "sentences": [{"en": "He sacrificed his life.", "cn": "他牺牲了生命。"}]
+        },
+        {
+          "word": "seminar",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='6' cy='10' r='2' fill='currentColor'/><circle cx='18' cy='10' r='2' fill='currentColor'/><circle cx='12' cy='16' r='2' fill='currentColor'/>",
+          "breakdown": ["sem", "(种子)", "inar"],
+          "imagery": "播种思想的地方 -> 研讨会。",
+          "translation": "研讨会",
+          "sentences": [{"en": "Attend a seminar.", "cn": "参加研讨会。"}]
+        },
+        {
+          "word": "sensitive",
+          "rootVisual": "<path d='M12 4q-4 8-8 0t8 0t8 0' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["sens", "(感觉)", "itive"],
+          "imagery": "感觉敏锐的 -> 敏感的。",
+          "translation": "敏感的；灵敏的",
+          "sentences": [{"en": "Sensitive skin.", "cn": "敏感性皮肤。"}]
+        },
+        {
+          "word": "separate",
+          "rootVisual": "<circle cx='6' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='18' cy='12' r='4' stroke='currentColor' fill='none'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["se-", "(分开)", "par", "(平等)", "ate"],
+          "imagery": "平分 -> 分开/单独的。",
+          "translation": "分开；单独的",
+          "sentences": [{"en": "Separate rooms.", "cn": "分开的房间。"}]
+        },
+        {
+          "word": "shame",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 10h2M14 10h2' stroke='currentColor'/><path d='M12 16h-4' stroke='currentColor'/>",
+          "breakdown": ["shame", "(遮盖)"],
+          "imagery": "没脸见人 -> 羞耻。",
+          "translation": "羞耻；遗憾",
+          "sentences": [{"en": "What a shame!", "cn": "真遗憾！"}]
+        },
+        {
+          "word": "slender",
+          "rootVisual": "<rect x='10' y='4' width='4' height='16' stroke='currentColor' fill='none'/><path d='M12 4v16' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["slender", "(细长)"],
+          "imagery": "细长的身材 -> 苗条的。",
+          "translation": "苗条的；微薄的",
+          "sentences": [{"en": "A slender figure.", "cn": "苗条的身材。"}]
+        },
+        {
+          "word": "solid",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' fill='currentColor'/>",
+          "breakdown": ["sol", "(整/全)", "id"],
+          "imagery": "完整的一块 -> 固体的/坚固的。",
+          "translation": "固体的；坚固的",
+          "sentences": [{"en": "Solid rock.", "cn": "坚固的岩石。"}]
+        },
+        {
+          "word": "sophisticated",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12l2 2 4-4' stroke='currentColor'/>",
+          "breakdown": ["soph", "(智慧)", "isticated"],
+          "imagery": "充满智慧和经验的 -> 老练的/复杂的。",
+          "translation": "老练的；复杂的",
+          "sentences": [{"en": "Sophisticated technology.", "cn": "尖端技术。"}]
+        },
+        {
+          "word": "sort",
+          "rootVisual": "<rect x='4' y='4' width='6' height='6' stroke='currentColor' fill='none'/><circle cx='16' cy='7' r='3' stroke='currentColor' fill='none'/><path d='M4 14l6 6h-6z' stroke='currentColor' fill='none'/>",
+          "breakdown": ["sort", "(种类)"],
+          "imagery": "分类整理。",
+          "translation": "种类；分类",
+          "sentences": [{"en": "All sorts of things.", "cn": "各种各样的东西。"}]
+        },
+        {
+          "word": "sponsor",
+          "rootVisual": "<path d='M12 4v12M8 16h8' stroke='currentColor'/><text x='12' y='10' text-anchor='middle' font-size='8' fill='currentColor'>$</text>",
+          "breakdown": ["spons", "(承诺)", "or"],
+          "imagery": "承诺出资的人 -> 赞助商。",
+          "translation": "赞助商；发起人",
+          "sentences": [{"en": "A major sponsor.", "cn": "主要赞助商。"}]
+        },
+        {
+          "word": "squeeze",
+          "rootVisual": "<path d='M6 6h12v12h-12z' stroke='currentColor' fill='none'/><path d='M2 12h4M18 12h4' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["squeeze", "(挤压)"],
+          "imagery": "向中间用力 -> 挤压。",
+          "translation": "挤；压榨",
+          "sentences": [{"en": "Squeeze the orange.", "cn": "榨橙子。"}]
+        },
+        {
+          "word": "stain",
+          "rootVisual": "<circle cx='12' cy='12' r='6' fill='currentColor' opacity='0.5'/><path d='M12 8l2 2-2 2-2-2z' fill='currentColor'/>",
+          "breakdown": ["stain", "(染色)"],
+          "imagery": "弄脏的痕迹 -> 污点。",
+          "translation": "污点；瑕疵",
+          "sentences": [{"en": "A coffee stain.", "cn": "咖啡渍。"}]
+        },
+        {
+          "word": "stare",
+          "rootVisual": "<circle cx='8' cy='12' r='3' fill='currentColor'/><circle cx='16' cy='12' r='3' fill='currentColor'/><path d='M8 12h8' stroke='currentColor' stroke-width='2' stroke-dasharray='2 2'/>",
+          "breakdown": ["stare", "(凝视)"],
+          "imagery": "定住不动地看 -> 盯着看。",
+          "translation": "凝视；盯着看",
+          "sentences": [{"en": "Don't stare at people.", "cn": "别盯着人看。"}]
+        },
+        {
+          "word": "starve",
+          "rootVisual": "<path d='M12 6v12M12 12h-4M12 12h4' stroke='currentColor' opacity='0.3'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["starve", "(僵硬/死)"],
+          "imagery": "饿得僵硬 -> 挨饿。",
+          "translation": "挨饿；饿死",
+          "sentences": [{"en": "Starve to death.", "cn": "饿死。"}]
+        },
+        {
+          "word": "statistics",
+          "rootVisual": "<rect x='4' y='14' width='4' height='6' fill='currentColor'/><rect x='10' y='10' width='4' height='10' fill='currentColor'/><rect x='16' y='6' width='4' height='14' fill='currentColor'/>",
+          "breakdown": ["stat", "(立/状态)", "istics"],
+          "imagery": "用数据立起来的状态 -> 统计学。",
+          "translation": "统计学；统计数据",
+          "sentences": [{"en": "According to statistics.", "cn": "根据统计数据。"}]
+        }
+      ]
+    }
+  ]
+}

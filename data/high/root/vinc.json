@@ -1,0 +1,52 @@
+{
+  "prefix": "vinc",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "vinc_conquer",
+      "displayName": "vinc/vict (胜)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<path d='M6 6 l6 12 l6 -12' stroke='currentColor' stroke-width='3'/><path d='M4 4 l2 2 M20 4 l-2 2' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -vinc-/-vict-",
+        "description": "核心意境是 **“胜利” (Win)** 或 **“征服” (Conquer)**。\n源于 win (w/v通假)。",
+        "imagery": "联想胜利手势✌️，或者奖杯🏆。",
+        "visual": "<path d='M6 6 l6 12 l6 -12' stroke='currentColor' stroke-width='3'/><path d='M4 4 l2 2 M20 4 l-2 2' stroke='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Victory",
+          "rootVisual": "<path d='M6 6 l6 12 l6 -12' stroke='currentColor' stroke-width='4'/>",
+          "breakdown": ["vict (胜)", "-ory (名)"],
+          "imagery": "胜利。",
+          "translation": "胜利",
+          "sentences": []
+        },
+        {
+          "word": "Convince",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12 l3 3 l5 -5' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["con- (全)", "vinc (胜)"],
+          "imagery": "把对方完全赢了（在观点上），即说服。",
+          "translation": "说服；使确信",
+          "sentences": []
+        },
+        {
+          "word": "Invincible",
+          "rootVisual": "<path d='M12 4 l8 8 l-8 8 l-8 -8 z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='4' fill='currentColor'/>",
+          "breakdown": ["in- (不)", "vinc (胜)", "-ible"],
+          "imagery": "不能被战胜的，无敌的。",
+          "translation": "不可战胜的",
+          "sentences": []
+        },
+        {
+          "word": "Victim",
+          "rootVisual": "<path d='M6 18 l12 -12' stroke='currentColor' stroke-width='2'/><path d='M6 6 l12 12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["vict (胜/败)", "-im"],
+          "imagery": "失败的一方（相对于胜利者），受害者。",
+          "translation": "受害者；牺牲品",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

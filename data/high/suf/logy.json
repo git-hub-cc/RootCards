@@ -1,0 +1,59 @@
+{
+  "prefix": "logy",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "logy_subject",
+      "displayName": "-logy (学科)",
+      "themeColor": "#059669",
+      "prefixVisual": "<path d='M4 6 h16 v14 h-16 z' stroke='currentColor' fill='none'/><path d='M8 10 h8 M8 14 h8' stroke='currentColor'/><circle cx='16' cy='16' r='2' fill='currentColor' opacity='0.3'/>",
+      "prefixIntro": {
+        "title": "后缀 -logy",
+        "description": "名词后缀，表示 **“...学”** 或 **“...论”**。\n源自希腊语 *logos* (词，理性)。",
+        "imagery": "联想一位学者拿着书本在进行研究和讲解📖。"
+      },
+      "words": [
+        {
+          "word": "Sociology",
+          "rootVisual": "<circle cx='8' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M8 11 v4' stroke='currentColor'/><circle cx='16' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M16 11 v4' stroke='currentColor'/><path d='M12 12 h0.5' stroke='currentColor'/>",
+          "breakdown": ["socio (社会)", "-logy (学科)"],
+          "imagery": "研究社会关系的学科。",
+          "translation": "社会学",
+          "sentences": []
+        },
+        {
+          "word": "Zoology",
+          "rootVisual": "<path d='M4 12 h4 l2 -4 h4 l2 4 h4' stroke='currentColor' fill='none'/><circle cx='8' cy='8' r='1' fill='currentColor'/><circle cx='16' cy='8' r='1' fill='currentColor'/>",
+          "breakdown": ["zoo (动物)", "-logy (学科)"],
+          "imagery": "研究动物的学科。",
+          "translation": "动物学",
+          "sentences": []
+        },
+        {
+          "word": "Ecology",
+          "rootVisual": "<path d='M12 18 l-4 -8 h8 z' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": ["eco (环境)", "-logy (学科)"],
+          "imagery": "研究生物与环境关系的学科。",
+          "translation": "生态学",
+          "sentences": []
+        },
+        {
+          "word": "Psychology",
+          "rootVisual": "<path d='M12 4 v8 l-4 4 m4 -4 l4 4' stroke='currentColor'/><circle cx='12' cy='4' r='2' fill='currentColor'/>",
+          "breakdown": ["psycho (心理)", "-logy (学科)"],
+          "imagery": "研究心理活动的学科。",
+          "translation": "心理学",
+          "sentences": []
+        },
+        {
+          "word": "Geology",
+          "rootVisual": "<path d='M4 18 l6 -8 l4 4 l6 -6' stroke='currentColor' fill='none'/><path d='M2 20 h20' stroke='currentColor'/>",
+          "breakdown": ["geo (地)", "-logy (学科)"],
+          "imagery": "研究地质结构的学科。",
+          "translation": "地质学",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

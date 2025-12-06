@@ -1,0 +1,60 @@
+{
+  "prefix": "vent",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "vent_come",
+      "displayName": "vent (来)",
+      "themeColor": "#6366f1",
+      "prefixVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/><rect x='10' y='8' width='4' height='8' fill='currentColor' opacity='0.3'/>",
+      "prefixIntro": {
+        "title": "词根 -vent-",
+        "description": "核心意境是 **“来” (Come)**。\n表示来到、发生或风（通假）。",
+        "imagery": "联想一扇门🚪有人进来，或者通风口🌬️（wind变体）。",
+        "visual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/><rect x='10' y='8' width='4' height='8' fill='currentColor' opacity='0.3'/>"
+      },
+      "words": [
+        {
+          "word": "Event",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["e- (出)", "vent (来)"],
+          "imagery": "出来的事情，发生的大事。",
+          "translation": "事件；大事",
+          "sentences": []
+        },
+        {
+          "word": "Invent",
+          "rootVisual": "<path d='M12 8 v-4 m-2 0 l4 0' stroke='currentColor'/><rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["in- (进)", "vent (来)"],
+          "imagery": "进来（来到脑海）的新东西，发明。",
+          "translation": "发明",
+          "sentences": []
+        },
+        {
+          "word": "Prevent",
+          "rootVisual": "<path d='M12 4 v16' stroke='currentColor' stroke-width='4'/><path d='M4 12 h16' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": ["pre- (前)", "vent (来)"],
+          "imagery": "提前来（挡住），阻止。",
+          "translation": "预防；阻止",
+          "sentences": []
+        },
+        {
+          "word": "Adventure",
+          "rootVisual": "<path d='M4 18 l8 -12 l8 12' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' stroke='currentColor' fill='none'/>",
+          "breakdown": ["ad- (去)", "vent (来)", "-ure"],
+          "imagery": "去迎接未来的事情，冒险。",
+          "translation": "冒险",
+          "sentences": []
+        },
+        {
+          "word": "Ventilate",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M6 12 h12' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["vent (风)", "-il-", "-ate"],
+          "imagery": "使风进来（vent源于wind），通风。",
+          "translation": "使通风",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

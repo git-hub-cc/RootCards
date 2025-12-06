@@ -1,0 +1,60 @@
+{
+  "prefix": "press",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "press_squeeze",
+      "displayName": "press (压)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<rect x='4' y='14' width='16' height='4' fill='currentColor'/><path d='M12 4 v10' stroke='currentColor' stroke-width='4' marker-end='url(#arrow)'/>",
+      "prefixIntro": {
+        "title": "词根 -press-",
+        "description": "核心意境是 **“按压” (Squeeze/Push)**。\n表示施加压力、挤压。",
+        "imagery": "联想一只手用力按按钮🔴，或者被重物压住。",
+        "visual": "<rect x='4' y='14' width='16' height='4' fill='currentColor'/><path d='M12 4 v10' stroke='currentColor' stroke-width='4' marker-end='url(#arrow)'/>"
+      },
+      "words": [
+        {
+          "word": "Press",
+          "rootVisual": "<rect x='6' y='14' width='12' height='4' fill='currentColor'/><path d='M12 6 v8' stroke='currentColor' stroke-width='3' marker-end='url(#arrow)'/>",
+          "breakdown": ["press (压)"],
+          "imagery": "按压；印刷机（压印）。",
+          "translation": "压；出版社",
+          "sentences": []
+        },
+        {
+          "word": "Pressure",
+          "rootVisual": "<path d='M6 14 h12' stroke='currentColor' stroke-width='2'/><path d='M12 6 v8' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/>",
+          "breakdown": ["press (压)", "-ure (名)"],
+          "imagery": "压在身上的力。",
+          "translation": "压力",
+          "sentences": []
+        },
+        {
+          "word": "Express",
+          "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/><path d='M12 12 l6 0' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["ex- (出)", "press (压)"],
+          "imagery": "把想法压出来（表达）；特快（像挤出的牙膏一样快）。",
+          "translation": "表达；快递",
+          "sentences": []
+        },
+        {
+          "word": "Impress",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' fill='currentColor' opacity='0.2'/><path d='M12 6 v6' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["im- (入)", "press (压)"],
+          "imagery": "压进去，留下印记。",
+          "translation": "给...留下印象",
+          "sentences": []
+        },
+        {
+          "word": "Depress",
+          "rootVisual": "<path d='M4 10 h16' stroke='currentColor'/><path d='M12 10 v6' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["de- (下)", "press (压)"],
+          "imagery": "向下压，使沮丧，使萧条。",
+          "translation": "使沮丧；萧条",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

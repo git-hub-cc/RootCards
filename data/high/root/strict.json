@@ -1,0 +1,49 @@
+{
+  "prefix": "strict",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "strict_tight",
+      "displayName": "strict (拉紧)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='2'/><path d='M4 10 l2 4 M20 10 l-2 4' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -strict-",
+        "description": "核心意境是 **“拉紧” (Tighten)** 或 **“束缚” (Bind)**。\n表示严格、限制或收缩。",
+        "imagery": "联想一根绷紧的绳子➰，或者被束缚的手。",
+        "visual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='2'/><path d='M4 10 l2 4 M20 10 l-2 4' stroke='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Strict",
+          "rootVisual": "<rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8 M8 16 h8' stroke='currentColor'/>",
+          "breakdown": ["strict (紧)"],
+          "imagery": "管得严（紧）的。",
+          "translation": "严格的",
+          "sentences": []
+        },
+        {
+          "word": "District",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><circle cx='12' cy='12' r='4' fill='currentColor' opacity='0.3'/>",
+          "breakdown": ["di- (分)", "strict (拉紧/范围)"],
+          "imagery": "拉紧（圈出）分开的一块区域。",
+          "translation": "区域；行政区",
+          "sentences": []
+        },
+        {
+          "word": "Restrict",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><line x1='4' y1='12' x2='20' y2='12' stroke='currentColor'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor'/>",
+          "breakdown": ["re- (回)", "strict (紧)"],
+          "imagery": "往回拉紧，限制活动范围。",
+          "translation": "限制；约束",
+          "sentences": [
+            {
+              "en": "Restrict class sizes.",
+              "cn": "限制班级人数。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "prefix": "Vocab T",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_t",
+      "displayName": "Vocabulary T",
+      "themeColor": "#3b82f6",
+      "prefixIntro": {
+        "title": "T 开头核心词",
+        "description": "高中阶段 T 开头的高频混合词汇。T 字母常有“拉 (Tract)、转 (Turn)、顶 (Top)”的含义。",
+        "imagery": "字母 T 像一个锤子或支撑物。"
+      },
+      "words": [
+        {
+          "word": "target",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": ["targe", "(盾)", "et"],
+          "imagery": "靶心 -> 目标。",
+          "translation": "目标；靶子",
+          "sentences": [{"en": "Hit the target.", "cn": "击中目标。"}]
+        },
+        {
+          "word": "tasty",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 14q4 4 8 0' stroke='currentColor'/><path d='M14 8l2-2' stroke='currentColor'/>",
+          "breakdown": ["tast", "(尝)", "y"],
+          "imagery": "尝起来很好的 -> 美味的。",
+          "translation": "美味的",
+          "sentences": [{"en": "A tasty meal.", "cn": "一顿美餐。"}]
+        },
+        {
+          "word": "technique",
+          "rootVisual": "<path d='M4 12h16M12 4v16' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["techn", "(技艺)", "ique"],
+          "imagery": "专业技能 -> 技术/技巧。",
+          "translation": "技巧；技术",
+          "sentences": [{"en": "New techniques.", "cn": "新技术。"}]
+        },
+        {
+          "word": "temporary",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><path d='M12 8v4h3' stroke='currentColor'/>",
+          "breakdown": ["tempor", "(时间)", "ary"],
+          "imagery": "有时限的 -> 暂时的。",
+          "translation": "暂时的；临时的",
+          "sentences": [{"en": "A temporary job.", "cn": "一份临时工作。"}]
+        },
+        {
+          "word": "tempt",
+          "rootVisual": "<path d='M12 4l-2 4h4z' fill='currentColor'/><circle cx='12' cy='14' r='6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["tempt", "(尝试/摸索)"],
+          "imagery": "引诱人去尝试 -> 诱惑。",
+          "translation": "诱惑；引起",
+          "sentences": [{"en": "Don't tempt me.", "cn": "别诱惑我。"}]
+        },
+        {
+          "word": "tension",
+          "rootVisual": "<path d='M4 12h16' stroke='currentColor' stroke-width='2'/><path d='M2 12l2-2M22 12l-2 2' stroke='currentColor'/>",
+          "breakdown": ["tens", "(拉紧)", "ion"],
+          "imagery": "拉紧的状态 -> 紧张/张力。",
+          "translation": "紧张；张力",
+          "sentences": [{"en": "Ease the tension.", "cn": "缓解紧张局势。"}]
+        },
+        {
+          "word": "terrify",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='1' fill='currentColor'/><circle cx='16' cy='10' r='1' fill='currentColor'/><path d='M12 16q-4-2-4 0t4 0t4 0' stroke='currentColor' fill='none'/>",
+          "breakdown": ["terr", "(怕)", "ify"],
+          "imagery": "使人害怕 -> 恐吓。",
+          "translation": "恐吓；使害怕",
+          "sentences": [{"en": "The noise terrified me.", "cn": "那声音吓坏我了。"}]
+        },
+        {
+          "word": "theory",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M6 10h12M6 14h8' stroke='currentColor'/>",
+          "breakdown": ["theo", "(神/看)", "ry"],
+          "imagery": "观察到的规律 -> 理论。",
+          "translation": "理论；学说",
+          "sentences": [{"en": "In theory.", "cn": "从理论上讲。"}]
+        },
+        {
+          "word": "threat",
+          "rootVisual": "<path d='M12 4v10M12 18v2' stroke='currentColor' stroke-width='2'/><path d='M4 20h16' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": ["threat", "(逼迫)"],
+          "imagery": "悬在头顶的危险 -> 威胁。",
+          "translation": "威胁；恐吓",
+          "sentences": [{"en": "A threat to peace.", "cn": "对和平的威胁。"}]
+        },
+        {
+          "word": "thrill",
+          "rootVisual": "<path d='M2 12l4-6 4 12 4-12 4 12 4-6' stroke='currentColor' stroke-width='2' fill='none'/>",
+          "breakdown": ["thrill", "(穿透)"],
+          "imagery": "像电流穿过一样兴奋 -> 激动/颤栗。",
+          "translation": "兴奋；激动",
+          "sentences": [{"en": "A thrilling match.", "cn": "一场扣人心弦的比赛。"}]
+        },
+        {
+          "word": "tight",
+          "rootVisual": "<rect x='6' y='8' width='12' height='8' stroke='currentColor' fill='none'/><path d='M2 12h4M18 12h4' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["tight", "(紧)"],
+          "imagery": "勒紧了 -> 紧的。",
+          "translation": "紧的；牢固的",
+          "sentences": [{"en": "These shoes are too tight.", "cn": "这鞋太紧了。"}]
+        },
+        {
+          "word": "tolerant",
+          "rootVisual": "<path d='M4 12h16' stroke='currentColor'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
+          "breakdown": ["tol", "(忍受/举)", "erant"],
+          "imagery": "能承受重担的 -> 宽容的/容忍的。",
+          "translation": "宽容的；容忍的",
+          "sentences": [{"en": "Be tolerant of others.", "cn": "对他人要宽容。"}]
+        },
+        {
+          "word": "tough",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' fill='currentColor' opacity='0.8'/><path d='M6 6l12 12M18 6l-12 12' stroke='white'/>",
+          "breakdown": ["tough", "(坚韧)"],
+          "imagery": "硬且难断 -> 坚韧的/困难的。",
+          "translation": "坚韧的；困难的",
+          "sentences": [{"en": "A tough guy.", "cn": "硬汉。"}]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "prefix": "clar",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "clar_clear",
+      "displayName": "clar (清楚/明白)",
+      "themeColor": "#0ea5e9",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' opacity='0.3'/><circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='20 60'/>",
+      "prefixIntro": {
+        "title": "词根 -clar-",
+        "description": "核心意境是 **“清楚” (Clear)** 或 **“明亮” (Bright)**。\n源于 clear。",
+        "imagery": "联想擦拭干净的玻璃🪟，或者拨开云雾见青天。"
+      },
+      "words": [
+        {
+          "word": "Clear",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/>",
+          "breakdown": ["clear (清楚)"],
+          "imagery": "没有污点，清晰可见。",
+          "translation": "清楚的",
+          "sentences": []
+        },
+        {
+          "word": "Clarify",
+          "rootVisual": "<path d='M8 12 h8' stroke='currentColor'/><path d='M16 12 l-4 -4 m4 4 l-4 4' stroke='currentColor'/>",
+          "breakdown": ["clar (清楚)", "-ify (使)"],
+          "imagery": "使事情变得清楚明白。",
+          "translation": "澄清；阐明",
+          "sentences": []
+        },
+        {
+          "word": "Declare",
+          "rootVisual": "<path d='M12 14 l4 -4 h-8 z' fill='currentColor'/><path d='M12 14 v6' stroke='currentColor'/>",
+          "breakdown": ["de- (加强)", "clar (清楚)"],
+          "imagery": "加强使其清楚，大声宣告让所有人都明白。",
+          "translation": "宣布；声明",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "prefix": "mer",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "mer_dip",
+      "displayName": "mer/mers (沉/没)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M2 12 q 5 -3 10 0 t 10 0' stroke='currentColor' fill='none'/><circle cx='12' cy='16' r='3' fill='currentColor' opacity='0.5'/>",
+      "prefixIntro": {
+        "title": "词根 -mer-/-mers-",
+        "description": "核心意境是 **“沉没” (Dip)** 或 **“浸入” (Plunge)**。\n表示在水中或液体中。",
+        "imagery": "联想潜水员潜入水中🤿，或者物体沉入水底。"
+      },
+      "words": [
+        {
+          "word": "Emerge",
+          "rootVisual": "<path d='M2 16 q 5 -3 10 0 t 10 0' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' fill='currentColor'/><path d='M12 12 v-6' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["e- (向外)", "mer (沉)"],
+          "imagery": "从水里出来，即出现。",
+          "translation": "出现",
+          "sentences": [
+            {
+              "en": "The sun emerged from the clouds.",
+              "cn": "太阳从云层中出来。"
+            }
+          ]
+        },
+        {
+          "word": "Emergency",
+          "rootVisual": "<path d='M12 4 l-8 16 h16 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 10 v4' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='17' r='1' fill='currentColor'/>",
+          "breakdown": ["emerge", "-ency (名)"],
+          "imagery": "突然出现的情况，紧急情况。",
+          "translation": "紧急情况",
+          "sentences": []
+        },
+        {
+          "word": "Mermaid",
+          "rootVisual": "<path d='M12 4 a 4 4 0 0 1 0 8' stroke='currentColor' fill='none'/><path d='M8 12 q 4 8 8 0' stroke='currentColor' fill='none'/><path d='M12 16 q -4 4 0 8 q 4 -4 0 -8' stroke='currentColor' fill='currentColor'/>",
+          "breakdown": ["mer (海/沉)", "maid (少女)"],
+          "imagery": "海里的少女，美人鱼。",
+          "translation": "美人鱼",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

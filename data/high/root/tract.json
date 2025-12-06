@@ -1,0 +1,52 @@
+{
+  "prefix": "tract",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "tract_pull",
+      "displayName": "tract (拉/引)",
+      "themeColor": "#f97316",
+      "prefixVisual": "<rect x='14' y='10' width='6' height='4' fill='currentColor'/><line x1='14' y1='12' x2='4' y2='12' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/>",
+      "prefixIntro": {
+        "title": "词根 -tract-",
+        "description": "核心意境是 **“拉” (Pull)** 或 **“拖” (Drag)**。\n表示牵引、吸引或抽取。",
+        "imagery": "联想拖拉机🚜，或者磁铁吸引🧲。",
+        "visual": "<rect x='14' y='10' width='6' height='4' fill='currentColor'/><line x1='14' y1='12' x2='4' y2='12' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/>"
+      },
+      "words": [
+        {
+          "word": "Tractor",
+          "rootVisual": "<rect x='10' y='8' width='10' height='8' stroke='currentColor' fill='none'/><circle cx='8' cy='16' r='3' stroke='currentColor'/><circle cx='18' cy='16' r='2' stroke='currentColor'/>",
+          "breakdown": ["tract (拉)", "-or (物)"],
+          "imagery": "用于拉东西的机器。",
+          "translation": "拖拉机",
+          "sentences": []
+        },
+        {
+          "word": "Attract",
+          "rootVisual": "<path d='M18 6 l-3 3 l-3 3' stroke='currentColor' marker-end='url(#arrow)'/><path d='M6 18 l3 -3 l3 -3' stroke='currentColor' marker-end='url(#arrow)'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["at- (去)", "tract (拉)"],
+          "imagery": "去拉过来，吸引。",
+          "translation": "吸引",
+          "sentences": []
+        },
+        {
+          "word": "Abstract",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["abs- (离)", "tract (拉)"],
+          "imagery": "从中拉出来（提取），抽象。",
+          "translation": "提取；抽象的",
+          "sentences": []
+        },
+        {
+          "word": "Contract",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M8 16 h8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["con- (共)", "tract (拉)"],
+          "imagery": "把大家拉到一起（签协议）。",
+          "translation": "合同；收缩",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

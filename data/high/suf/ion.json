@@ -1,0 +1,172 @@
+{
+  "prefix": "ion",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "ion_noun",
+      "displayName": "-ion/-tion/-sion (名词后缀)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<rect x='6' y='6' width='12' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2' stroke-dasharray='4 2'/><circle cx='18' cy='18' r='4' fill='currentColor' opacity='0.2'/>",
+      "prefixIntro": {
+        "title": "后缀 -ion/-tion/-sion",
+        "description": "最常见的**抽象名词后缀**。\n表示“动作的过程”或“动作的结果”。通常把动词变为名词。",
+        "imagery": "联想一个方框🔲，把流动的动作（动词）框住，定格成一个具体的概念（名词）。"
+      },
+      "words": [
+        {
+          "word": "Education",
+          "rootVisual": "<path d='M 4 8 l 8 2 l 8 -2 v 10 l -8 4 l -8 -4 z M 12 10 v 12 M 12 22 l 0 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["educ (引导/教育)", "-ation (名词)"],
+          "imagery": "像打开一本书，或者被引导向上的阶梯，代表获取知识的过程。",
+          "translation": "教育",
+          "sentences": [
+            {
+              "en": "Education is the key to a happy life.",
+              "cn": "教育是通往幸福生活的钥匙。"
+            }
+          ]
+        },
+        {
+          "word": "Creation",
+          "rootVisual": "<path d='M12 8 l-4 8 h8 z' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": ["creat (创造)", "-ion (名词)"],
+          "imagery": "创造出来的作品或创造的过程。",
+          "translation": "创造；作品",
+          "sentences": []
+        },
+        {
+          "word": "Invention",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M9 12 h6 M12 9 v6' stroke='currentColor' opacity='0.5'/><circle cx='18' cy='6' r='3' fill='currentColor' opacity='0.3'/>",
+          "breakdown": ["invent (发明)", "-ion (名词)"],
+          "imagery": "发明出来的东西。",
+          "translation": "发明",
+          "sentences": []
+        },
+        {
+          "word": "Attention",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["at- (去)", "tent (伸展)", "-ion (名词)"],
+          "imagery": "把精神伸展向某处，即注意。",
+          "translation": "注意",
+          "sentences": [
+            {
+              "en": "pay one's attention to...",
+              "cn": "把某人的注意力放在..."
+            }
+          ]
+        },
+        {
+          "word": "Decision",
+          "rootVisual": "<path d='M12 4 v10' stroke='currentColor'/><path d='M12 14 l-4 4 M12 14 l4 4' stroke='currentColor'/>",
+          "breakdown": ["decis (切)", "-ion (名词)"],
+          "imagery": "做出的决定。",
+          "translation": "决定",
+          "sentences": []
+        },
+        {
+          "word": "Conclusion",
+          "rootVisual": "<path d='M4 20 h16' stroke='currentColor'/><rect x='6' y='14' width='12' height='6' fill='currentColor' opacity='0.2'/>",
+          "breakdown": ["conclud (结束)", "-ion (名词)"],
+          "imagery": "事情结束后的总结。",
+          "translation": "结论；结尾",
+          "sentences": []
+        },
+        {
+          "word": "Suggestion",
+          "rootVisual": "<path d='M4 16 h4 l4 4 l0 -4 h8 v-12 h-16 z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": ["suggest (建议)", "-ion (名词)"],
+          "imagery": "提出的建议。",
+          "translation": "建议",
+          "sentences": [
+            {
+              "en": "Here are some suggestions for further activities.",
+              "cn": "这有一些关于后续活动的建议。"
+            }
+          ]
+        },
+        {
+          "word": "Collection",
+          "rootVisual": "<path d='M6 8 v10 c0 2 2 3 6 3 s6 -1 6 -3 v-10' stroke='currentColor' fill='none' stroke-width='2'/><ellipse cx='12' cy='8' rx='6' ry='2' stroke='currentColor' fill='none'/><circle cx='10' cy='14' r='2' fill='currentColor'/><circle cx='14' cy='12' r='2' fill='currentColor' opacity='0.7'/>",
+          "breakdown": ["collect (收集)", "-ion (名词)"],
+          "imagery": "把选中的东西放在一起，就像硬币收集在罐子里。",
+          "translation": "收集；收藏品",
+          "sentences": [
+            {
+              "en": "I have a large collection of coins.",
+              "cn": "我有一大笔硬币收藏。"
+            }
+          ]
+        },
+        {
+          "word": "Discussion",
+          "rootVisual": "<path d='M4 12 q 8 -8 16 0' stroke='currentColor' fill='none'/><path d='M4 16 q 8 8 16 0' stroke='currentColor' fill='none'/><circle cx='8' cy='14' r='1' fill='currentColor'/><circle cx='16' cy='14' r='1' fill='currentColor'/>",
+          "breakdown": ["discuss (讨论)", "-ion (名词)"],
+          "imagery": "人们在一起交换意见。",
+          "translation": "讨论",
+          "sentences": []
+        },
+        {
+          "word": "Competition",
+          "rootVisual": "<path d='M4 18 l8 -16 l8 16' stroke='currentColor' fill='none'/><path d='M12 2 v16' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["compet (竞争)", "-ition (名词)"],
+          "imagery": "比赛或竞争的过程。",
+          "translation": "比赛；竞争",
+          "sentences": []
+        },
+        {
+          "word": "Graduation",
+          "rootVisual": "<path d='M4 14 h16 a2 2 0 0 1 2 2 v2 a2 2 0 0 1 -2 2 h-16 a2 2 0 0 1 -2 -2 v-2 a2 2 0 0 1 2 -2 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 14 v-4 l-2 2' stroke='currentColor'/><rect x='10' y='6' width='4' height='4' fill='currentColor'/>",
+          "breakdown": ["gradu (毕业)", "-ation (名词)"],
+          "imagery": "毕业典礼或状态。",
+          "translation": "毕业",
+          "sentences": []
+        },
+        {
+          "word": "Congratulation",
+          "rootVisual": "<path d='M8 20 l8 0 l2 -8 l-12 0 z' stroke='currentColor' fill='none'/><path d='M10 12 q -4 -8 -8 -4' stroke='currentColor'/><path d='M14 12 q 4 -8 8 -4' stroke='currentColor'/><circle cx='6' cy='6' r='1' fill='currentColor'/><circle cx='18' cy='6' r='1' fill='currentColor'/>",
+          "breakdown": ["congratulat (祝贺)", "-ion (名词)"],
+          "imagery": "共同高兴的时刻，就像拉响礼花筒，彩带飞舞。",
+          "translation": "祝贺",
+          "sentences": []
+        },
+        {
+          "word": "Communication",
+          "rootVisual": "<path d='M2 12 a 6 6 0 0 1 6 -6' stroke='currentColor' fill='none'/><path d='M2 16 a 10 10 0 0 1 10 -10' stroke='currentColor' fill='none' opacity='0.5'/><path d='M22 12 a 6 6 0 0 0 -6 -6' stroke='currentColor' fill='none'/><path d='M22 16 a 10 10 0 0 0 -10 -10' stroke='currentColor' fill='none' opacity='0.5'/>",
+          "breakdown": ["communicat (交流)", "-ion (名词)"],
+          "imagery": "如同无线电波一样，双向发送和接收信号。",
+          "translation": "交流",
+          "sentences": [
+            {
+              "en": "We communicated by e-mail.",
+              "cn": "我们通过电子邮件交流。"
+            }
+          ]
+        },
+        {
+          "word": "Exhibition",
+          "rootVisual": "<rect x='4' y='4' width='16' height='12' stroke='currentColor' fill='none'/><path d='M12 16 v4 h-4 m8 0 h-4' stroke='currentColor'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": ["exhibit (展览)", "-ion (名词)"],
+          "imagery": "把东西拿出来给大家看。",
+          "translation": "展览",
+          "sentences": []
+        },
+        {
+          "word": "Introduction",
+          "rootVisual": "<path d='M4 12 h4 l2 -4 h4 l2 4 h4' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["introduct (介绍)", "-ion (名词)"],
+          "imagery": "把人或事物引入。",
+          "translation": "介绍；引言",
+          "sentences": []
+        },
+        {
+          "word": "Reduction",
+          "rootVisual": "<path d='M20 6 L4 18' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/>",
+          "breakdown": ["reduct (减少)", "-ion (名词)"],
+          "imagery": "数量向下减少。",
+          "translation": "减少",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

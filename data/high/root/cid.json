@@ -1,0 +1,82 @@
+{
+  "prefix": "cid",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "cid_cut",
+      "displayName": "cid/cis (切)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M6 6 l12 12 m-12 0 l12 -12' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "词根 -cid-/-cis-",
+        "description": "核心意境是 **“切” (Cut)**。\n源于 cut，通过元辅音通假演变而来。",
+        "imagery": "联想一把剪刀✂️或刀片，切断物体。"
+      },
+      "words": [
+        {
+          "word": "Decide",
+          "rootVisual": "<path d='M12 2 v10' stroke='currentColor'/><path d='M12 12 l-6 6 M12 12 l6 6' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["de- (向下)", "cid (切)"],
+          "imagery": "向下切，一锤定音，不再犹豫。",
+          "translation": "决定",
+          "sentences": [
+            {
+              "en": "I decided to follow him.",
+              "cn": "我决定跟随他。"
+            }
+          ]
+        },
+        {
+          "word": "Accident",
+          "rootVisual": "<path d='M4 4 l16 16' stroke='currentColor' stroke-width='2'/><path d='M20 4 l-16 16' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
+          "breakdown": ["ac- (去/偶然)", "cid (落/发生)"],
+          "imagery": "偶然掉下来的事情，意想不到的事件。",
+          "translation": "事故",
+          "sentences": []
+        },
+        {
+          "word": "Suicide",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12 h8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["sui- (自己)", "cide (切/杀)"],
+          "imagery": "切自己，即自杀。",
+          "translation": "自杀",
+          "sentences": [
+            {
+              "en": "Many Korean stars commit suicide.",
+              "cn": "许多韩国明星自杀。"
+            }
+          ]
+        },
+        {
+          "word": "Homicide",
+          "rootVisual": "<circle cx='12' cy='8' r='4' fill='currentColor'/><path d='M12 12 v8' stroke='currentColor'/><path d='M4 4 l16 16' stroke='currentColor' stroke-width='2' stroke-opacity='0.5'/>",
+          "breakdown": ["homi (人)", "cide (切/杀)"],
+          "imagery": "杀人。",
+          "translation": "杀人",
+          "sentences": []
+        },
+        {
+          "word": "Precise",
+          "rootVisual": "<path d='M4 20 h16' stroke='currentColor'/><path d='M8 20 v-4 m4 4 v-6 m4 6 v-4' stroke='currentColor'/>",
+          "breakdown": ["pre- (前)", "cis (切)"],
+          "imagery": "事前已经切好（刻度），所以测量结果精确。",
+          "translation": "精确的",
+          "sentences": [
+            {
+              "en": "The scale on the target must be precise.",
+              "cn": "靶子上的刻度必须是精确的。"
+            }
+          ]
+        },
+        {
+          "word": "Concise",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M18 6 l-4 4' stroke='currentColor'/>",
+          "breakdown": ["con- (全部)", "cise (切)"],
+          "imagery": "把多余的全部切掉，只留精华。",
+          "translation": "简明的",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

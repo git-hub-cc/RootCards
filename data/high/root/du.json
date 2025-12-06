@@ -1,0 +1,69 @@
+{
+  "prefix": "du",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "du_two",
+      "displayName": "du/dou (二)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<circle cx='8' cy='12' r='4' fill='currentColor'/><circle cx='16' cy='12' r='4' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 du-/dou-",
+        "description": "核心意境是 **“二” (Two)** 或 **“双” (Double)**。\n源于 two，通过音变 t->d, w->u 演变。",
+        "imagery": "联想数字 2，或者一对双胞胎👯。"
+      },
+      "words": [
+        {
+          "word": "Double",
+          "rootVisual": "<circle cx='8' cy='12' r='4'/><circle cx='16' cy='12' r='4'/>",
+          "breakdown": ["dou (二)", "-ble (倍)"],
+          "imagery": "两个一样的东西。",
+          "translation": "双倍的",
+          "sentences": []
+        },
+        {
+          "word": "Dual",
+          "rootVisual": "<path d='M8 4 v16' stroke='currentColor'/><path d='M16 4 v16' stroke='currentColor'/>",
+          "breakdown": ["du (二)", "-al (形)"],
+          "imagery": "具有双重性质的。",
+          "translation": "双重的",
+          "sentences": [
+            {
+              "en": "He has dual nationalities.",
+              "cn": "他有双重国籍。"
+            }
+          ]
+        },
+        {
+          "word": "Doubt",
+          "rootVisual": "<path d='M4 18 l8 -14 l8 14' stroke='currentColor' fill='none'/><path d='M12 18 v-6' stroke='currentColor'/>",
+          "breakdown": ["dou (二)", "bt (concept)"],
+          "imagery": "有二心，在两者之间摇摆不定。",
+          "translation": "怀疑",
+          "sentences": [
+            {
+              "en": "There is no doubt.",
+              "cn": "毫无疑问。"
+            }
+          ]
+        },
+        {
+          "word": "Dusk",
+          "rootVisual": "<rect x='4' y='12' width='16' height='8' fill='currentColor' opacity='0.5'/><circle cx='12' cy='12' r='4' fill='none' stroke='currentColor'/>",
+          "breakdown": ["du (二)", "sk (sky)"],
+          "imagery": "白天和黑夜两种天空交错的时刻。",
+          "translation": "黄昏",
+          "sentences": []
+        },
+        {
+          "word": "Twilight",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
+          "breakdown": ["twi (二)", "light (光)"],
+          "imagery": "两种光线（白昼与黑夜）交织。",
+          "translation": "暮光；黄昏",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

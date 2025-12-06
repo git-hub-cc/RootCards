@@ -1,0 +1,58 @@
+{
+  "prefix": "lect",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "lect_choose",
+      "displayName": "lect (选/收)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<circle cx='6' cy='12' r='2' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' stroke='currentColor' fill='none'/><path d='M12 16 v4' stroke='currentColor' marker-end='url(#arrow)'/>",
+      "prefixIntro": {
+        "title": "词根 -lect-",
+        "description": "核心意境是 **“选择” (Choose)** 或 **“收集” (Gather)**。\n表示挑选或聚集。",
+        "imagery": "联想一只手从一堆东西里挑出一个🤏。"
+      },
+      "words": [
+        {
+          "word": "Select",
+          "rootVisual": "<circle cx='6' cy='12' r='2' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' stroke='currentColor' fill='none'/><path d='M10 16 l2 2 l4 -4' stroke='currentColor'/>",
+          "breakdown": ["se- (分)", "lect (选)"],
+          "imagery": "分开选出来，精选。",
+          "translation": "选择；精选",
+          "sentences": [
+            {
+              "en": "The company is strict in selecting employees.",
+              "cn": "公司在选拔员工方面很严格。"
+            }
+          ]
+        },
+        {
+          "word": "Collect",
+          "rootVisual": "<path d='M4 18 h16 v-8 h-16 z' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='16' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": ["col- (一起)", "lect (收)"],
+          "imagery": "收在一起，收集。",
+          "translation": "收集",
+          "sentences": [
+            {
+              "en": "Collect stamps.",
+              "cn": "集邮。"
+            }
+          ]
+        },
+        {
+          "word": "Elect",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M12 10 l-2 2 l4 -4' stroke='currentColor'/><path d='M12 14 v4' stroke='currentColor'/>",
+          "breakdown": ["e- (出)", "lect (选)"],
+          "imagery": "选出来（当领导）。",
+          "translation": "选举",
+          "sentences": [
+            {
+              "en": "They elected me to the board.",
+              "cn": "他们选我进董事会。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

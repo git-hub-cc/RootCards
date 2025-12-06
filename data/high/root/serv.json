@@ -1,0 +1,52 @@
+{
+  "prefix": "serv",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "serv_keep",
+      "displayName": "serv (保持/服务)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 12 h12 M12 6 v12' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "词根 -serv-",
+        "description": "核心意境是 **“保持” (Keep)** 或 **“服务” (Serve)**。\n表示保存、保护或侍候。",
+        "imagery": "联想一个保险箱🔒，或者服务员托着盘子。",
+        "visual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 12 h12 M12 6 v12' stroke='currentColor' stroke-width='2'/>"
+      },
+      "words": [
+        {
+          "word": "Conserve",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12 l4 4 l4 -4' stroke='currentColor'/>",
+          "breakdown": ["con- (全)", "serve (保)"],
+          "imagery": "全部保存起来。",
+          "translation": "保护；保存",
+          "sentences": []
+        },
+        {
+          "word": "Preserve",
+          "rootVisual": "<rect x='8' y='6' width='8' height='12' fill='currentColor' opacity='0.5'/><path d='M4 6 h16' stroke='currentColor'/>",
+          "breakdown": ["pre- (前)", "serve (保)"],
+          "imagery": "在吃/用之前保存起来（保鲜）。",
+          "translation": "保鲜；保存",
+          "sentences": []
+        },
+        {
+          "word": "Reserve",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><text x='12' y='14' font-size='10' text-anchor='middle' fill='currentColor'>R</text>",
+          "breakdown": ["re- (回)", "serve (留)"],
+          "imagery": "留回到以后用，储备；预定。",
+          "translation": "储备；预定",
+          "sentences": []
+        },
+        {
+          "word": "Observe",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/>",
+          "breakdown": ["ob- (对)", "serve (看/守)"],
+          "imagery": "对着看（观察）；遵守（守）。",
+          "translation": "观察；遵守",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

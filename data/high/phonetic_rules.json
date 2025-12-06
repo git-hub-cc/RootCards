@@ -1,0 +1,202 @@
+{
+  "prefix": "Rules",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "rule_vowel_change",
+      "displayName": "元音通假 (Vowel Change)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 4'/><text x='12' y='16' text-anchor='middle' font-size='10' fill='currentColor'>a-e</text>",
+      "prefixIntro": {
+        "title": "元音通假规律",
+        "description": "元音字母 a, e, i, o, u, y 可以相互切换，单词的核心“意境”保持不变。这通常表示词性的变化、时态的变化或微小的含义延伸。",
+        "imagery": "就像水的三态变化（冰、水、汽），形态变了，本质还是H₂O。"
+      },
+      "words": [
+        {
+          "word": "foot",
+          "rootVisual": "<path d='M8 16 h8 a4 4 0 0 0 0 -8 h-4 v8' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["foot", "(单数)"],
+          "imagery": "一只脚。",
+          "translation": "脚",
+          "sentences": [{"en": "My left foot hurts.", "cn": "我的左脚疼。"}]
+        },
+        {
+          "word": "feet",
+          "rootVisual": "<path d='M4 16 h6 a3 3 0 0 0 0 -6 h-3 v6 M14 16 h6 a3 3 0 0 0 0 -6 h-3 v6' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["feet", "(复数)"],
+          "imagery": "两只脚并排，oo 变为 ee 表示复数。",
+          "translation": "脚 (复数)",
+          "sentences": [{"en": "Rise to your feet.", "cn": "站起来。"}]
+        },
+        {
+          "word": "sing",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12 h8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["sing", "(动作)"],
+          "imagery": "张嘴发声的动作，元音 i 靠前，表示动作的开始。",
+          "translation": "唱歌",
+          "sentences": [{"en": "I like to sing.", "cn": "我喜欢唱歌。"}]
+        },
+        {
+          "word": "song",
+          "rootVisual": "<path d='M9 18V5l12-2v13'/><circle cx='6' cy='18' r='3' fill='currentColor'/>",
+          "breakdown": ["song", "(产物)"],
+          "imagery": "唱歌产生的作品，元音 o 靠后，表示动作的结果。",
+          "translation": "歌曲",
+          "sentences": [{"en": "This is a popular song.", "cn": "这是一首流行歌。"}]
+        },
+        {
+          "word": "hot",
+          "rootVisual": "<circle cx='12' cy='12' r='6' fill='currentColor'/><path d='M12 2v4 M12 18v4 M2 12h4 M18 12h4' stroke='currentColor'/>",
+          "breakdown": ["hot", "(形容词)"],
+          "imagery": "太阳散发的热度。",
+          "translation": "热的",
+          "sentences": [{"en": "It is hot today.", "cn": "今天很热。"}]
+        },
+        {
+          "word": "heat",
+          "rootVisual": "<path d='M6 20q4-10 6-16q2 6 6 16' stroke='currentColor' fill='none'/><path d='M8 20h8' stroke='currentColor'/>",
+          "breakdown": ["heat", "(名词)"],
+          "imagery": "上升的热浪，o 与 ea 通假。",
+          "translation": "热量",
+          "sentences": [{"en": "Heat expands metal.", "cn": "热胀冷缩。"}]
+        }
+      ]
+    },
+    {
+      "meaningId": "rule_b_p_f_v",
+      "displayName": "唇音通假 (B-P-F-V)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<ellipse cx='12' cy='12' rx='8' ry='4' stroke='currentColor' fill='none' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "唇音通假 (B, P, F, V, PH)",
+        "description": "这组辅音发音时都用到嘴唇（双唇或唇齿），因此常互换。常见规律：名清动浊 (名词清辅音 f -> 动词浊辅音 v)。",
+        "imagery": "联想嘴唇的闭合与开启，发音部位相同。",
+      },
+      "words": [
+        {
+          "word": "safe",
+          "rootVisual": "<rect x='6' y='8' width='12' height='10' stroke='currentColor' fill='none'/><path d='M12 8 v-3 a3 3 0 0 1 6 0 v3' stroke='currentColor' fill='none'/>",
+          "breakdown": ["safe", "(形容词/f/)"],
+          "imagery": "一个锁住的保险箱，它是安全的。",
+          "translation": "安全的",
+          "sentences": [{"en": "Keep your money safe.", "cn": "把你的钱保管好。"}]
+        },
+        {
+          "word": "save",
+          "rootVisual": "<path d='M12 2L9 9H2l6 5l-2 7l6-4l6 4l-2-7l6-5h-7z' stroke='currentColor' fill='none'/>",
+          "breakdown": ["save", "(动词/v/)"],
+          "imagery": "把东西保护起来，f 变为 v，名清动浊。",
+          "translation": "拯救；节省",
+          "sentences": [{"en": "Save water.", "cn": "节约用水。"}]
+        },
+        {
+          "word": "belief",
+          "rootVisual": "<path d='M12 4v16M4 12h16' stroke='currentColor'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["belief", "(名词/f/)"],
+          "imagery": "心中的信念。",
+          "translation": "信仰",
+          "sentences": [{"en": "Religious belief.", "cn": "宗教信仰。"}]
+        },
+        {
+          "word": "believe",
+          "rootVisual": "<path d='M2 12l5 5L20 5' stroke='currentColor' fill='none'/>",
+          "breakdown": ["believe", "(动词/v/)"],
+          "imagery": "相信的动作，f 变为 v。",
+          "translation": "相信",
+          "sentences": [{"en": "I believe you.", "cn": "我相信你。"}]
+        }
+      ]
+    },
+    {
+      "meaningId": "rule_d_t_s",
+      "displayName": "齿音通假 (D-T-S)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M4 12h16' stroke='currentColor' stroke-width='2'/><path d='M4 12 l4 4 M4 12 l4 -4' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "齿音通假 (D, T, S, Z, TH)",
+        "description": "这组音发音时舌尖顶住牙齿或牙龈。D/T互换，S/T互换非常常见，常用于名词变形容词，或动词变名词。",
+        "imagery": "联想牙齿 biting (咬) 的动作，发音位置集中在口腔前部。",
+      },
+      "words": [
+        {
+          "word": "decide",
+          "rootVisual": "<path d='M12 2v10' stroke='currentColor'/><path d='M2 12h20' stroke='currentColor' stroke-dasharray='4 4'/>",
+          "breakdown": ["de- (下)", "cid (切/d/)"],
+          "imagery": "向下切断，做决定。",
+          "translation": "决定 (动词)",
+          "sentences": [{"en": "I decide to go.", "cn": "我决定去。"}]
+        },
+        {
+          "word": "decision",
+          "rootVisual": "<path d='M12 4v16M4 12h16' stroke='currentColor'/><circle cx='12' cy='12' r='9' stroke='currentColor' fill='none'/>",
+          "breakdown": ["decis- (切/s/)", "-ion (名)"],
+          "imagery": "切断的结果，d 变为 s。",
+          "translation": "决定 (名词)",
+          "sentences": [{"en": "Make a decision.", "cn": "做一个决定。"}]
+        },
+        {
+          "word": "foot",
+          "rootVisual": "<path d='M8 16 h8 a4 4 0 0 0 0 -8 h-4 v8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["foot", "(名词/t/)"],
+          "imagery": "脚。",
+          "translation": "脚",
+          "sentences": []
+        },
+        {
+          "word": "pedal",
+          "rootVisual": "<circle cx='6' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='18' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M6 12h12' stroke='currentColor'/>",
+          "breakdown": ["ped", "(脚/d/)", "-al"],
+          "imagery": "脚踩的踏板，f-p通假，t-d通假。",
+          "translation": "踏板",
+          "sentences": [{"en": "Press the pedal.", "cn": "踩踏板。"}]
+        }
+      ]
+    },
+    {
+      "meaningId": "rule_l_r_n",
+      "displayName": "鼻音/流音通假 (L-R-N)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<path d='M4 12 q 8 -8 16 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 16 q 8 -8 16 0' stroke='currentColor' fill='none' stroke-width='2' opacity='0.5'/>",
+      "prefixIntro": {
+        "title": "流音/鼻音通假 (L, R, N)",
+        "description": "L, R, N 发音时气流通道相似（特别是 L/R），在不同语言或方言中极易混淆和互换。",
+        "imagery": "联想流动的波浪或卷曲的舌头。",
+      },
+      "words": [
+        {
+          "word": "star",
+          "rootVisual": "<path d='M12 2 l3 9 h9 l-7 5 l3 9 l-8 -6 l-8 6 l3 -9 l-7 -5 h9 z' stroke='currentColor' fill='none'/>",
+          "breakdown": ["star", "(星星/r/)"],
+          "imagery": "天上的星星。",
+          "translation": "星星",
+          "sentences": [{"en": "Look at the stars.", "cn": "看星星。"}]
+        },
+        {
+          "word": "stellar",
+          "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 2 v4 M12 18 v4 M2 12 h4 M18 12 h4' stroke='currentColor'/>",
+          "breakdown": ["stell", "(星星/l/)", "-ar"],
+          "imagery": "恒星的，r 变为 l。",
+          "translation": "星的；恒星的",
+          "sentences": [{"en": "Stellar light.", "cn": "星光。"}]
+        },
+        {
+          "word": "sun",
+          "rootVisual": "<circle cx='12' cy='12' r='5' fill='currentColor'/><path d='M12 2v3 M12 19v3 M2 12h3 M19 12h3' stroke='currentColor'/>",
+          "breakdown": ["sun", "(太阳/n/)"],
+          "imagery": "太阳。",
+          "translation": "太阳",
+          "sentences": [{"en": "The sun rises.", "cn": "太阳升起。"}]
+        },
+        {
+          "word": "solar",
+          "rootVisual": "<circle cx='12' cy='12' r='5' stroke='currentColor' fill='none'/><path d='M12 2v20 M2 12h20' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": ["sol", "(太阳/l/)", "-ar"],
+          "imagery": "太阳的，n 变为 l。",
+          "translation": "太阳的",
+          "sentences": [{"en": "Solar energy.", "cn": "太阳能。"}]
+        }
+      ]
+    }
+  ]
+}

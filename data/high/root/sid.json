@@ -1,0 +1,36 @@
+{
+  "prefix": "sid",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "sid_sit",
+      "displayName": "sid/sess (坐)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<path d='M6 14 h12 M6 14 v6 M18 14 v6' stroke='currentColor' stroke-width='2'/><path d='M6 14 l0 -6 h12 l0 6' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "词根 -sid-/-sess-",
+        "description": "核心意境是 **“坐” (Sit)**。\n表示居住、停留或就座。",
+        "imagery": "联想一把椅子🪑，或者一个人坐着。",
+        "visual": "<path d='M6 14 h12 M6 14 v6 M18 14 v6' stroke='currentColor' stroke-width='2'/><path d='M6 14 l0 -6 h12 l0 6' stroke='currentColor' fill='none'/>"
+      },
+      "words": [
+        {
+          "word": "President",
+          "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/><path d='M12 8 v-2' stroke='currentColor'/><circle cx='12' cy='4' r='2' fill='currentColor'/>",
+          "breakdown": ["pre- (前)", "sid (坐)", "-ent"],
+          "imagery": "坐在最前面的人（主席/总统）。",
+          "translation": "总统；主席",
+          "sentences": []
+        },
+        {
+          "word": "Resident",
+          "rootVisual": "<path d='M4 20 h16 v-8 h-16 z' fill='currentColor' opacity='0.3'/><path d='M4 12 l8 -6 l8 6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["re- (回)", "sid (坐/居)", "-ent"],
+          "imagery": "坐/住在那里的人。",
+          "translation": "居民",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

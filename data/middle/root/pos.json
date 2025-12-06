@@ -1,0 +1,175 @@
+{
+  "prefix": "pos",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "pos_put",
+      "displayName": "pos- (放/置)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<g transform='translate(0, 0)'><line x1='2' y1='20' x2='22' y2='20' stroke='currentColor' stroke-width='2' stroke-linecap='round'/><rect x='8' y='12' width='8' height='8' stroke='currentColor' fill='none' stroke-width='2' rx='1'/><path d='M12 3 v7' stroke='currentColor' stroke-width='2' stroke-dasharray='2 2'/><path d='M9 7 l3 3 l3 -3' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></g>",
+      "prefixIntro": {
+        "title": "词根 -pos-",
+        "description": "核心意境是 **“放” (Put)** 或 **“位置” (Place)**。\n表示放置的动作或所处的位置。",
+        "imagery": "联想地图上的定位针📍，或者把箱子稳稳地放在地上。"
+      },
+      "words": [
+        {
+          "word": "Pose",
+          "rootVisual": "<circle cx='12' cy='6' r='2' fill='currentColor'/><path d='M12 8 v6 l-3 6 m 3 -6 l 3 6 m -6 -8 l -3 -2 m 3 2 l 3 -2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["pos (放)", "e (动词后缀)"],
+          "imagery": "把身体摆放（pos）成某种特定的样子。",
+          "translation": "姿势；摆姿势",
+          "sentences": [
+            {
+              "en": "Strike a pose.",
+              "cn": "摆个姿势（把身体放好）。"
+            }
+          ]
+        },
+        {
+          "word": "Position",
+          "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='1' fill='currentColor'/><path d='M12 4 v4 M12 16 v4 M4 12 h4 M16 12 h4' stroke='currentColor'/>",
+          "breakdown": ["pos (放)", "-ition (名)"],
+          "imagery": "被放置（pos）的具体地点。",
+          "translation": "位置；姿势",
+          "sentences": [
+            {
+              "en": "Lie in a comfortable position.",
+              "cn": "以舒适的姿势（放置状态）躺着。"
+            }
+          ]
+        },
+        {
+          "word": "Deposit",
+          "rootVisual": "<rect x='4' y='14' width='16' height='6' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='3' fill='currentColor'/><path d='M12 8 v6' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/>",
+          "breakdown": ["de- (下)", "pos (放)", "-it (名/动)"],
+          "imagery": "把钱放下（de-）存入银行。",
+          "translation": "存钱；存款",
+          "sentences": [
+            {
+              "en": "He has a large deposit in the bank.",
+              "cn": "他在银行有一大笔存款。"
+            }
+          ]
+        },
+        {
+          "word": "Expose",
+          "rootVisual": "<path d='M6 18 l12 0' stroke='currentColor'/><path d='M12 6 v12' stroke='currentColor' stroke-dasharray='2 2'/><path d='M8 6 l8 0' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": ["ex- (向外)", "pos (放)", "e"],
+          "imagery": "把东西放到外面（ex-），让大家都能看到。",
+          "translation": "暴露",
+          "sentences": [
+            {
+              "en": "Don't expose yourself to the sunlight too much.",
+              "cn": "不要让自己过度暴露在阳光下。"
+            }
+          ]
+        },
+        {
+          "word": "Compose",
+          "rootVisual": "<rect x='4' y='4' width='6' height='6' stroke='currentColor'/><rect x='14' y='4' width='6' height='6' stroke='currentColor'/><rect x='9' y='14' width='6' height='6' stroke='currentColor'/><path d='M10 10 l4 4' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["com- (一起)", "pos (放)", "e"],
+          "imagery": "把不同的部分放在一起（com-），形成一个整体。",
+          "translation": "组成；作曲",
+          "sentences": [
+            {
+              "en": "England, Scotland, and Wales compose the island of Great Britain.",
+              "cn": "英格兰、苏格兰和威尔士组成了大不列颠岛。"
+            }
+          ]
+        },
+        {
+          "word": "Oppose",
+          "rootVisual": "<path d='M6 12 h12' stroke='currentColor'/><path d='M6 12 l4 -4 m-4 4 l4 4' stroke='currentColor'/><path d='M18 12 l-4 -4 m4 4 l-4 4' stroke='currentColor'/>",
+          "breakdown": ["op- (相反)", "pos (放)", "e"],
+          "imagery": "把自己放在（pos）与别人相反（op-）的位置上。",
+          "translation": "反对",
+          "sentences": [
+            {
+              "en": "The president opposed the medical reform plan.",
+              "cn": "总统反对（站在相反立场）医疗改革计划。"
+            }
+          ]
+        },
+        {
+          "word": "Opposite",
+          "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M8 12 h8' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["op- (相反)", "pos (放)", "-ite (形)"],
+          "imagery": "被放在（pos）正对面（op-）的位置。",
+          "translation": "在...对面；相反的",
+          "sentences": [
+            {
+              "en": "Standing opposite us looked very familiar.",
+              "cn": "站在我们对面的人看起来很眼熟。"
+            }
+          ]
+        },
+        {
+          "word": "Propose",
+          "rootVisual": "<circle cx='8' cy='12' r='2' fill='currentColor'/><circle cx='16' cy='12' r='2' fill='currentColor' opacity='0.5'/><path d='M8 12 l8 0' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["pro- (向前)", "pos (放)", "e"],
+          "imagery": "把想法或戒指放到（pos）前面（pro-），提出来。",
+          "translation": "提议；求婚",
+          "sentences": [
+            {
+              "en": "You should propose to her.",
+              "cn": "你应该向她求婚。"
+            }
+          ]
+        },
+        {
+          "word": "Suppose",
+          "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><path d='M12 14 v6' stroke='currentColor'/><path d='M8 20 h8' stroke='currentColor'/>",
+          "breakdown": ["sup- (在下)", "pos (放)", "e"],
+          "imagery": "在下面（sup-）先放（pos）下一个基础的想法，以此为据进行推断。",
+          "translation": "猜想；假设",
+          "sentences": [
+            {
+              "en": "You are supposed to finish your homework.",
+              "cn": "你应该（被期望/假设）完成作业。"
+            }
+          ]
+        },
+        {
+          "word": "Postpone",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><path d='M8 8 h8' stroke='currentColor'/><path d='M12 8 v8' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='16' cy='16' r='2' fill='currentColor'/>",
+          "breakdown": ["post- (向后)", "pon (放)", "e"],
+          "imagery": "把计划的时间向后（post-）放（pon），即延期。",
+          "translation": "推迟",
+          "sentences": [
+            {
+              "en": "The match had to be postponed until next month.",
+              "cn": "比赛不得不推迟到下个月。"
+            }
+          ]
+        },
+        {
+          "word": "Purpose",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 2 v10' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["pur- (向前)", "pos (放)", "e"],
+          "imagery": "放在（pos）前面（pur-）的目标，即意图。",
+          "translation": "目的",
+          "sentences": [
+            {
+              "en": "The purpose of this meeting is to elect a new chairman.",
+              "cn": "这次会议的目的是选举一位新主席。"
+            }
+          ]
+        },
+        {
+          "word": "Pause",
+          "rootVisual": "<rect x='8' y='6' width='3' height='12' fill='currentColor'/><rect x='13' y='6' width='3' height='12' fill='currentColor'/>",
+          "breakdown": ["paus (放/停)"],
+          "imagery": "播放器上的暂停符号（两道竖杠），把动作暂时放下。",
+          "translation": "暂停",
+          "sentences": [
+            {
+              "en": "She paused for a moment.",
+              "cn": "她停顿了一会儿。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

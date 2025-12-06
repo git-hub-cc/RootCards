@@ -1,0 +1,51 @@
+{
+  "prefix": "ball",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "ball_round",
+      "displayName": "ball (球/鼓起)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 ball/bull-",
+        "description": "核心意境是 **“球状” (Round)** 或 **“鼓起” (Bulge)**。\n源于字母 B 的象形特征：凸起、鼓出。",
+        "imagery": "联想一个充气的球🎈，或者是鼓起来的肚子。"
+      },
+      "words": [
+        {
+          "word": "Ball",
+          "rootVisual": "<circle cx='12' cy='12' r='8' fill='currentColor'/>",
+          "breakdown": ["ball (球)"],
+          "imagery": "一个圆形的球体。",
+          "translation": "球",
+          "sentences": []
+        },
+        {
+          "word": "Balloon",
+          "rootVisual": "<path d='M12 2 a 8 10 0 0 1 0 20 l -2 2 h 4 l -2 -2' fill='currentColor'/>",
+          "breakdown": ["ball (球)", "-oon (大)"],
+          "imagery": "一个巨大的充气球体。",
+          "translation": "气球",
+          "sentences": []
+        },
+        {
+          "word": "Belly",
+          "rootVisual": "<path d='M12 4 c -4 0 -6 4 -6 10 c 0 4 2 8 6 8 s 6 -4 6 -8 c 0 -6 -2 -10 -6 -10' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["bel (鼓起)", "-ly (名)"],
+          "imagery": "身体上鼓起来的部位。",
+          "translation": "肚子",
+          "sentences": []
+        },
+        {
+          "word": "Boil",
+          "rootVisual": "<path d='M4 14 q 4 -2 8 0 t 8 0' stroke='currentColor'/><circle cx='8' cy='10' r='2' stroke='currentColor'/><circle cx='16' cy='8' r='3' stroke='currentColor'/>",
+          "breakdown": ["boil (沸腾)"],
+          "imagery": "水沸腾时鼓起的泡泡 (bubble)。",
+          "translation": "煮沸",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

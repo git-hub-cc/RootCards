@@ -1,0 +1,61 @@
+{
+  "prefix": "ment",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "ment_mind",
+      "displayName": "ment/mind (心智)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<path d='M12 14 c-2 0 -3 -3 -3 -5 c 0 -3 2 -5 3 -5 c 1 0 3 2 3 5 c 0 2 -1 5 -3 5 z' stroke='currentColor' fill='none'/><path d='M12 4 v-2' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -ment-/-mind-",
+        "description": "核心意境是 **“心智” (Mind)** 或 **“思考” (Think)**。\n表示大脑活动、思想。",
+        "imagery": "联想一个大脑🧠，或者一个发光的灯泡💡（想法）。"
+      },
+      "words": [
+        {
+          "word": "Mind",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor'/>",
+          "breakdown": ["mind (头脑)"],
+          "imagery": "思考的地方。",
+          "translation": "头脑；介意",
+          "sentences": [
+            {
+              "en": "You've been on my mind.",
+              "cn": "我一直在想你。"
+            }
+          ]
+        },
+        {
+          "word": "Mental",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12 h8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["ment (心智)", "-al (形)"],
+          "imagery": "脑力的，精神的。",
+          "translation": "精神的；脑力的",
+          "sentences": [
+            {
+              "en": "Mental exhaustion.",
+              "cn": "精神疲惫。"
+            }
+          ]
+        },
+        {
+          "word": "Comment",
+          "rootVisual": "<path d='M4 4 h16 v12 h-8 l-4 4 v-4 h-4 z' stroke='currentColor' fill='none'/><path d='M8 8 h8' stroke='currentColor'/>",
+          "breakdown": ["com- (一起)", "ment (思考)"],
+          "imagery": "大家把想法放在一起讨论。",
+          "translation": "评论",
+          "sentences": []
+        },
+        {
+          "word": "Mention",
+          "rootVisual": "<path d='M4 16 l8 -8 l8 8' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='2' fill='currentColor'/>",
+          "breakdown": ["ment (思考)", "-ion (名)"],
+          "imagery": "把脑子里的东西提出来说。",
+          "translation": "提及",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

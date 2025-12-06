@@ -1,0 +1,51 @@
+{
+  "prefix": "break",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "break_shatter",
+      "displayName": "break (打破)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M4 12 l6 -4 l4 8 l6 -4' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "词根 break/frag-",
+        "description": "核心意境是 **“打破” (Shatter)** 或 **“断裂” (Crack)**。\n表示物体碎裂或中断。",
+        "imagery": "联想玻璃被打碎的瞬间🔨，碎片四溅。"
+      },
+      "words": [
+        {
+          "word": "Break",
+          "rootVisual": "<path d='M2 12 h8 m4 0 h8' stroke='currentColor' stroke-width='2' stroke-dasharray='2 2'/>",
+          "breakdown": ["break (破)"],
+          "imagery": "使物体断开。",
+          "translation": "打破；休息",
+          "sentences": []
+        },
+        {
+          "word": "Brake",
+          "rootVisual": "<circle cx='6' cy='18' r='4'/><circle cx='18' cy='18' r='4'/><path d='M12 18 v-10' stroke='currentColor' stroke-width='4'/>",
+          "breakdown": ["brake (断)"],
+          "imagery": "“断开”车辆的动力系统。",
+          "translation": "刹车",
+          "sentences": []
+        },
+        {
+          "word": "Fragile",
+          "rootVisual": "<path d='M12 4 l-6 10 l12 0 z' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["frag (破)", "-ile (易...的)"],
+          "imagery": "容易破碎的。",
+          "translation": "易碎的",
+          "sentences": []
+        },
+        {
+          "word": "Fragment",
+          "rootVisual": "<path d='M8 8 l4 4 m-4 0 l4 -4' stroke='currentColor'/>",
+          "breakdown": ["frag (破)", "-ment (名)"],
+          "imagery": "打破后形成的小块。",
+          "translation": "碎片",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

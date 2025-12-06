@@ -1,0 +1,52 @@
+{
+  "prefix": "spr",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "spr_scatter",
+      "displayName": "spr (散/发)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<circle cx='12' cy='18' r='2' fill='currentColor'/><path d='M12 18 l-6 -10 M12 18 l0 -12 M12 18 l6 -10' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 spr-",
+        "description": "核心意境是 **“喷洒” (Spray)** 或 **“发芽” (Sprout)**。\n表示向外散开、生长或弹起。",
+        "imagery": "联想喷泉⛲，或者破土而出的嫩芽🌱。",
+        "visual": "<circle cx='12' cy='18' r='2' fill='currentColor'/><path d='M12 18 l-6 -10 M12 18 l0 -12 M12 18 l6 -10' stroke='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Spread",
+          "rootVisual": "<path d='M12 12 l-8 -4 M12 12 l8 -4 M12 12 l-4 8 M12 12 l4 8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["spread (散)"],
+          "imagery": "向四周散开，传播。",
+          "translation": "传播；伸展",
+          "sentences": []
+        },
+        {
+          "word": "Spring",
+          "rootVisual": "<path d='M12 18 q -4 -6 0 -10 q 4 6 0 10' stroke='currentColor' fill='none'/><path d='M12 8 v-4' stroke='currentColor'/>",
+          "breakdown": ["spring (春/弹)"],
+          "imagery": "万物生长的季节；弹簧（弹起）。",
+          "translation": "春天；弹簧；泉水",
+          "sentences": []
+        },
+        {
+          "word": "Spray",
+          "rootVisual": "<path d='M8 14 l8 0' stroke='currentColor' stroke-width='4'/><circle cx='4' cy='10' r='1' fill='currentColor'/><circle cx='8' cy='8' r='1' fill='currentColor'/><circle cx='12' cy='6' r='1' fill='currentColor'/>",
+          "breakdown": ["spray (喷)"],
+          "imagery": "喷洒液体。",
+          "translation": "喷洒；喷雾",
+          "sentences": []
+        },
+        {
+          "word": "Sprout",
+          "rootVisual": "<path d='M12 20 v-8' stroke='currentColor'/><path d='M12 12 q -4 -4 -6 0' stroke='currentColor' fill='none'/><path d='M12 12 q 4 -4 6 0' stroke='currentColor' fill='none'/>",
+          "breakdown": ["sprout (芽)"],
+          "imagery": "植物发芽。",
+          "translation": "发芽",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

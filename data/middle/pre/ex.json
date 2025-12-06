@@ -1,0 +1,148 @@
+{
+  "prefix": "ex",
+  "meanings": [
+    {
+      "meaningId": "ex_out",
+      "displayName": "ex-/e- (向外/流出)",
+      "themeColor": "#f97316",
+      "prefixVisual": "<path d='M 6 8 H 18 A 2 2 0 0 1 20 10 V 18 A 2 2 0 0 1 18 20 H 6 A 2 2 0 0 1 4 18 V 10 A 2 2 0 0 1 6 8 M 12 1 v 10 m -3 -7 l 3 -3 l 3 3' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "前缀 ex-/e-",
+        "description": "核心意境是 **“向外” (Out)** 或 **“流出” (Emerge)**。\n它表示一个动作的方向是从内部到外部。变体 e- 在某些辅音前使用。",
+        "imagery": "联想一个箭头从一个封闭的容器中冲破障碍，向外射出。"
+      },
+      "words": [
+        {
+          "word": "Exit",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M12 12 h6' stroke='currentColor' marker-end='url(#arrow)'/><path d='M12 4 v16' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["ex- (向外)", "it (走)"],
+          "imagery": "向外走的地方，即出口。",
+          "translation": "出口",
+          "sentences": [
+            {
+              "en": "Where is the exit?",
+              "cn": "出口在哪里？"
+            }
+          ]
+        },
+        {
+          "word": "Express",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' fill='none' stroke='currentColor' stroke-width='2'/><path d='M12 18 V 24 M10 22 h4' stroke-width='3' stroke='currentColor'/>",
+          "breakdown": ["ex- (向外)", "press (压/挤)"],
+          "imagery": "把内部的想法和感情，用力向外挤压出来，变成言语或文字。",
+          "translation": "表达",
+          "sentences": [
+            {
+              "en": "Bill's not afraid to express his opinions.",
+              "cn": "比尔不害怕表达（向外挤压）他的观点。"
+            }
+          ]
+        },
+        {
+          "word": "Expand",
+          "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M12 8 v-4 M12 16 v4 M8 12 h-4 M16 12 h4' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["ex- (向外)", "pand (伸展)"],
+          "imagery": "向四面八方伸展，体积变大，即扩张。",
+          "translation": "扩大；膨胀",
+          "sentences": [
+            {
+              "en": "Iron expands when it is heated.",
+              "cn": "铁受热时会膨胀（向外伸展）。"
+            }
+          ]
+        },
+        {
+          "word": "Erupt",
+          "rootVisual": "<path d='M4 20 l8 -12 l8 12 h-16' stroke='currentColor' fill='none'/><path d='M12 8 l0 -4 l-2 2 m4 -2 l-2 2' stroke='currentColor'/>",
+          "breakdown": ["e- (向外)", "rupt (断裂)"],
+          "imagery": "地壳断裂，岩浆向外喷发，即爆发。",
+          "translation": "爆发",
+          "sentences": [
+            {
+              "en": "The volcano erupted in 1980.",
+              "cn": "这座火山在1980年爆发（断裂喷出）。"
+            }
+          ]
+        },
+        {
+          "word": "Exhibition",
+          "rootVisual": "<rect x='4' y='4' width='16' height='12' stroke='currentColor' fill='none'/><path d='M12 16 v4 h-4 m8 0 h-4' stroke='currentColor'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": ["ex- (向外)", "hibit (拿)"],
+          "imagery": "把收藏的东西拿出来给公众看，即展览。",
+          "translation": "展览",
+          "sentences": [
+            {
+              "en": "The paintings are exhibited in chronological sequence.",
+              "cn": "这些画作按时间顺序展出（拿出来看）。"
+            }
+          ]
+        },
+        {
+          "word": "Expect",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["ex- (向外)", "spect (看)"],
+          "imagery": "向外看，盼望着某人或某事到来，即期望。",
+          "translation": "期望；预计",
+          "sentences": [
+            {
+              "en": "He is expected to do so.",
+              "cn": "人们期望（向外盼望）他这么做。"
+            }
+          ]
+        },
+        {
+          "word": "Explore",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l3 3 l-3 -3 l-2 2' stroke='currentColor'/>",
+          "breakdown": ["ex- (向外)", "plore (喊/流泪)"],
+          "imagery": "向外大声喊叫（为了驱赶野兽或联络），在未知区域行走，即探索。",
+          "translation": "探索；探测",
+          "sentences": [
+            {
+              "en": "A fearless explorer.",
+              "cn": "一个无畏的探险家。"
+            }
+          ]
+        },
+        {
+          "word": "Explicit",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><line x1='12' y1='6' x2='12' y2='18' stroke='currentColor' stroke-dasharray='2 2'/><path d='M12 12 l4 0' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["ex- (向外)", "plic (折叠)"],
+          "imagery": "把折叠的东西向外展开，让一切都清清楚楚，即明确的。",
+          "translation": "明确的；清楚的",
+          "sentences": [
+            {
+              "en": "Be explicit when you talk about money.",
+              "cn": "谈钱的时候要明确（展开说清楚）。"
+            }
+          ]
+        },
+        {
+          "word": "Extend",
+          "rootVisual": "<line x1='4' y1='12' x2='12' y2='12' stroke='currentColor'/><line x1='12' y1='12' x2='20' y2='12' stroke='currentColor' stroke-dasharray='2 2' marker-end='url(#arrow)'/>",
+          "breakdown": ["ex- (向外)", "tend (伸展)"],
+          "imagery": "向外拉伸，使长度或时间增加，即延伸。",
+          "translation": "延伸；延长",
+          "sentences": [
+            {
+              "en": "Some of our courses extend over two years.",
+              "cn": "我们的一些课程延续（向外伸展）两年。"
+            }
+          ]
+        },
+        {
+          "word": "Evaluate",
+          "rootVisual": "<path d='M4 18 h16' stroke='currentColor'/><rect x='6' y='10' width='2' height='8' fill='currentColor'/><rect x='10' y='6' width='2' height='12' fill='currentColor'/><rect x='14' y='12' width='2' height='6' fill='currentColor'/>",
+          "breakdown": ["e- (出)", "valu (价值)"],
+          "imagery": "把价值计算出来，即评估。",
+          "translation": "评估",
+          "sentences": [
+            {
+              "en": "Don't evaluate people by their clothes.",
+              "cn": "不要以貌（衣服）取人（评估价值）。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

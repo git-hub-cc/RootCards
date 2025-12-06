@@ -1,0 +1,56 @@
+{
+  "prefix": "fid",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "fid_trust",
+      "displayName": "fid (相信)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' stroke='currentColor' fill='none'/><path d='M9 10l2 2 4-4' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "词根 -fid-",
+        "description": "核心意境是 **“相信” (Trust)** 或 **“信念” (Faith)**。\n表示信任、忠诚。",
+        "imagery": "联想握手🤝，或者一颗坚定的心❤️。"
+      },
+      "words": [
+        {
+          "word": "Confident",
+          "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/><path d='M8 16 h8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["con- (加强)", "fid (信)", "-ent"],
+          "imagery": "充满信念的。",
+          "translation": "自信的",
+          "sentences": []
+        },
+        {
+          "word": "Confidential",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M12 10 v4' stroke='currentColor'/><path d='M10 16 h4' stroke='currentColor'/>",
+          "breakdown": ["con- (加强)", "fid (信)", "-ential"],
+          "imagery": "因为信任而保守的秘密。",
+          "translation": "机密的",
+          "sentences": []
+        },
+        {
+          "word": "Faith",
+          "rootVisual": "<path d='M12 4 l4 8 h-8 z' fill='currentColor'/>",
+          "breakdown": ["faith (信)"],
+          "imagery": "内心的信仰。",
+          "translation": "信任；信仰",
+          "sentences": [
+            {
+              "en": "I have faith in him.",
+              "cn": "我信任他。"
+            }
+          ]
+        },
+        {
+          "word": "Federal",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor'/><circle cx='16' cy='12' r='4' stroke='currentColor'/><path d='M10 12 h4' stroke='currentColor'/>",
+          "breakdown": ["fed (fid变体)", "-eral"],
+          "imagery": "基于互信建立的契约/联盟。",
+          "translation": "联邦的",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

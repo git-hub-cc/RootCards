@@ -1,0 +1,60 @@
+{
+  "prefix": "bear",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "bear_carry",
+      "displayName": "bear (承受/生育)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='4'/><rect x='8' y='6' width='8' height='6' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 bear",
+        "description": "核心意境是 **“承受” (Carry)** 或 **“生育” (Birth)**。\n引申为负担、忍受。",
+        "imagery": "联想一只背负重物的熊🐻，或者孕育生命的母亲。"
+      },
+      "words": [
+        {
+          "word": "Bear",
+          "rootVisual": "<path d='M12 12 m-8 0 a 8 8 0 1 0 16 0 a 8 8 0 1 0 -16 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["bear (熊/承受)"],
+          "imagery": "怀孕的女性体型与熊相似；生育过程需要忍受痛苦。",
+          "translation": "熊；生育；忍受",
+          "sentences": [
+            {
+              "en": "She bears two children.",
+              "cn": "她生育了两个孩子。"
+            },
+            {
+              "en": "I really can't bear you.",
+              "cn": "我真的受不了（忍受）你。"
+            }
+          ]
+        },
+        {
+          "word": "Birth",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["bear (生育)", "-th (名)"],
+          "imagery": "新生命的诞生。",
+          "translation": "出生",
+          "sentences": []
+        },
+        {
+          "word": "Burden",
+          "rootVisual": "<rect x='6' y='10' width='12' height='10' fill='currentColor'/><path d='M6 10 l6 -6 l6 6' stroke='currentColor'/>",
+          "breakdown": ["bur (bear变体)", "-den (名)"],
+          "imagery": "背在背上的重物，或者是生育带来的责任。",
+          "translation": "负担",
+          "sentences": []
+        },
+        {
+          "word": "Bare",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
+          "breakdown": ["bare (裸)"],
+          "imagery": "刚出生时赤裸的状态。",
+          "translation": "赤裸的",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

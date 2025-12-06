@@ -1,0 +1,77 @@
+{
+  "prefix": "equ",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "equ_equal",
+      "displayName": "equ (相等)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M6 10 h12 M6 14 h12' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "词根 -equ-",
+        "description": "核心意境是 **“相等” (Equal)**。\n表示平衡、均等。",
+        "imagery": "联想数学中的等号 =，或者天平⚖️。"
+      },
+      "words": [
+        {
+          "word": "Equal",
+          "rootVisual": "<path d='M8 12 h8' stroke='currentColor' stroke-width='4'/>",
+          "breakdown": ["equ (相等)", "-al (形)"],
+          "imagery": "完全一样的。",
+          "translation": "相等的",
+          "sentences": []
+        },
+        {
+          "word": "Equality",
+          "rootVisual": "<circle cx='8' cy='12' r='3' fill='currentColor'/><circle cx='16' cy='12' r='3' fill='currentColor'/><path d='M12 8 v8' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["equ (相等)", "-ality (名)"],
+          "imagery": "人人平等的状态。",
+          "translation": "平等",
+          "sentences": [
+            {
+              "en": "Women demand equality.",
+              "cn": "女性要求平等。"
+            }
+          ]
+        },
+        {
+          "word": "Equator",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M2 12 h20' stroke='currentColor' stroke-dasharray='4 2'/>",
+          "breakdown": ["equ (相等)", "-ator (物)"],
+          "imagery": "将地球分为相等的两半的线。",
+          "translation": "赤道",
+          "sentences": []
+        },
+        {
+          "word": "Adequate",
+          "rootVisual": "<rect x='4' y='14' width='16' height='6' fill='currentColor'/><path d='M4 14 h16' stroke='currentColor'/>",
+          "breakdown": ["ad- (去)", "equ (相等)", "-ate"],
+          "imagery": "去达到相等的量，即满足需求，足够的。",
+          "translation": "足够的",
+          "sentences": [
+            {
+              "en": "Adequate food.",
+              "cn": "充足的食物。"
+            }
+          ]
+        },
+        {
+          "word": "Equip",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none'/><path d='M8 8 v8 M12 8 v8 M16 8 v8' stroke='currentColor'/>",
+          "breakdown": ["e- (去)", "quip (相等)"],
+          "imagery": "为了与某种功能相等（匹配）而配置东西。",
+          "translation": "装备",
+          "sentences": []
+        },
+        {
+          "word": "Equation",
+          "rootVisual": "<text x='12' y='14' font-size='12' text-anchor='middle' fill='currentColor'>a = b</text>",
+          "breakdown": ["equ (相等)", "-ation (名)"],
+          "imagery": "表示相等的数学式子。",
+          "translation": "方程式；等式",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

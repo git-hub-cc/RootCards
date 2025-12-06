@@ -1,0 +1,60 @@
+{
+  "prefix": "struct",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "struct_build",
+      "displayName": "struct (建造)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<rect x='4' y='14' width='6' height='6' stroke='currentColor' fill='none'/><rect x='10' y='14' width='6' height='6' stroke='currentColor' fill='none'/><rect x='7' y='8' width='6' height='6' stroke='currentColor' fill='none'/><rect x='13' y='8' width='6' height='6' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "词根 -struct-",
+        "description": "核心意境是 **“建造” (Build)**。\n表示结构、建设或堆积。",
+        "imagery": "联想搭积木🧱，或者正在建设的大楼🏗️。",
+        "visual": "<rect x='4' y='14' width='6' height='6' stroke='currentColor' fill='none'/><rect x='10' y='14' width='6' height='6' stroke='currentColor' fill='none'/><rect x='7' y='8' width='6' height='6' stroke='currentColor' fill='none'/><rect x='13' y='8' width='6' height='6' stroke='currentColor' fill='none'/>"
+      },
+      "words": [
+        {
+          "word": "Structure",
+          "rootVisual": "<path d='M12 2 l8 12 h-16 z' stroke='currentColor' fill='none'/><line x1='12' y1='2' x2='12' y2='14' stroke='currentColor'/><line x1='4' y1='14' x2='20' y2='14' stroke='currentColor'/>",
+          "breakdown": ["struct (建)", "-ure (名)"],
+          "imagery": "建造起来的样子，结构。",
+          "translation": "结构；构造",
+          "sentences": []
+        },
+        {
+          "word": "Construct",
+          "rootVisual": "<rect x='4' y='12' width='16' height='8' stroke='currentColor' fill='none'/><path d='M4 12 l8 -8 l8 8' stroke='currentColor'/>",
+          "breakdown": ["con- (共)", "struct (建)"],
+          "imagery": "共同建造。",
+          "translation": "建造；建设",
+          "sentences": []
+        },
+        {
+          "word": "Destruct",
+          "rootVisual": "<path d='M4 18 h16' stroke='currentColor' stroke-width='2'/><path d='M6 6 l12 12 M18 6 l-12 12' stroke='currentColor'/>",
+          "breakdown": ["de- (去)", "struct (建)"],
+          "imagery": "去掉建筑物，破坏。",
+          "translation": "破坏",
+          "sentences": []
+        },
+        {
+          "word": "Instruct",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M9 10 h6 M9 14 h4' stroke='currentColor'/>",
+          "breakdown": ["in- (内)", "struct (建)"],
+          "imagery": "在内心建立知识体系，指导。",
+          "translation": "指导；指示",
+          "sentences": []
+        },
+        {
+          "word": "Instrument",
+          "rootVisual": "<circle cx='8' cy='16' r='4' stroke='currentColor' fill='none'/><rect x='10' y='4' width='4' height='12' fill='currentColor'/><path d='M14 8 h4' stroke='currentColor'/>",
+          "breakdown": ["in- (内)", "stru (建)", "-ment (器)"],
+          "imagery": "用于建设/操作的器具；乐器。",
+          "translation": "乐器；仪器",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

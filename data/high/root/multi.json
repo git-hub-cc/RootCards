@@ -1,0 +1,59 @@
+{
+  "prefix": "multi",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "multi_many",
+      "displayName": "multi (多)",
+      "themeColor": "#8b5cf6",
+      "prefixVisual": "<text x='12' y='16' font-size='14' text-anchor='middle' fill='currentColor'>×</text>",
+      "prefixIntro": {
+        "title": "词根 -multi-",
+        "description": "核心意境是 **“多” (Many)**。\n表示数量众多或多重。",
+        "imagery": "联想乘号×，或者拥挤的人群👥。",
+        "visual": "<text x='12' y='16' font-size='14' text-anchor='middle' fill='currentColor'>×</text>"
+      },
+      "words": [
+        {
+          "word": "Multiply",
+          "rootVisual": "<text x='12' y='16' font-size='14' text-anchor='middle' fill='currentColor'>×</text>",
+          "breakdown": ["multi (多)", "ply (折叠)"],
+          "imagery": "多次折叠，成倍增加。",
+          "translation": "乘；增加",
+          "sentences": [
+            {
+              "en": "4 multiplied by 3 equals 12.",
+              "cn": "4乘以3等于12。"
+            }
+          ]
+        },
+        {
+          "word": "Multiple",
+          "rootVisual": "<rect x='4' y='4' width='6' height='6' fill='currentColor'/><rect x='12' y='4' width='6' height='6' fill='currentColor'/><rect x='4' y='12' width='6' height='6' fill='currentColor'/><rect x='12' y='12' width='6' height='6' fill='currentColor'/>",
+          "breakdown": ["multi (多)", "-ple (倍)"],
+          "imagery": "多重的，多个的。",
+          "translation": "多重的；倍数",
+          "sentences": [
+            {
+              "en": "Multiple-choice question.",
+              "cn": "多项选择题。"
+            }
+          ]
+        },
+        {
+          "word": "Multitude",
+          "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><circle cx='9' cy='8' r='2' fill='currentColor'/><circle cx='15' cy='8' r='2' fill='currentColor'/>",
+          "breakdown": ["multi (多)", "-tude (名)"],
+          "imagery": "大量的人或物。",
+          "translation": "众多；大众",
+          "sentences": [
+            {
+              "en": "A multitude of birds.",
+              "cn": "成群的鸟。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "prefix": "volv",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "volv_roll",
+      "displayName": "volv/volu (转/卷)",
+      "themeColor": "#0ea5e9",
+      "prefixVisual": "<path d='M12 4 a 8 8 0 1 1 0 16 a 8 8 0 1 1 0 -16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><path d='M12 4 l2 2 l-2 2' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -volv-/-volu-",
+        "description": "核心意境是 **“滚动” (Roll)** 或 **“旋转” (Turn)**。\n表示转动、卷入或进化。",
+        "imagery": "联想一个滚动的车轮🛞，或者龙卷风🌪️。",
+        "visual": "<path d='M12 4 a 8 8 0 1 1 0 16 a 8 8 0 1 1 0 -16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><path d='M12 4 l2 2 l-2 2' stroke='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Revolve",
+          "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 4 a 8 8 0 1 1 -8 2.5' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
+          "breakdown": ["re- (再)", "volve (转)"],
+          "imagery": "再次转动，旋转（围绕中心）。",
+          "translation": "旋转；围绕",
+          "sentences": []
+        },
+        {
+          "word": "Revolution",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 l2 2 l-2 2' stroke='currentColor'/>",
+          "breakdown": ["re- (再)", "volu (转)", "-tion"],
+          "imagery": "天翻地覆的转动，革命。",
+          "translation": "革命；旋转",
+          "sentences": []
+        },
+        {
+          "word": "Involve",
+          "rootVisual": "<path d='M12 12 l-4 -4 m 8 8 l -4 -4' stroke='currentColor'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
+          "breakdown": ["in- (内)", "volve (卷)"],
+          "imagery": "卷进去，牵涉。",
+          "translation": "包含；牵涉",
+          "sentences": []
+        },
+        {
+          "word": "Evolve",
+          "rootVisual": "<path d='M4 18 q 8 -12 16 -6' stroke='currentColor' fill='none'/><circle cx='4' cy='18' r='2' fill='currentColor' opacity='0.5'/><circle cx='20' cy='12' r='3' fill='currentColor'/>",
+          "breakdown": ["e- (出)", "volve (转)"],
+          "imagery": "向外转出来，演变，进化。",
+          "translation": "进化；发展",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

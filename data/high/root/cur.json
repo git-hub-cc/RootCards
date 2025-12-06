@@ -1,0 +1,61 @@
+{
+  "prefix": "cur",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "cur_run",
+      "displayName": "cur/curs (跑)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<path d='M4 14 q 4 -4 8 0 t 8 0' stroke='currentColor' stroke-width='2'/><path d='M2 18 l20 0' stroke='currentColor' opacity='0.3'/>",
+      "prefixIntro": {
+        "title": "词根 -cur-/-curs-",
+        "description": "核心意境是 **“跑” (Run)** 或 **“流动” (Flow)**。\n表示发生、过程或流通。",
+        "imagery": "联想奔跑的人🏃，或者流动的水流🌊。"
+      },
+      "words": [
+        {
+          "word": "Occur",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-dasharray='4 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["oc- (去/向)", "cur (跑)"],
+          "imagery": "事情跑过来了（发生）；想法跑到脑海里（想起）。",
+          "translation": "发生；想起",
+          "sentences": [
+            {
+              "en": "It occurred to me that I had met him.",
+              "cn": "我突然想起我见过他。"
+            }
+          ]
+        },
+        {
+          "word": "Course",
+          "rootVisual": "<path d='M4 18 c 4 -8 12 -8 16 0' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><circle cx='4' cy='18' r='2' fill='currentColor'/><circle cx='20' cy='18' r='2' fill='currentColor'/>",
+          "breakdown": ["cours (跑/过程)"],
+          "imagery": "跑过的一段路程；课程（从开始到结束的过程）。",
+          "translation": "课程；过程",
+          "sentences": []
+        },
+        {
+          "word": "Current",
+          "rootVisual": "<path d='M2 10 q 5 -3 10 0 t 10 0' stroke='currentColor' fill='none'/><path d='M2 14 q 5 -3 10 0 t 10 0' stroke='currentColor' fill='none'/>",
+          "breakdown": ["cur (跑)", "-ent (形/名)"],
+          "imagery": "一直在跑的（当前的）；水流/电流（流动）。",
+          "translation": "当前的；水流",
+          "sentences": [
+            {
+              "en": "Current affairs.",
+              "cn": "时事。"
+            }
+          ]
+        },
+        {
+          "word": "Currency",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><text x='12' y='16' font-size='12' text-anchor='middle' fill='currentColor'>$</text>",
+          "breakdown": ["cur (跑/流通)", "-ency (名)"],
+          "imagery": "在社会中不断流通（跑）的东西，即货币。",
+          "translation": "货币",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

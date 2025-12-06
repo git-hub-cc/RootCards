@@ -1,0 +1,44 @@
+{
+  "prefix": "sl",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "sl_slip",
+      "displayName": "sl (滑/倒)",
+      "themeColor": "#0ea5e9",
+      "prefixVisual": "<path d='M4 4 l16 16' stroke='currentColor' stroke-width='2'/><circle cx='18' cy='18' r='2' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 sl-",
+        "description": "核心意境是 **“滑” (Slip)** 或 **“倒/下” (Slide)**。\n表示滑动、倾斜或向下的动作。",
+        "imagery": "联想滑梯🛝，或者滑倒的人。",
+        "visual": "<path d='M4 4 l16 16' stroke='currentColor' stroke-width='2'/><circle cx='18' cy='18' r='2' fill='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Slip",
+          "rootVisual": "<path d='M4 16 l4 4 l8 -4' stroke='currentColor'/><circle cx='16' cy='16' r='2' fill='currentColor' opacity='0.5'/>",
+          "breakdown": ["slip (滑)"],
+          "imagery": "滑倒。",
+          "translation": "滑倒",
+          "sentences": []
+        },
+        {
+          "word": "Slide",
+          "rootVisual": "<path d='M2 4 l18 18' stroke='currentColor' stroke-width='2'/><circle cx='10' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["slide (滑)"],
+          "imagery": "滑动；滑梯。",
+          "translation": "滑；幻灯片",
+          "sentences": []
+        },
+        {
+          "word": "Slope",
+          "rootVisual": "<path d='M2 20 l20 -16 v16 z' fill='currentColor' opacity='0.3'/>",
+          "breakdown": ["slope (斜)"],
+          "imagery": "斜坡。",
+          "translation": "斜坡",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

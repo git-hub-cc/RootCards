@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://ppmc.club/</loc>
-        <lastmod>2025-12-1</lastmod> <!-- 每次更新网站时，建议修改这个日期 -->
-        <priority>0.25.12.01</priority>
+        <lastmod>2025-12-06</lastmod> <!-- 每次更新网站时，建议修改这个日期 -->
+        <priority>0.1</priority>
     </url>
     <!-- 如果未来增加了其他页面，比如 about.html，也可以加在这里 -->
     <!--

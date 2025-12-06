@@ -1,0 +1,51 @@
+{
+  "prefix": "arm",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "arm_weapon",
+      "displayName": "arm (手臂/武器)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M6 18 L18 6 M6 6 L18 18' stroke='currentColor' stroke-width='3'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "词根 -arm-",
+        "description": "核心意境是 **“手臂” (Arm)** 或 **“武器” (Weapon)**。\n古人最初的武器就是手臂。",
+        "imagery": "联想一只强壮的手臂💪，或者交叉的剑⚔️。"
+      },
+      "words": [
+        {
+          "word": "Arm",
+          "rootVisual": "<path d='M4 14 l8 -4 l8 4' stroke='currentColor' stroke-width='4' stroke-linecap='round'/>",
+          "breakdown": ["arm (手臂/武器)"],
+          "imagery": "身体的一部分，也是最原始的战斗工具。",
+          "translation": "手臂；武器",
+          "sentences": []
+        },
+        {
+          "word": "Army",
+          "rootVisual": "<path d='M4 20 h16 l-8 -16 z' fill='currentColor' opacity='0.5'/><path d='M8 12 h8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["arm (武器)", "-y (集合)"],
+          "imagery": "一群拿起武器的人。",
+          "translation": "军队",
+          "sentences": []
+        },
+        {
+          "word": "Armor",
+          "rootVisual": "<path d='M6 4 h12 v10 q 0 6 -6 8 q -6 -2 -6 -8 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 v18' stroke='currentColor'/>",
+          "breakdown": ["arm (武器)", "-or (物)"],
+          "imagery": "防御武器攻击的装备。",
+          "translation": "盔甲",
+          "sentences": []
+        },
+        {
+          "word": "Alarm",
+          "rootVisual": "<path d='M12 2 l2 4 h4 l-3 3 l1 4 l-4 -3 l-4 3 l1 -4 l-3 -3 h4 z' stroke='currentColor' fill='none'/><path d='M4 20 h16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["al- (all)", "arm (武器)"],
+          "imagery": "所有人拿起武器，即拉响警报。",
+          "translation": "警报；闹钟",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

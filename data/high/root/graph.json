@@ -1,0 +1,67 @@
+{
+  "prefix": "graph",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "graph_write",
+      "displayName": "graph/gram (写/画)",
+      "themeColor": "#64748b",
+      "prefixVisual": "<path d='M4 18 l2 -2 l10 -10 l2 2 l-10 10 l-2 2 z' stroke='currentColor' fill='none'/><path d='M4 18 l4 4' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -graph-/-gram-",
+        "description": "核心意境是 **“写” (Write)** 或 **“画” (Draw)**。\n表示记录、图表或文字。",
+        "imagery": "联想一只握笔的手✍️，或者一张图表📊。"
+      },
+      "words": [
+        {
+          "word": "Grammar",
+          "rootVisual": "<text x='6' y='14' font-size='10' fill='currentColor'>Aa</text><path d='M2 18 h20' stroke='currentColor'/>",
+          "breakdown": ["gram (写)"],
+          "imagery": "书写的规则。",
+          "translation": "语法",
+          "sentences": []
+        },
+        {
+          "word": "Diagram",
+          "rootVisual": "<circle cx='8' cy='8' r='3' stroke='currentColor' fill='none'/><rect x='14' y='6' width='6' height='6' stroke='currentColor' fill='none'/><line x1='11' y1='8' x2='14' y2='8' stroke='currentColor'/>",
+          "breakdown": ["dia- (穿过)", "gram (画)"],
+          "imagery": "画出来的图解。",
+          "translation": "图表",
+          "sentences": []
+        },
+        {
+          "word": "Telegram",
+          "rootVisual": "<path d='M2 12 h20' stroke='currentColor' stroke-dasharray='4 2'/><path d='M12 6 l6 6 l-6 6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["tele (远)", "gram (写)"],
+          "imagery": "从远处写来的文字。",
+          "translation": "电报",
+          "sentences": []
+        },
+        {
+          "word": "Telegraph",
+          "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 12 l-4 8 h8 z' stroke='currentColor' fill='none'/>",
+          "breakdown": ["tele (远)", "graph (写)"],
+          "imagery": "远程书写的机器。",
+          "translation": "电报机",
+          "sentences": []
+        },
+        {
+          "word": "Geography",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M4 12 q 8 -4 16 0' stroke='currentColor' fill='none'/>",
+          "breakdown": ["geo (地)", "graphy (画)"],
+          "imagery": "描绘大地的学科。",
+          "translation": "地理",
+          "sentences": []
+        },
+        {
+          "word": "Photograph",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M16 8 h2' stroke='currentColor'/>",
+          "breakdown": ["photo (光)", "graph (画)"],
+          "imagery": "用光来作画。",
+          "translation": "照片",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

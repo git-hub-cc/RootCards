@@ -1,0 +1,56 @@
+{
+  "prefix": "flex",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "flex_bend",
+      "displayName": "flex/flect (弯曲)",
+      "themeColor": "#a855f7",
+      "prefixVisual": "<path d='M4 18 q 8 -16 16 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "词根 -flex-/-flect-",
+        "description": "核心意境是 **“弯曲” (Bend)**。\n表示折叠、转向或反射。",
+        "imagery": "联想一根弯曲的铁丝，或者人的关节弯曲💪。"
+      },
+      "words": [
+        {
+          "word": "Flex",
+          "rootVisual": "<path d='M4 12 q 8 -8 16 0' stroke='currentColor' fill='none'/>",
+          "breakdown": ["flex (弯曲)"],
+          "imagery": "弯曲，收缩肌肉。",
+          "translation": "弯曲；收缩",
+          "sentences": []
+        },
+        {
+          "word": "Reflect",
+          "rootVisual": "<path d='M4 18 H20 M6 4 L12 18 L18 4' stroke='currentColor' stroke-width='1.5'/>",
+          "breakdown": ["re- (回)", "flect (弯曲)"],
+          "imagery": "光线碰到平面向后弯曲弹回。",
+          "translation": "反射；反思",
+          "sentences": [
+            {
+              "en": "She saw her face reflected in the window.",
+              "cn": "她看到窗户里映出她的脸。"
+            }
+          ]
+        },
+        {
+          "word": "Flexible",
+          "rootVisual": "<path d='M4 12 q 8 8 16 0' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
+          "breakdown": ["flex (弯曲)", "-ible (能)"],
+          "imagery": "能够弯曲的，不僵硬。",
+          "translation": "灵活的；柔韧的",
+          "sentences": []
+        },
+        {
+          "word": "Inflexible",
+          "rootVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' stroke-width='3'/>",
+          "breakdown": ["in- (不)", "flexible"],
+          "imagery": "不能弯曲，僵硬。",
+          "translation": "僵硬的；不灵活的",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

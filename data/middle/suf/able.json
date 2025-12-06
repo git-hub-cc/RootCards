@@ -1,0 +1,168 @@
+{
+  "prefix": "able",
+  "affixType": "suffix",
+  "meanings": [
+    {
+      "meaningId": "able_adj",
+      "displayName": "-able (能...的)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<path d='M16 8 l-4 4 l-4 -4' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 12 h8 v4 h-8 z' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "后缀 -able/-ible",
+        "description": "形容词后缀，表示 **“能够被...的”** 或 **“值得...的”**。\n表示具备某种能力或可能性。变体 -ible 用于部分拉丁词根后。",
+        "imagery": "联想一块拼图🧩，形状完美契合，表示“可行的”、“匹配的”。"
+      },
+      "words": [
+        {
+          "word": "Valuable",
+          "rootVisual": "<path d='M12 2 l3 6 h6 l-5 4 l2 6 l-6 -4 l-6 4 l2 -6 l-5 -4 h6 z' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["value (价值)", "-able (能...的)"],
+          "imagery": "一颗闪闪发光的钻石，值得被珍藏。",
+          "translation": "有价值的",
+          "sentences": [
+            {
+              "en": "The painting is valuable.",
+              "cn": "这幅画很有价值（值得被估价）。"
+            }
+          ]
+        },
+        {
+          "word": "Believable",
+          "rootVisual": "<path d='M6 12 l4 4 l10 -10' stroke='currentColor' fill='none' stroke-width='2'/><rect x='2' y='2' width='20' height='20' rx='4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["believe (相信)", "-able (能...的)"],
+          "imagery": "一个被打钩的复选框，表示可以通过信任测试。",
+          "translation": "可相信的",
+          "sentences": [
+            {
+              "en": "His excuse for being late was not very believable.",
+              "cn": "他迟到的借口不太可信（不能被相信）。"
+            }
+          ]
+        },
+        {
+          "word": "Enjoyable",
+          "rootVisual": "<g transform='translate(0, 0)'><circle cx='12' cy='12' r='10' fill='none' stroke='currentColor' stroke-width='2'/><path d='M 8 14 q 4 4 8 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='8' cy='9' r='1.5' fill='currentColor'/><circle cx='16' cy='9' r='1.5' fill='currentColor'/></g>",
+          "breakdown": ["enjoy (享受)", "-able (能...的)"],
+          "imagery": "一张戴着耳机的笑脸，沉浸在快乐中。",
+          "translation": "令人享受的",
+          "sentences": [
+            {
+              "en": "The concert was very enjoyable.",
+              "cn": "这场音乐会非常令人享受（值得享受）。"
+            }
+          ]
+        },
+        {
+          "word": "Available",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor'/><path d='M16 8 l4 4 l-4 4' stroke='currentColor'/><circle cx='4' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["avail (利用/价值)", "-able (能...的)"],
+          "imagery": "能够被拿到手并利用的东西，即“可获得的”或“有效的”。",
+          "translation": "可获得的；有空的",
+          "sentences": [
+            {
+              "en": "Is your car available on Friday?",
+              "cn": "周五能用你的车吗（车是可获得的吗）？"
+            }
+          ]
+        },
+        {
+          "word": "Invincible",
+          "rootVisual": "<path d='M12 2 l2 4 h4 l-3 3 l1 4 l-4 -3 l-4 3 l1 -4 l-3 -3 h4 z' stroke='currentColor' fill='none'/><path d='M4 20 l16 -16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["in- (不)", "vinc (赢)", "-ible (能...的)"],
+          "imagery": "不能被赢的，即不可战胜的。",
+          "translation": "不可战胜的",
+          "sentences": [
+            {
+              "en": "The team seemed invincible.",
+              "cn": "这支队伍似乎是不可战胜的。"
+            }
+          ]
+        },
+        {
+          "word": "Impossible",
+          "rootVisual": "<path d='M6 14 h4 l2 -4 h4 v4 h-2 l-2 4 h-6 z' fill='none' stroke='currentColor' stroke-width='2' />",
+          "breakdown": ["im- (不)", "poss (能力)", "-ible (能...的)"],
+          "imagery": "能力达不到的，即不可能的。",
+          "translation": "不可能的",
+          "sentences": [
+            {
+              "en": "Nothing is impossible.",
+              "cn": "没有什么是不可能的。"
+            }
+          ]
+        },
+        {
+          "word": "Flexible",
+          "rootVisual": "<path d='M12 2 q 8 10 0 20' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": ["flex (弯曲)", "-ible (能...的)"],
+          "imagery": "能够弯曲的，即灵活的。",
+          "translation": "灵活的；柔韧的",
+          "sentences": []
+        },
+        {
+          "word": "Reliable",
+          "rootVisual": "<rect x='8' y='4' width='8' height='16' rx='1' stroke='currentColor' fill='none'/><path d='M12 4 v16' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["rely (依靠)", "-able (能...的)"],
+          "imagery": "像一根结实的柱子，能够被依靠，即可靠的。",
+          "translation": "可靠的",
+          "sentences": [
+            {
+              "en": "Miller was a reliable man.",
+              "cn": "米勒是个可靠的人。"
+            }
+          ]
+        },
+        {
+          "word": "Admirable",
+          "rootVisual": "<path d='M12 20 l-2 2 h4 l-2 -2 m0 -4 v4' stroke='currentColor'/><path d='M4 12 q 8 4 16 0' stroke='currentColor' fill='none'/><path d='M12 10 l-2 -2 a2 2 0 0 1 4 0 z' fill='currentColor' transform='translate(0, -2)'/>",
+          "breakdown": ["admire (钦佩)", "-able (值得...的)"],
+          "imagery": "值得被钦佩的。",
+          "translation": "令人钦佩的",
+          "sentences": []
+        },
+        {
+          "word": "Comfortable",
+          "rootVisual": "<path d='M4 14 q 8 4 16 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": ["comfort (舒适)", "-able (能...的)"],
+          "imagery": "让人感觉舒适的。",
+          "translation": "舒服的",
+          "sentences": []
+        },
+        {
+          "word": "Attainable",
+          "rootVisual": "<circle cx='12' cy='4' r='2' fill='currentColor'/><path d='M12 6 v12' stroke='currentColor'/><path d='M8 10 h8' stroke='currentColor'/>",
+          "breakdown": ["attain (获得)", "-able (能...的)"],
+          "imagery": "能够被获得的，即可以达到的。",
+          "translation": "可获得的；可达到的",
+          "sentences": [
+            {
+              "en": "Set attainable goals.",
+              "cn": "设定可达到的目标。"
+            }
+          ]
+        },
+        {
+          "word": "Negotiable",
+          "rootVisual": "<path d='M6 12 l4 4 l10 -10' stroke='currentColor' fill='none'/><path d='M4 12 h16' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": ["negotiate (谈判)", "-able (能...的)"],
+          "imagery": "可以进行谈判的，即可以商量的。",
+          "translation": "可协商的",
+          "sentences": [
+            {
+              "en": "The price is negotiable.",
+              "cn": "价格是可以商量的。"
+            }
+          ]
+        },
+        {
+          "word": "Reusable",
+          "rootVisual": "<path d='M6 6L3 22h18l-3-16H6z' stroke='currentColor' fill='none'/><path d='M16 6c0-2.21-1.79-4-4-4S8 3.79 8 6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["re- (再)", "use (使用)", "-able (能...的)"],
+          "imagery": "能够被再次使用的。",
+          "translation": "可重复使用的",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

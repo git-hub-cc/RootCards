@@ -1,0 +1,174 @@
+{
+  "prefix": "com",
+  "meanings": [
+    {
+      "meaningId": "com_together",
+      "displayName": "com-/con- (共同/加强)",
+      "themeColor": "#4338ca",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><circle cx='8' cy='12' r='2' fill='currentColor'/><circle cx='16' cy='12' r='2' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "前缀 com-/con-",
+        "description": "核心意境是 **“共同” (Together)** 或 **“加强” (Intensive)**。\n表示多个人或物体聚集在一起。变体有 co-, col-, cor-。",
+        "imagery": "联想许多箭头指向同一个圆心🎯，或者很多人手拉手。"
+      },
+      "words": [
+        {
+          "word": "Compete",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": ["com- (共同)", "pet (追求)"],
+          "imagery": "大家共同（com-）追求（pet）同一个靶心，这就是竞争。",
+          "translation": "竞争",
+          "sentences": [
+            {
+              "en": "We can't compete with them on price.",
+              "cn": "我们在价格上无法与他们竞争（共同追求市场）。"
+            }
+          ]
+        },
+        {
+          "word": "Complete",
+          "rootVisual": "<path d='M 6 6 v 12 h 12 v -12 z M 9 15 l 3 2 l 4 -5' stroke='currentColor' fill='none'/>",
+          "breakdown": ["com- (全部)", "ple (满)"],
+          "imagery": "把容器全部填满（ple），一点空隙都不留，即完成。",
+          "translation": "完成",
+          "sentences": [
+            {
+              "en": "It took two years to complete the building.",
+              "cn": "完成（全部填满）这座建筑花了两年时间。"
+            }
+          ]
+        },
+        {
+          "word": "Cooperate",
+          "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='3' stroke='currentColor' fill='none'/><path d='M11 12 h2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["co- (共同)", "operate (操作)"],
+          "imagery": "两个人一起操作机器，这就是合作。",
+          "translation": "合作",
+          "sentences": [
+            {
+              "en": "The scheme works in cooperation with local businesses.",
+              "cn": "该计划与当地企业合作（共同操作）。"
+            }
+          ]
+        },
+        {
+          "word": "Colleague",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none'/><circle cx='8' cy='12' r='2' fill='currentColor'/><circle cx='16' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["col- (共同)", "league (联盟)"],
+          "imagery": "在同一个大联盟（公司）里一起工作的人。",
+          "translation": "同事",
+          "sentences": [
+            {
+              "en": "She is my colleague.",
+              "cn": "她是我的同事（同一个联盟的人）。"
+            }
+          ]
+        },
+        {
+          "word": "Contract",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M9 16 l3 3 l4 -5' stroke='currentColor'/><path d='M4 12 h-2 M20 12 h2' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": ["con- (共同)", "tract (拉)"],
+          "imagery": "把所有相关方“拉”到一起来签署的文件。",
+          "translation": "合同",
+          "sentences": [
+            {
+              "en": "We signed a contract.",
+              "cn": "我们签了一份合同（把大家拉到一起的协议）。"
+            }
+          ]
+        },
+        {
+          "word": "Communication",
+          "rootVisual": "<path d='M4 12 q 8 -8 16 0' stroke='currentColor' fill='none'/><path d='M4 16 q 8 8 16 0' stroke='currentColor' fill='none'/><circle cx='12' cy='14' r='1' fill='currentColor'/>",
+          "breakdown": ["com- (共同)", "mun (公共/服务)"],
+          "imagery": "大家共同分享信息，就像无线电波在两点间传递。",
+          "translation": "交流",
+          "sentences": [
+            {
+              "en": "We communicated by e-mail.",
+              "cn": "我们通过电子邮件交流（共同分享信息）。"
+            }
+          ]
+        },
+        {
+          "word": "Combine",
+          "rootVisual": "<path d='M8 12 a 4 4 0 1 0 8 0' stroke='currentColor' fill='none'/><path d='M10 12 h4' stroke='currentColor'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
+          "breakdown": ["com- (共同)", "bine (捆/包)"],
+          "imagery": "把不同的东西捆包在一起，形成一个整体。",
+          "translation": "结合",
+          "sentences": [
+            {
+              "en": "Combine all the ingredients in a large bowl.",
+              "cn": "把所有配料混合（包）在一个大碗里。"
+            }
+          ]
+        },
+        {
+          "word": "Conflict",
+          "rootVisual": "<path d='M6 6 l12 12' stroke='currentColor' stroke-width='2'/><path d='M18 6 l-12 12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["con- (共同)", "flict (打)"],
+          "imagery": "两个人或者是两股力量在一起互相打斗。",
+          "translation": "冲突",
+          "sentences": [
+            {
+              "en": "Peter is in conflict with his colleague.",
+              "cn": "彼得和他的同事发生了冲突（互相打斗）。"
+            }
+          ]
+        },
+        {
+          "word": "Concentrate",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 2 v10 M12 22 v-10 M2 12 h10 M22 12 h-10' stroke='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": ["con- (全部)", "center (中心)"],
+          "imagery": "把所有的注意力全部汇聚到同一个中心点上。",
+          "translation": "集中",
+          "sentences": [
+            {
+              "en": "You should concentrate on the study of English.",
+              "cn": "你应该集中精力（全部聚到中心）学习英语。"
+            }
+          ]
+        },
+        {
+          "word": "Conduct",
+          "rootVisual": "<path d='M6 18 l4 -4 l4 4' stroke='currentColor' fill='none'/><circle cx='10' cy='10' r='2' fill='currentColor'/><path d='M14 10 l4 4 l4 -4' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
+          "breakdown": ["con- (共同)", "duct (引导)"],
+          "imagery": "像指挥家一样，引导大家共同做某事。",
+          "translation": "指挥；实施",
+          "sentences": [
+            {
+              "en": "We are conducting a survey.",
+              "cn": "我们正在开展（引导大家做）一项调查。"
+            }
+          ]
+        },
+        {
+          "word": "Confuse",
+          "rootVisual": "<path d='M8 8 q 4 4 8 0 q -4 4 0 8' stroke='currentColor' fill='none'/><path d='M8 12 q 4 -4 8 0 q -4 -4 0 -8' stroke='currentColor' fill='none'/><text x='10' y='14' font-size='8' fill='currentColor'>?</text>",
+          "breakdown": ["con- (全部)", "fus (流)"],
+          "imagery": "不同的液体全部流到一起，分不清楚了，令人困惑。",
+          "translation": "使困惑",
+          "sentences": [
+            {
+              "en": "The diagrams are confusing.",
+              "cn": "这些图表让人困惑（像混在一起流不清楚）。"
+            }
+          ]
+        },
+        {
+          "word": "Compromise",
+          "rootVisual": "<path d='M4 12 h6 l2 -2 l2 2 h6' stroke='currentColor' fill='none'/><path d='M12 12 v4' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["com- (共同)", "promise (承诺)"],
+          "imagery": "双方共同做出承诺，各退一步，达成和解。",
+          "translation": "妥协",
+          "sentences": [
+            {
+              "en": "He never compromises with the bosses.",
+              "cn": "他从不向老板妥协（共同承诺退让）。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

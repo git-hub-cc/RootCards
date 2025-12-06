@@ -142,15 +142,21 @@ export function stopAudio() {
 
 export function renderGradeButtons(container, grades) {
     container.innerHTML = '';
-    const gradeMap = { 'grade7': 'Grade 7', 'grade8': 'Grade 8', 'grade9': 'Grade 9' };
+    // 【核心修改】更新 gradeMap 以包含对 'grade7' (初中) 的中文显示
+    const gradeMap = {
+        'grade7': '初中',
+        'high': '高中'
+    };
     ['all', ...grades].forEach(gradeId => {
         const button = document.createElement('button');
         button.className = 'grade-filter-btn';
         button.dataset.grade = gradeId;
-        button.textContent = gradeMap[gradeId] || (gradeId === 'all' ? 'All Grades' : gradeId);
+        // 使用 gradeMap 查找显示文本，如果找不到则使用 gradeId 作为备用
+        button.textContent = gradeMap[gradeId] || (gradeId === 'all' ? '全部阶段' : gradeId);
         container.appendChild(button);
     });
 }
+
 
 export function updateActiveGradeButton(container, clickedButton) {
     container.querySelectorAll('.grade-filter-btn').forEach(btn => btn.classList.remove('active'));

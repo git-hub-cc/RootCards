@@ -1,0 +1,66 @@
+{
+  "prefix": "fend",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "fend_strike",
+      "displayName": "fend (打击/抵御)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M4 4 l16 16 M20 4 l-16 16' stroke='currentColor' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "词根 -fend-",
+        "description": "核心意境是 **“打击” (Strike)** 或 **“抵御” (Defend)**。\n表示攻击或防御的动作。",
+        "imagery": "联想盾牌🛡️抵挡攻击，或者剑⚔️进行攻击。"
+      },
+      "words": [
+        {
+          "word": "Fend",
+          "rootVisual": "<path d='M12 12 l-4 4 m 8 -8 l -4 4' stroke='currentColor'/>",
+          "breakdown": ["fend (抵御)"],
+          "imagery": "挡开攻击；照料（fend for）。",
+          "translation": "抵御；照料",
+          "sentences": [
+            {
+              "en": "Fend off questions.",
+              "cn": "避开问题。"
+            }
+          ]
+        },
+        {
+          "word": "Fence",
+          "rootVisual": "<path d='M4 14 h16 M6 10 v8 M10 10 v8 M14 10 v8 M18 10 v8' stroke='currentColor'/>",
+          "breakdown": ["fence (篱笆)"],
+          "imagery": "用来抵御外敌或保护家园的屏障。",
+          "translation": "篱笆",
+          "sentences": []
+        },
+        {
+          "word": "Defend",
+          "rootVisual": "<path d='M12 4 l-8 4 v6 c0 5 8 8 8 8 c0 0 8 -3 8 -8 v-6 z' stroke='currentColor' fill='none'/>",
+          "breakdown": ["de- (加强)", "fend (抵御)"],
+          "imagery": "加强抵御，保护。",
+          "translation": "防御；保卫",
+          "sentences": [
+            {
+              "en": "Defend our homeland.",
+              "cn": "保卫祖国。"
+            }
+          ]
+        },
+        {
+          "word": "Offend",
+          "rootVisual": "<path d='M4 12 h12' stroke='currentColor' marker-end='url(#arrow)'/><path d='M18 8 v8' stroke='currentColor'/>",
+          "breakdown": ["of- (逆/去)", "fend (打击)"],
+          "imagery": "逆着别人去打击，即冒犯。",
+          "translation": "冒犯；得罪",
+          "sentences": [
+            {
+              "en": "I didn't mean to offend you.",
+              "cn": "我不是故意冒犯你。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

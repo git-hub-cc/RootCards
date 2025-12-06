@@ -1,0 +1,36 @@
+{
+  "prefix": "solv",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "solv_loosen",
+      "displayName": "solv/solut (松/解)",
+      "themeColor": "#06b6d4",
+      "prefixVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 4'/><path d='M12 8 v8' stroke='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -solv-/-solut-",
+        "description": "核心意境是 **“松开” (Loosen)** 或 **“溶解” (Dissolve)**。\n源于 loose。表示解决、分解或溶解。",
+        "imagery": "联想解开绳结🪢，或者糖溶于水🧪。",
+        "visual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 4'/><path d='M12 8 v8' stroke='currentColor'/>"
+      },
+      "words": [
+        {
+          "word": "Solve",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 6 l12 12' stroke='currentColor' color='#10b981'/><path d='M18 6 l-12 12' stroke='currentColor' color='#10b981'/>",
+          "breakdown": ["solv (松/解)"],
+          "imagery": "把问题分解、变松散，即解决。",
+          "translation": "解决",
+          "sentences": []
+        },
+        {
+          "word": "Solution",
+          "rootVisual": "<path d='M6 18 q 6 -4 12 0' stroke='currentColor' fill='none'/><circle cx='8' cy='14' r='1' fill='currentColor'/><circle cx='12' cy='12' r='1' fill='currentColor'/><circle cx='16' cy='14' r='1' fill='currentColor'/>",
+          "breakdown": ["solut (解/溶)", "-ion"],
+          "imagery": "解决方法；溶液（溶质分散开）。",
+          "translation": "解决方法；溶液",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

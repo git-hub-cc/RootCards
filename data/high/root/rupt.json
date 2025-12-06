@@ -1,0 +1,52 @@
+{
+  "prefix": "rupt",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "rupt_break",
+      "displayName": "rupt (断/破)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M4 12 l6 -4 l4 8 l6 -4' stroke='currentColor' stroke-width='2'/><path d='M12 2 v20' stroke='currentColor' stroke-dasharray='2 2' opacity='0.5'/>",
+      "prefixIntro": {
+        "title": "词根 -rupt-",
+        "description": "核心意境是 **“断裂” (Break)** 或 **“爆发” (Burst)**。\n表示打断、破坏或喷发。",
+        "imagery": "联想火山爆发🌋，或者断裂的绳子。",
+        "visual": "<path d='M4 12 l6 -4 l4 8 l6 -4' stroke='currentColor' stroke-width='2'/><path d='M12 2 v20' stroke='currentColor' stroke-dasharray='2 2' opacity='0.5'/>"
+      },
+      "words": [
+        {
+          "word": "Erupt",
+          "rootVisual": "<path d='M4 20 l8 -12 l8 12 z' fill='currentColor'/><path d='M12 8 v-6' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='2' r='1' fill='currentColor' color='#ef4444'/>",
+          "breakdown": ["e- (出)", "rupt (断)"],
+          "imagery": "断裂开并向外喷发（火山）。",
+          "translation": "爆发；喷发",
+          "sentences": []
+        },
+        {
+          "word": "Interrupt",
+          "rootVisual": "<path d='M2 12 h20' stroke='currentColor' stroke-width='2'/><rect x='10' y='8' width='4' height='8' fill='currentColor' color='#ef4444'/>",
+          "breakdown": ["inter- (中间)", "rupt (断)"],
+          "imagery": "在中间打断。",
+          "translation": "打断",
+          "sentences": []
+        },
+        {
+          "word": "Abrupt",
+          "rootVisual": "<path d='M4 18 h6 l4 -10 h6' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["ab- (离)", "rupt (断)"],
+          "imagery": "突然断开，突兀的。",
+          "translation": "突然的",
+          "sentences": []
+        },
+        {
+          "word": "Corrupt",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><path d='M8 8 l8 8 M16 8 l-8 8' stroke='currentColor'/>",
+          "breakdown": ["cor- (全)", "rupt (坏)"],
+          "imagery": "全都坏掉了，腐败。",
+          "translation": "贪污；腐败的",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

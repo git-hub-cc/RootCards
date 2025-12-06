@@ -1,0 +1,67 @@
+{
+  "prefix": "circ",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "circ_round",
+      "displayName": "circ/cycl (圆/环)",
+      "themeColor": "#06b6d4",
+      "prefixVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-width='2'/>",
+      "prefixIntro": {
+        "title": "词根 -circ-/-cycl-",
+        "description": "核心意境是 **“圆” (Circle)** 或 **“环绕” (Cycle)**。\n表示圆形物体或循环运动。",
+        "imagery": "联想一个圆圈⭕，或者自行车轮子🚲。"
+      },
+      "words": [
+        {
+          "word": "Circle",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/>",
+          "breakdown": ["circ (圆)", "-le (小)"],
+          "imagery": "一个圆圈。",
+          "translation": "圆圈",
+          "sentences": []
+        },
+        {
+          "word": "Cycle",
+          "rootVisual": "<path d='M12 4 a 8 8 0 1 1 0 16 a 8 8 0 1 1 0 -16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
+          "breakdown": ["cycl (圆/环)"],
+          "imagery": "周而复始的循环。",
+          "translation": "循环；周期",
+          "sentences": []
+        },
+        {
+          "word": "Recycle",
+          "rootVisual": "<path d='M12 4 a 8 8 0 1 1 -4 14' stroke='currentColor' fill='none'/><path d='M8 18 l4 -4 m-4 4 l-4 -4' stroke='currentColor'/>",
+          "breakdown": ["re- (再)", "cycle (循环)"],
+          "imagery": "再次进入循环使用。",
+          "translation": "回收利用",
+          "sentences": []
+        },
+        {
+          "word": "Circus",
+          "rootVisual": "<ellipse cx='12' cy='16' rx='10' ry='4' stroke='currentColor' fill='none'/><path d='M12 4 l-8 12 h16 z' stroke='currentColor' fill='none'/>",
+          "breakdown": ["circ (圆)", "-us (名)"],
+          "imagery": "马戏团的表演通常在圆形场地进行。",
+          "translation": "马戏团",
+          "sentences": []
+        },
+        {
+          "word": "Circuit",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' rx='4'/>",
+          "breakdown": ["circu (圆)", "-it (走)"],
+          "imagery": "绕着圈走，如电路或环形赛道。",
+          "translation": "电路；巡回",
+          "sentences": []
+        },
+        {
+          "word": "Circumstance",
+          "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
+          "breakdown": ["circum- (周围)", "stan (站)"],
+          "imagery": "站在周围的事物，即环境或情况。",
+          "translation": "环境；情况",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

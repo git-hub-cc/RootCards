@@ -1,0 +1,48 @@
+{
+  "prefix": "gest",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "gest_carry",
+      "displayName": "gest (带/运)",
+      "themeColor": "#f97316",
+      "prefixVisual": "<rect x='4' y='12' width='16' height='4' fill='currentColor' opacity='0.3'/><circle cx='8' cy='10' r='2' fill='currentColor'/><circle cx='16' cy='10' r='2' fill='currentColor'/>",
+      "prefixIntro": {
+        "title": "词根 -gest-",
+        "description": "核心意境是 **“携带” (Carry)** 或 **“运输” (Transport)**。\n表示传送、带来。",
+        "imagery": "联想一辆运输车🚛，或者手递手传递东西。"
+      },
+      "words": [
+        {
+          "word": "Suggest",
+          "rootVisual": "<path d='M12 4 v4' stroke='currentColor' marker-end='url(#arrow)'/><rect x='8' y='10' width='8' height='6' stroke='currentColor' fill='none'/>",
+          "breakdown": ["sug- (下)", "gest (带)"],
+          "imagery": "从下面带出想法，提议。",
+          "translation": "建议",
+          "sentences": [
+            {
+              "en": "She suggested meeting for a drink.",
+              "cn": "她建议去喝一杯。"
+            }
+          ]
+        },
+        {
+          "word": "Digest",
+          "rootVisual": "<path d='M12 4 v16' stroke='currentColor' stroke-dasharray='2 2'/><path d='M12 12 l-4 4 m 8 -4 l 4 4' stroke='currentColor'/>",
+          "breakdown": ["di- (分)", "gest (运)"],
+          "imagery": "把食物分开运输到身体各处，即消化。",
+          "translation": "消化；摘要",
+          "sentences": []
+        },
+        {
+          "word": "Register",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M9 8 h6 M9 12 h6' stroke='currentColor'/>",
+          "breakdown": ["re- (回)", "gister (gest带)"],
+          "imagery": "带回来记录在案。",
+          "translation": "登记；注册",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

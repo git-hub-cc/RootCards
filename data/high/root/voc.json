@@ -1,0 +1,60 @@
+{
+  "prefix": "voc",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "voc_voice",
+      "displayName": "voc/vok (声/喊)",
+      "themeColor": "#ef4444",
+      "prefixVisual": "<path d='M4 12 q 4 -4 8 0' stroke='currentColor' fill='none'/><path d='M14 12 h6' stroke='currentColor' stroke-width='2' stroke-dasharray='2 2'/>",
+      "prefixIntro": {
+        "title": "词根 -voc-/-vok-",
+        "description": "核心意境是 **“声音” (Voice)** 或 **“喊叫” (Call)**。\n表示说话、召唤。",
+        "imagery": "联想扩音器📣，或者声波〰️。",
+        "visual": "<path d='M4 12 q 4 -4 8 0' stroke='currentColor' fill='none'/><path d='M14 12 h6' stroke='currentColor' stroke-width='2' stroke-dasharray='2 2'/>"
+      },
+      "words": [
+        {
+          "word": "Vocal",
+          "rootVisual": "<path d='M8 12 q 4 -6 8 0' stroke='currentColor' fill='none'/><circle cx='12' cy='14' r='2' fill='currentColor'/>",
+          "breakdown": ["voc (声)", "-al"],
+          "imagery": "声音的，有声的。",
+          "translation": "声音的；嗓音的",
+          "sentences": []
+        },
+        {
+          "word": "Vocabulary",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8' stroke='currentColor'/>",
+          "breakdown": ["voc (声/词)", "-bulary"],
+          "imagery": "能够发出的声音（词汇）汇集。",
+          "translation": "词汇；词汇量",
+          "sentences": []
+        },
+        {
+          "word": "Advocate",
+          "rootVisual": "<path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/><path d='M8 12 h8' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": ["ad- (加强)", "voc (喊)", "-ate"],
+          "imagery": "大声喊（去支持），提倡。",
+          "translation": "提倡；拥护",
+          "sentences": []
+        },
+        {
+          "word": "Vote",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M9 12 l2 2 l4 -4' stroke='currentColor'/>",
+          "breakdown": ["vot (誓言/声)", "e"],
+          "imagery": "通过发声/宣誓来选择。",
+          "translation": "投票；选举",
+          "sentences": []
+        },
+        {
+          "word": "Devote",
+          "rootVisual": "<path d='M12 14 l-2 2 h4 z' fill='currentColor'/><circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["de- (加强)", "vote (誓)"],
+          "imagery": "加强誓言，全身心投入。",
+          "translation": "奉献；致力于",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

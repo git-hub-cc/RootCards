@@ -1,0 +1,51 @@
+{
+  "prefix": "fl",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "fl_fly",
+      "displayName": "fl- (飞/流动)",
+      "themeColor": "#0ea5e9",
+      "prefixVisual": "<path d='M4 16 q 8 -12 16 0' stroke='currentColor' fill='none'/>",
+      "prefixIntro": {
+        "title": "词根 fl-",
+        "description": "核心意境是 **“飞” (Fly)** 或 **“流动” (Flow)**。\n表示轻盈、快速移动或闪烁。",
+        "imagery": "联想一只飞鸟🐦，或者闪烁的火苗🔥。"
+      },
+      "words": [
+        {
+          "word": "Fly",
+          "rootVisual": "<path d='M2 12 l6 -6 l6 6 l-12 0' fill='currentColor'/>",
+          "breakdown": ["fly (飞)"],
+          "imagery": "飞翔的动作。",
+          "translation": "飞",
+          "sentences": []
+        },
+        {
+          "word": "Flame",
+          "rootVisual": "<path d='M12 18 q -4 -10 0 -14 q 4 4 0 14' fill='currentColor' color='#f97316'/>",
+          "breakdown": ["fl (飞/闪)", "-ame"],
+          "imagery": "向上飞窜的火舌。",
+          "translation": "火焰",
+          "sentences": []
+        },
+        {
+          "word": "Flash",
+          "rootVisual": "<path d='M12 2 l-2 8 h4 l-2 8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["fl (飞/闪)"],
+          "imagery": "空中飞过的闪电，瞬间的光亮。",
+          "translation": "闪光；闪现",
+          "sentences": []
+        },
+        {
+          "word": "Flatter",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 14 q 4 4 8 0' stroke='currentColor'/>",
+          "breakdown": ["flat (平/拍)", "-er"],
+          "imagery": "把人捧上天（飞起来），或者拍马屁。",
+          "translation": "奉承",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}

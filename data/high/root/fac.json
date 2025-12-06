@@ -1,0 +1,51 @@
+{
+  "prefix": "fac",
+  "affixType": "root",
+  "meanings": [
+    {
+      "meaningId": "fac_make",
+      "displayName": "fac/fic (做)",
+      "themeColor": "#f97316",
+      "prefixVisual": "<path d='M4 12 l4 4 l8 -8' stroke='currentColor' stroke-width='3' fill='none'/>",
+      "prefixIntro": {
+        "title": "词根 -fac-/-fic-",
+        "description": "核心意境是 **“做” (Make/Do)**。\n表示制作、行动或产生。",
+        "imagery": "联想一只正在工作的手✋，或者工厂的齿轮⚙️。"
+      },
+      "words": [
+        {
+          "word": "Fact",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M9 12 l2 2 l4 -4' stroke='currentColor'/>",
+          "breakdown": ["fact (做)"],
+          "imagery": "已经做出来、发生过的事情，即事实。",
+          "translation": "事实",
+          "sentences": []
+        },
+        {
+          "word": "Factory",
+          "rootVisual": "<path d='M4 20 h16 v-8 l-4 -4 l-4 4 l-4 -4 v8 z' stroke='currentColor' fill='none'/>",
+          "breakdown": ["fact (做)", "-ory (地点)"],
+          "imagery": "做东西的地方。",
+          "translation": "工厂",
+          "sentences": []
+        },
+        {
+          "word": "Artificial",
+          "rootVisual": "<path d='M12 4 v8' stroke='currentColor'/><circle cx='12' cy='16' r='2' fill='currentColor'/>",
+          "breakdown": ["art (艺术)", "fic (做)", "-ial"],
+          "imagery": "用技艺（art）做出来的，非自然的。",
+          "translation": "人工的；人造的",
+          "sentences": []
+        },
+        {
+          "word": "Fiction",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M8 8 h8' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": ["fic (做/编造)", "-tion (名)"],
+          "imagery": "编造出来的故事。",
+          "translation": "小说；虚构",
+          "sentences": []
+        }
+      ]
+    }
+  ]
+}
