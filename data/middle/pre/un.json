@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Uncrowded",
+          "word": "uncrowded",
           "rootVisual": "<circle cx='8' cy='10' r='3' stroke='currentColor' fill='none'/><path d='M8 13 v6' stroke='currentColor'/><circle cx='16' cy='10' r='3' stroke='currentColor' fill='none'/><path d='M16 13 v6' stroke='currentColor'/>",
           "breakdown": ["un- (不)", "crowd (人群)"],
           "imagery": "把拥挤的人群（crowd）拿走，空间就变得宽敞了。",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "word": "Uncomfortable",
+          "word": "uncomfortable",
           "rootVisual": "<path d='M4 16 h16 q 0 -6 -3 -8 h-10 q -3 2 -3 8' stroke='currentColor' fill='none' stroke-width='2'/>",
           "breakdown": ["un- (不)", "fort (强壮/舒适)"],
           "imagery": "拿走了让人感觉支撑有力（fort）的靠垫，坐着就不舒服了。",
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "word": "Uneasy",
+          "word": "uneasy",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 16 c 2 -2 6 -2 8 0' stroke='currentColor' stroke-width='2' fill='none'/>",
           "breakdown": ["un- (不)", "eas (舒适/安逸)"],
           "imagery": "心里原本平稳的线条被打乱了，不再安逸（eas），感到焦虑。",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "word": "Unexpected",
+          "word": "unexpected",
           "rootVisual": "<path d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/>",
           "breakdown": ["un- (不)", "spect (看)"],
           "imagery": "发生了眼睛（spect）没有预先看到的事情，出乎意料。",
@@ -65,7 +65,7 @@
           ]
         },
         {
-          "word": "Unusual",
+          "word": "unusual",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M8 8 l8 8 M16 8 l-8 8' stroke='currentColor'/>",
           "breakdown": ["un- (不)", "us (使用/习惯)"],
           "imagery": "这不是平常习惯使用（us）的方式，是一个特例。",
@@ -78,7 +78,7 @@
           ]
         },
         {
-          "word": "Unknown",
+          "word": "unknown",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><text x='12' y='14' font-size='10' text-anchor='middle' fill='currentColor'>?</text>",
           "breakdown": ["un- (不)", "know (知道)"],
           "imagery": "不知道的，即未知的。",
@@ -86,7 +86,7 @@
           "sentences": []
         },
         {
-          "word": "Unable",
+          "word": "unable",
           "rootVisual": "<path d='M6 12 l4 4 l8 -8' stroke='currentColor' opacity='0.2'/><path d='M6 6 l12 12 M18 6 l-12 12' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["un- (不)", "able (能)"],
           "imagery": "不能够做某事。",

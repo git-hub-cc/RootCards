@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Multiply",
+          "word": "multiply",
           "rootVisual": "<text x='12' y='16' font-size='14' text-anchor='middle' fill='currentColor'>×</text>",
           "breakdown": ["multi (多)", "ply (折叠)"],
           "imagery": "多次折叠，成倍增加。",
@@ -28,7 +28,7 @@
           ]
         },
         {
-          "word": "Multiple",
+          "word": "multiple",
           "rootVisual": "<rect x='4' y='4' width='6' height='6' fill='currentColor'/><rect x='12' y='4' width='6' height='6' fill='currentColor'/><rect x='4' y='12' width='6' height='6' fill='currentColor'/><rect x='12' y='12' width='6' height='6' fill='currentColor'/>",
           "breakdown": ["multi (多)", "-ple (倍)"],
           "imagery": "多重的，多个的。",
@@ -41,7 +41,7 @@
           ]
         },
         {
-          "word": "Multitude",
+          "word": "multitude",
           "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><circle cx='9' cy='8' r='2' fill='currentColor'/><circle cx='15' cy='8' r='2' fill='currentColor'/>",
           "breakdown": ["multi (多)", "-tude (名)"],
           "imagery": "大量的人或物。",

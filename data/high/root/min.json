@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Mini",
+          "word": "mini",
           "rootVisual": "<circle cx='12' cy='12' r='3' fill='currentColor'/>",
           "breakdown": ["mini (小)"],
           "imagery": "迷你的，小的。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Minute",
+          "word": "minute",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 v-8' stroke='currentColor'/>",
           "breakdown": ["min (小)", "-ute"],
           "imagery": "时间的小单位（分）；微小的。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Minus",
+          "word": "minus",
           "rootVisual": "<path d='M8 12 h8' stroke='currentColor' stroke-width='4'/>",
           "breakdown": ["min (小)", "-us"],
           "imagery": "减去，变小。",
@@ -43,7 +43,7 @@
           ]
         },
         {
-          "word": "Minor",
+          "word": "minor",
           "rootVisual": "<circle cx='8' cy='12' r='3' fill='currentColor'/><circle cx='16' cy='12' r='6' stroke='currentColor' fill='none'/>",
           "breakdown": ["min (小)", "-or (较)"],
           "imagery": "较小的，次要的。",
@@ -51,7 +51,7 @@
           "sentences": []
         },
         {
-          "word": "Minister",
+          "word": "minister",
           "rootVisual": "<circle cx='12' cy='8' r='3' fill='currentColor'/><path d='M12 11 v6' stroke='currentColor'/>",
           "breakdown": ["mini (小)", "-ster (人)"],
           "imagery": "原本指仆人（小人），后指为国家服务的部长。",
@@ -59,7 +59,7 @@
           "sentences": []
         },
         {
-          "word": "Administer",
+          "word": "administer",
           "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none'/><path d='M8 8 h8' stroke='currentColor'/>",
           "breakdown": ["ad- (去)", "minister (服务/管理)"],
           "imagery": "去管理，去执行。",

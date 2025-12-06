@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Humorous",
+          "word": "humorous",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 14 q 4 4 8 0' stroke='currentColor' stroke-width='2'/><circle cx='8' cy='9' r='1.5' fill='currentColor'/><circle cx='16' cy='9' r='1.5' fill='currentColor'/>",
           "breakdown": ["humor (幽默)", "-ous (充满...的)"],
           "imagery": "一张大大的笑脸，笑声仿佛要溢出来。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Famous",
+          "word": "famous",
           "rootVisual": "<path d='M12 2 L15.09 8.26 L22 9.27 L17 14.14 L18.18 21.02 L12 17.77 L5.82 21.02 L7 14.14 L2 9.27 L8.91 8.26 Z' fill='none' stroke='currentColor' stroke-width='2' stroke-linejoin='round'/>",
           "breakdown": ["fame (名声)", "-ous (充满...的)"],
           "imagery": "一颗闪耀的星星，光芒向外辐射。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Dangerous",
+          "word": "dangerous",
           "rootVisual": "<path d='M12 4 L20 20 H4 Z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 10 v5' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='17' r='1' fill='currentColor'/>",
           "breakdown": ["danger (危险)", "-ous (充满...的)"],
           "imagery": "一个三角形的警告标志，里面充满惊叹号。",

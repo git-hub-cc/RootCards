@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Prose",
+          "word": "prose",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><line x1='6' y1='8' x2='18' y2='8' stroke='currentColor'/><line x1='6' y1='12' x2='18' y2='12' stroke='currentColor'/><line x1='6' y1='16' x2='14' y2='16' stroke='currentColor'/>",
           "breakdown": [
             "pro- (向前)",
@@ -25,7 +25,7 @@
           "sentences": []
         },
         {
-          "word": "Probe",
+          "word": "probe",
           "rootVisual": "<circle cx='10' cy='10' r='6' stroke='currentColor' fill='none' stroke-width='2'/><line x1='14' y1='14' x2='20' y2='20' stroke='currentColor' stroke-width='2'/><path d='M10 12v4' stroke='currentColor'/><circle cx='10' cy='14' r='1' fill='currentColor'/>",
           "breakdown": [
             "pro- (向前)",
@@ -41,7 +41,7 @@
           ]
         },
         {
-          "word": "Prone",
+          "word": "prone",
           "rootVisual": "<circle cx='18' cy='6' r='3' stroke='currentColor' fill='none'/><path d='M16 8l-6 6-4 4' stroke='currentColor' stroke-width='2'/><path d='M10 14l-4 4' stroke='currentColor'/><path d='M2 20h20' stroke='currentColor'/>",
           "breakdown": [
             "pro- (向前)",
@@ -57,7 +57,7 @@
           ]
         },
         {
-          "word": "Prop",
+          "word": "prop",
           "rootVisual": "<path d='M12 20l-4-16h8z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 20h8' stroke='currentColor'/>",
           "breakdown": [
             "pro- (向前/上)",
@@ -73,7 +73,7 @@
           ]
         },
         {
-          "word": "Propagate",
+          "word": "propagate",
           "rootVisual": "<path d='M4 12 l8 -6 l8 6 l-8 6 z' stroke='currentColor' fill='none'/><path d='M4 12 h-2 M20 12 h2 M12 6 v-2 M12 18 v2' stroke='currentColor'/>",
           "breakdown": [
             "pro- (向前)",
@@ -94,7 +94,7 @@
           ]
         },
         {
-          "word": "Propaganda",
+          "word": "propaganda",
           "rootVisual": "<path d='M4 4h12v10h-2l4 6h-4l-4-6h-6z' stroke='currentColor' fill='none'/><path d='M10 8h2' stroke='currentColor'/>",
           "breakdown": [
             "propagate",
@@ -110,7 +110,7 @@
           ]
         },
         {
-          "word": "Protocol",
+          "word": "protocol",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y1='12' x2='12' y2='12' stroke='currentColor'/><path d='M14 16l4 4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": [
             "proto (pro-向前/第一)",
@@ -126,7 +126,7 @@
           ]
         },
         {
-          "word": "Prototype",
+          "word": "prototype",
           "rootVisual": "<path d='M2 14l4-4 8 0 4 4' stroke='currentColor' fill='none'/><circle cx='6' cy='14' r='2' stroke='currentColor'/><circle cx='18' cy='14' r='2' stroke='currentColor'/>",
           "breakdown": [
             "proto (pro-向前)",

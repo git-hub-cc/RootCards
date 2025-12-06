@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Clear",
+          "word": "clear",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/>",
           "breakdown": ["clear (清楚)"],
           "imagery": "没有污点，清晰可见。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Clarify",
+          "word": "clarify",
           "rootVisual": "<path d='M8 12 h8' stroke='currentColor'/><path d='M16 12 l-4 -4 m4 4 l-4 4' stroke='currentColor'/>",
           "breakdown": ["clar (清楚)", "-ify (使)"],
           "imagery": "使事情变得清楚明白。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Declare",
+          "word": "declare",
           "rootVisual": "<path d='M12 14 l4 -4 h-8 z' fill='currentColor'/><path d='M12 14 v6' stroke='currentColor'/>",
           "breakdown": ["de- (加强)", "clar (清楚)"],
           "imagery": "加强使其清楚，大声宣告让所有人都明白。",

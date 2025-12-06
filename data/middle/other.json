@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Geography",
+          "word": "geography",
           "rootVisual": "<path d='M2 20h20' stroke='currentColor' stroke-width='2' stroke-linecap='round'/><path d='M4 20 L9 6 L12 14 L16 4 L22 20' stroke='currentColor' fill='none' stroke-width='2' stroke-linejoin='round'/><path d='M9 6 L7 20' stroke='currentColor' stroke-width='1' opacity='0.5'/>",
           "breakdown": ["Geo", "(大地)", "-graphy", "(描绘)"],
           "imagery": "高耸的山峰和崎岖的地形，象征着对地球 (Geo) 面貌的记录与描绘 (Graphy)。",
@@ -25,7 +25,7 @@
           ]
         },
         {
-          "word": "Habit",
+          "word": "habit",
           "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg'><path d='M 4 12 a 8 8 0 1 1 8 8 M 12 20 l 6 1 M 12 20 l 4 -4' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
           "breakdown": ["Habit", "(居住/拥有)"],
           "imagery": "一个循环的箭头，表示不断重复、周而复始的行为。",
@@ -36,7 +36,7 @@
           ]
         },
         {
-          "word": "Subject",
+          "word": "subject",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y1='12' x2='16' y2='12' stroke='currentColor'/><line x1='8' y1='16' x2='12' y2='16' stroke='currentColor'/>",
           "breakdown": ["Sub-", "(在下)", "Ject", "(投掷)"],
           "imagery": "一本教科书或笔记本的页面，列出了要学习的项目。",
@@ -46,7 +46,7 @@
           ]
         },
         {
-          "word": "Sweat",
+          "word": "sweat",
           "rootVisual": "<path d='M14.6 2.8c-1.8 2.5-6.6 8.3-6.6 12.2c0 3.9 3.1 7 7 7s7-3.1 7-7c0-3.9-5.5-10.4-7.4-12.2z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 7 l-3 3' stroke='currentColor' stroke-width='2'/><path d='M4 13 l-2 2' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["Sweat", "(汗)"],
           "imagery": "剧烈运动时，一颗带有速度感的汗珠飞溅而出，代表身体在努力降温。",
@@ -132,7 +132,7 @@
           "sentences": [{"en": "Most westerners believe that God created the world.", "cn": "大多数西方人相信上帝创造了世界。"}]
         },
         {
-          "word": "Dragon Boat Festival",
+          "word": "dragon boat festival",
           "rootVisual": "<path d='M2 15c0 0 5 4 10 4s9-5 9-5' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round'/><path d='M21 14l-1-3l2-2l-3 1l-1-2l-2 3' stroke='currentColor' fill='none' stroke-width='2' stroke-linejoin='round'/><path d='M2 15l-1-3l3 2' stroke='currentColor' fill='none' stroke-width='2' stroke-linejoin='round'/><path d='M7 17l-2 4 M12 18l-2 4 M17 17l-2 4' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
           "breakdown": ["Dragon Boat", "(龙舟)", "Festival", "(节日)"],
           "imagery": "一艘雕刻成龙形的细长独木舟，整齐划一的船桨如同龙爪，随着鼓点在水面上飞驰。",
@@ -142,7 +142,7 @@
           ]
         },
         {
-          "word": "Gift",
+          "word": "gift",
           "rootVisual": "<rect x='6' y='10' width='12' height='10' stroke='currentColor' fill='none' stroke-width='2'/><line x1='12' y1='10' x2='12' y2='20' stroke='currentColor'/><path d='M12 10 q -4 -8 -6 0 M12 10 q 4 -8 6 0' stroke='currentColor' fill='none'/>",
           "breakdown": ["Gift", "(礼物)"],
           "imagery": "一个方形盒子，上面打着蝴蝶结，象征惊喜和赠予。",
@@ -152,7 +152,7 @@
           ]
         },
         {
-          "word": "Kite",
+          "word": "kite",
           "rootVisual": "<path d='M12 2 l4 6 l-4 8 l-4 -8 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 16 q 4 4 0 8' stroke='currentColor' stroke-width='1.5'/>",
           "breakdown": ["Kite", "(风筝)"],
           "imagery": "一个菱形风筝，拖着一条波浪形的尾巴在空中飞翔。",
@@ -180,7 +180,7 @@
           ]
         },
         {
-          "word": "Giraffe",
+          "word": "giraffe",
           "rootVisual": "<rect x='6' y='14' width='8' height='6' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M14 14v-8a2 2 0 0 1 2-2h1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 20v2 M12 20v2' stroke='currentColor' stroke-width='2'/><path d='M16 4l-1-2 M18 4l1-2' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["Giraffe", "(长颈鹿)"],
           "imagery": "由简单的几何积木搭建而成，一个垂直的长方块代表其标志性的长脖子，稳固地连接在身体上。",
@@ -190,7 +190,7 @@
           ]
         },
         {
-          "word": "Koala",
+          "word": "koala",
           "rootVisual": "<path d='M7 6a3 3 0 1 0-4 4' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M17 6a3 3 0 1 1 4 4' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M4 10c0 4.5 3.5 9 8 9s8-4.5 8-9' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><rect x='10' y='10' width='4' height='5' rx='2' fill='currentColor'/><circle cx='8' cy='11' r='1' fill='currentColor' stroke='none'/><circle cx='16' cy='11' r='1' fill='currentColor' stroke='none'/>",
           "breakdown": [
             "Koala",

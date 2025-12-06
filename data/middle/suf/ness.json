@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Shyness",
+          "word": "shyness",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 10 h2 M14 10 h2' stroke='currentColor'/><path d='M8 16 q 4 -2 8 0' stroke='currentColor'/><rect x='4' y='10' width='6' height='10' fill='currentColor' opacity='0.2' transform='rotate(-20 7 15)'/>",
           "breakdown": ["shy (害羞)", "-ness (状态)"],
           "imagery": "脸颊泛红，想用手遮住脸，不敢直视。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Kindness",
+          "word": "kindness",
           "rootVisual": "<path d='M12 20 l-2 2 h4 l-2 -2 m0 -4 v4' stroke='currentColor'/><path d='M4 12 q 8 4 16 0' stroke='currentColor' fill='none'/><path d='M12 10 l-2 -2 a2 2 0 0 1 4 0 z' fill='currentColor' transform='translate(0, -2)'/>",
           "breakdown": ["kind (仁慈)", "-ness (状态)"],
           "imagery": "一双向上的手掌，托举着一颗爱心，给予温暖。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Sadness",
+          "word": "sadness",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='9' cy='10' r='1' fill='currentColor'/><circle cx='15' cy='10' r='1' fill='currentColor'/><path d='M9 16 q 3 -3 6 0' stroke='currentColor' fill='none'/><path d='M16 11 q 0 3 -2 5' stroke='currentColor' fill='none'/>",
           "breakdown": ["sad (悲伤)", "-ness (状态)"],
           "imagery": "一张嘴角向下的脸，旁边挂着一滴眼泪。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Fairness",
+          "word": "fairness",
           "rootVisual": "<line x1='4' y1='8' x2='20' y2='8' stroke='currentColor' stroke-width='2'/><path d='M12 4 v4 M12 8 l-4 4 M12 8 l4 4' stroke='currentColor'/><path d='M4 8 v4 h4 v-4 M16 8 v4 h4 v-4' stroke='currentColor' fill='none'/>",
           "breakdown": ["fair (公平)", "-ness (状态)"],
           "imagery": "一架完美平衡的天平，两边重量相等，不偏不倚。",
@@ -66,7 +66,7 @@
           ]
         },
         {
-          "word": "Illness",
+          "word": "illness",
           "rootVisual": "<rect x='10' y='4' width='4' height='16' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='16' r='1.5' fill='currentColor'/><line x1='12' y1='10' x2='12' y2='14' stroke='currentColor'/>",
           "breakdown": ["ill (病)", "-ness (状态)"],
           "imagery": "一支温度计，显示体温升高，处于生病状态。",
@@ -79,7 +79,7 @@
           ]
         },
         {
-          "word": "Sickness",
+          "word": "sickness",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 9 l3 3 m-3 0 l3 -3' stroke='currentColor'/><path d='M13 9 l3 3 m-3 0 l3 -3' stroke='currentColor'/><path d='M10 16 h4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["sick (恶心)", "-ness (状态)"],
           "imagery": "眼睛变成X形状的脸，表示晕眩、恶心或失去知觉。",

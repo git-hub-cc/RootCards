@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Opt",
+          "word": "opt",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><path d='M8 12 L10 14 L16 8' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["opt (选择)"],
           "imagery": "做出选择。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Option",
+          "word": "option",
           "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor' /><circle cx='18' cy='12' r='2' stroke='currentColor' fill='none' />",
           "breakdown": ["opt (选择)", "-ion"],
           "imagery": "可供选择的事物。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Optimum",
+          "word": "optimum",
           "rootVisual": "<path d='M4 18 L12 6 L20 18' stroke='currentColor' stroke-width='2' /><circle cx='12' cy='6' r='2' fill='currentColor' color='#f59e0b' />",
           "breakdown": ["optim (最好)", "-um"],
           "imagery": "最佳的选择，最好的状态。",
@@ -43,7 +43,7 @@
           ]
         },
         {
-          "word": "Optimism",
+          "word": "optimism",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 14 Q 12 18 16 14' stroke='currentColor' />",
           "breakdown": ["optim (最好)", "-ism"],
           "imagery": "凡事都看最好的一面。",

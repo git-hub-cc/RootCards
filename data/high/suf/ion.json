@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Education",
+          "word": "education",
           "rootVisual": "<path d='M 4 8 l 8 2 l 8 -2 v 10 l -8 4 l -8 -4 z M 12 10 v 12 M 12 22 l 0 0' stroke='currentColor' fill='none' stroke-width='2'/>",
           "breakdown": ["educ (引导/教育)", "-ation (名词)"],
           "imagery": "像打开一本书，或者被引导向上的阶梯，代表获取知识的过程。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Creation",
+          "word": "creation",
           "rootVisual": "<path d='M12 8 l-4 8 h8 z' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' fill='currentColor'/>",
           "breakdown": ["creat (创造)", "-ion (名词)"],
           "imagery": "创造出来的作品或创造的过程。",
@@ -35,7 +35,7 @@
           "sentences": []
         },
         {
-          "word": "Invention",
+          "word": "invention",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M9 12 h6 M12 9 v6' stroke='currentColor' opacity='0.5'/><circle cx='18' cy='6' r='3' fill='currentColor' opacity='0.3'/>",
           "breakdown": ["invent (发明)", "-ion (名词)"],
           "imagery": "发明出来的东西。",
@@ -43,7 +43,7 @@
           "sentences": []
         },
         {
-          "word": "Attention",
+          "word": "attention",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["at- (去)", "tent (伸展)", "-ion (名词)"],
           "imagery": "把精神伸展向某处，即注意。",
@@ -56,7 +56,7 @@
           ]
         },
         {
-          "word": "Decision",
+          "word": "decision",
           "rootVisual": "<path d='M12 4 v10' stroke='currentColor'/><path d='M12 14 l-4 4 M12 14 l4 4' stroke='currentColor'/>",
           "breakdown": ["decis (切)", "-ion (名词)"],
           "imagery": "做出的决定。",
@@ -64,7 +64,7 @@
           "sentences": []
         },
         {
-          "word": "Conclusion",
+          "word": "conclusion",
           "rootVisual": "<path d='M4 20 h16' stroke='currentColor'/><rect x='6' y='14' width='12' height='6' fill='currentColor' opacity='0.2'/>",
           "breakdown": ["conclud (结束)", "-ion (名词)"],
           "imagery": "事情结束后的总结。",
@@ -72,7 +72,7 @@
           "sentences": []
         },
         {
-          "word": "Suggestion",
+          "word": "suggestion",
           "rootVisual": "<path d='M4 16 h4 l4 4 l0 -4 h8 v-12 h-16 z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
           "breakdown": ["suggest (建议)", "-ion (名词)"],
           "imagery": "提出的建议。",
@@ -85,7 +85,7 @@
           ]
         },
         {
-          "word": "Collection",
+          "word": "collection",
           "rootVisual": "<path d='M6 8 v10 c0 2 2 3 6 3 s6 -1 6 -3 v-10' stroke='currentColor' fill='none' stroke-width='2'/><ellipse cx='12' cy='8' rx='6' ry='2' stroke='currentColor' fill='none'/><circle cx='10' cy='14' r='2' fill='currentColor'/><circle cx='14' cy='12' r='2' fill='currentColor' opacity='0.7'/>",
           "breakdown": ["collect (收集)", "-ion (名词)"],
           "imagery": "把选中的东西放在一起，就像硬币收集在罐子里。",
@@ -98,7 +98,7 @@
           ]
         },
         {
-          "word": "Discussion",
+          "word": "discussion",
           "rootVisual": "<path d='M4 12 q 8 -8 16 0' stroke='currentColor' fill='none'/><path d='M4 16 q 8 8 16 0' stroke='currentColor' fill='none'/><circle cx='8' cy='14' r='1' fill='currentColor'/><circle cx='16' cy='14' r='1' fill='currentColor'/>",
           "breakdown": ["discuss (讨论)", "-ion (名词)"],
           "imagery": "人们在一起交换意见。",
@@ -106,7 +106,7 @@
           "sentences": []
         },
         {
-          "word": "Competition",
+          "word": "competition",
           "rootVisual": "<path d='M4 18 l8 -16 l8 16' stroke='currentColor' fill='none'/><path d='M12 2 v16' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": ["compet (竞争)", "-ition (名词)"],
           "imagery": "比赛或竞争的过程。",
@@ -114,7 +114,7 @@
           "sentences": []
         },
         {
-          "word": "Graduation",
+          "word": "graduation",
           "rootVisual": "<path d='M4 14 h16 a2 2 0 0 1 2 2 v2 a2 2 0 0 1 -2 2 h-16 a2 2 0 0 1 -2 -2 v-2 a2 2 0 0 1 2 -2 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 14 v-4 l-2 2' stroke='currentColor'/><rect x='10' y='6' width='4' height='4' fill='currentColor'/>",
           "breakdown": ["gradu (毕业)", "-ation (名词)"],
           "imagery": "毕业典礼或状态。",
@@ -122,7 +122,7 @@
           "sentences": []
         },
         {
-          "word": "Congratulation",
+          "word": "congratulation",
           "rootVisual": "<path d='M8 20 l8 0 l2 -8 l-12 0 z' stroke='currentColor' fill='none'/><path d='M10 12 q -4 -8 -8 -4' stroke='currentColor'/><path d='M14 12 q 4 -8 8 -4' stroke='currentColor'/><circle cx='6' cy='6' r='1' fill='currentColor'/><circle cx='18' cy='6' r='1' fill='currentColor'/>",
           "breakdown": ["congratulat (祝贺)", "-ion (名词)"],
           "imagery": "共同高兴的时刻，就像拉响礼花筒，彩带飞舞。",
@@ -130,7 +130,7 @@
           "sentences": []
         },
         {
-          "word": "Communication",
+          "word": "communication",
           "rootVisual": "<path d='M2 12 a 6 6 0 0 1 6 -6' stroke='currentColor' fill='none'/><path d='M2 16 a 10 10 0 0 1 10 -10' stroke='currentColor' fill='none' opacity='0.5'/><path d='M22 12 a 6 6 0 0 0 -6 -6' stroke='currentColor' fill='none'/><path d='M22 16 a 10 10 0 0 0 -10 -10' stroke='currentColor' fill='none' opacity='0.5'/>",
           "breakdown": ["communicat (交流)", "-ion (名词)"],
           "imagery": "如同无线电波一样，双向发送和接收信号。",
@@ -143,7 +143,7 @@
           ]
         },
         {
-          "word": "Exhibition",
+          "word": "exhibition",
           "rootVisual": "<rect x='4' y='4' width='16' height='12' stroke='currentColor' fill='none'/><path d='M12 16 v4 h-4 m8 0 h-4' stroke='currentColor'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
           "breakdown": ["exhibit (展览)", "-ion (名词)"],
           "imagery": "把东西拿出来给大家看。",
@@ -151,7 +151,7 @@
           "sentences": []
         },
         {
-          "word": "Introduction",
+          "word": "introduction",
           "rootVisual": "<path d='M4 12 h4 l2 -4 h4 l2 4 h4' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["introduct (介绍)", "-ion (名词)"],
           "imagery": "把人或事物引入。",
@@ -159,7 +159,7 @@
           "sentences": []
         },
         {
-          "word": "Reduction",
+          "word": "reduction",
           "rootVisual": "<path d='M20 6 L4 18' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/>",
           "breakdown": ["reduct (减少)", "-ion (名词)"],
           "imagery": "数量向下减少。",

@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Careless",
+          "word": "careless",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><path d='M12 8 v4' stroke='currentColor'/><circle cx='12' cy='16' r='1' fill='currentColor'/>",
           "breakdown": ["care (小心)", "-less (无)"],
           "imagery": "心里空荡荡的，没有装“小心”，所以犯了错。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Meaningless",
+          "word": "meaningless",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' stroke-width='2' fill='none'/>",
           "breakdown": ["meaning (意义)", "-less (无)"],
           "imagery": "一个空心的圆，里面什么内容都没有，空洞无物。",

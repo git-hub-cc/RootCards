@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Remain",
+          "word": "remain",
           "rootVisual": "<path d='M12 12 H 4' stroke='currentColor' marker-end='url(#arrow)' /><circle cx='16' cy='12' r='4' fill='currentColor' opacity='0.5' />",
           "breakdown": ["re- (回)", "main (留)"],
           "imagery": "留下来，保持原状。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Remainder",
+          "word": "remainder",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' /><path d='M14 14 H 20 V 20 H 14 Z' fill='currentColor' />",
           "breakdown": ["remain (留)", "-der"],
           "imagery": "剩下的部分。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Remnant",
+          "word": "remnant",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='2 2' /><path d='M10 14 L14 18' stroke='currentColor' />",
           "breakdown": ["remn (remain变体)", "-ant"],
           "imagery": "残存的（通常指不好的、破碎的）。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Maintain",
+          "word": "maintain",
           "rootVisual": "<path d='M4 18 H 20' stroke='currentColor' stroke-width='2' /><path d='M12 18 V 6' stroke='currentColor' />",
           "breakdown": ["main (手)", "tain (拿)"],
           "imagery": "用手拿着不放，维持。",

@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Expect",
+          "word": "expect",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["ex- (外)", "spect (看)"],
           "imagery": "向外看，盼望。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Inspect",
+          "word": "inspect",
           "rootVisual": "<circle cx='10' cy='10' r='6' stroke='currentColor' fill='none'/><path d='M14 14 l6 6' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["in- (内)", "spect (看)"],
           "imagery": "往里面看，检查。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Suspect",
+          "word": "suspect",
           "rootVisual": "<path d='M12 12 l4 4' stroke='currentColor' stroke-dasharray='2 2'/><text x='8' y='14' font-size='12' fill='currentColor'>?</text>",
           "breakdown": ["su- (下)", "spect (看)"],
           "imagery": "在下面偷偷看，怀疑。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Aspect",
+          "word": "aspect",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 6 h6 v6' fill='currentColor' opacity='0.3'/>",
           "breakdown": ["a- (去)", "spect (看)"],
           "imagery": "看过去的一个面。",

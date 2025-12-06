@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Assign",
+          "word": "assign",
           "rootVisual": "<rect x='4' y='4' width='6' height='8' stroke='currentColor' fill='none' /><path d='M12 8 H 18' stroke='currentColor' marker-end='url(#arrow)' />",
           "breakdown": ["as- (去)", "sign (标记)"],
           "imagery": "去画圈指派任务。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Assignment",
+          "word": "assignment",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><path d='M8 8 H 16 M 8 12 H 14' stroke='currentColor' />",
           "breakdown": ["assign", "-ment"],
           "imagery": "分派下来的任务或作业。",

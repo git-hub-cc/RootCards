@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Force",
+          "word": "force",
           "rootVisual": "<path d='M4 12 H 16' stroke='currentColor' stroke-width='3' marker-end='url(#arrow)' />",
           "breakdown": ["forc (力量)", "e"],
           "imagery": "力量，武力。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Forge",
+          "word": "forge",
           "rootVisual": "<path d='M4 16 H 20' stroke='currentColor' stroke-width='2' /><path d='M12 4 V 16' stroke='currentColor' stroke-width='4' />",
           "breakdown": ["forg (打造)", "e"],
           "imagery": "用力敲打金属，锻造。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Fort",
+          "word": "fort",
           "rootVisual": "<path d='M4 12 L8 8 H16 L20 12 V 20 H4 Z' stroke='currentColor' fill='none' />",
           "breakdown": ["fort (堡垒)"],
           "imagery": "坚固的军事建筑。",
@@ -43,7 +43,7 @@
           "sentences": []
         },
         {
-          "word": "Fortify",
+          "word": "fortify",
           "rootVisual": "<rect x='6' y='8' width='12' height='12' stroke='currentColor' fill='none' stroke-width='2' /><path d='M2 20 H 22' stroke='currentColor' />",
           "breakdown": ["fort (强)", "-ify (使)"],
           "imagery": "使变得坚固，筑防御工事。",
@@ -56,7 +56,7 @@
           ]
         },
         {
-          "word": "Castle",
+          "word": "castle",
           "rootVisual": "<path d='M4 20 V 10 L 8 10 V 6 H 12 V 10 H 16 V 6 H 20 V 20 H 4 Z' stroke='currentColor' fill='none' />",
           "breakdown": ["cast (投)", "-le (小)"],
           "imagery": "有投射孔的小堡垒，引申为城堡。",

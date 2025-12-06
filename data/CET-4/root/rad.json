@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Eradicate",
+          "word": "eradicate",
           "rootVisual": "<path d='M12 16 L8 22 M12 16 L16 22' stroke='currentColor' opacity='0.3' /><path d='M4 4 L20 20 M20 4 L4 20' stroke='currentColor' stroke-width='2' color='#ef4444' />",
           "breakdown": ["e- (出)", "rad (根)", "-icate"],
           "imagery": "把根拔出来，根除。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Radiate",
+          "word": "radiate",
           "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor' color='#f59e0b' /><path d='M12 4 V 2 M 12 20 V 22 M 4 12 H 2 M 20 12 H 22' stroke='currentColor' />",
           "breakdown": ["rad (射)", "-iate"],
           "imagery": "像光线一样向外发散。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Radical",
+          "word": "radical",
           "rootVisual": "<path d='M12 20 V 10' stroke='currentColor' stroke-width='2' /><circle cx='12' cy='20' r='2' fill='currentColor' />",
           "breakdown": ["rad (根)", "-ical"],
           "imagery": "从根部开始的，根本的；激进的（想从根上改变）。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Radioactive",
+          "word": "radioactive",
           "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor' /><path d='M12 8 L16 4 M12 8 L8 4 M16 16 L20 20' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["radio (辐射)", "active (活跃)"],
           "imagery": "活跃地向外辐射能量。",

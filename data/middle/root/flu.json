@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Influence",
+          "word": "influence",
           "rootVisual": "<path d='M12 2 v6' stroke='currentColor'/><path d='M12 8 c 0 4 -4 4 -4 8 s 4 4 4 8' stroke='currentColor' fill='none'/><path d='M12 8 c 0 4 4 4 4 8 s -4 4 -4 8' stroke='currentColor' fill='none'/>",
           "breakdown": ["in- (流入)", "flu (流)", "-ence (名)"],
           "imagery": "像水流一样流入（in-）他人的心田，产生潜移默化的作用。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Flu",
+          "word": "flu",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12 h8' stroke='currentColor'/><path d='M12 8 v8' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": ["flu (流)"],
           "imagery": "Influenza 的缩写。像水流一样快速传播的疾病。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Flush",
+          "word": "flush",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M12 18 v-4 l-2 -2 m 4 0 l -2 2' stroke='currentColor'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
           "breakdown": ["flu (流)", "-sh (拟声)"],
           "imagery": "血液流向脸部导致脸红；或者水流冲刷马桶。",
@@ -57,7 +57,7 @@
           ]
         },
         {
-          "word": "Float",
+          "word": "float",
           "rootVisual": "<path d='M2 16 q 5 -3 10 0 t 10 0' stroke='currentColor' fill='none'/><rect x='8' y='10' width='8' height='6' stroke='currentColor' fill='none'/><path d='M12 10 v-4 l 3 2 z' fill='currentColor'/>",
           "breakdown": ["float (漂流)"],
           "imagery": "物体在水面上随波逐流。",
@@ -70,7 +70,7 @@
           ]
         },
         {
-          "word": "Affluent",
+          "word": "affluent",
           "rootVisual": "<path d='M12 20 l-4 -4 h8 z' fill='currentColor'/><path d='M4 10 q 8 -5 16 0' stroke='currentColor' fill='none' stroke-width='2'/>",
           "breakdown": ["af- (加强)", "flu (流)", "-ent (形)"],
           "imagery": "财富像水流一样源源不断地（加强流）涌来。",

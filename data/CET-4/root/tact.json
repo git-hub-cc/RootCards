@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Contact",
+          "word": "contact",
           "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none' /><circle cx='16' cy='12' r='4' stroke='currentColor' fill='none' /><path d='M12 12 H 12' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["con- (共)", "tact (触)"],
           "imagery": "共同接触，联系。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Intact",
+          "word": "intact",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' stroke-width='2' fill='none' />",
           "breakdown": ["in- (未)", "tact (触)"],
           "imagery": "未被触碰过的，完好无损的。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Contagious",
+          "word": "contagious",
           "rootVisual": "<circle cx='6' cy='12' r='3' fill='currentColor' color='#ef4444' /><circle cx='12' cy='12' r='3' fill='currentColor' color='#ef4444' /><circle cx='18' cy='12' r='3' fill='currentColor' color='#ef4444' />",
           "breakdown": ["con- (共)", "tag (触)", "-ious"],
           "imagery": "共同接触而传播的，传染的。",
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "word": "Contaminate",
+          "word": "contaminate",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 8 L16 16 M16 8 L8 16' stroke='currentColor' />",
           "breakdown": ["con- (共)", "tam (touch)", "-inate"],
           "imagery": "接触到脏东西，污染。",
@@ -61,7 +61,7 @@
           ]
         },
         {
-          "word": "Attach",
+          "word": "attach",
           "rootVisual": "<rect x='6' y='8' width='8' height='8' stroke='currentColor' fill='none' /><path d='M14 12 H 18' stroke='currentColor' marker-start='url(#arrow)' />",
           "breakdown": ["at- (去)", "tach (触)"],
           "imagery": "去接触贴上，附上。",
@@ -74,7 +74,7 @@
           ]
         },
         {
-          "word": "Detach",
+          "word": "detach",
           "rootVisual": "<rect x='4' y='8' width='6' height='8' stroke='currentColor' fill='none' /><rect x='14' y='8' width='6' height='8' stroke='currentColor' fill='none' /><path d='M10 12 H 14' stroke='currentColor' stroke-dasharray='2 2' />",
           "breakdown": ["de- (离)", "tach (触)"],
           "imagery": "脱离接触，分开。",

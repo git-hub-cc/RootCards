@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Bare",
+          "word": "bare",
           "rootVisual": "<rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none' stroke-dasharray='1 2' />",
           "breakdown": ["bar (光秃)", "e"],
           "imagery": "像剥了皮的木条一样，赤裸的。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Barely",
+          "word": "barely",
           "rootVisual": "<rect x='4' y='18' width='2' height='4' fill='currentColor' />",
           "breakdown": ["bare (光)", "-ly"],
           "imagery": "光秃秃的，几乎没有。",
@@ -35,7 +35,7 @@
           "sentences": []
         },
         {
-          "word": "Barren",
+          "word": "barren",
           "rootVisual": "<path d='M2 18 Q 12 14 22 18' stroke='currentColor' fill='none' /><circle cx='6' cy='10' r='1' fill='currentColor' opacity='0.2' />",
           "breakdown": ["bar (光秃)", "-ren"],
           "imagery": "光秃秃的土地，不长庄稼。",
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "word": "Barrier",
+          "word": "barrier",
           "rootVisual": "<rect x='4' y='14' width='16' height='4' fill='currentColor' color='#ef4444' /><path d='M8 14 L6 20 M16 14 L18 20' stroke='currentColor' />",
           "breakdown": ["bar (阻拦)", "-ier"],
           "imagery": "起阻拦作用的东西。",
@@ -61,7 +61,7 @@
           ]
         },
         {
-          "word": "Barricade",
+          "word": "barricade",
           "rootVisual": "<path d='M4 18 L20 18 M6 14 L18 14 M8 10 L16 10' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["bar (木条)", "-ade (集合)"],
           "imagery": "一堆木条堆成的路障。",
@@ -69,7 +69,7 @@
           "sentences": []
         },
         {
-          "word": "Barn",
+          "word": "barn",
           "rootVisual": "<path d='M4 12 L12 4 L20 12 V 20 H 4 Z' stroke='currentColor' fill='none' />",
           "breakdown": ["bar (木条)", "-n"],
           "imagery": "用木条围成的储存谷物的地方。",
@@ -77,7 +77,7 @@
           "sentences": []
         },
         {
-          "word": "Barometer",
+          "word": "barometer",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M12 12 L16 8' stroke='currentColor' marker-end='url(#arrow)' />",
           "breakdown": ["bar (压力/木条)", "meter (测量)"],
           "imagery": "测量压力的仪器（早期有木框结构）。",
@@ -85,7 +85,7 @@
           "sentences": []
         },
         {
-          "word": "Embargo",
+          "word": "embargo",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' color='#ef4444' /><path d='M6 12 H18' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["em- (进入)", "bar (阻拦)", "go (走)"],
           "imagery": "进去被拦住不让走。",
@@ -98,7 +98,7 @@
           ]
         },
         {
-          "word": "Embarrass",
+          "word": "embarrass",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 10 H10 M14 10 H16' stroke='currentColor' /><path d='M9 16 Q 12 14 15 16' stroke='currentColor' />",
           "breakdown": ["em- (进入)", "bar (阻拦)", "ass"],
           "imagery": "被阻拦卡住，进退两难，很尴尬。",

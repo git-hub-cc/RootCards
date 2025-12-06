@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Embarrassed",
+          "word": "embarrassed",
           "rootVisual": "<line x1='6' y1='4' x2='6' y2='20'></line><line x1='12' y1='4' x2='12' y2='20'></line><line x1='18' y1='4' x2='18' y2='20'></line><line x1='3' y1='10' x2='21' y2='10'></line>",
           "breakdown": ["em- (进入)", "bar (阻碍/杆)"],
           "imagery": "像是被关进了一个充满栅栏（bar）的笼子里，进退两难，感到尴尬。",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "word": "Embarrassing",
+          "word": "embarrassing",
           "rootVisual": "<line x1='6' y1='4' x2='6' y2='20'></line><line x1='12' y1='4' x2='12' y2='20'></line><line x1='18' y1='4' x2='18' y2='20'></line><line x1='3' y1='10' x2='21' y2='10'></line>",
           "breakdown": ["em- (使)", "bar (阻碍)"],
           "imagery": "这是一个让人（em-）陷入困境（bar）的情况。",
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "word": "Encourage",
+          "word": "encourage",
           "rootVisual": "<path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' stroke='currentColor' fill='none' stroke-width='2'/>",
           "breakdown": ["en- (使)", "cor (心)"],
           "imagery": "往心里（cor）注入力量，使人内心强大，即鼓励。",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "word": "Endanger",
+          "word": "endanger",
           "rootVisual": "<path d='M12 4 L4 20 h16 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 10 v6 m0 2 v0.5' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["en- (使)", "danger (危险)"],
           "imagery": "使某人进入一个带有警告标志（danger）的区域。",

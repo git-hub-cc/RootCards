@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Inhabit",
+          "word": "inhabit",
           "rootVisual": "<rect x='6' y='8' width='12' height='12' stroke='currentColor' fill='none' /><circle cx='12' cy='14' r='2' fill='currentColor' />",
           "breakdown": ["in- (入)", "habit (居)"],
           "imagery": "在里面居住。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Inhabitant",
+          "word": "inhabitant",
           "rootVisual": "<circle cx='12' cy='8' r='3' fill='currentColor' /><path d='M12 11 V 18 M 8 18 H 16' stroke='currentColor' />",
           "breakdown": ["inhabit (居住)", "-ant (人)"],
           "imagery": "居住者。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Habitation",
+          "word": "habitation",
           "rootVisual": "<path d='M2 20 H 22 M 4 20 V 10 L 12 4 L 20 10 V 20' stroke='currentColor' fill='none' />",
           "breakdown": ["habit (居)", "-ation"],
           "imagery": "居住的行为或场所。",
@@ -38,7 +38,7 @@
           "sentences": []
         },
         {
-          "word": "Habit",
+          "word": "habit",
           "rootVisual": "<path d='M12 4 V 20 M 8 12 H 16' stroke='currentColor' stroke-dasharray='4 2' />",
           "breakdown": ["hab (拥有/保持)", "-it"],
           "imagery": "长期保持的行为，即习惯。",

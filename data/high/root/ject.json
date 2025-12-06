@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Inject",
+          "word": "inject",
           "rootVisual": "<rect x='10' y='4' width='4' height='12' stroke='currentColor' fill='none'/><line x1='12' y1='16' x2='12' y2='22' stroke='currentColor'/><line x1='8' y1='4' x2='16' y2='4' stroke='currentColor'/>",
           "breakdown": ["in- (入)", "ject (投)"],
           "imagery": "投射进去，即注射。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Reject",
+          "word": "reject",
           "rootVisual": "<path d='M12 12 l-4 4' stroke='currentColor' marker-end='url(#arrow)'/><path d='M16 8 l-4 4' stroke='currentColor'/>",
           "breakdown": ["re- (回)", "ject (投)"],
           "imagery": "扔回来，不接受。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Project",
+          "word": "project",
           "rootVisual": "<rect x='4' y='14' width='4' height='6' fill='currentColor'/><path d='M6 14 l8 -8' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='14' cy='6' r='2' stroke='currentColor' fill='none'/>",
           "breakdown": ["pro- (前)", "ject (投)"],
           "imagery": "向前投射（投影）；向前规划（项目）。",
@@ -43,7 +43,7 @@
           "sentences": []
         },
         {
-          "word": "Object",
+          "word": "object",
           "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/><path d='M2 12 h4' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["ob- (对)", "ject (投)"],
           "imagery": "投在对面的东西（物体）；对着扔（反对）。",

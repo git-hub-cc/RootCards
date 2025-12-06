@@ -46,7 +46,7 @@
           "sentences": [{"en": "Choose your favorite way to learn English.", "cn": "选择你最喜欢的英语学习方式。"}]
         },
         {
-          "word": "Enjoy",
+          "word": "enjoy",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 14 q 4 4 8 0' stroke='currentColor' stroke-width='2' stroke-linecap='round'/><path d='M9 9 l-1 -1 M15 9 l1 -1' stroke='currentColor'/>",
           "breakdown": ["Enjoy", "(享受)"],
           "imagery": "一张简单的笑脸，眼睛笑成了弯月，表示心情愉悦。",
@@ -57,7 +57,7 @@
           ]
         },
         {
-          "word": "Forget",
+          "word": "forget",
           "rootVisual": "<g transform='translate(0, 0)'><path d='M 12 14 A 5 5 0 1 0 12 4 A 5 5 0 1 0 12 14 Z M 12 22 q 6 -3 10 -6 M 17 7 c 0 -2 1 -3 2 -3 s 2 1 2 3 c 0 2 -2 3 -2 5 M 19 16 v 0.01' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></g>",
           "breakdown": ["For-", "(失去/错失)", "Get", "(抓/获得)"],
           "imagery": "经典的挠头动作，脑袋旁冒出一个大问号。拼命想去 'Get' (抓住) 那个记忆，却怎么也抓不住。",
@@ -120,7 +120,7 @@
           ]
         },
         {
-          "word": "Boring",
+          "word": "boring",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 h2 M14 10 h2' stroke='currentColor'/><line x1='9' y1='15' x2='15' y2='15' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["Bore", "(钻孔/烦扰)"],
           "imagery": "一张面无表情的脸，嘴巴呈直线，表示毫无兴趣。",
@@ -130,7 +130,7 @@
           ]
         },
         {
-          "word": "Bored",
+          "word": "bored",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 h2 M14 10 h2' stroke='currentColor'/><line x1='9' y1='15' x2='15' y2='15' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["Bore", "(钻孔/烦扰)"],
           "imagery": "因为厌倦而眼神呆滞或翻白眼的样子。",
@@ -140,7 +140,7 @@
           ]
         },
         {
-          "word": "Fun",
+          "word": "fun",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 20 l2 4' stroke='currentColor'/><path d='M10 24 l2 -4' stroke='currentColor'/><circle cx='10' cy='10' r='1' fill='currentColor'/><circle cx='14' cy='10' r='1' fill='currentColor'/><path d='M9 14 q 3 3 6 0' stroke='currentColor'/>",
           "breakdown": ["Fun", "(乐趣)"],
           "imagery": "一个漂浮的气球或笑脸，代表轻松和快乐。",
@@ -151,7 +151,7 @@
           ]
         },
         {
-          "word": "Funny",
+          "word": "funny",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/><path d='M8 8 l2 -2 M16 8 l-2 -2' stroke='currentColor'/>",
           "breakdown": ["Fun", "(滑稽)"],
           "imagery": "一个小丑的红鼻子，让人觉得滑稽可笑。",
@@ -161,7 +161,7 @@
           ]
         },
         {
-          "word": "Relax",
+          "word": "relax",
           "rootVisual": "<path d='M 2 20 L 22 20 M 4.5 16 A 2.5 2.5 0 1 0 9.5 16 A 2.5 2.5 0 1 0 4.5 16 Z M 9 18 h 6 l 5 -2 M 14 18 l 2 -4' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
           "breakdown": ["Re-", "(向后/反复)", "Lax", "(松)"],
           "imagery": "联想一个人彻底“躺平”，双手枕在脑后，翘着二郎腿，把紧绷的神经向后（Re-）完全松开（Lax）。",

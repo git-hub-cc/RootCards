@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Spread",
+          "word": "spread",
           "rootVisual": "<path d='M12 12 l-8 -4 M12 12 l8 -4 M12 12 l-4 8 M12 12 l4 8' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["spread (散)"],
           "imagery": "向四周散开，传播。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Spring",
+          "word": "spring",
           "rootVisual": "<path d='M12 18 q -4 -6 0 -10 q 4 6 0 10' stroke='currentColor' fill='none'/><path d='M12 8 v-4' stroke='currentColor'/>",
           "breakdown": ["spring (春/弹)"],
           "imagery": "万物生长的季节；弹簧（弹起）。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Spray",
+          "word": "spray",
           "rootVisual": "<path d='M8 14 l8 0' stroke='currentColor' stroke-width='4'/><circle cx='4' cy='10' r='1' fill='currentColor'/><circle cx='8' cy='8' r='1' fill='currentColor'/><circle cx='12' cy='6' r='1' fill='currentColor'/>",
           "breakdown": ["spray (喷)"],
           "imagery": "喷洒液体。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Sprout",
+          "word": "sprout",
           "rootVisual": "<path d='M12 20 v-8' stroke='currentColor'/><path d='M12 12 q -4 -4 -6 0' stroke='currentColor' fill='none'/><path d='M12 12 q 4 -4 6 0' stroke='currentColor' fill='none'/>",
           "breakdown": ["sprout (芽)"],
           "imagery": "植物发芽。",

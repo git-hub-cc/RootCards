@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Cousin",
+          "word": "cousin",
           "rootVisual": "<circle cx='12' cy='6' r='2' stroke='currentColor' fill='none'/><path d='M12 8 v4' stroke='currentColor'/><path d='M8 12 h8' stroke='currentColor'/><line x1='8' y1='12' x2='8' y2='16' stroke='currentColor'/><line x1='16' y1='12' x2='16' y2='16' stroke='currentColor'/><circle cx='8' cy='18' r='2' fill='currentColor'/><circle cx='16' cy='18' r='2' fill='currentColor'/>",
           "breakdown": ["Cousin", "(堂表亲)"],
           "imagery": "家族树的分支，连接着同辈的亲属。",
@@ -45,7 +45,7 @@
           ]
         },
         {
-          "word": "Guide",
+          "word": "guide",
           "rootVisual": "<circle cx='12' cy='8' r='2' fill='currentColor'/><path d='M12 10 v10' stroke='currentColor' stroke-width='2'/><path d='M12 12 l6 -2 v4 l-6 2' stroke='currentColor' fill='none'/>",
           "breakdown": ["Guide", "(向导)"],
           "imagery": "一个人举着一面小旗子，走在前面指引方向。",
@@ -55,7 +55,7 @@
           ]
         },
         {
-          "word": "Host",
+          "word": "host",
           "rootVisual": "<path d='M4 12 q 4 4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='6' r='2' fill='currentColor'/>",
           "breakdown": ["Host", "(主人)"],
           "imagery": "一个人张开双臂（波浪线），做出欢迎的姿势。",

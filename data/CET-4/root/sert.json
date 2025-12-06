@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Desert",
+          "word": "desert",
           "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor' /><path d='M10 12 H 18' stroke='currentColor' stroke-dasharray='2 2' /><text x='20' y='12' text-anchor='middle' font-size='12'>🌵</text>",
           "breakdown": ["de- (离)", "sert (放)"],
           "imagery": "放置不管，遗弃；被遗弃的地方（沙漠）。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Insert",
+          "word": "insert",
           "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none' /><path d='M12 2 V 8' stroke='currentColor' marker-end='url(#arrow)' />",
           "breakdown": ["in- (入)", "sert (放)"],
           "imagery": "放进去，插入。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Exert",
+          "word": "exert",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M12 12 L18 6' stroke='currentColor' marker-end='url(#arrow)' />",
           "breakdown": ["ex- (出)", "sert (放/连)"],
           "imagery": "向外放出（力量），施加。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Assert",
+          "word": "assert",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><text x='12' y='14' text-anchor='middle' font-size='12'>!</text>",
           "breakdown": ["as- (加强)", "sert (放/断言)"],
           "imagery": "强有力地放置观点，断言。",
@@ -66,7 +66,7 @@
           ]
         },
         {
-          "word": "Assertion",
+          "word": "assertion",
           "rootVisual": "<path d='M4 18 H 20' stroke='currentColor' stroke-width='2' /><path d='M12 18 V 8' stroke='currentColor' />",
           "breakdown": ["assert", "-ion"],
           "imagery": "断言的行为或内容。",

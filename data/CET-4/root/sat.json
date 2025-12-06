@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Saturate",
+          "word": "saturate",
           "rootVisual": "<rect x='6' y='8' width='12' height='12' stroke='currentColor' fill='none' /><path d='M6 18 H 18' stroke='currentColor' stroke-width='4' color='#3b82f6' />",
           "breakdown": ["sat (满)", "-urate"],
           "imagery": "使充满水分，浸透。",

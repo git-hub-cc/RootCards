@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Tariff",
+          "word": "tariff",
           "rootVisual": "<path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z' stroke='currentColor' fill='none'/><path d='M14 2v6h6' stroke='currentColor' fill='none'/><path d='M16 13H8' stroke='currentColor'/><path d='M16 17H8' stroke='currentColor'/><path d='M10 9H8' stroke='currentColor'/>",
           "breakdown": [
             "tariff"
@@ -28,7 +28,7 @@
           ]
         },
         {
-          "word": "Topple",
+          "word": "topple",
           "rootVisual": "<path d='M6 22L18 22' stroke='currentColor' stroke-width='2'/><rect x='8' y='2' width='8' height='20' transform='rotate(15 12 22)' stroke='currentColor' fill='none'/><path d='M6 4l-4 4' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": [
             "top (顶)",
@@ -44,7 +44,7 @@
           ]
         },
         {
-          "word": "Toll",
+          "word": "toll",
           "rootVisual": "<rect x='2' y='6' width='20' height='12' stroke='currentColor' fill='none'/><line x1='2' y1='10' x2='22' y2='10' stroke='currentColor'/><line x1='12' y1='10' x2='12' y2='18' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": [
             "toll (总数)"
@@ -59,7 +59,7 @@
           ]
         },
         {
-          "word": "Tug",
+          "word": "tug",
           "rootVisual": "<path d='M5 12h14' stroke='currentColor' stroke-width='2'/><path d='M12 22a10 10 0 0 0 10-10H2a10 10 0 0 0 10 10z' stroke='currentColor' fill='none'/><path d='M12 8V2' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='5' r='1.5' fill='currentColor'/>",
           "breakdown": [
             "tug"
@@ -69,7 +69,7 @@
           "sentences": []
         },
         {
-          "word": "Tow",
+          "word": "tow",
           "rootVisual": "<rect x='2' y='8' width='10' height='8' stroke='currentColor' fill='none'/><circle cx='4' cy='16' r='2' fill='currentColor'/><circle cx='10' cy='16' r='2' fill='currentColor'/><line x1='12' y1='12' x2='22' y2='12' stroke='currentColor'/><rect x='18' y='10' width='4' height='4' stroke='currentColor' fill='none'/>",
           "breakdown": [
             "tow"
@@ -96,7 +96,7 @@
       },
       "words": [
         {
-          "word": "Urine",
+          "word": "urine",
           "rootVisual": "<path d='M6 4h12l-2 10a4 4 0 0 1-8 0z' stroke='currentColor' fill='none'/><path d='M12 18v4' stroke='currentColor'/><path d='M8 22h8' stroke='currentColor'/>",
           "breakdown": [
             "ur (水)",
@@ -112,7 +112,7 @@
           ]
         },
         {
-          "word": "Urinal",
+          "word": "urinal",
           "rootVisual": "<path d='M6 4v16' stroke='currentColor' stroke-width='2'/><path d='M18 4v16' stroke='currentColor' stroke-width='2'/><path d='M12 4v6' stroke='currentColor'/><circle cx='12' cy='4' r='2' fill='currentColor'/>",
           "breakdown": [
             "urin (尿)",
@@ -135,7 +135,7 @@
       },
       "words": [
         {
-          "word": "Verge",
+          "word": "verge",
           "rootVisual": "<path d='M2 20h20' stroke='currentColor'/><path d='M2 14l4-4 6 6 8-8' stroke='currentColor' fill='none'/><circle cx='20' cy='8' r='2' fill='currentColor' color='#ef4444'/>",
           "breakdown": [
             "verge (转/边)"
@@ -150,7 +150,7 @@
           ]
         },
         {
-          "word": "Vicinity",
+          "word": "vicinity",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><path d='M12 12l-2-4a2 2 0 0 1 4 0z' fill='currentColor' color='#ef4444'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
           "breakdown": [
             "vicin (邻近)",
@@ -166,7 +166,7 @@
           ]
         },
         {
-          "word": "Virtual",
+          "word": "virtual",
           "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none' rx='2'/><path d='M4 12h16' stroke='currentColor'/><path d='M8 12v-4' stroke='currentColor'/><path d='M16 12v-4' stroke='currentColor'/>",
           "breakdown": [
             "virtu (真/力)",
@@ -186,7 +186,7 @@
           ]
         },
         {
-          "word": "Vulnerable",
+          "word": "vulnerable",
           "rootVisual": "<path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' stroke='currentColor' fill='none'/><path d='M12 8v8' stroke='currentColor'/><path d='M8 12l4 4 4-4' stroke='currentColor'/>",
           "breakdown": [
             "vuln (伤)",
@@ -214,7 +214,7 @@
       },
       "words": [
         {
-          "word": "Weary",
+          "word": "weary",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 14s1.5 2 4 2 4-2 4-2' stroke='currentColor'/><path d='M9 9h2' stroke='currentColor'/><path d='M15 9h-2' stroke='currentColor'/>",
           "breakdown": [
             "wear (穿/磨损)",
@@ -230,7 +230,7 @@
           ]
         },
         {
-          "word": "Wharf",
+          "word": "wharf",
           "rootVisual": "<path d='M4 14h16' stroke='currentColor' stroke-width='2'/><path d='M6 14v4' stroke='currentColor'/><path d='M10 14v4' stroke='currentColor'/><path d='M14 14v4' stroke='currentColor'/><path d='M18 14v4' stroke='currentColor'/><path d='M12 8a4 4 0 0 0-4 4h8a4 4 0 0 0-4-4z' stroke='currentColor' fill='none'/>",
           "breakdown": [
             "wharf"
@@ -240,7 +240,7 @@
           "sentences": []
         },
         {
-          "word": "Whereas",
+          "word": "whereas",
           "rootVisual": "<path d='M4 12h16' stroke='currentColor'/><rect x='2' y='8' width='6' height='8' stroke='currentColor' fill='none'/><rect x='16' y='8' width='6' height='8' stroke='currentColor' fill='none'/><path d='M12 4v16' stroke='currentColor'/>",
           "breakdown": [
             "where",
@@ -256,7 +256,7 @@
           ]
         },
         {
-          "word": "Whereby",
+          "word": "whereby",
           "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M8 12h8' stroke='currentColor' stroke-dasharray='2 2'/><path d='M12 8l4 4-4 4' stroke='currentColor' fill='none'/>",
           "breakdown": [
             "where",
@@ -272,7 +272,7 @@
           ]
         },
         {
-          "word": "Wholesome",
+          "word": "wholesome",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 6l-3 4h6z' fill='currentColor' color='#10b981'/><path d='M12 18l-3-4h6z' fill='currentColor' color='#10b981'/><path d='M6 12l4-3v6z' fill='currentColor' color='#10b981'/><path d='M18 12l-4-3v6z' fill='currentColor' color='#10b981'/>",
           "breakdown": [
             "whole (整体)",
@@ -288,7 +288,7 @@
           ]
         },
         {
-          "word": "Wink",
+          "word": "wink",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='1.5' fill='currentColor'/><path d='M14 10l4 0' stroke='currentColor' stroke-width='2'/><path d='M8 15q4 2 8 0' stroke='currentColor' fill='none'/>",
           "breakdown": [
             "wink"
@@ -315,7 +315,7 @@
       },
       "words": [
         {
-          "word": "Yield",
+          "word": "yield",
           "rootVisual": "<path d='M12 20l-2-2l-4 0a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2l-4 0z' stroke='currentColor' fill='none'/><path d='M12 6v6' stroke='currentColor'/><path d='M12 6l-3 3' stroke='currentColor'/><path d='M12 6l3 3' stroke='currentColor'/>",
           "breakdown": [
             "yield (给/产)"
@@ -334,7 +334,7 @@
           ]
         },
         {
-          "word": "Zeal",
+          "word": "zeal",
           "rootVisual": "<path d='M12 18c-4-4-4-10 0-14 4 4 4 10 0 14z' fill='currentColor' color='#f59e0b'/><path d='M12 18c-2-2-2-6 0-8 2 2 2 6 0 8z' fill='white' opacity='0.5'/>",
           "breakdown": [
             "zeal (热)"
@@ -349,7 +349,7 @@
           ]
         },
         {
-          "word": "Zealous",
+          "word": "zealous",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 9l3 3-3 3' stroke='currentColor' fill='none'/><path d='M16 9l-3 3 3 3' stroke='currentColor' fill='none'/><circle cx='8' cy='9' r='1.5' fill='currentColor' color='#f59e0b'/><circle cx='16' cy='9' r='1.5' fill='currentColor' color='#f59e0b'/><path d='M8 15q4 4 8 0' stroke='currentColor' fill='none'/>",
           "breakdown": [
             "zeal",

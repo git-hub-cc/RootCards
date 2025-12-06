@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Slip",
+          "word": "slip",
           "rootVisual": "<path d='M4 16 l4 4 l8 -4' stroke='currentColor'/><circle cx='16' cy='16' r='2' fill='currentColor' opacity='0.5'/>",
           "breakdown": ["slip (滑)"],
           "imagery": "滑倒。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Slide",
+          "word": "slide",
           "rootVisual": "<path d='M2 4 l18 18' stroke='currentColor' stroke-width='2'/><circle cx='10' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["slide (滑)"],
           "imagery": "滑动；滑梯。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Slope",
+          "word": "slope",
           "rootVisual": "<path d='M2 20 l20 -16 v16 z' fill='currentColor' opacity='0.3'/>",
           "breakdown": ["slope (斜)"],
           "imagery": "斜坡。",

@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Press",
+          "word": "press",
           "rootVisual": "<rect x='6' y='14' width='12' height='4' fill='currentColor'/><path d='M12 6 v8' stroke='currentColor' stroke-width='3' marker-end='url(#arrow)'/>",
           "breakdown": ["press (压)"],
           "imagery": "按压；印刷机（压印）。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Pressure",
+          "word": "pressure",
           "rootVisual": "<path d='M6 14 h12' stroke='currentColor' stroke-width='2'/><path d='M12 6 v8' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/>",
           "breakdown": ["press (压)", "-ure (名)"],
           "imagery": "压在身上的力。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Express",
+          "word": "express",
           "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/><path d='M12 12 l6 0' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["ex- (出)", "press (压)"],
           "imagery": "把想法压出来（表达）；特快（像挤出的牙膏一样快）。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Impress",
+          "word": "impress",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' fill='currentColor' opacity='0.2'/><path d='M12 6 v6' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["im- (入)", "press (压)"],
           "imagery": "压进去，留下印记。",
@@ -47,7 +47,7 @@
           "sentences": []
         },
         {
-          "word": "Depress",
+          "word": "depress",
           "rootVisual": "<path d='M4 10 h16' stroke='currentColor'/><path d='M12 10 v6' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["de- (下)", "press (压)"],
           "imagery": "向下压，使沮丧，使萧条。",

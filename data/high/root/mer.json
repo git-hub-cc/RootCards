@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Emerge",
+          "word": "emerge",
           "rootVisual": "<path d='M2 16 q 5 -3 10 0 t 10 0' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' fill='currentColor'/><path d='M12 12 v-6' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["e- (向外)", "mer (沉)"],
           "imagery": "从水里出来，即出现。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Emergency",
+          "word": "emergency",
           "rootVisual": "<path d='M12 4 l-8 16 h16 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 10 v4' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='17' r='1' fill='currentColor'/>",
           "breakdown": ["emerge", "-ency (名)"],
           "imagery": "突然出现的情况，紧急情况。",
@@ -35,7 +35,7 @@
           "sentences": []
         },
         {
-          "word": "Mermaid",
+          "word": "mermaid",
           "rootVisual": "<path d='M12 4 a 4 4 0 0 1 0 8' stroke='currentColor' fill='none'/><path d='M8 12 q 4 8 8 0' stroke='currentColor' fill='none'/><path d='M12 16 q -4 4 0 8 q 4 -4 0 -8' stroke='currentColor' fill='currentColor'/>",
           "breakdown": ["mer (海/沉)", "maid (少女)"],
           "imagery": "海里的少女，美人鱼。",

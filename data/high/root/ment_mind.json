@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Mind",
+          "word": "mind",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor'/>",
           "breakdown": ["mind (头脑)"],
           "imagery": "思考的地方。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Mental",
+          "word": "mental",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12 h8' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["ment (心智)", "-al (形)"],
           "imagery": "脑力的，精神的。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Comment",
+          "word": "comment",
           "rootVisual": "<path d='M4 4 h16 v12 h-8 l-4 4 v-4 h-4 z' stroke='currentColor' fill='none'/><path d='M8 8 h8' stroke='currentColor'/>",
           "breakdown": ["com- (一起)", "ment (思考)"],
           "imagery": "大家把想法放在一起讨论。",
@@ -48,7 +48,7 @@
           "sentences": []
         },
         {
-          "word": "Mention",
+          "word": "mention",
           "rootVisual": "<path d='M4 16 l8 -8 l8 8' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='2' fill='currentColor'/>",
           "breakdown": ["ment (思考)", "-ion (名)"],
           "imagery": "把脑子里的东西提出来说。",

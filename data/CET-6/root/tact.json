@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Tackle",
+          "word": "tackle",
           "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='3' stroke='currentColor' fill='none'/><path d='M8 15l8-6' stroke='currentColor'/><path d='M8 9l8 6' stroke='currentColor'/>",
           "breakdown": [
             "tack (钉住/接触)",
@@ -30,7 +30,7 @@
           ]
         },
         {
-          "word": "Tact",
+          "word": "tact",
           "rootVisual": "<path d='M4 14l4-2l4 2v6h-8z' stroke='currentColor' fill='none'/><path d='M16 10l-4 2l-4-2v-6h8z' stroke='currentColor' fill='none' transform='rotate(180 12 12)'/><path d='M10 12h4' stroke='currentColor'/>",
           "breakdown": [
             "tact (接触)"
@@ -45,7 +45,7 @@
           ]
         },
         {
-          "word": "Tactic",
+          "word": "tactic",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='4' x2='8' y2='20' stroke='currentColor'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor'/><line x1='16' y1='4' x2='16' y2='20' stroke='currentColor'/><line x1='4' y1='8' x2='20' y2='8' stroke='currentColor'/><line x1='4' y1='12' x2='20' y2='12' stroke='currentColor'/><line x1='4' y1='16' x2='20' y2='16' stroke='currentColor'/><circle cx='10' cy='14' r='1.5' fill='currentColor'/>",
           "breakdown": [
             "tact (接触/排列)",

@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Prefer",
+          "word": "prefer",
           "rootVisual": "<path d='M8 14 q 4 4 8 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='10' r='6' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
           "breakdown": ["pre- (前)", "fer (拿/带)"],
           "imagery": "把喜欢的东西拿（fer）到所有人前面（pre-），这就是偏爱。",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "word": "President",
+          "word": "president",
           "rootVisual": "<path d='M7 20 v-8 h10 v8' stroke='currentColor' fill='none'/><path d='M7 16 h10' stroke='currentColor'/><circle cx='12' cy='8' r='3' stroke='currentColor' fill='none'/>",
           "breakdown": ["pre- (前)", "sid (坐)"],
           "imagery": "坐在（sid）最前面（pre-）位置的人，即总统或主席。",
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "word": "Predict",
+          "word": "predict",
           "rootVisual": "<path d='M4 4 h12 v10 h-8 l-4 4 v-4 h-2 z' stroke='currentColor' fill='none' stroke-width='2'/><text x='7' y='11' font-size='6' fill='currentColor'>?!</text>",
           "breakdown": ["pre- (前)", "dict (说)"],
           "imagery": "在事情发生之前（pre-）就先说（dict）了出来，即预测。",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "word": "Prepare",
+          "word": "prepare",
           "rootVisual": "<path d='M5 4 h14 v16 h-14 z' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8 M8 16 h5' stroke='currentColor'/>",
           "breakdown": ["pre- (前)", "par (准备/排列)"],
           "imagery": "在行动之前（pre-）先把东西排列好（par），即准备。",
@@ -65,7 +65,7 @@
           ]
         },
         {
-          "word": "Preschool",
+          "word": "preschool",
           "rootVisual": "<path d='M4 14 h4 l2 -4 h4 l2 4 h4' stroke='currentColor' fill='none'/><rect x='8' y='14' width='8' height='6' stroke='currentColor' fill='none'/><path d='M12 14 v6' stroke='currentColor'/>",
           "breakdown": ["pre- (前)", "school (学校)"],
           "imagery": "在上正式学校之前（pre-）去的地方。",
@@ -73,7 +73,7 @@
           "sentences": []
         },
         {
-          "word": "Prehistory",
+          "word": "prehistory",
           "rootVisual": "<path d='M4 12 h16' stroke='currentColor'/><rect x='6' y='8' width='2' height='8' fill='currentColor'/><rect x='16' y='8' width='2' height='8' stroke='currentColor' fill='none'/>",
           "breakdown": ["pre- (前)", "history (历史)"],
           "imagery": "在有文字记载的历史之前（pre-）的时期。",
@@ -81,7 +81,7 @@
           "sentences": []
         },
         {
-          "word": "Prefix",
+          "word": "prefix",
           "rootVisual": "<rect x='8' y='8' width='12' height='8' stroke='currentColor' fill='none'/><rect x='4' y='8' width='4' height='8' fill='currentColor'/>",
           "breakdown": ["pre- (前)", "fix (固定)"],
           "imagery": "固定（fix）在单词前面（pre-）的部分。",
@@ -89,7 +89,7 @@
           "sentences": []
         },
         {
-          "word": "Preview",
+          "word": "preview",
           "rootVisual": "<path d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z' stroke='currentColor' fill='none'/><path d='M8 12 l-4 -4 m0 8 l4 -4' stroke='currentColor'/>",
           "breakdown": ["pre- (前)", "view (看)"],
           "imagery": "在正式观看或学习之前（pre-）先看（view）一遍。",
@@ -102,7 +102,7 @@
           ]
         },
         {
-          "word": "Precise",
+          "word": "precise",
           "rootVisual": "<line x1='2' y1='10' x2='22' y2='10' stroke='currentColor'/><line x1='12' y1='6' x2='12' y2='14' stroke='currentColor'/><circle cx='12' cy='10' r='1' fill='currentColor'/>",
           "breakdown": ["pre- (前)", "cis (切)"],
           "imagery": "在测量之前（pre-）就已经切割（cis）好了刻度，所以结果是精确的。",

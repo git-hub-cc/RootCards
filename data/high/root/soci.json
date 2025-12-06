@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Society",
+          "word": "society",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='2' fill='currentColor'/><circle cx='16' cy='10' r='2' fill='currentColor'/><circle cx='12' cy='16' r='2' fill='currentColor'/>",
           "breakdown": ["soci (群)", "-ety (名)"],
           "imagery": "人群聚集的整体。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Social",
+          "word": "social",
           "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M6 12 h12' stroke='currentColor'/>",
           "breakdown": ["soci (群)", "-al (形)"],
           "imagery": "社交的，社会的。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Associate",
+          "word": "associate",
           "rootVisual": "<path d='M8 12 h8' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='6' cy='12' r='2' stroke='currentColor' fill='none'/><circle cx='18' cy='12' r='2' stroke='currentColor' fill='none'/>",
           "breakdown": ["as- (去)", "soci (伴)", "-ate"],
           "imagery": "去结伴，联系在一起。",

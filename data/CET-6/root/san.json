@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Sanitary",
+          "word": "sanitary",
           "rootVisual": "<path d='M6 4h12l-2 10a4 4 0 0 1-8 0z' stroke='currentColor' fill='none'/><path d='M12 18v4' stroke='currentColor'/><path d='M8 22h8' stroke='currentColor'/>",
           "breakdown": [
             "san (健康/卫生)",
@@ -30,7 +30,7 @@
           ]
         },
         {
-          "word": "Sanitation",
+          "word": "sanitation",
           "rootVisual": "<path d='M4 20h16' stroke='currentColor'/><rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y1='12' x2='16' y2='12' stroke='currentColor'/>",
           "breakdown": [
             "sanit (卫生)",

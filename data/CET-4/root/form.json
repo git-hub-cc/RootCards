@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Form",
+          "word": "form",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' />",
           "breakdown": ["form (形状)"],
           "imagery": "形式；表格。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Formulate",
+          "word": "formulate",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2' /><path d='M8 8 H16 M8 12 H16' stroke='currentColor' />",
           "breakdown": ["form (形式)", "-ul (小)", "-ate"],
           "imagery": "从小处着手使其形成（方案/理论）。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Formula",
+          "word": "formula",
           "rootVisual": "<text x='12' y='14' font-size='10' text-anchor='middle' fill='currentColor'>E=mc²</text>",
           "breakdown": ["form (形式)", "-ula (小)"],
           "imagery": "形成的小规则，公式。",
@@ -43,7 +43,7 @@
           "sentences": []
         },
         {
-          "word": "Conform",
+          "word": "conform",
           "rootVisual": "<rect x='4' y='8' width='6' height='6' stroke='currentColor' fill='none' /><rect x='14' y='8' width='6' height='6' stroke='currentColor' fill='none' /><path d='M11 11 H13' stroke='currentColor' />",
           "breakdown": ["con- (共同)", "form (形状)"],
           "imagery": "大家的形状都一样，遵守规则。",
@@ -56,7 +56,7 @@
           ]
         },
         {
-          "word": "Formidable",
+          "word": "formidable",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' fill='currentColor' opacity='0.8' />",
           "breakdown": ["for- (fear/因)", "mid (中间)", "able"],
           "imagery": "因为站在中间所以强大可怕（联想记忆）。",

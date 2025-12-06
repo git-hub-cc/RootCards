@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Autobiography",
+          "word": "autobiography",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><path d='M8 8 H16 M8 12 H16' stroke='currentColor' />",
           "breakdown": ["auto (自己)", "bio (生命)", "graph (写)", "y"],
           "imagery": "自己写自己的生平。",

@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Municipal",
+          "word": "municipal",
           "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none' /><path d='M12 8 V 4 L 16 2 L 8 2 L 12 4' fill='currentColor' />",
           "breakdown": ["muni (公共)", "cip (拿)", "-al"],
           "imagery": "承担公共职责的，市政的。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Immune",
+          "word": "immune",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 12 L16 12 M 16 12 L 14 10 M 16 12 L 14 14' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["im- (不)", "mune (公共/服务)"],
           "imagery": "免除公共义务的；免除（病毒）的。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Community",
+          "word": "community",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='4 2' /><circle cx='8' cy='12' r='2' fill='currentColor' /><circle cx='16' cy='12' r='2' fill='currentColor' />",
           "breakdown": ["com- (共)", "mun (公共)", "-ity"],
           "imagery": "大家共同生活的地方。",
@@ -48,7 +48,7 @@
           "sentences": []
         },
         {
-          "word": "Mutual",
+          "word": "mutual",
           "rootVisual": "<path d='M6 12 L18 12' stroke='currentColor' marker-end='url(#arrow)' marker-start='url(#arrow)' />",
           "breakdown": ["mut (交换)", "-ual"],
           "imagery": "相互交换的，共同的。",

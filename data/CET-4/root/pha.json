@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Fantasy",
+          "word": "fantasy",
           "rootVisual": "<path d='M12 2 L14 8 L20 8 L15 12 L17 18 L12 14 L7 18 L9 12 L4 8 L10 8 Z' stroke='currentColor' fill='none' stroke-dasharray='2 1' />",
           "breakdown": ["fan (幻)", "-tasy"],
           "imagery": "脑海中显现的画面。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Fascinate",
+          "word": "fascinate",
           "rootVisual": "<path d='M12 6 Q 16 2 20 6 T 12 14 Q 8 10 4 6 T 12 6' fill='currentColor' color='#a855f7' />",
           "breakdown": ["fascin (迷)", "-ate"],
           "imagery": "发自内心地喜欢（谐音记忆），使着迷。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Fascination",
+          "word": "fascination",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='2 2' />",
           "breakdown": ["fascin (迷)", "-ation"],
           "imagery": "着迷的状态。",
@@ -48,7 +48,7 @@
           "sentences": []
         },
         {
-          "word": "Infant",
+          "word": "infant",
           "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none' /><path d='M12 12 V 18' stroke='currentColor' />",
           "breakdown": ["in- (不)", "fan (说/显)", "t"],
           "imagery": "还不会说话的人（in-fa-nt），婴儿。",
@@ -61,7 +61,7 @@
           ]
         },
         {
-          "word": "Orphan",
+          "word": "orphan",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' opacity='0.5' />",
           "breakdown": ["or- (无/失去)", "phan (显/亲)"],
           "imagery": "失去亲人的人。（谐音：or-phan 或饭，到处蹭饭的孤儿）",

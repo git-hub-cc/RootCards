@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Empire",
+          "word": "empire",
           "rootVisual": "<rect x='4' y='12' width='16' height='8' stroke='currentColor' fill='none' /><path d='M4 12 L12 6 L20 12' stroke='currentColor' />",
           "breakdown": ["em- (in)", "pire (权/命令)"],
           "imagery": "拥有统治权的领土。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Emperor",
+          "word": "emperor",
           "rootVisual": "<circle cx='12' cy='8' r='4' fill='currentColor' /><path d='M8 20 L16 20' stroke='currentColor' stroke-width='3' />",
           "breakdown": ["emperor (皇帝)"],
           "imagery": "帝国的统治者。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Imperial",
+          "word": "imperial",
           "rootVisual": "<path d='M12 4 V 20 M 8 8 H 16' stroke='currentColor' />",
           "breakdown": ["imper (帝)", "-ial"],
           "imagery": "属于皇帝或帝国的。",
@@ -43,7 +43,7 @@
           ]
         },
         {
-          "word": "Imperative",
+          "word": "imperative",
           "rootVisual": "<text x='12' y='16' text-anchor='middle' font-size='16' fill='currentColor'>!</text>",
           "breakdown": ["imper (命令)", "-ative"],
           "imagery": "像命令一样紧急且重要的。",

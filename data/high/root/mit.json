@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Mission",
+          "word": "mission",
           "rootVisual": "<path d='M12 4 l4 4 l-4 4' stroke='currentColor' fill='none'/><path d='M4 8 h12' stroke='currentColor'/>",
           "breakdown": ["miss (送)", "-ion (名)"],
           "imagery": "被派去执行的任务。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Message",
+          "word": "message",
           "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M4 8 l8 6 l8 -6' stroke='currentColor'/>",
           "breakdown": ["mess (送)", "-age (名)"],
           "imagery": "传送的信息。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Missile",
+          "word": "missile",
           "rootVisual": "<path d='M4 12 h12 l4 0' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/><path d='M6 12 l-2 -2 l2 2 l-2 2' stroke='currentColor'/>",
           "breakdown": ["miss (送)", "-ile (物)"],
           "imagery": "可投掷/发射的武器。",
@@ -38,7 +38,7 @@
           "sentences": []
         },
         {
-          "word": "Submit",
+          "word": "submit",
           "rootVisual": "<path d='M12 4 v12' stroke='currentColor' marker-end='url(#arrow)'/><path d='M8 16 h8' stroke='currentColor'/>",
           "breakdown": ["sub- (下)", "mit (送)"],
           "imagery": "从下往上送（提交）；低下头送出（屈服）。",
@@ -51,7 +51,7 @@
           ]
         },
         {
-          "word": "Permit",
+          "word": "permit",
           "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='20' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["per- (通)", "mit (送)"],
           "imagery": "允许通过，放行。",
@@ -59,7 +59,7 @@
           "sentences": []
         },
         {
-          "word": "Admit",
+          "word": "admit",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M6 4 l4 4' stroke='currentColor'/>",
           "breakdown": ["ad- (去)", "mit (送)"],
           "imagery": "送进去（准许进入）；说出来（承认）。",
@@ -72,7 +72,7 @@
           ]
         },
         {
-          "word": "Commit",
+          "word": "commit",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["com- (全)", "mit (送)"],
           "imagery": "把全部精力送进去（投入）；把自己送进去（承诺/犯罪）。",
@@ -85,7 +85,7 @@
           ]
         },
         {
-          "word": "Promise",
+          "word": "promise",
           "rootVisual": "<path d='M8 12 h8' stroke='currentColor' marker-end='url(#arrow)'/><circle cx='4' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["pro- (前)", "mise (送)"],
           "imagery": "把话说到前面，即承诺。",

@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Refer",
+          "word": "refer",
           "rootVisual": "<path d='M12 12 l-4 -4' stroke='currentColor' marker-end='url(#arrow)'/><rect x='4' y='4' width='4' height='4' fill='currentColor'/>",
           "breakdown": ["re- (回)", "fer (带)"],
           "imagery": "回头带东西（参考资料），提到某事。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Confer",
+          "word": "confer",
           "rootVisual": "<circle cx='8' cy='12' r='2' fill='currentColor'/><circle cx='16' cy='12' r='2' fill='currentColor'/><path d='M10 12 h4' stroke='currentColor' stroke-dasharray='2 1'/>",
           "breakdown": ["con- (共同)", "fer (带)"],
           "imagery": "把意见带到一起来交换（协商）；把荣誉带给某人（授予）。",
@@ -35,7 +35,7 @@
           "sentences": []
         },
         {
-          "word": "Conference",
+          "word": "conference",
           "rootVisual": "<rect x='2' y='8' width='20' height='8' stroke='currentColor' fill='none'/><circle cx='6' cy='12' r='1' fill='currentColor'/><circle cx='10' cy='12' r='1' fill='currentColor'/><circle cx='14' cy='12' r='1' fill='currentColor'/><circle cx='18' cy='12' r='1' fill='currentColor'/>",
           "breakdown": ["con- (共同)", "fer (带)", "-ence (名)"],
           "imagery": "大家带着意见聚在一起的地方。",
@@ -43,7 +43,7 @@
           "sentences": []
         },
         {
-          "word": "Prefer",
+          "word": "prefer",
           "rootVisual": "<circle cx='8' cy='12' r='3' fill='currentColor'/><circle cx='16' cy='12' r='3' stroke='currentColor' fill='none'/>",
           "breakdown": ["pre- (前)", "fer (带)"],
           "imagery": "把喜欢的东西带到前面优先选择。",

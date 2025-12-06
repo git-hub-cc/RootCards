@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Revolve",
+          "word": "revolve",
           "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 4 a 8 8 0 1 1 -8 2.5' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
           "breakdown": ["re- (再)", "volve (转)"],
           "imagery": "再次转动，旋转（围绕中心）。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Revolution",
+          "word": "revolution",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 l2 2 l-2 2' stroke='currentColor'/>",
           "breakdown": ["re- (再)", "volu (转)", "-tion"],
           "imagery": "天翻地覆的转动，革命。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Involve",
+          "word": "involve",
           "rootVisual": "<path d='M12 12 l-4 -4 m 8 8 l -4 -4' stroke='currentColor'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
           "breakdown": ["in- (内)", "volve (卷)"],
           "imagery": "卷进去，牵涉。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Evolve",
+          "word": "evolve",
           "rootVisual": "<path d='M4 18 q 8 -12 16 -6' stroke='currentColor' fill='none'/><circle cx='4' cy='18' r='2' fill='currentColor' opacity='0.5'/><circle cx='20' cy='12' r='3' fill='currentColor'/>",
           "breakdown": ["e- (出)", "volve (转)"],
           "imagery": "向外转出来，演变，进化。",

@@ -69,7 +69,7 @@
           "sentences": [{"en": "He has the ambition to be a pilot.", "cn": "他有当飞行员的雄心壮志。"}]
         },
         {
-          "word": "Arrogant",
+          "word": "arrogant",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 16 Q 12 12 16 16' stroke='currentColor' />",
           "breakdown": ["ar- (加强)", "rog (问/要求)"],
           "imagery": "像狗一样狂吠（ro-ro），指手画脚，傲慢。",
@@ -82,7 +82,7 @@
           ]
         },
         {
-          "word": "Assassinate",
+          "word": "assassinate",
           "rootVisual": "<path d='M12 4 L8 20 H16 Z' fill='currentColor' color='#000' />",
           "breakdown": ["ass-ass-in-ate"],
           "imagery": "（趣味记忆）从屁股(ass)后面进入(in)动手，暗杀。",
@@ -95,7 +95,7 @@
           ]
         },
         {
-          "word": "Auxiliary",
+          "word": "auxiliary",
           "rootVisual": "<rect x='6' y='8' width='12' height='8' stroke='currentColor' fill='none' /><text x='12' y='14' font-size='8' text-anchor='middle'>AUX</text>",
           "breakdown": ["aux (增加)", "-iliary"],
           "imagery": "（联想）AUX空调是家庭的辅助设备。",
@@ -103,7 +103,7 @@
           "sentences": []
         },
         {
-          "word": "Absurd",
+          "word": "absurd",
           "rootVisual": "<text x='12' y='16' font-size='16' text-anchor='middle'>🤪</text>",
           "breakdown": ["ab- (离)", "surd (合理的)"],
           "imagery": "远离合理的，荒谬的。",
@@ -155,7 +155,7 @@
           "sentences": [{"en": "The bomb exploded.", "cn": "炸弹爆炸了。"}]
         },
         {
-          "word": "Boom",
+          "word": "boom",
           "rootVisual": "<path d='M4 18 L8 12 L12 16 L16 8 L20 14' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)' />",
           "breakdown": ["boom (拟声)"],
           "imagery": "轰鸣声；经济起飞的声音。",
@@ -168,7 +168,7 @@
           ]
         },
         {
-          "word": "Bud",
+          "word": "bud",
           "rootVisual": "<path d='M12 20 V 10' stroke='currentColor' /><circle cx='10' cy='8' r='3' fill='currentColor' color='#10b981' /><circle cx='14' cy='8' r='3' fill='currentColor' color='#10b981' />",
           "breakdown": ["bud (花蕾)"],
           "imagery": "像字母 b-u-d 的形状（花苞）。",
@@ -189,7 +189,7 @@
           "sentences": [{"en": "She burst into tears.", "cn": "她突然大哭起来。"}]
         },
         {
-          "word": "Breakdown",
+          "word": "breakdown",
           "rootVisual": "<path d='M12 4 L12 12 M4 20 L20 20' stroke='currentColor' /><path d='M12 12 L8 20 M12 12 L16 20' stroke='currentColor' stroke-dasharray='2 2' />",
           "breakdown": ["break (破)", "down (下)"],
           "imagery": "向下碎裂，崩溃。",
@@ -202,7 +202,7 @@
           ]
         },
         {
-          "word": "Bypass",
+          "word": "bypass",
           "rootVisual": "<rect x='8' y='8' width='8' height='8' fill='currentColor' /><path d='M4 12 Q 4 4 12 4 T 20 12' stroke='currentColor' fill='none' marker-end='url(#arrow)' />",
           "breakdown": ["by (旁)", "pass (过)"],
           "imagery": "从旁边经过，绕过。",
@@ -215,7 +215,7 @@
           ]
         },
         {
-          "word": "Bass",
+          "word": "bass",
           "rootVisual": "<path d='M8 4 Q 4 12 8 20 Q 12 12 16 20 Q 20 12 16 4' stroke='currentColor' fill='none' />",
           "breakdown": ["bass (低)"],
           "imagery": "低音乐器。",
@@ -223,7 +223,7 @@
           "sentences": []
         },
         {
-          "word": "Beam",
+          "word": "beam",
           "rootVisual": "<rect x='2' y='10' width='20' height='4' fill='currentColor' />",
           "breakdown": ["beam (木)"],
           "imagery": "像房梁一样直的光束。",
@@ -236,7 +236,7 @@
           ]
         },
         {
-          "word": "Blink",
+          "word": "blink",
           "rootVisual": "<path d='M4 12 Q 12 4 20 12' stroke='currentColor' fill='none' /><path d='M12 12 V 16' stroke='currentColor' />",
           "breakdown": ["blink (拟声)"],
           "imagery": "眨眼的声音/动作。",
@@ -249,7 +249,7 @@
           ]
         },
         {
-          "word": "Budget",
+          "word": "budget",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><text x='12' y='14' text-anchor='middle' font-size='10'>$</text>",
           "breakdown": ["bud (芽/皮包)", "-get"],
           "imagery": "有了预算，项目才能发芽。",
@@ -325,7 +325,7 @@
           "sentences": [{"en": "Dolly the sheep was a clone.", "cn": "多利羊是个克隆体。"}]
         },
         {
-          "word": "Censor",
+          "word": "censor",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M6 6 L18 18 M6 18 L18 6' stroke='currentColor' color='#ef4444' />",
           "breakdown": ["cens (评/审)", "-or"],
           "imagery": "审查员（谐音：审查）。",
@@ -338,7 +338,7 @@
           ]
         },
         {
-          "word": "Census",
+          "word": "census",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><path d='M8 8 H16 M8 12 H16' stroke='currentColor' />",
           "breakdown": ["cens (评/数)", "-us"],
           "imagery": "人口普查（谐音：申诉）。",
@@ -346,7 +346,7 @@
           "sentences": []
         },
         {
-          "word": "Cocaine",
+          "word": "cocaine",
           "rootVisual": "<path d='M8 12 H16' stroke='currentColor' stroke-width='4' color='#fff' opacity='0.5' />",
           "breakdown": ["cocaine"],
           "imagery": "白色粉末。",
@@ -354,7 +354,7 @@
           "sentences": []
         },
         {
-          "word": "Colony",
+          "word": "colony",
           "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none' /><circle cx='16' cy='12' r='4' stroke='currentColor' fill='none' stroke-dasharray='2 2' />",
           "breakdown": ["col (耕种/住)", "-ony"],
           "imagery": "像克隆(clone)一样复制宗主国的制度。",
@@ -362,7 +362,7 @@
           "sentences": []
         },
         {
-          "word": "Confiscate",
+          "word": "confiscate",
           "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' marker-end='url(#arrow)' /><rect x='10' y='8' width='4' height='8' fill='currentColor' />",
           "breakdown": ["con- (共)", "fisc (钱袋)", "-ate"],
           "imagery": "没收充公，变成大家的钱。",
@@ -427,7 +427,7 @@
           "sentences": [{"en": "Domestic flights.", "cn": "国内航班。"}]
         },
         {
-          "word": "Dormant",
+          "word": "dormant",
           "rootVisual": "<text x='12' y='14' font-size='12' text-anchor='middle'>Zzz</text>",
           "breakdown": ["dorm (睡)", "-ant"],
           "imagery": "睡觉的状态。",
@@ -448,7 +448,7 @@
           "sentences": [{"en": "They dwell in the forest.", "cn": "他们居住在森林里。"}]
         },
         {
-          "word": "Deteriorate",
+          "word": "deteriorate",
           "rootVisual": "<path d='M4 4 L12 12 L20 20' stroke='currentColor' marker-end='url(#arrow)' />",
           "breakdown": ["de- (下)", "-terior (比较级)", "-ate"],
           "imagery": "情况越来越向下（更坏）。",
@@ -461,7 +461,7 @@
           ]
         },
         {
-          "word": "Diesel",
+          "word": "diesel",
           "rootVisual": "<rect x='4' y='8' width='16' height='10' stroke='currentColor' fill='none' /><text x='12' y='14' text-anchor='middle' font-size='8'>OIL</text>",
           "breakdown": ["diesel"],
           "imagery": "大型车辆使用的燃油。",
@@ -469,7 +469,7 @@
           "sentences": []
         },
         {
-          "word": "Dignity",
+          "word": "dignity",
           "rootVisual": "<rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none' /><circle cx='12' cy='8' r='2' fill='currentColor' />",
           "breakdown": ["dign (高贵)", "-ity"],
           "imagery": "高贵端庄的样子。",
@@ -482,7 +482,7 @@
           ]
         },
         {
-          "word": "Diploma",
+          "word": "diploma",
           "rootVisual": "<path d='M4 6 H 20 V 18 H 4 Z' stroke='currentColor' fill='none' /><path d='M12 6 V 18' stroke='currentColor' stroke-dasharray='2 2' />",
           "breakdown": ["di- (二)", "ploma (折叠)"],
           "imagery": "折叠成两半的证书。",
@@ -495,7 +495,7 @@
           ]
         },
         {
-          "word": "Discard",
+          "word": "discard",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><path d='M6 6 L18 18 M6 18 L18 6' stroke='currentColor' />",
           "breakdown": ["dis- (不)", "card (卡片)"],
           "imagery": "不要的牌丢掉。",
@@ -508,7 +508,7 @@
           ]
         },
         {
-          "word": "Disclose",
+          "word": "disclose",
           "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none' /><path d='M12 6 L4 18 M12 6 L20 18' stroke='currentColor' fill='none' />",
           "breakdown": ["dis- (不)", "close (关)"],
           "imagery": "打开，不再关闭。",
@@ -521,7 +521,7 @@
           ]
         },
         {
-          "word": "Discern",
+          "word": "discern",
           "rootVisual": "<circle cx='8' cy='12' r='2' fill='currentColor' /><circle cx='16' cy='12' r='2' stroke='currentColor' fill='none' />",
           "breakdown": ["dis- (分)", "cern (筛)"],
           "imagery": "筛选分开，辨别清楚。",
@@ -534,7 +534,7 @@
           ]
         },
         {
-          "word": "Discourse",
+          "word": "discourse",
           "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' stroke-width='2' /><circle cx='4' cy='12' r='2' fill='currentColor' /><circle cx='20' cy='12' r='2' fill='currentColor' />",
           "breakdown": ["dis- (分)", "course (跑/过程)"],
           "imagery": "把话题分开跑一遍，详细论述。",
@@ -542,7 +542,7 @@
           "sentences": []
         },
         {
-          "word": "Dismay",
+          "word": "dismay",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 16 Q 12 12 16 16' stroke='currentColor' />",
           "breakdown": ["dis- (不)", "may (可以)"],
           "imagery": "不可以了，没办法了，感到沮丧。",
@@ -555,7 +555,7 @@
           ]
         },
         {
-          "word": "Distress",
+          "word": "distress",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 10 L16 14 M8 14 L16 10' stroke='currentColor' />",
           "breakdown": ["dis- (分)", "stress (压力)"],
           "imagery": "压力大到让人分裂，极度痛苦。",
@@ -568,7 +568,7 @@
           ]
         },
         {
-          "word": "Doctrine",
+          "word": "doctrine",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><path d='M8 8 H16 M8 12 H16' stroke='currentColor' />",
           "breakdown": ["doctr (教)", "-ine"],
           "imagery": "博士（doctor）研究的学说。",
@@ -576,7 +576,7 @@
           "sentences": []
         },
         {
-          "word": "Dominant",
+          "word": "dominant",
           "rootVisual": "<path d='M2 12 L12 2 L22 12' stroke='currentColor' fill='none' /><rect x='6' y='12' width='12' height='8' stroke='currentColor' fill='none' />",
           "breakdown": ["domin (屋顶/统治)", "-ant"],
           "imagery": "像屋顶一样居高临下的。",
@@ -584,7 +584,7 @@
           "sentences": []
         },
         {
-          "word": "Donate",
+          "word": "donate",
           "rootVisual": "<path d='M4 12 H 12 L 10 10 M 12 12 L 10 14' stroke='currentColor' marker-end='url(#arrow)' /><rect x='14' y='8' width='6' height='8' fill='currentColor' />",
           "breakdown": ["don (给)", "-ate"],
           "imagery": "给予出去。",
@@ -597,7 +597,7 @@
           ]
         },
         {
-          "word": "Doom",
+          "word": "doom",
           "rootVisual": "<circle cx='12' cy='12' r='10' fill='currentColor' color='#000' />",
           "breakdown": ["doom (判决/拟声)"],
           "imagery": "重物落地的声音，完蛋了。",
@@ -610,7 +610,7 @@
           ]
         },
         {
-          "word": "Dormitory",
+          "word": "dormitory",
           "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none' /><path d='M6 14 H 10 M 14 14 H 18' stroke='currentColor' />",
           "breakdown": ["dorm (睡)", "-itory (场所)"],
           "imagery": "睡觉的地方。",
@@ -618,7 +618,7 @@
           "sentences": []
         },
         {
-          "word": "Doze",
+          "word": "doze",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M8 12 H16' stroke='currentColor' />",
           "breakdown": ["doze (打盹)"],
           "imagery": "打瞌睡。",
@@ -631,7 +631,7 @@
           ]
         },
         {
-          "word": "Drift",
+          "word": "drift",
           "rootVisual": "<path d='M4 12 Q 8 8 12 12 T 20 12' stroke='currentColor' fill='none' stroke-dasharray='2 2' />",
           "breakdown": ["drift (漂)"],
           "imagery": "不驾驶(drive)的时候就在漂流。",
@@ -644,7 +644,7 @@
           ]
         },
         {
-          "word": "Dump",
+          "word": "dump",
           "rootVisual": "<path d='M4 4 L8 16 H16 L20 4' stroke='currentColor' fill='none' /><path d='M12 4 V 12' stroke='currentColor' marker-end='url(#arrow)' />",
           "breakdown": ["dump (拟声)"],
           "imagery": "倒垃圾的声音。",
@@ -657,7 +657,7 @@
           ]
         },
         {
-          "word": "Dynamic",
+          "word": "dynamic",
           "rootVisual": "<path d='M12 4 L8 20 L20 8 L4 8 L16 20 L12 4' stroke='currentColor' fill='none' />",
           "breakdown": ["dynam (力)", "-ic"],
           "imagery": "充满力量的（谐音：带拿）。",

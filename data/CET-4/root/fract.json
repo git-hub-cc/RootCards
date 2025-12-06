@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Break",
+          "word": "break",
           "rootVisual": "<path d='M4 12 L10 4 M14 20 L20 12' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["break (破)"],
           "imagery": "打破。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Fraction",
+          "word": "fraction",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M12 12 L12 4' stroke='currentColor' /><path d='M12 12 L20 12' stroke='currentColor' />",
           "breakdown": ["fract (破)", "-ion"],
           "imagery": "打破后的一小部分。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Fracture",
+          "word": "fracture",
           "rootVisual": "<rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none' /><path d='M8 12 L16 14' stroke='currentColor' />",
           "breakdown": ["fract (破)", "-ure"],
           "imagery": "骨头折断。",
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "word": "Friction",
+          "word": "friction",
           "rootVisual": "<path d='M4 10 L20 10 M4 14 L20 14' stroke='currentColor' stroke-dasharray='2 2' />",
           "breakdown": ["fric (摩擦)", "-tion"],
           "imagery": "摩擦（导致破损），引申为矛盾。",

@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Assume",
+          "word": "assume",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='1.5' fill='currentColor'/><circle cx='16' cy='10' r='1.5' fill='currentColor'/><path d='M12 16h4' stroke='currentColor' stroke-width='2'/><path d='M14 14v4' stroke='currentColor' stroke-width='2' transform='rotate(20 14 16)'/>",
           "breakdown": [
             "as- (去)",
@@ -31,7 +31,7 @@
           ]
         },
         {
-          "word": "Presume",
+          "word": "presume",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M14 9q1-2 2 0' stroke='currentColor'/><circle cx='8' cy='10' r='1.5' fill='currentColor'/><circle cx='16' cy='10' r='1.5' fill='currentColor'/><path d='M10 16h4' stroke='currentColor'/>",
           "breakdown": [
             "pre- (前)",

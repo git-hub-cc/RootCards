@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Sophomore",
+          "word": "sophomore",
           "rootVisual": "<text x='8' y='14' font-size='10'>1</text><text x='16' y='14' font-size='10' font-weight='bold'>2</text>",
           "breakdown": ["soph (智)", "more (愚/多)"],
           "imagery": "比大一更有智慧了，大二学生。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Sophisticated",
+          "word": "sophisticated",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><path d='M6 6 L18 18 M6 18 L18 6' stroke='currentColor' opacity='0.5' />",
           "breakdown": ["soph (智)", "-isticated"],
           "imagery": "充满智慧和经验的，老练的；（结构）复杂的。",

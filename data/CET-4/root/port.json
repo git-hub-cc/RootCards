@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Portray",
+          "word": "portray",
           "rootVisual": "<rect x='4' y='4' width='16' height='12' stroke='currentColor' fill='none' /><circle cx='12' cy='10' r='3' stroke='currentColor' />",
           "breakdown": ["por (port携带)", "tray (托盘)"],
           "imagery": "带着调色盘（托盘）作画，描绘。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Portrait",
+          "word": "portrait",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><circle cx='12' cy='10' r='4' stroke='currentColor' />",
           "breakdown": ["portra (描绘)", "-it"],
           "imagery": "描绘出来的人像。",

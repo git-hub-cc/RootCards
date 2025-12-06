@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Engineer",
+          "word": "engineer",
           "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 v4 M12 16 v4 M4 12 h4 M16 12 h4' stroke='currentColor'/>",
           "breakdown": ["engine (引擎)", "-er (人)"],
           "imagery": "一个机械齿轮，代表工程与机械。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Pioneer",
+          "word": "pioneer",
           "rootVisual": "<path d='M4 20 l8 -12 l8 12' stroke='currentColor' fill='none'/><line x1='12' y1='8' x2='12' y2='2' stroke='currentColor'/><path d='M12 2 l6 3 l-6 3' fill='currentColor'/>",
           "breakdown": ["pion (步兵)", "-eer (人)"],
           "imagery": "攀登到山顶，并插上第一面旗帜的人。",

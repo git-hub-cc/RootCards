@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Psychology",
+          "word": "psychology",
           "rootVisual": "<path d='M12 4 c -6 0 -6 8 0 8 c 6 0 6 -8 0 -8 z M 12 12 v 8' stroke='currentColor' fill='none' stroke-width='2'/>",
           "breakdown": [
             "psych (心理)",
@@ -25,7 +25,7 @@
           "sentences": []
         },
         {
-          "word": "Psychiatry",
+          "word": "psychiatry",
           "rootVisual": "<path d='M12 4 c -6 0 -6 8 0 8 c 6 0 6 -8 0 -8 z M 12 12 v 8' stroke='currentColor' fill='none' stroke-width='1.5'/><path d='M16 16l4 4m-4 0l4-4' stroke='currentColor' stroke-width='2' color='#ef4444'/>",
           "breakdown": [
             "psych (心理)",

@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Letter",
+          "word": "letter",
           "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M4 6 l8 6 l8 -6' stroke='currentColor'/>",
           "breakdown": ["letter (信/字母)"],
           "imagery": "字母；信件。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Literal",
+          "word": "literal",
           "rootVisual": "<text x='12' y='14' font-size='10' text-anchor='middle' fill='currentColor'>Abc</text>",
           "breakdown": ["liter (文字)", "-al (形)"],
           "imagery": "逐字的，字面上的。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Literature",
+          "word": "literature",
           "rootVisual": "<path d='M4 6 h16 v14 h-16 z' stroke='currentColor' fill='none'/><path d='M6 10 h12 M6 14 h8' stroke='currentColor'/>",
           "breakdown": ["liter (文字)", "-ature (名)"],
           "imagery": "文字作品的总称。",
@@ -43,7 +43,7 @@
           "sentences": []
         },
         {
-          "word": "Illiterate",
+          "word": "illiterate",
           "rootVisual": "<text x='12' y='14' font-size='10' text-anchor='middle' fill='currentColor'>?</text>",
           "breakdown": ["il- (不)", "liter (文字)", "-ate"],
           "imagery": "不识字的。",

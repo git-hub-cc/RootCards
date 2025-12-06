@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Universe",
+          "word": "universe",
           "rootVisual": "<circle cx='12' cy='12' r='10' fill='currentColor' color='#000'/>",
           "breakdown": ["uni (一)", "vers (转)"],
           "imagery": "在一个空间里转动（万物归一），宇宙。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Diverse",
+          "word": "diverse",
           "rootVisual": "<path d='M12 12 l-6 -6 M12 12 l6 -6 M12 12 l0 8' stroke='currentColor'/>",
           "breakdown": ["di- (分)", "vers (转)"],
           "imagery": "分开转动，多种多样的。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Conversation",
+          "word": "conversation",
           "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M12 12 l0 4 q 2 -2 0 -4' stroke='currentColor' fill='none'/>",
           "breakdown": ["con- (共)", "vers (转)"],
           "imagery": "大家围着一个话题转，对话。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Advertise",
+          "word": "advertise",
           "rootVisual": "<path d='M12 12 l4 -4' stroke='currentColor'/><path d='M8 12 h8' stroke='currentColor' opacity='0.5'/>",
           "breakdown": ["ad- (去)", "vert (转)"],
           "imagery": "到处转着喊（广而告之）。",
@@ -47,7 +47,7 @@
           "sentences": []
         },
         {
-          "word": "Version",
+          "word": "version",
           "rootVisual": "<path d='M4 4 h12 v16 h-12 z' stroke='currentColor' fill='none'/><text x='10' y='14' font-size='10' fill='currentColor'>V2</text>",
           "breakdown": ["vers (转)", "-ion"],
           "imagery": "转一下出来的新形式，版本。",

@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Educate",
+          "word": "educate",
           "rootVisual": "<path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["e- (向外)", "duc (引导)", "-ate"],
           "imagery": "将内在潜力向外引导出来。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Introduce",
+          "word": "introduce",
           "rootVisual": "<path d='M4 12 h6 m2 0 h6' stroke='currentColor' stroke-dasharray='2 2'/><rect x='10' y='10' width='4' height='4' fill='currentColor'/>",
           "breakdown": ["intro- (进入)", "duc (引导)"],
           "imagery": "引导进入一个新的环境或圈子。",
@@ -35,7 +35,7 @@
           "sentences": []
         },
         {
-          "word": "Produce",
+          "word": "produce",
           "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='2'/><path d='M16 8 l4 4 l-4 4' stroke='currentColor'/>",
           "breakdown": ["pro- (向前)", "duc (引导)"],
           "imagery": "向前引导（生产流程），制造出产品。",
@@ -43,7 +43,7 @@
           "sentences": []
         },
         {
-          "word": "Reduce",
+          "word": "reduce",
           "rootVisual": "<path d='M20 4 l-16 16' stroke='currentColor' stroke-width='2'/><path d='M8 16 h4' stroke='currentColor'/>",
           "breakdown": ["re- (向后)", "duc (引导)"],
           "imagery": "向后/向下引导，使数量减少。",
@@ -51,7 +51,7 @@
           "sentences": []
         },
         {
-          "word": "Conduct",
+          "word": "conduct",
           "rootVisual": "<circle cx='4' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='20' cy='12' r='2' fill='currentColor'/><path d='M4 12 h16' stroke='currentColor'/>",
           "breakdown": ["con- (共同)", "duct (引导)"],
           "imagery": "引导大家一起做某事，如指挥乐队。",
@@ -59,7 +59,7 @@
           "sentences": []
         },
         {
-          "word": "Abduct",
+          "word": "abduct",
           "rootVisual": "<path d='M12 12 l6 -6' stroke='currentColor' marker-end='url(#arrow)'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["ab- (远离)", "duct (引导)"],
           "imagery": "引导着离开（正轨），即诱拐。",

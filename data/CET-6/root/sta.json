@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Stout",
+          "word": "stout",
           "rootVisual": "<circle cx='12' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M12 11v8' stroke='currentColor' stroke-width='4'/><path d='M8 13h8' stroke='currentColor' stroke-width='4'/><path d='M10 19l-2 4' stroke='currentColor' stroke-width='2'/><path d='M14 19l2 4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": [
             "st- (站)",
@@ -30,7 +30,7 @@
           ]
         },
         {
-          "word": "Stroll",
+          "word": "stroll",
           "rootVisual": "<circle cx='12' cy='6' r='2' fill='currentColor'/><path d='M12 8v6l-2 4' stroke='currentColor'/><path d='M12 14l2 4' stroke='currentColor'/><path d='M12 10l-3 2' stroke='currentColor'/><path d='M12 10l3 2' stroke='currentColor'/>",
           "breakdown": [
             "st- (站)",

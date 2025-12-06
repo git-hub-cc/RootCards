@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Father",
+          "word": "father",
           "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none' /><path d='M12 12 V 20 M 8 16 H 16' stroke='currentColor' />",
           "breakdown": ["father"],
           "imagery": "父亲。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Patrol",
+          "word": "patrol",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='4 2' /><circle cx='12' cy='12' r='2' fill='currentColor' />",
           "breakdown": ["patr (父)", "ol"],
           "imagery": "像父亲保卫家庭一样巡视。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Patron",
+          "word": "patron",
           "rootVisual": "<rect x='8' y='12' width='8' height='8' stroke='currentColor' fill='none' /><text x='12' y='10' text-anchor='middle' font-size='10' fill='currentColor'>$</text>",
           "breakdown": ["patr (父)", "-on"],
           "imagery": "像父亲一样提供资助的人。",
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "word": "Patent",
+          "word": "patent",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><text x='12' y='14' text-anchor='middle' font-size='8'>®</text>",
           "breakdown": ["pat (父/显露)", "-ent"],
           "imagery": "发明的'父亲'拥有的权利；公开的权利。",
@@ -56,7 +56,7 @@
           "sentences": []
         },
         {
-          "word": "Sponsor",
+          "word": "sponsor",
           "rootVisual": "<path d='M4 12 H 12 L 20 4' stroke='currentColor' /><text x='16' y='16' text-anchor='middle' font-size='10'>$</text>",
           "breakdown": ["spons (承诺)", "-or"],
           "imagery": "承诺出资的人（类似 patron）。",

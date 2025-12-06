@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Strict",
+          "word": "strict",
           "rootVisual": "<rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8 M8 16 h8' stroke='currentColor'/>",
           "breakdown": ["strict (紧)"],
           "imagery": "管得严（紧）的。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "District",
+          "word": "district",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><circle cx='12' cy='12' r='4' fill='currentColor' opacity='0.3'/>",
           "breakdown": ["di- (分)", "strict (拉紧/范围)"],
           "imagery": "拉紧（圈出）分开的一块区域。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Restrict",
+          "word": "restrict",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><line x1='4' y1='12' x2='20' y2='12' stroke='currentColor'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor'/>",
           "breakdown": ["re- (回)", "strict (紧)"],
           "imagery": "往回拉紧，限制活动范围。",

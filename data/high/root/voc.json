@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Vocal",
+          "word": "vocal",
           "rootVisual": "<path d='M8 12 q 4 -6 8 0' stroke='currentColor' fill='none'/><circle cx='12' cy='14' r='2' fill='currentColor'/>",
           "breakdown": ["voc (声)", "-al"],
           "imagery": "声音的，有声的。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Vocabulary",
+          "word": "vocabulary",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8' stroke='currentColor'/>",
           "breakdown": ["voc (声/词)", "-bulary"],
           "imagery": "能够发出的声音（词汇）汇集。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Advocate",
+          "word": "advocate",
           "rootVisual": "<path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/><path d='M8 12 h8' stroke='currentColor' opacity='0.3'/>",
           "breakdown": ["ad- (加强)", "voc (喊)", "-ate"],
           "imagery": "大声喊（去支持），提倡。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Vote",
+          "word": "vote",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M9 12 l2 2 l4 -4' stroke='currentColor'/>",
           "breakdown": ["vot (誓言/声)", "e"],
           "imagery": "通过发声/宣誓来选择。",
@@ -47,7 +47,7 @@
           "sentences": []
         },
         {
-          "word": "Devote",
+          "word": "devote",
           "rootVisual": "<path d='M12 14 l-2 2 h4 z' fill='currentColor'/><circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/>",
           "breakdown": ["de- (加强)", "vote (誓)"],
           "imagery": "加强誓言，全身心投入。",

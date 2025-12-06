@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Include",
+          "word": "include",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["in- (在内)", "clud (关)"],
           "imagery": "关在里面，即包含。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Exclude",
+          "word": "exclude",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><circle cx='20' cy='6' r='2' fill='currentColor'/>",
           "breakdown": ["ex- (向外)", "clud (关)"],
           "imagery": "关在外面，即排除。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Conclude",
+          "word": "conclude",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='currentColor' opacity='0.3'/><path d='M4 20 h16' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["con- (全部)", "clud (关)"],
           "imagery": "全部关上，事情结束；引申为下结论。",
@@ -38,7 +38,7 @@
           "sentences": []
         },
         {
-          "word": "Exclusive",
+          "word": "exclusive",
           "rootVisual": "<path d='M12 2 v20' stroke='currentColor'/><circle cx='6' cy='12' r='3' fill='currentColor'/><path d='M18 12 l-4 4 m4 -4 l-4 -4' stroke='currentColor'/>",
           "breakdown": ["ex- (外)", "clus (关)", "-ive (形)"],
           "imagery": "把别人关在外面，只留自己，即独家的。",

@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Pillow",
+          "word": "pillow",
           "rootVisual": "<rect x='4' y='8' width='16' height='10' rx='3' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 13 q 4 2 8 0' stroke='currentColor' opacity='0.5'/>",
           "breakdown": ["Pillow", "(枕头)"],
           "imagery": "柔软的长方形垫子，中间因为受力而微微凹陷。",
@@ -24,7 +24,7 @@
           ]
         },
         {
-          "word": "Quilt",
+          "word": "quilt",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 9 c 4 -2 8 2 12 0' stroke='currentColor' fill='none'/><path d='M8 14 c 4 -2 8 2 12 0' stroke='currentColor' fill='none'/><path d='M4 19 c 4 -2 8 2 12 0' stroke='currentColor' fill='none'/>",
           "breakdown": ["Quilt", "(被子)"],
           "imagery": "表面带有波浪般的纹理，像是多层布料缝合在一起，柔软而厚实。",
@@ -34,7 +34,7 @@
           ]
         },
         {
-          "word": "Dream",
+          "word": "dream",
           "rootVisual": "<g transform='translate(0, 0)'><circle cx='12' cy='18' r='3' fill='none' stroke='currentColor' stroke-width='2'/><path d='M12 21 v3' stroke='currentColor' stroke-width='2'/><path d='M10 24 h4' stroke='currentColor' stroke-width='2'/><path d='M12 14 a 1 1 0 0 1 0 -2 a 2 2 0 0 1 0 -4 a 3 3 0 0 1 6 0 a 2 2 0 0 1 0 4 a 1 1 0 0 1 0 2 z' fill='none' stroke='currentColor' stroke-width='1.5' stroke-dasharray='2 2'/><circle cx='15' cy='10' r='1' fill='currentColor' opacity='0.5'/></g>",
           "breakdown": ["Dream", "(梦想)"],
           "imagery": "一个人抬头仰望高悬的云朵，目光中充满了对未来的憧憬。",

@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Arm",
+          "word": "arm",
           "rootVisual": "<path d='M4 14 l8 -4 l8 4' stroke='currentColor' stroke-width='4' stroke-linecap='round'/>",
           "breakdown": ["arm (手臂/武器)"],
           "imagery": "身体的一部分，也是最原始的战斗工具。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Army",
+          "word": "army",
           "rootVisual": "<path d='M4 20 h16 l-8 -16 z' fill='currentColor' opacity='0.5'/><path d='M8 12 h8' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["arm (武器)", "-y (集合)"],
           "imagery": "一群拿起武器的人。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Armor",
+          "word": "armor",
           "rootVisual": "<path d='M6 4 h12 v10 q 0 6 -6 8 q -6 -2 -6 -8 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 v18' stroke='currentColor'/>",
           "breakdown": ["arm (武器)", "-or (物)"],
           "imagery": "防御武器攻击的装备。",
@@ -38,7 +38,7 @@
           "sentences": []
         },
         {
-          "word": "Alarm",
+          "word": "alarm",
           "rootVisual": "<path d='M12 2 l2 4 h4 l-3 3 l1 4 l-4 -3 l-4 3 l1 -4 l-3 -3 h4 z' stroke='currentColor' fill='none'/><path d='M4 20 h16' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["al- (all)", "arm (武器)"],
           "imagery": "所有人拿起武器，即拉响警报。",

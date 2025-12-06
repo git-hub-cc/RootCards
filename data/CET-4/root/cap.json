@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Cab",
+          "word": "cab",
           "rootVisual": "<path d='M4 14 L6 8 H18 L20 14 V 18 H 4 Z' stroke='currentColor' fill='none' />",
           "breakdown": ["cap (包围)"],
           "imagery": "把人包围在里面的小车。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Cabin",
+          "word": "cabin",
           "rootVisual": "<path d='M4 12 L12 4 L20 12 V 20 H 4 Z' stroke='currentColor' fill='none' />",
           "breakdown": ["cap (包围)", "-in"],
           "imagery": "把人包围起来的小屋或船舱。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Cabinet",
+          "word": "cabinet",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor' />",
           "breakdown": ["cabin (小屋)", "-et (小)"],
           "imagery": "一种封闭的小空间（橱柜）；内阁会议室。",
@@ -43,7 +43,7 @@
           ]
         },
         {
-          "word": "Cable",
+          "word": "cable",
           "rootVisual": "<path d='M2 12 Q 12 20 22 12' stroke='currentColor' stroke-width='2' fill='none' />",
           "breakdown": ["c (抓)", "-able (能)"],
           "imagery": "能抓住东西的绳索。",
@@ -51,7 +51,7 @@
           "sentences": []
         },
         {
-          "word": "Cradle",
+          "word": "cradle",
           "rootVisual": "<path d='M4 14 Q 12 22 20 14' stroke='currentColor' fill='none' /><line x1='4' y1='14' x2='4' y2='10' stroke='currentColor' /><line x1='20' y1='14' x2='20' y2='10' stroke='currentColor' />",
           "breakdown": ["c (包围)", "radle"],
           "imagery": "把婴儿包围在里面的小床。",
@@ -59,7 +59,7 @@
           "sentences": []
         },
         {
-          "word": "Cafeteria",
+          "word": "cafeteria",
           "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none' /><text x='12' y='16' font-size='10' text-anchor='middle' fill='currentColor'>☕</text>",
           "breakdown": ["cafe (咖啡)", "-teria (场所)"],
           "imagery": "提供咖啡和食物的场所。",
@@ -67,7 +67,7 @@
           "sentences": []
         },
         {
-          "word": "Calorie",
+          "word": "calorie",
           "rootVisual": "<path d='M12 18 Q 8 8 12 2 Q 16 8 12 18' fill='currentColor' color='#ef4444' />",
           "breakdown": ["calor (热)", "-ie"],
           "imagery": "热量单位。",
@@ -75,7 +75,7 @@
           "sentences": []
         },
         {
-          "word": "Cane",
+          "word": "cane",
           "rootVisual": "<path d='M8 20 V 8 Q 8 2 14 2' stroke='currentColor' stroke-width='2' fill='none' />",
           "breakdown": ["cane (茎/杖)"],
           "imagery": "顶部弯曲的手杖（像字母 C）。",
@@ -83,7 +83,7 @@
           "sentences": []
         },
         {
-          "word": "Canoe",
+          "word": "canoe",
           "rootVisual": "<path d='M2 12 Q 12 20 22 12' stroke='currentColor' fill='none' /><line x1='2' y1='12' x2='22' y2='12' stroke='currentColor' />",
           "breakdown": ["can (舟)"],
           "imagery": "把人包围起来的小船。",
@@ -91,7 +91,7 @@
           "sentences": []
         },
         {
-          "word": "Capacity",
+          "word": "capacity",
           "rootVisual": "<path d='M4 4 V 20 H 20 V 4' stroke='currentColor' fill='none' stroke-dasharray='2 2' /><rect x='6' y='12' width='12' height='8' fill='currentColor' opacity='0.5' />",
           "breakdown": ["cap (容纳/抓)", "-acity"],
           "imagery": "能抓住多少东西，即容量。",
@@ -104,7 +104,7 @@
           ]
         },
         {
-          "word": "Cape",
+          "word": "cape",
           "rootVisual": "<path d='M12 4 L4 20 H 20 L 12 4 Z' stroke='currentColor' fill='none' />",
           "breakdown": ["cap (头)", "e"],
           "imagery": "只套在头部的披风；伸入海中的'头'（海角）。",

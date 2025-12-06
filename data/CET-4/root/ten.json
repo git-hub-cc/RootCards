@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Detain",
+          "word": "detain",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><path d='M6 12 H 18' stroke='currentColor' />",
           "breakdown": ["de- (下)", "tain (拿/留)"],
           "imagery": "拿住扣下，拘留。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Retain",
+          "word": "retain",
           "rootVisual": "<path d='M12 12 H 4' stroke='currentColor' marker-end='url(#arrow)' /><circle cx='16' cy='12' r='4' fill='currentColor' opacity='0.5' />",
           "breakdown": ["re- (回)", "tain (拿)"],
           "imagery": "拿回来保持住，保留。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Sustain",
+          "word": "sustain",
           "rootVisual": "<path d='M4 18 H 20' stroke='currentColor' /><path d='M12 18 V 6' stroke='currentColor' />",
           "breakdown": ["sus- (下)", "tain (拿/撑)"],
           "imagery": "在下面撑住，维持。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Tenant",
+          "word": "tenant",
           "rootVisual": "<path d='M4 20 V 10 L 12 4 L 20 10 V 20 H 4 Z' stroke='currentColor' fill='none' /><circle cx='12' cy='14' r='2' fill='currentColor' />",
           "breakdown": ["ten (持)", "-ant (人)"],
           "imagery": "持有（租赁）房产的人。",

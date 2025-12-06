@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Compete",
+          "word": "compete",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
           "breakdown": ["com- (共同)", "pet (追求)"],
           "imagery": "大家共同（com-）追求（pet）同一个靶心，这就是竞争。",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "word": "Complete",
+          "word": "complete",
           "rootVisual": "<path d='M 6 6 v 12 h 12 v -12 z M 9 15 l 3 2 l 4 -5' stroke='currentColor' fill='none'/>",
           "breakdown": ["com- (全部)", "ple (满)"],
           "imagery": "把容器全部填满（ple），一点空隙都不留，即完成。",
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "word": "Cooperate",
+          "word": "cooperate",
           "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='3' stroke='currentColor' fill='none'/><path d='M11 12 h2' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["co- (共同)", "operate (操作)"],
           "imagery": "两个人一起操作机器，这就是合作。",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "word": "Colleague",
+          "word": "colleague",
           "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none'/><circle cx='8' cy='12' r='2' fill='currentColor'/><circle cx='16' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["col- (共同)", "league (联盟)"],
           "imagery": "在同一个大联盟（公司）里一起工作的人。",
@@ -65,7 +65,7 @@
           ]
         },
         {
-          "word": "Contract",
+          "word": "contract",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M9 16 l3 3 l4 -5' stroke='currentColor'/><path d='M4 12 h-2 M20 12 h2' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["con- (共同)", "tract (拉)"],
           "imagery": "把所有相关方“拉”到一起来签署的文件。",
@@ -78,7 +78,7 @@
           ]
         },
         {
-          "word": "Communication",
+          "word": "communication",
           "rootVisual": "<path d='M4 12 q 8 -8 16 0' stroke='currentColor' fill='none'/><path d='M4 16 q 8 8 16 0' stroke='currentColor' fill='none'/><circle cx='12' cy='14' r='1' fill='currentColor'/>",
           "breakdown": ["com- (共同)", "mun (公共/服务)"],
           "imagery": "大家共同分享信息，就像无线电波在两点间传递。",
@@ -91,7 +91,7 @@
           ]
         },
         {
-          "word": "Combine",
+          "word": "combine",
           "rootVisual": "<path d='M8 12 a 4 4 0 1 0 8 0' stroke='currentColor' fill='none'/><path d='M10 12 h4' stroke='currentColor'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
           "breakdown": ["com- (共同)", "bine (捆/包)"],
           "imagery": "把不同的东西捆包在一起，形成一个整体。",
@@ -104,7 +104,7 @@
           ]
         },
         {
-          "word": "Conflict",
+          "word": "conflict",
           "rootVisual": "<path d='M6 6 l12 12' stroke='currentColor' stroke-width='2'/><path d='M18 6 l-12 12' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["con- (共同)", "flict (打)"],
           "imagery": "两个人或者是两股力量在一起互相打斗。",
@@ -117,7 +117,7 @@
           ]
         },
         {
-          "word": "Concentrate",
+          "word": "concentrate",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 2 v10 M12 22 v-10 M2 12 h10 M22 12 h-10' stroke='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["con- (全部)", "center (中心)"],
           "imagery": "把所有的注意力全部汇聚到同一个中心点上。",
@@ -130,7 +130,7 @@
           ]
         },
         {
-          "word": "Conduct",
+          "word": "conduct",
           "rootVisual": "<path d='M6 18 l4 -4 l4 4' stroke='currentColor' fill='none'/><circle cx='10' cy='10' r='2' fill='currentColor'/><path d='M14 10 l4 4 l4 -4' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
           "breakdown": ["con- (共同)", "duct (引导)"],
           "imagery": "像指挥家一样，引导大家共同做某事。",
@@ -143,7 +143,7 @@
           ]
         },
         {
-          "word": "Confuse",
+          "word": "confuse",
           "rootVisual": "<path d='M8 8 q 4 4 8 0 q -4 4 0 8' stroke='currentColor' fill='none'/><path d='M8 12 q 4 -4 8 0 q -4 -4 0 -8' stroke='currentColor' fill='none'/><text x='10' y='14' font-size='8' fill='currentColor'>?</text>",
           "breakdown": ["con- (全部)", "fus (流)"],
           "imagery": "不同的液体全部流到一起，分不清楚了，令人困惑。",
@@ -156,7 +156,7 @@
           ]
         },
         {
-          "word": "Compromise",
+          "word": "compromise",
           "rootVisual": "<path d='M4 12 h6 l2 -2 l2 2 h6' stroke='currentColor' fill='none'/><path d='M12 12 v4' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": ["com- (共同)", "promise (承诺)"],
           "imagery": "双方共同做出承诺，各退一步，达成和解。",

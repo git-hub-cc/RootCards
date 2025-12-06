@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Inexpensive",
+          "word": "inexpensive",
           "rootVisual": "<path d='M12 5v4 M4 9h16 M4 9l2 4h-4z M20 9l-2 4h4z' fill='none' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='16' r='2' />",
           "breakdown": ["in- (不)", "pens (花费/称重)"],
           "imagery": "不用放在天平上斤斤计较（pens），也不需要花费很多金币。",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "word": "Inconvenient",
+          "word": "inconvenient",
           "rootVisual": "<line x1='4' y1='8' x2='20' y2='8'/><line x1='4' y1='16' x2='20' y2='16'/><line x1='8' y1='4' x2='8' y2='20'/><line x1='16' y1='4' x2='16' y2='20'/><circle cx='8' cy='8' r='1.5' fill='currentColor'/><circle cx='16' cy='8' r='1.5' fill='currentColor'/><circle cx='8' cy='16' r='1.5' fill='currentColor'/><circle cx='16' cy='16' r='1.5' fill='currentColor'/>",
           "breakdown": ["in- (不)", "ven (来/走)"],
           "imagery": "本应四通八达的交通网格 (ven - 走) 出现了断裂，导致你无法直接到达，只能选择一条费时费力的路线。这种 '走不通' 的感觉，就是不方便。",
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "word": "Independent",
+          "word": "independent",
           "rootVisual": "<path d='M12 2 v10' stroke='currentColor' stroke-width='2'/><path d='M12 12 q 0 4 4 4' fill='none' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='20' r='2' fill='currentColor'/>",
           "breakdown": ["in- (不)", "pend (悬挂/依靠)"],
           "imagery": "不再像钩子（pend）一样挂在别人身上，而是自己站立。",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "word": "Impolite",
+          "word": "impolite",
           "rootVisual": "<path d='M12 4 L16 14 L8 14 Z' fill='none' stroke='currentColor' stroke-width='2' /><path d='M4 20 h16' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["im- (不)", "pol (修饰/城市)"],
           "imagery": "言行举止没有经过打磨（pol）和修饰，显得粗糙无礼。",
@@ -65,7 +65,7 @@
           ]
         },
         {
-          "word": "Impossible",
+          "word": "impossible",
           "rootVisual": "<path d='M6 14 h4 l2 -4 h4 v4 h-2 l-2 4 h-6 z' fill='none' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["im- (不)", "poss (能力)"],
           "imagery": "像手臂肌肉（poss）一样的力量都不足以完成，即没有能力做到。",
@@ -78,7 +78,7 @@
           ]
         },
         {
-          "word": "Invincible",
+          "word": "invincible",
           "rootVisual": "<path d='M12 2 l2 4 h4 l-3 3 l1 4 l-4 -3 l-4 3 l1 -4 l-3 -3 h4 z' stroke='currentColor' fill='none'/><path d='M4 20 l16 -16' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["in- (不)", "vinc (赢)"],
           "imagery": "无论怎么挑战，都赢不了（vinc）他，即不可战胜的。",
@@ -91,7 +91,7 @@
           ]
         },
         {
-          "word": "Illiterate",
+          "word": "illiterate",
           "rootVisual": "<path d='M6 6 h12 v12 h-12 z' stroke='currentColor' fill='none'/><path d='M8 10 h8 M8 14 h4' stroke='currentColor'/><line x1='6' y1='6' x2='18' y2='18' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["il- (不)", "liter (文字)"],
           "imagery": "看不懂文字，无法阅读，即文盲。",
@@ -104,7 +104,7 @@
           ]
         },
         {
-          "word": "Inflexible",
+          "word": "inflexible",
           "rootVisual": "<line x1='12' y1='4' x2='12' y2='20' stroke='currentColor' stroke-width='4'/>",
           "breakdown": ["in- (不)", "flex (弯曲)"],
           "imagery": "像钢筋一样直挺挺的，不能弯曲，即僵硬的。",
@@ -130,7 +130,7 @@
       },
       "words": [
         {
-          "word": "Include",
+          "word": "include",
           "rootVisual": "<rect x='6' y='6' width='12' height='14' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='15' cy='13' r='1' fill='currentColor'/>",
           "breakdown": ["in- (向内)", "clud (关闭)"],
           "imagery": "把东西放进去，然后关上（clud）门，就包含了在里面。",
@@ -143,7 +143,7 @@
           ]
         },
         {
-          "word": "Introduce",
+          "word": "introduce",
           "rootVisual": "<path d='M4 12 h10 m-3 -3 l3 3 l-3 3' stroke='currentColor' stroke-width='2'/><circle cx='20' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["intro- (向内)", "duc (引导)"],
           "imagery": "用手势引导（duc）某人进入（intro）一个新的圈子。",
@@ -156,7 +156,7 @@
           ]
         },
         {
-          "word": "Inject",
+          "word": "inject",
           "rootVisual": "<path d='M12 4 v10' stroke='currentColor' marker-end='url(#arrow)'/><rect x='8' y='14' width='8' height='6' stroke='currentColor' fill='none'/>",
           "breakdown": ["in- (向内)", "ject (投/射)"],
           "imagery": "用针管把药液射入（ject）体内（in-）。",
@@ -169,7 +169,7 @@
           ]
         },
         {
-          "word": "Inspect",
+          "word": "inspect",
           "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><path d='M16 16 l4 4' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["in- (向内)", "spect (看)"],
           "imagery": "拿着放大镜往里面（in-）仔细看（spect），检查细节。",
@@ -182,7 +182,7 @@
           ]
         },
         {
-          "word": "Inspire",
+          "word": "inspire",
           "rootVisual": "<path d='M12 16 v-6' stroke='currentColor'/><path d='M12 10 l-3 3 M12 10 l3 3' stroke='currentColor'/><circle cx='12' cy='16' r='2' fill='currentColor'/><path d='M8 6 q 4 -4 8 0' stroke='currentColor' fill='none' stroke-dasharray='2 1'/>",
           "breakdown": ["in- (吸入)", "spir (气/神)"],
           "imagery": "吸入（in-）一口气（spir），精神为之一振，产生灵感。",
@@ -195,7 +195,7 @@
           ]
         },
         {
-          "word": "Incident",
+          "word": "incident",
           "rootVisual": "<path d='M12 0 v12' stroke='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["in- (在里)", "cid (落/发生)"],
           "imagery": "事情落在（cid）了里面（in-），通常指有内幕或人为策划的事件。",
@@ -208,7 +208,7 @@
           ]
         },
         {
-          "word": "Innovate",
+          "word": "innovate",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 8 v8 M8 12 h8' stroke='currentColor'/><path d='M16 8 l2 -2' stroke='currentColor' opacity='0.5'/>",
           "breakdown": ["in- (在里)", "nov (新)"],
           "imagery": "在内部（in-）进行更新（nov），使其焕然一新。",

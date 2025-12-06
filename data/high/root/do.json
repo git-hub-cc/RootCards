@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Do",
+          "word": "do",
           "rootVisual": "<path d='M8 12 h8' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["do (做)"],
           "imagery": "最基础的动作。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Deed",
+          "word": "deed",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M9 12 l2 2 l4 -4' stroke='currentColor'/>",
           "breakdown": ["deed (行为)"],
           "imagery": "做出来的事情，即行为。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Indeed",
+          "word": "indeed",
           "rootVisual": "<path d='M12 4 v16' stroke='currentColor' stroke-width='2'/><path d='M8 16 l4 4 l4 -4' stroke='currentColor'/>",
           "breakdown": ["in- (加强)", "deed (做/实)"],
           "imagery": "用行动证实的，确实如此。",

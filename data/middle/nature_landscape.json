@@ -24,7 +24,7 @@
           ]
         },
         {
-          "word": "Forest",
+          "word": "forest",
           "rootVisual": "<path d='M12 2 L16 10 H8 Z M6 10 L10 18 H2 Z M18 10 L22 18 H14 Z' stroke='currentColor' fill='none' stroke-width='1.5'/>",
           "breakdown": ["Forest", "(森林)"],
           "imagery": "三棵树木（三角形）聚集在一起，独木不成林。",
@@ -54,7 +54,7 @@
           ]
         },
         {
-          "word": "Beach",
+          "word": "beach",
           "rootVisual": "<path d='M2 18 q 5 -3 10 0 t 10 0' stroke='currentColor' fill='none'/><circle cx='6' cy='6' r='3' stroke='currentColor' fill='none'/><path d='M6 6 l2 2 M6 6 l0 3 M6 6 l-2 2' stroke='currentColor' opacity='0.5'/>",
           "breakdown": ["Beach", "(海滩)"],
           "imagery": "波浪线代表海水，圆圈代表太阳。",

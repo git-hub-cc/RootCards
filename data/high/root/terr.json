@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Terror",
+          "word": "terror",
           "rootVisual": "<path d='M12 20 q -4 -10 0 -14 q 4 4 0 14' fill='currentColor' opacity='0.8'/>",
           "breakdown": ["terr (恐)"],
           "imagery": "极度恐惧。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Terrible",
+          "word": "terrible",
           "rootVisual": "<path d='M4 4 l16 16 M20 4 l-16 16' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["terr (恐)", "-ible (能)"],
           "imagery": "能引起恐惧的，可怕的。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Terrify",
+          "word": "terrify",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 8 l2 2 M16 8 l-2 2' stroke='currentColor'/>",
           "breakdown": ["terr (恐)", "-ify (使)"],
           "imagery": "使害怕。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Terrorist",
+          "word": "terrorist",
           "rootVisual": "<circle cx='12' cy='14' r='6' fill='currentColor'/><path d='M12 8 v-4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["terror", "-ist (人)"],
           "imagery": "制造恐怖的人（如炸弹）。",

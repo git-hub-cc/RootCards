@@ -22,7 +22,7 @@
           "sentences": [{"en": "What should I wear tomorrow?", "cn": "我明天该穿什么？"}]
         },
         {
-          "word": "Dress",
+          "word": "dress",
           "rootVisual": "<path d='M9 4 h6 l2 6 l4 10 h-18 l4 -10 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 10 h6' stroke='currentColor'/>",
           "breakdown": ["Dress", "(连衣裙)"],
           "imagery": "连为一体的上衣和裙摆，呈现出连衣裙的形状。",
@@ -32,7 +32,7 @@
           ]
         },
         {
-          "word": "Skirt",
+          "word": "skirt",
           "rootVisual": "<path d='M8 6 l8 0 l4 14 l-16 0 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 6 q 4 2 8 0' stroke='currentColor' opacity='0.5'/>",
           "breakdown": ["Skirt", "(短裙)"],
           "imagery": "上窄下宽的梯形轮廓，指仅覆盖下半身的裙子。",
@@ -42,7 +42,7 @@
           ]
         },
         {
-          "word": "Jeans",
+          "word": "jeans",
           "rootVisual": "<path d='M8 4 h8 v6 l-1 10 h-2 l-1 -8 l-1 8 h-2 l-1 -10 v-6' stroke='currentColor' fill='none' stroke-width='2'/><line x1='12' y1='10' x2='12' y2='4' stroke='currentColor'/>",
           "breakdown": ["Jeans", "(牛仔裤)"],
           "imagery": "双腿分开的裤子形状，经典的牛仔裤轮廓。",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "word": "Sock",
+          "word": "sock",
           "rootVisual": "<path d='M8 4 h6 v8 q 0 4 4 4 h2 v4 h-8 q -4 0 -4 -4 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 8 h6' stroke='currentColor' opacity='0.5'/>",
           "breakdown": ["Sock", "(短袜)"],
           "imagery": "L形的织物，用来包裹脚部。",

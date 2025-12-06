@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Withstand",
+          "word": "withstand",
           "rootVisual": "<rect x='10' y='6' width='4' height='12' fill='currentColor'/><path d='M6 12 h-4' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["with- (对抗)", "stand (站)"],
           "imagery": "站着对抗外力，即抵挡、承受。",
@@ -21,7 +21,7 @@
           "sentences": []
         },
         {
-          "word": "Withdraw",
+          "word": "withdraw",
           "rootVisual": "<path d='M18 12 H6' stroke='currentColor' marker-end='url(#arrow)'/><rect x='20' y='8' width='4' height='8' stroke='currentColor' fill='none'/>",
           "breakdown": ["with- (向后)", "draw (拉)"],
           "imagery": "把东西向后拉回来，例如把钱从银行拉回来（取钱），或者撤回军队。",

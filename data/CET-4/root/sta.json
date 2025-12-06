@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Stance",
+          "word": "stance",
           "rootVisual": "<path d='M12 4 V 16 M 8 20 L 12 16 L 16 20' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["sta (站)", "-ance"],
           "imagery": "站立的姿势，立场。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Resistance",
+          "word": "resistance",
           "rootVisual": "<path d='M16 12 L8 12' stroke='currentColor' marker-end='url(#arrow)' /><rect x='4' y='8' width='4' height='8' fill='currentColor' />",
           "breakdown": ["re- (反/后)", "sist (站)", "-ance"],
           "imagery": "站在对面顶回去，抵抗。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Prestige",
+          "word": "prestige",
           "rootVisual": "<path d='M12 20 V 12' stroke='currentColor' /><circle cx='12' cy='8' r='4' stroke='currentColor' fill='none' /><path d='M4 20 L20 20' stroke='currentColor' opacity='0.3' />",
           "breakdown": ["pre- (前)", "sti (站)", "-ge"],
           "imagery": "站在众人前面的（有地位），威望。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Install",
+          "word": "install",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' /><rect x='8' y='8' width='8' height='8' fill='currentColor' />",
           "breakdown": ["in- (入)", "stall (放/站)"],
           "imagery": "放进去站好，安装。",
@@ -66,7 +66,7 @@
           ]
         },
         {
-          "word": "Installment",
+          "word": "installment",
           "rootVisual": "<rect x='2' y='10' width='4' height='6' fill='currentColor' /><rect x='8' y='10' width='4' height='6' fill='currentColor' /><rect x='14' y='10' width='4' height='6' fill='currentColor' />",
           "breakdown": ["install", "-ment"],
           "imagery": "把付款分成一排排站好，分期。",
@@ -79,7 +79,7 @@
           ]
         },
         {
-          "word": "Standpoint",
+          "word": "standpoint",
           "rootVisual": "<path d='M12 16 V 10' stroke='currentColor' /><circle cx='12' cy='18' r='2' fill='currentColor' />",
           "breakdown": ["stand", "point"],
           "imagery": "站立的点，立场。",
@@ -87,7 +87,7 @@
           "sentences": []
         },
         {
-          "word": "Standby",
+          "word": "standby",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M12 8 V 12' stroke='currentColor' />",
           "breakdown": ["stand", "by (旁)"],
           "imagery": "站在旁边准备。",

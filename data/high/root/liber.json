@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Liberty",
+          "word": "liberty",
           "rootVisual": "<rect x='8' y='16' width='8' height='4' fill='currentColor'/><path d='M12 16 v-8' stroke='currentColor'/><path d='M12 4 l2 2 l-2 2 l-2 -2 z' fill='currentColor'/>",
           "breakdown": ["liber (自由)", "-ty (名)"],
           "imagery": "自由女神像 (Statue of Liberty)。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Liberate",
+          "word": "liberate",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["liber (自由)", "-ate (动)"],
           "imagery": "使获得自由。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Liberal",
+          "word": "liberal",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor'/>",
           "breakdown": ["liber (自由)", "-al (形)"],
           "imagery": "思想开放的，自由的。",

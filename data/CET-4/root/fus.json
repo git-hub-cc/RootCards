@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Refuse",
+          "word": "refuse",
           "rootVisual": "<path d='M12 12 L8 8' stroke='currentColor' marker-end='url(#arrow)' /><path d='M16 16 L12 12' stroke='currentColor' />",
           "breakdown": ["re- (回)", "fuse (流)"],
           "imagery": "流回去，不接受。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Refute",
+          "word": "refute",
           "rootVisual": "<path d='M4 18 L10 12 L4 6' stroke='currentColor' stroke-width='2' /><line x1='10' y1='12' x2='20' y2='12' stroke='currentColor' />",
           "breakdown": ["re- (回)", "fute (流)"],
           "imagery": "把观点打回去，驳斥。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Refund",
+          "word": "refund",
           "rootVisual": "<path d='M16 8 L12 12 L16 16' stroke='currentColor' marker-end='url(#arrow)' /><text x='8' y='14' font-size='10' fill='currentColor'>$</text>",
           "breakdown": ["re- (回)", "fund (资金)"],
           "imagery": "资金流回。",
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "word": "Fund",
+          "word": "fund",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><text x='12' y='16' text-anchor='middle' font-size='12' fill='currentColor'>$</text>",
           "breakdown": ["fund (资金)"],
           "imagery": "资金储备。",

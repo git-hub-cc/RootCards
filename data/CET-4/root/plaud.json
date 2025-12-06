@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Applaud",
+          "word": "applaud",
           "rootVisual": "<path d='M4 12 L8 8 M20 12 L16 8' stroke='currentColor' stroke-width='2' /><text x='12' y='18' text-anchor='middle'>👏</text>",
           "breakdown": ["ap- (去)", "plaud (鼓掌)"],
           "imagery": "去鼓掌。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Explode",
+          "word": "explode",
           "rootVisual": "<path d='M12 12 L4 4 M12 12 L20 4 M12 12 L4 20 M12 12 L20 20 M12 12 L12 2 M12 12 L12 22 M12 12 L2 12 M12 12 L22 12' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["ex- (外)", "plod (拍/爆)"],
           "imagery": "向外爆裂。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Plausible",
+          "word": "plausible",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2' /><path d='M8 14 Q 12 18 16 14' stroke='currentColor' />",
           "breakdown": ["plaus (鼓掌)", "-ible"],
           "imagery": "能赢得掌声的，貌似有理的（但可能不真）。",

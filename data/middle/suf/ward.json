@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Forward",
+          "word": "forward",
           "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='2'/><path d='M16 8 l4 4 l-4 4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["for (前)", "-ward (向)"],
           "imagery": "一个笔直向前的箭头，没有任何偏移。",
@@ -31,7 +31,7 @@
           ]
         },
         {
-          "word": "Backward",
+          "word": "backward",
           "rootVisual": "<path d='M20 12 h-16' stroke='currentColor' stroke-width='2'/><path d='M8 8 l-4 4 l4 4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["back (后)", "-ward (向)"],
           "imagery": "一个回头的箭头，指向后方。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Upward",
+          "word": "upward",
           "rootVisual": "<path d='M12 20 v-16' stroke='currentColor' stroke-width='2'/><path d='M8 8 l4 -4 l4 4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["up (上)", "-ward (向)"],
           "imagery": "一个向上的箭头，升向天空。",
@@ -47,7 +47,7 @@
           "sentences": []
         },
         {
-          "word": "Downward",
+          "word": "downward",
           "rootVisual": "<path d='M12 4 v16' stroke='currentColor' stroke-width='2'/><path d='M8 16 l4 4 l4 -4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["down (下)", "-ward (向)"],
           "imagery": "一个向下的箭头，指向地面。",

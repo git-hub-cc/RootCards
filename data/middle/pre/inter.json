@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "International",
+          "word": "international",
           "rootVisual": "<path d='M 2 12 A 10 10 0 1 0 22 12 A 10 10 0 1 0 2 12 Z' stroke='currentColor' stroke-width='1'/>",
           "breakdown": ["inter- (之间)", "nat (出生/国家)"],
           "imagery": "在国家（nat）与国家之间（inter-）的事务，即国际的。",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "word": "Interpersonal",
+          "word": "interpersonal",
           "rootVisual": "<circle cx='8' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M8 11 v4' stroke='currentColor'/><circle cx='16' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M16 11 v4' stroke='currentColor'/><path d='M8 12 q 4 4 8 0' stroke='currentColor' fill='none'/>",
           "breakdown": ["inter- (之间)", "person (人)"],
           "imagery": "在人（person）与人之间（inter-）的关系，即人际的。",

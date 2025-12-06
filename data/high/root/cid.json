@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Decide",
+          "word": "decide",
           "rootVisual": "<path d='M12 2 v10' stroke='currentColor'/><path d='M12 12 l-6 6 M12 12 l6 6' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["de- (向下)", "cid (切)"],
           "imagery": "向下切，一锤定音，不再犹豫。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Accident",
+          "word": "accident",
           "rootVisual": "<path d='M4 4 l16 16' stroke='currentColor' stroke-width='2'/><path d='M20 4 l-16 16' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
           "breakdown": ["ac- (去/偶然)", "cid (落/发生)"],
           "imagery": "偶然掉下来的事情，意想不到的事件。",
@@ -35,7 +35,7 @@
           "sentences": []
         },
         {
-          "word": "Suicide",
+          "word": "suicide",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12 h8' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["sui- (自己)", "cide (切/杀)"],
           "imagery": "切自己，即自杀。",
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "word": "Homicide",
+          "word": "homicide",
           "rootVisual": "<circle cx='12' cy='8' r='4' fill='currentColor'/><path d='M12 12 v8' stroke='currentColor'/><path d='M4 4 l16 16' stroke='currentColor' stroke-width='2' stroke-opacity='0.5'/>",
           "breakdown": ["homi (人)", "cide (切/杀)"],
           "imagery": "杀人。",
@@ -56,7 +56,7 @@
           "sentences": []
         },
         {
-          "word": "Precise",
+          "word": "precise",
           "rootVisual": "<path d='M4 20 h16' stroke='currentColor'/><path d='M8 20 v-4 m4 4 v-6 m4 6 v-4' stroke='currentColor'/>",
           "breakdown": ["pre- (前)", "cis (切)"],
           "imagery": "事前已经切好（刻度），所以测量结果精确。",
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "word": "Concise",
+          "word": "concise",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M18 6 l-4 4' stroke='currentColor'/>",
           "breakdown": ["con- (全部)", "cise (切)"],
           "imagery": "把多余的全部切掉，只留精华。",

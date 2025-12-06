@@ -95,7 +95,7 @@
           ]
         },
         {
-          "word": "Favorite",
+          "word": "favorite",
           "rootVisual": "<path d='M12 2 l3 7 h7 l-5 5 l2 7 l-7 -5 l-7 5 l2 -7 l-5 -5 h7 z' fill='currentColor'/>",
           "breakdown": ["Favor", "(偏爱)"],
           "imagery": "一颗实心的星星，代表它是所有选项中被选中的、最好的那一个。",

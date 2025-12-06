@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Curse",
+          "word": "curse",
           "rootVisual": "<path d='M8 12 h8' stroke='currentColor' stroke-width='4'/><path d='M12 8 v8' stroke='currentColor' stroke-width='1'/>",
           "breakdown": ["curse (诅咒)"],
           "imagery": "恶毒的言语。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Accuse",
+          "word": "accuse",
           "rootVisual": "<path d='M6 12 h12' stroke='currentColor' marker-end='url(#arrow)'/><circle cx='4' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["ac- (去)", "cuse (诅咒)"],
           "imagery": "去诅咒别人，即指责、控告。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Excuse",
+          "word": "excuse",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12 l3 3 l5 -5' stroke='currentColor'/>",
           "breakdown": ["ex- (出)", "cuse (诅咒)"],
           "imagery": "从咒骂/指责中解脱出来，即原谅。",

@@ -114,7 +114,7 @@
           ]
         },
         {
-          "word": "Fight",
+          "word": "fight",
           "rootVisual": "<g transform='translate(0, 0)'><path d='M 18.5 7 a 6.5 6.5 0 0 0 -11.6 -4 a 4 4 0 0 0 -1.4 7 v 6 a 3 3 0 0 0 3 3 h 7 a 3 3 0 0 0 3 -3 V 7 z M 6 9 a 2 2 0 1 0 0 4 h 2 M 8 19 H 16 A 1 1 0 0 1 17 20 V 21 A 1 1 0 0 1 16 22 H 8 A 1 1 0 0 1 7 21 V 20 A 1 1 0 0 1 8 19' fill='none' stroke='currentColor' stroke-width='2'/></g>",
           "breakdown": ["Fight", "(打架/战斗)"],
           "imagery": "戴上厚重的拳击手套，站在擂台上准备迎接激烈的交锋。",

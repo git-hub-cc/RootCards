@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Accept",
+          "word": "accept",
           "rootVisual": "<path d='M4 12 h10 m-3 -3 l3 3 l-3 3' stroke='currentColor'/>",
           "breakdown": ["ac- (去)", "cept (拿)"],
           "imagery": "主动去拿，引申为心理上的接受。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Receive",
+          "word": "receive",
           "rootVisual": "<path d='M20 12 h-10 m3 -3 l-3 3 l3 3' stroke='currentColor'/>",
           "breakdown": ["re- (回)", "ceive (拿)"],
           "imagery": "拿回来，客观上的收到。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Except",
+          "word": "except",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='18' cy='4' r='3' fill='currentColor' />",
           "breakdown": ["ex- (向外)", "cept (拿)"],
           "imagery": "拿到外面去，排除在外。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Exception",
+          "word": "exception",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='20' cy='4' r='2' fill='currentColor' color='#ef4444' />",
           "breakdown": ["ex- (外)", "cept (拿)", "-ion"],
           "imagery": "被拿出去的那个特例。",
@@ -66,7 +66,7 @@
           ]
         },
         {
-          "word": "Concept",
+          "word": "concept",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["con- (全部)", "cept (拿)"],
           "imagery": "把所有特征都拿过来，抽象概括出的想法。",
@@ -74,7 +74,7 @@
           "sentences": []
         },
         {
-          "word": "Conceive",
+          "word": "conceive",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><circle cx='12' cy='12' r='3' fill='currentColor' />",
           "breakdown": ["con- (全/共)", "ceive (拿)"],
           "imagery": "把想法全拿过来（构想）；把生命拿进体内（怀孕）。",
@@ -87,7 +87,7 @@
           ]
         },
         {
-          "word": "Deceive",
+          "word": "deceive",
           "rootVisual": "<path d='M12 4 v16' stroke='currentColor'/><path d='M8 16 l4 4 l4 -4' stroke='currentColor'/>",
           "breakdown": ["de- (向下)", "ceive (拿)"],
           "imagery": "把人拿到下面去，使其看不到真相。",
@@ -100,7 +100,7 @@
           ]
         },
         {
-          "word": "Perceive",
+          "word": "perceive",
           "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' stroke-dasharray='2 2' /><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' />",
           "breakdown": ["per- (穿过)", "ceive (拿)"],
           "imagery": "透过现象拿到本质，洞察。",
@@ -108,7 +108,7 @@
           "sentences": []
         },
         {
-          "word": "Intercept",
+          "word": "intercept",
           "rootVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' stroke-dasharray='4 2'/><rect x='10' y='10' width='4' height='4' fill='currentColor'/>",
           "breakdown": ["inter- (中间)", "cept (拿)"],
           "imagery": "在中间拿下来，即拦截。",
@@ -121,7 +121,7 @@
           ]
         },
         {
-          "word": "Susceptible",
+          "word": "susceptible",
           "rootVisual": "<path d='M12 4 V 16' stroke='currentColor' marker-end='url(#arrow)' /><path d='M8 20 H 16' stroke='currentColor' />",
           "breakdown": ["sus- (下)", "cept (拿)", "-ible"],
           "imagery": "容易被拿到下面的，易受影响的。",
@@ -134,7 +134,7 @@
           ]
         },
         {
-          "word": "Excerpt",
+          "word": "excerpt",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' /><path d='M6 8 H 18 M 6 12 H 12' stroke='currentColor' stroke-dasharray='2 2' /><rect x='6' y='8' width='12' height='4' fill='currentColor' opacity='0.3' />",
           "breakdown": ["ex- (出)", "cerpt (拿)"],
           "imagery": "从文章中拿出来的一段。",

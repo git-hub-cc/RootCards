@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Careful",
+          "word": "careful",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' fill='currentColor'/>",
           "breakdown": ["care (小心)", "-ful (充满)"],
           "imagery": "眼睛盯着中心点，全神贯注，非常小心。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Helpful",
+          "word": "helpful",
           "rootVisual": "<path d='M12 20 l-2 -2 l-4 0 a 2 2 0 0 1 -2 -2 v -8 a 2 2 0 0 1 2 -2 h 12 a 2 2 0 0 1 2 2 v 8 a 2 2 0 0 1 -2 2 l -4 0 z' stroke='currentColor' fill='none'/><path d='M9 10 h6 M12 7 v6' stroke='currentColor'/>",
           "breakdown": ["help (帮助)", "-ful (充满)"],
           "imagery": "对话气泡里有一个加号，表示提供支持和帮助。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Truthful",
+          "word": "truthful",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12 l3 3 l5 -5' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["truth (真相)", "-ful (充满)"],
           "imagery": "一个大大的对钩，代表真实和正确。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Awful",
+          "word": "awful",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 l2 -2 M16 10 l-2 -2' stroke='currentColor'/><circle cx='12' cy='16' r='2' fill='currentColor'/>",
           "breakdown": ["awe (敬畏/恐惧)", "-ful (充满)"],
           "imagery": "一张惊恐的脸，充满了恐惧和糟糕的感觉。",
@@ -70,7 +70,7 @@
           ]
         },
         {
-          "word": "Painful",
+          "word": "painful",
           "rootVisual": "<path d='M12 2 l2 4 h4 l-3 3 l1 4 l-4 -3 l-4 3 l1 -4 l-3 -3 h4 z' stroke='currentColor' fill='none'/><path d='M4 20 l16 -16' stroke='currentColor'/>",
           "breakdown": ["pain (疼痛)", "-ful (充满)"],
           "imagery": "像是被尖锐的东西刺中，充满了痛感。",
@@ -83,7 +83,7 @@
           ]
         },
         {
-          "word": "Harmful",
+          "word": "harmful",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 8 l8 8 M16 8 l-8 8' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["harm (伤害)", "-ful (充满)"],
           "imagery": "一个大大的叉号，表示有毒或有害。",
@@ -96,7 +96,7 @@
           ]
         },
         {
-          "word": "Thankful",
+          "word": "thankful",
           "rootVisual": "<g transform='translate(0, 0)'><path d='M 12 20 m 0 -4 m -8 -4 q 8 4 6 0 m 9 0 q -7 4 -4 0 M 12 10 l -2 -2 a 2 2 0 0 1 4 0 z' stroke='currentColor' fill='none' stroke-width='1.5'/></g>",
           "breakdown": ["thank (感谢)", "-ful (充满)"],
           "imagery": "双手捧着爱心，充满了感激之情。",
@@ -109,7 +109,7 @@
           ]
         },
         {
-          "word": "Wonderful",
+          "word": "wonderful",
           "rootVisual": "<path d='M12 2 L15.09 8.26 L22 9.27 L17 14.14 L18.18 21.02 L12 17.77 L5.82 21.02 L7 14.14 L2 9.27 L8.91 8.26 Z' fill='none' stroke='currentColor' stroke-width='1.5'/>",
           "breakdown": ["wonder (奇迹)", "-ful (充满)"],
           "imagery": "一颗完美的星星，充满了惊奇和美好。",
@@ -122,7 +122,7 @@
           ]
         },
         {
-          "word": "Peaceful",
+          "word": "peaceful",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 2 v20 M12 12 l-6 6 M12 12 l6 6' stroke='currentColor'/>",
           "breakdown": ["peace (和平)", "-ful (充满)"],
           "imagery": "经典的和平标志，象征宁静与安详。",
@@ -135,7 +135,7 @@
           ]
         },
         {
-          "word": "Shameful",
+          "word": "shameful",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 h2 M14 10 h2' stroke='currentColor'/><path d='M8 16 h8' stroke='currentColor'/><rect x='4' y='8' width='16' height='8' fill='currentColor' opacity='0.3'/>",
           "breakdown": ["shame (羞耻)", "-ful (充满)"],
           "imagery": "脸被阴影遮住，充满了羞愧，不敢见人。",
@@ -148,7 +148,7 @@
           ]
         },
         {
-          "word": "Stressful",
+          "word": "stressful",
           "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none'/><path d='M8 8 v8 M12 8 v8 M16 8 v8' stroke='currentColor'/><path d='M4 4 l2 2 M20 4 l-2 2' stroke='currentColor'/>",
           "breakdown": ["stress (压力)", "-ful (充满)"],
           "imagery": "一个被上下挤压变形的盒子，充满了压力。",

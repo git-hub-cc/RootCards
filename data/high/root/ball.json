@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Ball",
+          "word": "ball",
           "rootVisual": "<circle cx='12' cy='12' r='8' fill='currentColor'/>",
           "breakdown": ["ball (球)"],
           "imagery": "一个圆形的球体。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Balloon",
+          "word": "balloon",
           "rootVisual": "<path d='M12 2 a 8 10 0 0 1 0 20 l -2 2 h 4 l -2 -2' fill='currentColor'/>",
           "breakdown": ["ball (球)", "-oon (大)"],
           "imagery": "一个巨大的充气球体。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Belly",
+          "word": "belly",
           "rootVisual": "<path d='M12 4 c -4 0 -6 4 -6 10 c 0 4 2 8 6 8 s 6 -4 6 -8 c 0 -6 -2 -10 -6 -10' stroke='currentColor' fill='none' stroke-width='2'/>",
           "breakdown": ["bel (鼓起)", "-ly (名)"],
           "imagery": "身体上鼓起来的部位。",
@@ -38,7 +38,7 @@
           "sentences": []
         },
         {
-          "word": "Boil",
+          "word": "boil",
           "rootVisual": "<path d='M4 14 q 4 -2 8 0 t 8 0' stroke='currentColor'/><circle cx='8' cy='10' r='2' stroke='currentColor'/><circle cx='16' cy='8' r='3' stroke='currentColor'/>",
           "breakdown": ["boil (沸腾)"],
           "imagery": "水沸腾时鼓起的泡泡 (bubble)。",

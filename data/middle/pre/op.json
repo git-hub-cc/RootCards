@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Oppose",
+          "word": "oppose",
           "rootVisual": "<g transform='translate(0, 0)'><circle cx='7' cy='7' r='3' fill='none' stroke='currentColor' stroke-width='2'/><path d='M7 10 v6 l-2 4 M7 16 l3 4 M7 13 h3' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><circle cx='17' cy='7' r='3' fill='none' stroke='currentColor' stroke-width='2'/><path d='M17 10 v6 l-3 4 M17 16 l2 4 M17 13 h-3' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M12 4 v16' stroke='currentColor' stroke-width='2' stroke-dasharray='2 2'/></g>",
           "breakdown": ["op- (相反)", "pos (放置)"],
           "imagery": "把自己放在（pos）与别人相反（op-）的位置上，即反对。",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "word": "Opposite",
+          "word": "opposite",
           "rootVisual": "<g transform='translate(0, 0)'><rect x='4' y='8' width='6' height='8' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><rect x='14' y='8' width='6' height='8' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 v16' stroke='currentColor' stroke-width='2' stroke-dasharray='2 2' stroke-linecap='round'/></g>",
           "breakdown": ["op- (对面)", "pos (放置)"],
           "imagery": "被放在（pos）正对面（op-）的位置，即对面的。",
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "word": "Obstacle",
+          "word": "obstacle",
           "rootVisual": "<path d='M4 20 h16' stroke='currentColor'/><rect x='10' y='12' width='4' height='8' fill='currentColor'/><path d='M6 16 l2 -2' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["ob- (对立)", "sta (站)"],
           "imagery": "站在（sta）你对面（ob-）挡路的东西，即障碍。",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "word": "Object",
+          "word": "object",
           "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M4 12 h6' stroke='currentColor' marker-end='url(#arrow)'/><path d='M20 12 h-6' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["ob- (对立)", "ject (投)"],
           "imagery": "向你对立面（ob-）投掷（ject）东西，表示反对；或者投掷在你面前的实物（物体）。",
@@ -65,7 +65,7 @@
           ]
         },
         {
-          "word": "Obvious",
+          "word": "obvious",
           "rootVisual": "<path d='M2 12 h20' stroke='currentColor'/><circle cx='12' cy='12' r='4' fill='currentColor'/><path d='M12 8 v-4' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["ob- (对立)", "vi (路)"],
           "imagery": "在路（vi）上迎面（ob-）撞见的东西，看得一清二楚。",
@@ -78,7 +78,7 @@
           ]
         },
         {
-          "word": "Offend",
+          "word": "offend",
           "rootVisual": "<path d='M16 4 v16' stroke='currentColor' stroke-width='2'/><path d='M4 12 h10' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["of- (逆/去)", "fend (打击/篱笆)"],
           "imagery": "逆着（of-）别人的意愿去打击（fend），或者冲撞别人的篱笆，即冒犯。",

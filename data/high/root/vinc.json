@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Victory",
+          "word": "victory",
           "rootVisual": "<path d='M6 6 l6 12 l6 -12' stroke='currentColor' stroke-width='4'/>",
           "breakdown": ["vict (胜)", "-ory (名)"],
           "imagery": "胜利。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Convince",
+          "word": "convince",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12 l3 3 l5 -5' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["con- (全)", "vinc (胜)"],
           "imagery": "把对方完全赢了（在观点上），即说服。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Invincible",
+          "word": "invincible",
           "rootVisual": "<path d='M12 4 l8 8 l-8 8 l-8 -8 z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='4' fill='currentColor'/>",
           "breakdown": ["in- (不)", "vinc (胜)", "-ible"],
           "imagery": "不能被战胜的，无敌的。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Victim",
+          "word": "victim",
           "rootVisual": "<path d='M6 18 l12 -12' stroke='currentColor' stroke-width='2'/><path d='M6 6 l12 12' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["vict (胜/败)", "-im"],
           "imagery": "失败的一方（相对于胜利者），受害者。",

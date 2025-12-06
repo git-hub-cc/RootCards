@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Generate",
+          "word": "generate",
           "rootVisual": "<path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["gen (生)", "-ate (动)"],
           "imagery": "产生出东西。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Generation",
+          "word": "generation",
           "rootVisual": "<circle cx='12' cy='6' r='2' fill='currentColor'/><circle cx='8' cy='16' r='2' fill='currentColor'/><circle cx='16' cy='16' r='2' fill='currentColor'/><path d='M12 8 l-4 6 M12 8 l4 6' stroke='currentColor'/>",
           "breakdown": ["gen (生)", "-ation (名)"],
           "imagery": "一代人，繁衍的一代。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Generator",
+          "word": "generator",
           "rootVisual": "<rect x='4' y='8' width='16' height='10' stroke='currentColor' fill='none'/><path d='M12 8 v-3 m-2 0 l4 0' stroke='currentColor'/>",
           "breakdown": ["generate", "-or (物)"],
           "imagery": "生产（电）的机器。",
@@ -38,7 +38,7 @@
           "sentences": []
         },
         {
-          "word": "Pregnant",
+          "word": "pregnant",
           "rootVisual": "<path d='M12 4 a 6 6 0 0 1 0 12 a 8 8 0 0 1 0 8' stroke='currentColor' fill='none'/>",
           "breakdown": ["pre- (前)", "gnant (gen生)"],
           "imagery": "在生产之前的状态，即怀孕。",
@@ -46,7 +46,7 @@
           "sentences": []
         },
         {
-          "word": "Generous",
+          "word": "generous",
           "rootVisual": "<path d='M12 14 l-2 2 h4 z' fill='currentColor'/><path d='M8 10 h8' stroke='currentColor'/>",
           "breakdown": ["gen (生/种族)", "-ous (多)"],
           "imagery": "出身高贵的（引申为大方的），或产出很多的。",
@@ -59,7 +59,7 @@
           ]
         },
         {
-          "word": "Hydrogen",
+          "word": "hydrogen",
           "rootVisual": "<text x='12' y='16' font-size='14' text-anchor='middle' fill='currentColor'>H</text>",
           "breakdown": ["hydro (水)", "gen (生)"],
           "imagery": "燃烧后产生水的元素。",

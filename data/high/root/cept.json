@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Accept",
+          "word": "accept",
           "rootVisual": "<path d='M4 12 h10 m-3 -3 l3 3 l-3 3' stroke='currentColor'/>",
           "breakdown": ["ac- (去)", "cept (拿)"],
           "imagery": "主动去拿，引申为心理上的接受。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Receive",
+          "word": "receive",
           "rootVisual": "<path d='M20 12 h-10 m3 -3 l-3 3 l3 3' stroke='currentColor'/>",
           "breakdown": ["re- (回)", "ceive (拿)"],
           "imagery": "拿回来，客观上的收到。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Except",
+          "word": "except",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='18' cy='4' r='3' fill='currentColor' />",
           "breakdown": ["ex- (向外)", "cept (拿)"],
           "imagery": "拿到外面去，排除在外。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Concept",
+          "word": "concept",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["con- (全部)", "cept (拿)"],
           "imagery": "把所有特征都拿过来，抽象概括出的想法。",
@@ -61,7 +61,7 @@
           "sentences": []
         },
         {
-          "word": "Deceive",
+          "word": "deceive",
           "rootVisual": "<path d='M12 4 v16' stroke='currentColor'/><path d='M8 16 l4 4 l4 -4' stroke='currentColor'/>",
           "breakdown": ["de- (向下)", "ceive (拿)"],
           "imagery": "把人拿到下面去，使其看不到真相。",
@@ -74,7 +74,7 @@
           ]
         },
         {
-          "word": "Intercept",
+          "word": "intercept",
           "rootVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' stroke-dasharray='4 2'/><rect x='10' y='10' width='4' height='4' fill='currentColor'/>",
           "breakdown": ["inter- (中间)", "cept (拿)"],
           "imagery": "在中间拿下来，即拦截。",

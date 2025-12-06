@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Anti-war",
+          "word": "anti-war",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12 l2 4 l4 -8' stroke='currentColor' opacity='0.5'/><path d='M6 6 l12 12 M18 6 l-12 12' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["anti- (反)", "war (战争)"],
           "imagery": "反对战争。",
@@ -21,7 +21,7 @@
           "sentences": []
         },
         {
-          "word": "Anti-corruption",
+          "word": "anti-corruption",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 6 l12 12 M18 6 l-12 12' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["anti- (反)", "corruption (腐败)"],
           "imagery": "反对腐败。",
@@ -29,7 +29,7 @@
           "sentences": []
         },
         {
-          "word": "Antarctic",
+          "word": "antarctic",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 22 v-4' stroke='currentColor'/>",
           "breakdown": ["ant- (反)", "arctic (北极)"],
           "imagery": "与北极相反的地方，即南极。",

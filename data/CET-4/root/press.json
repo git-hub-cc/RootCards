@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Suppress",
+          "word": "suppress",
           "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' /><path d='M12 4 V 12' stroke='currentColor' stroke-width='3' marker-end='url(#arrow)' />",
           "breakdown": ["sup- (下)", "press (压)"],
           "imagery": "向下压制，镇压。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Suppression",
+          "word": "suppression",
           "rootVisual": "<rect x='6' y='14' width='12' height='4' fill='currentColor' /><path d='M12 4 V 14' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["suppress", "-ion"],
           "imagery": "镇压的行为。",

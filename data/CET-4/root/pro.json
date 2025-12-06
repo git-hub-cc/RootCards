@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Profile",
+          "word": "profile",
           "rootVisual": "<path d='M8 4 Q 14 4 14 10 Q 14 16 8 16' stroke='currentColor' fill='none' />",
           "breakdown": ["pro- (前)", "file (线条/文件)"],
           "imagery": "勾勒出的侧面轮廓；放在前面的简介文件。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Profound",
+          "word": "profound",
           "rootVisual": "<path d='M4 18 H 20' stroke='currentColor' /><rect x='8' y='8' width='8' height='10' fill='currentColor' opacity='0.3' />",
           "breakdown": ["pro- (前)", "found (建立/底)"],
           "imagery": "为了长远未来建立的基础，意义深远。",
@@ -35,7 +35,7 @@
           "sentences": []
         },
         {
-          "word": "Prolong",
+          "word": "prolong",
           "rootVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' stroke-width='2' /><path d='M16 8 L20 12 L16 16' stroke='currentColor' />",
           "breakdown": ["pro- (前)", "long (长)"],
           "imagery": "向前拉长，延长。",
@@ -48,7 +48,7 @@
           ]
         },
         {
-          "word": "Protein",
+          "word": "protein",
           "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor' /><path d='M11 12 H 13' stroke='currentColor' /><circle cx='16' cy='12' r='3' stroke='currentColor' />",
           "breakdown": ["prote (首要)", "-in"],
           "imagery": "生命首要的物质。（pro也有首要之意）",
@@ -56,7 +56,7 @@
           "sentences": []
         },
         {
-          "word": "Protest",
+          "word": "protest",
           "rootVisual": "<rect x='8' y='6' width='8' height='10' stroke='currentColor' fill='none' /><text x='12' y='12' text-anchor='middle' font-size='8'>NO</text>",
           "breakdown": ["pro- (前)", "test (证/测)"],
           "imagery": "在测试/证实之前就站出来反对。",

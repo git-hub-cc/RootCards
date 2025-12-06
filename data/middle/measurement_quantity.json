@@ -44,7 +44,7 @@
           ]
         },
         {
-          "word": "High",
+          "word": "high",
           "rootVisual": "<path d='M4 20 L12 4 L20 20' stroke='currentColor' fill='none' stroke-width='2'/><line x1='22' y1='4' x2='22' y2='20' stroke='currentColor' stroke-dasharray='2 2'/><path d='M18 4 h6' stroke='currentColor'/>",
           "breakdown": ["High", "(高)"],
           "imagery": "一座高耸的山峰，旁边有垂直的标尺线，强调其高度。",

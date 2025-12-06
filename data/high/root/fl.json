@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Fly",
+          "word": "fly",
           "rootVisual": "<path d='M2 12 l6 -6 l6 6 l-12 0' fill='currentColor'/>",
           "breakdown": ["fly (飞)"],
           "imagery": "飞翔的动作。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Flame",
+          "word": "flame",
           "rootVisual": "<path d='M12 18 q -4 -10 0 -14 q 4 4 0 14' fill='currentColor' color='#f97316'/>",
           "breakdown": ["fl (飞/闪)", "-ame"],
           "imagery": "向上飞窜的火舌。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Flash",
+          "word": "flash",
           "rootVisual": "<path d='M12 2 l-2 8 h4 l-2 8' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["fl (飞/闪)"],
           "imagery": "空中飞过的闪电，瞬间的光亮。",
@@ -38,7 +38,7 @@
           "sentences": []
         },
         {
-          "word": "Flatter",
+          "word": "flatter",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 14 q 4 4 8 0' stroke='currentColor'/>",
           "breakdown": ["flat (平/拍)", "-er"],
           "imagery": "把人捧上天（飞起来），或者拍马屁。",

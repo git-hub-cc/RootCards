@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Delete",
+          "word": "delete",
           "rootVisual": "<path d='M4 20 l16 -16' stroke='currentColor' stroke-width='2'/><path d='M20 20 l-16 -16' stroke='currentColor' stroke-width='2'/><path d='M2 10 h20' stroke='currentColor' stroke-width='8' opacity='0.2'/>",
           "breakdown": ["de- (去除)", "let/lin (涂抹)"],
           "imagery": "把它涂掉（lin）去除（de-），即删除。",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "word": "Decide",
+          "word": "decide",
           "rootVisual": "<path d='M12 2 v10' stroke='currentColor'/><path d='M12 12 l-6 6 M12 12 l6 6' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["de- (向下)", "cid (切)"],
           "imagery": "手向下切，一锤定音，不再犹豫。",
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "word": "Defend",
+          "word": "defend",
           "rootVisual": "<path d='M6 4 h12 v12 h-12 z' stroke='currentColor' fill='none'/><path d='M12 4 v16' stroke='currentColor' stroke-width='2'/><path d='M4 12 h16' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["de- (加强)", "fend (篱笆/抵御)"],
           "imagery": "加强篱笆，使其更坚固，用来保卫家园。",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "word": "Defeat",
+          "word": "defeat",
           "rootVisual": "<path d='M12 4 v10' stroke='currentColor'/><path d='M8 14 l4 4 l4 -4' stroke='currentColor'/><path d='M4 18 h16' stroke='currentColor' opacity='0.5'/>",
           "breakdown": ["de- (向下)", "feat (做)"],
           "imagery": "把对方打下去，使其趴下，即战胜。",
@@ -65,7 +65,7 @@
           ]
         },
         {
-          "word": "Depress",
+          "word": "depress",
           "rootVisual": "<path d='M4 10 h16' stroke='currentColor'/><path d='M12 10 v6' stroke='currentColor' stroke-width='2'/><path d='M10 14 l2 2 l2 -2' stroke='currentColor'/>",
           "breakdown": ["de- (向下)", "press (压)"],
           "imagery": "用力向下压，使人情绪低落，或者使经济萧条。",
@@ -78,7 +78,7 @@
           ]
         },
         {
-          "word": "Depart",
+          "word": "depart",
           "rootVisual": "<path d='M12 12 h-6' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 12 l6 -6' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["de- (远离)", "part (部分)"],
           "imagery": "从整体中分出一部分，远离原点，即出发。",
@@ -91,7 +91,7 @@
           ]
         },
         {
-          "word": "Delay",
+          "word": "delay",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l4 4' stroke='currentColor' opacity='0.5'/><path d='M12 12 v-4' stroke='currentColor'/>",
           "breakdown": ["de- (向下)", "lay (放)"],
           "imagery": "把事情先放下来，暂缓处理，即耽搁。",
@@ -104,7 +104,7 @@
           ]
         },
         {
-          "word": "Devote",
+          "word": "devote",
           "rootVisual": "<path d='M12 20 l-4 -8 h8 z' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='3' fill='currentColor'/>",
           "breakdown": ["de- (加强)", "vote (发誓)"],
           "imagery": "加强誓言，像宣誓一样把身心都交出去，即奉献。",
@@ -117,7 +117,7 @@
           ]
         },
         {
-          "word": "Depend",
+          "word": "depend",
           "rootVisual": "<path d='M12 4 h8' stroke='currentColor'/><path d='M16 4 v8' stroke='currentColor'/><circle cx='16' cy='14' r='2' fill='currentColor'/>",
           "breakdown": ["de- (向下)", "pend (悬挂)"],
           "imagery": "挂在别人的下面，像寄生虫一样，即依赖。",
@@ -130,7 +130,7 @@
           ]
         },
         {
-          "word": "Decrease",
+          "word": "decrease",
           "rootVisual": "<path d='M4 4 l6 4 l6 4 l6 4' stroke='currentColor' stroke-width='2' fill='none'/><path d='M22 16 v4 h-4' stroke='currentColor'/>",
           "breakdown": ["de- (向下)", "crease (生长)"],
           "imagery": "生长的方向朝下，即减少。",

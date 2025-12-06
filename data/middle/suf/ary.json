@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Documentary",
+          "word": "documentary",
           "rootVisual": "<rect x='5' y='4' width='14' height='16' rx='2' stroke='currentColor' fill='none'/><line x1='9' y1='8' x2='15' y2='8' stroke='currentColor'/><line x1='9' y1='12' x2='15' y2='12' stroke='currentColor'/><line x1='9' y1='16' x2='13' y2='16' stroke='currentColor'/><path d='M16 14 l4 4' stroke='currentColor'/>",
           "breakdown": ["document (文件)", "-ary (...的)"],
           "imagery": "一台摄像机对着一堆文件拍摄，记录真实。",

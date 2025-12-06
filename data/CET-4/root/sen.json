@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Senator",
+          "word": "senator",
           "rootVisual": "<rect x='8' y='8' width='8' height='12' stroke='currentColor' fill='none' /><path d='M12 8 V 14' stroke='currentColor' />",
           "breakdown": ["sen (老)", "-ator (人)"],
           "imagery": "古罗马元老院成员（通常是长者），参议员。",

@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Reply",
+          "word": "reply",
           "rootVisual": "<path d='M20 12 l-6 4 v-8 z' fill='currentColor'/><path d='M4 12 h10' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": ["re- (回)", "ply (折)"],
           "imagery": "折回来回应，回复。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Apply",
+          "word": "apply",
           "rootVisual": "<rect x='6' y='6' width='12' height='14' stroke='currentColor' fill='none'/><path d='M6 6 l12 14' stroke='currentColor' opacity='0.3'/>",
           "breakdown": ["ap- (去)", "ply (折)"],
           "imagery": "身体折叠（鞠躬）去请求（申请）；贴合上去（应用）。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Multiply",
+          "word": "multiply",
           "rootVisual": "<text x='12' y='16' font-size='14' text-anchor='middle' fill='currentColor'>×</text>",
           "breakdown": ["multi (多)", "ply (折)"],
           "imagery": "折叠多次，成倍增加。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Complex",
+          "word": "complex",
           "rootVisual": "<rect x='4' y='4' width='6' height='6' stroke='currentColor'/><rect x='8' y='8' width='6' height='6' stroke='currentColor'/><rect x='12' y='12' width='6' height='6' stroke='currentColor'/>",
           "breakdown": ["com- (全)", "plex (折)"],
           "imagery": "全部折叠交织在一起，复杂的。",
@@ -47,7 +47,7 @@
           "sentences": []
         },
         {
-          "word": "Explicit",
+          "word": "explicit",
           "rootVisual": "<path d='M4 12 h16' stroke='currentColor'/><path d='M20 12 l-4 -4 m 4 4 l -4 4' stroke='currentColor'/>",
           "breakdown": ["ex- (外)", "plic (折)"],
           "imagery": "向外展开，折痕摊开，清楚明确。",

@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Pastime",
+          "word": "pastime",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M12 12 L16 12' stroke='currentColor' />",
           "breakdown": ["pass (过)", "time"],
           "imagery": "用来打发时间的事。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Surpass",
+          "word": "surpass",
           "rootVisual": "<path d='M4 16 L12 8 L20 16' stroke='currentColor' opacity='0.3' /><path d='M4 12 Q 12 4 20 12' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)' />",
           "breakdown": ["sur- (上)", "pass (过)"],
           "imagery": "从上面跨过去，超越。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Passive",
+          "word": "passive",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 12 H16' stroke='currentColor' />",
           "breakdown": ["pass (忍受/感)", "-ive"],
           "imagery": "忍受的，不主动的。",
@@ -48,7 +48,7 @@
           "sentences": []
         },
         {
-          "word": "Compassion",
+          "word": "compassion",
           "rootVisual": "<path d='M12 6 Q 16 2 20 6 T 12 14 Q 8 10 4 6 T 12 6' fill='currentColor' color='#ef4444' />",
           "breakdown": ["com- (共)", "pass (感)", "-ion"],
           "imagery": "共同的感情，同情心。",

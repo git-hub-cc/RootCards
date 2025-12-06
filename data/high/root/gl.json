@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Glory",
+          "word": "glory",
           "rootVisual": "<path d='M12 12 l4 -8 l2 8 z' fill='currentColor' color='#fbbf24'/>",
           "breakdown": ["gl (光)"],
           "imagery": "光辉，荣耀。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Glare",
+          "word": "glare",
           "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor'/><path d='M12 2 L12 6 M12 18 L12 22 M2 12 L6 12 M18 12 L22 12' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["gl (光)"],
           "imagery": "发出强光；怒目而视（目光如炬）。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Glow",
+          "word": "glow",
           "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor' opacity='0.6'/>",
           "breakdown": ["gl (光)"],
           "imagery": "发出柔和的、持续的光（热）。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Glance",
+          "word": "glance",
           "rootVisual": "<path d='M4 12 q 8 -6 16 0' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
           "breakdown": ["gl (光/滑)"],
           "imagery": "目光滑过，匆匆一瞥。",

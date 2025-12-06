@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Sarcasm",
+          "word": "sarcasm",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12h2' stroke='currentColor'/><path d='M14 12h2' stroke='currentColor'/><path d='M9 16c2-1 4-1 6 0' stroke='currentColor'/>",
           "breakdown": [
             "sarc (肉/讽刺)",
@@ -31,7 +31,7 @@
           ]
         },
         {
-          "word": "Sarcastic",
+          "word": "sarcastic",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='8' cy='9' r='1' fill='currentColor'/><circle cx='16' cy='9' r='1' fill='currentColor'/><path d='M8 15h8' stroke='currentColor'/>",
           "breakdown": [
             "sarcasm",

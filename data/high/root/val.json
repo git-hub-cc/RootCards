@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Valuable",
+          "word": "valuable",
           "rootVisual": "<path d='M12 6 l2 4 h4 l-3 3 l1 4 l-4 -3 l-4 3 l1 -4 l-3 -3 h4 z' fill='currentColor'/>",
           "breakdown": ["val (价值)", "-able (能)"],
           "imagery": "有价值的。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Valid",
+          "word": "valid",
           "rootVisual": "<path d='M4 12 l6 6 l10 -10' stroke='currentColor' stroke-width='3' fill='none'/>",
           "breakdown": ["val (强/效)", "-id"],
           "imagery": "有效的，有法律效力的（强）。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Evaluate",
+          "word": "evaluate",
           "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M8 12 h8' stroke='currentColor'/>",
           "breakdown": ["e- (出)", "val (价值)", "-uate"],
           "imagery": "评估出价值。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Equivalent",
+          "word": "equivalent",
           "rootVisual": "<path d='M6 10 h12 M6 14 h12' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["equ (等)", "val (价)", "-ent"],
           "imagery": "价值相等的。",

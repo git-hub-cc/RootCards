@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Suggest",
+          "word": "suggest",
           "rootVisual": "<path d='M12 4 v4' stroke='currentColor' marker-end='url(#arrow)'/><rect x='8' y='10' width='8' height='6' stroke='currentColor' fill='none'/>",
           "breakdown": ["sug- (下)", "gest (带)"],
           "imagery": "从下面带出想法，提议。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Digest",
+          "word": "digest",
           "rootVisual": "<path d='M12 4 v16' stroke='currentColor' stroke-dasharray='2 2'/><path d='M12 12 l-4 4 m 8 -4 l 4 4' stroke='currentColor'/>",
           "breakdown": ["di- (分)", "gest (运)"],
           "imagery": "把食物分开运输到身体各处，即消化。",
@@ -35,7 +35,7 @@
           "sentences": []
         },
         {
-          "word": "Register",
+          "word": "register",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M9 8 h6 M9 12 h6' stroke='currentColor'/>",
           "breakdown": ["re- (回)", "gister (gest带)"],
           "imagery": "带回来记录在案。",

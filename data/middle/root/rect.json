@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Direct",
+          "word": "direct",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 L18 6' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["di- (加强)", "rect (直/引导)"],
           "imagery": "给出一个笔直的方向，指引道路。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Director",
+          "word": "director",
           "rootVisual": "<path d='M4 8 h16 l-2 8 h-12 z' stroke='currentColor' fill='none'/><path d='M10 8 L6 4' stroke='currentColor'/><text x='12' y='14' font-size='6' text-anchor='middle' fill='currentColor' font-weight='bold'>CUT</text>",
           "breakdown": ["di- (指引)", "rect (直)", "-or (人)"],
           "imagery": "手持场记板，指引电影拍摄方向的人。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Direction",
+          "word": "direction",
           "rootVisual": "<path d='M2 12 h16' stroke='currentColor' stroke-width='2'/><path d='M14 8 l4 4 l-4 4' stroke='currentColor' stroke-width='2'/><circle cx='4' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["di- (指引)", "rect (直)", "-ion (名)"],
           "imagery": "指南针的指针，明确地指向一个方位。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Correct",
+          "word": "correct",
           "rootVisual": "<path d='M20 6 L9 17 l-5 -5' stroke='currentColor' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/>",
           "breakdown": ["cor- (加强)", "rect (正)"],
           "imagery": "一个大大的对钩，把错误扭转为正确。",
@@ -66,7 +66,7 @@
           ]
         },
         {
-          "word": "Right",
+          "word": "right",
           "rootVisual": "<path d='M20 6 L9 17 l-5 -5' stroke='currentColor' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/>",
           "breakdown": ["right (直/正)"],
           "imagery": "核心画面感是“直的、正的”，像汉字“正”一样横平竖直。",
@@ -79,7 +79,7 @@
           ]
         },
         {
-          "word": "Regular",
+          "word": "regular",
           "rootVisual": "<path d='M2 12 h20' stroke='currentColor' stroke-dasharray='4 2'/><rect x='2' y='8' width='2' height='8' fill='currentColor'/><rect x='8' y='8' width='2' height='8' fill='currentColor'/><rect x='14' y='8' width='2' height='8' fill='currentColor'/><rect x='20' y='8' width='2' height='8' fill='currentColor'/>",
           "breakdown": ["reg (直/规则)", "-ular (形)"],
           "imagery": "像尺子上的刻度一样，间隔均匀，直且正，引申为有规律的。",
@@ -92,7 +92,7 @@
           ]
         },
         {
-          "word": "Regulate",
+          "word": "regulate",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><path d='M8 8 h8' stroke='currentColor'/><path d='M8 12 h8' stroke='currentColor'/><path d='M8 16 h5' stroke='currentColor'/>",
           "breakdown": ["reg (规则)", "-ulate (动)"],
           "imagery": "通过制定一条条规则（reg）来管理。",

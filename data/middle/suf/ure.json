@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Pressure",
+          "word": "pressure",
           "rootVisual": "<rect x='6' y='4' width='12' height='6' fill='currentColor'/><path d='M8 12 l2 2 l4 -2 l-2 2 l2 2' stroke='currentColor' fill='none'/><rect x='6' y='18' width='12' height='2' stroke='currentColor' fill='none'/>",
           "breakdown": ["press (压)", "-ure (行为)"],
           "imagery": "一个沉重的方块压在弹簧上，弹簧被压得变形。",

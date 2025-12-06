@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Exit",
+          "word": "exit",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M12 12 h6' stroke='currentColor' marker-end='url(#arrow)'/><path d='M12 4 v16' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": ["ex- (向外)", "it (走)"],
           "imagery": "向外走的地方，即出口。",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "word": "Express",
+          "word": "express",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' fill='none' stroke='currentColor' stroke-width='2'/><path d='M12 18 V 24 M10 22 h4' stroke-width='3' stroke='currentColor'/>",
           "breakdown": ["ex- (向外)", "press (压/挤)"],
           "imagery": "把内部的想法和感情，用力向外挤压出来，变成言语或文字。",
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "word": "Expand",
+          "word": "expand",
           "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M12 8 v-4 M12 16 v4 M8 12 h-4 M16 12 h4' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["ex- (向外)", "pand (伸展)"],
           "imagery": "向四面八方伸展，体积变大，即扩张。",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "word": "Erupt",
+          "word": "erupt",
           "rootVisual": "<path d='M4 20 l8 -12 l8 12 h-16' stroke='currentColor' fill='none'/><path d='M12 8 l0 -4 l-2 2 m4 -2 l-2 2' stroke='currentColor'/>",
           "breakdown": ["e- (向外)", "rupt (断裂)"],
           "imagery": "地壳断裂，岩浆向外喷发，即爆发。",
@@ -65,7 +65,7 @@
           ]
         },
         {
-          "word": "Exhibition",
+          "word": "exhibition",
           "rootVisual": "<rect x='4' y='4' width='16' height='12' stroke='currentColor' fill='none'/><path d='M12 16 v4 h-4 m8 0 h-4' stroke='currentColor'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
           "breakdown": ["ex- (向外)", "hibit (拿)"],
           "imagery": "把收藏的东西拿出来给公众看，即展览。",
@@ -78,7 +78,7 @@
           ]
         },
         {
-          "word": "Expect",
+          "word": "expect",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["ex- (向外)", "spect (看)"],
           "imagery": "向外看，盼望着某人或某事到来，即期望。",
@@ -91,7 +91,7 @@
           ]
         },
         {
-          "word": "Explore",
+          "word": "explore",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l3 3 l-3 -3 l-2 2' stroke='currentColor'/>",
           "breakdown": ["ex- (向外)", "plore (喊/流泪)"],
           "imagery": "向外大声喊叫（为了驱赶野兽或联络），在未知区域行走，即探索。",
@@ -104,7 +104,7 @@
           ]
         },
         {
-          "word": "Explicit",
+          "word": "explicit",
           "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><line x1='12' y1='6' x2='12' y2='18' stroke='currentColor' stroke-dasharray='2 2'/><path d='M12 12 l4 0' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["ex- (向外)", "plic (折叠)"],
           "imagery": "把折叠的东西向外展开，让一切都清清楚楚，即明确的。",
@@ -117,7 +117,7 @@
           ]
         },
         {
-          "word": "Extend",
+          "word": "extend",
           "rootVisual": "<line x1='4' y1='12' x2='12' y2='12' stroke='currentColor'/><line x1='12' y1='12' x2='20' y2='12' stroke='currentColor' stroke-dasharray='2 2' marker-end='url(#arrow)'/>",
           "breakdown": ["ex- (向外)", "tend (伸展)"],
           "imagery": "向外拉伸，使长度或时间增加，即延伸。",
@@ -130,7 +130,7 @@
           ]
         },
         {
-          "word": "Evaluate",
+          "word": "evaluate",
           "rootVisual": "<path d='M4 18 h16' stroke='currentColor'/><rect x='6' y='10' width='2' height='8' fill='currentColor'/><rect x='10' y='6' width='2' height='12' fill='currentColor'/><rect x='14' y='12' width='2' height='6' fill='currentColor'/>",
           "breakdown": ["e- (出)", "valu (价值)"],
           "imagery": "把价值计算出来，即评估。",

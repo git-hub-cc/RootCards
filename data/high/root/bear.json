@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Bear",
+          "word": "bear",
           "rootVisual": "<path d='M12 12 m-8 0 a 8 8 0 1 0 16 0 a 8 8 0 1 0 -16 0' stroke='currentColor' fill='none' stroke-width='2'/>",
           "breakdown": ["bear (熊/承受)"],
           "imagery": "怀孕的女性体型与熊相似；生育过程需要忍受痛苦。",
@@ -31,7 +31,7 @@
           ]
         },
         {
-          "word": "Birth",
+          "word": "birth",
           "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["bear (生育)", "-th (名)"],
           "imagery": "新生命的诞生。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Burden",
+          "word": "burden",
           "rootVisual": "<rect x='6' y='10' width='12' height='10' fill='currentColor'/><path d='M6 10 l6 -6 l6 6' stroke='currentColor'/>",
           "breakdown": ["bur (bear变体)", "-den (名)"],
           "imagery": "背在背上的重物，或者是生育带来的责任。",
@@ -47,7 +47,7 @@
           "sentences": []
         },
         {
-          "word": "Bare",
+          "word": "bare",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
           "breakdown": ["bare (裸)"],
           "imagery": "刚出生时赤裸的状态。",

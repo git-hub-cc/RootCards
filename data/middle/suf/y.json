@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Salty",
+          "word": "salty",
           "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/><path d='M8 6 l2 -2 l2 2' stroke='currentColor'/><circle cx='9' cy='10' r='0.5' fill='currentColor'/><circle cx='13' cy='14' r='0.5' fill='currentColor'/><circle cx='11' cy='12' r='0.5' fill='currentColor'/>",
           "breakdown": ["salt (盐)", "-y (多...的)"],
           "imagery": "表面附着了一层白色的盐粒。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Crispy",
+          "word": "crispy",
           "rootVisual": "<path d='M4 12 l4 -4 l4 4 l4 -4 l4 4' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 16 l2 -2' stroke='currentColor'/>",
           "breakdown": ["crisp (脆)", "-y (...的)"],
           "imagery": "像薯片一样，一折就断，边缘呈锯齿状。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Noisy",
+          "word": "noisy",
           "rootVisual": "<path d='M11 5L6 9H2v6h4l5 4V5z' stroke='currentColor' fill='none'/><path d='M19.07 4.93L17.66 6.34C18.18 6.86 18.5 7.59 18.5 8.39 18.5 9.19 18.18 9.92 17.66 10.44L19.07 11.85C20.01 10.91 20.5 9.69 20.5 8.39 20.5 7.09 20.01 5.87 19.07 4.93z' fill='currentColor'/><path d='M15.54 8.39L14.12 6.98C14.64 7.5 14.96 8.23 14.96 9.03 14.96 9.83 14.64 10.56 14.12 11.08L15.54 12.49C16.48 11.55 16.96 10.33 16.96 9.03 16.96 7.73 16.48 6.51 15.54 5.57z' fill='currentColor'/>",
           "breakdown": ["noise (噪音)", "-y (充满...的)"],
           "imagery": "喇叭里传出混乱的波浪线，充满了声音。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Sleepy",
+          "word": "sleepy",
           "rootVisual": "<path d='M12 4 a 8 8 0 1 0 0 16 a 8 8 0 0 0 0 -16 z' stroke='currentColor' fill='none'/><path d='M8 10 l3 3 l3 -3' stroke='currentColor'/><path d='M8 14 l3 3 l3 -3' stroke='currentColor' opacity='0.5'/>",
           "breakdown": ["sleep (睡觉)", "-y (有...意向的)"],
           "imagery": "眼睛半睁半闭，充满了睡意（Zzz）。",
@@ -66,7 +66,7 @@
           ]
         },
         {
-          "word": "Thirsty",
+          "word": "thirsty",
           "rootVisual": "<path d='M6 4 h12 l-2 16 h-8 z' stroke='currentColor' fill='none'/><path d='M12 10 l-2 4 h4 z' fill='currentColor' opacity='0.5'/>",
           "breakdown": ["thirst (渴)", "-y (...的)"],
           "imagery": "一个空空的杯子，只有底部有一滴水，急需被填满。",

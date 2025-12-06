@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Event",
+          "word": "event",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["e- (出)", "vent (来)"],
           "imagery": "出来的事情，发生的大事。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Invent",
+          "word": "invent",
           "rootVisual": "<path d='M12 8 v-4 m-2 0 l4 0' stroke='currentColor'/><rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/>",
           "breakdown": ["in- (进)", "vent (来)"],
           "imagery": "进来（来到脑海）的新东西，发明。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Prevent",
+          "word": "prevent",
           "rootVisual": "<path d='M12 4 v16' stroke='currentColor' stroke-width='4'/><path d='M4 12 h16' stroke='currentColor' opacity='0.3'/>",
           "breakdown": ["pre- (前)", "vent (来)"],
           "imagery": "提前来（挡住），阻止。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Adventure",
+          "word": "adventure",
           "rootVisual": "<path d='M4 18 l8 -12 l8 12' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' stroke='currentColor' fill='none'/>",
           "breakdown": ["ad- (去)", "vent (来)", "-ure"],
           "imagery": "去迎接未来的事情，冒险。",
@@ -47,7 +47,7 @@
           "sentences": []
         },
         {
-          "word": "Ventilate",
+          "word": "ventilate",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M6 12 h12' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": ["vent (风)", "-il-", "-ate"],
           "imagery": "使风进来（vent源于wind），通风。",

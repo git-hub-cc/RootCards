@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Bind",
+          "word": "bind",
           "rootVisual": "<path d='M6 12 h12' stroke='currentColor' stroke-width='4'/><rect x='10' y='8' width='4' height='8' stroke='currentColor' fill='none'/>",
           "breakdown": ["bind (绑)"],
           "imagery": "用绳子系紧。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Bond",
+          "word": "bond",
           "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor'/><circle cx='16' cy='12' r='4' stroke='currentColor'/><line x1='12' y1='12' x2='12' y2='12' stroke='currentColor' stroke-width='4'/>",
           "breakdown": ["bond (绑)"],
           "imagery": "连接两者的纽带。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Band",
+          "word": "band",
           "rootVisual": "<rect x='2' y='10' width='20' height='4' fill='currentColor'/>",
           "breakdown": ["band (带)"],
           "imagery": "一条扁平的带子。",
@@ -38,7 +38,7 @@
           "sentences": []
         },
         {
-          "word": "Bandage",
+          "word": "bandage",
           "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='4' stroke-dasharray='4 2'/>",
           "breakdown": ["band (带)", "-age (名)"],
           "imagery": "用来包扎伤口的带子。",
@@ -46,7 +46,7 @@
           "sentences": []
         },
         {
-          "word": "Bunch",
+          "word": "bunch",
           "rootVisual": "<circle cx='10' cy='14' r='3'/><circle cx='14' cy='14' r='3'/><circle cx='12' cy='10' r='3'/><path d='M12 10 v-6' stroke='currentColor'/>",
           "breakdown": ["bunch (捆)"],
           "imagery": "绑在一起的一束东西（如花、葡萄）。",
@@ -54,7 +54,7 @@
           "sentences": []
         },
         {
-          "word": "Boundary",
+          "word": "boundary",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
           "breakdown": ["bound (限/绑)", "-ary (名)"],
           "imagery": "把一个区域“绑”起来的界线。",

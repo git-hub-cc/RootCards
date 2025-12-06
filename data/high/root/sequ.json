@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Consequent",
+          "word": "consequent",
           "rootVisual": "<path d='M4 12 h4 m2 0 h4 m2 0 h4' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["con- (共)", "sequ (随)", "-ent"],
           "imagery": "随之发生的。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Consequence",
+          "word": "consequence",
           "rootVisual": "<rect x='14' y='8' width='6' height='8' stroke='currentColor' fill='none'/><path d='M4 12 h8' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["con- (共)", "sequ (随)", "-ence"],
           "imagery": "跟随在后面的事情，结果。",

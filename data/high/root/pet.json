@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Pet",
+          "word": "pet",
           "rootVisual": "<path d='M12 17.5c-2.5 0-4.5-1.5-4.5-3.5c0-1.5 1-2.5 2.5-2.5c1 0 1.5.5 2 1.5c.5-1 1-1.5 2-1.5c1.5 0 2.5 1 2.5 2.5c0 2-2 3.5-4.5 3.5z' fill='none' stroke='currentColor'/><circle cx='8' cy='6' r='2' fill='currentColor'/><circle cx='12' cy='5' r='2' fill='currentColor'/><circle cx='16' cy='6' r='2' fill='currentColor'/>",
           "breakdown": ["pet (追求/宠)"],
           "imagery": "追随主人的动物；受宠爱的。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Compete",
+          "word": "compete",
           "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M4 12 l6 0' stroke='currentColor' marker-end='url(#arrow)'/><path d='M20 12 l-6 0' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["com- (共同)", "pet (追求)"],
           "imagery": "大家共同追求同一个目标，即竞争。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Competence",
+          "word": "competence",
           "rootVisual": "<rect x='4' y='14' width='16' height='4' fill='currentColor'/><path d='M12 14 v-8' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["compete (竞争)", "-ence (名)"],
           "imagery": "竞争的能力，胜任。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Appetite",
+          "word": "appetite",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12 l4 4' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["ap- (去)", "pet (追求)", "-ite"],
           "imagery": "去追求（食物），即食欲。",

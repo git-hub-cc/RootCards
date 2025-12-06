@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Actress",
+          "word": "actress",
           "rootVisual": "<rect x='4' y='8' width='16' height='12' rx='1' stroke='currentColor' fill='none'/><path d='M4 8 l4 -4 h12 v4' stroke='currentColor' fill='none'/><path d='M6 6 l2 2 M10 6 l2 2 M14 6 l2 2' stroke='currentColor'/>",
           "breakdown": ["act (表演)", "-ress (女性)"],
           "imagery": "一个打板器（场记板），代表电影拍摄和表演。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Waitress",
+          "word": "waitress",
           "rootVisual": "<path d='M4 14 h16' stroke='currentColor' stroke-width='2'/><path d='M10 14 v4 h4 v-4' stroke='currentColor'/><path d='M14 14 v-6 a 2 2 0 0 0 -4 0 v 6' stroke='currentColor' fill='none'/>",
           "breakdown": ["wait (侍候)", "-ress (女性)"],
           "imagery": "一个托盘，上面放着一个高脚杯，正在提供服务。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Goddess",
+          "word": "goddess",
           "rootVisual": "<path d='M12 12 a 4 4 0 0 1 -4 4 v 4 h 8 v -4 a 4 4 0 0 1 -4 -4 z' stroke='currentColor' fill='none'/><ellipse cx='12' cy='6' rx='6' ry='2' stroke='currentColor' fill='none'/>",
           "breakdown": ["god (神)", "-dess (女性)"],
           "imagery": "女性剪影，头顶悬浮着神圣的光环。",

@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Kitchen",
+          "word": "kitchen",
           "rootVisual": "<path d='M2 14 h20 l-2 6 h-16 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 14 v-4 q 2 -2 4 0 t 4 0' stroke='currentColor' stroke-width='1.5'/><line x1='12' y1='14' x2='12' y2='4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["Kitchen", "(厨房)"],
           "imagery": "一个平底锅正在冒着热气，象征烹饪食物的地方。",
@@ -130,7 +130,7 @@
           ]
         },
         {
-          "word": "Feed",
+          "word": "feed",
           "rootVisual": "<g transform='translate(0, 0)'><path d='M 4 14 a 8 8 0 0 0 16 0' fill='none' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='8' r='2' fill='currentColor'/><circle cx='8' cy='10' r='1.5' fill='currentColor' opacity='0.6'/><circle cx='16' cy='10' r='1.5' fill='currentColor' opacity='0.6'/></g>",
           "breakdown": ["Feed", "(喂养)"],
           "imagery": "食物（圆点）落入碗（半圆）中，代表喂食的动作。",

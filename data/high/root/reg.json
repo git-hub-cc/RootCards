@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Regular",
+          "word": "regular",
           "rootVisual": "<path d='M2 12 h20' stroke='currentColor' stroke-dasharray='4 2'/><rect x='2' y='8' width='2' height='8' fill='currentColor'/><rect x='8' y='8' width='2' height='8' fill='currentColor'/><rect x='14' y='8' width='2' height='8' fill='currentColor'/><rect x='20' y='8' width='2' height='8' fill='currentColor'/>",
           "breakdown": ["reg (直/规则)", "-ular (形)"],
           "imagery": "像尺子上的刻度一样，间隔均匀，直且正。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Regulate",
+          "word": "regulate",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><path d='M8 8 h8' stroke='currentColor'/><path d='M8 12 h8' stroke='currentColor'/><path d='M8 16 h5' stroke='currentColor'/>",
           "breakdown": ["reg (规则)", "-ulate (动)"],
           "imagery": "通过制定一条条规则来管理。",

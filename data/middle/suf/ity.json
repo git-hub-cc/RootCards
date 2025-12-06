@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Ability",
+          "word": "ability",
           "rootVisual": "<path d='M6 14 q 0 -4 4 -6 q 6 -2 8 4 v 4' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='16' cy='8' r='2' fill='currentColor' opacity='0.2'/>",
           "breakdown": ["abl (能)", "-ity (性质)"],
           "imagery": "展示肱二头肌的强壮手臂，象征力量和能力。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Equality",
+          "word": "equality",
           "rootVisual": "<rect x='4' y='10' width='16' height='4' stroke='currentColor' fill='none'/><line x1='4' y1='12' x2='20' y2='12' stroke='currentColor'/>",
           "breakdown": ["equal (相等)", "-ity (性质)"],
           "imagery": "天平两端保持水平，象征平等。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Possibility",
+          "word": "possibility",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><text x='12' y='16' font-size='10' text-anchor='middle' fill='currentColor'>?</text>",
           "breakdown": ["possibl (可能)", "-ity (性质)"],
           "imagery": "一个问号，代表不确定性和可能性。",
@@ -48,7 +48,7 @@
           "sentences": []
         },
         {
-          "word": "Stability",
+          "word": "stability",
           "rootVisual": "<path d='M4 20 h16' stroke='currentColor' stroke-width='2'/><rect x='8' y='8' width='8' height='12' fill='currentColor'/>",
           "breakdown": ["stabl (稳定)", "-ity (性质)"],
           "imagery": "稳固的基座，不易倒塌。",
@@ -56,7 +56,7 @@
           "sentences": []
         },
         {
-          "word": "Popularity",
+          "word": "popularity",
           "rootVisual": "<path d='M12 8 l1 3 h3 l-2 2 l1 3 l-3 -2 l-3 2 l1 -3 l-2 -2 h3 z' fill='currentColor'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='1 4'/>",
           "breakdown": ["popular (流行)", "-ity (性质)"],
           "imagery": "中间一颗闪耀的星，周围环绕着一圈代表粉丝的小点。",
@@ -69,7 +69,7 @@
           ]
         },
         {
-          "word": "Creativity",
+          "word": "creativity",
           "rootVisual": "<path d='M9 14 l-3 6 l6 -3' stroke='currentColor' fill='none'/><path d='M12 10 a 5 5 0 1 1 5 -5' stroke='currentColor' fill='none'/><line x1='12' y1='10' x2='9' y2='14' stroke='currentColor'/>",
           "breakdown": ["creativ (创造)", "-ity (性质)"],
           "imagery": "一只画笔，画出了一个代表灵感的灯泡轮廓。",
@@ -82,7 +82,7 @@
           ]
         },
         {
-          "word": "Electricity",
+          "word": "electricity",
           "rootVisual": "<polyline points='10 2 6 12 14 12 10 22' stroke='currentColor' fill='none' stroke-width='2'/>",
           "breakdown": ["electric (电的)", "-ity (性质)"],
           "imagery": "一道锋利的闪电符号，代表电能。",
@@ -95,7 +95,7 @@
           ]
         },
         {
-          "word": "Vanity",
+          "word": "vanity",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none' opacity='0.5'/>",
           "breakdown": ["van (空)", "-ity (性质)"],
           "imagery": "空虚的内心，表现为外在的虚荣。",
@@ -103,7 +103,7 @@
           "sentences": []
         },
         {
-          "word": "Authority",
+          "word": "authority",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M12 10 v4 M10 12 h4' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/>",
           "breakdown": ["author (权威)", "-ity (性质)"],
           "imagery": "官方的印章或标志。",
@@ -111,7 +111,7 @@
           "sentences": []
         },
         {
-          "word": "Hospitality",
+          "word": "hospitality",
           "rootVisual": "<path d='M4 12 h16' stroke='currentColor'/><path d='M12 4 v16' stroke='currentColor'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/>",
           "breakdown": ["hospit (客人)", "-al", "-ity (性质)"],
           "imagery": "热情接待客人的性质。",

@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Support",
+          "word": "support",
           "rootVisual": "<path d='M6 6 h12' stroke='currentColor' stroke-width='2'/><path d='M8 6 v14 M16 6 v14' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["sup- (在下)", "port (拿/运)"],
           "imagery": "站在下面（sup-）用力拿住（port）上面的东西，这就是支撑或支持。",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "word": "Suppose",
+          "word": "suppose",
           "rootVisual": "<rect x='4' y='14' width='16' height='6' stroke='currentColor' fill='none'/><path d='M12 8 v6' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='12' cy='5' r='3' stroke='currentColor' fill='none'/>",
           "breakdown": ["sup- (在下)", "pos (放)"],
           "imagery": "在下面（sup-）先放（pos）下一个基础的想法，以此为据进行推断。",
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "word": "Subject",
+          "word": "subject",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M12 10 v6' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["sub- (在下)", "ject (投)"],
           "imagery": "被投掷（ject）在下面（sub-），受支配的（臣民/主语）；放在下面的题目（主题）。",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "word": "Submit",
+          "word": "submit",
           "rootVisual": "<rect x='6' y='14' width='12' height='2' fill='currentColor'/><path d='M12 14 v-8' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["sub- (在下)", "mit (送)"],
           "imagery": "在下面把东西送上去，即提交（给上级）；把自己送给别人控制，即屈服。",
@@ -65,7 +65,7 @@
           ]
         },
         {
-          "word": "Suspend",
+          "word": "suspend",
           "rootVisual": "<line x1='4' y1='4' x2='20' y2='4' stroke='currentColor'/><line x1='12' y1='4' x2='12' y2='12' stroke='currentColor'/><circle cx='12' cy='14' r='2' fill='currentColor'/>",
           "breakdown": ["sus- (在下)", "pend (悬挂)"],
           "imagery": "挂在下面，悬空，即暂停（悬而未决）或悬挂。",

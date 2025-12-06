@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "August",
+          "word": "august",
           "rootVisual": "<text x='12' y='16' font-size='14' text-anchor='middle' fill='currentColor'>8</text>",
           "breakdown": ["aug (增加)", "-ust"],
           "imagery": "屋大维（Augustus）为了显示尊贵，给八月'增加'了一天。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Augment",
+          "word": "augment",
           "rootVisual": "<path d='M12 12 L12 4 M8 8 L16 8' stroke='currentColor' stroke-width='3' />",
           "breakdown": ["aug (增加)", "-ment"],
           "imagery": "使事物变大或增多。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Auction",
+          "word": "auction",
           "rootVisual": "<path d='M4 14 L12 14 L12 6 L20 6' stroke='currentColor' stroke-width='2' fill='none' /><text x='16' y='18' font-size='8' fill='currentColor'>$$$</text>",
           "breakdown": ["auc (增加)", "-tion"],
           "imagery": "价格不断增加的售卖方式。",

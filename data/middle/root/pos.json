@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Pose",
+          "word": "pose",
           "rootVisual": "<circle cx='12' cy='6' r='2' fill='currentColor'/><path d='M12 8 v6 l-3 6 m 3 -6 l 3 6 m -6 -8 l -3 -2 m 3 2 l 3 -2' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["pos (放)", "e (动词后缀)"],
           "imagery": "把身体摆放（pos）成某种特定的样子。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Position",
+          "word": "position",
           "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='1' fill='currentColor'/><path d='M12 4 v4 M12 16 v4 M4 12 h4 M16 12 h4' stroke='currentColor'/>",
           "breakdown": ["pos (放)", "-ition (名)"],
           "imagery": "被放置（pos）的具体地点。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Deposit",
+          "word": "deposit",
           "rootVisual": "<rect x='4' y='14' width='16' height='6' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='3' fill='currentColor'/><path d='M12 8 v6' stroke='currentColor' stroke-width='2' marker-end='url(#arrow)'/>",
           "breakdown": ["de- (下)", "pos (放)", "-it (名/动)"],
           "imagery": "把钱放下（de-）存入银行。",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "word": "Expose",
+          "word": "expose",
           "rootVisual": "<path d='M6 18 l12 0' stroke='currentColor'/><path d='M12 6 v12' stroke='currentColor' stroke-dasharray='2 2'/><path d='M8 6 l8 0' stroke='currentColor' opacity='0.3'/>",
           "breakdown": ["ex- (向外)", "pos (放)", "e"],
           "imagery": "把东西放到外面（ex-），让大家都能看到。",
@@ -66,7 +66,7 @@
           ]
         },
         {
-          "word": "Compose",
+          "word": "compose",
           "rootVisual": "<rect x='4' y='4' width='6' height='6' stroke='currentColor'/><rect x='14' y='4' width='6' height='6' stroke='currentColor'/><rect x='9' y='14' width='6' height='6' stroke='currentColor'/><path d='M10 10 l4 4' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": ["com- (一起)", "pos (放)", "e"],
           "imagery": "把不同的部分放在一起（com-），形成一个整体。",
@@ -79,7 +79,7 @@
           ]
         },
         {
-          "word": "Oppose",
+          "word": "oppose",
           "rootVisual": "<path d='M6 12 h12' stroke='currentColor'/><path d='M6 12 l4 -4 m-4 4 l4 4' stroke='currentColor'/><path d='M18 12 l-4 -4 m4 4 l-4 4' stroke='currentColor'/>",
           "breakdown": ["op- (相反)", "pos (放)", "e"],
           "imagery": "把自己放在（pos）与别人相反（op-）的位置上。",
@@ -92,7 +92,7 @@
           ]
         },
         {
-          "word": "Opposite",
+          "word": "opposite",
           "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M8 12 h8' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": ["op- (相反)", "pos (放)", "-ite (形)"],
           "imagery": "被放在（pos）正对面（op-）的位置。",
@@ -105,7 +105,7 @@
           ]
         },
         {
-          "word": "Propose",
+          "word": "propose",
           "rootVisual": "<circle cx='8' cy='12' r='2' fill='currentColor'/><circle cx='16' cy='12' r='2' fill='currentColor' opacity='0.5'/><path d='M8 12 l8 0' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["pro- (向前)", "pos (放)", "e"],
           "imagery": "把想法或戒指放到（pos）前面（pro-），提出来。",
@@ -118,7 +118,7 @@
           ]
         },
         {
-          "word": "Suppose",
+          "word": "suppose",
           "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><path d='M12 14 v6' stroke='currentColor'/><path d='M8 20 h8' stroke='currentColor'/>",
           "breakdown": ["sup- (在下)", "pos (放)", "e"],
           "imagery": "在下面（sup-）先放（pos）下一个基础的想法，以此为据进行推断。",
@@ -131,7 +131,7 @@
           ]
         },
         {
-          "word": "Postpone",
+          "word": "postpone",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><path d='M8 8 h8' stroke='currentColor'/><path d='M12 8 v8' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='16' cy='16' r='2' fill='currentColor'/>",
           "breakdown": ["post- (向后)", "pon (放)", "e"],
           "imagery": "把计划的时间向后（post-）放（pon），即延期。",
@@ -144,7 +144,7 @@
           ]
         },
         {
-          "word": "Purpose",
+          "word": "purpose",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 2 v10' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["pur- (向前)", "pos (放)", "e"],
           "imagery": "放在（pos）前面（pur-）的目标，即意图。",
@@ -157,7 +157,7 @@
           ]
         },
         {
-          "word": "Pause",
+          "word": "pause",
           "rootVisual": "<rect x='8' y='6' width='3' height='12' fill='currentColor'/><rect x='13' y='6' width='3' height='12' fill='currentColor'/>",
           "breakdown": ["paus (放/停)"],
           "imagery": "播放器上的暂停符号（两道竖杠），把动作暂时放下。",

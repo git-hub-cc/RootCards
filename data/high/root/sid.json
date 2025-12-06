@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "President",
+          "word": "president",
           "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/><path d='M12 8 v-2' stroke='currentColor'/><circle cx='12' cy='4' r='2' fill='currentColor'/>",
           "breakdown": ["pre- (前)", "sid (坐)", "-ent"],
           "imagery": "坐在最前面的人（主席/总统）。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Resident",
+          "word": "resident",
           "rootVisual": "<path d='M4 20 h16 v-8 h-16 z' fill='currentColor' opacity='0.3'/><path d='M4 12 l8 -6 l8 6' stroke='currentColor' fill='none'/>",
           "breakdown": ["re- (回)", "sid (坐/居)", "-ent"],
           "imagery": "坐/住在那里的人。",

@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Novel",
+          "word": "novel",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><text x='12' y='14' font-size='10' text-anchor='middle' fill='currentColor'>New</text>",
           "breakdown": ["nov (新)", "-el (小)"],
           "imagery": "新奇的故事；长篇小说。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Innovate",
+          "word": "innovate",
           "rootVisual": "<path d='M12 4 v8 l6 4' stroke='currentColor'/><circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
           "breakdown": ["in- (内)", "nov (新)", "-ate"],
           "imagery": "从内部变新，改革创新。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Renovate",
+          "word": "renovate",
           "rootVisual": "<path d='M4 20 h16 v-10 l-8 -6 l-8 6 z' stroke='currentColor' fill='none'/><path d='M12 12 l4 4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["re- (再)", "nov (新)", "-ate"],
           "imagery": "再一次变新，翻新（建筑）。",

@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Activate",
+          "word": "activate",
           "rootVisual": "<path d='M12 4 V 10 M12 14 V 20 M4 12 H 10 M14 12 H 20' stroke='currentColor' stroke-width='2' /><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' />",
           "breakdown": ["act (行动)", "-iv", "-ate (动)"],
           "imagery": "使处于行动状态。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Agony",
+          "word": "agony",
           "rootVisual": "<path d='M8 8 L16 16 M16 8 L8 16' stroke='currentColor' stroke-width='3' color='#ef4444' />",
           "breakdown": ["agon (挣扎/斗争)", "-y"],
           "imagery": "激烈的内心斗争，极度痛苦。（谐音：爱过你）",

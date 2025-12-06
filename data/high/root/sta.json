@@ -15,7 +15,7 @@
       },
       "words": [
         {
-          "word": "Assist",
+          "word": "assist",
           "rootVisual": "<rect x='8' y='8' width='4' height='10' fill='currentColor'/><rect x='14' y='10' width='4' height='8' fill='currentColor' opacity='0.5'/>",
           "breakdown": ["as- (去)", "sist (站)"],
           "imagery": "去站在旁边（支持），即帮助。",
@@ -23,7 +23,7 @@
           "sentences": []
         },
         {
-          "word": "Consist",
+          "word": "consist",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["con- (共)", "sist (站)"],
           "imagery": "共同站在一起，构成。",
@@ -31,7 +31,7 @@
           "sentences": []
         },
         {
-          "word": "Exist",
+          "word": "exist",
           "rootVisual": "<path d='M4 18 h16' stroke='currentColor'/><rect x='10' y='8' width='4' height='10' fill='currentColor'/>",
           "breakdown": ["ex- (出)", "sist (站)"],
           "imagery": "站出来，显现，存在。",
@@ -39,7 +39,7 @@
           "sentences": []
         },
         {
-          "word": "Insist",
+          "word": "insist",
           "rootVisual": "<rect x='10' y='6' width='4' height='12' fill='currentColor'/><path d='M12 6 v-4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["in- (心)", "sist (站)"],
           "imagery": "内心坚定地站住，坚持。",
@@ -47,7 +47,7 @@
           "sentences": []
         },
         {
-          "word": "Resist",
+          "word": "resist",
           "rootVisual": "<rect x='6' y='8' width='4' height='10' fill='currentColor'/><path d='M14 12 l4 0' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["re- (反)", "sist (站)"],
           "imagery": "站在对立面，反抗。",
@@ -55,7 +55,7 @@
           "sentences": []
         },
         {
-          "word": "Steady",
+          "word": "steady",
           "rootVisual": "<rect x='4' y='16' width='16' height='4' fill='currentColor'/><rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/>",
           "breakdown": ["stead (站)", "-y"],
           "imagery": "站得稳的。",
@@ -63,7 +63,7 @@
           "sentences": []
         },
         {
-          "word": "Stable",
+          "word": "stable",
           "rootVisual": "<path d='M4 18 h16' stroke='currentColor' stroke-width='2'/><rect x='8' y='8' width='8' height='10' fill='currentColor'/>",
           "breakdown": ["sta (站)", "-ble (能)"],
           "imagery": "能站住的，抽象的稳定。",
@@ -71,7 +71,7 @@
           "sentences": []
         },
         {
-          "word": "Stage",
+          "word": "stage",
           "rootVisual": "<path d='M2 14 h20 v6 h-20 z' stroke='currentColor' fill='none'/><rect x='8' y='8' width='8' height='6' fill='currentColor' opacity='0.3'/>",
           "breakdown": ["sta (站)"],
           "imagery": "站立表演的地方；发展的一个站（阶段）。",
@@ -79,7 +79,7 @@
           "sentences": []
         },
         {
-          "word": "State",
+          "word": "state",
           "rootVisual": "<path d='M4 4 h16 v16 h-16 z' stroke='currentColor' fill='none'/><text x='12' y='14' font-size='10' text-anchor='middle' fill='currentColor'>US</text>",
           "breakdown": ["stat (站/立)"],
           "imagery": "立国；官方陈述（立论）；状况（立足点）。",
@@ -87,7 +87,7 @@
           "sentences": []
         },
         {
-          "word": "Distance",
+          "word": "distance",
           "rootVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' stroke-width='2' stroke-dasharray='4 2'/><circle cx='4' cy='12' r='2' fill='currentColor'/><circle cx='20' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["di- (分)", "stan (站)"],
           "imagery": "分开站立的间隔。",
@@ -95,7 +95,7 @@
           "sentences": []
         },
         {
-          "word": "Destination",
+          "word": "destination",
           "rootVisual": "<path d='M4 12 h12' stroke='currentColor' stroke-dasharray='4 2'/><path d='M18 8 l4 4 l-4 4' stroke='currentColor'/><circle cx='20' cy='12' r='2' fill='currentColor' color='#ef4444'/>",
           "breakdown": ["de- (离)", "stin (站)"],
           "imagery": "定下来的（站住）最终去处。",

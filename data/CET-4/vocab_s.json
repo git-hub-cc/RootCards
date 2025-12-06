@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Safeguard",
+          "word": "safeguard",
           "rootVisual": "<path d='M6 4 H 18 V 12 L 12 18 L 6 12 Z' stroke='currentColor' fill='none' />",
           "breakdown": ["safe", "guard"],
           "imagery": "为了安全而看守。",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "word": "Sake",
+          "word": "sake",
           "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='10'>FOR</text>",
           "breakdown": ["sake"],
           "imagery": "为了...的缘故。",
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "word": "Scandal",
+          "word": "scandal",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>📰</text>",
           "breakdown": ["scandal"],
           "imagery": "丑闻。",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "word": "Scheme",
+          "word": "scheme",
           "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none' /><path d='M6 10 H 14' stroke='currentColor' />",
           "breakdown": ["scheme (计划)"],
           "imagery": "使计谋（谐音）。",
@@ -65,7 +65,7 @@
           ]
         },
         {
-          "word": "Semester",
+          "word": "semester",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2' />",
           "breakdown": ["sem (六)", "-ester (月)"],
           "imagery": "六个月的学期。",
@@ -78,7 +78,7 @@
           ]
         },
         {
-          "word": "Setback",
+          "word": "setback",
           "rootVisual": "<path d='M12 12 L 6 12' stroke='currentColor' marker-end='url(#arrow)' />",
           "breakdown": ["set", "back"],
           "imagery": "向后退步，挫折。",
@@ -91,7 +91,7 @@
           ]
         },
         {
-          "word": "Showcase",
+          "word": "showcase",
           "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none' />",
           "breakdown": ["show", "case"],
           "imagery": "展示柜。",
@@ -99,7 +99,7 @@
           "sentences": []
         },
         {
-          "word": "Sip",
+          "word": "sip",
           "rootVisual": "<path d='M12 12 Q 12 16 16 12' stroke='currentColor' fill='none' />",
           "breakdown": ["sip"],
           "imagery": "小口喝。",
@@ -112,7 +112,7 @@
           ]
         },
         {
-          "word": "Skip",
+          "word": "skip",
           "rootVisual": "<path d='M4 18 Q 8 12 12 18 T 20 18' stroke='currentColor' fill='none' />",
           "breakdown": ["skip"],
           "imagery": "跳过。",
@@ -125,7 +125,7 @@
           ]
         },
         {
-          "word": "Smack",
+          "word": "smack",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>👋</text>",
           "breakdown": ["smack"],
           "imagery": "掌击。",
@@ -138,7 +138,7 @@
           ]
         },
         {
-          "word": "Smash",
+          "word": "smash",
           "rootVisual": "<path d='M4 4 L 20 20 M 20 4 L 4 20' stroke='currentColor' />",
           "breakdown": ["smash"],
           "imagery": "打碎。",
@@ -151,7 +151,7 @@
           ]
         },
         {
-          "word": "Smuggle",
+          "word": "smuggle",
           "rootVisual": "<rect x='4' y='10' width='8' height='6' fill='currentColor' opacity='0.5' />",
           "breakdown": ["smuggle"],
           "imagery": "偷偷运送，走私。",
@@ -164,7 +164,7 @@
           ]
         },
         {
-          "word": "Snap",
+          "word": "snap",
           "rootVisual": "<path d='M8 12 L 16 12' stroke='currentColor' stroke-dasharray='2 2' />",
           "breakdown": ["snap"],
           "imagery": "啪地折断；打响指。",
@@ -177,7 +177,7 @@
           ]
         },
         {
-          "word": "Snatch",
+          "word": "snatch",
           "rootVisual": "<path d='M12 12 L 16 8' stroke='currentColor' marker-end='url(#arrow)' />",
           "breakdown": ["snatch"],
           "imagery": "突然夺取。",
@@ -190,7 +190,7 @@
           ]
         },
         {
-          "word": "Soar",
+          "word": "soar",
           "rootVisual": "<path d='M4 18 L 18 4' stroke='currentColor' marker-end='url(#arrow)' />",
           "breakdown": ["soar (嗖)"],
           "imagery": "嗖地一下飞上去，猛增。",
@@ -203,7 +203,7 @@
           ]
         },
         {
-          "word": "Sob",
+          "word": "sob",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>😢</text>",
           "breakdown": ["sob"],
           "imagery": "呜咽。",
@@ -216,7 +216,7 @@
           ]
         },
         {
-          "word": "Sour",
+          "word": "sour",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>🍋</text>",
           "breakdown": ["sour"],
           "imagery": "酸的，馊了。",
@@ -229,7 +229,7 @@
           ]
         },
         {
-          "word": "Spine",
+          "word": "spine",
           "rootVisual": "<path d='M12 4 Q 16 12 12 20' stroke='currentColor' fill='none' stroke-width='2' />",
           "breakdown": ["spine (刺)"],
           "imagery": "脊柱。",
@@ -242,7 +242,7 @@
           ]
         },
         {
-          "word": "Spiral",
+          "word": "spiral",
           "rootVisual": "<path d='M12 12 m -8 0 a 8 8 0 1 0 16 0 a 8 8 0 1 0 -16 0' stroke='currentColor' fill='none' />",
           "breakdown": ["spir (盘旋)", "-al"],
           "imagery": "螺旋上升。",
@@ -255,7 +255,7 @@
           ]
         },
         {
-          "word": "Spoil",
+          "word": "spoil",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>🗑️</text>",
           "breakdown": ["spoil"],
           "imagery": "破坏，宠坏。",
@@ -268,7 +268,7 @@
           ]
         },
         {
-          "word": "Spotlight",
+          "word": "spotlight",
           "rootVisual": "<path d='M12 2 L 4 20 H 20 L 12 2 Z' fill='currentColor' opacity='0.3' />",
           "breakdown": ["spot (点)", "light"],
           "imagery": "聚光灯。",
@@ -281,7 +281,7 @@
           ]
         },
         {
-          "word": "Spouse",
+          "word": "spouse",
           "rootVisual": "<text x='8' y='14' font-size='10'>🚹</text><text x='16' y='14' font-size='10'>🚺</text>",
           "breakdown": ["spouse"],
           "imagery": "配偶。",
@@ -289,7 +289,7 @@
           "sentences": []
         },
         {
-          "word": "Spy",
+          "word": "spy",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>🕵️</text>",
           "breakdown": ["spy (看)"],
           "imagery": "间谍。",
@@ -302,7 +302,7 @@
           ]
         },
         {
-          "word": "Stab",
+          "word": "stab",
           "rootVisual": "<path d='M4 20 L 12 12' stroke='currentColor' marker-end='url(#arrow)' />",
           "breakdown": ["stab"],
           "imagery": "刺，扎。",
@@ -315,7 +315,7 @@
           ]
         },
         {
-          "word": "Startle",
+          "word": "startle",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>❗</text>",
           "breakdown": ["startle"],
           "imagery": "死打头（谐音），惊吓。",
@@ -323,7 +323,7 @@
           "sentences": []
         },
         {
-          "word": "Stern",
+          "word": "stern",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>😠</text>",
           "breakdown": ["stern"],
           "imagery": "死瞪（谐音），严厉的。",
@@ -336,7 +336,7 @@
           ]
         },
         {
-          "word": "Sting",
+          "word": "sting",
           "rootVisual": "<path d='M4 12 H 16' stroke='currentColor' /><circle cx='18' cy='12' r='2' fill='currentColor' color='#ef4444' />",
           "breakdown": ["sting (刺)"],
           "imagery": "刺，蜇。",
@@ -344,7 +344,7 @@
           "sentences": []
         },
         {
-          "word": "Stream",
+          "word": "stream",
           "rootVisual": "<path d='M4 10 Q 8 14 12 10 T 20 10' stroke='currentColor' />",
           "breakdown": ["stream"],
           "imagery": "像蒸汽一样流动，小溪。",
@@ -357,7 +357,7 @@
           ]
         },
         {
-          "word": "Streamline",
+          "word": "streamline",
           "rootVisual": "<path d='M2 12 H 22' stroke='currentColor' />",
           "breakdown": ["stream", "line"],
           "imagery": "流线型，精简。",
@@ -370,7 +370,7 @@
           ]
         },
         {
-          "word": "Stubborn",
+          "word": "stubborn",
           "rootVisual": "<circle cx='12' cy='12' r='10' fill='currentColor' color='#4b5563' />",
           "breakdown": ["stub (树桩)", "-born"],
           "imagery": "像石头一样固执（死大笨）。",
@@ -383,7 +383,7 @@
           ]
         },
         {
-          "word": "Surge",
+          "word": "surge",
           "rootVisual": "<path d='M4 18 Q 12 4 20 18' stroke='currentColor' />",
           "breakdown": ["surge (升起)"],
           "imagery": "像浪潮涌动，猛增。",
@@ -396,7 +396,7 @@
           ]
         },
         {
-          "word": "Surveillance",
+          "word": "surveillance",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><circle cx='12' cy='12' r='2' fill='currentColor' />",
           "breakdown": ["sur- (上)", "veil (看)", "-ance"],
           "imagery": "从上面监视。",
@@ -421,7 +421,7 @@
       },
       "words": [
         {
-          "word": "Tan",
+          "word": "tan",
           "rootVisual": "<circle cx='12' cy='12' r='10' fill='currentColor' color='#d97706' />",
           "breakdown": ["tan"],
           "imagery": "晒成棕褐色。",
@@ -434,7 +434,7 @@
           ]
         },
         {
-          "word": "Tease",
+          "word": "tease",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>😜</text>",
           "breakdown": ["tease"],
           "imagery": "取笑。",
@@ -447,7 +447,7 @@
           ]
         },
         {
-          "word": "Terminate",
+          "word": "terminate",
           "rootVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' /><rect x='18' y='8' width='4' height='8' fill='currentColor' color='#ef4444' />",
           "breakdown": ["term (界限)", "-inate"],
           "imagery": "到达终点，终止。",
@@ -460,7 +460,7 @@
           ]
         },
         {
-          "word": "Thesis",
+          "word": "thesis",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><path d='M8 8 H 16 M 8 12 H 16' stroke='currentColor' />",
           "breakdown": ["thes (放)", "-is"],
           "imagery": "放下的观点，论文。",
@@ -473,7 +473,7 @@
           ]
         },
         {
-          "word": "Throne",
+          "word": "throne",
           "rootVisual": "<rect x='6' y='10' width='12' height='10' stroke='currentColor' fill='none' /><path d='M6 10 L 12 4 L 18 10' stroke='currentColor' />",
           "breakdown": ["throne"],
           "imagery": "王位。",
@@ -486,7 +486,7 @@
           ]
         },
         {
-          "word": "Tile",
+          "word": "tile",
           "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none' />",
           "breakdown": ["tile"],
           "imagery": "瓷砖。",
@@ -499,7 +499,7 @@
           ]
         },
         {
-          "word": "Timid",
+          "word": "timid",
           "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' />",
           "breakdown": ["timid (怕)"],
           "imagery": "胆小的。（谐音：不敢说他妈的）",
@@ -507,7 +507,7 @@
           "sentences": []
         },
         {
-          "word": "Intimidate",
+          "word": "intimidate",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 12 H 16' stroke='currentColor' />",
           "breakdown": ["in- (使)", "timid (怕)", "-ate"],
           "imagery": "使人害怕，恐吓。",
@@ -520,7 +520,7 @@
           ]
         },
         {
-          "word": "Token",
+          "word": "token",
           "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' /><text x='12' y='16' text-anchor='middle' font-size='10'>🎫</text>",
           "breakdown": ["token"],
           "imagery": "代金券，象征。",
@@ -533,7 +533,7 @@
           ]
         },
         {
-          "word": "Tolerate",
+          "word": "tolerate",
           "rootVisual": "<path d='M4 18 H 20' stroke='currentColor' /><rect x='10' y='10' width='4' height='8' fill='currentColor' />",
           "breakdown": ["toler (忍受)", "-ate"],
           "imagery": "承受重担，容忍。",
@@ -546,7 +546,7 @@
           ]
         },
         {
-          "word": "Tomb",
+          "word": "tomb",
           "rootVisual": "<path d='M6 18 V 6 A 6 6 0 0 1 18 6 V 18 Z' stroke='currentColor' fill='none' />",
           "breakdown": ["tomb"],
           "imagery": "坟墓（谐音：土）。",
@@ -554,7 +554,7 @@
           "sentences": []
         },
         {
-          "word": "Trademark",
+          "word": "trademark",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>™</text>",
           "breakdown": ["trade", "mark"],
           "imagery": "商业标记。",
@@ -567,7 +567,7 @@
           ]
         },
         {
-          "word": "Tragedy",
+          "word": "tragedy",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>🎭</text>",
           "breakdown": ["trag (羊)", "edy (歌)"],
           "imagery": "山羊之歌，悲剧。",
@@ -580,7 +580,7 @@
           ]
         },
         {
-          "word": "Treason",
+          "word": "treason",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>🔫</text>",
           "breakdown": ["trea (交给)", "-son"],
           "imagery": "把国家交给敌人，叛国。",
@@ -593,7 +593,7 @@
           ]
         },
         {
-          "word": "Tremble",
+          "word": "tremble",
           "rootVisual": "<path d='M8 4 L 12 20 L 16 4' stroke='currentColor' stroke-dasharray='1 1' />",
           "breakdown": ["tremble"],
           "imagery": "大幅度颤抖。",
@@ -606,7 +606,7 @@
           ]
         },
         {
-          "word": "Trillion",
+          "word": "trillion",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>10¹²</text>",
           "breakdown": ["tri (三)", "-illion"],
           "imagery": "万亿。",
@@ -614,7 +614,7 @@
           "sentences": []
         },
         {
-          "word": "Tropic",
+          "word": "tropic",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M2 12 H 22' stroke='currentColor' />",
           "breakdown": ["trop (转)", "-ic"],
           "imagery": "太阳回归线，热带。",
@@ -627,7 +627,7 @@
           ]
         },
         {
-          "word": "Tunnel",
+          "word": "tunnel",
           "rootVisual": "<path d='M2 18 A 10 10 0 0 1 22 18' stroke='currentColor' fill='none' />",
           "breakdown": ["tunnel"],
           "imagery": "隧道。",
@@ -640,7 +640,7 @@
           ]
         },
         {
-          "word": "Turtle",
+          "word": "turtle",
           "rootVisual": "<path d='M6 14 A 6 6 0 0 1 18 14' stroke='currentColor' fill='none' /><circle cx='20' cy='14' r='2' fill='currentColor' />",
           "breakdown": ["tur (转)", "-tle"],
           "imagery": "头可以转来转去的龟。",
@@ -665,7 +665,7 @@
       },
       "words": [
         {
-          "word": "Ultimate",
+          "word": "ultimate",
           "rootVisual": "<path d='M4 12 H 18' stroke='currentColor' marker-end='url(#arrow)' /><rect x='18' y='8' width='2' height='8' fill='currentColor' />",
           "breakdown": ["ultim (最远)", "-ate"],
           "imagery": "走到最尽头，最终的。",
@@ -678,7 +678,7 @@
           ]
         },
         {
-          "word": "Underestimate",
+          "word": "underestimate",
           "rootVisual": "<rect x='4' y='12' width='8' height='4' stroke='currentColor' fill='none' /><path d='M14 8 L 18 16' stroke='currentColor' stroke-dasharray='2 2' />",
           "breakdown": ["under", "estimate"],
           "imagery": "估计得比实际低。",
@@ -686,7 +686,7 @@
           "sentences": []
         },
         {
-          "word": "Undergo",
+          "word": "undergo",
           "rootVisual": "<path d='M4 16 H 20' stroke='currentColor' marker-end='url(#arrow)' />",
           "breakdown": ["under", "go"],
           "imagery": "在下面走过，经历。",
@@ -699,7 +699,7 @@
           ]
         },
         {
-          "word": "Undermine",
+          "word": "undermine",
           "rootVisual": "<rect x='4' y='4' width='16' height='12' stroke='currentColor' fill='none' /><path d='M4 20 H 12' stroke='currentColor' stroke-dasharray='2 2' />",
           "breakdown": ["under", "mine (挖)"],
           "imagery": "在底下挖墙脚，暗中破坏。",
@@ -712,7 +712,7 @@
           ]
         },
         {
-          "word": "Uninstall",
+          "word": "uninstall",
           "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none' /><line x1='8' y1='8' x2='16' y2='16' stroke='currentColor' /><line x1='16' y1='8' x2='8' y2='16' stroke='currentColor' />",
           "breakdown": ["un- (不)", "install"],
           "imagery": "卸载。",
@@ -720,7 +720,7 @@
           "sentences": []
         },
         {
-          "word": "Update",
+          "word": "update",
           "rootVisual": "<path d='M12 4 V 12' stroke='currentColor' marker-start='url(#arrow)' />",
           "breakdown": ["up", "date"],
           "imagery": "日期向上更新。",
@@ -728,7 +728,7 @@
           "sentences": []
         },
         {
-          "word": "Upgrade",
+          "word": "upgrade",
           "rootVisual": "<path d='M4 16 L 12 8 L 20 16' stroke='currentColor' />",
           "breakdown": ["up", "grade"],
           "imagery": "等级向上。",
@@ -736,7 +736,7 @@
           "sentences": []
         },
         {
-          "word": "Uphold",
+          "word": "uphold",
           "rootVisual": "<path d='M4 16 H 20' stroke='currentColor' /><path d='M12 16 V 8' stroke='currentColor' />",
           "breakdown": ["up", "hold"],
           "imagery": "向上托举，支持。",
@@ -744,7 +744,7 @@
           "sentences": []
         },
         {
-          "word": "Uprising",
+          "word": "uprising",
           "rootVisual": "<path d='M4 18 L 8 10 L 12 16 L 16 8' stroke='currentColor' />",
           "breakdown": ["up", "rising"],
           "imagery": "向上升起反抗。",
@@ -752,7 +752,7 @@
           "sentences": []
         },
         {
-          "word": "Upright",
+          "word": "upright",
           "rootVisual": "<path d='M12 4 V 20' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["up", "right"],
           "imagery": "笔直向上，正直。",
@@ -760,7 +760,7 @@
           "sentences": []
         },
         {
-          "word": "Utmost",
+          "word": "utmost",
           "rootVisual": "<path d='M4 18 H 20' stroke='currentColor' stroke-width='4' />",
           "breakdown": ["ut (外)", "most"],
           "imagery": "最外面的，极度的。",
@@ -773,7 +773,7 @@
           ]
         },
         {
-          "word": "Van",
+          "word": "van",
           "rootVisual": "<rect x='2' y='8' width='16' height='10' stroke='currentColor' fill='none' /><circle cx='6' cy='18' r='2' fill='currentColor' /><circle cx='14' cy='18' r='2' fill='currentColor' />",
           "breakdown": ["van"],
           "imagery": "像空盒子一样的车，厢式货车。",
@@ -781,7 +781,7 @@
           "sentences": []
         },
         {
-          "word": "Vase",
+          "word": "vase",
           "rootVisual": "<path d='M8 4 Q 4 12 8 18 H 16 Q 20 12 16 4' stroke='currentColor' fill='none' />",
           "breakdown": ["vase"],
           "imagery": "花瓶（像V字形）。",
@@ -789,7 +789,7 @@
           "sentences": []
         },
         {
-          "word": "Veil",
+          "word": "veil",
           "rootVisual": "<path d='M6 6 H 18' stroke='currentColor' /><path d='M6 6 L 8 18 M 18 6 L 16 18' stroke='currentColor' stroke-dasharray='1 1' />",
           "breakdown": ["veil"],
           "imagery": "面纱。",
@@ -797,7 +797,7 @@
           "sentences": []
         },
         {
-          "word": "Unveil",
+          "word": "unveil",
           "rootVisual": "<path d='M6 18 L 18 6' stroke='currentColor' />",
           "breakdown": ["un- (去)", "veil"],
           "imagery": "揭开面纱。",
@@ -810,7 +810,7 @@
           ]
         },
         {
-          "word": "Vein",
+          "word": "vein",
           "rootVisual": "<path d='M12 4 Q 8 12 12 20' stroke='currentColor' fill='none' />",
           "breakdown": ["vein"],
           "imagery": "血管（中空的管子）。",
@@ -818,7 +818,7 @@
           "sentences": []
         },
         {
-          "word": "Velocity",
+          "word": "velocity",
           "rootVisual": "<path d='M4 18 L 20 6' stroke='currentColor' marker-end='url(#arrow)' />",
           "breakdown": ["veloc (快)", "-ity"],
           "imagery": "速度。",
@@ -831,7 +831,7 @@
           ]
         },
         {
-          "word": "Versus",
+          "word": "versus",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>VS</text>",
           "breakdown": ["vers (转)", "-us"],
           "imagery": "对抗。",
@@ -839,7 +839,7 @@
           "sentences": []
         },
         {
-          "word": "Vibrate",
+          "word": "vibrate",
           "rootVisual": "<path d='M8 8 L 16 8 M 8 12 L 16 12 M 8 16 L 16 16' stroke='currentColor' stroke-dasharray='2 2' />",
           "breakdown": ["vibr (震)", "-ate"],
           "imagery": "震动。",
@@ -852,7 +852,7 @@
           ]
         },
         {
-          "word": "Vigorous",
+          "word": "vigorous",
           "rootVisual": "<path d='M12 4 L 4 20 H 20 Z' fill='currentColor' color='#ef4444' />",
           "breakdown": ["vigor (力)", "-ous"],
           "imagery": "精力充沛的。",
@@ -865,7 +865,7 @@
           ]
         },
         {
-          "word": "Vow",
+          "word": "vow",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>🤝</text>",
           "breakdown": ["vow"],
           "imagery": "发誓。",
@@ -878,7 +878,7 @@
           ]
         },
         {
-          "word": "Warranty",
+          "word": "warranty",
           "rootVisual": "<rect x='6' y='6' width='12' height='14' stroke='currentColor' fill='none' /><path d='M8 10 L 10 12 L 14 8' stroke='currentColor' />",
           "breakdown": ["warrant", "-y"],
           "imagery": "书面保证书。",
@@ -891,7 +891,7 @@
           ]
         },
         {
-          "word": "Watt",
+          "word": "watt",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>💡</text>",
           "breakdown": ["watt"],
           "imagery": "瓦特（功率单位）。",
@@ -904,7 +904,7 @@
           ]
         },
         {
-          "word": "Weapon",
+          "word": "weapon",
           "rootVisual": "<path d='M4 18 L 18 4' stroke='currentColor' stroke-width='2' />",
           "breakdown": ["weapon"],
           "imagery": "武器。",
@@ -912,7 +912,7 @@
           "sentences": []
         },
         {
-          "word": "Weird",
+          "word": "weird",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>👽</text>",
           "breakdown": ["weird"],
           "imagery": "离奇的，古怪的。",
@@ -925,7 +925,7 @@
           ]
         },
         {
-          "word": "Wholesale",
+          "word": "wholesale",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' /><path d='M4 12 H 20 M 12 4 V 20' stroke='currentColor' />",
           "breakdown": ["whole (整)", "sale (卖)"],
           "imagery": "整个一起卖，批发。",
@@ -938,7 +938,7 @@
           ]
         },
         {
-          "word": "Womb",
+          "word": "womb",
           "rootVisual": "<path d='M12 6 Q 6 12 12 20 Q 18 12 12 6' stroke='currentColor' fill='none' />",
           "breakdown": ["womb"],
           "imagery": "子宫。",

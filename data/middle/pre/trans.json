@@ -13,7 +13,7 @@
       },
       "words": [
         {
-          "word": "Translator",
+          "word": "translator",
           "rootVisual": "<path d='M4 6 h8 v8 h-8 z' stroke='currentColor' fill='none'/><path d='M12 14 h8 v8 h-8 z' stroke='currentColor' fill='none'/><path d='M8 10 l8 8' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": ["trans- (转换)", "lat (搬运)"],
           "imagery": "把一种语言搬运（lat）并转换（trans-）成另一种语言。",
@@ -26,7 +26,7 @@
           ]
         },
         {
-          "word": "Transport",
+          "word": "transport",
           "rootVisual": "<path d='M2 12 h20' stroke='currentColor' stroke-width='1'/><rect x='4' y='8' width='6' height='4' stroke='currentColor' fill='none'/><rect x='14' y='8' width='6' height='4' stroke='currentColor' fill='none'/><path d='M7 8 q 5 -6 10 0' stroke='currentColor' fill='none'/>",
           "breakdown": ["trans- (穿过)", "port (拿/运)"],
           "imagery": "把货物拿起（port），穿过（trans-）很长的距离送到另一端。",
@@ -39,7 +39,7 @@
           ]
         },
         {
-          "word": "Transform",
+          "word": "transform",
           "rootVisual": "<rect x='4' y='8' width='6' height='8' stroke='currentColor' fill='none'/><circle cx='18' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M10 12 h4' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["trans- (改变)", "form (形状)"],
           "imagery": "改变形状，即变形。",
@@ -52,7 +52,7 @@
           ]
         },
         {
-          "word": "Transfer",
+          "word": "transfer",
           "rootVisual": "<circle cx='6' cy='12' r='3' stroke='currentColor' fill='none'/><circle cx='18' cy='12' r='3' fill='currentColor'/><path d='M9 12 h6' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["trans- (穿过)", "fer (携带)"],
           "imagery": "携带东西穿过两地，即转移。",

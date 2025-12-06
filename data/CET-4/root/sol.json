@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Sole",
+          "word": "sole",
           "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor' />",
           "breakdown": ["sol (一)", "e"],
           "imagery": "唯一的，单独的。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Solo",
+          "word": "solo",
           "rootVisual": "<path d='M10 8 V 16' stroke='currentColor' stroke-width='2' /><circle cx='8' cy='16' r='2' fill='currentColor' />",
           "breakdown": ["sol (一)", "o"],
           "imagery": "一个人表演，独奏。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Soul",
+          "word": "soul",
           "rootVisual": "<path d='M12 16 Q 8 8 12 2 Q 16 8 12 16' stroke='currentColor' fill='none' />",
           "breakdown": ["soul"],
           "imagery": "独一无二的精神实体。",
@@ -48,7 +48,7 @@
           "sentences": []
         },
         {
-          "word": "Desolate",
+          "word": "desolate",
           "rootVisual": "<path d='M2 18 H 22' stroke='currentColor' /><circle cx='12' cy='12' r='2' stroke='currentColor' fill='none' />",
           "breakdown": ["de- (加强/离)", "sol (孤)", "-ate"],
           "imagery": "非常孤独，荒凉的。",
@@ -61,7 +61,7 @@
           ]
         },
         {
-          "word": "Isolate",
+          "word": "isolate",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2' /><circle cx='12' cy='12' r='3' fill='currentColor' />",
           "breakdown": ["i- (岛)", "sol (孤)", "-ate"],
           "imagery": "像岛屿一样孤立。",
@@ -74,7 +74,7 @@
           ]
         },
         {
-          "word": "Console",
+          "word": "console",
           "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor' fill='none' /><path d='M11 12 H 13' stroke='currentColor' /><circle cx='16' cy='12' r='3' fill='currentColor' />",
           "breakdown": ["con- (共)", "sole (孤)"],
           "imagery": "大家去陪伴孤独的人，安慰。",

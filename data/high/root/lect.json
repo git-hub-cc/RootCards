@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Select",
+          "word": "select",
           "rootVisual": "<circle cx='6' cy='12' r='2' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' stroke='currentColor' fill='none'/><path d='M10 16 l2 2 l4 -4' stroke='currentColor'/>",
           "breakdown": ["se- (分)", "lect (选)"],
           "imagery": "分开选出来，精选。",
@@ -27,7 +27,7 @@
           ]
         },
         {
-          "word": "Collect",
+          "word": "collect",
           "rootVisual": "<path d='M4 18 h16 v-8 h-16 z' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='16' cy='10' r='2' fill='currentColor'/>",
           "breakdown": ["col- (一起)", "lect (收)"],
           "imagery": "收在一起，收集。",
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "word": "Elect",
+          "word": "elect",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M12 10 l-2 2 l4 -4' stroke='currentColor'/><path d='M12 14 v4' stroke='currentColor'/>",
           "breakdown": ["e- (出)", "lect (选)"],
           "imagery": "选出来（当领导）。",

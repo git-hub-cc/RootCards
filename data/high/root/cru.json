@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Cross",
+          "word": "cross",
           "rootVisual": "<path d='M12 4 v16 M4 12 h16' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["cross (交叉)"],
           "imagery": "十字形；穿过。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Crucial",
+          "word": "crucial",
           "rootVisual": "<path d='M4 12 h16 M12 4 v16' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": ["cruc (十字)", "-ial (形)"],
           "imagery": "像站在十字路口一样，面临重大选择，所以是关键的。",
@@ -35,7 +35,7 @@
           ]
         },
         {
-          "word": "Cruciform",
+          "word": "cruciform",
           "rootVisual": "<path d='M12 2 v20 M2 8 h20' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["cruci (十字)", "form (形状)"],
           "imagery": "十字形状的。",

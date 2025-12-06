@@ -14,7 +14,7 @@
       },
       "words": [
         {
-          "word": "Confident",
+          "word": "confident",
           "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/><path d='M8 16 h8' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["con- (加强)", "fid (信)", "-ent"],
           "imagery": "充满信念的。",
@@ -22,7 +22,7 @@
           "sentences": []
         },
         {
-          "word": "Confidential",
+          "word": "confidential",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M12 10 v4' stroke='currentColor'/><path d='M10 16 h4' stroke='currentColor'/>",
           "breakdown": ["con- (加强)", "fid (信)", "-ential"],
           "imagery": "因为信任而保守的秘密。",
@@ -30,7 +30,7 @@
           "sentences": []
         },
         {
-          "word": "Faith",
+          "word": "faith",
           "rootVisual": "<path d='M12 4 l4 8 h-8 z' fill='currentColor'/>",
           "breakdown": ["faith (信)"],
           "imagery": "内心的信仰。",
@@ -43,7 +43,7 @@
           ]
         },
         {
-          "word": "Federal",
+          "word": "federal",
           "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor'/><circle cx='16' cy='12' r='4' stroke='currentColor'/><path d='M10 12 h4' stroke='currentColor'/>",
           "breakdown": ["fed (fid变体)", "-eral"],
           "imagery": "基于互信建立的契约/联盟。",

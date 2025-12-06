@@ -34,7 +34,7 @@
           ]
         },
         {
-          "word": "Carrot",
+          "word": "carrot",
           "rootVisual": "<path d='M12 20 L8 6 L16 6 Z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 6 v-4' stroke='currentColor'/><path d='M12 2 l-2 2 M12 2 l2 2' stroke='currentColor'/>",
           "breakdown": ["Carrot", "(胡萝卜)"],
           "imagery": "典型的圆锥根茎形状，顶端带着绿叶。",
@@ -101,7 +101,7 @@
           ]
         },
         {
-          "word": "Dumpling",
+          "word": "dumpling",
           "rootVisual": "<path d='M4 16 a 8 8 0 0 1 16 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 16 l2 -1 l2 1 l2 -1 l2 1 l2 -1 l2 1 l2 -1 l2 1' stroke='currentColor' fill='none'/>",
           "breakdown": ["Dumpling", "(饺子)"],
           "imagery": "半圆形的轮廓，边缘带有捏合的波浪纹，典型的饺子形状。",
@@ -121,7 +121,7 @@
           ]
         },
         {
-          "word": "Juice",
+          "word": "juice",
           "rootVisual": "<path d='M6 8 l2 12 h8 l2 -12 h-12' stroke='currentColor' fill='none' stroke-width='2'/><path d='M14 8 l4 -6' stroke='currentColor' stroke-width='2'/><circle cx='18' cy='2' r='1' fill='currentColor'/>",
           "breakdown": ["Juice", "(果汁)"],
           "imagery": "一个杯子插着吸管，旁边有一滴液体（水果精华）。",
