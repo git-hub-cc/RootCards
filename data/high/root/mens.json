@@ -19,7 +19,12 @@
           "breakdown": ["meter (测量单位)"],
           "imagery": "基本的长度单位。",
           "translation": "米",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The room is five meters long.",
+              "cn": "这个房间有五米长。"
+            }
+          ]
         },
         {
           "word": "measure",
@@ -31,6 +36,10 @@
             {
               "en": "Take measures.",
               "cn": "采取措施。"
+            },
+            {
+              "en": "We must measure the results of our actions.",
+              "cn": "我们必须衡量我们行动的结果。"
             }
           ]
         },
@@ -40,7 +49,12 @@
           "breakdown": ["di- (分)", "mens (测量)", "-ion"],
           "imagery": "测量出来的长宽高，维度。",
           "translation": "尺寸；维度",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "What are the dimensions of the room?",
+              "cn": "这个房间的尺寸是多少？"
+            }
+          ]
         }
       ]
     }

@@ -19,7 +19,16 @@
           "breakdown": ["nov (新)", "-el (小)"],
           "imagery": "新奇的故事；长篇小说。",
           "translation": "小说；新奇的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She wrote a historical novel.",
+              "cn": "她写了一本历史小说。"
+            },
+            {
+              "en": "That's a novel idea.",
+              "cn": "那是个新奇的想法。"
+            }
+          ]
         },
         {
           "word": "innovate",
@@ -27,7 +36,12 @@
           "breakdown": ["in- (内)", "nov (新)", "-ate"],
           "imagery": "从内部变新，改革创新。",
           "translation": "创新",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The company needs to innovate to stay competitive.",
+              "cn": "公司需要创新以保持竞争力。"
+            }
+          ]
         },
         {
           "word": "renovate",
@@ -35,7 +49,12 @@
           "breakdown": ["re- (再)", "nov (新)", "-ate"],
           "imagery": "再一次变新，翻新（建筑）。",
           "translation": "翻新；修复",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "They are renovating their old house.",
+              "cn": "他们正在翻新他们的老房子。"
+            }
+          ]
         }
       ]
     }

@@ -32,7 +32,12 @@
           "breakdown": ["vac (空)", "-ation"],
           "imagery": "工作中的空档期。",
           "translation": "假期",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Where are you going for vacation?",
+              "cn": "你去哪里度假？"
+            }
+          ]
         },
         {
           "word": "vacuum",
@@ -40,7 +45,12 @@
           "breakdown": ["vac (空)", "-uum"],
           "imagery": "完全空的空间。",
           "translation": "真空；吸尘器",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The room needs a good vacuum.",
+              "cn": "这房间需要好好吸一下尘。"
+            }
+          ]
         },
         {
           "word": "vaccine",
@@ -48,7 +58,12 @@
           "breakdown": ["vac (牛/空)", "-ine"],
           "imagery": "源自牛痘（vacca牛）；联想病毒致病部分被抽空。",
           "translation": "疫苗",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Have you had the flu vaccine?",
+              "cn": "你打流感疫苗了吗？"
+            }
+          ]
         },
         {
           "word": "vain",
@@ -69,7 +84,12 @@
           "breakdown": ["van (空)", "-ish"],
           "imagery": "变空了，消失。",
           "translation": "消失",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The magician made the rabbit vanish.",
+              "cn": "魔术师让兔子消失了。"
+            }
+          ]
         },
         {
           "word": "void",
@@ -90,7 +110,12 @@
           "breakdown": ["a- (去)", "void (空)"],
           "imagery": "去变成空的（不让其发生）。",
           "translation": "避免",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Try to avoid fatty foods.",
+              "cn": "尽量避免油腻食物。"
+            }
+          ]
         }
       ]
     }

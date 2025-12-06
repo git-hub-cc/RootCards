@@ -19,7 +19,12 @@
           "breakdown": ["con- (共)", "tact (触)"],
           "imagery": "共同接触，联系。",
           "translation": "接触；联系",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Please contact me if you have questions.",
+              "cn": "如有问题请联系我。"
+            }
+          ]
         },
         {
           "word": "intact",

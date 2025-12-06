@@ -32,7 +32,12 @@
           "breakdown": ["pro- (前)", "found (建立/底)"],
           "imagery": "为了长远未来建立的基础，意义深远。",
           "translation": "深远的；深刻的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "His words had a profound effect on me.",
+              "cn": "他的话对我产生了深刻的影响。"
+            }
+          ]
         },
         {
           "word": "prolong",
@@ -53,7 +58,12 @@
           "breakdown": ["prote (首要)", "-in"],
           "imagery": "生命首要的物质。（pro也有首要之意）",
           "translation": "蛋白质",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Eggs are a good source of protein.",
+              "cn": "鸡蛋是蛋白质的良好来源。"
+            }
+          ]
         },
         {
           "word": "protest",

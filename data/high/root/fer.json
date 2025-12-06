@@ -32,7 +32,12 @@
           "breakdown": ["con- (共同)", "fer (带)"],
           "imagery": "把意见带到一起来交换（协商）；把荣誉带给某人（授予）。",
           "translation": "协商；授予",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The leaders will confer on the trade issue.",
+              "cn": "领导人将就贸易问题进行协商。"
+            }
+          ]
         },
         {
           "word": "conference",
@@ -40,7 +45,12 @@
           "breakdown": ["con- (共同)", "fer (带)", "-ence (名)"],
           "imagery": "大家带着意见聚在一起的地方。",
           "translation": "会议",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She is attending a conference in Berlin.",
+              "cn": "她正在柏林参加一个会议。"
+            }
+          ]
         },
         {
           "word": "prefer",
@@ -48,7 +58,12 @@
           "breakdown": ["pre- (前)", "fer (带)"],
           "imagery": "把喜欢的东西带到前面优先选择。",
           "translation": "更喜欢",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I prefer coffee to tea.",
+              "cn": "比起茶，我更喜欢咖啡。"
+            }
+          ]
         }
       ]
     }

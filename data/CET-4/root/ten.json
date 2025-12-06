@@ -58,7 +58,12 @@
           "breakdown": ["ten (持)", "-ant (人)"],
           "imagery": "持有（租赁）房产的人。",
           "translation": "租户；房客",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The tenant has not paid the rent.",
+              "cn": "房客还没付房租。"
+            }
+          ]
         }
       ]
     }

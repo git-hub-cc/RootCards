@@ -19,7 +19,12 @@
           "breakdown": ["equ (相等)", "-al (形)"],
           "imagery": "完全一样的。",
           "translation": "相等的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "All people are created equal.",
+              "cn": "人人生而平等。"
+            }
+          ]
         },
         {
           "word": "equality",
@@ -40,7 +45,12 @@
           "breakdown": ["equ (相等)", "-ator (物)"],
           "imagery": "将地球分为相等的两半的线。",
           "translation": "赤道",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Singapore is very near the equator.",
+              "cn": "新加坡离赤道很近。"
+            }
+          ]
         },
         {
           "word": "adequate",
@@ -61,7 +71,12 @@
           "breakdown": ["e- (去)", "quip (相等)"],
           "imagery": "为了与某种功能相等（匹配）而配置东西。",
           "translation": "装备",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The soldiers were well equipped for the mission.",
+              "cn": "士兵们为这次任务装备精良。"
+            }
+          ]
         },
         {
           "word": "equation",
@@ -69,7 +84,12 @@
           "breakdown": ["equ (相等)", "-ation (名)"],
           "imagery": "表示相等的数学式子。",
           "translation": "方程式；等式",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Can you solve this equation?",
+              "cn": "你能解这个方程式吗？"
+            }
+          ]
         }
       ]
     }

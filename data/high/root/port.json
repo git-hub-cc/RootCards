@@ -20,7 +20,12 @@
           "breakdown": ["port (港口)"],
           "imagery": "像一个口（pore），船只停泊的地方。",
           "translation": "港口",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The ship will arrive in port tomorrow.",
+              "cn": "船将于明天抵达港口。"
+            }
+          ]
         },
         {
           "word": "airport",
@@ -28,7 +33,12 @@
           "breakdown": ["air (空)", "port (港)"],
           "imagery": "飞机的港口。",
           "translation": "飞机场",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I'll meet you at the airport.",
+              "cn": "我会在机场等你。"
+            }
+          ]
         },
         {
           "word": "export",
@@ -36,7 +46,12 @@
           "breakdown": ["ex- (出)", "port (运)"],
           "imagery": "向外运输，出口。",
           "translation": "出口",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The country exports a lot of oil.",
+              "cn": "这个国家出口大量石油。"
+            }
+          ]
         },
         {
           "word": "import",
@@ -44,7 +59,12 @@
           "breakdown": ["im- (进)", "port (运)"],
           "imagery": "向内运输，进口。",
           "translation": "进口",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We import coffee from Brazil.",
+              "cn": "我们从巴西进口咖啡。"
+            }
+          ]
         },
         {
           "word": "passport",
@@ -52,7 +72,12 @@
           "breakdown": ["pass (通过)", "port (港)"],
           "imagery": "通过港口的证件。",
           "translation": "护照",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "You need a passport to travel abroad.",
+              "cn": "出国旅行需要护照。"
+            }
+          ]
         },
         {
           "word": "transport",
@@ -60,7 +85,12 @@
           "breakdown": ["trans- (跨)", "port (运)"],
           "imagery": "从一地搬运到另一地。",
           "translation": "运输",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Public transport is very convenient in this city.",
+              "cn": "这个城市的公共交通非常便利。"
+            }
+          ]
         },
         {
           "word": "portable",
@@ -68,7 +98,12 @@
           "breakdown": ["port (搬)", "-able (能)"],
           "imagery": "可以搬动的，便携的。",
           "translation": "可移动的；便携的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He has a portable music player.",
+              "cn": "他有一个便携式音乐播放器。"
+            }
+          ]
         },
         {
           "word": "reporter",
@@ -76,7 +111,12 @@
           "breakdown": ["re- (回)", "port (搬)", "-er (人)"],
           "imagery": "把新闻搬运回来的人。",
           "translation": "记者",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She is a reporter for a famous newspaper.",
+              "cn": "她是一家著名报纸的记者。"
+            }
+          ]
         },
         {
           "word": "support",
@@ -84,7 +124,12 @@
           "breakdown": ["sup- (下)", "port (撑/拿)"],
           "imagery": "在下面撑住/拿住。",
           "translation": "支持",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Thank you for your support.",
+              "cn": "谢谢你的支持。"
+            }
+          ]
         }
       ]
     }

@@ -53,7 +53,12 @@
           ],
           "imagery": "一个棋盘上的棋子，代表策略布局。",
           "translation": "策略；战术",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "They tried a new tactic to win the game.",
+              "cn": "他们尝试了一种新战术来赢得比赛。"
+            }
+          ]
         }
       ]
     }

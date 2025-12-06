@@ -20,7 +20,12 @@
           "breakdown": ["vict (胜)", "-ory (名)"],
           "imagery": "胜利。",
           "translation": "胜利",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "They won a great victory in the final match.",
+              "cn": "他们在决赛中取得了巨大的胜利。"
+            }
+          ]
         },
         {
           "word": "convince",
@@ -28,7 +33,12 @@
           "breakdown": ["con- (全)", "vinc (胜)"],
           "imagery": "把对方完全赢了（在观点上），即说服。",
           "translation": "说服；使确信",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I couldn't convince him of his mistake.",
+              "cn": "我无法说服他承认自己的错误。"
+            }
+          ]
         },
         {
           "word": "invincible",
@@ -36,7 +46,12 @@
           "breakdown": ["in- (不)", "vinc (胜)", "-ible"],
           "imagery": "不能被战胜的，无敌的。",
           "translation": "不可战胜的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The champion seemed invincible.",
+              "cn": "这位冠军似乎是不可战胜的。"
+            }
+          ]
         },
         {
           "word": "victim",
@@ -44,7 +59,12 @@
           "breakdown": ["vict (胜/败)", "-im"],
           "imagery": "失败的一方（相对于胜利者），受害者。",
           "translation": "受害者；牺牲品",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The victims of the earthquake need help.",
+              "cn": "地震的受害者需要帮助。"
+            }
+          ]
         }
       ]
     }

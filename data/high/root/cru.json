@@ -19,7 +19,12 @@
           "breakdown": ["cross (交叉)"],
           "imagery": "十字形；穿过。",
           "translation": "交叉；穿过",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Please cross the street at the traffic lights.",
+              "cn": "请在红绿灯处过马路。"
+            }
+          ]
         },
         {
           "word": "crucial",
@@ -40,7 +45,12 @@
           "breakdown": ["cruci (十字)", "form (形状)"],
           "imagery": "十字形状的。",
           "translation": "十字形的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The church was built in a cruciform shape.",
+              "cn": "这座教堂建成十字形。"
+            }
+          ]
         }
       ]
     }

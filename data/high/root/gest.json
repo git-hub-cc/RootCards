@@ -32,7 +32,12 @@
           "breakdown": ["di- (分)", "gest (运)"],
           "imagery": "把食物分开运输到身体各处，即消化。",
           "translation": "消化；摘要",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It takes time to digest a large meal.",
+              "cn": "消化一顿大餐需要时间。"
+            }
+          ]
         },
         {
           "word": "register",
@@ -40,7 +45,12 @@
           "breakdown": ["re- (回)", "gister (gest带)"],
           "imagery": "带回来记录在案。",
           "translation": "登记；注册",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "You need to register to vote.",
+              "cn": "你需要登记才能投票。"
+            }
+          ]
         }
       ]
     }

@@ -100,7 +100,12 @@
           "breakdown": ["aux (增加)", "-iliary"],
           "imagery": "（联想）AUX空调是家庭的辅助设备。",
           "translation": "辅助的；备用的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Auxiliary verbs include 'be', 'do', and 'have'.",
+              "cn": "助动词包括'be'、'do'和'have'。"
+            }
+          ]
         },
         {
           "word": "absurd",
@@ -108,7 +113,12 @@
           "breakdown": ["ab- (离)", "surd (合理的)"],
           "imagery": "远离合理的，荒谬的。",
           "translation": "荒谬的；可笑的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The story was so absurd I couldn't believe it.",
+              "cn": "这个故事太荒谬了，我简直不敢相信。"
+            }
+          ]
         }
       ]
     },
@@ -220,7 +230,12 @@
           "breakdown": ["bass (低)"],
           "imagery": "低音乐器。",
           "translation": "贝斯；低音",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He plays the bass in a band.",
+              "cn": "他在乐队里弹贝斯。"
+            }
+          ]
         },
         {
           "word": "beam",
@@ -254,7 +269,12 @@
           "breakdown": ["bud (芽/皮包)", "-get"],
           "imagery": "有了预算，项目才能发芽。",
           "translation": "预算",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We need to stick to the budget.",
+              "cn": "我们需要遵守预算。"
+            }
+          ]
         }
       ]
     },
@@ -343,7 +363,12 @@
           "breakdown": ["cens (评/数)", "-us"],
           "imagery": "人口普查（谐音：申诉）。",
           "translation": "人口普查",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The country conducts a census every ten years.",
+              "cn": "这个国家每十年进行一次人口普查。"
+            }
+          ]
         },
         {
           "word": "cocaine",
@@ -351,7 +376,12 @@
           "breakdown": ["cocaine"],
           "imagery": "白色粉末。",
           "translation": "可卡因",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He was addicted to cocaine.",
+              "cn": "他对可卡因上瘾。"
+            }
+          ]
         },
         {
           "word": "colony",
@@ -359,7 +389,12 @@
           "breakdown": ["col (耕种/住)", "-ony"],
           "imagery": "像克隆(clone)一样复制宗主国的制度。",
           "translation": "殖民地",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Hong Kong was a British colony.",
+              "cn": "香港曾是英国的殖民地。"
+            }
+          ]
         },
         {
           "word": "confiscate",
@@ -466,7 +501,12 @@
           "breakdown": ["diesel"],
           "imagery": "大型车辆使用的燃油。",
           "translation": "柴油",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This car runs on diesel.",
+              "cn": "这辆车用柴油。"
+            }
+          ]
         },
         {
           "word": "dignity",
@@ -539,7 +579,12 @@
           "breakdown": ["dis- (分)", "course (跑/过程)"],
           "imagery": "把话题分开跑一遍，详细论述。",
           "translation": "论述；演说",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He gave a discourse on the history of the town.",
+              "cn": "他做了一个关于该镇历史的演说。"
+            }
+          ]
         },
         {
           "word": "dismay",
@@ -573,7 +618,12 @@
           "breakdown": ["doctr (教)", "-ine"],
           "imagery": "博士（doctor）研究的学说。",
           "translation": "教条；学说",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The Monroe Doctrine was a key part of US policy.",
+              "cn": "门罗主义是美国政策的关键部分。"
+            }
+          ]
         },
         {
           "word": "dominant",
@@ -581,7 +631,12 @@
           "breakdown": ["domin (屋顶/统治)", "-ant"],
           "imagery": "像屋顶一样居高临下的。",
           "translation": "占主导地位的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The company has a dominant position in the market.",
+              "cn": "该公司在市场上占有主导地位。"
+            }
+          ]
         },
         {
           "word": "donate",
@@ -615,7 +670,12 @@
           "breakdown": ["dorm (睡)", "-itory (场所)"],
           "imagery": "睡觉的地方。",
           "translation": "宿舍",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He lives in a college dormitory.",
+              "cn": "他住在大学宿舍里。"
+            }
+          ]
         },
         {
           "word": "doze",

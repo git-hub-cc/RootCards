@@ -43,7 +43,12 @@
           "breakdown": ["rape (抢)"],
           "imagery": "强行夺取，强奸。",
           "translation": "强奸",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He was jailed for rape.",
+              "cn": "他因强奸入狱。"
+            }
+          ]
         },
         {
           "word": "rate",
@@ -64,7 +69,12 @@
           "breakdown": ["real", "-ity"],
           "imagery": "真实。",
           "translation": "现实",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "You need to face reality.",
+              "cn": "你需要面对现实。"
+            }
+          ]
         },
         {
           "word": "realistic",
@@ -85,7 +95,12 @@
           "breakdown": ["reap"],
           "imagery": "收割成熟的果实。",
           "translation": "收割；收获",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "You reap what you sow.",
+              "cn": "种瓜得瓜，种豆得豆。"
+            }
+          ]
         },
         {
           "word": "recruit",
@@ -106,7 +121,12 @@
           "breakdown": ["re- (再)", "hear (听)", "say"],
           "imagery": "再听一遍，再看一遍，排练。",
           "translation": "排练；预演",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The actors are rehearsing the play.",
+              "cn": "演员们正在排练这出戏。"
+            }
+          ]
         },
         {
           "word": "reinforce",
@@ -166,7 +186,12 @@
           "breakdown": ["re- (反)", "sid (坐)", "-ent"],
           "imagery": "一直坐在那里的人，居民。",
           "translation": "居民",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The residents of the town.",
+              "cn": "镇上的居民。"
+            }
+          ]
         },
         {
           "word": "resolve",
@@ -252,7 +277,12 @@
           "breakdown": ["ripe"],
           "imagery": "成熟的果实。",
           "translation": "成熟的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The apples are ripe for picking.",
+              "cn": "苹果熟了，可以摘了。"
+            }
+          ]
         }
       ]
     }

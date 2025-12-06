@@ -19,7 +19,12 @@
           "breakdown": ["de- (下)", "pend (挂)"],
           "imagery": "挂在下面，依靠。",
           "translation": "依靠；依赖",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Children depend on their parents for food and clothing.",
+              "cn": "孩子们依靠父母获得食物和衣服。"
+            }
+          ]
         },
         {
           "word": "independent",
@@ -27,7 +32,12 @@
           "breakdown": ["in- (不)", "depend (依靠)"],
           "imagery": "不依靠别人的。",
           "translation": "独立的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She is a very independent young woman.",
+              "cn": "她是一位非常独立的年轻女性。"
+            }
+          ]
         },
         {
           "word": "suspend",
@@ -35,7 +45,12 @@
           "breakdown": ["sus- (下)", "pend (挂)"],
           "imagery": "悬挂在下面，悬而未决（暂停）。",
           "translation": "暂停；悬挂",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The match was suspended due to bad weather.",
+              "cn": "比赛因天气恶劣而暂停。"
+            }
+          ]
         },
         {
           "word": "spend",
@@ -43,7 +58,12 @@
           "breakdown": ["s- (ex出)", "pend (钱)"],
           "imagery": "把钱拿出去（称重支付）。",
           "translation": "花费",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He spends a lot of money on clothes.",
+              "cn": "他在衣服上花很多钱。"
+            }
+          ]
         },
         {
           "word": "expense",
@@ -51,7 +71,12 @@
           "breakdown": ["ex- (出)", "pens (钱)"],
           "imagery": "拿出去的钱。",
           "translation": "费用；花费",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We need to cut down our living expenses.",
+              "cn": "我们需要削减生活开支。"
+            }
+          ]
         },
         {
           "word": "compensate",
@@ -59,7 +84,12 @@
           "breakdown": ["com- (全)", "pens (钱/偿)"],
           "imagery": "全部偿还，平衡损失。",
           "translation": "赔偿；补偿",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The company will compensate workers for their losses.",
+              "cn": "公司将赔偿工人的损失。"
+            }
+          ]
         },
         {
           "word": "pension",
@@ -67,7 +97,12 @@
           "breakdown": ["pens (钱)", "-ion"],
           "imagery": "定期支付的钱（养老金）。",
           "translation": "养老金",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He lives on his pension.",
+              "cn": "他靠养老金生活。"
+            }
+          ]
         },
         {
           "word": "append",
@@ -75,7 +110,12 @@
           "breakdown": ["ap- (去)", "pend (挂)"],
           "imagery": "去挂在后面，附加。",
           "translation": "附加；增补",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Please append your signature to the document.",
+              "cn": "请在文件上附上您的签名。"
+            }
+          ]
         },
         {
           "word": "appendix",
@@ -83,7 +123,12 @@
           "breakdown": ["append (附加)", "-ix"],
           "imagery": "附录；阑尾（多余的附属物）。",
           "translation": "附录；阑尾",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "More details can be found in the appendix.",
+              "cn": "更多细节可以在附录中找到。"
+            }
+          ]
         }
       ]
     }

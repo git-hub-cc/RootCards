@@ -45,7 +45,12 @@
           "breakdown": ["soul"],
           "imagery": "独一无二的精神实体。",
           "translation": "灵魂",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Music is good for the soul.",
+              "cn": "音乐有益于灵魂。"
+            }
+          ]
         },
         {
           "word": "desolate",

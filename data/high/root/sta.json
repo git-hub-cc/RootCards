@@ -20,7 +20,12 @@
           "breakdown": ["as- (去)", "sist (站)"],
           "imagery": "去站在旁边（支持），即帮助。",
           "translation": "帮助；协助",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Can I assist you with anything?",
+              "cn": "有什么可以帮您的吗？"
+            }
+          ]
         },
         {
           "word": "consist",
@@ -28,7 +33,12 @@
           "breakdown": ["con- (共)", "sist (站)"],
           "imagery": "共同站在一起，构成。",
           "translation": "组成；构成",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The team consists of ten members.",
+              "cn": "这个团队由十名成员组成。"
+            }
+          ]
         },
         {
           "word": "exist",
@@ -36,7 +46,12 @@
           "breakdown": ["ex- (出)", "sist (站)"],
           "imagery": "站出来，显现，存在。",
           "translation": "存在",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Do you believe ghosts exist?",
+              "cn": "你相信鬼魂存在吗？"
+            }
+          ]
         },
         {
           "word": "insist",
@@ -44,7 +59,12 @@
           "breakdown": ["in- (心)", "sist (站)"],
           "imagery": "内心坚定地站住，坚持。",
           "translation": "坚持",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He insisted on paying for the meal.",
+              "cn": "他坚持要付饭钱。"
+            }
+          ]
         },
         {
           "word": "resist",
@@ -52,7 +72,12 @@
           "breakdown": ["re- (反)", "sist (站)"],
           "imagery": "站在对立面，反抗。",
           "translation": "抵抗；反抗",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It's hard to resist temptation.",
+              "cn": "很难抵抗诱惑。"
+            }
+          ]
         },
         {
           "word": "steady",
@@ -60,7 +85,12 @@
           "breakdown": ["stead (站)", "-y"],
           "imagery": "站得稳的。",
           "translation": "平稳的；稳固的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Keep the ladder steady.",
+              "cn": "扶稳梯子。"
+            }
+          ]
         },
         {
           "word": "stable",
@@ -68,7 +98,12 @@
           "breakdown": ["sta (站)", "-ble (能)"],
           "imagery": "能站住的，抽象的稳定。",
           "translation": "稳定的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The political situation is not stable.",
+              "cn": "政治局势不稳定。"
+            }
+          ]
         },
         {
           "word": "stage",
@@ -76,7 +111,16 @@
           "breakdown": ["sta (站)"],
           "imagery": "站立表演的地方；发展的一个站（阶段）。",
           "translation": "舞台；阶段",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She is a famous stage actress.",
+              "cn": "她是一位著名的舞台剧演员。"
+            },
+            {
+              "en": "This is the first stage of the project.",
+              "cn": "这是项目的第一阶段。"
+            }
+          ]
         },
         {
           "word": "state",
@@ -84,7 +128,16 @@
           "breakdown": ["stat (站/立)"],
           "imagery": "立国；官方陈述（立论）；状况（立足点）。",
           "translation": "州；国家；陈述；状态",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "California is a state in the USA.",
+              "cn": "加利福尼亚是美国的一个州。"
+            },
+            {
+              "en": "He is in a state of shock.",
+              "cn": "他处于休克状态。"
+            }
+          ]
         },
         {
           "word": "distance",
@@ -92,7 +145,12 @@
           "breakdown": ["di- (分)", "stan (站)"],
           "imagery": "分开站立的间隔。",
           "translation": "距离",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "What is the distance between the two cities?",
+              "cn": "这两个城市之间的距离是多少？"
+            }
+          ]
         },
         {
           "word": "destination",
@@ -100,7 +158,12 @@
           "breakdown": ["de- (离)", "stin (站)"],
           "imagery": "定下来的（站住）最终去处。",
           "translation": "目的地",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Our final destination is Paris.",
+              "cn": "我们的最终目的地是巴黎。"
+            }
+          ]
         }
       ]
     }

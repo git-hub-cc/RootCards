@@ -96,7 +96,12 @@
           "breakdown": ["show", "case"],
           "imagery": "展示柜。",
           "translation": "展示",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The festival was a showcase for new talent.",
+              "cn": "这个节日是展示新人才的舞台。"
+            }
+          ]
         },
         {
           "word": "sip",
@@ -286,7 +291,12 @@
           "breakdown": ["spouse"],
           "imagery": "配偶。",
           "translation": "配偶",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Please bring your spouse to the party.",
+              "cn": "请带你的配偶来参加派对。"
+            }
+          ]
         },
         {
           "word": "spy",
@@ -320,7 +330,12 @@
           "breakdown": ["startle"],
           "imagery": "死打头（谐音），惊吓。",
           "translation": "惊吓",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The noise startled me.",
+              "cn": "那声音吓了我一跳。"
+            }
+          ]
         },
         {
           "word": "stern",
@@ -341,7 +356,12 @@
           "breakdown": ["sting (刺)"],
           "imagery": "刺，蜇。",
           "translation": "刺；蜇",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I was stung by a bee.",
+              "cn": "我被蜜蜂蜇了。"
+            }
+          ]
         },
         {
           "word": "stream",
@@ -504,7 +524,12 @@
           "breakdown": ["timid (怕)"],
           "imagery": "胆小的。（谐音：不敢说他妈的）",
           "translation": "胆小的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He is a timid child.",
+              "cn": "他是个胆小的孩子。"
+            }
+          ]
         },
         {
           "word": "intimidate",
@@ -551,7 +576,12 @@
           "breakdown": ["tomb"],
           "imagery": "坟墓（谐音：土）。",
           "translation": "坟墓",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "They visited the ancient tomb.",
+              "cn": "他们参观了古墓。"
+            }
+          ]
         },
         {
           "word": "trademark",
@@ -611,7 +641,12 @@
           "breakdown": ["tri (三)", "-illion"],
           "imagery": "万亿。",
           "translation": "万亿",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The national debt is several trillion dollars.",
+              "cn": "国家债务达数万亿美元。"
+            }
+          ]
         },
         {
           "word": "tropic",
@@ -683,7 +718,12 @@
           "breakdown": ["under", "estimate"],
           "imagery": "估计得比实际低。",
           "translation": "低估",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Never underestimate your opponent.",
+              "cn": "永远不要低估你的对手。"
+            }
+          ]
         },
         {
           "word": "undergo",
@@ -717,7 +757,12 @@
           "breakdown": ["un- (不)", "install"],
           "imagery": "卸载。",
           "translation": "卸载",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "How do I uninstall this software?",
+              "cn": "我如何卸载这个软件？"
+            }
+          ]
         },
         {
           "word": "update",
@@ -725,7 +770,12 @@
           "breakdown": ["up", "date"],
           "imagery": "日期向上更新。",
           "translation": "更新",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "You need to update your browser.",
+              "cn": "你需要更新你的浏览器。"
+            }
+          ]
         },
         {
           "word": "upgrade",
@@ -733,7 +783,12 @@
           "breakdown": ["up", "grade"],
           "imagery": "等级向上。",
           "translation": "升级",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I'd like to upgrade my phone.",
+              "cn": "我想升级我的手机。"
+            }
+          ]
         },
         {
           "word": "uphold",
@@ -741,7 +796,12 @@
           "breakdown": ["up", "hold"],
           "imagery": "向上托举，支持。",
           "translation": "支持；维护",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We must uphold the law.",
+              "cn": "我们必须维护法律。"
+            }
+          ]
         },
         {
           "word": "uprising",
@@ -749,7 +809,12 @@
           "breakdown": ["up", "rising"],
           "imagery": "向上升起反抗。",
           "translation": "起义；暴动",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The army crushed the uprising.",
+              "cn": "军队镇压了起义。"
+            }
+          ]
         },
         {
           "word": "upright",
@@ -757,7 +822,12 @@
           "breakdown": ["up", "right"],
           "imagery": "笔直向上，正直。",
           "translation": "垂直的；正直的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He is an upright citizen.",
+              "cn": "他是一个正直的公民。"
+            }
+          ]
         },
         {
           "word": "utmost",
@@ -778,7 +848,12 @@
           "breakdown": ["van"],
           "imagery": "像空盒子一样的车，厢式货车。",
           "translation": "厢式货车",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The furniture was moved in a van.",
+              "cn": "家具是用一辆厢式货车搬运的。"
+            }
+          ]
         },
         {
           "word": "vase",
@@ -786,7 +861,12 @@
           "breakdown": ["vase"],
           "imagery": "花瓶（像V字形）。",
           "translation": "花瓶",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She put the flowers in a vase.",
+              "cn": "她把花插在花瓶里。"
+            }
+          ]
         },
         {
           "word": "veil",
@@ -794,7 +874,12 @@
           "breakdown": ["veil"],
           "imagery": "面纱。",
           "translation": "面纱；掩饰",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The bride wore a beautiful veil.",
+              "cn": "新娘戴着漂亮的面纱。"
+            }
+          ]
         },
         {
           "word": "unveil",
@@ -815,7 +900,12 @@
           "breakdown": ["vein"],
           "imagery": "血管（中空的管子）。",
           "translation": "静脉；血管",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The nurse found a vein in his arm.",
+              "cn": "护士在他手臂上找到一根静脉。"
+            }
+          ]
         },
         {
           "word": "velocity",
@@ -836,7 +926,12 @@
           "breakdown": ["vers (转)", "-us"],
           "imagery": "对抗。",
           "translation": "对；对抗",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The case is Smith versus Jones.",
+              "cn": "这个案子是史密斯对琼斯。"
+            }
+          ]
         },
         {
           "word": "vibrate",
@@ -909,7 +1004,12 @@
           "breakdown": ["weapon"],
           "imagery": "武器。",
           "translation": "武器",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Nuclear weapons.",
+              "cn": "核武器。"
+            }
+          ]
         },
         {
           "word": "weird",
@@ -943,7 +1043,12 @@
           "breakdown": ["womb"],
           "imagery": "子宫。",
           "translation": "子宫",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The baby grows inside the womb.",
+              "cn": "婴儿在子宫内生长。"
+            }
+          ]
         }
       ]
     }

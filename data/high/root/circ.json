@@ -19,7 +19,12 @@
           "breakdown": ["circ (圆)", "-le (小)"],
           "imagery": "一个圆圈。",
           "translation": "圆圈",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Draw a circle on the paper.",
+              "cn": "在纸上画一个圆圈。"
+            }
+          ]
         },
         {
           "word": "cycle",
@@ -27,7 +32,12 @@
           "breakdown": ["cycl (圆/环)"],
           "imagery": "周而复始的循环。",
           "translation": "循环；周期",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The life cycle of a butterfly is amazing.",
+              "cn": "蝴蝶的生命周期很神奇。"
+            }
+          ]
         },
         {
           "word": "recycle",
@@ -35,7 +45,12 @@
           "breakdown": ["re- (再)", "cycle (循环)"],
           "imagery": "再次进入循环使用。",
           "translation": "回收利用",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We should recycle paper and plastic bottles.",
+              "cn": "我们应该回收纸张和塑料瓶。"
+            }
+          ]
         },
         {
           "word": "circus",
@@ -43,7 +58,12 @@
           "breakdown": ["circ (圆)", "-us (名)"],
           "imagery": "马戏团的表演通常在圆形场地进行。",
           "translation": "马戏团",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We went to the circus to see the clowns.",
+              "cn": "我们去马戏团看小丑。"
+            }
+          ]
         },
         {
           "word": "circuit",
@@ -51,7 +71,12 @@
           "breakdown": ["circu (圆)", "-it (走)"],
           "imagery": "绕着圈走，如电路或环形赛道。",
           "translation": "电路；巡回",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The electrician is checking the electrical circuit.",
+              "cn": "电工正在检查电路。"
+            }
+          ]
         },
         {
           "word": "circumstance",
@@ -59,7 +84,12 @@
           "breakdown": ["circum- (周围)", "stan (站)"],
           "imagery": "站在周围的事物，即环境或情况。",
           "translation": "环境；情况",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Under no circumstances should you open that door.",
+              "cn": "无论在任何情况下，你都不应该打开那扇门。"
+            }
+          ]
         }
       ]
     }

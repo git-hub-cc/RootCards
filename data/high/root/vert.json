@@ -20,7 +20,12 @@
           "breakdown": ["uni (一)", "vers (转)"],
           "imagery": "在一个空间里转动（万物归一），宇宙。",
           "translation": "宇宙",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The universe is vast and full of mysteries.",
+              "cn": "宇宙是浩瀚的，充满了谜团。"
+            }
+          ]
         },
         {
           "word": "diverse",
@@ -28,7 +33,12 @@
           "breakdown": ["di- (分)", "vers (转)"],
           "imagery": "分开转动，多种多样的。",
           "translation": "多样的；不同的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "New York is a city with a diverse population.",
+              "cn": "纽约是一个人口多元化的城市。"
+            }
+          ]
         },
         {
           "word": "conversation",
@@ -36,7 +46,12 @@
           "breakdown": ["con- (共)", "vers (转)"],
           "imagery": "大家围着一个话题转，对话。",
           "translation": "对话",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I had a long conversation with my friend.",
+              "cn": "我和朋友进行了一次长谈。"
+            }
+          ]
         },
         {
           "word": "advertise",
@@ -44,7 +59,12 @@
           "breakdown": ["ad- (去)", "vert (转)"],
           "imagery": "到处转着喊（广而告之）。",
           "translation": "做广告",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "They advertised their new product on TV.",
+              "cn": "他们在电视上为他们的新产品做广告。"
+            }
+          ]
         },
         {
           "word": "version",
@@ -52,7 +72,12 @@
           "breakdown": ["vers (转)", "-ion"],
           "imagery": "转一下出来的新形式，版本。",
           "translation": "版本",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This is the latest version of the software.",
+              "cn": "这是这个软件的最新版本。"
+            }
+          ]
         }
       ]
     }

@@ -19,7 +19,12 @@
           "breakdown": ["long (长)"],
           "imagery": "长的。",
           "translation": "长的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It was a long and difficult journey.",
+              "cn": "那是一段漫长而艰难的旅程。"
+            }
+          ]
         },
         {
           "word": "length",

@@ -23,6 +23,10 @@
             {
               "en": "You've been on my mind.",
               "cn": "我一直在想你。"
+            },
+            {
+              "en": "Do you mind if I open the window?",
+              "cn": "你介意我打开窗户吗？"
             }
           ]
         },
@@ -45,7 +49,12 @@
           "breakdown": ["com- (一起)", "ment (思考)"],
           "imagery": "大家把想法放在一起讨论。",
           "translation": "评论",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He made a comment about the weather.",
+              "cn": "他对天气发表了评论。"
+            }
+          ]
         },
         {
           "word": "mention",
@@ -53,7 +62,12 @@
           "breakdown": ["ment (思考)", "-ion (名)"],
           "imagery": "把脑子里的东西提出来说。",
           "translation": "提及",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Did he mention my name?",
+              "cn": "他提到我的名字了吗？"
+            }
+          ]
         }
       ]
     }

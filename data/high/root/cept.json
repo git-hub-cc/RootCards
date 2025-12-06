@@ -58,7 +58,12 @@
           "breakdown": ["con- (全部)", "cept (拿)"],
           "imagery": "把所有特征都拿过来，抽象概括出的想法。",
           "translation": "概念",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It is a difficult concept to grasp.",
+              "cn": "这是一个很难理解的概念。"
+            }
+          ]
         },
         {
           "word": "deceive",

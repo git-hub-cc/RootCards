@@ -19,7 +19,12 @@
           "breakdown": ["dou (二)", "-ble (倍)"],
           "imagery": "两个一样的东西。",
           "translation": "双倍的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Please double-check your answers.",
+              "cn": "请再次检查你的答案。"
+            }
+          ]
         },
         {
           "word": "dual",
@@ -53,7 +58,12 @@
           "breakdown": ["du (二)", "sk (sky)"],
           "imagery": "白天和黑夜两种天空交错的时刻。",
           "translation": "黄昏",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The street lights come on at dusk.",
+              "cn": "街灯在黄昏时分亮起。"
+            }
+          ]
         },
         {
           "word": "twilight",
@@ -61,7 +71,12 @@
           "breakdown": ["twi (二)", "light (光)"],
           "imagery": "两种光线（白昼与黑夜）交织。",
           "translation": "暮光；黄昏",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The castle looked beautiful in the twilight.",
+              "cn": "暮色中的城堡看起来很美。"
+            }
+          ]
         }
       ]
     }

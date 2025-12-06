@@ -20,7 +20,16 @@
           "breakdown": ["view (看)"],
           "imagery": "看到的景色；看法。",
           "translation": "风景；看法；观看",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The room has a great view of the sea.",
+              "cn": "这个房间有很好的海景。"
+            },
+            {
+              "en": "In my view, this is a good idea.",
+              "cn": "在我看来，这是个好主意。"
+            }
+          ]
         },
         {
           "word": "interview",
@@ -28,7 +37,12 @@
           "breakdown": ["inter- (互)", "view (看)"],
           "imagery": "互相看，面对面交谈（面试/采访）。",
           "translation": "面试；采访",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She has a job interview tomorrow.",
+              "cn": "她明天有一个工作面试。"
+            }
+          ]
         },
         {
           "word": "review",
@@ -36,7 +50,12 @@
           "breakdown": ["re- (再)", "view (看)"],
           "imagery": "再看一遍，复习，回顾。",
           "translation": "复习；回顾；评论",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I need to review my notes before the exam.",
+              "cn": "我需要在考试前复习我的笔记。"
+            }
+          ]
         },
         {
           "word": "preview",
@@ -44,7 +63,12 @@
           "breakdown": ["pre- (前)", "view (看)"],
           "imagery": "提前看，预习。",
           "translation": "预习；预演",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We saw a preview of the new movie.",
+              "cn": "我们看了新电影的预告片。"
+            }
+          ]
         }
       ]
     }

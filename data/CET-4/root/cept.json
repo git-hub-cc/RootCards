@@ -71,7 +71,12 @@
           "breakdown": ["con- (全部)", "cept (拿)"],
           "imagery": "把所有特征都拿过来，抽象概括出的想法。",
           "translation": "概念",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The concept of infinity is hard to grasp.",
+              "cn": "无穷的概念很难理解。"
+            }
+          ]
         },
         {
           "word": "conceive",
@@ -105,7 +110,12 @@
           "breakdown": ["per- (穿过)", "ceive (拿)"],
           "imagery": "透过现象拿到本质，洞察。",
           "translation": "察觉；理解；感知",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I perceive a change in his attitude.",
+              "cn": "我察觉到他态度的变化。"
+            }
+          ]
         },
         {
           "word": "intercept",

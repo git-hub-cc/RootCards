@@ -19,7 +19,12 @@
           "breakdown": ["aug (增加)", "-ust"],
           "imagery": "屋大维（Augustus）为了显示尊贵，给八月'增加'了一天。",
           "translation": "八月",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "My birthday is in August.",
+              "cn": "我的生日在八月。"
+            }
+          ]
         },
         {
           "word": "augment",

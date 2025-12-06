@@ -32,7 +32,12 @@
           "breakdown": ["cours (跑/过程)"],
           "imagery": "跑过的一段路程；课程（从开始到结束的过程）。",
           "translation": "课程；过程",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I am taking an English course this semester.",
+              "cn": "我这学期在上英语课。"
+            }
+          ]
         },
         {
           "word": "current",
@@ -53,7 +58,12 @@
           "breakdown": ["cur (跑/流通)", "-ency (名)"],
           "imagery": "在社会中不断流通（跑）的东西，即货币。",
           "translation": "货币",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "What is the local currency?",
+              "cn": "当地的货币是什么？"
+            }
+          ]
         }
       ]
     }

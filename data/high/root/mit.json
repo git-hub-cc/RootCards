@@ -19,7 +19,12 @@
           "breakdown": ["miss (送)", "-ion (名)"],
           "imagery": "被派去执行的任务。",
           "translation": "任务；使命",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The team was sent on a secret mission.",
+              "cn": "这个团队被派去执行一项秘密任务。"
+            }
+          ]
         },
         {
           "word": "message",
@@ -27,7 +32,12 @@
           "breakdown": ["mess (送)", "-age (名)"],
           "imagery": "传送的信息。",
           "translation": "信息",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I left a message on your voicemail.",
+              "cn": "我在你的语音信箱里留了言。"
+            }
+          ]
         },
         {
           "word": "missile",
@@ -35,7 +45,12 @@
           "breakdown": ["miss (送)", "-ile (物)"],
           "imagery": "可投掷/发射的武器。",
           "translation": "导弹",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The country tested a long-range missile.",
+              "cn": "该国测试了一枚远程导弹。"
+            }
+          ]
         },
         {
           "word": "submit",
@@ -47,6 +62,10 @@
             {
               "en": "Submit to adversity.",
               "cn": "屈服于逆境。"
+            },
+            {
+              "en": "Please submit your application by Friday.",
+              "cn": "请在周五前提交你的申请。"
             }
           ]
         },
@@ -56,7 +75,12 @@
           "breakdown": ["per- (通)", "mit (送)"],
           "imagery": "允许通过，放行。",
           "translation": "允许；许可证",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Smoking is not permitted here.",
+              "cn": "这里不允许吸烟。"
+            }
+          ]
         },
         {
           "word": "admit",
@@ -68,6 +92,10 @@
             {
               "en": "Only ticket holders will be admitted.",
               "cn": "只有持票者准许进入。"
+            },
+            {
+              "en": "He admitted his mistake.",
+              "cn": "他承认了自己的错误。"
             }
           ]
         },
@@ -81,6 +109,10 @@
             {
               "en": "Commit a crime.",
               "cn": "犯罪。"
+            },
+            {
+              "en": "He committed himself to the project.",
+              "cn": "他全身心投入到这个项目中。"
             }
           ]
         },
@@ -90,7 +122,12 @@
           "breakdown": ["pro- (前)", "mise (送)"],
           "imagery": "把话说到前面，即承诺。",
           "translation": "承诺；保证",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He promised to help me.",
+              "cn": "他承诺会帮助我。"
+            }
+          ]
         }
       ]
     }

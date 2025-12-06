@@ -20,7 +20,12 @@
           "breakdown": ["main (手)", "tain (拿)"],
           "imagery": "用手拿着不放，维持。",
           "translation": "维持；保持",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It's important to maintain a healthy diet.",
+              "cn": "保持健康的饮食很重要。"
+            }
+          ]
         },
         {
           "word": "contain",
@@ -28,7 +33,12 @@
           "breakdown": ["con- (全)", "tain (拿)"],
           "imagery": "全部拿在里面，包含。",
           "translation": "包含；容纳",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This box contains old photographs.",
+              "cn": "这个盒子里装着旧照片。"
+            }
+          ]
         },
         {
           "word": "obtain",
@@ -36,7 +46,12 @@
           "breakdown": ["ob- (去)", "tain (拿)"],
           "imagery": "去拿到手，获得。",
           "translation": "获得",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Where can I obtain a copy of the report?",
+              "cn": "我在哪里可以获得一份报告的副本？"
+            }
+          ]
         },
         {
           "word": "entertain",
@@ -44,7 +59,12 @@
           "breakdown": ["enter (间)", "tain (拿)"],
           "imagery": "在中间拿住（大家），招待，娱乐。",
           "translation": "娱乐；招待",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He entertained us with his stories and jokes.",
+              "cn": "他用故事和笑话招待我们。"
+            }
+          ]
         },
         {
           "word": "content",
@@ -52,7 +72,16 @@
           "breakdown": ["con- (全)", "tent (拿)"],
           "imagery": "包含的东西（内容）；全都拿到了（满足）。",
           "translation": "内容；满意的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The content of the book is interesting.",
+              "cn": "这本书的内容很有趣。"
+            },
+            {
+              "en": "She seemed content with her life.",
+              "cn": "她似乎对自己的生活很满意。"
+            }
+          ]
         }
       ]
     }

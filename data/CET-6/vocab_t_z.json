@@ -66,7 +66,12 @@
           ],
           "imagery": "一个船锚，或用力拉绳子的动作。",
           "translation": "拖；拽；拉",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She gave his sleeve a tug.",
+              "cn": "她拽了一下他的袖子。"
+            }
+          ]
         },
         {
           "word": "tow",
@@ -120,7 +125,12 @@
           ],
           "imagery": "男厕所的标志或小便池形状。",
           "translation": "小便池",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The men's restroom has three urinals.",
+              "cn": "男厕所有三个小便池。"
+            }
+          ]
         }
       ]
     },
@@ -237,7 +247,12 @@
           ],
           "imagery": "码头边的木桩和船锚。",
           "translation": "码头",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The ship was tied up at the wharf.",
+              "cn": "船停泊在码头。"
+            }
+          ]
         },
         {
           "word": "whereas",

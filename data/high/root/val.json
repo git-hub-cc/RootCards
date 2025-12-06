@@ -20,7 +20,12 @@
           "breakdown": ["val (价值)", "-able (能)"],
           "imagery": "有价值的。",
           "translation": "有价值的；贵重的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Time is the most valuable thing.",
+              "cn": "时间是最宝贵的东西。"
+            }
+          ]
         },
         {
           "word": "valid",
@@ -28,7 +33,12 @@
           "breakdown": ["val (强/效)", "-id"],
           "imagery": "有效的，有法律效力的（强）。",
           "translation": "有效的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Your ticket is valid for three months.",
+              "cn": "你的票有效期为三个月。"
+            }
+          ]
         },
         {
           "word": "evaluate",
@@ -36,7 +46,12 @@
           "breakdown": ["e- (出)", "val (价值)", "-uate"],
           "imagery": "评估出价值。",
           "translation": "评估；评价",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We need to evaluate the success of the project.",
+              "cn": "我们需要评估这个项目的成功与否。"
+            }
+          ]
         },
         {
           "word": "equivalent",
@@ -44,7 +59,12 @@
           "breakdown": ["equ (等)", "val (价)", "-ent"],
           "imagery": "价值相等的。",
           "translation": "等价的；相等的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This amount of money is equivalent to my monthly salary.",
+              "cn": "这笔钱相当于我一个月的工资。"
+            }
+          ]
         }
       ]
     }

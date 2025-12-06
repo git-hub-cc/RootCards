@@ -19,7 +19,12 @@
           "breakdown": ["gen (生)", "-ate (动)"],
           "imagery": "产生出东西。",
           "translation": "产生；发电",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The power plant generates electricity for the whole city.",
+              "cn": "这座发电厂为整个城市发电。"
+            }
+          ]
         },
         {
           "word": "generation",
@@ -27,7 +32,12 @@
           "breakdown": ["gen (生)", "-ation (名)"],
           "imagery": "一代人，繁衍的一代。",
           "translation": "一代",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "There is a large gap between the old and new generations.",
+              "cn": "新老两代人之间有很大的代沟。"
+            }
+          ]
         },
         {
           "word": "generator",
@@ -35,7 +45,12 @@
           "breakdown": ["generate", "-or (物)"],
           "imagery": "生产（电）的机器。",
           "translation": "发电机",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The hospital has a backup generator in case of a power outage.",
+              "cn": "医院有一台备用发电机以防停电。"
+            }
+          ]
         },
         {
           "word": "pregnant",
@@ -43,7 +58,12 @@
           "breakdown": ["pre- (前)", "gnant (gen生)"],
           "imagery": "在生产之前的状态，即怀孕。",
           "translation": "怀孕的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She is six months pregnant.",
+              "cn": "她怀孕六个月了。"
+            }
+          ]
         },
         {
           "word": "generous",
@@ -64,7 +84,12 @@
           "breakdown": ["hydro (水)", "gen (生)"],
           "imagery": "燃烧后产生水的元素。",
           "translation": "氢",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Water is composed of hydrogen and oxygen.",
+              "cn": "水是由氢和氧组成的。"
+            }
+          ]
         }
       ]
     }

@@ -32,7 +32,12 @@
           "breakdown": ["suppress", "-ion"],
           "imagery": "镇压的行为。",
           "translation": "镇压",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The suppression of the protest was swift.",
+              "cn": "对抗议的镇压是迅速的。"
+            }
+          ]
         }
       ]
     }

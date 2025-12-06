@@ -32,7 +32,12 @@
           "breakdown": ["bare (光)", "-ly"],
           "imagery": "光秃秃的，几乎没有。",
           "translation": "几乎不；仅仅",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I could barely see him in the dark.",
+              "cn": "在黑暗中我几乎看不见他。"
+            }
+          ]
         },
         {
           "word": "barren",
@@ -66,7 +71,12 @@
           "breakdown": ["bar (木条)", "-ade (集合)"],
           "imagery": "一堆木条堆成的路障。",
           "translation": "路障；街垒",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The police set up a barricade.",
+              "cn": "警察设立了路障。"
+            }
+          ]
         },
         {
           "word": "barn",
@@ -74,7 +84,12 @@
           "breakdown": ["bar (木条)", "-n"],
           "imagery": "用木条围成的储存谷物的地方。",
           "translation": "谷仓；粮仓",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The cows are in the barn.",
+              "cn": "牛在谷仓里。"
+            }
+          ]
         },
         {
           "word": "barometer",
@@ -82,7 +97,12 @@
           "breakdown": ["bar (压力/木条)", "meter (测量)"],
           "imagery": "测量压力的仪器（早期有木框结构）。",
           "translation": "气压计",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The barometer is falling, so a storm is coming.",
+              "cn": "气压计正在下降，暴风雨要来了。"
+            }
+          ]
         },
         {
           "word": "embargo",
@@ -103,7 +123,12 @@
           "breakdown": ["em- (进入)", "bar (阻拦)", "ass"],
           "imagery": "被阻拦卡住，进退两难，很尴尬。",
           "translation": "使尴尬",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "His questions embarrassed me.",
+              "cn": "他的问题让我感到尴尬。"
+            }
+          ]
         }
       ]
     }

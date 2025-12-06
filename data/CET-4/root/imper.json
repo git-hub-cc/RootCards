@@ -19,7 +19,12 @@
           "breakdown": ["em- (in)", "pire (权/命令)"],
           "imagery": "拥有统治权的领土。",
           "translation": "帝国",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The fall of the Roman Empire.",
+              "cn": "罗马帝国的衰落。"
+            }
+          ]
         },
         {
           "word": "emperor",
@@ -27,7 +32,12 @@
           "breakdown": ["emperor (皇帝)"],
           "imagery": "帝国的统治者。",
           "translation": "皇帝",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The last emperor of China.",
+              "cn": "中国的末代皇帝。"
+            }
+          ]
         },
         {
           "word": "imperial",

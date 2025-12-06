@@ -19,7 +19,12 @@
           "breakdown": ["liber (自由)", "-ty (名)"],
           "imagery": "自由女神像 (Statue of Liberty)。",
           "translation": "自由",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The Statue of Liberty is a symbol of freedom.",
+              "cn": "自由女神像是自由的象征。"
+            }
+          ]
         },
         {
           "word": "liberate",
@@ -44,6 +49,10 @@
             {
               "en": "Liberal arts.",
               "cn": "文科（自由艺术）。"
+            },
+            {
+              "en": "He has a liberal attitude towards new ideas.",
+              "cn": "他对新思想持开明态度。"
             }
           ]
         }

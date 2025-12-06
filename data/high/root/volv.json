@@ -20,7 +20,12 @@
           "breakdown": ["re- (再)", "volve (转)"],
           "imagery": "再次转动，旋转（围绕中心）。",
           "translation": "旋转；围绕",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The Earth revolves around the Sun.",
+              "cn": "地球围绕太阳旋转。"
+            }
+          ]
         },
         {
           "word": "revolution",
@@ -28,7 +33,12 @@
           "breakdown": ["re- (再)", "volu (转)", "-tion"],
           "imagery": "天翻地覆的转动，革命。",
           "translation": "革命；旋转",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The industrial revolution changed the world.",
+              "cn": "工业革命改变了世界。"
+            }
+          ]
         },
         {
           "word": "involve",
@@ -36,7 +46,12 @@
           "breakdown": ["in- (内)", "volve (卷)"],
           "imagery": "卷进去，牵涉。",
           "translation": "包含；牵涉",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The job involves a lot of travel.",
+              "cn": "这份工作需要经常出差。"
+            }
+          ]
         },
         {
           "word": "evolve",
@@ -44,7 +59,12 @@
           "breakdown": ["e- (出)", "volve (转)"],
           "imagery": "向外转出来，演变，进化。",
           "translation": "进化；发展",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Humans evolved from apes.",
+              "cn": "人类是由猿进化而来的。"
+            }
+          ]
         }
       ]
     }

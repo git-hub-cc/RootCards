@@ -19,7 +19,12 @@
           "breakdown": ["flex (弯曲)"],
           "imagery": "弯曲，收缩肌肉。",
           "translation": "弯曲；收缩",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He flexed his arm muscles to show his strength.",
+              "cn": "他收缩臂部肌肉以显示力量。"
+            }
+          ]
         },
         {
           "word": "reflect",
@@ -31,6 +36,10 @@
             {
               "en": "She saw her face reflected in the window.",
               "cn": "她看到窗户里映出她的脸。"
+            },
+            {
+              "en": "You should take some time to reflect on your mistakes.",
+              "cn": "你应该花些时间反思自己的错误。"
             }
           ]
         },
@@ -40,7 +49,12 @@
           "breakdown": ["flex (弯曲)", "-ible (能)"],
           "imagery": "能够弯曲的，不僵硬。",
           "translation": "灵活的；柔韧的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Dancers need to be very flexible.",
+              "cn": "舞者需要非常柔韧。"
+            }
+          ]
         },
         {
           "word": "inflexible",
@@ -48,7 +62,12 @@
           "breakdown": ["in- (不)", "flexible"],
           "imagery": "不能弯曲，僵硬。",
           "translation": "僵硬的；不灵活的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The rules are inflexible and cannot be changed.",
+              "cn": "这些规则是僵化的，无法改变。"
+            }
+          ]
         }
       ]
     }

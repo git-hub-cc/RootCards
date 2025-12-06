@@ -19,7 +19,12 @@
           "breakdown": ["con- (加强)", "fid (信)", "-ent"],
           "imagery": "充满信念的。",
           "translation": "自信的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She is a confident and capable speaker.",
+              "cn": "她是一位自信且能干的演讲者。"
+            }
+          ]
         },
         {
           "word": "confidential",
@@ -27,7 +32,12 @@
           "breakdown": ["con- (加强)", "fid (信)", "-ential"],
           "imagery": "因为信任而保守的秘密。",
           "translation": "机密的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This is a confidential document.",
+              "cn": "这是一份机密文件。"
+            }
+          ]
         },
         {
           "word": "faith",
@@ -48,7 +58,12 @@
           "breakdown": ["fed (fid变体)", "-eral"],
           "imagery": "基于互信建立的契约/联盟。",
           "translation": "联邦的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The FBI is a federal law enforcement agency.",
+              "cn": "联邦调查局是一个联邦执法机构。"
+            }
+          ]
         }
       ]
     }

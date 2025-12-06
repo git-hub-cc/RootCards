@@ -19,7 +19,12 @@
           "breakdown": ["dict (说)", "-ion", "-ary (物)"],
           "imagery": "记录人们说的话（词汇）的书。",
           "translation": "字典",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Look up this word in the dictionary.",
+              "cn": "在字典里查一下这个词。"
+            }
+          ]
         },
         {
           "word": "predict",
@@ -27,7 +32,12 @@
           "breakdown": ["pre- (前)", "dict (说)"],
           "imagery": "事情发生之前就说出来。",
           "translation": "预言；预测",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It's hard to predict the future.",
+              "cn": "未来很难预测。"
+            }
+          ]
         },
         {
           "word": "contradict",

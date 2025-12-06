@@ -32,7 +32,12 @@
           "breakdown": ["fence (篱笆)"],
           "imagery": "用来抵御外敌或保护家园的屏障。",
           "translation": "篱笆",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "There is a wooden fence around the garden.",
+              "cn": "花园周围有一个木制篱笆。"
+            }
+          ]
         },
         {
           "word": "defend",

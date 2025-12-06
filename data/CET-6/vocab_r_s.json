@@ -20,7 +20,12 @@
           ],
           "imagery": "一颗心流下一滴泪，象征怜悯。",
           "translation": "怜悯；悲哀",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She looked upon the poor child with ruth.",
+              "cn": "她怜悯地看着那个可怜的孩子。"
+            }
+          ]
         },
         {
           "word": "ruthless",

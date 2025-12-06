@@ -45,7 +45,12 @@
           "breakdown": ["com- (共)", "mun (公共)", "-ity"],
           "imagery": "大家共同生活的地方。",
           "translation": "社区；社会",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He is an active member of the community.",
+              "cn": "他是社区里的活跃成员。"
+            }
+          ]
         },
         {
           "word": "mutual",

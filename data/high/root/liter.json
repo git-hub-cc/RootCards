@@ -19,7 +19,16 @@
           "breakdown": ["letter (信/字母)"],
           "imagery": "字母；信件。",
           "translation": "字母；信件",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She wrote a letter to her friend.",
+              "cn": "她给朋友写了一封信。"
+            },
+            {
+              "en": "The first letter of the alphabet is 'A'.",
+              "cn": "字母表的第一个字母是'A'。"
+            }
+          ]
         },
         {
           "word": "literal",
@@ -40,7 +49,12 @@
           "breakdown": ["liter (文字)", "-ature (名)"],
           "imagery": "文字作品的总称。",
           "translation": "文学",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She is studying English literature at university.",
+              "cn": "她在大学学习英国文学。"
+            }
+          ]
         },
         {
           "word": "illiterate",
@@ -48,7 +62,12 @@
           "breakdown": ["il- (不)", "liter (文字)", "-ate"],
           "imagery": "不识字的。",
           "translation": "文盲的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "In some poor areas, many people are still illiterate.",
+              "cn": "在一些贫困地区，许多人仍然是文盲。"
+            }
+          ]
         }
       ]
     }

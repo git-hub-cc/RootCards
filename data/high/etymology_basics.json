@@ -99,7 +99,6 @@
       "meaningId": "basics_patterns",
       "displayName": "造词规律 (Patterns)",
       "themeColor": "#ec4899",
-      "prefixVisual": "<rect x='4' y='4' width='6' height='6' stroke='currentColor' fill='none'/><rect x='14' y='4' width='6' height='6' stroke='currentColor' fill='none'/><rect x='4' y='14' width='6' height='6' stroke='currentColor' fill='none'/><rect x='14' y='14' width='6' height='6' stroke='currentColor' fill='none'/>",
       "prefixIntro": {
         "title": "特殊造词法",
         "description": "除了词根词缀，单词还可以通过颠倒、缩略、拟声等方式创造。",

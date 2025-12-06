@@ -44,7 +44,12 @@
           "breakdown": ["in- (进)", "cent (钱)", "-ive"],
           "imagery": "给钱刺激，激励。",
           "translation": "刺激；激励",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Farmers have no incentive to produce more.",
+              "cn": "农民没有生产更多的激励。"
+            }
+          ]
         },
         {
           "word": "indifferent",
@@ -117,7 +122,12 @@
           "breakdown": ["in", "put"],
           "imagery": "放进去，输入。",
           "translation": "输入",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Your input is valuable to us.",
+              "cn": "您的意见对我们很有价值。"
+            }
+          ]
         },
         {
           "word": "intellect",
@@ -176,7 +186,12 @@
           "breakdown": ["jelly"],
           "imagery": "软软的果冻。",
           "translation": "果冻",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She made a jelly for dessert.",
+              "cn": "她做了果冻当甜点。"
+            }
+          ]
         },
         {
           "word": "jog",
@@ -249,7 +264,12 @@
           "breakdown": ["knight"],
           "imagery": "古代骑士。",
           "translation": "骑士",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He was made a knight by the Queen.",
+              "cn": "他被女王封为骑士。"
+            }
+          ]
         },
         {
           "word": "lace",
@@ -257,7 +277,12 @@
           "breakdown": ["lace"],
           "imagery": "花边，蕾丝。",
           "translation": "蕾丝；花边",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "A dress trimmed with lace.",
+              "cn": "一件镶有蕾丝的连衣裙。"
+            }
+          ]
         },
         {
           "word": "lash",
@@ -317,7 +342,12 @@
           "breakdown": ["lesbian"],
           "imagery": "女同性恋者。",
           "translation": "女同性恋者",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She came out as a lesbian.",
+              "cn": "她公开自己是女同性恋者。"
+            }
+          ]
         },
         {
           "word": "liable",
@@ -338,7 +368,12 @@
           "breakdown": ["live (活)", "stock (存货)"],
           "imagery": "活的存货，牲畜。",
           "translation": "牲畜",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The farm has a lot of livestock.",
+              "cn": "这个农场有很多牲畜。"
+            }
+          ]
         },
         {
           "word": "log",
@@ -423,7 +458,12 @@
           "breakdown": ["mach (机)", "-ine"],
           "imagery": "机器。",
           "translation": "机器",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "A washing machine.",
+              "cn": "洗衣机。"
+            }
+          ]
         },
         {
           "word": "massacre",
@@ -509,7 +549,12 @@
           "breakdown": ["metro (母/大都市)"],
           "imagery": "大都市的交通工具。",
           "translation": "地铁",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Let's take the metro.",
+              "cn": "我们坐地铁吧。"
+            }
+          ]
         },
         {
           "word": "migrate",
@@ -530,7 +575,12 @@
           "breakdown": ["mile", "stone"],
           "imagery": "路边标记英里的石头。",
           "translation": "里程碑",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This discovery is a milestone in science.",
+              "cn": "这项发现是科学史上的一个里程碑。"
+            }
+          ]
         },
         {
           "word": "moan",
@@ -551,7 +601,12 @@
           "breakdown": ["mov (动)", "-ment"],
           "imagery": "时间的动点，瞬间。",
           "translation": "片刻；瞬间",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Wait a moment.",
+              "cn": "等一下。"
+            }
+          ]
         },
         {
           "word": "motion",
@@ -559,7 +614,12 @@
           "breakdown": ["mot (动)", "-ion"],
           "imagery": "运动。",
           "translation": "运动；移动",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The motion of the planets.",
+              "cn": "行星的运动。"
+            }
+          ]
         }
       ]
     }

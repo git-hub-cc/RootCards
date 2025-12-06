@@ -45,7 +45,12 @@
           "breakdown": ["pass (忍受/感)", "-ive"],
           "imagery": "忍受的，不主动的。",
           "translation": "被动的；消极的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He played a passive role in the discussion.",
+              "cn": "他在讨论中扮演了被动的角色。"
+            }
+          ]
         },
         {
           "word": "compassion",
@@ -53,7 +58,12 @@
           "breakdown": ["com- (共)", "pass (感)", "-ion"],
           "imagery": "共同的感情，同情心。",
           "translation": "同情；怜悯",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She felt a deep compassion for the victims.",
+              "cn": "她对受害者深表同情。"
+            }
+          ]
         }
       ]
     }

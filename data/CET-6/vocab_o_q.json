@@ -79,7 +79,12 @@
           ],
           "imagery": "一个禁止或危险的符号，代表灾祸。",
           "translation": "瘟疫；灾祸",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The plague spread rapidly through the city.",
+              "cn": "瘟疫在城市里迅速蔓延。"
+            }
+          ]
         },
         {
           "word": "plumber",

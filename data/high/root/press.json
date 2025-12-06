@@ -20,7 +20,12 @@
           "breakdown": ["press (压)"],
           "imagery": "按压；印刷机（压印）。",
           "translation": "压；出版社",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Press the button to start the machine.",
+              "cn": "按下按钮启动机器。"
+            }
+          ]
         },
         {
           "word": "pressure",
@@ -28,7 +33,12 @@
           "breakdown": ["press (压)", "-ure (名)"],
           "imagery": "压在身上的力。",
           "translation": "压力",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He is under a lot of pressure at work.",
+              "cn": "他工作压力很大。"
+            }
+          ]
         },
         {
           "word": "express",
@@ -36,7 +46,16 @@
           "breakdown": ["ex- (出)", "press (压)"],
           "imagery": "把想法压出来（表达）；特快（像挤出的牙膏一样快）。",
           "translation": "表达；快递",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She expressed her gratitude in a letter.",
+              "cn": "她在一封信中表达了她的感激之情。"
+            },
+            {
+              "en": "Please send this package by express mail.",
+              "cn": "请用特快邮件寄送这个包裹。"
+            }
+          ]
         },
         {
           "word": "impress",
@@ -44,7 +63,12 @@
           "breakdown": ["im- (入)", "press (压)"],
           "imagery": "压进去，留下印记。",
           "translation": "给...留下印象",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "His speech impressed everyone.",
+              "cn": "他的演讲给每个人都留下了深刻的印象。"
+            }
+          ]
         },
         {
           "word": "depress",
@@ -52,7 +76,12 @@
           "breakdown": ["de- (下)", "press (压)"],
           "imagery": "向下压，使沮丧，使萧条。",
           "translation": "使沮丧；萧条",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The bad news depressed him for days.",
+              "cn": "这个坏消息让他沮丧了好几天。"
+            }
+          ]
         }
       ]
     }

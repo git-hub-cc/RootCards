@@ -19,7 +19,12 @@
           "breakdown": ["do (做)"],
           "imagery": "最基础的动作。",
           "translation": "做",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "What are you doing?",
+              "cn": "你在做什么？"
+            }
+          ]
         },
         {
           "word": "deed",

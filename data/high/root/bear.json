@@ -36,7 +36,12 @@
           "breakdown": ["bear (生育)", "-th (名)"],
           "imagery": "新生命的诞生。",
           "translation": "出生",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The birth of their first child was a joyful event.",
+              "cn": "他们第一个孩子的出生是一件喜事。"
+            }
+          ]
         },
         {
           "word": "burden",
@@ -44,7 +49,12 @@
           "breakdown": ["bur (bear变体)", "-den (名)"],
           "imagery": "背在背上的重物，或者是生育带来的责任。",
           "translation": "负担",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He carried the heavy burden of his family's expectations.",
+              "cn": "他背负着家人的沉重期望。"
+            }
+          ]
         },
         {
           "word": "bare",
@@ -52,7 +62,12 @@
           "breakdown": ["bare (裸)"],
           "imagery": "刚出生时赤裸的状态。",
           "translation": "赤裸的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The trees were bare in winter.",
+              "cn": "冬天的树木光秃秃的。"
+            }
+          ]
         }
       ]
     }

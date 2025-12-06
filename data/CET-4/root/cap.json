@@ -19,7 +19,12 @@
           "breakdown": ["cap (包围)"],
           "imagery": "把人包围在里面的小车。",
           "translation": "出租车",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Let's take a cab.",
+              "cn": "我们打个车吧。"
+            }
+          ]
         },
         {
           "word": "cabin",
@@ -27,7 +32,12 @@
           "breakdown": ["cap (包围)", "-in"],
           "imagery": "把人包围起来的小屋或船舱。",
           "translation": "小屋；船舱",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We stayed in a log cabin in the woods.",
+              "cn": "我们住在林中的一间小木屋里。"
+            }
+          ]
         },
         {
           "word": "cabinet",
@@ -48,7 +58,12 @@
           "breakdown": ["c (抓)", "-able (能)"],
           "imagery": "能抓住东西的绳索。",
           "translation": "电缆；缆绳",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The TV cable is not working.",
+              "cn": "电视电缆坏了。"
+            }
+          ]
         },
         {
           "word": "cradle",
@@ -56,7 +71,12 @@
           "breakdown": ["c (包围)", "radle"],
           "imagery": "把婴儿包围在里面的小床。",
           "translation": "摇篮",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The baby was sleeping peacefully in the cradle.",
+              "cn": "婴儿正在摇篮里安详地睡着。"
+            }
+          ]
         },
         {
           "word": "cafeteria",
@@ -64,7 +84,12 @@
           "breakdown": ["cafe (咖啡)", "-teria (场所)"],
           "imagery": "提供咖啡和食物的场所。",
           "translation": "自助餐厅",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We have lunch in the school cafeteria.",
+              "cn": "我们在学校食堂吃午饭。"
+            }
+          ]
         },
         {
           "word": "calorie",
@@ -72,7 +97,12 @@
           "breakdown": ["calor (热)", "-ie"],
           "imagery": "热量单位。",
           "translation": "卡路里",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This drink is low in calories.",
+              "cn": "这种饮料卡路里含量很低。"
+            }
+          ]
         },
         {
           "word": "cane",
@@ -80,7 +110,12 @@
           "breakdown": ["cane (茎/杖)"],
           "imagery": "顶部弯曲的手杖（像字母 C）。",
           "translation": "手杖；藤条",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The old man walked with a cane.",
+              "cn": "那位老人拄着手杖走路。"
+            }
+          ]
         },
         {
           "word": "canoe",
@@ -88,7 +123,12 @@
           "breakdown": ["can (舟)"],
           "imagery": "把人包围起来的小船。",
           "translation": "独木舟",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "They paddled the canoe across the lake.",
+              "cn": "他们划着独木舟穿过湖。"
+            }
+          ]
         },
         {
           "word": "capacity",

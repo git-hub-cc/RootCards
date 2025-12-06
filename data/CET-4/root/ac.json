@@ -19,7 +19,12 @@
           "breakdown": ["ace (尖/王牌)"],
           "imagery": "扑克牌中的 A，顶尖的牌。",
           "translation": "王牌；一流的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He is an ace pilot.",
+              "cn": "他是一位王牌飞行员。"
+            }
+          ]
         },
         {
           "word": "acid",
@@ -53,7 +58,12 @@
           "breakdown": ["ang (尖)", "-le (小)"],
           "imagery": "一个小尖角。",
           "translation": "角；角度",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Look at the problem from another angle.",
+              "cn": "从另一个角度看问题。"
+            }
+          ]
         },
         {
           "word": "arc",
@@ -61,7 +71,12 @@
           "breakdown": ["arc (弓/弧)"],
           "imagery": "弯曲的形状，圆滑的角。",
           "translation": "弧形",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The ball flew in a high arc.",
+              "cn": "球划出一道高高的弧线。"
+            }
+          ]
         },
         {
           "word": "arch",
@@ -69,7 +84,12 @@
           "breakdown": ["arc (弧)", "h (高)"],
           "imagery": "高高的弧形结构。",
           "translation": "拱门",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "They walked under the arch.",
+              "cn": "他们走过拱门。"
+            }
+          ]
         },
         {
           "word": "architect",
@@ -77,7 +97,12 @@
           "breakdown": ["arch (拱门/首要)", "tect (建造)"],
           "imagery": "建造拱门的人；首席建造者。",
           "translation": "建筑师",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The architect designed the new museum.",
+              "cn": "建筑师设计了新的博物馆。"
+            }
+          ]
         },
         {
           "word": "ache",
@@ -98,7 +123,12 @@
           "breakdown": ["alp (高山)"],
           "imagery": "像字母 A 一样尖耸的高山。",
           "translation": "阿尔卑斯山",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We went skiing in the Alps.",
+              "cn": "我们去阿尔卑斯山滑雪了。"
+            }
+          ]
         },
         {
           "word": "album",
@@ -106,7 +136,12 @@
           "breakdown": ["alb (白)", "-um"],
           "imagery": "源自阿尔卑斯山的雪白，指空白的收集册。",
           "translation": "相册；专辑",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She released her new album.",
+              "cn": "她发布了她的新专辑。"
+            }
+          ]
         }
       ]
     }

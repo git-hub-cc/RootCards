@@ -19,7 +19,12 @@
           "breakdown": ["mini (小)"],
           "imagery": "迷你的，小的。",
           "translation": "小的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She wore a mini skirt to the party.",
+              "cn": "她穿着迷你裙去参加派对。"
+            }
+          ]
         },
         {
           "word": "minute",
@@ -27,7 +32,16 @@
           "breakdown": ["min (小)", "-ute"],
           "imagery": "时间的小单位（分）；微小的。",
           "translation": "分钟；微小的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I'll be ready in a minute.",
+              "cn": "我一分钟就好。"
+            },
+            {
+              "en": "There were minute traces of poison in the food.",
+              "cn": "食物中有微量的毒物痕迹。"
+            }
+          ]
         },
         {
           "word": "minus",
@@ -48,7 +62,12 @@
           "breakdown": ["min (小)", "-or (较)"],
           "imagery": "较小的，次要的。",
           "translation": "次要的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It's only a minor problem.",
+              "cn": "这只是个小问题。"
+            }
+          ]
         },
         {
           "word": "minister",
@@ -56,7 +75,12 @@
           "breakdown": ["mini (小)", "-ster (人)"],
           "imagery": "原本指仆人（小人），后指为国家服务的部长。",
           "translation": "部长；牧师",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The Prime Minister will give a speech tonight.",
+              "cn": "首相今晚将发表演讲。"
+            }
+          ]
         },
         {
           "word": "administer",

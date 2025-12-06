@@ -19,7 +19,12 @@
           "breakdown": ["clear (清楚)"],
           "imagery": "没有污点，清晰可见。",
           "translation": "清楚的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The water in the lake is very clear.",
+              "cn": "湖里的水非常清澈。"
+            }
+          ]
         },
         {
           "word": "clarify",
@@ -27,7 +32,12 @@
           "breakdown": ["clar (清楚)", "-ify (使)"],
           "imagery": "使事情变得清楚明白。",
           "translation": "澄清；阐明",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Could you clarify what you mean?",
+              "cn": "你能澄清一下你的意思吗？"
+            }
+          ]
         },
         {
           "word": "declare",
@@ -35,7 +45,12 @@
           "breakdown": ["de- (加强)", "clar (清楚)"],
           "imagery": "加强使其清楚，大声宣告让所有人都明白。",
           "translation": "宣布；声明",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The government declared a state of emergency.",
+              "cn": "政府宣布进入紧急状态。"
+            }
+          ]
         }
       ]
     }

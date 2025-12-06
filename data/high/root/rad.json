@@ -20,7 +20,12 @@
           "breakdown": ["root (根)"],
           "imagery": "植物的根。",
           "translation": "根",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The root of the problem is a lack of communication.",
+              "cn": "问题的根源是缺乏沟通。"
+            }
+          ]
         },
         {
           "word": "radio",
@@ -28,7 +33,12 @@
           "breakdown": ["rad (射线)", "-io"],
           "imagery": "通过无线电波（射线）传播。",
           "translation": "收音机；无线电",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I heard the news on the radio.",
+              "cn": "我从收音机里听到了这个消息。"
+            }
+          ]
         },
         {
           "word": "radius",
@@ -36,7 +46,12 @@
           "breakdown": ["rad (根/辐)", "-ius"],
           "imagery": "车轮的辐条，圆的半径。",
           "translation": "半径",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The circle has a radius of 5 cm.",
+              "cn": "这个圆的半径是5厘米。"
+            }
+          ]
         },
         {
           "word": "radar",
@@ -44,7 +59,12 @@
           "breakdown": ["ra (radio)", "d (detect)", "a (and)", "r (ranging)"],
           "imagery": "无线电探测和测距。",
           "translation": "雷达",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The ship was detected by radar.",
+              "cn": "这艘船被雷达探测到了。"
+            }
+          ]
         }
       ]
     }

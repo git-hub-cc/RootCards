@@ -18,7 +18,12 @@
           "breakdown": ["eagle (鹰)"],
           "imagery": "易走（谐音）的鸟。",
           "translation": "鹰",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The eagle soared high in the sky.",
+              "cn": "雄鹰在天空中高飞。"
+            }
+          ]
         },
         {
           "word": "eccentric",
@@ -39,7 +44,12 @@
           "breakdown": ["eco (家/环境)", "-logy (学)"],
           "imagery": "研究共同家园的学科。",
           "translation": "生态学",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Pollution is damaging the ecology of the region.",
+              "cn": "污染正在破坏该地区的生态。"
+            }
+          ]
         },
         {
           "word": "elevation",
@@ -73,7 +83,12 @@
           "breakdown": ["e- (出)", "lite (选)"],
           "imagery": "选出来的精华人物。",
           "translation": "精英",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The country's political elite.",
+              "cn": "这个国家的政治精英。"
+            }
+          ]
         },
         {
           "word": "eloquent",
@@ -94,7 +109,12 @@
           "breakdown": ["em- (入)", "bar (拦)", "go"],
           "imagery": "进去被拦住不让走，禁运。",
           "translation": "禁运",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "They placed an embargo on all imports.",
+              "cn": "他们对所有进口商品实施了禁运。"
+            }
+          ]
         },
         {
           "word": "embody",
@@ -297,7 +317,12 @@
           "breakdown": ["ethic", "-s"],
           "imagery": "道德规范。",
           "translation": "伦理学；道德",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He has a strong sense of ethics.",
+              "cn": "他有很强的道德感。"
+            }
+          ]
         },
         {
           "word": "exaggerate",
@@ -733,7 +758,12 @@
           "breakdown": ["garlic"],
           "imagery": "味道够立刻（谐音）。",
           "translation": "大蒜",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Add some garlic to the dish.",
+              "cn": "往菜里加些大蒜。"
+            }
+          ]
         },
         {
           "word": "gaze",
@@ -793,7 +823,12 @@
           "breakdown": ["grav (重)", "-ity"],
           "imagery": "地球的重力。",
           "translation": "重力；严重性",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Newton discovered the law of gravity.",
+              "cn": "牛顿发现了万有引力定律。"
+            }
+          ]
         },
         {
           "word": "aggravate",
@@ -801,7 +836,12 @@
           "breakdown": ["ag- (加)", "grav (重)", "-ate"],
           "imagery": "加重负担，恶化。",
           "translation": "加重；恶化",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Don't aggravate the situation.",
+              "cn": "不要让情况恶化。"
+            }
+          ]
         },
         {
           "word": "greed",

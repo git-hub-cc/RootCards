@@ -20,7 +20,12 @@
           "breakdown": ["struct (建)", "-ure (名)"],
           "imagery": "建造起来的样子，结构。",
           "translation": "结构；构造",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The structure of the building is very complex.",
+              "cn": "这座建筑的结构非常复杂。"
+            }
+          ]
         },
         {
           "word": "construct",
@@ -28,7 +33,12 @@
           "breakdown": ["con- (共)", "struct (建)"],
           "imagery": "共同建造。",
           "translation": "建造；建设",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "They are constructing a new bridge.",
+              "cn": "他们正在建造一座新桥。"
+            }
+          ]
         },
         {
           "word": "destruct",
@@ -36,7 +46,12 @@
           "breakdown": ["de- (去)", "struct (建)"],
           "imagery": "去掉建筑物，破坏。",
           "translation": "破坏",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The building was scheduled for destruction.",
+              "cn": "这座建筑被计划拆除。(用名词形式举例)"
+            }
+          ]
         },
         {
           "word": "instruct",
@@ -44,7 +59,12 @@
           "breakdown": ["in- (内)", "struct (建)"],
           "imagery": "在内心建立知识体系，指导。",
           "translation": "指导；指示",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The teacher instructed the students to be quiet.",
+              "cn": "老师指示学生们保持安静。"
+            }
+          ]
         },
         {
           "word": "instrument",
@@ -52,7 +72,12 @@
           "breakdown": ["in- (内)", "stru (建)", "-ment (器)"],
           "imagery": "用于建设/操作的器具；乐器。",
           "translation": "乐器；仪器",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She plays a musical instrument.",
+              "cn": "她会演奏一种乐器。"
+            }
+          ]
         }
       ]
     }

@@ -45,7 +45,12 @@
           "breakdown": ["pack (包)"],
           "imagery": "把东西装在一起。",
           "translation": "打包；包裹",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I need to pack my suitcase.",
+              "cn": "我需要打包我的手提箱。"
+            }
+          ]
         },
         {
           "word": "package",

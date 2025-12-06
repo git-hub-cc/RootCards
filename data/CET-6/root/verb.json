@@ -22,7 +22,12 @@
           ],
           "imagery": "一张张开的嘴巴，代表口头语言。",
           "translation": "口头的；语言的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He gave a verbal warning to the student.",
+              "cn": "他给了那个学生一个口头警告。"
+            }
+          ]
         }
       ]
     }

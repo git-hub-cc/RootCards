@@ -19,7 +19,12 @@
           "breakdown": ["soph (智)", "more (愚/多)"],
           "imagery": "比大一更有智慧了，大二学生。",
           "translation": "大二学生",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He is a sophomore in college.",
+              "cn": "他是一名大学二年级学生。"
+            }
+          ]
         },
         {
           "word": "sophisticated",

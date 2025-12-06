@@ -23,6 +23,10 @@
             {
               "en": "Medium height.",
               "cn": "中等身高。"
+            },
+            {
+              "en": "Art can be expressed through various mediums.",
+              "cn": "艺术可以通过各种媒介来表达。"
             }
           ]
         },
@@ -32,7 +36,12 @@
           "breakdown": ["medium (复数)"],
           "imagery": "大众传播媒介。",
           "translation": "媒体",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The story was widely reported in the media.",
+              "cn": "这个故事被媒体广泛报道。"
+            }
+          ]
         },
         {
           "word": "immediate",

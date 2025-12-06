@@ -19,7 +19,16 @@
           "breakdown": ["manu (手)", "-al (形/名)"],
           "imagery": "手工的；使用手册。",
           "translation": "手工的；手册",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This machine can be operated by manual control.",
+              "cn": "这台机器可以手动控制。"
+            },
+            {
+              "en": "Please read the instruction manual carefully.",
+              "cn": "请仔细阅读说明手册。"
+            }
+          ]
         },
         {
           "word": "manufacture",
@@ -27,7 +36,12 @@
           "breakdown": ["manu (手)", "fact (做)"],
           "imagery": "用手做（早期），即制造。",
           "translation": "制造；生产",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This company manufactures high-quality furniture.",
+              "cn": "这家公司生产高品质的家具。"
+            }
+          ]
         },
         {
           "word": "manuscript",
@@ -48,7 +62,12 @@
           "breakdown": ["com- (加强)", "mand (手/命令)"],
           "imagery": "用手势发号施令，控制。",
           "translation": "命令；控制",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The officer commanded his soldiers to attack.",
+              "cn": "军官命令他的士兵进攻。"
+            }
+          ]
         },
         {
           "word": "demand",

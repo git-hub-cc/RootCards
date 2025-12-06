@@ -22,7 +22,12 @@
           ],
           "imagery": "大脑的轮廓，代表心理学。",
           "translation": "心理学",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She studied psychology at university.",
+              "cn": "她在大学里学习心理学。"
+            }
+          ]
         },
         {
           "word": "psychiatry",
@@ -33,7 +38,12 @@
           ],
           "imagery": "心理符号加上医疗标志，代表精神病治疗。",
           "translation": "精神病学",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He decided to specialize in child psychiatry.",
+              "cn": "他决定专攻儿童精神病学。"
+            }
+          ]
         }
       ]
     }

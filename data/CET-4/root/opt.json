@@ -19,7 +19,12 @@
           "breakdown": ["opt (选择)"],
           "imagery": "做出选择。",
           "translation": "选择",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Many students opt for business studies.",
+              "cn": "许多学生选择商科。"
+            }
+          ]
         },
         {
           "word": "option",
@@ -27,7 +32,12 @@
           "breakdown": ["opt (选择)", "-ion"],
           "imagery": "可供选择的事物。",
           "translation": "选项；选择权",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "You have two options: stay or leave.",
+              "cn": "你有两个选择：留下或离开。"
+            }
+          ]
         },
         {
           "word": "optimum",
@@ -48,7 +58,12 @@
           "breakdown": ["optim (最好)", "-ism"],
           "imagery": "凡事都看最好的一面。",
           "translation": "乐观主义",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He is full of optimism about the future.",
+              "cn": "他对未来充满乐观。"
+            }
+          ]
         }
       ]
     }

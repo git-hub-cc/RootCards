@@ -19,7 +19,12 @@
           "breakdown": ["form (形状)"],
           "imagery": "形式；表格。",
           "translation": "形状；形式；表格",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Please fill out this form.",
+              "cn": "请填写这张表格。"
+            }
+          ]
         },
         {
           "word": "formulate",
@@ -40,7 +45,12 @@
           "breakdown": ["form (形式)", "-ula (小)"],
           "imagery": "形成的小规则，公式。",
           "translation": "公式；方案",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "What is the formula for the area of a circle?",
+              "cn": "圆的面积公式是什么？"
+            }
+          ]
         },
         {
           "word": "conform",

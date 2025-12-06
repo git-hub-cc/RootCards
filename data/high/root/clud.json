@@ -19,7 +19,12 @@
           "breakdown": ["in- (在内)", "clud (关)"],
           "imagery": "关在里面，即包含。",
           "translation": "包括",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The price includes tax and service.",
+              "cn": "价格包含税费和服务费。"
+            }
+          ]
         },
         {
           "word": "exclude",
@@ -27,15 +32,25 @@
           "breakdown": ["ex- (向外)", "clud (关)"],
           "imagery": "关在外面，即排除。",
           "translation": "排除",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Please exclude my name from the list.",
+              "cn": "请将我的名字从名单中排除。"
+            }
+          ]
         },
         {
           "word": "conclude",
-          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='currentColor' opacity='0.3'/><path d='M4 20 h16' stroke='currentColor' stroke-width='2'/>",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' fill='currentColor' opacity='0.3'/><path d='M4 20 h16' stroke='currentColor' stroke-width='2'/>",
           "breakdown": ["con- (全部)", "clud (关)"],
           "imagery": "全部关上，事情结束；引申为下结论。",
           "translation": "结束；推断",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "What can we conclude from these facts?",
+              "cn": "我们能从这些事实中推断出什么？"
+            }
+          ]
         },
         {
           "word": "exclusive",
@@ -43,7 +58,12 @@
           "breakdown": ["ex- (外)", "clus (关)", "-ive (形)"],
           "imagery": "把别人关在外面，只留自己，即独家的。",
           "translation": "独家的；排他的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This is an exclusive offer for our members.",
+              "cn": "这是我们会员的专属优惠。"
+            }
+          ]
         }
       ]
     }

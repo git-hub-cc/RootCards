@@ -45,7 +45,12 @@
           "breakdown": ["fascin (迷)", "-ation"],
           "imagery": "着迷的状态。",
           "translation": "魅力；入迷",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I have a fascination with history.",
+              "cn": "我对历史很着迷。"
+            }
+          ]
         },
         {
           "word": "infant",

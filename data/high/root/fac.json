@@ -19,7 +19,12 @@
           "breakdown": ["fact (做)"],
           "imagery": "已经做出来、发生过的事情，即事实。",
           "translation": "事实",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It is a fact that the earth is round.",
+              "cn": "地球是圆的，这是一个事实。"
+            }
+          ]
         },
         {
           "word": "factory",
@@ -27,7 +32,12 @@
           "breakdown": ["fact (做)", "-ory (地点)"],
           "imagery": "做东西的地方。",
           "translation": "工厂",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He works in a car factory.",
+              "cn": "他在一家汽车工厂工作。"
+            }
+          ]
         },
         {
           "word": "artificial",
@@ -35,7 +45,12 @@
           "breakdown": ["art (艺术)", "fic (做)", "-ial"],
           "imagery": "用技艺（art）做出来的，非自然的。",
           "translation": "人工的；人造的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This plant is artificial, not real.",
+              "cn": "这株植物是人造的，不是真的。"
+            }
+          ]
         },
         {
           "word": "fiction",
@@ -43,7 +58,12 @@
           "breakdown": ["fic (做/编造)", "-tion (名)"],
           "imagery": "编造出来的故事。",
           "translation": "小说；虚构",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I prefer reading non-fiction to fiction.",
+              "cn": "相比小说，我更喜欢读非虚构类作品。"
+            }
+          ]
         }
       ]
     }

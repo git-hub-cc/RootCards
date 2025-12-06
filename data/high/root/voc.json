@@ -20,7 +20,12 @@
           "breakdown": ["voc (声)", "-al"],
           "imagery": "声音的，有声的。",
           "translation": "声音的；嗓音的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She is a very vocal critic of the government.",
+              "cn": "她是一位非常直言不讳的政府批评者。"
+            }
+          ]
         },
         {
           "word": "vocabulary",
@@ -28,7 +33,12 @@
           "breakdown": ["voc (声/词)", "-bulary"],
           "imagery": "能够发出的声音（词汇）汇集。",
           "translation": "词汇；词汇量",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Reading is a good way to expand your vocabulary.",
+              "cn": "阅读是扩大词汇量的好方法。"
+            }
+          ]
         },
         {
           "word": "advocate",
@@ -36,7 +46,12 @@
           "breakdown": ["ad- (加强)", "voc (喊)", "-ate"],
           "imagery": "大声喊（去支持），提倡。",
           "translation": "提倡；拥护",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He advocates for environmental protection.",
+              "cn": "他倡导环境保护。"
+            }
+          ]
         },
         {
           "word": "vote",
@@ -44,7 +59,12 @@
           "breakdown": ["vot (誓言/声)", "e"],
           "imagery": "通过发声/宣誓来选择。",
           "translation": "投票；选举",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Did you vote in the last election?",
+              "cn": "你在上次选举中投票了吗？"
+            }
+          ]
         },
         {
           "word": "devote",
@@ -52,7 +72,12 @@
           "breakdown": ["de- (加强)", "vote (誓)"],
           "imagery": "加强誓言，全身心投入。",
           "translation": "奉献；致力于",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She devoted her life to helping the poor.",
+              "cn": "她一生致力于帮助穷人。"
+            }
+          ]
         }
       ]
     }

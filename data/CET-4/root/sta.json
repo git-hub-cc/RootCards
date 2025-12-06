@@ -84,7 +84,12 @@
           "breakdown": ["stand", "point"],
           "imagery": "站立的点，立场。",
           "translation": "立场；观点",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "From my standpoint, this is a good idea.",
+              "cn": "从我的立场来看，这是个好主意。"
+            }
+          ]
         },
         {
           "word": "standby",
@@ -92,7 +97,12 @@
           "breakdown": ["stand", "by (旁)"],
           "imagery": "站在旁边准备。",
           "translation": "待命；备用",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The troops are on standby.",
+              "cn": "部队处于待命状态。"
+            }
+          ]
         }
       ]
     }

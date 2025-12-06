@@ -19,7 +19,12 @@
           "breakdown": ["curse (诅咒)"],
           "imagery": "恶毒的言语。",
           "translation": "诅咒；咒骂",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The witch put a curse on the prince.",
+              "cn": "女巫对王子施了诅咒。"
+            }
+          ]
         },
         {
           "word": "accuse",
@@ -40,7 +45,16 @@
           "breakdown": ["ex- (出)", "cuse (诅咒)"],
           "imagery": "从咒骂/指责中解脱出来，即原谅。",
           "translation": "原谅；借口",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Please excuse my messy room.",
+              "cn": "请原谅我凌乱的房间。"
+            },
+            {
+              "en": "That's no excuse for such bad behavior.",
+              "cn": "那不能成为这种恶劣行为的借口。"
+            }
+          ]
         }
       ]
     }

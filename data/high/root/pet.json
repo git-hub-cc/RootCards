@@ -20,7 +20,12 @@
           "breakdown": ["pet (追求/宠)"],
           "imagery": "追随主人的动物；受宠爱的。",
           "translation": "宠物",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Do you have any pets?",
+              "cn": "你养宠物了吗？"
+            }
+          ]
         },
         {
           "word": "compete",
@@ -28,7 +33,12 @@
           "breakdown": ["com- (共同)", "pet (追求)"],
           "imagery": "大家共同追求同一个目标，即竞争。",
           "translation": "竞争",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Several companies are competing for the contract.",
+              "cn": "几家公司正在为这份合同展开竞争。"
+            }
+          ]
         },
         {
           "word": "competence",
@@ -36,7 +46,12 @@
           "breakdown": ["compete (竞争)", "-ence (名)"],
           "imagery": "竞争的能力，胜任。",
           "translation": "能力；胜任",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He has the competence to do the job.",
+              "cn": "他有能力胜任这项工作。"
+            }
+          ]
         },
         {
           "word": "appetite",
@@ -44,7 +59,12 @@
           "breakdown": ["ap- (去)", "pet (追求)", "-ite"],
           "imagery": "去追求（食物），即食欲。",
           "translation": "食欲；欲望",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Exercise can increase your appetite.",
+              "cn": "锻炼可以增进你的食欲。"
+            }
+          ]
         }
       ]
     }

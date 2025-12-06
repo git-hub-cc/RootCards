@@ -32,7 +32,12 @@
           "breakdown": ["bat (打)", "-ery"],
           "imagery": "放电时产生火花，像打击一样。",
           "translation": "电池；炮组",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The remote control needs a new battery.",
+              "cn": "遥控器需要换新电池了。"
+            }
+          ]
         },
         {
           "word": "combat",

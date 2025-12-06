@@ -19,7 +19,12 @@
           "breakdown": ["father"],
           "imagery": "父亲。",
           "translation": "父亲",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "My father is a teacher.",
+              "cn": "我的父亲是一名教师。"
+            }
+          ]
         },
         {
           "word": "patrol",
@@ -53,7 +58,12 @@
           "breakdown": ["pat (父/显露)", "-ent"],
           "imagery": "发明的'父亲'拥有的权利；公开的权利。",
           "translation": "专利",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He holds the patent for this invention.",
+              "cn": "他拥有这项发明的专利。"
+            }
+          ]
         },
         {
           "word": "sponsor",
@@ -61,7 +71,12 @@
           "breakdown": ["spons (承诺)", "-or"],
           "imagery": "承诺出资的人（类似 patron）。",
           "translation": "赞助商",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The event is looking for a new sponsor.",
+              "cn": "该活动正在寻找新的赞助商。"
+            }
+          ]
         }
       ]
     }

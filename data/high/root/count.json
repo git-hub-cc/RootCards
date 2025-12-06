@@ -45,7 +45,16 @@
           "breakdown": ["count (数)", "-er (地方/人)"],
           "imagery": "数钱的地方（柜台）；或柜台对面的人（对立）。",
           "translation": "柜台；相反的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She works at the check-in counter.",
+              "cn": "她在登机柜台工作。"
+            },
+            {
+              "en": "His actions run counter to our principles.",
+              "cn": "他的行为与我们的原则背道而驰。"
+            }
+          ]
         },
         {
           "word": "discount",

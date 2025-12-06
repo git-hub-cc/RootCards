@@ -19,7 +19,12 @@
           "breakdown": ["ball (球)"],
           "imagery": "一个圆形的球体。",
           "translation": "球",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The boy is playing with a ball.",
+              "cn": "那个男孩在玩球。"
+            }
+          ]
         },
         {
           "word": "balloon",
@@ -27,7 +32,12 @@
           "breakdown": ["ball (球)", "-oon (大)"],
           "imagery": "一个巨大的充气球体。",
           "translation": "气球",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The red balloon flew up into the sky.",
+              "cn": "红色的气球飞上了天空。"
+            }
+          ]
         },
         {
           "word": "belly",
@@ -35,7 +45,12 @@
           "breakdown": ["bel (鼓起)", "-ly (名)"],
           "imagery": "身体上鼓起来的部位。",
           "translation": "肚子",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "After the big meal, his belly was full.",
+              "cn": "大餐过后，他的肚子饱了。"
+            }
+          ]
         },
         {
           "word": "boil",
@@ -43,7 +58,12 @@
           "breakdown": ["boil (沸腾)"],
           "imagery": "水沸腾时鼓起的泡泡 (bubble)。",
           "translation": "煮沸",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Let the water boil for a few minutes.",
+              "cn": "让水沸腾几分钟。"
+            }
+          ]
         }
       ]
     }

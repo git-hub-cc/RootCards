@@ -32,7 +32,12 @@
           "breakdown": ["creat (创造)", "-ion (名词)"],
           "imagery": "创造出来的作品或创造的过程。",
           "translation": "创造；作品",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The creation of the universe is a mystery.",
+              "cn": "宇宙的创造是一个谜。"
+            }
+          ]
         },
         {
           "word": "invention",
@@ -40,7 +45,12 @@
           "breakdown": ["invent (发明)", "-ion (名词)"],
           "imagery": "发明出来的东西。",
           "translation": "发明",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The light bulb was a great invention.",
+              "cn": "电灯泡是一项伟大的发明。"
+            }
+          ]
         },
         {
           "word": "attention",
@@ -61,7 +71,12 @@
           "breakdown": ["decis (切)", "-ion (名词)"],
           "imagery": "做出的决定。",
           "translation": "决定",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It's a difficult decision to make.",
+              "cn": "这是一个很难做的决定。"
+            }
+          ]
         },
         {
           "word": "conclusion",
@@ -69,7 +84,12 @@
           "breakdown": ["conclud (结束)", "-ion (名词)"],
           "imagery": "事情结束后的总结。",
           "translation": "结论；结尾",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "In conclusion, I would like to thank you all.",
+              "cn": "最后，我想感谢大家。"
+            }
+          ]
         },
         {
           "word": "suggestion",
@@ -103,7 +123,12 @@
           "breakdown": ["discuss (讨论)", "-ion (名词)"],
           "imagery": "人们在一起交换意见。",
           "translation": "讨论",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We had a long discussion about the problem.",
+              "cn": "我们就这个问题进行了长时间的讨论。"
+            }
+          ]
         },
         {
           "word": "competition",
@@ -111,7 +136,12 @@
           "breakdown": ["compet (竞争)", "-ition (名词)"],
           "imagery": "比赛或竞争的过程。",
           "translation": "比赛；竞争",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She won the first prize in the competition.",
+              "cn": "她在那次比赛中赢得了一等奖。"
+            }
+          ]
         },
         {
           "word": "graduation",
@@ -119,7 +149,12 @@
           "breakdown": ["gradu (毕业)", "-ation (名词)"],
           "imagery": "毕业典礼或状态。",
           "translation": "毕业",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The graduation ceremony will be held next week.",
+              "cn": "毕业典礼将于下周举行。"
+            }
+          ]
         },
         {
           "word": "congratulation",
@@ -127,7 +162,12 @@
           "breakdown": ["congratulat (祝贺)", "-ion (名词)"],
           "imagery": "共同高兴的时刻，就像拉响礼花筒，彩带飞舞。",
           "translation": "祝贺",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Congratulations on your new job!",
+              "cn": "恭喜你找到新工作！"
+            }
+          ]
         },
         {
           "word": "communication",
@@ -148,7 +188,12 @@
           "breakdown": ["exhibit (展览)", "-ion (名词)"],
           "imagery": "把东西拿出来给大家看。",
           "translation": "展览",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We went to an art exhibition yesterday.",
+              "cn": "我们昨天去看了一个艺术展。"
+            }
+          ]
         },
         {
           "word": "introduction",
@@ -156,7 +201,12 @@
           "breakdown": ["introduct (介绍)", "-ion (名词)"],
           "imagery": "把人或事物引入。",
           "translation": "介绍；引言",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The book has a long introduction.",
+              "cn": "这本书有一段很长的引言。"
+            }
+          ]
         },
         {
           "word": "reduction",
@@ -164,7 +214,12 @@
           "breakdown": ["reduct (减少)", "-ion (名词)"],
           "imagery": "数量向下减少。",
           "translation": "减少",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "There has been a reduction in crime.",
+              "cn": "犯罪率有所下降。"
+            }
+          ]
         }
       ]
     }

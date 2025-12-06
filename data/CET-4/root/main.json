@@ -58,7 +58,12 @@
           "breakdown": ["main (手)", "tain (拿)"],
           "imagery": "用手拿着不放，维持。",
           "translation": "维持；保养",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It's hard to maintain a balance between work and life.",
+              "cn": "很难在工作和生活之间保持平衡。"
+            }
+          ]
         }
       ]
     }

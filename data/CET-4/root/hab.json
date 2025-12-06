@@ -19,7 +19,12 @@
           "breakdown": ["in- (入)", "habit (居)"],
           "imagery": "在里面居住。",
           "translation": "居住于；栖息于",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Which animals inhabit this forest?",
+              "cn": "哪些动物栖息在这片森林里？"
+            }
+          ]
         },
         {
           "word": "inhabitant",
@@ -27,7 +32,12 @@
           "breakdown": ["inhabit (居住)", "-ant (人)"],
           "imagery": "居住者。",
           "translation": "居民；住户",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The oldest inhabitant of the village.",
+              "cn": "这个村庄最年长的居民。"
+            }
+          ]
         },
         {
           "word": "habitation",
@@ -35,7 +45,12 @@
           "breakdown": ["habit (居)", "-ation"],
           "imagery": "居住的行为或场所。",
           "translation": "居住；住所",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The area is not fit for human habitation.",
+              "cn": "这个地区不适合人类居住。"
+            }
+          ]
         },
         {
           "word": "habit",
@@ -43,7 +58,12 @@
           "breakdown": ["hab (拥有/保持)", "-it"],
           "imagery": "长期保持的行为，即习惯。",
           "translation": "习惯",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Smoking is a bad habit.",
+              "cn": "吸烟是个坏习惯。"
+            }
+          ]
         }
       ]
     }

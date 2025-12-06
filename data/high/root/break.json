@@ -19,7 +19,16 @@
           "breakdown": ["break (破)"],
           "imagery": "使物体断开。",
           "translation": "打破；休息",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Be careful not to break the glass.",
+              "cn": "小心不要打碎玻璃。"
+            },
+            {
+              "en": "Let's take a short break.",
+              "cn": "我们休息一下吧。"
+            }
+          ]
         },
         {
           "word": "brake",
@@ -27,7 +36,12 @@
           "breakdown": ["brake (断)"],
           "imagery": "“断开”车辆的动力系统。",
           "translation": "刹车",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He slammed on the brakes to avoid an accident.",
+              "cn": "他猛踩刹车以避免事故。"
+            }
+          ]
         },
         {
           "word": "fragile",
@@ -35,7 +49,12 @@
           "breakdown": ["frag (破)", "-ile (易...的)"],
           "imagery": "容易破碎的。",
           "translation": "易碎的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This antique vase is very fragile.",
+              "cn": "这个古董花瓶非常易碎。"
+            }
+          ]
         },
         {
           "word": "fragment",
@@ -43,7 +62,12 @@
           "breakdown": ["frag (破)", "-ment (名)"],
           "imagery": "打破后形成的小块。",
           "translation": "碎片",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She picked up the fragments of the broken plate.",
+              "cn": "她捡起了碎盘子的碎片。"
+            }
+          ]
         }
       ]
     }

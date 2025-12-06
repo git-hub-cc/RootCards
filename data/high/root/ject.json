@@ -19,7 +19,12 @@
           "breakdown": ["in- (入)", "ject (投)"],
           "imagery": "投射进去，即注射。",
           "translation": "注射",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The doctor will inject the vaccine into your arm.",
+              "cn": "医生会把疫苗注射到你的手臂上。"
+            }
+          ]
         },
         {
           "word": "reject",
@@ -40,7 +45,12 @@
           "breakdown": ["pro- (前)", "ject (投)"],
           "imagery": "向前投射（投影）；向前规划（项目）。",
           "translation": "工程；投射",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We are working on a new research project.",
+              "cn": "我们正在进行一个新的研究项目。"
+            }
+          ]
         },
         {
           "word": "object",
@@ -52,6 +62,10 @@
             {
               "en": "I object to the plan.",
               "cn": "我反对这个计划。"
+            },
+            {
+              "en": "What is that strange object in the sky?",
+              "cn": "天空中那个奇怪的物体是什么？"
             }
           ]
         }

@@ -38,7 +38,12 @@
           ],
           "imagery": "一把扫帚，象征清扫和卫生。",
           "translation": "环境卫生；卫生设施",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Disease can spread in conditions of poor sanitation.",
+              "cn": "疾病会在卫生条件差的情况下传播。"
+            }
+          ]
         }
       ]
     }

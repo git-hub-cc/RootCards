@@ -19,7 +19,12 @@
           "breakdown": ["dia- (对/穿)", "logue (说)"],
           "imagery": "两个人之间的谈话。",
           "translation": "对话",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The movie has some very witty dialogue.",
+              "cn": "这部电影有一些非常诙谐的对话。"
+            }
+          ]
         },
         {
           "word": "catalogue",
@@ -40,7 +45,12 @@
           "breakdown": ["leg (读/讲)", "-end"],
           "imagery": "被讲述的老故事。",
           "translation": "传说",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The legend of King Arthur is well-known.",
+              "cn": "亚瑟王的传说是众所周知的。"
+            }
+          ]
         }
       ]
     }

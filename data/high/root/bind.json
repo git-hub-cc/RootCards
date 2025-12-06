@@ -19,7 +19,12 @@
           "breakdown": ["bind (绑)"],
           "imagery": "用绳子系紧。",
           "translation": "绑；装订",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "They bound his hands behind his back.",
+              "cn": "他们把他的手反绑在背后。"
+            }
+          ]
         },
         {
           "word": "bond",
@@ -27,7 +32,12 @@
           "breakdown": ["bond (绑)"],
           "imagery": "连接两者的纽带。",
           "translation": "纽带；债券",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "There is a strong bond of friendship between them.",
+              "cn": "他们之间有深厚的友谊纽带。"
+            }
+          ]
         },
         {
           "word": "band",
@@ -35,7 +45,12 @@
           "breakdown": ["band (带)"],
           "imagery": "一条扁平的带子。",
           "translation": "带子；乐队",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She tied her hair back with a rubber band.",
+              "cn": "她用橡皮筋把头发扎在后面。"
+            }
+          ]
         },
         {
           "word": "bandage",
@@ -43,7 +58,12 @@
           "breakdown": ["band (带)", "-age (名)"],
           "imagery": "用来包扎伤口的带子。",
           "translation": "绷带",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The nurse wrapped a bandage around his injured arm.",
+              "cn": "护士用绷带包扎了他受伤的手臂。"
+            }
+          ]
         },
         {
           "word": "bunch",
@@ -51,7 +71,12 @@
           "breakdown": ["bunch (捆)"],
           "imagery": "绑在一起的一束东西（如花、葡萄）。",
           "translation": "一束；一串",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He bought her a bunch of flowers.",
+              "cn": "他给她买了一束花。"
+            }
+          ]
         },
         {
           "word": "boundary",
@@ -59,7 +84,12 @@
           "breakdown": ["bound (限/绑)", "-ary (名)"],
           "imagery": "把一个区域“绑”起来的界线。",
           "translation": "边界；分界线",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "You must stay within the boundaries of the park.",
+              "cn": "你必须待在公园的边界内。"
+            }
+          ]
         }
       ]
     }

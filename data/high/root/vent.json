@@ -20,7 +20,12 @@
           "breakdown": ["e- (出)", "vent (来)"],
           "imagery": "出来的事情，发生的大事。",
           "translation": "事件；大事",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The wedding was a memorable event.",
+              "cn": "那场婚礼是一件难忘的大事。"
+            }
+          ]
         },
         {
           "word": "invent",
@@ -28,7 +33,12 @@
           "breakdown": ["in- (进)", "vent (来)"],
           "imagery": "进来（来到脑海）的新东西，发明。",
           "translation": "发明",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Who invented the telephone?",
+              "cn": "谁发明了电话？"
+            }
+          ]
         },
         {
           "word": "prevent",
@@ -36,7 +46,12 @@
           "breakdown": ["pre- (前)", "vent (来)"],
           "imagery": "提前来（挡住），阻止。",
           "translation": "预防；阻止",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Regular exercise can prevent heart disease.",
+              "cn": "定期锻炼可以预防心脏病。"
+            }
+          ]
         },
         {
           "word": "adventure",
@@ -44,7 +59,12 @@
           "breakdown": ["ad- (去)", "vent (来)", "-ure"],
           "imagery": "去迎接未来的事情，冒险。",
           "translation": "冒险",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He loves reading adventure stories.",
+              "cn": "他喜欢读冒险故事。"
+            }
+          ]
         },
         {
           "word": "ventilate",
@@ -52,7 +72,12 @@
           "breakdown": ["vent (风)", "-il-", "-ate"],
           "imagery": "使风进来（vent源于wind），通风。",
           "translation": "使通风",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "You should open the window to ventilate the room.",
+              "cn": "你应该打开窗户给房间通风。"
+            }
+          ]
         }
       ]
     }

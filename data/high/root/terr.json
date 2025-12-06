@@ -20,7 +20,12 @@
           "breakdown": ["terr (恐)"],
           "imagery": "极度恐惧。",
           "translation": "恐惧；恐怖",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "They fled in terror.",
+              "cn": "他们惊恐地逃跑了。"
+            }
+          ]
         },
         {
           "word": "terrible",
@@ -28,7 +33,12 @@
           "breakdown": ["terr (恐)", "-ible (能)"],
           "imagery": "能引起恐惧的，可怕的。",
           "translation": "可怕的；糟糕的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I had a terrible nightmare last night.",
+              "cn": "我昨晚做了一个可怕的噩梦。"
+            }
+          ]
         },
         {
           "word": "terrify",
@@ -36,7 +46,12 @@
           "breakdown": ["terr (恐)", "-ify (使)"],
           "imagery": "使害怕。",
           "translation": "使害怕；恐吓",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The loud noise terrified the children.",
+              "cn": "巨大的噪音吓坏了孩子们。"
+            }
+          ]
         },
         {
           "word": "terrorist",
@@ -44,7 +59,12 @@
           "breakdown": ["terror", "-ist (人)"],
           "imagery": "制造恐怖的人（如炸弹）。",
           "translation": "恐怖分子",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The government is fighting against terrorists.",
+              "cn": "政府正在打击恐怖分子。"
+            }
+          ]
         }
       ]
     }

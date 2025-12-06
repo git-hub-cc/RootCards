@@ -20,7 +20,12 @@
           "breakdown": ["spread (散)"],
           "imagery": "向四周散开，传播。",
           "translation": "传播；伸展",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The news spread quickly.",
+              "cn": "消息迅速传播开来。"
+            }
+          ]
         },
         {
           "word": "spring",
@@ -28,7 +33,12 @@
           "breakdown": ["spring (春/弹)"],
           "imagery": "万物生长的季节；弹簧（弹起）。",
           "translation": "春天；弹簧；泉水",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Spring is the season of new beginnings.",
+              "cn": "春天是万物复苏的季节。"
+            }
+          ]
         },
         {
           "word": "spray",
@@ -36,7 +46,12 @@
           "breakdown": ["spray (喷)"],
           "imagery": "喷洒液体。",
           "translation": "喷洒；喷雾",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She sprayed perfume on her wrist.",
+              "cn": "她手腕上喷了香水。"
+            }
+          ]
         },
         {
           "word": "sprout",
@@ -44,7 +59,12 @@
           "breakdown": ["sprout (芽)"],
           "imagery": "植物发芽。",
           "translation": "发芽",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The seeds will sprout in a few days.",
+              "cn": "种子几天后就会发芽。"
+            }
+          ]
         }
       ]
     }

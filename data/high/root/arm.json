@@ -19,7 +19,16 @@
           "breakdown": ["arm (手臂/武器)"],
           "imagery": "身体的一部分，也是最原始的战斗工具。",
           "translation": "手臂；武器",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He held the baby in his arms.",
+              "cn": "他把婴儿抱在怀里。"
+            },
+            {
+              "en": "They decided to arm the citizens.",
+              "cn": "他们决定武装市民。"
+            }
+          ]
         },
         {
           "word": "army",
@@ -27,7 +36,12 @@
           "breakdown": ["arm (武器)", "-y (集合)"],
           "imagery": "一群拿起武器的人。",
           "translation": "军队",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He joined the army at the age of eighteen.",
+              "cn": "他十八岁时参了军。"
+            }
+          ]
         },
         {
           "word": "armor",
@@ -35,7 +49,12 @@
           "breakdown": ["arm (武器)", "-or (物)"],
           "imagery": "防御武器攻击的装备。",
           "translation": "盔甲",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The knight was dressed in a suit of armor.",
+              "cn": "那位骑士穿着一身盔甲。"
+            }
+          ]
         },
         {
           "word": "alarm",
@@ -43,7 +62,12 @@
           "breakdown": ["al- (all)", "arm (武器)"],
           "imagery": "所有人拿起武器，即拉响警报。",
           "translation": "警报；闹钟",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She set the alarm for 6 a.m.",
+              "cn": "她把闹钟定在了早上6点。"
+            }
+          ]
         }
       ]
     }

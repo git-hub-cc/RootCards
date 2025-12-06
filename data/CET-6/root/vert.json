@@ -22,7 +22,12 @@
           ],
           "imagery": "一首排列整齐的诗歌或韵文。",
           "translation": "诗歌；韵文",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She wrote a short verse on a card.",
+              "cn": "她在卡片上写了一首短诗。"
+            }
+          ]
         }
       ]
     }

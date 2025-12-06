@@ -32,7 +32,12 @@
           "breakdown": ["ac- (去/偶然)", "cid (落/发生)"],
           "imagery": "偶然掉下来的事情，意想不到的事件。",
           "translation": "事故",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He was injured in a car accident.",
+              "cn": "他在一场车祸中受伤了。"
+            }
+          ]
         },
         {
           "word": "suicide",
@@ -53,7 +58,12 @@
           "breakdown": ["homi (人)", "cide (切/杀)"],
           "imagery": "杀人。",
           "translation": "杀人",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The police are investigating a homicide.",
+              "cn": "警方正在调查一起杀人案。"
+            }
+          ]
         },
         {
           "word": "precise",
@@ -74,7 +84,12 @@
           "breakdown": ["con- (全部)", "cise (切)"],
           "imagery": "把多余的全部切掉，只留精华。",
           "translation": "简明的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Your summary should be clear and concise.",
+              "cn": "你的总结应该清晰简明。"
+            }
+          ]
         }
       ]
     }

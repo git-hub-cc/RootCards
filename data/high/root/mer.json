@@ -32,7 +32,12 @@
           "breakdown": ["emerge", "-ency (名)"],
           "imagery": "突然出现的情况，紧急情况。",
           "translation": "紧急情况",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "In an emergency, dial 911.",
+              "cn": "在紧急情况下，请拨打911。"
+            }
+          ]
         },
         {
           "word": "mermaid",
@@ -40,7 +45,12 @@
           "breakdown": ["mer (海/沉)", "maid (少女)"],
           "imagery": "海里的少女，美人鱼。",
           "translation": "美人鱼",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The story of the little mermaid is a famous fairy tale.",
+              "cn": "小美人鱼的故事是一个著名的童话。"
+            }
+          ]
         }
       ]
     }

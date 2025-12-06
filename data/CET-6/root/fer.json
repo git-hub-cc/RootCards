@@ -23,7 +23,12 @@
           ],
           "imagery": "一个投票箱，正在投入选票，将问题带回去参考。",
           "translation": "全民公投",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "A referendum was held on the question of the country's independence.",
+              "cn": "就国家独立问题举行了全民公投。"
+            }
+          ]
         }
       ]
     }

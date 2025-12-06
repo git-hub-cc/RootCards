@@ -19,7 +19,12 @@
           "breakdown": ["por (port携带)", "tray (托盘)"],
           "imagery": "带着调色盘（托盘）作画，描绘。",
           "translation": "描绘；扮演",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The book portrays him as a hero.",
+              "cn": "这本书把他描绘成一个英雄。"
+            }
+          ]
         },
         {
           "word": "portrait",
@@ -27,7 +32,12 @@
           "breakdown": ["portra (描绘)", "-it"],
           "imagery": "描绘出来的人像。",
           "translation": "肖像；画像",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She painted a portrait of her father.",
+              "cn": "她画了一幅她父亲的肖像画。"
+            }
+          ]
         }
       ]
     }

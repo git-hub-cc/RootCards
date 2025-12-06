@@ -18,7 +18,12 @@
           "breakdown": ["with- (对抗)", "stand (站)"],
           "imagery": "站着对抗外力，即抵挡、承受。",
           "translation": "抵挡；经受住",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The building was designed to withstand earthquakes.",
+              "cn": "这座建筑被设计用来抵御地震。"
+            }
+          ]
         },
         {
           "word": "withdraw",
@@ -30,6 +35,10 @@
             {
               "en": "Withdraw money from the account.",
               "cn": "从账户中取钱（向后拉回来）。"
+            },
+            {
+              "en": "The company decided to withdraw the product from the market.",
+              "cn": "公司决定将该产品从市场上撤回。"
             }
           ]
         }

@@ -20,7 +20,12 @@
           "breakdown": ["vis (看)", "-it (走)"],
           "imagery": "边走边看，参观；拜访。",
           "translation": "参观；拜访",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I'm going to visit my grandparents this weekend.",
+              "cn": "我这周末要去拜访我的祖父母。"
+            }
+          ]
         },
         {
           "word": "visual",
@@ -28,7 +33,12 @@
           "breakdown": ["vis (看)", "-al (形)"],
           "imagery": "视觉的，看得见的。",
           "translation": "视觉的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The book has many visual aids, such as charts and graphs.",
+              "cn": "这本书有很多视觉辅助工具，比如图表。"
+            }
+          ]
         },
         {
           "word": "evident",
@@ -36,7 +46,12 @@
           "breakdown": ["e- (出)", "vid (看)", "-ent"],
           "imagery": "看出来的，明显的。",
           "translation": "明显的；明白的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It was evident that she was unhappy.",
+              "cn": "很明显她不开心。"
+            }
+          ]
         },
         {
           "word": "video",
@@ -44,7 +59,12 @@
           "breakdown": ["vid (看)", "-eo"],
           "imagery": "用来看的（图像）。",
           "translation": "视频",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Let's watch a video.",
+              "cn": "我们看个视频吧。"
+            }
+          ]
         },
         {
           "word": "visa",
@@ -52,7 +72,12 @@
           "breakdown": ["vis (看)", "-a"],
           "imagery": "被查看过的文件（允许通过）。",
           "translation": "签证",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "You need a visa to enter that country.",
+              "cn": "你需要签证才能进入那个国家。"
+            }
+          ]
         },
         {
           "word": "supervise",
@@ -60,7 +85,12 @@
           "breakdown": ["super- (上)", "vise (看)"],
           "imagery": "在上面看（盯着），监督。",
           "translation": "监督；管理",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "A manager's job is to supervise the employees.",
+              "cn": "经理的工作是监督员工。"
+            }
+          ]
         }
       ]
     }

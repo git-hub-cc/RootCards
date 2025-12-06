@@ -71,7 +71,12 @@
           "breakdown": ["assert", "-ion"],
           "imagery": "断言的行为或内容。",
           "translation": "声称；主张",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He could not provide evidence for his assertion.",
+              "cn": "他无法为自己的主张提供证据。"
+            }
+          ]
         }
       ]
     }

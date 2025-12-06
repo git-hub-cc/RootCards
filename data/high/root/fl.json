@@ -19,7 +19,12 @@
           "breakdown": ["fly (飞)"],
           "imagery": "飞翔的动作。",
           "translation": "飞",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Birds can fly high in the sky.",
+              "cn": "鸟儿可以在天空中高飞。"
+            }
+          ]
         },
         {
           "word": "flame",
@@ -27,7 +32,12 @@
           "breakdown": ["fl (飞/闪)", "-ame"],
           "imagery": "向上飞窜的火舌。",
           "translation": "火焰",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The candle flame flickered in the wind.",
+              "cn": "蜡烛的火焰在风中摇曳。"
+            }
+          ]
         },
         {
           "word": "flash",
@@ -35,7 +45,12 @@
           "breakdown": ["fl (飞/闪)"],
           "imagery": "空中飞过的闪电，瞬间的光亮。",
           "translation": "闪光；闪现",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "A flash of lightning lit up the night sky.",
+              "cn": "一道闪电照亮了夜空。"
+            }
+          ]
         },
         {
           "word": "flatter",
@@ -43,7 +58,12 @@
           "breakdown": ["flat (平/拍)", "-er"],
           "imagery": "把人捧上天（飞起来），或者拍马屁。",
           "translation": "奉承",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He tried to flatter his boss to get a promotion.",
+              "cn": "他试图奉承老板以获得晋升。"
+            }
+          ]
         }
       ]
     }

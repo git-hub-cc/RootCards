@@ -22,7 +22,12 @@
           ],
           "imagery": "一页写满文字的纸，代表散文。",
           "translation": "散文",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I've always preferred reading prose to poetry.",
+              "cn": "与诗歌相比，我一直更喜欢读散文。"
+            }
+          ]
         },
         {
           "word": "probe",

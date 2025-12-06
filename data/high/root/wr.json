@@ -20,7 +20,12 @@
           "breakdown": ["wr (扭)"],
           "imagery": "扭曲的（不直的），即错误的。",
           "translation": "错误的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "You are going in the wrong direction.",
+              "cn": "你走错方向了。"
+            }
+          ]
         },
         {
           "word": "write",
@@ -28,7 +33,12 @@
           "breakdown": ["wr (扭)"],
           "imagery": "手腕一直扭动（写字动作）。",
           "translation": "写",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Please write your name here.",
+              "cn": "请在这里写下你的名字。"
+            }
+          ]
         },
         {
           "word": "wrist",
@@ -36,7 +46,12 @@
           "breakdown": ["wr (扭)", "-ist"],
           "imagery": "手部扭动的地方，手腕。",
           "translation": "手腕",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He injured his wrist playing tennis.",
+              "cn": "他打网球时伤了手腕。"
+            }
+          ]
         },
         {
           "word": "wrap",
@@ -44,7 +59,12 @@
           "breakdown": ["wr (扭)"],
           "imagery": "扭动包裹起来。",
           "translation": "包裹",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She wrapped the gift in colorful paper.",
+              "cn": "她用彩色的纸把礼物包起来。"
+            }
+          ]
         },
         {
           "word": "wrestle",
@@ -52,7 +72,12 @@
           "breakdown": ["wr (扭)"],
           "imagery": "互相扭动身体，摔跤。",
           "translation": "摔跤；搏斗",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The two boys were wrestling on the ground.",
+              "cn": "那两个男孩在地上摔跤。"
+            }
+          ]
         },
         {
           "word": "wrinkle",
@@ -60,7 +85,12 @@
           "breakdown": ["wr (扭)"],
           "imagery": "皮肤扭曲产生的纹路。",
           "translation": "皱纹",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She has some wrinkles around her eyes.",
+              "cn": "她眼周有些皱纹。"
+            }
+          ]
         },
         {
           "word": "wreck",
@@ -68,7 +98,12 @@
           "breakdown": ["wr (扭)"],
           "imagery": "被扭坏的东西，残骸。",
           "translation": "残骸；毁坏",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The ship was wrecked in a storm.",
+              "cn": "这艘船在暴风雨中失事了。"
+            }
+          ]
         }
       ]
     }

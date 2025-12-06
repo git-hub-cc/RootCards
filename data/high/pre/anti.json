@@ -18,7 +18,12 @@
           "breakdown": ["anti- (反)", "war (战争)"],
           "imagery": "反对战争。",
           "translation": "反战的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She participated in an anti-war protest.",
+              "cn": "她参加了一场反战抗议。"
+            }
+          ]
         },
         {
           "word": "anti-corruption",
@@ -26,7 +31,12 @@
           "breakdown": ["anti- (反)", "corruption (腐败)"],
           "imagery": "反对腐败。",
           "translation": "反腐的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The government launched an anti-corruption campaign.",
+              "cn": "政府发起了一场反腐运动。"
+            }
+          ]
         },
         {
           "word": "antarctic",
@@ -34,7 +44,12 @@
           "breakdown": ["ant- (反)", "arctic (北极)"],
           "imagery": "与北极相反的地方，即南极。",
           "translation": "南极的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Penguins are found in the Antarctic region.",
+              "cn": "企鹅生活在南极地区。"
+            }
+          ]
         }
       ]
     }

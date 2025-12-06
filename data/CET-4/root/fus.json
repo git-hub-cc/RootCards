@@ -19,7 +19,12 @@
           "breakdown": ["re- (回)", "fuse (流)"],
           "imagery": "流回去，不接受。",
           "translation": "拒绝",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He refused to answer the question.",
+              "cn": "他拒绝回答那个问题。"
+            }
+          ]
         },
         {
           "word": "refute",
@@ -53,7 +58,12 @@
           "breakdown": ["fund (资金)"],
           "imagery": "资金储备。",
           "translation": "资金；基金",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "They set up a fund for the victims.",
+              "cn": "他们为受害者设立了一个基金。"
+            }
+          ]
         }
       ]
     }

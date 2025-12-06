@@ -32,7 +32,12 @@
           "breakdown": ["intro- (进入)", "duc (引导)"],
           "imagery": "引导进入一个新的环境或圈子。",
           "translation": "介绍；引进",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Let me introduce my friend to you.",
+              "cn": "让我把我的朋友介绍给你。"
+            }
+          ]
         },
         {
           "word": "produce",
@@ -40,7 +45,12 @@
           "breakdown": ["pro- (向前)", "duc (引导)"],
           "imagery": "向前引导（生产流程），制造出产品。",
           "translation": "生产；农产品",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This factory produces electronic goods.",
+              "cn": "这家工厂生产电子产品。"
+            }
+          ]
         },
         {
           "word": "reduce",
@@ -48,7 +58,12 @@
           "breakdown": ["re- (向后)", "duc (引导)"],
           "imagery": "向后/向下引导，使数量减少。",
           "translation": "减少",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We must reduce our spending.",
+              "cn": "我们必须减少开支。"
+            }
+          ]
         },
         {
           "word": "conduct",
@@ -56,7 +71,12 @@
           "breakdown": ["con- (共同)", "duct (引导)"],
           "imagery": "引导大家一起做某事，如指挥乐队。",
           "translation": "指挥；实施；行为",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The orchestra was conducted by a famous musician.",
+              "cn": "这支管弦乐队由一位著名音乐家指挥。"
+            }
+          ]
         },
         {
           "word": "abduct",
@@ -64,7 +84,12 @@
           "breakdown": ["ab- (远离)", "duct (引导)"],
           "imagery": "引导着离开（正轨），即诱拐。",
           "translation": "绑架；诱拐",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He was charged with abducting a child.",
+              "cn": "他被指控绑架了一名儿童。"
+            }
+          ]
         }
       ]
     }

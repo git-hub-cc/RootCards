@@ -18,7 +18,12 @@
           "breakdown": ["na (生)", "-ive"],
           "imagery": "刚出生的，天真的。（Too young, too naive）",
           "translation": "幼稚的；天真的",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It was naive of you to believe him.",
+              "cn": "你相信他太天真了。"
+            }
+          ]
         }
       ]
     },
@@ -64,7 +69,12 @@
           "breakdown": ["oil"],
           "imagery": "一滴油。",
           "translation": "油",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We need to change the car's oil.",
+              "cn": "我们需要更换汽车的机油。"
+            }
+          ]
         },
         {
           "word": "olive",
@@ -137,7 +147,12 @@
           "breakdown": ["owl"],
           "imagery": "大眼睛的鸟，猫头鹰。",
           "translation": "猫头鹰",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Owls are active at night.",
+              "cn": "猫头鹰在夜间活动。"
+            }
+          ]
         },
         {
           "word": "ozone",
@@ -145,7 +160,12 @@
           "breakdown": ["o", "zone"],
           "imagery": "O3，臭氧。",
           "translation": "臭氧",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The ozone layer protects us from the sun.",
+              "cn": "臭氧层保护我们免受太阳照射。"
+            }
+          ]
         }
       ]
     },
@@ -165,7 +185,12 @@
           "breakdown": ["pain"],
           "imagery": "疼痛。",
           "translation": "疼痛",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He felt a sharp pain in his chest.",
+              "cn": "他感到胸口一阵剧痛。"
+            }
+          ]
         },
         {
           "word": "palm",
@@ -173,7 +198,12 @@
           "breakdown": ["palm"],
           "imagery": "像字母 P 形状的手掌。",
           "translation": "手掌；棕榈树",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He held the bird in the palm of his hand.",
+              "cn": "他把鸟托在手掌上。"
+            }
+          ]
         },
         {
           "word": "pamphlet",
@@ -181,7 +211,12 @@
           "breakdown": ["pam (palm)", "-let (小)"],
           "imagery": "手掌大小的小册子。",
           "translation": "小册子",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "A pamphlet about the new museum.",
+              "cn": "一本关于新博物馆的小册子。"
+            }
+          ]
         },
         {
           "word": "pave",
@@ -215,7 +250,12 @@
           "breakdown": ["pearl"],
           "imagery": "珍珠。",
           "translation": "珍珠",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "A string of pearls.",
+              "cn": "一串珍珠。"
+            }
+          ]
         },
         {
           "word": "peel",
@@ -236,7 +276,12 @@
           "breakdown": ["p (手)", "ee (眼)", "p"],
           "imagery": "两手捂眼从指缝看，偷窥。",
           "translation": "偷看；窥视",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He peeped through the keyhole.",
+              "cn": "他通过钥匙孔偷看。"
+            }
+          ]
         },
         {
           "word": "penalty",
@@ -257,7 +302,12 @@
           "breakdown": ["pen (白/头)", "guin"],
           "imagery": "企鹅。",
           "translation": "企鹅",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Penguins live in Antarctica.",
+              "cn": "企鹅生活在南极洲。"
+            }
+          ]
         },
         {
           "word": "peninsula",
@@ -265,7 +315,12 @@
           "breakdown": ["pen (半)", "insula (岛)"],
           "imagery": "几乎是岛（半岛）。",
           "translation": "半岛",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The Korean Peninsula.",
+              "cn": "朝鲜半岛。"
+            }
+          ]
         },
         {
           "word": "period",
@@ -286,7 +341,12 @@
           "breakdown": ["pest"],
           "imagery": "拍死它（谐音），害虫。",
           "translation": "害虫",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "We need to control these pests.",
+              "cn": "我们需要控制这些害虫。"
+            }
+          ]
         },
         {
           "word": "pharmacy",
@@ -294,7 +354,12 @@
           "breakdown": ["pharm", "-acy"],
           "imagery": "药房。",
           "translation": "药房",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I need to go to the pharmacy.",
+              "cn": "我需要去趟药店。"
+            }
+          ]
         },
         {
           "word": "pile",
@@ -328,7 +393,12 @@
           "breakdown": ["pistol"],
           "imagery": "手枪。",
           "translation": "手枪",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He carried a pistol in his belt.",
+              "cn": "他腰带里别着一把手枪。"
+            }
+          ]
         },
         {
           "word": "plateau",
@@ -401,7 +471,12 @@
           "breakdown": ["pound"],
           "imagery": "重量单位磅；猛击。",
           "translation": "磅；猛击",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "It costs one pound.",
+              "cn": "它值一英镑。"
+            }
+          ]
         },
         {
           "word": "pray",
@@ -448,7 +523,12 @@
           "breakdown": ["pri (前)", "-est"],
           "imagery": "站在前面祈祷的人，牧师。",
           "translation": "牧师；神父",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "He is a Catholic priest.",
+              "cn": "他是一位天主教神父。"
+            }
+          ]
         },
         {
           "word": "prime",
@@ -521,7 +601,12 @@
           "breakdown": ["pun (罚/痛)", "-ish"],
           "imagery": "让人感到疼痛（pain）。",
           "translation": "惩罚",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "You will be punished for this.",
+              "cn": "你会为此受到惩罚。"
+            }
+          ]
         },
         {
           "word": "pursue",
@@ -593,7 +678,12 @@
           "breakdown": ["quant (量)", "-ity"],
           "imagery": "数量。",
           "translation": "数量",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "A large quantity of food.",
+              "cn": "大量的食物。"
+            }
+          ]
         }
       ]
     }

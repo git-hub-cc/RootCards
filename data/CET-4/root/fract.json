@@ -19,7 +19,12 @@
           "breakdown": ["break (破)"],
           "imagery": "打破。",
           "translation": "打破",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Be careful not to break the glass.",
+              "cn": "小心别打破玻璃。"
+            }
+          ]
         },
         {
           "word": "fraction",

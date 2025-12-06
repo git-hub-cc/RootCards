@@ -19,7 +19,12 @@
           "breakdown": ["gram (写)"],
           "imagery": "书写的规则。",
           "translation": "语法",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Good grammar is important for clear communication.",
+              "cn": "好的语法对清晰的交流很重要。"
+            }
+          ]
         },
         {
           "word": "diagram",
@@ -27,7 +32,12 @@
           "breakdown": ["dia- (穿过)", "gram (画)"],
           "imagery": "画出来的图解。",
           "translation": "图表",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "This diagram shows how the machine works.",
+              "cn": "这个图表展示了机器的工作原理。"
+            }
+          ]
         },
         {
           "word": "telegram",
@@ -35,7 +45,12 @@
           "breakdown": ["tele (远)", "gram (写)"],
           "imagery": "从远处写来的文字。",
           "translation": "电报",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "In the past, people sent news via telegram.",
+              "cn": "过去，人们通过电报发送消息。"
+            }
+          ]
         },
         {
           "word": "telegraph",
@@ -43,7 +58,12 @@
           "breakdown": ["tele (远)", "graph (写)"],
           "imagery": "远程书写的机器。",
           "translation": "电报机",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The telegraph was a revolutionary invention.",
+              "cn": "电报机是一项革命性的发明。"
+            }
+          ]
         },
         {
           "word": "geography",
@@ -51,7 +71,12 @@
           "breakdown": ["geo (地)", "graphy (画)"],
           "imagery": "描绘大地的学科。",
           "translation": "地理",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "I'm studying the geography of Asia.",
+              "cn": "我正在学习亚洲地理。"
+            }
+          ]
         },
         {
           "word": "photograph",
@@ -59,7 +84,12 @@
           "breakdown": ["photo (光)", "graph (画)"],
           "imagery": "用光来作画。",
           "translation": "照片",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "She took a photograph of the beautiful scenery.",
+              "cn": "她拍了一张美丽风景的照片。"
+            }
+          ]
         }
       ]
     }

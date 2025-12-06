@@ -19,7 +19,12 @@
           "breakdown": ["forc (力量)", "e"],
           "imagery": "力量，武力。",
           "translation": "力量；强迫",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "Don't force me to go.",
+              "cn": "别强迫我去。"
+            }
+          ]
         },
         {
           "word": "forge",
@@ -40,7 +45,12 @@
           "breakdown": ["fort (堡垒)"],
           "imagery": "坚固的军事建筑。",
           "translation": "堡垒；要塞",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The soldiers defended the fort.",
+              "cn": "士兵们保卫着堡垒。"
+            }
+          ]
         },
         {
           "word": "fortify",
@@ -61,7 +71,12 @@
           "breakdown": ["cast (投)", "-le (小)"],
           "imagery": "有投射孔的小堡垒，引申为城堡。",
           "translation": "城堡",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The castle is a popular tourist attraction.",
+              "cn": "这座城堡是一个热门的旅游景点。"
+            }
+          ]
         }
       ]
     }

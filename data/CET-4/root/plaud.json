@@ -19,7 +19,12 @@
           "breakdown": ["ap- (去)", "plaud (鼓掌)"],
           "imagery": "去鼓掌。",
           "translation": "鼓掌；喝彩",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The audience applauded loudly.",
+              "cn": "观众热烈鼓掌。"
+            }
+          ]
         },
         {
           "word": "explode",
@@ -27,7 +32,12 @@
           "breakdown": ["ex- (外)", "plod (拍/爆)"],
           "imagery": "向外爆裂。",
           "translation": "爆炸；爆发",
-          "sentences": []
+          "sentences": [
+            {
+              "en": "The bomb could explode at any moment.",
+              "cn": "炸弹随时可能爆炸。"
+            }
+          ]
         },
         {
           "word": "plausible",
