@@ -170,7 +170,10 @@ const DATA_FILES = [
     'data/middle/other.json',
 
     // --- High School (高中) --- (词源进阶与混合词汇)
+    'data/high/etymology_basics.json',
     'data/high/phonetic_rules.json',
+    'data/high/topic_daily_life.json',
+    'data/high/topic_nature.json',
     'data/high/vocab_a_d.json',
     'data/high/vocab_e_h.json',
     'data/high/vocab_i_m.json',
