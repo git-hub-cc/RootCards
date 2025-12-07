@@ -1,0 +1,146 @@
+{
+  "prefix": "Technology & Components",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_technology_components",
+      "displayName": "科技与构件 (Technology & Components)",
+      "themeColor": "#06b6d4",
+      "prefixVisual": "<path d='M12 2V6M12 18V22M4.92905 4.92905L7.75701 7.75701M16.243 16.243L19.071 19.071M2 12H6M18 12H22M4.92905 19.071L7.75701 16.243M16.243 7.75701L19.071 4.92905M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>",
+      "prefixIntro": {
+        "title": "科技与构件",
+        "description": "包含与现代科学、技术、系统化知识以及具体技术构件相关的词汇。",
+        "imagery": "一个充满未来感的实验室，有复杂的电路板、显微镜和高速运行的数据流。"
+      },
+      "words": [
+        {
+          "word": "experiment",
+          "rootVisual": "<path d='M6 4h12l-2 4v10a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V8L6 4z' stroke='currentColor' fill='none'/><circle cx='10' cy='16' r='1' fill='currentColor'/><circle cx='14' cy='14' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "experi (尝试)",
+            "-ment"
+          ],
+          "imagery": "一个锥形瓶，里面冒着泡泡。",
+          "translation": "实验",
+          "sentences": [
+            {
+              "en": "The experiment was a big success.",
+              "cn": "那个实验取得了巨大的成功。"
+            }
+          ]
+        },
+        {
+          "word": "train",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><circle cx='7' cy='20' r='2' stroke='currentColor'/><circle cx='17' cy='20' r='2' stroke='currentColor'/><path d='M4 14h16' stroke='currentColor'/>",
+          "breakdown": [
+            "train"
+          ],
+          "imagery": "一个火车头的正面或侧面轮廓。",
+          "translation": "火车；训练",
+          "sentences": [
+            {
+              "en": "We took a train to Shanghai.",
+              "cn": "我们坐火车去了上海。"
+            }
+          ]
+        },
+        {
+          "word": "railway",
+          "rootVisual": "<path d='M8 2v20 M16 2v20' stroke='currentColor' stroke-width='2'/><path d='M6 6h12 M6 10h12 M6 14h12 M6 18h12' stroke='currentColor'/>",
+          "breakdown": [
+            "rail",
+            "way"
+          ],
+          "imagery": "两条平行的铁轨，中间有枕木。",
+          "translation": "铁轨；铁路",
+          "sentences": [
+            {
+              "en": "The railway was open to traffic last year.",
+              "cn": "这條鐵路去年通車了。"
+            }
+          ]
+        },
+        {
+          "word": "electricity",
+          "rootVisual": "<path d='M13 2L6 14h6l-2 8 8-10h-6z' fill='gold' stroke='currentColor'/>",
+          "breakdown": [
+            "electric",
+            "-ity"
+          ],
+          "imagery": "一个闪电符号。",
+          "translation": "电",
+          "sentences": [
+            {
+              "en": "The heater uses a lot of electricity.",
+              "cn": "这个加热器很耗电。"
+            }
+          ]
+        },
+        {
+          "word": "electronic",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M8 12l2 2 4-4' stroke='currentColor'/>",
+          "breakdown": [
+            "electron",
+            "-ic"
+          ],
+          "imagery": "一块集成电路板或芯片。",
+          "translation": "电子的",
+          "sentences": [
+            {
+              "en": "The price of electronic products dropped recently.",
+              "cn": "电子产品的价格最近下降了。"
+            }
+          ]
+        },
+        {
+          "word": "ecosystem",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 20c-4.4 0-8-3.6-8-8 0-4.4 3.6-8 8-8s8 3.6 8 8c0 4.4-3.6 8-8 8z' stroke='currentColor' fill='none'/><path d='M8 12l4-4 4 4' stroke='currentColor'/>",
+          "breakdown": [
+            "eco",
+            "system"
+          ],
+          "imagery": "一个循环的箭头包围着一片叶子和水滴。",
+          "translation": "生态系统",
+          "sentences": [
+            {
+              "en": "What about the ecosystem of a city?",
+              "cn": "一个城市的生态系统怎么样？"
+            }
+          ]
+        },
+        {
+          "word": "textbook",
+          "rootVisual": "<rect x='4' y='4' width='14' height='18' rx='1' stroke='currentColor' fill='none'/><path d='M6 8h10 M6 12h10 M6 16h6' stroke='currentColor'/>",
+          "breakdown": [
+            "text",
+            "book"
+          ],
+          "imagery": "一本厚厚的书，封面上写着TEXT。",
+          "translation": "课本",
+          "sentences": [
+            {
+              "en": "Pass me your English textbook.",
+              "cn": "把你的英语课本递给我。"
+            }
+          ]
+        },
+        {
+          "word": "mobile",
+          "rootVisual": "<rect x='8' y='4' width='8' height='16' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='17' r='1' fill='currentColor'/><path d='M10 6h4' stroke='currentColor'/>",
+          "breakdown": [
+            "mob (移动)",
+            "-ile"
+          ],
+          "imagery": "一部智能手机。",
+          "translation": "移动的；手机",
+          "sentences": [
+            {
+              "en": "May I use your mobile phone?",
+              "cn": "我可以用一下你的手机吗？"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

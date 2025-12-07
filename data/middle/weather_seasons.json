@@ -6,7 +6,7 @@
       "meaningId": "topic_weather_seasons",
       "displayName": "天气现象 (Weather Phenomena)",
       "themeColor": "#06b6d4",
-      "prefixVisual": "<path d='M8 18 a4 4 0 0 1 0 -8 h8 a6 6 0 0 1 0 12 h-6 a4 4 0 0 1 -2 -4 z' stroke='currentColor' fill='none'/><circle cx='16' cy='8' r='3' fill='currentColor'/><path d='M10 18 l-1 3 M14 18 l-1 3' stroke='currentColor'/>",
+      "prefixVisual": "<path d='M8 18 a4 4 0 0 1 0 -8 h8 a6 6 0 0 1 0 12 h-6 a4 4 0 0 1 -2 -4 z' stroke='currentColor' fill='none'/><circle cx='16' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M10 18 l-1 3 M14 18 l-1 3' stroke='currentColor' fill='none'/>",
       "prefixIntro": {
         "title": "天气现象",
         "description": "描述晴、雨、雪、云等各种自然天气状况的词汇。",
@@ -16,133 +16,233 @@
         {
           "word": "weather",
           "rootVisual": "<circle cx='8' cy='8' r='3' fill='currentColor' opacity='0.5'/><path d='M18 12 a 3 3 0 0 0 -3 -3 a 4 4 0 0 0 -7 2 a 3 3 0 0 0 3 5 h 6 a 3 3 0 0 0 1 -4' stroke='currentColor' fill='none'/>",
-          "breakdown": ["weder", "(气候)"],
+          "breakdown": [
+            "weder",
+            "(气候)"
+          ],
           "imagery": "太阳躲在云层后面，代表天气变化。",
           "translation": "天气",
-          "sentences": [{"en": "What's the weather like today?", "cn": "今天天气怎么样？"}]
+          "sentences": [
+            {
+              "en": "What's the weather like today?",
+              "cn": "今天天气怎么样？"
+            }
+          ]
         },
         {
           "word": "sun",
           "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 2 v4 M12 18 v4 M2 12 h4 M18 12 h4 M5 5 l2 2 M17 17 l2 2 M5 19 l2 -2 M17 7 l2 -2' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["Sun", "(太阳)"],
+          "breakdown": [
+            "Sun",
+            "(太阳)"
+          ],
           "imagery": "一个发光的圆圈，周围有光芒四射的线条，代表太阳。",
           "translation": "太阳",
           "sentences": [
-            { "en": "The sun is shining brightly.", "cn": "阳光灿烂。" }
+            {
+              "en": "The sun is shining brightly.",
+              "cn": "阳光灿烂。"
+            }
           ]
         },
         {
           "word": "sunny",
           "rootVisual": "<circle cx='12' cy='12' r='5' fill='currentColor'/><path d='M12 2 v4 M12 18 v4 M2 12 h4 M18 12 h4 M5 5 l2 2 M17 17 l2 2 M5 19 l2 -2 M17 7 l2 -2' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["Sun", "(太阳)", "-ny", "(…的)"],
+          "breakdown": [
+            "Sun",
+            "(太阳)",
+            "-ny",
+            "(…的)"
+          ],
           "imagery": "一个明亮的实心太阳，光芒四射，代表晴朗的天气。",
           "translation": "晴朗的",
           "sentences": [
-            { "en": "It will be sunny tomorrow.", "cn": "明天将是晴天。" }
+            {
+              "en": "It will be sunny tomorrow.",
+              "cn": "明天将是晴天。"
+            }
           ]
         },
         {
           "word": "rain",
           "rootVisual": "<path d='M8 12 a4 4 0 0 1 0 -8 h8 a6 6 0 0 1 0 12 h-6 a4 4 0 0 1 -2 -4 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M10 16 l-1 4 M14 16 l-1 4' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["Rain", "(雨)"],
+          "breakdown": [
+            "Rain",
+            "(雨)"
+          ],
           "imagery": "一朵云下面有几滴雨水落下。",
           "translation": "雨",
           "sentences": [
-            { "en": "The rain is getting heavier.", "cn": "雨越下越大了。" }
+            {
+              "en": "The rain is getting heavier.",
+              "cn": "雨越下越大了。"
+            }
           ]
         },
         {
           "word": "rainy",
           "rootVisual": "<path d='M8 12 a4 4 0 0 1 0 -8 h8 a6 6 0 0 1 0 12 h-6 a4 4 0 0 1 -2 -4 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M10 16 l-1 4 M14 16 l-1 4' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["Rain", "(雨)", "-y", "(…的)"],
+          "breakdown": [
+            "Rain",
+            "(雨)",
+            "-y",
+            "(…的)"
+          ],
           "imagery": "一朵云下面有几滴雨水落下。",
           "translation": "下雨的",
           "sentences": [
-            { "en": "I don't like rainy days.", "cn": "我不喜欢下雨天。" }
+            {
+              "en": "I don't like rainy days.",
+              "cn": "我不喜欢下雨天。"
+            }
           ]
         },
         {
           "word": "snow",
           "rootVisual": "<path d='M12 2 v20 M2 12 h20 M5 5 l14 14 M5 19 L19 5' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
-          "breakdown": ["snow / snowy / snowman", "(雪/下雪的/雪人)"],
+          "breakdown": [
+            "snow / snowy / snowman",
+            "(雪/下雪的/雪人)"
+          ],
           "imagery": "一片经典的六角形雪花，代表着冬日与纯洁。",
           "translation": "雪；下雪的；雪人",
           "sentences": [
-            { "en": "Children are making a snowman outside.", "cn": "孩子们正在外面堆雪人。" }
+            {
+              "en": "Children are making a snowman outside.",
+              "cn": "孩子们正在外面堆雪人。"
+            }
           ]
         },
         {
           "word": "snowy",
           "rootVisual": "<path d='M12 2 v20 M2 12 h20 M5 5 l14 14 M5 19 L19 5' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["Snow", "(雪)", "-y", "(…的)"],
+          "breakdown": [
+            "Snow",
+            "(雪)",
+            "-y",
+            "(…的)"
+          ],
           "imagery": "一个六角形的雪花图案。",
           "translation": "下雪的",
           "sentences": [
-            { "en": "It will be snowy tomorrow.", "cn": "明天会下雪。" }
+            {
+              "en": "It will be snowy tomorrow.",
+              "cn": "明天会下雪。"
+            }
           ]
         },
         {
           "word": "wind",
           "rootVisual": "<path d='M4 8 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/><path d='M6 16 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/>",
-          "breakdown": ["wind", "(风)"],
+          "breakdown": [
+            "wind",
+            "(风)"
+          ],
           "imagery": "两条平行的波浪线，表示气流。",
           "translation": "风",
-          "sentences": [{"en": "There is no wind today.", "cn": "今天没有风。"}]
+          "sentences": [
+            {
+              "en": "There is no wind today.",
+              "cn": "今天没有风。"
+            }
+          ]
         },
         {
           "word": "windy",
           "rootVisual": "<path d='M4 8 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/><path d='M6 12 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/><path d='M4 16 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/><path d='M20 8 a 2 2 0 0 1 2 2' stroke='currentColor' fill='none' opacity='0.5'/>",
-          "breakdown": ["-y", "(多...的)"],
+          "breakdown": [
+            "-y",
+            "(多...的)"
+          ],
           "imagery": "密集的波浪线，甚至卷起了漩涡，表示风很大。",
           "translation": "刮风的",
-          "sentences": [{"en": "It's too windy today.", "cn": "今天风太大了。"}]
+          "sentences": [
+            {
+              "en": "It's too windy today.",
+              "cn": "今天风太大了。"
+            }
+          ]
         },
         {
           "word": "cloud",
           "rootVisual": "<path d='M8 18 a4 4 0 0 1 0 -8 h8 a6 6 0 0 1 0 12 h-6 a4 4 0 0 1 -2 -4 z' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["Cloud", "(云)"],
+          "breakdown": [
+            "Cloud",
+            "(云)"
+          ],
           "imagery": "天空中一朵蓬松的白云。",
           "translation": "云",
           "sentences": [
-            { "en": "There is a big cloud in the sky.", "cn": "天空中有一大朵云。" }
+            {
+              "en": "There is a big cloud in the sky.",
+              "cn": "天空中有一大朵云。"
+            }
           ]
         },
         {
           "word": "cloudy",
           "rootVisual": "<circle cx='16' cy='8' r='4' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 18 a4 4 0 0 1 0 -8 h8 a6 6 0 0 1 0 12 h-6 a4 4 0 0 1 -2 -4 z' fill='currentColor'/>",
-          "breakdown": ["Cloud", "(云)", "-y", "(…的)"],
+          "breakdown": [
+            "Cloud",
+            "(云)",
+            "-y",
+            "(…的)"
+          ],
           "imagery": "太阳被一朵大云彩遮住了一部分，表示多云的天气。",
           "translation": "多云的",
           "sentences": [
-            { "en": "It will be cloudy tomorrow.", "cn": "明天将是多云天气。" }
+            {
+              "en": "It will be cloudy tomorrow.",
+              "cn": "明天将是多云天气。"
+            }
           ]
         },
         {
           "word": "blow",
           "rootVisual": "<path d='M4 10 q 4 -4 8 0 M4 14 q 4 -4 8 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='18' cy='12' r='2' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["Blow", "(吹)"],
+          "breakdown": [
+            "Blow",
+            "(吹)"
+          ],
           "imagery": "几条代表气流的曲线从左边吹向右边的一个圆圈。",
           "translation": "吹",
           "sentences": [
-            { "en": "The child blows out the birthday candles and makes a wish.", "cn": "孩子吹灭生日蜡烛并许愿。" }
+            {
+              "en": "The child blows out the birthday candles and makes a wish.",
+              "cn": "孩子吹灭生日蜡烛并许愿。"
+            }
           ]
         },
         {
           "word": "warm",
           "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='currentColor'/><path d='M12 4 v-2 M12 20 v2 M4 12 h-2 M20 12 h2 M6 6 l-2 -2 M18 18 l2 2 M6 18 l-2 2 M18 6 l2 -2' stroke='currentColor' opacity='0.6'/>",
-          "breakdown": ["wearm", "(热)"],
+          "breakdown": [
+            "wearm",
+            "(热)"
+          ],
           "imagery": "散发着柔和光芒的太阳。",
           "translation": "温暖",
-          "sentences": [{"en": "I like the warm weather in spring the most.", "cn": "我最喜欢春天温暖的天气。"}]
+          "sentences": [
+            {
+              "en": "I like the warm weather in spring the most.",
+              "cn": "我最喜欢春天温暖的天气。"
+            }
+          ]
         },
         {
           "word": "dark",
           "rootVisual": "<circle cx='12' cy='12' r='10' fill='currentColor'/><path d='M14 6 a 6 6 0 1 0 0 12' fill='#8b5cf6' stroke='none'/>",
-          "breakdown": ["Dark", "(黑暗)"],
+          "breakdown": [
+            "Dark",
+            "(黑暗)"
+          ],
           "imagery": "漆黑的背景中只有一弯新月，代表没有光亮的黑暗。",
           "translation": "黑暗",
           "sentences": [
-            { "en": "She is afraid of the dark.", "cn": "她害怕黑暗。" }
+            {
+              "en": "She is afraid of the dark.",
+              "cn": "她害怕黑暗。"
+            }
           ]
         }
       ]

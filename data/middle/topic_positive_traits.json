@@ -1,0 +1,211 @@
+{
+  "prefix": "Positive Qualities & States",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_positive_traits",
+      "displayName": "积极品质与状态 (Positive Qualities & States)",
+      "themeColor": "#10b981",
+      "prefixVisual": "<path d='M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z' fill='none'/>",
+      "prefixIntro": {
+        "title": "积极品质与状态",
+        "description": "包含理想的、令人向往的正面品质、能力以及积极的生活状态。",
+        "imagery": "一颗闪耀的星星，或者一枚奖章，象征着卓越、成就和美好的品德。"
+      },
+      "words": [
+        {
+          "word": "successful",
+          "rootVisual": "<path d='M12 2l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z' fill='gold'/><path d='M12 14l2 4' stroke='currentColor'/>",
+          "breakdown": [
+            "success",
+            "-ful"
+          ],
+          "imagery": "一个人站在山顶举起双臂，或者一个金色的奖杯。",
+          "translation": "成功的",
+          "sentences": [
+            {
+              "en": "The operation was successful.",
+              "cn": "手术很成功。"
+            }
+          ]
+        },
+        {
+          "word": "wise",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 8v4' stroke='currentColor'/><circle cx='12' cy='6' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "wise"
+          ],
+          "imagery": "一位长胡子的老人，或者一只戴眼镜的猫头鹰。",
+          "translation": "明智的；有远见的",
+          "sentences": [
+            {
+              "en": "She is a wise woman.",
+              "cn": "她是一位有远见的女性。"
+            }
+          ]
+        },
+        {
+          "word": "caring",
+          "rootVisual": "<path d='M12 20l-8-8a5 5 0 1 1 8-7a5 5 0 1 1 8 7z' fill='pink'/><path d='M8 8h8' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "care",
+            "-ing"
+          ],
+          "imagery": "一双手呵护着一株幼苗。",
+          "translation": "关心的；体贴的",
+          "sentences": [
+            {
+              "en": "He is a caring friend.",
+              "cn": "他是一个体贴的朋友。"
+            }
+          ]
+        },
+        {
+          "word": "pleased",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 14s2 2 4 2 4-2 4-2' stroke='currentColor'/><circle cx='9' cy='10' r='1' fill='currentColor'/><circle cx='15' cy='10' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "pleas (高兴)",
+            "-ed"
+          ],
+          "imagery": "一个满意的笑脸，嘴角上扬。",
+          "translation": "满意的",
+          "sentences": [
+            {
+              "en": "Gwen was pleased with the results.",
+              "cn": "格温对结果很满意。"
+            }
+          ]
+        },
+        {
+          "word": "safe",
+          "rootVisual": "<path d='M12 2l-8 4v6c0 5 8 10 8 10s8-5 8-10V6l-8-4z' stroke='currentColor' fill='green' opacity='0.3'/><path d='M10 12l2 2 4-4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "safe"
+          ],
+          "imagery": "一个绿色的盾牌，中间有个对勾。",
+          "translation": "安全的",
+          "sentences": [
+            {
+              "en": "Your family are all safe.",
+              "cn": "你的家人都安全。"
+            }
+          ]
+        },
+        {
+          "word": "intelligent",
+          "rootVisual": "<path d='M12 14h-4v-4h4v4z' stroke='currentColor' fill='none'/><path d='M12 10l2-2 2 2' stroke='currentColor'/><circle cx='12' cy='8' r='6' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "intel-",
+            "lig (选)",
+            "-ent"
+          ],
+          "imagery": "一个发光的灯泡，代表灵光一现。",
+          "translation": "聪明的；有才智的",
+          "sentences": [
+            {
+              "en": "She is intelligent and hard-working.",
+              "cn": "她既聪明又努力。"
+            }
+          ]
+        },
+        {
+          "word": "hard-working",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12l-2 2 4 4' stroke='currentColor'/><path d='M12 2v4' stroke='currentColor'/><path d='M12 4l-2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "hard",
+            "work",
+            "-ing"
+          ],
+          "imagery": "一只勤劳的蜜蜂，或者一个人在流汗搬砖。",
+          "translation": "勤奋的",
+          "sentences": [
+            {
+              "en": "I'm very hard-working.",
+              "cn": "我非常勤奋。"
+            }
+          ]
+        },
+        {
+          "word": "fascinating",
+          "rootVisual": "<path d='M12 2l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' fill='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "fascin",
+            "-ating"
+          ],
+          "imagery": "绚丽的烟花，或者令人着迷的魔法光芒。",
+          "translation": "迷人的；极好的",
+          "sentences": [
+            {
+              "en": "That sounds absolutely fascinating.",
+              "cn": "那听起来真是太棒了。"
+            }
+          ]
+        },
+        {
+          "word": "talented",
+          "rootVisual": "<path d='M12 2l2 4h4l-3 3 1 4-4-3-4 3 1-4-3-3h4z' fill='currentColor'/><path d='M12 14v4' stroke='currentColor'/>",
+          "breakdown": [
+            "talent",
+            "-ed"
+          ],
+          "imagery": "一个人在舞台上演奏乐器，光芒四射。",
+          "translation": "有才华的",
+          "sentences": [
+            {
+              "en": "He's so talented!",
+              "cn": "他太有才了！"
+            }
+          ]
+        },
+        {
+          "word": "productive",
+          "rootVisual": "<rect x='4' y='18' width='4' height='4' fill='currentColor' opacity='0.2'/><rect x='10' y='14' width='4' height='8' fill='currentColor' opacity='0.5'/><rect x='16' y='10' width='4' height='12' fill='currentColor'/><path d='M4 18l6-4 6-4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "pro-",
+            "duct",
+            "-ive"
+          ],
+          "imagery": "上升的柱状图，或者结满果实的树。",
+          "translation": "富有成效的；多产的",
+          "sentences": [
+            {
+              "en": "I should be doing something productive.",
+              "cn": "我应该做一些有成效的事情。"
+            }
+          ]
+        },
+        {
+          "word": "proud",
+          "rootVisual": "<path d='M12 20l-4-4 4-4 4 4z' fill='currentColor'/><path d='M8 12h8' stroke='currentColor'/><path d='M12 4v8' stroke='currentColor'/>",
+          "breakdown": [
+            "proud"
+          ],
+          "imagery": "一只开屏的孔雀。",
+          "translation": "骄傲的",
+          "sentences": [
+            {
+              "en": "We are proud of ourselves.",
+              "cn": "我们为自己感到骄傲。"
+            }
+          ]
+        },
+        {
+          "word": "moving",
+          "rootVisual": "<path d='M12 20l-8-8a5 5 0 1 1 8-7a5 5 0 1 1 8 7z' stroke='currentColor' fill='none'/><path d='M16 16l-2 2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "mov",
+            "-ing"
+          ],
+          "imagery": "一只手递过纸巾给流泪的人。",
+          "translation": "感人的",
+          "sentences": [
+            {
+              "en": "It's such a moving film.",
+              "cn": "这是一部如此感人的电影。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

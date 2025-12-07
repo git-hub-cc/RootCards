@@ -1,0 +1,552 @@
+{
+  "prefix": "People & Roles",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_people_roles",
+      "displayName": "人物与角色 (People & Roles)",
+      "themeColor": "#ea580c",
+      "prefixVisual": "<path d='M12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12ZM12 14C8.68629 14 6 16.6863 6 20H18C18 16.6863 15.3137 14 12 14Z' fill='none'/>",
+      "prefixIntro": {
+        "title": "人物与角色",
+        "description": "包含表示人的身份、职业、社会角色以及人际关系的词汇。",
+        "imagery": "一个微型社会的剪影，包含各行各业的人们在互动，构成了一个复杂的人际网络。"
+      },
+      "words": [
+        {
+          "word": "tourist",
+          "rootVisual": "<path d='M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z M6 20v-6h12v6' stroke='currentColor' fill='none'/><path d='M16 14l3-3' stroke='currentColor'/><rect x='18' y='8' width='4' height='5' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "tour",
+            "-ist (人)"
+          ],
+          "imagery": "一个人背着旅行包，手里拿着相机，正在四处张望。",
+          "translation": "游客",
+          "sentences": [
+            {
+              "en": "Are you a tourist?",
+              "cn": "你是游客吗？"
+            }
+          ]
+        },
+        {
+          "word": "volunteer",
+          "rootVisual": "<path d='M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z M5 20v-6h14v6' stroke='currentColor' fill='none'/><path d='M12 14v3 M9 15l3 3 3-3' stroke='currentColor'/>",
+          "breakdown": [
+            "volunt (意愿)",
+            "-eer (人)"
+          ],
+          "imagery": "一个人高高举起手，表示“我愿意”，充满积极主动的热情。",
+          "translation": "志愿者",
+          "sentences": [
+            {
+              "en": "I volunteer because I have the time.",
+              "cn": "我做志愿者是因为我有时间。"
+            }
+          ]
+        },
+        {
+          "word": "headmaster",
+          "rootVisual": "<path d='M12 12C14.2 12 16 10.2 16 8s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4z M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6' stroke='currentColor' fill='none'/><path d='M8 4h8 M10 2h4' stroke='currentColor'/>",
+          "breakdown": [
+            "head (头)",
+            "master (主人/大师)"
+          ],
+          "imagery": "一位戴着学术帽或站在讲台上的人，象征着学校的最高管理者。",
+          "translation": "校长",
+          "sentences": [
+            {
+              "en": "We'll send a present to our headmaster.",
+              "cn": "我们将送一份礼物给我们的校长。"
+            }
+          ]
+        },
+        {
+          "word": "pal",
+          "rootVisual": "<path d='M8 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M4 20v-4h8v4' stroke='currentColor' fill='none'/><path d='M16 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M12 20v-4h8v4' stroke='currentColor' fill='none'/><path d='M10 16h4' stroke='currentColor'/>",
+          "breakdown": [
+            "pal"
+          ],
+          "imagery": "两个人并肩站立，一只手搭在对方肩膀上，显得非常亲密。",
+          "translation": "朋友；伙伴",
+          "sentences": [
+            {
+              "en": "She received an email from her pal.",
+              "cn": "她收到了一封来自她朋友的邮件。"
+            }
+          ]
+        },
+        {
+          "word": "patient",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M4 12h16 M8 6v12' stroke='currentColor' opacity='0.3'/><circle cx='16' cy='9' r='1.5' fill='currentColor' fill='red'/>",
+          "breakdown": [
+            "pati (受苦)",
+            "-ent (人)"
+          ],
+          "imagery": "一个人躺在病床上，或者一个红十字标志旁站着等待的人。",
+          "translation": "病人；有耐心的",
+          "sentences": [
+            {
+              "en": "She sat by the patient.",
+              "cn": "她坐在病人旁边。"
+            }
+          ]
+        },
+        {
+          "word": "relative",
+          "rootVisual": "<circle cx='12' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M12 11v5 M12 16l-3 4 M12 16l3 4 M9 13l6 0' stroke='currentColor'/><circle cx='6' cy='14' r='2' stroke='currentColor' opacity='0.5'/><circle cx='18' cy='14' r='2' stroke='currentColor' opacity='0.5'/><path d='M9 10l-2 2 M15 10l2 2' stroke='currentColor' stroke-dasharray='2,2'/>",
+          "breakdown": [
+            "relat (联系)",
+            "-ive (人/物)"
+          ],
+          "imagery": "一个家族树的分支图，展示出个体之间血缘或婚姻的联系。",
+          "translation": "亲戚",
+          "sentences": [
+            {
+              "en": "Most of her relatives were able to come.",
+              "cn": "她的大多数亲戚都能来。"
+            }
+          ]
+        },
+        {
+          "word": "clerk",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><rect x='14' y='14' width='6' height='4' fill='currentColor' opacity='0.6'/>",
+          "breakdown": [
+            "clerk"
+          ],
+          "imagery": "一个人坐在办公桌后，手里拿着笔或文件，正在处理事务。",
+          "translation": "职员；文员",
+          "sentences": [
+            {
+              "en": "The clerk is working hard.",
+              "cn": "这个职员工作很努力。"
+            }
+          ]
+        },
+        {
+          "word": "guard",
+          "rootVisual": "<path d='M12 2L4 6v6c0 5.5 8 10 8 10s8-4.5 8-10V6l-8-4z' stroke='currentColor' fill='none'/><path d='M12 7v5' stroke='currentColor'/>",
+          "breakdown": [
+            "guard"
+          ],
+          "imagery": "一个盾牌，或者一个站得笔直、表情严肃的人在守卫入口。",
+          "translation": "守卫；保安",
+          "sentences": [
+            {
+              "en": "There are two guards on duty outside the building.",
+              "cn": "大楼外有两个保安在值班。"
+            }
+          ]
+        },
+        {
+          "word": "boss",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M5 20v-5h14v5' stroke='currentColor' fill='none'/><path d='M12 10v4 M9 12h6' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "boss"
+          ],
+          "imagery": "一个坐在大班椅上的人，或者一个指点江山的手势。",
+          "translation": "老板",
+          "sentences": [
+            {
+              "en": "I'll have to ask my boss for a day off.",
+              "cn": "我将不得不向我老板请一天假。"
+            }
+          ]
+        },
+        {
+          "word": "historian",
+          "rootVisual": "<path d='M12 12C14.2 12 16 10.2 16 8s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4z M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6' stroke='currentColor' fill='none'/><rect x='14' y='12' width='8' height='10' rx='1' stroke='currentColor' fill='white'/><path d='M16 14h4 M16 16h4' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "history",
+            "-an (人)"
+          ],
+          "imagery": "一个戴眼镜的老者，手里捧着一本厚厚的古书。",
+          "translation": "历史学家",
+          "sentences": [
+            {
+              "en": "I'm a historian.",
+              "cn": "我是一名历史学家。"
+            }
+          ]
+        },
+        {
+          "word": "customer",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><circle cx='18' cy='16' r='3' stroke='currentColor'/><path d='M17 15l1 2 2-3' stroke='currentColor'/>",
+          "breakdown": [
+            "custom",
+            "-er (人)"
+          ],
+          "imagery": "一个人手里提着购物袋，或者正准备付款。",
+          "translation": "顾客",
+          "sentences": [
+            {
+              "en": "She was the only customer.",
+              "cn": "她是唯一的顾客。"
+            }
+          ]
+        },
+        {
+          "word": "consumer",
+          "rootVisual": "<path d='M12 12C14.2 12 16 10.2 16 8s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4z M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6' stroke='currentColor' fill='none'/><path d='M16 16l4-2l-1 4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "consume (消耗)",
+            "-er (人)"
+          ],
+          "imagery": "一个张大嘴巴的人形轮廓，或者一个正在吞噬金币/资源的图标。",
+          "translation": "消费者",
+          "sentences": [
+            {
+              "en": "A smaller vehicle will consume less fuel.",
+              "cn": "小一点的交通工具会消耗更少的燃料。"
+            }
+          ]
+        },
+        {
+          "word": "hero",
+          "rootVisual": "<path d='M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z M6 20v-6h12v6' stroke='currentColor' fill='none'/><path d='M12 2l2 4h4l-3 3 1 4-4-3-4 3 1-4-3-3h4z' fill='currentColor' opacity='0.2' transform='translate(6, 12) scale(0.5)'/>",
+          "breakdown": [
+            "hero"
+          ],
+          "imagery": "一个披着斗篷的人影，胸前可能有一个徽章。",
+          "translation": "英雄",
+          "sentences": [
+            {
+              "en": "His father was a war hero.",
+              "cn": "他的父亲是一位战争英雄。"
+            }
+          ]
+        },
+        {
+          "word": "teenager",
+          "rootVisual": "<path d='M12 12C14.2 12 16 10.2 16 8s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4z M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6' stroke='currentColor' fill='none'/><path d='M12 5l-2 2h4z' stroke='currentColor'/>",
+          "breakdown": [
+            "teen",
+            "-ager (年纪的人)"
+          ],
+          "imagery": "一个戴着棒球帽、背着双肩包、充满活力的年轻人形象。",
+          "translation": "青少年 (13-19岁)",
+          "sentences": [
+            {
+              "en": "She was in her teens when she met him.",
+              "cn": "当她遇见他时，她才十几岁。"
+            }
+          ]
+        },
+        {
+          "word": "poet",
+          "rootVisual": "<path d='M12 12C14.2 12 16 10.2 16 8s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4z M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6' stroke='currentColor' fill='none'/><path d='M16 12l2-4' stroke='currentColor'/><circle cx='19' cy='7' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "poet"
+          ],
+          "imagery": "一个人仰望星空，手里拿着羽毛笔，正在构思。",
+          "translation": "诗人",
+          "sentences": [
+            {
+              "en": "He read the poem aloud.",
+              "cn": "他大声地朗读这首诗。"
+            }
+          ]
+        },
+        {
+          "word": "manager",
+          "rootVisual": "<rect x='2' y='2' width='20' height='20' rx='2' stroke='currentColor' fill='none'/><path d='M12 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 18v-2h12v2' stroke='currentColor'/><path d='M16 4h4v4' stroke='currentColor'/>",
+          "breakdown": [
+            "manage",
+            "-er (人)"
+          ],
+          "imagery": "一个人在白板前指挥，或者在操纵复杂的控制台。",
+          "translation": "经理；管理者",
+          "sentences": [
+            {
+              "en": "He becomes the new manager.",
+              "cn": "他成为了新经理。"
+            }
+          ]
+        },
+        {
+          "word": "ruler",
+          "rootVisual": "<path d='M12 12C14.2 12 16 10.2 16 8s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4z M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6' stroke='currentColor' fill='none'/><path d='M9 2l3 3 3-3' stroke='currentColor' fill='gold' fill-opacity='0.5'/><circle cx='12' cy='2' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "rule",
+            "-er (人)"
+          ],
+          "imagery": "一个人头戴皇冠，手里拿着权杖。",
+          "translation": "统治者",
+          "sentences": [
+            {
+              "en": "She is the real ruler.",
+              "cn": "她才是真正的统治者。"
+            }
+          ]
+        },
+        {
+          "word": "postman",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><rect x='14' y='12' width='6' height='4' rx='1' stroke='currentColor' fill='white'/><path d='M15 13l2 2 2-2' stroke='currentColor'/>",
+          "breakdown": [
+            "post",
+            "man"
+          ],
+          "imagery": "一个穿着制服的人，背着装满信件的挎包。",
+          "translation": "邮递员",
+          "sentences": [
+            {
+              "en": "One of my friends became a postman recently.",
+              "cn": "我的一个朋友最近当了邮递员。"
+            }
+          ]
+        },
+        {
+          "word": "fireman",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><path d='M9 2h6l-1 3h-4z' stroke='currentColor'/><path d='M18 12l2 4' stroke='currentColor'/>",
+          "breakdown": [
+            "fire",
+            "man"
+          ],
+          "imagery": "一个戴着消防头盔的人，手里握着喷水的水管。",
+          "translation": "消防员",
+          "sentences": [
+            {
+              "en": "Why would you like to be a fireman?",
+              "cn": "你为什么想成为一名消防员？"
+            }
+          ]
+        },
+        {
+          "word": "policeman",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><path d='M9 3h6l1 2h-8z' stroke='currentColor' fill='currentColor' opacity='0.3'/><circle cx='12' cy='3' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "police",
+            "man"
+          ],
+          "imagery": "一个戴着大檐帽的警察剪影，可能有警徽。",
+          "translation": "警察",
+          "sentences": [
+            {
+              "en": "What happened to that policeman?",
+              "cn": "那个警察怎么了？"
+            }
+          ]
+        },
+        {
+          "word": "gentleman",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><path d='M8 4h8l2 2h-12z' stroke='currentColor'/><path d='M12 11l-2 4h4l-2-4' stroke='currentColor'/>",
+          "breakdown": [
+            "gentle",
+            "man"
+          ],
+          "imagery": "一个戴着高礼帽、打着领结的绅士形象。",
+          "translation": "绅士",
+          "sentences": [
+            {
+              "en": "Ladies and gentlemen, welcome to the party.",
+              "cn": "女士们先生们，欢迎来到派对。"
+            }
+          ]
+        },
+        {
+          "word": "teammate",
+          "rootVisual": "<g><circle cx='8' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M8 11v5' stroke='currentColor'/><circle cx='16' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M16 11v5' stroke='currentColor'/><path d='M8 14h8' stroke='currentColor'/></g>",
+          "breakdown": [
+            "team",
+            "mate"
+          ],
+          "imagery": "两个人穿着相同的队服，互相击掌。",
+          "translation": "队友",
+          "sentences": [
+            {
+              "en": "If I were his teammate, I wouldn't do that.",
+              "cn": "如果我是他的队友，我不会那么做。"
+            }
+          ]
+        },
+        {
+          "word": "classmate",
+          "rootVisual": "<g><circle cx='8' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M8 11v5' stroke='currentColor'/><circle cx='16' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M16 11v5' stroke='currentColor'/><rect x='6' y='16' width='12' height='2' fill='currentColor'/></g>",
+          "breakdown": [
+            "class",
+            "mate"
+          ],
+          "imagery": "两个坐在课桌旁学习的学生。",
+          "translation": "同学",
+          "sentences": [
+            {
+              "en": "He is my classmate.",
+              "cn": "他是我的同学。"
+            }
+          ]
+        },
+        {
+          "word": "roommate",
+          "rootVisual": "<rect x='2' y='4' width='20' height='16' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='2' stroke='currentColor'/><circle cx='16' cy='10' r='2' stroke='currentColor'/><path d='M6 14h4 M14 14h4' stroke='currentColor'/>",
+          "breakdown": [
+            "room",
+            "mate"
+          ],
+          "imagery": "一个房间里有两张床，或者两个人坐在同一张沙发上。",
+          "translation": "室友",
+          "sentences": [
+            {
+              "en": "My roommate is very quiet.",
+              "cn": "我的室友很安静。"
+            }
+          ]
+        },
+        {
+          "word": "soulmate",
+          "rootVisual": "<path d='M8 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M4 20v-4h8v4' stroke='currentColor' fill='none'/><path d='M16 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M12 20v-4h8v4' stroke='currentColor' fill='none'/><path d='M12 6q2-4 4 0t-4 4q-2-4 4-8' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "soul",
+            "mate"
+          ],
+          "imagery": "两个人的轮廓中间连接着一颗心，或者两块拼图完美契合。",
+          "translation": "灵魂伴侣；知己",
+          "sentences": [
+            {
+              "en": "She is my soulmate.",
+              "cn": "她是我的灵魂伴侣。"
+            }
+          ]
+        },
+        {
+          "word": "backpacker",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><rect x='8' y='8' width='8' height='10' rx='2' stroke='currentColor' fill='currentColor' opacity='0.2'/>",
+          "breakdown": [
+            "backpack",
+            "-er"
+          ],
+          "imagery": "一个背着巨大登山包的人正在行走。",
+          "translation": "背包客",
+          "sentences": [
+            {
+              "en": "He is a full-time backpacker.",
+              "cn": "他是一个全职背包客。"
+            }
+          ]
+        },
+        {
+          "word": "fisherman",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><path d='M18 6l4 4-2 2' stroke='currentColor'/><path d='M20 14q-2 2-4 0' stroke='currentColor'/>",
+          "breakdown": [
+            "fisher",
+            "man"
+          ],
+          "imagery": "一个人手里拿着鱼竿，鱼线上钓着一条鱼。",
+          "translation": "渔民",
+          "sentences": [
+            {
+              "en": "The young fisherman laughed.",
+              "cn": "那个年轻的渔民笑了。"
+            }
+          ]
+        },
+        {
+          "word": "superhero",
+          "rootVisual": "<path d='M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z M6 20v-6h12v6' stroke='currentColor' fill='none'/><path d='M4 6h16l-8 14z' fill='currentColor' opacity='0.2'/>",
+          "breakdown": [
+            "super",
+            "hero"
+          ],
+          "imagery": "一个飞在空中的人，身后有飘扬的披风，胸口有S标志。",
+          "translation": "超级英雄",
+          "sentences": [
+            {
+              "en": "I dream of becoming a superhero.",
+              "cn": "我梦想成为一名超级英雄。"
+            }
+          ]
+        },
+        {
+          "word": "fool",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 10h2 M14 10h2' stroke='currentColor'/><path d='M12 16q-2 2-4 0' stroke='currentColor' transform='rotate(180, 12, 16)'/>",
+          "breakdown": [
+            "fool"
+          ],
+          "imagery": "一个小丑的帽子，或者一个做鬼脸的表情。",
+          "translation": "蠢人；傻瓜",
+          "sentences": [
+            {
+              "en": "You're such a big fool.",
+              "cn": "你真是个大傻瓜。"
+            }
+          ]
+        },
+        {
+          "word": "saint",
+          "rootVisual": "<circle cx='12' cy='10' r='4' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='6' stroke='currentColor' stroke-dasharray='4,4'/><path d='M12 14v6' stroke='currentColor'/>",
+          "breakdown": [
+            "saint"
+          ],
+          "imagery": "一个人头顶有光环。",
+          "translation": "圣人",
+          "sentences": [
+            {
+              "en": "She has the patience of a saint.",
+              "cn": "她有着圣人般的耐心。"
+            }
+          ]
+        },
+        {
+          "word": "coach",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><path d='M18 6h-2v2h2z' stroke='currentColor'/><path d='M19 7l2-1' stroke='currentColor'/>",
+          "breakdown": [
+            "coach"
+          ],
+          "imagery": "一个人吹着哨子，手里拿着战术板。",
+          "translation": "教练",
+          "sentences": [
+            {
+              "en": "He is our football coach.",
+              "cn": "他是我们的足球教练。"
+            }
+          ]
+        },
+        {
+          "word": "junior",
+          "rootVisual": "<rect x='4' y='12' width='4' height='8' stroke='currentColor' fill='none'/><rect x='10' y='8' width='4' height='12' stroke='currentColor' fill='none' opacity='0.3'/>",
+          "breakdown": [
+            "junior"
+          ],
+          "imagery": "两个台阶，强调较低的那一个。",
+          "translation": "年少的；职位低的",
+          "sentences": [
+            {
+              "en": "the junior football club",
+              "cn": "青少年足球俱乐部"
+            }
+          ]
+        },
+        {
+          "word": "senior",
+          "rootVisual": "<rect x='4' y='12' width='4' height='8' stroke='currentColor' fill='none' opacity='0.3'/><rect x='10' y='8' width='4' height='12' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "senior"
+          ],
+          "imagery": "两个台阶，强调较高的那一个。",
+          "translation": "年长的；职位高的",
+          "sentences": [
+            {
+              "en": "Seniors can get a 10% discount.",
+              "cn": "老年人可以享受九折优惠。"
+            }
+          ]
+        },
+        {
+          "word": "normal person",
+          "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/><path d='M6 20v-6h12v6' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "normal",
+            "person"
+          ],
+          "imagery": "一个没有任何特殊标记的标准人形图标。",
+          "translation": "普通人",
+          "sentences": [
+            {
+              "en": "He is just a normal person.",
+              "cn": "他只是一个普通人。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

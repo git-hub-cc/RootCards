@@ -1,0 +1,119 @@
+{
+  "prefix": "ThoughtEducation",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_thought_education",
+      "displayName": "思维与认知 (Thought & Education)",
+      "themeColor": "#3b82f6",
+      "prefixVisual": "<path d='M12 4 a 7 7 0 0 1 7 7 c 0 4 -7 9 -7 9 s -7 -5 -7 -9 a 7 7 0 0 1 7 -7 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 11 v4 M12 7 v0.5' stroke='currentColor' stroke-width='2' stroke-linecap='round'/><path d='M12 20 h0.1' stroke='currentColor' stroke-width='3'/>",
+      "prefixIntro": {
+        "title": "思维与认知",
+        "description": "关于大脑的思考活动、学习过程以及知识的获取与判断。",
+        "imagery": "一个点亮的灯泡代表灵感，或者一本打开的书代表知识。"
+      },
+      "words": [
+        {
+          "word": "decide",
+          "rootVisual": "<path d='M12 4 v8 M12 12 l-6 6 M12 12 l6 6' stroke='currentColor' stroke-width='2'/><circle cx='6' cy='18' r='2' stroke='currentColor' fill='none'/><circle cx='18' cy='18' r='2' fill='currentColor'/>",
+          "breakdown": ["de- (加强/向下)", "cid (切)"],
+          "imagery": "一个分叉路口，一个人选择了其中一条路。",
+          "translation": "决定",
+          "sentences": [
+            { "en": "Which one do you decide to have?", "cn": "你决定要哪一个？" }
+          ]
+        },
+        {
+          "word": "knowledge",
+          "rootVisual": "<path d='M4 4 h16 v16 h-16 z' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8 M8 16 h4' stroke='currentColor'/>",
+          "breakdown": ["know", "(知道)", "-ledge (名词后缀)"],
+          "imagery": "一本厚厚的书，或者大脑中连接的神经元。",
+          "translation": "知识",
+          "sentences": [
+            { "en": "Knowledge is power.", "cn": "知识就是力量。" }
+          ]
+        },
+        {
+          "word": "agree",
+          "rootVisual": "<path d='M6 12 l4 4 l8 -8' stroke='currentColor' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/>",
+          "breakdown": ["a- (去)", "gree (喜欢/高兴)"],
+          "imagery": "两只手握在一起，表示达成一致。",
+          "translation": "同意",
+          "sentences": [
+            { "en": "I agree with her.", "cn": "我同意她的观点。" }
+          ]
+        },
+        {
+          "word": "advice",
+          "rootVisual": "<path d='M12 18 v-6 M12 8 v0.1' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/>",
+          "breakdown": ["ad- (去)", "vice (看)"],
+          "imagery": "一个信息提示框，或者是路标指示方向。",
+          "translation": "建议 (名)",
+          "sentences": [
+            { "en": "Your advice was a great help to me.", "cn": "你的建议对我帮助很大。" }
+          ]
+        },
+        {
+          "word": "grammar",
+          "rootVisual": "<path d='M4 6 h16 M4 12 h10 M4 18 h16' stroke='currentColor' stroke-width='2'/><rect x='16' y='10' width='4' height='4' stroke='currentColor' fill='none'/>",
+          "breakdown": ["gram", "(写)", "-mar"],
+          "imagery": "排列整齐的字母块，或者像积木一样搭建的句子结构。",
+          "translation": "语法",
+          "sentences": [
+            { "en": "How do you like the English grammar book?", "cn": "你觉得这本英语语法书怎么样？" }
+          ]
+        },
+        {
+          "word": "imagine",
+          "rootVisual": "<path d='M12 4 a 4 4 0 0 1 4 4 c 0 2 -2 3 -2 4 v2' stroke='currentColor' fill='none'/><circle cx='12' cy='20' r='1' fill='currentColor'/><path d='M8 8 l-2 -2 M16 8 l2 -2' stroke='currentColor'/>",
+          "breakdown": ["image", "(图像)", "-ine (动词后缀)"],
+          "imagery": "头顶冒出的气泡云，里面画着奇异的景象。",
+          "translation": "想象",
+          "sentences": [
+            { "en": "I can't imagine him without a beard.", "cn": "我无法想象他没有胡子的样子。" }
+          ]
+        },
+        {
+          "word": "believe",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M9 12 l2 2 l4 -4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": ["be-", "lieve (爱/信任)"],
+          "imagery": "一个人双手合十祈祷，或者眼神坚定地看着前方。",
+          "translation": "相信",
+          "sentences": [
+            { "en": "Do you believe me?", "cn": "你相信我吗？" }
+          ]
+        },
+        {
+          "word": "memory",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='3' stroke='currentColor'/><path d='M8 18 a 4 4 0 0 1 8 0' stroke='currentColor'/>",
+          "breakdown": ["mem", "(记住)", "-ory"],
+          "imagery": "一张旧照片，或者大脑中回放的电影胶片。",
+          "translation": "记忆",
+          "sentences": [
+            { "en": "He has a good memory.", "cn": "他记忆力很好。" }
+          ]
+        },
+        {
+          "word": "wise",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none'/><path d='M7 12 a 5 5 0 0 0 10 0' stroke='currentColor'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='9' r='1' fill='currentColor'/><path d='M12 2 v4' stroke='currentColor'/>",
+          "breakdown": ["wise", "(看见/知道)"],
+          "imagery": "一只戴着眼镜的猫头鹰，象征着智慧。",
+          "translation": "明智的；有智慧的",
+          "sentences": [
+            { "en": "She is a wise woman.", "cn": "她是一位有智慧的女性。" }
+          ]
+        },
+        {
+          "word": "choose",
+          "rootVisual": "<rect x='4' y='8' width='6' height='8' stroke='currentColor' fill='none'/><rect x='14' y='8' width='6' height='8' stroke='currentColor' fill='none'/><path d='M7 4 v4 M17 4 v4' stroke='currentColor'/><path d='M12 18 l2 -2 l-2 -2' stroke='currentColor' fill='none' transform='translate(4, 0)'/>",
+          "breakdown": ["choose", "(选择)"],
+          "imagery": "一只手指向两个盒子中的一个，做出了选择。",
+          "translation": "选择",
+          "sentences": [
+            { "en": "Which one do you finally choose?", "cn": "你最后选择了哪一个？" }
+          ]
+        }
+      ]
+    }
+  ]
+}

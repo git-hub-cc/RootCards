@@ -1,0 +1,331 @@
+{
+  "prefix": "Places & Locations",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_places_locations",
+      "displayName": "地点与空间 (Places & Locations)",
+      "themeColor": "#d97706",
+      "prefixVisual": "<path fill-rule='evenodd' clip-rule='evenodd' d='M12 2C8.13401 2 5 5.13401 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13401 15.866 2 12 2ZM12 11C13.1046 11 14 10.1046 14 9C14 7.89543 13.1046 7 12 7C10.8954 7 10 7.89543 10 9C10 10.1046 10.8954 11 12 11Z' fill='none'/>",
+      "prefixIntro": {
+        "title": "地点与空间",
+        "description": "包含构成物理世界的地点、场所、设施以及空间方位的词汇。",
+        "imagery": "一张展开的地图，上面插满了各色的定位图钉，连接着城市与自然、室内与室外。"
+      },
+      "words": [
+        {
+          "word": "toilet",
+          "rootVisual": "<path d='M6 10h12v6a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4z' stroke='currentColor' fill='none'/><path d='M6 10h12v-2a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2z' stroke='currentColor'/><rect x='11' y='4' width='2' height='2' fill='currentColor'/>",
+          "breakdown": [
+            "toilet"
+          ],
+          "imagery": "一个马桶的侧面轮廓图。",
+          "translation": "厕所；马桶",
+          "sentences": [
+            {
+              "en": "The toilet is blocked.",
+              "cn": "马桶堵了。"
+            }
+          ]
+        },
+        {
+          "word": "bathroom",
+          "rootVisual": "<rect x='4' y='14' width='16' height='6' rx='2' stroke='currentColor' fill='none'/><path d='M6 14v-4a2 2 0 0 1 2-2h1' stroke='currentColor'/><circle cx='9' cy='7' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "bath",
+            "room"
+          ],
+          "imagery": "一个浴缸，上方有一个喷头在喷水。",
+          "translation": "浴室；卫生间",
+          "sentences": [
+            {
+              "en": "She went to the bathroom.",
+              "cn": "她去了卫生间。"
+            }
+          ]
+        },
+        {
+          "word": "washroom",
+          "rootVisual": "<rect x='4' y='12' width='16' height='8' stroke='currentColor' fill='none'/><path d='M8 12v-2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2' stroke='currentColor'/><circle cx='12' cy='16' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "wash",
+            "room"
+          ],
+          "imagery": "一个洗手池和上面的水龙头。",
+          "translation": "洗手间",
+          "sentences": [
+            {
+              "en": "Sorry, I had to go to the washroom.",
+              "cn": "不好意思，我得去趟洗手间。"
+            }
+          ]
+        },
+        {
+          "word": "restroom",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M12 8v3 M12 13v3' stroke='currentColor'/><path d='M9 10l3-2 3 2' stroke='currentColor'/>",
+          "breakdown": [
+            "rest",
+            "room"
+          ],
+          "imagery": "常见的男女厕所标志符号。",
+          "translation": "公共厕所；休息室",
+          "sentences": [
+            {
+              "en": "Excuse me, where is the restroom?",
+              "cn": "打扰一下，请问洗手间在哪里？"
+            }
+          ]
+        },
+        {
+          "word": "tower",
+          "rootVisual": "<path d='M8 22h8L14 2h-4z' stroke='currentColor' fill='none'/><path d='M10 2v20' stroke='currentColor' opacity='0.3'/><rect x='9' y='6' width='6' height='2' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "tower"
+          ],
+          "imagery": "一座高耸入云的尖塔，类似埃菲尔铁塔或电视塔。",
+          "translation": "塔",
+          "sentences": [
+            {
+              "en": "The Tower of London stands in the east end of London.",
+              "cn": "伦敦塔位于伦敦的东区。"
+            }
+          ]
+        },
+        {
+          "word": "yard",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none'/><path d='M4 8l8-4 8 4' stroke='currentColor'/><path d='M6 14l2-4 2 4' stroke='currentColor'/>",
+          "breakdown": [
+            "yard"
+          ],
+          "imagery": "房子前的一块空地，围着栅栏，可能有草地。",
+          "translation": "院子",
+          "sentences": [
+            {
+              "en": "I never went back to that yard.",
+              "cn": "我再也没有回到那个院子里去。"
+            }
+          ]
+        },
+        {
+          "word": "center",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "center"
+          ],
+          "imagery": "一个靶心，所有的箭头都指向中间的一个点。",
+          "translation": "中心",
+          "sentences": [
+            {
+              "en": "It's in the center of the city.",
+              "cn": "它在市中心。"
+            }
+          ]
+        },
+        {
+          "word": "hometown",
+          "rootVisual": "<path d='M4 20h16v-8l-8-6-8 6z' stroke='currentColor' fill='none'/><path d='M10 20v-6h4v6' stroke='currentColor'/><heart cx='18' cy='6' r='3' fill='red'/>",
+          "breakdown": [
+            "home",
+            "town"
+          ],
+          "imagery": "一个小房子的图标，旁边有一颗爱心，代表充满回忆的地方。",
+          "translation": "家乡",
+          "sentences": [
+            {
+              "en": "What do you think of the future of your hometown?",
+              "cn": "你如何看待你家鄉的未來？"
+            }
+          ]
+        },
+        {
+          "word": "bookstore",
+          "rootVisual": "<rect x='4' y='6' width='16' height='14' stroke='currentColor' fill='none'/><path d='M4 6l8-4 8 4' stroke='currentColor'/><path d='M8 12h8 M8 16h8' stroke='currentColor'/><path d='M4 20h16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "book",
+            "store"
+          ],
+          "imagery": "一个商店的橱窗里摆满了书。",
+          "translation": "书店",
+          "sentences": [
+            {
+              "en": "The bookstore is just around the corner.",
+              "cn": "书店就在拐角处。"
+            }
+          ]
+        },
+        {
+          "word": "underground",
+          "rootVisual": "<path d='M4 10h16' stroke='currentColor' stroke-width='2'/><rect x='6' y='14' width='12' height='6' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><path d='M12 10v4' stroke='currentColor'/>",
+          "breakdown": [
+            "under",
+            "ground"
+          ],
+          "imagery": "一条横线代表地面，横线下方有一个虚线框代表地下空间。",
+          "translation": "地下的",
+          "sentences": [
+            {
+              "en": "The car park is underground.",
+              "cn": "停车场在地下。"
+            }
+          ]
+        },
+        {
+          "word": "indoors",
+          "rootVisual": "<path d='M4 20V10l8-6 8 6v10H4z' stroke='currentColor' fill='none'/><path d='M12 14v6' stroke='currentColor'/><path d='M10 12h4' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "in",
+            "doors"
+          ],
+          "imagery": "一个房子的轮廓，重点在房子内部。",
+          "translation": "室内的；在室内",
+          "sentences": [
+            {
+              "en": "Mr. White stayed indoors for a whole afternoon.",
+              "cn": "怀特先生在室内待了一整个下午。"
+            }
+          ]
+        },
+        {
+          "word": "outdoors",
+          "rootVisual": "<path d='M4 20V10l8-6 8 6v10' stroke='currentColor' fill='none'/><circle cx='18' cy='6' r='2' fill='gold'/><path d='M6 18l2-4 2 4' stroke='currentColor'/>",
+          "breakdown": [
+            "out",
+            "doors"
+          ],
+          "imagery": "一个房子轮廓的外面，有太阳和树木。",
+          "translation": "户外的；在户外",
+          "sentences": [
+            {
+              "en": "Go outdoors and have a rest.",
+              "cn": "到户外去休息一下吧。"
+            }
+          ]
+        },
+        {
+          "word": "mall",
+          "rootVisual": "<rect x='2' y='6' width='20' height='14' stroke='currentColor' fill='none'/><path d='M6 6v-2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2' stroke='currentColor'/><rect x='8' y='12' width='8' height='8' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "mall"
+          ],
+          "imagery": "一个大型购物袋，或者一栋巨大的多层建筑。",
+          "translation": "购物中心",
+          "sentences": [
+            {
+              "en": "Let's meet at the mall.",
+              "cn": "我们在购物中心见面吧。"
+            }
+          ]
+        },
+        {
+          "word": "field",
+          "rootVisual": "<rect x='2' y='8' width='20' height='12' stroke='currentColor' fill='none'/><path d='M2 14h20' stroke='currentColor' stroke-dasharray='4 4'/><path d='M6 8v12 M18 8v12' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "field"
+          ],
+          "imagery": "一块被分割成条状的土地，或者绿色的足球场。",
+          "translation": "田地；场地；领域",
+          "sentences": [
+            {
+              "en": "He's working in the cotton fields.",
+              "cn": "他正在棉花田里工作。"
+            }
+          ]
+        },
+        {
+          "word": "community",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='2' stroke='currentColor'/><circle cx='16' cy='10' r='2' stroke='currentColor'/><circle cx='12' cy='16' r='2' stroke='currentColor'/>",
+          "breakdown": [
+            "commun (共同)",
+            "-ity"
+          ],
+          "imagery": "几个小房子围成一圈，或者几个人手拉手围成一圈。",
+          "translation": "社区",
+          "sentences": [
+            {
+              "en": "We meet once a month to discuss community problems.",
+              "cn": "我们每月见一次面来讨论社区问题。"
+            }
+          ]
+        },
+        {
+          "word": "market",
+          "rootVisual": "<path d='M4 8h16l-2 12h-12z' stroke='currentColor' fill='none'/><path d='M8 8v-4a4 4 0 0 1 8 0v4' stroke='currentColor'/><circle cx='12' cy='14' r='2' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "market"
+          ],
+          "imagery": "一个摆满水果和蔬菜的摊位。",
+          "translation": "市场",
+          "sentences": [
+            {
+              "en": "I usually buy vegetables at the market.",
+              "cn": "我通常在市场买蔬菜。"
+            }
+          ]
+        },
+        {
+          "word": "supermarket",
+          "rootVisual": "<rect x='2' y='8' width='20' height='12' stroke='currentColor' fill='none'/><path d='M6 8V4h12v4' stroke='currentColor'/><path d='M4 14h16' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "super",
+            "market"
+          ],
+          "imagery": "一个手推购物车。",
+          "translation": "超市",
+          "sentences": [
+            {
+              "en": "I'm going to the supermarket.",
+              "cn": "我要去超市。"
+            }
+          ]
+        },
+        {
+          "word": "boarding school",
+          "rootVisual": "<path d='M4 20h16v-8l-8-6-8 6z' stroke='currentColor' fill='none'/><rect x='8' y='14' width='8' height='6' stroke='currentColor'/><path d='M10 14h4' stroke='currentColor'/>",
+          "breakdown": [
+            "boarding",
+            "school"
+          ],
+          "imagery": "一个学校建筑旁边有一张床。",
+          "translation": "寄宿学校",
+          "sentences": [
+            {
+              "en": "She is at boarding school.",
+              "cn": "她在寄宿学校。"
+            }
+          ]
+        },
+        {
+          "word": "capital",
+          "rootVisual": "<path d='M12 2l-8 4v14h16v-14z' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='3' fill='gold'/><path d='M12 2l2 4h-4z' fill='currentColor'/>",
+          "breakdown": [
+            "capit (头)",
+            "-al"
+          ],
+          "imagery": "地图上一个带五角星的圆圈标志。",
+          "translation": "首都；省会",
+          "sentences": [
+            {
+              "en": "Beijing is the capital of China.",
+              "cn": "北京是中国的首都。"
+            }
+          ]
+        },
+        {
+          "word": "coast",
+          "rootVisual": "<path d='M2 12s4-2 8 0 8 0 12-2' stroke='currentColor' fill='none'/><path d='M2 12v10h20v-8' fill='currentColor' opacity='0.2'/><circle cx='18' cy='4' r='2' fill='gold'/>",
+          "breakdown": [
+            "coast"
+          ],
+          "imagery": "一条弯曲的海岸线，一边是陆地，一边是海洋。",
+          "translation": "海岸",
+          "sentences": [
+            {
+              "en": "We drove along the Pacific coasts.",
+              "cn": "我们沿着太平洋海岸开车。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

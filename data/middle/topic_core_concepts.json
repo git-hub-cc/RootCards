@@ -1,0 +1,439 @@
+{
+  "prefix": "Core Concepts & Systems",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_core_concepts",
+      "displayName": "核心概念与系统 (Core Concepts & Systems)",
+      "themeColor": "#f59e0b",
+      "prefixVisual": "<path d='M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z M19.4623 13.5L21.5 12L19.4623 10.5C19.2206 10.022 18.8517 9.61085 18.3892 9.32919L17 7.5L15.1108 8.67081C14.5492 8.32919 13.9257 8.0743 13.2689 7.93558L12.5 6H11.5L10.7311 7.93558C10.0743 8.0743 9.45081 8.32919 8.88917 8.67081L7 7.5L5.61085 9.32919C5.14834 9.61085 4.77941 10.022 4.53775 10.5L2.5 12L4.53775 13.5C4.77941 13.978 5.14834 14.3892 5.61085 14.6708L7 16.5L8.88917 15.3292C9.45081 15.6708 10.0743 15.9257 10.7311 16.0644L11.5 18H12.5L13.2689 16.0644C13.9257 15.9257 14.5492 15.6708 15.1108 15.3292L17 16.5L18.3892 14.6708C18.8517 14.3892 19.2206 13.978 19.4623 13.5Z' fill='none'/>",
+      "prefixIntro": {
+        "title": "核心概念与系统",
+        "description": "包含构建社会、商业、学术等领域的抽象概念、规则、标准和系统。",
+        "imagery": "一个复杂的齿轮传动系统，或者一个井井有条的建筑蓝图，代表着逻辑与秩序。"
+      },
+      "words": [
+        {
+          "word": "success",
+          "rootVisual": "<path d='M20 6L9 17l-5-5' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/><circle cx='12' cy='12' r='10' stroke='currentColor' stroke-width='1' opacity='0.3'/>",
+          "breakdown": [
+            "suc-",
+            "cess (走)"
+          ],
+          "imagery": "一个奖杯，或者一个站在领奖台上的人。",
+          "translation": "成功",
+          "sentences": [
+            {
+              "en": "The experiment was a big success.",
+              "cn": "那个实验取得了巨大的成功。"
+            }
+          ]
+        },
+        {
+          "word": "process",
+          "rootVisual": "<rect x='4' y='8' width='4' height='8' stroke='currentColor' fill='none'/><rect x='10' y='8' width='4' height='8' stroke='currentColor' fill='none'/><rect x='16' y='8' width='4' height='8' stroke='currentColor' fill='none'/><path d='M8 12h2 M14 12h2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "pro-",
+            "cess (走)"
+          ],
+          "imagery": "一条流水线，物品经过一系列加工步骤。",
+          "translation": "过程",
+          "sentences": [
+            {
+              "en": "The process of making cheese is complicated.",
+              "cn": "制作奶酪的过程很复杂。"
+            }
+          ]
+        },
+        {
+          "word": "capital",
+          "rootVisual": "<path d='M4 14h16v-4c0-3-3-6-8-6s-8 3-8 6v4z' stroke='currentColor' fill='none'/><text x='10' y='12' font-size='10' fill='currentColor'>$</text>",
+          "breakdown": [
+            "capit (头)",
+            "-al"
+          ],
+          "imagery": "一堆金币，或者银行大楼。",
+          "translation": "资金；资本",
+          "sentences": [
+            {
+              "en": "They need more capital to start the business.",
+              "cn": "他们需要更多资金来启动业务。"
+            }
+          ]
+        },
+        {
+          "word": "address",
+          "rootVisual": "<path d='M12 2l-8 4v14h16v-14z' stroke='currentColor' fill='none'/><text x='6' y='14' font-size='6' fill='currentColor'>101</text>",
+          "breakdown": [
+            "ad-",
+            "dress (直)"
+          ],
+          "imagery": "一个信封，上面写着详细的地址信息。",
+          "translation": "地址",
+          "sentences": [
+            {
+              "en": "I have her address.",
+              "cn": "我有她的地址。"
+            }
+          ]
+        },
+        {
+          "word": "course",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M4 4l16 16' stroke='currentColor' opacity='0.3'/><circle cx='8' cy='8' r='1' fill='currentColor'/><circle cx='12' cy='12' r='1' fill='currentColor'/><circle cx='16' cy='16' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "cours (跑)"
+          ],
+          "imagery": "一本书加上一个笔记本，代表学习过程。",
+          "translation": "课程",
+          "sentences": [
+            {
+              "en": "The vocabulary course is great.",
+              "cn": "这门词汇课程很棒。"
+            }
+          ]
+        },
+        {
+          "word": "score",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><text x='8' y='14' font-size='10' fill='currentColor'>100</text>",
+          "breakdown": [
+            "score"
+          ],
+          "imagery": "记分牌上显示的数字，或者是试卷上的红色分数。",
+          "translation": "得分",
+          "sentences": [
+            {
+              "en": "What's the score?",
+              "cn": "比分是多少？"
+            }
+          ]
+        },
+        {
+          "word": "board",
+          "rootVisual": "<rect x='2' y='6' width='20' height='12' stroke='currentColor' fill='currentColor' opacity='0.8'/><rect x='4' y='8' width='16' height='8' stroke='white' fill='none'/>",
+          "breakdown": [
+            "board"
+          ],
+          "imagery": "一块黑板或白板，或者会议桌。",
+          "translation": "板；董事会",
+          "sentences": [
+            {
+              "en": "I've put a list of names up on the board.",
+              "cn": "我把一个名单贴在了板上。"
+            }
+          ]
+        },
+        {
+          "word": "production",
+          "rootVisual": "<path d='M4 14h4l2-4 2 4h4' stroke='currentColor'/><path d='M18 10v4' stroke='currentColor'/><rect x='2' y='14' width='20' height='6' fill='currentColor' opacity='0.2'/>",
+          "breakdown": [
+            "product",
+            "-ion"
+          ],
+          "imagery": "工厂里繁忙的生产线，产品源源不断地出来。",
+          "translation": "生产",
+          "sentences": [
+            {
+              "en": "We lead in the coal production.",
+              "cn": "我们在煤炭生产方面处于领先地位。"
+            }
+          ]
+        },
+        {
+          "word": "brand",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 8l2 6h-4z' fill='currentColor'/><text x='10' y='22' font-size='6' fill='currentColor'>TM</text>",
+          "breakdown": [
+            "brand"
+          ],
+          "imagery": "一个独特的商标符号，或者是烙印在牛身上的标记。",
+          "translation": "品牌",
+          "sentences": [
+            {
+              "en": "What brand is your car?",
+              "cn": "你的车是什么牌子的？"
+            }
+          ]
+        },
+        {
+          "word": "material",
+          "rootVisual": "<rect x='4' y='12' width='8' height='8' stroke='currentColor' fill='none'/><circle cx='16' cy='16' r='4' stroke='currentColor' fill='none'/><path d='M8 6h8v4H8z' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "mater (母)",
+            "-ial"
+          ],
+          "imagery": "一堆砖块、木材和布料。",
+          "translation": "材料",
+          "sentences": [
+            {
+              "en": "The materials are for you to make dumplings.",
+              "cn": "这些是给你做饺子的材料。"
+            }
+          ]
+        },
+        {
+          "word": "license",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='1' stroke='currentColor' fill='none'/><rect x='6' y='8' width='4' height='5' fill='currentColor' opacity='0.5'/><path d='M12 8h6 M12 11h6 M6 15h12' stroke='currentColor'/>",
+          "breakdown": [
+            "license"
+          ],
+          "imagery": "一张带有照片和印章的证件。",
+          "translation": "证件；执照",
+          "sentences": [
+            {
+              "en": "You have to carry your driver's license with you.",
+              "cn": "你必须随身携带驾照。"
+            }
+          ]
+        },
+        {
+          "word": "safety",
+          "rootVisual": "<path d='M12 2l-8 4v6c0 5 8 10 8 10s8-5 8-10V6l-8-4z' stroke='currentColor' fill='none'/><path d='M10 10l4 4 M14 10l-4 4' stroke='currentColor' opacity='0'/> <path d='M9 12l2 2 4-4' stroke='currentColor'/>",
+          "breakdown": [
+            "safe",
+            "-ty"
+          ],
+          "imagery": "一个绿色的盾牌，或者安全帽。",
+          "translation": "安全",
+          "sentences": [
+            {
+              "en": "I will answer for her safety.",
+              "cn": "我会对她的安全负责。"
+            }
+          ]
+        },
+        {
+          "word": "value",
+          "rootVisual": "<path d='M12 4l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z' fill='none' stroke='currentColor'/><text x='16' y='20' font-size='8' fill='currentColor'>$</text>",
+          "breakdown": [
+            "val (强)",
+            "-ue"
+          ],
+          "imagery": "一颗闪闪发光的钻石，或者天平上称量的金子。",
+          "translation": "价值",
+          "sentences": [
+            {
+              "en": "His work has no value.",
+              "cn": "他的工作没有价值。"
+            }
+          ]
+        },
+        {
+          "word": "case",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M10 6v-2h4v2' stroke='currentColor'/><path d='M12 6v12' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "case"
+          ],
+          "imagery": "一个公文包，或者一个侦探正在研究的档案袋。",
+          "translation": "情况；案例",
+          "sentences": [
+            {
+              "en": "In that case, nobody could save him.",
+              "cn": "在那种情况下，没人能救他。"
+            }
+          ]
+        },
+        {
+          "word": "custom",
+          "rootVisual": "<path d='M4 12h16' stroke='currentColor'/><path d='M8 12v-4a4 4 0 0 1 8 0v4' stroke='currentColor'/><circle cx='12' cy='16' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "custom"
+          ],
+          "imagery": "一群人穿着传统服装在举行仪式。",
+          "translation": "风俗；习惯",
+          "sentences": [
+            {
+              "en": "It's a custom for the bride's father to pay for the wedding.",
+              "cn": "为婚礼买单是新娘父亲的习俗。"
+            }
+          ]
+        },
+        {
+          "word": "standard",
+          "rootVisual": "<path d='M4 18h16' stroke='currentColor'/><rect x='8' y='6' width='8' height='12' stroke='currentColor' fill='none'/><path d='M4 12h16' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "stand",
+            "-ard"
+          ],
+          "imagery": "一把精准的尺子，或者一杆旗帜。",
+          "translation": "标准",
+          "sentences": [
+            {
+              "en": "What's your standard of beauty?",
+              "cn": "你对美的标准是什么？"
+            }
+          ]
+        },
+        {
+          "word": "method",
+          "rootVisual": "<circle cx='4' cy='12' r='2' fill='currentColor'/><path d='M6 12h4' stroke='currentColor'/><rect x='10' y='10' width='4' height='4' stroke='currentColor' fill='none'/><path d='M14 12h4' stroke='currentColor'/><path d='M18 10l2 2-2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "meth- (跟随)",
+            "od (路)"
+          ],
+          "imagery": "一个流程图，展示了从A到B的步骤。",
+          "translation": "方式；方法",
+          "sentences": [
+            {
+              "en": "Have you tried the new method?",
+              "cn": "你试过新方法了吗？"
+            }
+          ]
+        },
+        {
+          "word": "task",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M8 8h8 M8 12h8 M8 16h4' stroke='currentColor'/><path d='M6 8h1 M6 12h1 M6 16h1' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "task"
+          ],
+          "imagery": "一张待办事项清单，上面打满了勾。",
+          "translation": "任务",
+          "sentences": [
+            {
+              "en": "I'm glad that you have finished the task.",
+              "cn": "我很高兴你完成了任务。"
+            }
+          ]
+        },
+        {
+          "word": "level",
+          "rootVisual": "<rect x='4' y='8' width='4' height='12' fill='currentColor' opacity='0.3'/><rect x='10' y='12' width='4' height='8' fill='currentColor' opacity='0.6'/><rect x='16' y='4' width='4' height='16' fill='currentColor'/>",
+          "breakdown": [
+            "level"
+          ],
+          "imagery": "一个阶梯状的图表，或者水平仪的气泡。",
+          "translation": "水平；级别",
+          "sentences": [
+            {
+              "en": "Your English level is higher than mine.",
+              "cn": "你的英语水平比我的高。"
+            }
+          ]
+        },
+        {
+          "word": "degree",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12l4-4' stroke='currentColor'/><path d='M12 12H18' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "de-",
+            "gree (步)"
+          ],
+          "imagery": "一个量角器，或者一张卷起来的学位证书。",
+          "translation": "度数；学位",
+          "sentences": [
+            {
+              "en": "He got a degree in economics.",
+              "cn": "他获得了经济学学位。"
+            }
+          ]
+        },
+        {
+          "word": "industry",
+          "rootVisual": "<path d='M4 20h16v-6l-4-4-4 4-4-4-4 4z' stroke='currentColor' fill='none'/><path d='M6 10v-4h2v4 M14 10v-4h2v4' stroke='currentColor'/><path d='M10 6h-2 M18 6h-2' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "industr (勤勉)",
+            "-y"
+          ],
+          "imagery": "一排排冒烟的工厂烟囱。",
+          "translation": "行业；工业",
+          "sentences": [
+            {
+              "en": "This could be bad for US industry.",
+              "cn": "这可能对美国工业不利。"
+            }
+          ]
+        },
+        {
+          "word": "profession",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M9 4v-2h6v2' stroke='currentColor'/><circle cx='12' cy='10' r='2' fill='currentColor'/><path d='M8 14h8 M8 17h8' stroke='currentColor'/>",
+          "breakdown": [
+            "pro-",
+            "fess (说)",
+            "-ion"
+          ],
+          "imagery": "一个穿着职业装的人，或者医生、律师的标志。",
+          "translation": "职业",
+          "sentences": [
+            {
+              "en": "Her profession is a teacher.",
+              "cn": "她的职业是老师。"
+            }
+          ]
+        },
+        {
+          "word": "rule",
+          "rootVisual": "<rect x='4' y='8' width='16' height='4' stroke='currentColor' fill='none'/><path d='M6 8v4 M8 8v4 M10 8v4 M12 8v4 M14 8v4 M16 8v4 M18 8v4' stroke='currentColor'/>",
+          "breakdown": [
+            "rule"
+          ],
+          "imagery": "一把直尺，或者法官的锤子。",
+          "translation": "规则；统治",
+          "sentences": [
+            {
+              "en": "Queen Victoria ruled England for 64 years.",
+              "cn": "维多利亚女王统治了英国64年。"
+            }
+          ]
+        },
+        {
+          "word": "style",
+          "rootVisual": "<path d='M12 4c-4 0-6 3-6 6s2 6 6 6 6-3 6-6-2-6-6-6z' stroke='currentColor' fill='none'/><path d='M12 2v20' stroke='currentColor' opacity='0.3'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "style"
+          ],
+          "imagery": "一个穿着时尚的模特剪影。",
+          "translation": "款式；风格",
+          "sentences": [
+            {
+              "en": "Do you like this dress style?",
+              "cn": "你喜欢这件连衣裙的款式吗？"
+            }
+          ]
+        },
+        {
+          "word": "project",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M4 4l16 16' stroke='currentColor' opacity='0.3'/><circle cx='8' cy='16' r='2' fill='currentColor'/><path d='M10 14l4-4' stroke='currentColor'/>",
+          "breakdown": [
+            "pro-",
+            "ject (扔)"
+          ],
+          "imagery": "一张建筑蓝图，上面有尺子和圆规。",
+          "translation": "工程；项目",
+          "sentences": [
+            {
+              "en": "He designed a new plan for the project.",
+              "cn": "他为这个项目设计了一个新方案。"
+            }
+          ]
+        },
+        {
+          "word": "list",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><circle cx='7' cy='8' r='1' fill='currentColor'/><path d='M10 8h8' stroke='currentColor'/><circle cx='7' cy='12' r='1' fill='currentColor'/><path d='M10 12h8' stroke='currentColor'/><circle cx='7' cy='16' r='1' fill='currentColor'/><path d='M10 16h8' stroke='currentColor'/>",
+          "breakdown": [
+            "list"
+          ],
+          "imagery": "一张列满条目的清单。",
+          "translation": "列表",
+          "sentences": [
+            {
+              "en": "I made a list of things to buy.",
+              "cn": "我列了一张购物清单。"
+            }
+          ]
+        },
+        {
+          "word": "form",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M6 10h12' stroke='currentColor'/><path d='M6 14h8' stroke='currentColor'/>",
+          "breakdown": [
+            "form"
+          ],
+          "imagery": "一张空白的表格，等待填写。",
+          "translation": "表格",
+          "sentences": [
+            {
+              "en": "Please fill in this form.",
+              "cn": "请填写这张表格。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

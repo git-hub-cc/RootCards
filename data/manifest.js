@@ -1,11 +1,6 @@
 // =================================================================================
-// 数据清单 (Data Manifest) - v6.0 (目录结构重构)
+// 数据清单 (Data Manifest) - v6.1 (新增 Files 11-20 分类文件)
 // ---------------------------------------------------------------------------------
-// 这个文件是数据加载的入口点。
-// 【核心改动】: 目录结构调整，将词根词缀和词汇按 "middle" (初中) 和 "high" (高中)
-//             两个阶段进行划分，使资源管理更加清晰。
-// 主应用 (app.js) 将读取这个列表，并根据文件路径解析其所属年级。
-// =================================================================================
 
 const DATA_FILES = [
     // --- Prefixes (前缀) ---
@@ -57,7 +52,7 @@ const DATA_FILES = [
     'data/middle/suf/ish.json',
     'data/middle/suf/ary.json',
     // 高中阶段 (High School)
-    'data/high/suf/ion.json',  // tion的扩展形式
+    'data/high/suf/ion.json',
     'data/high/suf/ics.json',
     'data/high/suf/logy.json',
 
@@ -168,6 +163,29 @@ const DATA_FILES = [
     'data/middle/time_logic.json',
     'data/middle/month.json',
     'data/middle/other.json',
+
+    // --- 新增文件 (根据 Files 11-20 分类) ---
+    'data/middle/conflict_crisis.json',
+    'data/middle/food_nature.json',
+    'data/middle/society_interaction.json',
+    'data/middle/thought_education.json',
+    'data/middle/objects_tech.json',
+    'data/middle/emotion_traits.json',
+
+    // --- 新增文件 (根据 Files 21-30 分类) ---
+    'data/middle/topic_people_roles.json',
+    'data/middle/topic_places_locations.json',
+    'data/middle/topic_food_drink.json',
+    'data/middle/topic_nature_animals.json',
+    'data/middle/topic_objects_tools.json',
+    'data/middle/topic_action_process.json',
+    'data/middle/topic_core_concepts.json',
+    'data/middle/topic_abstract_qualities.json',
+    'data/middle/topic_humanities_arts.json',
+    'data/middle/topic_conflict_negation.json',
+    'data/middle/topic_positive_traits.json',
+    'data/middle/topic_time_measurement.json',
+    'data/middle/topic_technology_components.json',
 
     // --- High School (高中) --- (词源进阶与混合词汇)
     'data/high/etymology_basics.json',

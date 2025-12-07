@@ -1,0 +1,509 @@
+{
+  "prefix": "Objects & Tools",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "topic_objects_tools",
+      "displayName": "物品与工具 (Objects & Tools)",
+      "themeColor": "#14b8a6",
+      "prefixVisual": "<path d='M12.5 7.25C12.5 6.14543 13.3954 5.25 14.5 5.25H18.5C19.8807 5.25 21 6.36929 21 7.75V10.75C21 12.1307 19.8807 13.25 18.5 13.25H14.5C13.3954 13.25 12.5 12.3546 12.5 11.25V7.25Z M11.5 6V18C11.5 18.5523 11.0523 19 10.5 19H4.5C3.39543 19 2.5 18.1046 2.5 17V7C2.5 5.89543 3.39543 5 4.5 5H10.5C11.0523 5 11.5 5.44772 11.5 6Z' fill='none'/>",
+      "prefixIntro": {
+        "title": "物品与工具",
+        "description": "包含日常生活中使用的人造物品、工具、设备以及容器等词汇。",
+        "imagery": "一个工具箱，里面摆放着扳手、剪刀、钥匙等各种实用的工具和物品。"
+      },
+      "words": [
+        {
+          "word": "tool",
+          "rootVisual": "<path d='M6 6l12 12' stroke='currentColor' stroke-width='4'/><path d='M18 6l-12 12' stroke='currentColor' stroke-width='4'/>",
+          "breakdown": [
+            "tool"
+          ],
+          "imagery": "一把交叉的锤子和扳手。",
+          "translation": "工具",
+          "sentences": [
+            {
+              "en": "The shop sells garden tools.",
+              "cn": "这家商店出售园艺工具。"
+            }
+          ]
+        },
+        {
+          "word": "wheel",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' stroke-width='2' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 4v16 M4 12h16' stroke='currentColor'/>",
+          "breakdown": [
+            "wheel"
+          ],
+          "imagery": "一个有辐条的车轮。",
+          "translation": "车轮",
+          "sentences": [
+            {
+              "en": "The wheel of the car has come off.",
+              "cn": "汽车的轮子掉了。"
+            }
+          ]
+        },
+        {
+          "word": "cap",
+          "rootVisual": "<path d='M6 12a6 6 0 0 1 12 0v2H6z' stroke='currentColor' fill='none'/><path d='M18 14h4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "cap"
+          ],
+          "imagery": "一顶棒球帽，有突出的帽檐。",
+          "translation": "帽子 (通常指无边或只有前沿的帽子)",
+          "sentences": [
+            {
+              "en": "He put his cap on the chair.",
+              "cn": "他把帽子放在椅子上。"
+            }
+          ]
+        },
+        {
+          "word": "glove",
+          "rootVisual": "<path d='M8 4v10a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4' stroke='currentColor' fill='none'/><path d='M8 10h-2a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2' stroke='currentColor'/>",
+          "breakdown": [
+            "glove"
+          ],
+          "imagery": "一只手套的轮廓，大拇指分开。",
+          "translation": "手套",
+          "sentences": [
+            {
+              "en": "You can keep the gloves.",
+              "cn": "你可以留下这副手套。"
+            }
+          ]
+        },
+        {
+          "word": "scissors",
+          "rootVisual": "<path d='M6 6l12 12 M18 6l-12 12' stroke='currentColor'/><circle cx='6' cy='6' r='2' stroke='currentColor'/><circle cx='6' cy='18' r='2' stroke='currentColor'/>",
+          "breakdown": [
+            "scissors"
+          ],
+          "imagery": "一把张开的剪刀。",
+          "translation": "剪刀",
+          "sentences": [
+            {
+              "en": "We cut paper with scissors.",
+              "cn": "我们用剪刀剪纸。"
+            }
+          ]
+        },
+        {
+          "word": "heel",
+          "rootVisual": "<path d='M4 14l6 6 10-6v-4l-8 4-8-4z' stroke='currentColor' fill='none'/><path d='M16 14v6' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "heel"
+          ],
+          "imagery": "一只高跟鞋的侧面轮廓。",
+          "translation": "脚后跟；高跟鞋",
+          "sentences": [
+            {
+              "en": "Many girls dream of having a pair of beautiful high heels.",
+              "cn": "许多女孩梦想拥有一双漂亮的高跟鞋。"
+            }
+          ]
+        },
+        {
+          "word": "zipper",
+          "rootVisual": "<rect x='10' y='2' width='4' height='20' stroke='currentColor' fill='none'/><path d='M10 2v8 M14 2v8' stroke='currentColor'/><rect x='10' y='10' width='4' height='6' fill='currentColor'/>",
+          "breakdown": [
+            "zip",
+            "-er"
+          ],
+          "imagery": "一个正在拉上的拉链。",
+          "translation": "拉链",
+          "sentences": [
+            {
+              "en": "They have put a zipper on it.",
+              "cn": "他们给它装上了一个拉链。"
+            }
+          ]
+        },
+        {
+          "word": "lock",
+          "rootVisual": "<rect x='8' y='10' width='8' height='8' stroke='currentColor' fill='none'/><path d='M12 10V6a2 2 0 0 0-4 0v4' stroke='currentColor'/><circle cx='12' cy='14' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "lock"
+          ],
+          "imagery": "一个挂锁。",
+          "translation": "锁",
+          "sentences": [
+            {
+              "en": "Did you lock the car?",
+              "cn": "你锁车了吗？"
+            }
+          ]
+        },
+        {
+          "word": "bell",
+          "rootVisual": "<path d='M6 16a6 6 0 0 1 12 0' stroke='currentColor' fill='none'/><circle cx='12' cy='16' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "bell"
+          ],
+          "imagery": "一个倒扣的钟形，中间有钟摆。",
+          "translation": "钟；铃",
+          "sentences": [
+            {
+              "en": "She rang the doorbell.",
+              "cn": "她按了门铃。"
+            }
+          ]
+        },
+        {
+          "word": "instrument",
+          "rootVisual": "<circle cx='8' cy='16' r='4' stroke='currentColor' fill='none'/><path d='M12 16l8-8' stroke='currentColor' stroke-width='2'/><path d='M18 6l2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "in-",
+            "stru",
+            "-ment"
+          ],
+          "imagery": "一把吉他或者一个科学仪器的轮廓。",
+          "translation": "仪器；乐器",
+          "sentences": [
+            {
+              "en": "Are you able to use this instrument?",
+              "cn": "你会使用这个仪器吗？"
+            }
+          ]
+        },
+        {
+          "word": "basket",
+          "rootVisual": "<path d='M4 10h16l-2 10h-12z' stroke='currentColor' fill='none'/><path d='M4 10c0-6 16-6 16 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "basket"
+          ],
+          "imagery": "一个编织的篮子，带有提手。",
+          "translation": "篮子",
+          "sentences": [
+            {
+              "en": "There is a basket full of vegetables.",
+              "cn": "有一个装满蔬菜的篮子。"
+            }
+          ]
+        },
+        {
+          "word": "fridge",
+          "rootVisual": "<rect x='6' y='2' width='12' height='20' stroke='currentColor' fill='none'/><path d='M6 8h12' stroke='currentColor'/><path d='M16 4v4 M16 10v6' stroke='currentColor'/>",
+          "breakdown": [
+            "fridge"
+          ],
+          "imagery": "一个双开门或者上下开门的冰箱。",
+          "translation": "冰箱",
+          "sentences": [
+            {
+              "en": "My parents bought this fridge last year.",
+              "cn": "我父母去年买了这台冰箱。"
+            }
+          ]
+        },
+        {
+          "word": "stick",
+          "rootVisual": "<path d='M18 4L6 20' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": [
+            "stick"
+          ],
+          "imagery": "一根简单的棍子。",
+          "translation": "棍棒",
+          "sentences": [
+            {
+              "en": "Stick the poster on the wall.",
+              "cn": "把海报贴在墙上。"
+            }
+          ]
+        },
+        {
+          "word": "chalk",
+          "rootVisual": "<rect x='8' y='4' width='4' height='16' stroke='currentColor' fill='white'/><path d='M8 20l4 0' stroke='currentColor'/>",
+          "breakdown": [
+            "chalk"
+          ],
+          "imagery": "一根白色的粉笔。",
+          "translation": "粉笔",
+          "sentences": [
+            {
+              "en": "a box of colored chalks",
+              "cn": "一盒彩色粉笔"
+            }
+          ]
+        },
+        {
+          "word": "bottle",
+          "rootVisual": "<path d='M8 20V10a4 4 0 0 1 8 0v10z' stroke='currentColor' fill='none'/><rect x='10' y='2' width='4' height='4' stroke='currentColor'/>",
+          "breakdown": [
+            "bottle"
+          ],
+          "imagery": "一个细颈的玻璃瓶。",
+          "translation": "瓶子",
+          "sentences": [
+            {
+              "en": "a bottle of milk",
+              "cn": "一瓶牛奶"
+            }
+          ]
+        },
+        {
+          "word": "map",
+          "rootVisual": "<path d='M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2z' stroke='currentColor' fill='none'/><path d='M9 4v14 M15 6v14' stroke='currentColor'/>",
+          "breakdown": [
+            "map"
+          ],
+          "imagery": "一张折叠的地图。",
+          "translation": "地图",
+          "sentences": [
+            {
+              "en": "a map of the world",
+              "cn": "一张世界地图"
+            }
+          ]
+        },
+        {
+          "word": "chain",
+          "rootVisual": "<path d='M4 12h4a2 2 0 0 1 2 2v-4a2 2 0 0 1-2 2h-4z' stroke='currentColor'/><path d='M12 12h4a2 2 0 0 1 2 2v-4a2 2 0 0 1-2 2h-4z' stroke='currentColor'/><path d='M20 12h-4' stroke='currentColor'/>",
+          "breakdown": [
+            "chain"
+          ],
+          "imagery": "几个相扣的金属环。",
+          "translation": "链条",
+          "sentences": [
+            {
+              "en": "People stand on the top of the food chain.",
+              "cn": "人类站在食物链的顶端。"
+            }
+          ]
+        },
+        {
+          "word": "dustbin",
+          "rootVisual": "<path d='M6 6l2 14h8l2-14H6z' stroke='currentColor' fill='none'/><path d='M4 6h16' stroke='currentColor'/><path d='M10 6v-2h4v2' stroke='currentColor'/>",
+          "breakdown": [
+            "dust",
+            "bin"
+          ],
+          "imagery": "一个有盖子的垃圾桶。",
+          "translation": "垃圾箱",
+          "sentences": [
+            {
+              "en": "We should throw the rubbish into the dustbin.",
+              "cn": "我们应该把垃圾扔进垃圾箱。"
+            }
+          ]
+        },
+        {
+          "word": "can",
+          "rootVisual": "<ellipse cx='12' cy='6' rx='6' ry='2' stroke='currentColor' fill='none'/><path d='M6 6v12a6 2 0 0 0 12 0V6' stroke='currentColor' fill='none'/><path d='M14 4l2-2' stroke='currentColor'/>",
+          "breakdown": [
+            "can"
+          ],
+          "imagery": "一个圆柱形的易拉罐，拉环拉开了一点。",
+          "translation": "罐头；易拉罐",
+          "sentences": [
+            {
+              "en": "a can of Coke",
+              "cn": "一罐可乐"
+            }
+          ]
+        },
+        {
+          "word": "key",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M12 12h8' stroke='currentColor' stroke-width='2'/><path d='M16 12v2 M18 12v2' stroke='currentColor'/>",
+          "breakdown": [
+            "key"
+          ],
+          "imagery": "一把老式的钥匙。",
+          "translation": "钥匙",
+          "sentences": [
+            {
+              "en": "a spare key",
+              "cn": "一把备用钥匙"
+            }
+          ]
+        },
+        {
+          "word": "keyboard",
+          "rootVisual": "<rect x='2' y='8' width='20' height='8' rx='1' stroke='currentColor' fill='none'/><path d='M4 10h2v2h-2z M8 10h2v2h-2z M12 10h2v2h-2z M16 10h2v2h-2z' fill='currentColor'/>",
+          "breakdown": [
+            "key",
+            "board"
+          ],
+          "imagery": "一个电脑键盘。",
+          "translation": "键盘",
+          "sentences": [
+            {
+              "en": "This is an amazing keyboard.",
+              "cn": "这是一个很棒的键盘。"
+            }
+          ]
+        },
+        {
+          "word": "handbag",
+          "rootVisual": "<path d='M4 10h16v10H4z' stroke='currentColor' fill='none'/><path d='M8 10c0-4 8-4 8 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "hand",
+            "bag"
+          ],
+          "imagery": "一个女士手提包。",
+          "translation": "手提包",
+          "sentences": [
+            {
+              "en": "I prefer the black handbag.",
+              "cn": "我更喜欢那个黑色的手提包。"
+            }
+          ]
+        },
+        {
+          "word": "chopstick",
+          "rootVisual": "<path d='M4 4l16 16' stroke='currentColor' stroke-width='2'/><path d='M8 2l12 12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "chop",
+            "stick"
+          ],
+          "imagery": "一双并排的筷子。",
+          "translation": "筷子",
+          "sentences": [
+            {
+              "en": "Can you eat noodles with chopsticks?",
+              "cn": "你会用筷子吃面条吗？"
+            }
+          ]
+        },
+        {
+          "word": "backpack",
+          "rootVisual": "<path d='M6 6a4 4 0 0 1 12 0v14H6z' stroke='currentColor' fill='none'/><path d='M6 10h12' stroke='currentColor'/><rect x='9' y='14' width='6' height='6' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "back",
+            "pack"
+          ],
+          "imagery": "一个双肩背包。",
+          "translation": "背包",
+          "sentences": [
+            {
+              "en": "I lost my backpack.",
+              "cn": "我丢了我的背包。"
+            }
+          ]
+        },
+        {
+          "word": "passport",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' rx='1' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='3' stroke='currentColor' fill='none'/><path d='M9 16h6' stroke='currentColor'/>",
+          "breakdown": [
+            "pass",
+            "port"
+          ],
+          "imagery": "一本护照，封面上有一个国徽。",
+          "translation": "护照",
+          "sentences": [
+            {
+              "en": "Let me see your passport, please.",
+              "cn": "请让我看一下你的护照。"
+            }
+          ]
+        },
+        {
+          "word": "fork",
+          "rootVisual": "<path d='M8 2v10a4 4 0 0 0 8 0V2' stroke='currentColor' fill='none'/><path d='M12 2v10' stroke='currentColor'/><path d='M12 16v6' stroke='currentColor'/>",
+          "breakdown": [
+            "fork"
+          ],
+          "imagery": "一把三齿叉子。",
+          "translation": "叉子",
+          "sentences": [
+            {
+              "en": "Put the knives and forks on the table.",
+              "cn": "把刀叉放到桌上。"
+            }
+          ]
+        },
+        {
+          "word": "spoon",
+          "rootVisual": "<ellipse cx='12' cy='6' rx='4' ry='6' stroke='currentColor' fill='none'/><path d='M12 12v10' stroke='currentColor'/>",
+          "breakdown": [
+            "spoon"
+          ],
+          "imagery": "一把汤匙。",
+          "translation": "汤匙；勺子",
+          "sentences": [
+            {
+              "en": "She feeds the baby with a spoon.",
+              "cn": "她用汤匙喂宝宝。"
+            }
+          ]
+        },
+        {
+          "word": "blouse",
+          "rootVisual": "<path d='M6 6l6-4 6 4v14H6z' stroke='currentColor' fill='none'/><path d='M12 2v20' stroke='currentColor' stroke-dasharray='2 2'/><path d='M6 6l-2 4' stroke='currentColor'/><path d='M18 6l2 4' stroke='currentColor'/>",
+          "breakdown": [
+            "blouse"
+          ],
+          "imagery": "一件女士衬衫的轮廓。",
+          "translation": "女士衬衫",
+          "sentences": [
+            {
+              "en": "This blouse goes well with you.",
+              "cn": "这件女士衬衫很配你。"
+            }
+          ]
+        },
+        {
+          "word": "coin",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><text x='8' y='16' font-size='12' fill='currentColor'>$</text>",
+          "breakdown": [
+            "coin"
+          ],
+          "imagery": "一枚硬币，上面有货币符号。",
+          "translation": "硬币",
+          "sentences": [
+            {
+              "en": "There is a coin on the ground.",
+              "cn": "地上有一枚硬币。"
+            }
+          ]
+        },
+        {
+          "word": "iron",
+          "rootVisual": "<path d='M4 14h16l-2-6h-12z' stroke='currentColor' fill='gray' opacity='0.5'/><rect x='8' y='8' width='8' height='4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "iron"
+          ],
+          "imagery": "一块沉重的铁块或铁锭。",
+          "translation": "铁",
+          "sentences": [
+            {
+              "en": "The gate is made of iron.",
+              "cn": "这扇大门是铁做的。"
+            }
+          ]
+        },
+        {
+          "word": "steel",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none'/><path d='M4 8l4-4 16 0-4 4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "steel"
+          ],
+          "imagery": "一根工字钢的横截面。",
+          "translation": "钢",
+          "sentences": [
+            {
+              "en": "The tube is made of steel.",
+              "cn": "这个管子是钢制的。"
+            }
+          ]
+        },
+        {
+          "word": "package",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none'/><path d='M4 8l8-4 8 4' stroke='currentColor'/><path d='M12 4v20' stroke='currentColor'/><path d='M4 14h16' stroke='currentColor'/>",
+          "breakdown": [
+            "pack",
+            "-age"
+          ],
+          "imagery": "一个用绳子捆扎好的包裹。",
+          "translation": "包裹",
+          "sentences": [
+            {
+              "en": "I received the package today.",
+              "cn": "我今天收到了包裹。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
