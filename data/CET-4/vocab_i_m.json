@@ -15,7 +15,9 @@
         {
           "word": "icon",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' rx='2' /><circle cx='12' cy='12' r='3' fill='currentColor' />",
-          "breakdown": ["icon"],
+          "breakdown": [
+            "icon"
+          ],
           "imagery": "电脑桌面上的图标。",
           "translation": "图标；偶像",
           "sentences": [
@@ -28,7 +30,10 @@
         {
           "word": "imitate",
           "rootVisual": "<rect x='4' y='8' width='6' height='8' stroke='currentColor' fill='none' /><rect x='14' y='8' width='6' height='8' stroke='currentColor' fill='none' stroke-dasharray='2 2' />",
-          "breakdown": ["imit (像)", "-ate"],
+          "breakdown": [
+            "imit (像)",
+            "-ate"
+          ],
           "imagery": "做得像别人一样。",
           "translation": "模仿",
           "sentences": [
@@ -41,7 +46,11 @@
         {
           "word": "incentive",
           "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='12'>$</text><path d='M4 12 H 8' stroke='currentColor' marker-end='url(#arrow)' />",
-          "breakdown": ["in- (进)", "cent (钱)", "-ive"],
+          "breakdown": [
+            "in- (进)",
+            "cent (钱)",
+            "-ive"
+          ],
           "imagery": "给钱刺激，激励。",
           "translation": "刺激；激励",
           "sentences": [
@@ -54,7 +63,10 @@
         {
           "word": "indifferent",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 14 H 16' stroke='currentColor' />",
-          "breakdown": ["in- (不)", "different (不同)"],
+          "breakdown": [
+            "in- (不)",
+            "different (不同)"
+          ],
           "imagery": "没什么不同，无所谓，冷漠。",
           "translation": "冷漠的",
           "sentences": [
@@ -67,7 +79,11 @@
         {
           "word": "indignant",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' color='#ef4444' /><path d='M8 10 L12 14 L16 10' stroke='currentColor' />",
-          "breakdown": ["in- (不)", "dign (高贵)", "-ant"],
+          "breakdown": [
+            "in- (不)",
+            "dign (高贵)",
+            "-ant"
+          ],
           "imagery": "失去高贵风度，愤慨。",
           "translation": "愤慨的；愤怒的",
           "sentences": [
@@ -80,7 +96,11 @@
         {
           "word": "inevitable",
           "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' marker-end='url(#arrow)' />",
-          "breakdown": ["in- (不)", "evit (避)", "-able"],
+          "breakdown": [
+            "in- (不)",
+            "evit (避)",
+            "-able"
+          ],
           "imagery": "无法避开的。",
           "translation": "不可避免的",
           "sentences": [
@@ -93,7 +113,11 @@
         {
           "word": "initiate",
           "rootVisual": "<circle cx='4' cy='12' r='2' fill='currentColor' /><path d='M6 12 H 14' stroke='currentColor' marker-end='url(#arrow)' />",
-          "breakdown": ["in- (进)", "it (走)", "-iate"],
+          "breakdown": [
+            "in- (进)",
+            "it (走)",
+            "-iate"
+          ],
           "imagery": "走进去开始做。",
           "translation": "开始；发起",
           "sentences": [
@@ -106,7 +130,11 @@
         {
           "word": "innumerable",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>∞</text>",
-          "breakdown": ["in- (不)", "numer (数)", "-able"],
+          "breakdown": [
+            "in- (不)",
+            "numer (数)",
+            "-able"
+          ],
           "imagery": "数不清的。",
           "translation": "无数的",
           "sentences": [
@@ -119,7 +147,10 @@
         {
           "word": "input",
           "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none' /><path d='M4 12 H 8' stroke='currentColor' marker-end='url(#arrow)' />",
-          "breakdown": ["in", "put"],
+          "breakdown": [
+            "in",
+            "put"
+          ],
           "imagery": "放进去，输入。",
           "translation": "输入",
           "sentences": [
@@ -132,7 +163,10 @@
         {
           "word": "intellect",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M12 8 V 12' stroke='currentColor' />",
-          "breakdown": ["inter- (间)", "lect (选)"],
+          "breakdown": [
+            "inter- (间)",
+            "lect (选)"
+          ],
           "imagery": "在中间选择的能力，智力。",
           "translation": "智力；才智",
           "sentences": [
@@ -145,7 +179,10 @@
         {
           "word": "intimate",
           "rootVisual": "<path d='M8 12 Q 12 16 16 12' stroke='currentColor' /><path d='M8 12 Q 12 8 16 12' stroke='currentColor' />",
-          "breakdown": ["in- (内)", "-timate"],
+          "breakdown": [
+            "in- (内)",
+            "-timate"
+          ],
           "imagery": "进入内心的，亲密的。",
           "translation": "亲密的",
           "sentences": [
@@ -158,7 +195,9 @@
         {
           "word": "item",
           "rootVisual": "<circle cx='4' cy='8' r='1' fill='currentColor' /><line x1='8' y1='8' x2='18' y2='8' stroke='currentColor' />",
-          "breakdown": ["item"],
+          "breakdown": [
+            "item"
+          ],
           "imagery": "列表中的一项。",
           "translation": "条款；项目",
           "sentences": [
@@ -171,19 +210,21 @@
       ]
     },
     {
-      "meaningId": "vocab_j_k_l",
-      "displayName": "Vocabulary J-L",
+      "meaningId": "vocab_j",
+      "displayName": "Vocabulary J",
       "themeColor": "#22c55e",
       "prefixIntro": {
-        "title": "J-L 开头核心词",
-        "description": "大学四级 J, K, L 开头的高频混合词汇。",
-        "imagery": "J 像钩子，K 像张开的手臂，L 像一把尺子。"
+        "title": "J 开头核心词",
+        "description": "大学四级 J 开头的高频混合词汇。",
+        "imagery": "J 像钩子。"
       },
       "words": [
         {
           "word": "jelly",
           "rootVisual": "<path d='M6 18 Q 12 12 18 18' stroke='currentColor' fill='none' /><path d='M6 18 V 12 Q 12 6 18 12 V 18' stroke='currentColor' />",
-          "breakdown": ["jelly"],
+          "breakdown": [
+            "jelly"
+          ],
           "imagery": "软软的果冻。",
           "translation": "果冻",
           "sentences": [
@@ -196,7 +237,9 @@
         {
           "word": "jog",
           "rootVisual": "<path d='M12 18 L8 22 M12 18 L16 22 M12 12 V 18' stroke='currentColor' />",
-          "breakdown": ["jog"],
+          "breakdown": [
+            "jog"
+          ],
           "imagery": "慢跑锻炼。",
           "translation": "慢跑",
           "sentences": [
@@ -209,7 +252,10 @@
         {
           "word": "jury",
           "rootVisual": "<rect x='4' y='10' width='16' height='6' stroke='currentColor' fill='none' /><circle cx='6' cy='8' r='1' fill='currentColor' /><circle cx='10' cy='8' r='1' fill='currentColor' /><circle cx='14' cy='8' r='1' fill='currentColor' /><circle cx='18' cy='8' r='1' fill='currentColor' />",
-          "breakdown": ["jur (法)", "-y"],
+          "breakdown": [
+            "jur (法)",
+            "-y"
+          ],
           "imagery": "法庭上的陪审团。",
           "translation": "陪审团",
           "sentences": [
@@ -222,7 +268,10 @@
         {
           "word": "justify",
           "rootVisual": "<path d='M4 18 H 20 M 12 18 V 6' stroke='currentColor' /><rect x='6' y='10' width='6' height='6' stroke='currentColor' fill='none' /><rect x='12' y='10' width='6' height='6' stroke='currentColor' fill='none' />",
-          "breakdown": ["just (正)", "-ify"],
+          "breakdown": [
+            "just (正)",
+            "-ify"
+          ],
           "imagery": "使变得正当/合理。",
           "translation": "证明...正当",
           "sentences": [
@@ -231,11 +280,26 @@
               "cn": "证明支付高薪是合理的。"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_k",
+      "displayName": "Vocabulary K",
+      "themeColor": "#facc15",
+      "prefixIntro": {
+        "title": "K 开头核心词",
+        "description": "大学四级 K 开头的高频混合词汇。",
+        "imagery": "K 像张开的手臂。"
+      },
+      "words": [
         {
           "word": "kidnap",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M8 12 H 16' stroke='currentColor' />",
-          "breakdown": ["kid (小孩)", "nap (睡)"],
+          "breakdown": [
+            "kid (小孩)",
+            "nap (睡)"
+          ],
           "imagery": "趁小孩睡觉抱走，绑架。",
           "translation": "绑架",
           "sentences": [
@@ -248,7 +312,10 @@
         {
           "word": "kidney",
           "rootVisual": "<path d='M8 10 Q 6 14 8 18 Q 12 20 14 16 Q 12 12 8 10' stroke='currentColor' fill='none' />",
-          "breakdown": ["kid (小孩)", "ney"],
+          "breakdown": [
+            "kid (小孩)",
+            "ney"
+          ],
           "imagery": "肾脏（形状像腰果/小孩胚胎）。",
           "translation": "肾脏",
           "sentences": [
@@ -261,7 +328,9 @@
         {
           "word": "knight",
           "rootVisual": "<path d='M12 4 L8 14 H16 Z' stroke='currentColor' fill='none' /><circle cx='12' cy='4' r='1' fill='currentColor' />",
-          "breakdown": ["knight"],
+          "breakdown": [
+            "knight"
+          ],
           "imagery": "古代骑士。",
           "translation": "骑士",
           "sentences": [
@@ -270,11 +339,25 @@
               "cn": "他被女王封为骑士。"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_l",
+      "displayName": "Vocabulary L",
+      "themeColor": "#0e7490",
+      "prefixIntro": {
+        "title": "L 开头核心词",
+        "description": "大学四级 L 开头的高频混合词汇。L 常表“法律 (Leg)/自由 (Liber)”。",
+        "imagery": "L 像一把尺子或一根杠杆。"
+      },
+      "words": [
         {
           "word": "lace",
           "rootVisual": "<path d='M4 12 Q 8 4 12 12 T 20 12' stroke='currentColor' fill='none' stroke-dasharray='1 1' />",
-          "breakdown": ["lace"],
+          "breakdown": [
+            "lace"
+          ],
           "imagery": "花边，蕾丝。",
           "translation": "蕾丝；花边",
           "sentences": [
@@ -287,7 +370,9 @@
         {
           "word": "lash",
           "rootVisual": "<path d='M4 20 Q 8 4 20 4' stroke='currentColor' />",
-          "breakdown": ["lash (鞭)"],
+          "breakdown": [
+            "lash (鞭)"
+          ],
           "imagery": "鞭打；睫毛（像小鞭子）。",
           "translation": "鞭打；睫毛",
           "sentences": [
@@ -300,7 +385,10 @@
         {
           "word": "lawsuit",
           "rootVisual": "<rect x='6' y='6' width='12' height='14' stroke='currentColor' fill='none' /><text x='12' y='14' text-anchor='middle' font-size='8'>LAW</text>",
-          "breakdown": ["law", "suit"],
+          "breakdown": [
+            "law",
+            "suit"
+          ],
           "imagery": "法律诉讼。",
           "translation": "诉讼",
           "sentences": [
@@ -313,7 +401,10 @@
         {
           "word": "leisure",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 14 Q 12 18 16 14' stroke='currentColor' />",
-          "breakdown": ["leis (允许)", "-ure"],
+          "breakdown": [
+            "leis (允许)",
+            "-ure"
+          ],
           "imagery": "被允许放松的时间。",
           "translation": "闲暇；空闲",
           "sentences": [
@@ -326,7 +417,9 @@
         {
           "word": "lens",
           "rootVisual": "<ellipse cx='12' cy='12' rx='4' ry='8' stroke='currentColor' fill='none' />",
-          "breakdown": ["lens (扁豆)"],
+          "breakdown": [
+            "lens (扁豆)"
+          ],
           "imagery": "像扁豆形状的镜片。",
           "translation": "镜头；镜片",
           "sentences": [
@@ -339,7 +432,9 @@
         {
           "word": "lesbian",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>♀♀</text>",
-          "breakdown": ["lesbian"],
+          "breakdown": [
+            "lesbian"
+          ],
           "imagery": "女同性恋者。",
           "translation": "女同性恋者",
           "sentences": [
@@ -352,7 +447,10 @@
         {
           "word": "liable",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><path d='M9 10 L11 12 L15 8' stroke='currentColor' />",
-          "breakdown": ["li (绑)", "-able"],
+          "breakdown": [
+            "li (绑)",
+            "-able"
+          ],
           "imagery": "被绑定的，有责任的。",
           "translation": "有责任的；可能的",
           "sentences": [
@@ -365,7 +463,10 @@
         {
           "word": "livestock",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>🐄</text>",
-          "breakdown": ["live (活)", "stock (存货)"],
+          "breakdown": [
+            "live (活)",
+            "stock (存货)"
+          ],
           "imagery": "活的存货，牲畜。",
           "translation": "牲畜",
           "sentences": [
@@ -378,7 +479,9 @@
         {
           "word": "log",
           "rootVisual": "<circle cx='6' cy='12' r='4' stroke='currentColor' fill='none' /><path d='M6 8 H 18' stroke='currentColor' /><path d='M6 16 H 18' stroke='currentColor' /><path d='M18 8 V 16' stroke='currentColor' />",
-          "breakdown": ["log"],
+          "breakdown": [
+            "log"
+          ],
           "imagery": "原木；记录（刻在木头上）。",
           "translation": "原木；日志",
           "sentences": [
@@ -391,7 +494,10 @@
         {
           "word": "logic",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><path d='M6 10 H 18 M 6 14 H 18' stroke='currentColor' />",
-          "breakdown": ["log (言/理)", "-ic"],
+          "breakdown": [
+            "log (言/理)",
+            "-ic"
+          ],
           "imagery": "有条理的言语。",
           "translation": "逻辑",
           "sentences": [
@@ -404,7 +510,10 @@
         {
           "word": "logistics",
           "rootVisual": "<rect x='2' y='10' width='6' height='4' fill='currentColor' /><path d='M8 12 H 16' stroke='currentColor' marker-end='url(#arrow)' /><rect x='16' y='10' width='6' height='4' fill='currentColor' />",
-          "breakdown": ["log (住/军)", "-istics"],
+          "breakdown": [
+            "log (住/军)",
+            "-istics"
+          ],
           "imagery": "军队的安置供给，后勤。",
           "translation": "后勤；物流",
           "sentences": [
@@ -417,7 +526,10 @@
         {
           "word": "lottery",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><text x='12' y='16' text-anchor='middle' font-size='10'>777</text>",
-          "breakdown": ["lot (抽签)", "-ery"],
+          "breakdown": [
+            "lot (抽签)",
+            "-ery"
+          ],
           "imagery": "抽奖。",
           "translation": "彩票",
           "sentences": [
@@ -430,7 +542,10 @@
         {
           "word": "lunar",
           "rootVisual": "<path d='M12 4 A 8 8 0 1 1 12 20 A 6 6 0 1 0 12 4' fill='currentColor' />",
-          "breakdown": ["lun (月)", "-ar"],
+          "breakdown": [
+            "lun (月)",
+            "-ar"
+          ],
           "imagery": "月亮的。",
           "translation": "月亮的；阴历的",
           "sentences": [
@@ -448,14 +563,17 @@
       "themeColor": "#14b8a6",
       "prefixIntro": {
         "title": "M 开头核心词",
-        "description": "大学四级 M 开头的高频混合词汇。",
+        "description": "大学四级 M 开头的高频混合词汇。M 常表“手 (Man)/山 (Mountain)、多 (Many)”。",
         "imagery": "字母 M 像两座山峰或波浪。"
       },
       "words": [
         {
           "word": "machine",
           "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none' /><circle cx='8' cy='12' r='2' fill='currentColor' /><circle cx='16' cy='12' r='2' fill='currentColor' />",
-          "breakdown": ["mach (机)", "-ine"],
+          "breakdown": [
+            "mach (机)",
+            "-ine"
+          ],
           "imagery": "机器。",
           "translation": "机器",
           "sentences": [
@@ -468,7 +586,10 @@
         {
           "word": "massacre",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><text x='12' y='14' text-anchor='middle' font-size='10'>☠️</text>",
-          "breakdown": ["mass (大)", "acre (亩)"],
+          "breakdown": [
+            "mass (大)",
+            "acre (亩)"
+          ],
           "imagery": "一英亩的尸体，大屠杀。",
           "translation": "大屠杀",
           "sentences": [
@@ -481,7 +602,10 @@
         {
           "word": "massive",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' fill='currentColor' />",
-          "breakdown": ["mass (大)", "-ive"],
+          "breakdown": [
+            "mass (大)",
+            "-ive"
+          ],
           "imagery": "巨大的块头。",
           "translation": "巨大的；大量的",
           "sentences": [
@@ -494,7 +618,10 @@
         {
           "word": "masterpiece",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><circle cx='12' cy='10' r='3' fill='currentColor' />",
-          "breakdown": ["master", "piece"],
+          "breakdown": [
+            "master",
+            "piece"
+          ],
           "imagery": "大师的作品。",
           "translation": "杰作",
           "sentences": [
@@ -507,7 +634,10 @@
         {
           "word": "merchant",
           "rootVisual": "<rect x='8' y='12' width='8' height='6' stroke='currentColor' fill='none' /><text x='12' y='10' text-anchor='middle' font-size='8'>$</text>",
-          "breakdown": ["merch (商)", "-ant"],
+          "breakdown": [
+            "merch (商)",
+            "-ant"
+          ],
           "imagery": "做买卖的人。",
           "translation": "商人",
           "sentences": [
@@ -520,7 +650,10 @@
         {
           "word": "merchandise",
           "rootVisual": "<rect x='4' y='8' width='4' height='4' fill='currentColor' /><rect x='10' y='8' width='4' height='4' fill='currentColor' /><rect x='16' y='8' width='4' height='4' fill='currentColor' />",
-          "breakdown": ["merch (商)", "-andise"],
+          "breakdown": [
+            "merch (商)",
+            "-andise"
+          ],
           "imagery": "商品。",
           "translation": "商品；货物",
           "sentences": [
@@ -533,7 +666,9 @@
         {
           "word": "merit",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 12 L11 15 L16 9' stroke='currentColor' />",
-          "breakdown": ["merit (优/赚)"],
+          "breakdown": [
+            "merit (优/赚)"
+          ],
           "imagery": "值得赞赏的优点。（谐音：marry it 嫁给他）",
           "translation": "优点；价值",
           "sentences": [
@@ -546,7 +681,9 @@
         {
           "word": "metro",
           "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none' rx='2' /><circle cx='8' cy='16' r='1' fill='currentColor' /><circle cx='16' cy='16' r='1' fill='currentColor' />",
-          "breakdown": ["metro (母/大都市)"],
+          "breakdown": [
+            "metro (母/大都市)"
+          ],
           "imagery": "大都市的交通工具。",
           "translation": "地铁",
           "sentences": [
@@ -559,7 +696,10 @@
         {
           "word": "migrate",
           "rootVisual": "<path d='M4 12 L12 4 L20 12' stroke='currentColor' fill='none' marker-end='url(#arrow)' />",
-          "breakdown": ["migr (迁)", "-ate"],
+          "breakdown": [
+            "migr (迁)",
+            "-ate"
+          ],
           "imagery": "鸟类迁徙。",
           "translation": "迁移；移居",
           "sentences": [
@@ -572,7 +712,10 @@
         {
           "word": "milestone",
           "rootVisual": "<path d='M8 20 V 10 A 4 4 0 0 1 16 10 V 20 H 8 Z' stroke='currentColor' fill='none' /><text x='12' y='16' text-anchor='middle' font-size='8'>100</text>",
-          "breakdown": ["mile", "stone"],
+          "breakdown": [
+            "mile",
+            "stone"
+          ],
           "imagery": "路边标记英里的石头。",
           "translation": "里程碑",
           "sentences": [
@@ -585,7 +728,9 @@
         {
           "word": "moan",
           "rootVisual": "<path d='M8 14 Q 12 18 16 14' stroke='currentColor' />",
-          "breakdown": ["moan (拟声)"],
+          "breakdown": [
+            "moan (拟声)"
+          ],
           "imagery": "痛苦的声音。",
           "translation": "呻吟",
           "sentences": [
@@ -598,7 +743,10 @@
         {
           "word": "moment",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M12 12 V 6' stroke='currentColor' />",
-          "breakdown": ["mov (动)", "-ment"],
+          "breakdown": [
+            "mov (动)",
+            "-ment"
+          ],
           "imagery": "时间的动点，瞬间。",
           "translation": "片刻；瞬间",
           "sentences": [
@@ -611,7 +759,10 @@
         {
           "word": "motion",
           "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor' /><path d='M6 12 H 18' stroke='currentColor' marker-end='url(#arrow)' />",
-          "breakdown": ["mot (动)", "-ion"],
+          "breakdown": [
+            "mot (动)",
+            "-ion"
+          ],
           "imagery": "运动。",
           "translation": "运动；移动",
           "sentences": [

@@ -15,102 +15,233 @@
         {
           "word": "identical",
           "rootVisual": "<rect x='6' y='8' width='4' height='8' fill='currentColor'/><rect x='14' y='8' width='4' height='8' fill='currentColor'/>",
-          "breakdown": ["id", "(相同)", "ent", "ical"],
+          "breakdown": [
+            "id",
+            "(相同)",
+            "ent",
+            "ical"
+          ],
           "imagery": "两个完全一样的东西 -> 同一的。",
           "translation": "同一的；完全相同的",
-          "sentences": [{"en": "They are identical twins.", "cn": "他们是同卵双胞胎。"}]
+          "sentences": [
+            {
+              "en": "They are identical twins.",
+              "cn": "他们是同卵双胞胎。"
+            }
+          ]
         },
         {
           "word": "immigrate",
           "rootVisual": "<path d='M2 12h8' stroke='currentColor' marker-end='url(#arrow)'/><rect x='14' y='4' width='8' height='16' stroke='currentColor' fill='none'/>",
-          "breakdown": ["im-", "(进)", "migr", "(移动)", "ate"],
+          "breakdown": [
+            "im-",
+            "(进)",
+            "migr",
+            "(移动)",
+            "ate"
+          ],
           "imagery": "移动进来 -> 移民(入境)。谐音：移民(immigrate)。",
           "translation": "移居入境",
-          "sentences": [{"en": "He immigrated to Canada.", "cn": "他移民到了加拿大。"}]
+          "sentences": [
+            {
+              "en": "He immigrated to Canada.",
+              "cn": "他移民到了加拿大。"
+            }
+          ]
         },
         {
           "word": "incident",
           "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 2v8' stroke='currentColor'/>",
-          "breakdown": ["in-", "(上/入)", "cid", "(落)", "ent"],
+          "breakdown": [
+            "in-",
+            "(上/入)",
+            "cid",
+            "(落)",
+            "ent"
+          ],
           "imagery": "掉下来的事情 -> 事件(通常指小插曲或负面事件)。",
           "translation": "事件；事变",
-          "sentences": [{"en": "A minor incident.", "cn": "一个小插曲。"}]
+          "sentences": [
+            {
+              "en": "A minor incident.",
+              "cn": "一个小插曲。"
+            }
+          ]
         },
         {
           "word": "index",
           "rootVisual": "<path d='M8 4h8M8 8h8M8 12h8M8 16h8' stroke='currentColor'/><circle cx='4' cy='6' r='1' fill='currentColor'/>",
-          "breakdown": ["in-", "(指)", "dex", "(手指)"],
+          "breakdown": [
+            "in-",
+            "(指)",
+            "dex",
+            "(手指)"
+          ],
           "imagery": "用手指出来的 -> 索引/指数。",
           "translation": "索引；指数",
-          "sentences": [{"en": "The price index.", "cn": "价格指数。"}]
+          "sentences": [
+            {
+              "en": "The price index.",
+              "cn": "价格指数。"
+            }
+          ]
         },
         {
           "word": "intelligent",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12l4-4' stroke='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
-          "breakdown": ["inter", "(之间)", "leg", "(选)", "ent"],
+          "breakdown": [
+            "inter",
+            "(之间)",
+            "leg",
+            "(选)",
+            "ent"
+          ],
           "imagery": "能在众多事物中进行选择辨别的 -> 聪明的。",
           "translation": "聪明的；有智力的",
-          "sentences": [{"en": "An intelligent child.", "cn": "一个聪明的孩子。"}]
+          "sentences": [
+            {
+              "en": "An intelligent child.",
+              "cn": "一个聪明的孩子。"
+            }
+          ]
         }
       ]
     },
     {
-      "meaningId": "vocab_j_k_l",
-      "displayName": "Vocabulary J-L",
+      "meaningId": "vocab_j",
+      "displayName": "Vocabulary J",
       "themeColor": "#f59e0b",
       "prefixIntro": {
-        "title": "J-L 开头核心词",
-        "description": "高中阶段 J, K, L 开头的高频混合词汇。",
-        "imagery": "J像钩子，K像张开的嘴，L像直尺。"
+        "title": "J 开头核心词",
+        "description": "高中阶段 J 开头的高频混合词汇。",
+        "imagery": "J像钩子或跳跃的人。"
       },
       "words": [
         {
           "word": "journal",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M8 8h8M8 12h8M8 16h4' stroke='currentColor'/>",
-          "breakdown": ["journ", "(天/日)", "al"],
+          "breakdown": [
+            "journ",
+            "(天/日)",
+            "al"
+          ],
           "imagery": "每天记录的东西 -> 日记/期刊。",
           "translation": "日志；期刊",
-          "sentences": [{"en": "Keep a travel journal.", "cn": "写旅行日记。"}]
+          "sentences": [
+            {
+              "en": "Keep a travel journal.",
+              "cn": "写旅行日记。"
+            }
+          ]
         },
         {
           "word": "junior",
           "rootVisual": "<circle cx='12' cy='16' r='4' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='6' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
-          "breakdown": ["jun", "(年轻)", "ior"],
+          "breakdown": [
+            "jun",
+            "(年轻)",
+            "ior"
+          ],
           "imagery": "比别人年轻的 -> 年少的/下级的。",
           "translation": "年少的；职位较低的",
-          "sentences": [{"en": "He is junior to me.", "cn": "他比我年轻。"}]
+          "sentences": [
+            {
+              "en": "He is junior to me.",
+              "cn": "他比我年轻。"
+            }
+          ]
         },
         {
           "word": "jury",
           "rootVisual": "<rect x='2' y='8' width='20' height='8' stroke='currentColor' fill='none'/><circle cx='5' cy='12' r='1' fill='currentColor'/><circle cx='9' cy='12' r='1' fill='currentColor'/><circle cx='13' cy='12' r='1' fill='currentColor'/><circle cx='17' cy='12' r='1' fill='currentColor'/>",
-          "breakdown": ["jur", "(发誓/法律)", "y"],
+          "breakdown": [
+            "jur",
+            "(发誓/法律)",
+            "y"
+          ],
           "imagery": "一群发誓公正判决的人 -> 陪审团。",
           "translation": "陪审团",
-          "sentences": [{"en": "The jury found him guilty.", "cn": "陪审团裁定他有罪。"}]
-        },
+          "sentences": [
+            {
+              "en": "The jury found him guilty.",
+              "cn": "陪审团裁定他有罪。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_k",
+      "displayName": "Vocabulary K",
+      "themeColor": "#fb923c",
+      "prefixIntro": {
+        "title": "K 开头核心词",
+        "description": "高中阶段 K 开头的高频混合词汇。（K 开头词较少）",
+        "imagery": "K像张开的嘴或一个钥匙孔。"
+      },
+      "words": []
+    },
+    {
+      "meaningId": "vocab_l",
+      "displayName": "Vocabulary L",
+      "themeColor": "#ef4444",
+      "prefixIntro": {
+        "title": "L 开头核心词",
+        "description": "高中阶段 L 开头的高频混合词汇。L 常表“法律 (Leg)/自由 (Liber)”或“灯 (Light)”。",
+        "imagery": "L像直尺或支撑物。"
+      },
+      "words": [
         {
           "word": "leaflet",
           "rootVisual": "<path d='M12 4l-4 8h8z' stroke='currentColor' fill='none'/><path d='M12 12v4' stroke='currentColor'/>",
-          "breakdown": ["leaf", "(叶/页)", "let", "(小)"],
+          "breakdown": [
+            "leaf",
+            "(叶/页)",
+            "let",
+            "(小)"
+          ],
           "imagery": "像小树叶一样的小纸片 -> 传单。",
           "translation": "传单",
-          "sentences": [{"en": "Hand out leaflets.", "cn": "分发传单。"}]
+          "sentences": [
+            {
+              "en": "Hand out leaflets.",
+              "cn": "分发传单。"
+            }
+          ]
         },
         {
           "word": "league",
           "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor'/><circle cx='16' cy='12' r='3' stroke='currentColor'/><path d='M11 12h2' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["lig", "(绑)", "ue"],
+          "breakdown": [
+            "lig",
+            "(绑)",
+            "ue"
+          ],
           "imagery": "绑在一起的团体 -> 联盟。",
           "translation": "联盟；社团",
-          "sentences": [{"en": "The League of Nations.", "cn": "国际联盟。"}]
+          "sentences": [
+            {
+              "en": "The League of Nations.",
+              "cn": "国际联盟。"
+            }
+          ]
         },
         {
           "word": "loyal",
           "rootVisual": "<path d='M12 4l-2 6h4z' fill='currentColor'/><circle cx='12' cy='14' r='4' stroke='currentColor' fill='none'/>",
-          "breakdown": ["loy", "(法律/约束)", "al"],
+          "breakdown": [
+            "loy",
+            "(法律/约束)",
+            "al"
+          ],
           "imagery": "遵守契约精神的 -> 忠诚的。",
           "translation": "忠诚的",
-          "sentences": [{"en": "A loyal friend.", "cn": "忠实的朋友。"}]
+          "sentences": [
+            {
+              "en": "A loyal friend.",
+              "cn": "忠实的朋友。"
+            }
+          ]
         }
       ]
     },
@@ -120,57 +251,112 @@
       "themeColor": "#d946ef",
       "prefixIntro": {
         "title": "M 开头核心词",
-        "description": "高中阶段 M 开头的高频混合词汇。M 字母常有“山 (Mountain)、多 (Many)”的含义。",
+        "description": "高中阶段 M 开头的高频混合词汇。M 字母常有“手 (Man)/山 (Mountain)、多 (Many)”的含义。",
         "imagery": "字母 M 像连绵的山峰。"
       },
       "words": [
         {
           "word": "manual",
           "rootVisual": "<path d='M8 12h8' stroke='currentColor'/><path d='M6 8l2 8 8 0 2-8' stroke='currentColor' fill='none'/>",
-          "breakdown": ["man", "(手)", "ual"],
+          "breakdown": [
+            "man",
+            "(手)",
+            "ual"
+          ],
           "imagery": "用手操作的 -> 手工的/手册。",
           "translation": "手工的；手册",
-          "sentences": [{"en": "Read the instruction manual.", "cn": "阅读操作手册。"}]
+          "sentences": [
+            {
+              "en": "Read the instruction manual.",
+              "cn": "阅读操作手册。"
+            }
+          ]
         },
         {
           "word": "mechanic",
           "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><path d='M12 6v12M6 12h12' stroke='currentColor'/>",
-          "breakdown": ["mach", "(机器)", "ic"],
+          "breakdown": [
+            "mach",
+            "(机器)",
+            "ic"
+          ],
           "imagery": "修机器的人 -> 技工。",
           "translation": "技工；机械师",
-          "sentences": [{"en": "A car mechanic.", "cn": "汽车修理工。"}]
+          "sentences": [
+            {
+              "en": "A car mechanic.",
+              "cn": "汽车修理工。"
+            }
+          ]
         },
         {
           "word": "memorial",
           "rootVisual": "<path d='M8 20v-16h8v16' stroke='currentColor' fill='none'/><path d='M8 20h8' stroke='currentColor'/>",
-          "breakdown": ["memor", "(记忆)", "ial"],
+          "breakdown": [
+            "memor",
+            "(记忆)",
+            "ial"
+          ],
           "imagery": "用来记忆的建筑 -> 纪念碑。",
           "translation": "纪念碑；纪念的",
-          "sentences": [{"en": "A war memorial.", "cn": "战争纪念碑。"}]
+          "sentences": [
+            {
+              "en": "A war memorial.",
+              "cn": "战争纪念碑。"
+            }
+          ]
         },
         {
           "word": "mineral",
           "rootVisual": "<path d='M4 18l6-10 6 10h-12z' stroke='currentColor' fill='none'/><circle cx='14' cy='8' r='2' fill='currentColor'/>",
-          "breakdown": ["mine", "(矿)", "ral"],
+          "breakdown": [
+            "mine",
+            "(矿)",
+            "ral"
+          ],
           "imagery": "矿里挖出来的 -> 矿物质。",
           "translation": "矿物质",
-          "sentences": [{"en": "Rich in vitamins and minerals.", "cn": "富含维生素和矿物质。"}]
+          "sentences": [
+            {
+              "en": "Rich in vitamins and minerals.",
+              "cn": "富含维生素和矿物质。"
+            }
+          ]
         },
         {
           "word": "monitor",
           "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M12 18v4h-4h8' stroke='currentColor'/>",
-          "breakdown": ["mon", "(警告/看)", "itor"],
+          "breakdown": [
+            "mon",
+            "(警告/看)",
+            "itor"
+          ],
           "imagery": "看着你的人/设备 -> 班长/监视器。",
           "translation": "班长；监视器；监控",
-          "sentences": [{"en": "The heart monitor.", "cn": "心脏监视器。"}]
+          "sentences": [
+            {
+              "en": "The heart monitor.",
+              "cn": "心脏监视器。"
+            }
+          ]
         },
         {
           "word": "motivate",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12l4-4' stroke='currentColor' marker-end='url(#arrow)'/>",
-          "breakdown": ["mot", "(动)", "iv", "ate"],
+          "breakdown": [
+            "mot",
+            "(动)",
+            "iv",
+            "ate"
+          ],
           "imagery": "给动力让他动起来 -> 激励。",
           "translation": "激励；激发",
-          "sentences": [{"en": "He motivated the team.", "cn": "他激励了团队。"}]
+          "sentences": [
+            {
+              "en": "He motivated the team.",
+              "cn": "他激励了团队。"
+            }
+          ]
         }
       ]
     }

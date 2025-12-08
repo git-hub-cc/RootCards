@@ -320,18 +320,18 @@
       ]
     },
     {
-      "meaningId": "vocab_y_z",
-      "displayName": "Vocabulary Y-Z",
+      "meaningId": "vocab_y",
+      "displayName": "Vocabulary Y",
       "themeColor": "#f43f5e",
       "prefixIntro": {
-        "title": "Y-Z 开头核心词",
-        "description": "CET-6 Y-Z 开头的高频混合词汇。",
-        "imagery": "Y 像分叉路，Z 像闪电。"
+        "title": "Y 开头核心词",
+        "description": "CET-6 Y 开头的高频混合词汇。",
+        "imagery": "Y 像分叉路。"
       },
       "words": [
         {
           "word": "yield",
-          "rootVisual": "<path d='M12 20l-2-2l-4 0a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2l-4 0z' stroke='currentColor' fill='none'/><path d='M12 6v6' stroke='currentColor'/><path d='M12 6l-3 3' stroke='currentColor'/><path d='M12 6l3 3' stroke='currentColor'/>",
+          "rootVisual": "<path d='M12 20l-2-2l-4 0a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2l-4 0z' stroke='currentColor' fill='none'/><path d='M12 6v6' stroke='currentColor'/><path d='M12 6l-3 3' stroke='currentColor'/><path d='M12 6l3 3' stroke='currentColor'/>",
           "breakdown": [
             "yield (给/产)"
           ],
@@ -347,7 +347,19 @@
               "cn": "吉米开始屈服于她的劝说。"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "meaningId": "vocab_z",
+      "displayName": "Vocabulary Z",
+      "themeColor": "#9333ea",
+      "prefixIntro": {
+        "title": "Z 开头核心词",
+        "description": "CET-6 Z 开头的高频混合词汇。",
+        "imagery": "Z 像闪电。"
+      },
+      "words": [
         {
           "word": "zeal",
           "rootVisual": "<path d='M12 18c-4-4-4-10 0-14 4 4 4 10 0 14z' fill='currentColor' color='#f59e0b'/><path d='M12 18c-2-2-2-6 0-8 2 2 2 6 0 8z' fill='white' opacity='0.5'/>",

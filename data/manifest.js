@@ -186,12 +186,12 @@ const DATA_FILES = [
     'data/middle/topic_positive_traits.json',
     'data/middle/topic_time_measurement.json',
     'data/middle/topic_technology_components.json',
+    'data/middle/topic_daily_life.json',
+    'data/middle/topic_nature.json',
 
     // --- High School (高中) --- (词源进阶与混合词汇)
     'data/high/etymology_basics.json',
     'data/high/phonetic_rules.json',
-    'data/high/topic_daily_life.json',
-    'data/high/topic_nature.json',
     'data/high/vocab_a_d.json',
     'data/high/vocab_e_h.json',
     'data/high/vocab_i_m.json',
