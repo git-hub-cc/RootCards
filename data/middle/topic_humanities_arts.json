@@ -61,17 +61,21 @@
         },
         {
           "word": "novel",
-          "rootVisual": "<path d='M4 4h14v16H4z' stroke='currentColor' fill='none'/><path d='M18 4v16h2V4z' stroke='currentColor'/><rect x='8' y='8' width='6' height='4' fill='currentColor' opacity='0.5'/>",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><text x='12' y='14' font-size='10' text-anchor='middle' fill='currentColor'>New</text>",
           "breakdown": [
             "nov (新)",
-            "-el"
+            "-el (小)"
           ],
-          "imagery": "一本厚厚的小说书。",
-          "translation": "(长篇)小说",
+          "imagery": "新奇的故事；长篇小说。",
+          "translation": "小说；新奇的",
           "sentences": [
             {
-              "en": "The novel is worth reading.",
-              "cn": "这本小说值得一读。"
+              "en": "She wrote a historical novel.",
+              "cn": "她写了一本历史小说。"
+            },
+            {
+              "en": "That's a novel idea.",
+              "cn": "那是个新奇的想法。"
             }
           ]
         },
@@ -103,21 +107,6 @@
             {
               "en": "It's American history.",
               "cn": "这是美国历史。"
-            }
-          ]
-        },
-        {
-          "word": "lantern",
-          "rootVisual": "<rect x='8' y='6' width='8' height='10' rx='2' stroke='currentColor' fill='red' opacity='0.5'/><path d='M12 2v4 M12 16v4' stroke='currentColor'/><path d='M8 18l-2 4 M16 18l2 4' stroke='currentColor'/>",
-          "breakdown": [
-            "lantern"
-          ],
-          "imagery": "一个红色的中国灯笼。",
-          "translation": "灯笼",
-          "sentences": [
-            {
-              "en": "Light the lantern.",
-              "cn": "点亮灯笼。"
             }
           ]
         },
@@ -196,22 +185,6 @@
             {
               "en": "Every story has an ending.",
               "cn": "每个故事都有一个结局。"
-            }
-          ]
-        },
-        {
-          "word": "survey",
-          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M8 8h8 M8 12h8 M8 16h4' stroke='currentColor'/><circle cx='6' cy='8' r='1' fill='currentColor'/>",
-          "breakdown": [
-            "sur-",
-            "vey"
-          ],
-          "imagery": "一张表格，上面有很多勾选框。",
-          "translation": "调查 (社会/民意)",
-          "sentences": [
-            {
-              "en": "a survey of water usage",
-              "cn": "一项关于用水量的调查"
             }
           ]
         }

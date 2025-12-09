@@ -91,17 +91,17 @@
         },
         {
           "word": "foolish",
-          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='1' fill='currentColor'/><circle cx='16' cy='10' r='1' fill='currentColor'/><path d='M12 14v4' stroke='currentColor'/><path d='M10 18h4' stroke='currentColor'/>",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 l2 2 l2 -2' stroke='currentColor'/><path d='M12 10 l2 2 l2 -2' stroke='currentColor'/><path d='M10 16 h4' stroke='currentColor'/>",
           "breakdown": [
-            "fool",
-            "-ish"
+            "fool (傻瓜)",
+            "-ish (像...的)"
           ],
-          "imagery": "一个人戴着驴耳朵帽子。",
+          "imagery": "一顶带有铃铛的小丑帽，象征愚蠢的行为。",
           "translation": "愚蠢的",
           "sentences": [
             {
-              "en": "It was a foolish mistake.",
-              "cn": "那是个愚蠢的错误。"
+              "en": "It was foolish of me to trust him.",
+              "cn": "我竟然相信他，真是太愚蠢了。"
             }
           ]
         },
@@ -132,52 +132,6 @@
             {
               "en": "He failed math.",
               "cn": "他数学不及格。"
-            }
-          ]
-        },
-        {
-          "word": "punish",
-          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M4 4l16 16 M20 4l-16 16' stroke='currentColor'/>",
-          "breakdown": [
-            "pun (罚)",
-            "-ish"
-          ],
-          "imagery": "一把戒尺，或者关禁闭的房间。",
-          "translation": "惩罚",
-          "sentences": [
-            {
-              "en": "They were punished by the teacher.",
-              "cn": "他们被老师惩罚了。"
-            }
-          ]
-        },
-        {
-          "word": "warn",
-          "rootVisual": "<path d='M12 2L2 22h20L12 2z' stroke='currentColor' fill='yellow'/><path d='M12 8v8 M12 18v2' stroke='black' stroke-width='2'/>",
-          "breakdown": [
-            "warn"
-          ],
-          "imagery": "一个黄色的三角形警告标志，中间有感叹号。",
-          "translation": "警告",
-          "sentences": [
-            {
-              "en": "I warned you.",
-              "cn": "我警告过你。"
-            }
-          ]
-        },
-        {
-          "word": "steal",
-          "rootVisual": "<path d='M8 12h8' stroke='currentColor'/><path d='M12 8v8' stroke='currentColor' stroke-dasharray='2 2'/><rect x='10' y='10' width='4' height='4' fill='black'/>",
-          "breakdown": [
-            "steal"
-          ],
-          "imagery": "一只手悄悄伸向钱包。",
-          "translation": "偷",
-          "sentences": [
-            {
-              "en": "He stole money.",
-              "cn": "他偷了钱。"
             }
           ]
         },
@@ -223,22 +177,6 @@
             {
               "en": "How many people died in the war?",
               "cn": "有多少人在战争中死亡？"
-            }
-          ]
-        },
-        {
-          "word": "avoid",
-          "rootVisual": "<path d='M4 12h6l2-4 2 8 2-4h4' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' opacity='0.3'/>",
-          "breakdown": [
-            "a-",
-            "void"
-          ],
-          "imagery": "一个行人绕开地上的水坑。",
-          "translation": "避免",
-          "sentences": [
-            {
-              "en": "How can you avoid this?",
-              "cn": "你如何能避免这件事？"
             }
           ]
         }

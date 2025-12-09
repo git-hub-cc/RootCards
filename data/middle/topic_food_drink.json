@@ -214,17 +214,17 @@
         },
         {
           "word": "produce",
-          "rootVisual": "<path d='M6 14a4 4 0 1 1 0-8 4 4 0 0 1 0 8z' stroke='currentColor' fill='none'/><path d='M18 14a4 4 0 1 0 0-8 4 4 0 0 0 0 8z' stroke='currentColor' fill='none'/><path d='M12 20h-4v-4 M12 20h4v-4' stroke='currentColor'/>",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='2'/><path d='M16 8 l4 4 l-4 4' stroke='currentColor'/>",
           "breakdown": [
-            "pro-",
-            "duce"
+            "pro- (向前)",
+            "duc (引导)"
           ],
-          "imagery": "一篮子新鲜的水果和蔬菜。",
-          "translation": "农产品 (名词)",
+          "imagery": "向前引导（生产流程），制造出产品。",
+          "translation": "生产；农产品",
           "sentences": [
             {
-              "en": "They sell their produce at the market.",
-              "cn": "他们在市场上出售他们的农产品。"
+              "en": "This factory produces electronic goods.",
+              "cn": "这家工厂生产电子产品。"
             }
           ]
         }

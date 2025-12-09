@@ -30,51 +30,34 @@
         },
         {
           "word": "attention",
-          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='red'/><path d='M12 4v4 M12 20v-4 M4 12h4 M20 12h-4' stroke='currentColor'/>",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": [
-            "at-",
-            "tend (伸)",
-            "-ion"
+            "at- (去)",
+            "tent (伸展)",
+            "-ion (名词)"
           ],
-          "imagery": "一个放大镜聚焦在某一点上，或者一个感叹号。",
-          "translation": "注意力",
+          "imagery": "把精神伸展向某处，即注意。",
+          "translation": "注意",
           "sentences": [
             {
-              "en": "She tried to pay attention to what he was saying.",
-              "cn": "她努力去注意听他说的话。"
-            }
-          ]
-        },
-        {
-          "word": "knowledge",
-          "rootVisual": "<path d='M4 6h16v12H4z' stroke='currentColor' fill='none'/><path d='M8 6v12' stroke='currentColor'/><circle cx='14' cy='12' r='3' stroke='currentColor' fill='none'/><path d='M14 10v2h2' stroke='currentColor'/>",
-          "breakdown": [
-            "know",
-            "-ledge"
-          ],
-          "imagery": "一本打开的书，上面长出一棵树。",
-          "translation": "知识",
-          "sentences": [
-            {
-              "en": "Knowledge is power.",
-              "cn": "知识就是力量。"
+              "en": "pay one's attention to...",
+              "cn": "把某人的注意力放在..."
             }
           ]
         },
         {
           "word": "relationship",
-          "rootVisual": "<circle cx='6' cy='12' r='3' stroke='currentColor' fill='none'/><circle cx='18' cy='12' r='3' stroke='currentColor' fill='none'/><path d='M9 12h6' stroke='currentColor' stroke-width='2'/><path d='M12 9l-3 3 3 3 M12 9l3 3-3 3' stroke='currentColor' fill='none'/>",
+          "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M8 12 h8' stroke='currentColor' stroke-width='2'/><rect x='10' y='10' width='4' height='4' fill='currentColor' opacity='0.5' transform='rotate(45 12 12)'/>",
           "breakdown": [
-            "relat (联系)",
-            "-ion",
-            "-ship"
+            "relation (关系)",
+            "-ship (状态)"
           ],
-          "imagery": "两个圆圈中间有一条连线，或者握手的图标。",
-          "translation": "关系",
+          "imagery": "两点之间建立的链条，彼此关联，无法分割。",
+          "translation": "关系(爱情，亲情)",
           "sentences": [
             {
-              "en": "teacher-student relations",
-              "cn": "师生关系"
+              "en": "Are you in a relationship?",
+              "cn": "你们在谈恋爱吗？"
             }
           ]
         },
@@ -112,16 +95,17 @@
         },
         {
           "word": "doubt",
-          "rootVisual": "<text x='10' y='18' font-size='20' fill='currentColor'>?</text>",
+          "rootVisual": "<path d='M4 18 l8 -14 l8 14' stroke='currentColor' fill='none'/><path d='M12 18 v-6' stroke='currentColor'/>",
           "breakdown": [
-            "doubt"
+            "dou (二)",
+            "bt (concept)"
           ],
-          "imagery": "一个巨大的问号，或者一个人挠头的剪影。",
+          "imagery": "有二心，在两者之间摇摆不定。",
           "translation": "怀疑",
           "sentences": [
             {
-              "en": "There is no reason to doubt his honesty.",
-              "cn": "没有理由怀疑他的诚实。"
+              "en": "There is no doubt.",
+              "cn": "毫无疑问。"
             }
           ]
         },
@@ -231,21 +215,6 @@
             {
               "en": "Please make an effort to do your homework.",
               "cn": "请努力做你的家庭作业。"
-            }
-          ]
-        },
-        {
-          "word": "chance",
-          "rootVisual": "<rect x='6' y='6' width='12' height='12' rx='2' stroke='currentColor' fill='none'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='15' r='1' fill='currentColor'/>",
-          "breakdown": [
-            "chance"
-          ],
-          "imagery": "一粒正在滚动的骰子，或者是彩票。",
-          "translation": "机会",
-          "sentences": [
-            {
-              "en": "This is your last chance.",
-              "cn": "这是你最后的机会。"
             }
           ]
         },

@@ -16,101 +16,162 @@
         {
           "word": "blind",
           "rootVisual": "<path d='M12 12 m-8 0 a 8 6 0 1 0 16 0 a 8 6 0 1 0 -16 0' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/><line x1='4' y1='4' x2='20' y2='20' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["blind", "(瞎的)"],
+          "breakdown": [
+            "blind",
+            "(瞎的)"
+          ],
           "imagery": "一只睁开的眼睛被一条粗线划掉，表示失去了视觉。",
           "translation": "瞎的；盲的",
           "sentences": [
-            { "en": "The accident left him blind.", "cn": "那次事故让他失明了。" }
+            {
+              "en": "The accident left him blind.",
+              "cn": "那次事故让他失明了。"
+            }
           ]
         },
         {
           "word": "dead",
           "rootVisual": "<path d='M12 4 v16 M4 10 h16' stroke='currentColor' stroke-width='2'/><path d='M8 20 h8' stroke='currentColor'/>",
-          "breakdown": ["die (动)", "dead (形)", "death (名)"],
+          "breakdown": [
+            "die (动)",
+            "dead (形)",
+            "death (名)"
+          ],
           "imagery": "一个简单的十字架，静静地矗立在地面上。",
           "translation": "死的；去世的",
           "sentences": [
-            { "en": "The rat was dead.", "cn": "那只老鼠死了。" }
+            {
+              "en": "The rat was dead.",
+              "cn": "那只老鼠死了。"
+            }
           ]
         },
         {
           "word": "accident",
-          "rootVisual": "<path d='M6 8 l12 8 M6 16 l12 -8' stroke='currentColor' stroke-width='3'/><circle cx='12' cy='12' r='9' stroke='currentColor' fill='none' stroke-dasharray='4 4'/>",
-          "breakdown": ["ac- (发生)", "cid (落下)", "-ent (名)"],
-          "imagery": "两辆车碰撞的瞬间，发出巨大的声响，碎片四溅。",
-          "translation": "事故；意外",
+          "rootVisual": "<path d='M4 4 l16 16' stroke='currentColor' stroke-width='2'/><path d='M20 4 l-16 16' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
+          "breakdown": [
+            "ac- (去/偶然)",
+            "cid (落/发生)"
+          ],
+          "imagery": "偶然掉下来的事情，意想不到的事件。",
+          "translation": "事故",
           "sentences": [
-            { "en": "a car accident", "cn": "一场车祸" }
+            {
+              "en": "He was injured in a car accident.",
+              "cn": "他在一场车祸中受伤了。"
+            }
           ]
         },
         {
           "word": "punish",
           "rootVisual": "<path d='M4 18 h16 M12 18 v-8 M8 6 l4 4 l4 -4' stroke='currentColor' stroke-width='2'/><rect x='8' y='2' width='8' height='4' fill='currentColor'/>",
-          "breakdown": ["punish", "(惩罚)"],
+          "breakdown": [
+            "punish",
+            "(惩罚)"
+          ],
           "imagery": "法官手中的木槌重重落下，或者一把戒尺。",
           "translation": "惩罚",
           "sentences": [
-            { "en": "They were punished by the teacher.", "cn": "他们被老师惩罚了。" }
+            {
+              "en": "They were punished by the teacher.",
+              "cn": "他们被老师惩罚了。"
+            }
           ]
         },
         {
           "word": "warn",
           "rootVisual": "<path d='M12 6 v8' stroke='currentColor' stroke-width='3' stroke-linecap='round'/><circle cx='12' cy='18' r='1.5' fill='currentColor'/>",
-          "breakdown": ["warn", "(警告)"],
+          "breakdown": [
+            "warn",
+            "(警告)"
+          ],
           "imagery": "一个巨大的感叹号，提醒人们前方有危险。",
           "translation": "警告",
           "sentences": [
-            { "en": "I warned you not to walk home alone.", "cn": "我警告过你不要一个人在晚上走回家。" }
+            {
+              "en": "I warned you not to walk home alone.",
+              "cn": "我警告过你不要一个人在晚上走回家。"
+            }
           ]
         },
         {
           "word": "fever",
           "rootVisual": "<rect x='10' y='4' width='4' height='12' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='18' r='3' fill='currentColor'/><path d='M18 6 l2 -2 m0 4 l2 -2' stroke='currentColor'/>",
-          "breakdown": ["fever", "(发烧)"],
+          "breakdown": [
+            "fever",
+            "(发烧)"
+          ],
           "imagery": "一支温度计，红色的水银柱升得很高，旁边有代表热气的波浪线。",
           "translation": "发烧",
           "sentences": [
-            { "en": "She is running a fever.", "cn": "她发烧了。" }
+            {
+              "en": "She is running a fever.",
+              "cn": "她发烧了。"
+            }
           ]
         },
         {
           "word": "hurt",
           "rootVisual": "<path d='M12 7 l-2 6 l-5 -1 l4 4 l-1 5 l4 -3 l4 3 l-1 -5 l4 -4 l-5 1 z' stroke='currentColor' fill='none'/><path d='M8 6 l-2 -2 M16 6 l2 -2' stroke='currentColor'/>",
-          "breakdown": ["hurt", "(受伤/疼痛)"],
+          "breakdown": [
+            "hurt",
+            "(受伤/疼痛)"
+          ],
           "imagery": "一个有裂痕的形状，周围有像闪电一样的线条表示疼痛的放射感。",
           "translation": "弄痛；伤害",
           "sentences": [
-            { "en": "I fell down and hurt my leg.", "cn": "我摔倒了，腿受伤了。" }
+            {
+              "en": "I fell down and hurt my leg.",
+              "cn": "我摔倒了，腿受伤了。"
+            }
           ]
         },
         {
           "word": "mistake",
           "rootVisual": "<path d='M6 6 l12 12 M18 6 l-12 12' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
-          "breakdown": ["mis- (错误)", "take (拿)"],
+          "breakdown": [
+            "mis- (错误)",
+            "take (拿)"
+          ],
           "imagery": "作业本上一个红色的叉号，表示这道题做错了。",
           "translation": "错误",
           "sentences": [
-            { "en": "He made a mistake.", "cn": "他犯了一个错误。" }
+            {
+              "en": "He made a mistake.",
+              "cn": "他犯了一个错误。"
+            }
           ]
         },
         {
           "word": "argue",
           "rootVisual": "<path d='M6 12 h4 l2 -3 l2 3 h4' stroke='currentColor' fill='none'/><path d='M8 8 l-2 -2 M16 8 l2 -2' stroke='currentColor'/>",
-          "breakdown": ["argue", "(争吵)"],
+          "breakdown": [
+            "argue",
+            "(争吵)"
+          ],
           "imagery": "两个对话气泡激烈地撞击在一起，中间有代表愤怒的锯齿线。",
           "translation": "争吵",
           "sentences": [
-            { "en": "We began to argue.", "cn": "我们开始争吵。" }
+            {
+              "en": "We began to argue.",
+              "cn": "我们开始争吵。"
+            }
           ]
         },
         {
           "word": "steal",
           "rootVisual": "<path d='M16 12 h-6 a 3 3 0 0 1 -3 -3 v-2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M16 8 l2 2 l2 -2' stroke='currentColor' fill='none'/>",
-          "breakdown": ["steal", "(偷窃)"],
+          "breakdown": [
+            "steal",
+            "(偷窃)"
+          ],
           "imagery": "一只手悄悄伸进口袋或拿走不属于自己的东西。",
           "translation": "偷",
           "sentences": [
-            { "en": "He stole money from his parents.", "cn": "他从父母那里偷了钱。" }
+            {
+              "en": "He stole money from his parents.",
+              "cn": "他从父母那里偷了钱。"
+            }
           ]
         }
       ]

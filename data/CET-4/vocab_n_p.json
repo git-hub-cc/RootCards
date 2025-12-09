@@ -15,7 +15,10 @@
         {
           "word": "naive",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><circle cx='8' cy='10' r='1' fill='currentColor' /><circle cx='16' cy='10' r='1' fill='currentColor' /><path d='M10 16 H 14' stroke='currentColor' />",
-          "breakdown": ["na (生)", "-ive"],
+          "breakdown": [
+            "na (生)",
+            "-ive"
+          ],
           "imagery": "刚出生的，天真的。（Too young, too naive）",
           "translation": "幼稚的；天真的",
           "sentences": [
@@ -40,7 +43,11 @@
         {
           "word": "objective",
           "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none' />",
-          "breakdown": ["ob- (对)", "ject (投)", "-ive"],
+          "breakdown": [
+            "ob- (对)",
+            "ject (投)",
+            "-ive"
+          ],
           "imagery": "投在对面的物体，客观存在的。",
           "translation": "客观的；目标",
           "sentences": [
@@ -53,7 +60,10 @@
         {
           "word": "offset",
           "rootVisual": "<path d='M4 12 H 12' stroke='currentColor' /><path d='M12 12 H 20' stroke='currentColor' stroke-dasharray='2 2' />",
-          "breakdown": ["off", "set"],
+          "breakdown": [
+            "off",
+            "set"
+          ],
           "imagery": "设置一些东西来抵消掉。",
           "translation": "抵消；补偿",
           "sentences": [
@@ -66,7 +76,9 @@
         {
           "word": "oil",
           "rootVisual": "<path d='M12 2 C 12 2 6 10 6 14 A 6 6 0 0 0 18 14 C 18 10 12 2 12 2' fill='currentColor' />",
-          "breakdown": ["oil"],
+          "breakdown": [
+            "oil"
+          ],
           "imagery": "一滴油。",
           "translation": "油",
           "sentences": [
@@ -79,7 +91,9 @@
         {
           "word": "olive",
           "rootVisual": "<ellipse cx='12' cy='12' rx='6' ry='8' fill='currentColor' color='#10b981' />",
-          "breakdown": ["olive"],
+          "breakdown": [
+            "olive"
+          ],
           "imagery": "橄榄。",
           "translation": "橄榄",
           "sentences": [
@@ -92,7 +106,10 @@
         {
           "word": "orient",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M16 12 L12 8 M16 12 L12 16 M2 12 H 22' stroke='currentColor' />",
-          "breakdown": ["ori (升起)", "-ent"],
+          "breakdown": [
+            "ori (升起)",
+            "-ent"
+          ],
           "imagery": "太阳升起的地方，东方。",
           "translation": "东方；定位",
           "sentences": [
@@ -105,7 +122,10 @@
         {
           "word": "outset",
           "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' marker-end='url(#arrow)' /><circle cx='4' cy='12' r='2' fill='currentColor' />",
-          "breakdown": ["out", "set"],
+          "breakdown": [
+            "out",
+            "set"
+          ],
           "imagery": "出发点，开始。",
           "translation": "开始；开端",
           "sentences": [
@@ -118,7 +138,10 @@
         {
           "word": "overhear",
           "rootVisual": "<path d='M4 4 H 20' stroke='currentColor' /><path d='M12 4 V 12' stroke='currentColor' stroke-dasharray='2 2' /><text x='12' y='16' text-anchor='middle'>👂</text>",
-          "breakdown": ["over", "hear"],
+          "breakdown": [
+            "over",
+            "hear"
+          ],
           "imagery": "在上面听到下面的话，偷听。",
           "translation": "无意中听到；偷听",
           "sentences": [
@@ -131,7 +154,10 @@
         {
           "word": "overwhelm",
           "rootVisual": "<path d='M4 20 H 20 V 4 H 4 Z' stroke='currentColor' fill='none' /><path d='M4 8 H 20 V 20 H 4 Z' fill='currentColor' opacity='0.5' />",
-          "breakdown": ["over", "whelm (淹)"],
+          "breakdown": [
+            "over",
+            "whelm (淹)"
+          ],
           "imagery": "大水漫过，淹没，压倒。",
           "translation": "淹没；压倒",
           "sentences": [
@@ -144,7 +170,9 @@
         {
           "word": "owl",
           "rootVisual": "<circle cx='8' cy='10' r='3' stroke='currentColor' fill='none' /><circle cx='16' cy='10' r='3' stroke='currentColor' fill='none' />",
-          "breakdown": ["owl"],
+          "breakdown": [
+            "owl"
+          ],
           "imagery": "大眼睛的鸟，猫头鹰。",
           "translation": "猫头鹰",
           "sentences": [
@@ -157,7 +185,10 @@
         {
           "word": "ozone",
           "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='10'>O₃</text>",
-          "breakdown": ["o", "zone"],
+          "breakdown": [
+            "o",
+            "zone"
+          ],
           "imagery": "O3，臭氧。",
           "translation": "臭氧",
           "sentences": [
@@ -182,7 +213,9 @@
         {
           "word": "pain",
           "rootVisual": "<path d='M8 8 L16 16 M16 8 L8 16' stroke='currentColor' color='#ef4444' />",
-          "breakdown": ["pain"],
+          "breakdown": [
+            "pain"
+          ],
           "imagery": "疼痛。",
           "translation": "疼痛",
           "sentences": [
@@ -195,7 +228,9 @@
         {
           "word": "palm",
           "rootVisual": "<path d='M8 18 V 10 Q 8 4 14 4 Q 20 4 20 10 V 14' stroke='currentColor' fill='none' />",
-          "breakdown": ["palm"],
+          "breakdown": [
+            "palm"
+          ],
           "imagery": "像字母 P 形状的手掌。",
           "translation": "手掌；棕榈树",
           "sentences": [
@@ -208,7 +243,10 @@
         {
           "word": "pamphlet",
           "rootVisual": "<rect x='8' y='6' width='8' height='12' stroke='currentColor' fill='none' />",
-          "breakdown": ["pam (palm)", "-let (小)"],
+          "breakdown": [
+            "pam (palm)",
+            "-let (小)"
+          ],
           "imagery": "手掌大小的小册子。",
           "translation": "小册子",
           "sentences": [
@@ -221,7 +259,9 @@
         {
           "word": "pave",
           "rootVisual": "<rect x='2' y='14' width='4' height='4' fill='currentColor' /><rect x='6' y='14' width='4' height='4' fill='currentColor' /><rect x='10' y='14' width='4' height='4' fill='currentColor' /><rect x='14' y='14' width='4' height='4' fill='currentColor' /><rect x='18' y='14' width='4' height='4' fill='currentColor' />",
-          "breakdown": ["pave"],
+          "breakdown": [
+            "pave"
+          ],
           "imagery": "铺路。",
           "translation": "铺设",
           "sentences": [
@@ -234,7 +274,9 @@
         {
           "word": "peak",
           "rootVisual": "<path d='M12 4 L4 20 H 20 Z' stroke='currentColor' fill='none' />",
-          "breakdown": ["peak"],
+          "breakdown": [
+            "peak"
+          ],
           "imagery": "山顶。",
           "translation": "顶峰；山顶",
           "sentences": [
@@ -247,7 +289,9 @@
         {
           "word": "pearl",
           "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='none' />",
-          "breakdown": ["pearl"],
+          "breakdown": [
+            "pearl"
+          ],
           "imagery": "珍珠。",
           "translation": "珍珠",
           "sentences": [
@@ -260,7 +304,9 @@
         {
           "word": "peel",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' /><path d='M12 4 Q 16 8 18 12' stroke='currentColor' stroke-dasharray='2 2' />",
-          "breakdown": ["peel"],
+          "breakdown": [
+            "peel"
+          ],
           "imagery": "剥皮（谐音：皮哦）。",
           "translation": "削皮；皮",
           "sentences": [
@@ -273,7 +319,11 @@
         {
           "word": "peep",
           "rootVisual": "<rect x='4' y='8' width='6' height='8' fill='currentColor' /><rect x='14' y='8' width='6' height='8' fill='currentColor' /><circle cx='12' cy='12' r='2' stroke='currentColor' fill='none' />",
-          "breakdown": ["p (手)", "ee (眼)", "p"],
+          "breakdown": [
+            "p (手)",
+            "ee (眼)",
+            "p"
+          ],
           "imagery": "两手捂眼从指缝看，偷窥。",
           "translation": "偷看；窥视",
           "sentences": [
@@ -286,7 +336,10 @@
         {
           "word": "penalty",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>⚠️</text>",
-          "breakdown": ["penal (惩罚)", "-ty"],
+          "breakdown": [
+            "penal (惩罚)",
+            "-ty"
+          ],
           "imagery": "官方的处罚。",
           "translation": "处罚；罚款",
           "sentences": [
@@ -299,7 +352,10 @@
         {
           "word": "penguin",
           "rootVisual": "<ellipse cx='12' cy='12' rx='6' ry='8' stroke='currentColor' fill='none' />",
-          "breakdown": ["pen (白/头)", "guin"],
+          "breakdown": [
+            "pen (白/头)",
+            "guin"
+          ],
           "imagery": "企鹅。",
           "translation": "企鹅",
           "sentences": [
@@ -312,7 +368,10 @@
         {
           "word": "peninsula",
           "rootVisual": "<path d='M4 4 V 20 H 12 V 12 A 4 4 0 1 1 12 4 Z' stroke='currentColor' fill='none' />",
-          "breakdown": ["pen (半)", "insula (岛)"],
+          "breakdown": [
+            "pen (半)",
+            "insula (岛)"
+          ],
           "imagery": "几乎是岛（半岛）。",
           "translation": "半岛",
           "sentences": [
@@ -325,7 +384,10 @@
         {
           "word": "period",
           "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor' />",
-          "breakdown": ["peri (周)", "od (路)"],
+          "breakdown": [
+            "peri (周)",
+            "od (路)"
+          ],
           "imagery": "走一圈，周期；句号。",
           "translation": "时期；句号",
           "sentences": [
@@ -338,7 +400,9 @@
         {
           "word": "pest",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>🐛</text>",
-          "breakdown": ["pest"],
+          "breakdown": [
+            "pest"
+          ],
           "imagery": "拍死它（谐音），害虫。",
           "translation": "害虫",
           "sentences": [
@@ -351,7 +415,10 @@
         {
           "word": "pharmacy",
           "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='10'>Rx</text>",
-          "breakdown": ["pharm", "-acy"],
+          "breakdown": [
+            "pharm",
+            "-acy"
+          ],
           "imagery": "药房。",
           "translation": "药房",
           "sentences": [
@@ -364,7 +431,9 @@
         {
           "word": "pile",
           "rootVisual": "<rect x='8' y='16' width='8' height='2' stroke='currentColor' /><rect x='8' y='13' width='8' height='2' stroke='currentColor' /><rect x='8' y='10' width='8' height='2' stroke='currentColor' />",
-          "breakdown": ["pile (堆)"],
+          "breakdown": [
+            "pile (堆)"
+          ],
           "imagery": "一堆东西。",
           "translation": "堆；叠",
           "sentences": [
@@ -377,7 +446,9 @@
         {
           "word": "pirate",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>🏴‍☠️</text>",
-          "breakdown": ["pirate"],
+          "breakdown": [
+            "pirate"
+          ],
           "imagery": "海盗。",
           "translation": "海盗；盗版",
           "sentences": [
@@ -390,7 +461,9 @@
         {
           "word": "pistol",
           "rootVisual": "<path d='M6 12 H 14 L 14 16 H 10 L 10 12' stroke='currentColor' fill='none' />",
-          "breakdown": ["pistol"],
+          "breakdown": [
+            "pistol"
+          ],
           "imagery": "手枪。",
           "translation": "手枪",
           "sentences": [
@@ -403,7 +476,10 @@
         {
           "word": "plateau",
           "rootVisual": "<path d='M2 18 L 6 10 H 18 L 22 18' stroke='currentColor' fill='none' />",
-          "breakdown": ["plat (平)", "-eau"],
+          "breakdown": [
+            "plat (平)",
+            "-eau"
+          ],
           "imagery": "高处的平地，高原。",
           "translation": "高原",
           "sentences": [
@@ -416,7 +492,9 @@
         {
           "word": "plaza",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' />",
-          "breakdown": ["plaza"],
+          "breakdown": [
+            "plaza"
+          ],
           "imagery": "购物广场。",
           "translation": "广场",
           "sentences": [
@@ -429,7 +507,9 @@
         {
           "word": "pledge",
           "rootVisual": "<path d='M12 4 V 16 M 8 8 H 16' stroke='currentColor' />",
-          "breakdown": ["pledge"],
+          "breakdown": [
+            "pledge"
+          ],
           "imagery": "发誓。",
           "translation": "发誓；保证",
           "sentences": [
@@ -442,7 +522,10 @@
         {
           "word": "poll",
           "rootVisual": "<rect x='4' y='10' width='4' height='8' fill='currentColor' opacity='0.3' /><rect x='10' y='6' width='4' height='12' fill='currentColor' opacity='0.6' /><rect x='16' y='4' width='4' height='14' fill='currentColor' />",
-          "breakdown": ["p (掌)", "all"],
+          "breakdown": [
+            "p (掌)",
+            "all"
+          ],
           "imagery": "所有人举手投票。",
           "translation": "民意调查；投票",
           "sentences": [
@@ -455,7 +538,10 @@
         {
           "word": "ponder",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>🤔</text>",
-          "breakdown": ["pond (磅/重)", "-er"],
+          "breakdown": [
+            "pond (磅/重)",
+            "-er"
+          ],
           "imagery": "掂量重量，仔细考虑。",
           "translation": "沉思；衡量",
           "sentences": [
@@ -466,22 +552,11 @@
           ]
         },
         {
-          "word": "pound",
-          "rootVisual": "<rect x='6' y='10' width='12' height='8' stroke='currentColor' fill='none' /><text x='12' y='15' text-anchor='middle' font-size='8'>LB</text>",
-          "breakdown": ["pound"],
-          "imagery": "重量单位磅；猛击。",
-          "translation": "磅；猛击",
-          "sentences": [
-            {
-              "en": "It costs one pound.",
-              "cn": "它值一英镑。"
-            }
-          ]
-        },
-        {
           "word": "pray",
           "rootVisual": "<path d='M10 8 L 14 8' stroke='currentColor' /><path d='M12 8 V 16' stroke='currentColor' />",
-          "breakdown": ["pray"],
+          "breakdown": [
+            "pray"
+          ],
           "imagery": "祈祷。",
           "translation": "祈祷",
           "sentences": [
@@ -494,7 +569,10 @@
         {
           "word": "premier",
           "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='12'>1st</text>",
-          "breakdown": ["prem (前)", "-ier"],
+          "breakdown": [
+            "prem (前)",
+            "-ier"
+          ],
           "imagery": "首要的，最好的。",
           "translation": "首要的；总理",
           "sentences": [
@@ -507,7 +585,10 @@
         {
           "word": "premium",
           "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='12'>⭐</text>",
-          "breakdown": ["prem (前)", "-ium"],
+          "breakdown": [
+            "prem (前)",
+            "-ium"
+          ],
           "imagery": "优质的，高级的。",
           "translation": "优质的；保险费",
           "sentences": [
@@ -520,7 +601,10 @@
         {
           "word": "priest",
           "rootVisual": "<path d='M12 4 V 16 M 8 8 H 16' stroke='currentColor' />",
-          "breakdown": ["pri (前)", "-est"],
+          "breakdown": [
+            "pri (前)",
+            "-est"
+          ],
           "imagery": "站在前面祈祷的人，牧师。",
           "translation": "牧师；神父",
           "sentences": [
@@ -533,7 +617,9 @@
         {
           "word": "prime",
           "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='12'>#1</text>",
-          "breakdown": ["prim (一)"],
+          "breakdown": [
+            "prim (一)"
+          ],
           "imagery": "首要的。",
           "translation": "首要的；最好的",
           "sentences": [
@@ -546,7 +632,11 @@
         {
           "word": "principal",
           "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none' /><path d='M8 20 L 12 14 L 16 20' stroke='currentColor' />",
-          "breakdown": ["prin (一)", "cip (拿)", "-al"],
+          "breakdown": [
+            "prin (一)",
+            "cip (拿)",
+            "-al"
+          ],
           "imagery": "拿第一主意的人，校长。",
           "translation": "校长；主要的",
           "sentences": [
@@ -557,22 +647,12 @@
           ]
         },
         {
-          "word": "principle",
-          "rootVisual": "<path d='M6 8 H 18 M 6 12 H 18 M 6 16 H 18' stroke='currentColor' />",
-          "breakdown": ["prin (一)", "cip (拿)", "-le"],
-          "imagery": "第一准则。",
-          "translation": "原则；原理",
-          "sentences": [
-            {
-              "en": "A man of principle.",
-              "cn": "有原则的人。"
-            }
-          ]
-        },
-        {
           "word": "priority",
           "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='12'>🔝</text>",
-          "breakdown": ["pri (前)", "-ority"],
+          "breakdown": [
+            "pri (前)",
+            "-ority"
+          ],
           "imagery": "优先权。",
           "translation": "优先权",
           "sentences": [
@@ -585,7 +665,10 @@
         {
           "word": "property",
           "rootVisual": "<path d='M4 14 L 12 6 L 20 14 V 20 H 4 Z' stroke='currentColor' fill='none' />",
-          "breakdown": ["proper (自己的)", "-ty"],
+          "breakdown": [
+            "proper (自己的)",
+            "-ty"
+          ],
           "imagery": "属于自己的东西，房产。",
           "translation": "财产；房产",
           "sentences": [
@@ -596,22 +679,12 @@
           ]
         },
         {
-          "word": "punish",
-          "rootVisual": "<path d='M4 4 L 20 20 M 20 4 L 4 20' stroke='currentColor' color='#ef4444' />",
-          "breakdown": ["pun (罚/痛)", "-ish"],
-          "imagery": "让人感到疼痛（pain）。",
-          "translation": "惩罚",
-          "sentences": [
-            {
-              "en": "You will be punished for this.",
-              "cn": "你会为此受到惩罚。"
-            }
-          ]
-        },
-        {
           "word": "pursue",
           "rootVisual": "<path d='M4 12 H 16' stroke='currentColor' marker-end='url(#arrow)' />",
-          "breakdown": ["pur (向前)", "sue (随)"],
+          "breakdown": [
+            "pur (向前)",
+            "sue (随)"
+          ],
           "imagery": "向前跟随，追求。",
           "translation": "追求；追赶",
           "sentences": [
@@ -624,7 +697,10 @@
         {
           "word": "pursuit",
           "rootVisual": "<circle cx='16' cy='12' r='2' fill='currentColor' /><path d='M4 12 H 12' stroke='currentColor' marker-end='url(#arrow)' />",
-          "breakdown": ["pursue", "-it"],
+          "breakdown": [
+            "pursue",
+            "-it"
+          ],
           "imagery": "追求的过程。",
           "translation": "追求",
           "sentences": [
@@ -637,7 +713,9 @@
         {
           "word": "pyramid",
           "rootVisual": "<path d='M12 4 L 4 18 H 20 Z' stroke='currentColor' fill='none' />",
-          "breakdown": ["pyramid"],
+          "breakdown": [
+            "pyramid"
+          ],
           "imagery": "金字塔。",
           "translation": "金字塔",
           "sentences": [
@@ -662,26 +740,16 @@
         {
           "word": "quota",
           "rootVisual": "<path d='M12 12 L 12 4' stroke='currentColor' /><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' />",
-          "breakdown": ["quot (多少)", "-a"],
+          "breakdown": [
+            "quot (多少)",
+            "-a"
+          ],
           "imagery": "分配好的数量，配额。",
           "translation": "配额；定额",
           "sentences": [
             {
               "en": "Production quotas.",
               "cn": "生产配额。"
-            }
-          ]
-        },
-        {
-          "word": "quantity",
-          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='10'>123</text>",
-          "breakdown": ["quant (量)", "-ity"],
-          "imagery": "数量。",
-          "translation": "数量",
-          "sentences": [
-            {
-              "en": "A large quantity of food.",
-              "cn": "大量的食物。"
             }
           ]
         }

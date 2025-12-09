@@ -1,5 +1,5 @@
 // =================================================================================
-// 应用协调器 (Application Orchestrator) - v15.0 (PWA & Worker 支持)
+// 应用协调器 (Application Orchestrator) - v17.1 (优化“已掌握”视图交互提示)
 // ---------------------------------------------------------------------------------
 // =================================================================================
 
@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const toolGroup = document.getElementById('tool-group');
     const skeletonLoader = document.getElementById('skeleton-loader');
+    const heatmapContainer = document.getElementById('heatmap-container');
 
-    // 【新增】启动页相关元素
     const splashScreen = document.getElementById('app-splash-screen');
     const splashProgressText = document.getElementById('loading-progress-text');
     const splashProgressBar = document.getElementById('loading-progress-bar');
@@ -37,7 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const clearLearnedBtn = document.getElementById('clear-learned-btn');
     const immersiveModeBtn = document.getElementById('immersive-mode-btn');
 
-    // 模式启动按钮
+    const showAchievementsBtn = document.getElementById('show-achievements-btn');
+    const achievementsModal = document.getElementById('achievements-modal');
+    const achievementsCloseBtn = document.getElementById('achievements-close-btn');
+    const achievementsListContainer = document.getElementById('achievements-list-container');
+
     const typingModeBtn = document.getElementById('typing-mode-btn');
     const listeningModeBtn = document.getElementById('listening-mode-btn');
 
@@ -47,29 +51,24 @@ document.addEventListener('DOMContentLoaded', () => {
     let observer = null;
     let isShuffling = false;
 
-    // --- 模块初始化检查 ---
     if (!UI.init()) {
         console.error("应用启动失败：UI模块初始化未能成功。");
         return;
     }
 
     // ============================================================================
-    // 核心渲染逻辑 (保持不变)
+    // 核心渲染与状态更新逻辑
     // ============================================================================
 
     function renderMoreCards() {
         const fragment = document.createDocumentFragment();
         const endIndex = Math.min(renderIndex + CARDS_PER_PAGE, State.currentDataSet.length);
-
         const handlers = { onMarkLearned: handleMarkAsLearned };
 
         for (let i = renderIndex; i < endIndex; i++) {
             const card = UI.createCard(State.currentDataSet[i], handlers);
             fragment.appendChild(card);
-
-            if (i === endIndex - 2) {
-                card.classList.add('mobile-scroll-trigger');
-            }
+            if (i === endIndex - 2) card.classList.add('mobile-scroll-trigger');
         }
 
         cardGrid.insertBefore(fragment, loadMoreTrigger);
@@ -78,13 +77,18 @@ document.addEventListener('DOMContentLoaded', () => {
         const hasMore = renderIndex < State.currentDataSet.length;
         loadMoreTrigger.classList.toggle('is-visible', hasMore);
 
-        if (window.innerWidth <= 768) {
-            setupMobileIntersectionObserver();
-        }
+        if (window.innerWidth <= 768) setupMobileIntersectionObserver();
+        if (!hasMore) updateEmptyStateMessage();
+    }
 
-        if (!hasMore) {
-            updateEmptyStateMessage();
-        }
+    /**
+     * 【核心修改】所有会改变数据集的操作都应调用此函数
+     */
+    function updateDataAndUI() {
+        State.filterAndPrepareDataSet();
+        // 实时更新单词计数器
+        UI.updateWordCounts(State.currentDataSet.length, State.learnedWordsSet.size);
+        startNewRenderFlow();
     }
 
     function updateEmptyStateMessage() {
@@ -155,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ============================================================================
-    // 事件回调处理 (保持不变)
+    // 事件回调处理
     // ============================================================================
 
     function handleMarkAsLearned(data, cardElement) {
@@ -176,7 +180,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const onConfirm = () => {
             State.toggleLearnedStatus(data);
+
+            // 【核心修改】此处逻辑调整：标记掌握时才记录热力图，取消掌握不记录
+            if (!isCurrentlyLearned) {
+                State.logLearningActivity(new Date(), 1);
+                UI.renderHeatmap(heatmapContainer, State.getLearningActivity());
+            }
+
             cardElement.remove();
+
+            // 【核心修改】标记后更新计数器
+            // 注意：此处 currentDataSet.length 会在 onConfirm 执行时比UI上少一个
+            // 所以直接用 UI 上的卡片数量来计算会更准确，或者在 State.toggleLearnedStatus 之后重新 filter
+            // 但为了简化，我们假设 State.currentDataSet 的变化与 UI 同步
+            const newCurrentCount = State.currentFilter === 'learned' ? State.currentDataSet.length : State.currentDataSet.length - 1;
+            UI.updateWordCounts(newCurrentCount, State.learnedWordsSet.size);
+
             const cardsOnScreen = cardGrid.querySelectorAll('.card:not(.is-pending-removal)').length;
             if (cardsOnScreen < CARDS_PER_PAGE && renderIndex < State.currentDataSet.length) {
                 renderMoreCards();
@@ -192,8 +211,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
+        // --- 【核心修改】 ---
+        // 根据当前操作是“标记”还是“取消标记”，显示不同的提示文本
+        const toastMessage = isCurrentlyLearned
+            ? `单词 "${data.word}" 已取消掌握。`
+            : `单词 "${data.word}" 已标记掌握。`;
+        // --- 【修改结束】 ---
+
         UndoManager.show({
-            message: `单词 "${data.word}" 已标记。`,
+            message: toastMessage,
             onConfirm: onConfirm,
             onUndo: onUndo
         });
@@ -205,20 +231,17 @@ document.addEventListener('DOMContentLoaded', () => {
             State.setCurrentFilter(newName);
             const newBtn = filterContainer.querySelector(`.filter-btn[data-filter="${newName}"]`);
             if (newBtn) UI.updateActiveFilterButton(filterContainer, newBtn);
-            State.filterAndPrepareDataSet();
-            startNewRenderFlow();
+            updateDataAndUI();
         } else if (type === 'update' && State.currentFilter === oldName) {
             State.setCurrentFilter(newName);
             const newBtn = filterContainer.querySelector(`.filter-btn[data-filter="${newName}"]`);
             if (newBtn) UI.updateActiveFilterButton(filterContainer, newBtn);
-            State.filterAndPrepareDataSet();
-            startNewRenderFlow();
+            updateDataAndUI();
         } else if (type === 'delete' && State.currentFilter === oldName) {
             State.setCurrentFilter('all');
             const allBtn = filterContainer.querySelector('.filter-btn[data-filter="all"]');
             if (allBtn) UI.updateActiveFilterButton(filterContainer, allBtn);
-            State.filterAndPrepareDataSet();
-            startNewRenderFlow();
+            updateDataAndUI();
         }
     }
 
@@ -252,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ============================================================================
-    // 全局事件绑定 (保持不变，含防抖)
+    // 全局事件绑定
     // ============================================================================
 
     function debounce(func, wait) {
@@ -274,8 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (allContentTypeBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, allContentTypeBtn);
             State.setCurrentFilter('all');
             updateCategoryFilters();
-            State.filterAndPrepareDataSet();
-            startNewRenderFlow();
+            updateDataAndUI();
         }
     });
 
@@ -286,8 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
             State.setCurrentContentType(btn.dataset.type);
             State.setCurrentFilter('all');
             updateCategoryFilters();
-            State.filterAndPrepareDataSet();
-            startNewRenderFlow();
+            updateDataAndUI();
         }
     });
 
@@ -296,15 +317,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (btn && !btn.classList.contains('active')) {
             UI.updateActiveFilterButton(filterContainer, btn);
             State.setCurrentFilter(btn.dataset.filter);
-            State.filterAndPrepareDataSet();
-            startNewRenderFlow();
+            updateDataAndUI();
         }
     });
 
     searchInput.addEventListener('input', debounce(() => {
         State.setSearchQuery(searchInput.value);
-        State.filterAndPrepareDataSet();
-        startNewRenderFlow();
+        updateDataAndUI();
     }, 300));
 
     shuffleBtn.addEventListener('click', () => {
@@ -313,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const isMobile = window.innerWidth <= 768;
         if (isMobile) {
             State.shuffleCurrentDataSet();
-            startNewRenderFlow();
+            startNewRenderFlow(); // 洗牌不影响总数，只需重渲染
             NotificationManager.show({ type: 'success', message: '🔀 卡片已随机打乱' });
         } else {
             isShuffling = true;
@@ -341,11 +360,22 @@ document.addEventListener('DOMContentLoaded', () => {
         optionsMenu.classList.toggle('is-open');
     });
 
+    showAchievementsBtn.addEventListener('click', () => {
+        UI.renderAchievementsList(achievementsListContainer);
+        achievementsModal.classList.remove('is-hidden');
+        optionsMenu.classList.remove('is-open');
+    });
+
+    const closeAchievements = () => achievementsModal.classList.add('is-hidden');
+    achievementsCloseBtn.addEventListener('click', closeAchievements);
+    achievementsModal.addEventListener('click', (e) => {
+        if (e.target === achievementsModal) closeAchievements();
+    });
+
     clearLearnedBtn.addEventListener('click', () => {
         const onConfirm = () => {
             State.clearLearnedWords();
-            State.filterAndPrepareDataSet();
-            startNewRenderFlow();
+            updateDataAndUI();
             NotificationManager.show({ type: 'success', message: '所有已掌握记录已成功清空。' });
         };
         const onUndo = () => {
@@ -369,17 +399,11 @@ document.addEventListener('DOMContentLoaded', () => {
         UndoManager.init();
         NotificationManager.init();
 
-        // 1. 注册 Service Worker (PWA 支持)
         if ('serviceWorker' in navigator) {
-            // 在页面加载完成后注册，避免阻塞首屏渲染
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('./service-worker.js')
-                    .then(registration => {
-                        console.log('✅ ServiceWorker 注册成功: ', registration.scope);
-                    })
-                    .catch(err => {
-                        console.error('❌ ServiceWorker 注册失败: ', err);
-                    });
+                    .then(registration => console.log('✅ ServiceWorker 注册成功:', registration.scope))
+                    .catch(err => console.error('❌ ServiceWorker 注册失败:', err));
             });
         }
 
@@ -391,17 +415,12 @@ document.addEventListener('DOMContentLoaded', () => {
             optionsMenu
         };
         DataManager.init(dataManagerDeps, () => {
-            State.filterAndPrepareDataSet();
-            startNewRenderFlow();
+            updateDataAndUI();
         });
 
         ListeningMode.init(listeningModeBtn);
         TypingMode.init(typingModeBtn);
-        Wordbook.init(
-            document.getElementById('manage-wordbook-btn'),
-            optionsMenu,
-            handleWordbookChange
-        );
+        Wordbook.init(document.getElementById('manage-wordbook-btn'), optionsMenu, handleWordbookChange);
 
         document.getElementById('theme-toggle-menu-btn').addEventListener('click', () => {
             const isDarkMode = document.body.classList.contains('dark-mode');
@@ -428,8 +447,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (defaultContentTypeBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, defaultContentTypeBtn);
 
             updateCategoryFilters();
-            State.filterAndPrepareDataSet();
-            startNewRenderFlow();
+            updateDataAndUI();
+
+            UI.renderHeatmap(heatmapContainer, State.getLearningActivity());
 
             if (window.innerWidth <= 768) {
                 setupMobileIntersectionObserver();

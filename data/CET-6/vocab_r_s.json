@@ -208,12 +208,16 @@
             "sub- (下)",
             "tle (web/textile)"
           ],
-          "imagery": "放大镜下看一个极小的点，表示细微。",
+          "imagery": "用放大镜看极小的细节，表示细微。",
           "translation": "微妙的；细微的；精巧的",
           "sentences": [
             {
               "en": "There are subtle differences between them.",
               "cn": "它们之间有细微的差别。"
+            },
+            {
+              "en": "a subtle form of racism",
+              "cn": "一种隐性的种族主义"
             }
           ]
         }

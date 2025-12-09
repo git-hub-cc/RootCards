@@ -46,22 +46,6 @@
           ]
         },
         {
-          "word": "capital",
-          "rootVisual": "<path d='M4 14h16v-4c0-3-3-6-8-6s-8 3-8 6v4z' stroke='currentColor' fill='none'/><text x='10' y='12' font-size='10' fill='currentColor'>$</text>",
-          "breakdown": [
-            "capit (头)",
-            "-al"
-          ],
-          "imagery": "一堆金币，或者银行大楼。",
-          "translation": "资金；资本",
-          "sentences": [
-            {
-              "en": "They need more capital to start the business.",
-              "cn": "他们需要更多资金来启动业务。"
-            }
-          ]
-        },
-        {
           "word": "address",
           "rootVisual": "<path d='M12 2l-8 4v14h16v-14z' stroke='currentColor' fill='none'/><text x='6' y='14' font-size='6' fill='currentColor'>101</text>",
           "breakdown": [
@@ -79,16 +63,16 @@
         },
         {
           "word": "course",
-          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M4 4l16 16' stroke='currentColor' opacity='0.3'/><circle cx='8' cy='8' r='1' fill='currentColor'/><circle cx='12' cy='12' r='1' fill='currentColor'/><circle cx='16' cy='16' r='1' fill='currentColor'/>",
+          "rootVisual": "<path d='M4 18 c 4 -8 12 -8 16 0' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><circle cx='4' cy='18' r='2' fill='currentColor'/><circle cx='20' cy='18' r='2' fill='currentColor'/>",
           "breakdown": [
-            "cours (跑)"
+            "cours (跑/过程)"
           ],
-          "imagery": "一本书加上一个笔记本，代表学习过程。",
-          "translation": "课程",
+          "imagery": "跑过的一段路程；课程（从开始到结束的过程）。",
+          "translation": "课程；过程",
           "sentences": [
             {
-              "en": "The vocabulary course is great.",
-              "cn": "这门词汇课程很棒。"
+              "en": "I am taking an English course this semester.",
+              "cn": "我这学期在上英语课。"
             }
           ]
         },
@@ -358,21 +342,6 @@
           ]
         },
         {
-          "word": "rule",
-          "rootVisual": "<rect x='4' y='8' width='16' height='4' stroke='currentColor' fill='none'/><path d='M6 8v4 M8 8v4 M10 8v4 M12 8v4 M14 8v4 M16 8v4 M18 8v4' stroke='currentColor'/>",
-          "breakdown": [
-            "rule"
-          ],
-          "imagery": "一把直尺，或者法官的锤子。",
-          "translation": "规则；统治",
-          "sentences": [
-            {
-              "en": "Queen Victoria ruled England for 64 years.",
-              "cn": "维多利亚女王统治了英国64年。"
-            }
-          ]
-        },
-        {
           "word": "style",
           "rootVisual": "<path d='M12 4c-4 0-6 3-6 6s2 6 6 6 6-3 6-6-2-6-6-6z' stroke='currentColor' fill='none'/><path d='M12 2v20' stroke='currentColor' opacity='0.3'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
           "breakdown": [
@@ -389,17 +358,17 @@
         },
         {
           "word": "project",
-          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M4 4l16 16' stroke='currentColor' opacity='0.3'/><circle cx='8' cy='16' r='2' fill='currentColor'/><path d='M10 14l4-4' stroke='currentColor'/>",
+          "rootVisual": "<rect x='4' y='14' width='4' height='6' fill='currentColor'/><path d='M6 14 l8 -8' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='14' cy='6' r='2' stroke='currentColor' fill='none'/>",
           "breakdown": [
-            "pro-",
-            "ject (扔)"
+            "pro- (前)",
+            "ject (投)"
           ],
-          "imagery": "一张建筑蓝图，上面有尺子和圆规。",
-          "translation": "工程；项目",
+          "imagery": "向前投射（投影）；向前规划（项目）。",
+          "translation": "工程；投射",
           "sentences": [
             {
-              "en": "He designed a new plan for the project.",
-              "cn": "他为这个项目设计了一个新方案。"
+              "en": "We are working on a new research project.",
+              "cn": "我们正在进行一个新的研究项目。"
             }
           ]
         },
@@ -415,21 +384,6 @@
             {
               "en": "I made a list of things to buy.",
               "cn": "我列了一张购物清单。"
-            }
-          ]
-        },
-        {
-          "word": "form",
-          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M6 10h12' stroke='currentColor'/><path d='M6 14h8' stroke='currentColor'/>",
-          "breakdown": [
-            "form"
-          ],
-          "imagery": "一张空白的表格，等待填写。",
-          "translation": "表格",
-          "sentences": [
-            {
-              "en": "Please fill in this form.",
-              "cn": "请填写这张表格。"
             }
           ]
         }

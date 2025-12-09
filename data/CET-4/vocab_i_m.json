@@ -250,22 +250,6 @@
           ]
         },
         {
-          "word": "jury",
-          "rootVisual": "<rect x='4' y='10' width='16' height='6' stroke='currentColor' fill='none' /><circle cx='6' cy='8' r='1' fill='currentColor' /><circle cx='10' cy='8' r='1' fill='currentColor' /><circle cx='14' cy='8' r='1' fill='currentColor' /><circle cx='18' cy='8' r='1' fill='currentColor' />",
-          "breakdown": [
-            "jur (法)",
-            "-y"
-          ],
-          "imagery": "法庭上的陪审团。",
-          "translation": "陪审团",
-          "sentences": [
-            {
-              "en": "Members of the jury.",
-              "cn": "陪审团成员。"
-            }
-          ]
-        },
-        {
           "word": "justify",
           "rootVisual": "<path d='M4 18 H 20 M 12 18 V 6' stroke='currentColor' /><rect x='6' y='10' width='6' height='6' stroke='currentColor' fill='none' /><rect x='12' y='10' width='6' height='6' stroke='currentColor' fill='none' />",
           "breakdown": [
@@ -567,22 +551,6 @@
         "imagery": "字母 M 像两座山峰或波浪。"
       },
       "words": [
-        {
-          "word": "machine",
-          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none' /><circle cx='8' cy='12' r='2' fill='currentColor' /><circle cx='16' cy='12' r='2' fill='currentColor' />",
-          "breakdown": [
-            "mach (机)",
-            "-ine"
-          ],
-          "imagery": "机器。",
-          "translation": "机器",
-          "sentences": [
-            {
-              "en": "A washing machine.",
-              "cn": "洗衣机。"
-            }
-          ]
-        },
         {
           "word": "massacre",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' /><text x='12' y='14' text-anchor='middle' font-size='10'>☠️</text>",

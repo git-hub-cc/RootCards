@@ -9,18 +9,16 @@
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#1f2937" media="(prefers-color-scheme: dark)">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <!-- 【新增】添加通用标准标签以解决浏览器警告，同时保留 Apple 专用标签以兼容 iOS -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link rel="apple-touch-icon" href="favicon.svg">
 
-    <!-- ================= SEO 核心配置区域 (开始) ================= -->
+    <!-- SEO 核心配置区域 -->
     <title>英语词源意境记忆卡 | Etymology Visualizer</title>
     <meta name="description" content="PPMC词源意境记忆卡 (Etymology Visualizer) 是一个在线英语单词学习工具。">
     <meta name="keywords" content="英语单词记忆, 词源法, 词根词缀, 意境记忆, PPMC">
     <meta name="author" content="cc">
     <link rel="canonical" href="https://ppmc.club/">
-    <!-- ================= SEO 核心配置区域 (结束) ================= -->
 
     <!-- CSS 资源引入 -->
     <link rel="stylesheet" href="css/base.css">
@@ -104,6 +102,17 @@
         <!-- 筛选器按钮 JS 动态生成 -->
 
         <div class="tool-group" id="tool-group">
+            <!-- 【新增】单词计数器 -->
+            <div class="word-count-container">
+                <!-- 【修改】为计数器项添加 title 属性，用于悬浮提示 -->
+                <div class="count-item" title="当前视图">
+                    <span id="word-count-current" class="count-number">0</span>
+                </div>
+                <!-- 【修改】为计数器项添加 title 属性，用于悬浮提示 -->
+                <div class="count-item" title="已掌握">
+                    <span id="word-count-learned" class="count-number">0</span>
+                </div>
+            </div>
             <button class="icon-btn" id="typing-mode-btn" title="拼写打字模式 (Typing Mode)">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
@@ -154,11 +163,15 @@
                     </svg>
                 </button>
                 <div class="options-dropdown-menu" id="options-menu">
+                    <button class="menu-item" id="show-achievements-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                        查看成就
+                    </button>
+                    <div class="menu-divider"></div>
                     <button class="menu-item" id="import-learned-btn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                         导入已掌握
                     </button>
-                    <div class="menu-divider"></div>
                     <button class="menu-item" id="export-learned-btn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
                         导出已掌握
@@ -209,10 +222,15 @@
     </div>
 </main>
 
+<div class="heatmap-container-wrapper">
+    <h3>🔥 学习轨迹 (Learning Heatmap)</h3>
+    <div id="heatmap-container" class="heatmap-container"></div>
+</div>
+
 <!-- 移动端底部固定导航栏容器 -->
 <nav id="mobile-bottom-bar" class="mobile-bottom-bar"></nav>
 
-<!-- 模态框与模板区域 (保持原样) -->
+<!-- 模态框与模板区域 -->
 <div id="listening-modal" class="modal-overlay is-hidden">
     <div class="modal-content">
         <button class="modal-close-btn" id="listening-close-btn" title="退出听力模式">
@@ -343,6 +361,19 @@
     </div>
 </div>
 
+<div id="achievements-modal" class="modal-overlay is-hidden">
+    <div class="modal-content achievements-content">
+        <div class="achievements-header">
+            <h3>🏆 学习成就 (Achievements)</h3>
+            <button id="achievements-close-btn" class="modal-close-btn wordbook-close-style" title="关闭">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+        <div id="achievements-list-container" class="achievements-list">
+        </div>
+    </div>
+</div>
+
 <template id="card-template">
     <div class="card">
         <div class="card-inner">
@@ -423,32 +454,19 @@
 </div>
 
 <input type="file" id="import-file-input" accept=".json" style="display: none;">
-<!-- 【核心修改】取消注释，在主线程加载 NLP 库以实现即时搜索 -->
 <script src="lib/compromise.js"></script>
 <script src="data/manifest.js"></script>
 <script type="module" src="js/app.js"></script>
 
-<!-- DSNR Audio Trigger Script -->
 <script>
     (function() {
         let dsnrAudio = null;
         const trigger = document.getElementById('dsnr-trigger');
-
         if (trigger) {
             trigger.addEventListener('click', function(e) {
                 e.preventDefault();
-
-                if (!dsnrAudio) {
-                    dsnrAudio = new Audio('audio/ui/DSNR.opus');
-                }
-
-                if (dsnrAudio.paused) {
-                    dsnrAudio.play().catch(err => {
-                        console.error('DSNR Audio playback failed:', err);
-                    });
-                } else {
-                    dsnrAudio.pause();
-                }
+                if (!dsnrAudio) dsnrAudio = new Audio('audio/ui/DSNR.opus');
+                dsnrAudio.paused ? dsnrAudio.play().catch(console.error) : dsnrAudio.pause();
             });
         }
     })();

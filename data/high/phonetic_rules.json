@@ -16,110 +16,202 @@
         {
           "word": "foot",
           "rootVisual": "<path d='M8 16 h8 l2 -4 l-4 -8 h-4 l-4 8 z' stroke='currentColor' fill='none'/><path d='M8 16 l2 2 h4 l2 -2' stroke='currentColor'/>",
-          "breakdown": ["foot", "(单数)"],
+          "breakdown": [
+            "foot",
+            "(单数)"
+          ],
           "imagery": "一只脚的轮廓。",
           "translation": "脚",
-          "sentences": [{"en": "He stamped his foot.", "cn": "他跺了跺脚。"}]
+          "sentences": [
+            {
+              "en": "He stamped his foot.",
+              "cn": "他跺了跺脚。"
+            }
+          ]
         },
         {
           "word": "feet",
           "rootVisual": "<path d='M6 16 h6 l1.5 -3 l-3 -6 h-3 l-3 6 z' stroke='currentColor' fill='none' transform='translate(-2, 0)'/><path d='M14 16 h6 l1.5 -3 l-3 -6 h-3 l-3 6 z' stroke='currentColor' fill='none' transform='translate(2, 0)'/>",
-          "breakdown": ["feet", "(复数)"],
+          "breakdown": [
+            "feet",
+            "(复数)"
+          ],
           "imagery": "两只脚并排，元音 oo 变为 ee。",
           "translation": "脚 (复数)",
-          "sentences": [{"en": "I have cold feet.", "cn": "我的脚很冷。"}]
+          "sentences": [
+            {
+              "en": "I have cold feet.",
+              "cn": "我的脚很冷。"
+            }
+          ]
         },
         {
           "word": "drink",
           "rootVisual": "<path d='M7 6 h10 v12 a2 2 0 0 1 -2 2 h-6 a2 2 0 0 1 -2 -2 z' stroke='currentColor' fill='none'/><path d='M6 10 h12' stroke='currentColor' opacity='0.3'/>",
-          "breakdown": ["i -> a -> u", "(元音音阶)"],
+          "breakdown": [
+            "i -> a -> u",
+            "(元音音阶)"
+          ],
           "imagery": "一个装水的杯子。动词变化遵循 i-a-u 规律。",
           "translation": "喝",
           "sentences": [
-            { "en": "I drink water.", "cn": "我喝水。" },
-            { "en": "I drank water yesterday.", "cn": "我昨天喝了水。" },
-            { "en": "I have drunk water.", "cn": "我已经喝过水了。" }
+            {
+              "en": "I drink water.",
+              "cn": "我喝水。"
+            },
+            {
+              "en": "I drank water yesterday.",
+              "cn": "我昨天喝了水。"
+            },
+            {
+              "en": "I have drunk water.",
+              "cn": "我已经喝过水了。"
+            }
           ]
         },
         {
           "word": "top",
           "rootVisual": "<path d='M4 20 L12 4 L20 20 H4 Z' stroke='currentColor' fill='none'/><circle cx='12' cy='4' r='2' fill='currentColor'/>",
-          "breakdown": ["top", "(顶端)"],
+          "breakdown": [
+            "top",
+            "(顶端)"
+          ],
           "imagery": "山峰的最高点。",
           "translation": "顶端",
-          "sentences": [{"en": "He stood at the top of the hill.", "cn": "他站在山顶上。"}]
+          "sentences": [
+            {
+              "en": "He stood at the top of the hill.",
+              "cn": "他站在山顶上。"
+            }
+          ]
         },
         {
           "word": "tip",
           "rootVisual": "<path d='M12 4 L14 10 L10 10 Z' fill='currentColor'/><line x1='12' y1='10' x2='12' y2='20' stroke='currentColor'/>",
-          "breakdown": ["tip", "(尖端)"],
+          "breakdown": [
+            "tip",
+            "(尖端)"
+          ],
           "imagery": "一个尖锐的针头或笔尖。o 和 i 通假。",
           "translation": "尖端；小费",
-          "sentences": [{"en": "He kissed the tip of her nose.", "cn": "他亲吻了她的鼻尖。"}]
-        },
-        {
-          "word": "sing",
-          "rootVisual": "<path d='M9 13 a 4 4 0 1 0 0 -8 a 4 4 0 0 0 0 8 Z' stroke='currentColor' fill='none'/><path d='M13 10 q 4 -2 6 -5' stroke='currentColor'/><path d='M13 12 q 4 0 6 3' stroke='currentColor'/>",
-          "breakdown": ["sing", "(动作)"],
-          "imagery": "一个人张嘴发出音符。",
-          "translation": "唱歌",
-          "sentences": [{"en": "I like to sing.", "cn": "我喜欢唱歌。"}]
+          "sentences": [
+            {
+              "en": "He kissed the tip of her nose.",
+              "cn": "他亲吻了她的鼻尖。"
+            }
+          ]
         },
         {
           "word": "song",
           "rootVisual": "<path d='M9 18 V 5 l 12 -2 v 13' stroke='currentColor' fill='none'/><circle cx='6' cy='18' r='3' fill='currentColor'/><circle cx='18' cy='16' r='3' fill='currentColor'/>",
-          "breakdown": ["song", "(产物)"],
+          "breakdown": [
+            "song",
+            "(产物)"
+          ],
           "imagery": "飘荡的音符。先有唱(sing，前元音)，后有歌(song，后元音)。",
           "translation": "歌曲",
-          "sentences": [{"en": "This is a beautiful song.", "cn": "这是一首优美的歌。"}]
+          "sentences": [
+            {
+              "en": "This is a beautiful song.",
+              "cn": "这是一首优美的歌。"
+            }
+          ]
         },
         {
           "word": "sit",
           "rootVisual": "<path d='M6 16 h12 v4 h-12 z' stroke='currentColor'/><path d='M9 16 v-6 h6 v6' stroke='currentColor' fill='none'/>",
-          "breakdown": ["sit", "(动作)"],
+          "breakdown": [
+            "sit",
+            "(动作)"
+          ],
           "imagery": "一个人坐下的动作。",
           "translation": "坐",
-          "sentences": [{"en": "Sit down, please.", "cn": "请坐。"}]
+          "sentences": [
+            {
+              "en": "Sit down, please.",
+              "cn": "请坐。"
+            }
+          ]
         },
         {
           "word": "seat",
           "rootVisual": "<path d='M4 14 h4 v6 h-4 z' fill='none' stroke='currentColor'/><path d='M16 14 h4 v6 h-4 z' fill='none' stroke='currentColor'/><path d='M4 14 h16 v-2 a2 2 0 0 0 -2 -2 h-12 a2 2 0 0 0 -2 2 z' stroke='currentColor' fill='none'/>",
-          "breakdown": ["seat", "(名词)"],
+          "breakdown": [
+            "seat",
+            "(名词)"
+          ],
           "imagery": "一张椅子。i 和 ea 通假。",
           "translation": "座位",
-          "sentences": [{"en": "Take a seat.", "cn": "请就座。"}]
+          "sentences": [
+            {
+              "en": "Take a seat.",
+              "cn": "请就座。"
+            }
+          ]
         },
         {
           "word": "hot",
           "rootVisual": "<circle cx='12' cy='12' r='6' fill='currentColor' opacity='0.2'/><path d='M12 2 v4 M12 18 v4 M2 12 h4 M18 12 h4' stroke='currentColor'/>",
-          "breakdown": ["hot", "(形容词)"],
+          "breakdown": [
+            "hot",
+            "(形容词)"
+          ],
           "imagery": "发散热量的太阳。",
           "translation": "热的",
-          "sentences": [{"en": "It is hot today.", "cn": "今天很热。"}]
+          "sentences": [
+            {
+              "en": "It is hot today.",
+              "cn": "今天很热。"
+            }
+          ]
         },
         {
           "word": "heat",
           "rootVisual": "<path d='M6 20 q 4 -10 6 -16 q 2 6 6 16' stroke='currentColor' fill='none'/><path d='M8 20 q 4 -8 4 -12' stroke='currentColor' opacity='0.5'/>",
-          "breakdown": ["heat", "(名词)"],
+          "breakdown": [
+            "heat",
+            "(名词)"
+          ],
           "imagery": "上升的热浪。o 和 ea 通假。",
           "translation": "热量",
-          "sentences": [{"en": "The sun gives us heat.", "cn": "太阳给我们热量。"}]
+          "sentences": [
+            {
+              "en": "The sun gives us heat.",
+              "cn": "太阳给我们热量。"
+            }
+          ]
         },
         {
           "word": "beat",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12 h8' stroke='currentColor' stroke-width='4'/>",
-          "breakdown": ["beat", "(打)"],
+          "breakdown": [
+            "beat",
+            "(打)"
+          ],
           "imagery": "一个鼓槌敲击鼓面。",
           "translation": "打；击败",
-          "sentences": [{"en": "My heart is beating fast.", "cn": "我的心跳得很快。"}]
+          "sentences": [
+            {
+              "en": "My heart is beating fast.",
+              "cn": "我的心跳得很快。"
+            }
+          ]
         },
         {
           "word": "bat",
           "rootVisual": "<path d='M2 12 q 10 5 20 0 q -10 10 -20 0' stroke='currentColor' fill='currentColor'/><circle cx='12' cy='10' r='2' fill='var(--bg-color)'/>",
-          "breakdown": ["bat", "(球拍/蝙蝠)"],
+          "breakdown": [
+            "bat",
+            "(球拍/蝙蝠)"
+          ],
           "imagery": "一只蝙蝠，名字源于翅膀拍打(beat)的声音。ea 和 a 通假。",
           "translation": "蝙蝠；球拍",
-          "sentences": [{"en": "Bats fly at night.", "cn": "蝙蝠在夜间飞行。"}]
+          "sentences": [
+            {
+              "en": "Bats fly at night.",
+              "cn": "蝙蝠在夜间飞行。"
+            }
+          ]
         }
       ]
     },
@@ -137,82 +229,135 @@
         {
           "word": "save",
           "rootVisual": "<path d='M6 4 h12 v16 h-12 z' stroke='currentColor' fill='none'/><path d='M10 8 h4' stroke='currentColor'/>",
-          "breakdown": ["save", "(动词)"],
+          "breakdown": [
+            "save",
+            "(动词)"
+          ],
           "imagery": "把东西存入保险箱。",
           "translation": "救；节约",
-          "sentences": [{"en": "Save money.", "cn": "存钱。"}]
-        },
-        {
-          "word": "safe",
-          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' stroke='currentColor'/>",
-          "breakdown": ["safe", "(形容词)"],
-          "imagery": "一个带锁的保险箱。v (浊) 和 f (清) 通假（名清动浊）。",
-          "translation": "安全的",
-          "sentences": [{"en": "Keep it safe.", "cn": "保管好。"}]
+          "sentences": [
+            {
+              "en": "Save money.",
+              "cn": "存钱。"
+            }
+          ]
         },
         {
           "word": "belief",
           "rootVisual": "<path d='M12 20 l-2 -2 l-4 0 a 2 2 0 0 1 -2 -2 v -8 a 2 2 0 0 1 2 -2 h 12 a 2 2 0 0 1 2 2 v 8 a 2 2 0 0 1 -2 2 l -4 0 z' stroke='currentColor' fill='none'/><path d='M12 8 l2 4 h-4 z' fill='currentColor'/>",
-          "breakdown": ["belief", "(名词)"],
+          "breakdown": [
+            "belief",
+            "(名词)"
+          ],
           "imagery": "心中的信念。",
           "translation": "信仰",
-          "sentences": [{"en": "I have a strong belief.", "cn": "我有坚定的信仰。"}]
-        },
-        {
-          "word": "believe",
-          "rootVisual": "<path d='M12 18 c 0 -4 4 -6 4 -10 c 0 -4 -4 -6 -4 -6 c 0 0 -4 2 -4 6 c 0 4 4 6 4 10' stroke='currentColor' fill='none'/>",
-          "breakdown": ["believe", "(动词)"],
-          "imagery": "把心交付出去。f 变为 v。",
-          "translation": "相信",
-          "sentences": [{"en": "I believe you.", "cn": "我相信你。"}]
+          "sentences": [
+            {
+              "en": "I have a strong belief.",
+              "cn": "我有坚定的信仰。"
+            }
+          ]
         },
         {
           "word": "brief",
           "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y1='12' x2='12' y2='12' stroke='currentColor'/>",
-          "breakdown": ["brief", "(短)"],
+          "breakdown": [
+            "brief",
+            "(短)"
+          ],
           "imagery": "一份简短的文件摘要。",
           "translation": "简短的",
-          "sentences": [{"en": "Keep it brief.", "cn": "长话短说。"}]
+          "sentences": [
+            {
+              "en": "Keep it brief.",
+              "cn": "长话短说。"
+            }
+          ]
         },
         {
           "word": "abbreviate",
           "rootVisual": "<path d='M4 12 h16 l-4 -4 m4 4 l-4 4' stroke='currentColor'/><rect x='2' y='8' width='2' height='8' fill='currentColor'/>",
-          "breakdown": ["ab-", "brev (short)", "-iate"],
+          "breakdown": [
+            "ab-",
+            "brev (short)",
+            "-iate"
+          ],
           "imagery": "把长单词压缩变短。f 和 v 通假 (brief -> brev)。",
           "translation": "缩写",
-          "sentences": [{"en": "USA is abbreviated from United States of America.", "cn": "USA是美利坚合众国的缩写。"}]
+          "sentences": [
+            {
+              "en": "USA is abbreviated from United States of America.",
+              "cn": "USA是美利坚合众国的缩写。"
+            }
+          ]
         },
         {
           "word": "blush",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='8' cy='14' r='2' fill='#ef4444' opacity='0.5'/><circle cx='16' cy='14' r='2' fill='#ef4444' opacity='0.5'/>",
-          "breakdown": ["blush", "(脸红)"],
+          "breakdown": [
+            "blush",
+            "(脸红)"
+          ],
           "imagery": "害羞时脸颊泛红。",
           "translation": "脸红",
-          "sentences": [{"en": "She blushed with shame.", "cn": "她羞愧得脸红了。"}]
+          "sentences": [
+            {
+              "en": "She blushed with shame.",
+              "cn": "她羞愧得脸红了。"
+            }
+          ]
         },
         {
           "word": "flush",
-          "rootVisual": "<path d='M12 2 v16 m-3 -3 l3 3 l3 -3' stroke='currentColor'/><path d='M8 12 h8' stroke='currentColor' opacity='0.3'/>",
-          "breakdown": ["flu (流)", "-sh"],
-          "imagery": "水流冲刷，或血液涌上脸部。b 和 f 通假。",
-          "translation": "冲刷；脸红",
-          "sentences": [{"en": "Flush the toilet.", "cn": "冲厕所。"}]
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M12 18 v-4 l-2 -2 m 4 0 l -2 2' stroke='currentColor'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "flu (流)",
+            "-sh (拟声)"
+          ],
+          "imagery": "血液流向脸部导致脸红；或者水流冲刷马桶。",
+          "translation": "脸红；冲刷",
+          "sentences": [
+            {
+              "en": "She blushed when she mistakenly entered the men's toilet.",
+              "cn": "她误入男厕所时脸红了。（blush 与 flush 通假）"
+            },
+            {
+              "en": "Flush the toilet after use.",
+              "cn": "使用后请冲厕所。"
+            }
+          ]
         },
         {
           "word": "flat",
           "rootVisual": "<line x1='2' y1='18' x2='22' y2='18' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["flat", "(平)"],
+          "breakdown": [
+            "flat",
+            "(平)"
+          ],
           "imagery": "一条水平线。",
           "translation": "平的",
-          "sentences": [{"en": "A flat surface.", "cn": "一个平坦的表面。"}]
+          "sentences": [
+            {
+              "en": "A flat surface.",
+              "cn": "一个平坦的表面。"
+            }
+          ]
         },
         {
           "word": "platform",
           "rootVisual": "<rect x='4' y='14' width='16' height='4' stroke='currentColor' fill='none'/><path d='M4 14 l2 -4 h12 l2 4' stroke='currentColor' fill='none'/>",
-          "breakdown": ["plat (平)", "form"],
+          "breakdown": [
+            "plat (平)",
+            "form"
+          ],
           "imagery": "一个高出地面的平坦台子。f 和 p 通假。",
           "translation": "平台",
-          "sentences": [{"en": "The train is at platform 2.", "cn": "火车在2号站台。"}]
+          "sentences": [
+            {
+              "en": "The train is at platform 2.",
+              "cn": "火车在2号站台。"
+            }
+          ]
         }
       ]
     },
@@ -230,66 +375,130 @@
         {
           "word": "think",
           "rootVisual": "<path d='M12 12 m-8 0 a 8 8 0 1 0 16 0 a 8 8 0 1 0 -16 0' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 4 v4' stroke='currentColor'/>",
-          "breakdown": ["think", "(想)"],
+          "breakdown": [
+            "think",
+            "(想)"
+          ],
           "imagery": "大脑在运转。",
           "translation": "想",
-          "sentences": [{"en": "I think so.", "cn": "我是这么想的。"}]
+          "sentences": [
+            {
+              "en": "I think so.",
+              "cn": "我是这么想的。"
+            }
+          ]
         },
         {
           "word": "thank",
           "rootVisual": "<path d='M12 20 l-2 -2 l-4 0 a 2 2 0 0 1 -2 -2 v -8 a 2 2 0 0 1 2 -2 h 12 a 2 2 0 0 1 2 2 v 8 a 2 2 0 0 1 -2 2 l -4 0 z' stroke='currentColor' fill='none'/><path d='M8 10 l4 4 l4 -4' stroke='currentColor'/>",
-          "breakdown": ["thank", "(感谢)"],
+          "breakdown": [
+            "thank",
+            "(感谢)"
+          ],
           "imagery": "想(think)起别人的好，所以感谢(thank)。i 和 a 通假。",
           "translation": "感谢",
-          "sentences": [{"en": "Thank you.", "cn": "谢谢你。"}]
+          "sentences": [
+            {
+              "en": "Thank you.",
+              "cn": "谢谢你。"
+            }
+          ]
         },
         {
           "word": "angle",
           "rootVisual": "<path d='M4 20 L20 20 L20 4' stroke='currentColor' fill='none' stroke-width='2'/><path d='M16 16 q -4 0 -4 -4' stroke='currentColor' fill='none'/>",
-          "breakdown": ["angle", "(角)"],
+          "breakdown": [
+            "angle",
+            "(角)"
+          ],
           "imagery": "两条线相交形成的角度。",
           "translation": "角度",
-          "sentences": [{"en": "A 90-degree angle.", "cn": "一个90度的角。"}]
+          "sentences": [
+            {
+              "en": "A 90-degree angle.",
+              "cn": "一个90度的角。"
+            }
+          ]
         },
         {
           "word": "anchor",
           "rootVisual": "<path d='M12 2 v16 m-4 -4 l4 4 l4 -4' stroke='currentColor' stroke-width='2'/><path d='M8 18 q 4 4 8 0' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["anchor", "(锚)"],
+          "breakdown": [
+            "anchor",
+            "(锚)"
+          ],
           "imagery": "船锚的形状像个钩子。g 和 ch 通假。",
           "translation": "锚；主持人",
-          "sentences": [{"en": "Drop the anchor.", "cn": "抛锚。"}]
+          "sentences": [
+            {
+              "en": "Drop the anchor.",
+              "cn": "抛锚。"
+            }
+          ]
         },
         {
           "word": "candle",
           "rootVisual": "<rect x='10' y='10' width='4' height='12' fill='currentColor' opacity='0.8'/><path d='M12 10 v-2 q 1 -2 0 -4 q -1 2 0 4' stroke='currentColor' fill='#f59e0b'/>",
-          "breakdown": ["cand (白/光)", "-le"],
+          "breakdown": [
+            "cand (白/光)",
+            "-le"
+          ],
           "imagery": "一支燃烧的蜡烛。",
           "translation": "蜡烛",
-          "sentences": [{"en": "Light a candle.", "cn": "点燃蜡烛。"}]
+          "sentences": [
+            {
+              "en": "Light a candle.",
+              "cn": "点燃蜡烛。"
+            }
+          ]
         },
         {
           "word": "kindle",
           "rootVisual": "<path d='M12 14 q -4 -8 0 -12 q 4 4 0 12' fill='#f59e0b'/><path d='M8 20 l8 -6' stroke='currentColor'/>",
-          "breakdown": ["kindle", "(点燃)"],
+          "breakdown": [
+            "kindle",
+            "(点燃)"
+          ],
           "imagery": "点火。c 和 k 通假 (candle -> kindle)。",
           "translation": "点燃；激起",
-          "sentences": [{"en": "Kindle a fire.", "cn": "生火。"}]
+          "sentences": [
+            {
+              "en": "Kindle a fire.",
+              "cn": "生火。"
+            }
+          ]
         },
         {
           "word": "canal",
           "rootVisual": "<path d='M2 8 h20 M2 16 h20' stroke='currentColor' stroke-width='2'/><path d='M2 12 h20' stroke='currentColor' stroke-dasharray='4 2'/>",
-          "breakdown": ["canal", "(管/道)"],
+          "breakdown": [
+            "canal",
+            "(管/道)"
+          ],
           "imagery": "人工开凿的狭窄水道。",
           "translation": "运河",
-          "sentences": [{"en": "The Grand Canal.", "cn": "大运河。"}]
+          "sentences": [
+            {
+              "en": "The Grand Canal.",
+              "cn": "大运河。"
+            }
+          ]
         },
         {
           "word": "channel",
           "rootVisual": "<path d='M2 10 q 5 2 10 0 t 10 0' stroke='currentColor' fill='none'/><path d='M2 14 q 5 2 10 0 t 10 0' stroke='currentColor' fill='none'/>",
-          "breakdown": ["channel", "(海峡)"],
+          "breakdown": [
+            "channel",
+            "(海峡)"
+          ],
           "imagery": "宽阔的天然水道。c 和 ch 通假。",
           "translation": "海峡；频道",
-          "sentences": [{"en": "Change the channel.", "cn": "换台。"}]
+          "sentences": [
+            {
+              "en": "Change the channel.",
+              "cn": "换台。"
+            }
+          ]
         }
       ]
     },
@@ -305,52 +514,84 @@
       },
       "words": [
         {
-          "word": "decide",
-          "rootVisual": "<path d='M12 4 v16' stroke='currentColor' stroke-width='2'/><path d='M8 16 l4 4 l4 -4' stroke='currentColor' fill='none'/>",
-          "breakdown": ["de-", "cid (切)"],
-          "imagery": "向下切，一刀两断，表示决定。",
-          "translation": "决定",
-          "sentences": [{"en": "I can't decide.", "cn": "我决定不了。"}]
-        },
-        {
           "word": "decision",
-          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M9 12 l2 2 l4 -4' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["decid", "-ion"],
-          "imagery": "做出的决定。d 和 s 通假。",
-          "translation": "决定 (名词)",
-          "sentences": [{"en": "Make a decision.", "cn": "做一个决定。"}]
+          "rootVisual": "<path d='M12 4 v10' stroke='currentColor'/><path d='M12 14 l-4 4 M12 14 l4 4' stroke='currentColor'/>",
+          "breakdown": [
+            "decis (切)",
+            "-ion (名词)"
+          ],
+          "imagery": "做出的决定。",
+          "translation": "决定",
+          "sentences": [
+            {
+              "en": "It's a difficult decision to make.",
+              "cn": "这是一个很难做的决定。"
+            }
+          ]
         },
         {
           "word": "collide",
           "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor'/><circle cx='16' cy='12' r='3' stroke='currentColor'/><path d='M11 12 l2 0' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["col-", "lid (击)"],
+          "breakdown": [
+            "col-",
+            "lid (击)"
+          ],
           "imagery": "两个物体相撞。",
           "translation": "碰撞",
-          "sentences": [{"en": "The cars collided.", "cn": "汽车相撞了。"}]
+          "sentences": [
+            {
+              "en": "The cars collided.",
+              "cn": "汽车相撞了。"
+            }
+          ]
         },
         {
           "word": "collision",
           "rootVisual": "<path d='M8 12 l8 0' stroke='currentColor' stroke-width='2'/><path d='M12 8 v8' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
-          "breakdown": ["collid", "-ion"],
+          "breakdown": [
+            "collid",
+            "-ion"
+          ],
           "imagery": "碰撞的现场。d 和 s 通假。",
           "translation": "碰撞 (名词)",
-          "sentences": [{"en": "A head-on collision.", "cn": "迎面相撞。"}]
+          "sentences": [
+            {
+              "en": "A head-on collision.",
+              "cn": "迎面相撞。"
+            }
+          ]
         },
         {
           "word": "road",
           "rootVisual": "<path d='M8 20 L10 4 H14 L16 20' stroke='currentColor' fill='none' stroke-width='2'/><line x1='12' y1='20' x2='12' y2='4' stroke='currentColor' stroke-dasharray='4 2'/>",
-          "breakdown": ["road", "(路)"],
+          "breakdown": [
+            "road",
+            "(路)"
+          ],
           "imagery": "一条具体的马路。",
           "translation": "道路",
-          "sentences": [{"en": "Cross the road.", "cn": "过马路。"}]
+          "sentences": [
+            {
+              "en": "Cross the road.",
+              "cn": "过马路。"
+            }
+          ]
         },
         {
           "word": "route",
           "rootVisual": "<path d='M4 18 l4 -4 l4 4 l8 -8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='4' cy='18' r='2' fill='currentColor'/><circle cx='20' cy='10' r='2' fill='currentColor'/>",
-          "breakdown": ["route", "(路线)"],
+          "breakdown": [
+            "route",
+            "(路线)"
+          ],
           "imagery": "地图上的规划路线。d 和 t 通假。",
           "translation": "路线",
-          "sentences": [{"en": "Which route should we take?", "cn": "我们该走哪条路？"}]
+          "sentences": [
+            {
+              "en": "Which route should we take?",
+              "cn": "我们该走哪条路？"
+            }
+          ]
         }
       ]
     },
@@ -368,50 +609,97 @@
         {
           "word": "clean",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><path d='M8 8 l3 3 l5 -5' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["clean", "(干净)"],
+          "breakdown": [
+            "clean",
+            "(干净)"
+          ],
           "imagery": "一尘不染的表面。",
           "translation": "干净的",
-          "sentences": [{"en": "Keep the room clean.", "cn": "保持房间清洁。"}]
+          "sentences": [
+            {
+              "en": "Keep the room clean.",
+              "cn": "保持房间清洁。"
+            }
+          ]
         },
         {
           "word": "clear",
-          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' opacity='0.3'/><line x1='4' y1='12' x2='20' y2='12' stroke='currentColor'/>",
-          "breakdown": ["clear", "(清楚)"],
-          "imagery": "透明的玻璃或清晰的思维。n 和 r 通假。",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "clear (清楚)"
+          ],
+          "imagery": "没有污点，清晰可见。",
           "translation": "清楚的",
-          "sentences": [{"en": "Is that clear?", "cn": "清楚了吗？"}]
+          "sentences": [
+            {
+              "en": "The water in the lake is very clear.",
+              "cn": "湖里的水非常清澈。"
+            }
+          ]
         },
         {
           "word": "wall",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' fill='none' stroke='currentColor'/><line x1='4' y1='12' x2='20' y2='12' stroke='currentColor'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor'/>",
-          "breakdown": ["wall", "(墙)"],
+          "breakdown": [
+            "wall",
+            "(墙)"
+          ],
           "imagery": "一面砖墙。",
           "translation": "墙",
-          "sentences": [{"en": "The Great Wall.", "cn": "长城。"}]
+          "sentences": [
+            {
+              "en": "The Great Wall.",
+              "cn": "长城。"
+            }
+          ]
         },
         {
           "word": "vault",
           "rootVisual": "<path d='M4 20 v-10 a 8 8 0 0 1 16 0 v 10' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["vault", "(拱顶)"],
+          "breakdown": [
+            "vault",
+            "(拱顶)"
+          ],
           "imagery": "弯曲的墙形成的拱顶。w 和 v 通假。",
           "translation": "拱顶；金库",
-          "sentences": [{"en": "Bank vault.", "cn": "银行金库。"}]
+          "sentences": [
+            {
+              "en": "Bank vault.",
+              "cn": "银行金库。"
+            }
+          ]
         },
         {
           "word": "wine",
           "rootVisual": "<path d='M7 6 h10 l-2 8 l-3 0 l-3 0 z' fill='none' stroke='currentColor'/><line x1='12' y1='14' x2='12' y2='20' stroke='currentColor'/><line x1='8' y1='20' x2='16' y2='20' stroke='currentColor'/>",
-          "breakdown": ["wine", "(酒)"],
+          "breakdown": [
+            "wine",
+            "(酒)"
+          ],
           "imagery": "一杯葡萄酒。",
           "translation": "葡萄酒",
-          "sentences": [{"en": "Red wine.", "cn": "红酒。"}]
+          "sentences": [
+            {
+              "en": "Red wine.",
+              "cn": "红酒。"
+            }
+          ]
         },
         {
           "word": "vine",
           "rootVisual": "<path d='M12 2 v10' stroke='currentColor' stroke-width='2'/><circle cx='10' cy='14' r='2' fill='currentColor'/><circle cx='14' cy='14' r='2' fill='currentColor'/><circle cx='12' cy='17' r='2' fill='currentColor'/>",
-          "breakdown": ["vine", "(藤)"],
+          "breakdown": [
+            "vine",
+            "(藤)"
+          ],
           "imagery": "结满葡萄的藤蔓。w 和 v 通假。",
           "translation": "葡萄藤",
-          "sentences": [{"en": "Grapes grow on vines.", "cn": "葡萄长在藤上。"}]
+          "sentences": [
+            {
+              "en": "Grapes grow on vines.",
+              "cn": "葡萄长在藤上。"
+            }
+          ]
         }
       ]
     }

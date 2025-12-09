@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Component Styles - 通用组件样式 (v5.4 - 添加 Splash Screen & 骨架屏优化)
+   Component Styles - 通用组件样式 (v6.1 - 优化热力图布局)
    --------------------------------------------------------------------------
    ========================================================================== */
 
@@ -15,16 +15,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--bg-color); /* 与主背景一致，防止闪烁 */
-    z-index: 10000; /* 最高层级，遮盖一切 */
+    background-color: var(--bg-color);
+    z-index: 10000;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 1;
-    transition: opacity 0.5s ease-out, visibility 0.5s ease-out; /* 平滑淡出 */
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
-/* 隐藏状态 */
 .app-splash-screen.is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -40,7 +39,6 @@
     max-width: 400px;
 }
 
-/* Logo 容器与动画 */
 .splash-logo-wrapper {
     position: relative;
     width: 80px;
@@ -56,7 +54,6 @@
     animation: splash-logo-pop 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Logo 背后的波纹动画 */
 .splash-ripple {
     position: absolute;
     top: 50%;
@@ -71,7 +68,6 @@
     animation: splash-ripple-effect 2s infinite ease-out;
 }
 
-/* 标题与副标题 */
 .splash-title {
     font-size: 1.8rem;
     font-weight: 800;
@@ -79,7 +75,7 @@
     margin-bottom: 0.5rem;
     letter-spacing: 1px;
     opacity: 0;
-    animation: fadeInUp 0.5s ease-out 0.3s forwards; /* 延迟出现 */
+    animation: fadeInUp 0.5s ease-out 0.3s forwards;
 }
 
 .splash-subtitle {
@@ -91,7 +87,6 @@
     animation: fadeInUp 0.5s ease-out 0.5s forwards;
 }
 
-/* 加载区域 */
 .splash-loading-area {
     width: 100%;
     opacity: 0;
@@ -102,10 +97,9 @@
     font-size: 0.9rem;
     color: var(--text-sub);
     margin-bottom: 0.8rem;
-    font-variant-numeric: tabular-nums; /* 防止数字跳动 */
+    font-variant-numeric: tabular-nums;
 }
 
-/* 进度条轨道 */
 .splash-progress-track {
     width: 100%;
     height: 4px;
@@ -115,14 +109,12 @@
     position: relative;
 }
 
-/* 进度条填充 */
 .splash-progress-fill {
     height: 100%;
-    width: 0%; /* JS 控制 */
+    width: 0%;
     background-color: var(--theme-color-default);
     border-radius: 2px;
     transition: width 0.3s linear;
-    /* 添加流光效果 */
     background-image: linear-gradient(
             90deg,
             rgba(255,255,255,0) 0,
@@ -134,7 +126,6 @@
     animation: shimmer 1.5s infinite linear;
 }
 
-/* 底部语录 */
 .splash-quote {
     position: absolute;
     bottom: 3rem;
@@ -145,27 +136,22 @@
     animation: fadeIn 1s ease-out 1.5s forwards;
 }
 
-/* 动画关键帧 */
 @keyframes splash-logo-pop {
     0% { transform: scale(0); opacity: 0; }
     100% { transform: scale(1); opacity: 1; }
 }
-
 @keyframes splash-ripple-effect {
     0% { width: 80%; height: 80%; opacity: 0.4; }
     100% { width: 200%; height: 200%; opacity: 0; }
 }
-
 @keyframes shimmer {
     0% { background-position: -50px 0; }
     100% { background-position: 200px 0; }
 }
-
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fadeIn {
     to { opacity: 1; }
 }
@@ -181,10 +167,8 @@
     font-size: 1rem;
     transition: all 0.2s ease;
     color: var(--text-sub);
-
-    /* 移动端水平滚动关键：防止文字换行撑开高度 */
     white-space: nowrap;
-    flex-shrink: 0; /* 防止被压缩 */
+    flex-shrink: 0;
 }
 .grade-filter-btn:hover {
     border-color: var(--border-color-hover);
@@ -215,8 +199,6 @@ body.dark-mode .grade-filter-btn.active {
     font-weight: 600;
     transition: all 0.2s ease;
     color: var(--text-sub);
-
-    /* 移动端水平滚动关键 */
     white-space: nowrap;
     flex-shrink: 0;
 }
@@ -268,7 +250,7 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
     transform: translateY(1px);
 }
 .icon-btn svg {
-    width: 38px; /* 并非比例问题，因为外层button为38 */
+    width: 38px;
     height: 24px;
     transition: transform 0.3s ease;
 }
@@ -283,9 +265,7 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
 }
 
 /* --- 组件: 沉浸模式悬浮按钮 (Floating Action Button) --- */
-.floating-action-btn {
-    display: none; /* 默认在 PC 端隐藏 */
-}
+.floating-action-btn { display: none; }
 
 @media screen and (max-width: 768px) {
     .floating-action-btn {
@@ -293,14 +273,11 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
         align-items: center;
         justify-content: center;
         position: fixed;
-        /* 固定在左上角 */
         top: 0.2rem;
         right: 0.2rem;
-        /* 高层级，确保在所有卡片之上 */
         z-index: 1100;
         width: 44px;
         height: 44px;
-
         border-radius: 50%;
         border: none;
         background-color: rgba(0, 0, 0, 0.4);
@@ -309,22 +286,16 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
         cursor: pointer;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         transition: all 0.3s ease;
-
-        /* 避免选中时的点击高亮背景 */
         -webkit-tap-highlight-color: transparent;
     }
-
     .floating-action-btn:active {
         transform: scale(0.95);
         background-color: rgba(0, 0, 0, 0.6);
     }
-
     .floating-action-btn svg {
         width: 22px;
         height: 22px;
     }
-
-    /* 深色模式下的微调 */
     body.dark-mode .floating-action-btn {
         background-color: rgba(255, 255, 255, 0.2);
     }
@@ -332,36 +303,24 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
 
 
 /* --- 组件: 移动端底部固定导航栏 (Mobile Bottom Bar) --- */
-.mobile-bottom-bar {
-    display: none; /* PC端隐藏 */
-}
+.mobile-bottom-bar { display: none; }
 
 @media screen and (max-width: 768px) {
     .mobile-bottom-bar {
         display: flex;
-        /* 移除 justify-content: space-around，改用 flex: 1 让子元素自适应 */
         align-items: center;
-
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 60px; /* 固定高度 */
-
+        height: calc(60px + env(safe-area-inset-bottom));
         background-color: var(--bg-secondary-color);
         border-top: 1px solid var(--border-color);
         box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
         z-index: 1000;
-
-        /* 适配 iPhone X 等底部安全区域 */
         padding-bottom: env(safe-area-inset-bottom);
-        height: calc(60px + env(safe-area-inset-bottom));
-
-        /* 过渡动画 */
         transition: background-color 0.3s ease, border-color 0.3s ease;
     }
-
-    /* 沉浸模式下，底部栏变半透明 */
     body.mode-immersive .mobile-bottom-bar {
         background-color: rgba(255, 255, 255, 0.85);
         backdrop-filter: blur(10px);
@@ -371,47 +330,32 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
     body.dark-mode.mode-immersive .mobile-bottom-bar {
         background-color: rgba(31, 41, 55, 0.85);
     }
-
-    /*
-     * 移动端导航项样式覆盖
-     * 适用于 .icon-btn 和 .options-menu-container (通过 mobile-nav-item 类)
-     */
     .mobile-bottom-bar .icon-btn,
     .mobile-bottom-bar .options-menu-container {
-        flex: 1;              /* 核心：平分宽度 */
-        width: 0;             /* 核心：允许收缩，防止溢出 */
+        flex: 1;
+        width: 0;
         min-width: 0;
-        height: 100%;         /* 填满高度，增加点击热区 */
-
-        border: none;         /* 去除边框 */
-        border-radius: 0;     /* 去除圆角 */
+        height: 100%;
+        border: none;
+        border-radius: 0;
         background: transparent;
         box-shadow: none;
-
-        /* 内容居中 */
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2px;
-
-        /* 移除 PC 端的 margin/padding 干扰 */
         margin: 0;
         padding: 0;
     }
-
-    /* 针对更多菜单容器内的按钮，需要特殊处理 */
     .mobile-bottom-bar .options-menu-container .icon-btn {
         width: 100%;
         height: 100%;
         flex: 1;
-        /* 重置边框等样式，因为容器已经处理了布局 */
         border: none;
         border-radius: 0;
         background: transparent;
     }
-
-    /* 交互反馈：简单的背景色变深 */
     .mobile-bottom-bar .icon-btn:hover,
     .mobile-bottom-bar .icon-btn:active {
         transform: none;
@@ -420,24 +364,18 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
     body.dark-mode .mobile-bottom-bar .icon-btn:hover {
         background-color: rgba(255,255,255,0.05);
     }
-
     .mobile-bottom-bar .icon-btn svg {
         width: 24px;
         height: 24px;
         color: var(--text-sub);
     }
-
-    /* 激活状态下的图标颜色 */
     .mobile-bottom-bar .icon-btn.active svg {
         color: var(--theme-color);
     }
-
-    /* 更多菜单的位置调整：向上弹出 */
     .mobile-bottom-bar .options-menu-container .options-dropdown-menu {
         bottom: 100%;
         top: auto;
         right: 0;
-        /* 让菜单相对于按钮右对齐或稍微偏移，根据实际需求调整 */
         transform-origin: bottom right;
         margin-bottom: 0;
         width: 180px;
@@ -451,8 +389,6 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
     text-align: center;
     font-size: 1.2rem;
     color: var(--text-sub);
-
-    /* 移动端适配 */
     width: 100%;
     margin-top: 2rem;
 }
@@ -537,14 +473,12 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
 
 
 /* --- 全局状态与动画 --- */
-/* 洗牌动画 */
 .card-grid.is-shuffling .card {
     opacity: 0;
     transform: scale(0.95);
     pointer-events: none;
 }
 
-/* 无图自测模式 */
 body.mode-no-visual .card-front .visual-area svg {
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -580,4 +514,92 @@ body.mode-no-visual .card-front .visual-area::after {
 }
 .sentence-section::-webkit-scrollbar-thumb:hover {
     background-color: var(--text-sub);
+}
+
+/* ==========================================================================
+   学习热力图组件 (Heatmap) - GitHub 风格
+   ========================================================================== */
+.heatmap-container-wrapper {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--bg-secondary-color);
+    border-radius: var(--radius-sm);
+}
+
+.heatmap-container-wrapper h3 {
+    font-size: 1.1rem;
+    color: var(--text-sub);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.heatmap-container {
+    display: grid;
+    /* 核心：创建7行网格，自动按列填充 */
+    grid-template-rows: repeat(7, 1fr);
+    grid-auto-flow: column;
+    gap: 3px;
+    justify-content: start;
+    overflow-x: auto;
+    padding: 0.5rem;
+}
+
+/* 【修改】移除星期标签的样式 */
+
+.heatmap-day {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background-color: var(--border-color); /* Level 0 */
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.heatmap-day.is-spacer {
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.heatmap-day:not(.is-spacer):hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+/* 贡献等级颜色 */
+.heatmap-day[data-level="1"] { background-color: #9be9a8; }
+.heatmap-day[data-level="2"] { background-color: #40c463; }
+.heatmap-day[data-level="3"] { background-color: #30a14e; }
+.heatmap-day[data-level="4"] { background-color: #216e39; }
+
+body.dark-mode .heatmap-day { background-color: #2d333b; }
+body.dark-mode .heatmap-day[data-level="1"] { background-color: #0e4429; }
+body.dark-mode .heatmap-day[data-level="2"] { background-color: #006d32; }
+body.dark-mode .heatmap-day[data-level="3"] { background-color: #26a641; }
+body.dark-mode .heatmap-day[data-level="4"] { background-color: #39d353; }
+
+.heatmap-tooltip {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    pointer-events: none;
+    transform: translate(-50%, -100%);
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 1000;
+}
+.heatmap-tooltip.is-visible {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .heatmap-container-wrapper {
+        margin: 1rem;
+        display: none; /* 移动端默认隐藏 */
+    }
 }

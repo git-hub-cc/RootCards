@@ -30,21 +30,6 @@
           ]
         },
         {
-          "word": "train",
-          "rootVisual": "<rect x='4' y='8' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><circle cx='7' cy='20' r='2' stroke='currentColor'/><circle cx='17' cy='20' r='2' stroke='currentColor'/><path d='M4 14h16' stroke='currentColor'/>",
-          "breakdown": [
-            "train"
-          ],
-          "imagery": "一个火车头的正面或侧面轮廓。",
-          "translation": "火车；训练",
-          "sentences": [
-            {
-              "en": "We took a train to Shanghai.",
-              "cn": "我们坐火车去了上海。"
-            }
-          ]
-        },
-        {
           "word": "railway",
           "rootVisual": "<path d='M8 2v20 M16 2v20' stroke='currentColor' stroke-width='2'/><path d='M6 6h12 M6 10h12 M6 14h12 M6 18h12' stroke='currentColor'/>",
           "breakdown": [
@@ -62,17 +47,17 @@
         },
         {
           "word": "electricity",
-          "rootVisual": "<path d='M13 2L6 14h6l-2 8 8-10h-6z' fill='gold' stroke='currentColor'/>",
+          "rootVisual": "<polyline points='10 2 6 12 14 12 10 22' stroke='currentColor' fill='none' stroke-width='2'/>",
           "breakdown": [
-            "electric",
-            "-ity"
+            "electric (电的)",
+            "-ity (性质)"
           ],
-          "imagery": "一个闪电符号。",
+          "imagery": "一道锋利的闪电符号，代表电能。",
           "translation": "电",
           "sentences": [
             {
-              "en": "The heater uses a lot of electricity.",
-              "cn": "这个加热器很耗电。"
+              "en": "The farm has no electricity.",
+              "cn": "这个农场没有电。"
             }
           ]
         },

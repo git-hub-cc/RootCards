@@ -51,20 +51,17 @@
         },
         {
           "word": "incident",
-          "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 2v8' stroke='currentColor'/>",
+          "rootVisual": "<path d='M12 0 v12' stroke='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": [
-            "in-",
-            "(上/入)",
-            "cid",
-            "(落)",
-            "ent"
+            "in- (在里)",
+            "cid (落/发生)"
           ],
-          "imagery": "掉下来的事情 -> 事件(通常指小插曲或负面事件)。",
-          "translation": "事件；事变",
+          "imagery": "事情落在（cid）了里面（in-），通常指有内幕或人为策划的事件。",
+          "translation": "事件",
           "sentences": [
             {
-              "en": "A minor incident.",
-              "cn": "一个小插曲。"
+              "en": "The incident happened at midnight.",
+              "cn": "这起事件发生在午夜。"
             }
           ]
         },
@@ -83,25 +80,6 @@
             {
               "en": "The price index.",
               "cn": "价格指数。"
-            }
-          ]
-        },
-        {
-          "word": "intelligent",
-          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12l4-4' stroke='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
-          "breakdown": [
-            "inter",
-            "(之间)",
-            "leg",
-            "(选)",
-            "ent"
-          ],
-          "imagery": "能在众多事物中进行选择辨别的 -> 聪明的。",
-          "translation": "聪明的；有智力的",
-          "sentences": [
-            {
-              "en": "An intelligent child.",
-              "cn": "一个聪明的孩子。"
             }
           ]
         }
@@ -131,23 +109,6 @@
             {
               "en": "Keep a travel journal.",
               "cn": "写旅行日记。"
-            }
-          ]
-        },
-        {
-          "word": "junior",
-          "rootVisual": "<circle cx='12' cy='16' r='4' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='6' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
-          "breakdown": [
-            "jun",
-            "(年轻)",
-            "ior"
-          ],
-          "imagery": "比别人年轻的 -> 年少的/下级的。",
-          "translation": "年少的；职位较低的",
-          "sentences": [
-            {
-              "en": "He is junior to me.",
-              "cn": "他比我年轻。"
             }
           ]
         },
@@ -228,18 +189,17 @@
         },
         {
           "word": "loyal",
-          "rootVisual": "<path d='M12 4l-2 6h4z' fill='currentColor'/><circle cx='12' cy='14' r='4' stroke='currentColor' fill='none'/>",
+          "rootVisual": "<path d='M12 20 l-2 2 h4 l-2 -2 m0 -4 v4' stroke='currentColor'/><path d='M4 12 q 8 4 16 0' stroke='currentColor' fill='none'/><path d='M12 10 l-2 -2 a2 2 0 0 1 4 0 z' fill='currentColor' transform='translate(0, -2)'/>",
           "breakdown": [
-            "loy",
-            "(法律/约束)",
-            "al"
+            "loy (法律/忠诚)",
+            "-al (...的)"
           ],
-          "imagery": "遵守契约精神的 -> 忠诚的。",
+          "imagery": "像臣民忠于王室一样，对某人或某事保持忠诚。",
           "translation": "忠诚的",
           "sentences": [
             {
-              "en": "A loyal friend.",
-              "cn": "忠实的朋友。"
+              "en": "a loyal friend",
+              "cn": "一个忠诚的朋友"
             }
           ]
         }
@@ -257,18 +217,21 @@
       "words": [
         {
           "word": "manual",
-          "rootVisual": "<path d='M8 12h8' stroke='currentColor'/><path d='M6 8l2 8 8 0 2-8' stroke='currentColor' fill='none'/>",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8' stroke='currentColor'/>",
           "breakdown": [
-            "man",
-            "(手)",
-            "ual"
+            "manu (手)",
+            "-al (形/名)"
           ],
-          "imagery": "用手操作的 -> 手工的/手册。",
+          "imagery": "手工的；使用手册。",
           "translation": "手工的；手册",
           "sentences": [
             {
-              "en": "Read the instruction manual.",
-              "cn": "阅读操作手册。"
+              "en": "This machine can be operated by manual control.",
+              "cn": "这台机器可以手动控制。"
+            },
+            {
+              "en": "Please read the instruction manual carefully.",
+              "cn": "请仔细阅读说明手册。"
             }
           ]
         },

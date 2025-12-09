@@ -1,5 +1,5 @@
 // =================================================================================
-// 通用 UI 渲染模块 (Generic UI Rendering Module) - v14.4 (统一阶段标识符)
+// 通用 UI 渲染模块 (Generic UI Rendering Module) - v16.1 (优化“已掌握”视图交互提示)
 // ---------------------------------------------------------------------------------
 // =================================================================================
 
@@ -135,12 +135,25 @@ export function stopAudio() {
 }
 
 // =================================================================================
-// 筛选器 UI 函数
+// 筛选器与计数器 UI 函数
 // =================================================================================
+
+/**
+ * 【新增】更新页面顶部的单词计数器。
+ * @param {number} currentCount - 当前视图的单词数。
+ * @param {number} learnedCount - 已掌握的总单词数。
+ */
+export function updateWordCounts(currentCount, learnedCount) {
+    const currentCountEl = document.getElementById('word-count-current');
+    const learnedCountEl = document.getElementById('word-count-learned');
+    if (currentCountEl && learnedCountEl) {
+        currentCountEl.textContent = currentCount;
+        learnedCountEl.textContent = learnedCount;
+    }
+}
 
 export function renderGradeButtons(container, grades) {
     container.innerHTML = '';
-    // 【修改】更新 gradeMap 以使用 'middle' 标识符
     const gradeMap = {
         'middle': '初中',
         'high': '高中',
@@ -229,6 +242,146 @@ export function updateActiveFilterButton(filterContainer, clickedButton) {
     if (clickedButton.dataset.filterType !== 'user-wordbook' && clickedButton.dataset.themeColor) {
         clickedButton.style.setProperty('--button-theme-color', clickedButton.dataset.themeColor);
     }
+}
+
+// =================================================================================
+// 热力图渲染逻辑
+// =================================================================================
+
+/**
+ * 渲染学习热力图。
+ * @param {HTMLElement} container - 热力图容器元素。
+ * @param {object} activityData - 学习活动数据 { "YYYY-MM-DD": count }。
+ */
+export function renderHeatmap(container, activityData) {
+    // 鲁棒性检查：如果容器不存在，则直接返回
+    if (!container) return;
+    container.innerHTML = '';
+
+    const DAYS_IN_YEAR = 365;
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    const startDate = new Date(today);
+    startDate.setDate(startDate.getDate() - DAYS_IN_YEAR);
+
+    // 计算起始日期是星期几（星期日是 0, 星期一是 1, ..., 星期六是 6）
+    const startDayOfWeek = startDate.getDay();
+
+    const fragment = document.createDocumentFragment();
+
+    // 【修改】移除星期标签的渲染逻辑
+
+    // 1. 创建 tooltip 元素（如果不存在）
+    let tooltip = document.getElementById('heatmap-tooltip');
+    if (!tooltip) {
+        tooltip = document.createElement('div');
+        tooltip.id = 'heatmap-tooltip';
+        tooltip.className = 'heatmap-tooltip';
+        document.body.appendChild(tooltip);
+    }
+
+    // 2. 填充起始空白格，以对齐日历
+    for (let i = 0; i < startDayOfWeek; i++) {
+        const spacer = document.createElement('div');
+        spacer.className = 'heatmap-day is-spacer';
+        fragment.appendChild(spacer);
+    }
+
+    // 3. 生成日期格子
+    for (let i = 0; i <= DAYS_IN_YEAR + 1; i++) {
+        const date = new Date(startDate);
+        date.setDate(date.getDate() + i);
+        const dateStr = date.toISOString().split('T')[0];
+        const count = activityData[dateStr] || 0;
+
+        const dayEl = document.createElement('div');
+        dayEl.className = 'heatmap-day';
+
+        // 根据学习数量设置不同的颜色等级
+        let level = 0;
+        if (count > 0) level = 1;
+        if (count >= 5) level = 2;
+        if (count >= 10) level = 3;
+        if (count >= 20) level = 4;
+
+        dayEl.dataset.level = level;
+        dayEl.dataset.date = dateStr;
+        dayEl.dataset.count = count;
+
+        // 鼠标悬浮时显示 tooltip
+        dayEl.addEventListener('mouseenter', (e) => {
+            const rect = dayEl.getBoundingClientRect();
+            tooltip.textContent = `${dateStr}: ${count} words`;
+            tooltip.style.top = `${rect.top - 30}px`;
+            tooltip.style.left = `${rect.left + rect.width / 2}px`;
+            tooltip.classList.add('is-visible');
+        });
+
+        // 鼠标移出时隐藏 tooltip
+        dayEl.addEventListener('mouseleave', () => {
+            tooltip.classList.remove('is-visible');
+        });
+
+        fragment.appendChild(dayEl);
+    }
+
+    container.appendChild(fragment);
+}
+
+
+// =================================================================================
+// 【新增】成就列表渲染逻辑
+// =================================================================================
+
+/**
+ * 渲染成就列表到模态框中。
+ * @param {HTMLElement} listContainer - 列表容器。
+ */
+export function renderAchievementsList(listContainer) {
+    if (!listContainer) return;
+    listContainer.innerHTML = '';
+
+    const defs = State.ACHIEVEMENT_DEFINITIONS;
+    const userProgress = State.userAchievements;
+
+    const fragment = document.createDocumentFragment();
+
+    defs.forEach(def => {
+        const progressData = userProgress[def.id] || { unlocked: false, progress: 0 };
+        const isUnlocked = progressData.unlocked;
+
+        let progressPercent = 0;
+        if (isUnlocked) {
+            progressPercent = 100;
+        } else if (def.target > 0) {
+            progressPercent = Math.min(100, Math.round((progressData.progress / def.target) * 100));
+        }
+
+        const item = document.createElement('div');
+        item.className = `achievement-item ${isUnlocked ? 'is-unlocked' : ''}`;
+
+        item.innerHTML = `
+            <div class="achievement-icon">${def.icon}</div>
+            <div class="achievement-info">
+                <div class="achievement-header">
+                    <span class="achievement-name">${def.name}</span>
+                    ${isUnlocked ? '<span class="achievement-badge">已解锁</span>' : ''}
+                </div>
+                <p class="achievement-desc">${def.description}</p>
+                <div class="achievement-progress-track">
+                    <div class="achievement-progress-bar" style="width: ${progressPercent}%"></div>
+                </div>
+                <div class="achievement-progress-text">
+                    ${progressData.progress} / ${def.target}
+                </div>
+            </div>
+        `;
+
+        fragment.appendChild(item);
+    });
+
+    listContainer.appendChild(fragment);
 }
 
 // =================================================================================
@@ -341,7 +494,19 @@ function createWordCard(data, handlers) {
 
     card.querySelector('.toggle-prefix-btn').addEventListener('click', e => { e.stopPropagation(); card.classList.toggle('prefix-hidden'); });
 
-    card.querySelector('.mark-btn').addEventListener('click', e => {
+    // --- 【核心修改】 ---
+    // 动态设置“标记”按钮的 title 属性
+    const markBtn = card.querySelector('.mark-btn');
+    if (markBtn) {
+        // 如果当前视图是“已掌握”，则按钮功能是“取消标记”
+        if (State.currentFilter === 'learned') {
+            markBtn.title = '标记为未掌握';
+        }
+        // 否则，使用模板中默认的 "标记为已掌握"
+    }
+    // --- 【修改结束】 ---
+
+    markBtn.addEventListener('click', e => {
         e.stopPropagation();
         handlers.onMarkLearned(data, card);
     });

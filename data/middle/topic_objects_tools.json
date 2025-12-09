@@ -44,21 +44,6 @@
           ]
         },
         {
-          "word": "cap",
-          "rootVisual": "<path d='M6 12a6 6 0 0 1 12 0v2H6z' stroke='currentColor' fill='none'/><path d='M18 14h4' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": [
-            "cap"
-          ],
-          "imagery": "一顶棒球帽，有突出的帽檐。",
-          "translation": "帽子 (通常指无边或只有前沿的帽子)",
-          "sentences": [
-            {
-              "en": "He put his cap on the chair.",
-              "cn": "他把帽子放在椅子上。"
-            }
-          ]
-        },
-        {
           "word": "glove",
           "rootVisual": "<path d='M8 4v10a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4' stroke='currentColor' fill='none'/><path d='M8 10h-2a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2' stroke='currentColor'/>",
           "breakdown": [
@@ -151,18 +136,18 @@
         },
         {
           "word": "instrument",
-          "rootVisual": "<circle cx='8' cy='16' r='4' stroke='currentColor' fill='none'/><path d='M12 16l8-8' stroke='currentColor' stroke-width='2'/><path d='M18 6l2 2' stroke='currentColor'/>",
+          "rootVisual": "<circle cx='8' cy='16' r='4' stroke='currentColor' fill='none'/><rect x='10' y='4' width='4' height='12' fill='currentColor'/><path d='M14 8 h4' stroke='currentColor'/>",
           "breakdown": [
-            "in-",
-            "stru",
-            "-ment"
+            "in- (内)",
+            "stru (建)",
+            "-ment (器)"
           ],
-          "imagery": "一把吉他或者一个科学仪器的轮廓。",
-          "translation": "仪器；乐器",
+          "imagery": "用于建设/操作的器具；乐器。",
+          "translation": "乐器；仪器",
           "sentences": [
             {
-              "en": "Are you able to use this instrument?",
-              "cn": "你会使用这个仪器吗？"
+              "en": "She plays a musical instrument.",
+              "cn": "她会演奏一种乐器。"
             }
           ]
         },
@@ -383,17 +368,17 @@
         },
         {
           "word": "passport",
-          "rootVisual": "<rect x='6' y='4' width='12' height='16' rx='1' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='3' stroke='currentColor' fill='none'/><path d='M9 16h6' stroke='currentColor'/>",
+          "rootVisual": "<rect x='6' y='6' width='12' height='16' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/>",
           "breakdown": [
-            "pass",
-            "port"
+            "pass (通过)",
+            "port (港)"
           ],
-          "imagery": "一本护照，封面上有一个国徽。",
+          "imagery": "通过港口的证件。",
           "translation": "护照",
           "sentences": [
             {
-              "en": "Let me see your passport, please.",
-              "cn": "请让我看一下你的护照。"
+              "en": "You need a passport to travel abroad.",
+              "cn": "出国旅行需要护照。"
             }
           ]
         },

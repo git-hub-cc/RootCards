@@ -181,18 +181,17 @@
         },
         {
           "word": "valid",
-          "rootVisual": "<path d='M4 12l6 6 10-10' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "rootVisual": "<path d='M4 12 l6 6 l10 -10' stroke='currentColor' stroke-width='3' fill='none'/>",
           "breakdown": [
-            "val",
-            "(强/价值)",
-            "id"
+            "val (强/效)",
+            "-id"
           ],
-          "imagery": "强有力的 -> 有效的。",
-          "translation": "有效的；正当的",
+          "imagery": "有效的，有法律效力的（强）。",
+          "translation": "有效的",
           "sentences": [
             {
-              "en": "A valid passport.",
-              "cn": "有效护照。"
+              "en": "Your ticket is valid for three months.",
+              "cn": "你的票有效期为三个月。"
             }
           ]
         },
@@ -266,35 +265,33 @@
         },
         {
           "word": "victim",
-          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 10l2 2-2 2' stroke='currentColor'/><path d='M16 10l-2 2 2 2' stroke='currentColor'/><path d='M12 16q-2-2-4 0' stroke='currentColor'/>",
+          "rootVisual": "<path d='M6 18 l12 -12' stroke='currentColor' stroke-width='2'/><path d='M6 6 l12 12' stroke='currentColor' stroke-width='2'/>",
           "breakdown": [
-            "vict",
-            "(征服)",
-            "im"
+            "vict (胜/败)",
+            "-im"
           ],
-          "imagery": "被征服的人（祭品）-> 受害者。",
+          "imagery": "失败的一方（相对于胜利者），受害者。",
           "translation": "受害者；牺牲品",
           "sentences": [
             {
-              "en": "Victims of war.",
-              "cn": "战争受害者。"
+              "en": "The victims of the earthquake need help.",
+              "cn": "地震的受害者需要帮助。"
             }
           ]
         },
         {
           "word": "victory",
-          "rootVisual": "<path d='M4 12l6 6 10-10' stroke='currentColor' stroke-width='2' fill='none'/><path d='M12 4v4' stroke='currentColor' opacity='0.5'/>",
+          "rootVisual": "<path d='M6 6 l6 12 l6 -12' stroke='currentColor' stroke-width='4'/>",
           "breakdown": [
-            "vict",
-            "(征服)",
-            "ory"
+            "vict (胜)",
+            "-ory (名)"
           ],
-          "imagery": "征服后的状态 -> 胜利。",
+          "imagery": "胜利。",
           "translation": "胜利",
           "sentences": [
             {
-              "en": "Win a victory.",
-              "cn": "赢得胜利。"
+              "en": "They won a great victory in the final match.",
+              "cn": "他们在决赛中取得了巨大的胜利。"
             }
           ]
         },
@@ -329,23 +326,6 @@
             {
               "en": "Patience is a virtue.",
               "cn": "耐心是一种美德。"
-            }
-          ]
-        },
-        {
-          "word": "volunteer",
-          "rootVisual": "<path d='M12 14l-4-4h8z' fill='currentColor'/><circle cx='12' cy='6' r='2' stroke='currentColor'/>",
-          "breakdown": [
-            "vol",
-            "(意愿)",
-            "unteer"
-          ],
-          "imagery": "自愿做的人 -> 志愿者。",
-          "translation": "志愿者；自愿",
-          "sentences": [
-            {
-              "en": "Volunteer work.",
-              "cn": "志愿工作。"
             }
           ]
         }
@@ -431,19 +411,21 @@
         },
         {
           "word": "withdraw",
-          "rootVisual": "<path d='M18 12h-8' stroke='currentColor' marker-end='url(#arrow)'/><rect x='4' y='4' width='8' height='16' stroke='currentColor' fill='none'/>",
+          "rootVisual": "<path d='M18 12 H6' stroke='currentColor' marker-end='url(#arrow)'/><rect x='20' y='8' width='4' height='8' stroke='currentColor' fill='none'/>",
           "breakdown": [
-            "with",
-            "(向后)",
-            "draw",
-            "(拉)"
+            "with- (向后)",
+            "draw (拉)"
           ],
-          "imagery": "向后拉 -> 撤回/取款。",
+          "imagery": "把东西向后拉回来，例如把钱从银行拉回来（取钱），或者撤回军队。",
           "translation": "撤回；取款",
           "sentences": [
             {
-              "en": "Withdraw money.",
-              "cn": "取钱。"
+              "en": "Withdraw money from the account.",
+              "cn": "从账户中取钱（向后拉回来）。"
+            },
+            {
+              "en": "The company decided to withdraw the product from the market.",
+              "cn": "公司决定将该产品从市场上撤回。"
             }
           ]
         },
@@ -466,18 +448,16 @@
         },
         {
           "word": "wrinkle",
-          "rootVisual": "<path d='M4 8q4 4 8 0t8 0' stroke='currentColor' fill='none'/><path d='M4 12q4 4 8 0t8 0' stroke='currentColor' fill='none'/><path d='M4 16q4 4 8 0t8 0' stroke='currentColor' fill='none'/>",
+          "rootVisual": "<path d='M4 8 q 8 4 16 0' stroke='currentColor' fill='none'/><path d='M4 12 q 8 4 16 0' stroke='currentColor' fill='none'/><path d='M4 16 q 8 4 16 0' stroke='currentColor' fill='none'/>",
           "breakdown": [
-            "wr",
-            "(扭曲)",
-            "inkle"
+            "wr (扭)"
           ],
-          "imagery": "皮肤扭曲的纹路 -> 皱纹。",
+          "imagery": "皮肤扭曲产生的纹路。",
           "translation": "皱纹",
           "sentences": [
             {
-              "en": "Anti-wrinkle cream.",
-              "cn": "抗皱霜。"
+              "en": "She has some wrinkles around her eyes.",
+              "cn": "她眼周有些皱纹。"
             }
           ]
         }

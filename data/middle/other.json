@@ -15,178 +15,304 @@
       "words": [
         {
           "word": "geography",
-          "rootVisual": "<path d='M2 20h20' stroke='currentColor' stroke-width='2' stroke-linecap='round'/><path d='M4 20 L9 6 L12 14 L16 4 L22 20' stroke='currentColor' fill='none' stroke-width='2' stroke-linejoin='round'/><path d='M9 6 L7 20' stroke='currentColor' stroke-width='1' opacity='0.5'/>",
-          "breakdown": ["Geo", "(大地)", "-graphy", "(描绘)"],
-          "imagery": "高耸的山峰和崎岖的地形，象征着对地球 (Geo) 面貌的记录与描绘 (Graphy)。",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M4 12 q 8 -4 16 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "geo (地)",
+            "graphy (画)"
+          ],
+          "imagery": "描绘大地的学科。",
           "translation": "地理",
           "sentences": [
-            { "en": "I love geography very much.", "cn": "我非常喜欢地理。" },
-            { "en": "I want to be a geographer.", "cn": "我想成为一名地理学家。" }
+            {
+              "en": "I'm studying the geography of Asia.",
+              "cn": "我正在学习亚洲地理。"
+            }
           ]
         },
         {
           "word": "habit",
           "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg'><path d='M 4 12 a 8 8 0 1 1 8 8 M 12 20 l 6 1 M 12 20 l 4 -4' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
-          "breakdown": ["Habit", "(居住/拥有)"],
+          "breakdown": [
+            "Habit",
+            "(居住/拥有)"
+          ],
           "imagery": "一个循环的箭头，表示不断重复、周而复始的行为。",
           "translation": "习惯",
           "sentences": [
-            { "en": "Study habits are very important.", "cn": "学习习惯非常重要。" },
-            { "en": "Smoking is a bad habit.", "cn": "吸烟是个坏习惯。" }
+            {
+              "en": "Study habits are very important.",
+              "cn": "学习习惯非常重要。"
+            },
+            {
+              "en": "Smoking is a bad habit.",
+              "cn": "吸烟是个坏习惯。"
+            }
           ]
         },
         {
           "word": "subject",
-          "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y1='12' x2='16' y2='12' stroke='currentColor'/><line x1='8' y1='16' x2='12' y2='16' stroke='currentColor'/>",
-          "breakdown": ["Sub-", "(在下)", "Ject", "(投掷)"],
-          "imagery": "一本教科书或笔记本的页面，列出了要学习的项目。",
-          "translation": "科目；主题",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M12 10 v6' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": [
+            "sub- (在下)",
+            "ject (投)"
+          ],
+          "imagery": "被投掷（ject）在下面（sub-），受支配的（臣民/主语）；放在下面的题目（主题）。",
+          "translation": "主题；科目；主语",
           "sentences": [
-            { "en": "There are eight subjects for us to learn this term.", "cn": "这学期我们有八门科目要学。" }
+            {
+              "en": "My favorite subject is math.",
+              "cn": "我最喜欢的科目是数学。"
+            }
           ]
         },
         {
           "word": "sweat",
           "rootVisual": "<path d='M14.6 2.8c-1.8 2.5-6.6 8.3-6.6 12.2c0 3.9 3.1 7 7 7s7-3.1 7-7c0-3.9-5.5-10.4-7.4-12.2z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 7 l-3 3' stroke='currentColor' stroke-width='2'/><path d='M4 13 l-2 2' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["Sweat", "(汗)"],
+          "breakdown": [
+            "Sweat",
+            "(汗)"
+          ],
           "imagery": "剧烈运动时，一颗带有速度感的汗珠飞溅而出，代表身体在努力降温。",
           "translation": "流汗；汗水",
           "sentences": [
-            { "en": "I sweat a lot in summer.", "cn": "我夏天流很多汗。" },
-            { "en": "Running in the heat makes me sweat.", "cn": "在热天跑步让我流汗。" }
+            {
+              "en": "I sweat a lot in summer.",
+              "cn": "我夏天流很多汗。"
+            },
+            {
+              "en": "Running in the heat makes me sweat.",
+              "cn": "在热天跑步让我流汗。"
+            }
           ]
         },
         {
           "word": "by",
           "rootVisual": "<circle cx='8' cy='18' r='2' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='16' cy='18' r='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 18 l-2 -4 h16 l-2 4' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["By", "(乘)"],
+          "breakdown": [
+            "By",
+            "(乘)"
+          ],
           "imagery": "一个交通工具（如自行车或汽车）的简化图标，表示乘坐某种方式。",
           "translation": "乘",
           "sentences": [
-            { "en": "My mum goes to work by bike every day.", "cn": "我妈妈每天骑自行车上班。" },
-            { "en": "My father often travels by airplane.", "cn": "我父亲经常乘飞机旅行。" }
+            {
+              "en": "My mum goes to work by bike every day.",
+              "cn": "我妈妈每天骑自行车上班。"
+            },
+            {
+              "en": "My father often travels by airplane.",
+              "cn": "我父亲经常乘飞机旅行。"
+            }
           ]
         },
         {
           "word": "camp",
           "rootVisual": "<path d='M2 18 l10 -12 l10 12 h-20' stroke='currentColor' fill='none' stroke-width='2'/><line x1='12' y1='6' x2='12' y2='18' stroke='currentColor' stroke-dasharray='2 2'/>",
-          "breakdown": ["Camp", "(营帐)"],
+          "breakdown": [
+            "Camp",
+            "(营帐)"
+          ],
           "imagery": "一个三角形的帐篷，代表露营。",
           "translation": "营帐",
           "sentences": [
-            { "en": "We go camping every summer.", "cn": "我们每年夏天都去露营。" }
+            {
+              "en": "We go camping every summer.",
+              "cn": "我们每年夏天都去露营。"
+            }
           ]
         },
         {
           "word": "tent",
           "rootVisual": "<path d='M2 18 l10 -14 l10 14 h-20' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 v14' stroke='currentColor' stroke-dasharray='2 2'/>",
-          "breakdown": ["tent", "(帐篷)"],
+          "breakdown": [
+            "tent",
+            "(帐篷)"
+          ],
           "imagery": "一个简洁的三角形帐篷，是户外露营的标志。",
           "translation": "帐篷",
           "sentences": [
-            { "en": "This tent can hold 4 people.", "cn": "这个帐篷可以容纳4人。" }
+            {
+              "en": "This tent can hold 4 people.",
+              "cn": "这个帐篷可以容纳4人。"
+            }
           ]
         },
         {
           "word": "crime",
           "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' stroke-width='2'/><circle cx='16' cy='12' r='4' stroke='currentColor' stroke-width='2'/><line x1='12' y1='12' x2='12' y2='16' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["Crime", "(犯罪)"],
+          "breakdown": [
+            "Crime",
+            "(犯罪)"
+          ],
           "imagery": "一副手铐的图标，象征着犯罪和法律制裁。",
           "translation": "犯罪",
           "sentences": [
-            { "en": "The police arrived at the crime scene.", "cn": "警察到达了犯罪现场。" }
+            {
+              "en": "The police arrived at the crime scene.",
+              "cn": "警察到达了犯罪现场。"
+            }
           ]
         },
         {
           "word": "haunt",
           "rootVisual": "<path d='M12 4 c-4 0 -6 3 -6 6 v6 h12 v-6 c0 -3 -2 -6 -6 -6 z' stroke='currentColor' fill='none'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='9' r='1' fill='currentColor'/><path d='M6 16 l2 4 l2 -4 l2 4 l2 -4 l2 4 l2 -4' stroke='currentColor' fill='none'/>",
-          "breakdown": ["hanter", "(常去)"],
+          "breakdown": [
+            "hanter",
+            "(常去)"
+          ],
           "imagery": "一个飘忽不定的幽灵形状，象征萦绕不去。",
           "translation": "萦绕",
-          "sentences": [{"en": "She is haunted by the fear that her husband has an affair.", "cn": "她被丈夫有外遇的恐惧所萦绕。"}]
+          "sentences": [
+            {
+              "en": "She is haunted by the fear that her husband has an affair.",
+              "cn": "她被丈夫有外遇的恐惧所萦绕。"
+            }
+          ]
         },
         {
           "word": "rope",
           "rootVisual": "<path d='M8 4 a4 4 0 1 1 0 8 a4 4 0 1 0 0 8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M16 4 a4 4 0 1 0 0 8 a4 4 0 1 1 0 8' stroke='currentColor' fill='none' stroke-width='2' opacity='0.5'/>",
-          "breakdown": ["rope", "(绳子)"],
+          "breakdown": [
+            "rope",
+            "(绳子)"
+          ],
           "imagery": "两条相互缠绕的螺旋线，形成了麻花状，直观地表现出绳子的结构。",
           "translation": "绳子",
           "sentences": [
-            { "en": "The rope is very strong.", "cn": "这根绳子很结实。" }
+            {
+              "en": "The rope is very strong.",
+              "cn": "这根绳子很结实。"
+            }
           ]
         },
         {
           "word": "stuff",
           "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none'/><path d='M8 8 l-2 -4 h12 l-2 4' stroke='currentColor' fill='none'/><circle cx='10' cy='14' r='1' fill='currentColor'/><rect x='13' y='12' width='3' height='3' fill='currentColor'/>",
-          "breakdown": ["estoffe", "(材料)"],
+          "breakdown": [
+            "estoffe",
+            "(材料)"
+          ],
           "imagery": "一个装满各种形状杂物的箱子。",
           "translation": "东西",
-          "sentences": [{"en": "I like my stuff.", "cn": "我喜欢我的东西。"}]
+          "sentences": [
+            {
+              "en": "I like my stuff.",
+              "cn": "我喜欢我的东西。"
+            }
+          ]
         },
         {
           "word": "create",
-          "rootVisual": "<path d='M12 12 m-8 0 a 8 8 0 1 0 16 0 a 8 8 0 1 0 -16 0' stroke='currentColor' fill='none' stroke-dasharray='4 4'/><path d='M12 8 v8 M8 12 h8' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["creare", "(产生)"],
-          "imagery": "虚线圆圈中出现一个实心的加号，代表从无到有的创造。",
+          "rootVisual": "<path d='M12 8 l-4 8 h8 z' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "cre (生长)",
+            "-ate (动词后缀)"
+          ],
+          "imagery": "使某物生长出来，即创造。",
           "translation": "创造",
-          "sentences": [{"en": "Most westerners believe that God created the world.", "cn": "大多数西方人相信上帝创造了世界。"}]
+          "sentences": [
+            {
+              "en": "The new factory is expected to create more than 400 new jobs.",
+              "cn": "新工厂预计将创造400多个新工作岗位。"
+            }
+          ]
         },
         {
           "word": "dragon boat festival",
           "rootVisual": "<path d='M2 15c0 0 5 4 10 4s9-5 9-5' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round'/><path d='M21 14l-1-3l2-2l-3 1l-1-2l-2 3' stroke='currentColor' fill='none' stroke-width='2' stroke-linejoin='round'/><path d='M2 15l-1-3l3 2' stroke='currentColor' fill='none' stroke-width='2' stroke-linejoin='round'/><path d='M7 17l-2 4 M12 18l-2 4 M17 17l-2 4' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
-          "breakdown": ["Dragon Boat", "(龙舟)", "Festival", "(节日)"],
+          "breakdown": [
+            "Dragon Boat",
+            "(龙舟)",
+            "Festival",
+            "(节日)"
+          ],
           "imagery": "一艘雕刻成龙形的细长独木舟，整齐划一的船桨如同龙爪，随着鼓点在水面上飞驰。",
           "translation": "端午节",
           "sentences": [
-            { "en": "The Dragon Boat Festival can be dated back to the Zhou Dynasty.", "cn": "端午节可以追溯到周朝。" }
+            {
+              "en": "The Dragon Boat Festival can be dated back to the Zhou Dynasty.",
+              "cn": "端午节可以追溯到周朝。"
+            }
           ]
         },
         {
           "word": "gift",
           "rootVisual": "<rect x='6' y='10' width='12' height='10' stroke='currentColor' fill='none' stroke-width='2'/><line x1='12' y1='10' x2='12' y2='20' stroke='currentColor'/><path d='M12 10 q -4 -8 -6 0 M12 10 q 4 -8 6 0' stroke='currentColor' fill='none'/>",
-          "breakdown": ["Gift", "(礼物)"],
+          "breakdown": [
+            "Gift",
+            "(礼物)"
+          ],
           "imagery": "一个方形盒子，上面打着蝴蝶结，象征惊喜和赠予。",
           "translation": "礼物",
           "sentences": [
-            { "en": "I bought a birthday gift for my sister.", "cn": "我给妹妹买了生日礼物。" }
+            {
+              "en": "I bought a birthday gift for my sister.",
+              "cn": "我给妹妹买了生日礼物。"
+            }
           ]
         },
         {
           "word": "kite",
           "rootVisual": "<path d='M12 2 l4 6 l-4 8 l-4 -8 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 16 q 4 4 0 8' stroke='currentColor' stroke-width='1.5'/>",
-          "breakdown": ["Kite", "(风筝)"],
+          "breakdown": [
+            "Kite",
+            "(风筝)"
+          ],
           "imagery": "一个菱形风筝，拖着一条波浪形的尾巴在空中飞翔。",
           "translation": "风筝",
           "sentences": [
-            { "en": "People often fly kites in spring.", "cn": "人们经常在春天放风筝。" }
+            {
+              "en": "People often fly kites in spring.",
+              "cn": "人们经常在春天放风筝。"
+            }
           ]
         },
         {
           "word": "vacation",
           "rootVisual": "<circle cx='4' cy='4' r='2' fill='currentColor'/><path d='M2 20 h20' stroke='currentColor'/><path d='M10 20 q 2 -10 4 -15 q 2 5 4 15' stroke='currentColor' fill='none'/><path d='M10 5 l8 0' stroke='currentColor' stroke-width='3' stroke-linecap='round' opacity='0.5'/>",
-          "breakdown": ["vacare", "(空闲)"],
+          "breakdown": [
+            "vacare",
+            "(空闲)"
+          ],
           "imagery": "太阳、海滩和遮阳伞下的休闲时光。",
           "translation": "假期",
-          "sentences": [{"en": "I hope to go to the seaside during the summer vacation.", "cn": "我希望暑假去海边。"}]
+          "sentences": [
+            {
+              "en": "I hope to go to the seaside during the summer vacation.",
+              "cn": "我希望暑假去海边。"
+            }
+          ]
         },
         {
           "word": "butterfly",
           "rootVisual": "<path d='M4 12 C 10 4, 10 4, 12 12 C 10 20, 10 20, 4 12 Z M20 12 C 14 4, 14 4, 12 12 C 14 20, 14 20, 20 12 Z' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["Butterfly", "(蝴蝶)"],
+          "breakdown": [
+            "Butterfly",
+            "(蝴蝶)"
+          ],
           "imagery": "一只对称的、拥有美丽翅膀的蝴蝶。",
           "translation": "蝴蝶",
           "sentences": [
-            { "en": "The butterfly is so beautiful.", "cn": "这只蝴蝶真漂亮。" }
+            {
+              "en": "The butterfly is so beautiful.",
+              "cn": "这只蝴蝶真漂亮。"
+            }
           ]
         },
         {
           "word": "giraffe",
           "rootVisual": "<rect x='6' y='14' width='8' height='6' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M14 14v-8a2 2 0 0 1 2-2h1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 20v2 M12 20v2' stroke='currentColor' stroke-width='2'/><path d='M16 4l-1-2 M18 4l1-2' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["Giraffe", "(长颈鹿)"],
+          "breakdown": [
+            "Giraffe",
+            "(长颈鹿)"
+          ],
           "imagery": "由简单的几何积木搭建而成，一个垂直的长方块代表其标志性的长脖子，稳固地连接在身体上。",
           "translation": "长颈鹿",
           "sentences": [
-            { "en": "A giraffe's neck is very long.", "cn": "长颈鹿的脖子很长。" }
+            {
+              "en": "A giraffe's neck is very long.",
+              "cn": "长颈鹿的脖子很长。"
+            }
           ]
         },
         {
@@ -199,27 +325,41 @@
           "imagery": "标志性的大圆耳朵和黑色大鼻子，这张呆萌的脸庞是澳大利亚最可爱的象征。",
           "translation": "考拉",
           "sentences": [
-            { "en": "The koala is a symbol of Australia.", "cn": "考拉是澳大利亚的象征。" }
+            {
+              "en": "The koala is a symbol of Australia.",
+              "cn": "考拉是澳大利亚的象征。"
+            }
           ]
         },
         {
           "word": "mouse",
           "rootVisual": "<path d='M12 10a5 5 0 0 1 5 5v2a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2v-2a5 5 0 0 1 5 -5z' /><path d='M6 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0' /><path d='M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0' /><path d='M9 13l-2 -1' /><path d='M15 13l2 -1' /><path d='M12 15v.01' />",
-          "breakdown": ["mouse", "(老鼠)"],
+          "breakdown": [
+            "mouse",
+            "(老鼠)"
+          ],
           "imagery": "标志性的大圆耳朵和圆润的脸庞，构成了老鼠最经典、最容易识别的卡通形象。",
           "translation": "老鼠",
           "sentences": [
-            { "en": "Most people don't like mice.", "cn": "大多数人不喜欢老鼠。" }
+            {
+              "en": "Most people don't like mice.",
+              "cn": "大多数人不喜欢老鼠。"
+            }
           ]
         },
         {
           "word": "pet",
-          "rootVisual": "<path d='M12 17.5c-2.5 0-4.5-1.5-4.5-3.5c0-1.5 1-2.5 2.5-2.5c1 0 1.5.5 2 1.5c.5-1 1-1.5 2-1.5c1.5 0 2.5 1 2.5 2.5c0 2-2 3.5-4.5 3.5z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='8' cy='6' r='2' fill='currentColor'/><circle cx='12' cy='5' r='2' fill='currentColor'/><circle cx='16' cy='6' r='2' fill='currentColor'/>",
-          "breakdown": ["pet", "(宠物)"],
-          "imagery": "一个简单的爪印，是毛茸茸的朋友在我们生命中留下印记的通用符号。",
+          "rootVisual": "<path d='M12 17.5c-2.5 0-4.5-1.5-4.5-3.5c0-1.5 1-2.5 2.5-2.5c1 0 1.5.5 2 1.5c.5-1 1-1.5 2-1.5c1.5 0 2.5 1 2.5 2.5c0 2-2 3.5-4.5 3.5z' fill='none' stroke='currentColor'/><circle cx='8' cy='6' r='2' fill='currentColor'/><circle cx='12' cy='5' r='2' fill='currentColor'/><circle cx='16' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "pet (追求/宠)"
+          ],
+          "imagery": "追随主人的动物；受宠爱的。",
           "translation": "宠物",
           "sentences": [
-            { "en": "I raised two pets, a dog and a cat.", "cn": "我养了两只宠物，一只狗和一只猫。" }
+            {
+              "en": "Do you have any pets?",
+              "cn": "你养宠物了吗？"
+            }
           ]
         }
       ]

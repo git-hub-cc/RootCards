@@ -328,27 +328,7 @@
         "description": "CET-6 Y 开头的高频混合词汇。",
         "imagery": "Y 像分叉路。"
       },
-      "words": [
-        {
-          "word": "yield",
-          "rootVisual": "<path d='M12 20l-2-2l-4 0a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2l-4 0z' stroke='currentColor' fill='none'/><path d='M12 6v6' stroke='currentColor'/><path d='M12 6l-3 3' stroke='currentColor'/><path d='M12 6l3 3' stroke='currentColor'/>",
-          "breakdown": [
-            "yield (给/产)"
-          ],
-          "imagery": "一株成熟的麦穗，象征产量。",
-          "translation": "生产；屈服；产量",
-          "sentences": [
-            {
-              "en": "The tree yields fruits.",
-              "cn": "这棵树结出了果实。"
-            },
-            {
-              "en": "Jimmy began to yield to her persuasion.",
-              "cn": "吉米开始屈服于她的劝说。"
-            }
-          ]
-        }
-      ]
+      "words": []
     },
     {
       "meaningId": "vocab_z",

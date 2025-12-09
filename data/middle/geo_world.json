@@ -16,113 +16,194 @@
         {
           "word": "africa",
           "rootVisual": "<path d='M12 2 C 16 4, 20 8, 20 12 C 20 18, 16 20, 12 22 S 4 20, 4 14 C 4 8, 8 4, 12 2 Z' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["Africa", "(非洲)"],
+          "breakdown": [
+            "Africa",
+            "(非洲)"
+          ],
           "imagery": "非洲大陆的轮廓图，广袤而充满活力。",
           "translation": "非洲",
           "sentences": [
-            { "en": "I have been to Africa.", "cn": "我去过非洲。" }
+            {
+              "en": "I have been to Africa.",
+              "cn": "我去过非洲。"
+            }
           ]
         },
         {
           "word": "african",
           "rootVisual": "<path d='M12 2 C 16 4, 20 8, 20 12 C 20 18, 16 20, 12 22 S 4 20, 4 14 C 4 8, 8 4, 12 2 Z' stroke='currentColor' fill='none' stroke-width='1.5'/><circle cx='12' cy='10' r='2' fill='currentColor'/><path d='M10 13 a 2 2 0 0 1 4 0 v 3 h -4 z' fill='currentColor'/>",
-          "breakdown": ["Africa", "(非洲)", "-n", "(的/人)"],
+          "breakdown": [
+            "Africa",
+            "(非洲)",
+            "-n",
+            "(的/人)"
+          ],
           "imagery": "非洲大陆的轮廓图上有一个人的图标，代表“非洲的”或“非洲人”。",
           "translation": "非洲的；非洲人",
           "sentences": [
-            { "en": "The African people are very friendly and welcoming.", "cn": "非洲人民非常友好和热情。" }
+            {
+              "en": "The African people are very friendly and welcoming.",
+              "cn": "非洲人民非常友好和热情。"
+            }
           ]
         },
         {
           "word": "australia",
           "rootVisual": "<path d='M4 14 C 8 10, 16 10, 20 14 C 18 18, 10 18, 4 14 Z' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["Australia", "(澳大利亚)"],
+          "breakdown": [
+            "Australia",
+            "(澳大利亚)"
+          ],
           "imagery": "澳大利亚大陆的简化轮廓图，一个独立的岛屿大陆。",
           "translation": "澳大利亚",
           "sentences": [
-            { "en": "Australia is a big country like China.", "cn": "澳大利亚和中国一样是个大国。" }
+            {
+              "en": "Australia is a big country like China.",
+              "cn": "澳大利亚和中国一样是个大国。"
+            }
           ]
         },
         {
           "word": "australian",
           "rootVisual": "<path d='M4 14 C 8 10, 16 10, 20 14 C 18 18, 10 18, 4 14 Z' stroke='currentColor' fill='none' stroke-width='1.5'/><circle cx='12' cy='12' r='1.5' fill='currentColor'/><path d='M10.5 14.5 a 1.5 1.5 0 0 1 3 0 v 2 h -3 z' fill='currentColor'/>",
-          "breakdown": ["Australia", "(澳大利亚)", "-n", "(的/人)"],
+          "breakdown": [
+            "Australia",
+            "(澳大利亚)",
+            "-n",
+            "(的/人)"
+          ],
           "imagery": "澳大利亚大陆轮廓图上有一个人的图标，代表“澳大利亚的”或“澳大利亚人”。",
           "translation": "澳大利亚的；澳大利亚人",
           "sentences": [
-            { "en": "Australians speak English.", "cn": "澳大利亚人说英语。" }
+            {
+              "en": "Australians speak English.",
+              "cn": "澳大利亚人说英语。"
+            }
           ]
         },
         {
           "word": "canada",
           "rootVisual": "<path d='M12 2 L 8 8 H 4 L 9 11 L 6 18 L 12 14 L 18 18 L 15 11 L 20 8 H 16 L 12 2 Z' fill='currentColor'/>",
-          "breakdown": ["Canada", "(加拿大)"],
+          "breakdown": [
+            "Canada",
+            "(加拿大)"
+          ],
           "imagery": "一片标志性的红色枫叶，加拿大的象征。",
           "translation": "加拿大",
           "sentences": [
-            { "en": "Canada is next to the USA.", "cn": "加拿大在美国旁边。" }
+            {
+              "en": "Canada is next to the USA.",
+              "cn": "加拿大在美国旁边。"
+            }
           ]
         },
         {
           "word": "canadian",
           "rootVisual": "<path d='M12 2 L 8 8 H 4 L 9 11 L 6 18 L 12 14 L 18 18 L 15 11 L 20 8 H 16 L 12 2 Z' fill='none' stroke='currentColor' stroke-width='1.5'/><circle cx='12' cy='12' r='1.5' fill='currentColor'/>",
-          "breakdown": ["Canada", "(加拿大)", "-n", "(的/人)"],
+          "breakdown": [
+            "Canada",
+            "(加拿大)",
+            "-n",
+            "(的/人)"
+          ],
           "imagery": "枫叶图案的中心有一个小人像，代表“加拿大的”或“加拿大人”。",
           "translation": "加拿大的；加拿大人",
           "sentences": [
-            { "en": "Canadians speak English.", "cn": "加拿大人说英语。" }
+            {
+              "en": "Canadians speak English.",
+              "cn": "加拿大人说英语。"
+            }
           ]
         },
         {
           "word": "europe",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='1 4' stroke-width='4'/>",
-          "breakdown": ["Europe", "(欧洲)"],
+          "breakdown": [
+            "Europe",
+            "(欧洲)"
+          ],
           "imagery": "一圈环绕的虚线点，象征欧盟旗帜上的星环，代表欧洲的联合。",
           "translation": "欧洲",
           "sentences": [
-            { "en": "Europe is divided into Eastern Europe and Western Europe.", "cn": "欧洲分为东欧和西欧。" },
-            { "en": "The European economy is getting worse.", "cn": "欧洲经济每况愈下。" }
+            {
+              "en": "Europe is divided into Eastern Europe and Western Europe.",
+              "cn": "欧洲分为东欧和西欧。"
+            },
+            {
+              "en": "The European economy is getting worse.",
+              "cn": "欧洲经济每况愈下。"
+            }
           ]
         },
         {
           "word": "russia",
           "rootVisual": "<path d='M12 2 c -3 0 -5 2.5 -5 5.5 c 0 2 1.5 3.5 3 4.5 c -2 1 -4 3 -4 6 c 0 3.3 2.7 6 6 6 s 6 -2.7 6 -6 c 0 -3 -2 -5 -4 -6 c 1.5 -1 3 -2.5 3 -4.5 C 17 4.5 15 2 12 2 z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='7' r='2.5' stroke='currentColor' fill='none' stroke-width='1.5'/><path d='M9 16 q 3 3 6 0' stroke='currentColor' fill='none' stroke-width='1.5'/>",
-          "breakdown": ["Russia", "(俄罗斯)"],
+          "breakdown": [
+            "Russia",
+            "(俄罗斯)"
+          ],
           "imagery": "The iconic Matryoshka doll (套娃), a symbol of Russian folk art that represents the nation's rich, layered culture.",
           "translation": "俄罗斯",
           "sentences": [
-            { "en": "Russian people are not afraid of the cold.", "cn": "俄罗斯人不怕冷。" }
+            {
+              "en": "Russian people are not afraid of the cold.",
+              "cn": "俄罗斯人不怕冷。"
+            }
           ]
         },
         {
           "word": "country",
           "rootVisual": "<path d='M4 20 L4 4 h10 l-2 4 l2 4 h-10' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["Country", "(国家)"],
+          "breakdown": [
+            "Country",
+            "(国家)"
+          ],
           "imagery": "一根旗杆上飘扬着一面旗帜，代表一个主权国家。",
           "translation": "国家",
           "sentences": [
-            { "en": "Australia is a big country like China.", "cn": "澳大利亚和中国一样是个大国。" }
+            {
+              "en": "Australia is a big country like China.",
+              "cn": "澳大利亚和中国一样是个大国。"
+            }
           ]
         },
         {
           "word": "state",
-          "rootVisual": "<path d='M4 4 h16 v16 h-16 z' stroke='currentColor' fill='none' stroke-width='2' opacity='0.3'/><path d='M8 8 v8 h8' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["state", "(州)"],
-          "imagery": "一张地图的局部，其中一个行政区（州）被高亮显示。",
-          "translation": "州",
+          "rootVisual": "<path d='M4 4 h16 v16 h-16 z' stroke='currentColor' fill='none'/><text x='12' y='14' font-size='10' text-anchor='middle' fill='currentColor'>US</text>",
+          "breakdown": [
+            "stat (站/立)"
+          ],
+          "imagery": "立国；官方陈述（立论）；状况（立足点）。",
+          "translation": "州；国家；陈述；状态",
           "sentences": [
-            { "en": "There are 50 states in America.", "cn": "美国有50个州。" }
+            {
+              "en": "California is a state in the USA.",
+              "cn": "加利福尼亚是美国的一个州。"
+            },
+            {
+              "en": "He is in a state of shock.",
+              "cn": "他处于休克状态。"
+            }
           ]
         },
         {
           "word": "flag",
           "rootVisual": "<line x1='6' y1='4' x2='6' y2='22' stroke='currentColor' stroke-width='2'/><path d='M6 5 h10 l-2 4 l2 4 h-10' stroke='currentColor' fill='currentColor' fill-opacity='0.2'/>",
-          "breakdown": ["Flag", "(旗)"],
+          "breakdown": [
+            "Flag",
+            "(旗)"
+          ],
           "imagery": "一根旗杆上飘扬着一面长方形的旗帜。",
           "translation": "旗帜",
           "sentences": [
-            { "en": "The flags are flying.", "cn": "旗帜在飘扬。" },
-            { "en": "We salute the national flag.", "cn": "我们向国旗敬礼。" }
+            {
+              "en": "The flags are flying.",
+              "cn": "旗帜在飘扬。"
+            },
+            {
+              "en": "We salute the national flag.",
+              "cn": "我们向国旗敬礼。"
+            }
           ]
         },
         {
@@ -135,7 +216,10 @@
           "imagery": "大象正面轮廓图，嘴角两侧伸出两根弯曲、洁白的长牙（Ivory），这是它们最显著的特征。",
           "translation": "象牙",
           "sentences": [
-            { "en": "The ivory trade is illegal in China.", "cn": "象牙贸易在中国是非法的。" }
+            {
+              "en": "The ivory trade is illegal in China.",
+              "cn": "象牙贸易在中国是非法的。"
+            }
           ]
         }
       ]

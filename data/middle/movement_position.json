@@ -16,103 +16,168 @@
         {
           "word": "arrive",
           "rootVisual": "<path d='M4 12 h12 l-4 -4 m4 4 l-4 4' stroke='currentColor' stroke-width='2'/><line x1='20' y1='6' x2='20' y2='18' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["Arrive", "(到达)"],
+          "breakdown": [
+            "Arrive",
+            "(到达)"
+          ],
           "imagery": "一个箭头指向一条终点线，象征着到达目的地。",
           "translation": "到达",
           "sentences": [
-            { "en": "When will you arrive in Beijing?", "cn": "你什么时候到北京？" },
-            { "en": "I'll arrive there before 10 p.m.", "cn": "我会在晚上10点前到达那里。" }
+            {
+              "en": "When will you arrive in Beijing?",
+              "cn": "你什么时候到北京？"
+            },
+            {
+              "en": "I'll arrive there before 10 p.m.",
+              "cn": "我会在晚上10点前到达那里。"
+            }
           ]
         },
         {
           "word": "stay",
           "rootVisual": "<path d='M12 2 a 8 8 0 0 1 8 8 c 0 6 -8 12 -8 12 s -8 -6 -8 -12 a 8 8 0 0 1 8 -8 z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='10' r='3' fill='currentColor' fill-opacity='0.3' stroke='currentColor'/>",
-          "breakdown": ["stay", "(停留)"],
+          "breakdown": [
+            "stay",
+            "(停留)"
+          ],
           "imagery": "一个地图定位销牢牢地扎在一个点上，表示固定不动、停留于此。",
           "translation": "停留；熬夜",
           "sentences": [
-            { "en": "How long will you stay here?", "cn": "你会在这里待多久？" },
-            { "en": "Don't stay up late. It's bad for your health.", "cn": "别熬夜，对你身体不好。" }
+            {
+              "en": "How long will you stay here?",
+              "cn": "你会在这里待多久？"
+            },
+            {
+              "en": "Don't stay up late. It's bad for your health.",
+              "cn": "别熬夜，对你身体不好。"
+            }
           ]
         },
         {
           "word": "away",
           "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><path d='M10 12 h8 l-3 -3 m3 3 l-3 3' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["Away", "(远离)"],
+          "breakdown": [
+            "Away",
+            "(远离)"
+          ],
           "imagery": "一个箭头从一个点出发，指向远方，表示“远离”。",
           "translation": "远离",
           "sentences": [
-            { "en": "Stay away from the fire.", "cn": "远离火源。" }
+            {
+              "en": "Stay away from the fire.",
+              "cn": "远离火源。"
+            }
           ]
         },
         {
           "word": "bring",
           "rootVisual": "<path d='M4 12 h16 l-4 -4 m4 4 l-4 4' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["Bring", "(带来)"],
+          "breakdown": [
+            "Bring",
+            "(带来)"
+          ],
           "imagery": "一个指向观者方向的箭头，表示将某物“带来”。",
           "translation": "带来",
           "sentences": [
-            { "en": "Allen brought hope to me when I was desperate.", "cn": "在我绝望时，艾伦给我带来了希望。" }
+            {
+              "en": "Allen brought hope to me when I was desperate.",
+              "cn": "在我绝望时，艾伦给我带来了希望。"
+            }
           ]
         },
         {
           "word": "follow",
           "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M8 12 h2 M14 12 h2' stroke='currentColor'/>",
-          "breakdown": ["Follow", "(跟随)"],
+          "breakdown": [
+            "Follow",
+            "(跟随)"
+          ],
           "imagery": "三个点排成一行，后面的紧紧跟随着前面的。",
           "translation": "跟随",
           "sentences": [
-            { "en": "The lovely chicks are following their mother.", "cn": "可爱的小鸡们正跟着它们的妈妈。" }
+            {
+              "en": "The lovely chicks are following their mother.",
+              "cn": "可爱的小鸡们正跟着它们的妈妈。"
+            }
           ]
         },
         {
           "word": "join",
           "rootVisual": "<path d='M6 6 L12 14 L18 6 M12 14 V 22' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["Join", "(加入)"],
+          "breakdown": [
+            "Join",
+            "(加入)"
+          ],
           "imagery": "两条分开的路径最终汇聚成一条主路（Y字形），象征汇合与加入。",
           "translation": "加入",
           "sentences": [
-            { "en": "Can I join you for a game?", "cn": "我可以加入你们玩游戏吗？" }
+            {
+              "en": "Can I join you for a game?",
+              "cn": "我可以加入你们玩游戏吗？"
+            }
           ]
         },
         {
           "word": "jump",
           "rootVisual": "<path d='M4 20 q 8 -24 16 0' stroke='currentColor' fill='none' stroke-width='2'/><rect x='2' y='20' width='4' height='2' fill='currentColor'/><rect x='18' y='20' width='4' height='2' fill='currentColor'/>",
-          "breakdown": ["Jump", "(跳跃)"],
+          "breakdown": [
+            "Jump",
+            "(跳跃)"
+          ],
           "imagery": "一条高高的抛物线，展示了从起点跃起落到终点的过程。",
           "translation": "跳跃",
           "sentences": [
-            { "en": "I'll take a photo of you when you jump.", "cn": "你跳的时候我会给你拍张照。" }
+            {
+              "en": "I'll take a photo of you when you jump.",
+              "cn": "你跳的时候我会给你拍张照。"
+            }
           ]
         },
         {
           "word": "cross",
-          "rootVisual": "<path d='M2 12 h20' stroke='currentColor' stroke-width='2'/><circle cx='8' cy='8' r='2' fill='currentColor'/><path d='M8 10 v4 l-2 4 M8 10 l2 4' stroke='currentColor' fill='none'/>",
-          "breakdown": ["Cross", "(交叉/穿过)"],
-          "imagery": "一个简笔画小人正在跨过一条线，表示“穿过”的动作。",
-          "translation": "跨过",
+          "rootVisual": "<path d='M12 4 v16 M4 12 h16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "cross (交叉)"
+          ],
+          "imagery": "十字形；穿过。",
+          "translation": "交叉；穿过",
           "sentences": [
-            { "en": "Don't cross the road when the red light is on.", "cn": "红灯亮时不要过马路。" }
+            {
+              "en": "Please cross the street at the traffic lights.",
+              "cn": "请在红绿灯处过马路。"
+            }
           ]
         },
         {
           "word": "take a walk",
           "rootVisual": "<path d='M8 20 a 4 2 0 0 0 8 0 v-8 a 4 4 0 1 0 -8 0 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M16 18 a 4 2 0 0 0 8 0 v-8 a 4 4 0 1 0 -8 0 z' stroke='currentColor' fill='none' stroke-width='2' opacity='0.5' transform='translate(-12 -2)'/>",
-          "breakdown": ["take a walk", "(散步)"],
+          "breakdown": [
+            "take a walk",
+            "(散步)"
+          ],
           "imagery": "两个脚印一前一后，交替前行，代表悠闲的散步。",
           "translation": "散步",
           "sentences": [
-            { "en": "People like taking a walk after dinner.", "cn": "人们喜欢晚饭后散步。" }
+            {
+              "en": "People like taking a walk after dinner.",
+              "cn": "人们喜欢晚饭后散步。"
+            }
           ]
         },
         {
           "word": "front",
           "rootVisual": "<rect x='8' y='4' width='10' height='10' stroke='currentColor' fill='none' opacity='0.3'/><rect x='6' y='10' width='10' height='10' stroke='currentColor' fill='currentColor' fill-opacity='0.1' stroke-width='2'/>",
-          "breakdown": ["Front", "(前面)"],
+          "breakdown": [
+            "Front",
+            "(前面)"
+          ],
           "imagery": "两个重叠的方块，一个明显位于另一个的前方，遮挡住了后面。",
           "translation": "前面",
           "sentences": [
-            { "en": "A car is in front of the house.", "cn": "一辆车在房子前面。" }
+            {
+              "en": "A car is in front of the house.",
+              "cn": "一辆车在房子前面。"
+            }
           ]
         }
       ]

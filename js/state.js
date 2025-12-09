@@ -1,29 +1,85 @@
 // =================================================================================
-// 数据与状态管理模块 (State Management Module) - v8.3 (统一阶段标识符)
+// 数据与状态管理模块 (State Management Module) - v9.0 (热力图与成就系统)
 // ---------------------------------------------------------------------------------
 // 主要职责：
 // 1. (数据加载) 异步加载所有词汇数据文件。
 // 2. (数据处理) 将原始数据处理成应用所需的格式。
 // 3. (状态管理) 维护全局数据和当前筛选状态。
 // 4. (用户数据) 管理“已掌握”单词、“自定义单词本”以及“用户笔记”的增删改查。
-// 5. (持久化) 负责 localStorage 的读写。
+// 5. (新增) 管理“学习热力图”活动数据。
+// 6. (新增) 管理“成就系统”状态与解锁逻辑。
+// 7. (持久化) 负责 localStorage 的读写。
 // =================================================================================
+
+import * as NotificationManager from './modules/notificationManager.js';
 
 // --- 模块内常量 ---
 const LEARNED_WORDS_KEY = 'etymologyLearnedWords';
 const USER_WORDBOOKS_KEY = 'etymologyUserWordbooks';
 const USER_NOTES_KEY = 'etymologyUserNotes';
+const LEARNING_ACTIVITY_KEY = 'etymologyLearningActivity'; // 新增：热力图数据 Key
+const USER_ACHIEVEMENTS_KEY = 'etymologyUserAchievements'; // 新增：成就数据 Key
+
+// --- 成就定义配置 (硬编码) ---
+export const ACHIEVEMENT_DEFINITIONS = [
+    {
+        id: 'compiler',
+        name: 'Compiler (编译器)',
+        description: '连续 7 天完成至少一次学习打卡。',
+        icon: '⚡',
+        condition: 'streak',
+        target: 7
+    },
+    {
+        id: 'refactor_master',
+        name: 'Refactor Master (重构大师)',
+        description: '累计标记掌握 100 个单词。',
+        icon: '🛠️',
+        condition: 'count',
+        target: 100
+    },
+    {
+        id: 'bug_hunter',
+        name: 'Bug Hunter (捕虫猎人)',
+        description: '在拼写模式中一次性连续拼对 20 个单词。',
+        icon: '🐞',
+        condition: 'manual', // 手动触发
+        target: 20
+    },
+    {
+        id: 'full_stack',
+        name: 'Full Stack (全栈)',
+        description: '累计掌握 500 个单词。',
+        icon: '📚',
+        condition: 'count',
+        target: 500
+    },
+    {
+        id: 'legacy_code',
+        name: 'Legacy Code (遗留代码)',
+        description: '连续 30 天坚持学习。',
+        icon: '🏛️',
+        condition: 'streak',
+        target: 30
+    }
+];
 
 // --- 导出的状态变量 (供其他模块读取和修改) ---
 export let allVocabularyData = [];      // 存储所有已加载和处理过的数据
 export let currentDataSet = [];         // 当前经过筛选后，需要被渲染的数据集
 export let currentFilter = 'all';       // 当前类别筛选器状态
-export let currentGrade = 'middle';     // 【修改】当前年级筛选器状态, 默认'middle'
+export let currentGrade = 'middle';     // 当前年级筛选器状态
 export let currentContentType = 'pre';  // 当前内容类型筛选器状态
 export let learnedWordsSet = new Set(); // 存储所有已掌握单词的 Set 集合
 export let currentSearchQuery = '';     // 当前搜索框中的关键词
 export let userWordbooks = [];          // 存储所有用户创建的单词本
 export let userNotes = new Map();       // 存储用户笔记 Map<word, text>
+export let learningActivity = {};       // 新增：学习活动记录 { "YYYY-MM-DD": count }
+export let userAchievements = {};       // 新增：用户成就状态 { id: { unlocked: bool, progress: num, date: ts } }
+
+// =================================================================================
+// 基础数据加载与保存 (保持原逻辑)
+// =================================================================================
 
 /**
  * 从 localStorage 加载已掌握的单词列表。
@@ -50,6 +106,8 @@ function saveLearnedWords() {
     try {
         const wordsArray = Array.from(learnedWordsSet);
         localStorage.setItem(LEARNED_WORDS_KEY, JSON.stringify(wordsArray));
+        // 检查基于数量的成就 (Refactor Master)
+        checkCountAchievements();
     } catch (error) {
         console.error('无法保存学习进度到 localStorage:', error);
     }
@@ -83,22 +141,11 @@ function saveUserNotes() {
     }
 }
 
-/**
- * 获取指定单词的笔记内容。
- * @param {string} word - 单词文本
- * @returns {string} - 笔记内容，如果没有则返回空字符串
- */
 export function getUserNote(word) {
     if (!word) return '';
     return userNotes.get(word.toLowerCase()) || '';
 }
 
-/**
- * 保存或更新指定单词的笔记。
- * 如果 text 为空，则删除该条笔记。
- * @param {string} word - 单词文本
- * @param {string} text - 笔记内容
- */
 export function saveUserNote(word, text) {
     if (!word) return;
     const key = word.toLowerCase();
@@ -144,20 +191,10 @@ function saveUserWordbooks() {
     }
 }
 
-/**
- * 【CRUD】获取单个单词本的数据。
- * @param {string} name - 单词本名称
- * @returns {object|null} - 返回单词本对象或 null
- */
 export function getWordbook(name) {
     return userWordbooks.find(wb => wb.name === name) || null;
 }
 
-/**
- * 【CRUD】删除指定的单词本。
- * @param {string} name - 要删除的单词本名称。
- * @returns {boolean} - 删除成功返回 true，未找到返回 false。
- */
 export function deleteWordbook(name) {
     const initialLength = userWordbooks.length;
     userWordbooks = userWordbooks.filter(wb => wb.name !== name);
@@ -168,13 +205,6 @@ export function deleteWordbook(name) {
     return false;
 }
 
-/**
- * 【CRUD】添加或更新一个单词本。
- * @param {string|null} oldName - 旧名称。如果是新建，传 null。
- * @param {string} newName - 新名称。
- * @param {string[]} words - 最新的单词列表。
- * @returns {boolean} - 操作成功返回 true。
- */
 export function addOrUpdateWordbook(oldName, newName, words) {
     if (!newName || !words || !Array.isArray(words)) return false;
 
@@ -199,9 +229,6 @@ export function addOrUpdateWordbook(oldName, newName, words) {
     return true;
 }
 
-/**
- * 切换一个单词的“已掌握”状态，并同步更新 localStorage。
- */
 export function toggleLearnedStatus(wordData) {
     wordData.isLearned = !wordData.isLearned;
     if (wordData.isLearned) {
@@ -212,16 +239,10 @@ export function toggleLearnedStatus(wordData) {
     saveLearnedWords();
 }
 
-/**
- * 获取“已掌握”单词的数组形式，用于导出。
- */
 export function getLearnedWordsArray() {
     return Array.from(learnedWordsSet).sort();
 }
 
-/**
- * 从一个数组导入“已掌握”的单词。
- */
 export function importLearnedWords(wordsArray) {
     if (!Array.isArray(wordsArray)) {
         console.error('导入数据格式错误，需要一个数组。');
@@ -244,9 +265,6 @@ export function importLearnedWords(wordsArray) {
     return learnedWordsSet.size - originalSize;
 }
 
-/**
- * 清空所有“已掌握”的单词记录。
- */
 export function clearLearnedWords() {
     learnedWordsSet.clear();
     allVocabularyData.forEach(item => {
@@ -255,34 +273,215 @@ export function clearLearnedWords() {
         }
     });
     saveLearnedWords();
+    // 清空进度后，不需要重置热力图，那是历史记录。但可以考虑是否重置某些计数类成就（这里暂时保留成就）。
 }
 
 // =================================================================================
-// 【核心修改区域】
+// 【新增】热力图数据管理 (Learning Heatmap)
 // =================================================================================
+
 /**
- * 根据文件路径判断其所属学习阶段。
- * @param {string} filePath - 文件的相对路径
- * @returns {string} - 学习阶段标识符 (e.g., 'middle', 'high', 'cet4', 'cet6')
+ * 加载学习活动记录。
  */
+export function loadLearningActivity() {
+    try {
+        const stored = localStorage.getItem(LEARNING_ACTIVITY_KEY);
+        if (stored) {
+            learningActivity = JSON.parse(stored);
+        } else {
+            learningActivity = {};
+        }
+    } catch (e) {
+        console.error('无法加载学习热力图数据:', e);
+        learningActivity = {};
+    }
+}
+
+/**
+ * 记录学习活动。
+ * @param {Date} date - 日期对象
+ * @param {number} increment - 增加的数量（默认为 1），可以是负数用于撤销。
+ */
+export function logLearningActivity(date = new Date(), increment = 1) {
+    try {
+        const dateKey = date.toISOString().split('T')[0]; // "YYYY-MM-DD"
+        if (!learningActivity[dateKey]) {
+            learningActivity[dateKey] = 0;
+        }
+        learningActivity[dateKey] += increment;
+
+        // 确保不为负数
+        if (learningActivity[dateKey] < 0) {
+            learningActivity[dateKey] = 0;
+        }
+
+        // 移除计数为0的记录，保持数据整洁？或者保留以显示"活跃但无产出"？
+        // 这里选择保留，只要有记录就视为当天有活动。
+
+        localStorage.setItem(LEARNING_ACTIVITY_KEY, JSON.stringify(learningActivity));
+
+        // 记录活动后，检查基于连续性的成就
+        checkStreakAchievements();
+
+    } catch (e) {
+        console.error('保存学习活动失败:', e);
+    }
+}
+
+/**
+ * 获取热力图数据。
+ */
+export function getLearningActivity() {
+    return learningActivity;
+}
+
+// =================================================================================
+// 【新增】成就系统管理 (Achievement System)
+// =================================================================================
+
+/**
+ * 加载用户成就。
+ */
+export function loadAchievements() {
+    try {
+        const stored = localStorage.getItem(USER_ACHIEVEMENTS_KEY);
+        if (stored) {
+            userAchievements = JSON.parse(stored);
+        } else {
+            userAchievements = {};
+        }
+        // 初始化未获得的成就结构
+        ACHIEVEMENT_DEFINITIONS.forEach(def => {
+            if (!userAchievements[def.id]) {
+                userAchievements[def.id] = { unlocked: false, progress: 0, date: null };
+            }
+        });
+    } catch (e) {
+        console.error('无法加载成就数据:', e);
+        userAchievements = {};
+    }
+}
+
+/**
+ * 解锁成就的核心函数。
+ * @param {string} achievementId - 成就ID
+ */
+export function unlockAchievement(achievementId) {
+    const achievement = userAchievements[achievementId];
+    const definition = ACHIEVEMENT_DEFINITIONS.find(d => d.id === achievementId);
+
+    if (achievement && !achievement.unlocked && definition) {
+        achievement.unlocked = true;
+        achievement.date = new Date().toISOString();
+        achievement.progress = definition.target; // 确保进度显示满额
+
+        localStorage.setItem(USER_ACHIEVEMENTS_KEY, JSON.stringify(userAchievements));
+
+        // 触发通知
+        NotificationManager.show({
+            type: 'success',
+            message: `🏆 解锁成就：${definition.name} - ${definition.description}`,
+            duration: 5000
+        });
+    }
+}
+
+/**
+ * 检查基于数量的成就 (Count-based)。
+ * 例如：累计掌握 100 个单词。
+ */
+function checkCountAchievements() {
+    const count = learnedWordsSet.size;
+    const targets = ACHIEVEMENT_DEFINITIONS.filter(d => d.condition === 'count');
+
+    targets.forEach(def => {
+        const userAch = userAchievements[def.id];
+        if (!userAch.unlocked) {
+            userAch.progress = count; // 更新进度
+            if (count >= def.target) {
+                unlockAchievement(def.id);
+            }
+        }
+    });
+    localStorage.setItem(USER_ACHIEVEMENTS_KEY, JSON.stringify(userAchievements));
+}
+
+/**
+ * 检查基于连续天数的成就 (Streak-based)。
+ * 例如：连续 7 天学习。
+ */
+function checkStreakAchievements() {
+    const dates = Object.keys(learningActivity).sort();
+    if (dates.length === 0) return;
+
+    // 计算当前连续天数
+    let streak = 0;
+    const today = new Date().toISOString().split('T')[0];
+    let currentDateStr = today;
+
+    // 如果今天没有记录，检查昨天（允许今天还没开始学）
+    if (!learningActivity[currentDateStr]) {
+        const yesterday = new Date();
+        yesterday.setDate(yesterday.getDate() - 1);
+        currentDateStr = yesterday.toISOString().split('T')[0];
+    }
+
+    // 回溯检查
+    while (learningActivity[currentDateStr] && learningActivity[currentDateStr] > 0) {
+        streak++;
+        const d = new Date(currentDateStr);
+        d.setDate(d.getDate() - 1);
+        currentDateStr = d.toISOString().split('T')[0];
+    }
+
+    const targets = ACHIEVEMENT_DEFINITIONS.filter(d => d.condition === 'streak');
+    targets.forEach(def => {
+        const userAch = userAchievements[def.id];
+        // 只有当当前 streak 大于记录的最高 streak 时才更新进度
+        if (!userAch.unlocked && streak > userAch.progress) {
+            userAch.progress = streak;
+            if (streak >= def.target) {
+                unlockAchievement(def.id);
+            }
+        }
+    });
+    localStorage.setItem(USER_ACHIEVEMENTS_KEY, JSON.stringify(userAchievements));
+}
+
+/**
+ * 更新手动触发类成就的进度 (Manual/Transient)。
+ * 例如：Bug Hunter (连续拼写正确)。
+ * @param {string} achievementId
+ * @param {number} currentVal - 当前值（例如连续答对次数）
+ */
+export function updateTransientAchievement(achievementId, currentVal) {
+    const userAch = userAchievements[achievementId];
+    const def = ACHIEVEMENT_DEFINITIONS.find(d => d.id === achievementId);
+
+    if (userAch && !userAch.unlocked && def) {
+        // 对于瞬时成就，我们只记录达到过的最大值作为进度展示
+        if (currentVal > userAch.progress) {
+            userAch.progress = currentVal;
+            localStorage.setItem(USER_ACHIEVEMENTS_KEY, JSON.stringify(userAchievements));
+        }
+
+        if (currentVal >= def.target) {
+            unlockAchievement(achievementId);
+        }
+    }
+}
+
+// =================================================================================
+// 原始逻辑保持不变
+// =================================================================================
+
 function getGradeFromFilePath(filePath) {
-    if (filePath.includes('/CET-4/')) {
-        return 'CET-4';
-    }
-    if (filePath.includes('/CET-6/')) {
-        return 'CET-6';
-    }
-    // 【修改】将 'middle' (初中) 目录映射为 'middle' 标识符
-    if (filePath.includes('/middle/')) {
-        return 'middle';
-    }
-    if (filePath.includes('/high/')) {
-        return 'high';
-    }
+    if (filePath.includes('/CET-4/')) return 'CET-4';
+    if (filePath.includes('/CET-6/')) return 'CET-6';
+    if (filePath.includes('/middle/')) return 'middle';
+    if (filePath.includes('/high/')) return 'high';
     return 'unknown';
 }
-// =================================================================================
-
 
 function getContentTypeFromFilePath(filePath) {
     if (filePath.includes('/pre/')) return 'pre';
@@ -291,11 +490,11 @@ function getContentTypeFromFilePath(filePath) {
     return 'category';
 }
 
-
-/**
- * 异步加载并处理所有数据文件。
- */
 export async function loadAndProcessData(onProgress) {
+    // 增加数据加载：热力图和成就
+    loadLearningActivity();
+    loadAchievements();
+
     if (typeof DATA_FILES === 'undefined' || !Array.isArray(DATA_FILES) || DATA_FILES.length === 0) {
         throw new Error("数据清单 'data/manifest.js' 未找到、格式错误或为空。");
     }
@@ -322,7 +521,6 @@ export async function loadAndProcessData(onProgress) {
             }
 
             const grade = getGradeFromFilePath(file);
-            // 将 'middle', 'high', 'cet4' 等加入年级列表
             if (grade !== 'unknown') {
                 grades.add(grade);
             }
@@ -375,8 +573,7 @@ export async function loadAndProcessData(onProgress) {
         }
     });
 
-    // 【修改】更新排序逻辑，使用 'middle'
-    const gradeOrder = ['middle', 'high', 'cet4'];
+    const gradeOrder = ['middle', 'high', 'CET-4', 'CET-6'];
     const sortedGrades = Array.from(grades).sort((a, b) => {
         const indexA = gradeOrder.indexOf(a);
         const indexB = gradeOrder.indexOf(b);
@@ -388,28 +585,19 @@ export async function loadAndProcessData(onProgress) {
     return { grades: sortedGrades };
 }
 
-/**
- * 【核心函数】根据当前所有筛选条件和搜索查询，更新 currentDataSet。
- */
 export function filterAndPrepareDataSet() {
     let filteredData;
 
-    // 阶段 1: 年级筛选
     if (currentGrade === 'all') {
         filteredData = allVocabularyData;
     } else {
-        // 'middle' (初中) 会包含 middle 目录下的所有内容
-        // 'high' (高中) 会包含 high 目录下的所有内容
-        // 'cet4' (CET-4) 会包含 CET-4 目录下的所有内容
         filteredData = allVocabularyData.filter(item => item.grade === currentGrade);
     }
 
-    // 阶段 2: 内容类型筛选
     if (currentContentType !== 'all') {
         filteredData = filteredData.filter(item => item.contentType === currentContentType);
     }
 
-    // 阶段 3: 类别筛选
     const userWordbook = userWordbooks.find(wb => wb.name === currentFilter);
 
     if (currentFilter === 'learned') {
@@ -427,26 +615,17 @@ export function filterAndPrepareDataSet() {
         );
     }
 
-    // 阶段 4: 搜索查询
     if (currentSearchQuery) {
-        // 1. 准备匹配关键词列表，默认包含原始输入
         let searchTerms = [currentSearchQuery];
-
-        // 【核心修改】利用主线程加载的 NLP 库进行词形还原
-        // 检查 window.nlp 是否可用
         if (typeof window.nlp === 'function') {
             try {
                 const doc = window.nlp(currentSearchQuery);
-                // 计算 root (词根/原型)，例如: "remains" -> "remain", "studied" -> "study"
                 doc.compute('root');
-                const rootForm = doc.text('root'); // 获取处理后的词根文本
-
-                // 如果算出了不一样的词根，加入匹配列表
+                const rootForm = doc.text('root');
                 if (rootForm && rootForm !== currentSearchQuery) {
                     searchTerms.push(rootForm);
                 }
             } catch (e) {
-                // 即使 NLP 失败也不影响基础搜索
                 console.warn('NLP processing failed in search:', e);
             }
         }
@@ -454,11 +633,6 @@ export function filterAndPrepareDataSet() {
         const matchingWordCards = filteredData.filter(item => {
             if (item.cardType !== 'word' || !item.word) return false;
             const dbWord = item.word.toLowerCase();
-
-            // 【核心逻辑】只要原始输入 OR 词根其中之一能匹配上数据库单词，即算成功
-            // 1. dbWord.includes(term): 正向模糊匹配 (输入 "rem" -> 搜到 "remain")
-            // 2. term === dbWord: 精确词根匹配 (NLP还原后 "remains" -> "remain" == "remain")
-            // 3. term.startsWith(dbWord): 反向容错匹配 (输入 "remaining" -> 包含 "remain")
             return searchTerms.some(term =>
                 dbWord.includes(term) || term.startsWith(dbWord)
             );

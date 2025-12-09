@@ -198,19 +198,6 @@
           ]
         },
         {
-          "word": "review",
-          "rootVisual": "<path d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z' stroke='currentColor' fill='none'/><path d='M8 12 l-4 -4 m0 8 l4 -4' stroke='currentColor'/>",
-          "breakdown": ["re- (再次)", "view (看)"],
-          "imagery": "再次看一遍，即复习。",
-          "translation": "复习",
-          "sentences": [
-            {
-              "en": "review your homework",
-              "cn": "复习你的作业。"
-            }
-          ]
-        },
-        {
           "word": "reform",
           "rootVisual": "<rect x='4' y='4' width='8' height='8' stroke='currentColor' fill='none'/><circle cx='16' cy='16' r='4' stroke='currentColor' fill='none'/><path d='M10 10 l4 4' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": ["re- (再)", "form (形式)"],

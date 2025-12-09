@@ -14,103 +14,132 @@
       },
       "words": [
         {
-          "word": "nature",
-          "rootVisual": "<path d='M12 4 l-6 12 h12 z' stroke='currentColor' fill='none'/><circle cx='18' cy='6' r='2' fill='currentColor'/>",
-          "breakdown": ["natur", "(出生/天性)", "-e"],
-          "imagery": "远处是青山，天空中挂着太阳，代表纯天然的环境。",
-          "translation": "自然",
-          "sentences": [
-            { "en": "You like nature, right?", "cn": "你喜欢大自然，对吧？" }
-          ]
-        },
-        {
-          "word": "cloud",
-          "rootVisual": "<path d='M6 14 a 4 4 0 0 1 0 -8 a 5 5 0 0 1 10 0 a 4 4 0 0 1 0 8 z' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["cloud", "(云)"],
-          "imagery": "一朵蓬松的云彩漂浮在空中。",
-          "translation": "云",
-          "sentences": [
-            { "en": "What's the shape of the cloud?", "cn": "那朵云是什么形状的？" }
-          ]
-        },
-        {
           "word": "corn",
           "rootVisual": "<ellipse cx='12' cy='12' rx='4' ry='10' stroke='currentColor' fill='none'/><path d='M12 2 v20 M8 12 h8' stroke='currentColor' opacity='0.3'/>",
-          "breakdown": ["corn", "(谷物/玉米)"],
+          "breakdown": [
+            "corn",
+            "(谷物/玉米)"
+          ],
           "imagery": "一根金黄色的玉米棒，颗粒饱满。",
           "translation": "玉米",
           "sentences": [
-            { "en": "All our chickens are fed on corn.", "cn": "我们所有的鸡都是喂玉米长大的。" }
+            {
+              "en": "All our chickens are fed on corn.",
+              "cn": "我们所有的鸡都是喂玉米长大的。"
+            }
           ]
         },
         {
           "word": "cook",
           "rootVisual": "<path d='M4 14 h16 v4 a 4 4 0 0 1 -4 4 h-8 a 4 4 0 0 1 -4 -4 z' stroke='currentColor' fill='none'/><path d='M6 14 v-4 M10 14 v-6 M14 14 v-6 M18 14 v-4' stroke='currentColor' stroke-linecap='round'/>",
-          "breakdown": ["cook", "(烹饪)"],
+          "breakdown": [
+            "cook",
+            "(烹饪)"
+          ],
           "imagery": "一个正在冒着热气的汤锅。",
           "translation": "烹饪；厨师",
           "sentences": [
-            { "en": "Every cook often cooks food in their own way.", "cn": "每个厨师通常都有自己烹饪食物的方式。" }
+            {
+              "en": "Every cook often cooks food in their own way.",
+              "cn": "每个厨师通常都有自己烹饪食物的方式。"
+            }
           ]
         },
         {
           "word": "fresh",
           "rootVisual": "<path d='M12 20 Q2 10 12 2 Q22 10 12 20 Z' stroke='currentColor' fill='none'/><path d='M16 8 l-4 4 l-4 -4' stroke='currentColor' fill='none'/>",
-          "breakdown": ["fresh", "(新鲜的)"],
+          "breakdown": [
+            "fresh",
+            "(新鲜的)"
+          ],
           "imagery": "一片刚摘下来的叶子，上面还带着露珠。",
           "translation": "新鲜的",
           "sentences": [
-            { "en": "Do you eat plenty of vegetables and fresh fruit?", "cn": "你吃大量的蔬菜和新鲜水果吗？" }
+            {
+              "en": "Do you eat plenty of vegetables and fresh fruit?",
+              "cn": "你吃大量的蔬菜和新鲜水果吗？"
+            }
           ]
         },
         {
           "word": "honey",
           "rootVisual": "<path d='M6 18 l2 -10 l8 0 l2 10 Z' stroke='currentColor' fill='none'/><path d='M6 18 q 6 4 12 0' stroke='currentColor'/><circle cx='14' cy='6' r='3' fill='currentColor' opacity='0.2'/>",
-          "breakdown": ["honey", "(蜂蜜)"],
+          "breakdown": [
+            "honey",
+            "(蜂蜜)"
+          ],
           "imagery": "一个罐子，里面流出金黄色的、粘稠的液体。",
           "translation": "蜂蜜",
           "sentences": [
-            { "en": "Where did you buy the honey?", "cn": "你在哪里买的蜂蜜？" }
+            {
+              "en": "Where did you buy the honey?",
+              "cn": "你在哪里买的蜂蜜？"
+            }
           ]
         },
         {
           "word": "spider",
           "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor'/><path d='M12 12 l-6 -6 M12 12 l6 -6 M12 12 l-8 0 M12 12 l8 0 M12 12 l-6 6 M12 12 l6 6' stroke='currentColor' stroke-width='1.5'/>",
-          "breakdown": ["spi- (旋转/编织)", "-der (虫)"],
+          "breakdown": [
+            "spi- (旋转/编织)",
+            "-der (虫)"
+          ],
           "imagery": "一只八条腿的蜘蛛正在织网。",
           "translation": "蜘蛛",
           "sentences": [
-            { "en": "A spider has eight legs.", "cn": "蜘蛛有八条腿。" }
+            {
+              "en": "A spider has eight legs.",
+              "cn": "蜘蛛有八条腿。"
+            }
           ]
         },
         {
           "word": "planet",
           "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><ellipse cx='12' cy='12' rx='10' ry='3' stroke='currentColor' fill='none' transform='rotate(-20 12 12)'/>",
-          "breakdown": ["plan", "(平坦/漫游)", "et"],
+          "breakdown": [
+            "plan",
+            "(平坦/漫游)",
+            "et"
+          ],
           "imagery": "一个带有光环的行星，在宇宙中孤独地旋转。",
           "translation": "行星",
           "sentences": [
-            { "en": "They have discovered a new planet.", "cn": "他们发现了一颗新的行星。" }
+            {
+              "en": "They have discovered a new planet.",
+              "cn": "他们发现了一颗新的行星。"
+            }
           ]
         },
         {
           "word": "meal",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor'/><path d='M8 12 h8' stroke='currentColor' opacity='0.3'/>",
-          "breakdown": ["meal", "(一餐)"],
+          "breakdown": [
+            "meal",
+            "(一餐)"
+          ],
           "imagery": "一个盘子，上面摆放着刀叉或食物。",
           "translation": "餐；一顿饭",
           "sentences": [
-            { "en": "Have your last meal.", "cn": "吃你的最后一顿饭吧。" }
+            {
+              "en": "Have your last meal.",
+              "cn": "吃你的最后一顿饭吧。"
+            }
           ]
         },
         {
           "word": "butter",
           "rootVisual": "<rect x='4' y='10' width='16' height='8' stroke='currentColor' fill='none'/><path d='M4 10 l4 -4 h8 l4 4' stroke='currentColor'/>",
-          "breakdown": ["butter", "(黄油)"],
+          "breakdown": [
+            "butter",
+            "(黄油)"
+          ],
           "imagery": "一块切得方方正正的黄色油脂，通常用来涂抹面包。",
           "translation": "黄油",
           "sentences": [
-            { "en": "He spread some butter on his bread.", "cn": "他在面包上涂了一些黄油。" }
+            {
+              "en": "He spread some butter on his bread.",
+              "cn": "他在面包上涂了一些黄油。"
+            }
           ]
         }
       ]

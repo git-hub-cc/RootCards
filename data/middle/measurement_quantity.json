@@ -16,83 +16,151 @@
         {
           "word": "kilometer",
           "rootVisual": "<rect x='4' y='5' width='16' height='10' rx='1' stroke='currentColor' fill='none' stroke-width='2' /><line x1='12' y1='15' x2='12' y2='22' stroke='currentColor' stroke-width='2' /><path d='M8 12V8 M11 8L8 10L11 12 M13 12V8L14.5 10L16 8V12' stroke='currentColor' fill='none' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/><path d='M4 22 h16' stroke='currentColor' opacity='0.5' />",
-          "breakdown": ["Kilo (千)", "Meter (米)"],
+          "breakdown": [
+            "Kilo (千)",
+            "Meter (米)"
+          ],
           "imagery": "联想高速公路旁的路牌，清晰地标示着“KM”，这是我们在长途旅行中最常见的距离单位。",
           "translation": "千米",
           "sentences": [
-            { "en": "The road is 1 kilometer long.", "cn": "这条路长1千米。" }
+            {
+              "en": "The road is 1 kilometer long.",
+              "cn": "这条路长1千米。"
+            }
           ]
         },
         {
           "word": "size",
           "rootVisual": "<rect x='4' y='12' width='6' height='6' stroke='currentColor' fill='none' stroke-width='2'/><rect x='12' y='6' width='12' height='12' stroke='currentColor' fill='currentColor' fill-opacity='0.1' stroke-width='2'/>",
-          "breakdown": ["size", "(大小)"],
+          "breakdown": [
+            "size",
+            "(大小)"
+          ],
           "imagery": "一个大正方形与一个小正方形并排，通过鲜明对比来传达“大小”的概念。",
           "translation": "大小",
           "sentences": [
-            { "en": "What size shoes do you wear?", "cn": "你穿多大尺码的鞋？" }
+            {
+              "en": "What size shoes do you wear?",
+              "cn": "你穿多大尺码的鞋？"
+            }
           ]
         },
         {
           "word": "medium",
-          "rootVisual": "<path d='M4 18 v-6' stroke='currentColor' stroke-width='4'/><path d='M12 18 v-12' stroke='currentColor' fill='currentColor' stroke-width='4'/><path d='M20 18 v-3' stroke='currentColor' stroke-width='4'/>",
-          "breakdown": ["medium", "(中等)"],
-          "imagery": "三个高低不同的柱状图，中间那个被高亮显示，清晰地表达了“中等”的概念。",
-          "translation": "中等",
+          "rootVisual": "<rect x='4' y='8' width='4' height='8' stroke='currentColor' fill='none'/><rect x='10' y='6' width='4' height='12' fill='currentColor'/><rect x='16' y='4' width='4' height='16' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "med (中间)",
+            "-ium (名)"
+          ],
+          "imagery": "中等的；媒介（中间渠道）。",
+          "translation": "中等的；媒介",
           "sentences": [
-            { "en": "My father is of medium height.", "cn": "我父亲中等身高。" }
+            {
+              "en": "Medium height.",
+              "cn": "中等身高。"
+            },
+            {
+              "en": "Art can be expressed through various mediums.",
+              "cn": "艺术可以通过各种媒介来表达。"
+            }
           ]
         },
         {
           "word": "high",
           "rootVisual": "<path d='M4 20 L12 4 L20 20' stroke='currentColor' fill='none' stroke-width='2'/><line x1='22' y1='4' x2='22' y2='20' stroke='currentColor' stroke-dasharray='2 2'/><path d='M18 4 h6' stroke='currentColor'/>",
-          "breakdown": ["High", "(高)"],
+          "breakdown": [
+            "High",
+            "(高)"
+          ],
           "imagery": "一座高耸的山峰，旁边有垂直的标尺线，强调其高度。",
           "translation": "高",
           "sentences": [
-            { "en": "The mountain is very high.", "cn": "这座山很高。" }
+            {
+              "en": "The mountain is very high.",
+              "cn": "这座山很高。"
+            }
           ]
         },
         {
           "word": "increase",
           "rootVisual": "<polyline points='4 16 10 12 16 8 20 4' stroke='currentColor' stroke-width='2' fill='none'/><path d='M16 4 h4 v4' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["in-", "(进入)", "crescere", "(生长)"],
+          "breakdown": [
+            "in-",
+            "(进入)",
+            "crescere",
+            "(生长)"
+          ],
           "imagery": "一条向右上角攀升的折线图。",
           "translation": "增长",
-          "sentences": [{"en": "The population continues to increase.", "cn": "人口持续增长。"}]
+          "sentences": [
+            {
+              "en": "The population continues to increase.",
+              "cn": "人口持续增长。"
+            }
+          ]
         },
         {
           "word": "decrease",
-          "rootVisual": "<polyline points='4 4 10 8 16 12 20 16' stroke='currentColor' stroke-width='2' fill='none'/><path d='M16 16 h4 v-4' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": ["de-", "(向下)", "crescere", "(生长)"],
-          "imagery": "一条向右下角下降的折线图。",
-          "translation": "降低",
-          "sentences": [{"en": "The number of students in this school is decreasing every year.", "cn": "这所学校的学生人数逐年减少。"}]
+          "rootVisual": "<path d='M4 4 l6 4 l6 4 l6 4' stroke='currentColor' stroke-width='2' fill='none'/><path d='M22 16 v4 h-4' stroke='currentColor'/>",
+          "breakdown": [
+            "de- (向下)",
+            "crease (生长)"
+          ],
+          "imagery": "生长的方向朝下，即减少。",
+          "translation": "减少",
+          "sentences": [
+            {
+              "en": "Traffic decreases on holidays.",
+              "cn": "节假日交通流量减少（往下长）。"
+            }
+          ]
         },
         {
           "word": "a few",
           "rootVisual": "<circle cx='8' cy='12' r='2' fill='currentColor'/><circle cx='16' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='8' r='2' fill='currentColor'/>",
-          "breakdown": ["few", "(少)"],
+          "breakdown": [
+            "few",
+            "(少)"
+          ],
           "imagery": "三个实心点，表示虽然少，但还有一些（肯定含义）。",
           "translation": "少量 (肯定)",
-          "sentences": [{"en": "I have a few friends in this city.", "cn": "我在这个城市有几个朋友。"}]
+          "sentences": [
+            {
+              "en": "I have a few friends in this city.",
+              "cn": "我在这个城市有几个朋友。"
+            }
+          ]
         },
         {
           "word": "few",
           "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor' opacity='0.3'/><circle cx='8' cy='12' r='2' stroke='currentColor' fill='none' opacity='0.3'/>",
-          "breakdown": ["few", "(少)"],
+          "breakdown": [
+            "few",
+            "(少)"
+          ],
           "imagery": "只有一个淡淡的点，表示几乎没有（否定含义）。",
           "translation": "几乎没有 (否定)",
-          "sentences": [{"en": "He has few friends, so he often feels lonely.", "cn": "他几乎没有朋友，所以经常感到孤独。"}]
+          "sentences": [
+            {
+              "en": "He has few friends, so he often feels lonely.",
+              "cn": "他几乎没有朋友，所以经常感到孤独。"
+            }
+          ]
         },
         {
           "word": "quarter",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 v8 h8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 a 8 8 0 0 0 -8 8 h8 z' fill='currentColor' opacity='0.2'/>",
-          "breakdown": ["quarter", "(四分之一)"],
+          "breakdown": [
+            "quarter",
+            "(四分之一)"
+          ],
           "imagery": "一个饼图被分成了四份，其中一份被高亮显示，直观地表达了四分之一的概念。",
           "translation": "四分之一",
           "sentences": [
-            { "en": "A quarter of the students have problems in pronunciation.", "cn": "四分之一的学生在发音方面有问题。" }
+            {
+              "en": "A quarter of the students have problems in pronunciation.",
+              "cn": "四分之一的学生在发音方面有问题。"
+            }
           ]
         }
       ]

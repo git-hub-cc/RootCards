@@ -15,7 +15,9 @@
         {
           "word": "quiver",
           "rootVisual": "<path d='M8 8 L 12 12 L 16 8' stroke='currentColor' stroke-width='2' stroke-dasharray='2 2' />",
-          "breakdown": ["quiver"],
+          "breakdown": [
+            "quiver"
+          ],
           "imagery": "快速轻微的颤抖（如嘴唇）。",
           "translation": "颤抖",
           "sentences": [
@@ -40,7 +42,9 @@
         {
           "word": "rape",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>⚠️</text>",
-          "breakdown": ["rape (抢)"],
+          "breakdown": [
+            "rape (抢)"
+          ],
           "imagery": "强行夺取，强奸。",
           "translation": "强奸",
           "sentences": [
@@ -53,7 +57,9 @@
         {
           "word": "rate",
           "rootVisual": "<path d='M4 18 L 12 8 L 20 18' stroke='currentColor' /><path d='M4 14 H 20' stroke='currentColor' stroke-dasharray='2 2' />",
-          "breakdown": ["rate"],
+          "breakdown": [
+            "rate"
+          ],
           "imagery": "比率，等级。",
           "translation": "比率；速度",
           "sentences": [
@@ -66,7 +72,10 @@
         {
           "word": "reality",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' />",
-          "breakdown": ["real", "-ity"],
+          "breakdown": [
+            "real",
+            "-ity"
+          ],
           "imagery": "真实。",
           "translation": "现实",
           "sentences": [
@@ -79,7 +88,10 @@
         {
           "word": "realistic",
           "rootVisual": "<path d='M8 12 L 10 14 L 16 8' stroke='currentColor' />",
-          "breakdown": ["real", "-istic"],
+          "breakdown": [
+            "real",
+            "-istic"
+          ],
           "imagery": "现实的。",
           "translation": "现实的",
           "sentences": [
@@ -92,7 +104,9 @@
         {
           "word": "reap",
           "rootVisual": "<path d='M8 16 Q 12 8 16 16' stroke='currentColor' fill='none' /><path d='M12 8 V 16' stroke='currentColor' />",
-          "breakdown": ["reap"],
+          "breakdown": [
+            "reap"
+          ],
           "imagery": "收割成熟的果实。",
           "translation": "收割；收获",
           "sentences": [
@@ -105,7 +119,10 @@
         {
           "word": "recruit",
           "rootVisual": "<rect x='4' y='8' width='4' height='8' fill='currentColor' /><rect x='10' y='8' width='4' height='8' fill='currentColor' opacity='0.3' /><rect x='16' y='8' width='4' height='8' fill='currentColor' />",
-          "breakdown": ["re- (再)", "cruit (生长/人员)"],
+          "breakdown": [
+            "re- (再)",
+            "cruit (生长/人员)"
+          ],
           "imagery": "再次补充人员，招募。",
           "translation": "招募；招聘",
           "sentences": [
@@ -118,7 +135,11 @@
         {
           "word": "rehearse",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>🔁</text>",
-          "breakdown": ["re- (再)", "hear (听)", "say"],
+          "breakdown": [
+            "re- (再)",
+            "hear (听)",
+            "say"
+          ],
           "imagery": "再听一遍，再看一遍，排练。",
           "translation": "排练；预演",
           "sentences": [
@@ -130,21 +151,23 @@
         },
         {
           "word": "reinforce",
-          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none' stroke-width='3' />",
-          "breakdown": ["re- (再)", "in", "force (力)"],
-          "imagery": "再次注入力量，加强。",
-          "translation": "加强；增援",
-          "sentences": [
-            {
-              "en": "Reinforce my view.",
-              "cn": "加强我的观点。"
-            }
-          ]
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 6 l12 12 M18 6 l-12 12' stroke='currentColor'/>",
+          "breakdown": [
+            "re- (再)",
+            "in- (向里)",
+            "force (力量)"
+          ],
+          "imagery": "再一次向内部注入力量，即加固。",
+          "translation": "加强；加固",
+          "sentences": []
         },
         {
           "word": "relic",
           "rootVisual": "<path d='M6 18 Q 12 6 18 18' stroke='currentColor' fill='none' opacity='0.5' />",
-          "breakdown": ["re- (留)", "lic"],
+          "breakdown": [
+            "re- (留)",
+            "lic"
+          ],
           "imagery": "留下来的东西，遗物。",
           "translation": "遗迹；遗物",
           "sentences": [
@@ -157,7 +180,10 @@
         {
           "word": "relief",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 14 Q 12 18 16 14' stroke='currentColor' />",
-          "breakdown": ["re- (反)", "lief (举/轻)"],
+          "breakdown": [
+            "re- (反)",
+            "lief (举/轻)"
+          ],
           "imagery": "把重担卸下来，宽慰。",
           "translation": "宽慰；减轻",
           "sentences": [
@@ -170,7 +196,10 @@
         {
           "word": "relieve",
           "rootVisual": "<path d='M12 8 V 16' stroke='currentColor' marker-end='url(#arrow)' />",
-          "breakdown": ["re- (反)", "lieve (轻)"],
+          "breakdown": [
+            "re- (反)",
+            "lieve (轻)"
+          ],
           "imagery": "减轻痛苦。",
           "translation": "缓解；减轻",
           "sentences": [
@@ -182,21 +211,23 @@
         },
         {
           "word": "resident",
-          "rootVisual": "<rect x='6' y='8' width='12' height='12' stroke='currentColor' fill='none' /><circle cx='12' cy='14' r='2' fill='currentColor' />",
-          "breakdown": ["re- (反)", "sid (坐)", "-ent"],
-          "imagery": "一直坐在那里的人，居民。",
+          "rootVisual": "<path d='M4 20 h16 v-8 h-16 z' fill='currentColor' opacity='0.3'/><path d='M4 12 l8 -6 l8 6' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "re- (回)",
+            "sid (坐/居)",
+            "-ent"
+          ],
+          "imagery": "坐/住在那里的人。",
           "translation": "居民",
-          "sentences": [
-            {
-              "en": "The residents of the town.",
-              "cn": "镇上的居民。"
-            }
-          ]
+          "sentences": []
         },
         {
           "word": "resolve",
           "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' /><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none' />",
-          "breakdown": ["re- (反)", "solve (解)"],
+          "breakdown": [
+            "re- (反)",
+            "solve (解)"
+          ],
           "imagery": "反复解决难题，下决心。",
           "translation": "解决；决心",
           "sentences": [
@@ -209,7 +240,10 @@
         {
           "word": "restless",
           "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' stroke-dasharray='2 2' /><text x='12' y='16' text-anchor='middle'>⚡</text>",
-          "breakdown": ["rest", "-less"],
+          "breakdown": [
+            "rest",
+            "-less"
+          ],
           "imagery": "无法休息的，焦躁的。",
           "translation": "焦躁不安的",
           "sentences": [
@@ -222,7 +256,10 @@
         {
           "word": "retrieve",
           "rootVisual": "<path d='M4 12 H 16' stroke='currentColor' marker-end='url(#arrow)' /><circle cx='18' cy='12' r='2' fill='currentColor' />",
-          "breakdown": ["re- (回)", "trieve (找)"],
+          "breakdown": [
+            "re- (回)",
+            "trieve (找)"
+          ],
           "imagery": "找回来，取回。",
           "translation": "取回；检索",
           "sentences": [
@@ -235,7 +272,9 @@
         {
           "word": "rhythm",
           "rootVisual": "<path d='M2 12 Q 6 6 10 12 T 18 12' stroke='currentColor' fill='none' />",
-          "breakdown": ["rhythm"],
+          "breakdown": [
+            "rhythm"
+          ],
           "imagery": "波浪般的节奏。",
           "translation": "节奏；节拍",
           "sentences": [
@@ -248,7 +287,10 @@
         {
           "word": "ridiculous",
           "rootVisual": "<text x='12' y='14' text-anchor='middle'>🤡</text>",
-          "breakdown": ["rid (笑)", "-iculous"],
+          "breakdown": [
+            "rid (笑)",
+            "-iculous"
+          ],
           "imagery": "让人发笑的，荒唐的。",
           "translation": "荒唐的；可笑的",
           "sentences": [
@@ -261,7 +303,9 @@
         {
           "word": "rip",
           "rootVisual": "<path d='M8 4 L 16 20' stroke='currentColor' stroke-dasharray='2 2' />",
-          "breakdown": ["rip"],
+          "breakdown": [
+            "rip"
+          ],
           "imagery": "撕裂衣服。",
           "translation": "撕裂",
           "sentences": [
@@ -274,7 +318,9 @@
         {
           "word": "ripe",
           "rootVisual": "<circle cx='12' cy='12' r='6' fill='currentColor' color='#f59e0b' />",
-          "breakdown": ["ripe"],
+          "breakdown": [
+            "ripe"
+          ],
           "imagery": "成熟的果实。",
           "translation": "成熟的",
           "sentences": [

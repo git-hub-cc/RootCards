@@ -29,8 +29,8 @@ from gtts import gTTS
 from mutagen.mp3 import MP3, HeaderNotFoundError
 
 # --- 配置区域 ---
-MANIFEST_PATH = Path("data/manifest.js")
-AUDIO_ROOT = Path("audio")
+MANIFEST_PATH = Path("../data/manifest.js")
+AUDIO_ROOT = Path("../audio")
 WORDS_DIR = AUDIO_ROOT / "words"
 SENTENCES_DIR = AUDIO_ROOT / "sentences"
 REQUEST_DELAY = 0.5

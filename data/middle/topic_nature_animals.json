@@ -74,21 +74,6 @@
           ]
         },
         {
-          "word": "spider",
-          "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor'/><path d='M12 12l-4-4 M12 12l4-4 M12 12l-6 0 M12 12l6 0 M12 12l-4 4 M12 12l4 4' stroke='currentColor'/>",
-          "breakdown": [
-            "spider"
-          ],
-          "imagery": "一只八条腿的蜘蛛。",
-          "translation": "蜘蛛",
-          "sentences": [
-            {
-              "en": "A spider has eight legs.",
-              "cn": "蜘蛛有八條腿。"
-            }
-          ]
-        },
-        {
           "word": "grass",
           "rootVisual": "<path d='M4 20l2-8 2 8 M10 20l2-10 2 10 M16 20l2-6 2 6' stroke='currentColor' fill='none'/>",
           "breakdown": [
@@ -115,21 +100,6 @@
             {
               "en": "Leaves begin to fall in autumn.",
               "cn": "秋天树叶开始落下。"
-            }
-          ]
-        },
-        {
-          "word": "wild",
-          "rootVisual": "<path d='M4 18l4-10 6 8 4-12' stroke='currentColor' fill='none'/><circle cx='18' cy='4' r='2' fill='gold'/>",
-          "breakdown": [
-            "wild"
-          ],
-          "imagery": "一片荒芜的原野，或者一只奔跑的野兽。",
-          "translation": "野生的",
-          "sentences": [
-            {
-              "en": "We saw some wild horses.",
-              "cn": "我们看到了一些野马。"
             }
           ]
         },

@@ -108,21 +108,6 @@
           ]
         },
         {
-          "word": "degree",
-          "rootVisual": "<circle cx='18' cy='6' r='2' stroke='currentColor' fill='none'/><path d='M4 20l8-16' stroke='currentColor'/><path d='M12 20h8' stroke='currentColor'/>",
-          "breakdown": [
-            "degree"
-          ],
-          "imagery": "一个小圆圈符号 °，或者一个量角器。",
-          "translation": "度数；学位",
-          "sentences": [
-            {
-              "en": "His body temperature goes up to 40 degrees.",
-              "cn": "他的体温上升到了40度。"
-            }
-          ]
-        },
-        {
           "word": "lately",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12L8 12' stroke='currentColor'/><path d='M12 12L10 10' stroke='currentColor' stroke-dasharray='2 2'/>",
           "breakdown": [

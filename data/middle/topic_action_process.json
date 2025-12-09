@@ -105,21 +105,6 @@
           ]
         },
         {
-          "word": "volunteer",
-          "rootVisual": "<path d='M12 14l-2-2 2-2 2 2z' fill='currentColor'/><path d='M12 4v6' stroke='currentColor'/><path d='M8 12h8' stroke='currentColor'/>",
-          "breakdown": [
-            "volunteer"
-          ],
-          "imagery": "一只手主动举起，或者心形手势。",
-          "translation": "自愿做",
-          "sentences": [
-            {
-              "en": "I volunteer because I have the time.",
-              "cn": "我做志愿者是因为我有时间。"
-            }
-          ]
-        },
-        {
           "word": "catch",
           "rootVisual": "<path d='M6 6c6 0 12 6 12 12' stroke='currentColor' fill='none'/><path d='M16 16l2 2-2 2' stroke='currentColor'/><circle cx='18' cy='18' r='2' fill='currentColor' opacity='0.5'/>",
           "breakdown": [
@@ -167,21 +152,6 @@
           ]
         },
         {
-          "word": "steal",
-          "rootVisual": "<path d='M8 12h8' stroke='currentColor'/><path d='M12 8v8' stroke='currentColor' stroke-dasharray='2 2'/><rect x='10' y='10' width='4' height='4' fill='black'/>",
-          "breakdown": [
-            "steal"
-          ],
-          "imagery": "一只手悄悄拿走一个钱袋，或者戴眼罩的小偷。",
-          "translation": "偷",
-          "sentences": [
-            {
-              "en": "He stole money from his parents.",
-              "cn": "他从父母那里偷了钱。"
-            }
-          ]
-        },
-        {
           "word": "lay",
           "rootVisual": "<line x1='4' y1='18' x2='20' y2='18' stroke='currentColor' stroke-width='2'/><rect x='8' y='10' width='8' height='8' stroke='currentColor' fill='none'/><path d='M12 4v6 M12 10l-2-2 M12 10l2-2' stroke='currentColor'/>",
           "breakdown": [
@@ -197,32 +167,17 @@
           ]
         },
         {
-          "word": "celebrate",
-          "rootVisual": "<path d='M12 12l-4-4 4-4 4 4z' fill='gold' opacity='0.5'/><circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M4 20l8-8 8 8' stroke='currentColor'/>",
-          "breakdown": [
-            "celebrate"
-          ],
-          "imagery": "喷出的彩带和礼花，或者举杯庆祝。",
-          "translation": "庆祝",
-          "sentences": [
-            {
-              "en": "How do you usually celebrate New Year?",
-              "cn": "你通常如何庆祝新年？"
-            }
-          ]
-        },
-        {
           "word": "boil",
-          "rootVisual": "<path d='M6 14h12c0 3-3 6-6 6s-6-3-6-6z' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='1' fill='currentColor'/><circle cx='12' cy='8' r='1.5' fill='currentColor'/><circle cx='16' cy='11' r='1' fill='currentColor'/><path d='M6 14l2-4 M18 14l-2-4' stroke='currentColor' opacity='0.3'/>",
+          "rootVisual": "<path d='M4 14 q 4 -2 8 0 t 8 0' stroke='currentColor'/><circle cx='8' cy='10' r='2' stroke='currentColor'/><circle cx='16' cy='8' r='3' stroke='currentColor'/>",
           "breakdown": [
-            "boil"
+            "boil (沸腾)"
           ],
-          "imagery": "一个锅里的水正在翻滚，冒着气泡和蒸汽。",
+          "imagery": "水沸腾时鼓起的泡泡 (bubble)。",
           "translation": "煮沸",
           "sentences": [
             {
-              "en": "Boil the water before drinking it.",
-              "cn": "喝水前先把水烧开。"
+              "en": "Let the water boil for a few minutes.",
+              "cn": "让水沸腾几分钟。"
             }
           ]
         },
@@ -274,31 +229,31 @@
         },
         {
           "word": "fly",
-          "rootVisual": "<path d='M4 16c4-4 8-8 12-4' stroke='currentColor' fill='none'/><path d='M12 8l4-2 2 4' stroke='currentColor'/><circle cx='18' cy='6' r='1' fill='currentColor'/>",
+          "rootVisual": "<path d='M2 12 l6 -6 l6 6 l-12 0' fill='currentColor'/>",
           "breakdown": [
-            "fly"
+            "fly (飞)"
           ],
-          "imagery": "一只鸟展翅飞翔的剪影。",
+          "imagery": "飞翔的动作。",
           "translation": "飞",
           "sentences": [
             {
-              "en": "I'm flying back to Beijing tomorrow.",
-              "cn": "我明天飞回北京。"
+              "en": "Birds can fly high in the sky.",
+              "cn": "鸟儿可以在天空中高飞。"
             }
           ]
         },
         {
           "word": "flash",
-          "rootVisual": "<path d='M12 2l-2 8h4l-2 8' stroke='currentColor' fill='none'/><path d='M12 2l4 6-8 2 4 10' stroke='currentColor' fill='gold' opacity='0.5'/>",
+          "rootVisual": "<path d='M12 2 l-2 8 h4 l-2 8' stroke='currentColor' stroke-width='2'/>",
           "breakdown": [
-            "flash"
+            "fl (飞/闪)"
           ],
-          "imagery": "一道锯齿状的闪电，或者照相机的闪光灯。",
-          "translation": "闪光",
+          "imagery": "空中飞过的闪电，瞬间的光亮。",
+          "translation": "闪光；闪现",
           "sentences": [
             {
-              "en": "Lightning flashed overhead.",
-              "cn": "闪电在头顶闪过。"
+              "en": "A flash of lightning lit up the night sky.",
+              "cn": "一道闪电照亮了夜空。"
             }
           ]
         },
@@ -334,21 +289,6 @@
           ]
         },
         {
-          "word": "guard",
-          "rootVisual": "<path d='M12 2l-8 4v6c0 5 8 10 8 10s8-5 8-10V6l-8-4z' stroke='currentColor' fill='none'/><path d='M12 8v8 M8 12h8' stroke='currentColor'/>",
-          "breakdown": [
-            "guard"
-          ],
-          "imagery": "一个坚固的盾牌。",
-          "translation": "守卫；保护",
-          "sentences": [
-            {
-              "en": "Many parents want to guard their children from any danger.",
-              "cn": "很多父母想保护他们的孩子远离任何危险。"
-            }
-          ]
-        },
-        {
           "word": "speak",
           "rootVisual": "<path d='M4 12l4-4v8l-4-4' stroke='currentColor' fill='currentColor'/><path d='M14 8c2 2 2 6 0 8' stroke='currentColor' fill='none'/><path d='M17 6c3 3 3 9 0 12' stroke='currentColor' fill='none'/>",
           "breakdown": [
@@ -365,17 +305,17 @@
         },
         {
           "word": "introduce",
-          "rootVisual": "<circle cx='8' cy='12' r='2' fill='currentColor'/><circle cx='16' cy='12' r='2' fill='currentColor'/><path d='M8 12l8 0' stroke='currentColor'/><path d='M16 12l-2-2 M16 12l-2 2' stroke='currentColor'/>",
+          "rootVisual": "<path d='M4 12 h10 m-3 -3 l3 3 l-3 3' stroke='currentColor' stroke-width='2'/><circle cx='20' cy='12' r='2' fill='currentColor'/>",
           "breakdown": [
-            "intro-",
-            "duce"
+            "intro- (向内)",
+            "duc (引导)"
           ],
-          "imagery": "一个人向另一个人伸出手，或者中间有文字INTRO。",
+          "imagery": "用手势引导（duc）某人进入（intro）一个新的圈子。",
           "translation": "介绍",
           "sentences": [
             {
-              "en": "May I introduce myself?",
-              "cn": "我可以自我介绍一下吗？"
+              "en": "Let me introduce myself first.",
+              "cn": "让我先自我介绍（引导进入）一下。"
             }
           ]
         },
@@ -453,21 +393,6 @@
             {
               "en": "He was asked to manage a new department.",
               "cn": "他被要求去管理一个新部门。"
-            }
-          ]
-        },
-        {
-          "word": "stick",
-          "rootVisual": "<rect x='8' y='4' width='8' height='12' stroke='currentColor' fill='none'/><path d='M12 10v4' stroke='currentColor'/><path d='M12 14l-2 2 M12 14l2 2' stroke='currentColor'/>",
-          "breakdown": [
-            "stick"
-          ],
-          "imagery": "胶水粘住两张纸，或者一个人紧紧抓住扶手。",
-          "translation": "粘住；坚持",
-          "sentences": [
-            {
-              "en": "Stick the poster on the wall.",
-              "cn": "把海报贴在墙上。"
             }
           ]
         },

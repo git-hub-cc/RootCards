@@ -107,21 +107,6 @@
           ]
         },
         {
-          "word": "center",
-          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
-          "breakdown": [
-            "center"
-          ],
-          "imagery": "一个靶心，所有的箭头都指向中间的一个点。",
-          "translation": "中心",
-          "sentences": [
-            {
-              "en": "It's in the center of the city.",
-              "cn": "它在市中心。"
-            }
-          ]
-        },
-        {
           "word": "hometown",
           "rootVisual": "<path d='M4 20h16v-8l-8-6-8 6z' stroke='currentColor' fill='none'/><path d='M10 20v-6h4v6' stroke='currentColor'/><heart cx='18' cy='6' r='3' fill='red'/>",
           "breakdown": [
@@ -244,37 +229,6 @@
             {
               "en": "We meet once a month to discuss community problems.",
               "cn": "我们每月见一次面来讨论社区问题。"
-            }
-          ]
-        },
-        {
-          "word": "market",
-          "rootVisual": "<path d='M4 8h16l-2 12h-12z' stroke='currentColor' fill='none'/><path d='M8 8v-4a4 4 0 0 1 8 0v4' stroke='currentColor'/><circle cx='12' cy='14' r='2' fill='currentColor' opacity='0.5'/>",
-          "breakdown": [
-            "market"
-          ],
-          "imagery": "一个摆满水果和蔬菜的摊位。",
-          "translation": "市场",
-          "sentences": [
-            {
-              "en": "I usually buy vegetables at the market.",
-              "cn": "我通常在市场买蔬菜。"
-            }
-          ]
-        },
-        {
-          "word": "supermarket",
-          "rootVisual": "<rect x='2' y='8' width='20' height='12' stroke='currentColor' fill='none'/><path d='M6 8V4h12v4' stroke='currentColor'/><path d='M4 14h16' stroke='currentColor' stroke-dasharray='2 2'/>",
-          "breakdown": [
-            "super",
-            "market"
-          ],
-          "imagery": "一个手推购物车。",
-          "translation": "超市",
-          "sentences": [
-            {
-              "en": "I'm going to the supermarket.",
-              "cn": "我要去超市。"
             }
           ]
         },
