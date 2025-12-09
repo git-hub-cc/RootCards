@@ -1,14 +1,13 @@
 // =================================================================================
-// 数据管理模块 (Data Management Module) - v1.1 (集成通知管理器)
+// 数据管理模块 (Data Management Module) - v1.2 (新增单词本导出功能)
 // ---------------------------------------------------------------------------------
 // 职责:
-// 1. 封装数据的导入和导出功能。
+// 1. 封装数据的导入和导出功能（已掌握、当前视图、单个单词本）。
 // 2. 提供一个统一的初始化入口来绑定相关UI事件。
 // 3. 使用非阻塞的Toast通知提供操作反馈。
 // =================================================================================
 
 import * as State from '../state.js';
-// 【新增】导入新的通知管理器
 import * as NotificationManager from './notificationManager.js';
 
 // --- 内部变量 ---
@@ -38,7 +37,6 @@ function triggerJsonDownload(dataObject, filename) {
         URL.revokeObjectURL(url);
     } catch (error) {
         console.error('创建下载文件时出错:', error);
-        // 【修改】使用Toast通知代替alert
         NotificationManager.show({
             type: 'error',
             message: '创建下载文件时发生错误，请检查控制台。'
@@ -59,7 +57,6 @@ function handleExport(type) {
         dataToExport = State.getLearnedWordsArray();
         filename = `rootcards-learned-words-${timestamp}.json`;
         if (dataToExport.length === 0) {
-            // 【修改】使用Toast通知代替alert
             NotificationManager.show({
                 type: 'info',
                 message: '您还没有标记任何单词为“已掌握”，无需导出。'
@@ -72,7 +69,6 @@ function handleExport(type) {
             .map(item => item.word);
         filename = `rootcards-current-view-${timestamp}.json`;
         if (dataToExport.length === 0) {
-            // 【修改】使用Toast通知代替alert
             NotificationManager.show({
                 type: 'info',
                 message: '当前视图中没有单词可供导出。'
@@ -87,6 +83,37 @@ function handleExport(type) {
     triggerJsonDownload(dataToExport, filename);
     elements.optionsMenu.classList.remove('is-open'); // 操作后关闭菜单
 }
+
+/**
+ * 【新增】导出指定的单个单词本。
+ * @param {string} wordbookName - 要导出的单词本的名称。
+ */
+export function exportWordbook(wordbookName) {
+    if (!wordbookName) return;
+
+    const wordbook = State.getWordbook(wordbookName);
+
+    if (!wordbook || !wordbook.words || wordbook.words.length === 0) {
+        NotificationManager.show({
+            type: 'info',
+            message: `单词本 "${wordbookName}" 为空或不存在，无法导出。`
+        });
+        return;
+    }
+
+    const timestamp = new Date().toISOString().slice(0, 10);
+    // 移除文件名中的特殊字符，增强兼容性
+    const safeName = wordbookName.replace(/[^a-z0-9\u4e00-\u9fa5]/gi, '_');
+    const filename = `rootcards-wordbook-${safeName}-${timestamp}.json`;
+
+    triggerJsonDownload(wordbook.words, filename);
+
+    NotificationManager.show({
+        type: 'success',
+        message: `单词本 "${wordbookName}" 已开始导出。`
+    });
+}
+
 
 /**
  * 处理文件导入事件。
@@ -112,7 +139,6 @@ function handleImport(event, onImported) {
                 onImported();
             }
 
-            // 【修改】使用Toast通知代替alert
             NotificationManager.show({
                 type: 'success',
                 message: `导入成功！新增了 ${newCount} 个“已掌握”的单词。`
@@ -120,7 +146,6 @@ function handleImport(event, onImported) {
 
         } catch (error) {
             console.error('导入失败:', error);
-            // 【修改】使用Toast通知代替alert
             NotificationManager.show({
                 type: 'error',
                 message: `导入失败！${error.message}`
@@ -131,7 +156,6 @@ function handleImport(event, onImported) {
         }
     };
     reader.onerror = () => {
-        // 【修改】使用Toast通知代替alert
         NotificationManager.show({
             type: 'error',
             message: '读取文件时发生错误，请重试。'

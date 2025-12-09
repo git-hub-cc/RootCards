@@ -1,16 +1,18 @@
 // =================================================================================
-// 单词本管理模块 (Wordbook Management Module) - v3.0 (Web Worker 集成)
+// 单词本管理模块 (Wordbook Management Module) - v3.2 (智能菜单翻转)
 // ---------------------------------------------------------------------------------
 // 职责:
 // 1. 管理“管理单词本”模态框的所有UI交互和视图切换。
 // 2. 实现单词本的 CRUD 逻辑，删除操作支持撤销。
-// 3. 【升级】使用 Web Worker 异步处理 NLP 单词提取，防止 UI 卡顿。
-// 4. 支持从当前单词列表中一键移除所有已掌握的单词。
+// 3. 使用 Web Worker 异步处理 NLP 单词提取，防止 UI 卡顿。
+// 4. 支持导出单个单词本。
+// 5. 【新增】实现菜单在空间不足时自动向上翻转，避免被遮挡。
 // =================================================================================
 
 import * as State from '../state.js';
 import * as UndoManager from './undoManager.js';
 import * as NotificationManager from './notificationManager.js';
+import * as DataManager from './dataManager.js';
 
 // --- 模块内部状态 ---
 const state = {
@@ -18,7 +20,8 @@ const state = {
     editorMode: 'create',      // 编辑器模式 ('create' 或 'edit')
     editingId: null,           // 正在编辑的单词本的名称 (旧名称)
     isExtracting: false,       // 是否正在提取单词的标志位
-    wordsList: []              // 编辑器中当前处理的单词列表
+    wordsList: [],             // 编辑器中当前处理的单词列表
+    activeMenu: null           // 当前打开的下拉菜单元素
 };
 
 // --- 模块内部DOM元素缓存 ---
@@ -115,14 +118,27 @@ function renderWordbookList() {
             </div>
             <div class="wb-actions">
                 <button class="wb-icon-btn btn-play" title="开始学习" data-action="study" data-name="${wb.name}">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                 </button>
-                <button class="wb-icon-btn" title="编辑" data-action="edit" data-name="${wb.name}">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                </button>
-                <button class="wb-icon-btn btn-delete" title="删除" data-action="delete" data-name="${wb.name}">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
-                </button>
+                <div class="wb-options-menu-container">
+                    <button class="wb-icon-btn btn-more" title="更多操作" data-action="toggle-menu" data-name="${wb.name}">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg>
+                    </button>
+                    <div class="wb-options-dropdown-menu">
+                        <button class="wb-menu-item" data-action="edit" data-name="${wb.name}">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                            编辑
+                        </button>
+                        <button class="wb-menu-item" data-action="export" data-name="${wb.name}">
+                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                            导出
+                        </button>
+                        <button class="wb-menu-item is-danger" data-action="delete" data-name="${wb.name}">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                            删除
+                        </button>
+                    </div>
+                </div>
             </div>
         `;
         fragment.appendChild(row);
@@ -196,9 +212,7 @@ function initEditMode(name) {
     switchView('editor');
 }
 
-/**
- * 【核心修改】使用 Web Worker 处理文本提取，避免阻塞主线程。
- */
+
 function handleExtract() {
     if (state.isExtracting) return;
 
@@ -208,13 +222,11 @@ function handleExtract() {
         return;
     }
 
-    // 1. 设置 UI 为加载状态
     state.isExtracting = true;
     elements.extractBtn.disabled = true;
     elements.extractBtn.innerHTML = '<span class="spinner" style="width:14px;height:14px;display:inline-block;vertical-align:middle;margin-right:5px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;animation:rotate 1s linear infinite;"></span> 处理中...';
     elements.extractStatus.textContent = '正在后台解析...';
 
-    // 2. 实例化 Worker
     let nlpWorker = null;
     try {
         nlpWorker = new Worker('js/workers/nlpWorker.js');
@@ -224,12 +236,10 @@ function handleExtract() {
         return;
     }
 
-    // 3. 配置 Worker 监听器
     nlpWorker.onmessage = function(e) {
         const { type, words, message } = e.data;
 
         if (type === 'EXTRACT_RESULT') {
-            // 合并新单词，自动去重
             const existingSet = new Set(state.wordsList.map(item => item.word));
             let addedCount = 0;
 
@@ -240,15 +250,12 @@ function handleExtract() {
                 }
             });
 
-            // 成功回调
             renderEditorWords();
             finalizeExtraction(true, `成功追加 ${addedCount} 个新单词`);
         } else if (type === 'ERROR') {
-            // 错误回调
             finalizeExtraction(false, message);
         }
 
-        // 任务完成，销毁 Worker 释放资源
         nlpWorker.terminate();
     };
 
@@ -258,13 +265,9 @@ function handleExtract() {
         nlpWorker.terminate();
     };
 
-    // 4. 发送数据
     nlpWorker.postMessage({ type: 'EXTRACT', text: text });
 }
 
-/**
- * 提取结束后的清理工作（恢复UI状态）。
- */
 function finalizeExtraction(isSuccess, message) {
     state.isExtracting = false;
     elements.extractBtn.disabled = false;
@@ -274,7 +277,7 @@ function finalizeExtraction(isSuccess, message) {
     elements.extractStatus.style.color = isSuccess ? 'var(--text-sub)' : '#ef4444';
 
     if (isSuccess) {
-        elements.textInput.value = ''; // 清空输入框
+        elements.textInput.value = '';
     } else {
         NotificationManager.show({ type: 'error', message: message });
     }
@@ -307,7 +310,6 @@ function handleSave(onDataChange) {
 // =================================================================================
 
 export function init(startBtn, optionsMenu, onDataChange) {
-    // 鲁棒性检查：检查浏览器是否支持 Web Worker
     if (!window.Worker) {
         console.warn('当前浏览器不支持 Web Worker，单词提取功能将不可用。');
         startBtn.disabled = true;
@@ -323,7 +325,14 @@ export function init(startBtn, optionsMenu, onDataChange) {
         elements.modal.classList.remove('is-hidden');
     });
 
-    const closeModal = () => elements.modal.classList.add('is-hidden');
+    const closeModal = () => {
+        if (state.activeMenu) {
+            state.activeMenu.classList.remove('is-open');
+            state.activeMenu = null;
+        }
+        elements.modal.classList.add('is-hidden');
+    }
+
     elements.closeBtn.addEventListener('click', closeModal);
     elements.modal.addEventListener('click', (e) => {
         if (e.target === elements.modal) closeModal();
@@ -337,8 +346,50 @@ export function init(startBtn, optionsMenu, onDataChange) {
         const action = btn.dataset.action;
         const name = btn.dataset.name;
 
+        if (action === 'toggle-menu') {
+            e.stopPropagation();
+            const menu = btn.nextElementSibling;
+
+            // 如果点击的是已经打开的菜单，则关闭它
+            if (menu.classList.contains('is-open')) {
+                menu.classList.remove('is-open');
+                state.activeMenu = null;
+                return;
+            }
+
+            // 关闭其他已打开的菜单
+            if (state.activeMenu && state.activeMenu !== menu) {
+                state.activeMenu.classList.remove('is-open');
+            }
+
+            // 【核心修改】智能判断菜单方向
+            const menuContainerRect = elements.modal.getBoundingClientRect();
+            const buttonRect = btn.getBoundingClientRect();
+            const spaceBelow = menuContainerRect.bottom - buttonRect.bottom;
+            const menuHeight = menu.offsetHeight;
+
+            // 移除可能存在的旧方向类
+            menu.classList.remove('is-flipped-up');
+
+            // 如果下方空间不足，但上方空间足够，则向上翻转
+            if (spaceBelow < menuHeight && buttonRect.top - menuContainerRect.top > menuHeight) {
+                menu.classList.add('is-flipped-up');
+            }
+
+            menu.classList.add('is-open');
+            state.activeMenu = menu;
+            return;
+        }
+
+        if (state.activeMenu) {
+            state.activeMenu.classList.remove('is-open');
+            state.activeMenu = null;
+        }
+
         if (action === 'edit') {
             initEditMode(name);
+        } else if (action === 'export') {
+            DataManager.exportWordbook(name);
         } else if (action === 'delete') {
             const rowElement = elements.listContainer.querySelector(`.wordbook-item-row[data-wordbook-name="${name}"]`);
             if (!rowElement) return;
@@ -366,6 +417,13 @@ export function init(startBtn, optionsMenu, onDataChange) {
         }
     });
 
+    document.body.addEventListener('click', () => {
+        if (state.activeMenu) {
+            state.activeMenu.classList.remove('is-open');
+            state.activeMenu = null;
+        }
+    });
+
     elements.backBtn.addEventListener('click', () => switchView('list'));
     elements.extractBtn.addEventListener('click', handleExtract);
     elements.saveBtn.addEventListener('click', () => handleSave(onDataChange));
@@ -381,30 +439,18 @@ export function init(startBtn, optionsMenu, onDataChange) {
 
     elements.removeLearnedBtn.addEventListener('click', () => {
         if (!Array.isArray(state.wordsList)) return;
-
         const initialCount = state.wordsList.length;
         if (initialCount === 0) {
             NotificationManager.show({ type: 'info', message: '当前列表为空，无需操作。' });
             return;
         }
-
-        state.wordsList = state.wordsList.filter(item =>
-            !State.learnedWordsSet.has(item.word.toLowerCase())
-        );
-
+        state.wordsList = state.wordsList.filter(item => !State.learnedWordsSet.has(item.word.toLowerCase()));
         const removedCount = initialCount - state.wordsList.length;
-
         if (removedCount > 0) {
-            NotificationManager.show({
-                type: 'success',
-                message: `成功移除 ${removedCount} 个已掌握的单词。`
-            });
+            NotificationManager.show({ type: 'success', message: `成功移除 ${removedCount} 个已掌握的单词。` });
             renderEditorWords();
         } else {
-            NotificationManager.show({
-                type: 'info',
-                message: '列表中没有已掌握的单词可供移除。'
-            });
+            NotificationManager.show({ type: 'info', message: '列表中没有已掌握的单词可供移除。' });
         }
     });
 }

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Feature: Wordbook Management Styles - 单词本管理样式 (v2.5 - 统一布局)
+   Feature: Wordbook Management Styles - 单词本管理样式 (v2.7 - 智能菜单翻转)
    --------------------------------------------------------------------------
    职责:
    - 定义“管理单词本”模态框的所有专属样式。
@@ -48,10 +48,7 @@
     flex-shrink: 0;
 }
 
-/*
-   【修改】标题样式
-   由于左侧是新增按钮，右侧是关闭按钮，中间的标题需要占据剩余空间并居中。
-*/
+
 .wordbook-header h3 {
     font-size: 1.25rem;
     color: var(--text-highlight);
@@ -60,13 +57,8 @@
     flex-grow: 1;
 }
 
-/*
-   【修改】统一关闭按钮样式
-   使用 .wordbook-close-style 类来覆盖默认的 modal-close-btn 定位，
-   使其成为 Flex 布局的一部分，而不是绝对定位。
-*/
 .wordbook-close-style {
-    position: static !important; /* 覆盖 modal-close-btn 的 absolute */
+    position: static !important;
     margin: 0 !important;
     transform: none !important;
 }
@@ -76,7 +68,8 @@
 .wordbook-list-container {
     flex: 1;
     overflow-y: auto;
-    padding-right: 5px;
+    padding: 5px; /* 为hover效果留出空间 */
+    margin: -5px;
 }
 
 .wordbook-empty-hint {
@@ -96,9 +89,8 @@
     border-radius: var(--radius-sm);
     margin-bottom: 0.8rem;
     border: 1px solid var(--border-color);
-    /* 【核心优化】为所有属性添加过渡，以便 is-pending-removal 动画平滑应用 */
     transition: all 0.35s ease-in-out;
-    overflow: hidden; /* 配合动画，防止内容溢出 */
+    position: relative; /* 【核心修改】为菜单提供一个更可靠的定位上下文 */
 }
 .wordbook-item-row:hover {
     border-color: var(--theme-color);
@@ -109,18 +101,16 @@
     background-color: color-mix(in srgb, var(--theme-color) 5%, transparent);
 }
 
-/*
- * 【核心优化】乐观 UI (Optimistic UI) 的隐藏动画
- * 当用户点击“删除”时，列表项会立即播放此动画并“消失”，让下面的项补位。
-*/
 .wordbook-item-row.is-pending-removal {
     opacity: 0;
-    max-height: 0;              /* 核心：将垂直空间收缩为0 */
+    max-height: 0;
     padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: 0;           /* 移除外边距，让补位更平滑 */
+    margin-bottom: 0;
     border-width: 0;
     pointer-events: none;
+    /* 【核心修改】在动画期间隐藏溢出，完成后不再需要 */
+    overflow: hidden;
 }
 
 
@@ -142,11 +132,12 @@
 .wb-actions {
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 
 .wb-icon-btn {
-    width: 32px;
-    height: 32px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     border: 1px solid var(--border-color);
     background: var(--bg-secondary-color);
@@ -162,11 +153,7 @@
     color: var(--text-main);
     border-color: var(--text-sub);
 }
-.wb-icon-btn.btn-delete:hover {
-    color: #ef4444;
-    border-color: #ef4444;
-    background: #fef2f2;
-}
+
 .wb-icon-btn.btn-play {
     color: var(--theme-color);
     border-color: var(--theme-color);
@@ -176,10 +163,86 @@
     color: #fff;
 }
 .wb-icon-btn svg {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
 }
 
+/* --- 【核心修改】更多操作下拉菜单 --- */
+.wb-options-menu-container {
+    position: relative;
+}
+
+.wb-options-dropdown-menu {
+    position: absolute;
+    top: 100%; /* 默认向下弹出 */
+    right: 0;
+    width: 120px;
+    background-color: var(--card-bg);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-hover);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 0;
+    z-index: 10;
+    list-style: none;
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    pointer-events: none;
+    transform-origin: top right; /* 默认动画原点 */
+}
+
+/* 菜单打开时的状态 */
+.wb-options-dropdown-menu.is-open {
+    opacity: 1;
+    transform: translateY(5px) scale(1); /* 向下弹出动画 */
+    pointer-events: auto;
+}
+
+/* 【新增】菜单向上翻转的样式 */
+.wb-options-dropdown-menu.is-flipped-up {
+    top: auto; /* 取消 top 定位 */
+    bottom: 100%; /* 改为 bottom 定位，使其位于按钮上方 */
+    transform-origin: bottom right; /* 改变动画原点 */
+}
+
+/* 【新增】向上翻转时，打开状态的动画效果 */
+.wb-options-dropdown-menu.is-open.is-flipped-up {
+    transform: translateY(-5px) scale(1); /* 向上弹出动画 */
+}
+
+
+.wb-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.wb-menu-item:hover {
+    background-color: var(--bg-color);
+}
+.wb-menu-item.is-danger:hover {
+    background-color: #fee2e2;
+    color: #ef4444;
+}
+body.dark-mode .wb-menu-item.is-danger:hover {
+    background-color: #3f2a2a;
+}
+.wb-menu-item svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: currentColor;
+    opacity: 0.7;
+}
 
 /* --- 视图 2: 编辑视图样式 --- */
 .wordbook-section {
@@ -334,10 +397,6 @@
    移动端响应式适配 (Breakpoint: 768px)
    ========================================================================== */
 @media screen and (max-width: 768px) {
-    /*
-     * 强制重置容器尺寸为全屏，覆盖 PC 端设定的固定宽高 (height: 600px等)。
-     * 这样可以提供类似原生 App 页面的沉浸式体验。
-     */
     .wordbook-content {
         width: 100%;
         height: 100%;
@@ -345,12 +404,8 @@
         max-height: 100%;
         border-radius: 0;
         border: none;
-
-        /* 适配刘海屏，增加顶部内边距，确保标题不被遮挡 */
         padding-top: calc(1rem + env(safe-area-inset-top));
     }
-
-    /* 优化内部视图的内边距，利用屏幕空间 */
     .wordbook-view-list,
     .wordbook-view-editor {
         padding: 1rem;
