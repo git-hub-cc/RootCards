@@ -1,14 +1,12 @@
 // =================================================================================
-// 数据与状态管理模块 (State Management Module) - v9.0 (热力图与成就系统)
+// 数据与状态管理模块 (State Management Module) - v10.1 (优化单词计数)
 // ---------------------------------------------------------------------------------
-// 主要职责：
+// 职责:
 // 1. (数据加载) 异步加载所有词汇数据文件。
-// 2. (数据处理) 将原始数据处理成应用所需的格式。
-// 3. (状态管理) 维护全局数据和当前筛选状态。
-// 4. (用户数据) 管理“已掌握”单词、“自定义单词本”以及“用户笔记”的增删改查。
-// 5. (新增) 管理“学习热力图”活动数据。
-// 6. (新增) 管理“成就系统”状态与解锁逻辑。
-// 7. (持久化) 负责 localStorage 的读写。
+// 2. (数据处理) 将原始数据处理成应用所需的格式，并动态提取类别。
+// 3. (状态管理) 维护全局数据和当前筛选状态 (category, contentType, filter)。
+// 4. (用户数据) 管理“已掌握”、“单词本”、“笔记”、“学习活动”和“成就”等。
+// 5. (持久化) 负责 localStorage 的读写。
 // =================================================================================
 
 import * as NotificationManager from './modules/notificationManager.js';
@@ -17,81 +15,43 @@ import * as NotificationManager from './modules/notificationManager.js';
 const LEARNED_WORDS_KEY = 'etymologyLearnedWords';
 const USER_WORDBOOKS_KEY = 'etymologyUserWordbooks';
 const USER_NOTES_KEY = 'etymologyUserNotes';
-const LEARNING_ACTIVITY_KEY = 'etymologyLearningActivity'; // 新增：热力图数据 Key
-const USER_ACHIEVEMENTS_KEY = 'etymologyUserAchievements'; // 新增：成就数据 Key
+const LEARNING_ACTIVITY_KEY = 'etymologyLearningActivity';
+const USER_ACHIEVEMENTS_KEY = 'etymologyUserAchievements';
 
-// --- 成就定义配置 (硬编码) ---
 export const ACHIEVEMENT_DEFINITIONS = [
-    {
-        id: 'compiler',
-        name: 'Compiler (编译器)',
-        description: '连续 7 天完成至少一次学习打卡。',
-        icon: '⚡',
-        condition: 'streak',
-        target: 7
-    },
-    {
-        id: 'refactor_master',
-        name: 'Refactor Master (重构大师)',
-        description: '累计标记掌握 100 个单词。',
-        icon: '🛠️',
-        condition: 'count',
-        target: 100
-    },
-    {
-        id: 'bug_hunter',
-        name: 'Bug Hunter (捕虫猎人)',
-        description: '在拼写模式中一次性连续拼对 20 个单词。',
-        icon: '🐞',
-        condition: 'manual', // 手动触发
-        target: 20
-    },
-    {
-        id: 'full_stack',
-        name: 'Full Stack (全栈)',
-        description: '累计掌握 500 个单词。',
-        icon: '📚',
-        condition: 'count',
-        target: 500
-    },
-    {
-        id: 'legacy_code',
-        name: 'Legacy Code (遗留代码)',
-        description: '连续 30 天坚持学习。',
-        icon: '🏛️',
-        condition: 'streak',
-        target: 30
-    }
+    { id: 'compiler', name: 'Word Mason (词汇石匠)', description: '连续 7 天完成至少一次学习打卡。', icon: '🧱', condition: 'streak', target: 7 },
+    { id: 'refactor_master', name: 'Word Collector (单词收藏家)', description: '累计标记掌握 100 个单词。', icon: '🛠️', condition: 'count', target: 100 },
+    { id: 'bug_hunter', name: 'Perfect Speller (完美拼写家)', description: '在拼写模式中一次性连续拼对 20 个单词。', icon: '🎯', condition: 'manual', target: 20 },
+    { id: 'full_stack', name: 'Lexicologist (词汇学家)', description: '累计掌握 500 个单词。', icon: '📚', condition: 'count', target: 500 },
+    { id: 'legacy_code', name: 'Unwavering Scholar (坚定学者)', description: '连续 30 天坚持学习。', icon: '🏛️', condition: 'streak', target: 30 }
 ];
 
-// --- 导出的状态变量 (供其他模块读取和修改) ---
-export let allVocabularyData = [];      // 存储所有已加载和处理过的数据
-export let currentDataSet = [];         // 当前经过筛选后，需要被渲染的数据集
-export let currentFilter = 'all';       // 当前类别筛选器状态
-export let currentGrade = 'middle';     // 当前年级筛选器状态
-export let currentContentType = 'pre';  // 当前内容类型筛选器状态
-export let learnedWordsSet = new Set(); // 存储所有已掌握单词的 Set 集合
-export let currentSearchQuery = '';     // 当前搜索框中的关键词
-export let userWordbooks = [];          // 存储所有用户创建的单词本
-export let userNotes = new Map();       // 存储用户笔记 Map<word, text>
-export let learningActivity = {};       // 新增：学习活动记录 { "YYYY-MM-DD": count }
-export let userAchievements = {};       // 新增：用户成就状态 { id: { unlocked: bool, progress: num, date: ts } }
+// --- 导出的状态变量 ---
+export let allVocabularyData = [];
+export let currentDataSet = [];
+export let currentFilter = 'all';
+export let currentCategory = 'middle';
+export let currentContentType = 'all';
+export let learnedWordsSet = new Set();
+export let currentSearchQuery = '';
+export let userWordbooks = [];
+export let userNotes = new Map();
+export let learningActivity = {};
+export let userAchievements = {};
+
+// 【核心修改】新增一个 Map 用于快速查找单词数据，以优化计数性能
+export let wordDataMap = new Map();
 
 // =================================================================================
-// 基础数据加载与保存 (保持原逻辑)
+// 基础数据加载与保存
 // =================================================================================
 
-/**
- * 从 localStorage 加载已掌握的单词列表。
- */
 export function loadLearnedWords() {
     try {
         const storedWords = localStorage.getItem(LEARNED_WORDS_KEY);
         if (storedWords) {
             const wordsArray = JSON.parse(storedWords);
-            if (Array.isArray(wordsArray)) {
-                learnedWordsSet = new Set(wordsArray);
-            }
+            if (Array.isArray(wordsArray)) learnedWordsSet = new Set(wordsArray);
         }
     } catch (error) {
         console.error('无法从 localStorage 加载学习进度:', error);
@@ -99,69 +59,46 @@ export function loadLearnedWords() {
     }
 }
 
-/**
- * 将已掌握的单词列表保存到 localStorage。
- */
 function saveLearnedWords() {
     try {
-        const wordsArray = Array.from(learnedWordsSet);
-        localStorage.setItem(LEARNED_WORDS_KEY, JSON.stringify(wordsArray));
-        // 检查基于数量的成就 (Refactor Master)
+        localStorage.setItem(LEARNED_WORDS_KEY, JSON.stringify(Array.from(learnedWordsSet)));
         checkCountAchievements();
     } catch (error) {
         console.error('无法保存学习进度到 localStorage:', error);
     }
 }
 
-/**
- * 从 localStorage 加载用户笔记。
- */
 export function loadUserNotes() {
     try {
         const storedNotes = localStorage.getItem(USER_NOTES_KEY);
-        if (storedNotes) {
-            const notesObj = JSON.parse(storedNotes);
-            userNotes = new Map(Object.entries(notesObj));
-        }
+        if (storedNotes) userNotes = new Map(Object.entries(JSON.parse(storedNotes)));
     } catch (error) {
         console.error('无法从 localStorage 加载用户笔记:', error);
         userNotes = new Map();
     }
 }
 
-/**
- * 保存用户笔记到 localStorage。
- */
 function saveUserNotes() {
     try {
-        const notesObj = Object.fromEntries(userNotes);
-        localStorage.setItem(USER_NOTES_KEY, JSON.stringify(notesObj));
+        localStorage.setItem(USER_NOTES_KEY, JSON.stringify(Object.fromEntries(userNotes)));
     } catch (error) {
         console.error('无法保存用户笔记到 localStorage:', error);
     }
 }
 
 export function getUserNote(word) {
-    if (!word) return '';
-    return userNotes.get(word.toLowerCase()) || '';
+    return userNotes.get(word?.toLowerCase()) || '';
 }
 
 export function saveUserNote(word, text) {
     if (!word) return;
     const key = word.toLowerCase();
-    const trimmedText = text ? text.trim() : '';
-
-    if (trimmedText) {
-        userNotes.set(key, trimmedText);
-    } else {
-        userNotes.delete(key);
-    }
+    const trimmedText = text?.trim();
+    if (trimmedText) userNotes.set(key, trimmedText);
+    else userNotes.delete(key);
     saveUserNotes();
 }
 
-/**
- * 从 localStorage 加载用户创建的单词本。
- */
 export function loadUserWordbooks() {
     try {
         const storedWordbooks = localStorage.getItem(USER_WORDBOOKS_KEY);
@@ -169,9 +106,6 @@ export function loadUserWordbooks() {
             const parsedData = JSON.parse(storedWordbooks);
             if (Array.isArray(parsedData) && parsedData.every(wb => typeof wb.name === 'string' && Array.isArray(wb.words))) {
                 userWordbooks = parsedData;
-            } else {
-                console.warn('localStorage 中的单词本数据格式不正确，已忽略。');
-                userWordbooks = [];
             }
         }
     } catch (error) {
@@ -180,9 +114,6 @@ export function loadUserWordbooks() {
     }
 }
 
-/**
- * 保存用户创建的所有单词本到 localStorage。
- */
 function saveUserWordbooks() {
     try {
         localStorage.setItem(USER_WORDBOOKS_KEY, JSON.stringify(userWordbooks));
@@ -206,36 +137,23 @@ export function deleteWordbook(name) {
 }
 
 export function addOrUpdateWordbook(oldName, newName, words) {
-    if (!newName || !words || !Array.isArray(words)) return false;
-
-    const isDuplicate = userWordbooks.some(wb => wb.name === newName && wb.name !== oldName);
-    if (isDuplicate) {
-        throw new Error(`单词本名称 "${newName}" 已存在，请使用其他名称。`);
+    if (!newName || !Array.isArray(words)) return false;
+    if (userWordbooks.some(wb => wb.name === newName && wb.name !== oldName)) {
+        throw new Error(`单词本名称 "${newName}" 已存在。`);
     }
-
-    if (oldName) {
-        const index = userWordbooks.findIndex(wb => wb.name === oldName);
-        if (index > -1) {
-            userWordbooks[index].name = newName;
-            userWordbooks[index].words = words;
-        } else {
-            userWordbooks.push({ name: newName, words });
-        }
+    const index = oldName ? userWordbooks.findIndex(wb => wb.name === oldName) : -1;
+    if (index > -1) {
+        userWordbooks[index] = { name: newName, words };
     } else {
         userWordbooks.push({ name: newName, words });
     }
-
     saveUserWordbooks();
     return true;
 }
 
 export function toggleLearnedStatus(wordData) {
     wordData.isLearned = !wordData.isLearned;
-    if (wordData.isLearned) {
-        learnedWordsSet.add(wordData.word);
-    } else {
-        learnedWordsSet.delete(wordData.word);
-    }
+    wordData.isLearned ? learnedWordsSet.add(wordData.word) : learnedWordsSet.delete(wordData.word);
     saveLearnedWords();
 }
 
@@ -244,23 +162,14 @@ export function getLearnedWordsArray() {
 }
 
 export function importLearnedWords(wordsArray) {
-    if (!Array.isArray(wordsArray)) {
-        console.error('导入数据格式错误，需要一个数组。');
-        return 0;
-    }
+    if (!Array.isArray(wordsArray)) return 0;
     const originalSize = learnedWordsSet.size;
     wordsArray.forEach(word => {
-        if (typeof word === 'string' && word.trim()) {
-            learnedWordsSet.add(word.trim().toLowerCase());
-        }
+        if (typeof word === 'string' && word.trim()) learnedWordsSet.add(word.trim().toLowerCase());
     });
-
     allVocabularyData.forEach(item => {
-        if (item.cardType === 'word' && learnedWordsSet.has(item.word.toLowerCase())) {
-            item.isLearned = true;
-        }
+        if (item.cardType === 'word') item.isLearned = learnedWordsSet.has(item.word.toLowerCase());
     });
-
     saveLearnedWords();
     return learnedWordsSet.size - originalSize;
 }
@@ -268,230 +177,153 @@ export function importLearnedWords(wordsArray) {
 export function clearLearnedWords() {
     learnedWordsSet.clear();
     allVocabularyData.forEach(item => {
-        if (item.cardType === 'word') {
-            item.isLearned = false;
-        }
+        if (item.cardType === 'word') item.isLearned = false;
     });
     saveLearnedWords();
-    // 清空进度后，不需要重置热力图，那是历史记录。但可以考虑是否重置某些计数类成就（这里暂时保留成就）。
 }
 
+/**
+ * 【核心修改】新增一个函数来计算已掌握的、非词根类型的单词数量。
+ * @returns {number} - 计数值。
+ */
+export function getLearnedWordCount() {
+    let count = 0;
+    // 遍历所有已掌握的单词
+    for (const word of learnedWordsSet) {
+        // 使用 Map 快速查找单词的详细数据
+        const data = wordDataMap.get(word.toLowerCase());
+        // 如果找到了数据，并且其内容类型不是 'root'，则计数加一
+        if (data && data.contentType !== 'root') {
+            count++;
+        }
+    }
+    return count;
+}
+
+
 // =================================================================================
-// 【新增】热力图数据管理 (Learning Heatmap)
+// 热力图与成就系统
 // =================================================================================
 
-/**
- * 加载学习活动记录。
- */
 export function loadLearningActivity() {
     try {
-        const stored = localStorage.getItem(LEARNING_ACTIVITY_KEY);
-        if (stored) {
-            learningActivity = JSON.parse(stored);
-        } else {
-            learningActivity = {};
-        }
+        learningActivity = JSON.parse(localStorage.getItem(LEARNING_ACTIVITY_KEY)) || {};
     } catch (e) {
-        console.error('无法加载学习热力图数据:', e);
         learningActivity = {};
     }
 }
 
-/**
- * 记录学习活动。
- * @param {Date} date - 日期对象
- * @param {number} increment - 增加的数量（默认为 1），可以是负数用于撤销。
- */
 export function logLearningActivity(date = new Date(), increment = 1) {
     try {
-        const dateKey = date.toISOString().split('T')[0]; // "YYYY-MM-DD"
-        if (!learningActivity[dateKey]) {
-            learningActivity[dateKey] = 0;
-        }
-        learningActivity[dateKey] += increment;
-
-        // 确保不为负数
-        if (learningActivity[dateKey] < 0) {
-            learningActivity[dateKey] = 0;
-        }
-
-        // 移除计数为0的记录，保持数据整洁？或者保留以显示"活跃但无产出"？
-        // 这里选择保留，只要有记录就视为当天有活动。
-
+        const dateKey = date.toISOString().split('T')[0];
+        learningActivity[dateKey] = (learningActivity[dateKey] || 0) + increment;
+        if (learningActivity[dateKey] < 0) learningActivity[dateKey] = 0;
         localStorage.setItem(LEARNING_ACTIVITY_KEY, JSON.stringify(learningActivity));
-
-        // 记录活动后，检查基于连续性的成就
         checkStreakAchievements();
-
     } catch (e) {
         console.error('保存学习活动失败:', e);
     }
 }
 
-/**
- * 获取热力图数据。
- */
 export function getLearningActivity() {
     return learningActivity;
 }
 
-// =================================================================================
-// 【新增】成就系统管理 (Achievement System)
-// =================================================================================
-
-/**
- * 加载用户成就。
- */
 export function loadAchievements() {
     try {
-        const stored = localStorage.getItem(USER_ACHIEVEMENTS_KEY);
-        if (stored) {
-            userAchievements = JSON.parse(stored);
-        } else {
-            userAchievements = {};
-        }
-        // 初始化未获得的成就结构
+        userAchievements = JSON.parse(localStorage.getItem(USER_ACHIEVEMENTS_KEY)) || {};
         ACHIEVEMENT_DEFINITIONS.forEach(def => {
             if (!userAchievements[def.id]) {
                 userAchievements[def.id] = { unlocked: false, progress: 0, date: null };
             }
         });
     } catch (e) {
-        console.error('无法加载成就数据:', e);
         userAchievements = {};
     }
 }
 
-/**
- * 解锁成就的核心函数。
- * @param {string} achievementId - 成就ID
- */
-export function unlockAchievement(achievementId) {
-    const achievement = userAchievements[achievementId];
-    const definition = ACHIEVEMENT_DEFINITIONS.find(d => d.id === achievementId);
-
-    if (achievement && !achievement.unlocked && definition) {
-        achievement.unlocked = true;
-        achievement.date = new Date().toISOString();
-        achievement.progress = definition.target; // 确保进度显示满额
-
+export function unlockAchievement(id) {
+    const ach = userAchievements[id];
+    const def = ACHIEVEMENT_DEFINITIONS.find(d => d.id === id);
+    if (ach && !ach.unlocked && def) {
+        ach.unlocked = true;
+        ach.date = new Date().toISOString();
+        ach.progress = def.target;
         localStorage.setItem(USER_ACHIEVEMENTS_KEY, JSON.stringify(userAchievements));
-
-        // 触发通知
-        NotificationManager.show({
-            type: 'success',
-            message: `🏆 解锁成就：${definition.name} - ${definition.description}`,
-            duration: 5000
-        });
+        NotificationManager.show({ type: 'success', message: `🏆 解锁成就：${def.name}`, duration: 5000 });
     }
 }
 
-/**
- * 检查基于数量的成就 (Count-based)。
- * 例如：累计掌握 100 个单词。
- */
 function checkCountAchievements() {
     const count = learnedWordsSet.size;
-    const targets = ACHIEVEMENT_DEFINITIONS.filter(d => d.condition === 'count');
-
-    targets.forEach(def => {
+    ACHIEVEMENT_DEFINITIONS.filter(d => d.condition === 'count').forEach(def => {
         const userAch = userAchievements[def.id];
-        if (!userAch.unlocked) {
-            userAch.progress = count; // 更新进度
-            if (count >= def.target) {
-                unlockAchievement(def.id);
-            }
+        if (userAch && !userAch.unlocked) {
+            userAch.progress = count;
+            if (count >= def.target) unlockAchievement(def.id);
         }
     });
     localStorage.setItem(USER_ACHIEVEMENTS_KEY, JSON.stringify(userAchievements));
 }
 
-/**
- * 检查基于连续天数的成就 (Streak-based)。
- * 例如：连续 7 天学习。
- */
 function checkStreakAchievements() {
     const dates = Object.keys(learningActivity).sort();
     if (dates.length === 0) return;
-
-    // 计算当前连续天数
     let streak = 0;
-    const today = new Date().toISOString().split('T')[0];
-    let currentDateStr = today;
-
-    // 如果今天没有记录，检查昨天（允许今天还没开始学）
-    if (!learningActivity[currentDateStr]) {
-        const yesterday = new Date();
-        yesterday.setDate(yesterday.getDate() - 1);
-        currentDateStr = yesterday.toISOString().split('T')[0];
+    let currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0);
+    if (!learningActivity[currentDate.toISOString().split('T')[0]]) {
+        currentDate.setDate(currentDate.getDate() - 1);
     }
-
-    // 回溯检查
-    while (learningActivity[currentDateStr] && learningActivity[currentDateStr] > 0) {
+    while (learningActivity[currentDate.toISOString().split('T')[0]] > 0) {
         streak++;
-        const d = new Date(currentDateStr);
-        d.setDate(d.getDate() - 1);
-        currentDateStr = d.toISOString().split('T')[0];
+        currentDate.setDate(currentDate.getDate() - 1);
     }
-
-    const targets = ACHIEVEMENT_DEFINITIONS.filter(d => d.condition === 'streak');
-    targets.forEach(def => {
+    ACHIEVEMENT_DEFINITIONS.filter(d => d.condition === 'streak').forEach(def => {
         const userAch = userAchievements[def.id];
-        // 只有当当前 streak 大于记录的最高 streak 时才更新进度
-        if (!userAch.unlocked && streak > userAch.progress) {
+        if (userAch && !userAch.unlocked && streak > userAch.progress) {
             userAch.progress = streak;
-            if (streak >= def.target) {
-                unlockAchievement(def.id);
-            }
+            if (streak >= def.target) unlockAchievement(def.id);
         }
     });
     localStorage.setItem(USER_ACHIEVEMENTS_KEY, JSON.stringify(userAchievements));
 }
 
-/**
- * 更新手动触发类成就的进度 (Manual/Transient)。
- * 例如：Bug Hunter (连续拼写正确)。
- * @param {string} achievementId
- * @param {number} currentVal - 当前值（例如连续答对次数）
- */
-export function updateTransientAchievement(achievementId, currentVal) {
-    const userAch = userAchievements[achievementId];
-    const def = ACHIEVEMENT_DEFINITIONS.find(d => d.id === achievementId);
-
+export function updateTransientAchievement(id, currentVal) {
+    const userAch = userAchievements[id];
+    const def = ACHIEVEMENT_DEFINITIONS.find(d => d.id === id);
     if (userAch && !userAch.unlocked && def) {
-        // 对于瞬时成就，我们只记录达到过的最大值作为进度展示
         if (currentVal > userAch.progress) {
             userAch.progress = currentVal;
             localStorage.setItem(USER_ACHIEVEMENTS_KEY, JSON.stringify(userAchievements));
         }
-
-        if (currentVal >= def.target) {
-            unlockAchievement(achievementId);
-        }
+        if (currentVal >= def.target) unlockAchievement(id);
     }
 }
 
 // =================================================================================
-// 原始逻辑保持不变
+// 核心数据处理与筛选
 // =================================================================================
 
-function getGradeFromFilePath(filePath) {
-    if (filePath.includes('/CET-4/')) return 'CET-4';
-    if (filePath.includes('/CET-6/')) return 'CET-6';
-    if (filePath.includes('/middle/')) return 'middle';
-    if (filePath.includes('/high/')) return 'high';
-    return 'unknown';
+/**
+ * 从文件路径中动态提取顶层类别 (category)。
+ * @param {string} filePath - 数据文件路径，例如 'data/middle/pre/re.json'。
+ * @returns {string} - 提取的类别名，例如 'middle'。
+ */
+function getCategoryFromFilePath(filePath) {
+    const parts = filePath.split('/');
+    // 路径结构为 'data/category/...'，所以我们取索引为 1 的部分
+    return parts.length > 1 ? parts[1] : 'unknown';
 }
 
 function getContentTypeFromFilePath(filePath) {
     if (filePath.includes('/pre/')) return 'pre';
     if (filePath.includes('/suf/')) return 'suf';
     if (filePath.includes('/root/')) return 'root';
-    return 'category';
+    return 'category'; // 默认内容类型
 }
 
 export async function loadAndProcessData(onProgress) {
-    // 增加数据加载：热力图和成就
     loadLearningActivity();
     loadAchievements();
 
@@ -499,15 +331,11 @@ export async function loadAndProcessData(onProgress) {
         throw new Error("数据清单 'data/manifest.js' 未找到、格式错误或为空。");
     }
 
-    const grades = new Set();
+    const categories = new Set();
     allVocabularyData = [];
-
     const totalFiles = DATA_FILES.length;
     let loadedFiles = 0;
-
-    if (typeof onProgress === 'function') {
-        onProgress(loadedFiles, totalFiles);
-    }
+    if (typeof onProgress === 'function') onProgress(loadedFiles, totalFiles);
 
     const promises = DATA_FILES.map(async (file) => {
         try {
@@ -520,15 +348,13 @@ export async function loadAndProcessData(onProgress) {
                 return null;
             }
 
-            const grade = getGradeFromFilePath(file);
-            if (grade !== 'unknown') {
-                grades.add(grade);
-            }
+            const category = getCategoryFromFilePath(file);
+            if (category !== 'unknown') categories.add(category);
+
             const contentType = getContentTypeFromFilePath(file);
             const affixType = dataFile.affixType || 'prefix';
 
             const processedItems = [];
-
             for (const meaningGroup of dataFile.meanings) {
                 const processItem = (item, cardType) => ({
                     ...item,
@@ -538,7 +364,7 @@ export async function loadAndProcessData(onProgress) {
                     prefix: dataFile.prefix,
                     affixType: affixType,
                     themeColor: meaningGroup.themeColor,
-                    grade: grade,
+                    category: category,
                     contentType: contentType,
                     isLearned: cardType === 'word' ? learnedWordsSet.has(item.word.toLowerCase()) : false,
                     ...(cardType === 'intro' && { visual: meaningGroup.prefixVisual }),
@@ -549,8 +375,7 @@ export async function loadAndProcessData(onProgress) {
                     processedItems.push(processItem(meaningGroup.prefixIntro, 'intro'));
                 }
                 if (Array.isArray(meaningGroup.words)) {
-                    const wordsData = meaningGroup.words.map(word => processItem(word, 'word'));
-                    processedItems.push(...wordsData);
+                    processedItems.push(...meaningGroup.words.map(word => processItem(word, 'word')));
                 }
             }
             return processedItems;
@@ -560,9 +385,7 @@ export async function loadAndProcessData(onProgress) {
             return null;
         } finally {
             loadedFiles++;
-            if (typeof onProgress === 'function') {
-                onProgress(loadedFiles, totalFiles);
-            }
+            if (typeof onProgress === 'function') onProgress(loadedFiles, totalFiles);
         }
     });
 
@@ -573,25 +396,38 @@ export async function loadAndProcessData(onProgress) {
         }
     });
 
-    const gradeOrder = ['middle', 'high', 'CET-4', 'CET-6'];
-    const sortedGrades = Array.from(grades).sort((a, b) => {
-        const indexA = gradeOrder.indexOf(a);
-        const indexB = gradeOrder.indexOf(b);
+    // 【核心修改】数据加载完毕后，填充单词查找 Map 以备后用
+    wordDataMap.clear();
+    allVocabularyData.forEach(item => {
+        if (item.cardType === 'word' && item.word) {
+            wordDataMap.set(item.word.toLowerCase(), item);
+        }
+    });
+
+
+    // 自定义排序，确保类别按期望顺序显示
+    const categoryOrder = ['middle', 'high', 'CET-4', 'CET-6'];
+    const sortedCategories = Array.from(categories).sort((a, b) => {
+        const indexA = categoryOrder.indexOf(a);
+        const indexB = categoryOrder.indexOf(b);
+        if (indexA === -1 && indexB === -1) return a.localeCompare(b); // 对未指定的类别按字母排序
         if (indexA === -1) return 1;
         if (indexB === -1) return -1;
         return indexA - indexB;
     });
 
-    return { grades: sortedGrades };
+    // 返回动态生成的 categories 列表
+    return { categories: sortedCategories };
 }
 
 export function filterAndPrepareDataSet() {
     let filteredData;
 
-    if (currentGrade === 'all') {
+    // 根据 currentCategory 进行筛选
+    if (currentCategory === 'all') {
         filteredData = allVocabularyData;
     } else {
-        filteredData = allVocabularyData.filter(item => item.grade === currentGrade);
+        filteredData = allVocabularyData.filter(item => item.category === currentCategory);
     }
 
     if (currentContentType !== 'all') {
@@ -604,50 +440,33 @@ export function filterAndPrepareDataSet() {
         filteredData = filteredData.filter(item => item.cardType === 'word' && item.isLearned);
     } else if (userWordbook) {
         const wordbookSet = new Set(userWordbook.words.map(w => w.toLowerCase()));
-        filteredData = filteredData.filter(item =>
-            item.cardType === 'word' && wordbookSet.has(item.word.toLowerCase())
-        );
+        filteredData = filteredData.filter(item => item.cardType === 'word' && wordbookSet.has(item.word.toLowerCase()));
     } else if (currentFilter === 'all') {
         filteredData = filteredData.filter(item => item.cardType === 'intro' || !item.isLearned);
     } else {
-        filteredData = filteredData.filter(item =>
-            item.type === currentFilter && (item.cardType === 'intro' || !item.isLearned)
-        );
+        filteredData = filteredData.filter(item => item.type === currentFilter && (item.cardType === 'intro' || !item.isLearned));
     }
 
     if (currentSearchQuery) {
-        let searchTerms = [currentSearchQuery];
+        const searchTerms = [currentSearchQuery];
         if (typeof window.nlp === 'function') {
             try {
                 const doc = window.nlp(currentSearchQuery);
                 doc.compute('root');
                 const rootForm = doc.text('root');
-                if (rootForm && rootForm !== currentSearchQuery) {
-                    searchTerms.push(rootForm);
-                }
+                if (rootForm && rootForm !== currentSearchQuery) searchTerms.push(rootForm);
             } catch (e) {
                 console.warn('NLP processing failed in search:', e);
             }
         }
-
-        const matchingWordCards = filteredData.filter(item => {
+        const matchingWords = filteredData.filter(item => {
             if (item.cardType !== 'word' || !item.word) return false;
             const dbWord = item.word.toLowerCase();
-            return searchTerms.some(term =>
-                dbWord.includes(term) || term.startsWith(dbWord)
-            );
+            return searchTerms.some(term => dbWord.includes(term) || term.startsWith(dbWord));
         });
-
-        const relevantCategoryIds = new Set(matchingWordCards.map(item => item.type));
-
-        if (relevantCategoryIds.size > 0) {
-            const relevantIntroCards = filteredData.filter(item =>
-                item.cardType === 'intro' && relevantCategoryIds.has(item.type)
-            );
-            currentDataSet = [...relevantIntroCards, ...matchingWordCards];
-        } else {
-            currentDataSet = [];
-        }
+        const relevantTypes = new Set(matchingWords.map(item => item.type));
+        const relevantIntros = filteredData.filter(item => item.cardType === 'intro' && relevantTypes.has(item.type));
+        currentDataSet = [...relevantIntros, ...matchingWords];
     } else {
         currentDataSet = filteredData;
     }
@@ -669,35 +488,35 @@ export function shuffleCurrentDataSet() {
     currentDataSet = introCard ? [introCard, ...shuffledWords] : shuffledWords;
 }
 
+// --- 状态设置函数 ---
 export function setCurrentFilter(newFilter) { currentFilter = newFilter; }
-export function setCurrentGrade(newGrade) { currentGrade = newGrade; }
+export function setCurrentCategory(newCategory) { currentCategory = newCategory; }
 export function setCurrentContentType(newType) { currentContentType = newType; }
 export function setSearchQuery(query) { currentSearchQuery = query.trim().toLowerCase(); }
 
-export function getAvailableCategories() {
-    let gradeFilteredData;
-    if (currentGrade === 'all') {
-        gradeFilteredData = allVocabularyData;
+/**
+ * 获取当前选定 category 和 contentType 下可用的子类别（前缀、后缀、词根等）。
+ */
+export function getAvailableSubCategories() {
+    let categoryFilteredData;
+    if (currentCategory === 'all') {
+        categoryFilteredData = allVocabularyData;
     } else {
-        gradeFilteredData = allVocabularyData.filter(item => item.grade === currentGrade);
+        categoryFilteredData = allVocabularyData.filter(item => item.category === currentCategory);
     }
 
-    let finalFilteredData;
-    if (currentContentType !== 'all') {
-        finalFilteredData = gradeFilteredData.filter(item => item.contentType === currentContentType);
-    } else {
-        finalFilteredData = gradeFilteredData;
-    }
+    let finalFilteredData = (currentContentType !== 'all')
+        ? categoryFilteredData.filter(item => item.contentType === currentContentType)
+        : categoryFilteredData;
 
     const categoryMap = new Map();
     finalFilteredData.forEach(item => {
         if (!categoryMap.has(item.type)) {
             const originalDisplayName = item.displayName;
-            let englishDisplayName = originalDisplayName;
-            if (item.contentType === 'category') {
-                const match = originalDisplayName.match(/\(([^)]+)\)/);
-                if (match && match[1]) englishDisplayName = match[1];
-            }
+            let englishDisplayName = (item.contentType === 'category' && originalDisplayName.match(/\(([^)]+)\)/))
+                ? originalDisplayName.match(/\(([^)]+)\)/)[1]
+                : originalDisplayName;
+
             categoryMap.set(item.type, {
                 filterType: 'pre-defined',
                 meaningId: item.type,

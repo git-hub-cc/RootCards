@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Component Styles - 通用组件样式 (v6.1 - 优化热力图布局)
+   Component Styles - 通用组件样式 (v6.3 - 修复热力图提示层级)
    --------------------------------------------------------------------------
    ========================================================================== */
 
@@ -156,8 +156,8 @@
     to { opacity: 1; }
 }
 
-/* --- 组件: 年级筛选器按钮 --- */
-.grade-filter-btn {
+/* --- 组件: 类别筛选器按钮 (原 grade-filter-btn) --- */
+.category-filter-btn {
     padding: 10px 24px;
     border: 2px solid var(--border-color);
     border-radius: 8px;
@@ -169,27 +169,33 @@
     color: var(--text-sub);
     white-space: nowrap;
     flex-shrink: 0;
+    text-transform: capitalize; /* 自动将 middle, high 等首字母大写 */
 }
-.grade-filter-btn:hover {
+.category-filter-btn:hover {
     border-color: var(--border-color-hover);
     color: var(--text-main);
     transform: translateY(-2px);
     box-shadow: var(--shadow);
 }
-.grade-filter-btn.active {
+.category-filter-btn.active {
     background: var(--theme-color-default);
     color: var(--text-inverse);
     border-color: var(--theme-color-default);
     box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
 }
-body.dark-mode .grade-filter-btn.active {
+body.dark-mode .category-filter-btn.active {
     background-color: #4b5563;
     border-color: #4b5563;
 }
+/* 对特定类别（如 CET-4）禁用首字母大写，以保持原样 */
+.category-filter-btn[data-category="CET-4"],
+.category-filter-btn[data-category="CET-6"] {
+    text-transform: none;
+}
 
 
-/* --- 组件: 类别筛选器与控制按钮 --- */
+/* --- 组件: 内容类型与子类别筛选器 --- */
 .filter-btn {
     padding: 8px 20px;
     border: 2px solid var(--border-color);
@@ -519,25 +525,9 @@ body.mode-no-visual .card-front .visual-area::after {
 /* ==========================================================================
    学习热力图组件 (Heatmap) - GitHub 风格
    ========================================================================== */
-.heatmap-container-wrapper {
-    max-width: 1000px;
-    margin: 2rem auto;
-    padding: 1rem;
-    text-align: center;
-    background-color: var(--bg-secondary-color);
-    border-radius: var(--radius-sm);
-}
-
-.heatmap-container-wrapper h3 {
-    font-size: 1.1rem;
-    color: var(--text-sub);
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
 
 .heatmap-container {
     display: grid;
-    /* 核心：创建7行网格，自动按列填充 */
     grid-template-rows: repeat(7, 1fr);
     grid-auto-flow: column;
     gap: 3px;
@@ -545,8 +535,6 @@ body.mode-no-visual .card-front .visual-area::after {
     overflow-x: auto;
     padding: 0.5rem;
 }
-
-/* 【修改】移除星期标签的样式 */
 
 .heatmap-day {
     width: 12px;
@@ -580,26 +568,52 @@ body.dark-mode .heatmap-day[data-level="2"] { background-color: #006d32; }
 body.dark-mode .heatmap-day[data-level="3"] { background-color: #26a641; }
 body.dark-mode .heatmap-day[data-level="4"] { background-color: #39d353; }
 
+/* 【核心修复】热力图提示框样式与层级 */
 .heatmap-tooltip {
     position: fixed;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     color: #fff;
-    padding: 4px 8px;
-    border-radius: 4px;
+    padding: 8px 12px;
+    border-radius: 6px;
     font-size: 0.8rem;
     pointer-events: none;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -110%);
     opacity: 0;
-    transition: opacity 0.2s;
-    z-index: 1000;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 2001; /* 确保在模态框遮罩层 (2000) 之上 */
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1.4;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
 .heatmap-tooltip.is-visible {
     opacity: 1;
+    transform: translate(-50%, -100%);
+}
+
+/* 提示框内部的小字样式 */
+.heatmap-tooltip-label {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-left: 2px;
+    font-weight: normal;
+}
+
+/* 提示框内部的日期样式 */
+.heatmap-tooltip-date {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-bottom: 2px;
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 2px;
+    margin-bottom: 4px;
 }
 
 @media screen and (max-width: 768px) {
-    .heatmap-container-wrapper {
-        margin: 1rem;
-        display: none; /* 移动端默认隐藏 */
+    /* 在移动端，热力图容器可能需要一些特定的微调 */
+    .heatmap-container {
+        /* 如果有需要，可以在此调整移动端模态框内的热力图样式 */
     }
 }

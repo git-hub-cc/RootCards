@@ -30,26 +30,6 @@
           ]
         },
         {
-          "word": "habit",
-          "rootVisual": "<svg xmlns='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg'><path d='M 4 12 a 8 8 0 1 1 8 8 M 12 20 l 6 1 M 12 20 l 4 -4' fill='none' stroke='currentColor' stroke-width='2'/></svg>",
-          "breakdown": [
-            "Habit",
-            "(居住/拥有)"
-          ],
-          "imagery": "一个循环的箭头，表示不断重复、周而复始的行为。",
-          "translation": "习惯",
-          "sentences": [
-            {
-              "en": "Study habits are very important.",
-              "cn": "学习习惯非常重要。"
-            },
-            {
-              "en": "Smoking is a bad habit.",
-              "cn": "吸烟是个坏习惯。"
-            }
-          ]
-        },
-        {
           "word": "subject",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M12 10 v6' stroke='currentColor' marker-end='url(#arrow)'/>",
           "breakdown": [

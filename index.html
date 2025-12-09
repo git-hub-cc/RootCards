@@ -95,20 +95,18 @@
         </p>
     </div>
 
-    <div class="grade-filter-container" id="grade-filter-container"></div>
+    <!-- 【核心修改】ID 从 grade-filter-container 更改为 category-filter-container -->
+    <div class="category-filter-container" id="category-filter-container"></div>
     <div class="content-type-filter-container" id="content-type-filter-container"></div>
 
     <div class="filter-container" id="filter-container">
         <!-- 筛选器按钮 JS 动态生成 -->
 
         <div class="tool-group" id="tool-group">
-            <!-- 【新增】单词计数器 -->
             <div class="word-count-container">
-                <!-- 【修改】为计数器项添加 title 属性，用于悬浮提示 -->
                 <div class="count-item" title="当前视图">
                     <span id="word-count-current" class="count-number">0</span>
                 </div>
-                <!-- 【修改】为计数器项添加 title 属性，用于悬浮提示 -->
                 <div class="count-item" title="已掌握">
                     <span id="word-count-learned" class="count-number">0</span>
                 </div>
@@ -168,6 +166,11 @@
                         查看成就
                     </button>
                     <div class="menu-divider"></div>
+                    <button class="menu-item" id="show-heatmap-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>
+                        学习轨迹
+                    </button>
+                    <div class="menu-divider"></div>
                     <button class="menu-item" id="import-learned-btn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                         导入已掌握
@@ -221,11 +224,6 @@
         </svg>
     </div>
 </main>
-
-<div class="heatmap-container-wrapper">
-    <h3>🔥 学习轨迹 (Learning Heatmap)</h3>
-    <div id="heatmap-container" class="heatmap-container"></div>
-</div>
 
 <!-- 移动端底部固定导航栏容器 -->
 <nav id="mobile-bottom-bar" class="mobile-bottom-bar"></nav>
@@ -371,6 +369,18 @@
         </div>
         <div id="achievements-list-container" class="achievements-list">
         </div>
+    </div>
+</div>
+
+<div id="heatmap-modal" class="modal-overlay is-hidden">
+    <div class="modal-content heatmap-content">
+        <div class="achievements-header"> <!-- 复用头部样式 -->
+            <h3>🔥 学习轨迹 (Learning Heatmap)</h3>
+            <button id="heatmap-close-btn" class="modal-close-btn wordbook-close-style" title="关闭">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+        <div id="heatmap-container" class="heatmap-container"></div>
     </div>
 </div>
 

@@ -78,7 +78,6 @@ body.mode-immersive .app-header {
     border: 2px solid var(--border-color);
     border-radius: 50px;            /* 使用大的固定圆角值，形成优雅的“药丸”形状 */
     transition: all 0.2s ease;
-    cursor: help;
 }
 /* --- 【修改结束】 --- */
 
@@ -93,7 +92,8 @@ body.mode-immersive .app-header {
     color: var(--text-main);
 }
 
-.grade-filter-container,
+/* 【核心修改】重命名 grade-filter-container 为 category-filter-container */
+.category-filter-container,
 .content-type-filter-container,
 .filter-container {
     display: flex;
@@ -108,7 +108,7 @@ body.mode-immersive .app-header {
     padding-right: 1rem;
 }
 
-.grade-filter-container {
+.category-filter-container {
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--border-color);
@@ -258,7 +258,8 @@ body.mode-immersive .app-footer { display: none; }
         text-align: center;
     }
 
-    .grade-filter-container,
+    /* 【核心修改】重命名 grade-filter-container 为 category-filter-container */
+    .category-filter-container,
     .content-type-filter-container,
     .filter-container {
         flex-wrap: nowrap;
@@ -270,11 +271,11 @@ body.mode-immersive .app-footer { display: none; }
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none; /* IE */
     }
-    .grade-filter-container::-webkit-scrollbar,
+    .category-filter-container::-webkit-scrollbar,
     .content-type-filter-container::-webkit-scrollbar,
     .filter-container::-webkit-scrollbar { display: none; }
 
-    .grade-filter-container { margin-bottom: 0.5rem; padding-bottom: 0.5rem; }
+    .category-filter-container { margin-bottom: 0.5rem; padding-bottom: 0.5rem; }
 
     .tool-group { width: 100%; margin-top: 0.2rem; }
     .search-container { max-width: 100%; margin: 0; }

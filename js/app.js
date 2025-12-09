@@ -1,6 +1,9 @@
 // =================================================================================
-// 应用协调器 (Application Orchestrator) - v17.1 (优化“已掌握”视图交互提示)
+// 应用协调器 (Application Orchestrator) - v18.1 (优化单词计数UI更新)
 // ---------------------------------------------------------------------------------
+// 主要变更:
+// - 修改了 `updateDataAndUI` 函数，使其调用新的计数函数来更新UI。
+// - 调整了 `handleMarkAsLearned` 函数，确保在标记/取消掌握单词时，计数器能正确地更新。
 // =================================================================================
 
 import * as State from './state.js';
@@ -17,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- DOM 元素获取 ---
     const cardGrid = document.getElementById('card-grid');
-    const gradeFilterContainer = document.getElementById('grade-filter-container');
+    const categoryFilterContainer = document.getElementById('category-filter-container');
     const contentTypeFilterContainer = document.getElementById('content-type-filter-container');
     const filterContainer = document.getElementById('filter-container');
     const shuffleBtn = document.getElementById('shuffle-btn');
@@ -41,6 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const achievementsModal = document.getElementById('achievements-modal');
     const achievementsCloseBtn = document.getElementById('achievements-close-btn');
     const achievementsListContainer = document.getElementById('achievements-list-container');
+
+    const showHeatmapBtn = document.getElementById('show-heatmap-btn');
+    const heatmapModal = document.getElementById('heatmap-modal');
+    const heatmapCloseBtn = document.getElementById('heatmap-close-btn');
 
     const typingModeBtn = document.getElementById('typing-mode-btn');
     const listeningModeBtn = document.getElementById('listening-mode-btn');
@@ -81,15 +88,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!hasMore) updateEmptyStateMessage();
     }
 
-    /**
-     * 【核心修改】所有会改变数据集的操作都应调用此函数
-     */
     function updateDataAndUI() {
         State.filterAndPrepareDataSet();
-        // 实时更新单词计数器
-        UI.updateWordCounts(State.currentDataSet.length, State.learnedWordsSet.size);
+        // 【核心修改】计算当前视图中非词根卡片的数量，并调用新的函数获取已掌握单词数
+        const currentWordCount = State.currentDataSet.filter(item => item.contentType !== 'root' && item.cardType === 'word').length;
+        const learnedWordCount = State.getLearnedWordCount();
+        UI.updateWordCounts(currentWordCount, learnedWordCount);
         startNewRenderFlow();
     }
+
 
     function updateEmptyStateMessage() {
         const cardCount = cardGrid.querySelectorAll('.card:not(.is-pending-removal)').length;
@@ -118,8 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
         cardGrid.scrollTo({ left: 0, top: 0 });
     }
 
-    function updateCategoryFilters() {
-        const availableCategories = State.getAvailableCategories();
+    function updateSubCategoryFilters() {
+        const availableCategories = State.getAvailableSubCategories();
         UI.renderFilterButtons(filterContainer, toolGroup, availableCategories);
 
         const currentBtn = filterContainer.querySelector(`.filter-btn[data-filter="${State.currentFilter}"]`);
@@ -181,20 +188,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const onConfirm = () => {
             State.toggleLearnedStatus(data);
 
-            // 【核心修改】此处逻辑调整：标记掌握时才记录热力图，取消掌握不记录
             if (!isCurrentlyLearned) {
                 State.logLearningActivity(new Date(), 1);
-                UI.renderHeatmap(heatmapContainer, State.getLearningActivity());
             }
 
             cardElement.remove();
 
-            // 【核心修改】标记后更新计数器
-            // 注意：此处 currentDataSet.length 会在 onConfirm 执行时比UI上少一个
-            // 所以直接用 UI 上的卡片数量来计算会更准确，或者在 State.toggleLearnedStatus 之后重新 filter
-            // 但为了简化，我们假设 State.currentDataSet 的变化与 UI 同步
-            const newCurrentCount = State.currentFilter === 'learned' ? State.currentDataSet.length : State.currentDataSet.length - 1;
-            UI.updateWordCounts(newCurrentCount, State.learnedWordsSet.size);
+            // 【核心修改】重新计算并更新单词数
+            const currentWordCount = State.currentDataSet.filter(item => item.contentType !== 'root' && item.cardType === 'word').length;
+            const learnedWordCount = State.getLearnedWordCount();
+            UI.updateWordCounts(currentWordCount, learnedWordCount);
+
 
             const cardsOnScreen = cardGrid.querySelectorAll('.card:not(.is-pending-removal)').length;
             if (cardsOnScreen < CARDS_PER_PAGE && renderIndex < State.currentDataSet.length) {
@@ -211,12 +215,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
 
-        // --- 【核心修改】 ---
-        // 根据当前操作是“标记”还是“取消标记”，显示不同的提示文本
         const toastMessage = isCurrentlyLearned
             ? `单词 "${data.word}" 已取消掌握。`
             : `单词 "${data.word}" 已标记掌握。`;
-        // --- 【修改结束】 ---
 
         UndoManager.show({
             message: toastMessage,
@@ -226,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleWordbookChange(type, newName, oldName) {
-        updateCategoryFilters();
+        updateSubCategoryFilters();
         if (type === 'create' || type === 'study') {
             State.setCurrentFilter(newName);
             const newBtn = filterContainer.querySelector(`.filter-btn[data-filter="${newName}"]`);
@@ -287,16 +288,16 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
-    gradeFilterContainer.addEventListener('click', (e) => {
-        const btn = e.target.closest('.grade-filter-btn');
+    categoryFilterContainer.addEventListener('click', (e) => {
+        const btn = e.target.closest('.category-filter-btn');
         if (btn && !btn.classList.contains('active')) {
-            UI.updateActiveGradeButton(gradeFilterContainer, btn);
-            State.setCurrentGrade(btn.dataset.grade);
-            State.setCurrentContentType('all');
+            UI.updateActiveCategoryButton(categoryFilterContainer, btn);
+            State.setCurrentCategory(btn.dataset.category); // 使用 setCurrentCategory
+            State.setCurrentContentType('all'); // 重置内容类型筛选
             const allContentTypeBtn = contentTypeFilterContainer.querySelector('.content-type-btn[data-type="all"]');
             if (allContentTypeBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, allContentTypeBtn);
-            State.setCurrentFilter('all');
-            updateCategoryFilters();
+            State.setCurrentFilter('all'); // 重置子类别筛选
+            updateSubCategoryFilters();
             updateDataAndUI();
         }
     });
@@ -307,7 +308,7 @@ document.addEventListener('DOMContentLoaded', () => {
             UI.updateActiveContentTypeButton(contentTypeFilterContainer, btn);
             State.setCurrentContentType(btn.dataset.type);
             State.setCurrentFilter('all');
-            updateCategoryFilters();
+            updateSubCategoryFilters();
             updateDataAndUI();
         }
     });
@@ -332,7 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const isMobile = window.innerWidth <= 768;
         if (isMobile) {
             State.shuffleCurrentDataSet();
-            startNewRenderFlow(); // 洗牌不影响总数，只需重渲染
+            startNewRenderFlow();
             NotificationManager.show({ type: 'success', message: '🔀 卡片已随机打乱' });
         } else {
             isShuffling = true;
@@ -371,6 +372,22 @@ document.addEventListener('DOMContentLoaded', () => {
     achievementsModal.addEventListener('click', (e) => {
         if (e.target === achievementsModal) closeAchievements();
     });
+
+    if (showHeatmapBtn && heatmapModal && heatmapCloseBtn) {
+        showHeatmapBtn.addEventListener('click', () => {
+            UI.renderHeatmap(heatmapContainer, State.getLearningActivity());
+            heatmapModal.classList.remove('is-hidden');
+            optionsMenu.classList.remove('is-open');
+        });
+
+        const closeHeatmap = () => heatmapModal.classList.add('is-hidden');
+        heatmapCloseBtn.addEventListener('click', closeHeatmap);
+        heatmapModal.addEventListener('click', (e) => {
+            if (e.target === heatmapModal) {
+                closeHeatmap();
+            }
+        });
+    }
 
     clearLearnedBtn.addEventListener('click', () => {
         const onConfirm = () => {
@@ -433,20 +450,20 @@ document.addEventListener('DOMContentLoaded', () => {
             State.loadUserWordbooks();
             State.loadUserNotes();
 
-            const { grades } = await State.loadAndProcessData(updateLoadingProgress);
+            const { categories } = await State.loadAndProcessData(updateLoadingProgress);
 
             hideSplashScreen();
 
-            UI.renderGradeButtons(gradeFilterContainer, grades);
+            UI.renderCategoryButtons(categoryFilterContainer, categories);
             UI.renderContentTypeButtons(contentTypeFilterContainer);
 
-            const defaultGradeBtn = gradeFilterContainer.querySelector(`[data-grade="${State.currentGrade}"]`);
-            if (defaultGradeBtn) UI.updateActiveGradeButton(gradeFilterContainer, defaultGradeBtn);
+            const defaultCategoryBtn = categoryFilterContainer.querySelector(`[data-category="${State.currentCategory}"]`);
+            if (defaultCategoryBtn) UI.updateActiveCategoryButton(categoryFilterContainer, defaultCategoryBtn);
 
             const defaultContentTypeBtn = contentTypeFilterContainer.querySelector(`[data-type="${State.currentContentType}"]`);
             if (defaultContentTypeBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, defaultContentTypeBtn);
 
-            updateCategoryFilters();
+            updateSubCategoryFilters();
             updateDataAndUI();
 
             UI.renderHeatmap(heatmapContainer, State.getLearningActivity());

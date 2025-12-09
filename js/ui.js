@@ -1,6 +1,8 @@
 // =================================================================================
-// 通用 UI 渲染模块 (Generic UI Rendering Module) - v16.1 (优化“已掌握”视图交互提示)
+// 通用 UI 渲染模块 (Generic UI Rendering Module) - v17.1 (修复热力图提示层级)
 // ---------------------------------------------------------------------------------
+// 主要变更:
+// - renderHeatmap 函数中的提示框创建逻辑保持不变，CSS 中已调整 z-index。
 // =================================================================================
 
 import * as State from './state.js';
@@ -14,10 +16,7 @@ let lastClickedWordAudio = { element: null, isSlow: false };
 const MAX_FILENAME_SLUG_LENGTH = 60;
 
 const uiSounds = {
-    complete: null,
-    uncomplete: null,
-    undo: null,
-    activate: null
+    complete: null, uncomplete: null, undo: null, activate: null
 };
 
 const UI_SOUND_PATHS = {
@@ -27,9 +26,6 @@ const UI_SOUND_PATHS = {
     activate: 'audio/ui/Activate.mp3'
 };
 
-/**
- * 初始化模块
- */
 export function init() {
     cardTemplate = document.getElementById('card-template');
     prefixIntroTemplate = document.getElementById('prefix-intro-template');
@@ -39,7 +35,7 @@ export function init() {
         return false;
     }
 
-    for (const [key, path] of Object.entries(UI_SOUND_PATHS)) {
+    Object.entries(UI_SOUND_PATHS).forEach(([key, path]) => {
         try {
             const audio = new Audio(path);
             audio.preload = 'auto';
@@ -48,42 +44,26 @@ export function init() {
         } catch (e) {
             console.warn(`无法加载音效资源: ${path}`, e);
         }
-    }
+    });
 
     initMobileLayout();
-
     return true;
 }
 
-/**
- * 移动端布局适配逻辑
- */
 function initMobileLayout() {
-    const isMobile = window.innerWidth <= 768;
-
-    if (isMobile) {
-        const bottomBar = document.getElementById('mobile-bottom-bar');
-        const buttonsToMove = [
-            'listening-mode-btn', 'typing-mode-btn', 'shuffle-btn',
-            'no-visual-btn', 'more-options-btn'
-        ];
-
-        buttonsToMove.forEach(id => {
-            const btn = document.getElementById(id);
-            if (btn && bottomBar) {
-                if (id === 'more-options-btn') {
-                    const container = document.querySelector('.options-menu-container');
-                    if (container) {
-                        bottomBar.appendChild(container);
-                        container.classList.add('mobile-nav-item');
-                    }
-                } else {
-                    bottomBar.appendChild(btn);
-                    btn.classList.add('mobile-nav-item');
-                }
-            }
-        });
-    }
+    if (window.innerWidth > 768) return;
+    const bottomBar = document.getElementById('mobile-bottom-bar');
+    if (!bottomBar) return;
+    const buttonsToMove = [
+        'listening-mode-btn', 'typing-mode-btn', 'shuffle-btn',
+        'no-visual-btn', 'more-options-btn'
+    ];
+    buttonsToMove.forEach(id => {
+        const element = id === 'more-options-btn'
+            ? document.querySelector('.options-menu-container')
+            : document.getElementById(id);
+        if (element) bottomBar.appendChild(element);
+    });
 }
 
 export function playUiSound(type) {
@@ -92,25 +72,22 @@ export function playUiSound(type) {
         const clone = originalAudio.cloneNode();
         clone.volume = originalAudio.volume;
         clone.play().catch(e => {
-            if (e.name !== 'NotAllowedError') {
-                console.warn(`播放 UI 音效 (${type}) 失败`, e);
-            }
+            if (e.name !== 'NotAllowedError') console.warn(`播放 UI 音效 (${type}) 失败`, e);
         });
     }
 }
 
 export function sanitizeForFilename(text) {
     if (typeof text !== 'string' || !text) return '';
-    let slug = text.toLowerCase().replace(/[^a-z0-9]+/g, '_');
-    if (slug.length > MAX_FILENAME_SLUG_LENGTH) {
-        slug = slug.slice(0, MAX_FILENAME_SLUG_LENGTH);
-    }
-    return slug.replace(/^_+|_+$/g, '');
+    return text.toLowerCase()
+        .replace(/[^a-z0-9]+/g, '_')
+        .slice(0, MAX_FILENAME_SLUG_LENGTH)
+        .replace(/^_+|_+$/g, '');
 }
 
 export function playAudioFile(filePath, onEnded = null) {
     if (!filePath) {
-        if (onEnded) onEnded();
+        onEnded?.();
         return;
     }
     if (!audioPlayer.paused) {
@@ -122,7 +99,7 @@ export function playAudioFile(filePath, onEnded = null) {
     audioPlayer.play().catch(error => {
         if (error.name !== 'AbortError') {
             console.error(`播放音频 "${filePath}" 失败:`, error);
-            if (onEnded) onEnded();
+            onEnded?.();
         }
     });
 }
@@ -138,40 +115,42 @@ export function stopAudio() {
 // 筛选器与计数器 UI 函数
 // =================================================================================
 
-/**
- * 【新增】更新页面顶部的单词计数器。
- * @param {number} currentCount - 当前视图的单词数。
- * @param {number} learnedCount - 已掌握的总单词数。
- */
 export function updateWordCounts(currentCount, learnedCount) {
     const currentCountEl = document.getElementById('word-count-current');
     const learnedCountEl = document.getElementById('word-count-learned');
-    if (currentCountEl && learnedCountEl) {
-        currentCountEl.textContent = currentCount;
-        learnedCountEl.textContent = learnedCount;
-    }
+    if (currentCountEl) currentCountEl.textContent = currentCount;
+    if (learnedCountEl) learnedCountEl.textContent = learnedCount;
 }
 
-export function renderGradeButtons(container, grades) {
+/**
+ * 渲染动态的主类别过滤器按钮。
+ * @param {HTMLElement} container - 按钮的容器元素。
+ * @param {string[]} categories - 从 state.js 获取的类别 ID 数组 (如 ['middle', 'high', 'CET-4'])。
+ */
+export function renderCategoryButtons(container, categories) {
     container.innerHTML = '';
-    const gradeMap = {
-        'middle': '初中',
-        'high': '高中',
-        'CET-4': 'CET-4',
-        'CET-6': 'CET-6'
-    };
-    ['all', ...grades].forEach(gradeId => {
+    // "全部" 按钮是固定的
+    const allCategories = ['all', ...categories];
+
+    allCategories.forEach(categoryId => {
         const button = document.createElement('button');
-        button.className = 'grade-filter-btn';
-        button.dataset.grade = gradeId;
-        button.textContent = gradeMap[gradeId] || (gradeId === 'all' ? '全部阶段' : gradeId);
+        button.className = 'category-filter-btn';
+        button.dataset.category = categoryId;
+
+        // 自动生成按钮文本，对 'all' 进行特殊处理
+        button.textContent = (categoryId === 'all') ? 'All Stages' : categoryId;
+
         container.appendChild(button);
     });
 }
 
-
-export function updateActiveGradeButton(container, clickedButton) {
-    container.querySelectorAll('.grade-filter-btn').forEach(btn => btn.classList.remove('active'));
+/**
+ * 更新主类别按钮的激活状态。
+ * @param {HTMLElement} container - 按钮的容器元素。
+ * @param {HTMLElement} clickedButton - 被点击的按钮。
+ */
+export function updateActiveCategoryButton(container, clickedButton) {
+    container.querySelectorAll('.category-filter-btn').forEach(btn => btn.classList.remove('active'));
     clickedButton.classList.add('active');
 }
 
@@ -184,7 +163,7 @@ export function renderContentTypeButtons(container) {
     ];
     types.forEach(({ type, text }) => {
         const button = document.createElement('button');
-        button.className = 'grade-filter-btn content-type-btn';
+        button.className = 'category-filter-btn content-type-btn';
         button.dataset.type = type;
         button.textContent = text;
         container.appendChild(button);
@@ -245,34 +224,20 @@ export function updateActiveFilterButton(filterContainer, clickedButton) {
 }
 
 // =================================================================================
-// 热力图渲染逻辑
+// 热力图与成就渲染
 // =================================================================================
 
-/**
- * 渲染学习热力图。
- * @param {HTMLElement} container - 热力图容器元素。
- * @param {object} activityData - 学习活动数据 { "YYYY-MM-DD": count }。
- */
 export function renderHeatmap(container, activityData) {
-    // 鲁棒性检查：如果容器不存在，则直接返回
     if (!container) return;
     container.innerHTML = '';
-
     const DAYS_IN_YEAR = 365;
     const today = new Date();
     today.setHours(0, 0, 0, 0);
-
     const startDate = new Date(today);
     startDate.setDate(startDate.getDate() - DAYS_IN_YEAR);
-
-    // 计算起始日期是星期几（星期日是 0, 星期一是 1, ..., 星期六是 6）
     const startDayOfWeek = startDate.getDay();
-
     const fragment = document.createDocumentFragment();
 
-    // 【修改】移除星期标签的渲染逻辑
-
-    // 1. 创建 tooltip 元素（如果不存在）
     let tooltip = document.getElementById('heatmap-tooltip');
     if (!tooltip) {
         tooltip = document.createElement('div');
@@ -281,86 +246,69 @@ export function renderHeatmap(container, activityData) {
         document.body.appendChild(tooltip);
     }
 
-    // 2. 填充起始空白格，以对齐日历
+    // 填充空白块以对齐星期
     for (let i = 0; i < startDayOfWeek; i++) {
         const spacer = document.createElement('div');
         spacer.className = 'heatmap-day is-spacer';
         fragment.appendChild(spacer);
     }
 
-    // 3. 生成日期格子
     for (let i = 0; i <= DAYS_IN_YEAR + 1; i++) {
         const date = new Date(startDate);
         date.setDate(date.getDate() + i);
         const dateStr = date.toISOString().split('T')[0];
+        // 获取当天的增量数据（如果当天没数据则为0）
         const count = activityData[dateStr] || 0;
 
         const dayEl = document.createElement('div');
         dayEl.className = 'heatmap-day';
 
-        // 根据学习数量设置不同的颜色等级
+        // 根据数量设置颜色等级
         let level = 0;
         if (count > 0) level = 1;
         if (count >= 5) level = 2;
         if (count >= 10) level = 3;
         if (count >= 20) level = 4;
-
         dayEl.dataset.level = level;
-        dayEl.dataset.date = dateStr;
-        dayEl.dataset.count = count;
 
-        // 鼠标悬浮时显示 tooltip
-        dayEl.addEventListener('mouseenter', (e) => {
+        // 悬浮事件处理
+        dayEl.addEventListener('mouseenter', () => {
             const rect = dayEl.getBoundingClientRect();
-            tooltip.textContent = `${dateStr}: ${count} words`;
-            tooltip.style.top = `${rect.top - 30}px`;
+
+            // 使用 innerHTML 支持 HTML 标签样式
+            // 第一行显示淡色日期，第二行显示高亮数字 + 小字"已掌握"
+            tooltip.innerHTML = `
+                <span class="heatmap-tooltip-date">${dateStr}</span>
+                <span style="font-weight:bold; font-size:1.1em;">${count}</span> 
+                <span class="heatmap-tooltip-label">词已掌握</span>
+            `;
+
+            // 计算位置：居中显示在方块上方
+            tooltip.style.top = `${rect.top - 10}px`;
             tooltip.style.left = `${rect.left + rect.width / 2}px`;
             tooltip.classList.add('is-visible');
         });
 
-        // 鼠标移出时隐藏 tooltip
-        dayEl.addEventListener('mouseleave', () => {
-            tooltip.classList.remove('is-visible');
-        });
-
+        dayEl.addEventListener('mouseleave', () => tooltip.classList.remove('is-visible'));
         fragment.appendChild(dayEl);
     }
-
     container.appendChild(fragment);
 }
 
 
-// =================================================================================
-// 【新增】成就列表渲染逻辑
-// =================================================================================
-
-/**
- * 渲染成就列表到模态框中。
- * @param {HTMLElement} listContainer - 列表容器。
- */
 export function renderAchievementsList(listContainer) {
     if (!listContainer) return;
     listContainer.innerHTML = '';
-
     const defs = State.ACHIEVEMENT_DEFINITIONS;
     const userProgress = State.userAchievements;
-
     const fragment = document.createDocumentFragment();
 
     defs.forEach(def => {
         const progressData = userProgress[def.id] || { unlocked: false, progress: 0 };
         const isUnlocked = progressData.unlocked;
-
-        let progressPercent = 0;
-        if (isUnlocked) {
-            progressPercent = 100;
-        } else if (def.target > 0) {
-            progressPercent = Math.min(100, Math.round((progressData.progress / def.target) * 100));
-        }
-
+        const progressPercent = isUnlocked ? 100 : (def.target > 0 ? Math.min(100, (progressData.progress / def.target) * 100) : 0);
         const item = document.createElement('div');
         item.className = `achievement-item ${isUnlocked ? 'is-unlocked' : ''}`;
-
         item.innerHTML = `
             <div class="achievement-icon">${def.icon}</div>
             <div class="achievement-info">
@@ -372,15 +320,10 @@ export function renderAchievementsList(listContainer) {
                 <div class="achievement-progress-track">
                     <div class="achievement-progress-bar" style="width: ${progressPercent}%"></div>
                 </div>
-                <div class="achievement-progress-text">
-                    ${progressData.progress} / ${def.target}
-                </div>
-            </div>
-        `;
-
+                <div class="achievement-progress-text">${progressData.progress} / ${def.target}</div>
+            </div>`;
         fragment.appendChild(item);
     });
-
     listContainer.appendChild(fragment);
 }
 
@@ -391,9 +334,7 @@ export function renderAchievementsList(listContainer) {
 function createIntroCard(data) {
     const card = prefixIntroTemplate.content.cloneNode(true).firstElementChild;
     if (data.themeColor) card.style.setProperty('--theme-color', data.themeColor);
-    if (data.visual) {
-        card.querySelector('.visual-area').innerHTML = `<svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">${data.visual}</svg>`;
-    }
+    if (data.visual) card.querySelector('.visual-area').innerHTML = `<svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">${data.visual}</svg>`;
     card.querySelector('.intro-title').textContent = data.title;
     card.querySelector('.intro-description').innerHTML = data.description.replace(/\n/g, '<br>');
     card.querySelector('.intro-imagery').textContent = data.imagery;
@@ -441,43 +382,15 @@ function createWordCard(data, handlers) {
     sentenceSection.prepend(closeFocusBtn);
 
     requestAnimationFrame(() => {
-        const isScrollable = sentenceSection.scrollHeight > sentenceSection.clientHeight;
-
-        if (isScrollable) {
-            let isExpanded = false;
-
-            const hint = document.createElement('div');
-            hint.className = 'scroll-hint';
-            sentenceSection.appendChild(hint);
-
-            const enterFocusMode = () => {
-                if (isExpanded) return;
-                isExpanded = true;
-                card.classList.add('sentence-focus-active');
-                sentenceSection.classList.add('is-expanded');
-                sentenceSection.scrollTop = 0;
-                hint.style.display = 'none';
-            };
-
-            const exitFocusMode = () => {
-                if (!isExpanded) return;
-                isExpanded = false;
-                card.classList.remove('sentence-focus-active');
-                sentenceSection.classList.remove('is-expanded');
-                hint.style.display = 'flex';
-            };
-
-            sentenceSection.addEventListener('scroll', () => {
-                if (!isExpanded && sentenceSection.scrollTop > 10) {
-                    enterFocusMode();
-                }
-            }, { passive: true });
-
-            closeFocusBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                exitFocusMode();
-            });
-        }
+        if (sentenceSection.scrollHeight <= sentenceSection.clientHeight) return;
+        let isExpanded = false;
+        const hint = document.createElement('div');
+        hint.className = 'scroll-hint';
+        sentenceSection.appendChild(hint);
+        const enterFocus = () => { if (!isExpanded) { isExpanded = true; card.classList.add('sentence-focus-active'); sentenceSection.classList.add('is-expanded'); sentenceSection.scrollTop = 0; hint.style.display = 'none'; } };
+        const exitFocus = () => { if (isExpanded) { isExpanded = false; card.classList.remove('sentence-focus-active'); sentenceSection.classList.remove('is-expanded'); hint.style.display = 'flex'; } };
+        sentenceSection.addEventListener('scroll', () => { if (!isExpanded && sentenceSection.scrollTop > 10) enterFocus(); }, { passive: true });
+        closeFocusBtn.addEventListener('click', (e) => { e.stopPropagation(); exitFocus(); });
     });
 
     addCardInteraction(card);
@@ -485,41 +398,22 @@ function createWordCard(data, handlers) {
     card.querySelector('.word-audio').addEventListener('click', e => {
         e.stopPropagation();
         const btn = e.currentTarget;
-        lastClickedWordAudio.isSlow = lastClickedWordAudio.element === btn ? !lastClickedWordAudio.isSlow : false;
+        lastClickedWordAudio.isSlow = (lastClickedWordAudio.element === btn) ? !lastClickedWordAudio.isSlow : false;
         lastClickedWordAudio.element = btn;
-        const suffix = lastClickedWordAudio.isSlow ? '_slow.mp3' : '.mp3';
-        playAudioFile(`audio/words/${data.word.toLowerCase()}${suffix}`);
+        playAudioFile(`audio/words/${data.word.toLowerCase()}${lastClickedWordAudio.isSlow ? '_slow.mp3' : '.mp3'}`);
         btn.title = lastClickedWordAudio.isSlow ? '切换为常速朗读' : '切换为慢速朗读';
     });
 
     card.querySelector('.toggle-prefix-btn').addEventListener('click', e => { e.stopPropagation(); card.classList.toggle('prefix-hidden'); });
 
-    // --- 【核心修改】 ---
-    // 动态设置“标记”按钮的 title 属性
     const markBtn = card.querySelector('.mark-btn');
-    if (markBtn) {
-        // 如果当前视图是“已掌握”，则按钮功能是“取消标记”
-        if (State.currentFilter === 'learned') {
-            markBtn.title = '标记为未掌握';
-        }
-        // 否则，使用模板中默认的 "标记为已掌握"
-    }
-    // --- 【修改结束】 ---
-
-    markBtn.addEventListener('click', e => {
-        e.stopPropagation();
-        handlers.onMarkLearned(data, card);
-    });
+    if (markBtn) markBtn.title = State.currentFilter === 'learned' ? '标记为未掌握' : '标记为已掌握';
+    markBtn.addEventListener('click', e => { e.stopPropagation(); handlers.onMarkLearned(data, card); });
 
     const noteBtn = card.querySelector('.note-btn');
     const noteOverlay = card.querySelector('.card-note-overlay');
     const noteInput = card.querySelector('.note-input');
-    const noteSaveBtn = card.querySelector('.btn-save');
-    const noteCancelBtn = card.querySelector('.btn-cancel');
-
-    if (State.getUserNote(data.word)) {
-        noteBtn.classList.add('has-note');
-    }
+    if (State.getUserNote(data.word)) noteBtn.classList.add('has-note');
 
     noteBtn.addEventListener('click', e => {
         e.stopPropagation();
@@ -528,7 +422,7 @@ function createWordCard(data, handlers) {
         setTimeout(() => noteInput.focus(), 100);
     });
 
-    noteSaveBtn.addEventListener('click', e => {
+    card.querySelector('.btn-save').addEventListener('click', e => {
         e.stopPropagation();
         const text = noteInput.value.trim();
         State.saveUserNote(data.word, text);
@@ -537,47 +431,28 @@ function createWordCard(data, handlers) {
         noteOverlay.classList.add('is-hidden');
     });
 
-    noteCancelBtn.addEventListener('click', e => {
-        e.stopPropagation();
-        noteOverlay.classList.add('is-hidden');
-    });
-
+    card.querySelector('.btn-cancel').addEventListener('click', e => { e.stopPropagation(); noteOverlay.classList.add('is-hidden'); });
     noteInput.addEventListener('click', e => e.stopPropagation());
 
     return card;
 }
 
-
 function addCardInteraction(card) {
     let startX = 0, startY = 0, isSwiping = false;
-
-    card.addEventListener('touchstart', (e) => {
-        startX = e.touches[0].clientX;
-        startY = e.touches[0].clientY;
-        isSwiping = false;
-    }, { passive: true });
-
-    card.addEventListener('touchmove', (e) => {
-        const diffX = Math.abs(e.touches[0].clientX - startX);
-        const diffY = Math.abs(e.touches[0].clientY - startY);
-        if (diffX > 10 || diffY > 10) isSwiping = true;
-    }, { passive: true });
-
-    card.addEventListener('touchend', (e) => {
-        if (!isSwiping && !e.target.closest('.audio-btn, .toggle-prefix-btn, .mark-btn, .note-btn, .card-note-overlay, .close-focus-btn')) {
-            setTimeout(() => card.classList.toggle('is-flipped'), 50);
+    const isDesktop = window.matchMedia("(hover: hover)").matches;
+    const flipHandler = (e) => {
+        if (!e.target.closest('.audio-btn, .toggle-prefix-btn, .mark-btn, .note-btn, .card-note-overlay, .close-focus-btn')) {
+            card.classList.toggle('is-flipped');
         }
-    });
-
-    card.addEventListener('click', e => {
-        if (window.matchMedia("(hover: hover)").matches) {
-            if (!e.target.closest('.audio-btn, .toggle-prefix-btn, .mark-btn, .note-btn, .card-note-overlay, .close-focus-btn')) {
-                card.classList.toggle('is-flipped');
-            }
-        }
-    });
+    };
+    if (isDesktop) {
+        card.addEventListener('click', flipHandler);
+    } else {
+        card.addEventListener('touchstart', e => { startX = e.touches[0].clientX; startY = e.touches[0].clientY; isSwiping = false; }, { passive: true });
+        card.addEventListener('touchmove', e => { if (Math.abs(e.touches[0].clientX - startX) > 10 || Math.abs(e.touches[0].clientY - startY) > 10) isSwiping = true; }, { passive: true });
+        card.addEventListener('touchend', e => { if (!isSwiping) setTimeout(() => flipHandler(e), 50); });
+    }
 }
-
 
 export function createCard(data, handlers) {
     return data.cardType === 'intro' ? createIntroCard(data) : createWordCard(data, handlers);
@@ -586,29 +461,16 @@ export function createCard(data, handlers) {
 export function toggleNoVisualMode(btnElement) {
     const isEnabled = document.body.classList.toggle('mode-no-visual');
     btnElement.classList.toggle('active', isEnabled);
-    const eyeOpen = btnElement.querySelector('.icon-eye-open');
-    const eyeSlash = btnElement.querySelector('.icon-eye-slash');
-    if (eyeOpen && eyeSlash) {
-        eyeOpen.classList.toggle('is-hidden', isEnabled);
-        eyeSlash.classList.toggle('is-hidden', !isEnabled);
-    }
+    btnElement.querySelector('.icon-eye-open').classList.toggle('is-hidden', isEnabled);
+    btnElement.querySelector('.icon-eye-slash').classList.toggle('is-hidden', !isEnabled);
     btnElement.title = isEnabled ? "关闭无图模式" : "开启无图自测模式";
     if (isEnabled) playUiSound('activate');
 }
 
 export function toggleImmersiveMode(btnElement) {
     const isImmersive = document.body.classList.toggle('mode-immersive');
-    const iconExpand = btnElement.querySelector('.icon-expand');
-    const iconCompress = btnElement.querySelector('.icon-compress');
-
-    if (iconExpand && iconCompress) {
-        iconExpand.classList.toggle('is-hidden', isImmersive);
-        iconCompress.classList.toggle('is-hidden', !isImmersive);
-    }
-
+    btnElement.querySelector('.icon-expand').classList.toggle('is-hidden', isImmersive);
+    btnElement.querySelector('.icon-compress').classList.toggle('is-hidden', !isImmersive);
     playUiSound('activate');
-    NotificationManager.show({
-        type: isImmersive ? 'success' : 'info',
-        message: isImmersive ? '🔕 已进入沉浸模式' : '🔔 已退出沉浸模式'
-    });
+    NotificationManager.show({ type: isImmersive ? 'success' : 'info', message: isImmersive ? '🔕 已进入沉浸模式' : '🔔 已退出沉浸模式' });
 }
