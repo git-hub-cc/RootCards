@@ -1,9 +1,10 @@
 // =================================================================================
-// 应用协调器 (Application Orchestrator) - v18.1 (优化单词计数UI更新)
+// 应用协调器 (Application Orchestrator) - v20.0 (对话模式全局化)
 // ---------------------------------------------------------------------------------
 // 主要变更:
-// - 修改了 `updateDataAndUI` 函数，使其调用新的计数函数来更新UI。
-// - 调整了 `handleMarkAsLearned` 函数，确保在标记/取消掌握单词时，计数器能正确地更新。
+// - 获取并绑定新的 #dialogue-mode-btn 按钮。
+// - 将其传递给 DialogueMode.init 进行初始化。
+// - 移除了 renderMoreCards 中 createCard 的 onStartDialogue 回调。
 // =================================================================================
 
 import * as State from './state.js';
@@ -15,6 +16,7 @@ import * as TypingMode from './modules/typingMode.js';
 import * as Wordbook from './modules/wordbook.js';
 import * as UndoManager from './modules/undoManager.js';
 import * as NotificationManager from './modules/notificationManager.js';
+import * as DialogueMode from './modules/dialogueMode.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -51,6 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const typingModeBtn = document.getElementById('typing-mode-btn');
     const listeningModeBtn = document.getElementById('listening-mode-btn');
+    // [新增] 获取对话模式按钮
+    const dialogueModeBtn = document.getElementById('dialogue-mode-btn');
 
     // --- 状态变量 ---
     let renderIndex = 0;
@@ -70,7 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderMoreCards() {
         const fragment = document.createDocumentFragment();
         const endIndex = Math.min(renderIndex + CARDS_PER_PAGE, State.currentDataSet.length);
-        const handlers = { onMarkLearned: handleMarkAsLearned };
+        const handlers = {
+            onMarkLearned: handleMarkAsLearned
+            // [移除] onStartDialogue 回调已不再需要
+        };
 
         for (let i = renderIndex; i < endIndex; i++) {
             const card = UI.createCard(State.currentDataSet[i], handlers);
@@ -90,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateDataAndUI() {
         State.filterAndPrepareDataSet();
-        // 【核心修改】计算当前视图中非词根卡片的数量，并调用新的函数获取已掌握单词数
         const currentWordCount = State.currentDataSet.filter(item => item.contentType !== 'root' && item.cardType === 'word').length;
         const learnedWordCount = State.getLearnedWordCount();
         UI.updateWordCounts(currentWordCount, learnedWordCount);
@@ -194,7 +200,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             cardElement.remove();
 
-            // 【核心修改】重新计算并更新单词数
             const currentWordCount = State.currentDataSet.filter(item => item.contentType !== 'root' && item.cardType === 'word').length;
             const learnedWordCount = State.getLearnedWordCount();
             UI.updateWordCounts(currentWordCount, learnedWordCount);
@@ -292,11 +297,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const btn = e.target.closest('.category-filter-btn');
         if (btn && !btn.classList.contains('active')) {
             UI.updateActiveCategoryButton(categoryFilterContainer, btn);
-            State.setCurrentCategory(btn.dataset.category); // 使用 setCurrentCategory
-            State.setCurrentContentType('all'); // 重置内容类型筛选
+            State.setCurrentCategory(btn.dataset.category);
+            State.setCurrentContentType('all');
             const allContentTypeBtn = contentTypeFilterContainer.querySelector('.content-type-btn[data-type="all"]');
             if (allContentTypeBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, allContentTypeBtn);
-            State.setCurrentFilter('all'); // 重置子类别筛选
+            State.setCurrentFilter('all');
             updateSubCategoryFilters();
             updateDataAndUI();
         }
@@ -415,6 +420,9 @@ document.addEventListener('DOMContentLoaded', () => {
         ThemeManager.init();
         UndoManager.init();
         NotificationManager.init();
+
+        // [修改] 传递启动按钮进行初始化
+        DialogueMode.init(dialogueModeBtn);
 
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {

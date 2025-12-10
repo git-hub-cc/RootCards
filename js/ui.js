@@ -1,8 +1,10 @@
 // =================================================================================
-// 通用 UI 渲染模块 (Generic UI Rendering Module) - v17.1 (修复热力图提示层级)
+// 通用 UI 渲染模块 (Generic UI Rendering Module) - v19.0 (移除单卡对话按钮)
 // ---------------------------------------------------------------------------------
 // 主要变更:
-// - renderHeatmap 函数中的提示框创建逻辑保持不变，CSS 中已调整 z-index。
+// - 移除了 createWordCard 中添加 "💬 AI 语境引导" 按钮的代码。
+// - 移除了相关的事件监听器。
+// - 更新了 initMobileLayout 以适配新的全局对话按钮。
 // =================================================================================
 
 import * as State from './state.js';
@@ -55,7 +57,7 @@ function initMobileLayout() {
     const bottomBar = document.getElementById('mobile-bottom-bar');
     if (!bottomBar) return;
     const buttonsToMove = [
-        'listening-mode-btn', 'typing-mode-btn', 'shuffle-btn',
+        'listening-mode-btn', 'dialogue-mode-btn', 'typing-mode-btn', 'shuffle-btn',
         'no-visual-btn', 'more-options-btn'
     ];
     buttonsToMove.forEach(id => {
@@ -122,33 +124,19 @@ export function updateWordCounts(currentCount, learnedCount) {
     if (learnedCountEl) learnedCountEl.textContent = learnedCount;
 }
 
-/**
- * 渲染动态的主类别过滤器按钮。
- * @param {HTMLElement} container - 按钮的容器元素。
- * @param {string[]} categories - 从 state.js 获取的类别 ID 数组 (如 ['middle', 'high', 'CET-4'])。
- */
 export function renderCategoryButtons(container, categories) {
     container.innerHTML = '';
-    // "全部" 按钮是固定的
     const allCategories = ['all', ...categories];
 
     allCategories.forEach(categoryId => {
         const button = document.createElement('button');
         button.className = 'category-filter-btn';
         button.dataset.category = categoryId;
-
-        // 自动生成按钮文本，对 'all' 进行特殊处理
         button.textContent = (categoryId === 'all') ? 'All Stages' : categoryId;
-
         container.appendChild(button);
     });
 }
 
-/**
- * 更新主类别按钮的激活状态。
- * @param {HTMLElement} container - 按钮的容器元素。
- * @param {HTMLElement} clickedButton - 被点击的按钮。
- */
 export function updateActiveCategoryButton(container, clickedButton) {
     container.querySelectorAll('.category-filter-btn').forEach(btn => btn.classList.remove('active'));
     clickedButton.classList.add('active');
@@ -257,13 +245,11 @@ export function renderHeatmap(container, activityData) {
         const date = new Date(startDate);
         date.setDate(date.getDate() + i);
         const dateStr = date.toISOString().split('T')[0];
-        // 获取当天的增量数据（如果当天没数据则为0）
         const count = activityData[dateStr] || 0;
 
         const dayEl = document.createElement('div');
         dayEl.className = 'heatmap-day';
 
-        // 根据数量设置颜色等级
         let level = 0;
         if (count > 0) level = 1;
         if (count >= 5) level = 2;
@@ -271,19 +257,13 @@ export function renderHeatmap(container, activityData) {
         if (count >= 20) level = 4;
         dayEl.dataset.level = level;
 
-        // 悬浮事件处理
         dayEl.addEventListener('mouseenter', () => {
             const rect = dayEl.getBoundingClientRect();
-
-            // 使用 innerHTML 支持 HTML 标签样式
-            // 第一行显示淡色日期，第二行显示高亮数字 + 小字"已掌握"
             tooltip.innerHTML = `
                 <span class="heatmap-tooltip-date">${dateStr}</span>
                 <span style="font-weight:bold; font-size:1.1em;">${count}</span> 
                 <span class="heatmap-tooltip-label">词已掌握</span>
             `;
-
-            // 计算位置：居中显示在方块上方
             tooltip.style.top = `${rect.top - 10}px`;
             tooltip.style.left = `${rect.left + rect.width / 2}px`;
             tooltip.classList.add('is-visible');
@@ -294,7 +274,6 @@ export function renderHeatmap(container, activityData) {
     }
     container.appendChild(fragment);
 }
-
 
 export function renderAchievementsList(listContainer) {
     if (!listContainer) return;

@@ -1,34 +1,28 @@
 /**
  * =================================================================================
- * Service Worker (PWA 核心控制脚本) - v1.2 (修复音频流缓存问题)
+ * Service Worker (PWA 核心控制脚本) - v1.4 (新增 dialogueMode 缓存)
  * ---------------------------------------------------------------------------------
- * 主要职责:
- * 1. (安装 Install) 预缓存 App Shell (应用核心骨架)，确保应用能够离线秒开。
- * 2. (激活 Activate) 清理旧版本的缓存，有效管理存储空间。
- * 3. (拦截 Fetch) 拦截网络请求，并根据资源类型应用不同的缓存策略：
- *    - App Shell 静态资源 -> 缓存优先 (Cache First)
- *    - JSON 数据文件 -> 缓存优先，后台更新 (Stale While Revalidate)
- *    - 音频媒体文件 -> 缓存优先 (Cache First), 并正确处理流式响应
+ * 主要修改:
+ * 1. 递增了 CACHE_VERSION 以触发客户端更新。
+ * 2. 在 ASSETS_TO_CACHE 列表中添加了新的 config.js 和 dialogueMode.js 文件。
  * =================================================================================
  */
 
-// --- 配置区域 ---
+// 缓存版本号：递增此版本号以强制浏览器更新缓存
+const CACHE_VERSION = 'v1.0.4';
 
-// 缓存版本号：修改此版本号会触发 Service Worker 的更新流程，并清理旧缓存。
-const CACHE_VERSION = 'v1.0.2'; // 建议递增版本号以触发更新
-// 静态资源缓存（App Shell: HTML, CSS, JS, manifest 等）
+// 静态资源缓存（App Shell）
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
-// 数据资源缓存（主要是 JSON 文件）
+// 数据资源缓存
 const DATA_CACHE = `data-${CACHE_VERSION}`;
-// 音频资源缓存（MP3 文件），使用独立版本号，因为它们不常变动但体积较大。
+// 音频资源缓存
 const AUDIO_CACHE = `audio-v1`;
 
-// 需要在安装时立即缓存的核心静态资源 (App Shell)
-// 确保此列表中的所有路径都是正确且可访问的！
+// 需要在安装时立即缓存的核心静态资源
 const ASSETS_TO_CACHE = [
-    '/', // 网站根目录，通常会映射到 index.html
+    '/',
     '/index.html',
-    './manifest.json', // 使用 ./ 增加明确性
+    './manifest.json',
     '/favicon.svg',
 
     // CSS 样式表
@@ -47,6 +41,8 @@ const ASSETS_TO_CACHE = [
     '/js/app.js',
     '/js/state.js',
     '/js/ui.js',
+    '/js/ui-helpers.js',
+    '/js/config.js',                  // [新增] 配置文件
     '/js/modules/themeManager.js',
     '/js/modules/dataManager.js',
     '/js/modules/listeningMode.js',
@@ -54,16 +50,17 @@ const ASSETS_TO_CACHE = [
     '/js/modules/wordbook.js',
     '/js/modules/undoManager.js',
     '/js/modules/notificationManager.js',
+    '/js/modules/dialogueMode.js',    // [新增] 对话模式模块
 
     // Web Workers 和第三方库
     '/js/workers/nlpWorker.js',
-    '/lib/compromise.js', // 确保这个文件存在于项目中！
+    '/lib/compromise.js',
 
     // 数据清单
     '/data/manifest.js'
 ];
 
-// --- 1. 安装事件 (Install): 预缓存静态资源 ---
+// --- 1. 安装事件 (Install) ---
 self.addEventListener('install', (event) => {
     console.log(`[Service Worker] 正在安装新版本: ${CACHE_VERSION}`);
     self.skipWaiting();
@@ -79,7 +76,7 @@ self.addEventListener('install', (event) => {
     );
 });
 
-// --- 2. 激活事件 (Activate): 清理旧缓存 ---
+// --- 2. 激活事件 (Activate) ---
 self.addEventListener('activate', (event) => {
     console.log(`[Service Worker] 正在激活新版本: ${CACHE_VERSION}`);
     event.waitUntil(self.clients.claim());
@@ -98,32 +95,26 @@ self.addEventListener('activate', (event) => {
     );
 });
 
-// --- 3. 拦截事件 (Fetch): 应用缓存策略 ---
+// --- 3. 拦截事件 (Fetch) ---
 self.addEventListener('fetch', (event) => {
     const url = new URL(event.request.url);
 
-    if (event.request.method !== 'GET' || url.origin !== self.location.origin) {
+    // 排除非 GET 请求和跨域请求 (除了音频 CDNs 等)
+    // 注意：本次新增的 API 请求是 POST，会被此处排除，直接走网络，这是符合预期的
+    if (event.request.method !== 'GET') {
         return;
     }
 
-    // --- 策略 A: 音频文件 -> 缓存优先 (Cache First) ---
+    // --- 策略 A: 音频文件 -> 缓存优先 ---
     if (url.pathname.startsWith('/audio/')) {
         event.respondWith(
             caches.open(AUDIO_CACHE).then(cache => {
                 return cache.match(event.request).then(cachedResponse => {
-                    if (cachedResponse) {
-                        return cachedResponse;
-                    }
+                    if (cachedResponse) return cachedResponse;
                     return fetch(event.request).then(networkResponse => {
-                        // ========================================================
-                        // 【核心修复】在这里检查响应状态码
-                        // ========================================================
-                        // 仅当响应是完整的（状态码 200-299）时才进行缓存。
-                        // 特别是要排除 206 Partial Content，以允许音频流正常工作。
                         if (networkResponse.ok && networkResponse.status !== 206) {
                             cache.put(event.request, networkResponse.clone());
                         }
-                        // 无论是否缓存，都将原始响应返回给浏览器。
                         return networkResponse;
                     });
                 });
@@ -132,7 +123,7 @@ self.addEventListener('fetch', (event) => {
         return;
     }
 
-    // --- 策略 B: 数据文件 (JSON) -> 缓存优先，后台更新 (Stale While Revalidate) ---
+    // --- 策略 B: 数据文件 (JSON) -> 缓存优先，后台更新 ---
     if (url.pathname.startsWith('/data/') && url.pathname.endsWith('.json')) {
         event.respondWith(
             caches.open(DATA_CACHE).then(cache => {
@@ -140,9 +131,7 @@ self.addEventListener('fetch', (event) => {
                     const fetchPromise = fetch(event.request).then(networkResponse => {
                         cache.put(event.request, networkResponse.clone());
                         return networkResponse;
-                    }).catch(error => {
-                        console.warn(`[Service Worker] 获取数据文件失败: ${event.request.url}`, error);
-                    });
+                    }).catch(error => console.warn('后台更新数据失败', error));
                     return cachedResponse || fetchPromise;
                 });
             })
@@ -150,12 +139,10 @@ self.addEventListener('fetch', (event) => {
         return;
     }
 
-    // --- 策略 C: 默认策略（App Shell 静态资源） -> 缓存优先 (Cache First) ---
+    // --- 策略 C: 默认静态资源 -> 缓存优先 ---
     event.respondWith(
         caches.match(event.request).then((cachedResponse) => {
-            return cachedResponse || fetch(event.request).catch(error => {
-                console.error(`[Service Worker] 静态资源网络请求失败: ${event.request.url}`, error);
-            });
+            return cachedResponse || fetch(event.request);
         })
     );
 });

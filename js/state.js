@@ -192,8 +192,8 @@ export function getLearnedWordCount() {
     for (const word of learnedWordsSet) {
         // 使用 Map 快速查找单词的详细数据
         const data = wordDataMap.get(word.toLowerCase());
-        // 如果找到了数据，并且其内容类型不是 'root'，则计数加一
-        if (data && data.contentType !== 'root') {
+        // 如果找到了数据，则计数加一
+        if (data) {
             count++;
         }
     }

@@ -1,12 +1,12 @@
 /* ==========================================================================
-   Modal Styles - 模态框通用样式模块 (v5.1 - 新增热力图模态框样式)
+   Modal Styles - 模态框通用样式模块 (v6.3 - 优化 AI 对话按钮图标)
    --------------------------------------------------------------------------
    职责:
-   - 定义所有模态框（听力、打字、单词本、成就等）共享的通用基础样式。
+   - 定义所有模态框（听力、打字、单词本、成就、AI对话等）共享的通用基础样式。
    - 移动端适配：手机屏幕上强制全屏显示。
    ========================================================================== */
 
-/* --- 模态框: 遮罩层 (通用) --- */
+/* --- 1. 模态框: 遮罩层 (通用) --- */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -22,14 +22,19 @@
     opacity: 0;
     /* 默认淡入效果 */
     animation: fadeIn 0.3s forwards;
+    visibility: hidden; /* 默认隐藏，配合 is-hidden 类使用 */
+}
+
+/* 显式移除 hidden 时的可见性设置 */
+.modal-overlay:not(.is-hidden) {
+    visibility: visible;
 }
 
 @keyframes fadeIn {
     to { opacity: 1; }
 }
 
-
-/* --- 模态框: 内容容器 (通用 / PC端) --- */
+/* --- 2. 模态框: 内容容器 (通用 / PC端) --- */
 .modal-content {
     background: var(--card-bg);
     width: 90%;
@@ -43,7 +48,6 @@
     align-items: center;
     text-align: center;
     border: 1px solid var(--border-color);
-
     /* PC端进入动画：向上浮现 */
     animation: fadeInUp 0.3s forwards;
 }
@@ -53,8 +57,7 @@
     to { opacity: 1; transform: translateY(0); }
 }
 
-
-/* --- 模态框: 通用元素 --- */
+/* --- 3. 模态框: 通用元素 (关闭按钮) --- */
 .modal-close-btn {
     position: absolute;
     top: 15px;
@@ -66,15 +69,14 @@
     padding: 5px;
     border-radius: 50%;
     transition: background-color 0.2s, color 0.2s;
-    z-index: 10; /* 确保在最上层 */
+    z-index: 10;
 }
 .modal-close-btn:hover {
     background-color: var(--border-color);
     color: var(--text-main);
 }
 
-
-/* --- 模态框: 控制按钮 (通用) --- */
+/* --- 4. 模态框: 通用控制按钮 --- */
 .control-btn {
     flex: 1;
     padding: 12px;
@@ -89,186 +91,334 @@
     justify-content: center;
     gap: 5px;
 }
-
-.control-btn:active {
-    transform: scale(0.98);
-}
-
-.control-btn svg {
-    width: 18px;
-    height: 18px;
-}
+.control-btn:active { transform: scale(0.98); }
+.control-btn svg { width: 18px; height: 18px; }
 
 .btn-reveal {
     background: var(--bg-secondary-color);
     color: var(--text-main);
     border: 1px solid var(--border-color);
 }
-.btn-reveal:hover {
-    background: var(--border-color);
-}
+.btn-reveal:hover { background: var(--border-color); }
 
-.btn-next,
-.btn-submit {
+.btn-next, .btn-submit {
     background: var(--theme-color);
     color: var(--text-inverse);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-.btn-next:hover,
-.btn-submit:hover {
+.btn-next:hover, .btn-submit:hover {
     opacity: 0.9;
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
-
 .control-btn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
 }
-.control-btn:disabled:hover {
-    opacity: 0.5;
-}
 
 /* ==========================================================================
-   成就列表模态框样式
+   AI 对话模态框专属样式 (Dialogue Mode)
+   --------------------------------------------------------------------------
+   重构目标：统一卡片背面风格，增强交互反馈
    ========================================================================== */
-.achievements-content {
+
+/* 1. 容器：仿卡片背面风格 */
+.dialogue-content {
     max-width: 500px;
-    height: 70vh; /* 固定高度以便内部滚动 */
+    height: 85vh; /* 略微增加高度占比 */
     max-height: 700px;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* 复用卡片背面的背景色和阴影 */
+    background-color: var(--card-back-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-hover);
+    border: 1px solid var(--border-color);
 }
 
-.achievements-header {
+/* 2. 头部：更紧凑，融合背景 */
+.dialogue-header {
     width: 100%;
-    padding: 1.5rem;
-    border-bottom: 1px solid var(--border-color);
-    background-color: var(--bg-secondary-color);
+    padding: 1rem 1.25rem;
+    /* 使用半透明或混合色，减少生硬分割感 */
+    background: linear-gradient(to bottom, var(--bg-secondary-color), var(--card-back-bg));
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-shrink: 0;
+    z-index: 10;
 }
 
-.achievements-header h3 {
-    margin: 0;
-    font-size: 1.3rem;
-    color: var(--text-highlight);
+/* 头部右侧操作区 */
+.dialogue-actions-bar {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
 }
 
-.achievements-list {
+/* 复用 .icon-btn 并微调 */
+.dialogue-action-icon {
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border-color: transparent;
+    color: var(--text-sub);
+}
+.dialogue-action-icon:hover {
+    background-color: rgba(0,0,0,0.05);
+    color: var(--text-main);
+    transform: none; /* 头部按钮不建议位移，保持稳定 */
+}
+
+/* 3. 历史记录区域：仿笔记流 */
+.dialogue-history {
     flex: 1;
     width: 100%;
     overflow-y: auto;
-    padding: 1.5rem;
+    padding: 1.5rem 1rem;
+    /* 继承容器背景，无需额外设置 */
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.2rem;
+    scroll-behavior: smooth;
+    /* 增加底部内边距，防止内容被输入框遮挡的视觉拥挤 */
+    padding-bottom: 2rem;
 }
 
-.achievement-item {
+/* 消息气泡容器 */
+.dialogue-message-wrapper {
     display: flex;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: var(--bg-color);
+    width: 100%;
+    /* 增加简单的进入动画 */
+    animation: slideInUp 0.3s ease-out forwards;
+    opacity: 0;
+    transform: translateY(10px);
+}
+@keyframes slideInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message-from-assistant, .message-from-system {
+    justify-content: flex-start;
+    padding-right: 2rem; /* 限制最大宽度 */
+}
+.message-from-user {
+    justify-content: flex-end;
+    padding-left: 2rem;
+}
+
+/* 消息气泡本体 - 通用 */
+.dialogue-message-bubble {
+    max-width: 100%;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    position: relative;
+    word-wrap: break-word;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* AI 气泡：仿卡片例句风格 */
+.message-from-assistant .dialogue-message-bubble,
+.message-from-system .dialogue-message-bubble {
+    background-color: var(--bg-secondary-color);
+    color: var(--text-main);
     border-radius: var(--radius-sm);
-    border: 1px solid var(--border-color);
-    opacity: 0.7; /* 未解锁默认为半透明 */
-    transition: all 0.3s ease;
+    /* 左侧强调线 */
+    border-left: 4px solid var(--theme-color);
+    /* 系统消息用灰色区分 */
+    border-left-color: var(--theme-color);
+    /* 为底部工具栏留出空间 */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.message-from-system .dialogue-message-bubble {
+    border-left-color: var(--text-sub);
+    font-style: italic;
+    color: var(--text-sub);
+}
+
+/* 用户气泡：高亮风格 */
+.message-from-user .dialogue-message-bubble {
+    background-color: var(--theme-color);
+    color: var(--text-inverse); /* 强制反白 */
+    border-radius: var(--radius-lg);
+    /* 不对称圆角：右下角直角 */
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 2px 6px color-mix(in srgb, var(--theme-color) 40%, transparent);
+}
+
+/* 骨架屏加载气泡 */
+.skeleton-bubble {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 12px 16px;
+    background-color: var(--bg-secondary-color);
+    border-radius: var(--radius-sm);
+    border-left: 4px solid var(--border-color);
+    width: fit-content;
+}
+.typing-dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--text-sub);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: typingBounce 1.4s infinite ease-in-out both;
+}
+.typing-dot:nth-child(1) { animation-delay: -0.32s; }
+.typing-dot:nth-child(2) { animation-delay: -0.16s; }
+@keyframes typingBounce {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
+}
+
+/* --- [新增] 气泡底部操作栏 (TTS & Translate) --- */
+.bubble-actions-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 4px;
+    padding-top: 6px;
+    border-top: 1px dashed var(--border-color);
+    /* 移除透明度，使按钮颜色与正文文本颜色一致，避免视觉上过轻 */
+    /* opacity: 0.8; */
+}
+
+.bubble-action-btn {
+    background: none;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    color: var(--text-sub);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.bubble-action-btn:hover {
+    color: var(--theme-color);
+    background-color: rgba(0,0,0,0.03);
+}
+
+.bubble-action-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* 播放中的动画状态 */
+.bubble-action-btn.is-playing {
+    color: var(--theme-color);
+    font-weight: 700;
+}
+.bubble-action-btn.is-playing svg {
+    animation: pulse 1s infinite;
+}
+
+/* 翻译结果区域 */
+.translation-result {
+    font-size: 0.9rem;
+    color: var(--text-sub);
+    background-color: rgba(0,0,0,0.02);
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 6px;
+    border-left: 3px solid #ddd;
+    line-height: 1.5;
     text-align: left;
+    display: none; /* 默认隐藏 */
+}
+.translation-result.is-visible {
+    display: block;
+    animation: fadeIn 0.3s ease-out;
+}
+.translation-loading {
+    font-style: italic;
+    opacity: 0.6;
 }
 
-.achievement-item.is-unlocked {
-    opacity: 1;
-    border-color: #ffd700; /* 金色边框 */
-    background: linear-gradient(to bottom right, var(--bg-secondary-color), var(--bg-color));
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.achievement-icon {
-    font-size: 2.5rem;
+/* 4. 底部输入区：仿笔记输入 */
+.dialogue-input-area {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--bg-secondary-color);
+    /* 顶部柔和阴影代替边框 */
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.03);
+    display: flex;
+    gap: 0.8rem;
+    align-items: flex-end;
     flex-shrink: 0;
+    z-index: 20;
+}
+
+.dialogue-text-input {
+    flex: 1;
+    min-height: 44px;
+    max-height: 120px;
+    padding: 10px 0;
+    /* 去除默认边框，使用底部线条风格 */
+    border: none;
+    border-bottom: 2px solid var(--border-color);
+    border-radius: 0;
+    background-color: transparent;
+    color: var(--text-main);
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+.dialogue-text-input:focus {
+    border-color: var(--theme-color);
+}
+.dialogue-text-input::placeholder {
+    color: var(--text-sub);
+    opacity: 0.6;
+}
+
+/* 发送按钮：圆形悬浮感 */
+.dialogue-send-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--theme-color);
+    color: var(--text-inverse);
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    filter: grayscale(100%); /* 未解锁灰度显示 */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    margin-bottom: 2px; /* 微调对齐 */
 }
-
-.achievement-item.is-unlocked .achievement-icon {
-    filter: none;
-    animation: bounce 2s infinite;
+.dialogue-send-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
 }
-
-.achievement-info {
-    flex: 1;
-    min-width: 0;
+.dialogue-send-btn:active {
+    transform: scale(0.95);
 }
-
-.achievement-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.3rem;
-}
-
-.achievement-name {
-    font-weight: 700;
-    color: var(--text-main);
-    font-size: 1rem;
-}
-
-.achievement-badge {
-    background-color: #10b981;
-    color: white;
-    font-size: 0.7rem;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-.achievement-desc {
-    font-size: 0.85rem;
-    color: var(--text-sub);
-    margin-bottom: 0.8rem;
-    line-height: 1.4;
-}
-
-.achievement-progress-track {
-    width: 100%;
-    height: 6px;
+.dialogue-send-btn:disabled {
     background-color: var(--border-color);
-    border-radius: 3px;
-    overflow: hidden;
-    margin-bottom: 4px;
+    box-shadow: none;
+    cursor: not-allowed;
+    transform: none;
 }
-
-.achievement-progress-bar {
-    height: 100%;
-    background-color: var(--theme-color);
-    border-radius: 3px;
-    transition: width 0.5s ease;
-}
-
-.achievement-progress-text {
-    font-size: 0.75rem;
-    color: var(--text-sub);
-    text-align: right;
-}
-
-/* ==========================================================================
-   【新增】热力图模态框样式
-   ========================================================================== */
-.heatmap-content {
-    max-width: 1000px; /* 为热力图提供更宽的显示空间 */
-    height: auto;
-    max-height: 80vh; /* 避免在小屏幕视口上过高 */
-    padding: 0; /* 移除内边距，因为头部和内容区会自行处理 */
-    overflow: hidden; /* 隐藏模态框本身的滚动条 */
-}
-
-.heatmap-content .heatmap-container {
-    padding: 1.5rem; /* 将内边距应用到内容容器上 */
-    overflow-x: auto; /* 确保在窄屏或内容过多时可以横向滚动 */
+/* 【核心修改】调整发送按钮内 SVG 图标的尺寸，使其与其他图标风格统一 */
+.dialogue-send-btn svg {
+    width: 22px;
+    height: 22px;
 }
 
 
@@ -276,46 +426,43 @@
    移动端响应式适配 (Breakpoint: 768px)
    ========================================================================== */
 @media screen and (max-width: 768px) {
-    /*
-       移动端全屏模态框：
-       就像原生 App 的新页面一样覆盖全屏
-    */
+    /* 移动端全屏模态框 */
     .modal-content {
         width: 100%;
         height: 100%;
         max-width: 100%;
         max-height: 100%;
-
         border-radius: 0;
         border: none;
         box-shadow: none;
-
-        /* 增加内边距适配刘海屏等 */
-        padding: 2rem 1.5rem;
-        padding-top: calc(2rem + env(safe-area-inset-top));
-
-        /* 移动端进入动画：从底部滑入 */
-        animation: slideInUp 0.3s forwards;
+        padding: 0;
     }
 
-    @keyframes slideInUp {
-        from { transform: translateY(100%); }
-        to { transform: translateY(0); }
+    /* 对话框特定适配 */
+    .dialogue-content {
+        height: 100%;
+        max-height: none;
+        border-radius: 0; /* 移除圆角 */
     }
 
-    /* 调整关闭按钮位置，更易触达 */
-    .modal-close-btn {
-        top: calc(15px + env(safe-area-inset-top));
-        right: 15px;
-        padding: 10px; /* 增大点击热区 */
-    }
-    .modal-close-btn svg {
-        width: 28px;
-        height: 28px;
+    .dialogue-header {
+        padding-top: calc(0.8rem + env(safe-area-inset-top));
+        padding-bottom: 0.8rem;
     }
 
-    /* 针对特定模态框的内容滚动优化 */
-    .wordbook-content, .typing-content, .achievements-content {
-        overflow-y: auto;
+    /* 键盘弹起时的优化：输入框固定底部 */
+    .dialogue-input-area {
+        padding-bottom: calc(0.8rem + env(safe-area-inset-bottom));
+        position: sticky;
+        bottom: 0;
+    }
+
+    /* 优化气泡间距 */
+    .dialogue-history {
+        padding: 1rem;
+    }
+    .dialogue-message-bubble {
+        padding: 10px 14px;
+        font-size: 1rem; /* 增大字号便于阅读 */
     }
 }
