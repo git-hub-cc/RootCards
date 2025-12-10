@@ -1,0 +1,89 @@
+{
+  "prefix": "Vocab I",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_i",
+      "displayName": "Vocabulary I",
+      "themeColor": "#f97316",
+      "prefixIntro": {
+        "title": "I 开头核心词",
+        "description": "高中阶段 I 开头的高频混合词汇。",
+        "imagery": "字母 I 像一个人（I）站立或一根冰柱（Ice），常含“独立、个體”之意。"
+      },
+      "words": [
+        {
+          "word": "identical",
+          "rootVisual": "<rect x='6' y='8' width='4' height='8' fill='currentColor'/><rect x='14' y='8' width='4' height='8' fill='currentColor'/>",
+          "breakdown": [
+            "id",
+            "(相同)",
+            "ent",
+            "ical"
+          ],
+          "imagery": "两个完全一样的东西 -> 同一的。",
+          "translation": "同一的；完全相同的",
+          "sentences": [
+            {
+              "en": "They are identical twins.",
+              "cn": "他们是同卵双胞胎。"
+            }
+          ]
+        },
+        {
+          "word": "immigrate",
+          "rootVisual": "<path d='M2 12h8' stroke='currentColor' marker-end='url(#arrow)'/><rect x='14' y='4' width='8' height='16' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "im-",
+            "(进)",
+            "migr",
+            "(移动)",
+            "ate"
+          ],
+          "imagery": "移动进来 -> 移民(入境)。谐音：移民(immigrate)。",
+          "translation": "移居入境",
+          "sentences": [
+            {
+              "en": "He immigrated to Canada.",
+              "cn": "他移民到了加拿大。"
+            }
+          ]
+        },
+        {
+          "word": "incident",
+          "rootVisual": "<path d='M12 0 v12' stroke='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "in- (在里)",
+            "cid (落/发生)"
+          ],
+          "imagery": "事情落在（cid）了里面（in-），通常指有内幕或人为策划的事件。",
+          "translation": "事件",
+          "sentences": [
+            {
+              "en": "The incident happened at midnight.",
+              "cn": "这起事件发生在午夜。"
+            }
+          ]
+        },
+        {
+          "word": "index",
+          "rootVisual": "<path d='M8 4h8M8 8h8M8 12h8M8 16h8' stroke='currentColor'/><circle cx='4' cy='6' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "in-",
+            "(指)",
+            "dex",
+            "(手指)"
+          ],
+          "imagery": "用手指出来的 -> 索引/指数。",
+          "translation": "索引；指数",
+          "sentences": [
+            {
+              "en": "The price index.",
+              "cn": "价格指数。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

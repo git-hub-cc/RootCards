@@ -1,0 +1,236 @@
+{
+  "prefix": "Vocab E",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_e",
+      "displayName": "Vocabulary E",
+      "themeColor": "#ef4444",
+      "prefixIntro": {
+        "title": "E 开头核心词",
+        "description": "高中阶段 E 开头的高频混合词汇。",
+        "imagery": "字母 E 像一只眼睛（Eye）或向外张望的窗户，常含“向外”之意。"
+      },
+      "words": [
+        {
+          "word": "early",
+          "rootVisual": "<circle cx='12' cy='13' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 9v4l-2 2' stroke='currentColor' stroke-width='2' stroke-linecap='round'/><path d='M5 3L2 6M22 6L19 3' stroke='currentColor' stroke-linecap='round'/><path d='M6.4 18.7L4 21M17.6 18.7L20 21' stroke='currentColor' stroke-linecap='round'/>",
+          "breakdown": [
+            "Early",
+            "(早的)"
+          ],
+          "imagery": "The insistent ringing of an alarm clock at dawn, its hands pointing to the first hours of the day, signaling it's time to rise.",
+          "translation": "早的",
+          "sentences": [
+            {
+              "en": "The early bird catches the worm.",
+              "cn": "早起的鸟儿有虫吃。"
+            }
+          ]
+        },
+        {
+          "word": "earthquake",
+          "rootVisual": "<path d='M2 18h20' stroke='currentColor'/><path d='M6 18l2-4 2 4 2-6 2 6 2-4 2 4' stroke='currentColor' stroke-width='2' stroke='red'/>",
+          "breakdown": [
+            "earth",
+            "quake"
+          ],
+          "imagery": "一条断裂的地面线，或者心电图般的震动波纹。",
+          "translation": "地震",
+          "sentences": [
+            {
+              "en": "The earthquake killed 30,000 people.",
+              "cn": "这次地震导致三万人死亡。"
+            }
+          ]
+        },
+        {
+          "word": "ecosystem",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 20c-4.4 0-8-3.6-8-8 0-4.4 3.6-8 8-8s8 3.6 8 8c0 4.4-3.6 8-8 8z' stroke='currentColor' fill='none'/><path d='M8 12l4-4 4 4' stroke='currentColor'/>",
+          "breakdown": [
+            "eco",
+            "system"
+          ],
+          "imagery": "一个循环的箭头包围着一片叶子和水滴。",
+          "translation": "生态系统",
+          "sentences": [
+            {
+              "en": "What about the ecosystem of a city?",
+              "cn": "一个城市的生态系统怎么样？"
+            }
+          ]
+        },
+        {
+          "word": "effort",
+          "rootVisual": "<path d='M4 18h16' stroke='currentColor'/><circle cx='12' cy='10' r='6' stroke='currentColor' fill='none'/><path d='M12 10l-2 2' stroke='currentColor'/><path d='M16 8l-2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "ef-",
+            "fort (强)"
+          ],
+          "imagery": "一个人推着巨大的石头上山。",
+          "translation": "努力",
+          "sentences": [
+            {
+              "en": "Please make an effort to do your homework.",
+              "cn": "请努力做你的家庭作业。"
+            }
+          ]
+        },
+        {
+          "word": "electricity",
+          "rootVisual": "<polyline points='10 2 6 12 14 12 10 22' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "electric (电的)",
+            "-ity (性质)"
+          ],
+          "imagery": "一道锋利的闪电符号，代表电能。",
+          "translation": "电",
+          "sentences": [
+            {
+              "en": "The farm has no electricity.",
+              "cn": "这个农场没有电。"
+            }
+          ]
+        },
+        {
+          "word": "electronic",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M8 12l2 2 4-4' stroke='currentColor'/>",
+          "breakdown": [
+            "electron",
+            "-ic"
+          ],
+          "imagery": "一块集成电路板或芯片。",
+          "translation": "电子的",
+          "sentences": [
+            {
+              "en": "The price of electronic products dropped recently.",
+              "cn": "电子产品的价格最近下降了。"
+            }
+          ]
+        },
+        {
+          "word": "enjoy",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 14 q 4 4 8 0' stroke='currentColor' stroke-width='2' stroke-linecap='round'/><path d='M9 9 l-1 -1 M15 9 l1 -1' stroke='currentColor'/>",
+          "breakdown": [
+            "Enjoy",
+            "(享受)"
+          ],
+          "imagery": "一张简单的笑脸，眼睛笑成了弯月，表示心情愉悦。",
+          "translation": "享受",
+          "sentences": [
+            {
+              "en": "I really enjoy my life now.",
+              "cn": "我真的很享受现在的生活。"
+            }
+          ]
+        },
+        {
+          "word": "eraser",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><line x1='10' y1='6' x2='10' y2='18' stroke='currentColor'/><circle cx='16' cy='12' r='0.5' fill='currentColor' stroke='none'/><circle cx='14' cy='14' r='0.5' fill='currentColor' stroke='none'/>",
+          "breakdown": [
+            "Erase",
+            "(擦除)",
+            "-er",
+            "(物)"
+          ],
+          "imagery": "一块经典的红蓝双色橡皮，轻轻一擦，纸上的错误就消失了。",
+          "translation": "橡皮",
+          "sentences": [
+            {
+              "en": "He couldn't erase the image from his mind.",
+              "cn": "他无法从脑海中抹去那个画面。"
+            },
+            {
+              "en": "Children like to collect erasers.",
+              "cn": "孩子们喜欢收集橡皮。"
+            }
+          ]
+        },
+        {
+          "word": "europe",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='1 4' stroke-width='4'/>",
+          "breakdown": [
+            "Europe",
+            "(欧洲)"
+          ],
+          "imagery": "一圈环绕的虚线点，象征欧盟旗帜上的星环，代表欧洲的联合。",
+          "translation": "欧洲",
+          "sentences": [
+            {
+              "en": "Europe is divided into Eastern Europe and Western Europe.",
+              "cn": "欧洲分为东欧和西欧。"
+            },
+            {
+              "en": "The European economy is getting worse.",
+              "cn": "欧洲经济每况愈下。"
+            }
+          ]
+        },
+        {
+          "word": "eve",
+          "rootVisual": "<path d='M2 12h20' stroke='currentColor'/><path d='M18 12a2 2 0 0 1 0-4 2 2 0 0 1 0 4' fill='currentColor'/><text x='4' y='10' font-size='8' fill='currentColor'>DEC 24</text>",
+          "breakdown": [
+            "eve"
+          ],
+          "imagery": "日历上被圈出的一个日期的前一天。",
+          "translation": "前夕",
+          "sentences": [
+            {
+              "en": "We are arriving on Christmas Eve.",
+              "cn": "我们将在平安夜到达。"
+            }
+          ]
+        },
+        {
+          "word": "excited",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 10 l1 -1 l1 1 M14 10 l1 -1 l1 1' stroke='currentColor'/><path d='M8 14 q 4 4 8 0' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "ex- (出)",
+            "cit (召唤/激起)",
+            "-ed"
+          ],
+          "imagery": "一个眼睛放光、张大嘴巴的兴奋表情。",
+          "translation": "兴奋的",
+          "sentences": [
+            {
+              "en": "We were very excited to see our work in the movie.",
+              "cn": "看到我们的作品出现在电影里，我们非常兴奋。"
+            }
+          ]
+        },
+        {
+          "word": "expensive",
+          "rootVisual": "<path d='M 20.59 13.41 l -7.17 7.17 a 2 2 0 0 1 -2.83 0 L 2 12 V 2 h 10 l 8.59 8.59 a 2 2 0 0 1 0 2.82 z M 7 7 L 7.01 7 M 12 11 v 6 m 2 -4 l -2 -2 l -2 2' fill='none' stroke='currentColor'/>",
+          "breakdown": [
+            "Expensive",
+            "(昂贵)"
+          ],
+          "imagery": "一张价格标签，上面有一个指向上方的箭头，表示价格高昂。",
+          "translation": "贵的",
+          "sentences": [
+            {
+              "en": "The big bag costs 200,000 yuan and it's too expensive.",
+              "cn": "那个大包要20万元，太贵了。"
+            }
+          ]
+        },
+        {
+          "word": "experiment",
+          "rootVisual": "<path d='M6 4h12l-2 4v10a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V8L6 4z' stroke='currentColor' fill='none'/><circle cx='10' cy='16' r='1' fill='currentColor'/><circle cx='14' cy='14' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "experi (尝试)",
+            "-ment"
+          ],
+          "imagery": "一个锥形瓶，里面冒着泡泡。",
+          "translation": "实验",
+          "sentences": [
+            {
+              "en": "The experiment was a big success.",
+              "cn": "那个实验取得了巨大的成功。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

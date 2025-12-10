@@ -1,0 +1,153 @@
+{
+  "prefix": "Vocab N",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_n",
+      "displayName": "Vocabulary N",
+      "themeColor": "#f59e0b",
+      "prefixIntro": {
+        "title": "N 开头核心词",
+        "description": "高中阶段 N 开头的高频混合词汇。",
+        "imagery": "字母 N 像连接两点的通道或鼻子（Nose），常含“连接、否定（No）”之意。"
+      },
+      "words": [
+        {
+          "word": "nail",
+          "rootVisual": "<line x1='12' y1='4' x2='12' y2='20' stroke='currentColor' stroke-width='2'/><line x1='8' y1='4' x2='16' y2='4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "nail",
+            "(指甲/钉子)"
+          ],
+          "imagery": "大大的钉帽像指甲盖。指甲盖大小的硬物 -> 钉子。",
+          "translation": "钉子；指甲",
+          "sentences": [
+            {
+              "en": "Drive a nail into the wall.",
+              "cn": "往墙上钉钉子。"
+            }
+          ]
+        },
+        {
+          "word": "narrow",
+          "rootVisual": "<path d='M8 4l2 16M16 4l-2 16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "narrow",
+            "(窄)"
+          ],
+          "imagery": "越来越细，像箭头(arrow)一样狭窄。",
+          "translation": "狭窄的",
+          "sentences": [
+            {
+              "en": "A narrow road.",
+              "cn": "一条狭窄的路。"
+            }
+          ]
+        },
+        {
+          "word": "native",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12l4-4' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": [
+            "nat",
+            "(出生)",
+            "ive"
+          ],
+          "imagery": "出生地的人 -> 本土的。",
+          "translation": "本土的；本国的",
+          "sentences": [
+            {
+              "en": "Native speaker.",
+              "cn": "母语者。"
+            }
+          ]
+        },
+        {
+          "word": "navigate",
+          "rootVisual": "<path d='M12 2l6 18-6-4-6 4z' fill='currentColor'/>",
+          "breakdown": [
+            "nav",
+            "(船)",
+            "igate",
+            "(驾驶)"
+          ],
+          "imagery": "驾驶船只 -> 航行/导航。",
+          "translation": "航行；导航",
+          "sentences": [
+            {
+              "en": "Navigate by the stars.",
+              "cn": "靠星星导航。"
+            }
+          ]
+        },
+        {
+          "word": "navy",
+          "rootVisual": "<path d='M2 14l10 4 10-4v6H2z' fill='currentColor'/><path d='M12 4v10M8 8h8' stroke='currentColor'/>",
+          "breakdown": [
+            "nav",
+            "(船)",
+            "y"
+          ],
+          "imagery": "拥有船只的军队 -> 海军。",
+          "translation": "海军",
+          "sentences": [
+            {
+              "en": "Join the navy.",
+              "cn": "加入海军。"
+            }
+          ]
+        },
+        {
+          "word": "neat",
+          "rootVisual": "<rect x='4' y='8' width='16' height='2' fill='currentColor'/><rect x='4' y='12' width='16' height='2' fill='currentColor'/><rect x='4' y='16' width='16' height='2' fill='currentColor'/>",
+          "breakdown": [
+            "neat",
+            "(干净)"
+          ],
+          "imagery": "整整齐齐的线条 -> 整洁的。",
+          "translation": "整洁的",
+          "sentences": [
+            {
+              "en": "Keep your room neat.",
+              "cn": "保持房间整洁。"
+            }
+          ]
+        },
+        {
+          "word": "negotiate",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M10 12h4' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "neg",
+            "(不)",
+            "ot",
+            "(空闲)",
+            "iate"
+          ],
+          "imagery": "不空闲(忙着谈生意) -> 谈判/协商。",
+          "translation": "谈判；协商",
+          "sentences": [
+            {
+              "en": "Negotiate a deal.",
+              "cn": "谈成一笔交易。"
+            }
+          ]
+        },
+        {
+          "word": "numb",
+          "rootVisual": "<path d='M4 12h16' stroke='currentColor' stroke-dasharray='4 2'/><text x='12' y='16' text-anchor='middle' font-size='10' fill='currentColor'>...</text>",
+          "breakdown": [
+            "numb",
+            "(拿嘛)"
+          ],
+          "imagery": "发音 numb (拿嘛) -> 麻木的。",
+          "translation": "麻木的",
+          "sentences": [
+            {
+              "en": "My fingers are numb with cold.",
+              "cn": "我的手指冻僵了。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "prefix": "Vocab N",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_n",
+      "displayName": "Vocabulary N",
+      "themeColor": "#f59e0b",
+      "prefixIntro": {
+        "title": "N 开头核心词",
+        "description": "高中阶段 N 开头的高频混合词汇。",
+        "imagery": "字母 N 像连接两点的通道或鼻子（Nose），常含“连接、否定（No）”之意。"
+      },
+      "words": [
+        {
+          "word": "naive",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><circle cx='8' cy='10' r='1' fill='currentColor' /><circle cx='16' cy='10' r='1' fill='currentColor' /><path d='M10 16 H 14' stroke='currentColor' />",
+          "breakdown": [
+            "na (生)",
+            "-ive"
+          ],
+          "imagery": "刚出生的，天真的。（Too young, too naive）",
+          "translation": "幼稚的；天真的",
+          "sentences": [
+            {
+              "en": "It was naive of you to believe him.",
+              "cn": "你相信他太天真了。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

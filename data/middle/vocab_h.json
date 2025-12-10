@@ -1,0 +1,418 @@
+{
+  "prefix": "Vocab H",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_h",
+      "displayName": "Vocabulary H",
+      "themeColor": "#06b6d4",
+      "prefixIntro": {
+        "title": "H 开头核心词",
+        "description": "高中阶段 H 开头的高频混合词汇。",
+        "imagery": "字母 H 像梯子或篱笆（Hurdle），常含“高处（High）、阻挡、抓持”之意。"
+      },
+      "words": [
+        {
+          "word": "haircut",
+          "rootVisual": "<path d='M6 8 q 6 -6 12 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 14 l 4 -4 l 4 4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "hair (头发)",
+            "cut (剪)"
+          ],
+          "imagery": "一把剪刀正在修剪头发的轮廓。",
+          "translation": "理发",
+          "sentences": [
+            {
+              "en": "I need a haircut.",
+              "cn": "我需要理发了。"
+            }
+          ]
+        },
+        {
+          "word": "halfway",
+          "rootVisual": "<path d='M2 12h20' stroke='currentColor' stroke-dasharray='4 4'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "half",
+            "way"
+          ],
+          "imagery": "一条路线图，中间有一个标记点。",
+          "translation": "中途地；半途的",
+          "sentences": [
+            {
+              "en": "I gave up halfway through the marathon.",
+              "cn": "我在馬拉松中途放棄了。"
+            }
+          ]
+        },
+        {
+          "word": "hall",
+          "rootVisual": "<rect x='2' y='6' width='20' height='14' stroke='currentColor' fill='none' stroke-width='2'/><path d='M2 6 L6 2 H18 L22 6' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "Hall",
+            "(大厅)"
+          ],
+          "imagery": "一个宽敞的建筑内部空间结构。",
+          "translation": "大厅",
+          "sentences": [
+            {
+              "en": "They are having a meeting in the hall.",
+              "cn": "他们正在大厅开会。"
+            }
+          ]
+        },
+        {
+          "word": "hallway",
+          "rootVisual": "<path d='M4 4 L8 8 M20 4 L16 8 M4 20 L8 16 M20 20 L16 16' stroke='currentColor' stroke-width='2'/><rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "Hall",
+            "(厅)",
+            "Way",
+            "(路)"
+          ],
+          "imagery": "透视视角下的正方形通道，线条向中心汇聚，表现出走廊的深邃。",
+          "translation": "走廊",
+          "sentences": [
+            {
+              "en": "Your son is running in the hallway.",
+              "cn": "你儿子正在走廊里跑。"
+            }
+          ]
+        },
+        {
+          "word": "handbag",
+          "rootVisual": "<path d='M4 10h16v10H4z' stroke='currentColor' fill='none'/><path d='M8 10c0-4 8-4 8 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "hand",
+            "bag"
+          ],
+          "imagery": "一个女士手提包。",
+          "translation": "手提包",
+          "sentences": [
+            {
+              "en": "I prefer the black handbag.",
+              "cn": "我更喜欢那个黑色的手提包。"
+            }
+          ]
+        },
+        {
+          "word": "hard-working",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12l-2 2 4 4' stroke='currentColor'/><path d='M12 2v4' stroke='currentColor'/><path d='M12 4l-2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "hard",
+            "work",
+            "-ing"
+          ],
+          "imagery": "一只勤劳的蜜蜂，或者一个人在流汗搬砖。",
+          "translation": "勤奋的",
+          "sentences": [
+            {
+              "en": "I'm very hard-working.",
+              "cn": "我非常勤奋。"
+            }
+          ]
+        },
+        {
+          "word": "haunt",
+          "rootVisual": "<path d='M12 4 c-4 0 -6 3 -6 6 v6 h12 v-6 c0 -3 -2 -6 -6 -6 z' stroke='currentColor' fill='none'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='9' r='1' fill='currentColor'/><path d='M6 16 l2 4 l2 -4 l2 4 l2 -4 l2 4 l2 -4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "hanter",
+            "(常去)"
+          ],
+          "imagery": "一个飘忽不定的幽灵形状，象征萦绕不去。",
+          "translation": "萦绕",
+          "sentences": [
+            {
+              "en": "She is haunted by the fear that her husband has an affair.",
+              "cn": "她被丈夫有外遇的恐惧所萦绕。"
+            }
+          ]
+        },
+        {
+          "word": "headache",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><path d='M8 10 l2 2 l-2 2 M16 10 l-2 2 l2 2' stroke='currentColor'/><path d='M10 6 l2 -2 l2 2' stroke='currentColor' fill='currentColor'/>",
+          "breakdown": [
+            "head (头)",
+            "ache (痛)"
+          ],
+          "imagery": "一个痛苦的表情，头顶上有闪电符号表示疼痛。",
+          "translation": "头痛",
+          "sentences": [
+            {
+              "en": "I have a terrible headache.",
+              "cn": "我头痛得厉害。"
+            }
+          ]
+        },
+        {
+          "word": "headmaster",
+          "rootVisual": "<path d='M12 12C14.2 12 16 10.2 16 8s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4z M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6' stroke='currentColor' fill='none'/><path d='M8 4h8 M10 2h4' stroke='currentColor'/>",
+          "breakdown": [
+            "head (头)",
+            "master (主人/大师)"
+          ],
+          "imagery": "一位戴着学术帽或站在讲台上的人，象征着学校的最高管理者。",
+          "translation": "校长",
+          "sentences": [
+            {
+              "en": "We'll send a present to our headmaster.",
+              "cn": "我们将送一份礼物给我们的校长。"
+            }
+          ]
+        },
+        {
+          "word": "heel",
+          "rootVisual": "<path d='M4 14l6 6 10-6v-4l-8 4-8-4z' stroke='currentColor' fill='none'/><path d='M16 14v6' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "heel"
+          ],
+          "imagery": "一只高跟鞋的侧面轮廓。",
+          "translation": "脚后跟；高跟鞋",
+          "sentences": [
+            {
+              "en": "Many girls dream of having a pair of beautiful high heels.",
+              "cn": "许多女孩梦想拥有一双漂亮的高跟鞋。"
+            }
+          ]
+        },
+        {
+          "word": "hero",
+          "rootVisual": "<path d='M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z M6 20v-6h12v6' stroke='currentColor' fill='none'/><path d='M12 2l2 4h4l-3 3 1 4-4-3-4 3 1-4-3-3h4z' fill='currentColor' opacity='0.2' transform='translate(6, 12) scale(0.5)'/>",
+          "breakdown": [
+            "hero"
+          ],
+          "imagery": "一个披着斗篷的人影，胸前可能有一个徽章。",
+          "translation": "英雄",
+          "sentences": [
+            {
+              "en": "His father was a war hero.",
+              "cn": "他的父亲是一位战争英雄。"
+            }
+          ]
+        },
+        {
+          "word": "high",
+          "rootVisual": "<path d='M4 20 L12 4 L20 20' stroke='currentColor' fill='none' stroke-width='2'/><line x1='22' y1='4' x2='22' y2='20' stroke='currentColor' stroke-dasharray='2 2'/><path d='M18 4 h6' stroke='currentColor'/>",
+          "breakdown": [
+            "High",
+            "(高)"
+          ],
+          "imagery": "一座高耸的山峰，旁边有垂直的标尺线，强调其高度。",
+          "translation": "高",
+          "sentences": [
+            {
+              "en": "The mountain is very high.",
+              "cn": "这座山很高。"
+            }
+          ]
+        },
+        {
+          "word": "historian",
+          "rootVisual": "<path d='M12 12C14.2 12 16 10.2 16 8s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4z M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6' stroke='currentColor' fill='none'/><rect x='14' y='12' width='8' height='10' rx='1' stroke='currentColor' fill='white'/><path d='M16 14h4 M16 16h4' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "history",
+            "-an (人)"
+          ],
+          "imagery": "一个戴眼镜的老者，手里捧着一本厚厚的古书。",
+          "translation": "历史学家",
+          "sentences": [
+            {
+              "en": "I'm a historian.",
+              "cn": "我是一名历史学家。"
+            }
+          ]
+        },
+        {
+          "word": "history",
+          "rootVisual": "<path d='M12 4v16' stroke='currentColor'/><path d='M12 20h6' stroke='currentColor'/><path d='M12 4l-4 4 M12 8l-4 4 M12 12l-4 4' stroke='currentColor'/>",
+          "breakdown": [
+            "histor (知道)",
+            "-y"
+          ],
+          "imagery": "一个沙漏，或者一卷古老的卷轴。",
+          "translation": "历史",
+          "sentences": [
+            {
+              "en": "It's American history.",
+              "cn": "这是美国历史。"
+            }
+          ]
+        },
+        {
+          "word": "hoax",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><text x='6' y='14' font-size='8' fill='currentColor'>FAKE</text>",
+          "breakdown": [
+            "hoax"
+          ],
+          "imagery": "一个假面具，或者一条假新闻。",
+          "translation": "恶作剧；骗局",
+          "sentences": [
+            {
+              "en": "It is just a hoax.",
+              "cn": "这只是个恶作剧。"
+            }
+          ]
+        },
+        {
+          "word": "hometown",
+          "rootVisual": "<path d='M4 20h16v-8l-8-6-8 6z' stroke='currentColor' fill='none'/><path d='M10 20v-6h4v6' stroke='currentColor'/><heart cx='18' cy='6' r='3' fill='red'/>",
+          "breakdown": [
+            "home",
+            "town"
+          ],
+          "imagery": "一个小房子的图标，旁边有一颗爱心，代表充满回忆的地方。",
+          "translation": "家乡",
+          "sentences": [
+            {
+              "en": "What do you think of the future of your hometown?",
+              "cn": "你如何看待你家鄉的未來？"
+            }
+          ]
+        },
+        {
+          "word": "honest",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M9 12 l2 2 l4 -4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "hon",
+            "(荣誉)",
+            "-est"
+          ],
+          "imagery": "一只手放在心口，或者是天平保持平衡。",
+          "translation": "诚实的",
+          "sentences": [
+            {
+              "en": "He was a hardworking, honest man.",
+              "cn": "他是一个勤劳诚实的人。"
+            }
+          ]
+        },
+        {
+          "word": "honey",
+          "rootVisual": "<path d='M6 18 l2 -10 l8 0 l2 10 Z' stroke='currentColor' fill='none'/><path d='M6 18 q 6 4 12 0' stroke='currentColor'/><circle cx='14' cy='6' r='3' fill='currentColor' opacity='0.2'/>",
+          "breakdown": [
+            "honey",
+            "(蜂蜜)"
+          ],
+          "imagery": "一个罐子，里面流出金黄色的、粘稠的液体。",
+          "translation": "蜂蜜",
+          "sentences": [
+            {
+              "en": "Where did you buy the honey?",
+              "cn": "你在哪里买的蜂蜜？"
+            }
+          ]
+        },
+        {
+          "word": "hope",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none'/><path d='M8 12 l3 3 l5 -5' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "hope",
+            "(期盼)"
+          ],
+          "imagery": "一个肯定的对勾，代表更有可能实现的期盼。",
+          "translation": "希望",
+          "sentences": [
+            {
+              "en": "I hope so.",
+              "cn": "我也希望如此。"
+            }
+          ]
+        },
+        {
+          "word": "hospital",
+          "rootVisual": "<path d='M4 20 V 6 L 12 2 L 20 6 V 20 H 4 Z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 9 v6 M9 12 h6' stroke='currentColor' stroke-width='3'/>",
+          "breakdown": [
+            "Hospital",
+            "(医院)"
+          ],
+          "imagery": "一座建筑物中间有一个显眼的十字标志，代表医疗救助场所。",
+          "translation": "医院",
+          "sentences": [
+            {
+              "en": "My aunt works in the hospital.",
+              "cn": "我的姑姑在医院工作。"
+            }
+          ]
+        },
+        {
+          "word": "host",
+          "rootVisual": "<path d='M4 12 q 4 4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "Host",
+            "(主人)"
+          ],
+          "imagery": "一个人张开双臂（波浪线），做出欢迎的姿势。",
+          "translation": "主人",
+          "sentences": [
+            {
+              "en": "The host served us delicious food.",
+              "cn": "主人招待我们吃了美味的食物。"
+            }
+          ]
+        },
+        {
+          "word": "hotel",
+          "rootVisual": "<rect x='4' y='6' width='16' height='14' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 14 h8 v4 h-8 z' fill='currentColor' opacity='0.3'/><circle cx='12' cy='10' r='1.5' fill='currentColor'/>",
+          "breakdown": [
+            "Hotel",
+            "(旅馆)"
+          ],
+          "imagery": "一个带有床位示意（窗口）的建筑，供旅人休憩。",
+          "translation": "旅馆",
+          "sentences": [
+            {
+              "en": "I dream of staying in a five-star hotel one day.",
+              "cn": "我梦想有一天能住进五星级酒店。"
+            }
+          ]
+        },
+        {
+          "word": "hug",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M8 12c2 0 4 2 4 4' stroke='currentColor'/><path d='M16 12c-2 0-4 2-4 4' stroke='currentColor'/>",
+          "breakdown": [
+            "hug"
+          ],
+          "imagery": "两个圆形紧紧靠在一起，伸出手臂环绕。",
+          "translation": "拥抱",
+          "sentences": [
+            {
+              "en": "They hugged each other.",
+              "cn": "他们互相拥抱。"
+            }
+          ]
+        },
+        {
+          "word": "hurricane",
+          "rootVisual": "<path d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0' stroke='currentColor' fill='none' stroke-dasharray='4 4'/><path d='M12 12 q 4 -4 8 0 q -4 4 -8 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "hurry (匆忙)",
+            "cane (风暴)"
+          ],
+          "imagery": "飓风的特点就是风速特别快、特别“匆忙” (hurry)。",
+          "translation": "飓风",
+          "sentences": [
+            {
+              "en": "The hurricane is coming.",
+              "cn": "飓风要来了。"
+            }
+          ]
+        },
+        {
+          "word": "hurt",
+          "rootVisual": "<path d='M12 7 l-2 6 l-5 -1 l4 4 l-1 5 l4 -3 l4 3 l-1 -5 l4 -4 l-5 1 z' stroke='currentColor' fill='none'/><path d='M8 6 l-2 -2 M16 6 l2 -2' stroke='currentColor'/>",
+          "breakdown": [
+            "hurt",
+            "(受伤/疼痛)"
+          ],
+          "imagery": "一个有裂痕的形状，周围有像闪电一样的线条表示疼痛的放射感。",
+          "translation": "弄痛；伤害",
+          "sentences": [
+            {
+              "en": "I fell down and hurt my leg.",
+              "cn": "我摔倒了，腿受伤了。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

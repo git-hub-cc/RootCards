@@ -1,0 +1,64 @@
+{
+  "prefix": "Vocab J",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_j",
+      "displayName": "Vocabulary J",
+      "themeColor": "#84cc16",
+      "prefixIntro": {
+        "title": "J 开头核心词",
+        "description": "高中阶段 J 开头的高频混合词汇。",
+        "imagery": "字母 J 像一个钩子或喷射的水柱（Jet），常含“连接（Join）、跳跃”之意。"
+      },
+      "words": [
+        {
+          "word": "jelly",
+          "rootVisual": "<path d='M6 18 Q 12 12 18 18' stroke='currentColor' fill='none' /><path d='M6 18 V 12 Q 12 6 18 12 V 18' stroke='currentColor' />",
+          "breakdown": [
+            "jelly"
+          ],
+          "imagery": "软软的果冻。",
+          "translation": "果冻",
+          "sentences": [
+            {
+              "en": "She made a jelly for dessert.",
+              "cn": "她做了果冻当甜点。"
+            }
+          ]
+        },
+        {
+          "word": "jog",
+          "rootVisual": "<path d='M12 18 L8 22 M12 18 L16 22 M12 12 V 18' stroke='currentColor' />",
+          "breakdown": [
+            "jog"
+          ],
+          "imagery": "慢跑锻炼。",
+          "translation": "慢跑",
+          "sentences": [
+            {
+              "en": "Jog in the morning.",
+              "cn": "早上慢跑。"
+            }
+          ]
+        },
+        {
+          "word": "justify",
+          "rootVisual": "<path d='M4 18 H 20 M 12 18 V 6' stroke='currentColor' /><rect x='6' y='10' width='6' height='6' stroke='currentColor' fill='none' /><rect x='12' y='10' width='6' height='6' stroke='currentColor' fill='none' />",
+          "breakdown": [
+            "just (正)",
+            "-ify"
+          ],
+          "imagery": "使变得正当/合理。",
+          "translation": "证明...正当",
+          "sentences": [
+            {
+              "en": "Justify paying huge salaries.",
+              "cn": "证明支付高薪是合理的。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

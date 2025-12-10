@@ -1,0 +1,209 @@
+{
+  "prefix": "Vocab B",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_b",
+      "displayName": "Vocabulary B",
+      "themeColor": "#3b82f6",
+      "prefixIntro": {
+        "title": "B 开头核心词",
+        "description": "高中阶段 B 开头的高频混合词汇。",
+        "imagery": "字母 B 像一个孕妇或两块木板（代表依靠、阻挡或膨胀）。"
+      },
+      "words": [
+        {
+          "word": "ballet",
+          "rootVisual": "<path d='M12 14l-4 8M12 14l4 8M12 14v-6' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' stroke='currentColor'/>",
+          "breakdown": [
+            "ballet",
+            "(音译)"
+          ],
+          "imagery": "脚尖点地跳舞。谐音：芭蕾。",
+          "translation": "芭蕾舞",
+          "sentences": [
+            {
+              "en": "The ballet dancer is graceful.",
+              "cn": "芭蕾舞者很优雅。"
+            }
+          ]
+        },
+        {
+          "word": "bat",
+          "rootVisual": "<path d='M2 12 q 10 5 20 0 q -10 10 -20 0' stroke='currentColor' fill='currentColor'/><circle cx='12' cy='10' r='2' fill='var(--bg-color)'/>",
+          "breakdown": [
+            "bat",
+            "(球拍/蝙蝠)"
+          ],
+          "imagery": "一只蝙蝠，名字源于翅膀拍打(beat)的声音。ea 和 a 通假。",
+          "translation": "蝙蝠；球拍",
+          "sentences": [
+            {
+              "en": "Bats fly at night.",
+              "cn": "蝙蝠在夜间飞行。"
+            }
+          ]
+        },
+        {
+          "word": "beard",
+          "rootVisual": "<path d='M8 12q4 4 8 0v4q-4 4-8 0z' fill='currentColor' opacity='0.6'/><circle cx='12' cy='10' r='6' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "beard",
+            "(胡须)"
+          ],
+          "imagery": "下巴上的一丛毛，指络腮胡。",
+          "translation": "胡须 (络腮胡)",
+          "sentences": [
+            {
+              "en": "Santa Claus has a white beard.",
+              "cn": "圣诞老人有白胡子。"
+            }
+          ]
+        },
+        {
+          "word": "beat",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 12 h8' stroke='currentColor' stroke-width='4'/>",
+          "breakdown": [
+            "beat",
+            "(打)"
+          ],
+          "imagery": "一个鼓槌敲击鼓面。",
+          "translation": "打；击败",
+          "sentences": [
+            {
+              "en": "My heart is beating fast.",
+              "cn": "我的心跳得很快。"
+            }
+          ]
+        },
+        {
+          "word": "belief",
+          "rootVisual": "<path d='M12 20 l-2 -2 l-4 0 a 2 2 0 0 1 -2 -2 v -8 a 2 2 0 0 1 2 -2 h 12 a 2 2 0 0 1 2 2 v 8 a 2 2 0 0 1 -2 2 l -4 0 z' stroke='currentColor' fill='none'/><path d='M12 8 l2 4 h-4 z' fill='currentColor'/>",
+          "breakdown": [
+            "belief",
+            "(名词)"
+          ],
+          "imagery": "心中的信念。",
+          "translation": "信仰",
+          "sentences": [
+            {
+              "en": "I have a strong belief.",
+              "cn": "我有坚定的信仰。"
+            }
+          ]
+        },
+        {
+          "word": "bid",
+          "rootVisual": "<rect x='8' y='4' width='8' height='10' stroke='currentColor' fill='none'/><line x1='12' y1='14' x2='12' y2='20' stroke='currentColor'/>",
+          "breakdown": [
+            "bid",
+            "(叫价)"
+          ],
+          "imagery": "拍卖会上举起的牌子。",
+          "translation": "出价；投标",
+          "sentences": [
+            {
+              "en": "I bid $100 for the painting.",
+              "cn": "我出价100美元买这幅画。"
+            }
+          ]
+        },
+        {
+          "word": "blush",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='8' cy='14' r='2' fill='#ef4444' opacity='0.5'/><circle cx='16' cy='14' r='2' fill='#ef4444' opacity='0.5'/>",
+          "breakdown": [
+            "blush",
+            "(脸红)"
+          ],
+          "imagery": "害羞时脸颊泛红。",
+          "translation": "脸红",
+          "sentences": [
+            {
+              "en": "She blushed with shame.",
+              "cn": "她羞愧得脸红了。"
+            }
+          ]
+        },
+        {
+          "word": "bomb",
+          "rootVisual": "<circle cx='12' cy='12' r='6' fill='currentColor'/><path d='M12 6 v-2' stroke='currentColor'/><path d='M12 4 l2 -2' stroke='currentColor' stroke-dasharray='2 1'/>",
+          "breakdown": [
+            "拟声词"
+          ],
+          "imagery": "模仿爆炸的声音 'Boom'。",
+          "translation": "炸弹",
+          "sentences": [
+            {
+              "en": "The bomb exploded.",
+              "cn": "炸弹爆炸了。"
+            }
+          ]
+        },
+        {
+          "word": "boom",
+          "rootVisual": "<path d='M2 18l4-8 4 6 4-10 4 8 4-12' stroke='currentColor' stroke-width='2' fill='none'/>",
+          "breakdown": [
+            "boom",
+            "(拟声)"
+          ],
+          "imagery": "机器隆隆声，引申为经济繁荣急速上升。",
+          "translation": "繁荣；隆隆声",
+          "sentences": [
+            {
+              "en": "An economic boom.",
+              "cn": "经济繁荣。"
+            }
+          ]
+        },
+        {
+          "word": "brief",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y1='12' x2='12' y2='12' stroke='currentColor'/>",
+          "breakdown": [
+            "brief",
+            "(短)"
+          ],
+          "imagery": "一份简短的文件摘要。",
+          "translation": "简短的",
+          "sentences": [
+            {
+              "en": "Keep it brief.",
+              "cn": "长话短说。"
+            }
+          ]
+        },
+        {
+          "word": "bud",
+          "rootVisual": "<path d='M12 20v-8M12 12q-4-4 0-8q4 4 0 8' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "bud",
+            "(花蕾)"
+          ],
+          "imagery": "植物鼓出来的小包 -> 花蕾。",
+          "translation": "花蕾；发芽",
+          "sentences": [
+            {
+              "en": "Trees start to bud in spring.",
+              "cn": "树木春天开始发芽。"
+            }
+          ]
+        },
+        {
+          "word": "burst",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' stroke-dasharray='2 2'/><path d='M12 12l6 6M12 12l-6-6M12 12l6-6M12 12l-6 6' stroke='currentColor'/>",
+          "breakdown": [
+            "burst",
+            "(拟声)"
+          ],
+          "imagery": "东西炸裂的声音。",
+          "translation": "爆裂；爆发",
+          "sentences": [
+            {
+              "en": "She burst into tears.",
+              "cn": "她突然大哭起来。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

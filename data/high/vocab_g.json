@@ -1,0 +1,98 @@
+{
+  "prefix": "Vocab G",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_g",
+      "displayName": "Vocabulary G",
+      "themeColor": "#ec4899",
+      "prefixIntro": {
+        "title": "G 开头核心词",
+        "description": "高中阶段 G 开头的高频混合词汇。",
+        "imagery": "字母 G 像地球（Globe）或握紧拳头的手，常含“生长（Grow）、大地”之意。"
+      },
+      "words": [
+        {
+          "word": "gallon",
+          "rootVisual": "<path d='M6 4h12v16h-12z' stroke='currentColor' fill='none'/><path d='M6 8h12' stroke='currentColor'/>",
+          "breakdown": [
+            "gallon",
+            "(音译)"
+          ],
+          "imagery": "大桶液体的单位。谐音：加仑。",
+          "translation": "加仑 (液量单位)",
+          "sentences": [
+            {
+              "en": "A gallon of milk.",
+              "cn": "一加仑牛奶。"
+            }
+          ]
+        },
+        {
+          "word": "garbage",
+          "rootVisual": "<path d='M6 6l2 14h8l2-14h-12z' stroke='currentColor' fill='none'/><path d='M4 6h16' stroke='currentColor'/>",
+          "breakdown": [
+            "garble",
+            "(筛选)",
+            "age"
+          ],
+          "imagery": "筛选后剩下的废料 -> 垃圾。",
+          "translation": "垃圾",
+          "sentences": [
+            {
+              "en": "Throw out the garbage.",
+              "cn": "倒垃圾。"
+            }
+          ]
+        },
+        {
+          "word": "glance",
+          "rootVisual": "<path d='M4 12 q 8 -6 16 0' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "gl (光/滑)"
+          ],
+          "imagery": "目光滑过，匆匆一瞥。",
+          "translation": "瞥见；扫视",
+          "sentences": [
+            {
+              "en": "He glanced nervously at me.",
+              "cn": "他紧张地瞥了我一眼。"
+            }
+          ]
+        },
+        {
+          "word": "glare",
+          "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor'/><path d='M12 2 L12 6 M12 18 L12 22 M2 12 L6 12 M18 12 L22 12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "gl (光)"
+          ],
+          "imagery": "发出强光；怒目而视（目光如炬）。",
+          "translation": "强光；怒视",
+          "sentences": [
+            {
+              "en": "He glared at her.",
+              "cn": "他怒视着她。"
+            }
+          ]
+        },
+        {
+          "word": "guarantee",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M8 12l2 2 4-4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "guard",
+            "(保卫)",
+            "antee"
+          ],
+          "imagery": "保卫权益的证书 -> 保证/保修。",
+          "translation": "保证；保修",
+          "sentences": [
+            {
+              "en": "A two-year guarantee.",
+              "cn": "两年保修。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

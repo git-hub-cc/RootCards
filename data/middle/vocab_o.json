@@ -1,0 +1,115 @@
+{
+  "prefix": "Vocab O",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_o",
+      "displayName": "Vocabulary O",
+      "themeColor": "#ef4444",
+      "prefixIntro": {
+        "title": "O 开头核心词",
+        "description": "高中阶段 O 开头的高频混合词汇。",
+        "imagery": "字母 O 像太阳、嘴巴或圆圈，常含“圆、完整、开口（Open）”之意。"
+      },
+      "words": [
+        {
+          "word": "october",
+          "rootVisual": "<circle cx='12' cy='16' r='6' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='8' r='4' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Octo",
+            "(八)"
+          ],
+          "imagery": "数字 8 的形状。在旧历法中是第8个月，也联想 Octopus (八爪鱼)。",
+          "translation": "十月",
+          "sentences": [
+            {
+              "en": "Halloween is in October.",
+              "cn": "万圣节在十月。"
+            }
+          ]
+        },
+        {
+          "word": "onion",
+          "rootVisual": "<path d='M12 20a7 7 0 0 0 7-7c0-4-7-9-7-9S5 9 5 13a7 7 0 0 0 7 7z'/><path d='M12 4V2'/><path d='M9 22l1-2 M14 22l-1-2'/><path d='M12 4c0 0 3 4 3 9'/><path d='M12 4c0 0-3 4-3 9'/>",
+          "breakdown": [
+            "onion",
+            "(洋葱)"
+          ],
+          "imagery": "一个泪滴状的球茎，顶部长出嫩芽，底部生出细根，内部的线条暗示着它层层包裹的结构。",
+          "translation": "洋葱",
+          "sentences": [
+            {
+              "en": "Fry the onion with meat.",
+              "cn": "把洋葱和肉一起炒。"
+            }
+          ]
+        },
+        {
+          "word": "order",
+          "rootVisual": "<g transform='translate(0, 0)'><rect x='6' y='4' width='12' height='16' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 8 h6 M9 12 h6 M9 16 h4' stroke='currentColor' stroke-width='1.5'/><path d='M15 15 l3 3' stroke='currentColor' stroke-width='2' stroke-linecap='round'/></g>",
+          "breakdown": [
+            "order",
+            "(点菜)"
+          ],
+          "imagery": "一份菜单或清单，上面有几行文字，旁边有一支笔准备勾选。",
+          "translation": "点菜",
+          "sentences": [
+            {
+              "en": "Excuse me. Can I take your order now?",
+              "cn": "打扰一下，现在可以点菜了吗？"
+            }
+          ]
+        },
+        {
+          "word": "organize",
+          "rootVisual": "<rect x='4' y='4' width='6' height='6' stroke='currentColor' fill='none'/><rect x='14' y='4' width='6' height='6' stroke='currentColor' fill='none'/><rect x='9' y='14' width='6' height='6' stroke='currentColor' fill='none'/><path d='M7 10 v2 h5 v2 M17 10 v2 h-5' stroke='currentColor'/>",
+          "breakdown": [
+            "organ",
+            "(器官/工具)",
+            "-ize (动词后缀)"
+          ],
+          "imagery": "一个结构图或组织架构图，显示各个部分井井有条。",
+          "translation": "组织",
+          "sentences": [
+            {
+              "en": "How do you organize your team?",
+              "cn": "你如何组织你的团队？"
+            }
+          ]
+        },
+        {
+          "word": "outdoors",
+          "rootVisual": "<path d='M4 20V10l8-6 8 6v10' stroke='currentColor' fill='none'/><circle cx='18' cy='6' r='2' fill='gold'/><path d='M6 18l2-4 2 4' stroke='currentColor'/>",
+          "breakdown": [
+            "out",
+            "doors"
+          ],
+          "imagery": "一个房子轮廓的外面，有太阳和树木。",
+          "translation": "户外的；在户外",
+          "sentences": [
+            {
+              "en": "Go outdoors and have a rest.",
+              "cn": "到户外去休息一下吧。"
+            }
+          ]
+        },
+        {
+          "word": "overnight",
+          "rootVisual": "<path d='M2 12c4-4 8-4 10 0s6 4 10 0' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' fill='currentColor'/><circle cx='12' cy='18' r='2' fill='none' stroke='currentColor'/>",
+          "breakdown": [
+            "over",
+            "night"
+          ],
+          "imagery": "一个月亮落下，太阳升起的快速过程。",
+          "translation": "一夜之间地",
+          "sentences": [
+            {
+              "en": "He became a boss overnight.",
+              "cn": "他一夜之间就成了老板。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "prefix": "Vocab K",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_k",
+      "displayName": "Vocabulary K",
+      "themeColor": "#6366f1",
+      "prefixIntro": {
+        "title": "K 开头核心词",
+        "description": "高中阶段 K 开头的高频混合词汇。",
+        "imagery": "字母 K 像张开的嘴或踢腿（Kick）动作，常含“张开、打击”之意。"
+      },
+      "words": [
+        {
+          "word": "kindle",
+          "rootVisual": "<path d='M12 14 q -4 -8 0 -12 q 4 4 0 12' fill='#f59e0b'/><path d='M8 20 l8 -6' stroke='currentColor'/>",
+          "breakdown": [
+            "kindle",
+            "(点燃)"
+          ],
+          "imagery": "点火。c 和 k 通假 (candle -> kindle)。",
+          "translation": "点燃；激起",
+          "sentences": [
+            {
+              "en": "Kindle a fire.",
+              "cn": "生火。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

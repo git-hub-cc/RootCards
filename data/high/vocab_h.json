@@ -1,0 +1,85 @@
+{
+  "prefix": "Vocab H",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_h",
+      "displayName": "Vocabulary H",
+      "themeColor": "#06b6d4",
+      "prefixIntro": {
+        "title": "H 开头核心词",
+        "description": "高中阶段 H 开头的高频混合词汇。",
+        "imagery": "字母 H 像梯子或篱笆（Hurdle），常含“高处（High）、阻挡、抓持”之意。"
+      },
+      "words": [
+        {
+          "word": "hallmark",
+          "rootVisual": "<rect x='4' y='4' width='16' height='12' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "hall",
+            "(大厅)",
+            "mark",
+            "(标记)"
+          ],
+          "imagery": "大厅里最显眼的标记 -> 特征/标志。",
+          "translation": "特征；标志",
+          "sentences": [
+            {
+              "en": "Precision is the hallmark of his work.",
+              "cn": "精确是他工作的标志。"
+            }
+          ]
+        },
+        {
+          "word": "harmony",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M12 12h0' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "harm",
+            "(连接/关节)",
+            "ony"
+          ],
+          "imagery": "各个部分连接得很好 -> 和谐。",
+          "translation": "和谐；融洽",
+          "sentences": [
+            {
+              "en": "Live in harmony with nature.",
+              "cn": "与自然和谐共处。"
+            }
+          ]
+        },
+        {
+          "word": "heat",
+          "rootVisual": "<path d='M6 20 q 4 -10 6 -16 q 2 6 6 16' stroke='currentColor' fill='none'/><path d='M8 20 q 4 -8 4 -12' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "heat",
+            "(名词)"
+          ],
+          "imagery": "上升的热浪。o 和 ea 通假。",
+          "translation": "热量",
+          "sentences": [
+            {
+              "en": "The sun gives us heat.",
+              "cn": "太阳给我们热量。"
+            }
+          ]
+        },
+        {
+          "word": "hot",
+          "rootVisual": "<circle cx='12' cy='12' r='6' fill='currentColor' opacity='0.2'/><path d='M12 2 v4 M12 18 v4 M2 12 h4 M18 12 h4' stroke='currentColor'/>",
+          "breakdown": [
+            "hot",
+            "(形容词)"
+          ],
+          "imagery": "发散热量的太阳。",
+          "translation": "热的",
+          "sentences": [
+            {
+              "en": "It is hot today.",
+              "cn": "今天很热。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "prefix": "Vocab Z",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_z",
+      "displayName": "Vocabulary Z",
+      "themeColor": "#8b5cf6",
+      "prefixIntro": {
+        "title": "Z 开头核心词",
+        "description": "高中阶段 Z 开头的高频混合词汇。",
+        "imagery": "字母 Z 像之字形路（Zigzag），常含“曲折、极大/极小（Zero）”之意。"
+      },
+      "words": [
+        {
+          "word": "zone",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><text x='12' y='16' text-anchor='middle' font-size='8' fill='currentColor'>AREA</text>",
+          "breakdown": [
+            "zone",
+            "(带)"
+          ],
+          "imagery": "划分出的地带 -> 区域。",
+          "translation": "区域；地带",
+          "sentences": [
+            {
+              "en": "Time zone.",
+              "cn": "时区。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "prefix": "Vocab V",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_v",
+      "displayName": "Vocabulary V",
+      "themeColor": "#3b82f6",
+      "prefixIntro": {
+        "title": "V 开头核心词",
+        "description": "高中阶段 V 开头的高频混合词汇。",
+        "imagery": "字母 V 像山谷（Valley）或视线发散（View），常含“空、观看、旋转”之意。"
+      },
+      "words": [
+        {
+          "word": "vacant",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><text x='12' y='16' text-anchor='middle' font-size='8' fill='currentColor'>EMPTY</text>",
+          "breakdown": [
+            "vac",
+            "(空)",
+            "ant"
+          ],
+          "imagery": "空的 -> 空缺的。",
+          "translation": "空缺的；茫然的",
+          "sentences": [
+            {
+              "en": "A vacant seat.",
+              "cn": "空座位。"
+            }
+          ]
+        },
+        {
+          "word": "vague",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2' opacity='0.5'/>",
+          "breakdown": [
+            "vag",
+            "(漫游)",
+            "ue"
+          ],
+          "imagery": "飘忽不定的 -> 模糊的。",
+          "translation": "模糊的；含糊的",
+          "sentences": [
+            {
+              "en": "A vague idea.",
+              "cn": "一个模糊的想法。"
+            }
+          ]
+        },
+        {
+          "word": "vain",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12h8' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "van",
+            "(空)"
+          ],
+          "imagery": "空虚的 -> 徒劳的/虚荣的。",
+          "translation": "徒劳的；虚荣的",
+          "sentences": [
+            {
+              "en": "In vain.",
+              "cn": "徒劳地。"
+            }
+          ]
+        },
+        {
+          "word": "valid",
+          "rootVisual": "<path d='M4 12 l6 6 l10 -10' stroke='currentColor' stroke-width='3' fill='none'/>",
+          "breakdown": [
+            "val (强/效)",
+            "-id"
+          ],
+          "imagery": "有效的，有法律效力的（强）。",
+          "translation": "有效的",
+          "sentences": [
+            {
+              "en": "Your ticket is valid for three months.",
+              "cn": "你的票有效期为三个月。"
+            }
+          ]
+        },
+        {
+          "word": "vanish",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='1 4'/>",
+          "breakdown": [
+            "van",
+            "(空)",
+            "ish"
+          ],
+          "imagery": "变空了 -> 消失。",
+          "translation": "消失",
+          "sentences": [
+            {
+              "en": "He vanished into the crowd.",
+              "cn": "他消失在人群中。"
+            }
+          ]
+        },
+        {
+          "word": "variety",
+          "rootVisual": "<circle cx='6' cy='6' r='2' fill='currentColor'/><rect x='14' y='4' width='4' height='4' fill='currentColor'/><path d='M6 14l4 4h-8z' fill='currentColor'/>",
+          "breakdown": [
+            "vari",
+            "(变)",
+            "ety"
+          ],
+          "imagery": "各种各样的变化 -> 多样性。",
+          "translation": "多样性；种类",
+          "sentences": [
+            {
+              "en": "A variety of choices.",
+              "cn": "多种选择。"
+            }
+          ]
+        },
+        {
+          "word": "vault",
+          "rootVisual": "<path d='M4 20 v-10 a 8 8 0 0 1 16 0 v 10' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "vault",
+            "(拱顶)"
+          ],
+          "imagery": "弯曲的墙形成的拱顶。w 和 v 通假。",
+          "translation": "拱顶；金库",
+          "sentences": [
+            {
+              "en": "Bank vault.",
+              "cn": "银行金库。"
+            }
+          ]
+        },
+        {
+          "word": "vehicle",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none'/><circle cx='8' cy='16' r='2' stroke='currentColor'/><circle cx='16' cy='16' r='2' stroke='currentColor'/>",
+          "breakdown": [
+            "veh",
+            "(运)",
+            "icle"
+          ],
+          "imagery": "运输工具 -> 车辆。",
+          "translation": "车辆；交通工具",
+          "sentences": [
+            {
+              "en": "Motor vehicle.",
+              "cn": "机动车。"
+            }
+          ]
+        },
+        {
+          "word": "vertical",
+          "rootVisual": "<path d='M12 2v20' stroke='currentColor' stroke-width='2'/><path d='M8 20h8' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "vert",
+            "(转)",
+            "ical"
+          ],
+          "imagery": "转到顶点的 -> 垂直的。",
+          "translation": "垂直的",
+          "sentences": [
+            {
+              "en": "A vertical line.",
+              "cn": "一条垂线。"
+            }
+          ]
+        },
+        {
+          "word": "victim",
+          "rootVisual": "<path d='M6 18 l12 -12' stroke='currentColor' stroke-width='2'/><path d='M6 6 l12 12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "vict (胜/败)",
+            "-im"
+          ],
+          "imagery": "失败的一方（相对于胜利者），受害者。",
+          "translation": "受害者；牺牲品",
+          "sentences": [
+            {
+              "en": "The victims of the earthquake need help.",
+              "cn": "地震的受害者需要帮助。"
+            }
+          ]
+        },
+        {
+          "word": "victory",
+          "rootVisual": "<path d='M6 6 l6 12 l6 -12' stroke='currentColor' stroke-width='4'/>",
+          "breakdown": [
+            "vict (胜)",
+            "-ory (名)"
+          ],
+          "imagery": "胜利。",
+          "translation": "胜利",
+          "sentences": [
+            {
+              "en": "They won a great victory in the final match.",
+              "cn": "他们在决赛中取得了巨大的胜利。"
+            }
+          ]
+        },
+        {
+          "word": "vine",
+          "rootVisual": "<path d='M12 2 v10' stroke='currentColor' stroke-width='2'/><circle cx='10' cy='14' r='2' fill='currentColor'/><circle cx='14' cy='14' r='2' fill='currentColor'/><circle cx='12' cy='17' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "vine",
+            "(藤)"
+          ],
+          "imagery": "结满葡萄的藤蔓。w 和 v 通假。",
+          "translation": "葡萄藤",
+          "sentences": [
+            {
+              "en": "Grapes grow on vines.",
+              "cn": "葡萄长在藤上。"
+            }
+          ]
+        },
+        {
+          "word": "violence",
+          "rootVisual": "<path d='M4 4l16 16M4 20l16-16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "viol",
+            "(力)",
+            "ence"
+          ],
+          "imagery": "滥用力量 -> 暴力。",
+          "translation": "暴力；猛烈",
+          "sentences": [
+            {
+              "en": "Domestic violence.",
+              "cn": "家庭暴力。"
+            }
+          ]
+        },
+        {
+          "word": "virtue",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 2l2 4 5 1-4 3 1 5-4-3-4 3 1-5-4-3 5-1z' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "vir",
+            "(男人/力量)",
+            "tue"
+          ],
+          "imagery": "男人的优秀品质 -> 美德。",
+          "translation": "美德；优点",
+          "sentences": [
+            {
+              "en": "Patience is a virtue.",
+              "cn": "耐心是一种美德。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

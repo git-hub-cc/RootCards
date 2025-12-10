@@ -1,0 +1,811 @@
+{
+  "prefix": "Vocab P",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_p",
+      "displayName": "Vocabulary P",
+      "themeColor": "#8b5cf6",
+      "prefixIntro": {
+        "title": "P 开头核心词",
+        "description": "高中阶段 P 开头的高频混合词汇。",
+        "imagery": "字母 P 像手掌（Palm）或长矛，常含“向前推（Push）、尖端”之意。"
+      },
+      "words": [
+        {
+          "word": "pack",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none'/><path d='M4 8l8-4 8 4' stroke='currentColor'/><path d='M12 4v20' stroke='currentColor'/>",
+          "breakdown": [
+            "pack"
+          ],
+          "imagery": "往箱子里整齐地放入物品。",
+          "translation": "打包",
+          "sentences": [
+            {
+              "en": "Could you pack it for me?",
+              "cn": "你能帮我把它打包吗？"
+            }
+          ]
+        },
+        {
+          "word": "package",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none'/><path d='M4 8l8-4 8 4' stroke='currentColor'/><path d='M12 4v20' stroke='currentColor'/><path d='M4 14h16' stroke='currentColor'/>",
+          "breakdown": [
+            "pack",
+            "-age"
+          ],
+          "imagery": "一个用绳子捆扎好的包裹。",
+          "translation": "包裹",
+          "sentences": [
+            {
+              "en": "I received the package today.",
+              "cn": "我今天收到了包裹。"
+            }
+          ]
+        },
+        {
+          "word": "pal",
+          "rootVisual": "<path d='M8 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M4 20v-4h8v4' stroke='currentColor' fill='none'/><path d='M16 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M12 20v-4h8v4' stroke='currentColor' fill='none'/><path d='M10 16h4' stroke='currentColor'/>",
+          "breakdown": [
+            "pal"
+          ],
+          "imagery": "两个人并肩站立，一只手搭在对方肩膀上，显得非常亲密。",
+          "translation": "朋友；伙伴",
+          "sentences": [
+            {
+              "en": "She received an email from her pal.",
+              "cn": "她收到了一封来自她朋友的邮件。"
+            }
+          ]
+        },
+        {
+          "word": "pan",
+          "rootVisual": "<circle cx='10' cy='12' r='7' stroke='currentColor' fill='none' stroke-width='2'/><line x1='16' y1='12' x2='22' y2='12' stroke='currentColor' stroke-width='3' stroke-linecap='round'/>",
+          "breakdown": [
+            "panne",
+            "(平底容器)"
+          ],
+          "imagery": "一个带长柄的圆形平底锅。",
+          "translation": "平底锅",
+          "sentences": [
+            {
+              "en": "He fried eggs in a pan.",
+              "cn": "他用平底锅煎蛋。"
+            }
+          ]
+        },
+        {
+          "word": "pancake",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' opacity='0.3'/><circle cx='9' cy='10' r='1' fill='currentColor'/><circle cx='15' cy='11' r='1' fill='currentColor'/><circle cx='11' cy='15' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "pan",
+            "(锅)",
+            "cake",
+            "(蛋糕)"
+          ],
+          "imagery": "俯视视角下的圆形面饼，表面散布着受热产生的气孔，展示了它在锅中受热的样子。",
+          "translation": "烙饼 / 煎饼",
+          "sentences": [
+            {
+              "en": "Pans can be used to make pancakes.",
+              "cn": "平底锅可以用来做烙饼。"
+            }
+          ]
+        },
+        {
+          "word": "passport",
+          "rootVisual": "<rect x='6' y='6' width='12' height='16' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/>",
+          "breakdown": [
+            "pass (通过)",
+            "port (港)"
+          ],
+          "imagery": "通过港口的证件。",
+          "translation": "护照",
+          "sentences": [
+            {
+              "en": "You need a passport to travel abroad.",
+              "cn": "出国旅行需要护照。"
+            }
+          ]
+        },
+        {
+          "word": "patient",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M4 12h16 M8 6v12' stroke='currentColor' opacity='0.3'/><circle cx='16' cy='9' r='1.5' fill='currentColor' fill='red'/>",
+          "breakdown": [
+            "pati (受苦)",
+            "-ent (人)"
+          ],
+          "imagery": "一个人躺在病床上，或者一个红十字标志旁站着等待的人。",
+          "translation": "病人；有耐心的",
+          "sentences": [
+            {
+              "en": "She sat by the patient.",
+              "cn": "她坐在病人旁边。"
+            }
+          ]
+        },
+        {
+          "word": "pattern",
+          "rootVisual": "<rect x='4' y='4' width='4' height='4' fill='currentColor'/><rect x='10' y='4' width='4' height='4' stroke='currentColor' fill='none'/><rect x='16' y='4' width='4' height='4' fill='currentColor'/><rect x='4' y='10' width='4' height='4' stroke='currentColor' fill='none'/><rect x='10' y='10' width='4' height='4' fill='currentColor'/><rect x='16' y='10' width='4' height='4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "patr (父)",
+            "-ern"
+          ],
+          "imagery": "重复的几何图形纹理，如波点或方格。",
+          "translation": "模式",
+          "sentences": [
+            {
+              "en": "Weather patterns have changed.",
+              "cn": "天气模式发生了变化。"
+            }
+          ]
+        },
+        {
+          "word": "pay",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='2' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "pay",
+            "(支付)"
+          ],
+          "imagery": "一张中间带有圆形图案的钞票，是金钱和支付的通用符号。",
+          "translation": "支付",
+          "sentences": [
+            {
+              "en": "I'll pay the bill.",
+              "cn": "我来付账。"
+            }
+          ]
+        },
+        {
+          "word": "payment",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='2' stroke='currentColor' fill='none'/><path d='M20 12 h4 l-2 -2 m2 2 l-2 2' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "payment",
+            "(支付 - 名词)"
+          ],
+          "imagery": "一张钞票，旁边有一个指向前方的箭头，表示金钱的“付出”或“转移”。",
+          "translation": "支付（名词）",
+          "sentences": [
+            {
+              "en": "He made a down payment on a new car.",
+              "cn": "他为一辆新车付了首付。"
+            }
+          ]
+        },
+        {
+          "word": "perform",
+          "rootVisual": "<path d='M4 20h16' stroke='currentColor'/><rect x='8' y='12' width='8' height='8' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "per-",
+            "form"
+          ],
+          "imagery": "聚光灯下一个人在舞台上表演。",
+          "translation": "表演；表现",
+          "sentences": [
+            {
+              "en": "The children perform two plays each school year.",
+              "cn": "孩子们每学年表演两场话剧。"
+            }
+          ]
+        },
+        {
+          "word": "pet",
+          "rootVisual": "<path d='M12 17.5c-2.5 0-4.5-1.5-4.5-3.5c0-1.5 1-2.5 2.5-2.5c1 0 1.5.5 2 1.5c.5-1 1-1.5 2-1.5c1.5 0 2.5 1 2.5 2.5c0 2-2 3.5-4.5 3.5z' fill='none' stroke='currentColor'/><circle cx='8' cy='6' r='2' fill='currentColor'/><circle cx='12' cy='5' r='2' fill='currentColor'/><circle cx='16' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "pet (追求/宠)"
+          ],
+          "imagery": "追随主人的动物；受宠爱的。",
+          "translation": "宠物",
+          "sentences": [
+            {
+              "en": "Do you have any pets?",
+              "cn": "你养宠物了吗？"
+            }
+          ]
+        },
+        {
+          "word": "piano",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 12 h2 M10 12 h2 M14 12 h2 M18 12 h2' stroke='currentColor'/><path d='M8 8 v4 M12 8 v4 M16 8 v4' stroke='currentColor' fill='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "piano",
+            "(钢琴)"
+          ],
+          "imagery": "一段标志性的黑白琴键排列，直观地代表了钢琴。",
+          "translation": "钢琴",
+          "sentences": [
+            {
+              "en": "I like playing the piano.",
+              "cn": "我喜欢弹钢琴。"
+            }
+          ]
+        },
+        {
+          "word": "pick",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M 12 8 L 10 12 l 2 -4 l 2 4 Z L 12 8 v -4 M 8 12 v 8 h 8 v -8' fill='none' stroke='currentColor' stroke-width='2'/></g>",
+          "breakdown": [
+            "pick",
+            "(挑选；摘)"
+          ],
+          "imagery": "一只手（或夹子）正从上方精准地抓取一个小物体，强调“拾取”的动作。",
+          "translation": "挑选；摘",
+          "sentences": [
+            {
+              "en": "Please pick a card.",
+              "cn": "请选一张牌。"
+            }
+          ]
+        },
+        {
+          "word": "pick up",
+          "rootVisual": "<path d='M8 12 v8 h8 v-8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 12 l-2 -4 h4 z' stroke='currentColor' fill='currentColor' fill-opacity='0.2'/><path d='M12 8 v-4 m-2 2 l2 -2 l2 2' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "pick up",
+            "(捡起来)"
+          ],
+          "imagery": "一只手（或夹子）抓取物体，并附加一个向上的箭头，明确表示“捡起来”的方向。",
+          "translation": "捡起来",
+          "sentences": [
+            {
+              "en": "The little girl is picking up shells.",
+              "cn": "小女孩正在捡贝壳。"
+            }
+          ]
+        },
+        {
+          "word": "pie",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12L4 12' stroke='currentColor'/><path d='M12 12L16 6' stroke='currentColor'/><path d='M12 12L12 4' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "pie"
+          ],
+          "imagery": "一个圆形的派，被切掉了一块三角形。",
+          "translation": "馅饼；派",
+          "sentences": [
+            {
+              "en": "Would you like another piece of apple pie?",
+              "cn": "你还想再来一块苹果派吗？"
+            }
+          ]
+        },
+        {
+          "word": "pierce",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><path d='M4 12h16' stroke='currentColor'/><path d='M18 10l2 2-2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "pierce"
+          ],
+          "imagery": "一根针穿过一块布，或者一支箭射穿靶心。",
+          "translation": "刺穿；扎破",
+          "sentences": [
+            {
+              "en": "A nail pierced the tire.",
+              "cn": "一个钉子扎破了轮胎。"
+            }
+          ]
+        },
+        {
+          "word": "pillow",
+          "rootVisual": "<rect x='4' y='8' width='16' height='10' rx='3' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 13 q 4 2 8 0' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "Pillow",
+            "(枕头)"
+          ],
+          "imagery": "柔软的长方形垫子，中间因为受力而微微凹陷。",
+          "translation": "枕头",
+          "sentences": [
+            {
+              "en": "Make sure to fluff up your pillow before bed.",
+              "cn": "睡前记得把枕头拍松。"
+            }
+          ]
+        },
+        {
+          "word": "pity",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 10h2 M14 10h2' stroke='currentColor'/><path d='M8 16s2-2 4-2 4 2 4 2' stroke='currentColor'/>",
+          "breakdown": [
+            "pity"
+          ],
+          "imagery": "一个流泪的表情符号。",
+          "translation": "遗憾；同情",
+          "sentences": [
+            {
+              "en": "It's a pity that he can't come.",
+              "cn": "他不能来，真是个遗憾。"
+            }
+          ]
+        },
+        {
+          "word": "planet",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><ellipse cx='12' cy='12' rx='10' ry='3' stroke='currentColor' fill='none' transform='rotate(-20 12 12)'/>",
+          "breakdown": [
+            "plan",
+            "(平坦/漫游)",
+            "et"
+          ],
+          "imagery": "一个带有光环的行星，在宇宙中孤独地旋转。",
+          "translation": "行星",
+          "sentences": [
+            {
+              "en": "They have discovered a new planet.",
+              "cn": "他们发现了一颗新的行星。"
+            }
+          ]
+        },
+        {
+          "word": "pleased",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 14s2 2 4 2 4-2 4-2' stroke='currentColor'/><circle cx='9' cy='10' r='1' fill='currentColor'/><circle cx='15' cy='10' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "pleas (高兴)",
+            "-ed"
+          ],
+          "imagery": "一个满意的笑脸，嘴角上扬。",
+          "translation": "满意的",
+          "sentences": [
+            {
+              "en": "Gwen was pleased with the results.",
+              "cn": "格温对结果很满意。"
+            }
+          ]
+        },
+        {
+          "word": "pleasure",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 14s2 2 4 2 4-2 4-2' stroke='currentColor'/><circle cx='9' cy='10' r='1' fill='currentColor'/><circle cx='15' cy='10' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "pleas (高兴)",
+            "-ure"
+          ],
+          "imagery": "一个大大的笑脸。",
+          "translation": "高兴；荣幸",
+          "sentences": [
+            {
+              "en": "It's my pleasure.",
+              "cn": "这是我的荣幸。"
+            }
+          ]
+        },
+        {
+          "word": "poem",
+          "rootVisual": "<path d='M4 4h12v16H4z' stroke='currentColor' fill='none'/><path d='M6 8h8 M6 12h6 M6 16h4' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": [
+            "poem"
+          ],
+          "imagery": "一张羊皮纸，上面写着分行的短句。",
+          "translation": "诗",
+          "sentences": [
+            {
+              "en": "He read the poem aloud.",
+              "cn": "他大声地朗读这首诗。"
+            }
+          ]
+        },
+        {
+          "word": "poet",
+          "rootVisual": "<path d='M12 12C14.2 12 16 10.2 16 8s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4z M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6' stroke='currentColor' fill='none'/><path d='M16 12l2-4' stroke='currentColor'/><circle cx='19' cy='7' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "poet"
+          ],
+          "imagery": "一个人仰望星空，手里拿着羽毛笔，正在构思。",
+          "translation": "诗人",
+          "sentences": [
+            {
+              "en": "He read the poem aloud.",
+              "cn": "他大声地朗读这首诗。"
+            }
+          ]
+        },
+        {
+          "word": "policeman",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><path d='M9 3h6l1 2h-8z' stroke='currentColor' fill='currentColor' opacity='0.3'/><circle cx='12' cy='3' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "police",
+            "man"
+          ],
+          "imagery": "一个戴着大檐帽的警察剪影，可能有警徽。",
+          "translation": "警察",
+          "sentences": [
+            {
+              "en": "What happened to that policeman?",
+              "cn": "那个警察怎么了？"
+            }
+          ]
+        },
+        {
+          "word": "pool",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 10 q 4 -2 8 0 t 8 0 M6 14 q 4 -2 8 0 t 8 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "pool",
+            "(水池)"
+          ],
+          "imagery": "一个矩形的水池，水面泛着粼粼的波光。",
+          "translation": "水池",
+          "sentences": [
+            {
+              "en": "It is normal to have a swimming pool in the yard in Malaysia.",
+              "cn": "在马来西亚，院子里有游泳池是很正常的。"
+            }
+          ]
+        },
+        {
+          "word": "popcorn",
+          "rootVisual": "<path d='M6 8l2 12h8l2-12H6z' stroke='currentColor' fill='none'/><path d='M6 8c-1-2 0-4 2-4s2 2 2 2 0-2 2-2 2 2 2 2 0-2 2-2 2 2 2 2' fill='gold' stroke='currentColor'/>",
+          "breakdown": [
+            "pop",
+            "corn"
+          ],
+          "imagery": "一个装满爆米花的红白条纹纸桶。",
+          "translation": "爆米花",
+          "sentences": [
+            {
+              "en": "People love eating popcorn when watching movies.",
+              "cn": "人们看电影时喜欢吃爆米花。"
+            }
+          ]
+        },
+        {
+          "word": "popular",
+          "rootVisual": "<path d='M12 2 l3 7 h7 l-5 5 l2 7 l-7 -5 l-7 5 l2 -7 l-5 -5 h7 z' stroke='currentColor' fill='currentColor' fill-opacity='0.2' stroke-width='2'/>",
+          "breakdown": [
+            "popular",
+            "(受欢迎的)"
+          ],
+          "imagery": "一颗闪亮的星星，代表着明星、焦点和被众人追捧的状态。",
+          "translation": "受欢迎的",
+          "sentences": [
+            {
+              "en": "The Avengers are very popular in America.",
+              "cn": "《复仇者联盟》在美国非常受欢迎。"
+            }
+          ]
+        },
+        {
+          "word": "porridge",
+          "rootVisual": "<path d='M4 12 a 8 8 0 0 0 16 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='10' cy='10' r='1' fill='currentColor'/><circle cx='14' cy='10' r='0.5' fill='currentColor' opacity='0.7'/><circle cx='12' cy='13' r='0.5' fill='currentColor' opacity='0.7'/>",
+          "breakdown": [
+            "porridge",
+            "(粥)"
+          ],
+          "imagery": "一个碗里装着粘稠的液体，上面点缀着几颗米粒，代表着粥。",
+          "translation": "粥",
+          "sentences": [
+            {
+              "en": "My mum often cooks porridge for us in the morning.",
+              "cn": "我妈妈早上经常为我们煮粥。"
+            }
+          ]
+        },
+        {
+          "word": "post",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><rect x='14' y='4' width='4' height='4' rx='1' stroke='currentColor' fill='none'/><path d='M14 6 h-4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "post",
+            "(邮寄)"
+          ],
+          "imagery": "一张贴好邮票的信封，代表着即将被邮寄的信件。",
+          "translation": "邮寄",
+          "sentences": [
+            {
+              "en": "I need to post this letter.",
+              "cn": "我需要寄这封信。"
+            }
+          ]
+        },
+        {
+          "word": "post office",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 8 l8 -4 l8 4' stroke='currentColor' fill='none'/><path d='M10 12 h4 v4 h-4 z' fill='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "post office",
+            "(邮局)"
+          ],
+          "imagery": "一个信封的图标叠加在一个房子的轮廓上，清晰地表达了邮局的含义。",
+          "translation": "邮局",
+          "sentences": [
+            {
+              "en": "Is there a post office near here?",
+              "cn": "这附近有邮局吗？"
+            }
+          ]
+        },
+        {
+          "word": "postcard",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><rect x='15' y='8' width='3' height='4' stroke='currentColor' fill='none'/><line x1='12' y1='6' x2='12' y2='18' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "post (邮寄)",
+            "card (卡片)"
+          ],
+          "imagery": "一张带有邮票框和分隔线的长方形卡片。",
+          "translation": "明信片",
+          "sentences": [
+            {
+              "en": "Send me a postcard when you arrive.",
+              "cn": "你到了以后给我寄张明信片。"
+            }
+          ]
+        },
+        {
+          "word": "postman",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><rect x='14' y='12' width='6' height='4' rx='1' stroke='currentColor' fill='white'/><path d='M15 13l2 2 2-2' stroke='currentColor'/>",
+          "breakdown": [
+            "post",
+            "man"
+          ],
+          "imagery": "一个穿着制服的人，背着装满信件的挎包。",
+          "translation": "邮递员",
+          "sentences": [
+            {
+              "en": "One of my friends became a postman recently.",
+              "cn": "我的一个朋友最近当了邮递员。"
+            }
+          ]
+        },
+        {
+          "word": "potato",
+          "rootVisual": "<ellipse cx='12' cy='14' rx='8' ry='5' stroke='currentColor' fill='none' stroke-width='2'/><path d='M10 12 l-1 -2 M14 12 l1 -1 M12 15 l-1 1' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "potato",
+            "(土豆)"
+          ],
+          "imagery": "一个不规则的椭圆形，上面有几个小点，代表土豆发芽的“眼睛”。",
+          "translation": "土豆",
+          "sentences": [
+            {
+              "en": "Do you like having potato chips?",
+              "cn": "你喜欢吃薯片吗？"
+            }
+          ]
+        },
+        {
+          "word": "pound",
+          "rootVisual": "<path d='M6 18h12' stroke='currentColor' stroke-width='2'/><path d='M12 18v-8' stroke='currentColor'/><rect x='8' y='6' width='8' height='4' stroke='currentColor' fill='none'/><text x='10' y='9' font-size='6' fill='currentColor'>LB</text>",
+          "breakdown": [
+            "pound"
+          ],
+          "imagery": "一个砝码，上面写着LB。",
+          "translation": "磅",
+          "sentences": [
+            {
+              "en": "The grapes cost two dollars a pound.",
+              "cn": "这葡萄两美元一磅。"
+            }
+          ]
+        },
+        {
+          "word": "pour",
+          "rootVisual": "<path d='M8 6 h8 l-1 12 h-6 z' stroke='currentColor' fill='none' stroke-width='2' transform='rotate(-15 12 12)'/><path d='M16 12 q 4 -1 4 3 t-4 3' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "pour",
+            "(倒)"
+          ],
+          "imagery": "一个倾斜的杯子，杯口正流出几道液体，形象地展示了“倾倒”的动作。",
+          "translation": "倒",
+          "sentences": [
+            {
+              "en": "Pour some milk into the cup.",
+              "cn": "往杯子里倒些牛奶。"
+            }
+          ]
+        },
+        {
+          "word": "practice",
+          "rootVisual": "<path d='M 21 7.5 a 9 9 0 1 1 -6.1 -5.5 M 23 10 L 21 7 L 19 10 L 19 10' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "practice",
+            "(练习)"
+          ],
+          "imagery": "一个循环箭头，表示不断重复、周而复始的行为，直到熟练。",
+          "translation": "练习",
+          "sentences": [
+            {
+              "en": "Practice makes perfect.",
+              "cn": "熟能生巧。"
+            }
+          ]
+        },
+        {
+          "word": "praise",
+          "rootVisual": "<path d='M6 14l4 4 8-8' stroke='currentColor' stroke-width='2' stroke='green'/><path d='M12 4v2' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "praise"
+          ],
+          "imagery": "竖起的大拇指，或者五颗星评价。",
+          "translation": "表扬",
+          "sentences": [
+            {
+              "en": "Jane was praised by her teacher.",
+              "cn": "简得到了老师的表扬。"
+            }
+          ]
+        },
+        {
+          "word": "pride",
+          "rootVisual": "<path d='M12 2l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z' stroke='currentColor' fill='gold' opacity='0.5'/>",
+          "breakdown": [
+            "pride"
+          ],
+          "imagery": "一个人昂首挺胸，胸前佩戴着勋章。",
+          "translation": "骄傲",
+          "sentences": [
+            {
+              "en": "Their son is their pride and joy.",
+              "cn": "他们的儿子是他们的骄傲和喜悦。"
+            }
+          ]
+        },
+        {
+          "word": "problem",
+          "rootVisual": "<path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><line x1='12' y1='17' x2='12.01' y2='17' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>",
+          "breakdown": [
+            "problem",
+            "(困难)"
+          ],
+          "imagery": "一个悬而未决的问号，象征着阻碍前行的难题或需要寻找答案的困惑。",
+          "translation": "困难；问题",
+          "sentences": [
+            {
+              "en": "Do you have any problems?",
+              "cn": "你有什么问题吗？"
+            }
+          ]
+        },
+        {
+          "word": "process",
+          "rootVisual": "<rect x='4' y='8' width='4' height='8' stroke='currentColor' fill='none'/><rect x='10' y='8' width='4' height='8' stroke='currentColor' fill='none'/><rect x='16' y='8' width='4' height='8' stroke='currentColor' fill='none'/><path d='M8 12h2 M14 12h2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "pro-",
+            "cess (走)"
+          ],
+          "imagery": "一条流水线，物品经过一系列加工步骤。",
+          "translation": "过程",
+          "sentences": [
+            {
+              "en": "The process of making cheese is complicated.",
+              "cn": "制作奶酪的过程很复杂。"
+            }
+          ]
+        },
+        {
+          "word": "produce",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor' stroke-width='2'/><path d='M16 8 l4 4 l-4 4' stroke='currentColor'/>",
+          "breakdown": [
+            "pro- (向前)",
+            "duc (引导)"
+          ],
+          "imagery": "向前引导（生产流程），制造出产品。",
+          "translation": "生产；农产品",
+          "sentences": [
+            {
+              "en": "This factory produces electronic goods.",
+              "cn": "这家工厂生产电子产品。"
+            }
+          ]
+        },
+        {
+          "word": "production",
+          "rootVisual": "<path d='M4 14h4l2-4 2 4h4' stroke='currentColor'/><path d='M18 10v4' stroke='currentColor'/><rect x='2' y='14' width='20' height='6' fill='currentColor' opacity='0.2'/>",
+          "breakdown": [
+            "product",
+            "-ion"
+          ],
+          "imagery": "工厂里繁忙的生产线，产品源源不断地出来。",
+          "translation": "生产",
+          "sentences": [
+            {
+              "en": "We lead in the coal production.",
+              "cn": "我们在煤炭生产方面处于领先地位。"
+            }
+          ]
+        },
+        {
+          "word": "productive",
+          "rootVisual": "<rect x='4' y='18' width='4' height='4' fill='currentColor' opacity='0.2'/><rect x='10' y='14' width='4' height='8' fill='currentColor' opacity='0.5'/><rect x='16' y='10' width='4' height='12' fill='currentColor'/><path d='M4 18l6-4 6-4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "pro-",
+            "duct",
+            "-ive"
+          ],
+          "imagery": "上升的柱状图，或者结满果实的树。",
+          "translation": "富有成效的；多产的",
+          "sentences": [
+            {
+              "en": "I should be doing something productive.",
+              "cn": "我应该做一些有成效的事情。"
+            }
+          ]
+        },
+        {
+          "word": "profession",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M9 4v-2h6v2' stroke='currentColor'/><circle cx='12' cy='10' r='2' fill='currentColor'/><path d='M8 14h8 M8 17h8' stroke='currentColor'/>",
+          "breakdown": [
+            "pro-",
+            "fess (说)",
+            "-ion"
+          ],
+          "imagery": "一个穿着职业装的人，或者医生、律师的标志。",
+          "translation": "职业",
+          "sentences": [
+            {
+              "en": "Her profession is a teacher.",
+              "cn": "她的职业是老师。"
+            }
+          ]
+        },
+        {
+          "word": "project",
+          "rootVisual": "<rect x='4' y='14' width='4' height='6' fill='currentColor'/><path d='M6 14 l8 -8' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='14' cy='6' r='2' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "pro- (前)",
+            "ject (投)"
+          ],
+          "imagery": "向前投射（投影）；向前规划（项目）。",
+          "translation": "工程；投射",
+          "sentences": [
+            {
+              "en": "We are working on a new research project.",
+              "cn": "我们正在进行一个新的研究项目。"
+            }
+          ]
+        },
+        {
+          "word": "pronounce",
+          "rootVisual": "<path d='M8 8a4 4 0 0 1 8 0' stroke='currentColor' fill='none'/><path d='M12 12v6' stroke='currentColor'/><path d='M12 4v2' stroke='currentColor'/>",
+          "breakdown": [
+            "pro-",
+            "nounce (说)"
+          ],
+          "imagery": "嘴巴发出声波的图标，或者音标符号。",
+          "translation": "发音",
+          "sentences": [
+            {
+              "en": "How do you pronounce this word?",
+              "cn": "这个单词你怎么发音？"
+            }
+          ]
+        },
+        {
+          "word": "proud",
+          "rootVisual": "<path d='M12 18 v-6' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/><path d='M6 18 h12' stroke='currentColor'/>",
+          "breakdown": [
+            "proud",
+            "(有价值的/骄傲的)"
+          ],
+          "imagery": "一个人昂首挺胸，胸前挂着一枚奖章。",
+          "translation": "骄傲的；自豪的",
+          "sentences": [
+            {
+              "en": "It was her pride and joy.",
+              "cn": "那是她的骄傲和快乐。"
+            }
+          ]
+        },
+        {
+          "word": "pull",
+          "rootVisual": "<rect x='14' y='8' width='6' height='8' stroke='currentColor' fill='none'/><path d='M14 12H4' stroke='currentColor'/><path d='M8 10l-2 2 2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "pull"
+          ],
+          "imagery": "一个人用力拉着绳子，箭头指向自己。",
+          "translation": "拉",
+          "sentences": [
+            {
+              "en": "He pulled the donkey hard.",
+              "cn": "他用力地拉那头驴。"
+            }
+          ]
+        },
+        {
+          "word": "punish",
+          "rootVisual": "<path d='M4 18 h16 M12 18 v-8 M8 6 l4 4 l4 -4' stroke='currentColor' stroke-width='2'/><rect x='8' y='2' width='8' height='4' fill='currentColor'/>",
+          "breakdown": [
+            "punish",
+            "(惩罚)"
+          ],
+          "imagery": "法官手中的木槌重重落下，或者一把戒尺。",
+          "translation": "惩罚",
+          "sentences": [
+            {
+              "en": "They were punished by the teacher.",
+              "cn": "他们被老师惩罚了。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "prefix": "Vocab N",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_n",
+      "displayName": "Vocabulary N",
+      "themeColor": "#f59e0b",
+      "prefixIntro": {
+        "title": "N 开头核心词",
+        "description": "高中阶段 N 开头的高频混合词汇。",
+        "imagery": "字母 N 像连接两点的通道或鼻子（Nose），常含“连接、否定（No）”之意。"
+      },
+      "words": [
+        {
+          "word": "nature",
+          "rootVisual": "<path d='M3 20 l 9 -15 l 9 15 h -18 z' stroke='currentColor' fill='none'/><path d='M9 10 l 4 7' stroke='currentColor'/><circle cx='17' cy='6' r='3' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "nature",
+            "(自然)"
+          ],
+          "imagery": "巍峨的山脉（大地）与天边的太阳（天空）共同构成了“自然”这个宏大的概念。",
+          "translation": "自然",
+          "sentences": [
+            {
+              "en": "The student should develop some skills to live in nature.",
+              "cn": "学生应该培养一些在自然界中生存的技能。"
+            }
+          ]
+        },
+        {
+          "word": "neighbor",
+          "rootVisual": "<rect x='4' y='8' width='6' height='12' stroke='currentColor' fill='none'/><rect x='14' y='8' width='6' height='12' stroke='currentColor' fill='none'/><path d='M10 14 h4' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "neigh",
+            "(附近)",
+            "bor",
+            "(居住者)"
+          ],
+          "imagery": "两座并排的房子，中间有一条连接线，表示居住得很近。",
+          "translation": "邻居",
+          "sentences": [
+            {
+              "en": "My neighbor is a teacher.",
+              "cn": "我的邻居是一位老师。"
+            }
+          ]
+        },
+        {
+          "word": "nervous",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='9' cy='10' r='1' fill='currentColor'/><circle cx='15' cy='10' r='1' fill='currentColor'/><path d='M8 15 l2 -1 l2 1 l2 -1 l2 1' stroke='currentColor'/>",
+          "breakdown": [
+            "nerv",
+            "(神经)",
+            "-ous (充满)"
+          ],
+          "imagery": "一个流着汗、嘴角颤抖的紧张表情。",
+          "translation": "紧张的",
+          "sentences": [
+            {
+              "en": "She was so nervous about her exams that she couldn't sleep.",
+              "cn": "她对考试如此紧张以至于睡不着觉。"
+            }
+          ]
+        },
+        {
+          "word": "nod",
+          "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/><path d='M12 14v4' stroke='currentColor' stroke-width='2'/><path d='M10 16l2 2 2-2' stroke='currentColor'/>",
+          "breakdown": [
+            "nod"
+          ],
+          "imagery": "一个头部上下运动的示意图。",
+          "translation": "点头",
+          "sentences": [
+            {
+              "en": "She nodded to us.",
+              "cn": "她对我们点了点头。"
+            }
+          ]
+        },
+        {
+          "word": "noise",
+          "rootVisual": "<path d='M6 9 v6' stroke='currentColor' stroke-width='2'/><path d='M11 5 v14' stroke='currentColor' stroke-width='2'/><path d='M16 10 v4' stroke='currentColor' stroke-width='2'/><path d='M21 7 v10' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "noise",
+            "(噪音)"
+          ],
+          "imagery": "混乱无序的声波线条，高低错落，象征着刺耳、不和谐的声音。",
+          "translation": "噪音",
+          "sentences": [
+            {
+              "en": "There is so much noise outside. It's too noisy.",
+              "cn": "外面噪音很大。太吵了。"
+            }
+          ]
+        },
+        {
+          "word": "noodle",
+          "rootVisual": "<path d='M4 14 a 8 8 0 0 0 16 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M7 10 q 2.5 -3 5 0 t 5 0' stroke='currentColor' fill='none'/><path d='M7 12 q 2.5 -3 5 0 t 5 0' stroke='currentColor' fill='none' opacity='0.7'/>",
+          "breakdown": [
+            "noodle",
+            "(面条)"
+          ],
+          "imagery": "一个半圆形的碗里盛着几条弯曲的波浪线，形象地代表了面条。",
+          "translation": "面条",
+          "sentences": [
+            {
+              "en": "People from the northern part of China like to have noodles.",
+              "cn": "中国北方人喜欢吃面条。"
+            }
+          ]
+        },
+        {
+          "word": "normal person",
+          "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/><path d='M6 20v-6h12v6' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "normal",
+            "person"
+          ],
+          "imagery": "一个没有任何特殊标记的标准人形图标。",
+          "translation": "普通人",
+          "sentences": [
+            {
+              "en": "He is just a normal person.",
+              "cn": "他只是一个普通人。"
+            }
+          ]
+        },
+        {
+          "word": "note",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='8' stroke='currentColor'/><line x1='8' y1='12' x2='16' y2='12' stroke='currentColor'/><line x1='8' y1='16' x2='14' y2='16' stroke='currentColor'/>",
+          "breakdown": [
+            "nota",
+            "(标记)"
+          ],
+          "imagery": "一张简单的写有文字的纸。",
+          "translation": "笔记",
+          "sentences": [
+            {
+              "en": "Make a note of this.",
+              "cn": "把这个记下来。"
+            }
+          ]
+        },
+        {
+          "word": "notebook",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M6 6 h-2 a 1 1 0 0 1 0 2 h 2' stroke='currentColor' fill='none'/><path d='M6 10 h-2 a 1 1 0 0 1 0 2 h 2' stroke='currentColor' fill='none'/><path d='M6 14 h-2 a 1 1 0 0 1 0 2 h 2' stroke='currentColor' fill='none'/><line x1='10' y1='8' x2='16' y2='8' stroke='currentColor' opacity='0.5'/><line x1='10' y1='12' x2='16' y2='12' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "note",
+            "(笔记)",
+            "book",
+            "(本子)"
+          ],
+          "imagery": "侧面带有螺旋线圈的笔记本。",
+          "translation": "笔记本",
+          "sentences": [
+            {
+              "en": "You can take notes in a notebook.",
+              "cn": "你可以在笔记本上记笔记。"
+            }
+          ]
+        },
+        {
+          "word": "novel",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><text x='12' y='14' font-size='10' text-anchor='middle' fill='currentColor'>New</text>",
+          "breakdown": [
+            "nov (新)",
+            "-el (小)"
+          ],
+          "imagery": "新奇的故事；长篇小说。",
+          "translation": "小说；新奇的",
+          "sentences": [
+            {
+              "en": "She wrote a historical novel.",
+              "cn": "她写了一本历史小说。"
+            },
+            {
+              "en": "That's a novel idea.",
+              "cn": "那是个新奇的想法。"
+            }
+          ]
+        },
+        {
+          "word": "november",
+          "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none' stroke-width='2'/><path d='M16 8 v8 a 4 4 0 0 1 -6 2' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Novem",
+            "(九)"
+          ],
+          "imagery": "数字 9 的形状。在旧历法中是第9个月 (Novem)。",
+          "translation": "十一月",
+          "sentences": [
+            {
+              "en": "November is late autumn.",
+              "cn": "十一月是深秋。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

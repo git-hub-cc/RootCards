@@ -1,0 +1,378 @@
+{
+  "prefix": "Vocab W",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_w",
+      "displayName": "Vocabulary W",
+      "themeColor": "#10b981",
+      "prefixIntro": {
+        "title": "W 开头核心词",
+        "description": "高中阶段 W 开头的高频混合词汇。",
+        "imagery": "字母 W 像水的波纹（Water）或波浪，常含“水、行走（Walk）、摆动”之意。"
+      },
+      "words": [
+        {
+          "word": "wallet",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M4 10 h16' stroke='currentColor'/><rect x='14' y='12' width='4' height='3' fill='currentColor'/>",
+          "breakdown": [
+            "wallet",
+            "(卷/包)"
+          ],
+          "imagery": "一个鼓鼓的钱包，里面露出一角钞票。",
+          "translation": "钱包",
+          "sentences": [
+            {
+              "en": "I've only got about 10 yuan in my wallet.",
+              "cn": "我钱包里只有大概10块钱。"
+            }
+          ]
+        },
+        {
+          "word": "war",
+          "rootVisual": "<path d='M4 18l4-10 4 6 4-10 4 14' stroke='currentColor' fill='none'/><circle cx='12' cy='4' r='2' fill='red' opacity='0.5'/>",
+          "breakdown": [
+            "war"
+          ],
+          "imagery": "交叉的剑，或者爆炸的蘑菇云。",
+          "translation": "战争",
+          "sentences": [
+            {
+              "en": "How many people died in the war?",
+              "cn": "有多少人在战争中死亡？"
+            }
+          ]
+        },
+        {
+          "word": "warm",
+          "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='currentColor'/><path d='M12 4 v-2 M12 20 v2 M4 12 h-2 M20 12 h2 M6 6 l-2 -2 M18 18 l2 2 M6 18 l-2 2 M18 6 l2 -2' stroke='currentColor' opacity='0.6'/>",
+          "breakdown": [
+            "wearm",
+            "(热)"
+          ],
+          "imagery": "散发着柔和光芒的太阳。",
+          "translation": "温暖",
+          "sentences": [
+            {
+              "en": "I like the warm weather in spring the most.",
+              "cn": "我最喜欢春天温暖的天气。"
+            }
+          ]
+        },
+        {
+          "word": "warn",
+          "rootVisual": "<path d='M12 6 v8' stroke='currentColor' stroke-width='3' stroke-linecap='round'/><circle cx='12' cy='18' r='1.5' fill='currentColor'/>",
+          "breakdown": [
+            "warn",
+            "(警告)"
+          ],
+          "imagery": "一个巨大的感叹号，提醒人们前方有危险。",
+          "translation": "警告",
+          "sentences": [
+            {
+              "en": "I warned you not to walk home alone.",
+              "cn": "我警告过你不要一个人在晚上走回家。"
+            }
+          ]
+        },
+        {
+          "word": "washroom",
+          "rootVisual": "<rect x='4' y='12' width='16' height='8' stroke='currentColor' fill='none'/><path d='M8 12v-2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2' stroke='currentColor'/><circle cx='12' cy='16' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "wash",
+            "room"
+          ],
+          "imagery": "一个洗手池和上面的水龙头。",
+          "translation": "洗手间",
+          "sentences": [
+            {
+              "en": "Sorry, I had to go to the washroom.",
+              "cn": "不好意思，我得去趟洗手间。"
+            }
+          ]
+        },
+        {
+          "word": "waste",
+          "rootVisual": "<path d='M6 6l12 12 M18 6l-12 12' stroke='currentColor' stroke-width='2'/><rect x='8' y='20' width='8' height='4' fill='currentColor'/>",
+          "breakdown": [
+            "waste"
+          ],
+          "imagery": "一个漏水的水龙头，或者扔进垃圾桶的食物。",
+          "translation": "浪费",
+          "sentences": [
+            {
+              "en": "It's a waste of time.",
+              "cn": "这是浪费时间。"
+            }
+          ]
+        },
+        {
+          "word": "watermelon",
+          "rootVisual": "<path d='M2 12a10 10 0 0 0 20 0H2z' fill='green' stroke='currentColor'/><path d='M4 12a8 8 0 0 0 16 0H4z' fill='red' opacity='0.8'/><circle cx='8' cy='16' r='0.5' fill='black'/><circle cx='12' cy='18' r='0.5' fill='black'/><circle cx='16' cy='16' r='0.5' fill='black'/>",
+          "breakdown": [
+            "water",
+            "melon"
+          ],
+          "imagery": "一片切开的半圆形西瓜，露出红色的瓜瓤和黑色的籽。",
+          "translation": "西瓜",
+          "sentences": [
+            {
+              "en": "What a big watermelon!",
+              "cn": "多大的一个西瓜啊！"
+            }
+          ]
+        },
+        {
+          "word": "weak",
+          "rootVisual": "<path d='M6 18h12' stroke='currentColor' stroke-width='2'/><path d='M12 18v-8' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='12' cy='8' r='2' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "weak"
+          ],
+          "imagery": "一根弯曲、快要折断的树枝，或者一个举不起哑铃的人。",
+          "translation": "虚弱的",
+          "sentences": [
+            {
+              "en": "He's not so weak as he looks.",
+              "cn": "他不像他看起来那么虚弱。"
+            }
+          ]
+        },
+        {
+          "word": "wear",
+          "rootVisual": "<path d='M16 4 l-4 2 l-4 -2 l-2 4 v10 h12 v-10 z' stroke='currentColor' fill='none'/><path d='M12 6 v14' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "werian",
+            "(覆盖)"
+          ],
+          "imagery": "一件简单的T恤衫轮廓。",
+          "translation": "穿",
+          "sentences": [
+            {
+              "en": "What should I wear tomorrow?",
+              "cn": "我明天该穿什么？"
+            }
+          ]
+        },
+        {
+          "word": "weather",
+          "rootVisual": "<circle cx='8' cy='8' r='3' fill='currentColor' opacity='0.5'/><path d='M18 12 a 3 3 0 0 0 -3 -3 a 4 4 0 0 0 -7 2 a 3 3 0 0 0 3 5 h 6 a 3 3 0 0 0 1 -4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "weder",
+            "(气候)"
+          ],
+          "imagery": "太阳躲在云层后面，代表天气变化。",
+          "translation": "天气",
+          "sentences": [
+            {
+              "en": "What's the weather like today?",
+              "cn": "今天天气怎么样？"
+            }
+          ]
+        },
+        {
+          "word": "weekend",
+          "rootVisual": "<rect x='2' y='4' width='20' height='16' rx='2' stroke='currentColor' fill='none'/><path d='M2 8h20' stroke='currentColor'/><path d='M16 8v12' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "week",
+            "end"
+          ],
+          "imagery": "日历上最后两列被高亮显示。",
+          "translation": "周末",
+          "sentences": [
+            {
+              "en": "What are you doing this weekend?",
+              "cn": "这个周末你做什么？"
+            }
+          ]
+        },
+        {
+          "word": "well",
+          "rootVisual": "<ellipse cx='12' cy='6' rx='6' ry='2' stroke='currentColor' fill='none'/><path d='M6 6v12a6 2 0 0 0 12 0V6' stroke='currentColor' fill='none'/><path d='M12 8v10' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "well"
+          ],
+          "imagery": "一个圆形的深井口，或者一个打水的水桶。",
+          "translation": "井",
+          "sentences": [
+            {
+              "en": "They dug a well to get water.",
+              "cn": "他们挖了一口井来取水。"
+            }
+          ]
+        },
+        {
+          "word": "wheel",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' stroke-width='2' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 4v16 M4 12h16' stroke='currentColor'/>",
+          "breakdown": [
+            "wheel"
+          ],
+          "imagery": "一个有辐条的车轮。",
+          "translation": "车轮",
+          "sentences": [
+            {
+              "en": "The wheel of the car has come off.",
+              "cn": "汽车的轮子掉了。"
+            }
+          ]
+        },
+        {
+          "word": "wild",
+          "rootVisual": "<path d='M12 2 v20 M12 6 l-6 4 M12 12 l6 4 M12 18 l-6 4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Wild",
+            "(野生的)"
+          ],
+          "imagery": "一株带刺的、自由生长的植物，象征着不受驯服的野生状态。",
+          "translation": "野生的",
+          "sentences": [
+            {
+              "en": "I love the wild horses in the picture. They are so lovely.",
+              "cn": "我喜欢照片里的野马。它们太可爱了。"
+            }
+          ]
+        },
+        {
+          "word": "wind",
+          "rootVisual": "<path d='M4 8 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/><path d='M6 16 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "wind",
+            "(风)"
+          ],
+          "imagery": "两条平行的波浪线，表示气流。",
+          "translation": "风",
+          "sentences": [
+            {
+              "en": "There is no wind today.",
+              "cn": "今天没有风。"
+            }
+          ]
+        },
+        {
+          "word": "windy",
+          "rootVisual": "<path d='M4 8 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/><path d='M6 12 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/><path d='M4 16 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none'/><path d='M20 8 a 2 2 0 0 1 2 2' stroke='currentColor' fill='none' opacity='0.5'/>",
+          "breakdown": [
+            "-y",
+            "(多...的)"
+          ],
+          "imagery": "密集的波浪线，甚至卷起了漩涡，表示风很大。",
+          "translation": "刮风的",
+          "sentences": [
+            {
+              "en": "It's too windy today.",
+              "cn": "今天风太大了。"
+            }
+          ]
+        },
+        {
+          "word": "wipe",
+          "rootVisual": "<path d='M4 12c4-4 8-4 12 0' stroke='currentColor' stroke-width='4' opacity='0.3'/><rect x='8' y='8' width='8' height='8' fill='currentColor'/>",
+          "breakdown": [
+            "wipe"
+          ],
+          "imagery": "一块抹布擦过玻璃，留下一道干净的痕迹。",
+          "translation": "擦拭",
+          "sentences": [
+            {
+              "en": "He wiped his hands on a towel.",
+              "cn": "他用毛巾擦了擦手。"
+            }
+          ]
+        },
+        {
+          "word": "wisdom",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 8a4 4 0 0 1 0 8' stroke='currentColor' fill='gray'/><circle cx='12' cy='8' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "wise",
+            "-dom"
+          ],
+          "imagery": "一只猫头鹰的头像，或者一个发光的大脑。",
+          "translation": "智慧",
+          "sentences": [
+            {
+              "en": "He is a man of great wisdom.",
+              "cn": "他是一个非常有智慧的人。"
+            }
+          ]
+        },
+        {
+          "word": "wise",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none'/><path d='M7 12 a 5 5 0 0 0 10 0' stroke='currentColor'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='9' r='1' fill='currentColor'/><path d='M12 2 v4' stroke='currentColor'/>",
+          "breakdown": [
+            "wise",
+            "(看见/知道)"
+          ],
+          "imagery": "一只戴着眼镜的猫头鹰，象征着智慧。",
+          "translation": "明智的；有智慧的",
+          "sentences": [
+            {
+              "en": "She is a wise woman.",
+              "cn": "她是一位有智慧的女性。"
+            }
+          ]
+        },
+        {
+          "word": "wish",
+          "rootVisual": "<path d='M12 21 s-6-4.5-6-10a6 6 0 0 1 12 0c0 5.5-6 10-6 10z' stroke='currentColor' fill='none'/><path d='M12 7 l1 3 h3 l-2.5 2 l1 3 l-2.5 -2 l-2.5 2 l1 -3 l-2.5 -2 h3 z' fill='currentColor'/>",
+          "breakdown": [
+            "wish",
+            "(愿望)"
+          ],
+          "imagery": "心中的一颗星星，代表难以实现的愿望。",
+          "translation": "希望（难实现）",
+          "sentences": [
+            {
+              "en": "I wish I could go to Tsinghua University.",
+              "cn": "我希望我能上清华大学。"
+            }
+          ]
+        },
+        {
+          "word": "wolf",
+          "rootVisual": "<path d='M4 14l4-8 4 4 4-4 4 8' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='1' fill='currentColor'/><circle cx='16' cy='10' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "wolf"
+          ],
+          "imagery": "一个尖耳朵、眼神犀利的狼头轮廓。",
+          "translation": "狼",
+          "sentences": [
+            {
+              "en": "The wolf ran away through the trees.",
+              "cn": "那只狼穿过树林跑掉了。"
+            }
+          ]
+        },
+        {
+          "word": "wood",
+          "rootVisual": "<rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none'/><path d='M8 8h8 M8 12h8 M8 16h8' stroke='currentColor' opacity='0.5'/><circle cx='12' cy='6' r='1' fill='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "wood"
+          ],
+          "imagery": "一根有年轮纹理的木头。",
+          "translation": "木头",
+          "sentences": [
+            {
+              "en": "The table is made of wood.",
+              "cn": "桌子是木头做的。"
+            }
+          ]
+        },
+        {
+          "word": "workday",
+          "rootVisual": "<rect x='2' y='4' width='20' height='16' rx='2' stroke='currentColor' fill='none'/><path d='M2 8h20' stroke='currentColor'/><path d='M6 8v12 M10 8v12 M14 8v12' stroke='currentColor'/>",
+          "breakdown": [
+            "work",
+            "day"
+          ],
+          "imagery": "日历上周一到周五的格子被标记。",
+          "translation": "工作日",
+          "sentences": [
+            {
+              "en": "Today is my workday.",
+              "cn": "今天是我工作日。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

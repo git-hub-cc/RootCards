@@ -1,0 +1,145 @@
+{
+  "prefix": "Vocab E",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_e",
+      "displayName": "Vocabulary E",
+      "themeColor": "#ef4444",
+      "prefixIntro": {
+        "title": "E 开头核心词",
+        "description": "高中阶段 E 开头的高频混合词汇。",
+        "imagery": "字母 E 像一只眼睛（Eye）或向外张望的窗户，常含“向外”之意。"
+      },
+      "words": [
+        {
+          "word": "economy",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><text x='12' y='16' text-anchor='middle' font-size='12' fill='currentColor'>$</text>",
+          "breakdown": [
+            "eco",
+            "(家)",
+            "nomy",
+            "(管理)"
+          ],
+          "imagery": "管理家里的钱财 -> 经济。",
+          "translation": "经济；节约",
+          "sentences": [
+            {
+              "en": "The global economy.",
+              "cn": "全球经济。"
+            }
+          ]
+        },
+        {
+          "word": "elaborate",
+          "rootVisual": "<path d='M4 4h16v16h-16z' stroke='currentColor' fill='none'/><path d='M6 6h12M6 10h12M6 14h8' stroke='currentColor' stroke-width='0.5'/>",
+          "breakdown": [
+            "e-",
+            "(出)",
+            "labor",
+            "(劳动)",
+            "ate"
+          ],
+          "imagery": "劳动做出来的 -> 精心制作的/详细阐述。",
+          "translation": "精心制作的；详细阐述",
+          "sentences": [
+            {
+              "en": "Please elaborate on your plan.",
+              "cn": "请详细说明你的计划。"
+            }
+          ]
+        },
+        {
+          "word": "elevator",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M12 16l-3-3h6z' fill='currentColor'/><path d='M12 8l-3 3h6z' fill='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "e-",
+            "(出/上)",
+            "lev",
+            "(举)",
+            "ator"
+          ],
+          "imagery": "向上举起的东西 -> 电梯（垂直）。",
+          "translation": "电梯",
+          "sentences": [
+            {
+              "en": "Take the elevator to the 5th floor.",
+              "cn": "乘电梯到5楼。"
+            }
+          ]
+        },
+        {
+          "word": "embarrass",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10h2M14 10h2' stroke='currentColor'/><path d='M8 16h8' stroke='currentColor'/><path d='M4 12h16' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "em-",
+            "(入)",
+            "bar",
+            "(阻碍/栅栏)"
+          ],
+          "imagery": "像被关进栅栏里一样进退两难 -> 尴尬。",
+          "translation": "使尴尬",
+          "sentences": [
+            {
+              "en": "I was embarrassed by his question.",
+              "cn": "他的问题让我很尴尬。"
+            }
+          ]
+        },
+        {
+          "word": "encyclopedia",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><path d='M12 6v12M6 12h12' stroke='currentColor'/>",
+          "breakdown": [
+            "en-",
+            "(入)",
+            "cycl",
+            "(圆/全)",
+            "pedia",
+            "(教育)"
+          ],
+          "imagery": "包含所有圆满教育知识的书 -> 百科全书。",
+          "translation": "百科全书",
+          "sentences": [
+            {
+              "en": "Look it up in the encyclopedia.",
+              "cn": "在百科全书里查一下。"
+            }
+          ]
+        },
+        {
+          "word": "envelope",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M4 6l8 6 8-6' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "en-",
+            "(入)",
+            "velop",
+            "(包)"
+          ],
+          "imagery": "把信包在里面 -> 信封。",
+          "translation": "信封",
+          "sentences": [
+            {
+              "en": "Put the letter in an envelope.",
+              "cn": "把信放进信封里。"
+            }
+          ]
+        },
+        {
+          "word": "evil",
+          "rootVisual": "<text x='12' y='16' font-size='12' text-anchor='middle' fill='currentColor'>live -> evil</text>",
+          "breakdown": [
+            "live (活) -> 颠倒"
+          ],
+          "imagery": "把 'live' (生命) 倒过来写，就是 'evil' (邪恶)。颠倒造词法。",
+          "translation": "邪恶的",
+          "sentences": [
+            {
+              "en": "Evil is the reverse of live.",
+              "cn": "邪恶是生命的对立面。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

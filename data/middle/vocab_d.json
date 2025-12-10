@@ -1,0 +1,451 @@
+{
+  "prefix": "Vocab D",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_d",
+      "displayName": "Vocabulary D",
+      "themeColor": "#f59e0b",
+      "prefixIntro": {
+        "title": "D 开头核心词",
+        "description": "高中阶段 D 开头的高频混合词汇。",
+        "imagery": "字母 D 像一个大肚子或弓（代表向下 Down 或坚固的大坝 Dam）。"
+      },
+      "words": [
+        {
+          "word": "dare",
+          "rootVisual": "<path d='M12 20V4' stroke='currentColor'/><path d='M12 4l-4 4 M12 4l4 4' stroke='currentColor'/><rect x='8' y='16' width='8' height='4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "dare"
+          ],
+          "imagery": "一个人站在悬崖边准备跳水，或者走钢丝。",
+          "translation": "敢",
+          "sentences": [
+            {
+              "en": "Try it if you dare.",
+              "cn": "你要是敢就试试。"
+            }
+          ]
+        },
+        {
+          "word": "dark",
+          "rootVisual": "<circle cx='12' cy='12' r='10' fill='currentColor'/><path d='M14 6 a 6 6 0 1 0 0 12' fill='#8b5cf6' stroke='none'/>",
+          "breakdown": [
+            "Dark",
+            "(黑暗)"
+          ],
+          "imagery": "漆黑的背景中只有一弯新月，代表没有光亮的黑暗。",
+          "translation": "黑暗",
+          "sentences": [
+            {
+              "en": "She is afraid of the dark.",
+              "cn": "她害怕黑暗。"
+            }
+          ]
+        },
+        {
+          "word": "daytime",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' fill='gold'/><path d='M12 2v2 M12 20v2 M2 12h2 M20 12h2' stroke='currentColor'/>",
+          "breakdown": [
+            "day",
+            "time"
+          ],
+          "imagery": "一个太阳高挂的图标。",
+          "translation": "白天",
+          "sentences": [
+            {
+              "en": "I can't sleep in the daytime.",
+              "cn": "我白天睡不著。"
+            }
+          ]
+        },
+        {
+          "word": "dead",
+          "rootVisual": "<path d='M12 4 v16 M4 10 h16' stroke='currentColor' stroke-width='2'/><path d='M8 20 h8' stroke='currentColor'/>",
+          "breakdown": [
+            "die (动)",
+            "dead (形)",
+            "death (名)"
+          ],
+          "imagery": "一个简单的十字架，静静地矗立在地面上。",
+          "translation": "死的；去世的",
+          "sentences": [
+            {
+              "en": "The rat was dead.",
+              "cn": "那只老鼠死了。"
+            }
+          ]
+        },
+        {
+          "word": "deal with",
+          "rootVisual": "<rect x='4' y='8' width='6' height='8' stroke='currentColor' fill='none'/><rect x='14' y='8' width='6' height='8' stroke='currentColor' fill='none'/><path d='M10 12h4' stroke='currentColor'/><path d='M12 10v4' stroke='currentColor'/>",
+          "breakdown": [
+            "deal",
+            "with"
+          ],
+          "imagery": "一双手在整理乱成一团的线，或者握手成交。",
+          "translation": "处理；应付",
+          "sentences": [
+            {
+              "en": "I'll deal with the children later.",
+              "cn": "我稍后会去照看孩子。"
+            }
+          ]
+        },
+        {
+          "word": "december",
+          "rootVisual": "<rect x='8' y='4' width='2' height='16' fill='currentColor'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Decem",
+            "(十)"
+          ],
+          "imagery": "数字 10 的形状 (1和0)。在旧历法中是第10个月 (Decem)。",
+          "translation": "十二月",
+          "sentences": [
+            {
+              "en": "Christmas is in December.",
+              "cn": "圣诞节在十二月。"
+            }
+          ]
+        },
+        {
+          "word": "decide",
+          "rootVisual": "<path d='M12 2 v10' stroke='currentColor'/><path d='M12 12 l-6 6 M12 12 l6 6' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "de- (向下)",
+            "cid (切)"
+          ],
+          "imagery": "手向下切，一锤定音，不再犹豫。",
+          "translation": "决定",
+          "sentences": [
+            {
+              "en": "I decided to learn English from Allen.",
+              "cn": "我决定（向下切）跟Allen学英语。"
+            }
+          ]
+        },
+        {
+          "word": "decrease",
+          "rootVisual": "<path d='M4 4 l6 4 l6 4 l6 4' stroke='currentColor' stroke-width='2' fill='none'/><path d='M22 16 v4 h-4' stroke='currentColor'/>",
+          "breakdown": [
+            "de- (向下)",
+            "crease (生长)"
+          ],
+          "imagery": "生长的方向朝下，即减少。",
+          "translation": "减少",
+          "sentences": [
+            {
+              "en": "Traffic decreases on holidays.",
+              "cn": "节假日交通流量减少（往下长）。"
+            }
+          ]
+        },
+        {
+          "word": "degree",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12l4-4' stroke='currentColor'/><path d='M12 12H18' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "de-",
+            "gree (步)"
+          ],
+          "imagery": "一个量角器，或者一张卷起来的学位证书。",
+          "translation": "度数；学位",
+          "sentences": [
+            {
+              "en": "He got a degree in economics.",
+              "cn": "他获得了经济学学位。"
+            }
+          ]
+        },
+        {
+          "word": "delicious",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='9' cy='10' r='1' fill='currentColor'/><circle cx='15' cy='10' r='1' fill='currentColor'/><path d='M9 14 q 3 4 6 0 v2 q -3 4 -6 0 z' fill='currentColor'/>",
+          "breakdown": [
+            "Delicious",
+            "(可口的)"
+          ],
+          "imagery": "一个笑脸正在舔嘴唇，表示食物非常美味。",
+          "translation": "可口的",
+          "sentences": [
+            {
+              "en": "The food is delicious.",
+              "cn": "这食物很美味。"
+            }
+          ]
+        },
+        {
+          "word": "describe",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8 M8 16 h4' stroke='currentColor'/>",
+          "breakdown": [
+            "de- (下)",
+            "scribe (写)"
+          ],
+          "imagery": "写下来，描绘。",
+          "translation": "描述",
+          "sentences": []
+        },
+        {
+          "word": "description",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 8 h8 M8 12 h8 M8 16 h4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Describe",
+            "(描述)",
+            "-tion",
+            "(名词)"
+          ],
+          "imagery": "一张写满文字的纸，代表详细的文字描述。",
+          "translation": "描述",
+          "sentences": [
+            {
+              "en": "This is the description of the phone.",
+              "cn": "这是这部手机的描述。"
+            }
+          ]
+        },
+        {
+          "word": "dessert",
+          "rootVisual": "<path d='M12 14c-4 0-6-3-6-3s2-3 6-3 6 3 6 3-2 3-6 3z' fill='currentColor' opacity='0.5'/><path d='M12 8c0-3 2-4 2-4s-1 1-2 1-2-1-2-1 2 1 2 4z' fill='white'/><circle cx='12' cy='4' r='1' fill='red'/>",
+          "breakdown": [
+            "dessert"
+          ],
+          "imagery": "一块精致的蛋糕或者一杯冰淇淋，上面可能有樱桃。",
+          "translation": "甜点",
+          "sentences": [
+            {
+              "en": "Would you like some dessert?",
+              "cn": "你想要一些甜点吗？"
+            }
+          ]
+        },
+        {
+          "word": "dictionary",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><text x='12' y='14' font-size='10' text-anchor='middle' fill='currentColor'>A-Z</text>",
+          "breakdown": [
+            "dict (说)",
+            "-ion",
+            "-ary (物)"
+          ],
+          "imagery": "记录人们说的话（词汇）的书。",
+          "translation": "字典",
+          "sentences": [
+            {
+              "en": "Look up this word in the dictionary.",
+              "cn": "在字典里查一下这个词。"
+            }
+          ]
+        },
+        {
+          "word": "dine",
+          "rootVisual": "<path d='M8 2 v20 M16 2 v20' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Dine",
+            "(进餐)"
+          ],
+          "imagery": "一个盘子旁边放着刀和叉，代表正式的进餐。",
+          "translation": "进餐",
+          "sentences": [
+            {
+              "en": "200 people can dine at the same time in the dining hall.",
+              "cn": "餐厅可同时容纳200人就餐。"
+            }
+          ]
+        },
+        {
+          "word": "discuss",
+          "rootVisual": "<path d='M4 18 h2 l2 -3 h8 l2 3 h2' stroke='currentColor' fill='none'/><circle cx='8' cy='8' r='2' fill='currentColor'/><circle cx='16' cy='8' r='2' fill='currentColor'/><path d='M10 8 h4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "dis- (分开)",
+            "cuss (摇动/讨论)"
+          ],
+          "imagery": "两个人面对面，中间有代表语言交流的线条。",
+          "translation": "讨论",
+          "sentences": [
+            {
+              "en": "Many questions are under discussion.",
+              "cn": "许多问题正在讨论中。"
+            }
+          ]
+        },
+        {
+          "word": "dish",
+          "rootVisual": "<path d='M4 12 h16 a 8 8 0 0 0 -16 0 M4 14 h16 M4 16 h16' stroke='currentColor' fill='none' stroke-width='2' opacity='0.7'/>",
+          "breakdown": [
+            "Dish",
+            "(盘子)"
+          ],
+          "imagery": "一叠堆放整齐的盘子。",
+          "translation": "盘子",
+          "sentences": [
+            {
+              "en": "You cook the food, and I'll wash the dishes.",
+              "cn": "你做饭，我来洗碗。"
+            }
+          ]
+        },
+        {
+          "word": "divide",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 4v16' stroke='currentColor' stroke-dasharray='2 2'/><path d='M4 12h16' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "di- (分)",
+            "vide (看)"
+          ],
+          "imagery": "一个圆被切成两半，或者除号 ÷。",
+          "translation": "分开",
+          "sentences": [
+            {
+              "en": "How should I divide the biscuit?",
+              "cn": "我该怎么分这块饼干？"
+            }
+          ]
+        },
+        {
+          "word": "doubt",
+          "rootVisual": "<path d='M4 18 l8 -14 l8 14' stroke='currentColor' fill='none'/><path d='M12 18 v-6' stroke='currentColor'/>",
+          "breakdown": [
+            "dou (二)",
+            "bt (concept)"
+          ],
+          "imagery": "有二心，在两者之间摇摆不定。",
+          "translation": "怀疑",
+          "sentences": [
+            {
+              "en": "There is no doubt.",
+              "cn": "毫无疑问。"
+            }
+          ]
+        },
+        {
+          "word": "down",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 10h2 M14 10h2' stroke='currentColor'/><path d='M8 16c2-1 6-1 8 0' stroke='currentColor'/>",
+          "breakdown": [
+            "down"
+          ],
+          "imagery": "一个垂头丧气的人，或者向下的箭头。",
+          "translation": "悲伤的；沮丧的",
+          "sentences": [
+            {
+              "en": "I felt down.",
+              "cn": "我感觉很难过。"
+            }
+          ]
+        },
+        {
+          "word": "dragon boat festival",
+          "rootVisual": "<path d='M2 15c0 0 5 4 10 4s9-5 9-5' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round'/><path d='M21 14l-1-3l2-2l-3 1l-1-2l-2 3' stroke='currentColor' fill='none' stroke-width='2' stroke-linejoin='round'/><path d='M2 15l-1-3l3 2' stroke='currentColor' fill='none' stroke-width='2' stroke-linejoin='round'/><path d='M7 17l-2 4 M12 18l-2 4 M17 17l-2 4' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": [
+            "Dragon Boat",
+            "(龙舟)",
+            "Festival",
+            "(节日)"
+          ],
+          "imagery": "一艘雕刻成龙形的细长独木舟，整齐划一的船桨如同龙爪，随着鼓点在水面上飞驰。",
+          "translation": "端午节",
+          "sentences": [
+            {
+              "en": "The Dragon Boat Festival can be dated back to the Zhou Dynasty.",
+              "cn": "端午节可以追溯到周朝。"
+            }
+          ]
+        },
+        {
+          "word": "drama",
+          "rootVisual": "<path d='M6 6c0-2 4-2 4 0 0 2-4 2-4 0z M14 6c0-2 4-2 4 0 0 2-4 2-4 0z' fill='currentColor'/><path d='M4 10h16v10H4z' stroke='currentColor' fill='none'/><path d='M4 14h16' stroke='currentColor'/>",
+          "breakdown": [
+            "drama"
+          ],
+          "imagery": "喜剧和悲剧的双面具图标。",
+          "translation": "戏剧；话剧",
+          "sentences": [
+            {
+              "en": "Most young people don't like dramas.",
+              "cn": "大多数年轻人不喜欢戏剧。"
+            }
+          ]
+        },
+        {
+          "word": "dream",
+          "rootVisual": "<g transform='translate(0, 0)'><circle cx='12' cy='18' r='3' fill='none' stroke='currentColor' stroke-width='2'/><path d='M12 21 v3' stroke='currentColor' stroke-width='2'/><path d='M10 24 h4' stroke='currentColor' stroke-width='2'/><path d='M12 14 a 1 1 0 0 1 0 -2 a 2 2 0 0 1 0 -4 a 3 3 0 0 1 6 0 a 2 2 0 0 1 0 4 a 1 1 0 0 1 0 2 z' fill='none' stroke='currentColor' stroke-width='1.5' stroke-dasharray='2 2'/><circle cx='15' cy='10' r='1' fill='currentColor' opacity='0.5'/></g>",
+          "breakdown": [
+            "Dream",
+            "(梦想)"
+          ],
+          "imagery": "一个人抬头仰望高悬的云朵，目光中充满了对未来的憧憬。",
+          "translation": "梦想；做梦",
+          "sentences": [
+            {
+              "en": "What's your dream?",
+              "cn": "你的梦想是什么？"
+            },
+            {
+              "en": "I dream of being a movie star.",
+              "cn": "我梦想成为电影明星。"
+            }
+          ]
+        },
+        {
+          "word": "dress",
+          "rootVisual": "<path d='M9 4 h6 l2 6 l4 10 h-18 l4 -10 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 10 h6' stroke='currentColor'/>",
+          "breakdown": [
+            "Dress",
+            "(连衣裙)"
+          ],
+          "imagery": "连为一体的上衣和裙摆，呈现出连衣裙的形状。",
+          "translation": "连衣裙；穿衣",
+          "sentences": [
+            {
+              "en": "She was wearing a long floral dress.",
+              "cn": "她穿着一条长碎花连衣裙。"
+            }
+          ]
+        },
+        {
+          "word": "drum",
+          "rootVisual": "<ellipse cx='12' cy='8' rx='8' ry='3' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 8 v10 a8 3 0 0 0 16 0 v-10' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Drum",
+            "(鼓)"
+          ],
+          "imagery": "一个圆柱体的鼓，能够敲击出节奏。",
+          "translation": "鼓",
+          "sentences": [
+            {
+              "en": "I love playing the drums.",
+              "cn": "我喜欢打鼓。"
+            }
+          ]
+        },
+        {
+          "word": "dumpling",
+          "rootVisual": "<path d='M4 16 a 8 8 0 0 1 16 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 16 l2 -1 l2 1 l2 -1 l2 1 l2 -1 l2 1 l2 -1 l2 1' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "Dumpling",
+            "(饺子)"
+          ],
+          "imagery": "半圆形的轮廓，边缘带有捏合的波浪纹，典型的饺子形状。",
+          "translation": "饺子",
+          "sentences": [
+            {
+              "en": "Chinese people often eat dumplings when celebrating Chinese New Year.",
+              "cn": "中国人在庆祝春节时经常吃饺子。"
+            }
+          ]
+        },
+        {
+          "word": "dustbin",
+          "rootVisual": "<path d='M6 6l2 14h8l2-14H6z' stroke='currentColor' fill='none'/><path d='M4 6h16' stroke='currentColor'/><path d='M10 6v-2h4v2' stroke='currentColor'/>",
+          "breakdown": [
+            "dust",
+            "bin"
+          ],
+          "imagery": "一个有盖子的垃圾桶。",
+          "translation": "垃圾箱",
+          "sentences": [
+            {
+              "en": "We should throw the rubbish into the dustbin.",
+              "cn": "我们应该把垃圾扔进垃圾箱。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

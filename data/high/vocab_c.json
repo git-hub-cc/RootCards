@@ -1,0 +1,277 @@
+{
+  "prefix": "Vocab C",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_c",
+      "displayName": "Vocabulary C",
+      "themeColor": "#10b981",
+      "prefixIntro": {
+        "title": "C 开头核心词",
+        "description": "高中阶段 C 开头的高频混合词汇。",
+        "imagery": "字母 C 像一只手做抓取的动作（或张开的嘴/包围圈）。"
+      },
+      "words": [
+        {
+          "word": "campaign",
+          "rootVisual": "<path d='M2 18l10-10 10 10' stroke='currentColor' fill='none'/><path d='M12 8v12' stroke='currentColor'/>",
+          "breakdown": [
+            "camp",
+            "(营地)",
+            "pain",
+            "(痛苦)"
+          ],
+          "imagery": "在营地里很痛苦 -> 打仗/战役。",
+          "translation": "战役；运动",
+          "sentences": [
+            {
+              "en": "An advertising campaign.",
+              "cn": "广告宣传活动。"
+            }
+          ]
+        },
+        {
+          "word": "canal",
+          "rootVisual": "<path d='M2 8 h20 M2 16 h20' stroke='currentColor' stroke-width='2'/><path d='M2 12 h20' stroke='currentColor' stroke-dasharray='4 2'/>",
+          "breakdown": [
+            "canal",
+            "(管/道)"
+          ],
+          "imagery": "人工开凿的狭窄水道。",
+          "translation": "运河",
+          "sentences": [
+            {
+              "en": "The Grand Canal.",
+              "cn": "大运河。"
+            }
+          ]
+        },
+        {
+          "word": "candle",
+          "rootVisual": "<rect x='10' y='10' width='4' height='12' fill='currentColor' opacity='0.8'/><path d='M12 10 v-2 q 1 -2 0 -4 q -1 2 0 4' stroke='currentColor' fill='#f59e0b'/>",
+          "breakdown": [
+            "cand (白/光)",
+            "-le"
+          ],
+          "imagery": "一支燃烧的蜡烛。",
+          "translation": "蜡烛",
+          "sentences": [
+            {
+              "en": "Light a candle.",
+              "cn": "点燃蜡烛。"
+            }
+          ]
+        },
+        {
+          "word": "capture",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><circle cx='12' cy='12' r='4' fill='currentColor'/>",
+          "breakdown": [
+            "capt",
+            "(抓)",
+            "ure"
+          ],
+          "imagery": "用网或者笼子抓住。",
+          "translation": "俘获；捕获",
+          "sentences": [
+            {
+              "en": "They captured the thief.",
+              "cn": "他们抓住了小偷。"
+            }
+          ]
+        },
+        {
+          "word": "cart",
+          "rootVisual": "<rect x='4' y='10' width='12' height='6' stroke='currentColor' fill='none'/><circle cx='6' cy='18' r='2' stroke='currentColor'/><circle cx='14' cy='18' r='2' stroke='currentColor'/><line x1='16' y1='10' x2='20' y2='8' stroke='currentColor'/>",
+          "breakdown": [
+            "car",
+            "(车)",
+            "t",
+            "(推)"
+          ],
+          "imagery": "用手推的车 -> 手推车/马车。",
+          "translation": "手推车；马车",
+          "sentences": [
+            {
+              "en": "A horse cart.",
+              "cn": "一辆马车。"
+            }
+          ]
+        },
+        {
+          "word": "cell",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "cell",
+            "(小室)"
+          ],
+          "imagery": "一个小隔间。可以是细胞、电池或牢房。",
+          "translation": "细胞；电池；牢房",
+          "sentences": [
+            {
+              "en": "Red blood cells.",
+              "cn": "红细胞。"
+            }
+          ]
+        },
+        {
+          "word": "channel",
+          "rootVisual": "<path d='M2 10 q 5 2 10 0 t 10 0' stroke='currentColor' fill='none'/><path d='M2 14 q 5 2 10 0 t 10 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "channel",
+            "(海峡)"
+          ],
+          "imagery": "宽阔的天然水道。c 和 ch 通假。",
+          "translation": "海峡；频道",
+          "sentences": [
+            {
+              "en": "Change the channel.",
+              "cn": "换台。"
+            }
+          ]
+        },
+        {
+          "word": "chaos",
+          "rootVisual": "<path d='M4 4l16 16M4 20l16-16M12 2l4 20M2 10h20' stroke='currentColor' stroke-width='1'/>",
+          "breakdown": [
+            "chaos",
+            "(混沌)"
+          ],
+          "imagery": "一团乱麻。be in chaos (处于混乱中)。",
+          "translation": "混乱",
+          "sentences": [
+            {
+              "en": "The room is in chaos.",
+              "cn": "房间一片混乱。"
+            }
+          ]
+        },
+        {
+          "word": "clean",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><path d='M8 8 l3 3 l5 -5' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "clean",
+            "(干净)"
+          ],
+          "imagery": "一尘不染的表面。",
+          "translation": "干净的",
+          "sentences": [
+            {
+              "en": "Keep the room clean.",
+              "cn": "保持房间清洁。"
+            }
+          ]
+        },
+        {
+          "word": "clear",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "clear (清楚)"
+          ],
+          "imagery": "没有污点，清晰可见。",
+          "translation": "清楚的",
+          "sentences": [
+            {
+              "en": "The water in the lake is very clear.",
+              "cn": "湖里的水非常清澈。"
+            }
+          ]
+        },
+        {
+          "word": "clone",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='4' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "clone",
+            "(音译)"
+          ],
+          "imagery": "复制一个一模一样的。谐音：克隆。",
+          "translation": "克隆",
+          "sentences": [
+            {
+              "en": "Dolly the sheep was a clone.",
+              "cn": "多利羊是个克隆体。"
+            }
+          ]
+        },
+        {
+          "word": "cognate",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor'/><circle cx='16' cy='12' r='4' stroke='currentColor'/><path d='M12 8 v8' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "co-",
+            "gnat (生)"
+          ],
+          "imagery": "同根生的词，像兄弟一样。",
+          "translation": "同源词",
+          "sentences": [
+            {
+              "en": "Cognates share a common origin.",
+              "cn": "同源词拥有共同的起源。"
+            }
+          ]
+        },
+        {
+          "word": "collide",
+          "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor'/><circle cx='16' cy='12' r='3' stroke='currentColor'/><path d='M11 12 l2 0' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "col-",
+            "lid (击)"
+          ],
+          "imagery": "两个物体相撞。",
+          "translation": "碰撞",
+          "sentences": [
+            {
+              "en": "The cars collided.",
+              "cn": "汽车相撞了。"
+            }
+          ]
+        },
+        {
+          "word": "collision",
+          "rootVisual": "<path d='M8 12 l8 0' stroke='currentColor' stroke-width='2'/><path d='M12 8 v8' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' stroke-dasharray='4 2'/>",
+          "breakdown": [
+            "collid",
+            "-ion"
+          ],
+          "imagery": "碰撞的现场。d 和 s 通假。",
+          "translation": "碰撞 (名词)",
+          "sentences": [
+            {
+              "en": "A head-on collision.",
+              "cn": "迎面相撞。"
+            }
+          ]
+        },
+        {
+          "word": "compound",
+          "rootVisual": "<rect x='4' y='8' width='6' height='8' stroke='currentColor' fill='none'/><rect x='14' y='8' width='6' height='8' stroke='currentColor' fill='none'/><path d='M10 12 h4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "com-",
+            "pound (放)"
+          ],
+          "imagery": "两个独立的单词放在一起组成新词。",
+          "translation": "复合词",
+          "sentences": [
+            {
+              "en": "'Blackboard' is a compound word.",
+              "cn": "'Blackboard' 是一个复合词。"
+            }
+          ]
+        },
+        {
+          "word": "cuckoo",
+          "rootVisual": "<path d='M16 8 l-4 2 l-4 -2' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='1' fill='currentColor'/><path d='M16 10 q -2 2 -4 0' stroke='currentColor'/>",
+          "breakdown": [
+            "拟声词"
+          ],
+          "imagery": "模仿布谷鸟的叫声。",
+          "translation": "布谷鸟",
+          "sentences": [
+            {
+              "en": "The cuckoo calls.",
+              "cn": "布谷鸟在叫。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

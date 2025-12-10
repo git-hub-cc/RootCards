@@ -1,0 +1,1020 @@
+{
+  "prefix": "Vocab C",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_c",
+      "displayName": "Vocabulary C",
+      "themeColor": "#10b981",
+      "prefixIntro": {
+        "title": "C 开头核心词",
+        "description": "高中阶段 C 开头的高频混合词汇。",
+        "imagery": "字母 C 像一只手做抓取的动作（或张开的嘴/包围圈）。"
+      },
+      "words": [
+        {
+          "word": "cabbage",
+          "rootVisual": "<path d='M2,12 A10,10 0 1 0 22,12 A10,10 0 1 0 2,12 Z M5 19.3A8.5 8.5 0 0 1 12 4.1a8.5 8.5 0 0 1 7 15.2 M5.4 14.5A10 10 0 0 1 12 4a10 10 0 0 1 6.6 10.5' fill='none' stroke='currentColor'/>",
+          "breakdown": [
+            "Cabbage",
+            "(卷心菜)"
+          ],
+          "imagery": "层层包裹的菜叶，形成一个圆球状，代表卷心菜。",
+          "translation": "卷心菜",
+          "sentences": [
+            {
+              "en": "Do you like eating cabbage?",
+              "cn": "你喜欢吃卷心菜吗？"
+            }
+          ]
+        },
+        {
+          "word": "calendar",
+          "rootVisual": "<rect x='4' y='6' width='16' height='14' rx='2' stroke='currentColor' fill='none'/><path d='M4 10 h16' stroke='currentColor'/><path d='M8 4 v4 M16 4 v4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "calend",
+            "(账本/第一天)",
+            "-ar"
+          ],
+          "imagery": "一本翻开的日历，红色的圆圈圈出了今天的日期。",
+          "translation": "日历",
+          "sentences": [
+            {
+              "en": "There was a calendar on the wall.",
+              "cn": "墙上挂着一个日历。"
+            }
+          ]
+        },
+        {
+          "word": "camera",
+          "rootVisual": "<rect x='4' y='8' width='16' height='10' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='13' r='3' stroke='currentColor' fill='none'/><rect x='14' y='6' width='4' height='2' fill='currentColor'/><circle cx='17' cy='10' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "camera",
+            "(房间/盒子 -> 相机)"
+          ],
+          "imagery": "经典的相机图标，中间有一个大大的镜头。",
+          "translation": "照相机",
+          "sentences": [
+            {
+              "en": "Is this camera new?",
+              "cn": "这台相机是新的吗？"
+            }
+          ]
+        },
+        {
+          "word": "camp",
+          "rootVisual": "<path d='M2 18 l10 -12 l10 12 h-20' stroke='currentColor' fill='none' stroke-width='2'/><line x1='12' y1='6' x2='12' y2='18' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "Camp",
+            "(营帐)"
+          ],
+          "imagery": "一个三角形的帐篷，代表露营。",
+          "translation": "营帐",
+          "sentences": [
+            {
+              "en": "We go camping every summer.",
+              "cn": "我们每年夏天都去露营。"
+            }
+          ]
+        },
+        {
+          "word": "can",
+          "rootVisual": "<ellipse cx='12' cy='6' rx='6' ry='2' stroke='currentColor' fill='none'/><path d='M6 6v12a6 2 0 0 0 12 0V6' stroke='currentColor' fill='none'/><path d='M14 4l2-2' stroke='currentColor'/>",
+          "breakdown": [
+            "can"
+          ],
+          "imagery": "一个圆柱形的易拉罐，拉环拉开了一点。",
+          "translation": "罐头；易拉罐",
+          "sentences": [
+            {
+              "en": "a can of Coke",
+              "cn": "一罐可乐"
+            }
+          ]
+        },
+        {
+          "word": "canada",
+          "rootVisual": "<path d='M12 2 L 8 8 H 4 L 9 11 L 6 18 L 12 14 L 18 18 L 15 11 L 20 8 H 16 L 12 2 Z' fill='currentColor'/>",
+          "breakdown": [
+            "Canada",
+            "(加拿大)"
+          ],
+          "imagery": "一片标志性的红色枫叶，加拿大的象征。",
+          "translation": "加拿大",
+          "sentences": [
+            {
+              "en": "Canada is next to the USA.",
+              "cn": "加拿大在美国旁边。"
+            }
+          ]
+        },
+        {
+          "word": "canadian",
+          "rootVisual": "<path d='M12 2 L 8 8 H 4 L 9 11 L 6 18 L 12 14 L 18 18 L 15 11 L 20 8 H 16 L 12 2 Z' fill='none' stroke='currentColor' stroke-width='1.5'/><circle cx='12' cy='12' r='1.5' fill='currentColor'/>",
+          "breakdown": [
+            "Canada",
+            "(加拿大)",
+            "-n",
+            "(的/人)"
+          ],
+          "imagery": "枫叶图案的中心有一个小人像，代表“加拿大的”或“加拿大人”。",
+          "translation": "加拿大的；加拿大人",
+          "sentences": [
+            {
+              "en": "Canadians speak English.",
+              "cn": "加拿大人说英语。"
+            }
+          ]
+        },
+        {
+          "word": "cancel",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M6 8l12 8 M18 8l-12 8' stroke='currentColor' stroke-width='2' stroke='red'/>",
+          "breakdown": [
+            "cancel"
+          ],
+          "imagery": "一个大红叉覆盖在日程表上。",
+          "translation": "取消",
+          "sentences": [
+            {
+              "en": "He was forced to cancel his visit.",
+              "cn": "他被迫取消了他的访问。"
+            }
+          ]
+        },
+        {
+          "word": "candy",
+          "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 12 l-4 -4 l2 0 l4 4 M16 12 l4 4 l-2 0 l-4 -4 M8 12 l-4 4 l2 0 l4 -4 M16 12 l4 -4 l-2 0 l-4 4' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Candy",
+            "(糖果)"
+          ],
+          "imagery": "一颗两头扭着包装纸的糖果。",
+          "translation": "糖果",
+          "sentences": [
+            {
+              "en": "Do you love eating candies?",
+              "cn": "你喜欢吃糖果吗？"
+            }
+          ]
+        },
+        {
+          "word": "cap",
+          "rootVisual": "<path d='M4 12 h16 v-4 a8 8 0 0 1 -16 0 z' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Cap",
+            "(帽子)"
+          ],
+          "imagery": "一顶带帽檐的棒球帽。",
+          "translation": "帽子",
+          "sentences": [
+            {
+              "en": "I love this Nike cap.",
+              "cn": "我喜欢这顶耐克帽子。"
+            }
+          ]
+        },
+        {
+          "word": "capital",
+          "rootVisual": "<path d='M12 2l-8 4v14h16v-14z' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='3' fill='gold'/><path d='M12 2l2 4h-4z' fill='currentColor'/>",
+          "breakdown": [
+            "capit (头)",
+            "-al"
+          ],
+          "imagery": "地图上一个带五角星的圆圈标志。",
+          "translation": "首都；省会",
+          "sentences": [
+            {
+              "en": "Beijing is the capital of China.",
+              "cn": "北京是中国的首都。"
+            }
+          ]
+        },
+        {
+          "word": "care",
+          "rootVisual": "<path d='M12 20l-8-8a5 5 0 1 1 8-7a5 5 0 1 1 8 7z' stroke='currentColor' fill='none'/><path d='M8 8c2 2 6 2 8 0' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "care"
+          ],
+          "imagery": "双手捧着一颗心。",
+          "translation": "关心",
+          "sentences": [
+            {
+              "en": "Why do I care what they think?",
+              "cn": "我为什么要关心他们想什么？"
+            }
+          ]
+        },
+        {
+          "word": "caring",
+          "rootVisual": "<path d='M12 20l-8-8a5 5 0 1 1 8-7a5 5 0 1 1 8 7z' fill='pink'/><path d='M8 8h8' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "care",
+            "-ing"
+          ],
+          "imagery": "一双手呵护着一株幼苗。",
+          "translation": "关心的；体贴的",
+          "sentences": [
+            {
+              "en": "He is a caring friend.",
+              "cn": "他是一个体贴的朋友。"
+            }
+          ]
+        },
+        {
+          "word": "carrot",
+          "rootVisual": "<path d='M12 20 L8 6 L16 6 Z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 6 v-4' stroke='currentColor'/><path d='M12 2 l-2 2 M12 2 l2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "Carrot",
+            "(胡萝卜)"
+          ],
+          "imagery": "典型的圆锥根茎形状，顶端带着绿叶。",
+          "translation": "胡萝卜",
+          "sentences": [
+            {
+              "en": "Rabbits love to eat carrots.",
+              "cn": "兔子爱吃胡萝卜。"
+            },
+            {
+              "en": "She chopped up the carrots for the stew.",
+              "cn": "她把胡萝卜切碎炖汤。"
+            }
+          ]
+        },
+        {
+          "word": "cartoon",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M8 18 l-2 4 h12 l-2 -4' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' stroke='currentColor'/><path d='M11 11 a 1 1 0 0 1 2 0' stroke='currentColor'/>",
+          "breakdown": [
+            "carton",
+            "(草图/纸板)"
+          ],
+          "imagery": "电视机屏幕上的一张笑脸。",
+          "translation": "卡通片",
+          "sentences": [
+            {
+              "en": "I like watching cartoons very much.",
+              "cn": "我非常喜欢看卡通片。"
+            }
+          ]
+        },
+        {
+          "word": "case",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M10 6v-2h4v2' stroke='currentColor'/><path d='M12 6v12' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "case"
+          ],
+          "imagery": "一个公文包，或者一个侦探正在研究的档案袋。",
+          "translation": "情况；案例",
+          "sentences": [
+            {
+              "en": "In that case, nobody could save him.",
+              "cn": "在那种情况下，没人能救他。"
+            }
+          ]
+        },
+        {
+          "word": "catch",
+          "rootVisual": "<path d='M6 6c6 0 12 6 12 12' stroke='currentColor' fill='none'/><path d='M16 16l2 2-2 2' stroke='currentColor'/><circle cx='18' cy='18' r='2' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "catch"
+          ],
+          "imagery": "两只手合拢抓住一个飞来的球。",
+          "translation": "抓住；赶上",
+          "sentences": [
+            {
+              "en": "I didn't catch the early bus.",
+              "cn": "我没赶上早班车。"
+            }
+          ]
+        },
+        {
+          "word": "celebrate",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l-4 -4 m8 0 l-4 4 m0 0 v 6' stroke='currentColor'/>",
+          "breakdown": [
+            "celebr (名望/拥挤)",
+            "-ate (动词后缀)"
+          ],
+          "imagery": "很多人聚在一起庆祝。",
+          "translation": "庆祝",
+          "sentences": [
+            {
+              "en": "We had a tea party to celebrate our parents’ silver wedding.",
+              "cn": "我们开了个茶话会庆祝父母的银婚。"
+            }
+          ]
+        },
+        {
+          "word": "center",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "Center",
+            "(中心)"
+          ],
+          "imagery": "一个圆圈的正中央有一个实心点，清晰地标示出中心位置。",
+          "translation": "中心",
+          "sentences": [
+            {
+              "en": "A spot is in the center of the circle.",
+              "cn": "圆的中心有一个点。"
+            }
+          ]
+        },
+        {
+          "word": "ceremony",
+          "rootVisual": "<path d='M4 20h16' stroke='currentColor'/><rect x='8' y='14' width='8' height='6' stroke='currentColor' fill='none'/><path d='M12 2v8' stroke='currentColor'/><circle cx='12' cy='4' r='2' fill='gold'/>",
+          "breakdown": [
+            "ceremon (神圣)",
+            "-y"
+          ],
+          "imagery": "一个领奖台，或者婚礼上的拱门。",
+          "translation": "仪式；典礼",
+          "sentences": [
+            {
+              "en": "The wedding ceremony is great.",
+              "cn": "婚礼很棒。"
+            }
+          ]
+        },
+        {
+          "word": "chain",
+          "rootVisual": "<path d='M4 12h4a2 2 0 0 1 2 2v-4a2 2 0 0 1-2 2h-4z' stroke='currentColor'/><path d='M12 12h4a2 2 0 0 1 2 2v-4a2 2 0 0 1-2 2h-4z' stroke='currentColor'/><path d='M20 12h-4' stroke='currentColor'/>",
+          "breakdown": [
+            "chain"
+          ],
+          "imagery": "几个相扣的金属环。",
+          "translation": "链条",
+          "sentences": [
+            {
+              "en": "People stand on the top of the food chain.",
+              "cn": "人类站在食物链的顶端。"
+            }
+          ]
+        },
+        {
+          "word": "chalk",
+          "rootVisual": "<rect x='8' y='4' width='4' height='16' stroke='currentColor' fill='white'/><path d='M8 20l4 0' stroke='currentColor'/>",
+          "breakdown": [
+            "chalk"
+          ],
+          "imagery": "一根白色的粉笔。",
+          "translation": "粉笔",
+          "sentences": [
+            {
+              "en": "a box of colored chalks",
+              "cn": "一盒彩色粉笔"
+            }
+          ]
+        },
+        {
+          "word": "chance",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='1' fill='currentColor'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='15' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "cadere",
+            "(掉落/发生)"
+          ],
+          "imagery": "一颗骰子的形状，象征随机性和机会。",
+          "translation": "机会",
+          "sentences": [
+            {
+              "en": "He seized the last chance.",
+              "cn": "他抓住了最后的机会。"
+            }
+          ]
+        },
+        {
+          "word": "cheap",
+          "rootVisual": "<path d='M 20.59 13.41 l -7.17 7.17 a 2 2 0 0 1 -2.83 0 L 2 12 V 2 h 10 l 8.59 8.59 a 2 2 0 0 1 0 2.82 z M 7 7 L 7.01 7 M 12 11 v 6 L 10 15 L 12 17 L 14 15 m 15 14 l -3 3 l -3 -3' fill='none' stroke='currentColor'/>",
+          "breakdown": [
+            "Cheap",
+            "(便宜)"
+          ],
+          "imagery": "一张价格标签，上面有一个指向下方的箭头，表示价格低廉。",
+          "translation": "便宜的",
+          "sentences": [
+            {
+              "en": "The small bag is a lot cheaper than the big one.",
+              "cn": "这个小包比那个大包便宜多了。"
+            }
+          ]
+        },
+        {
+          "word": "chess",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M5 21h14v-2H5v2z M7 19V9h10v10H7z M5 9h14 M7 9V5h2v4 M11 9V5h2v4 M15 9V5h2v4' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></g>",
+          "breakdown": [
+            "Chess",
+            "(国际象棋)"
+          ],
+          "imagery": "国际象棋棋子“车”（Rook）的轮廓，形似城堡，是棋盘上战略与力量的象征。",
+          "translation": "国际象棋",
+          "sentences": [
+            {
+              "en": "I have never played chess before.",
+              "cn": "我以前从未下过国际象棋。"
+            }
+          ]
+        },
+        {
+          "word": "childhood",
+          "rootVisual": "<path d='M12 20l-4-4 4-4 4 4z' fill='currentColor' opacity='0.5'/><circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/><path d='M8 12l2 4 2-2' stroke='currentColor'/>",
+          "breakdown": [
+            "child",
+            "-hood"
+          ],
+          "imagery": "一个荡秋千的孩子，或者一只泰迪熊。",
+          "translation": "童年",
+          "sentences": [
+            {
+              "en": "I had a very happy childhood.",
+              "cn": "我有一个非常快乐的童年。"
+            }
+          ]
+        },
+        {
+          "word": "choice",
+          "rootVisual": "<path d='M12 18 v-6' stroke='currentColor' stroke-width='2'/><path d='M12 12 l-4 -6' stroke='currentColor' stroke-width='2'/><path d='M12 12 l4 -6' stroke='currentColor' stroke-width='2'/><circle cx='8' cy='6' r='1' fill='currentColor'/><circle cx='16' cy='6' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "choisir",
+            "(选择)"
+          ],
+          "imagery": "一个 Y 形的分岔路口，面临两个选项。",
+          "translation": "选择 (名词)",
+          "sentences": [
+            {
+              "en": "He has to make some important choices.",
+              "cn": "他必须做出一些重要的选择。"
+            }
+          ]
+        },
+        {
+          "word": "choose",
+          "rootVisual": "<path d='M12 18 v-6' stroke='currentColor' stroke-width='2'/><path d='M12 12 l-4 -6' stroke='currentColor' stroke-width='2'/><path d='M12 12 l4 -6' stroke='currentColor' stroke-width='2' opacity='0.3'/><circle cx='8' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "ceosan",
+            "(挑选)"
+          ],
+          "imagery": "在分岔路口中，高亮选中了其中一条路。",
+          "translation": "选择 (动词)",
+          "sentences": [
+            {
+              "en": "Choose your favorite way to learn English.",
+              "cn": "选择你最喜欢的英语学习方式。"
+            }
+          ]
+        },
+        {
+          "word": "chopstick",
+          "rootVisual": "<path d='M4 4l16 16' stroke='currentColor' stroke-width='2'/><path d='M8 2l12 12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "chop",
+            "stick"
+          ],
+          "imagery": "一双并排的筷子。",
+          "translation": "筷子",
+          "sentences": [
+            {
+              "en": "Can you eat noodles with chopsticks?",
+              "cn": "你会用筷子吃面条吗？"
+            }
+          ]
+        },
+        {
+          "word": "Christmas",
+          "rootVisual": "<path d='M12 2l-4 8h8z' fill='green'/><path d='M12 6l-6 10h12z' fill='green'/><path d='M12 10l-8 12h16z' fill='green'/><rect x='10' y='22' width='4' height='4' fill='brown'/>",
+          "breakdown": [
+            "Christ",
+            "mass"
+          ],
+          "imagery": "一棵装饰着彩灯和星星的圣诞树。",
+          "translation": "圣诞节",
+          "sentences": [
+            {
+              "en": "Are you going home for Christmas?",
+              "cn": "你圣诞节回家吗？"
+            }
+          ]
+        },
+        {
+          "word": "classmate",
+          "rootVisual": "<g><circle cx='8' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M8 11v5' stroke='currentColor'/><circle cx='16' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M16 11v5' stroke='currentColor'/><rect x='6' y='16' width='12' height='2' fill='currentColor'/></g>",
+          "breakdown": [
+            "class",
+            "mate"
+          ],
+          "imagery": "两个坐在课桌旁学习的学生。",
+          "translation": "同学",
+          "sentences": [
+            {
+              "en": "He is my classmate.",
+              "cn": "他是我的同学。"
+            }
+          ]
+        },
+        {
+          "word": "clerk",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><rect x='14' y='14' width='6' height='4' fill='currentColor' opacity='0.6'/>",
+          "breakdown": [
+            "clerk"
+          ],
+          "imagery": "一个人坐在办公桌后，手里拿着笔或文件，正在处理事务。",
+          "translation": "职员；文员",
+          "sentences": [
+            {
+              "en": "The clerk is working hard.",
+              "cn": "这个职员工作很努力。"
+            }
+          ]
+        },
+        {
+          "word": "cloud",
+          "rootVisual": "<path d='M8 18 a4 4 0 0 1 0 -8 h8 a6 6 0 0 1 0 12 h-6 a4 4 0 0 1 -2 -4 z' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Cloud",
+            "(云)"
+          ],
+          "imagery": "天空中一朵蓬松的白云。",
+          "translation": "云",
+          "sentences": [
+            {
+              "en": "There is a big cloud in the sky.",
+              "cn": "天空中有一大朵云。"
+            }
+          ]
+        },
+        {
+          "word": "cloudy",
+          "rootVisual": "<circle cx='16' cy='8' r='4' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 18 a4 4 0 0 1 0 -8 h8 a6 6 0 0 1 0 12 h-6 a4 4 0 0 1 -2 -4 z' fill='currentColor'/>",
+          "breakdown": [
+            "Cloud",
+            "(云)",
+            "-y",
+            "(…的)"
+          ],
+          "imagery": "太阳被一朵大云彩遮住了一部分，表示多云的天气。",
+          "translation": "多云的",
+          "sentences": [
+            {
+              "en": "It will be cloudy tomorrow.",
+              "cn": "明天将是多云天气。"
+            }
+          ]
+        },
+        {
+          "word": "coach",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><path d='M18 6h-2v2h2z' stroke='currentColor'/><path d='M19 7l2-1' stroke='currentColor'/>",
+          "breakdown": [
+            "coach"
+          ],
+          "imagery": "一个人吹着哨子，手里拿着战术板。",
+          "translation": "教练",
+          "sentences": [
+            {
+              "en": "He is our football coach.",
+              "cn": "他是我们的足球教练。"
+            }
+          ]
+        },
+        {
+          "word": "coast",
+          "rootVisual": "<path d='M2 12s4-2 8 0 8 0 12-2' stroke='currentColor' fill='none'/><path d='M2 12v10h20v-8' fill='currentColor' opacity='0.2'/><circle cx='18' cy='4' r='2' fill='gold'/>",
+          "breakdown": [
+            "coast"
+          ],
+          "imagery": "一条弯曲的海岸线，一边是陆地，一边是海洋。",
+          "translation": "海岸",
+          "sentences": [
+            {
+              "en": "We drove along the Pacific coasts.",
+              "cn": "我们沿着太平洋海岸开车。"
+            }
+          ]
+        },
+        {
+          "word": "coin",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><text x='8' y='16' font-size='12' fill='currentColor'>$</text>",
+          "breakdown": [
+            "coin"
+          ],
+          "imagery": "一枚硬币，上面有货币符号。",
+          "translation": "硬币",
+          "sentences": [
+            {
+              "en": "There is a coin on the ground.",
+              "cn": "地上有一枚硬币。"
+            }
+          ]
+        },
+        {
+          "word": "comfortable",
+          "rootVisual": "<path d='M4 14 q 8 4 16 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "comfort (舒适)",
+            "-able (能...的)"
+          ],
+          "imagery": "让人感觉舒适的。",
+          "translation": "舒服的",
+          "sentences": []
+        },
+        {
+          "word": "community",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='2' stroke='currentColor'/><circle cx='16' cy='10' r='2' stroke='currentColor'/><circle cx='12' cy='16' r='2' stroke='currentColor'/>",
+          "breakdown": [
+            "commun (共同)",
+            "-ity"
+          ],
+          "imagery": "几个小房子围成一圈，或者几个人手拉手围成一圈。",
+          "translation": "社区",
+          "sentences": [
+            {
+              "en": "We meet once a month to discuss community problems.",
+              "cn": "我们每月见一次面来讨论社区问题。"
+            }
+          ]
+        },
+        {
+          "word": "connect",
+          "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M8 12h8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "con-",
+            "nect (连)"
+          ],
+          "imagery": "两个拼图块扣在一起，或者插头插入插座。",
+          "translation": "连接",
+          "sentences": [
+            {
+              "en": "Can you connect it with another one?",
+              "cn": "你能把它和另一个连接起来吗？"
+            }
+          ]
+        },
+        {
+          "word": "consumer",
+          "rootVisual": "<path d='M12 12C14.2 12 16 10.2 16 8s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4z M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6' stroke='currentColor' fill='none'/><path d='M16 16l4-2l-1 4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "consume (消耗)",
+            "-er (人)"
+          ],
+          "imagery": "一个张大嘴巴的人形轮廓，或者一个正在吞噬金币/资源的图标。",
+          "translation": "消费者",
+          "sentences": [
+            {
+              "en": "A smaller vehicle will consume less fuel.",
+              "cn": "小一点的交通工具会消耗更少的燃料。"
+            }
+          ]
+        },
+        {
+          "word": "cook",
+          "rootVisual": "<path d='M4 14 h16 v4 a 4 4 0 0 1 -4 4 h-8 a 4 4 0 0 1 -4 -4 z' stroke='currentColor' fill='none'/><path d='M6 14 v-4 M10 14 v-6 M14 14 v-6 M18 14 v-4' stroke='currentColor' stroke-linecap='round'/>",
+          "breakdown": [
+            "cook",
+            "(烹饪)"
+          ],
+          "imagery": "一个正在冒着热气的汤锅。",
+          "translation": "烹饪；厨师",
+          "sentences": [
+            {
+              "en": "Every cook often cooks food in their own way.",
+              "cn": "每个厨师通常都有自己烹饪食物的方式。"
+            }
+          ]
+        },
+        {
+          "word": "cookie",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><circle cx='10' cy='10' r='1' fill='currentColor'/><circle cx='14' cy='11' r='1' fill='currentColor'/><circle cx='11' cy='14' r='1' fill='currentColor'/><circle cx='15' cy='14' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "cookie"
+          ],
+          "imagery": "一块圆形的曲奇，上面嵌着巧克力豆。",
+          "translation": "曲奇饼干",
+          "sentences": [
+            {
+              "en": "I'd like a glass of milk and a cookie.",
+              "cn": "我想要一杯牛奶和一块曲奇饼干。"
+            }
+          ]
+        },
+        {
+          "word": "corn",
+          "rootVisual": "<ellipse cx='12' cy='12' rx='4' ry='10' stroke='currentColor' fill='none'/><path d='M12 2 v20 M8 12 h8' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "corn",
+            "(谷物/玉米)"
+          ],
+          "imagery": "一根金黄色的玉米棒，颗粒饱满。",
+          "translation": "玉米",
+          "sentences": [
+            {
+              "en": "All our chickens are fed on corn.",
+              "cn": "我们所有的鸡都是喂玉米长大的。"
+            }
+          ]
+        },
+        {
+          "word": "cost",
+          "rootVisual": "<text x='6' y='16' font-size='16' fill='currentColor'>$</text><path d='M12 12l6-6' stroke='currentColor'/><path d='M16 6l2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "cost"
+          ],
+          "imagery": "钱币符号和向下的箭头，表示付出代价。",
+          "translation": "花费",
+          "sentences": [
+            {
+              "en": "How much does it cost?",
+              "cn": "它值多少钱？"
+            }
+          ]
+        },
+        {
+          "word": "costume",
+          "rootVisual": "<path d='M12 4l-4 8h8z' fill='purple' opacity='0.5'/><circle cx='12' cy='4' r='2' fill='currentColor'/><path d='M12 12v8 M8 20h8' stroke='currentColor'/>",
+          "breakdown": [
+            "costume"
+          ],
+          "imagery": "一件华丽的戏服或万圣节装扮。",
+          "translation": "服装；戏服",
+          "sentences": [
+            {
+              "en": "We look forward to the coming costume party.",
+              "cn": "我们期待即将到来的化装舞会。"
+            }
+          ]
+        },
+        {
+          "word": "cotton",
+          "rootVisual": "<circle cx='12' cy='10' r='6' stroke='currentColor' fill='white'/><path d='M12 16v6 M12 18l-3 2 M12 18l3 2' stroke='currentColor'/>",
+          "breakdown": [
+            "cotton"
+          ],
+          "imagery": "一朵蓬松的棉花球。",
+          "translation": "棉花",
+          "sentences": [
+            {
+              "en": "The cloth is made of cotton.",
+              "cn": "这块布是棉花做的。"
+            }
+          ]
+        },
+        {
+          "word": "country",
+          "rootVisual": "<path d='M4 20 L4 4 h10 l-2 4 l2 4 h-10' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Country",
+            "(国家)"
+          ],
+          "imagery": "一根旗杆上飘扬着一面旗帜，代表一个主权国家。",
+          "translation": "国家",
+          "sentences": [
+            {
+              "en": "Australia is a big country like China.",
+              "cn": "澳大利亚和中国一样是个大国。"
+            }
+          ]
+        },
+        {
+          "word": "countryside",
+          "rootVisual": "<path d='M2 18 C 6 14, 8 14, 12 18 S 18 22, 22 18' stroke='currentColor' fill='none' stroke-width='2'/><rect x='14' y='14' width='4' height='4' stroke='currentColor' fill='none'/><path d='M16 18 v-2 h-1' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "Country",
+            "(国家/乡野)",
+            "Side",
+            "(边)"
+          ],
+          "imagery": "连绵起伏的山丘和田野，远处有一座小房子，描绘了宁静的乡村景象。",
+          "translation": "农村",
+          "sentences": [
+            {
+              "en": "Life in the countryside is boring.",
+              "cn": "农村的生活很无聊。"
+            }
+          ]
+        },
+        {
+          "word": "courage",
+          "rootVisual": "<path d='M12 4l-8 4v6c0 5 8 10 8 10s8-5 8-10V8l-8-4z' stroke='currentColor' fill='none'/><path d='M12 8l2 6h-4z' fill='red'/>",
+          "breakdown": [
+            "cour (心)",
+            "-age"
+          ],
+          "imagery": "一只狮子的头，或者一颗燃烧的心。",
+          "translation": "勇气",
+          "sentences": [
+            {
+              "en": "It takes courage to do that.",
+              "cn": "做那件事需要勇气。"
+            }
+          ]
+        },
+        {
+          "word": "course",
+          "rootVisual": "<path d='M4 18 c 4 -8 12 -8 16 0' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><circle cx='4' cy='18' r='2' fill='currentColor'/><circle cx='20' cy='18' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "cours (跑/过程)"
+          ],
+          "imagery": "跑过的一段路程；课程（从开始到结束的过程）。",
+          "translation": "课程；过程",
+          "sentences": [
+            {
+              "en": "I am taking an English course this semester.",
+              "cn": "我这学期在上英语课。"
+            }
+          ]
+        },
+        {
+          "word": "cousin",
+          "rootVisual": "<circle cx='12' cy='6' r='2' stroke='currentColor' fill='none'/><path d='M12 8 v4' stroke='currentColor'/><path d='M8 12 h8' stroke='currentColor'/><line x1='8' y1='12' x2='8' y2='16' stroke='currentColor'/><line x1='16' y1='12' x2='16' y2='16' stroke='currentColor'/><circle cx='8' cy='18' r='2' fill='currentColor'/><circle cx='16' cy='18' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "Cousin",
+            "(堂表亲)"
+          ],
+          "imagery": "家族树的分支，连接着同辈的亲属。",
+          "translation": "堂(表)兄弟姐妹",
+          "sentences": [
+            {
+              "en": "I have three cousins.",
+              "cn": "我有三个堂(表)兄弟姐妹。"
+            },
+            {
+              "en": "My cousin lives in London.",
+              "cn": "我的表兄住在伦敦。"
+            }
+          ]
+        },
+        {
+          "word": "cream",
+          "rootVisual": "<path d='M12 16c-3 0-5-2-5-5 0-3 2-6 5-8 3 2 5 5 5 8 0 3-2 5-5 5z' fill='white' stroke='currentColor'/><path d='M12 3c-1 1-2 2-2 3' stroke='currentColor'/>",
+          "breakdown": [
+            "cream"
+          ],
+          "imagery": "一团柔软的白色奶油，或者一个奶油瓶。",
+          "translation": "奶油",
+          "sentences": [
+            {
+              "en": "Can I have an ice cream?",
+              "cn": "我可以要一个冰淇淋吗？"
+            }
+          ]
+        },
+        {
+          "word": "create",
+          "rootVisual": "<path d='M12 8 l-4 8 h8 z' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "cre (生长)",
+            "-ate (动词后缀)"
+          ],
+          "imagery": "使某物生长出来，即创造。",
+          "translation": "创造",
+          "sentences": [
+            {
+              "en": "The new factory is expected to create more than 400 new jobs.",
+              "cn": "新工厂预计将创造400多个新工作岗位。"
+            }
+          ]
+        },
+        {
+          "word": "crime",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' stroke-width='2'/><circle cx='16' cy='12' r='4' stroke='currentColor' stroke-width='2'/><line x1='12' y1='12' x2='12' y2='16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Crime",
+            "(犯罪)"
+          ],
+          "imagery": "一副手铐的图标，象征着犯罪和法律制裁。",
+          "translation": "犯罪",
+          "sentences": [
+            {
+              "en": "The police arrived at the crime scene.",
+              "cn": "警察到达了犯罪现场。"
+            }
+          ]
+        },
+        {
+          "word": "criminal",
+          "rootVisual": "<circle cx='12' cy='8' r='3' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 11 v8 h6 v-8' stroke='currentColor' fill='none' stroke-width='2'/><rect x='8' y='6' width='8' height='2' fill='currentColor'/>",
+          "breakdown": [
+            "Crime",
+            "(犯罪)",
+            "-al",
+            "(…的人)"
+          ],
+          "imagery": "一个简笔画小人，眼睛被一条黑带遮住，代表罪犯。",
+          "translation": "罪犯",
+          "sentences": [
+            {
+              "en": "The criminal was arrested by the police.",
+              "cn": "罪犯被警察逮捕了。"
+            }
+          ]
+        },
+        {
+          "word": "cross",
+          "rootVisual": "<path d='M12 4 v16 M4 12 h16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "cross (交叉)"
+          ],
+          "imagery": "十字形；穿过。",
+          "translation": "交叉；穿过",
+          "sentences": [
+            {
+              "en": "Please cross the street at the traffic lights.",
+              "cn": "请在红绿灯处过马路。"
+            }
+          ]
+        },
+        {
+          "word": "crossing",
+          "rootVisual": "<path d='M2 12 h20 M12 2 v20' stroke='currentColor' stroke-width='2' stroke-dasharray='4 2'/>",
+          "breakdown": [
+            "Cross",
+            "(交叉)",
+            "-ing",
+            "(名词)"
+          ],
+          "imagery": "两条虚线道路相互交叉，形成一个十字路口。",
+          "translation": "十字路口",
+          "sentences": [
+            {
+              "en": "When you are at the crossing, please be careful.",
+              "cn": "在十字路口时，请小心。"
+            }
+          ]
+        },
+        {
+          "word": "cruel",
+          "rootVisual": "<path d='M12 2l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z' stroke='currentColor' fill='none'/><path d='M4 4l16 16' stroke='currentColor' stroke-width='2' stroke='red'/>",
+          "breakdown": [
+            "cruel"
+          ],
+          "imagery": "一个带刺的鞭子，或者一只凶恶的野兽。",
+          "translation": "残酷的；残忍的",
+          "sentences": [
+            {
+              "en": "He is cruel to animals.",
+              "cn": "他对动物很残忍。"
+            }
+          ]
+        },
+        {
+          "word": "culture",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12c2-2 6-2 8 0' stroke='currentColor'/><circle cx='8' cy='10' r='1' fill='currentColor'/><circle cx='16' cy='10' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "cult (耕作)",
+            "-ure"
+          ],
+          "imagery": "各种不同风格的建筑或面具拼贴在一起。",
+          "translation": "文化",
+          "sentences": [
+            {
+              "en": "Chinese culture is amazing.",
+              "cn": "中国文化令人惊叹。"
+            }
+          ]
+        },
+        {
+          "word": "curly",
+          "rootVisual": "<path d='M8 4 a4 4 0 1 1 0 8 a4 4 0 1 0 0 8' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Curly",
+            "(弯曲的)"
+          ],
+          "imagery": "一条连续的螺旋线，形象地表示卷曲的形状，如卷发。",
+          "translation": "弯曲的",
+          "sentences": [
+            {
+              "en": "I think curly hair is more popular than straight hair.",
+              "cn": "我认为卷发比直发更受欢迎。"
+            }
+          ]
+        },
+        {
+          "word": "custom",
+          "rootVisual": "<path d='M4 12h16' stroke='currentColor'/><path d='M8 12v-4a4 4 0 0 1 8 0v4' stroke='currentColor'/><circle cx='12' cy='16' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "custom"
+          ],
+          "imagery": "一群人穿着传统服装在举行仪式。",
+          "translation": "风俗；习惯",
+          "sentences": [
+            {
+              "en": "It's a custom for the bride's father to pay for the wedding.",
+              "cn": "为婚礼买单是新娘父亲的习俗。"
+            }
+          ]
+        },
+        {
+          "word": "customer",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><circle cx='18' cy='16' r='3' stroke='currentColor'/><path d='M17 15l1 2 2-3' stroke='currentColor'/>",
+          "breakdown": [
+            "custom",
+            "-er (人)"
+          ],
+          "imagery": "一个人手里提着购物袋，或者正准备付款。",
+          "translation": "顾客",
+          "sentences": [
+            {
+              "en": "She was the only customer.",
+              "cn": "她是唯一的顾客。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

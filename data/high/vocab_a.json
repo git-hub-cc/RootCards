@@ -1,0 +1,190 @@
+{
+  "prefix": "Vocab A",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_a",
+      "displayName": "Vocabulary A",
+      "themeColor": "#6366f1",
+      "prefixIntro": {
+        "title": "A 开头核心词",
+        "description": "高中阶段 A 开头的高频混合词汇。",
+        "imagery": "字母 A 像一座山峰，代表起点和高度。"
+      },
+      "words": [
+        {
+          "word": "abandon",
+          "rootVisual": "<path d='M4 20h4l-2-6zm12 0h4l-2-6z' stroke='currentColor' fill='none'/><path d='M12 4l-4 12h8z' stroke='currentColor' fill='none'/><text x='12' y='18' text-anchor='middle' font-size='8' fill='currentColor'>X</text>",
+          "breakdown": [
+            "a-",
+            "(否定/去)",
+            "band",
+            "(控制/绑)"
+          ],
+          "imagery": "不再控制，松绑扔掉 -> 放弃。谐音记忆：一个笨蛋(abandon)所以被放弃。",
+          "translation": "放弃",
+          "sentences": [
+            {
+              "en": "They abandoned the sinking ship.",
+              "cn": "他们放弃了沉船。"
+            }
+          ]
+        },
+        {
+          "word": "abbreviate",
+          "rootVisual": "<path d='M4 12 h16 l-4 -4 m4 4 l-4 4' stroke='currentColor'/><rect x='2' y='8' width='2' height='8' fill='currentColor'/>",
+          "breakdown": [
+            "ab-",
+            "brev (short)",
+            "-iate"
+          ],
+          "imagery": "把长单词压缩变短。f 和 v 通假 (brief -> brev)。",
+          "translation": "缩写",
+          "sentences": [
+            {
+              "en": "USA is abbreviated from United States of America.",
+              "cn": "USA是美利坚合众国的缩写。"
+            }
+          ]
+        },
+        {
+          "word": "abbreviation",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none'/><line x1='18' y1='4' x2='22' y2='4' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "ab-",
+            "brev (短)",
+            "-iation"
+          ],
+          "imagery": "把长单词截短。",
+          "translation": "缩写",
+          "sentences": [
+            {
+              "en": "'USA' is an abbreviation.",
+              "cn": "'USA' 是一个缩写。"
+            }
+          ]
+        },
+        {
+          "word": "abolish",
+          "rootVisual": "<path d='M4 18l16-16M4 2l16 16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "ab-",
+            "(远离)",
+            "olish",
+            "(生长)"
+          ],
+          "imagery": "使停止生长，废止制度。谐音：遏(a)不(bo)利(lish) -> 废除。",
+          "translation": "废除；废止",
+          "sentences": [
+            {
+              "en": "Slavery was abolished in the US.",
+              "cn": "美国废除了奴隶制。"
+            }
+          ]
+        },
+        {
+          "word": "abortion",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><path d='M8 12h8' stroke='currentColor'/>",
+          "breakdown": [
+            "ab-",
+            "(否定)",
+            "ort",
+            "(升起/诞生)"
+          ],
+          "imagery": "未能诞生，流产。",
+          "translation": "流产；堕胎",
+          "sentences": [
+            {
+              "en": "They are opposed to abortion.",
+              "cn": "他们反对堕胎。"
+            }
+          ]
+        },
+        {
+          "word": "academy",
+          "rootVisual": "<path d='M2 12l10-10 10 10v10h-20z' stroke='currentColor' fill='none'/><rect x='8' y='14' width='8' height='8' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "academy",
+            "(柏拉图讲学地)"
+          ],
+          "imagery": "学术殿堂。谐音：开导我(academy)的地方 -> 学院。",
+          "translation": "学院；研究院",
+          "sentences": [
+            {
+              "en": "An academic success.",
+              "cn": "学术上的成功。"
+            }
+          ]
+        },
+        {
+          "word": "ambition",
+          "rootVisual": "<path d='M2 20 l10 -18 l10 18' stroke='currentColor' fill='none'/><circle cx='12' cy='2' r='2' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "amb",
+            "(走)",
+            "it",
+            "(走)",
+            "ion"
+          ],
+          "imagery": "四处走动去拉选票 -> 野心，雄心壮志。",
+          "translation": "雄心壮志；野心",
+          "sentences": [
+            {
+              "en": "He has the ambition to be a pilot.",
+              "cn": "他有当飞行员的雄心壮志。"
+            }
+          ]
+        },
+        {
+          "word": "ambulance",
+          "rootVisual": "<rect x='2' y='6' width='20' height='10' stroke='currentColor' fill='none'/><circle cx='6' cy='16' r='2' stroke='currentColor'/><circle cx='18' cy='16' r='2' stroke='currentColor'/><path d='M10 9h4v4h-4z' fill='currentColor'/>",
+          "breakdown": [
+            "ambul",
+            "(走)",
+            "-ance"
+          ],
+          "imagery": "谐音：俺不能死(ambulance) -> 救护车。",
+          "translation": "救护车",
+          "sentences": [
+            {
+              "en": "The ambulance sped to the hospital.",
+              "cn": "救护车疾驰向医院。"
+            }
+          ]
+        },
+        {
+          "word": "anchor",
+          "rootVisual": "<path d='M12 2 v16 m-4 -4 l4 4 l4 -4' stroke='currentColor' stroke-width='2'/><path d='M8 18 q 4 4 8 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "anchor",
+            "(锚)"
+          ],
+          "imagery": "船锚的形状像个钩子。g 和 ch 通假。",
+          "translation": "锚；主持人",
+          "sentences": [
+            {
+              "en": "Drop the anchor.",
+              "cn": "抛锚。"
+            }
+          ]
+        },
+        {
+          "word": "angle",
+          "rootVisual": "<path d='M4 20 L20 20 L20 4' stroke='currentColor' fill='none' stroke-width='2'/><path d='M16 16 q -4 0 -4 -4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "angle",
+            "(角)"
+          ],
+          "imagery": "两条线相交形成的角度。",
+          "translation": "角度",
+          "sentences": [
+            {
+              "en": "A 90-degree angle.",
+              "cn": "一个90度的角。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

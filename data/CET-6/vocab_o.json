@@ -1,0 +1,33 @@
+{
+  "prefix": "Vocab O",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_o",
+      "displayName": "Vocabulary O",
+      "themeColor": "#ef4444",
+      "prefixIntro": {
+        "title": "O 开头核心词",
+        "description": "高中阶段 O 开头的高频混合词汇。",
+        "imagery": "字母 O 像太阳、嘴巴或圆圈，常含“圆、完整、开口（Open）”之意。"
+      },
+      "words": [
+        {
+          "word": "ore",
+          "rootVisual": "<path d='M12 20l-2-2l-4 0a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2l-4 0z' stroke='currentColor' fill='none'/><path d='M8 10l3 4l5-2' stroke='currentColor' stroke-width='1'/>",
+          "breakdown": [
+            "ore (矿石)"
+          ],
+          "imagery": "一块不规则的矿石形状，表面有纹理。",
+          "translation": "矿石",
+          "sentences": [
+            {
+              "en": "iron ore",
+              "cn": "铁矿石"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

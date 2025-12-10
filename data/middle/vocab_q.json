@@ -1,0 +1,66 @@
+{
+  "prefix": "Vocab Q",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_q",
+      "displayName": "Vocabulary Q",
+      "themeColor": "#ec4899",
+      "prefixIntro": {
+        "title": "Q 开头核心词",
+        "description": "高中阶段 Q 开头的高频混合词汇。",
+        "imagery": "字母 Q 像戴皇冠的王后（Queen）或问号（Question），常含“询问、追求”之意。"
+      },
+      "words": [
+        {
+          "word": "quarter",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 v8 h8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 a 8 8 0 0 0 -8 8 h8 z' fill='currentColor' opacity='0.2'/>",
+          "breakdown": [
+            "quarter",
+            "(四分之一)"
+          ],
+          "imagery": "一个饼图被分成了四份，其中一份被高亮显示，直观地表达了四分之一的概念。",
+          "translation": "四分之一",
+          "sentences": [
+            {
+              "en": "A quarter of the students have problems in pronunciation.",
+              "cn": "四分之一的学生在发音方面有问题。"
+            }
+          ]
+        },
+        {
+          "word": "quiet",
+          "rootVisual": "<path d='M10 16 q -2 -2 -2 -4 a 4 4 0 0 1 8 0 q 0 2 -2 4 L 12 20 Z' stroke='currentColor' fill='none' stroke-width='2'/><line x1='6' y1='6' x2='18' y2='18' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "quiet",
+            "(安静的)"
+          ],
+          "imagery": "一个喇叭图标被打上了一条斜线，是通用的“静音”符号。",
+          "translation": "安静的",
+          "sentences": [
+            {
+              "en": "Please keep quiet. My mum is sleeping.",
+              "cn": "请保持安静。我妈妈正在睡觉。"
+            }
+          ]
+        },
+        {
+          "word": "quilt",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M4 9 c 4 -2 8 2 12 0' stroke='currentColor' fill='none'/><path d='M8 14 c 4 -2 8 2 12 0' stroke='currentColor' fill='none'/><path d='M4 19 c 4 -2 8 2 12 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "Quilt",
+            "(被子)"
+          ],
+          "imagery": "表面带有波浪般的纹理，像是多层布料缝合在一起，柔软而厚实。",
+          "translation": "被子",
+          "sentences": [
+            {
+              "en": "I have a beautiful quilt.",
+              "cn": "我有一床漂亮的被子。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

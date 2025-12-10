@@ -1,0 +1,145 @@
+{
+  "prefix": "Vocab J",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_j",
+      "displayName": "Vocabulary J",
+      "themeColor": "#84cc16",
+      "prefixIntro": {
+        "title": "J 开头核心词",
+        "description": "高中阶段 J 开头的高频混合词汇。",
+        "imagery": "字母 J 像一个钩子或喷射的水柱（Jet），常含“连接（Join）、跳跃”之意。"
+      },
+      "words": [
+        {
+          "word": "january",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor'/><circle cx='16' cy='12' r='1' fill='currentColor'/><path d='M8 12 l-2 2 M16 12 l2 -2' stroke='currentColor'/>",
+          "breakdown": [
+            "Janus",
+            "(门神)"
+          ],
+          "imagery": "源自守护神Janus，他有两张脸，一张回顾过去，一张展望未来。",
+          "translation": "一月",
+          "sentences": [
+            {
+              "en": "It is very cold in January.",
+              "cn": "一月非常冷。"
+            }
+          ]
+        },
+        {
+          "word": "jeans",
+          "rootVisual": "<path d='M8 4 h8 v6 l-1 10 h-2 l-1 -8 l-1 8 h-2 l-1 -10 v-6' stroke='currentColor' fill='none' stroke-width='2'/><line x1='12' y1='10' x2='12' y2='4' stroke='currentColor'/>",
+          "breakdown": [
+            "Jeans",
+            "(牛仔裤)"
+          ],
+          "imagery": "双腿分开的裤子形状，经典的牛仔裤轮廓。",
+          "translation": "牛仔裤",
+          "sentences": [
+            {
+              "en": "I don't like wearing jeans because they are too tight.",
+              "cn": "我不喜欢穿牛仔裤，因为太紧了。"
+            }
+          ]
+        },
+        {
+          "word": "join",
+          "rootVisual": "<path d='M6 6 L12 14 L18 6 M12 14 V 22' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Join",
+            "(加入)"
+          ],
+          "imagery": "两条分开的路径最终汇聚成一条主路（Y字形），象征汇合与加入。",
+          "translation": "加入",
+          "sentences": [
+            {
+              "en": "Can I join you for a game?",
+              "cn": "我可以加入你们玩游戏吗？"
+            }
+          ]
+        },
+        {
+          "word": "juice",
+          "rootVisual": "<path d='M6 8 l2 12 h8 l2 -12 h-12' stroke='currentColor' fill='none' stroke-width='2'/><path d='M14 8 l4 -6' stroke='currentColor' stroke-width='2'/><circle cx='18' cy='2' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "Juice",
+            "(果汁)"
+          ],
+          "imagery": "一个杯子插着吸管，旁边有一滴液体（水果精华）。",
+          "translation": "果汁",
+          "sentences": [
+            {
+              "en": "Which juice do you prefer, orange juice or tomato juice?",
+              "cn": "你喜欢哪种果汁，橙汁还是番茄汁？"
+            }
+          ]
+        },
+        {
+          "word": "july",
+          "rootVisual": "<path d='M12 4 l3 8 h-6 z' stroke='currentColor' fill='none'/><path d='M5 12 q 7 10 14 0' stroke='currentColor' fill='none'/><path d='M5 12 q 7 -4 14 0' stroke='currentColor' fill='none' opacity='0.5'/>",
+          "breakdown": [
+            "Julius",
+            "(凯撒大帝)"
+          ],
+          "imagery": "凯撒大帝 (Julius) 的桂冠，代表权力和荣耀。",
+          "translation": "七月",
+          "sentences": [
+            {
+              "en": "July is usually hot.",
+              "cn": "七月通常很热。"
+            }
+          ]
+        },
+        {
+          "word": "jump",
+          "rootVisual": "<path d='M4 20 q 8 -24 16 0' stroke='currentColor' fill='none' stroke-width='2'/><rect x='2' y='20' width='4' height='2' fill='currentColor'/><rect x='18' y='20' width='4' height='2' fill='currentColor'/>",
+          "breakdown": [
+            "Jump",
+            "(跳跃)"
+          ],
+          "imagery": "一条高高的抛物线，展示了从起点跃起落到终点的过程。",
+          "translation": "跳跃",
+          "sentences": [
+            {
+              "en": "I'll take a photo of you when you jump.",
+              "cn": "你跳的时候我会给你拍张照。"
+            }
+          ]
+        },
+        {
+          "word": "june",
+          "rootVisual": "<circle cx='8' cy='12' r='5' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='5' stroke='currentColor' fill='none'/><path d='M13.5 12 a 2 2 0 0 1 -3 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "Juno",
+            "(天后)"
+          ],
+          "imagery": "两枚交叠的戒指，象征婚姻。六月是神后 Juno 庇佑的结婚季。",
+          "translation": "六月",
+          "sentences": [
+            {
+              "en": "They get married in June.",
+              "cn": "他们在六月结婚。"
+            }
+          ]
+        },
+        {
+          "word": "junior",
+          "rootVisual": "<rect x='4' y='12' width='4' height='8' stroke='currentColor' fill='none'/><rect x='10' y='8' width='4' height='12' stroke='currentColor' fill='none' opacity='0.3'/>",
+          "breakdown": [
+            "junior"
+          ],
+          "imagery": "两个台阶，强调较低的那一个。",
+          "translation": "年少的；职位低的",
+          "sentences": [
+            {
+              "en": "the junior football club",
+              "cn": "青少年足球俱乐部"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

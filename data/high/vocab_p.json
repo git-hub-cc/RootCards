@@ -1,0 +1,254 @@
+{
+  "prefix": "Vocab P",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_p",
+      "displayName": "Vocabulary P",
+      "themeColor": "#8b5cf6",
+      "prefixIntro": {
+        "title": "P 开头核心词",
+        "description": "高中阶段 P 开头的高频混合词汇。",
+        "imagery": "字母 P 像手掌（Palm）或长矛，常含“向前推（Push）、尖端”之意。"
+      },
+      "words": [
+        {
+          "word": "participate",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12l6-4' stroke='currentColor'/><circle cx='18' cy='8' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "part",
+            "(部分)",
+            "cip",
+            "(拿)",
+            "ate"
+          ],
+          "imagery": "拿走一部分 -> 参与/分享。",
+          "translation": "参加；参与",
+          "sentences": [
+            {
+              "en": "Participate in the activity.",
+              "cn": "参加活动。"
+            }
+          ]
+        },
+        {
+          "word": "phenomenon",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 8l8 8M16 8l-8 8' stroke='currentColor'/>",
+          "breakdown": [
+            "pheno",
+            "(显示)",
+            "menon"
+          ],
+          "imagery": "显示出来的景象 -> 现象。",
+          "translation": "现象",
+          "sentences": [
+            {
+              "en": "A natural phenomenon.",
+              "cn": "自然现象。"
+            }
+          ]
+        },
+        {
+          "word": "plain",
+          "rootVisual": "<path d='M2 18h20' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "plain",
+            "(平)"
+          ],
+          "imagery": "平坦的地方 -> 平原/朴素的。",
+          "translation": "平原；朴素的；清楚的",
+          "sentences": [
+            {
+              "en": "A plain T-shirt.",
+              "cn": "一件纯色T恤。"
+            }
+          ]
+        },
+        {
+          "word": "platform",
+          "rootVisual": "<rect x='4' y='14' width='16' height='4' stroke='currentColor' fill='none'/><path d='M4 14 l2 -4 h12 l2 4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "plat (平)",
+            "form"
+          ],
+          "imagery": "一个高出地面的平坦台子。f 和 p 通假。",
+          "translation": "平台",
+          "sentences": [
+            {
+              "en": "The train is at platform 2.",
+              "cn": "火车在2号站台。"
+            }
+          ]
+        },
+        {
+          "word": "policy",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M8 8h8M8 12h8M8 16h4' stroke='currentColor'/>",
+          "breakdown": [
+            "pol",
+            "(城市/政治)",
+            "icy"
+          ],
+          "imagery": "治理城市的条文 -> 政策。",
+          "translation": "政策；方针",
+          "sentences": [
+            {
+              "en": "Foreign policy.",
+              "cn": "外交政策。"
+            }
+          ]
+        },
+        {
+          "word": "potential",
+          "rootVisual": "<path d='M4 20 l16 -16' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='20' cy='4' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "pot (能力)",
+            "-ent",
+            "-ial (...的)"
+          ],
+          "imagery": "具有潜在能力的。",
+          "translation": "潜在的；潜力",
+          "sentences": [
+            {
+              "en": "He has the potential to be very strong.",
+              "cn": "他有变得非常强壮的潜力。"
+            }
+          ]
+        },
+        {
+          "word": "prefix",
+          "rootVisual": "<rect x='8' y='8' width='12' height='8' stroke='currentColor' fill='none'/><rect x='4' y='8' width='4' height='8' fill='currentColor'/>",
+          "breakdown": [
+            "pre- (前)",
+            "fix (固定)"
+          ],
+          "imagery": "固定（fix）在单词前面（pre-）的部分。",
+          "translation": "前缀",
+          "sentences": []
+        },
+        {
+          "word": "primary",
+          "rootVisual": "<text x='12' y='16' text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>1</text>",
+          "breakdown": [
+            "prim",
+            "(第一)",
+            "ary"
+          ],
+          "imagery": "排第一的 -> 主要的/初级的。",
+          "translation": "首要的；初级的",
+          "sentences": [
+            {
+              "en": "Primary school.",
+              "cn": "小学。"
+            }
+          ]
+        },
+        {
+          "word": "primitive",
+          "rootVisual": "<path d='M12 20l-4-8 4-4 4 4-4 8' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' stroke='currentColor'/>",
+          "breakdown": [
+            "prim",
+            "(第一)",
+            "itive"
+          ],
+          "imagery": "最初时期的 -> 原始的。",
+          "translation": "原始的；远古的",
+          "sentences": [
+            {
+              "en": "Primitive man.",
+              "cn": "原始人。"
+            }
+          ]
+        },
+        {
+          "word": "principle",
+          "rootVisual": "<rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none'/><path d='M8 8h8' stroke='currentColor'/>",
+          "breakdown": [
+            "prin",
+            "(第一)",
+            "cip",
+            "(拿)",
+            "le"
+          ],
+          "imagery": "拿在第一位的准则 -> 原则。",
+          "translation": "原则；原理",
+          "sentences": [
+            {
+              "en": "Against my principles.",
+              "cn": "违背我的原则。"
+            }
+          ]
+        },
+        {
+          "word": "privilege",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 8l3 3-3 3' stroke='currentColor'/><path d='M8 11h7' stroke='currentColor'/>",
+          "breakdown": [
+            "priv",
+            "(私人)",
+            "leg",
+            "(法律)"
+          ],
+          "imagery": "私人的法律 -> 特权。",
+          "translation": "特权；优待",
+          "sentences": [
+            {
+              "en": "It's a privilege to meet you.",
+              "cn": "见到你是我的荣幸。"
+            }
+          ]
+        },
+        {
+          "word": "profit",
+          "rootVisual": "<path d='M4 18l4-4 4 4 4-6 4 6' stroke='currentColor' fill='none'/><text x='12' y='8' text-anchor='middle' font-size='10' fill='currentColor'>+</text>",
+          "breakdown": [
+            "pro",
+            "(向前)",
+            "fit",
+            "(做)"
+          ],
+          "imagery": "向前做得好 -> 利润/收益。",
+          "translation": "利润；利益",
+          "sentences": [
+            {
+              "en": "Make a profit.",
+              "cn": "获利。"
+            }
+          ]
+        },
+        {
+          "word": "purchase",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M8 8v-4h8v4' stroke='currentColor' fill='none'/><text x='12' y='16' text-anchor='middle' font-size='8' fill='currentColor'>$</text>",
+          "breakdown": [
+            "pur",
+            "(前)",
+            "chase",
+            "(追)"
+          ],
+          "imagery": "追着去买 -> 购买。",
+          "translation": "购买",
+          "sentences": [
+            {
+              "en": "Purchase a ticket.",
+              "cn": "买票。"
+            }
+          ]
+        },
+        {
+          "word": "pure",
+          "rootVisual": "<path d='M12 4l-6 10h12z' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "pur",
+            "(纯净)"
+          ],
+          "imagery": "没有杂质 -> 纯净的。",
+          "translation": "纯净的；纯粹的",
+          "sentences": [
+            {
+              "en": "Pure water.",
+              "cn": "纯净水。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

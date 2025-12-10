@@ -1,0 +1,1216 @@
+{
+  "prefix": "Vocab S",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_s",
+      "displayName": "Vocabulary S",
+      "themeColor": "#f97316",
+      "prefixIntro": {
+        "title": "S 开头核心词",
+        "description": "高中阶段 S 开头的高频混合词汇。",
+        "imagery": "字母 S 像一条蛇（Snake）或弯曲的河流，常含“弯曲、发出声音、视觉（See）”之意。"
+      },
+      "words": [
+        {
+          "word": "safe",
+          "rootVisual": "<path d='M12 2l-8 4v6c0 5 8 10 8 10s8-5 8-10V6l-8-4z' stroke='currentColor' fill='green' opacity='0.3'/><path d='M10 12l2 2 4-4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "safe"
+          ],
+          "imagery": "一个绿色的盾牌，中间有个对勾。",
+          "translation": "安全的",
+          "sentences": [
+            {
+              "en": "Your family are all safe.",
+              "cn": "你的家人都安全。"
+            }
+          ]
+        },
+        {
+          "word": "safety",
+          "rootVisual": "<path d='M12 2l-8 4v6c0 5 8 10 8 10s8-5 8-10V6l-8-4z' stroke='currentColor' fill='none'/><path d='M10 10l4 4 M14 10l-4 4' stroke='currentColor' opacity='0'/> <path d='M9 12l2 2 4-4' stroke='currentColor'/>",
+          "breakdown": [
+            "safe",
+            "-ty"
+          ],
+          "imagery": "一个绿色的盾牌，或者安全帽。",
+          "translation": "安全",
+          "sentences": [
+            {
+              "en": "I will answer for her safety.",
+              "cn": "我会对她的安全负责。"
+            }
+          ]
+        },
+        {
+          "word": "saint",
+          "rootVisual": "<circle cx='12' cy='10' r='4' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='6' stroke='currentColor' stroke-dasharray='4,4'/><path d='M12 14v6' stroke='currentColor'/>",
+          "breakdown": [
+            "saint"
+          ],
+          "imagery": "一个人头顶有光环。",
+          "translation": "圣人",
+          "sentences": [
+            {
+              "en": "She has the patience of a saint.",
+              "cn": "她有着圣人般的耐心。"
+            }
+          ]
+        },
+        {
+          "word": "scare",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='9' cy='10' r='1.5' fill='currentColor'/><circle cx='15' cy='10' r='1.5' fill='currentColor'/><path d='M8 15 q 1 -1 2 -1 t 2 1 t 2 -1 t 2 1' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "scare",
+            "(惊吓)"
+          ],
+          "imagery": "一张睁大眼睛、嘴巴呈波浪形的惊恐脸庞，魂飞魄散的样子。",
+          "translation": "吓坏；害怕的；吓人的",
+          "sentences": [
+            {
+              "en": "You really scared me.",
+              "cn": "你真的吓到我了。"
+            },
+            {
+              "en": "The movie is so scary.",
+              "cn": "这部电影太吓人了。"
+            },
+            {
+              "en": "I am scared of the dark.",
+              "cn": "我害怕黑暗。"
+            }
+          ]
+        },
+        {
+          "word": "scissors",
+          "rootVisual": "<path d='M6 6l12 12 M18 6l-12 12' stroke='currentColor'/><circle cx='6' cy='6' r='2' stroke='currentColor'/><circle cx='6' cy='18' r='2' stroke='currentColor'/>",
+          "breakdown": [
+            "scissors"
+          ],
+          "imagery": "一把张开的剪刀。",
+          "translation": "剪刀",
+          "sentences": [
+            {
+              "en": "We cut paper with scissors.",
+              "cn": "我们用剪刀剪纸。"
+            }
+          ]
+        },
+        {
+          "word": "score",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><text x='8' y='14' font-size='10' fill='currentColor'>100</text>",
+          "breakdown": [
+            "score"
+          ],
+          "imagery": "记分牌上显示的数字，或者是试卷上的红色分数。",
+          "translation": "得分",
+          "sentences": [
+            {
+              "en": "What's the score?",
+              "cn": "比分是多少？"
+            }
+          ]
+        },
+        {
+          "word": "sea",
+          "rootVisual": "<path d='M2 12 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M2 16 q 4 4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Sea",
+            "(海洋)"
+          ],
+          "imagery": "几条起伏的波浪线，代表着广阔的海洋。",
+          "translation": "海洋",
+          "sentences": [
+            {
+              "en": "I love the sea.",
+              "cn": "我爱大海。"
+            }
+          ]
+        },
+        {
+          "word": "seagull",
+          "rootVisual": "<path d='M4 12 q 4 -6 8 0 q 4 -6 8 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "sea (海)",
+            "gull (鸥)"
+          ],
+          "imagery": "在海面上 (sea) 自由飞翔的海鸥 (gull)，通常画成 'M' 形。",
+          "translation": "海鸥",
+          "sentences": [
+            {
+              "en": "Seagulls are flying overhead.",
+              "cn": "海鸥在头顶飞翔。"
+            }
+          ]
+        },
+        {
+          "word": "seaside",
+          "rootVisual": "<path d='M2 12 q 4 -4 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M2 18 h20' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Sea",
+            "(海)",
+            "Side",
+            "(边)"
+          ],
+          "imagery": "波浪线紧挨着一条水平线，形象地表示出海洋与陆地交接的海边。",
+          "translation": "海边",
+          "sentences": [
+            {
+              "en": "We spent the summer at the seaside.",
+              "cn": "我们在海边度过了夏天。"
+            }
+          ]
+        },
+        {
+          "word": "secret",
+          "rootVisual": "<path d='M12 4v16' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='4' fill='black'/><path d='M8 12h-4 M16 12h4' stroke='currentColor'/>",
+          "breakdown": [
+            "se- (分)",
+            "cret (分)"
+          ],
+          "imagery": "一个带锁的日记本，或者一个人做着“嘘”的手势。",
+          "translation": "秘密",
+          "sentences": [
+            {
+              "en": "This is my little secret.",
+              "cn": "这是我的小秘密。"
+            }
+          ]
+        },
+        {
+          "word": "senior",
+          "rootVisual": "<rect x='4' y='12' width='4' height='8' stroke='currentColor' fill='none' opacity='0.3'/><rect x='10' y='8' width='4' height='12' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "senior"
+          ],
+          "imagery": "两个台阶，强调较高的那一个。",
+          "translation": "年长的；职位高的",
+          "sentences": [
+            {
+              "en": "Seniors can get a 10% discount.",
+              "cn": "老年人可以享受九折优惠。"
+            }
+          ]
+        },
+        {
+          "word": "sense",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 10a4 4 0 0 1 8 0' stroke='currentColor'/><path d='M12 14v4' stroke='currentColor'/>",
+          "breakdown": [
+            "sens (感)"
+          ],
+          "imagery": "五官（眼、耳、鼻、舌、手）的组合图标。",
+          "translation": "感觉；意识",
+          "sentences": [
+            {
+              "en": "a sense of smell",
+              "cn": "嗅觉"
+            }
+          ]
+        },
+        {
+          "word": "separate",
+          "rootVisual": "<circle cx='8' cy='12' r='3' fill='currentColor'/><circle cx='16' cy='12' r='3' fill='currentColor'/><path d='M12 4v16' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "se-",
+            "par"
+          ],
+          "imagery": "两个连在一起的物体被拉开，中间有断裂线。",
+          "translation": "分开",
+          "sentences": [
+            {
+              "en": "Separate the white clothes from the colored ones.",
+              "cn": "把白色衣服和有色衣服分开。"
+            }
+          ]
+        },
+        {
+          "word": "september",
+          "rootVisual": "<path d='M4 4 h16 l-8 16' stroke='currentColor' stroke-width='2' fill='none'/><path d='M6 10 h12' stroke='currentColor' stroke-width='2' opacity='0.3'/>",
+          "breakdown": [
+            "Septem",
+            "(七)"
+          ],
+          "imagery": "数字 7 的形状。在古罗马旧历法中它是第7个月 (Septem)。",
+          "translation": "九月",
+          "sentences": [
+            {
+              "en": "School starts in September.",
+              "cn": "九月开学。"
+            }
+          ]
+        },
+        {
+          "word": "serve",
+          "rootVisual": "<path d='M4 14 h16' stroke='currentColor'/><path d='M8 14 a 4 4 0 0 1 8 0' stroke='currentColor' fill='none'/><path d='M2 14 v4 h20 v-4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "serv",
+            "(服务)",
+            "-e"
+          ],
+          "imagery": "一只手托着盘子，正在上菜。",
+          "translation": "服务；提供",
+          "sentences": [
+            {
+              "en": "Who will I serve?",
+              "cn": "我将为谁服务？"
+            }
+          ]
+        },
+        {
+          "word": "share",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12 l8 0' stroke='currentColor'/><path d='M12 12 l0 -8' stroke='currentColor'/><path d='M16 8 l4 -4' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": [
+            "share",
+            "(切分/分享)"
+          ],
+          "imagery": "一块切开的披萨或蛋糕，分给不同的人。",
+          "translation": "分享",
+          "sentences": [
+            {
+              "en": "How do you share your toys with others?",
+              "cn": "你如何与他人分享你的玩具？"
+            }
+          ]
+        },
+        {
+          "word": "shark",
+          "rootVisual": "<path d='M4 12c0-4 6-6 10-6s8 4 6 8-6 6-10 4' stroke='currentColor' fill='none'/><path d='M10 6l2-4 2 4' stroke='currentColor' fill='currentColor'/>",
+          "breakdown": [
+            "shark"
+          ],
+          "imagery": "露出水面的三角形鲨鱼鳍。",
+          "translation": "鲨鱼",
+          "sentences": [
+            {
+              "en": "They drove the shark away.",
+              "cn": "他们把鲨鱼赶走了。"
+            }
+          ]
+        },
+        {
+          "word": "shout",
+          "rootVisual": "<path d='M4 8 h4 l4 8 h-4 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 8 h2 M12 12 h4 M12 16 h2' stroke='currentColor' stroke-linecap='round'/>",
+          "breakdown": [
+            "shout",
+            "(喊叫)"
+          ],
+          "imagery": "声音像从扩音器中爆发出来，音量极大，向外扩散。",
+          "translation": "喊叫",
+          "sentences": [
+            {
+              "en": "My mum used to shout to me, \"Bill, come home for dinner!\"",
+              "cn": "我妈妈过去常对我喊：‘比尔，回家吃饭了！’"
+            },
+            {
+              "en": "My father never shouts at my mum.",
+              "cn": "我爸爸从不朝我妈妈大喊大叫。"
+            }
+          ]
+        },
+        {
+          "word": "shower",
+          "rootVisual": "<path d='M8 6 a 4 4 0 0 1 8 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 10 l-1 3 M12 10 l-1 4 M15 10 l-1 3' stroke='currentColor' stroke-linecap='round' stroke-width='2'/>",
+          "breakdown": [
+            "shower",
+            "(沐浴)"
+          ],
+          "imagery": "一个莲蓬头，温热的水流正从下方倾泻而出。",
+          "translation": "沐浴",
+          "sentences": [
+            {
+              "en": "Taking a shower before going to bed is quite relaxing.",
+              "cn": "睡前洗个澡很放松。"
+            }
+          ]
+        },
+        {
+          "word": "shut",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M4 4l16 16 M20 4l-16 16' stroke='currentColor'/>",
+          "breakdown": [
+            "shut"
+          ],
+          "imagery": "一扇紧闭的门，或者闭上的眼睛。",
+          "translation": "关闭",
+          "sentences": [
+            {
+              "en": "She shut her eyes.",
+              "cn": "她闭上了眼睛。"
+            }
+          ]
+        },
+        {
+          "word": "shy",
+          "rootVisual": "<line x1='16' y1='4' x2='16' y2='20' stroke='currentColor' stroke-width='2'/><path d='M16 12 a 6 6 0 0 1 -6 6 h -2 a 6 6 0 0 1 -6 -6 a 6 6 0 0 1 6 -6 h 2 a 6 6 0 0 1 6 6 z' stroke='currentColor' fill='none' stroke-width='2' opacity='0.7' />",
+          "breakdown": [
+            "shy",
+            "(害羞的)"
+          ],
+          "imagery": "一张脸躲在墙后，只悄悄露出一半，不敢完全面对。",
+          "translation": "害羞的",
+          "sentences": [
+            {
+              "en": "She is quite shy with strangers.",
+              "cn": "她在陌生人面前很害羞。"
+            }
+          ]
+        },
+        {
+          "word": "silence",
+          "rootVisual": "<path d='M11 5 L6 9 H2 V15 H6 L11 19 V5 Z' stroke='currentColor' fill='none'/><line x1='16' y1='9' x2='20' y2='15' stroke='currentColor'/><line x1='20' y1='9' x2='16' y2='15' stroke='currentColor'/>",
+          "breakdown": [
+            "silentium",
+            "(寂静)"
+          ],
+          "imagery": "扬声器旁一个大大的叉号，表示没有声音。",
+          "translation": "沉默 (名词)",
+          "sentences": [
+            {
+              "en": "There was a brief silence before anyone answered.",
+              "cn": "在有人回答之前，有一阵短暂的沉默。"
+            }
+          ]
+        },
+        {
+          "word": "silent",
+          "rootVisual": "<path d='M11 5 L6 9 H2 V15 H6 L11 19 V5 Z' stroke='currentColor' fill='none'/><circle cx='18' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "silere",
+            "(安静)"
+          ],
+          "imagery": "扬声器旁只有一个小点，表示状态是安静的。",
+          "translation": "沉默的 (形容词)",
+          "sentences": [
+            {
+              "en": "The crowd kept silent when the president appeared.",
+              "cn": "当总统出现时，人群保持沉默。"
+            }
+          ]
+        },
+        {
+          "word": "sing",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M9 13 a 4 4 0 1 0 0 -8 a 4 4 0 0 0 0 8 Z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 13 v 9' stroke='currentColor' stroke-width='2'/><path d='M5 22 h 8' stroke='currentColor' stroke-width='2'/><path d='M13 10 q 4 -2 6 -5' stroke='currentColor' fill='none'/><path d='M13 12 q 4 0 6 3' stroke='currentColor' fill='none'/><circle cx='18' cy='5' r='1.5' fill='currentColor' stroke='none'/></g>",
+          "breakdown": [
+            "sing / singer",
+            "(唱/歌手)"
+          ],
+          "imagery": "侧面的人像张开嘴，优美的旋律化作音符，从口中轻快地飘出。",
+          "translation": "唱；歌手",
+          "sentences": [
+            {
+              "en": "The singer is singing the famous song \"Take Me to Your Heart\".",
+              "cn": "那位歌手正在演唱著名歌曲《带我入心》。"
+            }
+          ]
+        },
+        {
+          "word": "size",
+          "rootVisual": "<rect x='4' y='12' width='6' height='6' stroke='currentColor' fill='none' stroke-width='2'/><rect x='12' y='6' width='12' height='12' stroke='currentColor' fill='currentColor' fill-opacity='0.1' stroke-width='2'/>",
+          "breakdown": [
+            "size",
+            "(大小)"
+          ],
+          "imagery": "一个大正方形与一个小正方形并排，通过鲜明对比来传达“大小”的概念。",
+          "translation": "大小",
+          "sentences": [
+            {
+              "en": "What size shoes do you wear?",
+              "cn": "你穿多大尺码的鞋？"
+            }
+          ]
+        },
+        {
+          "word": "skate",
+          "rootVisual": "<path d='M4 18 h16' stroke='currentColor' stroke-width='2'/><path d='M6 18 l2 -10 h8 l2 10' stroke='currentColor' fill='none'/><path d='M8 18 a 10 10 0 0 0 12 -4' stroke='currentColor' fill='none' stroke-dasharray='3 2'/>",
+          "breakdown": [
+            "skate",
+            "(滑冰)"
+          ],
+          "imagery": "一只溜冰鞋在冰面上划出一道优美而流畅的弧线。",
+          "translation": "滑冰",
+          "sentences": [
+            {
+              "en": "Young people tend to skate in the park on weekends.",
+              "cn": "年轻人周末喜欢在公园滑冰。"
+            }
+          ]
+        },
+        {
+          "word": "skirt",
+          "rootVisual": "<path d='M8 6 l8 0 l4 14 l-16 0 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 6 q 4 2 8 0' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "Skirt",
+            "(短裙)"
+          ],
+          "imagery": "上窄下宽的梯形轮廓，指仅覆盖下半身的裙子。",
+          "translation": "短裙",
+          "sentences": [
+            {
+              "en": "How much is the skirt?",
+              "cn": "这条短裙多少钱？"
+            }
+          ]
+        },
+        {
+          "word": "smart",
+          "rootVisual": "<path d='M12 2 a 5 5 0 0 1 5 5 c 0 3 -5 6 -5 10 v 2 h -2 v -2 c 0 -4 -5 -7 -5 -10 a 5 5 0 0 1 5 -5 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 20 h 6' stroke='currentColor' fill='none'/><path d='M4 12 h2 M18 12 h2 M12 2 v-2 M12 22 v2' stroke='currentColor' stroke-linecap='round'/>",
+          "breakdown": [
+            "smart / clever / bright",
+            "(聪明的)"
+          ],
+          "imagery": "大脑像灯泡一样被点亮，迸发出智慧的火花。",
+          "translation": "聪明的",
+          "sentences": [
+            {
+              "en": "You are a smart girl.",
+              "cn": "你是个聪明的女孩。"
+            }
+          ]
+        },
+        {
+          "word": "smoke",
+          "rootVisual": "<rect x='8' y='12' width='8' height='2' stroke='currentColor' fill='white'/><path d='M12 12c-2-2-2-4 0-6s2-4 0-6' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "smoke"
+          ],
+          "imagery": "一根燃烧的香烟冒着袅袅青烟。",
+          "translation": "吸烟",
+          "sentences": [
+            {
+              "en": "I don't smoke.",
+              "cn": "我不抽烟。"
+            }
+          ]
+        },
+        {
+          "word": "snow",
+          "rootVisual": "<path d='M12 2 v20 M2 12 h20 M5 5 l14 14 M5 19 L19 5' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": [
+            "snow / snowy / snowman",
+            "(雪/下雪的/雪人)"
+          ],
+          "imagery": "一片经典的六角形雪花，代表着冬日与纯洁。",
+          "translation": "雪；下雪的；雪人",
+          "sentences": [
+            {
+              "en": "Children are making a snowman outside.",
+              "cn": "孩子们正在外面堆雪人。"
+            }
+          ]
+        },
+        {
+          "word": "snowy",
+          "rootVisual": "<path d='M12 2 v20 M2 12 h20 M5 5 l14 14 M5 19 L19 5' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Snow",
+            "(雪)",
+            "-y",
+            "(…的)"
+          ],
+          "imagery": "一个六角形的雪花图案。",
+          "translation": "下雪的",
+          "sentences": [
+            {
+              "en": "It will be snowy tomorrow.",
+              "cn": "明天会下雪。"
+            }
+          ]
+        },
+        {
+          "word": "soap",
+          "rootVisual": "<rect x='6' y='10' width='12' height='6' rx='3' stroke='currentColor' fill='none'/><circle cx='10' cy='6' r='2' stroke='currentColor' fill='none' opacity='0.5'/><circle cx='14' cy='4' r='1.5' stroke='currentColor' fill='none' opacity='0.5'/>",
+          "breakdown": [
+            "soap",
+            "(肥皂)"
+          ],
+          "imagery": "一块肥皂，周围漂浮着几个泡泡。",
+          "translation": "肥皂",
+          "sentences": [
+            {
+              "en": "I often wash my face with soap.",
+              "cn": "我经常用肥皂洗脸。"
+            }
+          ]
+        },
+        {
+          "word": "sock",
+          "rootVisual": "<path d='M8 4 h6 v8 q 0 4 4 4 h2 v4 h-8 q -4 0 -4 -4 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 8 h6' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "Sock",
+            "(短袜)"
+          ],
+          "imagery": "L形的织物，用来包裹脚部。",
+          "translation": "短袜",
+          "sentences": [
+            {
+              "en": "Mum, where are my socks?",
+              "cn": "妈妈，我的袜子在哪？"
+            },
+            {
+              "en": "I need to buy some new sports socks.",
+              "cn": "我需要买些新的运动袜。"
+            }
+          ]
+        },
+        {
+          "word": "sofa",
+          "rootVisual": "<path d='M4 14 h16 v6 h-16 z' stroke='currentColor' fill='none'/><path d='M4 14 v-6 h16 v6' stroke='currentColor' fill='none'/><path d='M2 14 h4 v4 h-4 z' stroke='currentColor' fill='none'/><path d='M18 14 h4 v4 h-4 z' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "sofa (沙发)"
+          ],
+          "imagery": "一个舒适的长沙发。",
+          "translation": "沙发",
+          "sentences": [
+            {
+              "en": "He is sleeping on the sofa.",
+              "cn": "他在沙发上睡觉。"
+            }
+          ]
+        },
+        {
+          "word": "solar",
+          "rootVisual": "<circle cx='12' cy='12' r='5' stroke='currentColor' fill='none'/><path d='M12 2 v4 M12 18 v4 M2 12 h4 M18 12 h4 M5 5 l2 2 M17 17 l2 2 M5 19 l2 -2 M17 7 l2 -2' stroke='currentColor'/>",
+          "breakdown": [
+            "sol (太阳)",
+            "-ar (形容词后缀)"
+          ],
+          "imagery": "光芒四射的太阳，象征着太阳的能量。",
+          "translation": "太阳的",
+          "sentences": [
+            {
+              "en": "Solar energy is clean energy.",
+              "cn": "太阳能是清洁能源。"
+            }
+          ]
+        },
+        {
+          "word": "soon",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 8 v4 h-3' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": [
+            "soon",
+            "(不久)"
+          ],
+          "imagery": "一个时钟，时针和分针即将重合在12点，表示“很快就到”。",
+          "translation": "不久",
+          "sentences": [
+            {
+              "en": "I'll be there soon.",
+              "cn": "我很快就到。"
+            }
+          ]
+        },
+        {
+          "word": "soulmate",
+          "rootVisual": "<path d='M8 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M4 20v-4h8v4' stroke='currentColor' fill='none'/><path d='M16 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M12 20v-4h8v4' stroke='currentColor' fill='none'/><path d='M12 6q2-4 4 0t-4 4q-2-4 4-8' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "soul",
+            "mate"
+          ],
+          "imagery": "两个人的轮廓中间连接着一颗心，或者两块拼图完美契合。",
+          "translation": "灵魂伴侣；知己",
+          "sentences": [
+            {
+              "en": "She is my soulmate.",
+              "cn": "她是我的灵魂伴侣。"
+            }
+          ]
+        },
+        {
+          "word": "soup",
+          "rootVisual": "<path d='M4 14 a 8 8 0 0 0 16 0' stroke='currentColor' fill='none' stroke-width='2'/><path d='M9 8 q 2 -2 4 0' stroke='currentColor' fill='none' stroke-linecap='round'/><path d='M11 10 q 2 -2 4 0' stroke='currentColor' fill='none' stroke-linecap='round' opacity='0.7'/>",
+          "breakdown": [
+            "soup",
+            "(汤)"
+          ],
+          "imagery": "一个盛满液体的碗，上方飘着两缕热气，温暖而滋养。",
+          "translation": "汤",
+          "sentences": [
+            {
+              "en": "Cantonese are good at making soup.",
+              "cn": "广东人擅长煲汤。"
+            }
+          ]
+        },
+        {
+          "word": "spaghetti",
+          "rootVisual": "<path d='M6 16s2-4 4-2 2 4 4 2 2-4 4-2' stroke='currentColor' fill='none'/><path d='M6 14s2-4 4-2 2 4 4 2 2-4 4-2' stroke='currentColor' fill='none'/><path d='M6 12s2-4 4-2 2 4 4 2 2-4 4-2' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "spaghetti"
+          ],
+          "imagery": "一盘弯弯曲曲的长面条，或者一根卷在叉子上的面条。",
+          "translation": "意大利面",
+          "sentences": [
+            {
+              "en": "I prefer Chinese noodles to spaghetti.",
+              "cn": "比起意大利面，我更喜欢中国面条。"
+            }
+          ]
+        },
+        {
+          "word": "speak",
+          "rootVisual": "<path d='M4 12l4-4v8l-4-4' stroke='currentColor' fill='currentColor'/><path d='M14 8c2 2 2 6 0 8' stroke='currentColor' fill='none'/><path d='M17 6c3 3 3 9 0 12' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "speak"
+          ],
+          "imagery": "一个嘴巴前面有声波线条。",
+          "translation": "说；讲",
+          "sentences": [
+            {
+              "en": "Do you speak English?",
+              "cn": "你说英语吗？"
+            }
+          ]
+        },
+        {
+          "word": "speech",
+          "rootVisual": "<rect x='8' y='8' width='8' height='12' stroke='currentColor' fill='none'/><path d='M12 4v4' stroke='currentColor'/><path d='M6 6l12 0' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "speak",
+            "ch"
+          ],
+          "imagery": "一个讲台和一支麦克风。",
+          "translation": "演讲",
+          "sentences": [
+            {
+              "en": "Each child had to give a short speech.",
+              "cn": "每个孩子都必须做一个简短的演讲。"
+            }
+          ]
+        },
+        {
+          "word": "spend",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><text x='12' y='16' font-size='10' text-anchor='middle' fill='currentColor'>$</text>",
+          "breakdown": [
+            "s- (ex出)",
+            "pend (钱)"
+          ],
+          "imagery": "把钱拿出去（称重支付）。",
+          "translation": "花费",
+          "sentences": [
+            {
+              "en": "He spends a lot of money on clothes.",
+              "cn": "他在衣服上花很多钱。"
+            }
+          ]
+        },
+        {
+          "word": "spider",
+          "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor'/><path d='M12 12 l-6 -6 M12 12 l6 -6 M12 12 l-8 0 M12 12 l8 0 M12 12 l-6 6 M12 12 l6 6' stroke='currentColor' stroke-width='1.5'/>",
+          "breakdown": [
+            "spi- (旋转/编织)",
+            "-der (虫)"
+          ],
+          "imagery": "一只八条腿的蜘蛛正在织网。",
+          "translation": "蜘蛛",
+          "sentences": [
+            {
+              "en": "A spider has eight legs.",
+              "cn": "蜘蛛有八条腿。"
+            }
+          ]
+        },
+        {
+          "word": "spoon",
+          "rootVisual": "<ellipse cx='12' cy='6' rx='4' ry='6' stroke='currentColor' fill='none'/><path d='M12 12v10' stroke='currentColor'/>",
+          "breakdown": [
+            "spoon"
+          ],
+          "imagery": "一把汤匙。",
+          "translation": "汤匙；勺子",
+          "sentences": [
+            {
+              "en": "She feeds the baby with a spoon.",
+              "cn": "她用汤匙喂宝宝。"
+            }
+          ]
+        },
+        {
+          "word": "staff",
+          "rootVisual": "<circle cx='8' cy='8' r='2' fill='currentColor'/><path d='M6 12 h4 v6' stroke='currentColor'/><circle cx='16' cy='8' r='2' fill='currentColor'/><path d='M14 12 h4 v6' stroke='currentColor'/>",
+          "breakdown": [
+            "staf",
+            "(职员)"
+          ],
+          "imagery": "一组站立的人，代表全体员工。",
+          "translation": "员工",
+          "sentences": [
+            {
+              "en": "This entire staff has done an outstanding job this year.",
+              "cn": "今年全体员工都做得非常出色。"
+            }
+          ]
+        },
+        {
+          "word": "standard",
+          "rootVisual": "<path d='M4 18h16' stroke='currentColor'/><rect x='8' y='6' width='8' height='12' stroke='currentColor' fill='none'/><path d='M4 12h16' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "stand",
+            "-ard"
+          ],
+          "imagery": "一把精准的尺子，或者一杆旗帜。",
+          "translation": "标准",
+          "sentences": [
+            {
+              "en": "What's your standard of beauty?",
+              "cn": "你对美的标准是什么？"
+            }
+          ]
+        },
+        {
+          "word": "stare",
+          "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor' fill='white'/><circle cx='8' cy='12' r='1' fill='black'/><circle cx='16' cy='12' r='3' stroke='currentColor' fill='white'/><circle cx='16' cy='12' r='1' fill='black'/><path d='M12 12l2 4' stroke='currentColor' opacity='0'/>",
+          "breakdown": [
+            "stare"
+          ],
+          "imagery": "一双睁得很大的眼睛，直勾勾地盯着前方。",
+          "translation": "盯；凝视",
+          "sentences": [
+            {
+              "en": "What are you staring at?",
+              "cn": "你在盯着什么看？"
+            }
+          ]
+        },
+        {
+          "word": "state",
+          "rootVisual": "<path d='M4 4 h16 v16 h-16 z' stroke='currentColor' fill='none'/><text x='12' y='14' font-size='10' text-anchor='middle' fill='currentColor'>US</text>",
+          "breakdown": [
+            "stat (站/立)"
+          ],
+          "imagery": "立国；官方陈述（立论）；状况（立足点）。",
+          "translation": "州；国家；陈述；状态",
+          "sentences": [
+            {
+              "en": "California is a state in the USA.",
+              "cn": "加利福尼亚是美国的一个州。"
+            },
+            {
+              "en": "He is in a state of shock.",
+              "cn": "他处于休克状态。"
+            }
+          ]
+        },
+        {
+          "word": "stay",
+          "rootVisual": "<path d='M12 2 a 8 8 0 0 1 8 8 c 0 6 -8 12 -8 12 s -8 -6 -8 -12 a 8 8 0 0 1 8 -8 z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='10' r='3' fill='currentColor' fill-opacity='0.3' stroke='currentColor'/>",
+          "breakdown": [
+            "stay",
+            "(停留)"
+          ],
+          "imagery": "一个地图定位销牢牢地扎在一个点上，表示固定不动、停留于此。",
+          "translation": "停留；熬夜",
+          "sentences": [
+            {
+              "en": "How long will you stay here?",
+              "cn": "你会在这里待多久？"
+            },
+            {
+              "en": "Don't stay up late. It's bad for your health.",
+              "cn": "别熬夜，对你身体不好。"
+            }
+          ]
+        },
+        {
+          "word": "steal",
+          "rootVisual": "<path d='M16 12 h-6 a 3 3 0 0 1 -3 -3 v-2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M16 8 l2 2 l2 -2' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "steal",
+            "(偷窃)"
+          ],
+          "imagery": "一只手悄悄伸进口袋或拿走不属于自己的东西。",
+          "translation": "偷",
+          "sentences": [
+            {
+              "en": "He stole money from his parents.",
+              "cn": "他从父母那里偷了钱。"
+            }
+          ]
+        },
+        {
+          "word": "steel",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none'/><path d='M4 8l4-4 16 0-4 4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "steel"
+          ],
+          "imagery": "一根工字钢的横截面。",
+          "translation": "钢",
+          "sentences": [
+            {
+              "en": "The tube is made of steel.",
+              "cn": "这个管子是钢制的。"
+            }
+          ]
+        },
+        {
+          "word": "stick",
+          "rootVisual": "<path d='M18 4L6 20' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": [
+            "stick"
+          ],
+          "imagery": "一根简单的棍子。",
+          "translation": "棍棒",
+          "sentences": [
+            {
+              "en": "Stick the poster on the wall.",
+              "cn": "把海报贴在墙上。"
+            }
+          ]
+        },
+        {
+          "word": "still",
+          "rootVisual": "<line x1='2' y1='12' x2='8' y2='12' stroke='currentColor' stroke-width='2'/><path d='M8 12 l2 -4 l2 8 l2 -8 l2 4' stroke='currentColor' fill='none'/><line x1='16' y1='12' x2='22' y2='12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "still",
+            "(仍然)"
+          ],
+          "imagery": "一条心电图线，前半段和后半段都是平直的（静止），中间虽有波动，但最终“仍然”恢复平静。",
+          "translation": "仍然",
+          "sentences": [
+            {
+              "en": "It's midnight, and he is still working.",
+              "cn": "已经半夜了，他还在工作。"
+            }
+          ]
+        },
+        {
+          "word": "stone",
+          "rootVisual": "<path d='M4 14l4-4 8 2 4 6-6 4-10-2z' stroke='currentColor' fill='gray' opacity='0.5'/>",
+          "breakdown": [
+            "stone"
+          ],
+          "imagery": "一块不规则形状的岩石。",
+          "translation": "石头",
+          "sentences": [
+            {
+              "en": "a block of stone",
+              "cn": "一大块石头"
+            }
+          ]
+        },
+        {
+          "word": "story",
+          "rootVisual": "<path d='M4 6h16v12H4z' stroke='currentColor' fill='none'/><path d='M6 10h12 M6 14h8' stroke='currentColor'/><circle cx='18' cy='16' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "story"
+          ],
+          "imagery": "一本打开的书，里面跳出城堡和龙。",
+          "translation": "故事",
+          "sentences": [
+            {
+              "en": "Every story has an ending.",
+              "cn": "每个故事都有一个结局。"
+            }
+          ]
+        },
+        {
+          "word": "straight",
+          "rootVisual": "<line x1='2' y1='12' x2='22' y2='12' stroke='currentColor' stroke-width='3'/><path d='M2 18 q 10 -8 20 0' stroke='currentColor' stroke-width='2' opacity='0.3' stroke-dasharray='3 2'/>",
+          "breakdown": [
+            "straight",
+            "(直的)"
+          ],
+          "imagery": "一条笔直的粗线，与下方弯曲的虚线形成对比，强调其“直”的特性。",
+          "translation": "直的",
+          "sentences": [
+            {
+              "en": "I prefer straight hair to curly hair.",
+              "cn": "比起卷发，我更喜欢直发。"
+            }
+          ]
+        },
+        {
+          "word": "strawberry",
+          "rootVisual": "<path d='M12 21 C 7 14 6 9 9 6 C 11 4 13 4 15 6 C 18 9 17 14 12 21 Z' stroke='currentColor' fill='none'/><path d='M9 6 l3 -3 l3 3' stroke='currentColor' fill='currentColor'/><circle cx='10' cy='12' r='0.5' fill='currentColor'/><circle cx='14' cy='12' r='0.5' fill='currentColor'/><circle cx='12' cy='16' r='0.5' fill='currentColor'/>",
+          "breakdown": [
+            "straw",
+            "(干草)",
+            "berry",
+            "(浆果)"
+          ],
+          "imagery": "一颗布满籽的草莓，据说因种在干草覆盖的土上而得名。",
+          "translation": "草莓",
+          "sentences": [
+            {
+              "en": "Most girls like eating strawberries.",
+              "cn": "大多数女孩喜欢吃草莓。"
+            }
+          ]
+        },
+        {
+          "word": "strict",
+          "rootVisual": "<rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8 M8 16 h8' stroke='currentColor'/>",
+          "breakdown": [
+            "strict (紧)"
+          ],
+          "imagery": "管得严（紧）的。",
+          "translation": "严格的",
+          "sentences": []
+        },
+        {
+          "word": "stuff",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none'/><path d='M8 8 l-2 -4 h12 l-2 4' stroke='currentColor' fill='none'/><circle cx='10' cy='14' r='1' fill='currentColor'/><rect x='13' y='12' width='3' height='3' fill='currentColor'/>",
+          "breakdown": [
+            "estoffe",
+            "(材料)"
+          ],
+          "imagery": "一个装满各种形状杂物的箱子。",
+          "translation": "东西",
+          "sentences": [
+            {
+              "en": "I like my stuff.",
+              "cn": "我喜欢我的东西。"
+            }
+          ]
+        },
+        {
+          "word": "style",
+          "rootVisual": "<path d='M12 4c-4 0-6 3-6 6s2 6 6 6 6-3 6-6-2-6-6-6z' stroke='currentColor' fill='none'/><path d='M12 2v20' stroke='currentColor' opacity='0.3'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "style"
+          ],
+          "imagery": "一个穿着时尚的模特剪影。",
+          "translation": "款式；风格",
+          "sentences": [
+            {
+              "en": "Do you like this dress style?",
+              "cn": "你喜欢这件连衣裙的款式吗？"
+            }
+          ]
+        },
+        {
+          "word": "subject",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M12 10 v6' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": [
+            "sub- (在下)",
+            "ject (投)"
+          ],
+          "imagery": "被投掷（ject）在下面（sub-），受支配的（臣民/主语）；放在下面的题目（主题）。",
+          "translation": "主题；科目；主语",
+          "sentences": [
+            {
+              "en": "My favorite subject is math.",
+              "cn": "我最喜欢的科目是数学。"
+            }
+          ]
+        },
+        {
+          "word": "subway",
+          "rootVisual": "<path d='M6 4 h12 a 2 2 0 0 1 2 2 v10 a 2 2 0 0 1 -2 2 h-12 a 2 2 0 0 1 -2 -2 v-10 a 2 2 0 0 1 2 -2' stroke='currentColor' fill='none' stroke-width='2'/><rect x='6' y='8' width='12' height='4' stroke='currentColor' fill='none'/><circle cx='8' cy='15' r='1' fill='currentColor'/><circle cx='16' cy='15' r='1' fill='currentColor'/><path d='M7 18 l-1 3' stroke='currentColor'/><path d='M17 18 l1 3' stroke='currentColor'/><path d='M4 21 h16' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "sub",
+            "(在下)",
+            "way",
+            "(路)"
+          ],
+          "imagery": "一辆行驶在地面之下 (Sub) 轨道 (Way) 上的列车正面视图，车灯照亮前行方向。",
+          "translation": "地铁",
+          "sentences": [
+            {
+              "en": "The subway is very crowded in Guangzhou.",
+              "cn": "广州的地铁非常拥挤。"
+            }
+          ]
+        },
+        {
+          "word": "succeed",
+          "rootVisual": "<path d='M20 6L9 17l-5-5' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/>",
+          "breakdown": [
+            "suc- (下)",
+            "ceed (走)"
+          ],
+          "imagery": "一个大大的绿色对勾，或者一个人到达山顶插旗。",
+          "translation": "成功",
+          "sentences": [
+            {
+              "en": "It was a good try but it didn't succeed.",
+              "cn": "那是个不错的尝试，但没有成功。"
+            }
+          ]
+        },
+        {
+          "word": "success",
+          "rootVisual": "<path d='M20 6L9 17l-5-5' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/><circle cx='12' cy='12' r='10' stroke='currentColor' stroke-width='1' opacity='0.3'/>",
+          "breakdown": [
+            "suc-",
+            "cess (走)"
+          ],
+          "imagery": "一个奖杯，或者一个站在领奖台上的人。",
+          "translation": "成功",
+          "sentences": [
+            {
+              "en": "The experiment was a big success.",
+              "cn": "那个实验取得了巨大的成功。"
+            }
+          ]
+        },
+        {
+          "word": "successful",
+          "rootVisual": "<path d='M12 2l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z' fill='gold'/><path d='M12 14l2 4' stroke='currentColor'/>",
+          "breakdown": [
+            "success",
+            "-ful"
+          ],
+          "imagery": "一个人站在山顶举起双臂，或者一个金色的奖杯。",
+          "translation": "成功的",
+          "sentences": [
+            {
+              "en": "The operation was successful.",
+              "cn": "手术很成功。"
+            }
+          ]
+        },
+        {
+          "word": "sun",
+          "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 2 v4 M12 18 v4 M2 12 h4 M18 12 h4 M5 5 l2 2 M17 17 l2 2 M5 19 l2 -2 M17 7 l2 -2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Sun",
+            "(太阳)"
+          ],
+          "imagery": "一个发光的圆圈，周围有光芒四射的线条，代表太阳。",
+          "translation": "太阳",
+          "sentences": [
+            {
+              "en": "The sun is shining brightly.",
+              "cn": "阳光灿烂。"
+            }
+          ]
+        },
+        {
+          "word": "sunny",
+          "rootVisual": "<circle cx='12' cy='12' r='5' fill='currentColor'/><path d='M12 2 v4 M12 18 v4 M2 12 h4 M18 12 h4 M5 5 l2 2 M17 17 l2 2 M5 19 l2 -2 M17 7 l2 -2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Sun",
+            "(太阳)",
+            "-ny",
+            "(…的)"
+          ],
+          "imagery": "一个明亮的实心太阳，光芒四射，代表晴朗的天气。",
+          "translation": "晴朗的",
+          "sentences": [
+            {
+              "en": "It will be sunny tomorrow.",
+              "cn": "明天将是晴天。"
+            }
+          ]
+        },
+        {
+          "word": "sunrise",
+          "rootVisual": "<path d='M2 18 h20' stroke='currentColor'/><circle cx='12' cy='18' r='6' stroke='currentColor' fill='currentColor' opacity='0.5'/><path d='M12 12 v-4 M8 14 l-2 -2 M16 14 l2 -2' stroke='currentColor'/>",
+          "breakdown": [
+            "sun (太阳)",
+            "rise (升起)"
+          ],
+          "imagery": "太阳 (sun) 慢慢地从地平线升起 (rise)，带来光明。",
+          "translation": "日出",
+          "sentences": [
+            {
+              "en": "We got up early to watch the sunrise.",
+              "cn": "我们起得很早去看日出。"
+            }
+          ]
+        },
+        {
+          "word": "superhero",
+          "rootVisual": "<path d='M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z M6 20v-6h12v6' stroke='currentColor' fill='none'/><path d='M4 6h16l-8 14z' fill='currentColor' opacity='0.2'/>",
+          "breakdown": [
+            "super",
+            "hero"
+          ],
+          "imagery": "一个飞在空中的人，身后有飘扬的披风，胸口有S标志。",
+          "translation": "超级英雄",
+          "sentences": [
+            {
+              "en": "I dream of becoming a superhero.",
+              "cn": "我梦想成为一名超级英雄。"
+            }
+          ]
+        },
+        {
+          "word": "supermarket",
+          "rootVisual": "<path d='M4 8 h16 l-2 8 h-12 z' stroke='currentColor' fill='none'/><circle cx='7' cy='19' r='2' stroke='currentColor'/><circle cx='17' cy='19' r='2' stroke='currentColor'/><path d='M14 8 v-4 h-4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "super",
+            "(超级)",
+            "market",
+            "(市场)"
+          ],
+          "imagery": "一辆装满商品的购物车。",
+          "translation": "超市",
+          "sentences": [
+            {
+              "en": "She went to the supermarket with her mother.",
+              "cn": "她和妈妈去了超市。"
+            }
+          ]
+        },
+        {
+          "word": "survey",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M6 8h2 M6 12h2 M6 16h2' stroke='currentColor'/><path d='M10 8h8 M10 12h8 M10 16h8' stroke='currentColor'/>",
+          "breakdown": [
+            "sur-",
+            "vey"
+          ],
+          "imagery": "一张拿着放大镜的问卷调查表。",
+          "translation": "调查",
+          "sentences": [
+            {
+              "en": "We surveyed the damage caused by the fire.",
+              "cn": "我们调查了火灾造成的损失。"
+            }
+          ]
+        },
+        {
+          "word": "sweat",
+          "rootVisual": "<path d='M14.6 2.8c-1.8 2.5-6.6 8.3-6.6 12.2c0 3.9 3.1 7 7 7s7-3.1 7-7c0-3.9-5.5-10.4-7.4-12.2z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 7 l-3 3' stroke='currentColor' stroke-width='2'/><path d='M4 13 l-2 2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Sweat",
+            "(汗)"
+          ],
+          "imagery": "剧烈运动时，一颗带有速度感的汗珠飞溅而出，代表身体在努力降温。",
+          "translation": "流汗；汗水",
+          "sentences": [
+            {
+              "en": "I sweat a lot in summer.",
+              "cn": "我夏天流很多汗。"
+            },
+            {
+              "en": "Running in the heat makes me sweat.",
+              "cn": "在热天跑步让我流汗。"
+            }
+          ]
+        },
+        {
+          "word": "sweep",
+          "rootVisual": "<path d='M4 18l16-4' stroke='currentColor' stroke-width='2'/><path d='M4 18l2 2 4-4-2-2z' fill='currentColor'/><path d='M10 14l-2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "sweep"
+          ],
+          "imagery": "一把扫帚在扫地，扬起一些灰尘。",
+          "translation": "打扫",
+          "sentences": [
+            {
+              "en": "I often sweep the floor after school.",
+              "cn": "我放学后经常扫地。"
+            }
+          ]
+        },
+        {
+          "word": "symbol",
+          "rootVisual": "<path d='M12 20 l-8 -8 a 5 5 0 1 1 8 -7 a 5 5 0 1 1 8 7 z' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "symbol",
+            "(象征)"
+          ],
+          "imagery": "一颗饱满的爱心，是“爱”与“和平”最通用的象征符号之一。",
+          "translation": "象征",
+          "sentences": [
+            {
+              "en": "The dove is the symbol of peace.",
+              "cn": "鸽子是和平的象征。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "prefix": "Vocab W",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_w",
+      "displayName": "Vocabulary W",
+      "themeColor": "#10b981",
+      "prefixIntro": {
+        "title": "W 开头核心词",
+        "description": "高中阶段 W 开头的高频混合词汇。",
+        "imagery": "字母 W 像水的波纹（Water）或波浪，常含“水、行走（Walk）、摆动”之意。"
+      },
+      "words": [
+        {
+          "word": "wage",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none'/><text x='12' y='14' text-anchor='middle' font-size='8' fill='currentColor'>$</text>",
+          "breakdown": [
+            "wage",
+            "(誓言/抵押)"
+          ],
+          "imagery": "按约定发的钱 -> 工资（通常指周薪）。",
+          "translation": "工资；报酬",
+          "sentences": [
+            {
+              "en": "Minimum wage.",
+              "cn": "最低工资。"
+            }
+          ]
+        },
+        {
+          "word": "wall",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' fill='none' stroke='currentColor'/><line x1='4' y1='12' x2='20' y2='12' stroke='currentColor'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor'/>",
+          "breakdown": [
+            "wall",
+            "(墙)"
+          ],
+          "imagery": "一面砖墙。",
+          "translation": "墙",
+          "sentences": [
+            {
+              "en": "The Great Wall.",
+              "cn": "长城。"
+            }
+          ]
+        },
+        {
+          "word": "wander",
+          "rootVisual": "<path d='M4 12q4-6 8 0t8 0' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "wand",
+            "(转)",
+            "er"
+          ],
+          "imagery": "转来转去地走 -> 漫步/徘徊。",
+          "translation": "漫步；徘徊",
+          "sentences": [
+            {
+              "en": "Wander around the city.",
+              "cn": "在城里闲逛。"
+            }
+          ]
+        },
+        {
+          "word": "wealth",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "weal",
+            "(好/富)",
+            "th"
+          ],
+          "imagery": "富有的状态 -> 财富。",
+          "translation": "财富",
+          "sentences": [
+            {
+              "en": "Health is wealth.",
+              "cn": "健康就是财富。"
+            }
+          ]
+        },
+        {
+          "word": "welfare",
+          "rootVisual": "<path d='M12 20l-2-2-4 0a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2l-4 0z' stroke='currentColor' fill='none'/><text x='12' y='14' text-anchor='middle' font-size='8' fill='currentColor'>OK</text>",
+          "breakdown": [
+            "wel",
+            "(好)",
+            "fare",
+            "(走/生活)"
+          ],
+          "imagery": "过得好 -> 福利/幸福。",
+          "translation": "福利；幸福",
+          "sentences": [
+            {
+              "en": "Social welfare.",
+              "cn": "社会福利。"
+            }
+          ]
+        },
+        {
+          "word": "whisper",
+          "rootVisual": "<path d='M4 12 q 4 -4 8 0' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><circle cx='14' cy='12' r='2' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "拟声词"
+          ],
+          "imagery": "模仿低语时的气流声。",
+          "translation": "耳语",
+          "sentences": [
+            {
+              "en": "He whispered in my ear.",
+              "cn": "他对我耳语。"
+            }
+          ]
+        },
+        {
+          "word": "wine",
+          "rootVisual": "<path d='M7 6 h10 l-2 8 l-3 0 l-3 0 z' fill='none' stroke='currentColor'/><line x1='12' y1='14' x2='12' y2='20' stroke='currentColor'/><line x1='8' y1='20' x2='16' y2='20' stroke='currentColor'/>",
+          "breakdown": [
+            "wine",
+            "(酒)"
+          ],
+          "imagery": "一杯葡萄酒。",
+          "translation": "葡萄酒",
+          "sentences": [
+            {
+              "en": "Red wine.",
+              "cn": "红酒。"
+            }
+          ]
+        },
+        {
+          "word": "withdraw",
+          "rootVisual": "<path d='M18 12 H6' stroke='currentColor' marker-end='url(#arrow)'/><rect x='20' y='8' width='4' height='8' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "with- (向后)",
+            "draw (拉)"
+          ],
+          "imagery": "把东西向后拉回来，例如把钱从银行拉回来（取钱），或者撤回军队。",
+          "translation": "撤回；取款",
+          "sentences": [
+            {
+              "en": "Withdraw money from the account.",
+              "cn": "从账户中取钱（向后拉回来）。"
+            },
+            {
+              "en": "The company decided to withdraw the product from the market.",
+              "cn": "公司决定将该产品从市场上撤回。"
+            }
+          ]
+        },
+        {
+          "word": "witness",
+          "rootVisual": "<path d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/>",
+          "breakdown": [
+            "wit",
+            "(知道/看)",
+            "ness"
+          ],
+          "imagery": "亲眼看到知情的人 -> 目击者。",
+          "translation": "目击者；见证",
+          "sentences": [
+            {
+              "en": "A witness to the accident.",
+              "cn": "事故目击者。"
+            }
+          ]
+        },
+        {
+          "word": "wrinkle",
+          "rootVisual": "<path d='M4 8 q 8 4 16 0' stroke='currentColor' fill='none'/><path d='M4 12 q 8 4 16 0' stroke='currentColor' fill='none'/><path d='M4 16 q 8 4 16 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "wr (扭)"
+          ],
+          "imagery": "皮肤扭曲产生的纹路。",
+          "translation": "皱纹",
+          "sentences": [
+            {
+              "en": "She has some wrinkles around her eyes.",
+              "cn": "她眼周有些皱纹。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "prefix": "Vocab T",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_t",
+      "displayName": "Vocabulary T",
+      "themeColor": "#84cc16",
+      "prefixIntro": {
+        "title": "T 开头核心词",
+        "description": "高中阶段 T 开头的高频混合词汇。",
+        "imagery": "字母 T 像一棵树（Tree）或支撑物，常含“接触（Touch）、延伸、支撑”之意。"
+      },
+      "words": [
+        {
+          "word": "take a message",
+          "rootVisual": "<path d='M4 4 h16 v12 h-8 l-4 4 v-4 h-4 z' stroke='currentColor' fill='none' stroke-width='2' opacity='0.5'/><rect x='6' y='6' width='12' height='8' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 9 h8 M8 12 h5' stroke='currentColor'/>",
+          "breakdown": [
+            "take a message",
+            "(捎口信)"
+          ],
+          "imagery": "将口头的话语（对话气泡）转录到一张便签纸上，以便传递。",
+          "translation": "捎口信",
+          "sentences": [
+            {
+              "en": "I am afraid he's not here today. Can I take a message?",
+              "cn": "恐怕他今天不在这里。我能帮您捎个口信吗？"
+            }
+          ]
+        },
+        {
+          "word": "take a walk",
+          "rootVisual": "<path d='M8 20 a 4 2 0 0 0 8 0 v-8 a 4 4 0 1 0 -8 0 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M16 18 a 4 2 0 0 0 8 0 v-8 a 4 4 0 1 0 -8 0 z' stroke='currentColor' fill='none' stroke-width='2' opacity='0.5' transform='translate(-12 -2)'/>",
+          "breakdown": [
+            "take a walk",
+            "(散步)"
+          ],
+          "imagery": "两个脚印一前一后，交替前行，代表悠闲的散步。",
+          "translation": "散步",
+          "sentences": [
+            {
+              "en": "People like taking a walk after dinner.",
+              "cn": "人们喜欢晚饭后散步。"
+            }
+          ]
+        },
+        {
+          "word": "takeaway",
+          "rootVisual": "<path d='M6 8l2 10h8l2-10H6z' stroke='currentColor' fill='none'/><path d='M8 8l4-4 4 4' stroke='currentColor'/><path d='M12 4v4' stroke='currentColor'/>",
+          "breakdown": [
+            "take",
+            "away"
+          ],
+          "imagery": "一个外卖纸盒，带有金属提手。",
+          "translation": "外卖食物",
+          "sentences": [
+            {
+              "en": "Let's have a takeaway tonight.",
+              "cn": "我们今晚吃外卖吧。"
+            }
+          ]
+        },
+        {
+          "word": "talent",
+          "rootVisual": "<path d='M12 2l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z' stroke='currentColor' fill='none'/><path d='M12 6l1 3h3l-2 2 1 3-3-2-3 2 1-3-2-2h3z' fill='currentColor'/>",
+          "breakdown": [
+            "talent"
+          ],
+          "imagery": "一颗从石头里蹦出来的星星，或者一盏聚光灯。",
+          "translation": "才华；才能",
+          "sentences": [
+            {
+              "en": "Your brother is a man of many talents.",
+              "cn": "你哥哥是个多才多艺的人。"
+            }
+          ]
+        },
+        {
+          "word": "talented",
+          "rootVisual": "<path d='M12 2l2 4h4l-3 3 1 4-4-3-4 3 1-4-3-3h4z' fill='currentColor'/><path d='M12 14v4' stroke='currentColor'/>",
+          "breakdown": [
+            "talent",
+            "-ed"
+          ],
+          "imagery": "一个人在舞台上演奏乐器，光芒四射。",
+          "translation": "有才华的",
+          "sentences": [
+            {
+              "en": "He's so talented!",
+              "cn": "他太有才了！"
+            }
+          ]
+        },
+        {
+          "word": "task",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M8 8h8 M8 12h8 M8 16h4' stroke='currentColor'/><path d='M6 8h1 M6 12h1 M6 16h1' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "task"
+          ],
+          "imagery": "一张待办事项清单，上面打满了勾。",
+          "translation": "任务",
+          "sentences": [
+            {
+              "en": "I'm glad that you have finished the task.",
+              "cn": "我很高兴你完成了任务。"
+            }
+          ]
+        },
+        {
+          "word": "taste",
+          "rootVisual": "<path d='M6 14 q 6 -8 12 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='8' r='1.5' fill='currentColor'/><path d='M12 9.5 v-4' stroke='currentColor' stroke-dasharray='1 1'/>",
+          "breakdown": [
+            "taste",
+            "(尝)"
+          ],
+          "imagery": "伸出的舌头正在品尝一颗美味的食物，感受它的味道。",
+          "translation": "尝；味道",
+          "sentences": [
+            {
+              "en": "The strawberries taste good.",
+              "cn": "这些草莓尝起来味道很好。"
+            }
+          ]
+        },
+        {
+          "word": "teammate",
+          "rootVisual": "<g><circle cx='8' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M8 11v5' stroke='currentColor'/><circle cx='16' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M16 11v5' stroke='currentColor'/><path d='M8 14h8' stroke='currentColor'/></g>",
+          "breakdown": [
+            "team",
+            "mate"
+          ],
+          "imagery": "两个人穿着相同的队服，互相击掌。",
+          "translation": "队友",
+          "sentences": [
+            {
+              "en": "If I were his teammate, I wouldn't do that.",
+              "cn": "如果我是他的队友，我不会那么做。"
+            }
+          ]
+        },
+        {
+          "word": "teenager",
+          "rootVisual": "<path d='M12 12C14.2 12 16 10.2 16 8s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4z M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6' stroke='currentColor' fill='none'/><path d='M12 5l-2 2h4z' stroke='currentColor'/>",
+          "breakdown": [
+            "teen",
+            "-ager (年纪的人)"
+          ],
+          "imagery": "一个戴着棒球帽、背着双肩包、充满活力的年轻人形象。",
+          "translation": "青少年 (13-19岁)",
+          "sentences": [
+            {
+              "en": "She was in her teens when she met him.",
+              "cn": "当她遇见他时，她才十几岁。"
+            }
+          ]
+        },
+        {
+          "word": "teens",
+          "rootVisual": "<text x='2' y='16' font-size='16' fill='currentColor'>13-19</text>",
+          "breakdown": [
+            "teen",
+            "s"
+          ],
+          "imagery": "数字13到19的集合。",
+          "translation": "十几岁 (13-19岁)",
+          "sentences": [
+            {
+              "en": "She was in her teens when she met him.",
+              "cn": "当她遇见他时，她才十几岁。"
+            }
+          ]
+        },
+        {
+          "word": "tennis",
+          "rootVisual": "<circle cx='16' cy='8' r='2' fill='currentColor'/><circle cx='8' cy='16' r='6' stroke='currentColor' fill='none' stroke-width='2'/><line x1='12' y1='12' x2='4' y2='20' stroke='currentColor' stroke-width='2'/><path d='M6 16 h4 M8 14 v4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "Tennis",
+            "(网球)"
+          ],
+          "imagery": "一个网球拍和一颗飞行的网球，代表这项运动。",
+          "translation": "网球",
+          "sentences": [
+            {
+              "en": "I used to play tennis with my friend when I was young.",
+              "cn": "我年轻时常和朋友打网球。"
+            }
+          ]
+        },
+        {
+          "word": "tent",
+          "rootVisual": "<path d='M2 18 l10 -14 l10 14 h-20' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 4 v14' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "tent",
+            "(帐篷)"
+          ],
+          "imagery": "一个简洁的三角形帐篷，是户外露营的标志。",
+          "translation": "帐篷",
+          "sentences": [
+            {
+              "en": "This tent can hold 4 people.",
+              "cn": "这个帐篷可以容纳4人。"
+            }
+          ]
+        },
+        {
+          "word": "text",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><path d='M6 8h12 M6 12h8' stroke='currentColor'/><path d='M16 16l2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "text"
+          ],
+          "imagery": "手机屏幕上的气泡对话框，或者一页写满字的纸。",
+          "translation": "发短信",
+          "sentences": [
+            {
+              "en": "Text me when you get home.",
+              "cn": "你到家了就给我发个信息。"
+            }
+          ]
+        },
+        {
+          "word": "textbook",
+          "rootVisual": "<rect x='4' y='4' width='14' height='18' rx='1' stroke='currentColor' fill='none'/><path d='M6 8h10 M6 12h10 M6 16h6' stroke='currentColor'/>",
+          "breakdown": [
+            "text",
+            "book"
+          ],
+          "imagery": "一本厚厚的书，封面上写着TEXT。",
+          "translation": "课本",
+          "sentences": [
+            {
+              "en": "Pass me your English textbook.",
+              "cn": "把你的英语课本递给我。"
+            }
+          ]
+        },
+        {
+          "word": "throat",
+          "rootVisual": "<path d='M8 4v16' stroke='currentColor'/><path d='M16 4v16' stroke='currentColor'/><path d='M8 12h8' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "throat"
+          ],
+          "imagery": "颈部的轮廓，中间标出了喉咙的位置。",
+          "translation": "喉咙",
+          "sentences": [
+            {
+              "en": "She cleared her throat.",
+              "cn": "她清了清嗓子。"
+            }
+          ]
+        },
+        {
+          "word": "throw",
+          "rootVisual": "<circle cx='4' cy='18' r='2' fill='currentColor'/><path d='M6 16c4-4 8-8 14-4' stroke='currentColor' stroke-dasharray='2 2'/><path d='M20 12l-2-2 M20 12l-4 0' stroke='currentColor'/>",
+          "breakdown": [
+            "throw"
+          ],
+          "imagery": "一只手将球抛出的抛物线轨迹。",
+          "translation": "扔；投掷",
+          "sentences": [
+            {
+              "en": "How far should I throw this ball?",
+              "cn": "我应该把这个球扔多远？"
+            }
+          ]
+        },
+        {
+          "word": "timetable",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><line x1='4' y1='10' x2='20' y2='10' stroke='currentColor'/><line x1='10' y1='4' x2='10' y2='20' stroke='currentColor'/><text x='7' y='16' font-size='6' fill='currentColor'>12</text>",
+          "breakdown": [
+            "time (时间)",
+            "table (表格)"
+          ],
+          "imagery": "一张列有时间和事项的表格。",
+          "translation": "时刻表",
+          "sentences": [
+            {
+              "en": "Check the train timetable.",
+              "cn": "查一下火车时刻表。"
+            }
+          ]
+        },
+        {
+          "word": "tired",
+          "rootVisual": "<rect x='4' y='8' width='16' height='8' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><rect x='6' y='10' width='3' height='4' fill='currentColor'/><rect x='18' y='8' width='2' height='8' rx='1' fill='currentColor'/>",
+          "breakdown": [
+            "tired / tiring",
+            "(疲劳的)"
+          ],
+          "imagery": "一块电量几乎耗尽的电池，只剩下最后一格红色能量。",
+          "translation": "疲劳的；令人疲劳的",
+          "sentences": [
+            {
+              "en": "I am very tired after a day of work.",
+              "cn": "工作一天后我非常累。"
+            },
+            {
+              "en": "Studying for 4 hours is very tiring.",
+              "cn": "连续学习4个小时非常累人。"
+            }
+          ]
+        },
+        {
+          "word": "toilet",
+          "rootVisual": "<path d='M6 10h12v6a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4z' stroke='currentColor' fill='none'/><path d='M6 10h12v-2a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2z' stroke='currentColor'/><rect x='11' y='4' width='2' height='2' fill='currentColor'/>",
+          "breakdown": [
+            "toilet"
+          ],
+          "imagery": "一个马桶的侧面轮廓图。",
+          "translation": "厕所；马桶",
+          "sentences": [
+            {
+              "en": "The toilet is blocked.",
+              "cn": "马桶堵了。"
+            }
+          ]
+        },
+        {
+          "word": "tool",
+          "rootVisual": "<path d='M6 6l12 12' stroke='currentColor' stroke-width='4'/><path d='M18 6l-12 12' stroke='currentColor' stroke-width='4'/>",
+          "breakdown": [
+            "tool"
+          ],
+          "imagery": "一把交叉的锤子和扳手。",
+          "translation": "工具",
+          "sentences": [
+            {
+              "en": "The shop sells garden tools.",
+              "cn": "这家商店出售园艺工具。"
+            }
+          ]
+        },
+        {
+          "word": "tooth",
+          "rootVisual": "<path d='M6 18 v-8 a 4 4 0 0 1 8 0 v8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 18 a 2 2 0 0 0 4 0 a 2 2 0 0 0 4 0' stroke='currentColor' fill='none'/><line x1='6' y1='10' x2='14' y2='10' stroke='currentColor'/>",
+          "breakdown": [
+            "tooth / teeth",
+            "(牙齿)"
+          ],
+          "imagery": "一颗洁白健康的臼齿，上面平整，下面有两个牙根。",
+          "translation": "牙齿",
+          "sentences": [
+            {
+              "en": "Many people ask me why my teeth are so white.",
+              "cn": "很多人问我为什么我的牙齿这么白。"
+            }
+          ]
+        },
+        {
+          "word": "toothbrush",
+          "rootVisual": "<rect x='8' y='12' width='4' height='10' rx='1' stroke='currentColor' fill='none'/><rect x='6' y='6' width='8' height='6' stroke='currentColor' fill='none'/><line x1='8' y1='6' x2='8' y2='2' stroke='currentColor'/><line x1='10' y1='6' x2='10' y2='2' stroke='currentColor'/><line x1='12' y1='6' x2='12' y2='2' stroke='currentColor'/>",
+          "breakdown": [
+            "tooth (牙)",
+            "brush (刷)"
+          ],
+          "imagery": "一把带有刷毛的牙刷。",
+          "translation": "牙刷",
+          "sentences": [
+            {
+              "en": "Change your toothbrush every three months.",
+              "cn": "每三个月换一次牙刷。"
+            }
+          ]
+        },
+        {
+          "word": "toothpaste",
+          "rootVisual": "<path d='M4 18 h12 l4 -4 v-8 l-4 -4 h-12 v16 z' stroke='currentColor' fill='none'/><path d='M20 10 h2 v4 h-2' stroke='currentColor'/>",
+          "breakdown": [
+            "tooth (牙)",
+            "paste (膏)"
+          ],
+          "imagery": "一支被挤压的牙膏管。",
+          "translation": "牙膏",
+          "sentences": [
+            {
+              "en": "We are running out of toothpaste.",
+              "cn": "我们的牙膏快用完了。"
+            }
+          ]
+        },
+        {
+          "word": "touching",
+          "rootVisual": "<path d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' fill='none' stroke='currentColor'/><circle cx='18' cy='18' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "touch",
+            "(触摸/感动)",
+            "-ing"
+          ],
+          "imagery": "一颗心，旁边有一滴眼泪，表示被打动了。",
+          "translation": "感人的",
+          "sentences": [
+            {
+              "en": "The story is touching.",
+              "cn": "这个故事很感人。"
+            }
+          ]
+        },
+        {
+          "word": "tour",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='4 4'/><path d='M12 4l2-2' stroke='currentColor'/><rect x='10' y='10' width='4' height='4' fill='currentColor'/>",
+          "breakdown": [
+            "tour"
+          ],
+          "imagery": "一辆旅游巴士沿着环形路线行驶。",
+          "translation": "旅行；观光",
+          "sentences": [
+            {
+              "en": "We tour by car every summer.",
+              "cn": "我们每年夏天都开车旅行。"
+            }
+          ]
+        },
+        {
+          "word": "tourist",
+          "rootVisual": "<path d='M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z M6 20v-6h12v6' stroke='currentColor' fill='none'/><path d='M16 14l3-3' stroke='currentColor'/><rect x='18' y='8' width='4' height='5' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "tour",
+            "-ist (人)"
+          ],
+          "imagery": "一个人背着旅行包，手里拿着相机，正在四处张望。",
+          "translation": "游客",
+          "sentences": [
+            {
+              "en": "Are you a tourist?",
+              "cn": "你是游客吗？"
+            }
+          ]
+        },
+        {
+          "word": "tower",
+          "rootVisual": "<path d='M8 22h8L14 2h-4z' stroke='currentColor' fill='none'/><path d='M10 2v20' stroke='currentColor' opacity='0.3'/><rect x='9' y='6' width='6' height='2' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "tower"
+          ],
+          "imagery": "一座高耸入云的尖塔，类似埃菲尔铁塔或电视塔。",
+          "translation": "塔",
+          "sentences": [
+            {
+              "en": "The Tower of London stands in the east end of London.",
+              "cn": "伦敦塔位于伦敦的东区。"
+            }
+          ]
+        },
+        {
+          "word": "trade",
+          "rootVisual": "<path d='M8 10h8' stroke='currentColor'/><path d='M16 10l-2-2 M16 10l-2 2' stroke='currentColor'/><path d='M16 14H8' stroke='currentColor'/><path d='M8 14l2-2 M8 14l2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "trade"
+          ],
+          "imagery": "两只手交换物品，或者双向箭头。",
+          "translation": "做买卖；交易",
+          "sentences": [
+            {
+              "en": "Let's make a trade.",
+              "cn": "我们做个交易吧。"
+            }
+          ]
+        },
+        {
+          "word": "train",
+          "rootVisual": "<circle cx='6' cy='6' r='2' fill='currentColor'/><circle cx='12' cy='6' r='2' fill='currentColor'/><circle cx='18' cy='6' r='2' fill='currentColor'/><path d='M8 6h2 M14 6h2' stroke='currentColor'/>",
+          "breakdown": [
+            "train"
+          ],
+          "imagery": "一个人在举重，或者一排人在做同样的动作。",
+          "translation": "训练",
+          "sentences": [
+            {
+              "en": "She's training to be a doctor.",
+              "cn": "她正在接受成为医生的培训。"
+            }
+          ]
+        },
+        {
+          "word": "treasure",
+          "rootVisual": "<path d='M4 8h16l-2 10h-12z' stroke='currentColor' fill='gold' opacity='0.3'/><rect x='4' y='6' width='16' height='4' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "treas (宝物)",
+            "-ure"
+          ],
+          "imagery": "一个装满金币和宝石的宝箱。",
+          "translation": "财宝；财富",
+          "sentences": [
+            {
+              "en": "Blood and treasure are the costs of war.",
+              "cn": "鲜血和财富是战争的代价。"
+            }
+          ]
+        },
+        {
+          "word": "true",
+          "rootVisual": "<path d='M20 6 L9 17 l-5 -5' stroke='currentColor' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/><path d='M4 6 l16 12 M4 18 l16 -12' stroke='currentColor' stroke-width='2' opacity='0.2'/>",
+          "breakdown": [
+            "true / false",
+            "(真的/假的)"
+          ],
+          "imagery": "一个巨大而清晰的对勾代表“真”，背景中用虚线画出一个“X”代表“假”作为对比。",
+          "translation": "真的；假的",
+          "sentences": [
+            {
+              "en": "Is it true that you're moving?",
+              "cn": "你要搬家是真的吗？"
+            },
+            {
+              "en": "My answer is true and yours is false.",
+              "cn": "我的答案是真的，而你的是假的。"
+            }
+          ]
+        },
+        {
+          "word": "trust",
+          "rootVisual": "<path d='M12 4 l-2 10 l-4 -2 l4 8 l6 -10 l-4 2 z' fill='none' stroke='currentColor'/><circle cx='12' cy='12' r='9' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "trust",
+            "(信任)"
+          ],
+          "imagery": "两只手紧紧握在一起，或者一个人向后倒，相信后面有人会接住。",
+          "translation": "相信；信任",
+          "sentences": [
+            {
+              "en": "I trust him completely.",
+              "cn": "我完全信任他。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "prefix": "Vocab R",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_r",
+      "displayName": "Vocabulary R",
+      "themeColor": "#06b6d4",
+      "prefixIntro": {
+        "title": "R 开头核心词",
+        "description": "高中阶段 R 开头的高频混合词汇。",
+        "imagery": "字母 R 像发芽的根（Root）或奔跑的人（Run），常含“生长、发散、强壮”之意。"
+      },
+      "words": [
+        {
+          "word": "rabbit",
+          "rootVisual": "<circle cx='12' cy='14' r='6' stroke='currentColor' fill='none'/><path d='M12 8v-6l-2 2 M12 8v-6l2 2' stroke='currentColor'/><circle cx='10' cy='12' r='1' fill='currentColor'/><circle cx='14' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "rabbit"
+          ],
+          "imagery": "一个长耳朵的兔子头。",
+          "translation": "兔子",
+          "sentences": [
+            {
+              "en": "Rabbits run fast.",
+              "cn": "兔子跑得快。"
+            }
+          ]
+        },
+        {
+          "word": "railway",
+          "rootVisual": "<path d='M8 2v20 M16 2v20' stroke='currentColor' stroke-width='2'/><path d='M6 6h12 M6 10h12 M6 14h12 M6 18h12' stroke='currentColor'/>",
+          "breakdown": [
+            "rail",
+            "way"
+          ],
+          "imagery": "两条平行的铁轨，中间有枕木。",
+          "translation": "铁轨；铁路",
+          "sentences": [
+            {
+              "en": "The railway was open to traffic last year.",
+              "cn": "这條鐵路去年通車了。"
+            }
+          ]
+        },
+        {
+          "word": "rain",
+          "rootVisual": "<path d='M8 12 a4 4 0 0 1 0 -8 h8 a6 6 0 0 1 0 12 h-6 a4 4 0 0 1 -2 -4 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M10 16 l-1 4 M14 16 l-1 4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Rain",
+            "(雨)"
+          ],
+          "imagery": "一朵云下面有几滴雨水落下。",
+          "translation": "雨",
+          "sentences": [
+            {
+              "en": "The rain is getting heavier.",
+              "cn": "雨越下越大了。"
+            }
+          ]
+        },
+        {
+          "word": "rainbow",
+          "rootVisual": "<path d='M4 16 A 10 10 0 0 1 20 16' stroke='currentColor' stroke-width='2' fill='none'/><path d='M6 16 A 8 8 0 0 1 18 16' stroke='currentColor' stroke-width='2' fill='none'/><path d='M8 16 A 6 6 0 0 1 16 16' stroke='currentColor' stroke-width='2' fill='none'/>",
+          "breakdown": [
+            "rain (雨)",
+            "bow (弓)"
+          ],
+          "imagery": "雨后 (rain) 天空中出现的像弓 (bow) 一样的彩色弧线。",
+          "translation": "彩虹",
+          "sentences": [
+            {
+              "en": "A rainbow is a natural phenomenon.",
+              "cn": "彩虹是一种自然现象。"
+            }
+          ]
+        },
+        {
+          "word": "rainy",
+          "rootVisual": "<path d='M8 12 a4 4 0 0 1 0 -8 h8 a6 6 0 0 1 0 12 h-6 a4 4 0 0 1 -2 -4 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M10 16 l-1 4 M14 16 l-1 4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Rain",
+            "(雨)",
+            "-y",
+            "(…的)"
+          ],
+          "imagery": "一朵云下面有几滴雨水落下。",
+          "translation": "下雨的",
+          "sentences": [
+            {
+              "en": "I don't like rainy days.",
+              "cn": "我不喜欢下雨天。"
+            }
+          ]
+        },
+        {
+          "word": "relationship",
+          "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M8 12 h8' stroke='currentColor' stroke-width='2'/><rect x='10' y='10' width='4' height='4' fill='currentColor' opacity='0.5' transform='rotate(45 12 12)'/>",
+          "breakdown": [
+            "relation (关系)",
+            "-ship (状态)"
+          ],
+          "imagery": "两点之间建立的链条，彼此关联，无法分割。",
+          "translation": "关系(爱情，亲情)",
+          "sentences": [
+            {
+              "en": "Are you in a relationship?",
+              "cn": "你们在谈恋爱吗？"
+            }
+          ]
+        },
+        {
+          "word": "relative",
+          "rootVisual": "<circle cx='12' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M12 11v5 M12 16l-3 4 M12 16l3 4 M9 13l6 0' stroke='currentColor'/><circle cx='6' cy='14' r='2' stroke='currentColor' opacity='0.5'/><circle cx='18' cy='14' r='2' stroke='currentColor' opacity='0.5'/><path d='M9 10l-2 2 M15 10l2 2' stroke='currentColor' stroke-dasharray='2,2'/>",
+          "breakdown": [
+            "relat (联系)",
+            "-ive (人/物)"
+          ],
+          "imagery": "一个家族树的分支图，展示出个体之间血缘或婚姻的联系。",
+          "translation": "亲戚",
+          "sentences": [
+            {
+              "en": "Most of her relatives were able to come.",
+              "cn": "她的大多数亲戚都能来。"
+            }
+          ]
+        },
+        {
+          "word": "relax",
+          "rootVisual": "<path d='M 2 20 L 22 20 M 4.5 16 A 2.5 2.5 0 1 0 9.5 16 A 2.5 2.5 0 1 0 4.5 16 Z M 9 18 h 6 l 5 -2 M 14 18 l 2 -4' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": [
+            "Re-",
+            "(向后/反复)",
+            "Lax",
+            "(松)"
+          ],
+          "imagery": "联想一个人彻底“躺平”，双手枕在脑后，翘着二郎腿，把紧绷的神经向后（Re-）完全松开（Lax）。",
+          "translation": "放松",
+          "sentences": [
+            {
+              "en": "You should learn to relax after a long time of work.",
+              "cn": "工作很久后你应该学会放松。"
+            }
+          ]
+        },
+        {
+          "word": "restroom",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M12 8v3 M12 13v3' stroke='currentColor'/><path d='M9 10l3-2 3 2' stroke='currentColor'/>",
+          "breakdown": [
+            "rest",
+            "room"
+          ],
+          "imagery": "常见的男女厕所标志符号。",
+          "translation": "公共厕所；休息室",
+          "sentences": [
+            {
+              "en": "Excuse me, where is the restroom?",
+              "cn": "打扰一下，请问洗手间在哪里？"
+            }
+          ]
+        },
+        {
+          "word": "right away",
+          "rootVisual": "<path d='M4 12 h12' stroke='currentColor' stroke-width='2'/><path d='M13 9 l3 3 l-3 3' stroke='currentColor' stroke-width='2'/><path d='M20 5 v14' stroke='currentColor'/>",
+          "breakdown": [
+            "away",
+            "(离开)"
+          ],
+          "imagery": "一个箭头直接冲向终点线，表示毫无延迟。",
+          "translation": "立刻",
+          "sentences": [
+            {
+              "en": "You should go to bed right away.",
+              "cn": "你应该立刻去睡觉。"
+            }
+          ]
+        },
+        {
+          "word": "right now",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none'/><line x1='12' y1='12' x2='12' y2='5' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "right",
+            "(正)",
+            "now",
+            "(现在)"
+          ],
+          "imagery": "时钟的指针垂直指向正上方，表示“正是此刻”。",
+          "translation": "立刻",
+          "sentences": [
+            {
+              "en": "You should go to bed right now.",
+              "cn": "你应该立刻去睡觉。"
+            }
+          ]
+        },
+        {
+          "word": "ring",
+          "rootVisual": "<path d='M10 8c-2 0-4 2-4 4v4h12v-4c0-2-2-4-4-4z' stroke='currentColor' fill='none'/><circle cx='12' cy='18' r='1' fill='currentColor'/><path d='M4 14l-2-2 M20 14l2-2' stroke='currentColor'/>",
+          "breakdown": [
+            "ring"
+          ],
+          "imagery": "一个正在震动的闹钟或铃铛。",
+          "translation": "(铃)响",
+          "sentences": [
+            {
+              "en": "Just ring if you need anything.",
+              "cn": "如果你需要什么，就按铃。"
+            }
+          ]
+        },
+        {
+          "word": "robot",
+          "rootVisual": "<rect x='8' y='8' width='8' height='8' rx='1' stroke='currentColor' fill='none' stroke-width='2'/><rect x='6' y='16' width='12' height='4' rx='1' stroke='currentColor' fill='none'/><circle cx='10' cy='12' r='1' fill='currentColor'/><circle cx='14' cy='12' r='1' fill='currentColor'/><line x1='12' y1='8' x2='14' y2='4' stroke='currentColor'/>",
+          "breakdown": [
+            "robot",
+            "(机器人)"
+          ],
+          "imagery": "一个由方块和圆形组成的经典机器人形象，方头方脑，头顶还有天线。",
+          "translation": "机器人",
+          "sentences": [
+            {
+              "en": "There will be a robot in each family in the near future.",
+              "cn": "在不久的将来，每个家庭都会有一个机器人。"
+            }
+          ]
+        },
+        {
+          "word": "rocket",
+          "rootVisual": "<path d='M12 2 q 5 10 5 14 a 5 5 0 0 1 -10 0 q 0 -4 5 -14' stroke='currentColor' fill='none'/><path d='M12 16 v6 M10 20 l-2 2 M14 20 l2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "rock",
+            "(卷线杆/形状)",
+            "-et (小)"
+          ],
+          "imagery": "一枚正在升空的火箭，尾部喷射出火焰。",
+          "translation": "火箭",
+          "sentences": [
+            {
+              "en": "The rocket was launched from a space research base.",
+              "cn": "火箭是从一个太空研究基地发射的。"
+            }
+          ]
+        },
+        {
+          "word": "roommate",
+          "rootVisual": "<rect x='2' y='4' width='20' height='16' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='2' stroke='currentColor'/><circle cx='16' cy='10' r='2' stroke='currentColor'/><path d='M6 14h4 M14 14h4' stroke='currentColor'/>",
+          "breakdown": [
+            "room",
+            "mate"
+          ],
+          "imagery": "一个房间里有两张床，或者两个人坐在同一张沙发上。",
+          "translation": "室友",
+          "sentences": [
+            {
+              "en": "My roommate is very quiet.",
+              "cn": "我的室友很安静。"
+            }
+          ]
+        },
+        {
+          "word": "rope",
+          "rootVisual": "<path d='M8 4 a4 4 0 1 1 0 8 a4 4 0 1 0 0 8' stroke='currentColor' fill='none' stroke-width='2'/><path d='M16 4 a4 4 0 1 0 0 8 a4 4 0 1 1 0 8' stroke='currentColor' fill='none' stroke-width='2' opacity='0.5'/>",
+          "breakdown": [
+            "rope",
+            "(绳子)"
+          ],
+          "imagery": "两条相互缠绕的螺旋线，形成了麻花状，直观地表现出绳子的结构。",
+          "translation": "绳子",
+          "sentences": [
+            {
+              "en": "The rope is very strong.",
+              "cn": "这根绳子很结实。"
+            }
+          ]
+        },
+        {
+          "word": "rule",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 10 h8 M8 14 h6' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "rule",
+            "(规则)"
+          ],
+          "imagery": "一张清单前面带有编号（1, 2, 3），象征着必须遵守的条目和规则。",
+          "translation": "规则",
+          "sentences": [
+            {
+              "en": "You must obey the rules of the game.",
+              "cn": "你必须遵守游戏规则。"
+            }
+          ]
+        },
+        {
+          "word": "ruler",
+          "rootVisual": "<path d='M12 12C14.2 12 16 10.2 16 8s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4z M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6' stroke='currentColor' fill='none'/><path d='M9 2l3 3 3-3' stroke='currentColor' fill='gold' fill-opacity='0.5'/><circle cx='12' cy='2' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "rule",
+            "-er (人)"
+          ],
+          "imagery": "一个人头戴皇冠，手里拿着权杖。",
+          "translation": "统治者",
+          "sentences": [
+            {
+              "en": "She is the real ruler.",
+              "cn": "她才是真正的统治者。"
+            }
+          ]
+        },
+        {
+          "word": "rush",
+          "rootVisual": "<path d='M4 12h12' stroke='currentColor' stroke-width='2'/><path d='M12 8l4 4-4 4' stroke='currentColor'/><path d='M6 12h-2' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "rush"
+          ],
+          "imagery": "一个人快跑留下的残影线条。",
+          "translation": "仓促；匆忙",
+          "sentences": [
+            {
+              "en": "He goes to work in a rush.",
+              "cn": "他匆匆忙忙地去上班。"
+            }
+          ]
+        },
+        {
+          "word": "russia",
+          "rootVisual": "<path d='M12 2 c -3 0 -5 2.5 -5 5.5 c 0 2 1.5 3.5 3 4.5 c -2 1 -4 3 -4 6 c 0 3.3 2.7 6 6 6 s 6 -2.7 6 -6 c 0 -3 -2 -5 -4 -6 c 1.5 -1 3 -2.5 3 -4.5 C 17 4.5 15 2 12 2 z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='7' r='2.5' stroke='currentColor' fill='none' stroke-width='1.5'/><path d='M9 16 q 3 3 6 0' stroke='currentColor' fill='none' stroke-width='1.5'/>",
+          "breakdown": [
+            "Russia",
+            "(俄罗斯)"
+          ],
+          "imagery": "The iconic Matryoshka doll (套娃), a symbol of Russian folk art that represents the nation's rich, layered culture.",
+          "translation": "俄罗斯",
+          "sentences": [
+            {
+              "en": "Russian people are not afraid of the cold.",
+              "cn": "俄罗斯人不怕冷。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

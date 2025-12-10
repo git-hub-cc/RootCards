@@ -1,0 +1,50 @@
+{
+  "prefix": "Vocab Z",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_z",
+      "displayName": "Vocabulary Z",
+      "themeColor": "#8b5cf6",
+      "prefixIntro": {
+        "title": "Z 开头核心词",
+        "description": "高中阶段 Z 开头的高频混合词汇。",
+        "imagery": "字母 Z 像之字形路（Zigzag），常含“曲折、极大/极小（Zero）”之意。"
+      },
+      "words": [
+        {
+          "word": "zipper",
+          "rootVisual": "<rect x='10' y='2' width='4' height='20' stroke='currentColor' fill='none'/><path d='M10 2v8 M14 2v8' stroke='currentColor'/><rect x='10' y='10' width='4' height='6' fill='currentColor'/>",
+          "breakdown": [
+            "zip",
+            "-er"
+          ],
+          "imagery": "一个正在拉上的拉链。",
+          "translation": "拉链",
+          "sentences": [
+            {
+              "en": "They have put a zipper on it.",
+              "cn": "他们给它装上了一个拉链。"
+            }
+          ]
+        },
+        {
+          "word": "zoo",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='4' x2='8' y2='20' stroke='currentColor'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor'/><line x1='16' y1='4' x2='16' y2='20' stroke='currentColor'/>",
+          "breakdown": [
+            "zoion",
+            "(动物)"
+          ],
+          "imagery": "栅栏的形状，代表关动物的地方。",
+          "translation": "动物园",
+          "sentences": [
+            {
+              "en": "There are 50 kinds of animals in the zoo.",
+              "cn": "动物园里有50种动物。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

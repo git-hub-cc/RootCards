@@ -1,0 +1,69 @@
+{
+  "prefix": "Vocab L",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_l",
+      "displayName": "Vocabulary L",
+      "themeColor": "#3b82f6",
+      "prefixIntro": {
+        "title": "L 开头核心词",
+        "description": "高中阶段 L 开头的高频混合词汇。",
+        "imagery": "字母 L 像一条长线（Line）或腿（Leg），常含“长、流动、延伸”之意。"
+      },
+      "words": [
+        {
+          "word": "leaflet",
+          "rootVisual": "<path d='M12 4l-4 8h8z' stroke='currentColor' fill='none'/><path d='M12 12v4' stroke='currentColor'/>",
+          "breakdown": [
+            "leaf",
+            "(叶/页)",
+            "let",
+            "(小)"
+          ],
+          "imagery": "像小树叶一样的小纸片 -> 传单。",
+          "translation": "传单",
+          "sentences": [
+            {
+              "en": "Hand out leaflets.",
+              "cn": "分发传单。"
+            }
+          ]
+        },
+        {
+          "word": "league",
+          "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor'/><circle cx='16' cy='12' r='3' stroke='currentColor'/><path d='M11 12h2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "lig",
+            "(绑)",
+            "ue"
+          ],
+          "imagery": "绑在一起的团体 -> 联盟。",
+          "translation": "联盟；社团",
+          "sentences": [
+            {
+              "en": "The League of Nations.",
+              "cn": "国际联盟。"
+            }
+          ]
+        },
+        {
+          "word": "loyal",
+          "rootVisual": "<path d='M12 20 l-2 2 h4 l-2 -2 m0 -4 v4' stroke='currentColor'/><path d='M4 12 q 8 4 16 0' stroke='currentColor' fill='none'/><path d='M12 10 l-2 -2 a2 2 0 0 1 4 0 z' fill='currentColor' transform='translate(0, -2)'/>",
+          "breakdown": [
+            "loy (法律/忠诚)",
+            "-al (...的)"
+          ],
+          "imagery": "像臣民忠于王室一样，对某人或某事保持忠诚。",
+          "translation": "忠诚的",
+          "sentences": [
+            {
+              "en": "a loyal friend",
+              "cn": "一个忠诚的朋友"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

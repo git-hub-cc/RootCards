@@ -1,0 +1,49 @@
+{
+  "prefix": "Vocab Y",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_y",
+      "displayName": "Vocabulary Y",
+      "themeColor": "#ef4444",
+      "prefixIntro": {
+        "title": "Y 开头核心词",
+        "description": "高中阶段 Y 开头的高频混合词汇。",
+        "imagery": "字母 Y 像树枝分叉或嫩芽，常含“产出（Yield）、年轻（Young）”之意。"
+      },
+      "words": [
+        {
+          "word": "yard",
+          "rootVisual": "<rect x='4' y='8' width='16' height='12' stroke='currentColor' fill='none'/><path d='M4 8l8-4 8 4' stroke='currentColor'/><path d='M6 14l2-4 2 4' stroke='currentColor'/>",
+          "breakdown": [
+            "yard"
+          ],
+          "imagery": "房子前的一块空地，围着栅栏，可能有草地。",
+          "translation": "院子",
+          "sentences": [
+            {
+              "en": "I never went back to that yard.",
+              "cn": "我再也没有回到那个院子里去。"
+            }
+          ]
+        },
+        {
+          "word": "yet",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none' opacity='0.5'/><path d='M12 12 l4 4' stroke='currentColor'/><path d='M12 12 l0 -6' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "giet",
+            "(仍旧)"
+          ],
+          "imagery": "时钟的一半是虚线，表示动作尚未完成。",
+          "translation": "还 (用于否定句)",
+          "sentences": [
+            {
+              "en": "I haven't had dinner yet.",
+              "cn": "我还没吃晚饭。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

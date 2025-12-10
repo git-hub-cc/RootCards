@@ -1,0 +1,203 @@
+{
+  "prefix": "Vocab F",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_f",
+      "displayName": "Vocabulary F",
+      "themeColor": "#8b5cf6",
+      "prefixIntro": {
+        "title": "F 开头核心词",
+        "description": "高中阶段 F 开头的高频混合词汇。",
+        "imagery": "字母 F 像随风飘扬的旗帜（Flag）或羽毛（Feather），代表“飞翔、手”的概念。"
+      },
+      "words": [
+        {
+          "word": "fancy",
+          "rootVisual": "<path d='M12 2l2 4 5 1-4 3 1 5-4-3-4 3 1-5-4-3 5-1z' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='8' stroke='currentColor' stroke-dasharray='1 2'/>",
+          "breakdown": [
+            "fantasy",
+            "(幻想的缩写)"
+          ],
+          "imagery": "充满幻想色彩的 -> 花哨的/昂贵的/想要。",
+          "translation": "花哨的；想要",
+          "sentences": [
+            {
+              "en": "Do you fancy a drink?",
+              "cn": "想喝一杯吗？"
+            }
+          ]
+        },
+        {
+          "word": "fantastic",
+          "rootVisual": "<path d='M12 20l-2-6-6-2 6-2 2-6 2 6 6 2-6 2z' fill='currentColor'/>",
+          "breakdown": [
+            "fantasy",
+            "(幻想)",
+            "ic"
+          ],
+          "imagery": "像幻想一样美好的 -> 极好的。谐音：范特西。",
+          "translation": "极好的；奇异的",
+          "sentences": [
+            {
+              "en": "A fantastic idea.",
+              "cn": "一个极好的主意。"
+            }
+          ]
+        },
+        {
+          "word": "fare",
+          "rootVisual": "<rect x='6' y='8' width='12' height='8' stroke='currentColor' fill='none'/><text x='12' y='14' text-anchor='middle' font-size='6' fill='currentColor'>BUS</text>",
+          "breakdown": [
+            "fare",
+            "(走/费用)"
+          ],
+          "imagery": "走远路(far)需要的钱 -> 车费/路费。",
+          "translation": "车费；票价",
+          "sentences": [
+            {
+              "en": "Bus fare.",
+              "cn": "公交车费。"
+            }
+          ]
+        },
+        {
+          "word": "feet",
+          "rootVisual": "<path d='M6 16 h6 l1.5 -3 l-3 -6 h-3 l-3 6 z' stroke='currentColor' fill='none' transform='translate(-2, 0)'/><path d='M14 16 h6 l1.5 -3 l-3 -6 h-3 l-3 6 z' stroke='currentColor' fill='none' transform='translate(2, 0)'/>",
+          "breakdown": [
+            "feet",
+            "(复数)"
+          ],
+          "imagery": "两只脚并排，元音 oo 变为 ee。",
+          "translation": "脚 (复数)",
+          "sentences": [
+            {
+              "en": "I have cold feet.",
+              "cn": "我的脚很冷。"
+            }
+          ]
+        },
+        {
+          "word": "fetch",
+          "rootVisual": "<path d='M4 12h16' stroke='currentColor' marker-end='url(#arrow)'/><path d='M20 12l-4-4M20 12l-4 4' stroke='currentColor'/>",
+          "breakdown": [
+            "f-",
+            "(手)",
+            "etch",
+            "(去)"
+          ],
+          "imagery": "去拿回来 -> 取来。",
+          "translation": "（去）拿来",
+          "sentences": [
+            {
+              "en": "Fetch me a glass of water.",
+              "cn": "给我拿杯水来。"
+            }
+          ]
+        },
+        {
+          "word": "fiber",
+          "rootVisual": "<path d='M4 6q8 4 16 0' stroke='currentColor' fill='none'/><path d='M4 12q8 4 16 0' stroke='currentColor' fill='none'/><path d='M4 18q8 4 16 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "fiber",
+            "(丝)"
+          ],
+          "imagery": "细细的丝状物 -> 纤维。",
+          "translation": "纤维",
+          "sentences": [
+            {
+              "en": "Dietary fiber.",
+              "cn": "膳食纤维。"
+            }
+          ]
+        },
+        {
+          "word": "flat",
+          "rootVisual": "<line x1='2' y1='18' x2='22' y2='18' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "flat",
+            "(平)"
+          ],
+          "imagery": "一条水平线。",
+          "translation": "平的",
+          "sentences": [
+            {
+              "en": "A flat surface.",
+              "cn": "一个平坦的表面。"
+            }
+          ]
+        },
+        {
+          "word": "fluent",
+          "rootVisual": "<path d='M2 12q4-6 8 0t8 0t8 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "flu",
+            "(流)",
+            "ent"
+          ],
+          "imagery": "像水流一样顺畅 -> 流利的。",
+          "translation": "流利的",
+          "sentences": [
+            {
+              "en": "He speaks fluent English.",
+              "cn": "他英语说得很流利。"
+            }
+          ]
+        },
+        {
+          "word": "flush",
+          "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><path d='M12 18 v-4 l-2 -2 m 4 0 l -2 2' stroke='currentColor'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "flu (流)",
+            "-sh (拟声)"
+          ],
+          "imagery": "血液流向脸部导致脸红；或者水流冲刷马桶。",
+          "translation": "脸红；冲刷",
+          "sentences": [
+            {
+              "en": "She blushed when she mistakenly entered the men's toilet.",
+              "cn": "她误入男厕所时脸红了。（blush 与 flush 通假）"
+            },
+            {
+              "en": "Flush the toilet after use.",
+              "cn": "使用后请冲厕所。"
+            }
+          ]
+        },
+        {
+          "word": "foot",
+          "rootVisual": "<path d='M8 16 h8 l2 -4 l-4 -8 h-4 l-4 8 z' stroke='currentColor' fill='none'/><path d='M8 16 l2 2 h4 l2 -2' stroke='currentColor'/>",
+          "breakdown": [
+            "foot",
+            "(单数)"
+          ],
+          "imagery": "一只脚的轮廓。",
+          "translation": "脚",
+          "sentences": [
+            {
+              "en": "He stamped his foot.",
+              "cn": "他跺了跺脚。"
+            }
+          ]
+        },
+        {
+          "word": "foster",
+          "rootVisual": "<path d='M12 14l-4 6h8z' fill='currentColor' opacity='0.5'/><circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "food",
+            "(食物)",
+            "ster"
+          ],
+          "imagery": "给食物养大 -> 抚养/收养。",
+          "translation": "抚养；培养",
+          "sentences": [
+            {
+              "en": "Foster parents.",
+              "cn": "养父母。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

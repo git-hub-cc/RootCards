@@ -1,0 +1,123 @@
+{
+  "prefix": "Vocab O",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_o",
+      "displayName": "Vocabulary O",
+      "themeColor": "#ef4444",
+      "prefixIntro": {
+        "title": "O 开头核心词",
+        "description": "高中阶段 O 开头的高频混合词汇。",
+        "imagery": "字母 O 像太阳、嘴巴或圆圈，常含“圆、完整、开口（Open）”之意。"
+      },
+      "words": [
+        {
+          "word": "obey",
+          "rootVisual": "<circle cx='12' cy='8' r='4' stroke='currentColor' fill='none'/><path d='M12 12v8M8 14h8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "ob",
+            "(听)",
+            "ey"
+          ],
+          "imagery": "听从指令 -> 服从。",
+          "translation": "服从；遵守",
+          "sentences": [
+            {
+              "en": "Obey the rules.",
+              "cn": "遵守规则。"
+            }
+          ]
+        },
+        {
+          "word": "occupy",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' fill='currentColor' opacity='0.3'/><path d='M4 4l16 16M20 4l-16 16' stroke='currentColor'/>",
+          "breakdown": [
+            "oc",
+            "(去)",
+            "cup",
+            "(抓)",
+            "y"
+          ],
+          "imagery": "去抓住占为己有 -> 占领/占用。",
+          "translation": "占领；占用",
+          "sentences": [
+            {
+              "en": "The seat is occupied.",
+              "cn": "这座位有人了。"
+            }
+          ]
+        },
+        {
+          "word": "ordinary",
+          "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "ordin",
+            "(顺序)",
+            "ary"
+          ],
+          "imagery": "按顺序排队的 -> 普通的/平凡的。",
+          "translation": "普通的；平常的",
+          "sentences": [
+            {
+              "en": "An ordinary day.",
+              "cn": "平常的一天。"
+            }
+          ]
+        },
+        {
+          "word": "otherwise",
+          "rootVisual": "<path d='M4 12h8' stroke='currentColor' marker-end='url(#arrow)'/><path d='M4 12l8 8' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "other",
+            "(其他)",
+            "wise",
+            "(方式)"
+          ],
+          "imagery": "用其他方式 -> 否则/要不然。",
+          "translation": "否则；要不然",
+          "sentences": [
+            {
+              "en": "Do it now, otherwise you'll be late.",
+              "cn": "现在做，不然你会迟到。"
+            }
+          ]
+        },
+        {
+          "word": "outcome",
+          "rootVisual": "<path d='M4 12h8' stroke='currentColor'/><path d='M12 12l4 4' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": [
+            "out",
+            "(出)",
+            "come",
+            "(来)"
+          ],
+          "imagery": "最后出来的东西 -> 结果。",
+          "translation": "结果",
+          "sentences": [
+            {
+              "en": "Wait for the outcome.",
+              "cn": "等待结果。"
+            }
+          ]
+        },
+        {
+          "word": "owe",
+          "rootVisual": "<text x='12' y='16' text-anchor='middle' font-size='12' fill='currentColor'>-100</text>",
+          "breakdown": [
+            "owe",
+            "(拥有)"
+          ],
+          "imagery": "原本指拥有，后变为负拥有 -> 欠(债)。",
+          "translation": "欠；归功于",
+          "sentences": [
+            {
+              "en": "I owe you 10 dollars.",
+              "cn": "我欠你10美元。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

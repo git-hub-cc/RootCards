@@ -1,0 +1,190 @@
+{
+  "prefix": "Vocab G",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_g",
+      "displayName": "Vocabulary G",
+      "themeColor": "#ec4899",
+      "prefixIntro": {
+        "title": "G 开头核心词",
+        "description": "高中阶段 G 开头的高频混合词汇。",
+        "imagery": "字母 G 像地球（Globe）或握紧拳头的手，常含“生长（Grow）、大地”之意。"
+      },
+      "words": [
+        {
+          "word": "gentleman",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><path d='M8 4h8l2 2h-12z' stroke='currentColor'/><path d='M12 11l-2 4h4l-2-4' stroke='currentColor'/>",
+          "breakdown": [
+            "gentle",
+            "man"
+          ],
+          "imagery": "一个戴着高礼帽、打着领结的绅士形象。",
+          "translation": "绅士",
+          "sentences": [
+            {
+              "en": "Ladies and gentlemen, welcome to the party.",
+              "cn": "女士们先生们，欢迎来到派对。"
+            }
+          ]
+        },
+        {
+          "word": "geography",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M4 12 q 8 -4 16 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "geo (地)",
+            "graphy (画)"
+          ],
+          "imagery": "描绘大地的学科。",
+          "translation": "地理",
+          "sentences": [
+            {
+              "en": "I'm studying the geography of Asia.",
+              "cn": "我正在学习亚洲地理。"
+            }
+          ]
+        },
+        {
+          "word": "gift",
+          "rootVisual": "<rect x='6' y='10' width='12' height='10' stroke='currentColor' fill='none' stroke-width='2'/><line x1='12' y1='10' x2='12' y2='20' stroke='currentColor'/><path d='M12 10 q -4 -8 -6 0 M12 10 q 4 -8 6 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "Gift",
+            "(礼物)"
+          ],
+          "imagery": "一个方形盒子，上面打着蝴蝶结，象征惊喜和赠予。",
+          "translation": "礼物",
+          "sentences": [
+            {
+              "en": "I bought a birthday gift for my sister.",
+              "cn": "我给妹妹买了生日礼物。"
+            }
+          ]
+        },
+        {
+          "word": "giraffe",
+          "rootVisual": "<rect x='6' y='14' width='8' height='6' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M14 14v-8a2 2 0 0 1 2-2h1' stroke='currentColor' fill='none' stroke-width='2'/><path d='M8 20v2 M12 20v2' stroke='currentColor' stroke-width='2'/><path d='M16 4l-1-2 M18 4l1-2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Giraffe",
+            "(长颈鹿)"
+          ],
+          "imagery": "由简单的几何积木搭建而成，一个垂直的长方块代表其标志性的长脖子，稳固地连接在身体上。",
+          "translation": "长颈鹿",
+          "sentences": [
+            {
+              "en": "A giraffe's neck is very long.",
+              "cn": "长颈鹿的脖子很长。"
+            }
+          ]
+        },
+        {
+          "word": "glove",
+          "rootVisual": "<path d='M8 4v10a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4' stroke='currentColor' fill='none'/><path d='M8 10h-2a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2' stroke='currentColor'/>",
+          "breakdown": [
+            "glove"
+          ],
+          "imagery": "一只手套的轮廓，大拇指分开。",
+          "translation": "手套",
+          "sentences": [
+            {
+              "en": "You can keep the gloves.",
+              "cn": "你可以留下这副手套。"
+            }
+          ]
+        },
+        {
+          "word": "grammar",
+          "rootVisual": "<text x='6' y='14' font-size='10' fill='currentColor'>Aa</text><path d='M2 18 h20' stroke='currentColor'/>",
+          "breakdown": [
+            "gram (写)"
+          ],
+          "imagery": "书写的规则。",
+          "translation": "语法",
+          "sentences": [
+            {
+              "en": "Good grammar is important for clear communication.",
+              "cn": "好的语法对清晰的交流很重要。"
+            }
+          ]
+        },
+        {
+          "word": "grass",
+          "rootVisual": "<path d='M4 20l2-8 2 8 M10 20l2-10 2 10 M16 20l2-6 2 6' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "grass"
+          ],
+          "imagery": "几根尖尖的小草。",
+          "translation": "草；草地",
+          "sentences": [
+            {
+              "en": "I walked across the grass.",
+              "cn": "我穿过了草地。"
+            }
+          ]
+        },
+        {
+          "word": "guard",
+          "rootVisual": "<path d='M12 2L4 6v6c0 5.5 8 10 8 10s8-4.5 8-10V6l-8-4z' stroke='currentColor' fill='none'/><path d='M12 7v5' stroke='currentColor'/>",
+          "breakdown": [
+            "guard"
+          ],
+          "imagery": "一个盾牌，或者一个站得笔直、表情严肃的人在守卫入口。",
+          "translation": "守卫；保安",
+          "sentences": [
+            {
+              "en": "There are two guards on duty outside the building.",
+              "cn": "大楼外有两个保安在值班。"
+            }
+          ]
+        },
+        {
+          "word": "guest",
+          "rootVisual": "<path d='M4 20 h16 M12 4 v16' stroke='currentColor' opacity='0.2'/><circle cx='12' cy='10' r='3' fill='currentColor'/><path d='M8 18 a 4 4 0 0 1 8 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "guest",
+            "(客人)"
+          ],
+          "imagery": "一个站在门口被欢迎的人。",
+          "translation": "客人",
+          "sentences": [
+            {
+              "en": "Most of the wedding guests had left.",
+              "cn": "大部分婚礼客人都已经离开了。"
+            }
+          ]
+        },
+        {
+          "word": "guide",
+          "rootVisual": "<circle cx='12' cy='8' r='2' fill='currentColor'/><path d='M12 10 v10' stroke='currentColor' stroke-width='2'/><path d='M12 12 l6 -2 v4 l-6 2' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "Guide",
+            "(向导)"
+          ],
+          "imagery": "一个人举着一面小旗子，走在前面指引方向。",
+          "translation": "导游",
+          "sentences": [
+            {
+              "en": "I dream of being a tour guide.",
+              "cn": "我梦想成为一名导游。"
+            }
+          ]
+        },
+        {
+          "word": "guitar",
+          "rootVisual": "<path d='M7 18 c0 3 9 3 9 0 c0-2-2-3-2-5 c0-2 2-3 2-5 c0-3-9-3-9 0 c0 2 2 3 2 5 c0 2-2 3-2 5z' /><line x1='11.5' y1='3' x2='11.5' y2='13' /><circle cx='11.5' cy='16' r='2' fill='currentColor' stroke='none' />",
+          "breakdown": [
+            "Guitar",
+            "(吉他)"
+          ],
+          "imagery": "经典的8字形琴身轮廓，中心的共鸣孔仿佛是旋律的出口，等待着被拨动的琴弦唤醒。",
+          "translation": "吉他",
+          "sentences": [
+            {
+              "en": "My cousin plays the guitar so well.",
+              "cn": "我表弟吉他弹得很好。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

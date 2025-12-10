@@ -1,0 +1,140 @@
+{
+  "prefix": "Vocab M",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_m",
+      "displayName": "Vocabulary M",
+      "themeColor": "#10b981",
+      "prefixIntro": {
+        "title": "M 开头核心词",
+        "description": "高中阶段 M 开头的高频混合词汇。",
+        "imagery": "字母 M 像连绵的山峦（Mountain）或牙齿，常含“多（Many）、移动、大”之意。"
+      },
+      "words": [
+        {
+          "word": "manual",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8' stroke='currentColor'/>",
+          "breakdown": [
+            "manu (手)",
+            "-al (形/名)"
+          ],
+          "imagery": "手工的；使用手册。",
+          "translation": "手工的；手册",
+          "sentences": [
+            {
+              "en": "This machine can be operated by manual control.",
+              "cn": "这台机器可以手动控制。"
+            },
+            {
+              "en": "Please read the instruction manual carefully.",
+              "cn": "请仔细阅读说明手册。"
+            }
+          ]
+        },
+        {
+          "word": "mechanic",
+          "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><path d='M12 6v12M6 12h12' stroke='currentColor'/>",
+          "breakdown": [
+            "mach",
+            "(机器)",
+            "ic"
+          ],
+          "imagery": "修机器的人 -> 技工。",
+          "translation": "技工；机械师",
+          "sentences": [
+            {
+              "en": "A car mechanic.",
+              "cn": "汽车修理工。"
+            }
+          ]
+        },
+        {
+          "word": "memorial",
+          "rootVisual": "<path d='M8 20v-16h8v16' stroke='currentColor' fill='none'/><path d='M8 20h8' stroke='currentColor'/>",
+          "breakdown": [
+            "memor",
+            "(记忆)",
+            "ial"
+          ],
+          "imagery": "用来记忆的建筑 -> 纪念碑。",
+          "translation": "纪念碑；纪念的",
+          "sentences": [
+            {
+              "en": "A war memorial.",
+              "cn": "战争纪念碑。"
+            }
+          ]
+        },
+        {
+          "word": "metaphor",
+          "rootVisual": "<circle cx='6' cy='12' r='4' stroke='currentColor'/><path d='M12 12 h4 l-2 -2 m2 2 l-2 2' stroke='currentColor'/><rect x='18' y='8' width='4' height='8' stroke='currentColor'/>",
+          "breakdown": [
+            "meta- (跨越)",
+            "phor (带)"
+          ],
+          "imagery": "把一个事物的特征“带”到另一个事物上，进行比喻。",
+          "translation": "隐喻",
+          "sentences": [
+            {
+              "en": "Life is a journey is a metaphor.",
+              "cn": "“人生是一场旅程”是一个隐喻。"
+            }
+          ]
+        },
+        {
+          "word": "mineral",
+          "rootVisual": "<path d='M4 18l6-10 6 10h-12z' stroke='currentColor' fill='none'/><circle cx='14' cy='8' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "mine",
+            "(矿)",
+            "ral"
+          ],
+          "imagery": "矿里挖出来的 -> 矿物质。",
+          "translation": "矿物质",
+          "sentences": [
+            {
+              "en": "Rich in vitamins and minerals.",
+              "cn": "富含维生素和矿物质。"
+            }
+          ]
+        },
+        {
+          "word": "monitor",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M12 18v4h-4h8' stroke='currentColor'/>",
+          "breakdown": [
+            "mon",
+            "(警告/看)",
+            "itor"
+          ],
+          "imagery": "看着你的人/设备 -> 班长/监视器。",
+          "translation": "班长；监视器；监控",
+          "sentences": [
+            {
+              "en": "The heart monitor.",
+              "cn": "心脏监视器。"
+            }
+          ]
+        },
+        {
+          "word": "motivate",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12l4-4' stroke='currentColor' marker-end='url(#arrow)'/>",
+          "breakdown": [
+            "mot",
+            "(动)",
+            "iv",
+            "ate"
+          ],
+          "imagery": "给动力让他动起来 -> 激励。",
+          "translation": "激励；激发",
+          "sentences": [
+            {
+              "en": "He motivated the team.",
+              "cn": "他激励了团队。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

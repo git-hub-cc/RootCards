@@ -1,0 +1,133 @@
+{
+  "prefix": "Vocab Q",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_q",
+      "displayName": "Vocabulary Q",
+      "themeColor": "#ec4899",
+      "prefixIntro": {
+        "title": "Q 开头核心词",
+        "description": "高中阶段 Q 开头的高频混合词汇。",
+        "imagery": "字母 Q 像戴皇冠的王后（Queen）或问号（Question），常含“询问、追求”之意。"
+      },
+      "words": [
+        {
+          "word": "quality",
+          "rootVisual": "<path d='M12 2l2 4 5 1-4 3 1 5-4-3-4 3 1-5-4-3 5-1z' fill='currentColor'/>",
+          "breakdown": [
+            "qual",
+            "(什么)",
+            "ity"
+          ],
+          "imagery": "它是什么样子的 -> 质量/品质。",
+          "translation": "质量；品质",
+          "sentences": [
+            {
+              "en": "High quality.",
+              "cn": "高质量。"
+            }
+          ]
+        },
+        {
+          "word": "quantity",
+          "rootVisual": "<rect x='4' y='14' width='4' height='6' fill='currentColor'/><rect x='10' y='10' width='4' height='10' fill='currentColor'/><rect x='16' y='6' width='4' height='14' fill='currentColor'/>",
+          "breakdown": [
+            "quant",
+            "(多少)",
+            "ity"
+          ],
+          "imagery": "有多少 -> 数量。",
+          "translation": "数量",
+          "sentences": [
+            {
+              "en": "A large quantity of.",
+              "cn": "大量的。"
+            }
+          ]
+        },
+        {
+          "word": "quarantine",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none' stroke-dasharray='4 2'/><text x='12' y='16' text-anchor='middle' font-size='10' fill='currentColor'>40</text>",
+          "breakdown": [
+            "quarant",
+            "(四十)",
+            "ine"
+          ],
+          "imagery": "隔离40天 -> 检疫/隔离。",
+          "translation": "隔离检疫",
+          "sentences": [
+            {
+              "en": "Under quarantine.",
+              "cn": "接受隔离。"
+            }
+          ]
+        },
+        {
+          "word": "quarrel",
+          "rootVisual": "<path d='M8 8l-2 2 2 2' stroke='currentColor'/><path d='M16 8l2 2-2 2' stroke='currentColor'/><path d='M6 10h12' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "quar",
+            "(抱怨)"
+          ],
+          "imagery": "互相抱怨 -> 争吵。",
+          "translation": "争吵",
+          "sentences": [
+            {
+              "en": "Quarrel with someone.",
+              "cn": "和某人吵架。"
+            }
+          ]
+        },
+        {
+          "word": "queue",
+          "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M4 16h16' stroke='currentColor'/>",
+          "breakdown": [
+            "queue",
+            "(尾巴)"
+          ],
+          "imagery": "像尾巴一样排长队。",
+          "translation": "排队；队列",
+          "sentences": [
+            {
+              "en": "Stand in a queue.",
+              "cn": "排队。"
+            }
+          ]
+        },
+        {
+          "word": "quit",
+          "rootVisual": "<path d='M4 12h12' stroke='currentColor' marker-end='url(#arrow)'/><path d='M16 6v12' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "quit",
+            "(静止/离开)"
+          ],
+          "imagery": "停止做某事 -> 放弃/辞职。",
+          "translation": "停止；辞职",
+          "sentences": [
+            {
+              "en": "Quit smoking.",
+              "cn": "戒烟。"
+            }
+          ]
+        },
+        {
+          "word": "quiz",
+          "rootVisual": "<text x='12' y='16' text-anchor='middle' font-size='16' fill='currentColor'>?</text>",
+          "breakdown": [
+            "quiz",
+            "(询问)"
+          ],
+          "imagery": "小测验。",
+          "translation": "小测验；智力竞赛",
+          "sentences": [
+            {
+              "en": "A pop quiz.",
+              "cn": "突击测验。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

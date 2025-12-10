@@ -1,0 +1,517 @@
+{
+  "prefix": "Vocab F",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_f",
+      "displayName": "Vocabulary F",
+      "themeColor": "#8b5cf6",
+      "prefixIntro": {
+        "title": "F 开头核心词",
+        "description": "高中阶段 F 开头的高频混合词汇。",
+        "imagery": "字母 F 像随风飘扬的旗帜（Flag）或羽毛（Feather），代表“飞翔、手”的概念。"
+      },
+      "words": [
+        {
+          "word": "fail",
+          "rootVisual": "<text x='6' y='18' font-size='20' fill='red' font-weight='bold'>F</text>",
+          "breakdown": [
+            "fail"
+          ],
+          "imagery": "试卷上大大的红色F，或者跌倒的小人。",
+          "translation": "失败；不及格",
+          "sentences": [
+            {
+              "en": "He failed math.",
+              "cn": "他数学不及格。"
+            }
+          ]
+        },
+        {
+          "word": "fascinate",
+          "rootVisual": "<path d='M12 2l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z' fill='none' stroke='currentColor'/><path d='M12 12c-4 0-4 4-4 4s0 4 4 4 4-4 4-4-4-4-4-4z' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "fascin (迷)",
+            "-ate"
+          ],
+          "imagery": "一个螺旋形图案吸引着视线，或者磁铁吸引铁屑。",
+          "translation": "使着迷",
+          "sentences": [
+            {
+              "en": "The city fascinates him.",
+              "cn": "这座城市让他着迷。"
+            }
+          ]
+        },
+        {
+          "word": "fascinating",
+          "rootVisual": "<path d='M12 2l3 9h9l-7 5 3 9-8-6-8 6 3-9-7-5h9z' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' fill='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "fascin",
+            "-ating"
+          ],
+          "imagery": "绚丽的烟花，或者令人着迷的魔法光芒。",
+          "translation": "迷人的；极好的",
+          "sentences": [
+            {
+              "en": "That sounds absolutely fascinating.",
+              "cn": "那听起来真是太棒了。"
+            }
+          ]
+        },
+        {
+          "word": "fault",
+          "rootVisual": "<path d='M4 4l16 16 M20 4l-16 16' stroke='currentColor' stroke-width='2' stroke='red'/><circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' opacity='0.5'/>",
+          "breakdown": [
+            "fault"
+          ],
+          "imagery": "地面的裂缝，或者一个大红叉。",
+          "translation": "错误；过失",
+          "sentences": [
+            {
+              "en": "It's my fault.",
+              "cn": "是我的错。"
+            }
+          ]
+        },
+        {
+          "word": "favorite",
+          "rootVisual": "<path d='M12 2 l3 7 h7 l-5 5 l2 7 l-7 -5 l-7 5 l2 -7 l-5 -5 h7 z' fill='currentColor'/>",
+          "breakdown": [
+            "Favor",
+            "(偏爱)"
+          ],
+          "imagery": "一颗实心的星星，代表它是所有选项中被选中的、最好的那一个。",
+          "translation": "最喜欢的",
+          "sentences": [
+            {
+              "en": "What's your favorite book?",
+              "cn": "你最喜欢的书是什么？"
+            },
+            {
+              "en": "Red is my favorite color.",
+              "cn": "红色是我最喜欢的颜色。"
+            }
+          ]
+        },
+        {
+          "word": "fear",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='9' cy='10' r='2' fill='currentColor'/><circle cx='15' cy='10' r='2' fill='currentColor'/><ellipse cx='12' cy='16' rx='2' ry='3' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "fear",
+            "(危险/恐惧)"
+          ],
+          "imagery": "一张惊恐的脸，瞳孔放大，嘴巴张成O型。",
+          "translation": "害怕；恐惧",
+          "sentences": [
+            {
+              "en": "Women fear to go out at night.",
+              "cn": "女人晚上害怕出门。"
+            }
+          ]
+        },
+        {
+          "word": "february",
+          "rootVisual": "<path d='M12 21 C 12 21, 6 15, 6 10 A 6 6 0 1 1 18 10 C 18 15, 12 21, 12 21 Z' stroke='currentColor' fill='none'/><path d='M12 6 v6 M9 9 l3 3 l3 -3' stroke='currentColor' opacity='0.6'/>",
+          "breakdown": [
+            "Februa",
+            "(净化节)"
+          ],
+          "imagery": "源自罗马的净化节 (Februa)，像水滴洗礼一样，人们在此时进行大扫除迎接春天。",
+          "translation": "二月",
+          "sentences": [
+            {
+              "en": "February is the shortest month.",
+              "cn": "二月是最短的月份。"
+            }
+          ]
+        },
+        {
+          "word": "feed",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M 4 14 a 8 8 0 0 0 16 0' fill='none' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='8' r='2' fill='currentColor'/><circle cx='8' cy='10' r='1.5' fill='currentColor' opacity='0.6'/><circle cx='16' cy='10' r='1.5' fill='currentColor' opacity='0.6'/></g>",
+          "breakdown": [
+            "Feed",
+            "(喂养)"
+          ],
+          "imagery": "食物（圆点）落入碗（半圆）中，代表喂食的动作。",
+          "translation": "喂养",
+          "sentences": [
+            {
+              "en": "I like feeding the pigeons. It is so much fun.",
+              "cn": "我喜欢喂鸽子。这很有趣。"
+            }
+          ]
+        },
+        {
+          "word": "fever",
+          "rootVisual": "<rect x='10' y='4' width='4' height='12' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='18' r='3' fill='currentColor'/><path d='M18 6 l2 -2 m0 4 l2 -2' stroke='currentColor'/>",
+          "breakdown": [
+            "fever",
+            "(发烧)"
+          ],
+          "imagery": "一支温度计，红色的水银柱升得很高，旁边有代表热气的波浪线。",
+          "translation": "发烧",
+          "sentences": [
+            {
+              "en": "She is running a fever.",
+              "cn": "她发烧了。"
+            }
+          ]
+        },
+        {
+          "word": "few",
+          "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor' opacity='0.3'/><circle cx='8' cy='12' r='2' stroke='currentColor' fill='none' opacity='0.3'/>",
+          "breakdown": [
+            "few",
+            "(少)"
+          ],
+          "imagery": "只有一个淡淡的点，表示几乎没有（否定含义）。",
+          "translation": "几乎没有 (否定)",
+          "sentences": [
+            {
+              "en": "He has few friends, so he often feels lonely.",
+              "cn": "他几乎没有朋友，所以经常感到孤独。"
+            }
+          ]
+        },
+        {
+          "word": "field",
+          "rootVisual": "<rect x='2' y='8' width='20' height='12' stroke='currentColor' fill='none'/><path d='M2 14h20' stroke='currentColor' stroke-dasharray='4 4'/><path d='M6 8v12 M18 8v12' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "field"
+          ],
+          "imagery": "一块被分割成条状的土地，或者绿色的足球场。",
+          "translation": "田地；场地；领域",
+          "sentences": [
+            {
+              "en": "He's working in the cotton fields.",
+              "cn": "他正在棉花田里工作。"
+            }
+          ]
+        },
+        {
+          "word": "fight",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M 18.5 7 a 6.5 6.5 0 0 0 -11.6 -4 a 4 4 0 0 0 -1.4 7 v 6 a 3 3 0 0 0 3 3 h 7 a 3 3 0 0 0 3 -3 V 7 z M 6 9 a 2 2 0 1 0 0 4 h 2 M 8 19 H 16 A 1 1 0 0 1 17 20 V 21 A 1 1 0 0 1 16 22 H 8 A 1 1 0 0 1 7 21 V 20 A 1 1 0 0 1 8 19' fill='none' stroke='currentColor' stroke-width='2'/></g>",
+          "breakdown": [
+            "Fight",
+            "(打架/战斗)"
+          ],
+          "imagery": "戴上厚重的拳击手套，站在擂台上准备迎接激烈的交锋。",
+          "translation": "打架；战斗",
+          "sentences": [
+            {
+              "en": "The two men are fighting over a girl.",
+              "cn": "这两个男人为了一个女孩在打架。"
+            }
+          ]
+        },
+        {
+          "word": "fin",
+          "rootVisual": "<path d='M4 20h16' stroke='currentColor'/><path d='M8 20l4-12 4 12' stroke='currentColor' fill='currentColor'/>",
+          "breakdown": [
+            "fin"
+          ],
+          "imagery": "一个三角形的鱼鳍。",
+          "translation": "鱼鳍",
+          "sentences": [
+            {
+              "en": "Look at the fin.",
+              "cn": "看那个鱼鳍。"
+            }
+          ]
+        },
+        {
+          "word": "fireman",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><path d='M9 2h6l-1 3h-4z' stroke='currentColor'/><path d='M18 12l2 4' stroke='currentColor'/>",
+          "breakdown": [
+            "fire",
+            "man"
+          ],
+          "imagery": "一个戴着消防头盔的人，手里握着喷水的水管。",
+          "translation": "消防员",
+          "sentences": [
+            {
+              "en": "Why would you like to be a fireman?",
+              "cn": "你为什么想成为一名消防员？"
+            }
+          ]
+        },
+        {
+          "word": "fisherman",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><path d='M18 6l4 4-2 2' stroke='currentColor'/><path d='M20 14q-2 2-4 0' stroke='currentColor'/>",
+          "breakdown": [
+            "fisher",
+            "man"
+          ],
+          "imagery": "一个人手里拿着鱼竿，鱼线上钓着一条鱼。",
+          "translation": "渔民",
+          "sentences": [
+            {
+              "en": "The young fisherman laughed.",
+              "cn": "那个年轻的渔民笑了。"
+            }
+          ]
+        },
+        {
+          "word": "flag",
+          "rootVisual": "<line x1='6' y1='4' x2='6' y2='22' stroke='currentColor' stroke-width='2'/><path d='M6 5 h10 l-2 4 l2 4 h-10' stroke='currentColor' fill='currentColor' fill-opacity='0.2'/>",
+          "breakdown": [
+            "Flag",
+            "(旗)"
+          ],
+          "imagery": "一根旗杆上飘扬着一面长方形的旗帜。",
+          "translation": "旗帜",
+          "sentences": [
+            {
+              "en": "The flags are flying.",
+              "cn": "旗帜在飘扬。"
+            },
+            {
+              "en": "We salute the national flag.",
+              "cn": "我们向国旗敬礼。"
+            }
+          ]
+        },
+        {
+          "word": "flash",
+          "rootVisual": "<path d='M12 2 l-2 8 h4 l-2 8' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "fl (飞/闪)"
+          ],
+          "imagery": "空中飞过的闪电，瞬间的光亮。",
+          "translation": "闪光；闪现",
+          "sentences": [
+            {
+              "en": "A flash of lightning lit up the night sky.",
+              "cn": "一道闪电照亮了夜空。"
+            }
+          ]
+        },
+        {
+          "word": "fly",
+          "rootVisual": "<path d='M2 12 l6 -6 l6 6 l-12 0' fill='currentColor'/>",
+          "breakdown": [
+            "fly (飞)"
+          ],
+          "imagery": "飞翔的动作。",
+          "translation": "飞",
+          "sentences": [
+            {
+              "en": "Birds can fly high in the sky.",
+              "cn": "鸟儿可以在天空中高飞。"
+            }
+          ]
+        },
+        {
+          "word": "folk",
+          "rootVisual": "<circle cx='8' cy='8' r='2' fill='currentColor'/><circle cx='16' cy='8' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M8 10l4 4 4-4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "folk"
+          ],
+          "imagery": "一群穿着传统服装的人手拉手跳舞。",
+          "translation": "民间",
+          "sentences": [
+            {
+              "en": "Do you like folk music?",
+              "cn": "你喜欢民间音乐吗？"
+            }
+          ]
+        },
+        {
+          "word": "follow",
+          "rootVisual": "<circle cx='6' cy='12' r='2' fill='currentColor'/><circle cx='12' cy='12' r='2' fill='currentColor'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M8 12 h2 M14 12 h2' stroke='currentColor'/>",
+          "breakdown": [
+            "Follow",
+            "(跟随)"
+          ],
+          "imagery": "三个点排成一行，后面的紧紧跟随着前面的。",
+          "translation": "跟随",
+          "sentences": [
+            {
+              "en": "The lovely chicks are following their mother.",
+              "cn": "可爱的小鸡们正跟着它们的妈妈。"
+            }
+          ]
+        },
+        {
+          "word": "fool",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 10h2 M14 10h2' stroke='currentColor'/><path d='M12 16q-2 2-4 0' stroke='currentColor' transform='rotate(180, 12, 16)'/>",
+          "breakdown": [
+            "fool"
+          ],
+          "imagery": "一个小丑的帽子，或者一个做鬼脸的表情。",
+          "translation": "蠢人；傻瓜",
+          "sentences": [
+            {
+              "en": "You're such a big fool.",
+              "cn": "你真是个大傻瓜。"
+            }
+          ]
+        },
+        {
+          "word": "foolish",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 l2 2 l2 -2' stroke='currentColor'/><path d='M12 10 l2 2 l2 -2' stroke='currentColor'/><path d='M10 16 h4' stroke='currentColor'/>",
+          "breakdown": [
+            "fool (傻瓜)",
+            "-ish (像...的)"
+          ],
+          "imagery": "一顶带有铃铛的小丑帽，象征愚蠢的行为。",
+          "translation": "愚蠢的",
+          "sentences": [
+            {
+              "en": "It was foolish of me to trust him.",
+              "cn": "我竟然相信他，真是太愚蠢了。"
+            }
+          ]
+        },
+        {
+          "word": "forest",
+          "rootVisual": "<path d='M12 2 L16 10 H8 Z M6 10 L10 18 H2 Z M18 10 L22 18 H14 Z' stroke='currentColor' fill='none' stroke-width='1.5'/>",
+          "breakdown": [
+            "Forest",
+            "(森林)"
+          ],
+          "imagery": "三棵树木（三角形）聚集在一起，独木不成林。",
+          "translation": "森林",
+          "sentences": [
+            {
+              "en": "Thousands of animals live in the forest.",
+              "cn": "成千上万的动物生活在森林里。"
+            }
+          ]
+        },
+        {
+          "word": "forget",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M 12 14 A 5 5 0 1 0 12 4 A 5 5 0 1 0 12 14 Z M 12 22 q 6 -3 10 -6 M 17 7 c 0 -2 1 -3 2 -3 s 2 1 2 3 c 0 2 -2 3 -2 5 M 19 16 v 0.01' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></g>",
+          "breakdown": [
+            "For-",
+            "(失去/错失)",
+            "Get",
+            "(抓/获得)"
+          ],
+          "imagery": "经典的挠头动作，脑袋旁冒出一个大问号。拼命想去 'Get' (抓住) 那个记忆，却怎么也抓不住。",
+          "translation": "忘记",
+          "sentences": [
+            {
+              "en": "I am sorry. I forgot your name.",
+              "cn": "对不起。我忘记你的名字了。"
+            }
+          ]
+        },
+        {
+          "word": "fork",
+          "rootVisual": "<path d='M8 2v10a4 4 0 0 0 8 0V2' stroke='currentColor' fill='none'/><path d='M12 2v10' stroke='currentColor'/><path d='M12 16v6' stroke='currentColor'/>",
+          "breakdown": [
+            "fork"
+          ],
+          "imagery": "一把三齿叉子。",
+          "translation": "叉子",
+          "sentences": [
+            {
+              "en": "Put the knives and forks on the table.",
+              "cn": "把刀叉放到桌上。"
+            }
+          ]
+        },
+        {
+          "word": "form",
+          "rootVisual": "<rect x='4' y='4' width='6' height='6' stroke='currentColor' fill='none'/><rect x='14' y='4' width='6' height='6' stroke='currentColor' fill='none'/><rect x='4' y='14' width='6' height='6' stroke='currentColor' fill='none'/><rect x='14' y='14' width='6' height='6' stroke='currentColor' fill='none'/><path d='M10 7h4 M7 14v-4' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "form"
+          ],
+          "imagery": "几个积木块正在组合成一个特定的形状。",
+          "translation": "形成；组成",
+          "sentences": [
+            {
+              "en": "50 states form the US.",
+              "cn": "50个州组成了美国。"
+            }
+          ]
+        },
+        {
+          "word": "fresh",
+          "rootVisual": "<path d='M12 20 Q2 10 12 2 Q22 10 12 20 Z' stroke='currentColor' fill='none'/><path d='M16 8 l-4 4 l-4 -4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "fresh",
+            "(新鲜的)"
+          ],
+          "imagery": "一片刚摘下来的叶子，上面还带着露珠。",
+          "translation": "新鲜的",
+          "sentences": [
+            {
+              "en": "Do you eat plenty of vegetables and fresh fruit?",
+              "cn": "你吃大量的蔬菜和新鲜水果吗？"
+            }
+          ]
+        },
+        {
+          "word": "fridge",
+          "rootVisual": "<rect x='6' y='2' width='12' height='20' stroke='currentColor' fill='none'/><path d='M6 8h12' stroke='currentColor'/><path d='M16 4v4 M16 10v6' stroke='currentColor'/>",
+          "breakdown": [
+            "fridge"
+          ],
+          "imagery": "一个双开门或者上下开门的冰箱。",
+          "translation": "冰箱",
+          "sentences": [
+            {
+              "en": "My parents bought this fridge last year.",
+              "cn": "我父母去年买了这台冰箱。"
+            }
+          ]
+        },
+        {
+          "word": "front",
+          "rootVisual": "<rect x='8' y='4' width='10' height='10' stroke='currentColor' fill='none' opacity='0.3'/><rect x='6' y='10' width='10' height='10' stroke='currentColor' fill='currentColor' fill-opacity='0.1' stroke-width='2'/>",
+          "breakdown": [
+            "Front",
+            "(前面)"
+          ],
+          "imagery": "两个重叠的方块，一个明显位于另一个的前方，遮挡住了后面。",
+          "translation": "前面",
+          "sentences": [
+            {
+              "en": "A car is in front of the house.",
+              "cn": "一辆车在房子前面。"
+            }
+          ]
+        },
+        {
+          "word": "fun",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 20 l2 4' stroke='currentColor'/><path d='M10 24 l2 -4' stroke='currentColor'/><circle cx='10' cy='10' r='1' fill='currentColor'/><circle cx='14' cy='10' r='1' fill='currentColor'/><path d='M9 14 q 3 3 6 0' stroke='currentColor'/>",
+          "breakdown": [
+            "Fun",
+            "(乐趣)"
+          ],
+          "imagery": "一个漂浮的气球或笑脸，代表轻松和快乐。",
+          "translation": "有趣的 (褒义)",
+          "sentences": [
+            {
+              "en": "My father is a fun man.",
+              "cn": "我父亲是个风趣的人。"
+            },
+            {
+              "en": "We had a lot of fun at the party.",
+              "cn": "我们在派对上玩得很开心。"
+            }
+          ]
+        },
+        {
+          "word": "funny",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/><path d='M8 8 l2 -2 M16 8 l-2 -2' stroke='currentColor'/>",
+          "breakdown": [
+            "Fun",
+            "(滑稽)"
+          ],
+          "imagery": "一个小丑的红鼻子，让人觉得滑稽可笑。",
+          "translation": "滑稽的 (中性/贬义)",
+          "sentences": [
+            {
+              "en": "It is funny that the man wears like this.",
+              "cn": "那个男人穿成这样真滑稽。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

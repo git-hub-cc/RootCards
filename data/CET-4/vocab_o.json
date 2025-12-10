@@ -1,0 +1,176 @@
+{
+  "prefix": "Vocab O",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_o",
+      "displayName": "Vocabulary O",
+      "themeColor": "#ef4444",
+      "prefixIntro": {
+        "title": "O 开头核心词",
+        "description": "高中阶段 O 开头的高频混合词汇。",
+        "imagery": "字母 O 像太阳、嘴巴或圆圈，常含“圆、完整、开口（Open）”之意。"
+      },
+      "words": [
+        {
+          "word": "objective",
+          "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none' />",
+          "breakdown": [
+            "ob- (对)",
+            "ject (投)",
+            "-ive"
+          ],
+          "imagery": "投在对面的物体，客观存在的。",
+          "translation": "客观的；目标",
+          "sentences": [
+            {
+              "en": "Difficult to be objective.",
+              "cn": "很难保持客观。"
+            }
+          ]
+        },
+        {
+          "word": "offset",
+          "rootVisual": "<path d='M4 12 H 12' stroke='currentColor' /><path d='M12 12 H 20' stroke='currentColor' stroke-dasharray='2 2' />",
+          "breakdown": [
+            "off",
+            "set"
+          ],
+          "imagery": "设置一些东西来抵消掉。",
+          "translation": "抵消；补偿",
+          "sentences": [
+            {
+              "en": "Offset the increased cost.",
+              "cn": "抵消增加的成本。"
+            }
+          ]
+        },
+        {
+          "word": "oil",
+          "rootVisual": "<path d='M12 2 C 12 2 6 10 6 14 A 6 6 0 0 0 18 14 C 18 10 12 2 12 2' fill='currentColor' />",
+          "breakdown": [
+            "oil"
+          ],
+          "imagery": "一滴油。",
+          "translation": "油",
+          "sentences": [
+            {
+              "en": "We need to change the car's oil.",
+              "cn": "我们需要更换汽车的机油。"
+            }
+          ]
+        },
+        {
+          "word": "olive",
+          "rootVisual": "<ellipse cx='12' cy='12' rx='6' ry='8' fill='currentColor' color='#10b981' />",
+          "breakdown": [
+            "olive"
+          ],
+          "imagery": "橄榄。",
+          "translation": "橄榄",
+          "sentences": [
+            {
+              "en": "Olive oil.",
+              "cn": "橄榄油。"
+            }
+          ]
+        },
+        {
+          "word": "orient",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M16 12 L12 8 M16 12 L12 16 M2 12 H 22' stroke='currentColor' />",
+          "breakdown": [
+            "ori (升起)",
+            "-ent"
+          ],
+          "imagery": "太阳升起的地方，东方。",
+          "translation": "东方；定位",
+          "sentences": [
+            {
+              "en": "Oriented towards the needs.",
+              "cn": "面向需求。"
+            }
+          ]
+        },
+        {
+          "word": "outset",
+          "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' marker-end='url(#arrow)' /><circle cx='4' cy='12' r='2' fill='currentColor' />",
+          "breakdown": [
+            "out",
+            "set"
+          ],
+          "imagery": "出发点，开始。",
+          "translation": "开始；开端",
+          "sentences": [
+            {
+              "en": "From the outset.",
+              "cn": "从一开始。"
+            }
+          ]
+        },
+        {
+          "word": "overhear",
+          "rootVisual": "<path d='M4 4 H 20' stroke='currentColor' /><path d='M12 4 V 12' stroke='currentColor' stroke-dasharray='2 2' /><text x='12' y='16' text-anchor='middle'>👂</text>",
+          "breakdown": [
+            "over",
+            "hear"
+          ],
+          "imagery": "在上面听到下面的话，偷听。",
+          "translation": "无意中听到；偷听",
+          "sentences": [
+            {
+              "en": "Overhear a conversation.",
+              "cn": "无意中听到谈话。"
+            }
+          ]
+        },
+        {
+          "word": "overwhelm",
+          "rootVisual": "<path d='M4 20 H 20 V 4 H 4 Z' stroke='currentColor' fill='none' /><path d='M4 8 H 20 V 20 H 4 Z' fill='currentColor' opacity='0.5' />",
+          "breakdown": [
+            "over",
+            "whelm (淹)"
+          ],
+          "imagery": "大水漫过，淹没，压倒。",
+          "translation": "淹没；压倒",
+          "sentences": [
+            {
+              "en": "Overwhelmed by homesickness.",
+              "cn": "被思乡之情淹没。"
+            }
+          ]
+        },
+        {
+          "word": "owl",
+          "rootVisual": "<circle cx='8' cy='10' r='3' stroke='currentColor' fill='none' /><circle cx='16' cy='10' r='3' stroke='currentColor' fill='none' />",
+          "breakdown": [
+            "owl"
+          ],
+          "imagery": "大眼睛的鸟，猫头鹰。",
+          "translation": "猫头鹰",
+          "sentences": [
+            {
+              "en": "Owls are active at night.",
+              "cn": "猫头鹰在夜间活动。"
+            }
+          ]
+        },
+        {
+          "word": "ozone",
+          "rootVisual": "<text x='12' y='14' text-anchor='middle' font-size='10'>O₃</text>",
+          "breakdown": [
+            "o",
+            "zone"
+          ],
+          "imagery": "O3，臭氧。",
+          "translation": "臭氧",
+          "sentences": [
+            {
+              "en": "The ozone layer protects us from the sun.",
+              "cn": "臭氧层保护我们免受太阳照射。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

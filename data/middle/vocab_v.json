@@ -1,0 +1,145 @@
+{
+  "prefix": "Vocab V",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_v",
+      "displayName": "Vocabulary V",
+      "themeColor": "#3b82f6",
+      "prefixIntro": {
+        "title": "V 开头核心词",
+        "description": "高中阶段 V 开头的高频混合词汇。",
+        "imagery": "字母 V 像山谷（Valley）或视线发散（View），常含“空、观看、旋转”之意。"
+      },
+      "words": [
+        {
+          "word": "vacation",
+          "rootVisual": "<circle cx='4' cy='4' r='2' fill='currentColor'/><path d='M2 20 h20' stroke='currentColor'/><path d='M10 20 q 2 -10 4 -15 q 2 5 4 15' stroke='currentColor' fill='none'/><path d='M10 5 l8 0' stroke='currentColor' stroke-width='3' stroke-linecap='round' opacity='0.5'/>",
+          "breakdown": [
+            "vacare",
+            "(空闲)"
+          ],
+          "imagery": "太阳、海滩和遮阳伞下的休闲时光。",
+          "translation": "假期",
+          "sentences": [
+            {
+              "en": "I hope to go to the seaside during the summer vacation.",
+              "cn": "我希望暑假去海边。"
+            }
+          ]
+        },
+        {
+          "word": "value",
+          "rootVisual": "<path d='M12 4l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z' fill='none' stroke='currentColor'/><text x='16' y='20' font-size='8' fill='currentColor'>$</text>",
+          "breakdown": [
+            "val (强)",
+            "-ue"
+          ],
+          "imagery": "一颗闪闪发光的钻石，或者天平上称量的金子。",
+          "translation": "价值",
+          "sentences": [
+            {
+              "en": "His work has no value.",
+              "cn": "他的工作没有价值。"
+            }
+          ]
+        },
+        {
+          "word": "vegetable",
+          "rootVisual": "<path d='M12 20 L8 6 L16 6 Z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 6 v-4' stroke='currentColor'/><path d='M10 2 l2 -2 l2 2' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "vegetable",
+            "(蔬菜)"
+          ],
+          "imagery": "一根顶端带有绿叶的胡萝卜，是蔬菜的典型代表。",
+          "translation": "蔬菜",
+          "sentences": [
+            {
+              "en": "You should eat more fresh vegetables every day.",
+              "cn": "你每天应该多吃新鲜蔬菜。"
+            }
+          ]
+        },
+        {
+          "word": "village",
+          "rootVisual": "<path d='M2 14 L7 8 L12 14 V20 H2 Z' stroke='currentColor' fill='none'/><path d='M12 14 L17 8 L22 14 V20 H12 Z' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "villa",
+            "(别墅/农舍)"
+          ],
+          "imagery": "两座并排的小房子，代表乡村聚落。",
+          "translation": "村庄",
+          "sentences": [
+            {
+              "en": "There are 800 villagers in the village.",
+              "cn": "村里有800名村民。"
+            }
+          ]
+        },
+        {
+          "word": "villager",
+          "rootVisual": "<path d='M4 14 L9 8 L14 14 V20 H4 Z' stroke='currentColor' fill='none' opacity='0.5'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M16 16 h4 v4' stroke='currentColor'/>",
+          "breakdown": [
+            "-er",
+            "(人)"
+          ],
+          "imagery": "房子旁边站着一个人。",
+          "translation": "村民",
+          "sentences": [
+            {
+              "en": "The villagers are very friendly.",
+              "cn": "村民们非常友好。"
+            }
+          ]
+        },
+        {
+          "word": "violin",
+          "rootVisual": "<path d='M12 2 v6 c-2 0 -3 1 -3 3 s 1 3 3 3 c-2 0 -3 2 -3 4 s 2 4 3 4 s 3 -2 3 -4 s -1 -4 -3 -4 c 2 0 3 -2 3 -3 s -1 -3 -3 -3 z' stroke='currentColor' fill='none'/><line x1='12' y1='2' x2='12' y2='22' stroke='currentColor'/>",
+          "breakdown": [
+            "viola",
+            "(弦乐器)"
+          ],
+          "imagery": "小提琴独特的葫芦状琴身。",
+          "translation": "小提琴",
+          "sentences": [
+            {
+              "en": "Few people can play the violin.",
+              "cn": "很少有人会拉小提琴。"
+            }
+          ]
+        },
+        {
+          "word": "voice",
+          "rootVisual": "<path d='M8 8a4 4 0 0 1 8 0' stroke='currentColor' fill='none'/><path d='M12 12v6' stroke='currentColor'/><path d='M6 10c-2 2-2 6 0 8' stroke='currentColor' opacity='0.5'/><path d='M18 10c2 2 2 6 0 8' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "voice"
+          ],
+          "imagery": "声波的波纹，或者一个麦克风。",
+          "translation": "嗓音；声音",
+          "sentences": [
+            {
+              "en": "I know her by her voice.",
+              "cn": "我听她的声音就知道是她了。"
+            }
+          ]
+        },
+        {
+          "word": "volunteer",
+          "rootVisual": "<path d='M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8z M5 20v-6h14v6' stroke='currentColor' fill='none'/><path d='M12 14v3 M9 15l3 3 3-3' stroke='currentColor'/>",
+          "breakdown": [
+            "volunt (意愿)",
+            "-eer (人)"
+          ],
+          "imagery": "一个人高高举起手，表示“我愿意”，充满积极主动的热情。",
+          "translation": "志愿者",
+          "sentences": [
+            {
+              "en": "I volunteer because I have the time.",
+              "cn": "我做志愿者是因为我有时间。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

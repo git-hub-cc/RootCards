@@ -1,0 +1,176 @@
+{
+  "prefix": "Vocab D",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_d",
+      "displayName": "Vocabulary D",
+      "themeColor": "#f59e0b",
+      "prefixIntro": {
+        "title": "D 开头核心词",
+        "description": "高中阶段 D 开头的高频混合词汇。",
+        "imagery": "字母 D 像一个大肚子或弓（代表向下 Down 或坚固的大坝 Dam）。"
+      },
+      "words": [
+        {
+          "word": "dam",
+          "rootVisual": "<path d='M4 20v-16h4v16z' fill='currentColor'/><path d='M8 10h12' stroke='currentColor' stroke-width='2' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "dam",
+            "(坝)"
+          ],
+          "imagery": "D 的形状像一个大坝挡住水。",
+          "translation": "水坝",
+          "sentences": [
+            {
+              "en": "The Three Gorges Dam.",
+              "cn": "三峡大坝。"
+            }
+          ]
+        },
+        {
+          "word": "damage",
+          "rootVisual": "<path d='M4 20v-16h4v16z' fill='currentColor' opacity='0.5'/><path d='M4 10l4 4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "dam",
+            "(坝)",
+            "age",
+            "(老)"
+          ],
+          "imagery": "大坝老了(age)就会损坏 -> 损害。",
+          "translation": "损害；损坏",
+          "sentences": [
+            {
+              "en": "Smoking damages your health.",
+              "cn": "吸烟损害你的健康。"
+            }
+          ]
+        },
+        {
+          "word": "damp",
+          "rootVisual": "<path d='M4 20v-16h4v16z' fill='currentColor' opacity='0.5'/><path d='M10 18l2-4 2 4' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "dam",
+            "(坝)",
+            "p"
+          ],
+          "imagery": "大坝旁边总是湿漉漉的 -> 潮湿的。",
+          "translation": "潮湿的",
+          "sentences": [
+            {
+              "en": "A damp towel.",
+              "cn": "一条湿毛巾。"
+            }
+          ]
+        },
+        {
+          "word": "dazzling",
+          "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor'/><path d='M12 2v4M12 18v4M2 12h4M18 12h4' stroke='currentColor'/>",
+          "breakdown": [
+            "dazzle",
+            "(目眩)",
+            "ing"
+          ],
+          "imagery": "光芒太强让人头晕 (dizzy)。",
+          "translation": "令人目眩的；耀眼的",
+          "sentences": [
+            {
+              "en": "A dazzling smile.",
+              "cn": "灿烂的笑容。"
+            }
+          ]
+        },
+        {
+          "word": "decision",
+          "rootVisual": "<path d='M12 4 v10' stroke='currentColor'/><path d='M12 14 l-4 4 M12 14 l4 4' stroke='currentColor'/>",
+          "breakdown": [
+            "decis (切)",
+            "-ion (名词)"
+          ],
+          "imagery": "做出的决定。",
+          "translation": "决定",
+          "sentences": [
+            {
+              "en": "It's a difficult decision to make.",
+              "cn": "这是一个很难做的决定。"
+            }
+          ]
+        },
+        {
+          "word": "domestic",
+          "rootVisual": "<path d='M2 12l10-8 10 8v10h-20z' stroke='currentColor' fill='none'/><circle cx='12' cy='14' r='4' stroke='currentColor'/>",
+          "breakdown": [
+            "dom",
+            "(家/圆顶)",
+            "estic"
+          ],
+          "imagery": "圆屋顶下的 -> 家里的 -> 国内的。",
+          "translation": "家庭的；国内的",
+          "sentences": [
+            {
+              "en": "Domestic flights.",
+              "cn": "国内航班。"
+            }
+          ]
+        },
+        {
+          "word": "dormant",
+          "rootVisual": "<path d='M2 12l10-8 10 8v10h-20z' stroke='currentColor' fill='none'/><text x='10' y='18' font-size='10' fill='currentColor'>Zzz</text>",
+          "breakdown": [
+            "dorm",
+            "(睡觉)",
+            "ant"
+          ],
+          "imagery": "在宿舍(dorm)里睡觉的状态 -> 休眠的。",
+          "translation": "休眠的；静止的",
+          "sentences": [
+            {
+              "en": "A dormant volcano.",
+              "cn": "一座休眠火山。"
+            }
+          ]
+        },
+        {
+          "word": "drink",
+          "rootVisual": "<path d='M7 6 h10 v12 a2 2 0 0 1 -2 2 h-6 a2 2 0 0 1 -2 -2 z' stroke='currentColor' fill='none'/><path d='M6 10 h12' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "i -> a -> u",
+            "(元音音阶)"
+          ],
+          "imagery": "一个装水的杯子。动词变化遵循 i-a-u 规律。",
+          "translation": "喝",
+          "sentences": [
+            {
+              "en": "I drink water.",
+              "cn": "我喝水。"
+            },
+            {
+              "en": "I drank water yesterday.",
+              "cn": "我昨天喝了水。"
+            },
+            {
+              "en": "I have drunk water.",
+              "cn": "我已经喝过水了。"
+            }
+          ]
+        },
+        {
+          "word": "dwell",
+          "rootVisual": "<rect x='6' y='8' width='12' height='12' stroke='currentColor' fill='none'/><path d='M6 8l6-6 6 6' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "dwell",
+            "(住)"
+          ],
+          "imagery": "谐音：对井(dwell)而居 -> 居住。",
+          "translation": "居住",
+          "sentences": [
+            {
+              "en": "They dwell in the forest.",
+              "cn": "他们居住在森林里。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

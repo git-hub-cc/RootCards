@@ -1,0 +1,235 @@
+{
+  "prefix": "Vocab R",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_r",
+      "displayName": "Vocabulary R",
+      "themeColor": "#06b6d4",
+      "prefixIntro": {
+        "title": "R 开头核心词",
+        "description": "高中阶段 R 开头的高频混合词汇。",
+        "imagery": "字母 R 像发芽的根（Root）或奔跑的人（Run），常含“生长、发散、强壮”之意。"
+      },
+      "words": [
+        {
+          "word": "random",
+          "rootVisual": "<circle cx='6' cy='6' r='2' fill='currentColor'/><circle cx='16' cy='14' r='2' fill='currentColor'/><circle cx='10' cy='18' r='2' fill='currentColor'/><path d='M6 6l10 8-6 4' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "ran",
+            "(跑)",
+            "dom"
+          ],
+          "imagery": "像马乱跑一样 -> 随机的。",
+          "translation": "随机的",
+          "sentences": [
+            {
+              "en": "At random.",
+              "cn": "随机地。"
+            }
+          ]
+        },
+        {
+          "word": "rapid",
+          "rootVisual": "<path d='M4 12h16' stroke='currentColor' marker-end='url(#arrow)'/><path d='M4 12l6-6M4 12l6 6' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "rap",
+            "(抢)",
+            "id"
+          ],
+          "imagery": "动作快得像抢一样 -> 迅速的。",
+          "translation": "迅速的",
+          "sentences": [
+            {
+              "en": "Rapid growth.",
+              "cn": "快速增长。"
+            }
+          ]
+        },
+        {
+          "word": "recite",
+          "rootVisual": "<path d='M8 8h8M8 12h8M8 16h4' stroke='currentColor'/><path d='M6 4h12v16h-12z' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "re-",
+            "(再)",
+            "cite",
+            "(召唤)"
+          ],
+          "imagery": "再次召唤出记忆 -> 背诵。",
+          "translation": "背诵；朗诵",
+          "sentences": [
+            {
+              "en": "Recite a poem.",
+              "cn": "背诵一首诗。"
+            }
+          ]
+        },
+        {
+          "word": "recommend",
+          "rootVisual": "<path d='M6 12h12' stroke='currentColor' marker-end='url(#arrow)'/><circle cx='18' cy='12' r='2' fill='currentColor'/><path d='M6 12l4-4M6 12l4 4' stroke='currentColor'/>",
+          "breakdown": [
+            "re-",
+            "(再)",
+            "commend",
+            "(称赞)"
+          ],
+          "imagery": "反复称赞 -> 推荐。",
+          "translation": "推荐",
+          "sentences": [
+            {
+              "en": "I recommend this book.",
+              "cn": "我推荐这本书。"
+            }
+          ]
+        },
+        {
+          "word": "recover",
+          "rootVisual": "<path d='M4 18l6-6 6 6' stroke='currentColor'/><path d='M16 12v-6h-6' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "re-",
+            "(回)",
+            "cover",
+            "(盖)"
+          ],
+          "imagery": "重新获得健康/覆盖 -> 恢复。",
+          "translation": "恢复；康复",
+          "sentences": [
+            {
+              "en": "Recover from illness.",
+              "cn": "病愈。"
+            }
+          ]
+        },
+        {
+          "word": "rent",
+          "rootVisual": "<rect x='6' y='8' width='12' height='10' stroke='currentColor' fill='none'/><text x='12' y='14' text-anchor='middle' font-size='8' fill='currentColor'>KEY</text>",
+          "breakdown": [
+            "rend",
+            "(给)"
+          ],
+          "imagery": "给钱换取使用权 -> 租金/出租。",
+          "translation": "租金；出租",
+          "sentences": [
+            {
+              "en": "For rent.",
+              "cn": "出租。"
+            }
+          ]
+        },
+        {
+          "word": "rescue",
+          "rootVisual": "<circle cx='12' cy='12' r='9' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 2v20M2 12h20' stroke='currentColor' stroke-width='2' stroke-dasharray='4 2'/>",
+          "breakdown": [
+            "re-",
+            "(再)",
+            "scue",
+            "(动)"
+          ],
+          "imagery": "把人拉回来 -> 营救。",
+          "translation": "营救；救援",
+          "sentences": [
+            {
+              "en": "Rescue the drowning boy.",
+              "cn": "营救溺水男孩。"
+            }
+          ]
+        },
+        {
+          "word": "reverse",
+          "rootVisual": "<path d='M18 8 l-4 4 l4 4' stroke='currentColor'/><path d='M6 16 l4 -4 l-4 -4' stroke='currentColor'/>",
+          "breakdown": [
+            "re-",
+            "vers (转)"
+          ],
+          "imagery": "翻转过来。",
+          "translation": "反转；颠倒",
+          "sentences": [
+            {
+              "en": "Reverse the order.",
+              "cn": "颠倒顺序。"
+            }
+          ]
+        },
+        {
+          "word": "risk",
+          "rootVisual": "<path d='M12 4l-8 16h16z' stroke='currentColor' fill='none'/><text x='12' y='16' text-anchor='middle' font-size='10' fill='currentColor'>!</text>",
+          "breakdown": [
+            "risk",
+            "(岩石)"
+          ],
+          "imagery": "船触礁的危险 -> 风险。",
+          "translation": "风险；冒险",
+          "sentences": [
+            {
+              "en": "At risk.",
+              "cn": "处于危险中。"
+            }
+          ]
+        },
+        {
+          "word": "road",
+          "rootVisual": "<path d='M8 20 L10 4 H14 L16 20' stroke='currentColor' fill='none' stroke-width='2'/><line x1='12' y1='20' x2='12' y2='4' stroke='currentColor' stroke-dasharray='4 2'/>",
+          "breakdown": [
+            "road",
+            "(路)"
+          ],
+          "imagery": "一条具体的马路。",
+          "translation": "道路",
+          "sentences": [
+            {
+              "en": "Cross the road.",
+              "cn": "过马路。"
+            }
+          ]
+        },
+        {
+          "word": "rob",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12h8' stroke='currentColor'/>",
+          "breakdown": [
+            "rob",
+            "(抢)"
+          ],
+          "imagery": "抢夺 -> 抢劫。",
+          "translation": "抢劫",
+          "sentences": [
+            {
+              "en": "He was robbed.",
+              "cn": "他被抢了。"
+            }
+          ]
+        },
+        {
+          "word": "root",
+          "rootVisual": "<path d='M12 10 v10 m-3 -4 l3 4 l3 -4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "root (根)"
+          ],
+          "imagery": "植物的根。",
+          "translation": "根",
+          "sentences": [
+            {
+              "en": "The root of the problem is a lack of communication.",
+              "cn": "问题的根源是缺乏沟通。"
+            }
+          ]
+        },
+        {
+          "word": "route",
+          "rootVisual": "<path d='M4 18 l4 -4 l4 4 l8 -8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='4' cy='18' r='2' fill='currentColor'/><circle cx='20' cy='10' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "route",
+            "(路线)"
+          ],
+          "imagery": "地图上的规划路线。d 和 t 通假。",
+          "translation": "路线",
+          "sentences": [
+            {
+              "en": "Which route should we take?",
+              "cn": "我们该走哪条路？"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

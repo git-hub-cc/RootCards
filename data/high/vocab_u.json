@@ -1,0 +1,123 @@
+{
+  "prefix": "Vocab U",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_u",
+      "displayName": "Vocabulary U",
+      "themeColor": "#6366f1",
+      "prefixIntro": {
+        "title": "U 开头核心词",
+        "description": "高中阶段 U 开头的高频混合词汇。",
+        "imagery": "字母 U 像一个杯子或容器（Urn），常含“容纳、下面（Under）”之意。"
+      },
+      "words": [
+        {
+          "word": "ultimate",
+          "rootVisual": "<path d='M2 12h16' stroke='currentColor' marker-end='url(#arrow)'/><rect x='18' y='4' width='2' height='16' fill='currentColor'/>",
+          "breakdown": [
+            "ultim",
+            "(最后)",
+            "ate"
+          ],
+          "imagery": "走到最尽头 -> 最终的。",
+          "translation": "最终的；根本的",
+          "sentences": [
+            {
+              "en": "The ultimate goal.",
+              "cn": "最终目标。"
+            }
+          ]
+        },
+        {
+          "word": "unanimous",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 12h8' stroke='currentColor'/><path d='M12 8v8' stroke='currentColor'/>",
+          "breakdown": [
+            "un",
+            "(一)",
+            "anim",
+            "(心/精神)",
+            "ous"
+          ],
+          "imagery": "万众一心 -> 一致的。",
+          "translation": "全体一致的",
+          "sentences": [
+            {
+              "en": "A unanimous decision.",
+              "cn": "一致的决定。"
+            }
+          ]
+        },
+        {
+          "word": "undertake",
+          "rootVisual": "<path d='M4 14h16' stroke='currentColor'/><rect x='8' y='8' width='8' height='6' stroke='currentColor' fill='none'/><path d='M12 14v4' stroke='currentColor'/>",
+          "breakdown": [
+            "under",
+            "(下)",
+            "take",
+            "(拿)"
+          ],
+          "imagery": "在下面接住重担 -> 承担/从事。",
+          "translation": "承担；从事",
+          "sentences": [
+            {
+              "en": "Undertake a task.",
+              "cn": "承担一项任务。"
+            }
+          ]
+        },
+        {
+          "word": "unique",
+          "rootVisual": "<circle cx='12' cy='12' r='4' fill='currentColor'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "uni",
+            "(一)",
+            "que"
+          ],
+          "imagery": "独一无二的 -> 独特的。",
+          "translation": "独特的；唯一的",
+          "sentences": [
+            {
+              "en": "A unique opportunity.",
+              "cn": "一个难得的机会。"
+            }
+          ]
+        },
+        {
+          "word": "urban",
+          "rootVisual": "<path d='M2 18v-8h4v-4h4v-4h4v4h4v4h4v8z' stroke='currentColor' fill='none'/><rect x='4' y='14' width='2' height='2' fill='currentColor'/>",
+          "breakdown": [
+            "urb",
+            "(城市)",
+            "an"
+          ],
+          "imagery": "高楼林立的地方 -> 城市的。",
+          "translation": "城市的",
+          "sentences": [
+            {
+              "en": "Urban life.",
+              "cn": "城市生活。"
+            }
+          ]
+        },
+        {
+          "word": "urgent",
+          "rootVisual": "<text x='12' y='16' text-anchor='middle' font-size='16' fill='currentColor'>!</text>",
+          "breakdown": [
+            "urg",
+            "(推/催)",
+            "ent"
+          ],
+          "imagery": "在后面催促的 -> 紧急的。",
+          "translation": "紧急的；急迫的",
+          "sentences": [
+            {
+              "en": "Urgent help.",
+              "cn": "紧急求助。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

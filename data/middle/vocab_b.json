@@ -1,0 +1,642 @@
+{
+  "prefix": "Vocab B",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_b",
+      "displayName": "Vocabulary B",
+      "themeColor": "#3b82f6",
+      "prefixIntro": {
+        "title": "B 开头核心词",
+        "description": "高中阶段 B 开头的高频混合词汇。",
+        "imagery": "字母 B 像一个孕妇或两块木板（代表依靠、阻挡或膨胀）。"
+      },
+      "words": [
+        {
+          "word": "backpack",
+          "rootVisual": "<path d='M6 6a4 4 0 0 1 12 0v14H6z' stroke='currentColor' fill='none'/><path d='M6 10h12' stroke='currentColor'/><rect x='9' y='14' width='6' height='6' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "back",
+            "pack"
+          ],
+          "imagery": "一个双肩背包。",
+          "translation": "背包",
+          "sentences": [
+            {
+              "en": "I lost my backpack.",
+              "cn": "我丢了我的背包。"
+            }
+          ]
+        },
+        {
+          "word": "backpacker",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 20v-5h12v5' stroke='currentColor' fill='none'/><rect x='8' y='8' width='8' height='10' rx='2' stroke='currentColor' fill='currentColor' opacity='0.2'/>",
+          "breakdown": [
+            "backpack",
+            "-er"
+          ],
+          "imagery": "一个背着巨大登山包的人正在行走。",
+          "translation": "背包客",
+          "sentences": [
+            {
+              "en": "He is a full-time backpacker.",
+              "cn": "他是一个全职背包客。"
+            }
+          ]
+        },
+        {
+          "word": "badminton",
+          "rootVisual": "<path d='M 7 18 a 5 5 0 0 0 10 0 M 7 18 L 4 5 h 16 l -3 13 H 7 z M 12 5 L 12 18'/>",
+          "breakdown": [
+            "Badminton",
+            "(羽毛球)"
+          ],
+          "imagery": "一个由半圆形球托和梯形羽毛构成的羽毛球，简洁地展现了其经典的圆锥外形。",
+          "translation": "羽毛球",
+          "sentences": [
+            {
+              "en": "I often play badminton with my dad on weekends.",
+              "cn": "我周末常和爸爸打羽毛球。"
+            }
+          ]
+        },
+        {
+          "word": "bamboo",
+          "rootVisual": "<rect x='10' y='2' width='4' height='20' stroke='currentColor' fill='none'/><path d='M10 8h4 M10 14h4 M10 20h4' stroke='currentColor'/>",
+          "breakdown": [
+            "bamboo"
+          ],
+          "imagery": "一根有节的竹子。",
+          "translation": "竹子",
+          "sentences": [
+            {
+              "en": "Everything there is made of bamboo.",
+              "cn": "那裡的一切都是用竹子做的。"
+            }
+          ]
+        },
+        {
+          "word": "barbershop",
+          "rootVisual": "<rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='none'/><line x1='8' y1='8' x2='16' y2='12' stroke='currentColor'/><line x1='8' y1='12' x2='16' y2='16' stroke='currentColor'/><path d='M8 4 a 4 4 0 0 1 8 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "barber (理发师)",
+            "shop (店)"
+          ],
+          "imagery": "理发店门口标志性的红白蓝旋转灯柱。",
+          "translation": "理发店",
+          "sentences": [
+            {
+              "en": "He went to the barbershop for a shave.",
+              "cn": "他去理发店刮胡子。"
+            }
+          ]
+        },
+        {
+          "word": "basket",
+          "rootVisual": "<path d='M4 10h16l-2 10h-12z' stroke='currentColor' fill='none'/><path d='M4 10c0-6 16-6 16 0' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "basket"
+          ],
+          "imagery": "一个编织的篮子，带有提手。",
+          "translation": "篮子",
+          "sentences": [
+            {
+              "en": "There is a basket full of vegetables.",
+              "cn": "有一个装满蔬菜的篮子。"
+            }
+          ]
+        },
+        {
+          "word": "bathroom",
+          "rootVisual": "<rect x='4' y='14' width='16' height='6' rx='2' stroke='currentColor' fill='none'/><path d='M6 14v-4a2 2 0 0 1 2-2h1' stroke='currentColor'/><circle cx='9' cy='7' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "bath",
+            "room"
+          ],
+          "imagery": "一个浴缸，上方有一个喷头在喷水。",
+          "translation": "浴室；卫生间",
+          "sentences": [
+            {
+              "en": "She went to the bathroom.",
+              "cn": "她去了卫生间。"
+            }
+          ]
+        },
+        {
+          "word": "beach",
+          "rootVisual": "<path d='M2 18 q 5 -3 10 0 t 10 0' stroke='currentColor' fill='none'/><circle cx='6' cy='6' r='3' stroke='currentColor' fill='none'/><path d='M6 6 l2 2 M6 6 l0 3 M6 6 l-2 2' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "Beach",
+            "(海滩)"
+          ],
+          "imagery": "波浪线代表海水，圆圈代表太阳。",
+          "translation": "海滩",
+          "sentences": [
+            {
+              "en": "Lying on the beach is very relaxing.",
+              "cn": "躺在海滩上非常放松。"
+            },
+            {
+              "en": "Let's go to the beach this weekend.",
+              "cn": "这周末我们去海滩吧。"
+            }
+          ]
+        },
+        {
+          "word": "bean",
+          "rootVisual": "<path d='M8 12c0-4 4-6 8-4s4 6 0 8-8 2-8-4z' fill='currentColor' opacity='0.6'/><path d='M12 10c1 0 2 1 2 2' stroke='white'/>",
+          "breakdown": [
+            "bean"
+          ],
+          "imagery": "一颗肾形的豆子。",
+          "translation": "豆",
+          "sentences": [
+            {
+              "en": "Cook the beans with pork.",
+              "cn": "用猪肉炖豆子。"
+            }
+          ]
+        },
+        {
+          "word": "believe",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M9 12 l2 2 l4 -4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "be-",
+            "lieve (爱/信任)"
+          ],
+          "imagery": "一个人双手合十祈祷，或者眼神坚定地看着前方。",
+          "translation": "相信",
+          "sentences": [
+            {
+              "en": "Do you believe me?",
+              "cn": "你相信我吗？"
+            }
+          ]
+        },
+        {
+          "word": "bell",
+          "rootVisual": "<path d='M6 16a6 6 0 0 1 12 0' stroke='currentColor' fill='none'/><circle cx='12' cy='16' r='2' fill='currentColor'/>",
+          "breakdown": [
+            "bell"
+          ],
+          "imagery": "一个倒扣的钟形，中间有钟摆。",
+          "translation": "钟；铃",
+          "sentences": [
+            {
+              "en": "She rang the doorbell.",
+              "cn": "她按了门铃。"
+            }
+          ]
+        },
+        {
+          "word": "berry",
+          "rootVisual": "<circle cx='8' cy='14' r='3' stroke='currentColor' fill='none'/><circle cx='16' cy='14' r='3' stroke='currentColor' fill='none'/><circle cx='12' cy='8' r='3' stroke='currentColor' fill='none'/><path d='M12 8 l0 -4' stroke='currentColor'/>",
+          "breakdown": [
+            "berie",
+            "(浆果)"
+          ],
+          "imagery": "一簇饱满的小果实。",
+          "translation": "浆果",
+          "sentences": [
+            {
+              "en": "This bush is full of berries.",
+              "cn": "这丛灌木结满了浆果。"
+            }
+          ]
+        },
+        {
+          "word": "biscuit",
+          "rootVisual": "<rect x='6' y='8' width='12' height='8' rx='1' stroke='currentColor' fill='none'/><circle cx='9' cy='12' r='0.5' fill='currentColor'/><circle cx='12' cy='12' r='0.5' fill='currentColor'/><circle cx='15' cy='12' r='0.5' fill='currentColor'/>",
+          "breakdown": [
+            "biscuit"
+          ],
+          "imagery": "一块长方形的饼干，上面有几个小孔。",
+          "translation": "饼干 (通常指扁平、脆的)",
+          "sentences": [
+            {
+              "en": "Would you like some cake or biscuit?",
+              "cn": "你想要些蛋糕还是饼干？"
+            }
+          ]
+        },
+        {
+          "word": "blind",
+          "rootVisual": "<path d='M12 12 m-8 0 a 8 6 0 1 0 16 0 a 8 6 0 1 0 -16 0' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/><line x1='4' y1='4' x2='20' y2='20' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "blind",
+            "(瞎的)"
+          ],
+          "imagery": "一只睁开的眼睛被一条粗线划掉，表示失去了视觉。",
+          "translation": "瞎的；盲的",
+          "sentences": [
+            {
+              "en": "The accident left him blind.",
+              "cn": "那次事故让他失明了。"
+            }
+          ]
+        },
+        {
+          "word": "block",
+          "rootVisual": "<rect x='8' y='4' width='8' height='16' stroke='currentColor' fill='currentColor'/><path d='M4 12h4' stroke='currentColor'/><path d='M6 10l2 2-2 2' stroke='currentColor' transform='rotate(180, 6, 12)'/>",
+          "breakdown": [
+            "block"
+          ],
+          "imagery": "一堵墙挡住了去路，或者禁止通行的标志。",
+          "translation": "阻塞",
+          "sentences": [
+            {
+              "en": "The sink is blocked.",
+              "cn": "水槽堵了。"
+            }
+          ]
+        },
+        {
+          "word": "blonde",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M4 12 a 8 8 0 0 1 16 0' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round'/><path d='M4 12 q 4 6 8 0 t 8 0' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round'/><path d='M7 8 q 2 -3 5 0' stroke='currentColor' fill='none' stroke-width='1.5'/><path d='M15 7 q 2 -3 4 0' stroke='currentColor' fill='none' stroke-width='1.5'/></g>",
+          "breakdown": [
+            "Blonde",
+            "(金黄色)"
+          ],
+          "imagery": "柔和的波浪线条勾勒出富有动感的短发轮廓，象征着浅色头发特有的轻盈与光泽感。",
+          "translation": "金黄色的",
+          "sentences": [
+            {
+              "en": "Many Europeans have blonde hair.",
+              "cn": "许多欧洲人有金色的头发。"
+            }
+          ]
+        },
+        {
+          "word": "blouse",
+          "rootVisual": "<path d='M6 6l6-4 6 4v14H6z' stroke='currentColor' fill='none'/><path d='M12 2v20' stroke='currentColor' stroke-dasharray='2 2'/><path d='M6 6l-2 4' stroke='currentColor'/><path d='M18 6l2 4' stroke='currentColor'/>",
+          "breakdown": [
+            "blouse"
+          ],
+          "imagery": "一件女士衬衫的轮廓。",
+          "translation": "女士衬衫",
+          "sentences": [
+            {
+              "en": "This blouse goes well with you.",
+              "cn": "这件女士衬衫很配你。"
+            }
+          ]
+        },
+        {
+          "word": "blow",
+          "rootVisual": "<path d='M4 10 q 4 -4 8 0 M4 14 q 4 -4 8 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='18' cy='12' r='2' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Blow",
+            "(吹)"
+          ],
+          "imagery": "几条代表气流的曲线从左边吹向右边的一个圆圈。",
+          "translation": "吹",
+          "sentences": [
+            {
+              "en": "The child blows out the birthday candles and makes a wish.",
+              "cn": "孩子吹灭生日蜡烛并许愿。"
+            }
+          ]
+        },
+        {
+          "word": "board",
+          "rootVisual": "<rect x='2' y='6' width='20' height='12' stroke='currentColor' fill='currentColor' opacity='0.8'/><rect x='4' y='8' width='16' height='8' stroke='white' fill='none'/>",
+          "breakdown": [
+            "board"
+          ],
+          "imagery": "一块黑板或白板，或者会议桌。",
+          "translation": "板；董事会",
+          "sentences": [
+            {
+              "en": "I've put a list of names up on the board.",
+              "cn": "我把一个名单贴在了板上。"
+            }
+          ]
+        },
+        {
+          "word": "boarding school",
+          "rootVisual": "<path d='M4 20h16v-8l-8-6-8 6z' stroke='currentColor' fill='none'/><rect x='8' y='14' width='8' height='6' stroke='currentColor'/><path d='M10 14h4' stroke='currentColor'/>",
+          "breakdown": [
+            "boarding",
+            "school"
+          ],
+          "imagery": "一个学校建筑旁边有一张床。",
+          "translation": "寄宿学校",
+          "sentences": [
+            {
+              "en": "She is at boarding school.",
+              "cn": "她在寄宿学校。"
+            }
+          ]
+        },
+        {
+          "word": "boil",
+          "rootVisual": "<path d='M4 14 q 4 -2 8 0 t 8 0' stroke='currentColor'/><circle cx='8' cy='10' r='2' stroke='currentColor'/><circle cx='16' cy='8' r='3' stroke='currentColor'/>",
+          "breakdown": [
+            "boil (沸腾)"
+          ],
+          "imagery": "水沸腾时鼓起的泡泡 (bubble)。",
+          "translation": "煮沸",
+          "sentences": [
+            {
+              "en": "Let the water boil for a few minutes.",
+              "cn": "让水沸腾几分钟。"
+            }
+          ]
+        },
+        {
+          "word": "bookcase",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><line x1='6' y1='9' x2='18' y2='9' stroke='currentColor'/><line x1='6' y1='15' x2='18' y2='15' stroke='currentColor'/><rect x='8' y='10' width='2' height='4' fill='currentColor'/><rect x='11' y='10' width='2' height='4' fill='currentColor'/>",
+          "breakdown": [
+            "book",
+            "(书)",
+            "case",
+            "(箱子)"
+          ],
+          "imagery": "有分层的架子，上面摆着几本书。",
+          "translation": "书架",
+          "sentences": [
+            {
+              "en": "He took a book from the bookcase.",
+              "cn": "他从书架上拿了一本书。"
+            }
+          ]
+        },
+        {
+          "word": "bookstore",
+          "rootVisual": "<rect x='4' y='6' width='16' height='14' stroke='currentColor' fill='none'/><path d='M4 6l8-4 8 4' stroke='currentColor'/><path d='M8 12h8 M8 16h8' stroke='currentColor'/><path d='M4 20h16' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "book",
+            "store"
+          ],
+          "imagery": "一个商店的橱窗里摆满了书。",
+          "translation": "书店",
+          "sentences": [
+            {
+              "en": "The bookstore is just around the corner.",
+              "cn": "书店就在拐角处。"
+            }
+          ]
+        },
+        {
+          "word": "bored",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 h2 M14 10 h2' stroke='currentColor'/><line x1='9' y1='15' x2='15' y2='15' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Bore",
+            "(钻孔/烦扰)"
+          ],
+          "imagery": "因为厌倦而眼神呆滞或翻白眼的样子。",
+          "translation": "感到无聊的 (修饰人)",
+          "sentences": [
+            {
+              "en": "I am bored with the job.",
+              "cn": "我对这份工作感到厌倦。"
+            }
+          ]
+        },
+        {
+          "word": "boring",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 h2 M14 10 h2' stroke='currentColor'/><line x1='9' y1='15' x2='15' y2='15' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Bore",
+            "(钻孔/烦扰)"
+          ],
+          "imagery": "一张面无表情的脸，嘴巴呈直线，表示毫无兴趣。",
+          "translation": "无聊的 (修饰物)",
+          "sentences": [
+            {
+              "en": "The job was boring.",
+              "cn": "这份工作很无聊。"
+            }
+          ]
+        },
+        {
+          "word": "boss",
+          "rootVisual": "<path d='M12 4a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M5 20v-5h14v5' stroke='currentColor' fill='none'/><path d='M12 10v4 M9 12h6' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "boss"
+          ],
+          "imagery": "一个坐在大班椅上的人，或者一个指点江山的手势。",
+          "translation": "老板",
+          "sentences": [
+            {
+              "en": "I'll have to ask my boss for a day off.",
+              "cn": "我将不得不向我老板请一天假。"
+            }
+          ]
+        },
+        {
+          "word": "botany",
+          "rootVisual": "<path d='M12 20 v-10' stroke='currentColor' stroke-width='2'/><path d='M12 10 l-4 -4 a 4 4 0 0 1 8 0 z' stroke='currentColor' fill='none'/><path d='M12 14 l4 -2' stroke='currentColor'/>",
+          "breakdown": [
+            "botan (草/植物)",
+            "-y (学科)"
+          ],
+          "imagery": "一株正在生长的植物，代表对植物的研究。",
+          "translation": "植物学",
+          "sentences": [
+            {
+              "en": "He studied botany at university.",
+              "cn": "他在大学学习植物学。"
+            }
+          ]
+        },
+        {
+          "word": "bottle",
+          "rootVisual": "<path d='M8 20V10a4 4 0 0 1 8 0v10z' stroke='currentColor' fill='none'/><rect x='10' y='2' width='4' height='4' stroke='currentColor'/>",
+          "breakdown": [
+            "bottle"
+          ],
+          "imagery": "一个细颈的玻璃瓶。",
+          "translation": "瓶子",
+          "sentences": [
+            {
+              "en": "a bottle of milk",
+              "cn": "一瓶牛奶"
+            }
+          ]
+        },
+        {
+          "word": "bowl",
+          "rootVisual": "<path d='M 21 8 h -17 a 8 8 0 0 0 17 0' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Bowl",
+            "(碗)"
+          ],
+          "imagery": "一个半圆形的碗的侧面轮廓。",
+          "translation": "碗",
+          "sentences": [
+            {
+              "en": "A bowl of noodles is my favorite when I am hungry.",
+              "cn": "饿的时候，我最喜欢一碗面条。"
+            }
+          ]
+        },
+        {
+          "word": "brand",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 8l2 6h-4z' fill='currentColor'/><text x='10' y='22' font-size='6' fill='currentColor'>TM</text>",
+          "breakdown": [
+            "brand"
+          ],
+          "imagery": "一个独特的商标符号，或者是烙印在牛身上的标记。",
+          "translation": "品牌",
+          "sentences": [
+            {
+              "en": "What brand is your car?",
+              "cn": "你的车是什么牌子的？"
+            }
+          ]
+        },
+        {
+          "word": "brave",
+          "rootVisual": "<path d='M12 4 l-6 4 v6 a 6 6 0 0 0 6 6 a 6 6 0 0 0 6 -6 v-6 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 8 v8 M8 12 h8' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "brave",
+            "(野蛮/勇敢)"
+          ],
+          "imagery": "一面盾牌，象征着无畏和保护。",
+          "translation": "勇敢的",
+          "sentences": [
+            {
+              "en": "It was brave of you to speak in front of all those people.",
+              "cn": "你在那么多人面前讲话真是勇敢。"
+            }
+          ]
+        },
+        {
+          "word": "bread",
+          "rootVisual": "<path d='M4 14h16v-4c0-3-3-6-8-6s-8 3-8 6v4z' stroke='currentColor' fill='none'/><path d='M8 10h8' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "bread"
+          ],
+          "imagery": "一个切片面包的轮廓，顶部呈圆弧状。",
+          "translation": "面包",
+          "sentences": [
+            {
+              "en": "Would you like a slice of bread?",
+              "cn": "你想要一片面包吗？"
+            }
+          ]
+        },
+        {
+          "word": "bridge",
+          "rootVisual": "<g transform='translate(0, 0)'><path d='M2 10 h20 M2 14 h20 M5 14 v6 M12 14 v6 M19 14 v6' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='square'/></g>",
+          "breakdown": [
+            "Bridge",
+            "(桥)"
+          ],
+          "imagery": "坚固的桥墩撑起平直的桥面，构成一条跨越障碍（如河流、山谷）的通道。这个设计代表了桥梁最基本的功能——连接与通行。",
+          "translation": "桥",
+          "sentences": [
+            {
+              "en": "The bridge is 2000 meters long.",
+              "cn": "这座桥长2000米。"
+            }
+          ]
+        },
+        {
+          "word": "bring",
+          "rootVisual": "<path d='M4 12 h16 l-4 -4 m4 4 l-4 4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Bring",
+            "(带来)"
+          ],
+          "imagery": "一个指向观者方向的箭头，表示将某物“带来”。",
+          "translation": "带来",
+          "sentences": [
+            {
+              "en": "Allen brought hope to me when I was desperate.",
+              "cn": "在我绝望时，艾伦给我带来了希望。"
+            }
+          ]
+        },
+        {
+          "word": "brush",
+          "rootVisual": "<svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M 2 13.5 a 1.5 1.5 0 0 1 0 -3 h 12 v -1 h 4 a 2 2 0 0 1 2 2 v 1 a 2 2 0 0 1 -2 2 h -4 v -1 z M 17 9.5 v -3 M 18.5 9.5 v -3 M 16 10 v -3' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linejoin='round'/></svg>",
+          "breakdown": [
+            "Brush",
+            "(刷)"
+          ],
+          "imagery": "一个牙刷的刷头，上面有刷毛。",
+          "translation": "刷",
+          "sentences": [
+            {
+              "en": "How often do you brush your teeth?",
+              "cn": "你多久刷一次牙？"
+            },
+            {
+              "en": "Twice a day.",
+              "cn": "一天两次。"
+            }
+          ]
+        },
+        {
+          "word": "burn",
+          "rootVisual": "<path d='M12 20c-2-4-4-6-4-10a4 4 0 0 1 8 0c0 4-2 6-4 10z' fill='orange'/><path d='M12 10c0 3-1 4-1 6' stroke='white' opacity='0.5'/>",
+          "breakdown": [
+            "burn"
+          ],
+          "imagery": "一团燃烧的火焰。",
+          "translation": "燃烧",
+          "sentences": [
+            {
+              "en": "Fires were burning all over the city.",
+              "cn": "大火在全城燃烧。"
+            }
+          ]
+        },
+        {
+          "word": "butter",
+          "rootVisual": "<rect x='4' y='10' width='16' height='8' stroke='currentColor' fill='none'/><path d='M4 10 l4 -4 h8 l4 4' stroke='currentColor'/>",
+          "breakdown": [
+            "butter",
+            "(黄油)"
+          ],
+          "imagery": "一块切得方方正正的黄色油脂，通常用来涂抹面包。",
+          "translation": "黄油",
+          "sentences": [
+            {
+              "en": "He spread some butter on his bread.",
+              "cn": "他在面包上涂了一些黄油。"
+            }
+          ]
+        },
+        {
+          "word": "butterfly",
+          "rootVisual": "<path d='M4 12 C 10 4, 10 4, 12 12 C 10 20, 10 20, 4 12 Z M20 12 C 14 4, 14 4, 12 12 C 14 20, 14 20, 20 12 Z' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "Butterfly",
+            "(蝴蝶)"
+          ],
+          "imagery": "一只对称的、拥有美丽翅膀的蝴蝶。",
+          "translation": "蝴蝶",
+          "sentences": [
+            {
+              "en": "The butterfly is so beautiful.",
+              "cn": "这只蝴蝶真漂亮。"
+            }
+          ]
+        },
+        {
+          "word": "by",
+          "rootVisual": "<circle cx='8' cy='18' r='2' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='16' cy='18' r='2' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 18 l-2 -4 h16 l-2 4' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "By",
+            "(乘)"
+          ],
+          "imagery": "一个交通工具（如自行车或汽车）的简化图标，表示乘坐某种方式。",
+          "translation": "乘",
+          "sentences": [
+            {
+              "en": "My mum goes to work by bike every day.",
+              "cn": "我妈妈每天骑自行车上班。"
+            },
+            {
+              "en": "My father often travels by airplane.",
+              "cn": "我父亲经常乘飞机旅行。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

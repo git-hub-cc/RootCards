@@ -1,0 +1,98 @@
+{
+  "prefix": "Vocab C",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_c",
+      "displayName": "Vocabulary C",
+      "themeColor": "#10b981",
+      "prefixIntro": {
+        "title": "C 开头核心词",
+        "description": "高中阶段 C 开头的高频混合词汇。",
+        "imagery": "字母 C 像一只手做抓取的动作（或张开的嘴/包围圈）。"
+      },
+      "words": [
+        {
+          "word": "censor",
+          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M6 6 L18 18 M6 18 L18 6' stroke='currentColor' color='#ef4444' />",
+          "breakdown": [
+            "cens (评/审)",
+            "-or"
+          ],
+          "imagery": "审查员（谐音：审查）。",
+          "translation": "审查员；审查",
+          "sentences": [
+            {
+              "en": "Banned by the censor.",
+              "cn": "被审查员禁止。"
+            }
+          ]
+        },
+        {
+          "word": "census",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none' /><path d='M8 8 H16 M8 12 H16' stroke='currentColor' />",
+          "breakdown": [
+            "cens (评/数)",
+            "-us"
+          ],
+          "imagery": "人口普查（谐音：申诉）。",
+          "translation": "人口普查",
+          "sentences": [
+            {
+              "en": "The country conducts a census every ten years.",
+              "cn": "这个国家每十年进行一次人口普查。"
+            }
+          ]
+        },
+        {
+          "word": "cocaine",
+          "rootVisual": "<path d='M8 12 H16' stroke='currentColor' stroke-width='4' color='#fff' opacity='0.5' />",
+          "breakdown": [
+            "cocaine"
+          ],
+          "imagery": "白色粉末。",
+          "translation": "可卡因",
+          "sentences": [
+            {
+              "en": "He was addicted to cocaine.",
+              "cn": "他对可卡因上瘾。"
+            }
+          ]
+        },
+        {
+          "word": "colony",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none' /><circle cx='16' cy='12' r='4' stroke='currentColor' fill='none' stroke-dasharray='2 2' />",
+          "breakdown": [
+            "col (耕种/住)",
+            "-ony"
+          ],
+          "imagery": "像克隆(clone)一样复制宗主国的制度。",
+          "translation": "殖民地",
+          "sentences": [
+            {
+              "en": "Hong Kong was a British colony.",
+              "cn": "香港曾是英国的殖民地。"
+            }
+          ]
+        },
+        {
+          "word": "confiscate",
+          "rootVisual": "<path d='M4 12 H 20' stroke='currentColor' marker-end='url(#arrow)' /><rect x='10' y='8' width='4' height='8' fill='currentColor' />",
+          "breakdown": [
+            "con- (共)",
+            "fisc (钱袋)",
+            "-ate"
+          ],
+          "imagery": "没收充公，变成大家的钱。",
+          "translation": "没收；充公",
+          "sentences": [
+            {
+              "en": "Confiscated the pistol.",
+              "cn": "没收了手枪。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

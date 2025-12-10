@@ -1,0 +1,52 @@
+{
+  "prefix": "Vocab Q",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_q",
+      "displayName": "Vocabulary Q",
+      "themeColor": "#ec4899",
+      "prefixIntro": {
+        "title": "Q 开头核心词",
+        "description": "高中阶段 Q 开头的高频混合词汇。",
+        "imagery": "字母 Q 像戴皇冠的王后（Queen）或问号（Question），常含“询问、追求”之意。"
+      },
+      "words": [
+        {
+          "word": "queer",
+          "rootVisual": "<path d='M12 4c4 0 8 4 8 8s-8 8-8 8s-8-4-8-8s4-8 8-8z' stroke='currentColor' fill='none' stroke-dasharray='3 3'/><text x='12' y='16' font-size='12' text-anchor='middle' fill='currentColor'>?</text>",
+          "breakdown": [
+            "queer"
+          ],
+          "imagery": "虚线构成的形状加上问号，表示奇怪、难以捉摸。",
+          "translation": "奇怪的；古怪的",
+          "sentences": [
+            {
+              "en": "a queer look",
+              "cn": "奇怪的表情"
+            }
+          ]
+        },
+        {
+          "word": "quench",
+          "rootVisual": "<path d='M12 21a6 6 0 0 1-6-6c0-3.5 6-11 6-11s6 7.5 6 11a6 6 0 0 1-6 6z' fill='currentColor' opacity='0.7'/>",
+          "breakdown": [
+            "quench"
+          ],
+          "imagery": "一滴水，用来解渴或灭火。",
+          "translation": "熄灭；解（渴）",
+          "sentences": [
+            {
+              "en": "quench the flames",
+              "cn": "熄灭火焰"
+            },
+            {
+              "en": "quench his thirst",
+              "cn": "解渴"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

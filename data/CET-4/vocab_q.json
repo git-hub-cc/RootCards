@@ -1,0 +1,49 @@
+{
+  "prefix": "Vocab Q",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_q",
+      "displayName": "Vocabulary Q",
+      "themeColor": "#ec4899",
+      "prefixIntro": {
+        "title": "Q 开头核心词",
+        "description": "高中阶段 Q 开头的高频混合词汇。",
+        "imagery": "字母 Q 像戴皇冠的王后（Queen）或问号（Question），常含“询问、追求”之意。"
+      },
+      "words": [
+        {
+          "word": "quiver",
+          "rootVisual": "<path d='M8 8 L 12 12 L 16 8' stroke='currentColor' stroke-width='2' stroke-dasharray='2 2' />",
+          "breakdown": [
+            "quiver"
+          ],
+          "imagery": "快速轻微的颤抖（如嘴唇）。",
+          "translation": "颤抖",
+          "sentences": [
+            {
+              "en": "Her lip quivered.",
+              "cn": "她的嘴唇颤抖了。"
+            }
+          ]
+        },
+        {
+          "word": "quota",
+          "rootVisual": "<path d='M12 12 L 12 4' stroke='currentColor' /><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' />",
+          "breakdown": [
+            "quot (多少)",
+            "-a"
+          ],
+          "imagery": "分配好的数量，配额。",
+          "translation": "配额；定额",
+          "sentences": [
+            {
+              "en": "Production quotas.",
+              "cn": "生产配额。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

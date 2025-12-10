@@ -1,0 +1,49 @@
+{
+  "prefix": "Vocab Y",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_y",
+      "displayName": "Vocabulary Y",
+      "themeColor": "#ef4444",
+      "prefixIntro": {
+        "title": "Y 开头核心词",
+        "description": "高中阶段 Y 开头的高频混合词汇。",
+        "imagery": "字母 Y 像树枝分叉或嫩芽，常含“产出（Yield）、年轻（Young）”之意。"
+      },
+      "words": [
+        {
+          "word": "yawn",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><ellipse cx='12' cy='14' rx='3' ry='5' fill='currentColor'/>",
+          "breakdown": [
+            "拟声词"
+          ],
+          "imagery": "模仿打哈欠时长大的嘴和声音。",
+          "translation": "打哈欠",
+          "sentences": [
+            {
+              "en": "I couldn't help yawning.",
+              "cn": "我忍不住打了个哈欠。"
+            }
+          ]
+        },
+        {
+          "word": "yield",
+          "rootVisual": "<path d='M12 4v16M12 4l-4 4M12 4l4 4' stroke='currentColor' fill='none'/><rect x='6' y='14' width='12' height='6' fill='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "yield",
+            "(支付/给)"
+          ],
+          "imagery": "土地给出的东西 -> 产量；给出 -> 屈服。",
+          "translation": "产量；屈服",
+          "sentences": [
+            {
+              "en": "High yield.",
+              "cn": "高产量。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

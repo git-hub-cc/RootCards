@@ -1,0 +1,532 @@
+{
+  "prefix": "Vocab M",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_m",
+      "displayName": "Vocabulary M",
+      "themeColor": "#10b981",
+      "prefixIntro": {
+        "title": "M 开头核心词",
+        "description": "高中阶段 M 开头的高频混合词汇。",
+        "imagery": "字母 M 像连绵的山峦（Mountain）或牙齿，常含“多（Many）、移动、大”之意。"
+      },
+      "words": [
+        {
+          "word": "machine",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='4' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><path d='M12 12 l2 -2' stroke='currentColor'/><rect x='6' y='16' width='12' height='2' fill='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "mach",
+            "(设计/装置)",
+            "-ine"
+          ],
+          "imagery": "一个运转中的齿轮，或者复杂的机械装置。",
+          "translation": "机器",
+          "sentences": [
+            {
+              "en": "I don't know how to use the machine.",
+              "cn": "我不知道怎么用这台机器。"
+            }
+          ]
+        },
+        {
+          "word": "mad",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 9l2 2 M14 11l2-2' stroke='currentColor' stroke-width='2'/><path d='M8 16c2-2 6-2 8 0' stroke='currentColor'/>",
+          "breakdown": [
+            "mad"
+          ],
+          "imagery": "一个冒着气的愤怒表情符号。",
+          "translation": "生气的；疯狂的",
+          "sentences": [
+            {
+              "en": "You make me so mad.",
+              "cn": "你快把我气疯了。"
+            }
+          ]
+        },
+        {
+          "word": "mall",
+          "rootVisual": "<rect x='2' y='6' width='20' height='14' stroke='currentColor' fill='none'/><path d='M6 6v-2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2' stroke='currentColor'/><rect x='8' y='12' width='8' height='8' stroke='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "mall"
+          ],
+          "imagery": "一个大型购物袋，或者一栋巨大的多层建筑。",
+          "translation": "购物中心",
+          "sentences": [
+            {
+              "en": "Let's meet at the mall.",
+              "cn": "我们在购物中心见面吧。"
+            }
+          ]
+        },
+        {
+          "word": "manage",
+          "rootVisual": "<rect x='2' y='2' width='20' height='20' rx='2' stroke='currentColor' fill='none'/><path d='M6 10h12' stroke='currentColor'/><path d='M6 14h8' stroke='currentColor'/><circle cx='18' cy='18' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "man (手)",
+            "-age"
+          ],
+          "imagery": "一只手在操纵木偶线，或者指挥交通。",
+          "translation": "管理",
+          "sentences": [
+            {
+              "en": "He was asked to manage a new department.",
+              "cn": "他被要求去管理一个新部门。"
+            }
+          ]
+        },
+        {
+          "word": "manager",
+          "rootVisual": "<rect x='2' y='2' width='20' height='20' rx='2' stroke='currentColor' fill='none'/><path d='M12 6a3 3 0 1 0 0 6 3 3 0 0 0 0-6z M6 18v-2h12v2' stroke='currentColor'/><path d='M16 4h4v4' stroke='currentColor'/>",
+          "breakdown": [
+            "manage",
+            "-er (人)"
+          ],
+          "imagery": "一个人在白板前指挥，或者在操纵复杂的控制台。",
+          "translation": "经理；管理者",
+          "sentences": [
+            {
+              "en": "He becomes the new manager.",
+              "cn": "他成为了新经理。"
+            }
+          ]
+        },
+        {
+          "word": "map",
+          "rootVisual": "<path d='M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2z' stroke='currentColor' fill='none'/><path d='M9 4v14 M15 6v14' stroke='currentColor'/>",
+          "breakdown": [
+            "map"
+          ],
+          "imagery": "一张折叠的地图。",
+          "translation": "地图",
+          "sentences": [
+            {
+              "en": "a map of the world",
+              "cn": "一张世界地图"
+            }
+          ]
+        },
+        {
+          "word": "march",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M18 6 l4 -4' stroke='currentColor' stroke-width='2'/><path d='M22 2 l-4 0 M22 2 l0 4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Mars",
+            "(战神)"
+          ],
+          "imagery": "战神 Mars 的符号 (♂)，象征春天到来，军队开始行军。",
+          "translation": "三月",
+          "sentences": [
+            {
+              "en": "Spring starts in March.",
+              "cn": "春天始于三月。"
+            }
+          ]
+        },
+        {
+          "word": "market",
+          "rootVisual": "<path d='M4 12 h16' stroke='currentColor'/><path d='M4 12 l2 -6 h12 l2 6' stroke='currentColor' fill='none'/><rect x='6' y='12' width='12' height='6' stroke='currentColor' fill='none'/><line x1='12' y1='12' x2='12' y2='18' stroke='currentColor'/>",
+          "breakdown": [
+            "mercatus",
+            "(贸易)"
+          ],
+          "imagery": "一个有遮阳棚的简单摊位。",
+          "translation": "市场",
+          "sentences": [
+            {
+              "en": "She went to the market.",
+              "cn": "她去了市场。"
+            }
+          ]
+        },
+        {
+          "word": "marry",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M10 12 h4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "marry",
+            "(结婚)"
+          ],
+          "imagery": "两个相连的戒指，象征着婚姻的结合。",
+          "translation": "结婚",
+          "sentences": [
+            {
+              "en": "He married Betty in 1925.",
+              "cn": "他于1925年娶了贝蒂。"
+            }
+          ]
+        },
+        {
+          "word": "master",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 8l2 4h4l-3 3 1 4-4-3-4 3 1-4-3-3h4z' fill='gold'/>",
+          "breakdown": [
+            "master"
+          ],
+          "imagery": "一个人手里拿着通关钥匙，或者功夫大师。",
+          "translation": "掌握",
+          "sentences": [
+            {
+              "en": "I need to master English.",
+              "cn": "我需要掌握英语。"
+            }
+          ]
+        },
+        {
+          "word": "material",
+          "rootVisual": "<rect x='4' y='12' width='8' height='8' stroke='currentColor' fill='none'/><circle cx='16' cy='16' r='4' stroke='currentColor' fill='none'/><path d='M8 6h8v4H8z' fill='currentColor' opacity='0.5'/>",
+          "breakdown": [
+            "mater (母)",
+            "-ial"
+          ],
+          "imagery": "一堆砖块、木材和布料。",
+          "translation": "材料",
+          "sentences": [
+            {
+              "en": "The materials are for you to make dumplings.",
+              "cn": "这些是给你做饺子的材料。"
+            }
+          ]
+        },
+        {
+          "word": "may",
+          "rootVisual": "<path d='M12 20 l-2 4 h4 z' fill='currentColor'/><path d='M12 20 q -8 -10 -4 -16 q 4 2 4 8' stroke='currentColor' fill='none'/><path d='M12 20 q 8 -10 4 -16 q -4 2 -4 8' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "Maia",
+            "(生长女神)"
+          ],
+          "imagery": "植物生长的嫩芽，源自掌管生命的女神 Maia。",
+          "translation": "五月",
+          "sentences": [
+            {
+              "en": "My birthday is in May.",
+              "cn": "我的生日在五月。"
+            }
+          ]
+        },
+        {
+          "word": "meal",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor'/><path d='M8 12 h8' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "meal",
+            "(一餐)"
+          ],
+          "imagery": "一个盘子，上面摆放着刀叉或食物。",
+          "translation": "餐；一顿饭",
+          "sentences": [
+            {
+              "en": "Have your last meal.",
+              "cn": "吃你的最后一顿饭吧。"
+            }
+          ]
+        },
+        {
+          "word": "meat",
+          "rootVisual": "<path d='M4 10 a 6 6 0 0 1 12 0 v 8 a 2 2 0 0 1 -2 2 h -2 v -4 h -4 v 4 h -2 a 2 2 0 0 1 -2 -2 z' stroke='currentColor' fill='none' stroke-width='2'/>",
+          "breakdown": [
+            "meat",
+            "(肉)"
+          ],
+          "imagery": "一块经典的带骨肉排（T骨牛排），清晰地展示了肉的形态。",
+          "translation": "肉",
+          "sentences": [
+            {
+              "en": "To lose weight, I decided to give up eating meat and have vegetables instead.",
+              "cn": "为了减肥，我决定不吃肉，改吃蔬菜。"
+            }
+          ]
+        },
+        {
+          "word": "medium",
+          "rootVisual": "<rect x='4' y='8' width='4' height='8' stroke='currentColor' fill='none'/><rect x='10' y='6' width='4' height='12' fill='currentColor'/><rect x='16' y='4' width='4' height='16' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "med (中间)",
+            "-ium (名)"
+          ],
+          "imagery": "中等的；媒介（中间渠道）。",
+          "translation": "中等的；媒介",
+          "sentences": [
+            {
+              "en": "Medium height.",
+              "cn": "中等身高。"
+            },
+            {
+              "en": "Art can be expressed through various mediums.",
+              "cn": "艺术可以通过各种媒介来表达。"
+            }
+          ]
+        },
+        {
+          "word": "memory",
+          "rootVisual": "<rect x='4' y='4' width='16' height='16' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='3' stroke='currentColor'/><path d='M8 18 a 4 4 0 0 1 8 0' stroke='currentColor'/>",
+          "breakdown": [
+            "mem",
+            "(记住)",
+            "-ory"
+          ],
+          "imagery": "一张旧照片，或者大脑中回放的电影胶片。",
+          "translation": "记忆",
+          "sentences": [
+            {
+              "en": "He has a good memory.",
+              "cn": "他记忆力很好。"
+            }
+          ]
+        },
+        {
+          "word": "message",
+          "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M4 8 l8 6 l8 -6' stroke='currentColor'/>",
+          "breakdown": [
+            "mess (送)",
+            "-age (名)"
+          ],
+          "imagery": "传送的信息。",
+          "translation": "信息",
+          "sentences": [
+            {
+              "en": "I left a message on your voicemail.",
+              "cn": "我在你的语音信箱里留了言。"
+            }
+          ]
+        },
+        {
+          "word": "method",
+          "rootVisual": "<circle cx='4' cy='12' r='2' fill='currentColor'/><path d='M6 12h4' stroke='currentColor'/><rect x='10' y='10' width='4' height='4' stroke='currentColor' fill='none'/><path d='M14 12h4' stroke='currentColor'/><path d='M18 10l2 2-2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "meth- (跟随)",
+            "od (路)"
+          ],
+          "imagery": "一个流程图，展示了从A到B的步骤。",
+          "translation": "方式；方法",
+          "sentences": [
+            {
+              "en": "Have you tried the new method?",
+              "cn": "你试过新方法了吗？"
+            }
+          ]
+        },
+        {
+          "word": "midday",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12v-6' stroke='currentColor'/><path d='M12 2v2' stroke='currentColor'/>",
+          "breakdown": [
+            "mid",
+            "day"
+          ],
+          "imagery": "一个指着12点的时钟，背景是明亮的。",
+          "translation": "正午",
+          "sentences": [
+            {
+              "en": "The train arrives at midday.",
+              "cn": "火車在正午到達。"
+            }
+          ]
+        },
+        {
+          "word": "midnight",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='black'/><path d='M12 12v-6' stroke='white'/><path d='M12 12v-4' stroke='white' transform='rotate(180, 12, 12)'/>",
+          "breakdown": [
+            "mid",
+            "night"
+          ],
+          "imagery": "一个指着12点的时钟，背景是黑色的。",
+          "translation": "午夜",
+          "sentences": [
+            {
+              "en": "The clock struck midnight.",
+              "cn": "午夜的鐘聲敲響了。"
+            }
+          ]
+        },
+        {
+          "word": "mirror",
+          "rootVisual": "<rect x='8' y='4' width='8' height='12' rx='4' stroke='currentColor' fill='none'/><path d='M8 12 l-2 8 M16 12 l2 8' stroke='currentColor'/><path d='M14 6 l-2 4' stroke='currentColor' opacity='0.3'/>",
+          "breakdown": [
+            "mir",
+            "(惊奇/看)",
+            "-or"
+          ],
+          "imagery": "一面镜子，映照出虚线的倒影。",
+          "translation": "镜子",
+          "sentences": [
+            {
+              "en": "They sell mirrors.",
+              "cn": "他们卖镜子。"
+            }
+          ]
+        },
+        {
+          "word": "miss",
+          "rootVisual": "<rect x='2' y='14' width='20' height='2' rx='1' /><path d='M4 16v4' /><path d='M20 16v4' /><circle cx='7' cy='8' r='2' /><path d='M7 10v4' /><g opacity='0.6' stroke-dasharray='2 2'><circle cx='17' cy='8' r='2' /><path d='M17 10v4' /><path d'M15 14q2 -2 4 0' /></g>",
+          "breakdown": [
+            "miss",
+            "(错过；想念)"
+          ],
+          "imagery": "On a park bench, one side is occupied, while the other holds only the faint, dashed outline of a companion—a memory of someone who is no longer there. The empty space itself represents the feeling of longing and absence.",
+          "translation": "错过；想念",
+          "sentences": [
+            {
+              "en": "5 years ago, I missed you. Now I miss you so much.",
+              "cn": "5年前，我错过了你。现在，我非常想念你。"
+            }
+          ]
+        },
+        {
+          "word": "mist",
+          "rootVisual": "<path d='M4 10 h16 M6 14 h12 M4 18 h16' stroke='currentColor' stroke-width='2' stroke-linecap='round' opacity='0.5'/>",
+          "breakdown": [
+            "mist (雾)"
+          ],
+          "imagery": "眼前白茫茫的一片，看不清东西，像是一层薄纱。",
+          "translation": "薄雾",
+          "sentences": [
+            {
+              "en": "The mist began to lift.",
+              "cn": "雾开始散了。"
+            }
+          ]
+        },
+        {
+          "word": "mistake",
+          "rootVisual": "<path d='M6 6 l12 12 M18 6 l-12 12' stroke='currentColor' stroke-width='2' stroke-linecap='round'/>",
+          "breakdown": [
+            "mis- (错误)",
+            "take (拿)"
+          ],
+          "imagery": "作业本上一个红色的叉号，表示这道题做错了。",
+          "translation": "错误",
+          "sentences": [
+            {
+              "en": "He made a mistake.",
+              "cn": "他犯了一个错误。"
+            }
+          ]
+        },
+        {
+          "word": "mobile",
+          "rootVisual": "<rect x='8' y='4' width='8' height='16' rx='2' stroke='currentColor' fill='none'/><circle cx='12' cy='17' r='1' fill='currentColor'/><path d='M10 6h4' stroke='currentColor'/>",
+          "breakdown": [
+            "mob (移动)",
+            "-ile"
+          ],
+          "imagery": "一部智能手机。",
+          "translation": "移动的；手机",
+          "sentences": [
+            {
+              "en": "May I use your mobile phone?",
+              "cn": "我可以用一下你的手机吗？"
+            }
+          ]
+        },
+        {
+          "word": "mooncake",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 4v16 M4 12h16' stroke='currentColor' opacity='0.3'/><rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "moon",
+            "cake"
+          ],
+          "imagery": "一个圆形的月饼，上面有精美的花纹。",
+          "translation": "月饼",
+          "sentences": [
+            {
+              "en": "We eat mooncakes during the Mid-Autumn Festival.",
+              "cn": "我们在中秋节吃月餅。"
+            }
+          ]
+        },
+        {
+          "word": "motorbike",
+          "rootVisual": "<circle cx='6' cy='16' r='3' stroke='currentColor' fill='none'/><circle cx='18' cy='16' r='3' stroke='currentColor' fill='none'/><path d='M6 16 l 6 -6 h 6 l 4 6' stroke='currentColor' fill='none'/><path d='M9 10 h-2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "motor (发动机)",
+            "bike (自行车)"
+          ],
+          "imagery": "一辆带有发动机的自行车，即摩托车。",
+          "translation": "摩托车",
+          "sentences": [
+            {
+              "en": "He rides a motorbike to work.",
+              "cn": "他骑摩托车上班。"
+            }
+          ]
+        },
+        {
+          "word": "mountain",
+          "rootVisual": "<path d='M2 20 l6-12 5 6 4-8 5 14' />",
+          "breakdown": [
+            "mountain",
+            "(高山)"
+          ],
+          "imagery": "一条连绵起伏的锯齿状线条勾勒出山脉雄伟的天际线，捕捉了山峰与山谷的起伏韵律。这是大地伸向天空的原始签名.",
+          "translation": "高山",
+          "sentences": [
+            {
+              "en": "There are so many mountains in Shanxi Province.",
+              "cn": "山西省有很多山。"
+            }
+          ]
+        },
+        {
+          "word": "mouse",
+          "rootVisual": "<path d='M12 10a5 5 0 0 1 5 5v2a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2v-2a5 5 0 0 1 5 -5z' /><path d='M6 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0' /><path d='M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0' /><path d='M9 13l-2 -1' /><path d='M15 13l2 -1' /><path d='M12 15v.01' />",
+          "breakdown": [
+            "mouse",
+            "(老鼠)"
+          ],
+          "imagery": "标志性的大圆耳朵和圆润的脸庞，构成了老鼠最经典、最容易识别的卡通形象。",
+          "translation": "老鼠",
+          "sentences": [
+            {
+              "en": "Most people don't like mice.",
+              "cn": "大多数人不喜欢老鼠。"
+            }
+          ]
+        },
+        {
+          "word": "moving",
+          "rootVisual": "<path d='M12 20l-8-8a5 5 0 1 1 8-7a5 5 0 1 1 8 7z' stroke='currentColor' fill='none'/><path d='M16 16l-2 2' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "mov",
+            "-ing"
+          ],
+          "imagery": "一只手递过纸巾给流泪的人。",
+          "translation": "感人的",
+          "sentences": [
+            {
+              "en": "It's such a moving film.",
+              "cn": "这是一部如此感人的电影。"
+            }
+          ]
+        },
+        {
+          "word": "museum",
+          "rootVisual": "<path d='M4 20 h16 M6 18 V 8 l6 -4 l6 4 v10' stroke='currentColor' fill='none' stroke-width='2'/><path d='M10 18 v-6 M14 18 v-6' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "museum",
+            "(博物馆)"
+          ],
+          "imagery": "一座有台阶和宏伟立柱的建筑，象征着庄严的知识殿堂。",
+          "translation": "博物馆",
+          "sentences": [
+            {
+              "en": "The museum has a large collection of photographs.",
+              "cn": "这个博物馆收藏了大量的照片。"
+            }
+          ]
+        },
+        {
+          "word": "music",
+          "rootVisual": "<path d='M9 18V5l12-2v13'></path><circle cx='6' cy='18' r='3' fill='currentColor'></circle><circle cx='18' cy='16' r='3' fill='currentColor'></circle>",
+          "breakdown": [
+            "music",
+            "(音乐)"
+          ],
+          "imagery": "两个音符通过横梁连接在一起，构成了流动的旋律。音乐就是这样，将声音组织起来，表达情感。",
+          "translation": "音乐",
+          "sentences": [
+            {
+              "en": "The music she plays is so nice.",
+              "cn": "她演奏的音乐非常动听。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

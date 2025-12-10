@@ -1,0 +1,52 @@
+{
+  "prefix": "Vocab J",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_j",
+      "displayName": "Vocabulary J",
+      "themeColor": "#84cc16",
+      "prefixIntro": {
+        "title": "J 开头核心词",
+        "description": "高中阶段 J 开头的高频混合词汇。",
+        "imagery": "字母 J 像一个钩子或喷射的水柱（Jet），常含“连接（Join）、跳跃”之意。"
+      },
+      "words": [
+        {
+          "word": "journal",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M8 8h8M8 12h8M8 16h4' stroke='currentColor'/>",
+          "breakdown": [
+            "journ",
+            "(天/日)",
+            "al"
+          ],
+          "imagery": "每天记录的东西 -> 日记/期刊。",
+          "translation": "日志；期刊",
+          "sentences": [
+            {
+              "en": "Keep a travel journal.",
+              "cn": "写旅行日记。"
+            }
+          ]
+        },
+        {
+          "word": "jury",
+          "rootVisual": "<rect x='2' y='8' width='20' height='8' stroke='currentColor' fill='none'/><circle cx='5' cy='12' r='1' fill='currentColor'/><circle cx='9' cy='12' r='1' fill='currentColor'/><circle cx='13' cy='12' r='1' fill='currentColor'/><circle cx='17' cy='12' r='1' fill='currentColor'/>",
+          "breakdown": [
+            "jur",
+            "(发誓/法律)",
+            "y"
+          ],
+          "imagery": "一群发誓公正判决的人 -> 陪审团。",
+          "translation": "陪审团",
+          "sentences": [
+            {
+              "en": "The jury found him guilty.",
+              "cn": "陪审团裁定他有罪。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

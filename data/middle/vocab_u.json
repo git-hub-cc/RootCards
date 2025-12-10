@@ -1,0 +1,117 @@
+{
+  "prefix": "Vocab U",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_u",
+      "displayName": "Vocabulary U",
+      "themeColor": "#6366f1",
+      "prefixIntro": {
+        "title": "U 开头核心词",
+        "description": "高中阶段 U 开头的高频混合词汇。",
+        "imagery": "字母 U 像一个杯子或容器（Urn），常含“容纳、下面（Under）”之意。"
+      },
+      "words": [
+        {
+          "word": "umbrella",
+          "rootVisual": "<path d='M12 4 a 8 6 0 0 0 -8 6 h16 a 8 6 0 0 0 -8 -6 z' stroke='currentColor' fill='none'/><path d='M12 4 v14' stroke='currentColor'/><path d='M12 18 a 2 2 0 0 1 2 2' stroke='currentColor' fill='none'/>",
+          "breakdown": [
+            "umbr",
+            "(影子)",
+            "-ella (小)"
+          ],
+          "imagery": "一把撑开的雨伞，下面没有雨滴落下。",
+          "translation": "雨伞",
+          "sentences": [
+            {
+              "en": "Take this umbrella with you.",
+              "cn": "带上这把伞。"
+            }
+          ]
+        },
+        {
+          "word": "underground",
+          "rootVisual": "<path d='M4 10h16' stroke='currentColor' stroke-width='2'/><rect x='6' y='14' width='12' height='6' stroke='currentColor' fill='none' stroke-dasharray='2 2'/><path d='M12 10v4' stroke='currentColor'/>",
+          "breakdown": [
+            "under",
+            "ground"
+          ],
+          "imagery": "一条横线代表地面，横线下方有一个虚线框代表地下空间。",
+          "translation": "地下的",
+          "sentences": [
+            {
+              "en": "The car park is underground.",
+              "cn": "停车场在地下。"
+            }
+          ]
+        },
+        {
+          "word": "underwear",
+          "rootVisual": "<path d='M6 8 q 6 6 12 0 v 8 h -12 z' stroke='currentColor' fill='none'/><path d='M6 8 v -2 h 12 v 2' stroke='currentColor' stroke-dasharray='2 2'/>",
+          "breakdown": [
+            "under (在...下面)",
+            "wear (穿)"
+          ],
+          "imagery": "穿在最里面的衣物（内裤形状）。",
+          "translation": "内衣",
+          "sentences": [
+            {
+              "en": "She bought some new underwear.",
+              "cn": "她买了一些新内衣。"
+            }
+          ]
+        },
+        {
+          "word": "uniform",
+          "rootVisual": "<path d='M16 4 l-4 2 l-4 -2 l-2 4 v10 h12 v-10 z' stroke='currentColor' fill='none'/><path d='M12 6 v14' stroke='currentColor'/><circle cx='10' cy='10' r='0.5' fill='currentColor'/><circle cx='10' cy='14' r='0.5' fill='currentColor'/><path d='M16 4 l-4 2 l-4 -2' stroke='currentColor' fill='none' opacity='0.5' transform='translate(4,4) scale(0.5)'/>",
+          "breakdown": [
+            "uni",
+            "(统一)",
+            "form",
+            "(形式)"
+          ],
+          "imagery": "一件带有扣子的制式衬衫。",
+          "translation": "制服",
+          "sentences": [
+            {
+              "en": "Most primary school students go to school in uniform.",
+              "cn": "大多数小学生穿着校服上学。"
+            }
+          ]
+        },
+        {
+          "word": "universe",
+          "rootVisual": "<circle cx='12' cy='12' r='10' fill='currentColor' color='#000'/>",
+          "breakdown": [
+            "uni (一)",
+            "vers (转)"
+          ],
+          "imagery": "在一个空间里转动（万物归一），宇宙。",
+          "translation": "宇宙",
+          "sentences": [
+            {
+              "en": "The universe is vast and full of mysteries.",
+              "cn": "宇宙是浩瀚的，充满了谜团。"
+            }
+          ]
+        },
+        {
+          "word": "upset",
+          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M8 10h2 M14 10h2' stroke='currentColor'/><path d='M8 16c2-2 6-2 8 0' stroke='currentColor'/>",
+          "breakdown": [
+            "up",
+            "set"
+          ],
+          "imagery": "一个翻倒的水杯，水洒了一地。",
+          "translation": "不安的；心烦的",
+          "sentences": [
+            {
+              "en": "What makes you so upset?",
+              "cn": "是什么让你如此心烦？"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

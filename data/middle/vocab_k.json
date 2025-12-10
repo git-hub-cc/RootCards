@@ -1,0 +1,145 @@
+{
+  "prefix": "Vocab K",
+  "affixType": "topic",
+  "meanings": [
+    {
+      "meaningId": "vocab_k",
+      "displayName": "Vocabulary K",
+      "themeColor": "#6366f1",
+      "prefixIntro": {
+        "title": "K 开头核心词",
+        "description": "高中阶段 K 开头的高频混合词汇。",
+        "imagery": "字母 K 像张开的嘴或踢腿（Kick）动作，常含“张开、打击”之意。"
+      },
+      "words": [
+        {
+          "word": "key",
+          "rootVisual": "<circle cx='8' cy='12' r='4' stroke='currentColor' fill='none'/><path d='M12 12h8' stroke='currentColor' stroke-width='2'/><path d='M16 12v2 M18 12v2' stroke='currentColor'/>",
+          "breakdown": [
+            "key"
+          ],
+          "imagery": "一把老式的钥匙。",
+          "translation": "钥匙",
+          "sentences": [
+            {
+              "en": "a spare key",
+              "cn": "一把备用钥匙"
+            }
+          ]
+        },
+        {
+          "word": "keyboard",
+          "rootVisual": "<rect x='2' y='8' width='20' height='8' rx='1' stroke='currentColor' fill='none'/><path d='M4 10h2v2h-2z M8 10h2v2h-2z M12 10h2v2h-2z M16 10h2v2h-2z' fill='currentColor'/>",
+          "breakdown": [
+            "key",
+            "board"
+          ],
+          "imagery": "一个电脑键盘。",
+          "translation": "键盘",
+          "sentences": [
+            {
+              "en": "This is an amazing keyboard.",
+              "cn": "这是一个很棒的键盘。"
+            }
+          ]
+        },
+        {
+          "word": "kilometer",
+          "rootVisual": "<rect x='4' y='5' width='16' height='10' rx='1' stroke='currentColor' fill='none' stroke-width='2' /><line x1='12' y1='15' x2='12' y2='22' stroke='currentColor' stroke-width='2' /><path d='M8 12V8 M11 8L8 10L11 12 M13 12V8L14.5 10L16 8V12' stroke='currentColor' fill='none' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/><path d='M4 22 h16' stroke='currentColor' opacity='0.5' />",
+          "breakdown": [
+            "Kilo (千)",
+            "Meter (米)"
+          ],
+          "imagery": "联想高速公路旁的路牌，清晰地标示着“KM”，这是我们在长途旅行中最常见的距离单位。",
+          "translation": "千米",
+          "sentences": [
+            {
+              "en": "The road is 1 kilometer long.",
+              "cn": "这条路长1千米。"
+            }
+          ]
+        },
+        {
+          "word": "kitchen",
+          "rootVisual": "<path d='M2 14 h20 l-2 6 h-16 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M6 14 v-4 q 2 -2 4 0 t 4 0' stroke='currentColor' stroke-width='1.5'/><line x1='12' y1='14' x2='12' y2='4' stroke='currentColor' stroke-width='2'/>",
+          "breakdown": [
+            "Kitchen",
+            "(厨房)"
+          ],
+          "imagery": "一个平底锅正在冒着热气，象征烹饪食物的地方。",
+          "translation": "厨房",
+          "sentences": [
+            {
+              "en": "My mum is making a meal in the kitchen.",
+              "cn": "我妈妈正在厨房做饭。"
+            }
+          ]
+        },
+        {
+          "word": "kite",
+          "rootVisual": "<path d='M12 2 l4 6 l-4 8 l-4 -8 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 16 q 4 4 0 8' stroke='currentColor' stroke-width='1.5'/>",
+          "breakdown": [
+            "Kite",
+            "(风筝)"
+          ],
+          "imagery": "一个菱形风筝，拖着一条波浪形的尾巴在空中飞翔。",
+          "translation": "风筝",
+          "sentences": [
+            {
+              "en": "People often fly kites in spring.",
+              "cn": "人们经常在春天放风筝。"
+            }
+          ]
+        },
+        {
+          "word": "knock",
+          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='1' fill='currentColor'/><path d='M10 12l-2-2 M10 12l-2 2' stroke='currentColor'/>",
+          "breakdown": [
+            "knock"
+          ],
+          "imagery": "一只拳头敲击门板的动作。",
+          "translation": "敲；击",
+          "sentences": [
+            {
+              "en": "Please knock at the door before entering.",
+              "cn": "进来前请敲门。"
+            }
+          ]
+        },
+        {
+          "word": "knowledge",
+          "rootVisual": "<path d='M4 4 h16 v16 h-16 z' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8 M8 16 h4' stroke='currentColor'/>",
+          "breakdown": [
+            "know",
+            "(知道)",
+            "-ledge (名词后缀)"
+          ],
+          "imagery": "一本厚厚的书，或者大脑中连接的神经元。",
+          "translation": "知识",
+          "sentences": [
+            {
+              "en": "Knowledge is power.",
+              "cn": "知识就是力量。"
+            }
+          ]
+        },
+        {
+          "word": "koala",
+          "rootVisual": "<path d='M7 6a3 3 0 1 0-4 4' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M17 6a3 3 0 1 1 4 4' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><path d='M4 10c0 4.5 3.5 9 8 9s8-4.5 8-9' stroke='currentColor' fill='none' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><rect x='10' y='10' width='4' height='5' rx='2' fill='currentColor'/><circle cx='8' cy='11' r='1' fill='currentColor' stroke='none'/><circle cx='16' cy='11' r='1' fill='currentColor' stroke='none'/>",
+          "breakdown": [
+            "Koala",
+            "(考拉)"
+          ],
+          "imagery": "标志性的大圆耳朵和黑色大鼻子，这张呆萌的脸庞是澳大利亚最可爱的象征。",
+          "translation": "考拉",
+          "sentences": [
+            {
+              "en": "The koala is a symbol of Australia.",
+              "cn": "考拉是澳大利亚的象征。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
