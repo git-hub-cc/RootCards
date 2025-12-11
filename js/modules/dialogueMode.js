@@ -1,13 +1,13 @@
 // =================================================================================
-// 对话练习模块 (Dialogue Mode Module) - v3.2 (优化按钮SVG样式)
+// 对话练习模块 (Dialogue Mode Module) - v3.3 (移动端键盘适配修复)
 // ---------------------------------------------------------------------------------
 // 职责:
 // 1. 管理对话练习模态框的UI和交互。
 // 2. 构造并发送请求到云端 LLM API，处理流式响应。
 // 3. 集成 Web Speech API 实现 TTS 语音播放。
-// 4. [修复] 翻译功能强制使用流式解析，解决服务端返回 data: 格式导致的 JSON 报错。
-// 5. 提供“放弃/显示答案”和“下一个单词”的无缝切换体验。
-// 6. [优化] 调整朗读与翻译按钮的 SVG 属性，增强视觉权重。
+// 4. 提供“放弃/显示答案”和“下一个单词”的无缝切换体验。
+// 5. 【核心修复】引入JavaScript逻辑动态处理移动端键盘弹出/收起时的高度变化，
+//    确保对话内容区域在任何视口尺寸下都始终可见且布局正确。
 // =================================================================================
 
 import * as NotificationManager from './notificationManager.js';
@@ -30,7 +30,11 @@ const state = {
     // 语音和翻译状态
     speakingUtterance: null, // 当前正在播放的语音实例
     activeAudioBtn: null,    // 当前播放状态的按钮DOM
-    translationCache: new Map() // 消息ID -> 翻译文本的缓存
+    translationCache: new Map(), // 消息ID -> 翻译文本的缓存
+
+    // 【新增】移动端视口管理
+    isMobile: false,             // 是否为移动设备
+    initialViewportHeight: 0,    // 初始视口高度
 };
 
 // --- 模块内部DOM元素缓存 ---
@@ -49,6 +53,8 @@ function cacheElements() {
     }
 
     elements.modal = modal;
+    // 【新增】获取对话框内容区容器
+    elements.dialogueContent = document.querySelector('.dialogue-content');
     elements.closeBtn = document.getElementById('dialogue-close-btn');
     elements.history = document.getElementById('dialogue-history');
     elements.input = document.getElementById('dialogue-input');
@@ -63,6 +69,47 @@ function cacheElements() {
     }
     return true;
 }
+
+// =================================================================================
+// 【新增】移动端视口与键盘适配逻辑
+// =================================================================================
+/**
+ * 处理窗口大小变化事件，主要用于移动端键盘适配。
+ */
+function handleViewportResize() {
+    if (state.isMobile && state.isSessionActive) {
+        const newHeight = window.innerHeight;
+        // 只有当高度变化显著时才调整，避免不必要的重绘
+        if (Math.abs(newHeight - parseFloat(elements.dialogueContent.style.height)) > 50) {
+            elements.dialogueContent.style.height = `${newHeight}px`;
+            // 确保在布局调整后，聊天记录能滚动到底部，看到最新消息
+            setTimeout(scrollToBottom, 100);
+        }
+    }
+}
+
+/**
+ * 启用移动端键盘适配监听。
+ */
+function enableMobileViewportManager() {
+    if (state.isMobile) {
+        state.initialViewportHeight = window.innerHeight;
+        elements.dialogueContent.style.height = `${state.initialViewportHeight}px`;
+        window.addEventListener('resize', handleViewportResize);
+    }
+}
+
+/**
+ * 禁用移动端键盘适配监听。
+ */
+function disableMobileViewportManager() {
+    if (state.isMobile) {
+        window.removeEventListener('resize', handleViewportResize);
+        // 恢复默认样式，以便下次打开时重新计算
+        elements.dialogueContent.style.height = '';
+    }
+}
+
 
 // --- 辅助功能：TTS 语音合成 ---
 
@@ -172,8 +219,6 @@ async function toggleTranslation(text, resultContainer, messageId) {
 
 /**
  * 调用 API 进行翻译 (修复版)。
- * [修复说明]：服务端即使在 body 中设置 stream: false，仍然返回了 data: 流式数据。
- * 因此这里改为强制使用 stream: true 并手动解析流，以保证鲁棒性。
  */
 async function fetchTranslation(text) {
     if (!API_CONFIG.API_KEY) throw new Error("API Key missing");
@@ -183,7 +228,7 @@ async function fetchTranslation(text) {
         headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${API_CONFIG.API_KEY}`,
-            'Accept': 'text/event-stream' // 明确接收流式数据
+            'Accept': 'text/event-stream'
         },
         body: JSON.stringify({
             model: API_CONFIG.MODEL_NAME,
@@ -191,14 +236,13 @@ async function fetchTranslation(text) {
                 { role: 'system', content: TRANSLATE_CONFIG.SYSTEM_PROMPT },
                 { role: 'user', content: text }
             ],
-            stream: true, // 强制开启流式，以兼容服务端行为
+            stream: true,
             max_tokens: 500
         })
     });
 
     if (!response.ok) throw new Error("Translation API failed: " + response.statusText);
 
-    // --- 核心修复：流式读取响应 ---
     const reader = response.body.getReader();
     const decoder = new TextDecoder();
     let fullText = '';
@@ -212,18 +256,14 @@ async function fetchTranslation(text) {
 
         for (const line of lines) {
             const trimmedLine = line.trim();
-            // 处理 SSE 格式
             if (trimmedLine.startsWith('data:')) {
                 const jsonStr = trimmedLine.substring(5).trim();
-                // 结束标志
                 if (jsonStr === '[DONE]') continue;
                 try {
                     const json = JSON.parse(jsonStr);
                     const delta = json.choices[0]?.delta?.content || '';
                     fullText += delta;
-                } catch (e) {
-                    // 忽略不完整的 JSON 片段
-                }
+                } catch (e) {}
             }
         }
     }
@@ -235,7 +275,8 @@ async function fetchTranslation(text) {
 
 function scrollToBottom() {
     if (elements.history) {
-        elements.history.scrollTop = elements.history.scrollHeight;
+        // 使用 smooth 滚动，体验更佳
+        elements.history.scrollTo({ top: elements.history.scrollHeight, behavior: 'smooth' });
     }
 }
 
@@ -272,12 +313,10 @@ function addMessageToUI(role, content) {
     const bubble = document.createElement('div');
     bubble.className = 'dialogue-message-bubble';
 
-    // 文本内容容器
     const textSpan = document.createElement('div');
     textSpan.innerHTML = content.replace(/\n/g, '<br>');
     bubble.appendChild(textSpan);
 
-    // 如果是 AI 回复，添加操作栏（TTS + 翻译）
     if (role === 'assistant' && content) {
         appendActionButtons(bubble, content);
     }
@@ -295,17 +334,14 @@ function addMessageToUI(role, content) {
  * @param {string} textContent - 该气泡的文本内容
  */
 function appendActionButtons(bubbleElement, textContent) {
-    // 避免重复添加
     if (bubbleElement.querySelector('.bubble-actions-bar')) return;
 
     const actionBar = document.createElement('div');
     actionBar.className = 'bubble-actions-bar';
 
-    // 1. 朗读按钮
     const ttsBtn = document.createElement('button');
     ttsBtn.className = 'bubble-action-btn';
     ttsBtn.title = "朗读 (Read Aloud)";
-    // [优化] 添加 stroke-linecap 和 stroke-linejoin，确保与其他图标风格一致
     ttsBtn.innerHTML = `
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
@@ -315,11 +351,9 @@ function appendActionButtons(bubbleElement, textContent) {
     `;
     ttsBtn.onclick = () => toggleSpeech(textContent, ttsBtn);
 
-    // 2. 翻译按钮
     const transBtn = document.createElement('button');
     transBtn.className = 'bubble-action-btn';
     transBtn.title = "翻译 (Translate)";
-    // [优化] 增加 stroke-width="2"，解决图标过细导致视觉颜色偏浅的问题
     transBtn.innerHTML = `
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
@@ -331,11 +365,9 @@ function appendActionButtons(bubbleElement, textContent) {
         <span>译 / A</span>
     `;
 
-    // 翻译结果显示区域
     const transResult = document.createElement('div');
     transResult.className = 'translation-result';
 
-    // 生成唯一ID用于缓存
     const msgId = 'msg-' + Date.now() + Math.random().toString(36).substr(2, 9);
     transBtn.onclick = () => toggleTranslation(textContent, transResult, msgId);
 
@@ -373,7 +405,7 @@ function updateActionButtonState() {
  * 准备下一轮对话。
  */
 function prepareNextRound() {
-    stopSpeech(); // 切换单词时停止播放
+    stopSpeech();
     state.currentIndex++;
 
     if (state.currentIndex >= state.playlist.length) {
@@ -392,9 +424,8 @@ function prepareNextRound() {
         return;
     }
 
-    // 重置回合状态
     state.conversationHistory = [];
-    state.translationCache.clear(); // 清理上一轮的翻译缓存
+    state.translationCache.clear();
     state.isRoundFinished = false;
     elements.history.innerHTML = '';
     elements.input.value = '';
@@ -404,7 +435,6 @@ function prepareNextRound() {
 
     updateActionButtonState();
 
-    // 构建 System Prompt
     const systemPrompt = buildSystemPrompt(state.currentData);
     state.conversationHistory.push({ role: DIALOGUE_CONFIG.SYSTEM_ROLE_NAME, content: systemPrompt });
 
@@ -473,9 +503,8 @@ async function callLLM() {
 
         removeSkeletonBubble();
 
-        // 创建气泡，此时返回的是内部的 textSpan
         const aiTextSpan = addMessageToUI('assistant', '');
-        const bubbleContainer = aiTextSpan.parentElement; // 获取父级 bubble 元素以便后续添加按钮
+        const bubbleContainer = aiTextSpan.parentElement;
 
         let fullText = '';
 
@@ -505,9 +534,7 @@ async function callLLM() {
             aiTextSpan.innerHTML = fullText.replace(/\n/g, '<br>');
         }
 
-        // --- 流式传输结束后，追加操作按钮 ---
         appendActionButtons(bubbleContainer, fullText);
-
         state.conversationHistory.push({ role: 'assistant', content: fullText });
 
         if (fullText.toLowerCase().includes("correct") || fullText.toLowerCase().includes("you got it")) {
@@ -546,6 +573,8 @@ function startSession() {
     state.currentIndex = -1;
     state.isSessionActive = true;
     elements.modal.classList.remove('is-hidden');
+    // 【新增】启用移动端视口管理器
+    enableMobileViewportManager();
     prepareNextRound();
 }
 
@@ -554,7 +583,7 @@ function handleSendMessage() {
     if (!text || state.isLoading) return;
 
     playUiSound('activate');
-    stopSpeech(); // 用户发送消息时也停止 AI 的朗读
+    stopSpeech();
 
     addMessageToUI('user', text);
     state.conversationHistory.push({ role: 'user', content: text });
@@ -582,10 +611,12 @@ function handleActionBtn() {
 }
 
 function hideModal() {
-    stopSpeech(); // 关闭模态框时强制停止语音
+    stopSpeech();
     if (state.abortController) state.abortController.abort();
     elements.modal.classList.add('is-hidden');
     state.isSessionActive = false;
+    // 【新增】禁用移动端视口管理器，清理事件监听
+    disableMobileViewportManager();
 }
 
 /**
@@ -597,6 +628,9 @@ export function init(startBtn) {
         startBtn.disabled = true;
         return;
     }
+
+    // 【新增】判断是否为移动设备
+    state.isMobile = window.innerWidth <= 768;
 
     startBtn.addEventListener('click', startSession);
     elements.closeBtn.addEventListener('click', hideModal);

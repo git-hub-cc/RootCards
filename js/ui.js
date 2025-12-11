@@ -1,10 +1,11 @@
 // =================================================================================
-// 通用 UI 渲染模块 (Generic UI Rendering Module) - v19.0 (移除单卡对话按钮)
+// 通用 UI 渲染模块 (Generic UI Rendering Module) - v19.1 (热力图重构)
 // ---------------------------------------------------------------------------------
 // 主要变更:
-// - 移除了 createWordCard 中添加 "💬 AI 语境引导" 按钮的代码。
-// - 移除了相关的事件监听器。
-// - 更新了 initMobileLayout 以适配新的全局对话按钮。
+// - 重构 renderHeatmap 函数，采用“方案一 + 方案二”组合策略。
+// - [方案二] 增加移动端判断，只显示最近4个月的热力图数据。
+// - [方案一] JS不再负责布局计算，只生成带 data-* 属性的纯粹DOM元素。
+// - [方案一] 布局完全交由 CSS Grid 处理，增强了健壮性和可维护性。
 // =================================================================================
 
 import * as State from './state.js';
@@ -215,15 +216,30 @@ export function updateActiveFilterButton(filterContainer, clickedButton) {
 // 热力图与成就渲染
 // =================================================================================
 
+/**
+ * 渲染学习热力图 (重构版)。
+ * - JS仅负责生成带 data-* 属性的纯粹DOM元素。
+ * - 布局完全交由 CSS Grid 处理。
+ * - 移动端默认只显示最近4个月的数据。
+ * @param {HTMLElement} container - 热力图的容器元素。
+ * @param {object} activityData - 格式为 { 'YYYY-MM-DD': count } 的学习活动数据。
+ */
 export function renderHeatmap(container, activityData) {
     if (!container) return;
     container.innerHTML = '';
-    const DAYS_IN_YEAR = 365;
+
+    // --- [方案二] 移动端优化：只显示最近4个月的数据 ---
+    const isMobile = window.innerWidth <= 768;
+    const DAYS_TO_SHOW = isMobile ? 120 : 365; // 约4个月 vs 1年
+
     const today = new Date();
     today.setHours(0, 0, 0, 0);
+
     const startDate = new Date(today);
-    startDate.setDate(startDate.getDate() - DAYS_IN_YEAR);
+    startDate.setDate(startDate.getDate() - DAYS_TO_SHOW);
+    // getDay() 返回 0 (周日) - 6 (周六)
     const startDayOfWeek = startDate.getDay();
+
     const fragment = document.createDocumentFragment();
 
     let tooltip = document.getElementById('heatmap-tooltip');
@@ -234,14 +250,16 @@ export function renderHeatmap(container, activityData) {
         document.body.appendChild(tooltip);
     }
 
-    // 填充空白块以对齐星期
+    // --- [方案一] 插入占位符以对齐星期 ---
+    // CSS Grid 会自动将这些占位符放在第一列的顶部
     for (let i = 0; i < startDayOfWeek; i++) {
         const spacer = document.createElement('div');
         spacer.className = 'heatmap-day is-spacer';
         fragment.appendChild(spacer);
     }
 
-    for (let i = 0; i <= DAYS_IN_YEAR + 1; i++) {
+    // --- [方案一] 循环生成数据方块 ---
+    for (let i = 0; i <= DAYS_TO_SHOW; i++) {
         const date = new Date(startDate);
         date.setDate(date.getDate() + i);
         const dateStr = date.toISOString().split('T')[0];
@@ -249,6 +267,9 @@ export function renderHeatmap(container, activityData) {
 
         const dayEl = document.createElement('div');
         dayEl.className = 'heatmap-day';
+        // 绑定数据到 data-* 属性
+        dayEl.dataset.date = dateStr;
+        dayEl.dataset.count = count;
 
         let level = 0;
         if (count > 0) level = 1;
@@ -257,10 +278,16 @@ export function renderHeatmap(container, activityData) {
         if (count >= 20) level = 4;
         dayEl.dataset.level = level;
 
-        dayEl.addEventListener('mouseenter', () => {
-            const rect = dayEl.getBoundingClientRect();
+        // Tooltip 交互
+        dayEl.addEventListener('mouseenter', (e) => {
+            const target = e.currentTarget;
+            const rect = target.getBoundingClientRect();
+            // 从 data-* 属性读取数据
+            const date = target.dataset.date;
+            const count = target.dataset.count;
+
             tooltip.innerHTML = `
-                <span class="heatmap-tooltip-date">${dateStr}</span>
+                <span class="heatmap-tooltip-date">${date}</span>
                 <span style="font-weight:bold; font-size:1.1em;">${count}</span> 
                 <span class="heatmap-tooltip-label">词已掌握</span>
             `;
@@ -274,6 +301,7 @@ export function renderHeatmap(container, activityData) {
     }
     container.appendChild(fragment);
 }
+
 
 export function renderAchievementsList(listContainer) {
     if (!listContainer) return;

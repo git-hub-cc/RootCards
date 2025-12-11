@@ -236,7 +236,8 @@
 
 <!-- 模态框与模板区域 -->
 <div id="listening-modal" class="modal-overlay is-hidden">
-    <div class="modal-content">
+    <!-- 【核心修改】为内容容器添加特定类名，以便应用内边距 -->
+    <div class="modal-content listening-content">
         <button class="modal-close-btn" id="listening-close-btn" title="退出听力模式">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
         </button>
@@ -306,7 +307,8 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                 </button>
                 <h3>📚 我的单词本</h3>
-                <button id="wordbook-close-btn" class="modal-close-btn wordbook-close-style" title="关闭">
+                <!-- 【核心修改】将关闭按钮移到头部右侧区域，并移除已废弃的样式类 -->
+                <button id="wordbook-close-btn" class="modal-close-btn" title="关闭">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </button>
             </div>
@@ -367,9 +369,9 @@
 
 <div id="achievements-modal" class="modal-overlay is-hidden">
     <div class="modal-content achievements-content">
+        <!-- 【核心修改】统一头部结构，确保关闭按钮位于右上角 -->
         <div class="achievements-header">
             <h3>🏆 学习成就 (Achievements)</h3>
-            <!-- 【核心修改】移除了 'wordbook-close-style' 类，以应用通用的右上角关闭按钮样式 -->
             <button id="achievements-close-btn" class="modal-close-btn" title="关闭">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
@@ -382,10 +384,9 @@
 
 <div id="heatmap-modal" class="modal-overlay is-hidden">
     <div class="modal-content heatmap-content">
-        <!-- 复用成就模态框的头部样式 -->
+        <!-- 【核心修改】复用统一的头部结构 -->
         <div class="achievements-header">
             <h3>🔥 学习轨迹 (Learning Heatmap)</h3>
-            <!-- 【核心修改】移除了 'wordbook-close-style' 类，以应用通用的右上角关闭按钮样式 -->
             <button id="heatmap-close-btn" class="modal-close-btn" title="关闭">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </button>
