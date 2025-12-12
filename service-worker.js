@@ -1,15 +1,15 @@
 /**
  * =================================================================================
- * Service Worker (PWA 核心控制脚本) - v1.4 (新增 dialogueMode 缓存)
+ * Service Worker (PWA 核心控制脚本) - v1.5 (图标资源外部化)
  * ---------------------------------------------------------------------------------
  * 主要修改:
- * 1. 递增了 CACHE_VERSION 以触发客户端更新。
- * 2. 在 ASSETS_TO_CACHE 列表中添加了新的 config.js 和 dialogueMode.js 文件。
+ * 1. 递增了 CACHE_VERSION 以触发客户端缓存更新。
+ * 2. 在 ASSETS_TO_CACHE 列表中添加了新的 js/icons.js 图标库文件。
  * =================================================================================
  */
 
 // 缓存版本号：递增此版本号以强制浏览器更新缓存
-const CACHE_VERSION = 'v1.0.4';
+const CACHE_VERSION = 'v1.0.5';
 
 // 静态资源缓存（App Shell）
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
@@ -42,7 +42,8 @@ const ASSETS_TO_CACHE = [
     '/js/state.js',
     '/js/ui.js',
     '/js/ui-helpers.js',
-    '/js/config.js',                  // [新增] 配置文件
+    '/js/config.js',
+    '/js/icons.js',                   // [新增] SVG 图标库
     '/js/modules/themeManager.js',
     '/js/modules/dataManager.js',
     '/js/modules/listeningMode.js',
@@ -50,7 +51,7 @@ const ASSETS_TO_CACHE = [
     '/js/modules/wordbook.js',
     '/js/modules/undoManager.js',
     '/js/modules/notificationManager.js',
-    '/js/modules/dialogueMode.js',    // [新增] 对话模式模块
+    '/js/modules/dialogueMode.js',
 
     // Web Workers 和第三方库
     '/js/workers/nlpWorker.js',
@@ -99,8 +100,7 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
     const url = new URL(event.request.url);
 
-    // 排除非 GET 请求和跨域请求 (除了音频 CDNs 等)
-    // 注意：本次新增的 API 请求是 POST，会被此处排除，直接走网络，这是符合预期的
+    // 排除非 GET 请求和跨域请求
     if (event.request.method !== 'GET') {
         return;
     }

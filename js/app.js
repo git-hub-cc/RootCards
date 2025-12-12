@@ -1,10 +1,10 @@
 // =================================================================================
-// 应用协调器 (Application Orchestrator) - v20.0 (对话模式全局化)
+// 应用协调器 (Application Orchestrator) - v20.0 (对话模式全局化 & 动态响应式)
 // ---------------------------------------------------------------------------------
 // 主要变更:
-// - 获取并绑定新的 #dialogue-mode-btn 按钮。
-// - 将其传递给 DialogueMode.init 进行初始化。
-// - 移除了 renderMoreCards 中 createCard 的 onStartDialogue 回调。
+// - 新增 handleResize 函数和 'resize' 事件监听器，以动态响应浏览器窗口大小变化。
+// - 在窗口大小跨越移动端/桌面端断点时，自动调用 UI 更新、重新设置滚动加载监听器。
+// - 如果学习轨迹图可见，在窗口变化时自动重新渲染。
 // =================================================================================
 
 import * as State from './state.js';
@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const typingModeBtn = document.getElementById('typing-mode-btn');
     const listeningModeBtn = document.getElementById('listening-mode-btn');
-    // [新增] 获取对话模式按钮
     const dialogueModeBtn = document.getElementById('dialogue-mode-btn');
 
     // --- 状态变量 ---
@@ -61,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const CARDS_PER_PAGE = 12;
     let observer = null;
     let isShuffling = false;
+    let currentLayoutMode = ''; // 【新增】用于追踪当前的布局模式 ('mobile' 或 'desktop')
 
     if (!UI.init()) {
         console.error("应用启动失败：UI模块初始化未能成功。");
@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const endIndex = Math.min(renderIndex + CARDS_PER_PAGE, State.currentDataSet.length);
         const handlers = {
             onMarkLearned: handleMarkAsLearned
-            // [移除] onStartDialogue 回调已不再需要
         };
 
         for (let i = renderIndex; i < endIndex; i++) {
@@ -252,8 +251,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function setupIntersectionObserver() {
-        if (window.innerWidth <= 768) return;
         if (observer) observer.disconnect();
+
+        // 【修改】根据当前布局模式决定使用哪个观察者逻辑
+        if (currentLayoutMode === 'mobile') {
+            // 移动端观察者在 renderMoreCards 内部设置，这里只需确保PC端观察者被移除
+            return;
+        }
+
+        // 桌面端观察者逻辑
         observer = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting && loadMoreTrigger.classList.contains('is-visible')) {
                 renderMoreCards();
@@ -291,6 +297,30 @@ document.addEventListener('DOMContentLoaded', () => {
             clearTimeout(timeout);
             timeout = setTimeout(() => func.apply(context, args), wait);
         };
+    }
+
+    /**
+     * 【新增】处理窗口大小变化的函数，作为响应式逻辑的调度中心。
+     */
+    function handleResize() {
+        const newMode = window.innerWidth <= 768 ? 'mobile' : 'desktop';
+
+        // 如果布局模式没有改变，则不执行任何操作，以优化性能
+        if (newMode === currentLayoutMode) {
+            return;
+        }
+        currentLayoutMode = newMode; // 更新当前模式
+
+        // 1. 调用UI模块更新布局（移动/桌面按钮位置切换）
+        UI.updateResponsiveLayout();
+
+        // 2. 重新设置适合当前模式的滚动加载监听器
+        setupIntersectionObserver();
+
+        // 3. 如果学习轨迹图当前可见，则重新渲染以适应新布局
+        if (heatmapModal && !heatmapModal.classList.contains('is-hidden')) {
+            UI.renderHeatmap(heatmapContainer, State.getLearningActivity());
+        }
     }
 
     categoryFilterContainer.addEventListener('click', (e) => {
@@ -420,9 +450,10 @@ document.addEventListener('DOMContentLoaded', () => {
         ThemeManager.init();
         UndoManager.init();
         NotificationManager.init();
-
-        // [修改] 传递启动按钮进行初始化
         DialogueMode.init(dialogueModeBtn);
+
+        // 【新增】添加 resize 事件监听器，并用 debounce 优化性能
+        window.addEventListener('resize', debounce(handleResize, 250));
 
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
@@ -462,6 +493,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             hideSplashScreen();
 
+            // 【新增】在加载完成后，立即执行一次 handleResize 以设置正确的初始布局
+            handleResize();
+
             UI.renderCategoryButtons(categoryFilterContainer, categories);
             UI.renderContentTypeButtons(contentTypeFilterContainer);
 
@@ -476,11 +510,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             UI.renderHeatmap(heatmapContainer, State.getLearningActivity());
 
-            if (window.innerWidth <= 768) {
-                setupMobileIntersectionObserver();
-            } else {
-                setupIntersectionObserver();
-            }
+            // 初始的滚动加载器设置将在第一次 handleResize 中完成
 
         } catch (error) {
             console.error('初始化应用时发生严重错误:', error);

@@ -1,10 +1,9 @@
 /* ==========================================================================
-   Component Styles - 通用组件样式 (v6.4 - 热力图Grid布局重构)
+   Component Styles - 通用组件样式 (v6.5 - 统一双状态图标切换逻辑)
    --------------------------------------------------------------------------
    主要变更:
-   - 【核心重构】热力图容器 .heatmap-container 改为使用 CSS Grid 布局。
-   - 移除了所有与绝对定位相关的热力图方块样式，布局完全由Grid驱动。
-   - 确保了 Tooltip 的 z-index 足够高，能在模态框之上显示。
+   - 为 #no-visual-btn 添加纯 CSS 图标切换逻辑，不再依赖 JS。
+   - 确保其行为与卡片上的切换按钮一致。
    ========================================================================== */
 
 /* --- 核心辅助类 --- */
@@ -274,8 +273,23 @@ body.dark-mode .filter-btn[data-filter-type="user-wordbook"].active {
     transform: rotate(45deg);
 }
 
+/* --- 【核心修改】统一双状态图标切换逻辑 --- */
+/* 默认状态下，显示 "open" 图标，隐藏 "slash" 图标 */
+#no-visual-btn .icon-eye-open { display: block; }
+#no-visual-btn .icon-eye-slash { display: none; }
+/* 当按钮具有 .active 类时，反转显示状态 */
+#no-visual-btn.active .icon-eye-open { display: none; }
+#no-visual-btn.active .icon-eye-slash { display: block; }
+
+
 /* --- 组件: 沉浸模式悬浮按钮 (Floating Action Button) --- */
 .floating-action-btn { display: none; }
+/* 统一双状态图标切换逻辑 */
+.floating-action-btn .icon-expand { display: block; }
+.floating-action-btn .icon-compress { display: none; }
+body.mode-immersive .floating-action-btn .icon-expand { display: none; }
+body.mode-immersive .floating-action-btn .icon-compress { display: block; }
+
 
 @media screen and (max-width: 768px) {
     .floating-action-btn {
@@ -530,16 +544,13 @@ body.mode-no-visual .card-front .visual-area::after {
    学习热力图组件 (Heatmap) - GitHub 风格 (Grid布局重构)
    ========================================================================== */
 
-/* 【核心重构】使用 CSS Grid 布局 */
 .heatmap-container {
     display: grid;
-    /* 固定 7 行，分别代表一周的七天 */
     grid-template-rows: repeat(7, 1fr);
-    /* 关键属性：让网格项按列自动填充，形成日历布局 */
     grid-auto-flow: column;
     gap: 3px;
-    justify-content: start; /* 从左侧开始排列 */
-    overflow-x: auto;       /* 当内容超出时允许水平滚动 */
+    justify-content: start;
+    overflow-x: auto;
     padding: 0.5rem;
 }
 
@@ -547,12 +558,11 @@ body.mode-no-visual .card-front .visual-area::after {
     width: 12px;
     height: 12px;
     border-radius: 2px;
-    background-color: var(--border-color); /* Level 0 - 默认颜色 */
+    background-color: var(--border-color);
     cursor: pointer;
     transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-/* 用于周一对齐的占位符方块 */
 .heatmap-day.is-spacer {
     background-color: transparent;
     pointer-events: none;
@@ -564,7 +574,6 @@ body.mode-no-visual .card-front .visual-area::after {
     z-index: 10;
 }
 
-/* 贡献等级颜色 */
 .heatmap-day[data-level="1"] { background-color: #9be9a8; }
 .heatmap-day[data-level="2"] { background-color: #40c463; }
 .heatmap-day[data-level="3"] { background-color: #30a14e; }
@@ -576,7 +585,6 @@ body.dark-mode .heatmap-day[data-level="2"] { background-color: #006d32; }
 body.dark-mode .heatmap-day[data-level="3"] { background-color: #26a641; }
 body.dark-mode .heatmap-day[data-level="4"] { background-color: #39d353; }
 
-/* 提示框样式与层级 */
 .heatmap-tooltip {
     position: fixed;
     background: rgba(0, 0, 0, 0.85);
@@ -588,7 +596,6 @@ body.dark-mode .heatmap-day[data-level="4"] { background-color: #39d353; }
     transform: translate(-50%, -110%);
     opacity: 0;
     transition: opacity 0.2s, transform 0.2s;
-    /* 确保在模态框遮罩层 (z-index: 2000) 之上 */
     z-index: 2001;
     text-align: center;
     white-space: nowrap;
@@ -601,7 +608,6 @@ body.dark-mode .heatmap-day[data-level="4"] { background-color: #39d353; }
     transform: translate(-50%, -100%);
 }
 
-/* 提示框内部的标签样式 */
 .heatmap-tooltip-label {
     font-size: 0.75rem;
     opacity: 0.7;
@@ -609,7 +615,6 @@ body.dark-mode .heatmap-day[data-level="4"] { background-color: #39d353; }
     font-weight: normal;
 }
 
-/* 提示框内部的日期样式 */
 .heatmap-tooltip-date {
     font-size: 0.75rem;
     opacity: 0.6;
@@ -620,7 +625,6 @@ body.dark-mode .heatmap-day[data-level="4"] { background-color: #39d353; }
 }
 
 @media screen and (max-width: 768px) {
-    /* 移动端，可以适当调整方块大小和间距以优化显示 */
     .heatmap-day {
         width: 14px;
         height: 14px;

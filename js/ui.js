@@ -1,15 +1,17 @@
-// =================================================================================
-// 通用 UI 渲染模块 (Generic UI Rendering Module) - v19.1 (热力图重构)
-// ---------------------------------------------------------------------------------
-// 主要变更:
-// - 重构 renderHeatmap 函数，采用“方案一 + 方案二”组合策略。
-// - [方案二] 增加移动端判断，只显示最近4个月的热力图数据。
-// - [方案一] JS不再负责布局计算，只生成带 data-* 属性的纯粹DOM元素。
-// - [方案一] 布局完全交由 CSS Grid 处理，增强了健壮性和可维护性。
-// =================================================================================
+/**
+ * =================================================================================
+ * 通用 UI 渲染模块 (Generic UI Rendering Module) - v20.1 (简化图标切换JS & 动态响应式)
+ * ---------------------------------------------------------------------------------
+ * 主要变更:
+ * - 新增 updateResponsiveLayout 函数，用于在移动端和桌面端布局之间动态切换。
+ * - 在 init 阶段缓存需要移动的UI元素的原始父节点，以实现鲁棒的布局恢复。
+ * - 移除旧的、一次性的 initMobileLayout 函数。
+ * =================================================================================
+ */
 
 import * as State from './state.js';
 import * as NotificationManager from './modules/notificationManager.js';
+import { ICONS } from './icons.js';
 
 let cardTemplate;
 let prefixIntroTemplate;
@@ -29,6 +31,36 @@ const UI_SOUND_PATHS = {
     activate: 'audio/ui/Activate.mp3'
 };
 
+// 【新增】用于存储需要在桌面/移动端之间移动的元素及其原始父节点
+let desktopElementsToMove = {};
+const elementsToMoveConfig = {
+    'listening-mode-btn': { type: 'id' },
+    'dialogue-mode-btn': { type: 'id' },
+    'typing-mode-btn': { type: 'id' },
+    'shuffle-btn': { type: 'id' },
+    'no-visual-btn': { type: 'id' },
+    'options-menu-container': { type: 'class' } // 特殊处理，通过类名查找
+};
+let searchContainerRef = null; // 用于桌面端布局恢复时的定位
+
+
+function renderIcons(scope = document) {
+    if (!ICONS || Object.keys(ICONS).length === 0) {
+        console.error("图标库未加载或为空，无法渲染图标。");
+        return;
+    }
+    const placeholders = scope.querySelectorAll('[data-icon]');
+    placeholders.forEach(placeholder => {
+        const iconName = placeholder.dataset.icon;
+        if (ICONS[iconName]) {
+            placeholder.innerHTML = ICONS[iconName];
+            placeholder.removeAttribute('data-icon');
+        } else {
+            console.warn(`未在图标库中找到名为 "${iconName}" 的图标。`);
+        }
+    });
+}
+
 export function init() {
     cardTemplate = document.getElementById('card-template');
     prefixIntroTemplate = document.getElementById('prefix-intro-template');
@@ -37,6 +69,8 @@ export function init() {
         console.error('关键的卡片模板元素未在 HTML 中找到。');
         return false;
     }
+
+    renderIcons();
 
     Object.entries(UI_SOUND_PATHS).forEach(([key, path]) => {
         try {
@@ -49,25 +83,50 @@ export function init() {
         }
     });
 
-    initMobileLayout();
+    // 【新增】缓存需要在响应式布局中移动的元素及其原始父节点
+    Object.keys(elementsToMoveConfig).forEach(key => {
+        const config = elementsToMoveConfig[key];
+        const element = config.type === 'id' ? document.getElementById(key) : document.querySelector(`.${key}`);
+        if (element && element.parentNode) {
+            desktopElementsToMove[key] = { element, parent: element.parentNode };
+        }
+    });
+    searchContainerRef = document.getElementById('search-container');
+
+    // 初始布局将在 app.js 的 handleResize 中首次调用，此处不再需要
     return true;
 }
 
-function initMobileLayout() {
-    if (window.innerWidth > 768) return;
+/**
+ * 【新增】根据窗口宽度动态更新布局，实现移动端和桌面端UI的无缝切换。
+ */
+export function updateResponsiveLayout() {
+    const isMobile = window.innerWidth <= 768;
     const bottomBar = document.getElementById('mobile-bottom-bar');
     if (!bottomBar) return;
-    const buttonsToMove = [
-        'listening-mode-btn', 'dialogue-mode-btn', 'typing-mode-btn', 'shuffle-btn',
-        'no-visual-btn', 'more-options-btn'
-    ];
-    buttonsToMove.forEach(id => {
-        const element = id === 'more-options-btn'
-            ? document.querySelector('.options-menu-container')
-            : document.getElementById(id);
-        if (element) bottomBar.appendChild(element);
+
+    Object.values(desktopElementsToMove).forEach(({ element, parent }) => {
+        if (!element) return;
+
+        if (isMobile) {
+            // 移动端模式：如果元素不在底部导航栏，则将其移入
+            if (element.parentNode !== bottomBar) {
+                bottomBar.appendChild(element);
+            }
+        } else {
+            // 桌面端模式：如果元素在底部导航栏，则将其移回原始父节点
+            if (element.parentNode === bottomBar && parent) {
+                // 将元素插入到搜索框之前，以保持合理的布局顺序
+                if (searchContainerRef) {
+                    parent.insertBefore(element, searchContainerRef);
+                } else {
+                    parent.appendChild(element); // 作为备用方案
+                }
+            }
+        }
     });
 }
+
 
 export function playUiSound(type) {
     const originalAudio = uiSounds[type];
@@ -216,28 +275,19 @@ export function updateActiveFilterButton(filterContainer, clickedButton) {
 // 热力图与成就渲染
 // =================================================================================
 
-/**
- * 渲染学习热力图 (重构版)。
- * - JS仅负责生成带 data-* 属性的纯粹DOM元素。
- * - 布局完全交由 CSS Grid 处理。
- * - 移动端默认只显示最近4个月的数据。
- * @param {HTMLElement} container - 热力图的容器元素。
- * @param {object} activityData - 格式为 { 'YYYY-MM-DD': count } 的学习活动数据。
- */
 export function renderHeatmap(container, activityData) {
     if (!container) return;
     container.innerHTML = '';
 
-    // --- [方案二] 移动端优化：只显示最近4个月的数据 ---
+    // 【修改】根据当前窗口宽度决定显示的数据范围
     const isMobile = window.innerWidth <= 768;
-    const DAYS_TO_SHOW = isMobile ? 120 : 365; // 约4个月 vs 1年
+    const DAYS_TO_SHOW = isMobile ? 120 : 365;
 
     const today = new Date();
     today.setHours(0, 0, 0, 0);
 
     const startDate = new Date(today);
     startDate.setDate(startDate.getDate() - DAYS_TO_SHOW);
-    // getDay() 返回 0 (周日) - 6 (周六)
     const startDayOfWeek = startDate.getDay();
 
     const fragment = document.createDocumentFragment();
@@ -250,15 +300,12 @@ export function renderHeatmap(container, activityData) {
         document.body.appendChild(tooltip);
     }
 
-    // --- [方案一] 插入占位符以对齐星期 ---
-    // CSS Grid 会自动将这些占位符放在第一列的顶部
     for (let i = 0; i < startDayOfWeek; i++) {
         const spacer = document.createElement('div');
         spacer.className = 'heatmap-day is-spacer';
         fragment.appendChild(spacer);
     }
 
-    // --- [方案一] 循环生成数据方块 ---
     for (let i = 0; i <= DAYS_TO_SHOW; i++) {
         const date = new Date(startDate);
         date.setDate(date.getDate() + i);
@@ -267,7 +314,6 @@ export function renderHeatmap(container, activityData) {
 
         const dayEl = document.createElement('div');
         dayEl.className = 'heatmap-day';
-        // 绑定数据到 data-* 属性
         dayEl.dataset.date = dateStr;
         dayEl.dataset.count = count;
 
@@ -278,11 +324,9 @@ export function renderHeatmap(container, activityData) {
         if (count >= 20) level = 4;
         dayEl.dataset.level = level;
 
-        // Tooltip 交互
         dayEl.addEventListener('mouseenter', (e) => {
             const target = e.currentTarget;
             const rect = target.getBoundingClientRect();
-            // 从 data-* 属性读取数据
             const date = target.dataset.date;
             const count = target.dataset.count;
 
@@ -353,6 +397,8 @@ function createWordCard(data, handlers) {
     const card = cardTemplate.content.cloneNode(true).firstElementChild;
     if (data.themeColor) card.style.setProperty('--theme-color', data.themeColor);
     if (data.isLearned) card.classList.add('is-learned');
+
+    renderIcons(card);
 
     card.querySelector('.visual-area').innerHTML = `<svg viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><g class="layer-root">${data.rootVisual||''}</g><g class="layer-prefix">${data.prefixVisual||''}</g></svg>`;
     const badge = card.querySelector('.prefix-badge');
@@ -468,16 +514,12 @@ export function createCard(data, handlers) {
 export function toggleNoVisualMode(btnElement) {
     const isEnabled = document.body.classList.toggle('mode-no-visual');
     btnElement.classList.toggle('active', isEnabled);
-    btnElement.querySelector('.icon-eye-open').classList.toggle('is-hidden', isEnabled);
-    btnElement.querySelector('.icon-eye-slash').classList.toggle('is-hidden', !isEnabled);
     btnElement.title = isEnabled ? "关闭无图模式" : "开启无图自测模式";
     if (isEnabled) playUiSound('activate');
 }
 
 export function toggleImmersiveMode(btnElement) {
     const isImmersive = document.body.classList.toggle('mode-immersive');
-    btnElement.querySelector('.icon-expand').classList.toggle('is-hidden', isImmersive);
-    btnElement.querySelector('.icon-compress').classList.toggle('is-hidden', !isImmersive);
     playUiSound('activate');
     NotificationManager.show({ type: isImmersive ? 'success' : 'info', message: isImmersive ? '🔕 已进入沉浸模式' : '🔔 已退出沉浸模式' });
 }

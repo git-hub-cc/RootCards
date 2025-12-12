@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Card Styles - 卡片样式模块 (v4.6 - 新增例句焦点模式)
+   Card Styles - 卡片样式模块 (v4.7 - 修复图标类名)
    ========================================================================== */
 
 /* --- 组件: 3D 翻转卡片 (核心与通用) --- */
@@ -305,10 +305,14 @@ body.dark-mode .toggle-prefix-btn:hover, body.dark-mode .mark-btn:hover { backgr
 .mark-btn:hover { transform: scale(1.1); }
 .toggle-prefix-btn svg, .mark-btn svg { width: 20px; height: 20px; }
 .mark-btn svg { width: 24px; height: 24px; }
-.toggle-prefix-btn .icon-eye { display: block; }
-.toggle-prefix-btn .icon-eye-off { display: none; }
-.card.prefix-hidden .toggle-prefix-btn .icon-eye { display: none; }
-.card.prefix-hidden .toggle-prefix-btn .icon-eye-off { display: block; }
+
+/* --- 【核心修复】更新图标类名以匹配 icons.js --- */
+.toggle-prefix-btn .icon-eye-open { display: block; }
+.toggle-prefix-btn .icon-eye-slash { display: none; }
+.card.prefix-hidden .toggle-prefix-btn .icon-eye-open { display: none; }
+.card.prefix-hidden .toggle-prefix-btn .icon-eye-slash { display: block; }
+/* --- 修复结束 --- */
+
 .mark-btn .icon-check-empty { display: block; }
 .mark-btn .icon-check-filled { display: none; }
 .card.is-learned .mark-btn .icon-check-empty { display: none; }
