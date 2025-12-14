@@ -62,9 +62,9 @@
 
 <!-- 沉浸模式开关按钮 -->
 <button id="immersive-mode-btn" class="floating-action-btn" title="切换沉浸模式">
-    <!-- 【修改】移除内联 SVG，替换为图标占位符 -->
+    <!-- 【修改】移除 is-hidden 类，由 CSS 控制内部 SVG 的显示 -->
     <span data-icon="expand"></span>
-    <span data-icon="compress" class="is-hidden"></span>
+    <span data-icon="compress"></span>
 </button>
 
 <!-- 顶部导航与过滤器 -->
@@ -115,8 +115,9 @@
             </button>
 
             <button class="icon-btn" id="no-visual-btn" title="开启无图自测模式 (Hide Visuals)">
+                <!-- 【修改】移除 is-hidden 类，由 CSS 控制内部 SVG 的显示 -->
                 <span data-icon="eye_open"></span>
-                <span data-icon="eye_slash" class="is-hidden"></span>
+                <span data-icon="eye_slash"></span>
             </button>
 
             <button class="shuffle-btn icon-btn" id="shuffle-btn" title="随机排序当前卡片">
