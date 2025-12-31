@@ -382,16 +382,22 @@
                     <span data-icon="check_filled"></span>
                 </button>
                 <div class="visual-area"></div>
+
+                <!-- 【核心修改】单词区域结构调整 -->
                 <div class="word-area">
                     <h2 class="word-text"></h2>
-                    <button class="audio-btn word-audio" title="朗读单词">
-                        <span data-icon="volume_word"></span>
-                    </button>
-                    <button class="audio-btn note-btn" title="添加/查看笔记">
-                        <span data-icon="note_empty"></span>
-                        <span data-icon="note_filled"></span>
-                    </button>
+                    <!-- 新增按钮容器，用于分行显示 -->
+                    <div class="word-controls">
+                        <button class="audio-btn word-audio" title="朗读单词">
+                            <span data-icon="volume_word"></span>
+                        </button>
+                        <button class="audio-btn note-btn" title="添加/查看笔记">
+                            <span data-icon="note_empty"></span>
+                            <span data-icon="note_filled"></span>
+                        </button>
+                    </div>
                 </div>
+
                 <p class="hint-text">点击翻转查看解析</p>
                 <div class="card-note-overlay is-hidden">
                     <textarea class="note-input" placeholder="输入你的联想笔记..."></textarea>

@@ -1,5 +1,5 @@
 // =================================================================================
-// 数据与状态管理模块 (State Management Module) - v10.1 (优化单词计数)
+// 数据与状态管理模块 (State Management Module) - v10.4 (All Types 显示所有单词)
 // ---------------------------------------------------------------------------------
 // 职责:
 // 1. (数据加载) 异步加载所有词汇数据文件。
@@ -7,6 +7,12 @@
 // 3. (状态管理) 维护全局数据和当前筛选状态 (category, contentType, filter)。
 // 4. (用户数据) 管理“已掌握”、“单词本”、“笔记”、“学习活动”和“成就”等。
 // 5. (持久化) 负责 localStorage 的读写。
+// 6. (动态计算) 实时计算可用的主类别和子类别，自动隐藏无数据的分类。
+//
+// 修改记录:
+// - 修改了数据筛选逻辑：当 Content Type 为 'all' (All Types) 时，不再过滤“已掌握”的单词，
+//   而是显示所有单词，实现类似词典的浏览模式。
+// - 针对特定类型 (如 Prefix, Suffix) 仍保持仅显示“未掌握”单词的逻辑，维持学习模式体验。
 // =================================================================================
 
 import * as NotificationManager from './modules/notificationManager.js';
@@ -39,7 +45,7 @@ export let userNotes = new Map();
 export let learningActivity = {};
 export let userAchievements = {};
 
-// 【核心修改】新增一个 Map 用于快速查找单词数据，以优化计数性能
+// Map 用于快速查找单词数据，以优化计数性能
 export let wordDataMap = new Map();
 
 // =================================================================================
@@ -183,7 +189,7 @@ export function clearLearnedWords() {
 }
 
 /**
- * 【核心修改】新增一个函数来计算已掌握的、非词根类型的单词数量。
+ * 计算已掌握的、非词根类型的单词数量。
  * @returns {number} - 计数值。
  */
 export function getLearnedWordCount() {
@@ -305,14 +311,8 @@ export function updateTransientAchievement(id, currentVal) {
 // 核心数据处理与筛选
 // =================================================================================
 
-/**
- * 从文件路径中动态提取顶层类别 (category)。
- * @param {string} filePath - 数据文件路径，例如 'data/middle/pre/re.json'。
- * @returns {string} - 提取的类别名，例如 'middle'。
- */
 function getCategoryFromFilePath(filePath) {
     const parts = filePath.split('/');
-    // 路径结构为 'data/category/...'，所以我们取索引为 1 的部分
     return parts.length > 1 ? parts[1] : 'unknown';
 }
 
@@ -320,7 +320,7 @@ function getContentTypeFromFilePath(filePath) {
     if (filePath.includes('/pre/')) return 'pre';
     if (filePath.includes('/suf/')) return 'suf';
     if (filePath.includes('/root/')) return 'root';
-    return 'category'; // 默认内容类型
+    return 'category';
 }
 
 export async function loadAndProcessData(onProgress) {
@@ -331,7 +331,6 @@ export async function loadAndProcessData(onProgress) {
         throw new Error("数据清单 'data/manifest.js' 未找到、格式错误或为空。");
     }
 
-    const categories = new Set();
     allVocabularyData = [];
     const totalFiles = DATA_FILES.length;
     let loadedFiles = 0;
@@ -349,8 +348,6 @@ export async function loadAndProcessData(onProgress) {
             }
 
             const category = getCategoryFromFilePath(file);
-            if (category !== 'unknown') categories.add(category);
-
             const contentType = getContentTypeFromFilePath(file);
             const affixType = dataFile.affixType || 'prefix';
 
@@ -396,7 +393,6 @@ export async function loadAndProcessData(onProgress) {
         }
     });
 
-    // 【核心修改】数据加载完毕后，填充单词查找 Map 以备后用
     wordDataMap.clear();
     allVocabularyData.forEach(item => {
         if (item.cardType === 'word' && item.word) {
@@ -404,49 +400,215 @@ export async function loadAndProcessData(onProgress) {
         }
     });
 
+    return { categories: [] };
+}
 
-    // 自定义排序，确保类别按期望顺序显示
+/**
+ * 获取当前上下文下可用的主类别 (Main Categories)。
+ * 逻辑：
+ * 1. 如果 content type 是 'all'，则显示所有内容（无论是否已掌握）。
+ * 2. 如果 content type 是特定的（如前缀/后缀），则默认只显示未掌握的（学习模式）。
+ * 3. 已掌握和单词本模式保持原样。
+ */
+export function getAvailableMainCategories() {
+    let baseData = allVocabularyData;
+    let isLearnedMode = false;
+
+    // 1. 处理 Content Type 过滤逻辑
+    if (currentContentType === 'all') {
+        // 默认模式：显示所有内容（包括已掌握），模拟词典/浏览模式
+        isLearnedMode = false; // 此标志仅用于后续逻辑参考
+    } else if (currentContentType === 'special_learned') {
+        // 已掌握模式：所有已掌握的单词
+        isLearnedMode = true;
+    } else if (currentContentType.startsWith('wb_')) {
+        // 单词本模式：未掌握的单词 + 属于单词本
+        const wbName = currentContentType.substring(3);
+        const userWordbook = userWordbooks.find(wb => wb.name === wbName);
+        if (userWordbook) {
+            const wbSet = new Set(userWordbook.words.map(w => w.toLowerCase()));
+            baseData = baseData.filter(item => item.cardType === 'word' && wbSet.has(item.word.toLowerCase()));
+        }
+        isLearnedMode = false;
+    } else {
+        // 标准前缀/后缀模式：属于特定类型 + 默认只显示未掌握
+        baseData = baseData.filter(item => item.contentType === currentContentType);
+        isLearnedMode = false;
+    }
+
+    // 2. 过滤出有效的单词
+    const validWords = baseData.filter(item => {
+        if (item.cardType !== 'word') return false;
+
+        // 【核心修改】如果是 'All Types' 模式，不检查掌握状态，全部通过
+        if (currentContentType === 'all') {
+            return true;
+        }
+
+        // 其他模式（如单词本、前缀学习、已掌握），检查掌握状态
+        return item.isLearned === isLearnedMode;
+    });
+
+    // 3. 收集这些单词涉及的 categories
+    const availableCategories = new Set();
+    validWords.forEach(item => {
+        if (item.category && item.category !== 'unknown') {
+            availableCategories.add(item.category);
+        }
+    });
+
+    // 4. 排序
     const categoryOrder = ['middle', 'high', 'CET-4', 'CET-6'];
-    const sortedCategories = Array.from(categories).sort((a, b) => {
+    return Array.from(availableCategories).sort((a, b) => {
         const indexA = categoryOrder.indexOf(a);
         const indexB = categoryOrder.indexOf(b);
-        if (indexA === -1 && indexB === -1) return a.localeCompare(b); // 对未指定的类别按字母排序
+        if (indexA === -1 && indexB === -1) return a.localeCompare(b);
         if (indexA === -1) return 1;
         if (indexB === -1) return -1;
         return indexA - indexB;
     });
-
-    // 返回动态生成的 categories 列表
-    return { categories: sortedCategories };
 }
 
-export function filterAndPrepareDataSet() {
+/**
+ * 获取可用的子类别（前缀/后缀等）。
+ * 逻辑：基于当前选定的主类别（currentCategory）和内容类型（currentContentType）
+ * 动态计算出剩余的有效单词，然后提取它们所属的 meaningId。
+ */
+export function getAvailableSubCategories() {
     let filteredData;
 
-    // 根据 currentCategory 进行筛选
+    // 1. 基于主类别过滤
     if (currentCategory === 'all') {
         filteredData = allVocabularyData;
     } else {
         filteredData = allVocabularyData.filter(item => item.category === currentCategory);
     }
 
-    if (currentContentType !== 'all') {
-        filteredData = filteredData.filter(item => item.contentType === currentContentType);
-    }
+    // 2. 基于内容类型进一步过滤数据池
+    let isLearnedMode = false;
 
-    const userWordbook = userWordbooks.find(wb => wb.name === currentFilter);
-
-    if (currentFilter === 'learned') {
-        filteredData = filteredData.filter(item => item.cardType === 'word' && item.isLearned);
-    } else if (userWordbook) {
-        const wordbookSet = new Set(userWordbook.words.map(w => w.toLowerCase()));
-        filteredData = filteredData.filter(item => item.cardType === 'word' && wordbookSet.has(item.word.toLowerCase()));
-    } else if (currentFilter === 'all') {
-        filteredData = filteredData.filter(item => item.cardType === 'intro' || !item.isLearned);
+    if (currentContentType === 'all') {
+        // 【核心修改】All Types 模式：不做任何额外过滤，保留所有数据
+        // isLearnedMode 保持默认 false，但在下面的遍历中会有特殊处理
+    } else if (currentContentType === 'special_learned') {
+        isLearnedMode = true;
+    } else if (currentContentType.startsWith('wb_')) {
+        const wbName = currentContentType.substring(3);
+        const userWordbook = userWordbooks.find(wb => wb.name === wbName);
+        if (userWordbook) {
+            const wbSet = new Set(userWordbook.words.map(w => w.toLowerCase()));
+            filteredData = filteredData.filter(item => item.cardType === 'word' && wbSet.has(item.word.toLowerCase()));
+        }
+        isLearnedMode = false;
     } else {
-        filteredData = filteredData.filter(item => item.type === currentFilter && (item.cardType === 'intro' || !item.isLearned));
+        // 标准前缀/后缀模式：只保留对应类型
+        filteredData = filteredData.filter(item => item.contentType === currentContentType);
+        isLearnedMode = false;
     }
 
+    // 3. 准备统计
+    const categoryMap = new Map();
+    const validMeaningIds = new Set();
+
+    // 4. 遍历数据，建立映射并检查有效性
+    filteredData.forEach(item => {
+        // 记录子类别元数据
+        if (!categoryMap.has(item.type)) {
+            const originalDisplayName = item.displayName;
+            let englishDisplayName = (item.contentType === 'category' && originalDisplayName.match(/\(([^)]+)\)/))
+                ? originalDisplayName.match(/\(([^)]+)\)/)[1]
+                : originalDisplayName;
+
+            categoryMap.set(item.type, {
+                filterType: 'pre-defined',
+                meaningId: item.type,
+                displayName: originalDisplayName,
+                englishDisplayName: englishDisplayName,
+                prefix: item.prefix,
+                themeColor: item.themeColor,
+                contentType: item.contentType
+            });
+        }
+
+        // 检查有效性
+        if (item.cardType === 'word') {
+            // 【核心修改】如果是 'All Types' 模式，接受所有状态的单词
+            if (currentContentType === 'all') {
+                validMeaningIds.add(item.type);
+            }
+            // 否则（学习模式、单词本模式），必须符合当前的掌握状态
+            else if (item.isLearned === isLearnedMode) {
+                validMeaningIds.add(item.type);
+            }
+        }
+    });
+
+    // 5. 返回有效的预定义子类别
+    return Array.from(categoryMap.values())
+        .filter(cat => validMeaningIds.has(cat.meaningId));
+}
+
+/**
+ * 主过滤逻辑
+ * 根据 currentCategory, currentContentType 和 currentFilter 筛选最终显示的数据集。
+ */
+export function filterAndPrepareDataSet() {
+    // 1. 第一层过滤：Category (Middle, High, CET-4...)
+    let filteredData;
+    if (currentCategory === 'all') {
+        filteredData = allVocabularyData;
+    } else {
+        filteredData = allVocabularyData.filter(item => item.category === currentCategory);
+    }
+
+    // 2. 第二层过滤：Content Type (All, Learned, Wordbook, Pre, Suf...)
+    let isLearnedMode = false;
+
+    if (currentContentType === 'all') {
+        // 【核心修改】模式：浏览所有 (Browse All)
+        // 不进行任何 Content Type 过滤，也不过滤 isLearned。
+        // 这允许用户查看所有单词，包括已掌握的。
+    } else if (currentContentType === 'special_learned') {
+        // 模式：已掌握
+        filteredData = filteredData.filter(item => item.cardType === 'word' && item.isLearned);
+        isLearnedMode = true;
+    } else if (currentContentType.startsWith('wb_')) {
+        // 模式：单词本交集 + 未掌握
+        const wbName = currentContentType.substring(3);
+        const userWordbook = userWordbooks.find(wb => wb.name === wbName);
+        if (userWordbook) {
+            const wbSet = new Set(userWordbook.words.map(w => w.toLowerCase()));
+            filteredData = filteredData.filter(item =>
+                item.cardType === 'word' &&
+                wbSet.has(item.word.toLowerCase()) &&
+                !item.isLearned
+            );
+        } else {
+            filteredData = []; // 单词本不存在
+        }
+        isLearnedMode = false;
+    } else {
+        // 模式：特定类型学习 (Pre/Suf/Root)
+        // 过滤特定 Content Type
+        filteredData = filteredData.filter(item => item.contentType === currentContentType);
+
+        // 基础过滤：仅显示未掌握的单词 (学习模式)
+        filteredData = filteredData.filter(item => {
+            // intro 卡片总是显示
+            if (item.cardType === 'intro') return true;
+            return !item.isLearned;
+        });
+        isLearnedMode = false;
+    }
+
+    // 3. 第三层过滤：Sub-Category Filter (specific prefixes like 'ab-')
+    if (currentFilter !== 'all') {
+        // 注意：getAvailableSubCategories 已经保证了 currentFilter 是有效的
+        // 这里只需要匹配 meaningId (即 item.type)
+        filteredData = filteredData.filter(item => item.type === currentFilter);
+    }
+
+    // 4. 搜索过滤 (最高优先级)
     if (currentSearchQuery) {
         const searchTerms = [currentSearchQuery];
         if (typeof window.nlp === 'function') {
@@ -464,8 +626,13 @@ export function filterAndPrepareDataSet() {
             const dbWord = item.word.toLowerCase();
             return searchTerms.some(term => dbWord.includes(term) || term.startsWith(dbWord));
         });
+        // 搜索结果中包含相关的 intro 卡片
         const relevantTypes = new Set(matchingWords.map(item => item.type));
-        const relevantIntros = filteredData.filter(item => item.cardType === 'intro' && relevantTypes.has(item.type));
+        // 注意：如果是 Learned 模式，通常不显示 intro 卡片，除非特意设计
+        // 如果是 'All' 模式，也可以显示 intro
+        const showIntros = !isLearnedMode || currentContentType === 'all';
+        const relevantIntros = showIntros ? filteredData.filter(item => item.cardType === 'intro' && relevantTypes.has(item.type)) : [];
+
         currentDataSet = [...relevantIntros, ...matchingWords];
     } else {
         currentDataSet = filteredData;
@@ -493,51 +660,6 @@ export function setCurrentFilter(newFilter) { currentFilter = newFilter; }
 export function setCurrentCategory(newCategory) { currentCategory = newCategory; }
 export function setCurrentContentType(newType) { currentContentType = newType; }
 export function setSearchQuery(query) { currentSearchQuery = query.trim().toLowerCase(); }
-
-/**
- * 获取当前选定 category 和 contentType 下可用的子类别（前缀、后缀、词根等）。
- */
-export function getAvailableSubCategories() {
-    let categoryFilteredData;
-    if (currentCategory === 'all') {
-        categoryFilteredData = allVocabularyData;
-    } else {
-        categoryFilteredData = allVocabularyData.filter(item => item.category === currentCategory);
-    }
-
-    let finalFilteredData = (currentContentType !== 'all')
-        ? categoryFilteredData.filter(item => item.contentType === currentContentType)
-        : categoryFilteredData;
-
-    const categoryMap = new Map();
-    finalFilteredData.forEach(item => {
-        if (!categoryMap.has(item.type)) {
-            const originalDisplayName = item.displayName;
-            let englishDisplayName = (item.contentType === 'category' && originalDisplayName.match(/\(([^)]+)\)/))
-                ? originalDisplayName.match(/\(([^)]+)\)/)[1]
-                : originalDisplayName;
-
-            categoryMap.set(item.type, {
-                filterType: 'pre-defined',
-                meaningId: item.type,
-                displayName: originalDisplayName,
-                englishDisplayName: englishDisplayName,
-                prefix: item.prefix,
-                themeColor: item.themeColor,
-                contentType: item.contentType
-            });
-        }
-    });
-
-    const userWordbookCategories = userWordbooks.map(wb => ({
-        filterType: 'user-wordbook',
-        meaningId: wb.name,
-        displayName: wb.name,
-        englishDisplayName: wb.name,
-    }));
-
-    return [...Array.from(categoryMap.values()), ...userWordbookCategories];
-}
 
 export function getMaskedSentence(sentence, targetWord) {
     if (!sentence || !targetWord) return '';

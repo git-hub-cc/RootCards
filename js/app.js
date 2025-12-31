@@ -1,10 +1,14 @@
 // =================================================================================
-// 应用协调器 (Application Orchestrator) - v20.0 (对话模式全局化 & 动态响应式)
+// 应用协调器 (Application Orchestrator) - v20.4 (修复单词计数逻辑)
 // ---------------------------------------------------------------------------------
-// 主要变更:
-// - 新增 handleResize 函数和 'resize' 事件监听器，以动态响应浏览器窗口大小变化。
-// - 在窗口大小跨越移动端/桌面端断点时，自动调用 UI 更新、重新设置滚动加载监听器。
-// - 如果学习轨迹图可见，在窗口变化时自动重新渲染。
+// 职责:
+// 1. 协调 UI、数据状态和各个功能模块的初始化与交互。
+// 2. 监听全局事件（如点击、滚动、输入）并分发处理。
+// 3. 负责核心的卡片渲染循环和视图更新。
+//
+// 修改记录:
+// - 修复 updateDataAndUI 中的计数逻辑：移除了对 'root' 类型单词的过滤，
+//   确保 CET-4/CET-6 等以词根为主的分类下，单词计数与显示的卡片数量一致。
 // =================================================================================
 
 import * as State from './state.js';
@@ -60,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const CARDS_PER_PAGE = 12;
     let observer = null;
     let isShuffling = false;
-    let currentLayoutMode = ''; // 【新增】用于追踪当前的布局模式 ('mobile' 或 'desktop')
+    let currentLayoutMode = '';
 
     if (!UI.init()) {
         console.error("应用启动失败：UI模块初始化未能成功。");
@@ -95,10 +99,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateDataAndUI() {
+        // 1. 重新计算并渲染主类别
+        const availableCategories = State.getAvailableMainCategories();
+        UI.renderCategoryButtons(categoryFilterContainer, availableCategories);
+
+        const isCurrentCategoryValid = State.currentCategory === 'all' || availableCategories.includes(State.currentCategory);
+        if (!isCurrentCategoryValid) {
+            State.setCurrentCategory('all');
+        }
+
+        const activeCategoryBtn = categoryFilterContainer.querySelector(`[data-category="${State.currentCategory}"]`);
+        if (activeCategoryBtn) UI.updateActiveCategoryButton(categoryFilterContainer, activeCategoryBtn);
+
+        // 2. 渲染内容类型按钮（包括已掌握和单词本）
+        UI.renderContentTypeButtons(contentTypeFilterContainer, State.userWordbooks);
+
+        const activeContentTypeBtn = contentTypeFilterContainer.querySelector(`[data-type="${State.currentContentType}"]`);
+        if (activeContentTypeBtn) {
+            UI.updateActiveContentTypeButton(contentTypeFilterContainer, activeContentTypeBtn);
+        } else {
+            State.setCurrentContentType('all');
+            const defaultBtn = contentTypeFilterContainer.querySelector('[data-type="all"]');
+            if (defaultBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, defaultBtn);
+        }
+
+        // 3. 重新计算并渲染子类别
+        updateSubCategoryFilters();
+
+        // 4. 准备数据并渲染
         State.filterAndPrepareDataSet();
-        const currentWordCount = State.currentDataSet.filter(item => item.contentType !== 'root' && item.cardType === 'word').length;
+
+        // 【核心修复】计算当前视图单词数量
+        // 移除了 item.contentType !== 'root' 的过滤条件，确保词根类单词被正确统计
+        const currentWordCount = State.currentDataSet.filter(item => item.cardType === 'word').length;
+
         const learnedWordCount = State.getLearnedWordCount();
         UI.updateWordCounts(currentWordCount, learnedWordCount);
+
         startNewRenderFlow();
     }
 
@@ -111,10 +148,11 @@ document.addEventListener('DOMContentLoaded', () => {
             let message = '太棒了，当前条件下没有更多要学习的单词了！';
             if (State.currentSearchQuery) {
                 message = `找不到与 "${State.currentSearchQuery}" 相关的单词。`;
-            } else if (State.currentFilter === 'learned') {
+            } else if (State.currentContentType === 'special_learned') {
                 message = '还没有标记任何单词为“已掌握”。';
-            } else if (State.getWordbook(State.currentFilter)) {
-                message = `单词本 "${State.currentFilter}" 为空或其中单词未在数据库中找到。`;
+            } else if (State.currentContentType.startsWith('wb_')) {
+                const wbName = State.currentContentType.substring(3);
+                message = `单词本 "${wbName}" 为空，或其中没有未掌握的单词。`;
             }
             cardGrid.insertAdjacentHTML('afterbegin', `<div class="loading-state" style="margin: auto;">${message}</div>`);
         } else if (cardCount > 0 && existingMessage) {
@@ -131,8 +169,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateSubCategoryFilters() {
-        const availableCategories = State.getAvailableSubCategories();
-        UI.renderFilterButtons(filterContainer, toolGroup, availableCategories);
+        const availableSubCategories = State.getAvailableSubCategories();
+        UI.renderFilterButtons(filterContainer, toolGroup, availableSubCategories);
+
+        let isCurrentFilterValid = State.currentFilter === 'all';
+        if (!isCurrentFilterValid) {
+            isCurrentFilterValid = availableSubCategories.some(cat => cat.meaningId === State.currentFilter);
+        }
+
+        if (!isCurrentFilterValid) {
+            State.setCurrentFilter('all');
+        }
 
         const currentBtn = filterContainer.querySelector(`.filter-btn[data-filter="${State.currentFilter}"]`);
         if (currentBtn) {
@@ -198,17 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             cardElement.remove();
-
-            const currentWordCount = State.currentDataSet.filter(item => item.contentType !== 'root' && item.cardType === 'word').length;
-            const learnedWordCount = State.getLearnedWordCount();
-            UI.updateWordCounts(currentWordCount, learnedWordCount);
-
-
-            const cardsOnScreen = cardGrid.querySelectorAll('.card:not(.is-pending-removal)').length;
-            if (cardsOnScreen < CARDS_PER_PAGE && renderIndex < State.currentDataSet.length) {
-                renderMoreCards();
-            }
-            updateEmptyStateMessage();
+            updateDataAndUI();
         };
 
         const onUndo = () => {
@@ -231,21 +268,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleWordbookChange(type, newName, oldName) {
-        updateSubCategoryFilters();
         if (type === 'create' || type === 'study') {
-            State.setCurrentFilter(newName);
-            const newBtn = filterContainer.querySelector(`.filter-btn[data-filter="${newName}"]`);
-            if (newBtn) UI.updateActiveFilterButton(filterContainer, newBtn);
-            updateDataAndUI();
-        } else if (type === 'update' && State.currentFilter === oldName) {
-            State.setCurrentFilter(newName);
-            const newBtn = filterContainer.querySelector(`.filter-btn[data-filter="${newName}"]`);
-            if (newBtn) UI.updateActiveFilterButton(filterContainer, newBtn);
-            updateDataAndUI();
-        } else if (type === 'delete' && State.currentFilter === oldName) {
+            State.setCurrentContentType(`wb_${newName}`);
             State.setCurrentFilter('all');
-            const allBtn = filterContainer.querySelector('.filter-btn[data-filter="all"]');
-            if (allBtn) UI.updateActiveFilterButton(filterContainer, allBtn);
+            updateDataAndUI();
+        } else if (type === 'delete' && State.currentContentType === `wb_${oldName}`) {
+            State.setCurrentContentType('all');
+            State.setCurrentFilter('all');
+            updateDataAndUI();
+        } else {
             updateDataAndUI();
         }
     }
@@ -253,13 +284,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function setupIntersectionObserver() {
         if (observer) observer.disconnect();
 
-        // 【修改】根据当前布局模式决定使用哪个观察者逻辑
         if (currentLayoutMode === 'mobile') {
-            // 移动端观察者在 renderMoreCards 内部设置，这里只需确保PC端观察者被移除
             return;
         }
 
-        // 桌面端观察者逻辑
         observer = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting && loadMoreTrigger.classList.contains('is-visible')) {
                 renderMoreCards();
@@ -299,25 +327,17 @@ document.addEventListener('DOMContentLoaded', () => {
         };
     }
 
-    /**
-     * 【新增】处理窗口大小变化的函数，作为响应式逻辑的调度中心。
-     */
     function handleResize() {
         const newMode = window.innerWidth <= 768 ? 'mobile' : 'desktop';
 
-        // 如果布局模式没有改变，则不执行任何操作，以优化性能
         if (newMode === currentLayoutMode) {
             return;
         }
-        currentLayoutMode = newMode; // 更新当前模式
+        currentLayoutMode = newMode;
 
-        // 1. 调用UI模块更新布局（移动/桌面按钮位置切换）
         UI.updateResponsiveLayout();
-
-        // 2. 重新设置适合当前模式的滚动加载监听器
         setupIntersectionObserver();
 
-        // 3. 如果学习轨迹图当前可见，则重新渲染以适应新布局
         if (heatmapModal && !heatmapModal.classList.contains('is-hidden')) {
             UI.renderHeatmap(heatmapContainer, State.getLearningActivity());
         }
@@ -326,13 +346,8 @@ document.addEventListener('DOMContentLoaded', () => {
     categoryFilterContainer.addEventListener('click', (e) => {
         const btn = e.target.closest('.category-filter-btn');
         if (btn && !btn.classList.contains('active')) {
-            UI.updateActiveCategoryButton(categoryFilterContainer, btn);
             State.setCurrentCategory(btn.dataset.category);
-            State.setCurrentContentType('all');
-            const allContentTypeBtn = contentTypeFilterContainer.querySelector('.content-type-btn[data-type="all"]');
-            if (allContentTypeBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, allContentTypeBtn);
             State.setCurrentFilter('all');
-            updateSubCategoryFilters();
             updateDataAndUI();
         }
     });
@@ -340,10 +355,8 @@ document.addEventListener('DOMContentLoaded', () => {
     contentTypeFilterContainer.addEventListener('click', (e) => {
         const btn = e.target.closest('.content-type-btn');
         if (btn && !btn.classList.contains('active')) {
-            UI.updateActiveContentTypeButton(contentTypeFilterContainer, btn);
             State.setCurrentContentType(btn.dataset.type);
             State.setCurrentFilter('all');
-            updateSubCategoryFilters();
             updateDataAndUI();
         }
     });
@@ -351,7 +364,6 @@ document.addEventListener('DOMContentLoaded', () => {
     filterContainer.addEventListener('click', (e) => {
         const btn = e.target.closest('.filter-btn');
         if (btn && !btn.classList.contains('active')) {
-            UI.updateActiveFilterButton(filterContainer, btn);
             State.setCurrentFilter(btn.dataset.filter);
             updateDataAndUI();
         }
@@ -452,7 +464,6 @@ document.addEventListener('DOMContentLoaded', () => {
         NotificationManager.init();
         DialogueMode.init(dialogueModeBtn);
 
-        // 【新增】添加 resize 事件监听器，并用 debounce 优化性能
         window.addEventListener('resize', debounce(handleResize, 250));
 
         if ('serviceWorker' in navigator) {
@@ -489,28 +500,15 @@ document.addEventListener('DOMContentLoaded', () => {
             State.loadUserWordbooks();
             State.loadUserNotes();
 
-            const { categories } = await State.loadAndProcessData(updateLoadingProgress);
+            await State.loadAndProcessData(updateLoadingProgress);
 
             hideSplashScreen();
-
-            // 【新增】在加载完成后，立即执行一次 handleResize 以设置正确的初始布局
             handleResize();
 
-            UI.renderCategoryButtons(categoryFilterContainer, categories);
-            UI.renderContentTypeButtons(contentTypeFilterContainer);
-
-            const defaultCategoryBtn = categoryFilterContainer.querySelector(`[data-category="${State.currentCategory}"]`);
-            if (defaultCategoryBtn) UI.updateActiveCategoryButton(categoryFilterContainer, defaultCategoryBtn);
-
-            const defaultContentTypeBtn = contentTypeFilterContainer.querySelector(`[data-type="${State.currentContentType}"]`);
-            if (defaultContentTypeBtn) UI.updateActiveContentTypeButton(contentTypeFilterContainer, defaultContentTypeBtn);
-
-            updateSubCategoryFilters();
+            // 初始化时调用 updateDataAndUI 以渲染所有按钮
             updateDataAndUI();
 
             UI.renderHeatmap(heatmapContainer, State.getLearningActivity());
-
-            // 初始的滚动加载器设置将在第一次 handleResize 中完成
 
         } catch (error) {
             console.error('初始化应用时发生严重错误:', error);

@@ -98,22 +98,38 @@
     stroke-width: 2.5;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.card.prefix-hidden .visual-area .layer-prefix { opacity: 0; transform: scale(0.8); }
+.card.prefix-hidden .visual-area .layer-prefix { opacity: 0; }
 
+/* --- 【核心修改】单词文本与控制按钮布局 --- */
 .word-area {
     display: flex;
+    /* 改为纵向排列，使单词在上方，按钮在下方 */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    /* 增加垂直间距 */
+    gap: 15px;
     margin-bottom: 0.5rem;
 }
+
 .word-text {
     font-size: 2rem;
     font-weight: 800;
     color: var(--theme-color);
     min-width: 0;
     word-break: break-all;
+    text-align: center; /* 确保文字居中 */
 }
+
+/* 新增：按钮组容器样式 */
+.word-controls {
+    display: flex;
+    flex-direction: row; /* 按钮水平排列 */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* 按钮之间的间距，设置大一点方便点击 */
+}
+
 .hint-text { font-size: 0.8rem; color: var(--text-sub); text-align: center; }
 
 

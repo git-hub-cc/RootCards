@@ -1,11 +1,11 @@
 /**
  * =================================================================================
- * 通用 UI 渲染模块 (Generic UI Rendering Module) - v20.1 (简化图标切换JS & 动态响应式)
+ * 通用 UI 渲染模块 (Generic UI Rendering Module) - v20.3 (Content Type 扩展)
  * ---------------------------------------------------------------------------------
  * 主要变更:
- * - 新增 updateResponsiveLayout 函数，用于在移动端和桌面端布局之间动态切换。
- * - 在 init 阶段缓存需要移动的UI元素的原始父节点，以实现鲁棒的布局恢复。
- * - 移除旧的、一次性的 initMobileLayout 函数。
+ * - renderContentTypeButtons: 扩展以接受用户单词本列表，并将“已掌握”和“单词本”
+ *   作为一级内容类型按钮渲染，与 Prefix/Suffix 等平级。
+ * - renderFilterButtons: 移除底部筛选栏中不再需要的“已掌握”和“单词本”按钮生成逻辑。
  * =================================================================================
  */
 
@@ -31,7 +31,6 @@ const UI_SOUND_PATHS = {
     activate: 'audio/ui/Activate.mp3'
 };
 
-// 【新增】用于存储需要在桌面/移动端之间移动的元素及其原始父节点
 let desktopElementsToMove = {};
 const elementsToMoveConfig = {
     'listening-mode-btn': { type: 'id' },
@@ -39,9 +38,9 @@ const elementsToMoveConfig = {
     'typing-mode-btn': { type: 'id' },
     'shuffle-btn': { type: 'id' },
     'no-visual-btn': { type: 'id' },
-    'options-menu-container': { type: 'class' } // 特殊处理，通过类名查找
+    'options-menu-container': { type: 'class' }
 };
-let searchContainerRef = null; // 用于桌面端布局恢复时的定位
+let searchContainerRef = null;
 
 
 function renderIcons(scope = document) {
@@ -83,7 +82,6 @@ export function init() {
         }
     });
 
-    // 【新增】缓存需要在响应式布局中移动的元素及其原始父节点
     Object.keys(elementsToMoveConfig).forEach(key => {
         const config = elementsToMoveConfig[key];
         const element = config.type === 'id' ? document.getElementById(key) : document.querySelector(`.${key}`);
@@ -93,13 +91,9 @@ export function init() {
     });
     searchContainerRef = document.getElementById('search-container');
 
-    // 初始布局将在 app.js 的 handleResize 中首次调用，此处不再需要
     return true;
 }
 
-/**
- * 【新增】根据窗口宽度动态更新布局，实现移动端和桌面端UI的无缝切换。
- */
 export function updateResponsiveLayout() {
     const isMobile = window.innerWidth <= 768;
     const bottomBar = document.getElementById('mobile-bottom-bar');
@@ -109,18 +103,15 @@ export function updateResponsiveLayout() {
         if (!element) return;
 
         if (isMobile) {
-            // 移动端模式：如果元素不在底部导航栏，则将其移入
             if (element.parentNode !== bottomBar) {
                 bottomBar.appendChild(element);
             }
         } else {
-            // 桌面端模式：如果元素在底部导航栏，则将其移回原始父节点
             if (element.parentNode === bottomBar && parent) {
-                // 将元素插入到搜索框之前，以保持合理的布局顺序
                 if (searchContainerRef) {
                     parent.insertBefore(element, searchContainerRef);
                 } else {
-                    parent.appendChild(element); // 作为备用方案
+                    parent.appendChild(element);
                 }
             }
         }
@@ -202,16 +193,44 @@ export function updateActiveCategoryButton(container, clickedButton) {
     clickedButton.classList.add('active');
 }
 
-export function renderContentTypeButtons(container) {
+/**
+ * 【核心修改】渲染内容类型按钮（Content Type Buttons）。
+ * 现在包括：All, Prefix, Suffix, Root, General, Learned, 以及所有用户单词本。
+ * @param {HTMLElement} container
+ * @param {Array} wordbooks - 用户单词本列表
+ */
+export function renderContentTypeButtons(container, wordbooks = []) {
     container.innerHTML = '';
-    const types = [
-        { type: 'all', text: 'All Types' }, { type: 'pre', text: 'Prefix' },
-        { type: 'suf', text: 'Suffix' }, { type: 'root', text: 'Root' },
+
+    // 1. 标准固定类型
+    const standardTypes = [
+        { type: 'all', text: 'All Types' },
+        { type: 'pre', text: 'Prefix' },
+        { type: 'suf', text: 'Suffix' },
+        { type: 'root', text: 'Root' },
         { type: 'category', text: 'General' }
     ];
-    types.forEach(({ type, text }) => {
+
+    // 2. 特殊类型：已掌握
+    // 使用 'special_learned' 作为内部ID，避免与 'learned' 子分类（如果有）冲突
+    const specialTypes = [
+        { type: 'special_learned', text: 'Learned', className: 'btn-learned-type' }
+    ];
+
+    // 3. 动态类型：用户单词本
+    // 使用 'wb_' 前缀来区分单词本ID
+    const wordbookTypes = wordbooks.map(wb => ({
+        type: `wb_${wb.name}`,
+        text: `📘 ${wb.name}`,
+        className: 'btn-wordbook-type'
+    }));
+
+    const allButtons = [...standardTypes, ...specialTypes, ...wordbookTypes];
+
+    allButtons.forEach(({ type, text, className }) => {
         const button = document.createElement('button');
         button.className = 'category-filter-btn content-type-btn';
+        if (className) button.classList.add(className);
         button.dataset.type = type;
         button.textContent = text;
         container.appendChild(button);
@@ -223,6 +242,10 @@ export function updateActiveContentTypeButton(container, clickedButton) {
     clickedButton.classList.add('active');
 }
 
+/**
+ * 【核心修改】渲染子分类筛选按钮（Filter Buttons）。
+ * 移除了不再需要的 "Learned" 和 "Wordbook" 按钮，因为它们现在位于 Content Type 层级。
+ */
 export function renderFilterButtons(filterContainer, insertBeforeElement, categories) {
     filterContainer.querySelectorAll('.filter-btn').forEach(btn => btn.remove());
 
@@ -238,14 +261,16 @@ export function renderFilterButtons(filterContainer, insertBeforeElement, catego
     const allButton = createBtn('All', 'all');
     allButton.classList.add('active');
     filterContainer.insertBefore(allButton, insertBeforeElement);
-    filterContainer.insertBefore(createBtn('Learned', 'learned'), insertBeforeElement);
+
+    // 【修改】这里不再添加 "Learned" 按钮
 
     categories.forEach(category => {
         if (!category.meaningId) return;
+
+        // 【修改】这里不再处理 'user-wordbook' 类型的 category，因为 getAvailableSubCategories 不再返回它们
+
         let buttonText;
-        if (category.filterType === 'user-wordbook') {
-            buttonText = `📝 ${category.displayName}`;
-        } else if (category.contentType === 'pre') {
+        if (category.contentType === 'pre') {
             buttonText = `${category.prefix}-`;
         } else if (category.contentType === 'suf') {
             buttonText = `-${category.prefix}`;
@@ -254,6 +279,7 @@ export function renderFilterButtons(filterContainer, insertBeforeElement, catego
         } else {
             buttonText = category.englishDisplayName;
         }
+
         const button = createBtn(buttonText, category.meaningId, category.filterType);
         if (category.themeColor) button.dataset.themeColor = category.themeColor;
         filterContainer.insertBefore(button, insertBeforeElement);
@@ -266,7 +292,7 @@ export function updateActiveFilterButton(filterContainer, clickedButton) {
         btn.style.removeProperty('--button-theme-color');
     });
     clickedButton.classList.add('active');
-    if (clickedButton.dataset.filterType !== 'user-wordbook' && clickedButton.dataset.themeColor) {
+    if (clickedButton.dataset.themeColor) {
         clickedButton.style.setProperty('--button-theme-color', clickedButton.dataset.themeColor);
     }
 }
@@ -279,7 +305,6 @@ export function renderHeatmap(container, activityData) {
     if (!container) return;
     container.innerHTML = '';
 
-    // 【修改】根据当前窗口宽度决定显示的数据范围
     const isMobile = window.innerWidth <= 768;
     const DAYS_TO_SHOW = isMobile ? 120 : 365;
 
