@@ -62,7 +62,6 @@
 
 <!-- 沉浸模式开关按钮 -->
 <button id="immersive-mode-btn" class="floating-action-btn" title="切换沉浸模式">
-    <!-- 【修改】移除 is-hidden 类，由 CSS 控制内部 SVG 的显示 -->
     <span data-icon="expand"></span>
     <span data-icon="compress"></span>
 </button>
@@ -115,7 +114,6 @@
             </button>
 
             <button class="icon-btn" id="no-visual-btn" title="开启无图自测模式 (Hide Visuals)">
-                <!-- 【修改】移除 is-hidden 类，由 CSS 控制内部 SVG 的显示 -->
                 <span data-icon="eye_open"></span>
                 <span data-icon="eye_slash"></span>
             </button>
@@ -123,6 +121,18 @@
             <button class="shuffle-btn icon-btn" id="shuffle-btn" title="随机排序当前卡片">
                 <span data-icon="shuffle"></span>
             </button>
+
+            <!-- 【核心修改】将页脚的链接移至此处作为图标按钮 -->
+            <a href="./combiner" target="_blank" title="SVG 编辑器">
+                <button class="icon-btn"><span data-icon="edit_svg"></span></button>
+            </a>
+            <button class="icon-btn" id="dsnr-trigger" title="DSNR 音频彩蛋"> <!-- 关键: 迁移 id="dsnr-trigger" 以保证 JS 功能正常 -->
+                <span data-icon="music_note"></span>
+            </button>
+            <a href="https://github.com/git-hub-cc/RootCards" target="_blank" title="查看 GitHub 仓库">
+                <button class="icon-btn"><span data-icon="github"></span></button>
+            </a>
+            <!-- 【修改结束】 -->
 
             <div class="options-menu-container">
                 <button class="icon-btn" id="more-options-btn" title="更多操作">
@@ -383,10 +393,8 @@
                 </button>
                 <div class="visual-area"></div>
 
-                <!-- 【核心修改】单词区域结构调整 -->
                 <div class="word-area">
                     <h2 class="word-text"></h2>
-                    <!-- 新增按钮容器，用于分行显示 -->
                     <div class="word-controls">
                         <button class="audio-btn word-audio" title="朗读单词">
                             <span data-icon="volume_word"></span>
@@ -434,7 +442,8 @@
 <!-- 应用页脚 -->
 <footer class="app-footer">
     <p>学习资料来源：韩宇极简英语 & AI 辅助生成</p>
-    <p class="footer-meta">© 2024 cc | <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024271251号</a> | <a href="./combiner" target="_blank">SVG 编辑</a> | <a href="javascript:void(0)" id="dsnr-trigger">DSNR</a> | <a href="https://github.com/git-hub-cc/RootCards" target="_blank">GitHub</a></p>
+    <!-- 【核心修改】移除了 SVG 编辑、DSNR 和 GitHub 的链接，因为它们已被移至顶部工具栏 -->
+    <p class="footer-meta">© 2024 cc | <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2024271251号</a></p>
 </footer>
 
 <!-- 撤销操作通知栏 -->
@@ -458,7 +467,6 @@
 <!-- JavaScript 资源引入 -->
 <script src="lib/compromise.js"></script>
 <script src="js/ui-helpers.js"></script>
-<!-- 【修改】新增图标库脚本，并确保其在 app.js 之前加载 -->
 <script src="js/icons.js" type="module"></script>
 <script src="js/config.js" type="module"></script>
 <script src="data/manifest.js"></script>

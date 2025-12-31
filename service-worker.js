@@ -1,15 +1,15 @@
 /**
  * =================================================================================
- * Service Worker (PWA 核心控制脚本) - v1.5 (图标资源外部化)
+ * Service Worker (PWA 核心控制脚本) - v1.6 (UI结构调整)
  * ---------------------------------------------------------------------------------
  * 主要修改:
- * 1. 递增了 CACHE_VERSION 以触发客户端缓存更新。
- * 2. 在 ASSETS_TO_CACHE 列表中添加了新的 js/icons.js 图标库文件。
+ * 1. 【核心修改】递增了 CACHE_VERSION 以触发客户端缓存更新，确保新的 UI 布局生效。
+ * 2. 之前已添加 icons.js，本次无需再次修改缓存列表。
  * =================================================================================
  */
 
 // 缓存版本号：递增此版本号以强制浏览器更新缓存
-const CACHE_VERSION = 'v1.0.5';
+const CACHE_VERSION = 'v1.0.6';
 
 // 静态资源缓存（App Shell）
 const STATIC_CACHE = `static-${CACHE_VERSION}`;
@@ -43,7 +43,7 @@ const ASSETS_TO_CACHE = [
     '/js/ui.js',
     '/js/ui-helpers.js',
     '/js/config.js',
-    '/js/icons.js',                   // [新增] SVG 图标库
+    '/js/icons.js',
     '/js/modules/themeManager.js',
     '/js/modules/dataManager.js',
     '/js/modules/listeningMode.js',

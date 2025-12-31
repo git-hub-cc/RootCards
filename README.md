@@ -1,11 +1,3 @@
-An analysis of the provided project files reveals numerous new features and structural changes that are not reflected in the current `README.md`. The project has evolved significantly from a simple card flipper into a full-fledged Progressive Web App (PWA) with advanced features like custom wordbooks using NLP, a gamified achievement system, a learning heatmap, and a much more sophisticated UI.
-
-Based on this comprehensive review, I have updated the `README.md` to accurately represent the current state of the "RootCards" project.
-
----
-Here is the updated `README.md` file:
----
-
 # RootCards - 词源意境记忆卡 🃏
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/zh-CN/docs/Web/Guide/HTML/HTML5)
