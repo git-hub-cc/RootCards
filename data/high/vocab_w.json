@@ -128,26 +128,6 @@
           ]
         },
         {
-          "word": "withdraw",
-          "rootVisual": "<path d='M18 12 H6' stroke='currentColor' marker-end='url(#arrow)'/><rect x='20' y='8' width='4' height='8' stroke='currentColor' fill='none'/>",
-          "breakdown": [
-            "with- (向后)",
-            "draw (拉)"
-          ],
-          "imagery": "把东西向后拉回来，例如把钱从银行拉回来（取钱），或者撤回军队。",
-          "translation": "撤回；取款",
-          "sentences": [
-            {
-              "en": "Withdraw money from the account.",
-              "cn": "从账户中取钱（向后拉回来）。"
-            },
-            {
-              "en": "The company decided to withdraw the product from the market.",
-              "cn": "公司决定将该产品从市场上撤回。"
-            }
-          ]
-        },
-        {
           "word": "witness",
           "rootVisual": "<path d='M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='3' fill='currentColor'/>",
           "breakdown": [
@@ -161,21 +141,6 @@
             {
               "en": "A witness to the accident.",
               "cn": "事故目击者。"
-            }
-          ]
-        },
-        {
-          "word": "wrinkle",
-          "rootVisual": "<path d='M4 8 q 8 4 16 0' stroke='currentColor' fill='none'/><path d='M4 12 q 8 4 16 0' stroke='currentColor' fill='none'/><path d='M4 16 q 8 4 16 0' stroke='currentColor' fill='none'/>",
-          "breakdown": [
-            "wr (扭)"
-          ],
-          "imagery": "皮肤扭曲产生的纹路。",
-          "translation": "皱纹",
-          "sentences": [
-            {
-              "en": "She has some wrinkles around her eyes.",
-              "cn": "她眼周有些皱纹。"
             }
           ]
         }

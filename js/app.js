@@ -1,14 +1,10 @@
 // =================================================================================
-// 应用协调器 (Application Orchestrator) - v20.4 (修复单词计数逻辑)
+// 应用协调器 (Application Orchestrator) - v20.5 (优化连续操作体验)
 // ---------------------------------------------------------------------------------
 // 职责:
 // 1. 协调 UI、数据状态和各个功能模块的初始化与交互。
-// 2. 监听全局事件（如点击、滚动、输入）并分发处理。
-// 3. 负责核心的卡片渲染循环和视图更新。
-//
-// 修改记录:
-// - 修复 updateDataAndUI 中的计数逻辑：移除了对 'root' 类型单词的过滤，
-//   确保 CET-4/CET-6 等以词根为主的分类下，单词计数与显示的卡片数量一致。
+// 2. 负责核心的卡片渲染循环。
+// 3. 优化 handleMarkAsLearned 中的确认逻辑，避免在连续操作时重绘整个网格。
 // =================================================================================
 
 import * as State from './state.js';
@@ -129,16 +125,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // 4. 准备数据并渲染
         State.filterAndPrepareDataSet();
 
-        // 【核心修复】计算当前视图单词数量
-        // 移除了 item.contentType !== 'root' 的过滤条件，确保词根类单词被正确统计
+        // 计算当前视图单词数量 (确保词根类单词被正确统计)
         const currentWordCount = State.currentDataSet.filter(item => item.cardType === 'word').length;
-
         const learnedWordCount = State.getLearnedWordCount();
         UI.updateWordCounts(currentWordCount, learnedWordCount);
 
         startNewRenderFlow();
     }
-
 
     function updateEmptyStateMessage() {
         const cardCount = cardGrid.querySelectorAll('.card:not(.is-pending-removal)').length;
@@ -218,17 +211,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ============================================================================
-    // 事件回调处理
+    // 事件回调处理 (Events)
     // ============================================================================
 
+    /**
+     * 处理“标记为已掌握/未掌握”的点击事件。
+     * 关键优化：支持连续操作，不通过全量刷新来更新UI。
+     */
     function handleMarkAsLearned(data, cardElement) {
         const isCurrentlyLearned = cardElement.classList.contains('is-learned');
+
+        // 1. 播放音效
         UI.playUiSound(isCurrentlyLearned ? 'uncomplete' : 'complete');
 
+        // 2. 切换视觉状态（立即响应）
         cardElement.classList.toggle('is-learned');
-        cardElement.classList.add('is-pending-removal');
 
-        if (window.innerWidth <= 768) {
+        // 判断在当前模式下，是否应该移除卡片
+        // 规则：如果是“所有类型(All Types)”模式，我们保留卡片，只改变状态。
+        // 如果是具体的学习模式（Prefix/Suffix/Wordbook等），默认只显示未掌握，所以要移除。
+        // 如果是“已掌握(Learned)”模式，取消掌握也要移除。
+        const shouldRemoveCard = State.currentContentType !== 'all';
+
+        if (shouldRemoveCard) {
+            cardElement.classList.add('is-pending-removal');
+        }
+
+        // 移动端体验优化：自动滚动到下一张卡片
+        if (shouldRemoveCard && window.innerWidth <= 768) {
             const nextCard = cardElement.nextElementSibling;
             if (nextCard && nextCard.classList.contains('card')) {
                 setTimeout(() => {
@@ -237,20 +247,61 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
+        // --- 定义撤销操作的回调 ---
+        // 核心逻辑：确认时不调用 updateDataAndUI()，而是手动轻量更新 DOM 和计数
         const onConfirm = () => {
+            // 1. 更新底层数据状态
             State.toggleLearnedStatus(data);
 
+            // 记录学习活动 (仅当是从 未掌握 -> 已掌握 时)
             if (!isCurrentlyLearned) {
                 State.logLearningActivity(new Date(), 1);
             }
 
-            cardElement.remove();
-            updateDataAndUI();
+            // 2. 根据模式决定是否从 DOM 中移除卡片
+            if (shouldRemoveCard) {
+                cardElement.remove();
+            }
+
+            // 3. 手动更新顶部计数器，避免全量重绘
+            const currentWordCountEl = document.getElementById('word-count-current');
+            const learnedWordCountEl = document.getElementById('word-count-learned');
+
+            if (currentWordCountEl && learnedWordCountEl) {
+                let currentVal = parseInt(currentWordCountEl.textContent) || 0;
+                let learnedVal = parseInt(learnedWordCountEl.textContent) || 0;
+
+                // 如果卡片被移除了，当前视图计数 -1
+                if (shouldRemoveCard) {
+                    currentWordCountEl.textContent = Math.max(0, currentVal - 1);
+                }
+
+                // 更新已掌握总数
+                learnedWordCountEl.textContent = isCurrentlyLearned
+                    ? Math.max(0, learnedVal - 1) // 取消掌握
+                    : learnedVal + 1;             // 标记掌握
+            }
+
+            // 4. 如果卡片被移除，检查当前视图是否为空，如果是则显示空状态或加载更多
+            if (shouldRemoveCard) {
+                const remainingCards = cardGrid.querySelectorAll('.card:not(.is-pending-removal)').length;
+                // 如果剩余卡片很少，尝试加载更多（模拟无限滚动）
+                if (remainingCards < 5) {
+                    renderMoreCards();
+                    // 如果加载后还是 0，则显示空状态
+                    updateEmptyStateMessage();
+                }
+            }
         };
 
         const onUndo = () => {
+            // 恢复视觉状态
             cardElement.classList.toggle('is-learned');
-            cardElement.classList.remove('is-pending-removal');
+            if (shouldRemoveCard) {
+                cardElement.classList.remove('is-pending-removal');
+            }
+
+            // 移动端：滚回该卡片
             if (window.innerWidth <= 768) {
                 cardElement.scrollIntoView({ behavior: 'smooth', inline: 'center' });
             }
@@ -260,6 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ? `单词 "${data.word}" 已取消掌握。`
             : `单词 "${data.word}" 已标记掌握。`;
 
+        // 调用撤销管理器
         UndoManager.show({
             message: toastMessage,
             onConfirm: onConfirm,

@@ -13,26 +13,6 @@
       },
       "words": [
         {
-          "word": "manual",
-          "rootVisual": "<rect x='6' y='4' width='12' height='16' stroke='currentColor' fill='none'/><path d='M8 8 h8 M8 12 h8' stroke='currentColor'/>",
-          "breakdown": [
-            "manu (手)",
-            "-al (形/名)"
-          ],
-          "imagery": "手工的；使用手册。",
-          "translation": "手工的；手册",
-          "sentences": [
-            {
-              "en": "This machine can be operated by manual control.",
-              "cn": "这台机器可以手动控制。"
-            },
-            {
-              "en": "Please read the instruction manual carefully.",
-              "cn": "请仔细阅读说明手册。"
-            }
-          ]
-        },
-        {
           "word": "mechanic",
           "rootVisual": "<circle cx='12' cy='12' r='6' stroke='currentColor' fill='none'/><path d='M12 6v12M6 12h12' stroke='currentColor'/>",
           "breakdown": [

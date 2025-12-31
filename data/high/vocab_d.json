@@ -81,22 +81,6 @@
           ]
         },
         {
-          "word": "decision",
-          "rootVisual": "<path d='M12 4 v10' stroke='currentColor'/><path d='M12 14 l-4 4 M12 14 l4 4' stroke='currentColor'/>",
-          "breakdown": [
-            "decis (切)",
-            "-ion (名词)"
-          ],
-          "imagery": "做出的决定。",
-          "translation": "决定",
-          "sentences": [
-            {
-              "en": "It's a difficult decision to make.",
-              "cn": "这是一个很难做的决定。"
-            }
-          ]
-        },
-        {
           "word": "domestic",
           "rootVisual": "<path d='M2 12l10-8 10 8v10h-20z' stroke='currentColor' fill='none'/><circle cx='12' cy='14' r='4' stroke='currentColor'/>",
           "breakdown": [

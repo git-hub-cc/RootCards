@@ -349,22 +349,6 @@
           ]
         },
         {
-          "word": "foolish",
-          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 10 l2 2 l2 -2' stroke='currentColor'/><path d='M12 10 l2 2 l2 -2' stroke='currentColor'/><path d='M10 16 h4' stroke='currentColor'/>",
-          "breakdown": [
-            "fool (傻瓜)",
-            "-ish (像...的)"
-          ],
-          "imagery": "一顶带有铃铛的小丑帽，象征愚蠢的行为。",
-          "translation": "愚蠢的",
-          "sentences": [
-            {
-              "en": "It was foolish of me to trust him.",
-              "cn": "我竟然相信他，真是太愚蠢了。"
-            }
-          ]
-        },
-        {
           "word": "forest",
           "rootVisual": "<path d='M12 2 L16 10 H8 Z M6 10 L10 18 H2 Z M18 10 L22 18 H14 Z' stroke='currentColor' fill='none' stroke-width='1.5'/>",
           "breakdown": [

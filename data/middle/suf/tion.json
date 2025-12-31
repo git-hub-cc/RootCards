@@ -16,7 +16,10 @@
         {
           "word": "education",
           "rootVisual": "<path d='M 4 8 l 8 2 l 8 -2 v 10 l -8 4 l -8 -4 z M 12 10 v 12 M 12 22 l 0 0' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": ["educ (引导/教育)", "-ation (名词)"],
+          "breakdown": [
+            "educ (引导/教育)",
+            "-ation (名词)"
+          ],
           "imagery": "像打开一本书，或者被引导向上的阶梯，代表获取知识的过程。",
           "translation": "教育",
           "sentences": [
@@ -29,7 +32,10 @@
         {
           "word": "graduation",
           "rootVisual": "<path d='M4 14 h16 a2 2 0 0 1 2 2 v2 a2 2 0 0 1 -2 2 h-16 a2 2 0 0 1 -2 -2 v-2 a2 2 0 0 1 2 -2 z' stroke='currentColor' fill='none' stroke-width='2'/><path d='M12 14 v-4 l-2 2' stroke='currentColor'/><rect x='10' y='6' width='4' height='4' fill='currentColor'/>",
-          "breakdown": ["grad (步/级)", "-uation (名词)"],
+          "breakdown": [
+            "grad (步/级)",
+            "-uation (名词)"
+          ],
           "imagery": "走完学校的台阶，拿到绑着丝带的毕业证书卷轴。",
           "translation": "毕业",
           "sentences": [
@@ -42,7 +48,11 @@
         {
           "word": "instruction",
           "rootVisual": "<rect x='5' y='4' width='14' height='16' rx='2' stroke='currentColor' fill='none' stroke-width='2'/><line x1='9' y1='8' x2='15' y2='8' stroke='currentColor'/><line x1='9' y1='12' x2='15' y2='12' stroke='currentColor'/><line x1='9' y1='16' x2='13' y2='16' stroke='currentColor'/>",
-          "breakdown": ["in- (向内)", "struct (建造)", "-ion (名词)"],
+          "breakdown": [
+            "in- (向内)",
+            "struct (建造)",
+            "-ion (名词)"
+          ],
           "imagery": "按照建造的步骤列出的清单（Checklist），一步步给予指示。",
           "translation": "指示",
           "sentences": [
@@ -55,7 +65,11 @@
         {
           "word": "suggestion",
           "rootVisual": "<path d='M4 16 h4 l4 4 l0 -4 h8 v-12 h-16 z' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
-          "breakdown": ["sug- (在下)", "gest (带来)", "-ion (名词)"],
+          "breakdown": [
+            "sug- (在下)",
+            "gest (带来)",
+            "-ion (名词)"
+          ],
           "imagery": "带来一个想法，就像头顶亮起灯泡，或者对话气泡中提出了点子。",
           "translation": "建议",
           "sentences": [
@@ -72,7 +86,11 @@
         {
           "word": "collection",
           "rootVisual": "<path d='M6 8 v10 c0 2 2 3 6 3 s6 -1 6 -3 v-10' stroke='currentColor' fill='none' stroke-width='2'/><ellipse cx='12' cy='8' rx='6' ry='2' stroke='currentColor' fill='none'/><circle cx='10' cy='14' r='2' fill='currentColor'/><circle cx='14' cy='12' r='2' fill='currentColor' opacity='0.7'/>",
-          "breakdown": ["col- (一起)", "lect (选择)", "-ion (名词)"],
+          "breakdown": [
+            "col- (一起)",
+            "lect (选择)",
+            "-ion (名词)"
+          ],
           "imagery": "把选中的东西放在一起，就像硬币收集在罐子里。",
           "translation": "收集",
           "sentences": [
@@ -87,22 +105,13 @@
           ]
         },
         {
-          "word": "communication",
-          "rootVisual": "<path d='M2 12 a 6 6 0 0 1 6 -6' stroke='currentColor' fill='none'/><path d='M2 16 a 10 10 0 0 1 10 -10' stroke='currentColor' fill='none' opacity='0.5'/><path d='M22 12 a 6 6 0 0 0 -6 -6' stroke='currentColor' fill='none'/><path d='M22 16 a 10 10 0 0 0 -10 -10' stroke='currentColor' fill='none' opacity='0.5'/>",
-          "breakdown": ["com- (共同)", "mun (公共/服务)", "-ication (名词)"],
-          "imagery": "如同无线电波一样，双向发送和接收信号。",
-          "translation": "交流",
-          "sentences": [
-            {
-              "en": "We communicated by e-mail.",
-              "cn": "我们通过电子邮件交流。"
-            }
-          ]
-        },
-        {
           "word": "comparison",
           "rootVisual": "<line x1='12' y1='4' x2='12' y2='20' stroke='currentColor' stroke-width='2'/><line x1='4' y1='20' x2='20' y2='20' stroke='currentColor' stroke-width='2'/><rect x='6' y='10' width='4' height='10' stroke='currentColor' fill='none'/><rect x='14' y='6' width='4' height='14' stroke='currentColor' fill='currentColor' opacity='0.3'/>",
-          "breakdown": ["com- (共同)", "par (平等)", "-ison (名词)"],
+          "breakdown": [
+            "com- (共同)",
+            "par (平等)",
+            "-ison (名词)"
+          ],
           "imagery": "把两个柱状图放在一起，看谁高谁低，进行对比。",
           "translation": "比较",
           "sentences": [
@@ -115,7 +124,11 @@
         {
           "word": "congratulation",
           "rootVisual": "<path d='M8 20 l8 0 l2 -8 l-12 0 z' stroke='currentColor' fill='none'/><path d='M10 12 q -4 -8 -8 -4' stroke='currentColor'/><path d='M14 12 q 4 -8 8 -4' stroke='currentColor'/><circle cx='6' cy='6' r='1' fill='currentColor'/><circle cx='18' cy='6' r='1' fill='currentColor'/>",
-          "breakdown": ["con- (共同)", "grat (高兴)", "-ulation (名词)"],
+          "breakdown": [
+            "con- (共同)",
+            "grat (高兴)",
+            "-ulation (名词)"
+          ],
           "imagery": "共同高兴的时刻，就像拉响礼花筒，彩带飞舞。",
           "translation": "祝贺",
           "sentences": [

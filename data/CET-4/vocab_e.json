@@ -123,23 +123,6 @@
           ]
         },
         {
-          "word": "embargo",
-          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' color='#ef4444' /><path d='M6 12 H18' stroke='currentColor' stroke-width='2' />",
-          "breakdown": [
-            "em- (进入)",
-            "bar (阻拦)",
-            "go (走)"
-          ],
-          "imagery": "进去被拦住不让走。",
-          "translation": "禁运；禁止贸易",
-          "sentences": [
-            {
-              "en": "An embargo on arms sales.",
-              "cn": "武器禁运。"
-            }
-          ]
-        },
-        {
           "word": "embody",
           "rootVisual": "<circle cx='12' cy='8' r='4' fill='currentColor' /><path d='M12 12 V 20' stroke='currentColor' stroke-width='2' />",
           "breakdown": [

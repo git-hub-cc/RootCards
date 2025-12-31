@@ -12,25 +12,7 @@
         "description": "核心意境是 **“携带” (Carry)** 或 **“拿” (Bear)**。\n表示运送、持有或产生。",
         "imagery": "联想一只手托着东西🤲，或者一艘渡轮⛴️ (ferry)。"
       },
-      "words": [
-        {
-          "word": "referendum",
-          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M8 8l4 4 8-8' stroke='currentColor' fill='none'/><rect x='8' y='14' width='8' height='2' fill='currentColor'/>",
-          "breakdown": [
-            "re- (回)",
-            "fer (带)",
-            "-dum"
-          ],
-          "imagery": "一个投票箱，正在投入选票，将问题带回去参考。",
-          "translation": "全民公投",
-          "sentences": [
-            {
-              "en": "A referendum was held on the question of the country's independence.",
-              "cn": "就国家独立问题举行了全民公投。"
-            }
-          ]
-        }
-      ]
+      "words": []
     }
   ]
 }

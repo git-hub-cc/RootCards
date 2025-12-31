@@ -978,22 +978,6 @@
           ]
         },
         {
-          "word": "subject",
-          "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><path d='M12 10 v6' stroke='currentColor' marker-end='url(#arrow)'/>",
-          "breakdown": [
-            "sub- (在下)",
-            "ject (投)"
-          ],
-          "imagery": "被投掷（ject）在下面（sub-），受支配的（臣民/主语）；放在下面的题目（主题）。",
-          "translation": "主题；科目；主语",
-          "sentences": [
-            {
-              "en": "My favorite subject is math.",
-              "cn": "我最喜欢的科目是数学。"
-            }
-          ]
-        },
-        {
           "word": "subway",
           "rootVisual": "<path d='M6 4 h12 a 2 2 0 0 1 2 2 v10 a 2 2 0 0 1 -2 2 h-12 a 2 2 0 0 1 -2 -2 v-10 a 2 2 0 0 1 2 -2' stroke='currentColor' fill='none' stroke-width='2'/><rect x='6' y='8' width='12' height='4' stroke='currentColor' fill='none'/><circle cx='8' cy='15' r='1' fill='currentColor'/><circle cx='16' cy='15' r='1' fill='currentColor'/><path d='M7 18 l-1 3' stroke='currentColor'/><path d='M17 18 l1 3' stroke='currentColor'/><path d='M4 21 h16' stroke='currentColor' opacity='0.5'/>",
           "breakdown": [

@@ -114,22 +114,6 @@
           ]
         },
         {
-          "word": "introduce",
-          "rootVisual": "<path d='M4 12 h10 m-3 -3 l3 3 l-3 3' stroke='currentColor' stroke-width='2'/><circle cx='20' cy='12' r='2' fill='currentColor'/>",
-          "breakdown": [
-            "intro- (向内)",
-            "duc (引导)"
-          ],
-          "imagery": "用手势引导（duc）某人进入（intro）一个新的圈子。",
-          "translation": "介绍",
-          "sentences": [
-            {
-              "en": "Let me introduce myself first.",
-              "cn": "让我先自我介绍（引导进入）一下。"
-            }
-          ]
-        },
-        {
           "word": "iron",
           "rootVisual": "<path d='M4 14h16l-2-6h-12z' stroke='currentColor' fill='gray' opacity='0.5'/><rect x='8' y='8' width='8' height='4' stroke='currentColor' fill='none'/>",
           "breakdown": [

@@ -46,36 +46,6 @@
           ]
         },
         {
-          "word": "glance",
-          "rootVisual": "<path d='M4 12 q 8 -6 16 0' stroke='currentColor' fill='none'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
-          "breakdown": [
-            "gl (光/滑)"
-          ],
-          "imagery": "目光滑过，匆匆一瞥。",
-          "translation": "瞥见；扫视",
-          "sentences": [
-            {
-              "en": "He glanced nervously at me.",
-              "cn": "他紧张地瞥了我一眼。"
-            }
-          ]
-        },
-        {
-          "word": "glare",
-          "rootVisual": "<circle cx='12' cy='12' r='4' stroke='currentColor'/><path d='M12 2 L12 6 M12 18 L12 22 M2 12 L6 12 M18 12 L22 12' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": [
-            "gl (光)"
-          ],
-          "imagery": "发出强光；怒目而视（目光如炬）。",
-          "translation": "强光；怒视",
-          "sentences": [
-            {
-              "en": "He glared at her.",
-              "cn": "他怒视着她。"
-            }
-          ]
-        },
-        {
           "word": "guarantee",
           "rootVisual": "<rect x='4' y='6' width='16' height='12' stroke='currentColor' fill='none'/><path d='M8 12l2 2 4-4' stroke='currentColor' stroke-width='2'/>",
           "breakdown": [

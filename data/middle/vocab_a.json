@@ -63,22 +63,6 @@
           ]
         },
         {
-          "word": "actress",
-          "rootVisual": "<rect x='4' y='8' width='16' height='12' rx='1' stroke='currentColor' fill='none'/><path d='M4 8 l4 -4 h12 v4' stroke='currentColor' fill='none'/><path d='M6 6 l2 2 M10 6 l2 2 M14 6 l2 2' stroke='currentColor'/>",
-          "breakdown": [
-            "act (表演)",
-            "-ress (女性)"
-          ],
-          "imagery": "一个打板器（场记板），代表电影拍摄和表演。",
-          "translation": "女演员",
-          "sentences": [
-            {
-              "en": "Fan Bingbing is a famous actress.",
-              "cn": "范冰冰是一位著名的女演员。"
-            }
-          ]
-        },
-        {
           "word": "address",
           "rootVisual": "<path d='M12 2l-8 4v14h16v-14z' stroke='currentColor' fill='none'/><text x='6' y='14' font-size='6' fill='currentColor'>101</text>",
           "breakdown": [
@@ -337,23 +321,6 @@
             {
               "en": "The atmosphere creates a protective layer.",
               "cn": "大气层形成了一个保护层。"
-            }
-          ]
-        },
-        {
-          "word": "attention",
-          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
-          "breakdown": [
-            "at- (去)",
-            "tent (伸展)",
-            "-ion (名词)"
-          ],
-          "imagery": "把精神伸展向某处，即注意。",
-          "translation": "注意",
-          "sentences": [
-            {
-              "en": "pay one's attention to...",
-              "cn": "把某人的注意力放在..."
             }
           ]
         },

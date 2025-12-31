@@ -77,22 +77,6 @@
           ]
         },
         {
-          "word": "electricity",
-          "rootVisual": "<polyline points='10 2 6 12 14 12 10 22' stroke='currentColor' fill='none' stroke-width='2'/>",
-          "breakdown": [
-            "electric (电的)",
-            "-ity (性质)"
-          ],
-          "imagery": "一道锋利的闪电符号，代表电能。",
-          "translation": "电",
-          "sentences": [
-            {
-              "en": "The farm has no electricity.",
-              "cn": "这个农场没有电。"
-            }
-          ]
-        },
-        {
           "word": "electronic",
           "rootVisual": "<rect x='4' y='6' width='16' height='12' rx='2' stroke='currentColor' fill='none'/><path d='M8 12l2 2 4-4' stroke='currentColor'/>",
           "breakdown": [

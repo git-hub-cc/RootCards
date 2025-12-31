@@ -14,22 +14,11 @@
       },
       "words": [
         {
-          "word": "inspire",
-          "rootVisual": "<path d='M12 16 v-6' stroke='currentColor'/><path d='M12 10 l-3 3 M12 10 l3 3' stroke='currentColor'/><circle cx='12' cy='16' r='2' fill='currentColor'/><path d='M8 6 q 4 -4 8 0' stroke='currentColor' fill='none' stroke-dasharray='2 1'/>",
-          "breakdown": ["in- (吸入)", "spir (气/神)"],
-          "imagery": "吸入（in-）一口气（spir），精神为之一振，产生灵感。",
-          "translation": "鼓舞；赋予灵感",
-          "sentences": [
-            {
-              "en": "Newton was inspired by the fallen apple.",
-              "cn": "牛顿被落下的苹果激发了灵感。"
-            }
-          ]
-        },
-        {
           "word": "spirit",
           "rootVisual": "<path d='M12 18 q -4 -8 -2 -12 q 4 0 6 4' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='2 2'/>",
-          "breakdown": ["spir (呼吸/气)"],
+          "breakdown": [
+            "spir (呼吸/气)"
+          ],
           "imagery": "人的那一“口气”，即精神或灵魂。",
           "translation": "精神",
           "sentences": []
@@ -37,7 +26,10 @@
         {
           "word": "spiritual",
           "rootVisual": "<path d='M12 18 q -4 -8 -2 -12 q 4 0 6 4' stroke='currentColor' fill='none'/><path d='M4 20 h16' stroke='currentColor' opacity='0.3'/>",
-          "breakdown": ["spirit (精神)", "-ual (形)"],
+          "breakdown": [
+            "spirit (精神)",
+            "-ual (形)"
+          ],
           "imagery": "与物质相对的，属于精神层面的。",
           "translation": "精神的",
           "sentences": []
@@ -45,7 +37,10 @@
         {
           "word": "inspiration",
           "rootVisual": "<rect x='8' y='8' width='8' height='8' stroke='currentColor' fill='none'/><path d='M12 8 v-3 m-2 0 l4 0' stroke='currentColor'/><path d='M10 3 l4 4' stroke='currentColor' opacity='0.5'/>",
-          "breakdown": ["inspire (灵感)", "-ation (名)"],
+          "breakdown": [
+            "inspire (灵感)",
+            "-ation (名)"
+          ],
           "imagery": "头顶亮起的灯泡，灵感乍现。",
           "translation": "灵感",
           "sentences": []
@@ -53,7 +48,11 @@
         {
           "word": "desperate",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M8 14 q 4 -2 8 0' stroke='currentColor'/><circle cx='9' cy='9' r='1' fill='currentColor'/><circle cx='15' cy='9' r='1' fill='currentColor'/><path d='M18 6 l-2 2' stroke='currentColor'/>",
-          "breakdown": ["de- (去掉)", "sper (希望)", "-ate (形)"],
+          "breakdown": [
+            "de- (去掉)",
+            "sper (希望)",
+            "-ate (形)"
+          ],
           "imagery": "把希望（sper，spir变体）去掉（de-），即绝望的。",
           "translation": "绝望的",
           "sentences": [
@@ -66,7 +65,10 @@
         {
           "word": "perspire",
           "rootVisual": "<circle cx='12' cy='10' r='6' stroke='currentColor' fill='none'/><path d='M12 16 v6' stroke='currentColor'/><path d='M16 12 l2 2' stroke='currentColor' stroke-dasharray='2 1'/>",
-          "breakdown": ["per- (通)", "spir (呼吸)"],
+          "breakdown": [
+            "per- (通)",
+            "spir (呼吸)"
+          ],
           "imagery": "皮肤在“呼吸”，汗水（气）通过（per-）毛孔出来。",
           "translation": "出汗",
           "sentences": [
@@ -79,7 +81,10 @@
         {
           "word": "aspire",
           "rootVisual": "<path d='M12 20 l-4 -8 h8 z' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' fill='currentColor'/>",
-          "breakdown": ["a- (去)", "spir (呼吸/气)"],
+          "breakdown": [
+            "a- (去)",
+            "spir (呼吸/气)"
+          ],
           "imagery": "向着（a-）一个目标屏息以待（spir），渴望达到。",
           "translation": "渴望",
           "sentences": [
@@ -92,7 +97,10 @@
         {
           "word": "aspiring",
           "rootVisual": "<path d='M12 20 l-4 -8 h8 z' stroke='currentColor' fill='none'/><path d='M12 12 v-4 l2 2' stroke='currentColor'/>",
-          "breakdown": ["aspire (渴望)", "-ing (形)"],
+          "breakdown": [
+            "aspire (渴望)",
+            "-ing (形)"
+          ],
           "imagery": "正在向目标努力攀登的状态。",
           "translation": "有志向的",
           "sentences": []
@@ -100,7 +108,10 @@
         {
           "word": "aspiration",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l4 -4' stroke='currentColor' marker-end='url(#arrow)'/>",
-          "breakdown": ["aspire (渴望)", "-ation (名)"],
+          "breakdown": [
+            "aspire (渴望)",
+            "-ation (名)"
+          ],
           "imagery": "内心的强烈愿望。",
           "translation": "渴望",
           "sentences": [
@@ -113,7 +124,10 @@
         {
           "word": "expire",
           "rootVisual": "<rect x='6' y='6' width='12' height='12' stroke='currentColor' fill='none'/><line x1='6' y1='6' x2='18' y2='18' stroke='currentColor'/><line x1='18' y1='6' x2='6' y2='18' stroke='currentColor'/>",
-          "breakdown": ["ex- (出/断)", "spir (气)"],
+          "breakdown": [
+            "ex- (出/断)",
+            "spir (气)"
+          ],
           "imagery": "最后一口气（spir）出（ex-）了，断气了，引申为期限结束。",
           "translation": "过期",
           "sentences": [
@@ -126,7 +140,10 @@
         {
           "word": "conspire",
           "rootVisual": "<circle cx='8' cy='12' r='3' stroke='currentColor' fill='none'/><circle cx='16' cy='12' r='3' stroke='currentColor' fill='none'/><path d='M11 12 h2' stroke='currentColor' stroke-dasharray='1 1'/>",
-          "breakdown": ["con- (共同)", "spir (呼吸)"],
+          "breakdown": [
+            "con- (共同)",
+            "spir (呼吸)"
+          ],
           "imagery": "几个人凑在一起（con-）呼吸（spir），交头接耳，密谋坏事。",
           "translation": "密谋",
           "sentences": [
@@ -139,7 +156,10 @@
         {
           "word": "conspiracy",
           "rootVisual": "<rect x='4' y='8' width='16' height='10' fill='currentColor' opacity='0.2'/><path d='M8 12 h8' stroke='currentColor'/>",
-          "breakdown": ["conspire (密谋)", "-acy (名)"],
+          "breakdown": [
+            "conspire (密谋)",
+            "-acy (名)"
+          ],
           "imagery": "暗箱操作，阴谋。",
           "translation": "密谋；阴谋",
           "sentences": []

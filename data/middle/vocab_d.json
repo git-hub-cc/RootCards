@@ -109,38 +109,6 @@
           ]
         },
         {
-          "word": "decide",
-          "rootVisual": "<path d='M12 2 v10' stroke='currentColor'/><path d='M12 12 l-6 6 M12 12 l6 6' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
-          "breakdown": [
-            "de- (向下)",
-            "cid (切)"
-          ],
-          "imagery": "手向下切，一锤定音，不再犹豫。",
-          "translation": "决定",
-          "sentences": [
-            {
-              "en": "I decided to learn English from Allen.",
-              "cn": "我决定（向下切）跟Allen学英语。"
-            }
-          ]
-        },
-        {
-          "word": "decrease",
-          "rootVisual": "<path d='M4 4 l6 4 l6 4 l6 4' stroke='currentColor' stroke-width='2' fill='none'/><path d='M22 16 v4 h-4' stroke='currentColor'/>",
-          "breakdown": [
-            "de- (向下)",
-            "crease (生长)"
-          ],
-          "imagery": "生长的方向朝下，即减少。",
-          "translation": "减少",
-          "sentences": [
-            {
-              "en": "Traffic decreases on holidays.",
-              "cn": "节假日交通流量减少（往下长）。"
-            }
-          ]
-        },
-        {
           "word": "degree",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12l4-4' stroke='currentColor'/><path d='M12 12H18' stroke='currentColor' opacity='0.5'/>",
           "breakdown": [

@@ -1,19 +1,19 @@
 // =================================================================================
-// 全局撤销管理器 (Global Undo Manager) - v1.1 (集成音效)
+// 全局撤销管理器 (Global Undo Manager) - v1.2 (支持快速连续操作)
 // ---------------------------------------------------------------------------------
 // 职责:
-// 1. 提供一个全局的、单例的“撤销”操作通知UI。
-// 2. 管理倒计时，并在时间结束后执行确认操作。
-// 3. 处理用户点击“撤销”的逻辑，并触发音效。
+// 1. 提供一个全局的、单例的“撤销”操作通知UI (Toast)。
+// 2. 管理倒计时，并在时间结束后执行确认操作 (Commit)。
+// 3. 处理“快速连续操作”场景：当新操作到来时，立即结算上一个操作，避免状态丢失。
 // =================================================================================
 
 import * as UI from '../ui.js';
 
 // --- 模块内部状态 ---
 const state = {
-    timeoutId: null,      // 用于存储 setTimeout 的 ID，以便可以清除它
-    onConfirmCallback: null, // 倒计时结束后执行的回调
-    onUndoCallback: null,    // 点击“撤销”时执行的回调
+    timeoutId: null,         // 用于存储 setTimeout 的 ID
+    onConfirmCallback: null, // 倒计时自然结束（或被新操作顶掉）时执行的“确认”逻辑
+    onUndoCallback: null,    // 用户点击“撤销”按钮时执行的“回滚”逻辑
 };
 
 // --- 模块内部DOM元素缓存 ---
@@ -24,7 +24,7 @@ const elements = {};
  * @returns {boolean} 成功返回 true，失败返回 false。
  */
 function cacheElements() {
-    // 防止重复缓存
+    // 防止重复查找
     if (elements.toast) return true;
 
     elements.toast = document.getElementById('undo-toast');
@@ -46,9 +46,13 @@ function cacheElements() {
  * 隐藏通知栏并重置其状态。
  */
 function hide() {
-    elements.toast.classList.remove('is-visible');
-    // 移除动画类，以便下次可以重新触发动画
-    elements.progressBar.classList.remove('is-running');
+    if (elements.toast) {
+        elements.toast.classList.remove('is-visible');
+    }
+    if (elements.progressBar) {
+        // 移除动画类，以便下次可以重新触发动画
+        elements.progressBar.classList.remove('is-running');
+    }
 }
 
 /**
@@ -58,13 +62,13 @@ function handleUndo() {
     // 1. 播放撤销音效
     UI.playUiSound('undo');
 
-    // 2. 清除即将执行的“确认”计时器
+    // 2. 清除即将执行的“确认”计时器，防止数据被提交
     if (state.timeoutId) {
         clearTimeout(state.timeoutId);
         state.timeoutId = null;
     }
 
-    // 3. 执行传入的撤销逻辑（例如，恢复UI元素的显示）
+    // 3. 执行传入的撤销逻辑（例如：恢复UI元素的显示，回滚数据状态）
     if (typeof state.onUndoCallback === 'function') {
         try {
             state.onUndoCallback();
@@ -79,49 +83,62 @@ function handleUndo() {
 
 /**
  * 显示并启动撤销通知。
+ *
+ * 核心逻辑：
+ * 如果当前已经有一个正在倒计时的操作，调用此函数意味着用户进行了新的操作。
+ * 此时，我们必须立即“确认（Commit）”上一个操作，然后开始处理这个新操作。
+ *
  * @param {object} options - 配置对象
  * @param {string} options.message - 显示在通知中的文本信息。
- * @param {function} options.onConfirm - 倒计时结束后执行的回调函数。
- * @param {function} options.onUndo - 用户点击“撤销”时执行的回调函数。
+ * @param {function} options.onConfirm - 确认操作回调（数据持久化、DOM移除等）。
+ * @param {function} options.onUndo - 撤销操作回调（恢复DOM、恢复数据状态）。
  */
 export function show({ message, onConfirm, onUndo }) {
     if (!elements.toast) {
-        console.error("撤销管理器未初始化或初始化失败，无法显示通知。");
-        // 即使UI无法显示，也应立即执行确认操作，避免数据不一致
+        // 如果模块未初始化或DOM缺失，直接执行确认操作以保数据安全
+        console.warn("撤销管理器未就绪，直接执行操作。");
         if (typeof onConfirm === 'function') onConfirm();
         return;
     }
 
-    // **核心鲁棒性**: 如果上一个撤销操作还在倒计时，立即清除它并执行其确认操作。
-    // 这能防止用户快速连续操作时，只有最后一个操作被记住，而之前的操作被“遗忘”。
+    // --- [关键] 处理连续操作 ---
+    // 如果上一个操作还在等待（timeoutId存在），说明用户手速很快。
+    // 我们不能让上一个操作被“吞掉”，必须立即执行它的 confirm 逻辑。
     if (state.timeoutId) {
         clearTimeout(state.timeoutId);
         if (typeof state.onConfirmCallback === 'function') {
             try {
+                // 立即结算上一个操作
                 state.onConfirmCallback();
             } catch (e) {
-                console.error('快速操作时，执行上一个 onConfirmCallback 出错:', e);
+                console.error('快速操作结算上一个 confirm 时出错:', e);
             }
         }
     }
 
-    // 1. 更新状态和UI内容
+    // --- 设置新操作的状态 ---
     state.onConfirmCallback = onConfirm;
     state.onUndoCallback = onUndo;
+
+    // 更新 UI 文本
     elements.message.textContent = message;
 
-    // 2. 显示通知栏
-    elements.toast.classList.add('is-visible');
-
-    // 3. 重置并启动进度条动画
-    //    先移除类，强制浏览器重绘，再添加类，确保动画每次都从头播放
+    // --- 重置并启动进度条动画 ---
+    // 1. 移除动画类
     elements.progressBar.classList.remove('is-running');
-    // void 语句是一种可靠的触发重绘（reflow）的技巧
+
+    // 2. 强制浏览器重绘 (Reflow)，这是重启 CSS Animation 的关键技巧
+    // 读取 offsetWidth 会强制浏览器计算样式
     void elements.progressBar.offsetWidth;
+
+    // 3. 重新添加动画类
     elements.progressBar.classList.add('is-running');
 
+    // 显示通知
+    elements.toast.classList.add('is-visible');
 
-    // 4. 设置倒计时结束后执行的“确认”操作
+    // --- 启动新的倒计时 ---
+    // 3秒后如果没有点击撤销，则执行确认操作
     state.timeoutId = setTimeout(() => {
         if (typeof state.onConfirmCallback === 'function') {
             try {
@@ -132,7 +149,7 @@ export function show({ message, onConfirm, onUndo }) {
         }
         hide();
         state.timeoutId = null; // 清理ID
-    }, 3000); // <-- 【核心修改】将超时时间从 5000ms 改为 3000ms
+    }, 3000);
 }
 
 /**
@@ -140,9 +157,12 @@ export function show({ message, onConfirm, onUndo }) {
  */
 export function init() {
     if (!cacheElements()) {
-        // 如果关键DOM元素缺失，模块将无法工作
         return;
     }
     // 绑定“撤销”按钮的点击事件
-    elements.actionBtn.addEventListener('click', handleUndo);
+    // 使用 onclick 属性或 addEventListener 均可，这里使用 listener 以防覆盖
+    elements.actionBtn.addEventListener('click', (e) => {
+        e.stopPropagation(); // 防止事件冒泡
+        handleUndo();
+    });
 }

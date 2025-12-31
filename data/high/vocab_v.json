@@ -63,22 +63,6 @@
           ]
         },
         {
-          "word": "valid",
-          "rootVisual": "<path d='M4 12 l6 6 l10 -10' stroke='currentColor' stroke-width='3' fill='none'/>",
-          "breakdown": [
-            "val (强/效)",
-            "-id"
-          ],
-          "imagery": "有效的，有法律效力的（强）。",
-          "translation": "有效的",
-          "sentences": [
-            {
-              "en": "Your ticket is valid for three months.",
-              "cn": "你的票有效期为三个月。"
-            }
-          ]
-        },
-        {
           "word": "vanish",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-dasharray='1 4'/>",
           "breakdown": [
@@ -159,38 +143,6 @@
             {
               "en": "A vertical line.",
               "cn": "一条垂线。"
-            }
-          ]
-        },
-        {
-          "word": "victim",
-          "rootVisual": "<path d='M6 18 l12 -12' stroke='currentColor' stroke-width='2'/><path d='M6 6 l12 12' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": [
-            "vict (胜/败)",
-            "-im"
-          ],
-          "imagery": "失败的一方（相对于胜利者），受害者。",
-          "translation": "受害者；牺牲品",
-          "sentences": [
-            {
-              "en": "The victims of the earthquake need help.",
-              "cn": "地震的受害者需要帮助。"
-            }
-          ]
-        },
-        {
-          "word": "victory",
-          "rootVisual": "<path d='M6 6 l6 12 l6 -12' stroke='currentColor' stroke-width='4'/>",
-          "breakdown": [
-            "vict (胜)",
-            "-ory (名)"
-          ],
-          "imagery": "胜利。",
-          "translation": "胜利",
-          "sentences": [
-            {
-              "en": "They won a great victory in the final match.",
-              "cn": "他们在决赛中取得了巨大的胜利。"
             }
           ]
         },

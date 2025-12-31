@@ -16,7 +16,10 @@
         {
           "word": "attend",
           "rootVisual": "<g transform='translate(0, 0)'><circle cx='12' cy='12' r='6' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='4' r='1.5' fill='currentColor'/><circle cx='20' cy='12' r='1.5' fill='currentColor'/><circle cx='12' cy='20' r='1.5' fill='currentColor'/><circle cx='4' cy='12' r='1.5' fill='currentColor'/><circle cx='6.5' cy='6.5' r='1.5' fill='currentColor'/><circle cx='17.5' cy='6.5' r='1.5' fill='currentColor'/><circle cx='17.5' cy='17.5' r='1.5' fill='currentColor'/><circle cx='6.5' cy='17.5' r='1.5' fill='currentColor'/></g>",
-          "breakdown": ["at- (去/向)", "tend (伸展/脚)"],
+          "breakdown": [
+            "at- (去/向)",
+            "tend (伸展/脚)"
+          ],
           "imagery": "联想大家将身体和注意力都**“伸向”**（tend）圆桌中央，共同参与讨论。圆桌意味着每个人都平等地到了现场。",
           "translation": "参加；出席",
           "sentences": [
@@ -27,22 +30,13 @@
           ]
         },
         {
-          "word": "extend",
-          "rootVisual": "<rect x='4' y='10' width='8' height='4' fill='currentColor'/><path d='M12 10 h8 v4 h-8' stroke='currentColor' stroke-dasharray='2 2'/><path d='M20 12 l2 0' stroke='currentColor' marker-end='url(#arrow)'/>",
-          "breakdown": ["ex- (向外)", "tend (伸)"],
-          "imagery": "向外（ex-）伸展（tend），扩大范围或长度。",
-          "translation": "延伸；扩展",
-          "sentences": [
-            {
-              "en": "Some of our courses extend over two years.",
-              "cn": "我们的一些课程延伸（持续）两年以上。"
-            }
-          ]
-        },
-        {
           "word": "intention",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='2' fill='currentColor'/><path d='M12 12 L18 6' stroke='currentColor' stroke-dasharray='2 2'/>",
-          "breakdown": ["in- (向内)", "tent (伸)", "-ion (名)"],
+          "breakdown": [
+            "in- (向内)",
+            "tent (伸)",
+            "-ion (名)"
+          ],
           "imagery": "内心（in-）伸向（tent）某个目标的想法。",
           "translation": "意图",
           "sentences": [
@@ -55,7 +49,10 @@
         {
           "word": "pretend",
           "rootVisual": "<path d='M12 2 a 6 6 0 0 1 0 12 a 6 6 0 0 1 0 -12' stroke='currentColor' fill='none'/><rect x='8' y='14' width='8' height='2' fill='currentColor'/>",
-          "breakdown": ["pre- (在前面)", "tend (伸/拉)"],
+          "breakdown": [
+            "pre- (在前面)",
+            "tend (伸/拉)"
+          ],
           "imagery": "在别人面前（pre-）拉起（tend）一块幕布遮掩真相，即假装。",
           "translation": "假装",
           "sentences": [
@@ -68,7 +65,10 @@
         {
           "word": "intend",
           "rootVisual": "<circle cx='4' cy='12' r='2' fill='currentColor'/><path d='M6 12 h12' stroke='currentColor' stroke-dasharray='2 2'/><circle cx='20' cy='12' r='2' stroke='currentColor' fill='none'/>",
-          "breakdown": ["in- (向内)", "tend (伸)"],
+          "breakdown": [
+            "in- (向内)",
+            "tend (伸)"
+          ],
           "imagery": "内心倾向于做某事。",
           "translation": "打算",
           "sentences": [
@@ -81,7 +81,10 @@
         {
           "word": "attendant",
           "rootVisual": "<circle cx='12' cy='8' r='3' fill='currentColor'/><path d='M12 11 v8' stroke='currentColor'/><path d='M8 14 h8' stroke='currentColor'/>",
-          "breakdown": ["attend (参加/照料)", "-ant (人)"],
+          "breakdown": [
+            "attend (参加/照料)",
+            "-ant (人)"
+          ],
           "imagery": "在旁边照料的人，如服务员。",
           "translation": "随从；服务员",
           "sentences": []
@@ -89,7 +92,11 @@
         {
           "word": "attention",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 L12 4' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
-          "breakdown": ["at- (去)", "tent (伸)", "-ion (名)"],
+          "breakdown": [
+            "at- (去)",
+            "tent (伸)",
+            "-ion (名)"
+          ],
           "imagery": "把精神伸向（tent）某处（at-），即注意力。",
           "translation": "注意力",
           "sentences": [
@@ -102,7 +109,10 @@
         {
           "word": "attentive",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><path d='M12 12 L16 8' stroke='currentColor'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
-          "breakdown": ["attend (注意)", "-ive (形)"],
+          "breakdown": [
+            "attend (注意)",
+            "-ive (形)"
+          ],
           "imagery": "全神贯注的状态。",
           "translation": "专心的",
           "sentences": [
@@ -115,7 +125,10 @@
         {
           "word": "attempt",
           "rootVisual": "<path d='M4 18 l8 -14 l8 14' stroke='currentColor' fill='none'/><circle cx='12' cy='4' r='2' stroke='currentColor' stroke-dasharray='2 1'/>",
-          "breakdown": ["at- (去)", "tempt (试)"],
+          "breakdown": [
+            "at- (去)",
+            "tempt (试)"
+          ],
           "imagery": "伸出手去尝试（tempt/tend变体）。",
           "translation": "尝试",
           "sentences": [
@@ -128,7 +141,10 @@
         {
           "word": "tension",
           "rootVisual": "<line x1='4' y1='12' x2='20' y2='12' stroke='currentColor' stroke-width='2'/><path d='M4 10 l-2 2 l2 2 M20 10 l2 2 l-2 2' stroke='currentColor'/>",
-          "breakdown": ["tens (拉紧)", "-ion (名)"],
+          "breakdown": [
+            "tens (拉紧)",
+            "-ion (名)"
+          ],
           "imagery": "被拉紧（tens）的状态，像紧绷的弦。",
           "translation": "紧张",
           "sentences": [

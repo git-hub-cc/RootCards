@@ -16,7 +16,10 @@
         {
           "word": "volunteer",
           "rootVisual": "<path d='M12 14 L 8 10 H 16 Z' fill='currentColor' /><circle cx='12' cy='6' r='2' stroke='currentColor' />",
-          "breakdown": ["vol (意愿)", "-unteer"],
+          "breakdown": [
+            "vol (意愿)",
+            "-unteer"
+          ],
           "imagery": "自愿做的人。",
           "translation": "志愿者；自愿",
           "sentences": [
@@ -29,26 +32,16 @@
         {
           "word": "voluntary",
           "rootVisual": "<path d='M4 12 H 10' stroke='currentColor' marker-end='url(#arrow)' /><text x='16' y='14' font-size='10'>YES</text>",
-          "breakdown": ["vol (意愿)", "-untary"],
+          "breakdown": [
+            "vol (意愿)",
+            "-untary"
+          ],
           "imagery": "出于自愿的。",
           "translation": "自愿的；志愿的",
           "sentences": [
             {
               "en": "Attendance is voluntary.",
               "cn": "出席是自愿的。"
-            }
-          ]
-        },
-        {
-          "word": "benevolent",
-          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none' /><path d='M8 14 Q 12 18 16 14' stroke='currentColor' />",
-          "breakdown": ["bene (好)", "vol (意愿)", "-ent"],
-          "imagery": "心怀善意的。",
-          "translation": "仁慈的",
-          "sentences": [
-            {
-              "en": "A benevolent old man.",
-              "cn": "一位仁慈的老人。"
             }
           ]
         }
@@ -68,7 +61,10 @@
         {
           "word": "volume",
           "rootVisual": "<path d='M4 20 V 4 H 20' stroke='currentColor' fill='none' /><path d='M4 20 L 20 4' stroke='currentColor' />",
-          "breakdown": ["vol (卷)", "-ume"],
+          "breakdown": [
+            "vol (卷)",
+            "-ume"
+          ],
           "imagery": "古代书写在卷轴上（一卷书）；引申为容积、音量。",
           "translation": "容积；音量；卷",
           "sentences": [
@@ -81,7 +77,10 @@
         {
           "word": "evolve",
           "rootVisual": "<path d='M4 18 Q 12 6 20 12' stroke='currentColor' fill='none' marker-end='url(#arrow)' />",
-          "breakdown": ["e- (出)", "volv (转)"],
+          "breakdown": [
+            "e- (出)",
+            "volv (转)"
+          ],
           "imagery": "向外转出来，演变。",
           "translation": "进化；发展",
           "sentences": [
@@ -94,7 +93,10 @@
         {
           "word": "revolve",
           "rootVisual": "<circle cx='12' cy='12' r='2' fill='currentColor' /><path d='M12 4 A 8 8 0 1 1 4 12' stroke='currentColor' fill='none' stroke-dasharray='4 2' />",
-          "breakdown": ["re- (再)", "volv (转)"],
+          "breakdown": [
+            "re- (再)",
+            "volv (转)"
+          ],
           "imagery": "围绕中心转。",
           "translation": "旋转",
           "sentences": [

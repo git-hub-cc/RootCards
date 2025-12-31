@@ -157,26 +157,6 @@
               "cn": "在午夜钟声敲响时"
             }
           ]
-        },
-        {
-          "word": "subtle",
-          "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='12' cy='12' r='1' fill='currentColor'/>",
-          "breakdown": [
-            "sub- (下)",
-            "tle (web/textile)"
-          ],
-          "imagery": "用放大镜看极小的细节，表示细微。",
-          "translation": "微妙的；细微的；精巧的",
-          "sentences": [
-            {
-              "en": "There are subtle differences between them.",
-              "cn": "它们之间有细微的差别。"
-            },
-            {
-              "en": "a subtle form of racism",
-              "cn": "一种隐性的种族主义"
-            }
-          ]
         }
       ]
     }

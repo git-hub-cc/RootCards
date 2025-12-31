@@ -199,21 +199,6 @@
           ]
         },
         {
-          "word": "root",
-          "rootVisual": "<path d='M12 10 v10 m-3 -4 l3 4 l3 -4' stroke='currentColor' stroke-width='2'/>",
-          "breakdown": [
-            "root (根)"
-          ],
-          "imagery": "植物的根。",
-          "translation": "根",
-          "sentences": [
-            {
-              "en": "The root of the problem is a lack of communication.",
-              "cn": "问题的根源是缺乏沟通。"
-            }
-          ]
-        },
-        {
           "word": "route",
           "rootVisual": "<path d='M4 18 l4 -4 l4 4 l8 -8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='4' cy='18' r='2' fill='currentColor'/><circle cx='20' cy='10' r='2' fill='currentColor'/>",
           "breakdown": [

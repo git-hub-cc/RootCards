@@ -287,22 +287,6 @@
           ]
         },
         {
-          "word": "celebrate",
-          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 l-4 -4 m8 0 l-4 4 m0 0 v 6' stroke='currentColor'/>",
-          "breakdown": [
-            "celebr (名望/拥挤)",
-            "-ate (动词后缀)"
-          ],
-          "imagery": "很多人聚在一起庆祝。",
-          "translation": "庆祝",
-          "sentences": [
-            {
-              "en": "We had a tea party to celebrate our parents’ silver wedding.",
-              "cn": "我们开了个茶话会庆祝父母的银婚。"
-            }
-          ]
-        },
-        {
           "word": "center",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='12' r='2' fill='currentColor'/>",
           "breakdown": [
@@ -603,17 +587,6 @@
           ]
         },
         {
-          "word": "comfortable",
-          "rootVisual": "<path d='M4 14 q 8 4 16 0' stroke='currentColor' fill='none' stroke-width='2'/><circle cx='12' cy='10' r='2' fill='currentColor'/>",
-          "breakdown": [
-            "comfort (舒适)",
-            "-able (能...的)"
-          ],
-          "imagery": "让人感觉舒适的。",
-          "translation": "舒服的",
-          "sentences": []
-        },
-        {
           "word": "community",
           "rootVisual": "<circle cx='12' cy='12' r='8' stroke='currentColor' fill='none'/><circle cx='8' cy='10' r='2' stroke='currentColor'/><circle cx='16' cy='10' r='2' stroke='currentColor'/><circle cx='12' cy='16' r='2' stroke='currentColor'/>",
           "breakdown": [
@@ -850,22 +823,6 @@
             {
               "en": "Can I have an ice cream?",
               "cn": "我可以要一个冰淇淋吗？"
-            }
-          ]
-        },
-        {
-          "word": "create",
-          "rootVisual": "<path d='M12 8 l-4 8 h8 z' stroke='currentColor' fill='none'/><circle cx='12' cy='6' r='2' fill='currentColor'/>",
-          "breakdown": [
-            "cre (生长)",
-            "-ate (动词后缀)"
-          ],
-          "imagery": "使某物生长出来，即创造。",
-          "translation": "创造",
-          "sentences": [
-            {
-              "en": "The new factory is expected to create more than 400 new jobs.",
-              "cn": "新工厂预计将创造400多个新工作岗位。"
             }
           ]
         },

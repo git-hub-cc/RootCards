@@ -30,22 +30,12 @@
           ]
         },
         {
-          "word": "segment",
-          "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 L12 2 A10 10 0 0 1 20.66 7' stroke='currentColor' fill='currentColor' opacity='0.3'/>",
-          "breakdown": ["seg (切)", "-ment (名)"],
-          "imagery": "天然切分的一部分，比如橘子的一瓣。",
-          "translation": "部分；瓣",
-          "sentences": [
-            {
-              "en": "Orange segment.",
-              "cn": "橘子瓣。"
-            }
-          ]
-        },
-        {
           "word": "section",
           "rootVisual": "<rect x='4' y='4' width='16' height='16' stroke='currentColor' fill='none'/><line x1='12' y1='4' x2='12' y2='20' stroke='currentColor' stroke-dasharray='2 2'/><text x='8' y='14' font-size='8' fill='currentColor'>A</text><text x='16' y='14' font-size='8' fill='currentColor'>B</text>",
-          "breakdown": ["sect (切)", "-ion (名)"],
+          "breakdown": [
+            "sect (切)",
+            "-ion (名)"
+          ],
           "imagery": "被人为切分、划分出来的区域或部门。",
           "translation": "部分；区域",
           "sentences": [
@@ -58,7 +48,10 @@
         {
           "word": "sector",
           "rootVisual": "<circle cx='12' cy='12' r='10' stroke='currentColor' fill='none'/><path d='M12 12 L22 12 A10 10 0 0 0 17 3.34 Z' stroke='currentColor' fill='currentColor' opacity='0.4'/>",
-          "breakdown": ["sect (切)", "-or (名)"],
+          "breakdown": [
+            "sect (切)",
+            "-or (名)"
+          ],
           "imagery": "像扇形图中的一部分，常指经济或工业的部门/行业。",
           "translation": "部门；行业；扇形",
           "sentences": [
@@ -71,7 +64,11 @@
         {
           "word": "intersection",
           "rootVisual": "<line x1='12' y1='2' x2='12' y2='22' stroke='currentColor' stroke-width='2'/><line x1='2' y1='12' x2='22' y2='12' stroke='currentColor' stroke-width='2'/><circle cx='12' cy='12' r='3' fill='currentColor' opacity='0.5'/>",
-          "breakdown": ["inter- (之间)", "sect (切)", "-ion (名)"],
+          "breakdown": [
+            "inter- (之间)",
+            "sect (切)",
+            "-ion (名)"
+          ],
           "imagery": "两条路互相切过的地方，即十字路口。",
           "translation": "十字路口",
           "sentences": [
