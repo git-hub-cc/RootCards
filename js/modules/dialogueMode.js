@@ -314,7 +314,9 @@ function addMessageToUI(role, content) {
     bubble.className = 'dialogue-message-bubble';
 
     const textSpan = document.createElement('div');
-    textSpan.innerHTML = content.replace(/\n/g, '<br>');
+    textSpan.innerHTML = content
+        .replace(/__+/g, '_')
+        .replace(/\n/g, '<br>');
     bubble.appendChild(textSpan);
 
     if (role === 'assistant' && content) {
